@@ -1,0 +1,536 @@
+{
+  "common": {
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "create": "Créer",
+    "search": "Rechercher",
+    "loading": "Chargement...",
+    "error": "Une erreur est survenue",
+    "status": "Statut",
+    "active": "Actif",
+    "inactive": "Inactif",
+    "actions": "Actions",
+    "all": "Tous",
+    "showInactive": "Afficher les inactifs",
+    "back": "Retour",
+    "createdAt": "Date de création",
+    "savedOk": "Enregistré avec succès.",
+    "call": "Appeler",
+    "saving": "Enregistrement…",
+    "pagination": {
+      "showing": "Affichage {{from}}–{{to}} sur {{total}}",
+      "prev": "Précédent",
+      "next": "Suivant"
+    }
+  },
+  "nav": {
+    "clientes": "Clients",
+    "emplazamientos": "Sites",
+    "gruposClientes": "Groupes de clients",
+    "users": "Utilisateurs",
+    "roles": "Rôles",
+    "rolesMatrix": "Matrice des permissions",
+    "sistema": "Système",
+    "admins": "Utilisateurs",
+    "usuarios": {
+      "title": "Utilisateurs",
+      "tenant": "Utilisateurs internes",
+      "colaborador_externo": "Collaborateurs",
+      "invitado": "Invités"
+    }
+  },
+  "home": {
+    "title": "Accueil",
+    "subtitle": "Bienvenue sur Everydat"
+  },
+  "agent": {
+    "title": "Assistant IA",
+    "placeholder": "Posez-moi une question ou demandez-moi de naviguer quelque part.",
+    "inputPlaceholder": "Écrivez un message…",
+    "thinking": "Réflexion…"
+  },
+  "auth": {
+    "logout": "Se déconnecter",
+    "changePassword": {
+      "title": "Changer le mot de passe",
+      "current": "Mot de passe actuel",
+      "new": "Nouveau mot de passe",
+      "confirm": "Confirmer le nouveau mot de passe",
+      "success": "Mot de passe mis à jour avec succès."
+    },
+    "login": {
+      "subtitle": "Connectez-vous à votre compte",
+      "passwordLabel": "Mot de passe",
+      "emailPlaceholder": "vous@entreprise.com",
+      "submit": "Se connecter",
+      "loading": "Connexion...",
+      "forgotPassword": "Mot de passe oublié ?"
+    },
+    "forgotPassword": {
+      "subtitle": "Récupérez l'accès à votre compte",
+      "submit": "Envoyer le lien",
+      "sent": "Si cet e-mail est enregistré, vous recevrez un lien sous peu.",
+      "backToLogin": "Retour à la connexion"
+    },
+    "resetPassword": {
+      "subtitle": "Définissez un nouveau mot de passe",
+      "submit": "Changer le mot de passe",
+      "success": "Mot de passe mis à jour. Vous pouvez maintenant vous connecter."
+    }
+  },
+  "datatable": {
+    "records": "enregistrements",
+    "perPage": "par page",
+    "filters": "Filtres",
+    "columns": "Colonnes",
+    "exportSoon": "Exporter (bientôt disponible)",
+    "refresh": "Actualiser",
+    "empty": "Aucun enregistrement à afficher.",
+    "clearFilters": "Effacer les filtres",
+    "filterAll": "Tous",
+    "available": "Disponibles",
+    "visible": "Visibles",
+    "columnsHint": "Cliquez pour déplacer. Faites glisser pour réordonner.",
+    "allColumnsVisible": "Toutes les colonnes sont visibles.",
+    "noColumnsSelected": "Aucune colonne sélectionnée.",
+    "hideColumn": "Masquer la colonne",
+    "searchPlaceholder": "Rechercher…",
+    "searchField": "Rechercher un champ…",
+    "noResults": "Aucun résultat",
+    "rowsPerPage": "Lignes par page",
+    "rows": "Lignes",
+    "showing": "Affichage",
+    "of": "sur",
+    "resetView": "Réinitialiser la vue",
+    "savedViews": "Vues enregistrées",
+    "noSavedViews": "Aucune vue enregistrée",
+    "nameViewPlaceholder": "Nommer la vue actuelle…",
+    "pinView": "Définir comme vue par défaut",
+    "unpinView": "Retirer comme vue par défaut",
+    "deleteView": "Supprimer la vue",
+    "removeFilter": "Supprimer le filtre",
+    "lockColAria": "Fixe",
+    "showCol": "Afficher {{col}}",
+    "hideCol": "Masquer {{col}}",
+    "resetCols": "Réinitialiser",
+    "bulkSelected": "{{n}} sélectionnés",
+    "bulkActions": "Actions en masse",
+    "clearSelection": "Effacer la sélection",
+    "exportTitle": "Exporter les données",
+    "yes": "Oui",
+    "no": "Non",
+    "rangeFrom": "De",
+    "rangeTo": "à",
+    "dateFrom": "Depuis",
+    "dateTo": "Jusqu'au",
+    "typeText": "Texte",
+    "typeEnum": "Option",
+    "typeMulti": "Multi",
+    "typeNumber": "Nombre",
+    "typeBool": "Oui/Non",
+    "typeDate": "Date",
+    "seedViewDefault": "Tous · A–Z",
+    "seedViewActive": "Actifs seulement",
+    "pagination": {
+      "showing": "Affichage {{from}}–{{to}} sur {{total}}",
+      "prev": "Précédent",
+      "next": "Suivant",
+      "first": "Première",
+      "last": "Dernière"
+    }
+  },
+  "roles": {
+    "title": "Rôles",
+    "subtitle": "Gestion des rôles et permissions",
+    "create": "Nouveau rôle",
+    "createTitle": "Créer un rôle",
+    "editTitle": "Modifier le rôle",
+    "empty": "Aucun rôle trouvé.",
+    "deactivateConfirm": "Désactiver le rôle {{name}} ? Les utilisateurs assignés perdront leurs permissions.",
+    "fields": {
+      "name": "Nom",
+      "description": "Description",
+      "user_type": "Type d'utilisateur",
+      "user_type_placeholder": "Sélectionner un type",
+      "permissions": "Permissions",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "pagination": {
+      "showing": "Affichage {{from}}–{{to}} sur {{total}}",
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "matrix": {
+      "title": "Matrice des permissions",
+      "subtitle": "Permissions attribuées par rôle",
+      "backToRoles": "Retour aux rôles",
+      "permission": "Permission",
+      "tabs": {
+        "usuarios": "Utilisateurs",
+        "clientes": "Clients",
+        "emplazamientos": "Sites",
+        "sistema": "Système"
+      }
+    }
+  },
+  "clientes": {
+    "title": "Clients",
+    "subtitle": "Gestion des clients",
+    "create": "Nouveau client",
+    "createTitle": "Créer un client",
+    "editTitle": "Modifier le client",
+    "empty": "Aucun client trouvé.",
+    "backToList": "Retour aux clients",
+    "deleteConfirm": "Supprimer le client {{nombre}} ?",
+    "restoreConfirm": "Réactiver le client {{nombre}} ?",
+    "restore": "Réactiver le client",
+    "searchPlaceholder": "Rechercher par nom ou NIF...",
+    "direcciones": "Adresses",
+    "addDireccion": "Ajouter une adresse",
+    "noDirecciones": "Aucune adresse trouvée.",
+    "addAddressTitle": "Ajouter une adresse",
+    "editAddressTitle": "Modifier l'adresse",
+    "deleteAddressConfirm": "Supprimer cette adresse ?",
+    "fields": {
+      "nombre": "Nom",
+      "nombreComercial": "Nom commercial",
+      "codigo": "Code",
+      "razonSocial": "Raison sociale",
+      "nif": "Numéro TVA",
+      "sector": "Secteur",
+      "telefono": "Téléphone",
+      "notas": "Notes",
+      "tipo": "Type",
+      "calle": "Rue",
+      "cp": "Code postal",
+      "poblacion": "Ville",
+      "provincia": "Département",
+      "pais": "Pays",
+      "emplazamientos": "Sites",
+      "emplazamientos_short": "Sites.",
+      "seguridad": "Éléments de sécurité",
+      "seguridad_short": "Séc.",
+      "proyectosActivos": "Projets actifs",
+      "proyectosActivos_short": "Proj.",
+      "presupuestos": "Devis",
+      "presupuestos_short": "Dev.",
+      "informes": "Rapports",
+      "informes_short": "Rap.",
+      "alertas": "Alertes",
+      "alertas_short": "Alrt.",
+      "fechaAlta": "Date d'inscription",
+      "fechaAlta_short": "Depuis"
+    },
+    "grupos": {
+      "identidad": "Identité",
+      "localizacion": "Localisation",
+      "contadores": "Compteurs",
+      "comercial": "Commercial"
+    },
+    "estado": {
+      "activo": "Actif",
+      "potencial": "Potentiel",
+      "baja": "Inactif"
+    },
+    "tipoDir": {
+      "fiscal": "Siège social",
+      "obra": "Chantier"
+    }
+  },
+  "contactos": {
+    "title": "Contacts",
+    "create": "Nouveau contact",
+    "createTitle": "Créer un contact",
+    "editTitle": "Modifier le contact",
+    "empty": "Aucun contact trouvé.",
+    "principal": "Principal",
+    "deleteConfirm": "Supprimer le contact {{nombre}} ?",
+    "detach": "Dissocier",
+    "detachConfirm": "Dissocier le contact {{nombre}} de ce client ?",
+    "reattach": "Ré-associer",
+    "fields": {
+      "nombre": "Prénom",
+      "apellidos": "Nom de famille",
+      "cargo": "Poste",
+      "telefono": "Téléphone",
+      "notifyAllRevisions": "Recevoir les notifications de révisions"
+    }
+  },
+  "admins": {
+    "title": "Utilisateurs",
+    "subtitle": "Gestion de tous les comptes du système",
+    "create": "Nouvel utilisateur",
+    "empty": "Aucun utilisateur dans ce groupe.",
+    "impersonate": "Incarner",
+    "impersonating": "Agissant en tant que {{name}}",
+    "stopImpersonating": "Retour au support",
+    "impersonateConfirm": "Agir en tant que {{name}} ? Vous verrez l'application avec ses permissions.",
+    "tabs": {
+      "soporte_cubic": "Support",
+      "tenant": "Internes",
+      "colaborador_externo": "Collaborateurs",
+      "invitado": "Invités",
+      "integracion_externa": "Intégration"
+    }
+  },
+  "users": {
+    "title": "Utilisateurs",
+    "subtitle": "Gestion des comptes utilisateurs",
+    "create": "Nouvel utilisateur",
+    "createTitle": "Créer un utilisateur",
+    "editTitle": "Modifier l'utilisateur",
+    "createByType": {
+      "tenant": "Nouvel utilisateur interne",
+      "colaborador_externo": "Nouveau collaborateur",
+      "invitado": "Nouvel utilisateur invité"
+    },
+    "generatePassword": "Générer",
+    "empty": "Aucun utilisateur trouvé.",
+    "deactivate": "Désactiver",
+    "deactivateConfirm": "Désactiver {{name}} ? L'utilisateur perdra l'accès au système.",
+    "restore": "Réactiver l'utilisateur",
+    "restoreConfirm": "Réactiver {{name}} ? L'utilisateur récupérera l'accès au système.",
+    "fields": {
+      "first_name": "Prénom",
+      "last_name": "Nom de famille",
+      "name": "Nom complet",
+      "password": "Mot de passe",
+      "passwordHint": "Laisser vide pour ne pas modifier",
+      "roles": "Rôles",
+      "no_roles_for_block": "Aucun rôle disponible pour ce bloc.",
+      "user_type": "Type d'utilisateur",
+      "user_type_placeholder": "Sélectionner un type",
+      "scope_bypass": "Contournement de scope",
+      "scope_bypass_hint": "Cet utilisateur voit toutes les données du tenant, en ignorant le filtre de scope client.",
+      "account_type": "Type de compte",
+      "telefono": "Téléphone",
+      "notas": "Notes",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "detail": {
+      "tabDatos": "Données de l'utilisateur"
+    },
+    "blocks": {
+      "soporte_cubic": "Support Cubic",
+      "tenant": "Employé interne",
+      "colaborador_externo": "Collaborateur externe",
+      "invitado": "Utilisateur invité",
+      "integracion_externa": "Intégration externe"
+    },
+    "account_types": {
+      "human": "Personne",
+      "service": "Compte de service"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "pagination": {
+      "showing": "Affichage {{from}}–{{to}} sur {{total}}",
+      "prev": "Précédent",
+      "next": "Suivant"
+    },
+    "roles": {
+      "superadmin": "Superadmin",
+      "superadmin_short": "Super",
+      "admin": "Administrateur",
+      "admin_short": "Admin",
+      "operario": "Opérateur",
+      "operario_short": "Opér."
+    },
+    "estado": {
+      "activo": "Actif",
+      "baja": "Inactif"
+    },
+    "grupos": {
+      "identidad": "Identité",
+      "roles": "Rôles et permissions"
+    },
+    "sheet": {
+      "title": "Fiche utilisateur",
+      "seccionesLabel": "Sections de la fiche",
+      "altaUsuario": "Nouvel utilisateur",
+      "tabs": {
+        "datos": "Données",
+        "roles": "Rôles",
+        "cuentas": "Comptes"
+      },
+      "datosPersonales": "Données personnelles",
+      "datosAcceso": "Données d'accès",
+      "datosPublicos": "Données publiques",
+      "notDefinedYet": "Pas encore défini",
+      "usuario": "Identifiant",
+      "newPassword": "Nouveau mot de passe",
+      "passwordPlaceholder": "Saisissez ou générez un mot de passe",
+      "hidePassword": "Masquer le mot de passe",
+      "showPassword": "Afficher le mot de passe",
+      "genPasswordAria": "Générer un mot de passe",
+      "saveChanges": "Enregistrer les modifications",
+      "rolesPermisos": "Rôles et permissions",
+      "sinRoles": "Aucun rôle assigné",
+      "superadminDesc": "Contrôle total du tenant : configuration, utilisateurs et tous les clients.",
+      "adminDesc": "Gère les données et utilisateurs du tenant.",
+      "operDesc": "Opère sur le terrain.",
+      "alcanceGlobal": "Portée globale",
+      "alcanceGlobalHint": "gère tous les clients",
+      "alcanceLimitado": "Portée limitée",
+      "alcanceLimitadoCuentasHint": "gère les comptes assignés",
+      "accesoCompleto": "Accès complet",
+      "accesoCompletoHint": "tous les sites",
+      "accesoLimitado": "Accès limité",
+      "accesoLimitadoHint": "par projets et dates assignés",
+      "cuentasAsignadas": "Comptes clients assignés",
+      "sinAsignacion": "Aucune assignation",
+      "cuentasHint": "L'assignation des comptes clients est reportée jusqu'à ce que la gestion des clients dans le CRM soit définie."
+    }
+  },
+  "emplazamientos": {
+    "title": "Sites",
+    "create": "Nouveau site",
+    "createTitle": "Créer un site",
+    "editTitle": "Modifier le site",
+    "empty": "Aucun site trouvé.",
+    "historialClientes": "Historique des clients",
+    "deleteConfirm": "Supprimer ce site ?",
+    "restore": "Restaurer le site",
+    "inactiveHint": "Les données ne peuvent pas être modifiées tant que le site est inactif. Activez-le d'abord.",
+    "backToCliente": "Retour au client",
+    "transfer": "Transférer à un autre client",
+    "transferTitle": "Transférer le site",
+    "transferHint": "Sélectionnez le client vers lequel transférer ce site.",
+    "transferConfirm": "Transférer ce site au client {{nombre}} ?",
+    "fields": {
+      "nombre": "Nom",
+      "descripcion": "Description",
+      "latitud": "Latitude",
+      "longitud": "Longitude",
+      "notas": "Notes",
+      "coordenadas": "Coordonnées",
+      "propietario": "Propriétaire",
+      "propietarioHint": "Organisation propriétaire de cette installation",
+      "clienteActual": "Client actif",
+      "fechaDesde": "Date de début",
+      "fechaHasta": "Date de fin",
+      "newCliente": "Nouveau client"
+    },
+    "errors": {
+      "clienteRequired": "Veuillez sélectionner un client."
+    }
+  },
+  "localizaciones": {
+    "tree": "Arbre des localisations",
+    "empty": "Aucune localisation trouvée.",
+    "selectHint": "Sélectionnez une localisation dans l'arbre",
+    "addChild": "Ajouter une sous-localisation",
+    "createTitle": "Créer une localisation",
+    "editTitle": "Modifier la localisation",
+    "parentLabel": "Dans",
+    "deleteConfirm": "Supprimer la localisation {{nombre}} ?",
+    "root": "Racine",
+    "fields": {
+      "nombre": "Nom",
+      "descripcion": "Description",
+      "orden": "Ordre",
+      "parentId": "Parent"
+    }
+  },
+  "gruposClientes": {
+    "title": "Groupes de clients",
+    "subtitle": "Gestion des groupes de clients",
+    "create": "Nouveau groupe",
+    "createTitle": "Créer un groupe de clients",
+    "editTitle": "Modifier le groupe de clients",
+    "empty": "Aucun groupe de clients trouvé.",
+    "backToList": "Retour aux groupes",
+    "searchPlaceholder": "Rechercher par nom...",
+    "clientes": "Clients du groupe",
+    "admins": "Administrateurs assignés",
+    "noClientes": "Aucun client dans ce groupe.",
+    "noAdmins": "Aucun administrateur assigné.",
+    "manage": "Gérer",
+    "selectClientesTitle": "Clients du groupe",
+    "selectAdminsTitle": "Administrateurs du groupe",
+    "fields": {
+      "nombre": "Nom",
+      "descripcion": "Description",
+      "clientes": "Clients"
+    }
+  },
+  "shell": {
+    "search": "Rechercher…",
+    "nav": {
+      "inicio": "Accueil",
+      "usuarios": "Utilisateurs",
+      "usuariosInternos": "Utilisateurs internes",
+      "usuariosColaboradores": "Collaborateurs",
+      "usuariosInvitados": "Invités",
+      "clientes": "Clients",
+      "emplazamientos": "Sites",
+      "roles": "Rôles",
+      "rolesMatrix": "Matrice des permissions",
+      "gruposClientes": "Groupes de clients",
+      "admins": "Administrateurs"
+    },
+    "prefs": {
+      "themeLight": "Thème clair",
+      "themeDark": "Thème sombre",
+      "fontDecrease": "Réduire la police",
+      "fontIncrease": "Augmenter la police"
+    },
+    "topbar": {
+      "root": "Everydat Pro",
+      "toggleMenu": "Basculer le menu",
+      "notifications": "Notifications",
+      "assistant": "Assistant Sherpa",
+      "scanQr": "Scanner QR",
+      "nfc": "Lire NFC",
+      "account": "Compte"
+    },
+    "notif": {
+      "title": "Notifications",
+      "markAll": "Tout marquer comme lu",
+      "seeAll": "Voir tout"
+    },
+    "user": {
+      "role": "Rôle",
+      "profile": "Mon profil",
+      "help": "Aide",
+      "logout": "Déconnexion"
+    },
+    "sherpa": {
+      "name": "Sherpa",
+      "status": "Connexion…",
+      "newChat": "Nouvelle conversation",
+      "close": "Fermer",
+      "placeholder": "Tapez votre question…",
+      "send": "Envoyer",
+      "disclaimer": "Les réponses peuvent contenir des erreurs."
+    },
+    "scan": {
+      "title": "Scanner un code QR",
+      "manual": "Saisir manuellement",
+      "code": "Code",
+      "submit": "Rechercher",
+      "camHint": "Pointez la caméra vers le code QR",
+      "gunHint": "Scannez avec le lecteur ou tapez le code"
+    },
+    "nfc": {
+      "title": "Lire une étiquette NFC",
+      "manual": "Saisir manuellement",
+      "id": "Identifiant",
+      "tapHint": "Approchez l'appareil de l'étiquette",
+      "deviceHint": "Approchez le lecteur NFC ou tapez l'ID"
+    },
+    "common": {
+      "close": "Fermer"
+    }
+  }
+}
