@@ -461,7 +461,19 @@
     "fields": {
       "nombre": "Name",
       "descripcion": "Description",
-      "clientes": "Customers"
+      "clientes": "Customers",
+      "emplazamientos": "Locations"
+    }
+  },
+  "equiposTrabajo": {
+    "title": "Work teams",
+    "subtitle": "Manage user teams",
+    "create": "New team",
+    "empty": "No work teams yet.",
+    "fields": {
+      "nombre": "Name",
+      "descripcion": "Description",
+      "usuarios": "Members"
     }
   },
   "shell": {
@@ -472,7 +484,10 @@
       "usuariosInternos": "Internal users",
       "usuariosColaboradores": "Collaborators",
       "usuariosInvitados": "Guests",
+      "equiposTrabajo": "Teams",
       "clientes": "Customers",
+      "clientesListado": "List",
+      "clientesGrupos": "Groups",
       "emplazamientos": "Locations",
       "roles": "Roles",
       "rolesMatrix": "Permissions matrix",
