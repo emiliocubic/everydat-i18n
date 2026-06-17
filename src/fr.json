@@ -104,8 +104,6 @@
     "showing": "Affichage",
     "of": "sur",
     "resetView": "Réinitialiser la vue",
-    "filters": "Filtres",
-    "columns": "Colonnes",
     "export": "Exporter",
     "savedViews": "Vues enregistrées",
     "defaultConfig": "Configuration par défaut",
@@ -264,7 +262,25 @@
       "apellidos": "Nom de famille",
       "cargo": "Poste",
       "telefono": "Téléphone",
-      "notifyAllRevisions": "Recevoir les notifications de révisions"
+      "notifyAllRevisions": "Recevoir les notifications de révisions",
+      "email": "E-mail"
+    },
+    "sheet": {
+      "tabs": {
+        "datos": "Détails",
+        "clientes": "Liens clients",
+        "permisos": "Permissions"
+      },
+      "datosPersonales": "Données personnelles",
+      "cuenta": "Compte portail",
+      "conCuenta": "Dispose d’un compte portail",
+      "sinCuenta": "Sans compte portail",
+      "ultimoAcceso": "Dernier accès",
+      "nunca": "Jamais",
+      "clientesAsociados": "Clients liés",
+      "sinClientes": "Aucun client lié",
+      "permisosPlaceholder": "Les permissions d’accès au portail client se configureront ici.",
+      "altaContacto": "Nouveau contact"
     }
   },
   "admins": {
@@ -488,11 +504,11 @@
       "usuarios": "Utilisateurs",
       "usuariosInternos": "Utilisateurs internes",
       "usuariosColaboradores": "Collaborateurs",
-      "usuariosInvitados": "Invités",
       "equiposTrabajo": "Équipes",
       "clientes": "Clients",
-      "clientesListado": "Liste",
-      "clientesGrupos": "Groupes",
+      "clientesListado": "Clients",
+      "clientesContactos": "Contacts",
+      "clientesGrupos": "Groupes de clients",
       "emplazamientos": "Sites",
       "roles": "Rôles",
       "rolesMatrix": "Matrice des permissions",

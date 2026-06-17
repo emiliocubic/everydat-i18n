@@ -199,7 +199,25 @@
       "apellidos": "Apellidos",
       "cargo": "Cargo",
       "telefono": "Teléfono",
-      "notifyAllRevisions": "Recibir notificaciones de revisiones"
+      "notifyAllRevisions": "Recibir notificaciones de revisiones",
+      "email": "Email"
+    },
+    "sheet": {
+      "tabs": {
+        "datos": "Datos",
+        "clientes": "Asociación a clientes",
+        "permisos": "Permisos"
+      },
+      "datosPersonales": "Datos personales",
+      "cuenta": "Cuenta de portal",
+      "conCuenta": "Tiene cuenta de portal",
+      "sinCuenta": "Sin cuenta de portal",
+      "ultimoAcceso": "Último acceso",
+      "nunca": "Nunca",
+      "clientesAsociados": "Clientes asociados",
+      "sinClientes": "Sin clientes asociados",
+      "permisosPlaceholder": "Aquí se configurarán los permisos de acceso al portal de cliente.",
+      "altaContacto": "Alta de contacto"
     }
   },
   "admins": {
@@ -406,8 +424,6 @@
     "showing": "Mostrando",
     "of": "de",
     "resetView": "Restablecer vista",
-    "filters": "Filtros",
-    "columns": "Columnas",
     "export": "Exportar",
     "savedViews": "Vistas guardadas",
     "defaultConfig": "Configuración por defecto",
@@ -488,11 +504,11 @@
       "usuarios": "Usuarios",
       "usuariosInternos": "Internos",
       "usuariosColaboradores": "Colaboradores",
-      "usuariosInvitados": "Invitados",
       "equiposTrabajo": "Equipos",
       "clientes": "Clientes",
-      "clientesListado": "Listado",
-      "clientesGrupos": "Grupos",
+      "clientesListado": "Clientes",
+      "clientesContactos": "Contactos",
+      "clientesGrupos": "Grupos de clientes",
       "emplazamientos": "Emplazamientos",
       "roles": "Roles",
       "rolesMatrix": "Matriz de permisos",

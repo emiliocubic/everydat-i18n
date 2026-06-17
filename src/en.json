@@ -104,8 +104,6 @@
     "showing": "Showing",
     "of": "of",
     "resetView": "Reset view",
-    "filters": "Filters",
-    "columns": "Columns",
     "export": "Export",
     "savedViews": "Saved views",
     "defaultConfig": "Default configuration",
@@ -264,7 +262,25 @@
       "apellidos": "Last name",
       "cargo": "Job title",
       "telefono": "Phone",
-      "notifyAllRevisions": "Receive revision notifications"
+      "notifyAllRevisions": "Receive revision notifications",
+      "email": "Email"
+    },
+    "sheet": {
+      "tabs": {
+        "datos": "Details",
+        "clientes": "Client links",
+        "permisos": "Permissions"
+      },
+      "datosPersonales": "Personal details",
+      "cuenta": "Portal account",
+      "conCuenta": "Has a portal account",
+      "sinCuenta": "No portal account",
+      "ultimoAcceso": "Last access",
+      "nunca": "Never",
+      "clientesAsociados": "Linked clients",
+      "sinClientes": "No linked clients",
+      "permisosPlaceholder": "Client portal access permissions will be configured here.",
+      "altaContacto": "New contact"
     }
   },
   "admins": {
@@ -488,11 +504,11 @@
       "usuarios": "Users",
       "usuariosInternos": "Internal users",
       "usuariosColaboradores": "Collaborators",
-      "usuariosInvitados": "Guests",
       "equiposTrabajo": "Teams",
       "clientes": "Customers",
-      "clientesListado": "List",
-      "clientesGrupos": "Groups",
+      "clientesListado": "Customers",
+      "clientesContactos": "Contacts",
+      "clientesGrupos": "Customer groups",
       "emplazamientos": "Locations",
       "roles": "Roles",
       "rolesMatrix": "Permissions matrix",
