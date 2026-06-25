@@ -184,6 +184,113 @@
     }
   },
   "clientes": {
+    "ficha": {
+      "tabs": {
+        "datos": "Donnees client",
+        "emplazamientos": "Sites",
+        "docs": "Documents",
+        "proyectos": "Projets",
+        "presupuestos": "Devis",
+        "informes": "Rapports",
+        "comunicaciones": "Communications",
+        "logs": "Journaux",
+        "selector": "Section",
+        "selectorAria": "Sections du client"
+      },
+      "placeholder": "Cette section est navigable mais pas encore concue.",
+      "eliminar": "Supprimer",
+      "volver": "Retour a la liste",
+      "secciones": {
+        "identificacion": "Identification",
+        "parametros": "Parametres de travail",
+        "notas": "Notes",
+        "grupos": "Groupes du client",
+        "direcciones": "Adresses",
+        "contactos": "Utilisateurs invites / contacts"
+      },
+      "fields": {
+        "estado": "Etat",
+        "codigo": "Code client",
+        "nombreComercial": "Nom commercial",
+        "razonSocial": "Raison sociale",
+        "cif": "TVA / SIRET",
+        "direccion": "Adresse du siege",
+        "cp": "Code postal",
+        "localidad": "Ville",
+        "provincia": "Province",
+        "pais": "Pays",
+        "telefonos": "Telephones",
+        "emails": "E-mails",
+        "plazoRevisiones": "Delai de revision de base",
+        "appCliente": "App client",
+        "recibirNotif": "Recevoir les notifications",
+        "alertaCliente": "Alerte client"
+      },
+      "app": {
+        "off": "Desactivee",
+        "read": "Lecture seule",
+        "full": "Edition autorisee"
+      },
+      "notif": {
+        "revisiones": "Revisions",
+        "finVida": "Fins de vie"
+      },
+      "alerta": {
+        "activa": "Active",
+        "sin": "Sans alerte",
+        "mostrar": "Afficher l'alerte",
+        "placeholder": "Texte d'avertissement (p. ex. Ne pas repondre par telephone avant regularisation du paiement).",
+        "hint": "Affiche comme avertissement en evidence dans l'en-tete de ce client et de tous ses sites, projets et devis.",
+        "eliminar": "Supprimer l'alerte",
+        "empty": "Alerte activee sans texte — ajoutez le message d'avertissement.",
+        "editar": "Modifier l'alerte"
+      },
+      "grupos": {
+        "anadir": "Ajouter au groupe",
+        "vacio": "N'appartient a aucun groupe.",
+        "addTitle": "Ajouter au groupe",
+        "addSub": "Selectionnez les groupes auxquels rattacher {{nombre}}.",
+        "buscar": "Rechercher un groupe par nom ou description…",
+        "selTodos": "Tout selectionner",
+        "limpiar": "Effacer la selection",
+        "ningunoCoincide": "Aucun groupe ne correspond.",
+        "yaTodos": "Le client appartient deja a tous les groupes.",
+        "seleccionados_one": "{{count}} selectionne",
+        "seleccionados_other": "{{count}} selectionnes",
+        "quitar": "Retirer du groupe",
+        "quitarConfirm": "Retirer le client du groupe {{nombre}} ?",
+        "nClientes": "{{count}} clients rattaches"
+      },
+      "notas": {
+        "vacio": "Aucune note",
+        "placeholder": "Informations generales du client…"
+      },
+      "contactos": {
+        "nuevo": "Nouveau contact",
+        "colNombre": "Nom",
+        "colTelefono": "Telephone",
+        "colEmail": "E-mail",
+        "usuarioInvitado": "Utilisateur invite de l'app",
+        "deleteConfirm": "Supprimer le contact {{nombre}} ?"
+      },
+      "meses": "mois",
+      "guardarCambios": "Enregistrer",
+      "guardar": "Enregistrer",
+      "cancelar": "Annuler",
+      "add": "Ajouter",
+      "docs": {
+        "newFolder": "Nouveau dossier",
+        "newFolderPrompt": "Nom du dossier",
+        "upload": "Téléverser un fichier",
+        "download": "Télécharger",
+        "root": "Documents du client",
+        "breadcrumb": "Chemin des dossiers",
+        "empty": "Aucun dossier ni fichier ici.",
+        "deleteFolderConfirm": "Supprimer le dossier « {{nombre}} » ?",
+        "deleteFolderError": "Impossible de supprimer un dossier contenant des sous-dossiers ou des fichiers.",
+        "deleteFileConfirm": "Supprimer le fichier « {{nombre}} » ?"
+      }
+    },
     "title": "Clients",
     "subtitle": "Gestion des clients",
     "create": "Nouveau client",

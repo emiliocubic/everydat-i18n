@@ -184,6 +184,113 @@
     }
   },
   "clientes": {
+    "ficha": {
+      "tabs": {
+        "datos": "Client data",
+        "emplazamientos": "Sites",
+        "docs": "Documents",
+        "proyectos": "Projects",
+        "presupuestos": "Quotes",
+        "informes": "Reports",
+        "comunicaciones": "Communications",
+        "logs": "Logs",
+        "selector": "Section",
+        "selectorAria": "Client sections"
+      },
+      "placeholder": "This section is navigable but not yet designed.",
+      "eliminar": "Delete",
+      "volver": "Back to list",
+      "secciones": {
+        "identificacion": "Identification",
+        "parametros": "Working parameters",
+        "notas": "Notes",
+        "grupos": "Client groups",
+        "direcciones": "Addresses",
+        "contactos": "Invited users / contacts"
+      },
+      "fields": {
+        "estado": "Status",
+        "codigo": "Client code",
+        "nombreComercial": "Trade name",
+        "razonSocial": "Legal name",
+        "cif": "VAT / Tax ID",
+        "direccion": "Registered address",
+        "cp": "Postal code",
+        "localidad": "City",
+        "provincia": "Province",
+        "pais": "Country",
+        "telefonos": "Phones",
+        "emails": "Emails",
+        "plazoRevisiones": "Base review interval",
+        "appCliente": "Client app",
+        "recibirNotif": "Receive notifications",
+        "alertaCliente": "Client alert"
+      },
+      "app": {
+        "off": "Disabled",
+        "read": "Read only",
+        "full": "Editing allowed"
+      },
+      "notif": {
+        "revisiones": "Reviews",
+        "finVida": "End of life"
+      },
+      "alerta": {
+        "activa": "Active",
+        "sin": "No alert",
+        "mostrar": "Show alert",
+        "placeholder": "Warning text (e.g. \"Do not attend by phone until payment is settled\").",
+        "hint": "Shown as a prominent warning in the header of this client and all its sites, projects and quotes.",
+        "eliminar": "Remove alert",
+        "empty": "Alert enabled without text — add the warning message.",
+        "editar": "Edit alert"
+      },
+      "grupos": {
+        "anadir": "Add to group",
+        "vacio": "Does not belong to any group.",
+        "addTitle": "Add to group",
+        "addSub": "Select the groups to assign {{nombre}} to.",
+        "buscar": "Search group by name or description…",
+        "selTodos": "Select all",
+        "limpiar": "Clear selection",
+        "ningunoCoincide": "No group matches.",
+        "yaTodos": "The client already belongs to every group.",
+        "seleccionados_one": "{{count}} selected",
+        "seleccionados_other": "{{count}} selected",
+        "quitar": "Remove from group",
+        "quitarConfirm": "Remove the client from group {{nombre}}?",
+        "nClientes": "{{count}} clients assigned"
+      },
+      "notas": {
+        "vacio": "No notes",
+        "placeholder": "General client information…"
+      },
+      "contactos": {
+        "nuevo": "New contact",
+        "colNombre": "Name",
+        "colTelefono": "Phone",
+        "colEmail": "Email",
+        "usuarioInvitado": "App invited user",
+        "deleteConfirm": "Delete contact {{nombre}}?"
+      },
+      "meses": "months",
+      "guardarCambios": "Save changes",
+      "guardar": "Save",
+      "cancelar": "Cancel",
+      "add": "Add",
+      "docs": {
+        "newFolder": "New folder",
+        "newFolderPrompt": "Folder name",
+        "upload": "Upload file",
+        "download": "Download",
+        "root": "Client documents",
+        "breadcrumb": "Folder path",
+        "empty": "No folders or files here.",
+        "deleteFolderConfirm": "Delete the folder “{{nombre}}”?",
+        "deleteFolderError": "A folder that contains subfolders or files cannot be deleted.",
+        "deleteFileConfirm": "Delete the file “{{nombre}}”?"
+      }
+    },
     "title": "Customers",
     "subtitle": "Customer management",
     "create": "New customer",

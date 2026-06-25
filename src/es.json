@@ -120,6 +120,113 @@
     }
   },
   "clientes": {
+    "ficha": {
+      "tabs": {
+        "datos": "Datos cliente",
+        "emplazamientos": "Emplazamientos",
+        "docs": "Documentación",
+        "proyectos": "Proyectos",
+        "presupuestos": "Presupuestos",
+        "informes": "Informes",
+        "comunicaciones": "Comunicaciones",
+        "logs": "Logs",
+        "selector": "Sección",
+        "selectorAria": "Secciones del cliente"
+      },
+      "placeholder": "Esta sección es navegable pero aún no está diseñada.",
+      "eliminar": "Eliminar",
+      "volver": "Volver al listado",
+      "secciones": {
+        "identificacion": "Identificación",
+        "parametros": "Parámetros de trabajo",
+        "notas": "Notas",
+        "grupos": "Grupos del cliente",
+        "direcciones": "Direcciones",
+        "contactos": "Usuarios invitados / contactos"
+      },
+      "fields": {
+        "estado": "Estado",
+        "codigo": "Código cliente",
+        "nombreComercial": "Nombre comercial",
+        "razonSocial": "Razón social",
+        "cif": "CIF / NIF",
+        "direccion": "Dirección razón social",
+        "cp": "Código postal",
+        "localidad": "Localidad",
+        "provincia": "Provincia",
+        "pais": "País",
+        "telefonos": "Teléfonos",
+        "emails": "Emails",
+        "plazoRevisiones": "Plazo base revisiones",
+        "appCliente": "APP de cliente",
+        "recibirNotif": "Recibir notificaciones",
+        "alertaCliente": "Alerta del cliente"
+      },
+      "app": {
+        "off": "Desactivada",
+        "read": "Solo lectura",
+        "full": "Edición permitida"
+      },
+      "notif": {
+        "revisiones": "Revisiones",
+        "finVida": "Finales de vida"
+      },
+      "alerta": {
+        "activa": "Activa",
+        "sin": "Sin alerta",
+        "mostrar": "Mostrar alerta",
+        "placeholder": "Texto de aviso (p. ej. «No atender por teléfono hasta regularizar el pago»).",
+        "hint": "Se muestra como aviso destacado en la cabecera de este cliente y de todos sus emplazamientos, proyectos y presupuestos.",
+        "eliminar": "Eliminar alerta",
+        "empty": "Alerta activada sin texto — añade el mensaje de aviso.",
+        "editar": "Editar alerta"
+      },
+      "grupos": {
+        "anadir": "Añadir a grupo",
+        "vacio": "No pertenece a ningún grupo.",
+        "addTitle": "Añadir a grupo",
+        "addSub": "Selecciona los grupos a los que adscribir a {{nombre}}.",
+        "buscar": "Buscar grupo por nombre o descripción…",
+        "selTodos": "Seleccionar todos",
+        "limpiar": "Limpiar selección",
+        "ningunoCoincide": "Ningún grupo coincide.",
+        "yaTodos": "El cliente ya pertenece a todos los grupos.",
+        "seleccionados_one": "{{count}} seleccionado",
+        "seleccionados_other": "{{count}} seleccionados",
+        "quitar": "Quitar del grupo",
+        "quitarConfirm": "¿Quitar el cliente del grupo {{nombre}}?",
+        "nClientes": "{{count}} clientes adscritos"
+      },
+      "notas": {
+        "vacio": "Sin notas",
+        "placeholder": "Información general del cliente…"
+      },
+      "contactos": {
+        "nuevo": "Nuevo contacto",
+        "colNombre": "Nombre",
+        "colTelefono": "Teléfono",
+        "colEmail": "Email",
+        "usuarioInvitado": "Usuario invitado de la app",
+        "deleteConfirm": "¿Eliminar el contacto {{nombre}}?"
+      },
+      "meses": "meses",
+      "guardarCambios": "Guardar cambios",
+      "guardar": "Guardar",
+      "cancelar": "Cancelar",
+      "add": "Añadir",
+      "docs": {
+        "newFolder": "Nueva carpeta",
+        "newFolderPrompt": "Nombre de la carpeta",
+        "upload": "Subir archivo",
+        "download": "Descargar",
+        "root": "Documentos del cliente",
+        "breadcrumb": "Ruta de carpetas",
+        "empty": "No hay carpetas ni archivos aquí.",
+        "deleteFolderConfirm": "¿Eliminar la carpeta «{{nombre}}»?",
+        "deleteFolderError": "No se puede eliminar una carpeta que contiene subcarpetas o archivos.",
+        "deleteFileConfirm": "¿Eliminar el archivo «{{nombre}}»?"
+      }
+    },
     "title": "Clientes",
     "subtitle": "Gestión de clientes",
     "create": "Nuevo cliente",
