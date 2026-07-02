@@ -702,6 +702,7 @@
       "updated": "Norme mise à jour",
       "deleted": "Norme supprimée",
       "consulta": {
+        "tabsAria": "Canon de la norme",
         "checkpoints": "Points de contrôle de la checklist",
         "campos": "Champs suggérés",
         "noCheckpoints": "Cette norme n'a aucun point de contrôle dans le canon.",

@@ -702,6 +702,7 @@
       "updated": "Norma actualizada",
       "deleted": "Norma eliminada",
       "consulta": {
+        "tabsAria": "Canon de la norma",
         "checkpoints": "Checkpoints del checklist",
         "campos": "Campos sugeridos",
         "noCheckpoints": "Esta norma no tiene checkpoints en el canon.",

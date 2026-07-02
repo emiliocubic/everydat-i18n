@@ -702,6 +702,7 @@
       "updated": "Standard updated",
       "deleted": "Standard deleted",
       "consulta": {
+        "tabsAria": "Standard canon",
         "checkpoints": "Checklist checkpoints",
         "campos": "Suggested fields",
         "noCheckpoints": "This standard has no checkpoints in the canon.",
