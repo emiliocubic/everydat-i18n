@@ -700,7 +700,15 @@
       "confirmDelete": "Delete the standard “{{codigo}}”?",
       "created": "Standard created",
       "updated": "Standard updated",
-      "deleted": "Standard deleted"
+      "deleted": "Standard deleted",
+      "consulta": {
+        "checkpoints": "Checklist checkpoints",
+        "campos": "Suggested fields",
+        "noCheckpoints": "This standard has no checkpoints in the canon.",
+        "noCampos": "This standard has no suggested fields.",
+        "whenApplies": "Only when applicable",
+        "conditional": "Conditional"
+      }
     },
     "campos": {
       "create": "New field",
@@ -796,7 +804,18 @@
       "portipo": {
         "title": "Fields by element type",
         "body": "This view will compose each element type's fields from its standards. It will be available once the Element Types module is built."
-      }
+      },
+      "origen": {
+        "canon": "Canon",
+        "local": "Own",
+        "canonTitle": "Canon field: curated by Cubic, read-only.",
+        "localTitle": "Tenant's own field: editable."
+      },
+      "canonDetail": "Detail (read-only)",
+      "canonNote": "This field is part of the canon curated by Cubic: it can be viewed but not edited. Clone it as local to create your own variant.",
+      "cloneAsLocal": "Clone as local",
+      "cloned": "Field cloned as local",
+      "porNormaCanonNote": "Canon fields (curated by Cubic) are read-only. You can add or remove your own local fields."
     },
     "checklists": {
       "tabsAria": "Checklist views",

@@ -700,7 +700,15 @@
       "confirmDelete": "Supprimer la norme « {{codigo}} » ?",
       "created": "Norme créée",
       "updated": "Norme mise à jour",
-      "deleted": "Norme supprimée"
+      "deleted": "Norme supprimée",
+      "consulta": {
+        "checkpoints": "Points de contrôle de la checklist",
+        "campos": "Champs suggérés",
+        "noCheckpoints": "Cette norme n'a aucun point de contrôle dans le canon.",
+        "noCampos": "Cette norme n'a aucun champ suggéré.",
+        "whenApplies": "Uniquement si applicable",
+        "conditional": "Conditionnel"
+      }
     },
     "campos": {
       "create": "Nouveau champ",
@@ -796,7 +804,18 @@
       "portipo": {
         "title": "Champs par type d'élément",
         "body": "Cette vue composera les champs de chaque type d'élément à partir de ses normes. Elle sera disponible une fois le module Types d'élément créé."
-      }
+      },
+      "origen": {
+        "canon": "Canon",
+        "local": "Propre",
+        "canonTitle": "Champ du canon : curé par Cubic, en lecture seule.",
+        "localTitle": "Champ propre du locataire : modifiable."
+      },
+      "canonDetail": "Détail (lecture seule)",
+      "canonNote": "Ce champ fait partie du canon curé par Cubic : il est consultable mais non modifiable. Clonez-le en local pour créer votre propre variante.",
+      "cloneAsLocal": "Cloner en local",
+      "cloned": "Champ cloné en local",
+      "porNormaCanonNote": "Les champs du canon (curés par Cubic) sont en lecture seule. Vous pouvez ajouter ou retirer vos propres champs locaux."
     },
     "checklists": {
       "tabsAria": "Vues des checklists",

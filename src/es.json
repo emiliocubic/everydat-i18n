@@ -700,7 +700,15 @@
       "confirmDelete": "¿Eliminar la norma «{{codigo}}»?",
       "created": "Norma creada",
       "updated": "Norma actualizada",
-      "deleted": "Norma eliminada"
+      "deleted": "Norma eliminada",
+      "consulta": {
+        "checkpoints": "Checkpoints del checklist",
+        "campos": "Campos sugeridos",
+        "noCheckpoints": "Esta norma no tiene checkpoints en el canon.",
+        "noCampos": "Esta norma no tiene campos sugeridos.",
+        "whenApplies": "Solo cuando procede",
+        "conditional": "Condicional"
+      }
     },
     "campos": {
       "create": "Nuevo campo",
@@ -796,7 +804,18 @@
       "portipo": {
         "title": "Campos por tipo de elemento",
         "body": "Esta vista compondrá los campos de cada tipo de elemento a partir de sus normas. Estará disponible cuando se cree el módulo de Tipos de Elemento."
-      }
+      },
+      "origen": {
+        "canon": "Canon",
+        "local": "Propio",
+        "canonTitle": "Campo del canon: curado por Cubic, de solo lectura.",
+        "localTitle": "Campo propio del tenant: editable."
+      },
+      "canonDetail": "Detalle (solo lectura)",
+      "canonNote": "Este campo forma parte del canon curado por Cubic: es consultable pero no editable. Clónalo como local para crear tu propia variante.",
+      "cloneAsLocal": "Clonar como local",
+      "cloned": "Campo clonado como local",
+      "porNormaCanonNote": "Los campos del canon (curados por Cubic) son de solo lectura. Puedes añadir o quitar tus propios campos locales."
     },
     "checklists": {
       "tabsAria": "Vistas de checklists",
