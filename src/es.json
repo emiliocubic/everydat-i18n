@@ -8,6 +8,8 @@
     "search": "Buscar",
     "loading": "Cargando...",
     "error": "Ha ocurrido un error",
+    "close": "Cerrar",
+    "required": "Obligatorio",
     "status": "Estado",
     "active": "Activo",
     "inactive": "Inactivo",
@@ -669,6 +671,282 @@
       "usuarios": "Miembros"
     }
   },
+  "cfg": {
+    "placeholderTitle": "Pantalla en construcción",
+    "placeholderBody": "Esta vista del área de Configuración se conectará más adelante, vista por vista.",
+    "normativa": {
+      "create": "Nueva norma",
+      "empty": "No hay normas todavía.",
+      "emptyHint": "Crea la primera norma del catálogo.",
+      "search": "Buscar por código o descripción…",
+      "section": "Identificación",
+      "detail": "Detalle",
+      "newTitle": "Nueva norma",
+      "editTitle": "Editar norma",
+      "close": "Cerrar",
+      "delete": "Eliminar norma",
+      "cols": {
+        "codigo": "Norma",
+        "descripcion": "Descripción"
+      },
+      "field": {
+        "codigo": "Código de norma",
+        "codigoPlaceholder": "p. ej. UNE-EN 361:2002",
+        "descripcion": "Descripción",
+        "descripcionPlaceholder": "Ámbito y objeto de la norma…",
+        "descripcionHint": "Describe brevemente el equipo o situación que regula esta norma."
+      },
+      "codigoWarning": "ATENCIÓN: modifique el código de la norma únicamente para cambiar detalles menores, como incluir o no el código de país o el año de la versión.\n\nNunca cambie la norma en sí, porque está ligada a tipos de elementos, checklists, campos personalizados, etc.",
+      "confirmDelete": "¿Eliminar la norma «{{codigo}}»?",
+      "created": "Norma creada",
+      "updated": "Norma actualizada",
+      "deleted": "Norma eliminada"
+    },
+    "campos": {
+      "create": "Nuevo campo",
+      "tabsAria": "Vistas de campos personalizados",
+      "tabs": {
+        "listado": "Listado de campos",
+        "pornorma": "Campos por norma",
+        "portipo": "Campos por tipo"
+      },
+      "catalog": "Catálogo de campos",
+      "searchField": "Buscar campo por nombre, ID o tipo…",
+      "fieldSingular": "campo",
+      "fieldPlural": "campos",
+      "col": {
+        "nombre": "Nombre",
+        "tipo": "Tipo de campo",
+        "valores": "Valores",
+        "usos": "Usos",
+        "descripcion": "Descripción"
+      },
+      "usosTitle": "Nº de normas que lo usan",
+      "usosLabel": "Usos",
+      "tipoLabel": "Tipo de campo",
+      "familiaLabel": "Familia",
+      "tipo": {
+        "numero_entero": "Nº entero",
+        "numero_decimal": "Nº decimal",
+        "texto": "Texto",
+        "booleano": "Sí / No",
+        "fecha": "Fecha",
+        "select": "Select",
+        "select_multiple": "Select múltiple"
+      },
+      "familia": {
+        "numerico": "Numérico",
+        "seleccion": "Selección",
+        "texto": "Texto",
+        "logico": "Sí / No",
+        "fecha": "Fecha"
+      },
+      "newTitle": "Nuevo campo",
+      "unnamed": "Campo sin nombre",
+      "detail": "Detalle",
+      "definition": "Definición",
+      "field": {
+        "label": "Etiqueta del campo",
+        "tipo": "Tipo de campo",
+        "descripcion": "Descripción"
+      },
+      "labelPlaceholder": "Nombre visible del campo",
+      "descPlaceholder": "Texto de ayuda para quien captura este campo…",
+      "optional": "opcional",
+      "range": "Rango admisible",
+      "min": "Valor mínimo",
+      "max": "Valor máximo",
+      "noLimit": "Sin límite",
+      "options": "Opciones",
+      "multiSel": "selección múltiple",
+      "singleSel": "selección única",
+      "noOptions": "Sin opciones.",
+      "optionsEmpty": "Sin opciones. Añade al menos una.",
+      "optionPlaceholder": "Texto de la opción…",
+      "addOption": "Añadir opción",
+      "removeOption": "Quitar opción",
+      "reorder": "Arrastrar para reordenar",
+      "usage": "Uso",
+      "noNormas": "Sin normas asignadas.",
+      "removeNorma": "Quitar norma",
+      "addNorma": "Añadir norma al campo",
+      "searchNorma": "Buscar norma…",
+      "allNormasAssigned": "El campo ya está asignado a todas las normas.",
+      "noNormaMatch": "Ninguna norma coincide.",
+      "created": "Campo creado",
+      "updated": "Campo actualizado",
+      "deleted": "Campo eliminado",
+      "confirmDelete": "¿Eliminar el campo «{{label}}»?",
+      "createBtn": "Crear campo",
+      "delete": "Eliminar campo",
+      "removeFromNorma": "Quitar {{label}} de la norma",
+      "noFields": "Sin campos",
+      "normsWithFields": "Normas con campos",
+      "noFieldsYet": "Sin campos todavía",
+      "intro": {
+        "q": "¿Para qué sirven los campos por norma?",
+        "sub": "Asignando campos del catálogo a las normas, se genera automáticamente la colección de campos personalizados de cada tipo de elemento, que asume los campos de las normas que le apliquen.",
+        "cta": "Usa la columna de normas del lateral para ver y editar los campos de cada norma."
+      },
+      "assignFirst": "Asignar campo de catálogo a la norma",
+      "assignAnother": "Asignar otro campo de catálogo a la norma",
+      "searchCatalog": "Buscar campo del catálogo…",
+      "allAssigned": "Todos los campos del catálogo ya están asignados a esta norma.",
+      "noFieldMatch": "Ningún campo del catálogo coincide.",
+      "portipo": {
+        "title": "Campos por tipo de elemento",
+        "body": "Esta vista compondrá los campos de cada tipo de elemento a partir de sus normas. Estará disponible cuando se cree el módulo de Tipos de Elemento."
+      }
+    },
+    "checklists": {
+      "tabsAria": "Vistas de checklists",
+      "tabs": {
+        "personalizacion": "Personalización",
+        "tipos": "Checklists por tipo"
+      },
+      "searchType": "Buscar tipo o norma…",
+      "typesAria": "Tipos de elemento",
+      "noNorma": "sin norma",
+      "modeIA": "IA",
+      "modeIAlong": "Sugerido por IA",
+      "modeManual": "Manual",
+      "eje": {
+        "visual": "Visual",
+        "funcional": "Funcional",
+        "documental": "Documental"
+      },
+      "dial": {
+        "aria": "Punto de partida del checklist",
+        "q": "¿Cómo quieres crear el checklist de",
+        "sub": "Elige un punto de partida. Podrás cambiarlo más adelante.",
+        "iaTitle": "Cargar checklist sugerido por IA",
+        "iaDesc": "Parte de una colección de checkpoints generados automáticamente a partir de la normativa que aplica al tipo de elemento.",
+        "iaNoNormas": "Este tipo no tiene normas asignadas, así que no hay checklist que sugerir. Créalo manualmente.",
+        "counting": "Calculando…",
+        "nSug_one": "{{count}} checkpoint sugerido",
+        "nSug_other": "{{count}} checkpoints sugeridos",
+        "noSugFor": "no hay checkpoints sugeribles para {{normas}}",
+        "manualTitle": "Crear checklist manualmente",
+        "manualDesc": "Empiezas en blanco: añades tus propios checkpoints uno a uno."
+      },
+      "pick": {
+        "q": "Selecciona un tipo de elemento",
+        "sub": "Elige un tipo en la lista para ver o editar su checklist."
+      },
+      "pers": {
+        "title": "Personalización de checklists",
+        "body": "La configuración de instancia (agrupación de checkpoints y escala de resultados) se conectará en una iteración posterior."
+      },
+      "sheet": {
+        "newTitle": "Nuevo checkpoint",
+        "editTitle": "Editar checkpoint",
+        "subNew": "Alta en el checklist del tipo",
+        "subEdit": "Checklist del tipo",
+        "grupo": "Grupo",
+        "grupoHint": "El grupo clasifica el checkpoint por eje de inspección.",
+        "enunciado": "Enunciado",
+        "enunciadoPlaceholder": "p. ej. Cintas y bandas sin cortes, desgaste ni abrasión",
+        "enunciadoHint": "Redáctalo en forma afirmativa de estado: lo que debe cumplirse para dar el punto por correcto.",
+        "descripcion": "Descripción",
+        "descripcionOpt": "(texto ampliado · opcional)",
+        "descripcionPlaceholder": "Contexto, criterio técnico o aclaración. Solo se ve al editar o al expandir el checkpoint.",
+        "add": "Añadir checkpoint"
+      },
+      "addCp": "Añadir checkpoint",
+      "editCp": "Editar checkpoint",
+      "deleteCp": "Eliminar checkpoint",
+      "reorder": "Arrastrar para reordenar",
+      "showDesc": "Ver descripción",
+      "hideDesc": "Ocultar descripción",
+      "groupEmpty": "Sin checkpoints en este grupo todavía.",
+      "checkpoints": "checkpoints",
+      "changeOrigin": "Cambiar origen",
+      "unsaved": "Cambios sin guardar",
+      "saveChecklist": "Guardar checklist",
+      "saved": "Checklist guardado",
+      "discardConfirm": "¿Descartar los cambios sin guardar?",
+      "fixedNote": "Los grupos (Visual, Funcional, Documental) son fijos; aquí solo colocas checkpoints dentro de ellos."
+    },
+    "tipos": {
+      "created": "Tipo creado",
+      "updated": "Tipo actualizado",
+      "deleted": "Tipo eliminado",
+      "confirmDelete": "¿Eliminar el tipo «{{nombre}}»?",
+      "create": "Nuevo tipo",
+      "createBtn": "Crear tipo",
+      "delete": "Eliminar tipo",
+      "newTitle": "Nuevo tipo de elemento",
+      "newSub": "Alta de tipo",
+      "unnamed": "Tipo sin nombre",
+      "noFamilia": "Sin familia",
+      "manageFamilias": "Familias",
+      "empty": "No hay tipos de elemento",
+      "emptyHint": "Crea el primer tipo con el botón «Nuevo tipo».",
+      "tabsAria": "Secciones del tipo",
+      "tabs": {
+        "general": "General",
+        "campos": "Campos personalizados",
+        "checklist": "Checklist"
+      },
+      "charTitle": "Caracterización",
+      "field": {
+        "familia": "Familia",
+        "nombre": "Nombre del tipo",
+        "validez": "Validez revisiones",
+        "normas": "Normas"
+      },
+      "nombrePlaceholder": "p. ej. Arnés anticaídas",
+      "validezUnit": "meses desde última revisión APTA",
+      "normasPlaceholder": "Buscar y añadir norma…",
+      "normasEmpty": "Ninguna norma coincide",
+      "fechasTitle": "Fechas de referencia",
+      "fechas": {
+        "fabricacion": "Fabricación",
+        "instalacion": "Instalación",
+        "suministro": "Suministro",
+        "puesta_servicio": "Puesta en servicio"
+      },
+      "vidaUtil": "Vida útil máxima (años)",
+      "vidaUtilShort": "Vida útil máx. {{n}} años",
+      "fechasEmpty": "Ninguna fecha de referencia en uso.",
+      "statsTitle": "Estadísticas",
+      "stats": {
+        "elementos": "Nº de elementos de este tipo",
+        "modelos": "Nº de modelos de este tipo"
+      },
+      "infoTable": "Tabla informativa.",
+      "campos": {
+        "notice": "Los campos personalizados del tipo se gestionan en el área de configuración.",
+        "empty": "Aún no hay campos personalizados que mostrar."
+      },
+      "checklist": {
+        "notice": "El checklist del tipo se gestiona en el área de configuración.",
+        "empty": "Aún no hay checklist que mostrar."
+      },
+      "cols": {
+        "familia": "Familia",
+        "nombre": "Tipo de elemento",
+        "normas": "Normas",
+        "checklist": "Checklist",
+        "campos": "Campos personalizados",
+        "elementos": "Nº de elementos"
+      },
+      "familias": {
+        "title": "Familias",
+        "sub": "Agrupación funcional · a gusto del tenant",
+        "hint": "Las familias son la primera capa de clasificación. Pueden ser dos grandes mundos (EPIs / Sistemas) o más granulares — como prefiera el tenant.",
+        "empty": "No hay familias todavía.",
+        "count": "{{n}} tipos",
+        "reorder": "Arrastrar para reordenar",
+        "newPlaceholder": "Nueva familia…",
+        "addBtn": "Añadir",
+        "added": "Familia creada",
+        "deleted": "Familia eliminada",
+        "confirmDelete": "¿Eliminar la familia «{{nombre}}»?",
+        "cantDelete": "No se puede borrar: tiene tipos"
+      }
+    }
+  },
   "shell": {
     "search": "Buscar…",
     "nav": {
@@ -682,6 +960,11 @@
       "clientesContactos": "Contactos",
       "clientesGrupos": "Grupos de clientes",
       "emplazamientos": "Emplazamientos",
+      "configuracion": "Configuración",
+      "configNormativa": "Normativa",
+      "configCampos": "Campos personalizados",
+      "configChecklists": "Checklists",
+      "configTipos": "Familias y tipos",
       "roles": "Roles",
       "rolesMatrix": "Matriz de permisos",
       "gruposClientes": "Grupos de clientes",

@@ -8,6 +8,8 @@
     "search": "Search",
     "loading": "Loading...",
     "error": "An error occurred",
+    "close": "Close",
+    "required": "Required",
     "status": "Status",
     "active": "Active",
     "inactive": "Inactive",
@@ -669,6 +671,282 @@
       "usuarios": "Members"
     }
   },
+  "cfg": {
+    "placeholderTitle": "Screen under construction",
+    "placeholderBody": "This Settings screen will be wired up later, one view at a time.",
+    "normativa": {
+      "create": "New standard",
+      "empty": "No standards yet.",
+      "emptyHint": "Create the first standard in the catalogue.",
+      "search": "Search by code or description…",
+      "section": "Identification",
+      "detail": "Details",
+      "newTitle": "New standard",
+      "editTitle": "Edit standard",
+      "close": "Close",
+      "delete": "Delete standard",
+      "cols": {
+        "codigo": "Standard",
+        "descripcion": "Description"
+      },
+      "field": {
+        "codigo": "Standard code",
+        "codigoPlaceholder": "e.g. UNE-EN 361:2002",
+        "descripcion": "Description",
+        "descripcionPlaceholder": "Scope and subject of the standard…",
+        "descripcionHint": "Briefly describe the equipment or situation this standard regulates."
+      },
+      "codigoWarning": "WARNING: only change the standard code for minor edits, such as whether to include the country code or the version year.\n\nNever change the standard itself, as it is linked to element types, checklists, custom fields, etc.",
+      "confirmDelete": "Delete the standard “{{codigo}}”?",
+      "created": "Standard created",
+      "updated": "Standard updated",
+      "deleted": "Standard deleted"
+    },
+    "campos": {
+      "create": "New field",
+      "tabsAria": "Custom field views",
+      "tabs": {
+        "listado": "Field list",
+        "pornorma": "Fields by standard",
+        "portipo": "Fields by type"
+      },
+      "catalog": "Field catalogue",
+      "searchField": "Search field by name, ID or type…",
+      "fieldSingular": "field",
+      "fieldPlural": "fields",
+      "col": {
+        "nombre": "Name",
+        "tipo": "Field type",
+        "valores": "Values",
+        "usos": "Uses",
+        "descripcion": "Description"
+      },
+      "usosTitle": "Number of standards using it",
+      "usosLabel": "Uses",
+      "tipoLabel": "Field type",
+      "familiaLabel": "Family",
+      "tipo": {
+        "numero_entero": "Integer",
+        "numero_decimal": "Decimal",
+        "texto": "Text",
+        "booleano": "Yes / No",
+        "fecha": "Date",
+        "select": "Select",
+        "select_multiple": "Multi-select"
+      },
+      "familia": {
+        "numerico": "Numeric",
+        "seleccion": "Selection",
+        "texto": "Text",
+        "logico": "Yes / No",
+        "fecha": "Date"
+      },
+      "newTitle": "New field",
+      "unnamed": "Unnamed field",
+      "detail": "Details",
+      "definition": "Definition",
+      "field": {
+        "label": "Field label",
+        "tipo": "Field type",
+        "descripcion": "Description"
+      },
+      "labelPlaceholder": "Visible field name",
+      "descPlaceholder": "Help text for whoever fills in this field…",
+      "optional": "optional",
+      "range": "Allowed range",
+      "min": "Minimum value",
+      "max": "Maximum value",
+      "noLimit": "No limit",
+      "options": "Options",
+      "multiSel": "multi-select",
+      "singleSel": "single select",
+      "noOptions": "No options.",
+      "optionsEmpty": "No options. Add at least one.",
+      "optionPlaceholder": "Option text…",
+      "addOption": "Add option",
+      "removeOption": "Remove option",
+      "reorder": "Drag to reorder",
+      "usage": "Usage",
+      "noNormas": "No standards assigned.",
+      "removeNorma": "Remove standard",
+      "addNorma": "Add standard to field",
+      "searchNorma": "Search standard…",
+      "allNormasAssigned": "The field is already assigned to all standards.",
+      "noNormaMatch": "No standard matches.",
+      "created": "Field created",
+      "updated": "Field updated",
+      "deleted": "Field deleted",
+      "confirmDelete": "Delete the field “{{label}}”?",
+      "createBtn": "Create field",
+      "delete": "Delete field",
+      "removeFromNorma": "Remove {{label}} from the standard",
+      "noFields": "No fields",
+      "normsWithFields": "Standards with fields",
+      "noFieldsYet": "No fields yet",
+      "intro": {
+        "q": "What are fields by standard for?",
+        "sub": "By assigning catalogue fields to standards, each element type's custom-field set is generated automatically from the standards that apply to it.",
+        "cta": "Use the standards column on the left to view and edit each standard's fields."
+      },
+      "assignFirst": "Assign a catalogue field to the standard",
+      "assignAnother": "Assign another catalogue field to the standard",
+      "searchCatalog": "Search catalogue field…",
+      "allAssigned": "All catalogue fields are already assigned to this standard.",
+      "noFieldMatch": "No catalogue field matches.",
+      "portipo": {
+        "title": "Fields by element type",
+        "body": "This view will compose each element type's fields from its standards. It will be available once the Element Types module is built."
+      }
+    },
+    "checklists": {
+      "tabsAria": "Checklist views",
+      "tabs": {
+        "personalizacion": "Personalization",
+        "tipos": "Checklists by type"
+      },
+      "searchType": "Search type or standard…",
+      "typesAria": "Element types",
+      "noNorma": "no standard",
+      "modeIA": "AI",
+      "modeIAlong": "AI-suggested",
+      "modeManual": "Manual",
+      "eje": {
+        "visual": "Visual",
+        "funcional": "Functional",
+        "documental": "Documentary"
+      },
+      "dial": {
+        "aria": "Checklist starting point",
+        "q": "How do you want to create the checklist for",
+        "sub": "Choose a starting point. You can change it later.",
+        "iaTitle": "Load AI-suggested checklist",
+        "iaDesc": "Starts from a set of checkpoints generated automatically from the standards that apply to the element type.",
+        "iaNoNormas": "This type has no standards assigned, so there is no checklist to suggest. Create it manually.",
+        "counting": "Calculating…",
+        "nSug_one": "{{count}} suggested checkpoint",
+        "nSug_other": "{{count}} suggested checkpoints",
+        "noSugFor": "no suggestable checkpoints for {{normas}}",
+        "manualTitle": "Create checklist manually",
+        "manualDesc": "Start from scratch: add your own checkpoints one by one."
+      },
+      "pick": {
+        "q": "Select an element type",
+        "sub": "Pick a type in the list to view or edit its checklist."
+      },
+      "pers": {
+        "title": "Checklist personalization",
+        "body": "Instance configuration (checkpoint grouping and result scale) will be wired in a later iteration."
+      },
+      "sheet": {
+        "newTitle": "New checkpoint",
+        "editTitle": "Edit checkpoint",
+        "subNew": "Add to the type's checklist",
+        "subEdit": "Type's checklist",
+        "grupo": "Group",
+        "grupoHint": "The group classifies the checkpoint by inspection axis.",
+        "enunciado": "Statement",
+        "enunciadoPlaceholder": "e.g. Webbing and straps free of cuts, wear or abrasion",
+        "enunciadoHint": "Write it as an affirmative statement of condition: what must hold for the point to pass.",
+        "descripcion": "Description",
+        "descripcionOpt": "(extended text · optional)",
+        "descripcionPlaceholder": "Context, technical criterion or clarification. Only shown when editing or expanding the checkpoint.",
+        "add": "Add checkpoint"
+      },
+      "addCp": "Add checkpoint",
+      "editCp": "Edit checkpoint",
+      "deleteCp": "Delete checkpoint",
+      "reorder": "Drag to reorder",
+      "showDesc": "Show description",
+      "hideDesc": "Hide description",
+      "groupEmpty": "No checkpoints in this group yet.",
+      "checkpoints": "checkpoints",
+      "changeOrigin": "Change origin",
+      "unsaved": "Unsaved changes",
+      "saveChecklist": "Save checklist",
+      "saved": "Checklist saved",
+      "discardConfirm": "Discard unsaved changes?",
+      "fixedNote": "Groups (Visual, Functional, Documentary) are fixed; here you only place checkpoints within them."
+    },
+    "tipos": {
+      "created": "Type created",
+      "updated": "Type updated",
+      "deleted": "Type deleted",
+      "confirmDelete": "Delete type “{{nombre}}”?",
+      "create": "New type",
+      "createBtn": "Create type",
+      "delete": "Delete type",
+      "newTitle": "New element type",
+      "newSub": "New type",
+      "unnamed": "Unnamed type",
+      "noFamilia": "No family",
+      "manageFamilias": "Families",
+      "empty": "No element types",
+      "emptyHint": "Create the first type with the “New type” button.",
+      "tabsAria": "Type sections",
+      "tabs": {
+        "general": "General",
+        "campos": "Custom fields",
+        "checklist": "Checklist"
+      },
+      "charTitle": "Characterization",
+      "field": {
+        "familia": "Family",
+        "nombre": "Type name",
+        "validez": "Inspection validity",
+        "normas": "Standards"
+      },
+      "nombrePlaceholder": "e.g. Fall-arrest harness",
+      "validezUnit": "months since last PASS inspection",
+      "normasPlaceholder": "Search and add standard…",
+      "normasEmpty": "No standard matches",
+      "fechasTitle": "Reference dates",
+      "fechas": {
+        "fabricacion": "Manufacture",
+        "instalacion": "Installation",
+        "suministro": "Supply",
+        "puesta_servicio": "Commissioning"
+      },
+      "vidaUtil": "Max. service life (years)",
+      "vidaUtilShort": "Max. service life {{n}} years",
+      "fechasEmpty": "No reference date in use.",
+      "statsTitle": "Statistics",
+      "stats": {
+        "elementos": "Elements of this type",
+        "modelos": "Models of this type"
+      },
+      "infoTable": "Informative table.",
+      "campos": {
+        "notice": "The type's custom fields are managed in the configuration area.",
+        "empty": "No custom fields to show yet."
+      },
+      "checklist": {
+        "notice": "The type's checklist is managed in the configuration area.",
+        "empty": "No checklist to show yet."
+      },
+      "cols": {
+        "familia": "Family",
+        "nombre": "Element type",
+        "normas": "Standards",
+        "checklist": "Checklist",
+        "campos": "Custom fields",
+        "elementos": "No. of elements"
+      },
+      "familias": {
+        "title": "Families",
+        "sub": "Functional grouping · tenant's choice",
+        "hint": "Families are the first classification layer. They can be two broad worlds (PPE / Systems) or more granular — as the tenant prefers.",
+        "empty": "No families yet.",
+        "count": "{{n}} types",
+        "reorder": "Drag to reorder",
+        "newPlaceholder": "New family…",
+        "addBtn": "Add",
+        "added": "Family created",
+        "deleted": "Family deleted",
+        "confirmDelete": "Delete family “{{nombre}}”?",
+        "cantDelete": "Cannot delete: has types"
+      }
+    }
+  },
   "shell": {
     "search": "Search…",
     "nav": {
@@ -682,6 +960,11 @@
       "clientesContactos": "Contacts",
       "clientesGrupos": "Customer groups",
       "emplazamientos": "Locations",
+      "configuracion": "Settings",
+      "configNormativa": "Standards",
+      "configCampos": "Custom fields",
+      "configChecklists": "Checklists",
+      "configTipos": "Families & types",
       "roles": "Roles",
       "rolesMatrix": "Permissions matrix",
       "gruposClientes": "Customer groups",
