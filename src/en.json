@@ -687,7 +687,14 @@
       "delete": "Delete standard",
       "cols": {
         "codigo": "Standard",
-        "descripcion": "Description"
+        "descripcion": "Description",
+        "checkpoints": "Checkpoints",
+        "checkpointsTitle": "Number of canon checkpoints",
+        "campos": "Fields",
+        "camposTitle": "Number of suggested fields"
+      },
+      "tabs": {
+        "general": "General"
       },
       "field": {
         "codigo": "Standard code",

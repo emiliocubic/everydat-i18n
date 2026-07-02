@@ -687,7 +687,14 @@
       "delete": "Eliminar norma",
       "cols": {
         "codigo": "Norma",
-        "descripcion": "Descripción"
+        "descripcion": "Descripción",
+        "checkpoints": "Checkpoints",
+        "checkpointsTitle": "Nº de checkpoints del canon",
+        "campos": "Campos",
+        "camposTitle": "Nº de campos sugeridos"
+      },
+      "tabs": {
+        "general": "General"
       },
       "field": {
         "codigo": "Código de norma",

@@ -687,7 +687,14 @@
       "delete": "Supprimer la norme",
       "cols": {
         "codigo": "Norme",
-        "descripcion": "Description"
+        "descripcion": "Description",
+        "checkpoints": "Points de contrôle",
+        "checkpointsTitle": "Nombre de points de contrôle du canon",
+        "campos": "Champs",
+        "camposTitle": "Nombre de champs suggérés"
+      },
+      "tabs": {
+        "general": "Général"
       },
       "field": {
         "codigo": "Code de la norme",
