@@ -810,8 +810,28 @@
       "allAssigned": "Todos los campos del catálogo ya están asignados a esta norma.",
       "noFieldMatch": "Ningún campo del catálogo coincide.",
       "portipo": {
-        "title": "Campos por tipo de elemento",
-        "body": "Esta vista compondrá los campos de cada tipo de elemento a partir de sus normas. Estará disponible cuando se cree el módulo de Tipos de Elemento."
+        "intro": {
+          "q": "¿Cómo se componen los campos por tipo de elemento?",
+          "sub": "Cada tipo parte de los campos de sus normas: vuélcalos con un clic y ajusta después la lista libremente, añadiendo o quitando campos del catálogo y marcando cuáles son obligatorios.",
+          "cta": "Elige un tipo de elemento en la lista para ver y editar sus campos."
+        },
+        "searchTipo": "Buscar tipo o norma…",
+        "tiposAria": "Tipos de elemento",
+        "sinNormas": "sin normas",
+        "note": "La norma sugiere, el tipo decide: los campos volcados desde las normas se editan como cualquier otro.",
+        "volcarBtn_one": "Asignar {{count}} campo de las normas del tipo",
+        "volcarBtn_other": "Asignar {{count}} campos de las normas del tipo",
+        "removeFromTipo": "Quitar {{label}} del tipo",
+        "assignFirst": "Asignar campo de catálogo al tipo",
+        "assignAnother": "Asignar otro campo de catálogo al tipo",
+        "allAssigned": "Todos los campos del catálogo ya están asignados a este tipo.",
+        "defineSpecific": "Definir campo específico del tipo",
+        "origenCol": "Origen",
+        "origenDirecto": "Directo",
+        "origenHerencia": "Heredado de la norma {{codigo}}",
+        "oblig": "Obligatorio",
+        "obligTitle": "Exigido al registrar un elemento de este tipo",
+        "obligAria": "Marcar {{label}} como obligatorio"
       },
       "origen": {
         "canon": "Canon",
@@ -834,9 +854,6 @@
       "searchType": "Buscar tipo o norma…",
       "typesAria": "Tipos de elemento",
       "noNorma": "sin norma",
-      "modeIA": "IA",
-      "modeIAlong": "Sugerido por IA",
-      "modeManual": "Manual",
       "eje": {
         "visual": "Visual",
         "funcional": "Funcional",
@@ -845,7 +862,7 @@
       "dial": {
         "aria": "Punto de partida del checklist",
         "q": "¿Cómo quieres crear el checklist de",
-        "sub": "Elige un punto de partida. Podrás cambiarlo más adelante.",
+        "sub": "Elige un punto de partida; después podrás editar el checklist libremente.",
         "iaTitle": "Cargar checklist sugerido por IA",
         "iaDesc": "Parte de una colección de checkpoints generados automáticamente a partir de la normativa que aplica al tipo de elemento.",
         "iaNoNormas": "Este tipo no tiene normas asignadas, así que no hay checklist que sugerir. Créalo manualmente.",
@@ -861,8 +878,51 @@
         "sub": "Elige un tipo en la lista para ver o editar su checklist."
       },
       "pers": {
-        "title": "Personalización de checklists",
-        "body": "La configuración de instancia (agrupación de checkpoints y escala de resultados) se conectará en una iteración posterior."
+        "mockNote": "Maqueta: propuesta visual de la personalización de checklists. Aún sin funcionamiento; se estudiará en una iteración posterior.",
+        "grupos": {
+          "title": "Agrupación de checkpoints",
+          "sub": "Decide si los checkpoints de cada checklist se reparten en grupos y de qué forma.",
+          "none": {
+            "title": "No utilizar grupos",
+            "desc": "Todos los checkpoints forman una lista única, sin separar por grupos."
+          },
+          "fixed": {
+            "title": "Utilizar grupos fijos",
+            "desc": "Los checkpoints se distribuyen en grupos, y esos grupos son los mismos en todos los checklists."
+          },
+          "variable": {
+            "title": "Utilizar grupos variables",
+            "desc": "Los checkpoints se distribuyen en grupos, y esos grupos se definen caso por caso en cada checklist."
+          },
+          "add": "Añadir grupo",
+          "iaTag": "IA",
+          "infoNames": "Visual, Funcional y Documental",
+          "info1": "son los grupos en los que la sugerencia por IA reparte sus checkpoints automáticamente.",
+          "info2": "Si renombras o eliminas alguno, esos checkpoints dejan de tener grupo y tendrás que recolocarlos. Cambiar su color o añadir grupos nuevos no les afecta."
+        },
+        "marcas": {
+          "title": "Resultados posibles del checkpoint",
+          "sub": "Define las marcas con las que se podrá resolver cada checkpoint durante una revisión.",
+          "basica": {
+            "title": "Apto / No apto / No aplica",
+            "desc": "Las tres marcas básicas para una resolución directa."
+          },
+          "ampliada": {
+            "title": "Escala ampliada de estado",
+            "desc": "Seis marcas para graduar el estado y la acción a tomar sobre el elemento."
+          },
+          "propia": {
+            "title": "Configurar mi propia lista de marcas",
+            "desc": "Crea tus propias marcas; a cada una le asignas un color que la acompaña."
+          },
+          "apto": "Apto",
+          "noApto": "No apto",
+          "na": "No aplica",
+          "vigilar": "Apto - Vigilar",
+          "reparar": "Reparar",
+          "desechar": "Desechar - propietario",
+          "retirado": "Retirado"
+        }
       },
       "sheet": {
         "newTitle": "Nuevo checkpoint",
@@ -887,7 +947,6 @@
       "hideDesc": "Ocultar descripción",
       "groupEmpty": "Sin checkpoints en este grupo todavía.",
       "checkpoints": "checkpoints",
-      "changeOrigin": "Cambiar origen",
       "unsaved": "Cambios sin guardar",
       "saveChecklist": "Guardar checklist",
       "saved": "Checklist guardado",
@@ -954,7 +1013,7 @@
         "familia": "Familia",
         "nombre": "Tipo de elemento",
         "normas": "Normas",
-        "checklist": "Checklist",
+        "checklist": "Checkpoints",
         "campos": "Campos personalizados",
         "elementos": "Nº de elementos"
       },
@@ -990,6 +1049,7 @@
       "configuracion": "Configuración",
       "configNormativa": "Normativa",
       "configCampos": "Campos personalizados",
+      "configModelos": "Marcas y modelos",
       "configChecklists": "Checklists",
       "configTipos": "Familias y tipos",
       "roles": "Roles",

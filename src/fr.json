@@ -810,8 +810,28 @@
       "allAssigned": "Tous les champs du catalogue sont déjà assignés à cette norme.",
       "noFieldMatch": "Aucun champ du catalogue ne correspond.",
       "portipo": {
-        "title": "Champs par type d'élément",
-        "body": "Cette vue composera les champs de chaque type d'élément à partir de ses normes. Elle sera disponible une fois le module Types d'élément créé."
+        "intro": {
+          "q": "Comment se composent les champs par type d'élément ?",
+          "sub": "Chaque type part des champs de ses normes : versez-les en un clic, puis ajustez librement la liste — ajoutez ou retirez des champs du catalogue et indiquez lesquels sont obligatoires.",
+          "cta": "Choisissez un type d'élément dans la liste pour voir et modifier ses champs."
+        },
+        "searchTipo": "Rechercher un type ou une norme…",
+        "tiposAria": "Types d'élément",
+        "sinNormas": "sans normes",
+        "note": "La norme suggère, le type décide : les champs versés depuis les normes se modifient comme les autres.",
+        "volcarBtn_one": "Assigner {{count}} champ des normes du type",
+        "volcarBtn_other": "Assigner {{count}} champs des normes du type",
+        "removeFromTipo": "Retirer {{label}} du type",
+        "assignFirst": "Assigner un champ du catalogue au type",
+        "assignAnother": "Assigner un autre champ du catalogue au type",
+        "allAssigned": "Tous les champs du catalogue sont déjà assignés à ce type.",
+        "defineSpecific": "Définir un champ spécifique au type",
+        "origenCol": "Origine",
+        "origenDirecto": "Direct",
+        "origenHerencia": "Hérité de la norme {{codigo}}",
+        "oblig": "Obligatoire",
+        "obligTitle": "Exigé lors de l'enregistrement d'un élément de ce type",
+        "obligAria": "Marquer {{label}} comme obligatoire"
       },
       "origen": {
         "canon": "Canon",
@@ -834,9 +854,6 @@
       "searchType": "Rechercher un type ou une norme…",
       "typesAria": "Types d'élément",
       "noNorma": "sans norme",
-      "modeIA": "IA",
-      "modeIAlong": "Suggéré par l'IA",
-      "modeManual": "Manuel",
       "eje": {
         "visual": "Visuel",
         "funcional": "Fonctionnel",
@@ -845,7 +862,7 @@
       "dial": {
         "aria": "Point de départ de la checklist",
         "q": "Comment voulez-vous créer la checklist de",
-        "sub": "Choisissez un point de départ. Vous pourrez le modifier plus tard.",
+        "sub": "Choisissez un point de départ ; vous pourrez ensuite modifier librement la checklist.",
         "iaTitle": "Charger la checklist suggérée par l'IA",
         "iaDesc": "Part d'un ensemble de points de contrôle générés automatiquement à partir des normes applicables au type d'élément.",
         "iaNoNormas": "Ce type n'a aucune norme assignée, il n'y a donc pas de checklist à suggérer. Créez-la manuellement.",
@@ -861,8 +878,51 @@
         "sub": "Choisissez un type dans la liste pour voir ou modifier sa checklist."
       },
       "pers": {
-        "title": "Personnalisation des checklists",
-        "body": "La configuration d'instance (regroupement des points de contrôle et échelle de résultats) sera connectée dans une itération ultérieure."
+        "mockNote": "Maquette : proposition visuelle de la personnalisation des checklists. Pas encore fonctionnelle ; à étudier dans une itération ultérieure.",
+        "grupos": {
+          "title": "Regroupement des points de contrôle",
+          "sub": "Décidez si les points de contrôle de chaque checklist sont répartis en groupes, et comment.",
+          "none": {
+            "title": "Sans groupes",
+            "desc": "Tous les points de contrôle forment une liste unique, sans regroupement."
+          },
+          "fixed": {
+            "title": "Groupes fixes",
+            "desc": "Les points de contrôle sont répartis en groupes, identiques dans toutes les checklists."
+          },
+          "variable": {
+            "title": "Groupes variables",
+            "desc": "Les points de contrôle sont répartis en groupes, définis au cas par cas dans chaque checklist."
+          },
+          "add": "Ajouter un groupe",
+          "iaTag": "IA",
+          "infoNames": "Visuel, Fonctionnel et Documentaire",
+          "info1": "sont les groupes dans lesquels la suggestion par IA répartit automatiquement ses points de contrôle.",
+          "info2": "Si vous en renommez ou supprimez un, ces points de contrôle perdent leur groupe et devront être replacés. Changer leur couleur ou ajouter de nouveaux groupes ne les affecte pas."
+        },
+        "marcas": {
+          "title": "Résultats possibles du point de contrôle",
+          "sub": "Définissez les marques permettant de résoudre chaque point de contrôle pendant une révision.",
+          "basica": {
+            "title": "Apte / Non apte / Non applicable",
+            "desc": "Les trois marques de base pour une résolution directe."
+          },
+          "ampliada": {
+            "title": "Échelle d'état étendue",
+            "desc": "Six marques pour graduer l'état et l'action à mener sur l'élément."
+          },
+          "propia": {
+            "title": "Configurer ma propre liste de marques",
+            "desc": "Créez vos propres marques ; chacune reçoit une couleur qui l'accompagne."
+          },
+          "apto": "Apte",
+          "noApto": "Non apte",
+          "na": "Non applicable",
+          "vigilar": "Apte - Surveiller",
+          "reparar": "Réparer",
+          "desechar": "Mettre au rebut - propriétaire",
+          "retirado": "Retiré"
+        }
       },
       "sheet": {
         "newTitle": "Nouveau point de contrôle",
@@ -887,7 +947,6 @@
       "hideDesc": "Masquer la description",
       "groupEmpty": "Aucun point de contrôle dans ce groupe pour l'instant.",
       "checkpoints": "points de contrôle",
-      "changeOrigin": "Changer l'origine",
       "unsaved": "Modifications non enregistrées",
       "saveChecklist": "Enregistrer la checklist",
       "saved": "Checklist enregistrée",
@@ -954,7 +1013,7 @@
         "familia": "Famille",
         "nombre": "Type d'élément",
         "normas": "Normes",
-        "checklist": "Checklist",
+        "checklist": "Points de contrôle",
         "campos": "Champs personnalisés",
         "elementos": "Nb d'éléments"
       },
@@ -990,6 +1049,7 @@
       "configuracion": "Configuration",
       "configNormativa": "Normes",
       "configCampos": "Champs personnalisés",
+      "configModelos": "Marques et modèles",
       "configChecklists": "Checklists",
       "configTipos": "Familles et types",
       "roles": "Rôles",

@@ -810,8 +810,28 @@
       "allAssigned": "All catalogue fields are already assigned to this standard.",
       "noFieldMatch": "No catalogue field matches.",
       "portipo": {
-        "title": "Fields by element type",
-        "body": "This view will compose each element type's fields from its standards. It will be available once the Element Types module is built."
+        "intro": {
+          "q": "How are fields composed for each element type?",
+          "sub": "Each type starts from the fields of its standards: pour them in with one click, then adjust the list freely — add or remove catalog fields and mark which ones are required.",
+          "cta": "Pick an element type in the list to view and edit its fields."
+        },
+        "searchTipo": "Search type or standard…",
+        "tiposAria": "Element types",
+        "sinNormas": "no standards",
+        "note": "The standard suggests, the type decides: fields poured from the standards are editable like any other.",
+        "volcarBtn_one": "Assign {{count}} field from the type's standards",
+        "volcarBtn_other": "Assign {{count}} fields from the type's standards",
+        "removeFromTipo": "Remove {{label}} from the type",
+        "assignFirst": "Assign a catalog field to the type",
+        "assignAnother": "Assign another catalog field to the type",
+        "allAssigned": "All catalog fields are already assigned to this type.",
+        "defineSpecific": "Define a type-specific field",
+        "origenCol": "Source",
+        "origenDirecto": "Direct",
+        "origenHerencia": "Inherited from standard {{codigo}}",
+        "oblig": "Required",
+        "obligTitle": "Required when registering an element of this type",
+        "obligAria": "Mark {{label}} as required"
       },
       "origen": {
         "canon": "Canon",
@@ -834,9 +854,6 @@
       "searchType": "Search type or standard…",
       "typesAria": "Element types",
       "noNorma": "no standard",
-      "modeIA": "AI",
-      "modeIAlong": "AI-suggested",
-      "modeManual": "Manual",
       "eje": {
         "visual": "Visual",
         "funcional": "Functional",
@@ -845,7 +862,7 @@
       "dial": {
         "aria": "Checklist starting point",
         "q": "How do you want to create the checklist for",
-        "sub": "Choose a starting point. You can change it later.",
+        "sub": "Choose a starting point; you can freely edit the checklist afterwards.",
         "iaTitle": "Load AI-suggested checklist",
         "iaDesc": "Starts from a set of checkpoints generated automatically from the standards that apply to the element type.",
         "iaNoNormas": "This type has no standards assigned, so there is no checklist to suggest. Create it manually.",
@@ -861,8 +878,51 @@
         "sub": "Pick a type in the list to view or edit its checklist."
       },
       "pers": {
-        "title": "Checklist personalization",
-        "body": "Instance configuration (checkpoint grouping and result scale) will be wired in a later iteration."
+        "mockNote": "Mock-up: visual proposal for checklist personalization. Not functional yet; to be studied in a later iteration.",
+        "grupos": {
+          "title": "Checkpoint grouping",
+          "sub": "Decide whether the checkpoints of each checklist are split into groups, and how.",
+          "none": {
+            "title": "No groups",
+            "desc": "All checkpoints form a single list, with no grouping."
+          },
+          "fixed": {
+            "title": "Fixed groups",
+            "desc": "Checkpoints are distributed into groups, and those groups are the same across all checklists."
+          },
+          "variable": {
+            "title": "Variable groups",
+            "desc": "Checkpoints are distributed into groups, and those groups are defined case by case in each checklist."
+          },
+          "add": "Add group",
+          "iaTag": "AI",
+          "infoNames": "Visual, Functional and Documentary",
+          "info1": "are the groups into which the AI suggestion distributes its checkpoints automatically.",
+          "info2": "If you rename or delete any of them, those checkpoints lose their group and you will have to reassign them. Changing their color or adding new groups does not affect them."
+        },
+        "marcas": {
+          "title": "Possible checkpoint results",
+          "sub": "Define the marks used to resolve each checkpoint during an inspection.",
+          "basica": {
+            "title": "Pass / Fail / Not applicable",
+            "desc": "The three basic marks for a direct resolution."
+          },
+          "ampliada": {
+            "title": "Extended condition scale",
+            "desc": "Six marks to grade the condition and the action to take on the element."
+          },
+          "propia": {
+            "title": "Configure my own list of marks",
+            "desc": "Create your own marks; each one gets a color of its own."
+          },
+          "apto": "Pass",
+          "noApto": "Fail",
+          "na": "Not applicable",
+          "vigilar": "Pass - Monitor",
+          "reparar": "Repair",
+          "desechar": "Discard - owner",
+          "retirado": "Withdrawn"
+        }
       },
       "sheet": {
         "newTitle": "New checkpoint",
@@ -887,7 +947,6 @@
       "hideDesc": "Hide description",
       "groupEmpty": "No checkpoints in this group yet.",
       "checkpoints": "checkpoints",
-      "changeOrigin": "Change origin",
       "unsaved": "Unsaved changes",
       "saveChecklist": "Save checklist",
       "saved": "Checklist saved",
@@ -954,7 +1013,7 @@
         "familia": "Family",
         "nombre": "Element type",
         "normas": "Standards",
-        "checklist": "Checklist",
+        "checklist": "Checkpoints",
         "campos": "Custom fields",
         "elementos": "No. of elements"
       },
@@ -990,6 +1049,7 @@
       "configuracion": "Settings",
       "configNormativa": "Standards",
       "configCampos": "Custom fields",
+      "configModelos": "Brands & models",
       "configChecklists": "Checklists",
       "configTipos": "Families & types",
       "roles": "Roles",
