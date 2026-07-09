@@ -674,6 +674,63 @@
   "cfg": {
     "placeholderTitle": "Screen under construction",
     "placeholderBody": "This Settings screen will be wired up later, one view at a time.",
+    "catalogo": {
+      "empty": "The catalogue is empty.",
+      "emptyHint": "Import models from the sector repository or adjust the filter.",
+      "importCta": "Import from repository",
+      "origen": {
+        "local": "Local",
+        "sectorial": "Sector"
+      },
+      "cols": {
+        "origen": "Origin",
+        "fabricante": "Manufacturer",
+        "modelo": "Model",
+        "referencias": "References"
+      },
+      "importar": {
+        "title": "Import from the sector repository",
+        "subtitle": "Search a model by name or reference and add it to your catalogue.",
+        "placeholder": "Model name or reference…",
+        "hint": "Type at least 2 characters to search the sector repository.",
+        "noResults": "No matches in the repository.",
+        "alreadyImported": "Already imported",
+        "importBtn": "Import"
+      }
+    },
+    "modelos": {
+      "fabricante": "Manufacturer",
+      "empty": "Search for a model or filter by manufacturer.",
+      "emptyHint": "Type part of a name or code (model or reference), or add the manufacturer filter.",
+      "loadError": "Could not load the models from the repository.",
+      "upstreamError": "No connection to the sector repository. Check the core configuration (SECTORIAL_BASE_URL / SECTORIAL_TOKEN).",
+      "imported": "Model imported into the catalogue with {{n}} reference(s).",
+      "importError": "The model could not be imported.",
+      "importAction": "Import into catalogue",
+      "badge": {
+        "importado": "Imported"
+      },
+      "cols": {
+        "modelo": "Model",
+        "codigo": "Code",
+        "importado": "Imported",
+        "importadoTitle": "Models already materialised in the local catalogue",
+        "fabricante": "Manufacturer",
+        "referencias": "References",
+        "tipo": "Element type"
+      },
+      "sheet": {
+        "tipoTitle": "Element type",
+        "tipoPlaceholder": "Choose the element type…",
+        "tipoHint": "The imported model will be linked to this type; you can change it when registering each element.",
+        "normasTitle": "Model standards",
+        "referenciasTitle": "References to import ({{n}})",
+        "monoSku": "Single-reference model: a mirror reference with the same data will be created.",
+        "docsPendientes": "The manufacturer publishes {{n}} document(s) for this model. PDFs are not imported yet (asset delivery pending).",
+        "sinDocs": "Manufacturer documents (PDFs) are not imported yet in this trial.",
+        "importBtn": "Import into catalogue"
+      }
+    },
     "normativa": {
       "create": "New standard",
       "empty": "No standards yet.",
@@ -1046,10 +1103,11 @@
       "clientesContactos": "Contacts",
       "clientesGrupos": "Customer groups",
       "emplazamientos": "Locations",
+      "repositorioSectorial": "Sector repository",
       "configuracion": "Settings",
       "configNormativa": "Standards",
       "configCampos": "Custom fields",
-      "configModelos": "Brands & models",
+      "configModelos": "Catalogue",
       "configChecklists": "Checklists",
       "configTipos": "Families & types",
       "roles": "Roles",

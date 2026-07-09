@@ -674,6 +674,63 @@
   "cfg": {
     "placeholderTitle": "Écran en construction",
     "placeholderBody": "Cet écran de Configuration sera connecté plus tard, vue par vue.",
+    "catalogo": {
+      "empty": "Le catalogue est vide.",
+      "emptyHint": "Importez des modèles du référentiel sectoriel ou ajustez le filtre.",
+      "importCta": "Importer du référentiel",
+      "origen": {
+        "local": "Local",
+        "sectorial": "Sectoriel"
+      },
+      "cols": {
+        "origen": "Origine",
+        "fabricante": "Fabricant",
+        "modelo": "Modèle",
+        "referencias": "Références"
+      },
+      "importar": {
+        "title": "Importer du référentiel sectoriel",
+        "subtitle": "Recherchez un modèle par nom ou référence et ajoutez-le à votre catalogue.",
+        "placeholder": "Nom de modèle ou référence…",
+        "hint": "Saisissez au moins 2 caractères pour rechercher dans le référentiel sectoriel.",
+        "noResults": "Aucune correspondance dans le référentiel.",
+        "alreadyImported": "Déjà importé",
+        "importBtn": "Importer"
+      }
+    },
+    "modelos": {
+      "fabricante": "Fabricant",
+      "empty": "Recherchez un modèle ou filtrez par fabricant.",
+      "emptyHint": "Saisissez une partie d'un nom ou d'un code (modèle ou référence), ou ajoutez le filtre fabricant.",
+      "loadError": "Impossible de charger les modèles du référentiel.",
+      "upstreamError": "Pas de connexion au référentiel sectoriel. Vérifiez la configuration du core (SECTORIAL_BASE_URL / SECTORIAL_TOKEN).",
+      "imported": "Modèle importé dans le catalogue avec {{n}} référence(s).",
+      "importError": "Le modèle n'a pas pu être importé.",
+      "importAction": "Importer dans le catalogue",
+      "badge": {
+        "importado": "Importé"
+      },
+      "cols": {
+        "modelo": "Modèle",
+        "codigo": "Code",
+        "importado": "Importé",
+        "importadoTitle": "Modèles déjà matérialisés dans le catalogue local",
+        "fabricante": "Fabricant",
+        "referencias": "Références",
+        "tipo": "Type d'élément"
+      },
+      "sheet": {
+        "tipoTitle": "Type d'élément",
+        "tipoPlaceholder": "Choisissez le type d'élément…",
+        "tipoHint": "Le modèle importé sera associé à ce type ; vous pourrez le changer lors de la création de chaque élément.",
+        "normasTitle": "Normes du modèle",
+        "referenciasTitle": "Références à importer ({{n}})",
+        "monoSku": "Modèle à référence unique : une référence miroir avec les mêmes données sera créée.",
+        "docsPendientes": "Le fabricant publie {{n}} document(s) pour ce modèle. Les PDF ne sont pas encore importés (livraison des assets en attente).",
+        "sinDocs": "Les documents du fabricant (PDF) ne sont pas encore importés dans cet essai.",
+        "importBtn": "Importer dans le catalogue"
+      }
+    },
     "normativa": {
       "create": "Nouvelle norme",
       "empty": "Aucune norme pour l’instant.",
@@ -1046,10 +1103,11 @@
       "clientesContactos": "Contacts",
       "clientesGrupos": "Groupes de clients",
       "emplazamientos": "Sites",
+      "repositorioSectorial": "Référentiel sectoriel",
       "configuracion": "Configuration",
       "configNormativa": "Normes",
       "configCampos": "Champs personnalisés",
-      "configModelos": "Marques et modèles",
+      "configModelos": "Catalogue",
       "configChecklists": "Checklists",
       "configTipos": "Familles et types",
       "roles": "Rôles",
