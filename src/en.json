@@ -678,6 +678,37 @@
       "empty": "The catalogue is empty.",
       "emptyHint": "Import models from the sector repository or adjust the filter.",
       "importCta": "Import from repository",
+      "nuevoCta": "New model",
+      "nuevo": {
+        "title": "New local model",
+        "subtitle": "Add your own model with its manufacturer and references.",
+        "fabricanteTitle": "Manufacturer",
+        "fabricantePlaceholder": "Type or pick a manufacturer…",
+        "fabricanteHint": "If the name matches one in your catalogue it is reused; otherwise a new one is created.",
+        "modeloTitle": "Model",
+        "modeloPlaceholder": "Type or pick a model…",
+        "modeloDisabled": "Pick a manufacturer first",
+        "modeloCodigo": "Code (optional)",
+        "tipoPlaceholder": "No type for now…",
+        "addingRefsTo": "Adding references to “{{name}}”",
+        "referenciasTitle": "References",
+        "referenciasEmptyHint": "If you add no references, one will be created using the model code.",
+        "referenciasExistingHint": "Add the references you want to this model.",
+        "refCodigo": "Code / SKU",
+        "refNombre": "Name (optional)",
+        "refEan": "EAN (optional)",
+        "refAnadir": "Add reference",
+        "refQuitar": "Remove reference",
+        "saveBtn": "Create model",
+        "addRefsBtn": "Add references",
+        "created": "Model created with {{n}} reference(s).",
+        "refsAdded": "{{n}} reference(s) added.",
+        "error": "The model could not be created."
+      },
+      "pick": {
+        "existing": "Already in your catalogue",
+        "create": "Create “{{name}}”"
+      },
       "origen": {
         "local": "Local",
         "sectorial": "Sector"

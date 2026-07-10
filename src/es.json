@@ -678,6 +678,37 @@
       "empty": "El catálogo está vacío.",
       "emptyHint": "Importa modelos del repositorio sectorial o ajusta el filtro.",
       "importCta": "Importar del repositorio",
+      "nuevoCta": "Nuevo modelo",
+      "nuevo": {
+        "title": "Nuevo modelo local",
+        "subtitle": "Da de alta un modelo propio con su fabricante y sus referencias.",
+        "fabricanteTitle": "Fabricante",
+        "fabricantePlaceholder": "Escribe o elige un fabricante…",
+        "fabricanteHint": "Si el nombre coincide con uno de tu catálogo se reutiliza; si no, se crea uno nuevo.",
+        "modeloTitle": "Modelo",
+        "modeloPlaceholder": "Escribe o elige un modelo…",
+        "modeloDisabled": "Elige antes un fabricante",
+        "modeloCodigo": "Código (opcional)",
+        "tipoPlaceholder": "Sin tipo por ahora…",
+        "addingRefsTo": "Añadiendo referencias a «{{name}}»",
+        "referenciasTitle": "Referencias",
+        "referenciasEmptyHint": "Si no añades referencias, se creará una con el código del modelo.",
+        "referenciasExistingHint": "Añade las referencias que quieras a este modelo.",
+        "refCodigo": "Código / SKU",
+        "refNombre": "Nombre (opcional)",
+        "refEan": "EAN (opcional)",
+        "refAnadir": "Añadir referencia",
+        "refQuitar": "Quitar referencia",
+        "saveBtn": "Crear modelo",
+        "addRefsBtn": "Añadir referencias",
+        "created": "Modelo creado con {{n}} referencia(s).",
+        "refsAdded": "{{n}} referencia(s) añadida(s).",
+        "error": "No se pudo crear el modelo."
+      },
+      "pick": {
+        "existing": "Ya en tu catálogo",
+        "create": "Crear «{{name}}»"
+      },
       "origen": {
         "local": "Local",
         "sectorial": "Sectorial"

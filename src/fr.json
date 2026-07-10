@@ -678,6 +678,37 @@
       "empty": "Le catalogue est vide.",
       "emptyHint": "Importez des modèles du référentiel sectoriel ou ajustez le filtre.",
       "importCta": "Importer du référentiel",
+      "nuevoCta": "Nouveau modèle",
+      "nuevo": {
+        "title": "Nouveau modèle local",
+        "subtitle": "Ajoutez votre propre modèle avec son fabricant et ses références.",
+        "fabricanteTitle": "Fabricant",
+        "fabricantePlaceholder": "Saisissez ou choisissez un fabricant…",
+        "fabricanteHint": "Si le nom correspond à un fabricant de votre catalogue, il est réutilisé ; sinon, un nouveau est créé.",
+        "modeloTitle": "Modèle",
+        "modeloPlaceholder": "Saisissez ou choisissez un modèle…",
+        "modeloDisabled": "Choisissez d'abord un fabricant",
+        "modeloCodigo": "Code (facultatif)",
+        "tipoPlaceholder": "Aucun type pour l'instant…",
+        "addingRefsTo": "Ajout de références à « {{name}} »",
+        "referenciasTitle": "Références",
+        "referenciasEmptyHint": "Si vous n'ajoutez aucune référence, une sera créée avec le code du modèle.",
+        "referenciasExistingHint": "Ajoutez les références que vous voulez à ce modèle.",
+        "refCodigo": "Code / SKU",
+        "refNombre": "Nom (facultatif)",
+        "refEan": "EAN (facultatif)",
+        "refAnadir": "Ajouter une référence",
+        "refQuitar": "Retirer la référence",
+        "saveBtn": "Créer le modèle",
+        "addRefsBtn": "Ajouter des références",
+        "created": "Modèle créé avec {{n}} référence(s).",
+        "refsAdded": "{{n}} référence(s) ajoutée(s).",
+        "error": "Le modèle n'a pas pu être créé."
+      },
+      "pick": {
+        "existing": "Déjà dans votre catalogue",
+        "create": "Créer « {{name}} »"
+      },
       "origen": {
         "local": "Local",
         "sectorial": "Sectoriel"
