@@ -505,6 +505,7 @@
       "scope_bypass": "Scope bypass",
       "scope_bypass_hint": "This user sees all data within the tenant, ignoring the customer scope filter.",
       "account_type": "Account type",
+      "account_type_service_hint": "Technical M2M account: API only, no panel or app access.",
       "telefono": "Phone",
       "notas": "Notes",
       "status": "Status",
@@ -517,8 +518,7 @@
       "soporte_cubic": "Cubic Support",
       "tenant": "Internal worker",
       "colaborador_externo": "External collaborator",
-      "invitado": "Guest user",
-      "integracion_externa": "External integration"
+      "invitado": "Guest user"
     },
     "account_types": {
       "human": "Person",

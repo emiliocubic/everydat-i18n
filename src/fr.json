@@ -505,6 +505,7 @@
       "scope_bypass": "Contournement de scope",
       "scope_bypass_hint": "Cet utilisateur voit toutes les données du tenant, en ignorant le filtre de scope client.",
       "account_type": "Type de compte",
+      "account_type_service_hint": "Compte technique M2M : API uniquement, sans accès au panneau ni à l'app.",
       "telefono": "Téléphone",
       "notas": "Notes",
       "status": "Statut",
@@ -517,8 +518,7 @@
       "soporte_cubic": "Support Cubic",
       "tenant": "Employé interne",
       "colaborador_externo": "Collaborateur externe",
-      "invitado": "Utilisateur invité",
-      "integracion_externa": "Intégration externe"
+      "invitado": "Utilisateur invité"
     },
     "account_types": {
       "human": "Personne",
