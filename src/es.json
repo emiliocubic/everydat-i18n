@@ -421,6 +421,22 @@
       "colaborador_externo": "Nuevo colaborador",
       "invitado": "Nuevo usuario invitado"
     },
+    "soporteCreate": {
+      "title": "Nuevo usuario",
+      "subtitle": "Alta de usuario",
+      "perfilLabel": "Perfil",
+      "perfil": {
+        "superadmin": "Superadmin",
+        "superadminDesc": "Control total del tenant; incluye administrador.",
+        "administrador": "Administrador",
+        "administradorDesc": "Gestiona datos y usuarios del tenant.",
+        "operario": "Operario interno",
+        "operarioDesc": "App móvil de campo; sin acceso al panel.",
+        "colaborador": "Colaborador externo",
+        "colaboradorDesc": "Alcance limitado a los emplazamientos asignados."
+      },
+      "cuentaLabel": "Tipo de cuenta"
+    },
     "generatePassword": "Generar",
     "empty": "No hay usuarios.",
     "deactivate": "Dar de baja",
@@ -507,6 +523,9 @@
       "saveChanges": "Guardar cambios",
       "rolesPermisos": "Roles y permisos",
       "sinRoles": "Sin roles asignados",
+      "alcance": "Alcance",
+      "alcanceGlobalDataHint": "ve todos los datos de la instancia",
+      "alcanceLimitadoDataHint": "solo los datos de su scope asignado",
       "superadminDesc": "Control total del tenant: configuración, usuarios y todos los clientes.",
       "adminDesc": "Gestiona datos y usuarios del tenant.",
       "operDesc": "Opera en campo.",

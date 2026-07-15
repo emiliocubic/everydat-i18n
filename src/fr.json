@@ -485,6 +485,22 @@
       "colaborador_externo": "Nouveau collaborateur",
       "invitado": "Nouvel utilisateur invité"
     },
+    "soporteCreate": {
+      "title": "Nouvel utilisateur",
+      "subtitle": "Création d'utilisateur",
+      "perfilLabel": "Profil",
+      "perfil": {
+        "superadmin": "Superadmin",
+        "superadminDesc": "Contrôle total du tenant ; inclut administrateur.",
+        "administrador": "Administrateur",
+        "administradorDesc": "Gère les données et les utilisateurs du tenant.",
+        "operario": "Opérateur interne",
+        "operarioDesc": "Application mobile de terrain ; sans accès au panneau.",
+        "colaborador": "Collaborateur externe",
+        "colaboradorDesc": "Périmètre limité aux sites assignés."
+      },
+      "cuentaLabel": "Type de compte"
+    },
     "generatePassword": "Générer",
     "empty": "Aucun utilisateur trouvé.",
     "deactivate": "Désactiver",
@@ -571,6 +587,9 @@
       "saveChanges": "Enregistrer les modifications",
       "rolesPermisos": "Rôles et permissions",
       "sinRoles": "Aucun rôle assigné",
+      "alcance": "Portée",
+      "alcanceGlobalDataHint": "voit toutes les données de l'instance",
+      "alcanceLimitadoDataHint": "uniquement les données de sa portée assignée",
       "superadminDesc": "Contrôle total du tenant : configuration, utilisateurs et tous les clients.",
       "adminDesc": "Gère les données et utilisateurs du tenant.",
       "operDesc": "Opère sur le terrain.",

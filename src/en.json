@@ -485,6 +485,22 @@
       "colaborador_externo": "New collaborator",
       "invitado": "New guest user"
     },
+    "soporteCreate": {
+      "title": "New user",
+      "subtitle": "Create user",
+      "perfilLabel": "Profile",
+      "perfil": {
+        "superadmin": "Superadmin",
+        "superadminDesc": "Full control of the tenant; includes administrator.",
+        "administrador": "Administrator",
+        "administradorDesc": "Manages tenant data and users.",
+        "operario": "Internal operator",
+        "operarioDesc": "Field mobile app; no panel access.",
+        "colaborador": "External collaborator",
+        "colaboradorDesc": "Scope limited to assigned sites."
+      },
+      "cuentaLabel": "Account type"
+    },
     "generatePassword": "Generate",
     "empty": "No users found.",
     "deactivate": "Deactivate",
@@ -571,6 +587,9 @@
       "saveChanges": "Save changes",
       "rolesPermisos": "Roles and permissions",
       "sinRoles": "No roles assigned",
+      "alcance": "Scope",
+      "alcanceGlobalDataHint": "sees all data in the instance",
+      "alcanceLimitadoDataHint": "only the data in their assigned scope",
       "superadminDesc": "Full control of the tenant: configuration, users and all customers.",
       "adminDesc": "Manages tenant data and users.",
       "operDesc": "Operates in the field.",
