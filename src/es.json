@@ -779,6 +779,75 @@
         "docsPendientes": "El fabricante publica {{n}} documento(s) para este modelo. Los PDFs aún no se importan (entrega de assets pendiente).",
         "sinDocs": "Los documentos del fabricante (PDFs) aún no se importan en esta prueba.",
         "importBtn": "Importar al catálogo"
+      },
+      "title": "Modelos",
+      "ficha": {
+        "volver": "Volver al listado",
+        "proximamente": "Próximamente.",
+        "tabs": {
+          "datos": "Datos y referencias",
+          "docs": "Documentación",
+          "selector": "Sección"
+        },
+        "imagen": {
+          "hint": "Imagen del modelo",
+          "subir": "Subir imagen",
+          "cambiar": "Cambiar imagen",
+          "quitar": "Quitar imagen",
+          "confirmQuitar": "¿Quitar la imagen del modelo?",
+          "errorSubir": "No se pudo subir la imagen (usa JPG, PNG o WEBP, máx. 4 MB)."
+        },
+        "campos": {
+          "title": "Campos personalizados"
+        },
+        "referencias": {
+          "title": "Referencias",
+          "resumen": "{{total}} referencias · {{activas}} activas",
+          "vacio": "Este modelo no tiene referencias.",
+          "cols": {
+            "codigo": "Referencia",
+            "descripcion": "Descripción",
+            "estado": "Estado",
+            "normas": "Normativas",
+            "ean": "EAN"
+          },
+          "estado": {
+            "activa": "Activa",
+            "descatalogada": "Descatalogada"
+          }
+        },
+        "fechas": {
+          "fabricacion": "Fabricación",
+          "instalacion": "Instalación",
+          "suministro": "Suministro",
+          "puestaServicio": "Puesta en servicio"
+        },
+        "caract": {
+          "title": "Caracterización",
+          "marca": "Marca / Fabricante",
+          "nombre": "Nombre del modelo",
+          "familia": "Familia",
+          "tipo": "Tipo de elemento",
+          "validez": "Validez revisiones",
+          "heredadaTipo": "Heredada del tipo",
+          "propiaModelo": "Específica del modelo",
+          "meses": "meses",
+          "propia": "propia",
+          "heredada": "heredada",
+          "fechas": "Fechas de referencia",
+          "heredadasTipo": "Heredadas del tipo",
+          "propiasModelo": "Específicas del modelo",
+          "heredadas": "heredadas",
+          "propias": "propias",
+          "ninguna": "Ninguna",
+          "vidaUtil": "Vida útil máxima",
+          "vidaUtilAnios": "Vida útil máx. (años)",
+          "anios": "años",
+          "desde": "desde",
+          "noDefinida": "No definida",
+          "fichaFabricante": "Ficha del fabricante",
+          "sinEnlace": "Sin enlace"
+        }
       }
     },
     "normativa": {

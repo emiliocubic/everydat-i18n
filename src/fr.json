@@ -779,6 +779,75 @@
         "docsPendientes": "Le fabricant publie {{n}} document(s) pour ce modèle. Les PDF ne sont pas encore importés (livraison des assets en attente).",
         "sinDocs": "Les documents du fabricant (PDF) ne sont pas encore importés dans cet essai.",
         "importBtn": "Importer dans le catalogue"
+      },
+      "title": "Modèles",
+      "ficha": {
+        "volver": "Retour à la liste",
+        "proximamente": "Bientôt disponible.",
+        "tabs": {
+          "datos": "Données et références",
+          "docs": "Documentation",
+          "selector": "Section"
+        },
+        "imagen": {
+          "hint": "Image du modèle",
+          "subir": "Téléverser une image",
+          "cambiar": "Changer l'image",
+          "quitar": "Retirer l'image",
+          "confirmQuitar": "Retirer l'image du modèle ?",
+          "errorSubir": "Impossible de téléverser l'image (JPG, PNG ou WEBP, max 4 Mo)."
+        },
+        "campos": {
+          "title": "Champs personnalisés"
+        },
+        "referencias": {
+          "title": "Références",
+          "resumen": "{{total}} références · {{activas}} actives",
+          "vacio": "Ce modèle n'a aucune référence.",
+          "cols": {
+            "codigo": "Référence",
+            "descripcion": "Description",
+            "estado": "Statut",
+            "normas": "Normes",
+            "ean": "EAN"
+          },
+          "estado": {
+            "activa": "Active",
+            "descatalogada": "Retirée"
+          }
+        },
+        "fechas": {
+          "fabricacion": "Fabrication",
+          "instalacion": "Installation",
+          "suministro": "Approvisionnement",
+          "puestaServicio": "Mise en service"
+        },
+        "caract": {
+          "title": "Caractérisation",
+          "marca": "Marque / Fabricant",
+          "nombre": "Nom du modèle",
+          "familia": "Famille",
+          "tipo": "Type d'élément",
+          "validez": "Validité des révisions",
+          "heredadaTipo": "Héritée du type",
+          "propiaModelo": "Spécifique au modèle",
+          "meses": "mois",
+          "propia": "propre",
+          "heredada": "héritée",
+          "fechas": "Dates de référence",
+          "heredadasTipo": "Héritées du type",
+          "propiasModelo": "Spécifiques au modèle",
+          "heredadas": "héritées",
+          "propias": "propres",
+          "ninguna": "Aucune",
+          "vidaUtil": "Durée de vie max.",
+          "vidaUtilAnios": "Durée de vie max. (ans)",
+          "anios": "ans",
+          "desde": "depuis",
+          "noDefinida": "Non définie",
+          "fichaFabricante": "Fiche du fabricant",
+          "sinEnlace": "Aucun lien"
+        }
       }
     },
     "normativa": {

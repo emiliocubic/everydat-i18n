@@ -779,6 +779,75 @@
         "docsPendientes": "The manufacturer publishes {{n}} document(s) for this model. PDFs are not imported yet (asset delivery pending).",
         "sinDocs": "Manufacturer documents (PDFs) are not imported yet in this trial.",
         "importBtn": "Import into catalogue"
+      },
+      "title": "Models",
+      "ficha": {
+        "volver": "Back to list",
+        "proximamente": "Coming soon.",
+        "tabs": {
+          "datos": "Data & references",
+          "docs": "Documentation",
+          "selector": "Section"
+        },
+        "imagen": {
+          "hint": "Model image",
+          "subir": "Upload image",
+          "cambiar": "Change image",
+          "quitar": "Remove image",
+          "confirmQuitar": "Remove the model's image?",
+          "errorSubir": "Could not upload the image (use JPG, PNG or WEBP, max 4 MB)."
+        },
+        "campos": {
+          "title": "Custom fields"
+        },
+        "referencias": {
+          "title": "References",
+          "resumen": "{{total}} references · {{activas}} active",
+          "vacio": "This model has no references.",
+          "cols": {
+            "codigo": "Reference",
+            "descripcion": "Description",
+            "estado": "Status",
+            "normas": "Standards",
+            "ean": "EAN"
+          },
+          "estado": {
+            "activa": "Active",
+            "descatalogada": "Discontinued"
+          }
+        },
+        "fechas": {
+          "fabricacion": "Manufacture",
+          "instalacion": "Installation",
+          "suministro": "Supply",
+          "puestaServicio": "Commissioning"
+        },
+        "caract": {
+          "title": "Characterization",
+          "marca": "Brand / Manufacturer",
+          "nombre": "Model name",
+          "familia": "Family",
+          "tipo": "Element type",
+          "validez": "Inspection validity",
+          "heredadaTipo": "Inherited from type",
+          "propiaModelo": "Specific to model",
+          "meses": "months",
+          "propia": "own",
+          "heredada": "inherited",
+          "fechas": "Reference dates",
+          "heredadasTipo": "Inherited from type",
+          "propiasModelo": "Specific to model",
+          "heredadas": "inherited",
+          "propias": "own",
+          "ninguna": "None",
+          "vidaUtil": "Max. service life",
+          "vidaUtilAnios": "Max. service life (years)",
+          "anios": "years",
+          "desde": "from",
+          "noDefinida": "Not defined",
+          "fichaFabricante": "Manufacturer datasheet",
+          "sinEnlace": "No link"
+        }
       }
     },
     "normativa": {
