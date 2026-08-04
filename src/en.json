@@ -603,7 +603,38 @@
       "accesoLimitadoHint": "by assigned projects and dates",
       "cuentasAsignadas": "Assigned customer accounts",
       "sinAsignacion": "No assignment yet",
-      "cuentasHint": "Customer account assignment is deferred until customer management in the CRM is defined."
+      "cuentasHint": "Customer account assignment is deferred until customer management in the CRM is defined.",
+      "tipoAcceso": "Access type",
+      "tipoAccesoRequerido": "Choose an access type",
+      "tipos": {
+        "admin": "Administrator",
+        "adminHint": "office and desktop management only",
+        "oper": "Operative",
+        "operHint": "field use only",
+        "ambos": "Administrator and operative",
+        "ambosHint": "both uses"
+      },
+      "alcanceAdmin": "Management scope",
+      "alcanceOper": "Operative access",
+      "alcances": {
+        "total": "Full scope",
+        "totalHint": "all clients",
+        "clientes": "Limited scope",
+        "clientesHint": "assigned accounts only",
+        "ninguno": "Assigned projects only",
+        "ningunoHint": "no scope of their own over clients"
+      },
+      "ambosHelp": "The scope defines which clients they manage; in the field, the operative works on those same accounts.",
+      "superadminLocked": "Superadmin: the role is kept and cannot be edited here.",
+      "cuentas": {
+        "clientes": "Clients",
+        "grupos": "Client groups",
+        "buscar": "Search…",
+        "sinResultados": "No results",
+        "seleccionadas": "{{count}} selected",
+        "hint": "The user will only see these accounts and those of their groups.",
+        "guardarPrimero": "Save the user first to assign accounts."
+      }
     }
   },
   "emplazamientos": {

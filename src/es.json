@@ -539,7 +539,38 @@
       "accesoLimitadoHint": "por proyectos y fechas asignados",
       "cuentasAsignadas": "Cuentas de cliente asignadas",
       "sinAsignacion": "Sin asignación todavía",
-      "cuentasHint": "La asignación de cuentas de cliente se pospone hasta que esté definida la gestión de clientes en el CRM."
+      "cuentasHint": "La asignación de cuentas de cliente se pospone hasta que esté definida la gestión de clientes en el CRM.",
+      "tipoAcceso": "Tipo de acceso",
+      "tipoAccesoRequerido": "Elige un tipo de acceso",
+      "tipos": {
+        "admin": "Administrador",
+        "adminHint": "solo uso de gestión en PC u oficina",
+        "oper": "Operario",
+        "operHint": "solo uso en campo",
+        "ambos": "Administrador y operario",
+        "ambosHint": "ambos usos"
+      },
+      "alcanceAdmin": "Alcance de administración",
+      "alcanceOper": "Acceso de operario",
+      "alcances": {
+        "total": "Alcance total",
+        "totalHint": "todos los clientes",
+        "clientes": "Alcance limitado",
+        "clientesHint": "solo las cuentas asignadas",
+        "ninguno": "Solo proyectos asignados",
+        "ningunoHint": "sin alcance propio sobre clientes"
+      },
+      "ambosHelp": "El alcance define qué clientes gestiona; en campo, el operario trabaja sobre esas mismas cuentas.",
+      "superadminLocked": "Superadmin: el rol se conserva y no se edita desde aquí.",
+      "cuentas": {
+        "clientes": "Clientes",
+        "grupos": "Grupos de clientes",
+        "buscar": "Buscar…",
+        "sinResultados": "Sin resultados",
+        "seleccionadas": "{{count}} seleccionadas",
+        "hint": "El usuario verá solo estas cuentas y las de sus grupos.",
+        "guardarPrimero": "Guarda el usuario para poder asignarle cuentas."
+      }
     }
   },
   "emplazamientos": {

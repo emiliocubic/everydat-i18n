@@ -603,7 +603,38 @@
       "accesoLimitadoHint": "par projets et dates assignés",
       "cuentasAsignadas": "Comptes clients assignés",
       "sinAsignacion": "Aucune assignation",
-      "cuentasHint": "L'assignation des comptes clients est reportée jusqu'à ce que la gestion des clients dans le CRM soit définie."
+      "cuentasHint": "L'assignation des comptes clients est reportée jusqu'à ce que la gestion des clients dans le CRM soit définie.",
+      "tipoAcceso": "Type d'accès",
+      "tipoAccesoRequerido": "Choisis un type d'accès",
+      "tipos": {
+        "admin": "Administrateur",
+        "adminHint": "gestion au bureau uniquement",
+        "oper": "Opérateur",
+        "operHint": "usage sur le terrain uniquement",
+        "ambos": "Administrateur et opérateur",
+        "ambosHint": "les deux usages"
+      },
+      "alcanceAdmin": "Périmètre d'administration",
+      "alcanceOper": "Accès de l'opérateur",
+      "alcances": {
+        "total": "Périmètre total",
+        "totalHint": "tous les clients",
+        "clientes": "Périmètre limité",
+        "clientesHint": "uniquement les comptes attribués",
+        "ninguno": "Projets attribués uniquement",
+        "ningunoHint": "sans périmètre propre sur les clients"
+      },
+      "ambosHelp": "Le périmètre définit les clients gérés ; sur le terrain, l'opérateur travaille sur ces mêmes comptes.",
+      "superadminLocked": "Superadmin : le rôle est conservé et ne s'édite pas ici.",
+      "cuentas": {
+        "clientes": "Clients",
+        "grupos": "Groupes de clients",
+        "buscar": "Rechercher…",
+        "sinResultados": "Aucun résultat",
+        "seleccionadas": "{{count}} sélectionnés",
+        "hint": "L'utilisateur ne verra que ces comptes et ceux de ses groupes.",
+        "guardarPrimero": "Enregistre l'utilisateur pour pouvoir lui attribuer des comptes."
+      }
     }
   },
   "emplazamientos": {
