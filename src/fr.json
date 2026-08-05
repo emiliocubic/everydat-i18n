@@ -616,6 +616,8 @@
       },
       "alcanceAdmin": "Périmètre d'administration",
       "alcanceOper": "Accès de l'opérateur",
+      "alcanceColaborador": "Périmètre du collaborateur",
+      "alcanceClientesHelp": "Indiquez dans l'onglet Comptes les clients et groupes auxquels il accède.",
       "alcances": {
         "total": "Périmètre total",
         "totalHint": "tous les clients",

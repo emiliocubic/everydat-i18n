@@ -616,6 +616,8 @@
       },
       "alcanceAdmin": "Management scope",
       "alcanceOper": "Operative access",
+      "alcanceColaborador": "Collaborator scope",
+      "alcanceClientesHelp": "Pick the clients and groups they can access in the Accounts tab.",
       "alcances": {
         "total": "Full scope",
         "totalHint": "all clients",
