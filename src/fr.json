@@ -207,7 +207,6 @@
         "parametros": "Parametres de travail",
         "notas": "Notes",
         "grupos": "Groupes du client",
-        "direcciones": "Adresses",
         "contactos": "Utilisateurs invites / contacts"
       },
       "fields": {
@@ -223,6 +222,7 @@
         "pais": "Pays",
         "telefonos": "Telephones",
         "emails": "E-mails",
+        "etiqueta": "Libellé",
         "plazoRevisiones": "Delai de revision de base",
         "appCliente": "App client",
         "recibirNotif": "Recevoir les notifications",
@@ -303,13 +303,7 @@
     "deleteConfirm": "Supprimer le client {{nombre}} ?",
     "restoreConfirm": "Réactiver le client {{nombre}} ?",
     "restore": "Réactiver le client",
-    "searchPlaceholder": "Rechercher par nom ou NIF...",
-    "direcciones": "Adresses",
-    "addDireccion": "Ajouter une adresse",
-    "noDirecciones": "Aucune adresse trouvée.",
-    "addAddressTitle": "Ajouter une adresse",
-    "editAddressTitle": "Modifier l'adresse",
-    "deleteAddressConfirm": "Supprimer cette adresse ?",
+    "searchPlaceholder": "Rechercher par code, nom ou NIF...",
     "fields": {
       "nombre": "Nom",
       "nombreComercial": "Nom commercial",
@@ -350,10 +344,6 @@
       "activo": "Actif",
       "potencial": "Potentiel",
       "baja": "Inactif"
-    },
-    "tipoDir": {
-      "fiscal": "Siège social",
-      "obra": "Chantier"
     }
   },
   "contactos": {

@@ -143,7 +143,6 @@
         "parametros": "Parámetros de trabajo",
         "notas": "Notas",
         "grupos": "Grupos del cliente",
-        "direcciones": "Direcciones",
         "contactos": "Usuarios invitados / contactos"
       },
       "fields": {
@@ -159,6 +158,7 @@
         "pais": "País",
         "telefonos": "Teléfonos",
         "emails": "Emails",
+        "etiqueta": "Etiqueta",
         "plazoRevisiones": "Plazo base revisiones",
         "appCliente": "APP de cliente",
         "recibirNotif": "Recibir notificaciones",
@@ -239,13 +239,7 @@
     "deleteConfirm": "¿Eliminar el cliente {{nombre}}?",
     "restoreConfirm": "¿Reactivar el cliente {{nombre}}?",
     "restore": "Reactivar cliente",
-    "searchPlaceholder": "Buscar por nombre o NIF...",
-    "direcciones": "Direcciones",
-    "addDireccion": "Añadir dirección",
-    "noDirecciones": "No hay direcciones.",
-    "addAddressTitle": "Añadir dirección",
-    "editAddressTitle": "Editar dirección",
-    "deleteAddressConfirm": "¿Eliminar esta dirección?",
+    "searchPlaceholder": "Buscar por código, nombre o NIF...",
     "fields": {
       "nombre": "Nombre",
       "nombreComercial": "Nombre comercial",
@@ -286,10 +280,6 @@
       "activo": "Activo",
       "potencial": "Potencial",
       "baja": "Baja"
-    },
-    "tipoDir": {
-      "fiscal": "Fiscal",
-      "obra": "Obra"
     }
   },
   "contactos": {

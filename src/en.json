@@ -207,7 +207,6 @@
         "parametros": "Working parameters",
         "notas": "Notes",
         "grupos": "Client groups",
-        "direcciones": "Addresses",
         "contactos": "Invited users / contacts"
       },
       "fields": {
@@ -223,6 +222,7 @@
         "pais": "Country",
         "telefonos": "Phones",
         "emails": "Emails",
+        "etiqueta": "Label",
         "plazoRevisiones": "Base review interval",
         "appCliente": "Client app",
         "recibirNotif": "Receive notifications",
@@ -303,13 +303,7 @@
     "deleteConfirm": "Delete customer {{nombre}}?",
     "restoreConfirm": "Restore customer {{nombre}}?",
     "restore": "Restore customer",
-    "searchPlaceholder": "Search by name or VAT number...",
-    "direcciones": "Addresses",
-    "addDireccion": "Add address",
-    "noDirecciones": "No addresses found.",
-    "addAddressTitle": "Add address",
-    "editAddressTitle": "Edit address",
-    "deleteAddressConfirm": "Delete this address?",
+    "searchPlaceholder": "Search by code, name or VAT number...",
     "fields": {
       "nombre": "Name",
       "nombreComercial": "Trade name",
@@ -350,10 +344,6 @@
       "activo": "Active",
       "potencial": "Potential",
       "baja": "Inactive"
-    },
-    "tipoDir": {
-      "fiscal": "Registered",
-      "obra": "Site"
     }
   },
   "contactos": {
