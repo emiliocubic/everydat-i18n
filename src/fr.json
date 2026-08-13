@@ -1047,6 +1047,7 @@
         "editTitle": "Modifier l'affectation de « {{label}} »",
         "confirmRemove": "Retirer « {{label}} » de ce type ?",
         "removeWarn": "Les valeurs déjà enregistrées restent en base, mais ne seront plus visibles pour aucun utilisateur.",
+        "removeNormaWarn": "Ce champ est proposé par {{codigo}} : le retirer ne touche pas la norme, et tant qu'elle reste affectée au type vous pourrez le réaffecter en un clic.",
         "sinCampos": "Ce type n'a pas encore de champs. Importez ceux de ses normes ou choisissez dans le catalogue.",
         "sinFamilia": "Sans famille"
       },

@@ -1047,6 +1047,7 @@
         "editTitle": "Edit the assignment of “{{label}}”",
         "confirmRemove": "Remove “{{label}}” from this type?",
         "removeWarn": "Values already recorded stay in the database, but will no longer be visible to any user.",
+        "removeNormaWarn": "This field is proposed by {{codigo}}: removing it does not touch the standard, and while the standard stays assigned to the type you can pull it back in with one click.",
         "sinCampos": "This type has no fields yet. Pull in the ones from its standards or pick from the catalogue.",
         "sinFamilia": "No family"
       },

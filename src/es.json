@@ -1047,6 +1047,7 @@
         "editTitle": "Editar la asignación de «{{label}}»",
         "confirmRemove": "¿Quitar «{{label}}» de este tipo?",
         "removeWarn": "Los valores ya registrados se conservan en la base de datos, pero dejarán de verse para cualquier usuario.",
+        "removeNormaWarn": "Este campo lo propone {{codigo}}: quitarlo no toca la norma, y mientras siga asignada al tipo podrás volver a asignarlo con un clic.",
         "sinCampos": "Este tipo todavía no tiene campos. Vuelca los de sus normas o elige del catálogo.",
         "sinFamilia": "Sin familia"
       },
