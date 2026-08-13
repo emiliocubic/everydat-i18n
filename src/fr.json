@@ -1003,18 +1003,14 @@
       "confirmDelete": "Supprimer le champ « {{label}} » ?",
       "createBtn": "Créer le champ",
       "delete": "Supprimer le champ",
-      "removeFromNorma": "Retirer {{label}} de la norme",
       "noFields": "Aucun champ",
       "noFieldsYet": "Pas encore de champs",
       "intro": {
         "q": "À quoi servent les champs par norme ?",
-        "sub": "En assignant des champs du catalogue aux normes, l'ensemble des champs personnalisés de chaque type d'élément est généré automatiquement à partir des normes qui lui s'appliquent.",
-        "cta": "Utilisez la colonne des normes à gauche pour voir et modifier les champs de chaque norme."
+        "sub": "Chaque norme est livrée avec les champs qu'elle exige et les valeurs qu'elle admet. C'est de là que sort automatiquement l'ensemble de champs de chaque type d'élément, qui reprend ceux des normes qui lui sont applicables.",
+        "cta": "Choisissez une norme dans le panneau de gauche pour voir ses champs."
       },
-      "assignFirst": "Assigner un champ du catalogue à la norme",
-      "assignAnother": "Assigner un autre champ du catalogue à la norme",
       "searchCatalog": "Rechercher un champ du catalogue…",
-      "allAssigned": "Tous les champs du catalogue sont déjà assignés à cette norme.",
       "noFieldMatch": "Aucun champ du catalogue ne correspond.",
       "portipo": {
         "intro": {
@@ -1062,11 +1058,6 @@
       "avisoNormas_other": "Il est appliqué à {{count}} normes.",
       "avisoTipos_one": "Il est appliqué à {{count}} type d'élément.",
       "avisoTipos_other": "Il est appliqué à {{count}} types d'élément.",
-      "pornorma": {
-        "confirmRemove": "Retirer « {{label}} » de {{codigo}} ?",
-        "removeWarn_one": "Cette sélection est appliquée à {{count}} type d'élément.",
-        "removeWarn_other": "Cette sélection est appliquée à {{count}} types d'élément."
-      },
       "asignacion": {
         "title": "Affectation au type",
         "sinLista": "Ce champ n'est pas une sélection : il n'y a pas de liste de valeurs à ajuster."

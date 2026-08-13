@@ -1003,18 +1003,14 @@
       "confirmDelete": "¿Eliminar el campo «{{label}}»?",
       "createBtn": "Crear campo",
       "delete": "Eliminar campo",
-      "removeFromNorma": "Quitar {{label}} de la norma",
       "noFields": "Sin campos",
       "noFieldsYet": "Sin campos todavía",
       "intro": {
         "q": "¿Para qué sirven los campos por norma?",
-        "sub": "Asignando campos del catálogo a las normas, se genera automáticamente la colección de campos personalizados de cada tipo de elemento, que asume los campos de las normas que le apliquen.",
-        "cta": "Usa la columna de normas del lateral para ver y editar los campos de cada norma."
+        "sub": "Cada norma trae de fábrica los campos que exige y los valores que admite. De ahí sale, automáticamente, la colección de campos de cada tipo de elemento, que asume los de las normas que le apliquen.",
+        "cta": "Elige una norma en el lateral para ver sus campos."
       },
-      "assignFirst": "Asignar campo de catálogo a la norma",
-      "assignAnother": "Asignar otro campo de catálogo a la norma",
       "searchCatalog": "Buscar campo del catálogo…",
-      "allAssigned": "Todos los campos del catálogo ya están asignados a esta norma.",
       "noFieldMatch": "Ningún campo del catálogo coincide.",
       "portipo": {
         "intro": {
@@ -1062,11 +1058,6 @@
       "avisoNormas_other": "Se está aplicando a {{count}} normas.",
       "avisoTipos_one": "Se está aplicando a {{count}} tipo de elemento.",
       "avisoTipos_other": "Se está aplicando a {{count}} tipos de elemento.",
-      "pornorma": {
-        "confirmRemove": "¿Quitar «{{label}}» de {{codigo}}?",
-        "removeWarn_one": "Esa selección se está aplicando a {{count}} tipo de elemento.",
-        "removeWarn_other": "Esa selección se está aplicando a {{count}} tipos de elemento."
-      },
       "asignacion": {
         "title": "Asignación al tipo",
         "sinLista": "Este campo no es de selección: no tiene lista de valores que ajustar."

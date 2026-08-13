@@ -1003,18 +1003,14 @@
       "confirmDelete": "Delete the field “{{label}}”?",
       "createBtn": "Create field",
       "delete": "Delete field",
-      "removeFromNorma": "Remove {{label}} from the standard",
       "noFields": "No fields",
       "noFieldsYet": "No fields yet",
       "intro": {
         "q": "What are fields by standard for?",
-        "sub": "By assigning catalogue fields to standards, each element type's custom-field set is generated automatically from the standards that apply to it.",
-        "cta": "Use the standards column on the left to view and edit each standard's fields."
+        "sub": "Each standard ships with the fields it requires and the values it accepts. That is where the field set of every element type comes from: it takes on those of the standards that apply to it.",
+        "cta": "Pick a standard on the left to see its fields."
       },
-      "assignFirst": "Assign a catalogue field to the standard",
-      "assignAnother": "Assign another catalogue field to the standard",
       "searchCatalog": "Search catalogue field…",
-      "allAssigned": "All catalogue fields are already assigned to this standard.",
       "noFieldMatch": "No catalogue field matches.",
       "portipo": {
         "intro": {
@@ -1062,11 +1058,6 @@
       "avisoNormas_other": "It is applied to {{count}} standards.",
       "avisoTipos_one": "It is applied to {{count}} element type.",
       "avisoTipos_other": "It is applied to {{count}} element types.",
-      "pornorma": {
-        "confirmRemove": "Remove “{{label}}” from {{codigo}}?",
-        "removeWarn_one": "That selection is being applied to {{count}} element type.",
-        "removeWarn_other": "That selection is being applied to {{count}} element types."
-      },
       "asignacion": {
         "title": "Assignment to the type",
         "sinLista": "This field is not a selection: there is no value list to adjust."
