@@ -1004,7 +1004,6 @@
       "createBtn": "Créer le champ",
       "delete": "Supprimer le champ",
       "noFields": "Aucun champ",
-      "noFieldsYet": "Pas encore de champs",
       "intro": {
         "q": "À quoi servent les champs par norme ?",
         "sub": "Chaque norme est livrée avec les champs qu'elle exige et les valeurs qu'elle admet. C'est de là que sort automatiquement l'ensemble de champs de chaque type d'élément, qui reprend ceux des normes qui lui sont applicables.",
@@ -1042,7 +1041,8 @@
         "editTitle": "Modifier l'affectation de « {{label}} »",
         "confirmRemove": "Retirer « {{label}} » de ce type ?",
         "removeWarn": "Les valeurs déjà enregistrées restent en base, mais ne seront plus visibles pour aucun utilisateur.",
-        "sinCampos": "Ce type n'a pas encore de champs. Importez ceux de ses normes ou choisissez dans le catalogue."
+        "sinCampos": "Ce type n'a pas encore de champs. Importez ceux de ses normes ou choisissez dans le catalogue.",
+        "sinFamilia": "Sans famille"
       },
       "origen": {
         "canon": "Préinstallé",

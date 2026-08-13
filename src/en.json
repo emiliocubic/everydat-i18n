@@ -1004,7 +1004,6 @@
       "createBtn": "Create field",
       "delete": "Delete field",
       "noFields": "No fields",
-      "noFieldsYet": "No fields yet",
       "intro": {
         "q": "What are fields by standard for?",
         "sub": "Each standard ships with the fields it requires and the values it accepts. That is where the field set of every element type comes from: it takes on those of the standards that apply to it.",
@@ -1042,7 +1041,8 @@
         "editTitle": "Edit the assignment of “{{label}}”",
         "confirmRemove": "Remove “{{label}}” from this type?",
         "removeWarn": "Values already recorded stay in the database, but will no longer be visible to any user.",
-        "sinCampos": "This type has no fields yet. Pull in the ones from its standards or pick from the catalogue."
+        "sinCampos": "This type has no fields yet. Pull in the ones from its standards or pick from the catalogue.",
+        "sinFamilia": "No family"
       },
       "origen": {
         "canon": "Preinstalled",

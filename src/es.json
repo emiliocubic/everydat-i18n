@@ -1004,7 +1004,6 @@
       "createBtn": "Crear campo",
       "delete": "Eliminar campo",
       "noFields": "Sin campos",
-      "noFieldsYet": "Sin campos todavía",
       "intro": {
         "q": "¿Para qué sirven los campos por norma?",
         "sub": "Cada norma trae de fábrica los campos que exige y los valores que admite. De ahí sale, automáticamente, la colección de campos de cada tipo de elemento, que asume los de las normas que le apliquen.",
@@ -1042,7 +1041,8 @@
         "editTitle": "Editar la asignación de «{{label}}»",
         "confirmRemove": "¿Quitar «{{label}}» de este tipo?",
         "removeWarn": "Los valores ya registrados se conservan en la base de datos, pero dejarán de verse para cualquier usuario.",
-        "sinCampos": "Este tipo todavía no tiene campos. Vuelca los de sus normas o elige del catálogo."
+        "sinCampos": "Este tipo todavía no tiene campos. Vuelca los de sus normas o elige del catálogo.",
+        "sinFamilia": "Sin familia"
       },
       "origen": {
         "canon": "Preinstalado",
