@@ -993,8 +993,12 @@
         "descartadosHint": "Click to bring them back into the list: the standard suggests, it does not lock.",
         "interseccionVacia": "The standards of this type share no common value. No proposal is possible: decide the list by hand.",
         "canonNote": "List curated by Cubic, read-only. The one actually used is each type's copy, editable under “Fields by type”.",
-        "nuevoNote": "The value list is defined in each element type, when the field is assigned under “Fields by type”.",
-        "saved": "Values saved"
+        "saved": "Values saved",
+        "maestraNote": "Master list of the field: this is what gets copied when you assign it to a type. Each type can trim its own copy afterwards without touching this one.",
+        "localNote": "Master list of the field. What is actually used is each type's copy, editable in «Fields by type».",
+        "traer_one": "Pull in the value the field proposes",
+        "traer_other": "Pull in the {{count}} values the field proposes",
+        "errorLista": "The field was saved, but its list of values was not. Open it again to review the list."
       },
       "searchNorma": "Search standard…",
       "created": "Field created",
@@ -1067,7 +1071,9 @@
       "avisoTipos_other": "It is applied to {{count}} element types.",
       "asignacion": {
         "title": "Assignment to the type",
-        "sinLista": "This field is not a selection: there is no value list to adjust."
+        "sinLista": "This field is not a selection: there is no value list to adjust.",
+        "editarCampo": "Edit field",
+        "verCampo": "View field"
       },
       "normasAria": "Standards"
     },

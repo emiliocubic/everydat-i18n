@@ -993,8 +993,12 @@
         "descartadosHint": "Cliquez pour les remettre dans la liste : la norme suggère, elle n'enferme pas.",
         "interseccionVacia": "Les normes de ce type n'ont aucune valeur commune. Aucune proposition possible : composez la liste à la main.",
         "canonNote": "Liste curée par Cubic, en lecture seule. Celle réellement utilisée est la copie de chaque type, modifiable dans « Champs par type ».",
-        "nuevoNote": "La liste de valeurs se définit dans chaque type d'élément, au moment d'y assigner le champ depuis « Champs par type ».",
-        "saved": "Valeurs enregistrées"
+        "saved": "Valeurs enregistrées",
+        "maestraNote": "Liste maîtresse du champ : c'est elle qui est copiée lors de l'affectation à un type. Chaque type pourra ensuite réduire sa copie sans toucher à celle-ci.",
+        "localNote": "Liste maîtresse du champ. Ce qui sert vraiment, c'est la copie de chaque type, modifiable dans « Champs par type ».",
+        "traer_one": "Importer la valeur proposée par le champ",
+        "traer_other": "Importer les {{count}} valeurs proposées par le champ",
+        "errorLista": "Le champ a été enregistré, mais pas sa liste de valeurs. Rouvrez-le pour la vérifier."
       },
       "searchNorma": "Rechercher une norme…",
       "created": "Champ créé",
@@ -1067,7 +1071,9 @@
       "avisoTipos_other": "Il est appliqué à {{count}} types d'élément.",
       "asignacion": {
         "title": "Affectation au type",
-        "sinLista": "Ce champ n'est pas une sélection : il n'y a pas de liste de valeurs à ajuster."
+        "sinLista": "Ce champ n'est pas une sélection : il n'y a pas de liste de valeurs à ajuster.",
+        "editarCampo": "Modifier le champ",
+        "verCampo": "Voir le champ"
       },
       "normasAria": "Normes"
     },

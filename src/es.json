@@ -993,8 +993,12 @@
         "descartadosHint": "Púlsalos para devolverlos a la lista: la norma sugiere, no encierra.",
         "interseccionVacia": "Las normas de este tipo no coinciden en ningún valor. No hay propuesta posible: decide la lista a mano.",
         "canonNote": "Lista curada por Cubic, de solo lectura. La que se usa de verdad es la copia de cada tipo, editable en «Campos por tipo».",
-        "nuevoNote": "La lista de valores se define en cada tipo de elemento, al asignarle el campo desde «Campos por tipo».",
-        "saved": "Valores guardados"
+        "saved": "Valores guardados",
+        "maestraNote": "Lista maestra del campo: es la que se copia al asignarlo a un tipo. Cada tipo puede recortarla después sin tocar esta.",
+        "localNote": "Lista maestra del campo. Lo que se usa de verdad es la copia de cada tipo, editable en «Campos por tipo».",
+        "traer_one": "Traer el valor que propone el campo",
+        "traer_other": "Traer los {{count}} valores que propone el campo",
+        "errorLista": "El campo se ha guardado, pero su lista de valores no. Vuelve a abrirlo para revisarla."
       },
       "searchNorma": "Buscar norma…",
       "created": "Campo creado",
@@ -1067,7 +1071,9 @@
       "avisoTipos_other": "Se está aplicando a {{count}} tipos de elemento.",
       "asignacion": {
         "title": "Asignación al tipo",
-        "sinLista": "Este campo no es de selección: no tiene lista de valores que ajustar."
+        "sinLista": "Este campo no es de selección: no tiene lista de valores que ajustar.",
+        "editarCampo": "Editar campo",
+        "verCampo": "Ver campo"
       },
       "normasAria": "Normas"
     },
