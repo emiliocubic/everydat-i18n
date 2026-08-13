@@ -1005,7 +1005,6 @@
       "delete": "Delete field",
       "removeFromNorma": "Remove {{label}} from the standard",
       "noFields": "No fields",
-      "normsWithFields": "Standards with fields",
       "noFieldsYet": "No fields yet",
       "intro": {
         "q": "What are fields by standard for?",
@@ -1071,7 +1070,8 @@
       "asignacion": {
         "title": "Assignment to the type",
         "sinLista": "This field is not a selection: there is no value list to adjust."
-      }
+      },
+      "normasAria": "Standards"
     },
     "checklists": {
       "tabsAria": "Checklist views",

@@ -1005,7 +1005,6 @@
       "delete": "Eliminar campo",
       "removeFromNorma": "Quitar {{label}} de la norma",
       "noFields": "Sin campos",
-      "normsWithFields": "Normas con campos",
       "noFieldsYet": "Sin campos todavía",
       "intro": {
         "q": "¿Para qué sirven los campos por norma?",
@@ -1071,7 +1070,8 @@
       "asignacion": {
         "title": "Asignación al tipo",
         "sinLista": "Este campo no es de selección: no tiene lista de valores que ajustar."
-      }
+      },
+      "normasAria": "Normas"
     },
     "checklists": {
       "tabsAria": "Vistas de checklists",

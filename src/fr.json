@@ -1005,7 +1005,6 @@
       "delete": "Supprimer le champ",
       "removeFromNorma": "Retirer {{label}} de la norme",
       "noFields": "Aucun champ",
-      "normsWithFields": "Normes avec champs",
       "noFieldsYet": "Pas encore de champs",
       "intro": {
         "q": "À quoi servent les champs par norme ?",
@@ -1071,7 +1070,8 @@
       "asignacion": {
         "title": "Affectation au type",
         "sinLista": "Ce champ n'est pas une sélection : il n'y a pas de liste de valeurs à ajuster."
-      }
+      },
+      "normasAria": "Normes"
     },
     "checklists": {
       "tabsAria": "Vues des checklists",
