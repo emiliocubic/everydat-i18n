@@ -25,7 +25,9 @@
       "showing": "Affichage {{from}}–{{to}} sur {{total}}",
       "prev": "Précédent",
       "next": "Suivant"
-    }
+    },
+    "yes": "Oui",
+    "no": "Non"
   },
   "nav": {
     "clientes": "Clients",
@@ -919,7 +921,7 @@
       "create": "Nouveau champ",
       "tabsAria": "Vues des champs personnalisés",
       "tabs": {
-        "listado": "Liste des champs",
+        "listado": "Catalogue général des champs",
         "pornorma": "Champs par norme",
         "portipo": "Champs par type"
       },
@@ -931,11 +933,9 @@
         "nombre": "Nom",
         "tipo": "Type de champ",
         "valores": "Valeurs",
-        "usos": "Usages",
-        "descripcion": "Description"
+        "descripcion": "Description",
+        "origen": "Origine"
       },
-      "usosTitle": "Nombre de normes qui l'utilisent",
-      "usosLabel": "Usages",
       "tipoLabel": "Type de champ",
       "familiaLabel": "Famille",
       "tipo": {
@@ -976,7 +976,6 @@
       "noOptions": "Aucune valeur.",
       "reorder": "Glisser pour réordonner",
       "valores": {
-        "title": "Valeurs de « {{campo}} »",
         "sub": "Liste propre au type {{tipo}}",
         "note": "Cette liste est la copie du type : elle n'affecte que ce type. La norme suggère, le type décide.",
         "listTitle": "Liste du type",
@@ -993,18 +992,11 @@
         "descartados": "Écartées par les normes du type",
         "descartadosHint": "Cliquez pour les remettre dans la liste : la norme suggère, elle n'enferme pas.",
         "interseccionVacia": "Les normes de ce type n'ont aucune valeur commune. Aucune proposition possible : composez la liste à la main.",
-        "editTitle": "Modifier les valeurs de « {{label}} »",
         "canonNote": "Liste curée par Cubic, en lecture seule. Celle réellement utilisée est la copie de chaque type, modifiable dans « Champs par type ».",
         "nuevoNote": "La liste de valeurs se définit dans chaque type d'élément, au moment d'y assigner le champ depuis « Champs par type ».",
         "saved": "Valeurs enregistrées"
       },
-      "usage": "Usage",
-      "noNormas": "Aucune norme assignée.",
-      "removeNorma": "Retirer la norme",
-      "addNorma": "Ajouter une norme au champ",
       "searchNorma": "Rechercher une norme…",
-      "allNormasAssigned": "Le champ est déjà assigné à toutes les normes.",
-      "noNormaMatch": "Aucune norme ne correspond.",
       "created": "Champ créé",
       "updated": "Champ mis à jour",
       "deleted": "Champ supprimé",
@@ -1034,7 +1026,6 @@
         "searchTipo": "Rechercher un type ou une norme…",
         "tiposAria": "Types d'élément",
         "sinNormas": "sans normes",
-        "note": "La norme suggère, le type décide : les champs versés depuis les normes se modifient comme les autres.",
         "volcarBtn_one": "Assigner {{count}} champ des normes du type",
         "volcarBtn_other": "Assigner {{count}} champs des normes du type",
         "removeFromTipo": "Retirer {{label}} du type",
@@ -1042,22 +1033,45 @@
         "assignAnother": "Assigner un autre champ du catalogue au type",
         "allAssigned": "Tous les champs du catalogue sont déjà assignés à ce type.",
         "defineSpecific": "Définir un champ spécifique au type",
-        "origenCol": "Origine",
-        "origenDirecto": "Direct",
-        "origenHerencia": "Hérité de la norme {{codigo}}",
         "oblig": "Obligatoire",
         "obligTitle": "Exigé lors de l'enregistrement d'un élément de ce type",
-        "obligAria": "Marquer {{label}} comme obligatoire"
+        "asignacionCol": "Affectation au type",
+        "proc": {
+          "norma": "Provient de {{codigo}}",
+          "normaTitle": "Le champ est arrivé au type depuis cette norme. C'est une copie : modifier la norme ensuite n'y touche pas.",
+          "catalogo": "Choisi dans le catalogue",
+          "tipo": "Créé pour ce type"
+        },
+        "variableCol": "Variable selon la marque",
+        "variableTip": "Chaque fabricant peut avoir un ensemble de valeurs différent pour ce champ. La liste par défaut est affichée ici, mais elle peut être personnalisée depuis l'écran des fabricants.",
+        "editTitle": "Modifier l'affectation de « {{label}} »",
+        "confirmRemove": "Retirer « {{label}} » de ce type ?",
+        "removeWarn": "Les valeurs déjà enregistrées restent en base, mais ne seront plus visibles pour aucun utilisateur.",
+        "sinCampos": "Ce type n'a pas encore de champs. Importez ceux de ses normes ou choisissez dans le catalogue."
       },
       "origen": {
-        "canon": "Canon",
-        "local": "Propre",
-        "canonTitle": "Champ du canon : curé par Cubic, en lecture seule.",
-        "localTitle": "Champ propre du locataire : modifiable."
+        "canon": "Préinstallé",
+        "local": "Défini ici",
+        "canonTitle": "Fourni avec l'application : consultable, non modifiable.",
+        "localTitle": "Défini dans cette installation : modifiable et supprimable."
       },
       "canonDetail": "Détail (lecture seule)",
       "canonNote": "Ce champ fait partie du canon curé par Cubic : il est consultable mais non modifiable. Sa liste de valeurs s'ajuste type par type, dans « Champs par type ».",
-      "porNormaCanonNote": "Les champs du canon (curés par Cubic) sont en lecture seule. Vous pouvez ajouter ou retirer vos propres champs locaux."
+      "candadoCol": "Préinstallé",
+      "candadoTitle": "Champ préinstallé : ni modifiable ni supprimable.",
+      "avisoNormas_one": "Il est appliqué à {{count}} norme.",
+      "avisoNormas_other": "Il est appliqué à {{count}} normes.",
+      "avisoTipos_one": "Il est appliqué à {{count}} type d'élément.",
+      "avisoTipos_other": "Il est appliqué à {{count}} types d'élément.",
+      "pornorma": {
+        "confirmRemove": "Retirer « {{label}} » de {{codigo}} ?",
+        "removeWarn_one": "Cette sélection est appliquée à {{count}} type d'élément.",
+        "removeWarn_other": "Cette sélection est appliquée à {{count}} types d'élément."
+      },
+      "asignacion": {
+        "title": "Affectation au type",
+        "sinLista": "Ce champ n'est pas une sélection : il n'y a pas de liste de valeurs à ajuster."
+      }
     },
     "checklists": {
       "tabsAria": "Vues des checklists",

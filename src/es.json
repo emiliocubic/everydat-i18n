@@ -25,7 +25,9 @@
       "showing": "Mostrando {{from}}–{{to}} de {{total}}",
       "prev": "Anterior",
       "next": "Siguiente"
-    }
+    },
+    "yes": "Sí",
+    "no": "No"
   },
   "nav": {
     "clientes": "Clientes",
@@ -919,7 +921,7 @@
       "create": "Nuevo campo",
       "tabsAria": "Vistas de campos personalizados",
       "tabs": {
-        "listado": "Listado de campos",
+        "listado": "Catálogo general de campos",
         "pornorma": "Campos por norma",
         "portipo": "Campos por tipo"
       },
@@ -931,11 +933,9 @@
         "nombre": "Nombre",
         "tipo": "Tipo de campo",
         "valores": "Valores",
-        "usos": "Usos",
-        "descripcion": "Descripción"
+        "descripcion": "Descripción",
+        "origen": "Origen"
       },
-      "usosTitle": "Nº de normas que lo usan",
-      "usosLabel": "Usos",
       "tipoLabel": "Tipo de campo",
       "familiaLabel": "Familia",
       "tipo": {
@@ -976,7 +976,6 @@
       "noOptions": "Sin valores.",
       "reorder": "Arrastrar para reordenar",
       "valores": {
-        "title": "Valores de «{{campo}}»",
         "sub": "Lista propia del tipo {{tipo}}",
         "note": "Esta lista es la copia del tipo: solo afecta a este tipo. La norma sugiere, el tipo decide.",
         "listTitle": "Lista del tipo",
@@ -993,18 +992,11 @@
         "descartados": "Descartados por las normas del tipo",
         "descartadosHint": "Púlsalos para devolverlos a la lista: la norma sugiere, no encierra.",
         "interseccionVacia": "Las normas de este tipo no coinciden en ningún valor. No hay propuesta posible: decide la lista a mano.",
-        "editTitle": "Editar los valores de «{{label}}»",
         "canonNote": "Lista curada por Cubic, de solo lectura. La que se usa de verdad es la copia de cada tipo, editable en «Campos por tipo».",
         "nuevoNote": "La lista de valores se define en cada tipo de elemento, al asignarle el campo desde «Campos por tipo».",
         "saved": "Valores guardados"
       },
-      "usage": "Uso",
-      "noNormas": "Sin normas asignadas.",
-      "removeNorma": "Quitar norma",
-      "addNorma": "Añadir norma al campo",
       "searchNorma": "Buscar norma…",
-      "allNormasAssigned": "El campo ya está asignado a todas las normas.",
-      "noNormaMatch": "Ninguna norma coincide.",
       "created": "Campo creado",
       "updated": "Campo actualizado",
       "deleted": "Campo eliminado",
@@ -1034,7 +1026,6 @@
         "searchTipo": "Buscar tipo o norma…",
         "tiposAria": "Tipos de elemento",
         "sinNormas": "sin normas",
-        "note": "La norma sugiere, el tipo decide: los campos volcados desde las normas se editan como cualquier otro.",
         "volcarBtn_one": "Asignar {{count}} campo de las normas del tipo",
         "volcarBtn_other": "Asignar {{count}} campos de las normas del tipo",
         "removeFromTipo": "Quitar {{label}} del tipo",
@@ -1042,22 +1033,45 @@
         "assignAnother": "Asignar otro campo de catálogo al tipo",
         "allAssigned": "Todos los campos del catálogo ya están asignados a este tipo.",
         "defineSpecific": "Definir campo específico del tipo",
-        "origenCol": "Origen",
-        "origenDirecto": "Directo",
-        "origenHerencia": "Heredado de la norma {{codigo}}",
         "oblig": "Obligatorio",
         "obligTitle": "Exigido al registrar un elemento de este tipo",
-        "obligAria": "Marcar {{label}} como obligatorio"
+        "asignacionCol": "Asignación al tipo",
+        "proc": {
+          "norma": "Procedente de {{codigo}}",
+          "normaTitle": "El campo llegó al tipo desde esa norma. Es una copia: cambiar la norma después no lo toca.",
+          "catalogo": "Elegido del catálogo",
+          "tipo": "Creado para este tipo"
+        },
+        "variableCol": "Variable por marca",
+        "variableTip": "Cada fabricante puede tener un conjunto de valores diferente para este campo. Aquí se muestra el listado por defecto, pero se puede personalizar desde la pantalla de fabricantes.",
+        "editTitle": "Editar la asignación de «{{label}}»",
+        "confirmRemove": "¿Quitar «{{label}}» de este tipo?",
+        "removeWarn": "Los valores ya registrados se conservan en la base de datos, pero dejarán de verse para cualquier usuario.",
+        "sinCampos": "Este tipo todavía no tiene campos. Vuelca los de sus normas o elige del catálogo."
       },
       "origen": {
-        "canon": "Canon",
-        "local": "Propio",
-        "canonTitle": "Campo del canon: curado por Cubic, de solo lectura.",
-        "localTitle": "Campo propio del tenant: editable."
+        "canon": "Preinstalado",
+        "local": "Definido aquí",
+        "canonTitle": "Viene preinstalado con la aplicación: se consulta, no se edita.",
+        "localTitle": "Definido en esta instalación: se puede editar y borrar."
       },
       "canonDetail": "Detalle (solo lectura)",
       "canonNote": "Este campo forma parte del canon curado por Cubic: es consultable pero no editable. Su lista de valores se ajusta tipo a tipo, en «Campos por tipo».",
-      "porNormaCanonNote": "Los campos del canon (curados por Cubic) son de solo lectura. Puedes añadir o quitar tus propios campos locales."
+      "candadoCol": "Preinstalado",
+      "candadoTitle": "Campo preinstalado: ni se edita ni se borra.",
+      "avisoNormas_one": "Se está aplicando a {{count}} norma.",
+      "avisoNormas_other": "Se está aplicando a {{count}} normas.",
+      "avisoTipos_one": "Se está aplicando a {{count}} tipo de elemento.",
+      "avisoTipos_other": "Se está aplicando a {{count}} tipos de elemento.",
+      "pornorma": {
+        "confirmRemove": "¿Quitar «{{label}}» de {{codigo}}?",
+        "removeWarn_one": "Esa selección se está aplicando a {{count}} tipo de elemento.",
+        "removeWarn_other": "Esa selección se está aplicando a {{count}} tipos de elemento."
+      },
+      "asignacion": {
+        "title": "Asignación al tipo",
+        "sinLista": "Este campo no es de selección: no tiene lista de valores que ajustar."
+      }
     },
     "checklists": {
       "tabsAria": "Vistas de checklists",

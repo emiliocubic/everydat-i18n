@@ -25,7 +25,9 @@
       "showing": "Showing {{from}}–{{to}} of {{total}}",
       "prev": "Previous",
       "next": "Next"
-    }
+    },
+    "yes": "Yes",
+    "no": "No"
   },
   "nav": {
     "clientes": "Customers",
@@ -919,7 +921,7 @@
       "create": "New field",
       "tabsAria": "Custom field views",
       "tabs": {
-        "listado": "Field list",
+        "listado": "General field catalogue",
         "pornorma": "Fields by standard",
         "portipo": "Fields by type"
       },
@@ -931,11 +933,9 @@
         "nombre": "Name",
         "tipo": "Field type",
         "valores": "Values",
-        "usos": "Uses",
-        "descripcion": "Description"
+        "descripcion": "Description",
+        "origen": "Origin"
       },
-      "usosTitle": "Number of standards using it",
-      "usosLabel": "Uses",
       "tipoLabel": "Field type",
       "familiaLabel": "Family",
       "tipo": {
@@ -976,7 +976,6 @@
       "noOptions": "No values.",
       "reorder": "Drag to reorder",
       "valores": {
-        "title": "Values of “{{campo}}”",
         "sub": "List owned by type {{tipo}}",
         "note": "This list is the type's own copy: it affects this type only. The standard suggests, the type decides.",
         "listTitle": "Type's list",
@@ -993,18 +992,11 @@
         "descartados": "Ruled out by the type's standards",
         "descartadosHint": "Click to bring them back into the list: the standard suggests, it does not lock.",
         "interseccionVacia": "The standards of this type share no common value. No proposal is possible: decide the list by hand.",
-        "editTitle": "Edit the values of “{{label}}”",
         "canonNote": "List curated by Cubic, read-only. The one actually used is each type's copy, editable under “Fields by type”.",
         "nuevoNote": "The value list is defined in each element type, when the field is assigned under “Fields by type”.",
         "saved": "Values saved"
       },
-      "usage": "Usage",
-      "noNormas": "No standards assigned.",
-      "removeNorma": "Remove standard",
-      "addNorma": "Add standard to field",
       "searchNorma": "Search standard…",
-      "allNormasAssigned": "The field is already assigned to all standards.",
-      "noNormaMatch": "No standard matches.",
       "created": "Field created",
       "updated": "Field updated",
       "deleted": "Field deleted",
@@ -1034,7 +1026,6 @@
         "searchTipo": "Search type or standard…",
         "tiposAria": "Element types",
         "sinNormas": "no standards",
-        "note": "The standard suggests, the type decides: fields poured from the standards are editable like any other.",
         "volcarBtn_one": "Assign {{count}} field from the type's standards",
         "volcarBtn_other": "Assign {{count}} fields from the type's standards",
         "removeFromTipo": "Remove {{label}} from the type",
@@ -1042,22 +1033,45 @@
         "assignAnother": "Assign another catalog field to the type",
         "allAssigned": "All catalog fields are already assigned to this type.",
         "defineSpecific": "Define a type-specific field",
-        "origenCol": "Source",
-        "origenDirecto": "Direct",
-        "origenHerencia": "Inherited from standard {{codigo}}",
         "oblig": "Required",
         "obligTitle": "Required when registering an element of this type",
-        "obligAria": "Mark {{label}} as required"
+        "asignacionCol": "Assignment to the type",
+        "proc": {
+          "norma": "From {{codigo}}",
+          "normaTitle": "The field reached the type from that standard. It is a copy: changing the standard later does not touch it.",
+          "catalogo": "Chosen from the catalogue",
+          "tipo": "Created for this type"
+        },
+        "variableCol": "Varies by brand",
+        "variableTip": "Each manufacturer may have a different set of values for this field. The default list is shown here, but it can be customised from the manufacturers screen.",
+        "editTitle": "Edit the assignment of “{{label}}”",
+        "confirmRemove": "Remove “{{label}}” from this type?",
+        "removeWarn": "Values already recorded stay in the database, but will no longer be visible to any user.",
+        "sinCampos": "This type has no fields yet. Pull in the ones from its standards or pick from the catalogue."
       },
       "origen": {
-        "canon": "Canon",
-        "local": "Own",
-        "canonTitle": "Canon field: curated by Cubic, read-only.",
-        "localTitle": "Tenant's own field: editable."
+        "canon": "Preinstalled",
+        "local": "Defined here",
+        "canonTitle": "Ships with the application: read-only.",
+        "localTitle": "Defined in this installation: editable and removable."
       },
       "canonDetail": "Detail (read-only)",
       "canonNote": "This field is part of the canon curated by Cubic: it can be viewed but not edited. Its value list is tuned type by type, under “Fields by type”.",
-      "porNormaCanonNote": "Canon fields (curated by Cubic) are read-only. You can add or remove your own local fields."
+      "candadoCol": "Preinstalled",
+      "candadoTitle": "Preinstalled field: it can't be edited or deleted.",
+      "avisoNormas_one": "It is applied to {{count}} standard.",
+      "avisoNormas_other": "It is applied to {{count}} standards.",
+      "avisoTipos_one": "It is applied to {{count}} element type.",
+      "avisoTipos_other": "It is applied to {{count}} element types.",
+      "pornorma": {
+        "confirmRemove": "Remove “{{label}}” from {{codigo}}?",
+        "removeWarn_one": "That selection is being applied to {{count}} element type.",
+        "removeWarn_other": "That selection is being applied to {{count}} element types."
+      },
+      "asignacion": {
+        "title": "Assignment to the type",
+        "sinLista": "This field is not a selection: there is no value list to adjust."
+      }
     },
     "checklists": {
       "tabsAria": "Checklist views",
