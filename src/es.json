@@ -1006,16 +1006,22 @@
       "noFields": "Sin campos",
       "intro": {
         "q": "¿Para qué sirven los campos por norma?",
-        "sub": "Cada norma trae de fábrica los campos que exige y los valores que admite. De ahí sale, automáticamente, la colección de campos de cada tipo de elemento, que asume los de las normas que le apliquen.",
-        "cta": "Elige una norma en el lateral para ver sus campos."
+        "sub": "Asignando campos del catálogo a las normas, es posible generar automáticamente la colección de campos personalizados de cada tipo de elemento, ya que asumirán los campos personalizados correspondientes a las normas que apliquen a ese tipo de elemento.",
+        "cta": "Utiliza la columna de normas del lateral para ver los campos asociados a cada norma."
       },
       "searchCatalog": "Buscar campo del catálogo…",
       "noFieldMatch": "Ningún campo del catálogo coincide.",
       "portipo": {
         "intro": {
           "q": "¿Cómo se componen los campos por tipo de elemento?",
-          "sub": "Cada tipo parte de los campos de sus normas: vuélcalos con un clic y ajusta después la lista libremente, añadiendo o quitando campos del catálogo y marcando cuáles son obligatorios.",
-          "cta": "Elige un tipo de elemento en la lista para ver y editar sus campos."
+          "sub": "Los campos por tipo de elemento se pueden componer de tres formas:",
+          "autoLbl": "Automáticamente",
+          "autoTxt": " a partir de los campos por norma. El tipo asumirá los campos correspondientes a su norma o normas aplicables.",
+          "manualLbl": "Manualmente",
+          "manualTxt": ", mediante la creación directa de campos en cada tipo.",
+          "mixtoLbl": "Mixto",
+          "mixtoTxt": ": asumiendo todos o parte de los automáticos por norma y añadiendo campos de creación directa.",
+          "cta": "Utiliza la columna de tipos del lateral para ver/editar los campos asociados a cada tipo de elemento."
         },
         "searchTipo": "Buscar tipo o norma…",
         "tiposAria": "Tipos de elemento",

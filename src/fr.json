@@ -1006,16 +1006,22 @@
       "noFields": "Aucun champ",
       "intro": {
         "q": "À quoi servent les champs par norme ?",
-        "sub": "Chaque norme est livrée avec les champs qu'elle exige et les valeurs qu'elle admet. C'est de là que sort automatiquement l'ensemble de champs de chaque type d'élément, qui reprend ceux des normes qui lui sont applicables.",
-        "cta": "Choisissez une norme dans le panneau de gauche pour voir ses champs."
+        "sub": "En affectant des champs du catalogue aux normes, l'ensemble des champs personnalisés de chaque type d'élément peut être généré automatiquement, puisque chaque type reprend les champs personnalisés des normes qui lui sont applicables.",
+        "cta": "Utilisez la colonne des normes à gauche pour voir les champs de chaque norme."
       },
       "searchCatalog": "Rechercher un champ du catalogue…",
       "noFieldMatch": "Aucun champ du catalogue ne correspond.",
       "portipo": {
         "intro": {
-          "q": "Comment se composent les champs par type d'élément ?",
-          "sub": "Chaque type part des champs de ses normes : versez-les en un clic, puis ajustez librement la liste — ajoutez ou retirez des champs du catalogue et indiquez lesquels sont obligatoires.",
-          "cta": "Choisissez un type d'élément dans la liste pour voir et modifier ses champs."
+          "q": "Comment se composent les champs d'un type d'élément ?",
+          "sub": "Les champs d'un type d'élément peuvent se composer de trois façons :",
+          "autoLbl": "Automatiquement",
+          "autoTxt": " à partir des champs par norme. Le type reprend les champs de la ou des normes qui lui sont applicables.",
+          "manualLbl": "Manuellement",
+          "manualTxt": ", en créant directement des champs sur chaque type.",
+          "mixtoLbl": "Mixte",
+          "mixtoTxt": " : en reprenant tout ou partie des champs automatiques et en ajoutant des champs créés directement.",
+          "cta": "Utilisez la colonne des types à gauche pour voir/modifier les champs de chaque type d'élément."
         },
         "searchTipo": "Rechercher un type ou une norme…",
         "tiposAria": "Types d'élément",

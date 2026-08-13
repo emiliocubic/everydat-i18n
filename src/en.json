@@ -1006,16 +1006,22 @@
       "noFields": "No fields",
       "intro": {
         "q": "What are fields by standard for?",
-        "sub": "Each standard ships with the fields it requires and the values it accepts. That is where the field set of every element type comes from: it takes on those of the standards that apply to it.",
-        "cta": "Pick a standard on the left to see its fields."
+        "sub": "By assigning catalogue fields to standards, the set of custom fields of every element type can be generated automatically, since each type takes on the custom fields of the standards that apply to it.",
+        "cta": "Use the column of standards on the left to see the fields of each standard."
       },
       "searchCatalog": "Search catalogue field…",
       "noFieldMatch": "No catalogue field matches.",
       "portipo": {
         "intro": {
-          "q": "How are fields composed for each element type?",
-          "sub": "Each type starts from the fields of its standards: pour them in with one click, then adjust the list freely — add or remove catalog fields and mark which ones are required.",
-          "cta": "Pick an element type in the list to view and edit its fields."
+          "q": "How are the fields of an element type put together?",
+          "sub": "The fields of an element type can be composed in three ways:",
+          "autoLbl": "Automatically",
+          "autoTxt": " from the fields by standard. The type takes on the fields of the standard or standards that apply to it.",
+          "manualLbl": "Manually",
+          "manualTxt": ", by creating fields directly on each type.",
+          "mixtoLbl": "Mixed",
+          "mixtoTxt": ": taking on all or part of the automatic ones and adding directly created fields.",
+          "cta": "Use the column of types on the left to view/edit the fields of each element type."
         },
         "searchTipo": "Search type or standard…",
         "tiposAria": "Element types",
