@@ -756,7 +756,8 @@
       "heredaDelCliente": "Inherits the customer's",
       "vigente": "Current",
       "sinAcceso": "Nobody has access.",
-      "borrarRegistroConfirm": "Delete this log entry? This cannot be undone."
+      "borrarRegistroConfirm": "Delete this log entry? This cannot be undone.",
+      "sinClienteParaArbol": "This site has no client assigned: the tree becomes available once it has one."
     }
   },
   "localizaciones": {
@@ -774,6 +775,38 @@
       "descripcion": "Description",
       "orden": "Order",
       "parentId": "Parent"
+    },
+    "arbol": {
+      "aria": "Site structure tree",
+      "acciones": "Tree actions",
+      "estructura": "Structure",
+      "nueva": "New folder",
+      "subir": "Move up",
+      "bajar": "Move down",
+      "alPrincipio": "Move to top",
+      "alFinal": "Move to bottom",
+      "eliminar": "Delete folder",
+      "noBorrarRaiz": "The site is not deleted from the tree",
+      "noBorrarConHijas": "Cannot delete: the folder has subfolders",
+      "noBorrarConElementos": "Cannot delete: the folder has items",
+      "plegarTodo": "Collapse all",
+      "desplegarTodo": "Expand all",
+      "plegar": "Collapse",
+      "desplegar": "Expand",
+      "recargar": "Reload tree",
+      "redimensionar": "Drag to resize · double-click to reset",
+      "verDescatalogadas": "Show discontinued",
+      "renombrar": "Rename folder",
+      "zona": "Zone",
+      "elementos": "{{count}} item",
+      "elementos_other": "{{count}} items",
+      "colActivos": "Active items in the folder (branch total when collapsed)",
+      "colIncidencias": "Issues: unfit items (end of life, overdue inspection, failed)",
+      "colEnRevision": "Items under inspection",
+      "colDescatalogados": "Discontinued items",
+      "colProxRevision": "Next inspection",
+      "censoPendiente": "The folder item list arrives with the items.",
+      "cuadroPendiente": "The site dashboard arrives with the items."
     }
   },
   "gruposClientes": {

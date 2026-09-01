@@ -756,7 +756,8 @@
       "heredaDelCliente": "Hérite de celui du client",
       "vigente": "En cours",
       "sinAcceso": "Personne n’a accès.",
-      "borrarRegistroConfirm": "Supprimer cette entrée du journal ? Action irréversible."
+      "borrarRegistroConfirm": "Supprimer cette entrée du journal ? Action irréversible.",
+      "sinClienteParaArbol": "Ce site n'a pas de client : l'arborescence s'active dès qu'il en a un."
     }
   },
   "localizaciones": {
@@ -774,6 +775,38 @@
       "descripcion": "Description",
       "orden": "Ordre",
       "parentId": "Parent"
+    },
+    "arbol": {
+      "aria": "Arborescence du site",
+      "acciones": "Actions de l'arborescence",
+      "estructura": "Structure",
+      "nueva": "Nouveau dossier",
+      "subir": "Monter",
+      "bajar": "Descendre",
+      "alPrincipio": "Placer en premier",
+      "alFinal": "Placer en dernier",
+      "eliminar": "Supprimer le dossier",
+      "noBorrarRaiz": "Le site ne se supprime pas depuis l'arborescence",
+      "noBorrarConHijas": "Suppression impossible : le dossier contient des sous-dossiers",
+      "noBorrarConElementos": "Suppression impossible : le dossier contient des équipements",
+      "plegarTodo": "Tout replier",
+      "desplegarTodo": "Tout déplier",
+      "plegar": "Replier",
+      "desplegar": "Déplier",
+      "recargar": "Recharger l'arborescence",
+      "redimensionar": "Glisser pour redimensionner · double-clic pour réinitialiser",
+      "verDescatalogadas": "Voir les déclassés",
+      "renombrar": "Renommer le dossier",
+      "zona": "Zone",
+      "elementos": "{{count}} équipement",
+      "elementos_other": "{{count}} équipements",
+      "colActivos": "Équipements actifs du dossier (total de la branche si replié)",
+      "colIncidencias": "Anomalies : équipements non conformes (fin de vie, contrôle échu, non conforme)",
+      "colEnRevision": "Équipements en cours de contrôle",
+      "colDescatalogados": "Équipements déclassés",
+      "colProxRevision": "Prochain contrôle",
+      "censoPendiente": "L'inventaire du dossier arrivera avec les équipements.",
+      "cuadroPendiente": "Le tableau de bord du site arrivera avec les équipements."
     }
   },
   "gruposClientes": {
