@@ -1255,6 +1255,17 @@
       "saveChecklist": "Enregistrer la checklist",
       "saved": "Checklist enregistrée",
       "discardConfirm": "Abandonner les modifications non enregistrées ?",
+      "sinChecklist": "Pas encore de checklist",
+      "clCount_one": "checklist",
+      "clCount_other": "checklists",
+      "clOf": "Checklists de {{tipo}}",
+      "newCl": "Nouvelle checklist",
+      "reorderCl": "Faire glisser pour réordonner les checklists",
+      "deleteCl": "Supprimer la checklist",
+      "deleteClConfirm": "Supprimer la checklist « {{nombre}} » et tous ses points de contrôle ? Cette action est irréversible depuis cet écran.",
+      "clDeleted": "Checklist supprimée",
+      "namePlaceholder": "Nom de la checklist",
+      "nameRequired": "La checklist doit avoir un nom",
       "fixedNote": "Les groupes (Visuel, Fonctionnel, Documentaire) sont fixes ; ici vous placez seulement des points de contrôle à l'intérieur."
     },
     "tipos": {

@@ -1255,6 +1255,17 @@
       "saveChecklist": "Save checklist",
       "saved": "Checklist saved",
       "discardConfirm": "Discard unsaved changes?",
+      "sinChecklist": "No checklist yet",
+      "clCount_one": "checklist",
+      "clCount_other": "checklists",
+      "clOf": "Checklists for {{tipo}}",
+      "newCl": "New checklist",
+      "reorderCl": "Drag to reorder checklists",
+      "deleteCl": "Delete checklist",
+      "deleteClConfirm": "Delete the checklist “{{nombre}}” and all its checkpoints? This cannot be undone from this screen.",
+      "clDeleted": "Checklist deleted",
+      "namePlaceholder": "Checklist name",
+      "nameRequired": "The checklist needs a name",
       "fixedNote": "Groups (Visual, Functional, Documentary) are fixed; here you only place checkpoints within them."
     },
     "tipos": {
