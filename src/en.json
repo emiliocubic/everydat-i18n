@@ -84,6 +84,31 @@
       "success": "Password updated. You can now sign in."
     }
   },
+  "modelPicker": {
+    "title": "Choose models",
+    "sub": "Select the catalogue models it applies to.",
+    "subSingleBrand": "Select the models it applies to. They must all be from the same brand.",
+    "search": "Search by model or code…",
+    "filterBrand": "Filter by brand",
+    "filterType": "Filter by element type",
+    "allBrands": "All brands",
+    "allTypes": "All types",
+    "brandLocked": "Brand fixed by the selection",
+    "selection": "Selection",
+    "brand": "Brand",
+    "model": "Model",
+    "code": "Code",
+    "type": "Element type",
+    "nModels_one": "{{count}} model",
+    "nModels_other": "{{count}} models",
+    "nSelected_one": "{{count}} model selected",
+    "nSelected_other": "{{count}} models selected",
+    "pickSome": "Select one or more models",
+    "empty": "No models match the filter.",
+    "more": "Show more models",
+    "clear": "Clear",
+    "confirm": "Confirm selection"
+  },
   "datatable": {
     "records": "records",
     "perPage": "per page",
@@ -1153,7 +1178,8 @@
       "tabsAria": "Checklist views",
       "tabs": {
         "personalizacion": "Personalization",
-        "tipos": "Checklists by type"
+        "tipos": "Checklists by type",
+        "modelos": "Checklists by model"
       },
       "searchType": "Search type or standard…",
       "typesAria": "Element types",
@@ -1255,6 +1281,22 @@
       "saveChecklist": "Save checklist",
       "saved": "Checklist saved",
       "discardConfirm": "Discard unsaved changes?",
+      "modelos": {
+        "search": "Search checklist or brand…",
+        "listAria": "Checklists by model",
+        "grupo": "{{marca}} model checklists",
+        "nMods_one": "{{count}} model",
+        "nMods_other": "{{count}} models",
+        "vacio": "No checklists by model yet.",
+        "sinResultados": "No checklist matches the search.",
+        "pick": "Pick a checklist on the left or create a new one.",
+        "sinMarca": "No brand",
+        "sinModelos": "This checklist does not apply to any model yet.",
+        "masModelos": "+{{count}} more",
+        "elegirModelos": "Choose models",
+        "editarModelos": "Edit models",
+        "modelosRequeridos": "The checklist needs at least one model"
+      },
       "sinChecklist": "No checklist yet",
       "clCount_one": "checklist",
       "clCount_other": "checklists",

@@ -687,6 +687,31 @@
       "parentId": "Padre"
     }
   },
+  "modelPicker": {
+    "title": "Elegir modelos",
+    "sub": "Selecciona los modelos del catálogo a los que se aplica.",
+    "subSingleBrand": "Selecciona los modelos a los que aplica. Todos deben ser de una misma marca.",
+    "search": "Buscar por modelo o código…",
+    "filterBrand": "Filtrar por marca",
+    "filterType": "Filtrar por tipo de elemento",
+    "allBrands": "Todas las marcas",
+    "allTypes": "Todos los tipos",
+    "brandLocked": "Marca fijada por la selección",
+    "selection": "Selección",
+    "brand": "Marca",
+    "model": "Modelo",
+    "code": "Código",
+    "type": "Tipo de elemento",
+    "nModels_one": "{{count}} modelo",
+    "nModels_other": "{{count}} modelos",
+    "nSelected_one": "{{count}} modelo seleccionado",
+    "nSelected_other": "{{count}} modelos seleccionados",
+    "pickSome": "Selecciona uno o más modelos",
+    "empty": "Sin modelos que coincidan con el filtro.",
+    "more": "Ver más modelos",
+    "clear": "Vaciar",
+    "confirm": "Confirmar selección"
+  },
   "datatable": {
     "records": "registros",
     "perPage": "por página",
@@ -1153,7 +1178,8 @@
       "tabsAria": "Vistas de checklists",
       "tabs": {
         "personalizacion": "Personalización",
-        "tipos": "Checklists por tipo"
+        "tipos": "Checklists por tipo",
+        "modelos": "Checklists por modelo"
       },
       "searchType": "Buscar tipo o norma…",
       "typesAria": "Tipos de elemento",
@@ -1255,6 +1281,22 @@
       "saveChecklist": "Guardar checklist",
       "saved": "Checklist guardado",
       "discardConfirm": "¿Descartar los cambios sin guardar?",
+      "modelos": {
+        "search": "Buscar checklist o marca…",
+        "listAria": "Checklists por modelo",
+        "grupo": "Checklists modelos {{marca}}",
+        "nMods_one": "{{count}} mod.",
+        "nMods_other": "{{count}} mods.",
+        "vacio": "Todavía no hay checklists por modelo.",
+        "sinResultados": "Ningún checklist casa con la búsqueda.",
+        "pick": "Elige un checklist de la izquierda o crea uno nuevo.",
+        "sinMarca": "Sin marca",
+        "sinModelos": "Este checklist no aplica a ningún modelo todavía.",
+        "masModelos": "+{{count}} más",
+        "elegirModelos": "Elegir modelos",
+        "editarModelos": "Editar modelos",
+        "modelosRequeridos": "El checklist necesita al menos un modelo"
+      },
       "sinChecklist": "Sin checklist todavía",
       "clCount_one": "checklist",
       "clCount_other": "checklists",
