@@ -652,14 +652,34 @@
       "notas": "Notes",
       "coordenadas": "Coordinates",
       "propietario": "Owner",
-      "propietarioHint": "Organisation that owns this installation",
       "clienteActual": "Active customer",
       "fechaDesde": "Start date",
       "fechaHasta": "End date",
-      "newCliente": "New customer"
+      "newCliente": "New customer",
+      "cliente": "Customer",
+      "clienteRol": "Customer role",
+      "clienteRolShort": "Type",
+      "contratista": "Contractor",
+      "provincia": "Province",
+      "localidad": "Town",
+      "pais": "Country",
+      "cp": "Post code",
+      "direccion": "Address"
     },
     "errors": {
       "clienteRequired": "Please select a customer."
+    },
+    "estado": {
+      "operativos": "Active and prospective",
+      "activo": "Active",
+      "potencial": "Prospective",
+      "baja": "Inactive"
+    },
+    "rol": {
+      "contratista": "Contractor",
+      "propietario": "Owner",
+      "propiedadEs": "Owner: {{nombre}}",
+      "contrataEs": "Contractor: {{nombre}}"
     }
   },
   "localizaciones": {
@@ -1263,6 +1283,67 @@
         "confirmDelete": "Delete family “{{nombre}}”?",
         "cantDelete": "Cannot delete: has types"
       }
+    },
+    "parametros": {
+      "grupoCaracterizacion": "Element characterisation parameters",
+      "formaDeUso": "How it applies",
+      "familiaTipo": "Family / Type",
+      "porDefecto": "default",
+      "aMedida": "Custom",
+      "marcarColumna": "Set or clear “{{campo}}” in every row",
+      "aplicar": "Apply changes",
+      "descartar": "Discard",
+      "guardando": "Saving…",
+      "guardado": "Changes applied",
+      "errorCarga": "Parameters could not be loaded",
+      "ident": {
+        "titulo": "Identifying data",
+        "desc": "Choose which fields uniquely identify an element. You can use the same fields for every element type, or define a separate set of identifying fields per family or type.",
+        "campos": "Fields in use",
+        "add": "Add identifying field",
+        "placeholder": "Name of the identifying field…",
+        "nombreAria": "Identifying field name",
+        "sinNombre": "New field",
+        "usar": "Use {{campo}} as an identifier",
+        "eliminar": "Delete field",
+        "eliminarAria": "Delete {{campo}}",
+        "matrizVacia": "Enable at least one field under “Fields in use” to set it per type.",
+        "multiple": "Several per element",
+        "multipleAyuda": "The element can hold several values of this field — one QR code at each access point of a lifeline, for instance.",
+        "multipleAria": "{{campo}}: allows several values on the same element",
+        "unico": "Not repeated",
+        "unicoAyuda": "The value cannot appear on two different elements. A batch number, by contrast, is shared.",
+        "unicoAria": "{{campo}}: the value is not repeated across elements",
+        "modo": {
+          "global": "Use the same identifying fields for every element type",
+          "personalizado": "Set the fields to use per family and/or element type"
+        }
+      },
+      "fechas": {
+        "titulo": "Significant dates",
+        "desc": "Choose which significant dates describe an element. Some can also be flagged for automatic service-life calculation. You can use the same dates for every element type, or define them per family or type.",
+        "campos": "Dates in use",
+        "add": "Add custom date",
+        "placeholder": "Date name…",
+        "nombreAria": "Significant date name",
+        "sinNombre": "New date",
+        "usar": "Use",
+        "usarAria": "Use {{campo}}",
+        "eliminar": "Delete date",
+        "eliminarAria": "Delete {{campo}}",
+        "matrizVacia": "Enable at least one date under “Dates in use” to set it per type.",
+        "calc": "Use for service-life calculation",
+        "calcAria": "Use {{campo}} for the service-life calculation",
+        "aniosGlobal": "Years",
+        "aniosGlobalAria": "Service-life years from {{campo}}",
+        "aniosCol": "Service-life years from date",
+        "aniosAria": "{{tipo}}: service-life years from {{fecha}}",
+        "aniosFamAria": "{{familia}}: service-life years from {{fecha}} (applies to all its types)",
+        "modo": {
+          "global": "Use the same dates for every element type",
+          "personalizado": "Set the dates to use per family and/or element type"
+        }
+      }
     }
   },
   "shell": {
@@ -1280,6 +1361,7 @@
       "emplazamientos": "Locations",
       "repositorioSectorial": "Sector repository",
       "configuracion": "Settings",
+      "configParametros": "General parameters",
       "configNormativa": "Standards",
       "configCampos": "Custom fields",
       "configModelos": "Catalogue",

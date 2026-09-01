@@ -588,14 +588,34 @@
       "notas": "Notas",
       "coordenadas": "Coordenadas",
       "propietario": "Propietario",
-      "propietarioHint": "Organización propietaria de la instalación",
       "clienteActual": "Cliente activo",
       "fechaDesde": "Fecha alta",
       "fechaHasta": "Fecha baja",
-      "newCliente": "Nuevo cliente"
+      "newCliente": "Nuevo cliente",
+      "cliente": "Cliente",
+      "clienteRol": "Papel del cliente",
+      "clienteRolShort": "Tipo",
+      "contratista": "Contratista",
+      "provincia": "Provincia",
+      "localidad": "Localidad",
+      "pais": "País",
+      "cp": "C.P.",
+      "direccion": "Dirección"
     },
     "errors": {
       "clienteRequired": "Debes seleccionar un cliente."
+    },
+    "estado": {
+      "operativos": "Activos y potenciales",
+      "activo": "Activo",
+      "potencial": "Potencial",
+      "baja": "Baja"
+    },
+    "rol": {
+      "contratista": "Contratista",
+      "propietario": "Propiedad",
+      "propiedadEs": "Propiedad: {{nombre}}",
+      "contrataEs": "Contrata: {{nombre}}"
     }
   },
   "localizaciones": {
@@ -1263,6 +1283,67 @@
         "confirmDelete": "¿Eliminar la familia «{{nombre}}»?",
         "cantDelete": "No se puede borrar: tiene tipos"
       }
+    },
+    "parametros": {
+      "grupoCaracterizacion": "Parámetros de caracterización de elementos",
+      "formaDeUso": "Forma de uso",
+      "familiaTipo": "Familia / Tipo",
+      "porDefecto": "por defecto",
+      "aMedida": "Definido a medida",
+      "marcarColumna": "Marcar o desmarcar «{{campo}}» en todas las filas",
+      "aplicar": "Aplicar cambios",
+      "descartar": "Descartar",
+      "guardando": "Guardando…",
+      "guardado": "Cambios aplicados",
+      "errorCarga": "No se han podido cargar los parámetros",
+      "ident": {
+        "titulo": "Datos identificativos",
+        "desc": "Establece qué campos se utilizarán para la identificación única de los elementos. Pueden elegirse los mismos campos para todos los tipos de elementos, o definir la colección de campos identificativos por separado para diferentes familias o tipos.",
+        "campos": "Campos a utilizar",
+        "add": "Añadir campo identificativo",
+        "placeholder": "Nombre del campo identificativo…",
+        "nombreAria": "Nombre del campo identificativo",
+        "sinNombre": "Campo nuevo",
+        "usar": "Usar {{campo}} como identificativo",
+        "eliminar": "Eliminar campo",
+        "eliminarAria": "Eliminar {{campo}}",
+        "matrizVacia": "Activa al menos un campo en «Campos a utilizar» para particularizarlo por tipo.",
+        "multiple": "Varios por elemento",
+        "multipleAyuda": "El elemento admite varios valores de este campo: un QR en cada punto de acceso de una línea de vida, por ejemplo.",
+        "multipleAria": "{{campo}}: admite varios valores en un mismo elemento",
+        "unico": "No se repite",
+        "unicoAyuda": "El valor no puede estar en dos elementos distintos. Un nº de lote, en cambio, sí se comparte.",
+        "unicoAria": "{{campo}}: el valor no se repite entre elementos",
+        "modo": {
+          "global": "Utilizar los mismos campos identificativos en todos los tipos de elementos",
+          "personalizado": "Personalizar los campos a utilizar por familias y/o por tipos de elementos"
+        }
+      },
+      "fechas": {
+        "titulo": "Fechas significativas",
+        "desc": "Establece qué fechas significativas se utilizarán para describir a los elementos. Algunas pueden marcarse además para el cálculo automático de los años de vida útil. Pueden usarse las mismas fechas para todos los tipos de elementos, o definirlas por separado por familias o tipos.",
+        "campos": "Fechas a utilizar",
+        "add": "Añadir fecha a medida",
+        "placeholder": "Nombre de la fecha…",
+        "nombreAria": "Nombre de la fecha significativa",
+        "sinNombre": "Fecha nueva",
+        "usar": "Usar",
+        "usarAria": "Usar {{campo}}",
+        "eliminar": "Eliminar fecha",
+        "eliminarAria": "Eliminar {{campo}}",
+        "matrizVacia": "Activa al menos una fecha en «Fechas a utilizar» para particularizarla por tipo.",
+        "calc": "Usar para cálculo de vida útil",
+        "calcAria": "Usar {{campo}} para el cálculo de vida útil",
+        "aniosGlobal": "Años",
+        "aniosGlobalAria": "Años de vida útil desde {{campo}}",
+        "aniosCol": "Años vida útil desde fecha",
+        "aniosAria": "{{tipo}}: años de vida útil desde {{fecha}}",
+        "aniosFamAria": "{{familia}}: años de vida útil desde {{fecha}} (aplica a todos sus tipos)",
+        "modo": {
+          "global": "Utilizar las mismas fechas en todos los tipos de elementos",
+          "personalizado": "Personalizar las fechas a utilizar por familias y/o por tipos de elementos"
+        }
+      }
     }
   },
   "shell": {
@@ -1280,6 +1361,7 @@
       "emplazamientos": "Emplazamientos",
       "repositorioSectorial": "Repositorio sectorial",
       "configuracion": "Configuración",
+      "configParametros": "Parámetros generales",
       "configNormativa": "Normativa",
       "configCampos": "Campos personalizados",
       "configModelos": "Catálogo",

@@ -652,14 +652,34 @@
       "notas": "Notes",
       "coordenadas": "Coordonnées",
       "propietario": "Propriétaire",
-      "propietarioHint": "Organisation propriétaire de cette installation",
       "clienteActual": "Client actif",
       "fechaDesde": "Date de début",
       "fechaHasta": "Date de fin",
-      "newCliente": "Nouveau client"
+      "newCliente": "Nouveau client",
+      "cliente": "Client",
+      "clienteRol": "Rôle du client",
+      "clienteRolShort": "Type",
+      "contratista": "Contractant",
+      "provincia": "Province",
+      "localidad": "Ville",
+      "pais": "Pays",
+      "cp": "Code postal",
+      "direccion": "Adresse"
     },
     "errors": {
       "clienteRequired": "Veuillez sélectionner un client."
+    },
+    "estado": {
+      "operativos": "Actifs et potentiels",
+      "activo": "Actif",
+      "potencial": "Potentiel",
+      "baja": "Inactif"
+    },
+    "rol": {
+      "contratista": "Contractant",
+      "propietario": "Propriétaire",
+      "propiedadEs": "Propriétaire : {{nombre}}",
+      "contrataEs": "Contractant : {{nombre}}"
     }
   },
   "localizaciones": {
@@ -1263,6 +1283,67 @@
         "confirmDelete": "Supprimer la famille « {{nombre}} » ?",
         "cantDelete": "Suppression impossible : contient des types"
       }
+    },
+    "parametros": {
+      "grupoCaracterizacion": "Paramètres de caractérisation des équipements",
+      "formaDeUso": "Mode d’application",
+      "familiaTipo": "Famille / Type",
+      "porDefecto": "par défaut",
+      "aMedida": "Personnalisé",
+      "marcarColumna": "Cocher ou décocher « {{campo}} » sur toutes les lignes",
+      "aplicar": "Appliquer les modifications",
+      "descartar": "Annuler",
+      "guardando": "Enregistrement…",
+      "guardado": "Modifications appliquées",
+      "errorCarga": "Impossible de charger les paramètres",
+      "ident": {
+        "titulo": "Données d’identification",
+        "desc": "Définissez les champs qui identifient de manière unique un équipement. Vous pouvez utiliser les mêmes champs pour tous les types d’équipement, ou définir un jeu distinct par famille ou par type.",
+        "campos": "Champs utilisés",
+        "add": "Ajouter un champ d’identification",
+        "placeholder": "Nom du champ d’identification…",
+        "nombreAria": "Nom du champ d’identification",
+        "sinNombre": "Nouveau champ",
+        "usar": "Utiliser {{campo}} comme identifiant",
+        "eliminar": "Supprimer le champ",
+        "eliminarAria": "Supprimer {{campo}}",
+        "matrizVacia": "Activez au moins un champ dans « Champs utilisés » pour le paramétrer par type.",
+        "multiple": "Plusieurs par équipement",
+        "multipleAyuda": "L’équipement accepte plusieurs valeurs de ce champ : un QR à chaque point d’accès d’une ligne de vie, par exemple.",
+        "multipleAria": "{{campo}} : accepte plusieurs valeurs sur un même équipement",
+        "unico": "Non répété",
+        "unicoAyuda": "La valeur ne peut pas figurer sur deux équipements différents. Un n° de lot, en revanche, est partagé.",
+        "unicoAria": "{{campo}} : la valeur ne se répète pas d’un équipement à l’autre",
+        "modo": {
+          "global": "Utiliser les mêmes champs d’identification pour tous les types d’équipement",
+          "personalizado": "Paramétrer les champs par famille et/ou par type d’équipement"
+        }
+      },
+      "fechas": {
+        "titulo": "Dates significatives",
+        "desc": "Définissez les dates significatives qui décrivent un équipement. Certaines peuvent être marquées pour le calcul automatique de la durée de vie. Vous pouvez utiliser les mêmes dates pour tous les types d’équipement, ou les définir par famille ou par type.",
+        "campos": "Dates utilisées",
+        "add": "Ajouter une date personnalisée",
+        "placeholder": "Nom de la date…",
+        "nombreAria": "Nom de la date significative",
+        "sinNombre": "Nouvelle date",
+        "usar": "Utiliser",
+        "usarAria": "Utiliser {{campo}}",
+        "eliminar": "Supprimer la date",
+        "eliminarAria": "Supprimer {{campo}}",
+        "matrizVacia": "Activez au moins une date dans « Dates utilisées » pour la paramétrer par type.",
+        "calc": "Utiliser pour le calcul de la durée de vie",
+        "calcAria": "Utiliser {{campo}} pour le calcul de la durée de vie",
+        "aniosGlobal": "Années",
+        "aniosGlobalAria": "Années de durée de vie à partir de {{campo}}",
+        "aniosCol": "Années de durée de vie depuis la date",
+        "aniosAria": "{{tipo}} : années de durée de vie à partir de {{fecha}}",
+        "aniosFamAria": "{{familia}} : années de durée de vie à partir de {{fecha}} (s’applique à tous ses types)",
+        "modo": {
+          "global": "Utiliser les mêmes dates pour tous les types d’équipement",
+          "personalizado": "Paramétrer les dates par famille et/ou par type d’équipement"
+        }
+      }
     }
   },
   "shell": {
@@ -1280,6 +1361,7 @@
       "emplazamientos": "Sites",
       "repositorioSectorial": "Référentiel sectoriel",
       "configuracion": "Configuration",
+      "configParametros": "Paramètres généraux",
       "configNormativa": "Normes",
       "configCampos": "Champs personnalisés",
       "configModelos": "Catalogue",
