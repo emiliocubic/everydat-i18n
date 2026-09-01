@@ -789,6 +789,7 @@
       "noBorrarRaiz": "Le site ne se supprime pas depuis l'arborescence",
       "noBorrarConHijas": "Suppression impossible : le dossier contient des sous-dossiers",
       "noBorrarConElementos": "Suppression impossible : le dossier contient des équipements",
+      "noBorrarZona": "Suppression impossible : le dossier est une zone ; rétrogradez-la d’abord",
       "plegarTodo": "Tout replier",
       "desplegarTodo": "Tout déplier",
       "plegar": "Replier",
@@ -806,7 +807,32 @@
       "colDescatalogados": "Équipements déclassés",
       "colProxRevision": "Prochain contrôle",
       "censoPendiente": "L'inventaire du dossier arrivera avec les équipements.",
-      "cuadroPendiente": "Le tableau de bord du site arrivera avec les équipements."
+      "cuadroPendiente": "Le tableau de bord du site arrivera avec les équipements.",
+      "zonaPromocionar": "Promouvoir en zone",
+      "zonaPromocionarSub": "Promouvoir en sous-zone",
+      "zonaDegradar": "Ne plus être une zone",
+      "zonaRaiz": "Le site complet est déjà la frontière extérieure",
+      "zonaPromovida": "{{nombre}} est désormais une zone",
+      "zonaDegradada": "{{nombre}} n'est plus une zone",
+      "proximaRevision": "Prochain contr.",
+      "proximaRevisionAria": "Date du prochain contrôle de la zone",
+      "aplicarFecha": "Valider la date"
+    },
+    "zona": {
+      "promoverTitulo": "Créer une sous-zone",
+      "promoverTexto": "Ce dossier se trouve dans la zone {{zona}}.",
+      "promoverNota": "Une sous-zone ne sert qu'à accorder une permission plus étroite ; elle ne retire jamais de visibilité à qui voit déjà la zone parente.",
+      "promoverAccion": "Créer la sous-zone",
+      "degradarTitulo": "Ne plus être une zone",
+      "degradarTexto": "La structure n'est pas touchée : seule la frontière administrative disparaît. Resteraient sans destination :",
+      "degradarNota": "Les permissions dépendront du site complet. Si vous promouvez à nouveau ce dossier, elles reviennent.",
+      "degradarAccion": "Ne plus être une zone",
+      "depContactos": "{{count}} contact avec permission sur cette zone",
+      "depContactos_other": "{{count}} contacts avec permission sur cette zone",
+      "depSubzonas": "{{count}} sous-zone à l’intérieur",
+      "depSubzonas_other": "{{count}} sous-zones à l’intérieur",
+      "depPlanificacion": "Une date de contrôle planifiée",
+      "sinDependencias": "Rien ne dépend de cette zone."
     }
   },
   "gruposClientes": {

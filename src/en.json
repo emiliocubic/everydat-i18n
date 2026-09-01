@@ -789,6 +789,7 @@
       "noBorrarRaiz": "The site is not deleted from the tree",
       "noBorrarConHijas": "Cannot delete: the folder has subfolders",
       "noBorrarConElementos": "Cannot delete: the folder has items",
+      "noBorrarZona": "Cannot delete: the folder is a zone; demote it first",
       "plegarTodo": "Collapse all",
       "desplegarTodo": "Expand all",
       "plegar": "Collapse",
@@ -806,7 +807,32 @@
       "colDescatalogados": "Discontinued items",
       "colProxRevision": "Next inspection",
       "censoPendiente": "The folder item list arrives with the items.",
-      "cuadroPendiente": "The site dashboard arrives with the items."
+      "cuadroPendiente": "The site dashboard arrives with the items.",
+      "zonaPromocionar": "Promote to zone",
+      "zonaPromocionarSub": "Promote to sub-zone",
+      "zonaDegradar": "Stop being a zone",
+      "zonaRaiz": "The whole site is already the outer boundary",
+      "zonaPromovida": "{{nombre}} is now a zone",
+      "zonaDegradada": "{{nombre}} is no longer a zone",
+      "proximaRevision": "Next insp.",
+      "proximaRevisionAria": "Date of the next inspection of the zone",
+      "aplicarFecha": "Apply the date"
+    },
+    "zona": {
+      "promoverTitulo": "Create a sub-zone",
+      "promoverTexto": "This folder is inside the zone {{zona}}.",
+      "promoverNota": "A sub-zone only serves to grant a narrower permission; it never removes visibility from whoever already sees the parent zone.",
+      "promoverAccion": "Create sub-zone",
+      "degradarTitulo": "Stop being a zone",
+      "degradarTexto": "The structure is untouched: only the administrative boundary disappears. These would be left without a target:",
+      "degradarNota": "Permissions fall back to the whole site. Promoting this folder again brings them back.",
+      "degradarAccion": "Stop being a zone",
+      "depContactos": "{{count}} contact with permission on this zone",
+      "depContactos_other": "{{count}} contacts with permission on this zone",
+      "depSubzonas": "{{count}} sub-zone inside it",
+      "depSubzonas_other": "{{count}} sub-zones inside it",
+      "depPlanificacion": "One scheduled inspection date",
+      "sinDependencias": "Nothing hangs from this zone."
     }
   },
   "gruposClientes": {
