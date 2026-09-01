@@ -162,6 +162,7 @@
         "emails": "Emails",
         "etiqueta": "Etiqueta",
         "plazoRevisiones": "Plazo base revisiones",
+        "descuento": "Descuento de cliente",
         "appCliente": "APP de cliente",
         "recibirNotif": "Recibir notificaciones",
         "alertaCliente": "Alerta del cliente"
@@ -600,7 +601,8 @@
       "localidad": "Localidad",
       "pais": "País",
       "cp": "C.P.",
-      "direccion": "Dirección"
+      "direccion": "Dirección",
+      "codigo": "Código"
     },
     "errors": {
       "clienteRequired": "Debes seleccionar un cliente."
@@ -616,6 +618,56 @@
       "propietario": "Propiedad",
       "propiedadEs": "Propiedad: {{nombre}}",
       "contrataEs": "Contrata: {{nombre}}"
+    },
+    "ficha": {
+      "tabs": {
+        "aria": "Secciones del emplazamiento",
+        "arbol": "Árbol estructural",
+        "datos": "Datos generales",
+        "documentacion": "Documentación",
+        "planos": "Planos y fotos",
+        "tabla": "Tabla de elementos",
+        "informes": "Informes"
+      },
+      "tabPendiente": "Esta pestaña todavía no está desarrollada.",
+      "secciones": {
+        "identificacion": "Identificación",
+        "parametros": "Parámetros de trabajo",
+        "notas": "Notas",
+        "bitacora": "Bitácora de clientes",
+        "internos": "Acceso · Usuarios internos",
+        "colaboradores": "Acceso · Colaboradores",
+        "invitados": "Acceso · Invitados"
+      },
+      "fields": {
+        "gps": "Coordenadas GPS",
+        "telefonos": "Teléfonos",
+        "telefono": "Teléfono",
+        "emails": "Emails",
+        "plazoRevisiones": "Plazo de revisiones",
+        "appAcceso": "Acceso desde la app"
+      },
+      "notif": {
+        "revisiones": "Revisiones",
+        "caducidades": "Caducidades"
+      },
+      "motivo": {
+        "global": "Acceso global",
+        "cuentas": "Por sus cuentas",
+        "emplazamiento": "Emplazamiento compartido"
+      },
+      "rol": {
+        "super": "Superadmin",
+        "admin": "Administrador",
+        "oper": "Operario"
+      },
+      "buscarCliente": "Buscar cliente…",
+      "sinContratista": "Sin contratista",
+      "contrataLaPropiedad": "Contrata la propiedad",
+      "heredaDelCliente": "Hereda el del cliente",
+      "vigente": "Vigente",
+      "sinAcceso": "Nadie con acceso.",
+      "borrarRegistroConfirm": "¿Borrar este registro de la bitácora? No se puede deshacer."
     }
   },
   "localizaciones": {

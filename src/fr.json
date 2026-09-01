@@ -226,6 +226,7 @@
         "emails": "E-mails",
         "etiqueta": "Libellé",
         "plazoRevisiones": "Delai de revision de base",
+        "descuento": "Remise client",
         "appCliente": "App client",
         "recibirNotif": "Recevoir les notifications",
         "alertaCliente": "Alerte client"
@@ -664,7 +665,8 @@
       "localidad": "Ville",
       "pais": "Pays",
       "cp": "Code postal",
-      "direccion": "Adresse"
+      "direccion": "Adresse",
+      "codigo": "Code"
     },
     "errors": {
       "clienteRequired": "Veuillez sélectionner un client."
@@ -680,6 +682,56 @@
       "propietario": "Propriétaire",
       "propiedadEs": "Propriétaire : {{nombre}}",
       "contrataEs": "Contractant : {{nombre}}"
+    },
+    "ficha": {
+      "tabs": {
+        "aria": "Sections du site",
+        "arbol": "Arbre structurel",
+        "datos": "Données générales",
+        "documentacion": "Documents",
+        "planos": "Plans et photos",
+        "tabla": "Tableau des équipements",
+        "informes": "Rapports"
+      },
+      "tabPendiente": "Cet onglet n'est pas encore développé.",
+      "secciones": {
+        "identificacion": "Identification",
+        "parametros": "Paramètres de travail",
+        "notas": "Notes",
+        "bitacora": "Journal des clients",
+        "internos": "Accès · Utilisateurs internes",
+        "colaboradores": "Accès · Collaborateurs",
+        "invitados": "Accès · Invités"
+      },
+      "fields": {
+        "gps": "Coordonnées GPS",
+        "telefonos": "Téléphones",
+        "telefono": "Téléphone",
+        "emails": "E-mails",
+        "plazoRevisiones": "Délai des révisions",
+        "appAcceso": "Accès depuis l'app"
+      },
+      "notif": {
+        "revisiones": "Révisions",
+        "caducidades": "Échéances"
+      },
+      "motivo": {
+        "global": "Accès global",
+        "cuentas": "Par ses comptes",
+        "emplazamiento": "Site partagé"
+      },
+      "rol": {
+        "super": "Superadmin",
+        "admin": "Administrateur",
+        "oper": "Opérateur"
+      },
+      "buscarCliente": "Rechercher un client…",
+      "sinContratista": "Sans contractant",
+      "contrataLaPropiedad": "Le propriétaire contracte",
+      "heredaDelCliente": "Hérite de celui du client",
+      "vigente": "En cours",
+      "sinAcceso": "Personne n’a accès.",
+      "borrarRegistroConfirm": "Supprimer cette entrée du journal ? Action irréversible."
     }
   },
   "localizaciones": {

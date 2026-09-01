@@ -226,6 +226,7 @@
         "emails": "Emails",
         "etiqueta": "Label",
         "plazoRevisiones": "Base review interval",
+        "descuento": "Customer discount",
         "appCliente": "Client app",
         "recibirNotif": "Receive notifications",
         "alertaCliente": "Client alert"
@@ -664,7 +665,8 @@
       "localidad": "Town",
       "pais": "Country",
       "cp": "Post code",
-      "direccion": "Address"
+      "direccion": "Address",
+      "codigo": "Code"
     },
     "errors": {
       "clienteRequired": "Please select a customer."
@@ -680,6 +682,56 @@
       "propietario": "Owner",
       "propiedadEs": "Owner: {{nombre}}",
       "contrataEs": "Contractor: {{nombre}}"
+    },
+    "ficha": {
+      "tabs": {
+        "aria": "Site sections",
+        "arbol": "Structure tree",
+        "datos": "General data",
+        "documentacion": "Documents",
+        "planos": "Plans and photos",
+        "tabla": "Equipment table",
+        "informes": "Reports"
+      },
+      "tabPendiente": "This tab has not been built yet.",
+      "secciones": {
+        "identificacion": "Identification",
+        "parametros": "Working parameters",
+        "notas": "Notes",
+        "bitacora": "Customer log",
+        "internos": "Access · Internal users",
+        "colaboradores": "Access · Collaborators",
+        "invitados": "Access · Guests"
+      },
+      "fields": {
+        "gps": "GPS coordinates",
+        "telefonos": "Phone numbers",
+        "telefono": "Phone",
+        "emails": "Emails",
+        "plazoRevisiones": "Inspection interval",
+        "appAcceso": "Field app access"
+      },
+      "notif": {
+        "revisiones": "Inspections",
+        "caducidades": "Expiries"
+      },
+      "motivo": {
+        "global": "Global access",
+        "cuentas": "Through their accounts",
+        "emplazamiento": "Site shared directly"
+      },
+      "rol": {
+        "super": "Superadmin",
+        "admin": "Administrator",
+        "oper": "Operator"
+      },
+      "buscarCliente": "Search customer…",
+      "sinContratista": "No contractor",
+      "contrataLaPropiedad": "The owner contracts",
+      "heredaDelCliente": "Inherits the customer's",
+      "vigente": "Current",
+      "sinAcceso": "Nobody has access.",
+      "borrarRegistroConfirm": "Delete this log entry? This cannot be undone."
     }
   },
   "localizaciones": {
