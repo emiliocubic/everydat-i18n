@@ -30,7 +30,9 @@
     "yes": "Sí",
     "no": "No",
     "less": "Menos",
-    "more": "Más"
+    "more": "Más",
+    "understood": "Entendido",
+    "accept": "Aceptar"
   },
   "merge": {
     "disappears": "Desaparece",
@@ -2169,7 +2171,13 @@
       "emplazamiento": "Emplazamiento",
       "nombre": "Nombre del proyecto",
       "tipos": "Qué se va a hacer",
-      "fechaTentativa": "Fecha prevista"
+      "fechaTentativa": "Fecha prevista",
+      "origen": "Origen",
+      "administrador": "Administrador de proyecto",
+      "ventana": "Ventana de ejecución",
+      "probabilidad": "Probabilidad de aprobación",
+      "zonas": "Alcance",
+      "motivoDescarte": "Motivo del descarte"
     },
     "estado": {
       "futuro": "Futuro",
@@ -2202,6 +2210,46 @@
       "nombrePlaceholder": "Si lo dejas vacío se compone solo",
       "fechaHint": "Aunque sea provisional: sin fecha el proyecto se pierde en la lista.",
       "sinEmplazamiento": "Sin emplazamiento el proyecto vive en la cartera, pero no se podrá aprobar."
+    },
+    "title": "Proyectos",
+    "volver": "Volver al listado",
+    "tabPendiente": "Esta pestaña llega en una tarea posterior.",
+    "tabs": {
+      "datos": "Datos proyecto",
+      "propuesta": "Propuesta",
+      "planificacion": "Planificación",
+      "ejecucion": "Ejecución",
+      "certificacion": "Certificación",
+      "aria": "Secciones del proyecto"
+    },
+    "mando": {
+      "cambiar": "Cambiar estado a…",
+      "confirmar": "Pasar el proyecto a «{{estado}}»",
+      "bloqueado": "No se puede pasar a «{{estado}}»",
+      "motivo": "Motivo",
+      "motivoPh": "Se lee luego en el listado y en la ficha",
+      "hecho": "El proyecto pasa a «{{estado}}».",
+      "efecto": {
+        "futuro": "Vuelve a la cartera de futuros y deja de poder planificarse. La probabilidad de aprobación se pone a 0 % y la propuesta deja de estar aceptada.",
+        "aprobado": "El proyecto queda aprobado y entra en la lista de trabajo. La probabilidad de aprobación se sitúa en el 100 %.",
+        "planificado": "Se da por buena la ventana de ejecución: el proyecto queda listo para arrancar en su fecha.",
+        "en_ejecucion": "El equipo asignado ya puede registrar trabajo. Con alguna tarea ejecutada el proyecto ya no podrá volver a estados previos.",
+        "ejecucion_paralizada": "Interrumpe la ejecución. El trabajo hecho se conserva y nada avanza hasta que alguien lo reanude o cierre el proyecto.",
+        "en_certificacion": "El trabajo de campo se da por terminado y se abre la fase de informes.",
+        "finalizado": "Cierra el proyecto. Si era de revisión, se crea solo el próximo de este emplazamiento.",
+        "descartado": "Sale del flujo operativo: no se planifica, no arranca y desaparece de las pestañas de seguimiento. Es reversible."
+      }
+    },
+    "datos": {
+      "identificacion": "Identificación",
+      "parametros": "Parámetros principales",
+      "parametrosHint": "Se editan en su pestaña",
+      "notas": "Notas",
+      "sinNotas": "Sin notas.",
+      "soloLectura": "Este estado deja la ficha en solo lectura.",
+      "fijoTitle": "El proyecto nació de aquí: moverlo de sitio sería otro proyecto.",
+      "todoElEmplazamiento": "Todo el emplazamiento",
+      "nZonas": "{{count}} zonas"
     }
   }
 }

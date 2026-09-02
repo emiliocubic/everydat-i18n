@@ -30,7 +30,9 @@
     "yes": "Oui",
     "no": "Non",
     "less": "Moins",
-    "more": "Plus"
+    "more": "Plus",
+    "understood": "Compris",
+    "accept": "Accepter"
   },
   "merge": {
     "disappears": "Disparaît",
@@ -2169,7 +2171,13 @@
       "emplazamiento": "Site",
       "nombre": "Nom du projet",
       "tipos": "Ce qui sera fait",
-      "fechaTentativa": "Date prévue"
+      "fechaTentativa": "Date prévue",
+      "origen": "Origine",
+      "administrador": "Responsable du projet",
+      "ventana": "Fenêtre d'exécution",
+      "probabilidad": "Probabilité d'approbation",
+      "zonas": "Périmètre",
+      "motivoDescarte": "Motif de l'abandon"
     },
     "estado": {
       "futuro": "Futur",
@@ -2202,6 +2210,46 @@
       "nombrePlaceholder": "Laissez vide et il se compose tout seul",
       "fechaHint": "Même provisoire : sans date le projet se perd dans la liste.",
       "sinEmplazamiento": "Sans site le projet vit dans le portefeuille, mais ne pourra pas être approuvé."
+    },
+    "title": "Projets",
+    "volver": "Retour à la liste",
+    "tabPendiente": "Cet onglet arrive dans une tâche ultérieure.",
+    "tabs": {
+      "datos": "Données projet",
+      "propuesta": "Proposition",
+      "planificacion": "Planification",
+      "ejecucion": "Exécution",
+      "certificacion": "Certification",
+      "aria": "Sections du projet"
+    },
+    "mando": {
+      "cambiar": "Changer l'état pour…",
+      "confirmar": "Passer le projet à « {{estado}} »",
+      "bloqueado": "Impossible de passer à « {{estado}} »",
+      "motivo": "Motif",
+      "motivoPh": "Il se lit ensuite dans la liste et la fiche",
+      "hecho": "Le projet passe à « {{estado}} ».",
+      "efecto": {
+        "futuro": "Retour au portefeuille ; il ne peut plus être planifié. La probabilité d'approbation passe à 0 % et la proposition n'est plus acceptée.",
+        "aprobado": "Le projet est approuvé et entre dans la liste de travail. La probabilité d'approbation passe à 100 %.",
+        "planificado": "La fenêtre d'exécution est validée : le projet est prêt à démarrer à sa date.",
+        "en_ejecucion": "L'équipe assignée peut enregistrer du travail. Dès qu'une tâche est faite, le projet ne peut plus revenir en arrière.",
+        "ejecucion_paralizada": "Interrompt l'exécution. Le travail fait est conservé et rien n'avance jusqu'à reprise ou clôture.",
+        "en_certificacion": "Le travail de terrain est terminé et la phase de rapports s'ouvre.",
+        "finalizado": "Clôture le projet. S'il s'agissait d'une vérification, la suivante de ce site est créée automatiquement.",
+        "descartado": "Sort du flux opérationnel : ni planifié, ni démarré, absent des vues de suivi. Réversible."
+      }
+    },
+    "datos": {
+      "identificacion": "Identification",
+      "parametros": "Paramètres principaux",
+      "parametrosHint": "Modifiables dans leur onglet",
+      "notas": "Notes",
+      "sinNotas": "Aucune note.",
+      "soloLectura": "Cet état laisse la fiche en lecture seule.",
+      "fijoTitle": "Le projet est né ici : le déplacer serait un autre projet.",
+      "todoElEmplazamiento": "Tout le site",
+      "nZonas": "{{count}} zones"
     }
   }
 }

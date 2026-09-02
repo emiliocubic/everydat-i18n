@@ -30,7 +30,9 @@
     "yes": "Yes",
     "no": "No",
     "less": "Less",
-    "more": "More"
+    "more": "More",
+    "understood": "Got it",
+    "accept": "Accept"
   },
   "merge": {
     "disappears": "Disappears",
@@ -2169,7 +2171,13 @@
       "emplazamiento": "Site",
       "nombre": "Project name",
       "tipos": "What will be done",
-      "fechaTentativa": "Planned date"
+      "fechaTentativa": "Planned date",
+      "origen": "Source",
+      "administrador": "Project owner",
+      "ventana": "Execution window",
+      "probabilidad": "Approval probability",
+      "zonas": "Scope",
+      "motivoDescarte": "Reason for dropping"
     },
     "estado": {
       "futuro": "Future",
@@ -2202,6 +2210,46 @@
       "nombrePlaceholder": "Leave empty and it composes itself",
       "fechaHint": "Even if provisional: with no date the project gets lost in the list.",
       "sinEmplazamiento": "With no site the project lives in the pipeline, but cannot be approved."
+    },
+    "title": "Projects",
+    "volver": "Back to list",
+    "tabPendiente": "This tab comes in a later task.",
+    "tabs": {
+      "datos": "Project data",
+      "propuesta": "Proposal",
+      "planificacion": "Scheduling",
+      "ejecucion": "Execution",
+      "certificacion": "Certification",
+      "aria": "Project sections"
+    },
+    "mando": {
+      "cambiar": "Change status to…",
+      "confirmar": "Move the project to “{{estado}}”",
+      "bloqueado": "Cannot move to “{{estado}}”",
+      "motivo": "Reason",
+      "motivoPh": "Shown later in the list and the record",
+      "hecho": "The project is now “{{estado}}”.",
+      "efecto": {
+        "futuro": "Back to the pipeline; it can no longer be scheduled. Approval probability drops to 0 % and the proposal is no longer accepted.",
+        "aprobado": "The project is approved and enters the work list. Approval probability goes to 100 %.",
+        "planificado": "The execution window is accepted: the project is ready to start on its date.",
+        "en_ejecucion": "The assigned team can now log work. Once any task is done the project can no longer go back.",
+        "ejecucion_paralizada": "Execution is interrupted. Work done is kept and nothing advances until someone resumes or closes it.",
+        "en_certificacion": "Field work is considered finished and the reporting phase opens.",
+        "finalizado": "Closes the project. If it was an inspection, the next one for this site is created automatically.",
+        "descartado": "Leaves the operational flow: not scheduled, not started, gone from the tracking views. Reversible."
+      }
+    },
+    "datos": {
+      "identificacion": "Identification",
+      "parametros": "Main parameters",
+      "parametrosHint": "Edited in their own tab",
+      "notas": "Notes",
+      "sinNotas": "No notes.",
+      "soloLectura": "This status leaves the record read-only.",
+      "fijoTitle": "The project was born here: moving it elsewhere would be another project.",
+      "todoElEmplazamiento": "The whole site",
+      "nZonas": "{{count}} zones"
     }
   }
 }
