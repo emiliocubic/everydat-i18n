@@ -473,6 +473,49 @@
       "errorGuardar": "Could not save"
     }
   },
+  "elementos": {
+    "censo": {
+      "acciones": "Inventory actions",
+      "alcance": "List scope",
+      "alcanceNodo": "This folder",
+      "alcanceRama": "Whole branch",
+      "verDescatalogados": "Show retired",
+      "seleccionarTodos": "Select all items",
+      "seleccionados": "{{count}} selected",
+      "seleccionados_other": "{{count}} selected",
+      "vacio": "This folder has no items.",
+      "colElemento": "Item",
+      "colCodigo": "Identification",
+      "colProxima": "Next insp.",
+      "colEstado": "Status"
+    },
+    "situacion": {
+      "sin_revisar": "Not inspected",
+      "apto": "Pass",
+      "no_apto": "Fail",
+      "rev_caducada": "Inspection overdue",
+      "fin_vida": "End of service life"
+    },
+    "estado": {
+      "activo": "Active",
+      "en_reparacion": "Under repair",
+      "retirado": "Withdrawn",
+      "destruido": "Destroyed",
+      "descatalogado": "Retired"
+    },
+    "cuadro": {
+      "titulo": "Site dashboard",
+      "total": "Items",
+      "activos": "In service",
+      "incidencias": "Issues",
+      "sinRevisar": "Not inspected",
+      "descatalogados": "Retired",
+      "buscar": "Find an item",
+      "buscarPlaceholder": "Type, brand, model, reference or serial no.…",
+      "sinResultados": "No item matches.",
+      "excepcionesPendiente": "Detected exceptions arrive with inspection projects."
+    }
+  },
   "admins": {
     "title": "Users",
     "subtitle": "Manage all system accounts",
@@ -806,8 +849,6 @@
       "colEnRevision": "Items under inspection",
       "colDescatalogados": "Discontinued items",
       "colProxRevision": "Next inspection",
-      "censoPendiente": "The folder item list arrives with the items.",
-      "cuadroPendiente": "The site dashboard arrives with the items.",
       "zonaPromocionar": "Promote to zone",
       "zonaPromocionarSub": "Promote to sub-zone",
       "zonaDegradar": "Stop being a zone",

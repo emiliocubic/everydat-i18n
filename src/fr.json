@@ -473,6 +473,49 @@
       "errorGuardar": "Impossible d’enregistrer"
     }
   },
+  "elementos": {
+    "censo": {
+      "acciones": "Actions de l'inventaire",
+      "alcance": "Portée de la liste",
+      "alcanceNodo": "Ce dossier",
+      "alcanceRama": "Toute la branche",
+      "verDescatalogados": "Voir les réformés",
+      "seleccionarTodos": "Sélectionner tous les éléments",
+      "seleccionados": "{{count}} sélectionné",
+      "seleccionados_other": "{{count}} sélectionnés",
+      "vacio": "Ce dossier n'a aucun élément.",
+      "colElemento": "Élément",
+      "colCodigo": "Identification",
+      "colProxima": "Proch. insp.",
+      "colEstado": "État"
+    },
+    "situacion": {
+      "sin_revisar": "Non inspecté",
+      "apto": "Conforme",
+      "no_apto": "Non conforme",
+      "rev_caducada": "Inspection échue",
+      "fin_vida": "Fin de vie utile"
+    },
+    "estado": {
+      "activo": "Actif",
+      "en_reparacion": "En réparation",
+      "retirado": "Retiré",
+      "destruido": "Détruit",
+      "descatalogado": "Réformé"
+    },
+    "cuadro": {
+      "titulo": "Tableau de bord du site",
+      "total": "Éléments",
+      "activos": "En service",
+      "incidencias": "Incidents",
+      "sinRevisar": "Non inspectés",
+      "descatalogados": "Réformés",
+      "buscar": "Chercher un élément",
+      "buscarPlaceholder": "Type, marque, modèle, référence ou n° de série…",
+      "sinResultados": "Aucun élément ne correspond.",
+      "excepcionesPendiente": "Les exceptions détectées arrivent avec les projets d'inspection."
+    }
+  },
   "admins": {
     "title": "Utilisateurs",
     "subtitle": "Gestion de tous les comptes du système",
@@ -806,8 +849,6 @@
       "colEnRevision": "Équipements en cours de contrôle",
       "colDescatalogados": "Équipements déclassés",
       "colProxRevision": "Prochain contrôle",
-      "censoPendiente": "L'inventaire du dossier arrivera avec les équipements.",
-      "cuadroPendiente": "Le tableau de bord du site arrivera avec les équipements.",
       "zonaPromocionar": "Promouvoir en zone",
       "zonaPromocionarSub": "Promouvoir en sous-zone",
       "zonaDegradar": "Ne plus être une zone",

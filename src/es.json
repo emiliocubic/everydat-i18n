@@ -384,6 +384,49 @@
       "errorGuardar": "Error al guardar"
     }
   },
+  "elementos": {
+    "censo": {
+      "acciones": "Acciones del censo",
+      "alcance": "Alcance del listado",
+      "alcanceNodo": "Esta carpeta",
+      "alcanceRama": "Toda la rama",
+      "verDescatalogados": "Ver descatalogados",
+      "seleccionarTodos": "Seleccionar todos los elementos",
+      "seleccionados": "{{count}} seleccionado",
+      "seleccionados_other": "{{count}} seleccionados",
+      "vacio": "Esta carpeta no tiene elementos.",
+      "colElemento": "Elemento",
+      "colCodigo": "Identificación",
+      "colProxima": "Próxima rev.",
+      "colEstado": "Estado"
+    },
+    "situacion": {
+      "sin_revisar": "Sin revisar",
+      "apto": "Apto",
+      "no_apto": "No apto",
+      "rev_caducada": "Revisión caducada",
+      "fin_vida": "Fin de vida útil"
+    },
+    "estado": {
+      "activo": "Activo",
+      "en_reparacion": "En reparación",
+      "retirado": "Retirado",
+      "destruido": "Destruido",
+      "descatalogado": "Descatalogado"
+    },
+    "cuadro": {
+      "titulo": "Cuadro de mando del emplazamiento",
+      "total": "Elementos",
+      "activos": "En servicio",
+      "incidencias": "Incidencias",
+      "sinRevisar": "Sin revisar",
+      "descatalogados": "Descatalogados",
+      "buscar": "Buscar un elemento",
+      "buscarPlaceholder": "Tipo, marca, modelo, referencia o nº de serie…",
+      "sinResultados": "Ningún elemento coincide.",
+      "excepcionesPendiente": "Las excepciones detectadas llegan con los proyectos de revisión."
+    }
+  },
   "admins": {
     "title": "Usuarios",
     "subtitle": "Gestión de todas las cuentas del sistema",
@@ -717,8 +760,6 @@
       "colEnRevision": "Elementos en proceso de revisión",
       "colDescatalogados": "Elementos descatalogados",
       "colProxRevision": "Próxima revisión",
-      "censoPendiente": "El censo de elementos de la carpeta llega con los elementos.",
-      "cuadroPendiente": "El cuadro de mando del emplazamiento llega con los elementos.",
       "zonaPromocionar": "Promocionar a zona",
       "zonaPromocionarSub": "Promocionar a sub-zona",
       "zonaDegradar": "Dejar de ser zona",
