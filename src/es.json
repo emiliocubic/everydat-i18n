@@ -21,6 +21,7 @@
     "savedOk": "Guardado correctamente.",
     "call": "Llamar",
     "saving": "Guardando…",
+    "dontShowAgain": "No volver a mostrar",
     "pagination": {
       "showing": "Mostrando {{from}}–{{to}} de {{total}}",
       "prev": "Anterior",
@@ -794,6 +795,7 @@
         "informes": "Informes"
       },
       "tabPendiente": "Esta pestaña todavía no está desarrollada.",
+      "irAlCliente": "Ir al cliente",
       "secciones": {
         "identificacion": "Identificación",
         "parametros": "Parámetros de trabajo",
@@ -1602,7 +1604,7 @@
       "updated": "Tipo actualizado",
       "deleted": "Tipo eliminado",
       "confirmDelete": "¿Eliminar el tipo «{{nombre}}»?",
-      "create": "Nuevo tipo",
+      "create": "Nuevo tipo de elemento",
       "createBtn": "Crear tipo",
       "delete": "Eliminar tipo",
       "newTitle": "Nuevo tipo de elemento",
@@ -1682,6 +1684,7 @@
       "scope": {
         "general": "General",
         "en17235": "Sistemas EN 17235",
+        "generalNote": "EPIS, sistemas anticaídas pre-EN 17235 y en general todos los tipos de elementos excepto aquellos bajo EN 17235.",
         "en17235Note": "Los sistemas EN 17235 son cuatro kits fijos (A-D): no se crean, no se borran y no se agrupan en familias. Sí se les puede ajustar la normativa aplicable y la validez de sus revisiones."
       },
       "composicion": {

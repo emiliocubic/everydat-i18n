@@ -21,6 +21,7 @@
     "savedOk": "Enregistré avec succès.",
     "call": "Appeler",
     "saving": "Enregistrement…",
+    "dontShowAgain": "Ne plus afficher",
     "pagination": {
       "showing": "Affichage {{from}}–{{to}} sur {{total}}",
       "prev": "Précédent",
@@ -883,6 +884,7 @@
         "informes": "Rapports"
       },
       "tabPendiente": "Cet onglet n'est pas encore développé.",
+      "irAlCliente": "Aller au client",
       "secciones": {
         "identificacion": "Identification",
         "parametros": "Paramètres de travail",
@@ -1602,7 +1604,7 @@
       "updated": "Type mis à jour",
       "deleted": "Type supprimé",
       "confirmDelete": "Supprimer le type « {{nombre}} » ?",
-      "create": "Nouveau type",
+      "create": "Nouveau type d'élément",
       "createBtn": "Créer le type",
       "delete": "Supprimer le type",
       "newTitle": "Nouveau type d'élément",
@@ -1682,6 +1684,7 @@
       "scope": {
         "general": "Général",
         "en17235": "Systèmes EN 17235",
+        "generalNote": "EPI, systèmes antichute antérieurs à l'EN 17235 et, en général, tous les types d'éléments hormis ceux relevant de l'EN 17235.",
         "en17235Note": "Les systèmes EN 17235 sont quatre kits fixes (A-D) : ils ne se créent pas, ne se suppriment pas et ne se regroupent pas en familles. Leurs normes applicables et la validité de leurs vérifications restent modifiables."
       },
       "composicion": {

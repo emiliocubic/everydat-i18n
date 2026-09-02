@@ -21,6 +21,7 @@
     "savedOk": "Saved successfully.",
     "call": "Call",
     "saving": "Saving…",
+    "dontShowAgain": "Don't show again",
     "pagination": {
       "showing": "Showing {{from}}–{{to}} of {{total}}",
       "prev": "Previous",
@@ -883,6 +884,7 @@
         "informes": "Reports"
       },
       "tabPendiente": "This tab has not been built yet.",
+      "irAlCliente": "Go to client",
       "secciones": {
         "identificacion": "Identification",
         "parametros": "Working parameters",
@@ -1602,7 +1604,7 @@
       "updated": "Type updated",
       "deleted": "Type deleted",
       "confirmDelete": "Delete type “{{nombre}}”?",
-      "create": "New type",
+      "create": "New element type",
       "createBtn": "Create type",
       "delete": "Delete type",
       "newTitle": "New element type",
@@ -1682,6 +1684,7 @@
       "scope": {
         "general": "General",
         "en17235": "EN 17235 systems",
+        "generalNote": "PPE, pre-EN 17235 fall arrest systems and, in general, every element type except those under EN 17235.",
         "en17235Note": "EN 17235 systems are four fixed kits (A-D): they cannot be created, deleted or grouped into families. Their applicable standards and inspection validity can be adjusted."
       },
       "composicion": {
