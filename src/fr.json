@@ -29,6 +29,10 @@
     "yes": "Oui",
     "no": "Non"
   },
+  "merge": {
+    "disappears": "Disparaît",
+    "kept": "Conservé"
+  },
   "nav": {
     "clientes": "Clients",
     "emplazamientos": "Sites",
@@ -547,6 +551,90 @@
         "eliminar": "{{count}} élément supprimé",
         "eliminar_other": "{{count}} éléments supprimés"
       }
+    },
+    "ficha": {
+      "aria": "Fiche de l'élément",
+      "tab": {
+        "caract": "Caractéristiques et état",
+        "normativa": "Normes"
+      },
+      "anterior": "Précédent (Alt+↑)",
+      "siguiente": "Suivant (Alt+↓)",
+      "editando": "Édition de l'élément",
+      "identificacion": "Identification",
+      "sinIdentificadores": "Son type ne demande aucun identifiant.",
+      "situacion": "Situation actuelle",
+      "estado": "Situation",
+      "cicloVida": "État",
+      "motivo": "Motif",
+      "finVida": "Fin de vie utile",
+      "finVidaMotivo": "Motif de la fin de vie",
+      "declarado": "déclarée",
+      "ultimaRevision": "Dernière inspection",
+      "validaHasta": "Valable jusqu'au",
+      "enRevision": "En inspection",
+      "fechas": "Dates significatives",
+      "sinFechas": "Son type ne prévoit aucune date.",
+      "vidaUtil": "Vie utile max. {{count}} an",
+      "vidaUtil_other": "Vie utile max. {{count}} ans",
+      "caracteristicas": "Caractéristiques",
+      "tipo": "Type d'élément",
+      "marca": "Marque / Fabricant",
+      "modelo": "Modèle",
+      "referencia": "Référence",
+      "descripcion": "Description",
+      "notasInternas": "Notes internes",
+      "coordenadas": "Coordonnées",
+      "campoSinValores": "Son type n'a aucune valeur assignée pour ce champ."
+    },
+    "fecha": {
+      "fabricacion": "Fabrication",
+      "instalacion": "Installation",
+      "suministro": "Fourniture",
+      "puesta_servicio": "Mise en service"
+    },
+    "normativa": {
+      "soloLectura": "Les normes viennent du catalogue, pas de cette fiche : elles se modifient sur la référence, le modèle ou le type.",
+      "cumple": "Normes respectées",
+      "sinOrigen": "Aucune référence de catalogue : rien à résoudre.",
+      "origen": {
+        "referencia": "Définies sur sa référence de catalogue.",
+        "modelo": "Héritées de son modèle : la référence n'en a pas en propre."
+      },
+      "delTipo": "Normes du type {{tipo}}",
+      "delTipoNota": "C'est autre chose : quelles normes sont pertinentes pour cette famille d'équipement, et d'où viennent ses champs et ses check-lists."
+    },
+    "accion": {
+      "fecha": "Date",
+      "titulo": {
+        "activo": "Remettre en service",
+        "en_reparacion": "Envoyer en réparation",
+        "retirado": "Retirer du service",
+        "destruido": "Déclarer détruit",
+        "fin_vida": "Déclarer la fin de vie utile",
+        "quitar_fin_vida": "Retirer la fin de vie déclarée"
+      },
+      "texto": {
+        "activo": "Il compte à nouveau comme matériel utilisable. Il faut le justifier : c'est affirmer que l'équipement peut resservir.",
+        "en_reparacion": "Il reste à l'inventaire mais ne peut pas être utilisé, et compte comme incident.",
+        "retirado": "Il sort du service et conserve tout son historique d'inspections : la norme EN 365 l'exige pour prouver que l'équipement était utilisable.",
+        "destruido": "Sans retour possible. C'est l'état terminal : une erreur se corrige via le support.",
+        "fin_vida": "Déclarer l'équipement mort avant que le calcul ne le dise, par exemple après avoir arrêté une chute. Cela ne le sort pas du service : c'est une autre décision.",
+        "quitar_fin_vida": "L'équipement revient au calcul de vie utile de son type, et le motif enregistré disparaît."
+      },
+      "motivoPlaceholder": {
+        "fin_vida": "Ex. : a arrêté une chute",
+        "retirado": "Ex. : couture endommagée",
+        "activo": "Ex. : réparé en atelier et vérifié"
+      },
+      "confirmar": {
+        "activo": "Remettre en service",
+        "en_reparacion": "Envoyer en réparation",
+        "retirado": "Retirer",
+        "destruido": "Déclarer détruit",
+        "fin_vida": "Déclarer",
+        "quitar_fin_vida": "Retirer"
+      }
     }
   },
   "admins": {
@@ -956,7 +1044,7 @@
         "subtitle": "Ajoutez votre propre modèle avec son fabricant et ses références.",
         "fabricanteTitle": "Fabricant",
         "fabricantePlaceholder": "Saisissez ou choisissez un fabricant…",
-        "fabricanteHint": "Si le nom correspond à un fabricant de votre catalogue, il est réutilisé ; sinon, un nouveau est créé.",
+        "fabricanteHint": "Choisissez un fabricant déjà enregistré. Les nouveaux se créent dans Configuration → Fabricants.",
         "modeloTitle": "Modèle",
         "modeloPlaceholder": "Saisissez ou choisissez un modèle…",
         "modeloDisabled": "Choisissez d'abord un fabricant",
@@ -989,7 +1077,14 @@
         "origen": "Origine",
         "fabricante": "Fabricant",
         "modelo": "Modèle",
-        "referencias": "Références"
+        "referencias": "Références",
+        "foto": "Photo",
+        "familia": "Famille",
+        "tipo": "Type d'élément",
+        "elementos": "Nb d'éléments",
+        "repo": "Référentiel sectoriel",
+        "repoShort": "RÉF.",
+        "repoTitle": "Référentiel sectoriel — ce modèle provient du référentiel"
       },
       "importar": {
         "title": "Importer du référentiel sectoriel",
@@ -999,6 +1094,23 @@
         "noResults": "Aucune correspondance dans le référentiel.",
         "alreadyImported": "Déjà importé",
         "importBtn": "Importer"
+      },
+      "delete": "Supprimer le modèle",
+      "deleted": "Modèle supprimé",
+      "confirmDelete": "Supprimer le modèle « {{nombre}} » ?",
+      "tipoAlerta": "Les normes de ce modèle ne correspondent pas à celles de son type d'élément",
+      "merge": {
+        "handle": "Faire glisser sur un autre modèle pour les unifier",
+        "title": "Fusionner ces deux modèles ?",
+        "desc": "Vous allez fusionner « {{from}} » dans « {{to}} ». Les deux sont de {{fabricante}} et du type {{tipo}}, ils peuvent donc n'en faire qu'un.",
+        "nRefs": "{{n}} réf.",
+        "refsRepetidas": "Des références partagent le même code dans les deux modèles ({{codigos}}). Elles ne sont pas fusionnées : les deux restent sur le modèle conservé et se réconcilient depuis sa fiche.",
+        "refsSinSolape": "Aucune référence n'est répétée entre les deux modèles : toutes passent telles quelles au modèle conservé.",
+        "elementosIntactos": "Aucun élément du parc ne change de référence : ils restent sur la leur, c'est la référence qui change de modèle.",
+        "caracterizacion": "La caractérisation de « {{to}} » prévaut : validité des vérifications, dates et documentation. Ce que définissait « {{from}} » ne s'applique plus.",
+        "note": "« {{from}} » cessera d'exister : ses références — et les {{n}} éléments qui en dépendent — passent à « {{to}} ». Action irréversible.",
+        "confirm": "Fusionner les modèles",
+        "done": "« {{from}} » a été fusionné dans « {{to}} »"
       }
     },
     "modelos": {

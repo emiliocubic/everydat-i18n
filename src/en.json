@@ -29,6 +29,10 @@
     "yes": "Yes",
     "no": "No"
   },
+  "merge": {
+    "disappears": "Disappears",
+    "kept": "Kept"
+  },
   "nav": {
     "clientes": "Customers",
     "emplazamientos": "Locations",
@@ -547,6 +551,90 @@
         "eliminar": "{{count}} item deleted",
         "eliminar_other": "{{count}} items deleted"
       }
+    },
+    "ficha": {
+      "aria": "Item record",
+      "tab": {
+        "caract": "Details and status",
+        "normativa": "Standards"
+      },
+      "anterior": "Previous (Alt+↑)",
+      "siguiente": "Next (Alt+↓)",
+      "editando": "Editing the item",
+      "identificacion": "Identification",
+      "sinIdentificadores": "Its type asks for no identifier.",
+      "situacion": "Current status",
+      "estado": "Status",
+      "cicloVida": "State",
+      "motivo": "Reason",
+      "finVida": "End of service life",
+      "finVidaMotivo": "End-of-life reason",
+      "declarado": "declared",
+      "ultimaRevision": "Last inspection",
+      "validaHasta": "Valid until",
+      "enRevision": "Under inspection",
+      "fechas": "Significant dates",
+      "sinFechas": "Its type uses no dates.",
+      "vidaUtil": "Max. service life {{count}} year",
+      "vidaUtil_other": "Max. service life {{count}} years",
+      "caracteristicas": "Details",
+      "tipo": "Item type",
+      "marca": "Brand / Manufacturer",
+      "modelo": "Model",
+      "referencia": "Reference",
+      "descripcion": "Description",
+      "notasInternas": "Internal notes",
+      "coordenadas": "Coordinates",
+      "campoSinValores": "Its type has no values assigned for this field."
+    },
+    "fecha": {
+      "fabricacion": "Manufacture",
+      "instalacion": "Installation",
+      "suministro": "Supply",
+      "puesta_servicio": "Commissioning"
+    },
+    "normativa": {
+      "soloLectura": "Standards come from the catalogue, not from this record: change them on the reference, the model or the type.",
+      "cumple": "Standards it meets",
+      "sinOrigen": "No catalogue reference: there are no standards to resolve.",
+      "origen": {
+        "referencia": "Set on its catalogue reference.",
+        "modelo": "Inherited from its model: the reference has none of its own."
+      },
+      "delTipo": "Standards of type {{tipo}}",
+      "delTipoNota": "A different thing: which standards are relevant to that family of equipment, and where its fields and checklists come from."
+    },
+    "accion": {
+      "fecha": "Date",
+      "titulo": {
+        "activo": "Return to service",
+        "en_reparacion": "Send for repair",
+        "retirado": "Withdraw from service",
+        "destruido": "Mark as destroyed",
+        "fin_vida": "Declare end of service life",
+        "quitar_fin_vida": "Remove the declared end of life"
+      },
+      "texto": {
+        "activo": "It counts as usable equipment again. This needs a reason: it states the item can be used once more.",
+        "en_reparacion": "It stays in the inventory but cannot be used, and counts as an issue.",
+        "retirado": "It leaves service and keeps its whole inspection history: EN 365 requires it to prove the equipment was usable.",
+        "destruido": "There is no way back. This is the terminal state: mistakes are fixed through support.",
+        "fin_vida": "Declare the item dead before the calculation does, for instance after it arrested a fall. It does not take it out of service: that is a separate decision.",
+        "quitar_fin_vida": "The item goes back to its type's service-life calculation, and the reason on record disappears."
+      },
+      "motivoPlaceholder": {
+        "fin_vida": "E.g. it arrested a fall",
+        "retirado": "E.g. damaged stitching",
+        "activo": "E.g. repaired and verified in workshop"
+      },
+      "confirmar": {
+        "activo": "Return to service",
+        "en_reparacion": "Send for repair",
+        "retirado": "Withdraw",
+        "destruido": "Mark as destroyed",
+        "fin_vida": "Declare",
+        "quitar_fin_vida": "Remove"
+      }
     }
   },
   "admins": {
@@ -956,7 +1044,7 @@
         "subtitle": "Add your own model with its manufacturer and references.",
         "fabricanteTitle": "Manufacturer",
         "fabricantePlaceholder": "Type or pick a manufacturer…",
-        "fabricanteHint": "If the name matches one in your catalogue it is reused; otherwise a new one is created.",
+        "fabricanteHint": "Pick a manufacturer already on file. New ones are created in Settings → Manufacturers.",
         "modeloTitle": "Model",
         "modeloPlaceholder": "Type or pick a model…",
         "modeloDisabled": "Pick a manufacturer first",
@@ -989,7 +1077,14 @@
         "origen": "Origin",
         "fabricante": "Manufacturer",
         "modelo": "Model",
-        "referencias": "References"
+        "referencias": "References",
+        "foto": "Photo",
+        "familia": "Family",
+        "tipo": "Element type",
+        "elementos": "No. of elements",
+        "repo": "Industry repository",
+        "repoShort": "REPO",
+        "repoTitle": "Industry repository — this model came from the repository"
       },
       "importar": {
         "title": "Import from the sector repository",
@@ -999,6 +1094,23 @@
         "noResults": "No matches in the repository.",
         "alreadyImported": "Already imported",
         "importBtn": "Import"
+      },
+      "delete": "Delete model",
+      "deleted": "Model deleted",
+      "confirmDelete": "Delete model “{{nombre}}”?",
+      "tipoAlerta": "This model's standards do not match those of its element type",
+      "merge": {
+        "handle": "Drag onto another model to merge them",
+        "title": "Merge these two models?",
+        "desc": "You are merging “{{from}}” into “{{to}}”. Both are {{fabricante}} and of type {{tipo}}, so they can become a single model.",
+        "nRefs": "{{n}} refs",
+        "refsRepetidas": "Some references share a code across both models ({{codigos}}). They are not merged: both remain on the surviving model and are reconciled from its record.",
+        "refsSinSolape": "No reference is repeated across the two models: all of them move as they are to the surviving model.",
+        "elementosIntactos": "No element in the field changes reference: they stay on theirs, and it is the reference that changes model.",
+        "caracterizacion": "The characterisation of “{{to}}” prevails: inspection validity, dates and documentation. Whatever “{{from}}” defined no longer applies.",
+        "note": "“{{from}}” will cease to exist: its references — and the {{n}} elements hanging from them — move to “{{to}}”. This cannot be undone.",
+        "confirm": "Merge models",
+        "done": "“{{from}}” was merged into “{{to}}”"
       }
     },
     "modelos": {
