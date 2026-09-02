@@ -1429,14 +1429,16 @@
       "tabs": {
         "general": "General",
         "campos": "Custom fields",
-        "checklist": "Checklist"
+        "checklist": "Checklist",
+        "composicion": "Composition"
       },
       "charTitle": "Characterization",
       "field": {
         "familia": "Family",
         "nombre": "Type name",
         "validez": "Inspection validity",
-        "normas": "Standards"
+        "normas": "Standards",
+        "kit": "Kit"
       },
       "nombrePlaceholder": "e.g. Fall-arrest harness",
       "validezUnit": "months since last PASS inspection",
@@ -1470,9 +1472,10 @@
         "familia": "Family",
         "nombre": "Element type",
         "normas": "Standards",
-        "checklist": "Checkpoints",
         "campos": "Custom fields",
-        "elementos": "No. of elements"
+        "elementos": "No. of elements",
+        "kit": "Kit",
+        "checklists": "No. of checklists"
       },
       "familias": {
         "title": "Families",
@@ -1487,6 +1490,33 @@
         "deleted": "Family deleted",
         "confirmDelete": "Delete family “{{nombre}}”?",
         "cantDelete": "Cannot delete: has types"
+      },
+      "scopeAria": "Element type scopes",
+      "scope": {
+        "general": "General",
+        "en17235": "EN 17235 systems",
+        "en17235Note": "EN 17235 systems are four fixed kits (A-D): they cannot be created, deleted or grouped into families. Their applicable standards and inspection validity can be adjusted."
+      },
+      "composicion": {
+        "scaffold": "Indicative layout.",
+        "scaffoldHint": "The data model for EN 17235 systems is still to be defined with a manufacturer.",
+        "notice": "System composition per EN 17235. Conformity is assessed on the complete system, including the supporting structure.",
+        "estructurales": {
+          "title": "Structural components",
+          "hint": "parts of the system itself · by reference and number of units"
+        },
+        "accesorios": {
+          "title": "Functional accessories",
+          "hint": "equipment in its own right (type, brand, model, serial number)"
+        },
+        "fijacion": {
+          "title": "Fixing elements",
+          "hint": "bulk fasteners — typical data only (metric size)"
+        },
+        "epis": {
+          "title": "Recommended PPE",
+          "hint": "at type and standard level, not a specific model"
+        }
       }
     },
     "parametros": {
