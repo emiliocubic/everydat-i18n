@@ -780,6 +780,26 @@
       "confirmDeshacer": "Défaire l'ensemble « {{nombre}} » ? Les équipements restent libres dans leur dossier.",
       "deshecho": "Ensemble défait.",
       "situacionHint": "L'état de l'ensemble est le pire de ses équipements."
+    },
+    "tabla": {
+      "buscar": "Rechercher par identification, modèle ou chemin",
+      "vacio": "Aucun équipement",
+      "vacioHint": "Ce site n'a encore aucun équipement enregistré.",
+      "grupoCampos": "Champs de {{tipo}}",
+      "heredada": "héritée",
+      "cols": {
+        "identificacion": "Identification",
+        "tipo": "Type",
+        "marca": "Marque",
+        "modelo": "Modèle",
+        "referencia": "Référence",
+        "ruta": "Localisation",
+        "zona": "Zone",
+        "situacion": "État",
+        "estado": "Statut",
+        "validaHasta": "Vérification valable jusqu'au",
+        "conjunto": "Ensemble"
+      }
     }
   },
   "admins": {

@@ -780,6 +780,26 @@
       "confirmDeshacer": "Undo the set “{{nombre}}”? Items stay loose in their folder.",
       "deshecho": "Set undone.",
       "situacionHint": "The set's status is the worst of its items."
+    },
+    "tabla": {
+      "buscar": "Search by identification, model or path",
+      "vacio": "No items",
+      "vacioHint": "This site has no equipment registered yet.",
+      "grupoCampos": "{{tipo}} fields",
+      "heredada": "inherited",
+      "cols": {
+        "identificacion": "Identification",
+        "tipo": "Type",
+        "marca": "Brand",
+        "modelo": "Model",
+        "referencia": "Reference",
+        "ruta": "Location",
+        "zona": "Zone",
+        "situacion": "Status",
+        "estado": "State",
+        "validaHasta": "Inspection valid until",
+        "conjunto": "Set"
+      }
     }
   },
   "admins": {

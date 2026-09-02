@@ -691,6 +691,26 @@
       "confirmDeshacer": "¿Deshacer el conjunto «{{nombre}}»? Los equipos quedan sueltos en su carpeta.",
       "deshecho": "Conjunto deshecho.",
       "situacionHint": "La situación del conjunto es la peor de sus equipos."
+    },
+    "tabla": {
+      "buscar": "Busca por identificación, modelo o ruta",
+      "vacio": "Sin elementos",
+      "vacioHint": "Este emplazamiento aún no tiene equipos dados de alta.",
+      "grupoCampos": "Campos de {{tipo}}",
+      "heredada": "heredada",
+      "cols": {
+        "identificacion": "Identificación",
+        "tipo": "Tipo",
+        "marca": "Marca",
+        "modelo": "Modelo",
+        "referencia": "Referencia",
+        "ruta": "Localización",
+        "zona": "Zona",
+        "situacion": "Situación",
+        "estado": "Estado",
+        "validaHasta": "Revisión válida hasta",
+        "conjunto": "Conjunto"
+      }
     }
   },
   "admins": {
