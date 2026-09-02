@@ -2081,7 +2081,8 @@
       "roles": "Roles",
       "rolesMatrix": "Permissions matrix",
       "gruposClientes": "Customer groups",
-      "admins": "Administrators"
+      "admins": "Administrators",
+      "proyectos": "Projects"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -2145,6 +2146,62 @@
     },
     "common": {
       "close": "Close"
+    }
+  },
+  "proyectos": {
+    "buscar": "Search by client, site or name",
+    "vacio": "No projects",
+    "vacioHint": "Inspection projects are born when you schedule a site's tree.",
+    "sinEmplazamiento": "not located",
+    "cols": {
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "nombre": "Project",
+      "tipos": "Work",
+      "fecha": "Planned date",
+      "estado": "Status",
+      "propuesta": "Proposal",
+      "origen": "Source",
+      "administrador": "Owner"
+    },
+    "campos": {
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "nombre": "Project name",
+      "tipos": "What will be done",
+      "fechaTentativa": "Planned date"
+    },
+    "estado": {
+      "futuro": "Future",
+      "aprobado": "Approved",
+      "planificado": "Scheduled",
+      "en_ejecucion": "In progress",
+      "ejecucion_paralizada": "Paused",
+      "en_certificacion": "In certification",
+      "finalizado": "Closed",
+      "descartado": "Dropped"
+    },
+    "tipo": {
+      "instalacion": "Installation",
+      "revision": "Inspection",
+      "suministro": "Supply",
+      "reparacion": "Repair"
+    },
+    "origen": {
+      "manual": "Created by hand",
+      "zona": "Scheduled zone",
+      "emplazamiento": "Scheduled site",
+      "cierre_revision": "Previous inspection"
+    },
+    "nuevo": {
+      "cta": "New project",
+      "title": "New project",
+      "para": "For one-offs: an unplanned repair, a stand-alone job, an opportunity.",
+      "crear": "Create project",
+      "creado": "Project created.",
+      "nombrePlaceholder": "Leave empty and it composes itself",
+      "fechaHint": "Even if provisional: with no date the project gets lost in the list.",
+      "sinEmplazamiento": "With no site the project lives in the pipeline, but cannot be approved."
     }
   }
 }

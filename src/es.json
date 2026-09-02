@@ -2081,7 +2081,8 @@
       "roles": "Roles",
       "rolesMatrix": "Matriz de permisos",
       "gruposClientes": "Grupos de clientes",
-      "admins": "Administradores"
+      "admins": "Administradores",
+      "proyectos": "Proyectos"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -2145,6 +2146,62 @@
     },
     "common": {
       "close": "Cerrar"
+    }
+  },
+  "proyectos": {
+    "buscar": "Busca por cliente, emplazamiento o nombre",
+    "vacio": "Sin proyectos",
+    "vacioHint": "Los proyectos de revisión nacen al planificar el árbol de un emplazamiento.",
+    "sinEmplazamiento": "sin localizar",
+    "cols": {
+      "cliente": "Cliente",
+      "emplazamiento": "Emplazamiento",
+      "nombre": "Proyecto",
+      "tipos": "Trabajo",
+      "fecha": "Fecha prevista",
+      "estado": "Estado",
+      "propuesta": "Propuesta",
+      "origen": "Origen",
+      "administrador": "Responsable"
+    },
+    "campos": {
+      "cliente": "Cliente",
+      "emplazamiento": "Emplazamiento",
+      "nombre": "Nombre del proyecto",
+      "tipos": "Qué se va a hacer",
+      "fechaTentativa": "Fecha prevista"
+    },
+    "estado": {
+      "futuro": "Futuro",
+      "aprobado": "Aprobado",
+      "planificado": "Planificado",
+      "en_ejecucion": "En ejecución",
+      "ejecucion_paralizada": "Paralizado",
+      "en_certificacion": "En certificación",
+      "finalizado": "Finalizado",
+      "descartado": "Descartado"
+    },
+    "tipo": {
+      "instalacion": "Instalación",
+      "revision": "Revisión",
+      "suministro": "Suministro",
+      "reparacion": "Reparación"
+    },
+    "origen": {
+      "manual": "Creado a mano",
+      "zona": "Zona planificada",
+      "emplazamiento": "Emplazamiento planificado",
+      "cierre_revision": "Revisión anterior"
+    },
+    "nuevo": {
+      "cta": "Nuevo proyecto",
+      "title": "Nuevo proyecto",
+      "para": "Para lo puntual: una reparación imprevista, una actuación suelta, una oportunidad.",
+      "crear": "Crear proyecto",
+      "creado": "Proyecto creado.",
+      "nombrePlaceholder": "Si lo dejas vacío se compone solo",
+      "fechaHint": "Aunque sea provisional: sin fecha el proyecto se pierde en la lista.",
+      "sinEmplazamiento": "Sin emplazamiento el proyecto vive en la cartera, pero no se podrá aprobar."
     }
   }
 }

@@ -2081,7 +2081,8 @@
       "roles": "Rôles",
       "rolesMatrix": "Matrice des permissions",
       "gruposClientes": "Groupes de clients",
-      "admins": "Administrateurs"
+      "admins": "Administrateurs",
+      "proyectos": "Projets"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -2145,6 +2146,62 @@
     },
     "common": {
       "close": "Fermer"
+    }
+  },
+  "proyectos": {
+    "buscar": "Rechercher par client, site ou nom",
+    "vacio": "Aucun projet",
+    "vacioHint": "Les projets de vérification naissent en planifiant l'arbre d'un site.",
+    "sinEmplazamiento": "non localisé",
+    "cols": {
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "nombre": "Projet",
+      "tipos": "Travaux",
+      "fecha": "Date prévue",
+      "estado": "État",
+      "propuesta": "Proposition",
+      "origen": "Origine",
+      "administrador": "Responsable"
+    },
+    "campos": {
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "nombre": "Nom du projet",
+      "tipos": "Ce qui sera fait",
+      "fechaTentativa": "Date prévue"
+    },
+    "estado": {
+      "futuro": "Futur",
+      "aprobado": "Approuvé",
+      "planificado": "Planifié",
+      "en_ejecucion": "En cours",
+      "ejecucion_paralizada": "Suspendu",
+      "en_certificacion": "En certification",
+      "finalizado": "Clôturé",
+      "descartado": "Abandonné"
+    },
+    "tipo": {
+      "instalacion": "Installation",
+      "revision": "Vérification",
+      "suministro": "Fourniture",
+      "reparacion": "Réparation"
+    },
+    "origen": {
+      "manual": "Créé à la main",
+      "zona": "Zone planifiée",
+      "emplazamiento": "Site planifié",
+      "cierre_revision": "Vérification précédente"
+    },
+    "nuevo": {
+      "cta": "Nouveau projet",
+      "title": "Nouveau projet",
+      "para": "Pour le ponctuel : une réparation imprévue, une intervention isolée, une opportunité.",
+      "crear": "Créer le projet",
+      "creado": "Projet créé.",
+      "nombrePlaceholder": "Laissez vide et il se compose tout seul",
+      "fechaHint": "Même provisoire : sans date le projet se perd dans la liste.",
+      "sinEmplazamiento": "Sans site le projet vit dans le portefeuille, mais ne pourra pas être approuvé."
     }
   }
 }
