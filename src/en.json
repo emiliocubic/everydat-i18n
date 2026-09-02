@@ -1517,6 +1517,23 @@
           "title": "Recommended PPE",
           "hint": "at type and standard level, not a specific model"
         }
+      },
+      "merge": {
+        "handle": "Drag onto another type to merge them",
+        "title": "Merge these two element types?",
+        "desc": "You are about to merge “{{from}}” into “{{to}}”. Both are in the {{familia}} family, so they can be unified into a single type.",
+        "disappears": "Disappears",
+        "kept": "Kept",
+        "nElem": "{{n}} items",
+        "sinNormas": "no standards",
+        "normasIguales": "Both types declare the same standards ({{normas}}): the merge does not change which standard applies.",
+        "normasDistintas": "The standards differ. After the merge, those of the type that is kept, “{{to}}”, will apply: {{normas}}. What comes in is no longer governed by {{perdidas}}.",
+        "camposPerdidos": "Only the custom fields set by “{{to}}” are kept. Those exclusive to “{{from}}” ({{campos}}) disappear, along with the data already recorded in them.",
+        "camposIntactos": "Only the custom fields set by “{{to}}” are kept. “{{from}}” adds none that “{{to}}” does not have, so no data is lost.",
+        "identidadCampo": "A field is kept only if it is the same catalogue field in both types. Sharing a name is not enough: renaming a field to match does not merge them.",
+        "note": "“{{from}}” will cease to exist: its {{n}} items move to “{{to}}” with that type’s configuration (standards, fields and checklists). This cannot be undone.",
+        "confirm": "Merge types",
+        "done": "“{{from}}” was merged into “{{to}}”"
       }
     },
     "parametros": {

@@ -1517,6 +1517,23 @@
           "title": "EPI recommandés",
           "hint": "au niveau du type et de la norme, pas du modèle"
         }
+      },
+      "merge": {
+        "handle": "Faire glisser sur un autre type pour les unifier",
+        "title": "Fusionner ces deux types d’élément ?",
+        "desc": "Vous allez fusionner « {{from}} » dans « {{to}} ». Les deux appartiennent à la famille {{familia}}, ils peuvent donc être unifiés en un seul type.",
+        "disappears": "Disparaît",
+        "kept": "Conservé",
+        "nElem": "{{n}} élém.",
+        "sinNormas": "sans normes",
+        "normasIguales": "Les deux types déclarent les mêmes normes ({{normas}}) : la fusion ne change pas la norme applicable.",
+        "normasDistintas": "Les normes diffèrent. Après la fusion, celles du type conservé, « {{to}} », s’appliqueront : {{normas}}. Ce qui arrive n’est plus régi par {{perdidas}}.",
+        "camposPerdidos": "Seuls les champs personnalisés définis par « {{to}} » sont conservés. Ceux propres à « {{from}} » ({{campos}}) disparaissent, ainsi que les données déjà saisies.",
+        "camposIntactos": "Seuls les champs personnalisés définis par « {{to}} » sont conservés. « {{from}} » n’en ajoute aucun que « {{to}} » n’ait déjà, aucune donnée n’est perdue.",
+        "identidadCampo": "Un champ n’est conservé que s’il s’agit du même champ du catalogue dans les deux types. Un nom identique ne suffit pas : renommer un champ ne les unit pas.",
+        "note": "« {{from}} » cessera d’exister : ses {{n}} éléments passent à « {{to}} » avec la configuration de celui-ci (normes, champs et checklists). Action irréversible.",
+        "confirm": "Fusionner les types",
+        "done": "« {{from}} » a été fusionné dans « {{to}} »"
       }
     },
     "parametros": {

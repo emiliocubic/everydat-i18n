@@ -1517,6 +1517,23 @@
           "title": "EPIs recomendados",
           "hint": "a nivel de tipo y norma, no de modelo concreto"
         }
+      },
+      "merge": {
+        "handle": "Arrastrar sobre otro tipo para unificarlos",
+        "title": "¿Fusionar estos dos tipos de elemento?",
+        "desc": "Vas a fusionar «{{from}}» dentro de «{{to}}». Los dos están en la familia {{familia}}, así que pueden unificarse en un único tipo.",
+        "disappears": "Desaparece",
+        "kept": "Se conserva",
+        "nElem": "{{n}} elem.",
+        "sinNormas": "sin normas",
+        "normasIguales": "Los dos tipos declaran la misma normativa ({{normas}}): la fusión no cambia la norma aplicable.",
+        "normasDistintas": "Las normativas son diferentes. Tras la fusión se aplicará la del tipo que se conserva, «{{to}}»: {{normas}}. Lo que llega deja de regirse por {{perdidas}}.",
+        "camposPerdidos": "Solo se conservan los campos personalizados que establece «{{to}}». Los exclusivos de «{{from}}» ({{campos}}) desaparecen y se pierden los datos ya registrados en ellos.",
+        "camposIntactos": "Solo se conservan los campos personalizados que establece «{{to}}». «{{from}}» no añade ninguno que «{{to}}» no tenga, así que no se pierde ningún dato.",
+        "identidadCampo": "Un campo se conserva solo si es el mismo campo del catálogo en los dos tipos. No basta con que se llame igual: renombrar un campo para que coincida no los une.",
+        "note": "«{{from}}» dejará de existir: sus {{n}} elementos pasan a «{{to}}» con la configuración de este (normativa, campos y checklists). Esta acción no se puede deshacer.",
+        "confirm": "Fusionar tipos",
+        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
       }
     },
     "parametros": {
