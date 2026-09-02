@@ -2250,6 +2250,19 @@
       "fijoTitle": "Le projet est né ici : le déplacer serait un autre projet.",
       "todoElEmplazamiento": "Tout le site",
       "nZonas": "{{count}} zones"
+    },
+    "planificacion": {
+      "ventana": "Fenêtre d'exécution",
+      "ventanaHint": "Quand les travaux seront faits",
+      "inicio": "Début prévu",
+      "fin": "Fin prévue",
+      "arranque": "Passer en exécution automatiquement à la date de début",
+      "arranqueHint": "Désactivez-le si la date est une prévision et que vous voulez valider avant que l'équipe puisse enregistrer du travail.",
+      "personal": "Personnel affecté",
+      "administradorHint": "Sans responsable de projet, impossible de planifier.",
+      "equipo": "Équipe de terrain",
+      "accesoPendiente": "L'accès de l'équipe lié à la fenêtre d'exécution (3 jours avant, 7 après) est en attente : pour l'instant l'accès vient des périmètres de l'utilisateur.",
+      "guardado": "Planification enregistrée."
     }
   }
 }

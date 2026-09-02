@@ -2250,6 +2250,19 @@
       "fijoTitle": "El proyecto nació de aquí: moverlo de sitio sería otro proyecto.",
       "todoElEmplazamiento": "Todo el emplazamiento",
       "nZonas": "{{count}} zonas"
+    },
+    "planificacion": {
+      "ventana": "Ventana de ejecución",
+      "ventanaHint": "Cuándo se va a hacer el trabajo",
+      "inicio": "Inicio previsto",
+      "fin": "Fin previsto",
+      "arranque": "Pasar a ejecución solo al llegar la fecha de inicio",
+      "arranqueHint": "Apágalo si la fecha es una previsión y quieres dar el visto bueno antes de que el equipo pueda registrar trabajo.",
+      "personal": "Personal asignado",
+      "administradorHint": "Sin administrador de proyecto no se puede planificar.",
+      "equipo": "Equipo de campo",
+      "accesoPendiente": "El acceso del equipo atado a la ventana de ejecución (3 días antes, 7 después) está pendiente: de momento el acceso se da por los alcances del usuario.",
+      "guardado": "Planificación guardada."
     }
   }
 }

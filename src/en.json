@@ -2250,6 +2250,19 @@
       "fijoTitle": "The project was born here: moving it elsewhere would be another project.",
       "todoElEmplazamiento": "The whole site",
       "nZonas": "{{count}} zones"
+    },
+    "planificacion": {
+      "ventana": "Execution window",
+      "ventanaHint": "When the work will be done",
+      "inicio": "Planned start",
+      "fin": "Planned end",
+      "arranque": "Move to execution automatically on the start date",
+      "arranqueHint": "Turn it off if the date is a forecast and you want to sign off before the team can log work.",
+      "personal": "Assigned people",
+      "administradorHint": "Without a project owner the project cannot be scheduled.",
+      "equipo": "Field team",
+      "accesoPendiente": "Team access tied to the execution window (3 days before, 7 after) is pending: for now access comes from the user's scopes.",
+      "guardado": "Scheduling saved."
     }
   }
 }
