@@ -28,7 +28,9 @@
       "next": "Next"
     },
     "yes": "Yes",
-    "no": "No"
+    "no": "No",
+    "less": "Less",
+    "more": "More"
   },
   "merge": {
     "disappears": "Disappears",
@@ -642,6 +644,88 @@
         "destruido": "Mark as destroyed",
         "fin_vida": "Declare",
         "quitar_fin_vida": "Remove"
+      }
+    },
+    "alta": {
+      "title": "Register items",
+      "enCarpeta": "In “{{carpeta}}”",
+      "nUnidades": "{{count}} units",
+      "nFechas": "{{count}} dates · per element type",
+      "sinCampos": "This element type asks for no custom fields.",
+      "sinIdentificativos": "This element type asks for no identifiers.",
+      "buscarModelo": "Find the model in the catalogue",
+      "cambiarModelo": "Change",
+      "totalReparto": "{{count}} units to create",
+      "rango": "(max. {{max}})",
+      "copiarAbajo": "Copy down",
+      "unicoTitle": "Cannot repeat on another item",
+      "campoFijado": "Fixed by the reference: not editable on registration",
+      "finVida": "End of service life",
+      "faltaFirma": "The inspection still needs someone to sign it.",
+      "resumenPie": "{{count}} units in “{{carpeta}}”",
+      "crear": "Create {{count}} items",
+      "creados": "{{count}} items registered.",
+      "pasos": {
+        "modelo": "Model and units",
+        "identificacion": "Identification",
+        "fechas": "Key dates",
+        "campos": "Custom fields",
+        "eventos": "Starting the clock"
+      },
+      "cols": {
+        "referencia": "Reference",
+        "estado": "Status",
+        "unidades": "Units"
+      },
+      "fechas": {
+        "noFuturo": "“{{fecha}}” cannot be later than today: nothing is manufactured in the future.",
+        "futuroFuera": "“{{fecha}}” allows up to {{dias}} days from today, to cover what is already scheduled. Beyond that it is a picking error.",
+        "orden": "“{{fecha}}” cannot be earlier than “{{previa}}”.",
+        "avisoMargen": "Dates up to {{dias}} days ahead are allowed to cover imminent, already scheduled {{fecha}}. Check that this is the case and not a picking error.",
+        "copiaSaltada": "{{count}} units were skipped: the date would break their own order.",
+        "hayFuturas": "{{count}} units with dates later than today.",
+        "noSeInstala": "“{{tipo}}” is not installed: no installation date is asked for."
+      },
+      "eventos": {
+        "title": "What starts the clock",
+        "sugerido": "Suggested",
+        "arrancaDe": "Starts from",
+        "incluirActa": "Include installation record",
+        "sinActaHint": "The installation is recorded, with no consultable detail.",
+        "fechaActa": "Record date",
+        "segunUnidad": "per unit",
+        "tecnico": "Responsible technician",
+        "revisor": "Inspector",
+        "resultado": "Result",
+        "apto": "Pass",
+        "fechaRevision": "Inspection date",
+        "validaHasta": "Valid until",
+        "nPuntos": "{{count}} points",
+        "cuandoProceda": "(where applicable)",
+        "actaSinNoApto": "An installation record admits no failed points: fix the installation or log a failed inspection instead.",
+        "modo": {
+          "ninguno": "Do not start the clock",
+          "fecha_significativa": "From a date of the item itself",
+          "revision": "From an inspection made today"
+        },
+        "desc": {
+          "ninguno": "The item stays uninspected until someone checks it.",
+          "fecha_significativa": "Registration goes with the act of installing: what starts the clock is that act, not an inspection.",
+          "revision": "The item already existed: the clock starts from today's check, not from an earlier date."
+        },
+        "cp": {
+          "apto": "Pass",
+          "vigilar": "Watch",
+          "no_apto": "Fail",
+          "no_aplica": "N/A"
+        },
+        "diag": {
+          "sinInstalacion": "This kind of item is not installed, so the clock starts from an inspection.",
+          "reciente": "Installed on {{fecha}}, within the last {{meses}} months: registration goes with the act of installing.",
+          "heredada": "Installed on {{fecha}}, more than {{meses}} months ago: the item was already there and enters the system now.",
+          "incompleta": "Only {{n}} of {{total}} units provide an installation date.",
+          "mixta": "This registration mixes installations from the last {{meses}} months with older ones. Consider splitting it in two."
+        }
       }
     }
   },

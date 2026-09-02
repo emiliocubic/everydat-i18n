@@ -28,7 +28,9 @@
       "next": "Siguiente"
     },
     "yes": "Sí",
-    "no": "No"
+    "no": "No",
+    "less": "Menos",
+    "more": "Más"
   },
   "merge": {
     "disappears": "Desaparece",
@@ -553,6 +555,88 @@
         "destruido": "Dar por destruido",
         "fin_vida": "Declarar",
         "quitar_fin_vida": "Quitar"
+      }
+    },
+    "alta": {
+      "title": "Dar de alta elementos",
+      "enCarpeta": "En «{{carpeta}}»",
+      "nUnidades": "{{count}} unidades",
+      "nFechas": "{{count}} fechas · según el tipo",
+      "sinCampos": "El tipo de este equipo no pide campos personalizados.",
+      "sinIdentificativos": "El tipo de este equipo no pide identificadores.",
+      "buscarModelo": "Buscar el modelo en el catálogo",
+      "cambiarModelo": "Cambiar",
+      "totalReparto": "{{count}} unidades a crear",
+      "rango": "(máx. {{max}})",
+      "copiarAbajo": "Copiar hacia abajo",
+      "unicoTitle": "No puede repetirse en otro equipo",
+      "campoFijado": "Lo fija la referencia: no se edita al dar de alta",
+      "finVida": "Fin de vida útil",
+      "faltaFirma": "Falta decir quién firma la revisión.",
+      "resumenPie": "{{count}} unidades en «{{carpeta}}»",
+      "crear": "Crear {{count}} elementos",
+      "creados": "{{count}} elementos dados de alta.",
+      "pasos": {
+        "modelo": "Modelo y unidades",
+        "identificacion": "Identificación",
+        "fechas": "Fechas significativas",
+        "campos": "Campos personalizados",
+        "eventos": "Arranque del contador"
+      },
+      "cols": {
+        "referencia": "Referencia",
+        "estado": "Estado",
+        "unidades": "Unidades"
+      },
+      "fechas": {
+        "noFuturo": "«{{fecha}}» no puede ser posterior a hoy: nada se fabrica en el futuro.",
+        "futuroFuera": "«{{fecha}}» admite hasta {{dias}} días desde hoy, para cubrir lo que ya está programado. Más allá es un error de selección.",
+        "orden": "«{{fecha}}» no puede ser anterior a «{{previa}}».",
+        "avisoMargen": "Se admiten fechas hasta {{dias}} días posteriores a hoy para cubrir {{fecha}} inminentes y ya programadas. Revisa que es así y no un error al elegir la fecha.",
+        "copiaSaltada": "Se han saltado {{count}} unidades: la fecha rompería su propio orden.",
+        "hayFuturas": "{{count}} unidades con fechas posteriores a hoy.",
+        "noSeInstala": "«{{tipo}}» no se instala: no se le pide fecha de instalación."
+      },
+      "eventos": {
+        "title": "De qué arranca el contador",
+        "sugerido": "Sugerido",
+        "arrancaDe": "Arranca de",
+        "incluirActa": "Incluir acta de instalación",
+        "sinActaHint": "Queda constancia del acto de instalación, sin detalle consultable.",
+        "fechaActa": "Fecha del acta",
+        "segunUnidad": "según cada unidad",
+        "tecnico": "Técnico responsable",
+        "revisor": "Revisor",
+        "resultado": "Resultado",
+        "apto": "Apto",
+        "fechaRevision": "Fecha de la revisión",
+        "validaHasta": "Válida hasta",
+        "nPuntos": "{{count}} puntos",
+        "cuandoProceda": "(cuando proceda)",
+        "actaSinNoApto": "Un acta de instalación no admite puntos no aptos: corrige la instalación o registra una revisión actual no apta.",
+        "modo": {
+          "ninguno": "No arrancar el contador",
+          "fecha_significativa": "Desde una fecha del propio equipo",
+          "revision": "Desde una revisión hecha hoy"
+        },
+        "desc": {
+          "ninguno": "El equipo queda sin revisar hasta que alguien lo inspeccione.",
+          "fecha_significativa": "El alta acompaña al acto de instalar: lo que arranca el contador es el propio acto, no una revisión.",
+          "revision": "El equipo ya existía: el contador arranca de la comprobación que hacemos hoy, no de una fecha anterior."
+        },
+        "cp": {
+          "apto": "Apto",
+          "vigilar": "Vigilar",
+          "no_apto": "No apto",
+          "no_aplica": "N/A"
+        },
+        "diag": {
+          "sinInstalacion": "Este tipo de equipo no se instala, así que el contador arranca de una revisión.",
+          "reciente": "Instalado el {{fecha}}, dentro de los últimos {{meses}} meses: el alta acompaña al acto de instalar.",
+          "heredada": "Instalado el {{fecha}}, hace más de {{meses}} meses: el equipo ya estaba ahí y entra ahora en el sistema.",
+          "incompleta": "Solo {{n}} de {{total}} unidades aportan fecha de instalación.",
+          "mixta": "El alta mezcla instalaciones de los últimos {{meses}} meses con otras más antiguas. Quizá convenga partirla en dos."
+        }
       }
     }
   },

@@ -28,7 +28,9 @@
       "next": "Suivant"
     },
     "yes": "Oui",
-    "no": "Non"
+    "no": "Non",
+    "less": "Moins",
+    "more": "Plus"
   },
   "merge": {
     "disappears": "Disparaît",
@@ -642,6 +644,88 @@
         "destruido": "Déclarer détruit",
         "fin_vida": "Déclarer",
         "quitar_fin_vida": "Retirer"
+      }
+    },
+    "alta": {
+      "title": "Créer des équipements",
+      "enCarpeta": "Dans « {{carpeta}} »",
+      "nUnidades": "{{count}} unités",
+      "nFechas": "{{count}} dates · selon le type",
+      "sinCampos": "Ce type d'élément ne demande pas de champs personnalisés.",
+      "sinIdentificativos": "Ce type d'élément ne demande pas d'identifiants.",
+      "buscarModelo": "Chercher le modèle au catalogue",
+      "cambiarModelo": "Changer",
+      "totalReparto": "{{count}} unités à créer",
+      "rango": "(max. {{max}})",
+      "copiarAbajo": "Copier vers le bas",
+      "unicoTitle": "Ne peut pas se répéter sur un autre équipement",
+      "campoFijado": "Figé par la référence : non modifiable à la création",
+      "finVida": "Fin de durée de vie",
+      "faltaFirma": "Il manque qui signe la vérification.",
+      "resumenPie": "{{count}} unités dans « {{carpeta}} »",
+      "crear": "Créer {{count}} équipements",
+      "creados": "{{count}} équipements créés.",
+      "pasos": {
+        "modelo": "Modèle et unités",
+        "identificacion": "Identification",
+        "fechas": "Dates significatives",
+        "campos": "Champs personnalisés",
+        "eventos": "Démarrage du compteur"
+      },
+      "cols": {
+        "referencia": "Référence",
+        "estado": "État",
+        "unidades": "Unités"
+      },
+      "fechas": {
+        "noFuturo": "« {{fecha}} » ne peut pas être postérieure à aujourd'hui : rien ne se fabrique dans le futur.",
+        "futuroFuera": "« {{fecha}} » admet jusqu'à {{dias}} jours à partir d'aujourd'hui, pour couvrir ce qui est déjà programmé. Au-delà, c'est une erreur de saisie.",
+        "orden": "« {{fecha}} » ne peut pas être antérieure à « {{previa}} ».",
+        "avisoMargen": "Les dates jusqu'à {{dias}} jours à venir sont admises pour couvrir des {{fecha}} imminentes et déjà programmées. Vérifiez que c'est bien le cas.",
+        "copiaSaltada": "{{count}} unités ont été ignorées : la date romprait leur propre ordre.",
+        "hayFuturas": "{{count}} unités avec des dates postérieures à aujourd'hui.",
+        "noSeInstala": "« {{tipo}} » ne s'installe pas : aucune date d'installation n'est demandée."
+      },
+      "eventos": {
+        "title": "D'où part le compteur",
+        "sugerido": "Suggéré",
+        "arrancaDe": "Part de",
+        "incluirActa": "Inclure le procès-verbal d'installation",
+        "sinActaHint": "L'acte d'installation est enregistré, sans détail consultable.",
+        "fechaActa": "Date du procès-verbal",
+        "segunUnidad": "selon chaque unité",
+        "tecnico": "Technicien responsable",
+        "revisor": "Vérificateur",
+        "resultado": "Résultat",
+        "apto": "Conforme",
+        "fechaRevision": "Date de la vérification",
+        "validaHasta": "Valable jusqu'au",
+        "nPuntos": "{{count}} points",
+        "cuandoProceda": "(le cas échéant)",
+        "actaSinNoApto": "Un procès-verbal d'installation n'admet pas de points non conformes : corrigez l'installation ou enregistrez une vérification non conforme.",
+        "modo": {
+          "ninguno": "Ne pas démarrer le compteur",
+          "fecha_significativa": "À partir d'une date de l'équipement lui-même",
+          "revision": "À partir d'une vérification faite aujourd'hui"
+        },
+        "desc": {
+          "ninguno": "L'équipement reste non vérifié jusqu'à ce que quelqu'un l'inspecte.",
+          "fecha_significativa": "La création accompagne l'acte d'installer : ce qui démarre le compteur, c'est cet acte, pas une vérification.",
+          "revision": "L'équipement existait déjà : le compteur part du contrôle que nous faisons aujourd'hui, pas d'une date antérieure."
+        },
+        "cp": {
+          "apto": "Conforme",
+          "vigilar": "À surveiller",
+          "no_apto": "Non conforme",
+          "no_aplica": "S.O."
+        },
+        "diag": {
+          "sinInstalacion": "Ce type d'équipement ne s'installe pas : le compteur part d'une vérification.",
+          "reciente": "Installé le {{fecha}}, dans les {{meses}} derniers mois : la création accompagne l'acte d'installer.",
+          "heredada": "Installé le {{fecha}}, il y a plus de {{meses}} mois : l'équipement était déjà là et entre maintenant dans le système.",
+          "incompleta": "Seules {{n}} unités sur {{total}} apportent une date d'installation.",
+          "mixta": "Cette création mélange des installations des {{meses}} derniers mois avec d'autres plus anciennes. Il vaut peut-être mieux la scinder."
+        }
       }
     }
   },
