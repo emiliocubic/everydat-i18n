@@ -743,6 +743,7 @@
     "createTitle": "Crear emplazamiento",
     "editTitle": "Editar emplazamiento",
     "empty": "No hay emplazamientos.",
+    "searchPlaceholder": "Emplazamiento…",
     "historialClientes": "Historial de clientes",
     "deleteConfirm": "¿Eliminar este emplazamiento?",
     "restore": "Reactivar emplazamiento",
@@ -753,7 +754,9 @@
     "transferHint": "Selecciona el cliente al que quieres transferir este emplazamiento.",
     "transferConfirm": "¿Transferir este emplazamiento al cliente {{nombre}}?",
     "fields": {
+      "estado": "Estado",
       "nombre": "Nombre",
+      "nombreCol": "Emplazamiento",
       "descripcion": "Descripción",
       "latitud": "Latitud",
       "longitud": "Longitud",
@@ -771,7 +774,7 @@
       "provincia": "Provincia",
       "localidad": "Localidad",
       "pais": "País",
-      "cp": "C.P.",
+      "cp": "Código postal",
       "direccion": "Dirección",
       "codigo": "Código"
     },
@@ -808,9 +811,10 @@
         "notas": "Notas",
         "bitacora": "Bitácora de clientes",
         "internos": "Acceso · Usuarios internos",
-        "colaboradores": "Acceso · Colaboradores",
-        "invitados": "Acceso · Invitados"
+        "colaboradores": "Acceso · Usuarios colaboradores",
+        "invitados": "Acceso · Usuarios invitados"
       },
+      "cols": { "nombre": "Nombre", "rol": "Rol", "permiso": "Tipo de permiso" },
       "fields": {
         "gps": "Coordenadas GPS",
         "telefonos": "Teléfonos",
@@ -1044,6 +1048,7 @@
     "placeholderBody": "Esta vista del área de Configuración se conectará más adelante, vista por vista.",
     "catalogo": {
       "empty": "El catálogo está vacío.",
+      "searchPlaceholder": "Buscar por modelo, fabricante o tipo…",
       "emptyHint": "Importa modelos del repositorio sectorial o ajusta el filtro.",
       "importCta": "Importar del repositorio",
       "nuevoCta": "Nuevo modelo",
@@ -1575,6 +1580,7 @@
       "newSub": "Alta de fabricante",
       "unnamed": "Fabricante sin nombre",
       "empty": "No hay fabricantes",
+      "searchPlaceholder": "Buscar por nombre…",
       "emptyHint": "Crea el primero con el botón «Nuevo fabricante», o impórtalo del repositorio sectorial.",
       "identTitle": "Identificación",
       "statsTitle": "Estadísticas",
@@ -1619,6 +1625,7 @@
       "noFamilia": "Sin familia",
       "manageFamilias": "Familias",
       "empty": "No hay tipos de elemento",
+      "searchPlaceholder": "Buscar por tipo, familia o norma…",
       "emptyHint": "Crea el primer tipo con el botón «Nuevo tipo».",
       "tabsAria": "Secciones del tipo",
       "tabs": {

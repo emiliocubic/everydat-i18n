@@ -832,6 +832,7 @@
     "createTitle": "Créer un site",
     "editTitle": "Modifier le site",
     "empty": "Aucun site trouvé.",
+    "searchPlaceholder": "Site…",
     "historialClientes": "Historique des clients",
     "deleteConfirm": "Supprimer ce site ?",
     "restore": "Restaurer le site",
@@ -842,7 +843,9 @@
     "transferHint": "Sélectionnez le client vers lequel transférer ce site.",
     "transferConfirm": "Transférer ce site au client {{nombre}} ?",
     "fields": {
+      "estado": "État",
       "nombre": "Nom",
+      "nombreCol": "Site",
       "descripcion": "Description",
       "latitud": "Latitude",
       "longitud": "Longitude",
@@ -900,6 +903,7 @@
         "colaboradores": "Accès · Collaborateurs",
         "invitados": "Accès · Invités"
       },
+      "cols": { "nombre": "Nom", "rol": "Rôle", "permiso": "Type de permission" },
       "fields": {
         "gps": "Coordonnées GPS",
         "telefonos": "Téléphones",
@@ -1044,6 +1048,7 @@
     "placeholderBody": "Cet écran de Configuration sera connecté plus tard, vue par vue.",
     "catalogo": {
       "empty": "Le catalogue est vide.",
+      "searchPlaceholder": "Rechercher par modèle, fabricant ou type…",
       "emptyHint": "Importez des modèles du référentiel sectoriel ou ajustez le filtre.",
       "importCta": "Importer du référentiel",
       "nuevoCta": "Nouveau modèle",
@@ -1575,6 +1580,7 @@
       "newSub": "Nouveau fabricant",
       "unnamed": "Fabricant sans nom",
       "empty": "Aucun fabricant",
+      "searchPlaceholder": "Rechercher par nom…",
       "emptyHint": "Créez le premier avec le bouton « Nouveau fabricant », ou importez-le du référentiel sectoriel.",
       "identTitle": "Identification",
       "statsTitle": "Statistiques",
@@ -1619,6 +1625,7 @@
       "noFamilia": "Sans famille",
       "manageFamilias": "Familles",
       "empty": "Aucun type d'élément",
+      "searchPlaceholder": "Rechercher par type, famille ou norme…",
       "emptyHint": "Créez le premier type avec le bouton « Nouveau type ».",
       "tabsAria": "Sections du type",
       "tabs": {

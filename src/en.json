@@ -832,6 +832,7 @@
     "createTitle": "Create site",
     "editTitle": "Edit site",
     "empty": "No sites found.",
+    "searchPlaceholder": "Site…",
     "historialClientes": "Customer history",
     "deleteConfirm": "Delete this site?",
     "restore": "Restore site",
@@ -842,7 +843,9 @@
     "transferHint": "Select the customer to transfer this site to.",
     "transferConfirm": "Transfer this site to customer {{nombre}}?",
     "fields": {
+      "estado": "Status",
       "nombre": "Name",
+      "nombreCol": "Site",
       "descripcion": "Description",
       "latitud": "Latitude",
       "longitud": "Longitude",
@@ -900,6 +903,7 @@
         "colaboradores": "Access · Collaborators",
         "invitados": "Access · Guests"
       },
+      "cols": { "nombre": "Name", "rol": "Role", "permiso": "Permission type" },
       "fields": {
         "gps": "GPS coordinates",
         "telefonos": "Phone numbers",
@@ -1044,6 +1048,7 @@
     "placeholderBody": "This Settings screen will be wired up later, one view at a time.",
     "catalogo": {
       "empty": "The catalogue is empty.",
+      "searchPlaceholder": "Search by model, manufacturer or type…",
       "emptyHint": "Import models from the sector repository or adjust the filter.",
       "importCta": "Import from repository",
       "nuevoCta": "New model",
@@ -1575,6 +1580,7 @@
       "newSub": "New manufacturer",
       "unnamed": "Unnamed manufacturer",
       "empty": "No manufacturers",
+      "searchPlaceholder": "Search by name…",
       "emptyHint": "Create the first one with the “New manufacturer” button, or import it from the industry repository.",
       "identTitle": "Identification",
       "statsTitle": "Statistics",
@@ -1619,6 +1625,7 @@
       "noFamilia": "No family",
       "manageFamilias": "Families",
       "empty": "No element types",
+      "searchPlaceholder": "Search by type, family or standard…",
       "emptyHint": "Create the first type with the “New type” button.",
       "tabsAria": "Type sections",
       "tabs": {
