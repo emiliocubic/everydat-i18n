@@ -32,6 +32,8 @@
     "less": "Less",
     "more": "More",
     "understood": "Got it",
+    "selectAll": "Select all",
+    "selectRow": "Select row",
     "accept": "Accept"
   },
   "merge": {
@@ -401,7 +403,10 @@
       "comentarios": "Comments",
       "telefono": "Phone",
       "notifyAllRevisions": "Receive revision notifications",
-      "email": "Email"
+      "email": "Email",
+      "cuenta": "Account",
+      "clientes": "Customers",
+      "ultimoAcceso": "Last sign-in"
     },
     "sheet": {
       "tabs": {
