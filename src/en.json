@@ -487,7 +487,8 @@
       "colElemento": "Item",
       "colCodigo": "Identification",
       "colProxima": "Next insp.",
-      "colEstado": "Status"
+      "colEstado": "Status",
+      "validaHasta": "Its inspection is valid until {{fecha}}"
     },
     "situacion": {
       "sin_revisar": "Not inspected",
@@ -513,7 +514,39 @@
       "buscar": "Find an item",
       "buscarPlaceholder": "Type, brand, model, reference or serial no.…",
       "sinResultados": "No item matches.",
-      "excepcionesPendiente": "Detected exceptions arrive with inspection projects."
+      "excepciones": "Detected exceptions",
+      "sinExcepciones": "Nothing to flag: all equipment is covered up to its next inspection.",
+      "sinPlanificacion": "No inspection is planned at this site. Promote a folder to a zone and give it a date to start covering the equipment.",
+      "yMas": "…and {{count}} more",
+      "avisoRaiz": "{{count}} item to deal with before going back",
+      "avisoRaiz_other": "{{count}} items to deal with before going back",
+      "exc": {
+        "revision": "Their inspection expires before we go back",
+        "vida": "They reach end of service life before we go back",
+        "sin_cobertura": "No planned inspection covers them"
+      }
+    },
+    "lote": {
+      "motivo": "Reason",
+      "motivoPlaceholder": "E.g. faulty manufacturer batch",
+      "titulo": {
+        "retirar": "Withdraw from service",
+        "eliminar": "Delete from inventory"
+      },
+      "texto": {
+        "retirar": "They leave service and stop counting as usable equipment, but keep their whole inspection history: EN 365 requires it to prove the equipment was usable.",
+        "eliminar": "This is for items created by mistake. If the equipment existed and left service, withdraw it instead of deleting it."
+      },
+      "accion": {
+        "retirar": "Withdraw",
+        "eliminar": "Delete"
+      },
+      "hecho": {
+        "retirar": "{{count}} item withdrawn",
+        "retirar_other": "{{count}} items withdrawn",
+        "eliminar": "{{count}} item deleted",
+        "eliminar_other": "{{count}} items deleted"
+      }
     }
   },
   "admins": {

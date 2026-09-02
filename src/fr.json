@@ -487,7 +487,8 @@
       "colElemento": "Élément",
       "colCodigo": "Identification",
       "colProxima": "Proch. insp.",
-      "colEstado": "État"
+      "colEstado": "État",
+      "validaHasta": "Son inspection est valable jusqu'au {{fecha}}"
     },
     "situacion": {
       "sin_revisar": "Non inspecté",
@@ -513,7 +514,39 @@
       "buscar": "Chercher un élément",
       "buscarPlaceholder": "Type, marque, modèle, référence ou n° de série…",
       "sinResultados": "Aucun élément ne correspond.",
-      "excepcionesPendiente": "Les exceptions détectées arrivent avec les projets d'inspection."
+      "excepciones": "Exceptions détectées",
+      "sinExcepciones": "Rien à signaler : tout le matériel est couvert jusqu'à sa prochaine inspection.",
+      "sinPlanificacion": "Aucune inspection n'est planifiée sur ce site. Promeus un dossier en zone et donne-lui une date pour commencer à couvrir le matériel.",
+      "yMas": "…et {{count}} de plus",
+      "avisoRaiz": "{{count}} élément à traiter avant d'y retourner",
+      "avisoRaiz_other": "{{count}} éléments à traiter avant d'y retourner",
+      "exc": {
+        "revision": "Leur inspection expire avant notre retour",
+        "vida": "Ils atteignent leur fin de vie utile avant notre retour",
+        "sin_cobertura": "Aucune inspection planifiée ne les couvre"
+      }
+    },
+    "lote": {
+      "motivo": "Motif",
+      "motivoPlaceholder": "Ex. : lot défectueux du fabricant",
+      "titulo": {
+        "retirar": "Retirer du service",
+        "eliminar": "Supprimer de l'inventaire"
+      },
+      "texto": {
+        "retirar": "Ils sortent du service et cessent de compter comme matériel utilisable, mais conservent tout leur historique d'inspections : la norme EN 365 l'exige pour prouver que l'équipement était utilisable.",
+        "eliminar": "C'est pour les éléments créés par erreur. Si l'équipement a existé et est sorti du service, il faut le retirer, pas le supprimer."
+      },
+      "accion": {
+        "retirar": "Retirer",
+        "eliminar": "Supprimer"
+      },
+      "hecho": {
+        "retirar": "{{count}} élément retiré",
+        "retirar_other": "{{count}} éléments retirés",
+        "eliminar": "{{count}} élément supprimé",
+        "eliminar_other": "{{count}} éléments supprimés"
+      }
     }
   },
   "admins": {

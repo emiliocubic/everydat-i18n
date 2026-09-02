@@ -398,7 +398,8 @@
       "colElemento": "Elemento",
       "colCodigo": "Identificación",
       "colProxima": "Próxima rev.",
-      "colEstado": "Estado"
+      "colEstado": "Estado",
+      "validaHasta": "Su revisión vale hasta el {{fecha}}"
     },
     "situacion": {
       "sin_revisar": "Sin revisar",
@@ -424,7 +425,39 @@
       "buscar": "Buscar un elemento",
       "buscarPlaceholder": "Tipo, marca, modelo, referencia o nº de serie…",
       "sinResultados": "Ningún elemento coincide.",
-      "excepcionesPendiente": "Las excepciones detectadas llegan con los proyectos de revisión."
+      "excepciones": "Excepciones detectadas",
+      "sinExcepciones": "Nada que avisar: todo el material llega cubierto a su próxima revisión.",
+      "sinPlanificacion": "No hay ninguna revisión planificada en este emplazamiento. Promociona una carpeta a zona y ponle fecha para empezar a cubrir el material.",
+      "yMas": "…y {{count}} más",
+      "avisoRaiz": "{{count}} elemento que revisar antes de volver",
+      "avisoRaiz_other": "{{count}} elementos que revisar antes de volver",
+      "exc": {
+        "revision": "Su revisión caduca antes de que volvamos",
+        "vida": "Agotan su vida útil antes de que volvamos",
+        "sin_cobertura": "Sin ninguna revisión planificada que los cubra"
+      }
+    },
+    "lote": {
+      "motivo": "Motivo",
+      "motivoPlaceholder": "Ej.: lote defectuoso del fabricante",
+      "titulo": {
+        "retirar": "Retirar del servicio",
+        "eliminar": "Eliminar del inventario"
+      },
+      "texto": {
+        "retirar": "Salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones: es lo que la EN 365 exige conservar para demostrar que el equipo era usable.",
+        "eliminar": "Esto es para cuando se dieron de alta por error. Si los equipos existieron y salieron de servicio, lo que toca es retirarlos, no borrarlos."
+      },
+      "accion": {
+        "retirar": "Retirar",
+        "eliminar": "Eliminar"
+      },
+      "hecho": {
+        "retirar": "{{count}} elemento retirado",
+        "retirar_other": "{{count}} elementos retirados",
+        "eliminar": "{{count}} elemento eliminado",
+        "eliminar_other": "{{count}} elementos eliminados"
+      }
     }
   },
   "admins": {
