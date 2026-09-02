@@ -1823,6 +1823,7 @@
     },
     "topbar": {
       "root": "Everydat Pro",
+      "breadcrumb": "Fil d'Ariane",
       "toggleMenu": "Basculer le menu",
       "notifications": "Notifications",
       "assistant": "Assistant Sherpa",
