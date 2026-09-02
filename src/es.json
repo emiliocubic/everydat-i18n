@@ -655,6 +655,25 @@
         "vigilar": "Vigilar",
         "no_apto": "No apto"
       }
+    },
+    "traslado": {
+      "accion": "Trasladar a otra carpeta",
+      "title": "Trasladar",
+      "sujeto": "{{count}} elementos seleccionados",
+      "cliente": "Cliente",
+      "emplazamiento": "Emplazamiento",
+      "carpeta": "Carpeta de destino",
+      "actual": "actual",
+      "eligeAntes": "Elige antes el cliente y el emplazamiento.",
+      "mover": "Trasladar",
+      "hecho": "{{count}} elementos trasladados."
+    },
+    "clonar": {
+      "accion": "Clonar el elemento",
+      "title": "Clonar elemento",
+      "origen": "Se clona un {{modelo}}, referencia {{referencia}}.",
+      "identificadores": "Los identificadores llegan vacíos a propósito: cada equipo tiene el suyo y duplicarlos sería duplicar identidad física.",
+      "crear": "Crear el clon"
     }
   },
   "admins": {

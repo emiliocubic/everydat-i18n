@@ -744,6 +744,25 @@
         "vigilar": "À surveiller",
         "no_apto": "Non conforme"
       }
+    },
+    "traslado": {
+      "accion": "Déplacer vers un autre dossier",
+      "title": "Déplacer",
+      "sujeto": "{{count}} équipements sélectionnés",
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "carpeta": "Dossier de destination",
+      "actual": "actuel",
+      "eligeAntes": "Choisissez d'abord le client et le site.",
+      "mover": "Déplacer",
+      "hecho": "{{count}} équipements déplacés."
+    },
+    "clonar": {
+      "accion": "Cloner l'équipement",
+      "title": "Cloner l'équipement",
+      "origen": "On clone un {{modelo}}, référence {{referencia}}.",
+      "identificadores": "Les identifiants arrivent vides à dessein : chaque équipement a le sien, et les dupliquer dupliquerait l'identité physique.",
+      "crear": "Créer le clone"
     }
   },
   "admins": {

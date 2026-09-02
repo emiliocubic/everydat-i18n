@@ -744,6 +744,25 @@
         "vigilar": "Watch",
         "no_apto": "Fail"
       }
+    },
+    "traslado": {
+      "accion": "Move to another folder",
+      "title": "Move",
+      "sujeto": "{{count}} selected items",
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "carpeta": "Destination folder",
+      "actual": "current",
+      "eligeAntes": "Choose the client and the site first.",
+      "mover": "Move",
+      "hecho": "{{count}} items moved."
+    },
+    "clonar": {
+      "accion": "Clone item",
+      "title": "Clone item",
+      "origen": "Cloning a {{modelo}}, reference {{referencia}}.",
+      "identificadores": "Identifiers come in empty on purpose: each item has its own, and duplicating them would duplicate physical identity.",
+      "crear": "Create clone"
     }
   },
   "admins": {
