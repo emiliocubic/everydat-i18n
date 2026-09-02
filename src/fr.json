@@ -511,6 +511,12 @@
     },
     "cuadro": {
       "titulo": "Tableau de bord du site",
+      "resumen": "Résumé",
+      "busqueda": "Recherche rapide d'éléments",
+      "buscarHint": "Recherche dans les champs d'identification de l'élément. La liste se filtre au fur et à mesure de la saisie.",
+      "limpiar": "Effacer la recherche",
+      "coincidencias": "{{count}} résultat",
+      "coincidencias_other": "{{count}} résultats",
       "total": "Éléments",
       "activos": "En service",
       "incidencias": "Incidents",

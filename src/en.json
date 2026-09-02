@@ -511,6 +511,12 @@
     },
     "cuadro": {
       "titulo": "Site dashboard",
+      "resumen": "Summary",
+      "busqueda": "Quick element search",
+      "buscarHint": "Searches the element identification fields. The list filters as you type.",
+      "limpiar": "Clear search",
+      "coincidencias": "{{count}} match",
+      "coincidencias_other": "{{count}} matches",
       "total": "Items",
       "activos": "In service",
       "incidencias": "Issues",

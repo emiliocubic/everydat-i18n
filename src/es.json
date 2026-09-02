@@ -422,6 +422,12 @@
     },
     "cuadro": {
       "titulo": "Cuadro de mando del emplazamiento",
+      "resumen": "Resumen",
+      "busqueda": "Búsqueda rápida de elementos",
+      "buscarHint": "Busca en los campos de identificación del elemento. El listado se filtra a medida que escribes.",
+      "limpiar": "Limpiar búsqueda",
+      "coincidencias": "{{count}} coincidencia",
+      "coincidencias_other": "{{count}} coincidencias",
       "total": "Elementos",
       "activos": "En servicio",
       "incidencias": "Incidencias",
