@@ -674,6 +674,23 @@
       "origen": "Se clona un {{modelo}}, referencia {{referencia}}.",
       "identificadores": "Los identificadores llegan vacíos a propósito: cada equipo tiene el suyo y duplicarlos sería duplicar identidad física.",
       "crear": "Crear el clon"
+    },
+    "conjunto": {
+      "tag": "Conjunto",
+      "agrupar": "Agrupar en un conjunto",
+      "pideNombre": "Nombre del conjunto:",
+      "creado": "Conjunto «{{nombre}}» creado.",
+      "nombre": "Nombre",
+      "componentes": "Componentes",
+      "nMiembros": "{{count}} equipos",
+      "vacio": "Este conjunto se ha quedado sin equipos.",
+      "desvincular": "Sacar del conjunto",
+      "desvinculado": "El equipo queda suelto en su carpeta.",
+      "deshacer": "Deshacer el conjunto",
+      "deshacerHint": "Los equipos quedan sueltos en su carpeta; no se borra ninguno.",
+      "confirmDeshacer": "¿Deshacer el conjunto «{{nombre}}»? Los equipos quedan sueltos en su carpeta.",
+      "deshecho": "Conjunto deshecho.",
+      "situacionHint": "La situación del conjunto es la peor de sus equipos."
     }
   },
   "admins": {

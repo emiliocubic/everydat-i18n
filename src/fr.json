@@ -763,6 +763,23 @@
       "origen": "On clone un {{modelo}}, référence {{referencia}}.",
       "identificadores": "Les identifiants arrivent vides à dessein : chaque équipement a le sien, et les dupliquer dupliquerait l'identité physique.",
       "crear": "Créer le clone"
+    },
+    "conjunto": {
+      "tag": "Ensemble",
+      "agrupar": "Grouper en un ensemble",
+      "pideNombre": "Nom de l'ensemble :",
+      "creado": "Ensemble « {{nombre}} » créé.",
+      "nombre": "Nom",
+      "componentes": "Composants",
+      "nMiembros": "{{count}} équipements",
+      "vacio": "Cet ensemble n'a plus d'équipements.",
+      "desvincular": "Retirer de l'ensemble",
+      "desvinculado": "L'équipement est de nouveau libre dans son dossier.",
+      "deshacer": "Défaire l'ensemble",
+      "deshacerHint": "Les équipements restent dans leur dossier ; rien n'est supprimé.",
+      "confirmDeshacer": "Défaire l'ensemble « {{nombre}} » ? Les équipements restent libres dans leur dossier.",
+      "deshecho": "Ensemble défait.",
+      "situacionHint": "L'état de l'ensemble est le pire de ses équipements."
     }
   },
   "admins": {
