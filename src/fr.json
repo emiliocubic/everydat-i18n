@@ -905,7 +905,11 @@
         "colaboradores": "Accès · Collaborateurs",
         "invitados": "Accès · Invités"
       },
-      "cols": { "nombre": "Nom", "rol": "Rôle", "permiso": "Type de permission" },
+      "cols": {
+        "nombre": "Nom",
+        "rol": "Rôle",
+        "permiso": "Type de permission"
+      },
       "fields": {
         "gps": "Coordonnées GPS",
         "telefonos": "Téléphones",
@@ -1178,29 +1182,88 @@
           "errorSubir": "Impossible de téléverser l'image (JPG, PNG ou WEBP, max 4 Mo)."
         },
         "campos": {
-          "title": "Champs personnalisés"
+          "title": "Champs personnalisés",
+          "sub": "Hérités du type d'élément ; ici on ne fait que les restreindre.",
+          "vacio": "Le type d'élément n'a aucun champ personnalisé attribué.",
+          "sinTipo": "Attribuez un type d'élément au modèle pour hériter de ses champs.",
+          "nuevo": "Champ propre",
+          "nuevoAplazado": "Les champs sont définis par le type d'élément. Les champs propres au modèle viendront dans une itération ultérieure.",
+          "libre": "Texte libre",
+          "fueraDominio": "Ce modèle n'admet pas cette valeur",
+          "obligTipo": "Obligatoire (type)",
+          "obligModelo": "Obligatoire (modèle)",
+          "usarLabel": "Utilisé dans ce modèle",
+          "obligLabel": "Obligatoire à la création d'un équipement",
+          "obligBloqueado": "Le type d'élément l'exige déjà : le modèle peut renforcer l'obligation, pas l'assouplir.",
+          "dominioHint": "Cochez les valeurs admises par ce modèle. Tout cocher revient à ne rien restreindre, et le modèle suit alors le domaine si le type l'élargit.",
+          "cols": {
+            "usar": "Utiliser",
+            "campo": "Champ",
+            "tipo": "Type",
+            "valores": "Valeurs possibles",
+            "obligatorio": "Obligation"
+          },
+          "procedencia": {
+            "norma": "de norme",
+            "catalogo": "de catalogue",
+            "tipo": "du type"
+          }
         },
         "referencias": {
           "title": "Références",
-          "resumen": "{{total}} références · {{activas}} actives",
+          "resumen": "{{total}} références · {{activas}} actuelles",
           "vacio": "Ce modèle n'a aucune référence.",
           "cols": {
             "codigo": "Référence",
             "descripcion": "Description",
-            "estado": "Statut",
+            "estado": "État",
             "normas": "Normes",
-            "ean": "EAN"
+            "ean": "EAN",
+            "elementos": "Équip."
           },
           "estado": {
             "activa": "Active",
-            "descatalogada": "Retirée"
+            "descatalogada": "Déréférencée",
+            "actual": "Actuelle"
+          },
+          "nueva": "Ajouter des références",
+          "sinEspecificar": "non précisée",
+          "sinEspecificarCorto": "n/p",
+          "sinCampos": "Le type d'élément de ce modèle n'a pas de champs personnalisés.",
+          "nElementos": "{{n}} équipements",
+          "deleted": "Référence supprimée.",
+          "confirmDelete": "Supprimer la référence « {{nombre}} » ?",
+          "descatalogadaHint": "Déréférencée par le fabricant : elle reste visible, car son parc est toujours en service et doit être vérifié.",
+          "normasHeredadas": "Hérite des normes du modèle : {{codigos}}",
+          "normasPropias": "Normes propres à cette référence : elles remplacent celles du modèle.",
+          "normaHeredadaTitle": "Héritée du modèle",
+          "fijadoOn": "Valeur figée : la création d'équipement ne peut pas la modifier",
+          "fijadoOff": "Valeur proposée : la création d'équipement peut la modifier",
+          "metadatosPh": "Données complémentaires de la fiche fabricant (poids, tours, garantie…).",
+          "bulkTitle": "Nouvelles références",
+          "bulkHint": "Remplissez la première ligne et propagez-la vers le bas.",
+          "bulkAdd": "Ajouter une ligne",
+          "bulkCopy": "Copier la 1re sur les autres",
+          "bulkBajar": "Copier vers le bas",
+          "bulkVacio": "Saisissez au moins un code ou une description.",
+          "blk": {
+            "identificacion": "Identification",
+            "campos": "Champs personnalisés",
+            "metadatos": "Métadonnées du fabricant",
+            "conformidad": "Conformité normative"
+          },
+          "merge": {
+            "title": "Unifier des références",
+            "desc": "« {{from}} » disparaît et tout ce qui lui appartient passe à « {{to}} ».",
+            "repunta": "{{n}} équipements sont rattachés à « {{to}} ».",
+            "normas": "Les normes des deux sont réunies.",
+            "completa": "Les manques de la référence conservée sont comblés : {{campos}}.",
+            "sinHuecos": "Aucun manque à combler : la référence conservée a déjà tout.",
+            "nCampos": "{{n}} champs personnalisés",
+            "note": "Une donnée déjà présente dans la référence conservée n'est jamais écrasée.",
+            "confirm": "Unifier",
+            "done": "Références unifiées."
           }
-        },
-        "fechas": {
-          "fabricacion": "Fabrication",
-          "instalacion": "Installation",
-          "suministro": "Approvisionnement",
-          "puestaServicio": "Mise en service"
         },
         "caract": {
           "title": "Caractérisation",
@@ -1227,6 +1290,39 @@
           "noDefinida": "Non définie",
           "fichaFabricante": "Fiche du fabricant",
           "sinEnlace": "Aucun lien"
+        },
+        "docs": {
+          "title": "Documentation",
+          "resumen": "{{n}} documents",
+          "vacio": "Ce modèle n'a pas encore de documentation.",
+          "subir": "Téléverser un document",
+          "subido": "Document ajouté.",
+          "enlazar": "Récupérer celle du fabricant",
+          "enlazados": "{{n}} documents du fabricant liés.",
+          "descargar": "Télécharger",
+          "enlaceFabricante": "Ouvrir sur le site du fabricant",
+          "confirmDelete": "Retirer « {{nombre}} » de la fiche ?",
+          "faltan": "Documents essentiels manquants : {{tipos}}.",
+          "aplicaA": "S'applique à {{ref}}",
+          "cols": {
+            "nombre": "Document",
+            "tipo": "Nature",
+            "origen": "Provenance",
+            "peso": "Taille"
+          },
+          "origen": {
+            "local": "Propre",
+            "sectorial": "Fabricant"
+          },
+          "tipos": {
+            "ficha_tecnica": "Fiche technique",
+            "declaracion_conformidad": "Déclaration de conformité",
+            "manual_usuario": "Manuel d'utilisation",
+            "mantenimiento": "Entretien",
+            "revision": "Procédure de vérification",
+            "seguimiento": "Fiche de suivi",
+            "otros": "Autre document"
+          }
         }
       }
     },

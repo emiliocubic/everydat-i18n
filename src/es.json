@@ -816,7 +816,11 @@
         "colaboradores": "Acceso · Usuarios colaboradores",
         "invitados": "Acceso · Usuarios invitados"
       },
-      "cols": { "nombre": "Nombre", "rol": "Rol", "permiso": "Tipo de permiso" },
+      "cols": {
+        "nombre": "Nombre",
+        "rol": "Rol",
+        "permiso": "Tipo de permiso"
+      },
       "fields": {
         "gps": "Coordenadas GPS",
         "telefonos": "Teléfonos",
@@ -1178,29 +1182,88 @@
           "errorSubir": "No se pudo subir la imagen (usa JPG, PNG o WEBP, máx. 4 MB)."
         },
         "campos": {
-          "title": "Campos personalizados"
+          "title": "Campos personalizados",
+          "sub": "Se heredan del tipo de elemento; aquí solo se acotan.",
+          "vacio": "El tipo de elemento no tiene campos personalizados asignados.",
+          "sinTipo": "Asigna un tipo de elemento al modelo para heredar sus campos.",
+          "nuevo": "Campo propio",
+          "nuevoAplazado": "Los campos los define el tipo de elemento. Crear campos propios del modelo llegará en una iteración posterior.",
+          "libre": "Texto libre",
+          "fueraDominio": "El modelo no admite este valor",
+          "obligTipo": "Obligatorio (tipo)",
+          "obligModelo": "Obligatorio (modelo)",
+          "usarLabel": "Se usa en este modelo",
+          "obligLabel": "Obligatorio al dar de alta un elemento",
+          "obligBloqueado": "El tipo de elemento ya lo exige: el modelo puede endurecer la obligatoriedad, no ablandarla.",
+          "dominioHint": "Marca los valores que admite este modelo. Marcarlos todos equivale a no acotar, y así el modelo sigue al dominio si el tipo lo amplía.",
+          "cols": {
+            "usar": "Usar",
+            "campo": "Campo",
+            "tipo": "Tipo",
+            "valores": "Valores posibles",
+            "obligatorio": "Obligatoriedad"
+          },
+          "procedencia": {
+            "norma": "de norma",
+            "catalogo": "de catálogo",
+            "tipo": "del tipo"
+          }
         },
         "referencias": {
           "title": "Referencias",
-          "resumen": "{{total}} referencias · {{activas}} activas",
+          "resumen": "{{total}} referencias · {{activas}} actuales",
           "vacio": "Este modelo no tiene referencias.",
           "cols": {
             "codigo": "Referencia",
             "descripcion": "Descripción",
             "estado": "Estado",
             "normas": "Normativas",
-            "ean": "EAN"
+            "ean": "EAN",
+            "elementos": "Elem."
           },
           "estado": {
             "activa": "Activa",
-            "descatalogada": "Descatalogada"
+            "descatalogada": "Descatalogada",
+            "actual": "Actual"
+          },
+          "nueva": "Añadir referencias",
+          "sinEspecificar": "sin especificar",
+          "sinEspecificarCorto": "s/e",
+          "sinCampos": "El tipo de elemento de este modelo no tiene campos personalizados.",
+          "nElementos": "{{n}} elementos",
+          "deleted": "Referencia eliminada.",
+          "confirmDelete": "¿Eliminar la referencia «{{nombre}}»?",
+          "descatalogadaHint": "Descatalogada por el fabricante: sigue a la vista, porque su parque continúa en uso y hay que revisarlo.",
+          "normasHeredadas": "Hereda la normativa del modelo: {{codigos}}",
+          "normasPropias": "Normativa propia de esta referencia: sustituye a la del modelo.",
+          "normaHeredadaTitle": "Heredada del modelo",
+          "fijadoOn": "Valor fijado: el alta de elemento no lo puede cambiar",
+          "fijadoOff": "Valor propuesto: el alta de elemento lo puede cambiar",
+          "metadatosPh": "Datos adicionales de la ficha del fabricante (peso, contornos, garantía…).",
+          "bulkTitle": "Nuevas referencias",
+          "bulkHint": "Rellena la primera fila y propágala hacia abajo.",
+          "bulkAdd": "Añadir fila",
+          "bulkCopy": "Copiar la 1ª al resto",
+          "bulkBajar": "Copiar hacia abajo",
+          "bulkVacio": "Pon al menos un código o una descripción.",
+          "blk": {
+            "identificacion": "Identificación",
+            "campos": "Campos personalizados",
+            "metadatos": "Metadatos del fabricante",
+            "conformidad": "Conformidad normativa"
+          },
+          "merge": {
+            "title": "Unificar referencias",
+            "desc": "«{{from}}» desaparece y todo lo suyo pasa a «{{to}}».",
+            "repunta": "{{n}} elementos pasan a colgar de «{{to}}».",
+            "normas": "Las normativas de las dos se unen.",
+            "completa": "Se completan los huecos de la que se conserva: {{campos}}.",
+            "sinHuecos": "No hay huecos que completar: la que se conserva ya lo tiene todo.",
+            "nCampos": "{{n}} campos personalizados",
+            "note": "Nunca se pisa un dato que la referencia conservada ya tenía.",
+            "confirm": "Unificar",
+            "done": "Referencias unificadas."
           }
-        },
-        "fechas": {
-          "fabricacion": "Fabricación",
-          "instalacion": "Instalación",
-          "suministro": "Suministro",
-          "puestaServicio": "Puesta en servicio"
         },
         "caract": {
           "title": "Caracterización",
@@ -1227,6 +1290,39 @@
           "noDefinida": "No definida",
           "fichaFabricante": "Ficha del fabricante",
           "sinEnlace": "Sin enlace"
+        },
+        "docs": {
+          "title": "Documentación",
+          "resumen": "{{n}} documentos",
+          "vacio": "Este modelo aún no tiene documentación.",
+          "subir": "Subir documento",
+          "subido": "Documento añadido.",
+          "enlazar": "Traer la del fabricante",
+          "enlazados": "{{n}} documentos del fabricante enlazados.",
+          "descargar": "Descargar",
+          "enlaceFabricante": "Abrir en la web del fabricante",
+          "confirmDelete": "¿Quitar «{{nombre}}» de la ficha?",
+          "faltan": "Faltan documentos esenciales: {{tipos}}.",
+          "aplicaA": "Aplica a {{ref}}",
+          "cols": {
+            "nombre": "Documento",
+            "tipo": "Clase",
+            "origen": "Procedencia",
+            "peso": "Peso"
+          },
+          "origen": {
+            "local": "Propio",
+            "sectorial": "Fabricante"
+          },
+          "tipos": {
+            "ficha_tecnica": "Ficha técnica",
+            "declaracion_conformidad": "Declaración de conformidad",
+            "manual_usuario": "Manual de usuario",
+            "mantenimiento": "Mantenimiento",
+            "revision": "Procedimiento de revisión",
+            "seguimiento": "Ficha de seguimiento",
+            "otros": "Otro documento"
+          }
         }
       }
     },

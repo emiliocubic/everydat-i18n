@@ -905,7 +905,11 @@
         "colaboradores": "Access · Collaborators",
         "invitados": "Access · Guests"
       },
-      "cols": { "nombre": "Name", "rol": "Role", "permiso": "Permission type" },
+      "cols": {
+        "nombre": "Name",
+        "rol": "Role",
+        "permiso": "Permission type"
+      },
       "fields": {
         "gps": "GPS coordinates",
         "telefonos": "Phone numbers",
@@ -1178,29 +1182,88 @@
           "errorSubir": "Could not upload the image (use JPG, PNG or WEBP, max 4 MB)."
         },
         "campos": {
-          "title": "Custom fields"
+          "title": "Custom fields",
+          "sub": "Inherited from the element type; only narrowed here.",
+          "vacio": "The element type has no custom fields assigned.",
+          "sinTipo": "Assign an element type to the model to inherit its fields.",
+          "nuevo": "Own field",
+          "nuevoAplazado": "Fields are defined by the element type. Model-specific fields will come in a later iteration.",
+          "libre": "Free text",
+          "fueraDominio": "This model does not allow this value",
+          "obligTipo": "Required (type)",
+          "obligModelo": "Required (model)",
+          "usarLabel": "Used in this model",
+          "obligLabel": "Required when registering an item",
+          "obligBloqueado": "The element type already requires it: the model can tighten the requirement, not loosen it.",
+          "dominioHint": "Tick the values this model allows. Ticking them all is the same as not narrowing, so the model follows the domain if the type extends it.",
+          "cols": {
+            "usar": "Use",
+            "campo": "Field",
+            "tipo": "Type",
+            "valores": "Allowed values",
+            "obligatorio": "Requirement"
+          },
+          "procedencia": {
+            "norma": "from standard",
+            "catalogo": "from catalogue",
+            "tipo": "from type"
+          }
         },
         "referencias": {
           "title": "References",
-          "resumen": "{{total}} references · {{activas}} active",
+          "resumen": "{{total}} references · {{activas}} current",
           "vacio": "This model has no references.",
           "cols": {
             "codigo": "Reference",
             "descripcion": "Description",
             "estado": "Status",
             "normas": "Standards",
-            "ean": "EAN"
+            "ean": "EAN",
+            "elementos": "Items"
           },
           "estado": {
             "activa": "Active",
-            "descatalogada": "Discontinued"
+            "descatalogada": "Discontinued",
+            "actual": "Current"
+          },
+          "nueva": "Add references",
+          "sinEspecificar": "unspecified",
+          "sinEspecificarCorto": "n/s",
+          "sinCampos": "The element type of this model has no custom fields.",
+          "nElementos": "{{n}} items",
+          "deleted": "Reference deleted.",
+          "confirmDelete": "Delete reference “{{nombre}}”?",
+          "descatalogadaHint": "Discontinued by the manufacturer: it stays visible, because its fleet is still in use and must be inspected.",
+          "normasHeredadas": "Inherits the model's standards: {{codigos}}",
+          "normasPropias": "Standards specific to this reference: they override the model's.",
+          "normaHeredadaTitle": "Inherited from the model",
+          "fijadoOn": "Fixed value: item registration cannot change it",
+          "fijadoOff": "Suggested value: item registration can change it",
+          "metadatosPh": "Extra data from the manufacturer's sheet (weight, girths, warranty…).",
+          "bulkTitle": "New references",
+          "bulkHint": "Fill in the first row and propagate it downwards.",
+          "bulkAdd": "Add row",
+          "bulkCopy": "Copy 1st to the rest",
+          "bulkBajar": "Copy down",
+          "bulkVacio": "Enter at least a code or a description.",
+          "blk": {
+            "identificacion": "Identification",
+            "campos": "Custom fields",
+            "metadatos": "Manufacturer metadata",
+            "conformidad": "Standards compliance"
+          },
+          "merge": {
+            "title": "Merge references",
+            "desc": "“{{from}}” disappears and everything of its own moves to “{{to}}”.",
+            "repunta": "{{n}} items are reassigned to “{{to}}”.",
+            "normas": "The standards of both are combined.",
+            "completa": "Gaps in the surviving reference are filled in: {{campos}}.",
+            "sinHuecos": "No gaps to fill: the surviving reference already has everything.",
+            "nCampos": "{{n}} custom fields",
+            "note": "Data the surviving reference already had is never overwritten.",
+            "confirm": "Merge",
+            "done": "References merged."
           }
-        },
-        "fechas": {
-          "fabricacion": "Manufacture",
-          "instalacion": "Installation",
-          "suministro": "Supply",
-          "puestaServicio": "Commissioning"
         },
         "caract": {
           "title": "Characterization",
@@ -1227,6 +1290,39 @@
           "noDefinida": "Not defined",
           "fichaFabricante": "Manufacturer datasheet",
           "sinEnlace": "No link"
+        },
+        "docs": {
+          "title": "Documentation",
+          "resumen": "{{n}} documents",
+          "vacio": "This model has no documentation yet.",
+          "subir": "Upload document",
+          "subido": "Document added.",
+          "enlazar": "Fetch the manufacturer's",
+          "enlazados": "{{n}} manufacturer documents linked.",
+          "descargar": "Download",
+          "enlaceFabricante": "Open on the manufacturer's site",
+          "confirmDelete": "Remove “{{nombre}}” from the record?",
+          "faltan": "Essential documents missing: {{tipos}}.",
+          "aplicaA": "Applies to {{ref}}",
+          "cols": {
+            "nombre": "Document",
+            "tipo": "Kind",
+            "origen": "Source",
+            "peso": "Size"
+          },
+          "origen": {
+            "local": "Own",
+            "sectorial": "Manufacturer"
+          },
+          "tipos": {
+            "ficha_tecnica": "Data sheet",
+            "declaracion_conformidad": "Declaration of conformity",
+            "manual_usuario": "User manual",
+            "mantenimiento": "Maintenance",
+            "revision": "Inspection procedure",
+            "seguimiento": "Tracking sheet",
+            "otros": "Other document"
+          }
         }
       }
     },
