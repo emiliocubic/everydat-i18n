@@ -566,7 +566,8 @@
       "aria": "Item record",
       "tab": {
         "caract": "Details and status",
-        "normativa": "Standards"
+        "normativa": "Standards",
+        "historial": "History"
       },
       "anterior": "Previous (Alt+↑)",
       "siguiente": "Next (Alt+↓)",
@@ -726,6 +727,22 @@
           "incompleta": "Only {{n}} of {{total}} units provide an installation date.",
           "mixta": "This registration mixes installations from the last {{meses}} months with older ones. Consider splitting it in two."
         }
+      }
+    },
+    "historial": {
+      "filtro": "Filter by event kind",
+      "vacio": "No events with this filter.",
+      "anulada": "Voided",
+      "pendiente": "Upcoming",
+      "familia": {
+        "fecha": "Item dates",
+        "administrativo": "Administrative",
+        "operativo": "Operational"
+      },
+      "resultado": {
+        "apto": "Pass",
+        "vigilar": "Watch",
+        "no_apto": "Fail"
       }
     }
   },

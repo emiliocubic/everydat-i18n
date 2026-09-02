@@ -477,7 +477,8 @@
       "aria": "Ficha del elemento",
       "tab": {
         "caract": "Características y estado",
-        "normativa": "Normativa"
+        "normativa": "Normativa",
+        "historial": "Historial"
       },
       "anterior": "Anterior (Alt+↑)",
       "siguiente": "Siguiente (Alt+↓)",
@@ -637,6 +638,22 @@
           "incompleta": "Solo {{n}} de {{total}} unidades aportan fecha de instalación.",
           "mixta": "El alta mezcla instalaciones de los últimos {{meses}} meses con otras más antiguas. Quizá convenga partirla en dos."
         }
+      }
+    },
+    "historial": {
+      "filtro": "Filtrar por tipo de evento",
+      "vacio": "Sin eventos con este filtro.",
+      "anulada": "Anulada",
+      "pendiente": "Pendiente",
+      "familia": {
+        "fecha": "Fechas del equipo",
+        "administrativo": "Administrativos",
+        "operativo": "Operativos"
+      },
+      "resultado": {
+        "apto": "Apto",
+        "vigilar": "Vigilar",
+        "no_apto": "No apto"
       }
     }
   },

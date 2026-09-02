@@ -566,7 +566,8 @@
       "aria": "Fiche de l'élément",
       "tab": {
         "caract": "Caractéristiques et état",
-        "normativa": "Normes"
+        "normativa": "Normes",
+        "historial": "Historique"
       },
       "anterior": "Précédent (Alt+↑)",
       "siguiente": "Suivant (Alt+↓)",
@@ -726,6 +727,22 @@
           "incompleta": "Seules {{n}} unités sur {{total}} apportent une date d'installation.",
           "mixta": "Cette création mélange des installations des {{meses}} derniers mois avec d'autres plus anciennes. Il vaut peut-être mieux la scinder."
         }
+      }
+    },
+    "historial": {
+      "filtro": "Filtrer par type d'événement",
+      "vacio": "Aucun événement avec ce filtre.",
+      "anulada": "Annulée",
+      "pendiente": "À venir",
+      "familia": {
+        "fecha": "Dates de l'équipement",
+        "administrativo": "Administratifs",
+        "operativo": "Opérationnels"
+      },
+      "resultado": {
+        "apto": "Conforme",
+        "vigilar": "À surveiller",
+        "no_apto": "Non conforme"
       }
     }
   },
