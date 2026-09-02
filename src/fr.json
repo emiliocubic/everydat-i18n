@@ -1443,6 +1443,48 @@
       "nameRequired": "La checklist doit avoir un nom",
       "fixedNote": "Les groupes (Visuel, Fonctionnel, Documentaire) sont fixes ; ici vous placez seulement des points de contrôle à l'intérieur."
     },
+    "fabricantes": {
+      "created": "Fabricant créé",
+      "updated": "Fabricant mis à jour",
+      "deleted": "Fabricant supprimé",
+      "confirmDelete": "Supprimer le fabricant « {{nombre}} » ?",
+      "create": "Nouveau fabricant",
+      "createBtn": "Créer le fabricant",
+      "delete": "Supprimer le fabricant",
+      "newTitle": "Nouveau fabricant",
+      "newSub": "Nouveau fabricant",
+      "unnamed": "Fabricant sans nom",
+      "empty": "Aucun fabricant",
+      "emptyHint": "Créez le premier avec le bouton « Nouveau fabricant », ou importez-le du référentiel sectoriel.",
+      "identTitle": "Identification",
+      "statsTitle": "Statistiques",
+      "nombrePlaceholder": "p. ex. Petzl",
+      "sectorialNote": "Ce fabricant provient du référentiel sectoriel : son nom y est maintenu et ne peut être ni modifié ni supprimé ici.",
+      "cols": {
+        "nombre": "Fabricant",
+        "repo": "Référentiel sectoriel",
+        "repoShort": "RÉF.",
+        "repoTitle": "Référentiel sectoriel — ce fabricant a une fiche dans le référentiel",
+        "modelos": "Nb de modèles",
+        "elementos": "Nb d'éléments"
+      },
+      "field": {
+        "nombre": "Nom",
+        "repositorio": "Référentiel sectoriel"
+      },
+      "origen": {
+        "local": "Fabricant propre",
+        "sectorial": "Du référentiel sectoriel"
+      },
+      "repo": {
+        "si": "Fiche présente dans le référentiel",
+        "no": "Aucune fiche dans le référentiel"
+      },
+      "stats": {
+        "modelos": "Modèles au catalogue",
+        "elementos": "Éléments du parc"
+      }
+    },
     "tipos": {
       "created": "Type créé",
       "updated": "Type mis à jour",
@@ -1649,6 +1691,7 @@
       "configParametros": "Paramètres généraux",
       "configNormativa": "Normes",
       "configCampos": "Champs personnalisés",
+      "configFabricantes": "Fabricants",
       "configModelos": "Catalogue",
       "configChecklists": "Checklists",
       "configTipos": "Familles et types",

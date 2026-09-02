@@ -1443,6 +1443,48 @@
       "nameRequired": "The checklist needs a name",
       "fixedNote": "Groups (Visual, Functional, Documentary) are fixed; here you only place checkpoints within them."
     },
+    "fabricantes": {
+      "created": "Manufacturer created",
+      "updated": "Manufacturer updated",
+      "deleted": "Manufacturer deleted",
+      "confirmDelete": "Delete manufacturer “{{nombre}}”?",
+      "create": "New manufacturer",
+      "createBtn": "Create manufacturer",
+      "delete": "Delete manufacturer",
+      "newTitle": "New manufacturer",
+      "newSub": "New manufacturer",
+      "unnamed": "Unnamed manufacturer",
+      "empty": "No manufacturers",
+      "emptyHint": "Create the first one with the “New manufacturer” button, or import it from the industry repository.",
+      "identTitle": "Identification",
+      "statsTitle": "Statistics",
+      "nombrePlaceholder": "e.g. Petzl",
+      "sectorialNote": "This manufacturer comes from the industry repository: its name is maintained there and cannot be edited or deleted here.",
+      "cols": {
+        "nombre": "Manufacturer",
+        "repo": "Industry repository",
+        "repoShort": "REPO",
+        "repoTitle": "Industry repository — this manufacturer has a record in the repository",
+        "modelos": "No. of models",
+        "elementos": "No. of elements"
+      },
+      "field": {
+        "nombre": "Name",
+        "repositorio": "Industry repository"
+      },
+      "origen": {
+        "local": "Own manufacturer",
+        "sectorial": "From the industry repository"
+      },
+      "repo": {
+        "si": "Has a repository record",
+        "no": "No repository record"
+      },
+      "stats": {
+        "modelos": "Models in the catalogue",
+        "elementos": "Elements in the field"
+      }
+    },
     "tipos": {
       "created": "Type created",
       "updated": "Type updated",
@@ -1649,6 +1691,7 @@
       "configParametros": "General parameters",
       "configNormativa": "Standards",
       "configCampos": "Custom fields",
+      "configFabricantes": "Manufacturers",
       "configModelos": "Catalogue",
       "configChecklists": "Checklists",
       "configTipos": "Families & types",

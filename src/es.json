@@ -1443,6 +1443,48 @@
       "nameRequired": "El checklist necesita un nombre",
       "fixedNote": "Los grupos (Visual, Funcional, Documental) son fijos; aquí solo colocas checkpoints dentro de ellos."
     },
+    "fabricantes": {
+      "created": "Fabricante creado",
+      "updated": "Fabricante actualizado",
+      "deleted": "Fabricante eliminado",
+      "confirmDelete": "¿Eliminar el fabricante «{{nombre}}»?",
+      "create": "Nuevo fabricante",
+      "createBtn": "Crear fabricante",
+      "delete": "Eliminar fabricante",
+      "newTitle": "Nuevo fabricante",
+      "newSub": "Alta de fabricante",
+      "unnamed": "Fabricante sin nombre",
+      "empty": "No hay fabricantes",
+      "emptyHint": "Crea el primero con el botón «Nuevo fabricante», o impórtalo del repositorio sectorial.",
+      "identTitle": "Identificación",
+      "statsTitle": "Estadísticas",
+      "nombrePlaceholder": "p. ej. Petzl",
+      "sectorialNote": "Este fabricante viene del repositorio sectorial: su nombre se mantiene desde allí y no se edita ni se borra aquí.",
+      "cols": {
+        "nombre": "Fabricante",
+        "repo": "Repositorio sectorial",
+        "repoShort": "REPO",
+        "repoTitle": "Repositorio sectorial — hay ficha de este fabricante en el repositorio",
+        "modelos": "Nº de modelos",
+        "elementos": "Nº de elementos"
+      },
+      "field": {
+        "nombre": "Nombre",
+        "repositorio": "Repositorio sectorial"
+      },
+      "origen": {
+        "local": "Fabricante propio",
+        "sectorial": "Del repositorio sectorial"
+      },
+      "repo": {
+        "si": "Con ficha en el repositorio",
+        "no": "Sin ficha en el repositorio"
+      },
+      "stats": {
+        "modelos": "Nº de modelos en el catálogo",
+        "elementos": "Nº de elementos del parque"
+      }
+    },
     "tipos": {
       "created": "Tipo creado",
       "updated": "Tipo actualizado",
@@ -1649,6 +1691,7 @@
       "configParametros": "Parámetros generales",
       "configNormativa": "Normativa",
       "configCampos": "Campos personalizados",
+      "configFabricantes": "Fabricantes",
       "configModelos": "Catálogo",
       "configChecklists": "Checklists",
       "configTipos": "Familias y tipos",
