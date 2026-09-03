@@ -503,7 +503,25 @@
       "colCodigo": "Identification",
       "colProxima": "Proch. insp.",
       "colEstado": "État",
-      "validaHasta": "Son inspection est valable jusqu'au {{fecha}}"
+      "validaHasta": "Son inspection est valable jusqu'au {{fecha}}",
+      "pideUno": "Cochez un élément avec sa case",
+      "pideSoloUno": "Cochez un seul élément",
+      "pideAlMenosUno": "Cochez au moins un élément",
+      "pideDos": "Cochez deux éléments ou plus",
+      "yaAgrupados": "L’un des éléments cochés fait déjà partie d’un ensemble"
+    },
+    "orden": {
+      "menu": "Trier par",
+      "tipo": "Type d’élément",
+      "estado": "État",
+      "proxima": "Date de la prochaine inspection",
+      "quitar": "Supprimer le tri",
+      "subir": "Monter",
+      "alPrincipio": "Placer en premier",
+      "bajar": "Descendre",
+      "alFinal": "Placer en dernier",
+      "soloEnCarpeta": "L’ordre manuel appartient au dossier : passez à « Ce dossier »",
+      "soloSinOrden": "Supprimez le tri de la liste pour les placer à la main"
     },
     "situacion": {
       "sin_revisar": "Non inspecté",
@@ -581,6 +599,7 @@
       "editando": "Édition de l'élément",
       "identificacion": "Identification",
       "sinIdentificadores": "Son type ne demande aucun identifiant.",
+      "imagen": "Image du modèle",
       "situacion": "Situation actuelle",
       "estado": "Situation",
       "cicloVida": "État",
@@ -613,7 +632,9 @@
     },
     "normativa": {
       "soloLectura": "Les normes viennent du catalogue, pas de cette fiche : elles se modifient sur la référence, le modèle ou le type.",
-      "cumple": "Normes respectées",
+      "hereda": "Cet équipement hérite des normes de son type ou de son modèle",
+      "propia": "Définir des normes propres à cet équipement",
+      "sinNormas": "Aucune norme.",
       "sinOrigen": "Aucune référence de catalogue : rien à résoudre.",
       "origen": {
         "referencia": "Définies sur sa référence de catalogue.",
@@ -655,30 +676,33 @@
       }
     },
     "alta": {
-      "title": "Créer des équipements",
+      "title": "Nouvel équipement de sécurité",
       "enCarpeta": "Dans « {{carpeta}} »",
       "nUnidades": "{{count}} unités",
       "nFechas": "{{count}} dates · selon le type",
       "sinCampos": "Ce type d'élément ne demande pas de champs personnalisés.",
       "sinIdentificativos": "Ce type d'élément ne demande pas d'identifiants.",
-      "buscarModelo": "Chercher le modèle au catalogue",
+      "buscarModelo": "Chercher un modèle…",
       "cambiarModelo": "Changer",
       "totalReparto": "{{count}} unités à créer",
-      "rango": "(max. {{max}})",
+      "rango": "(1–{{max}})",
       "copiarAbajo": "Copier vers le bas",
       "unicoTitle": "Ne peut pas se répéter sur un autre équipement",
       "campoFijado": "Figé par la référence : non modifiable à la création",
       "finVida": "Fin de durée de vie",
       "faltaFirma": "Il manque qui signe la vérification.",
-      "resumenPie": "{{count}} unités dans « {{carpeta}} »",
-      "crear": "Créer {{count}} équipements",
       "creados": "{{count}} équipements créés.",
       "pasos": {
-        "modelo": "Modèle et unités",
+        "modelo": "Fabricant, modèle et type",
         "identificacion": "Identification",
         "fechas": "Dates significatives",
         "campos": "Champs personnalisés",
-        "eventos": "Démarrage du compteur"
+        "eventos": "Démarrage du compteur",
+        "unidades": "Combien d’unités ?",
+        "modeloHint": "même modèle pour toutes les unités",
+        "sinIdentHint": "ce type d’équipement ne demande pas d’identifiants",
+        "camposHint": "selon le type d’équipement",
+        "sinCamposHint": "ce type d’équipement n’a pas de champs personnalisés"
       },
       "cols": {
         "referencia": "Référence",
@@ -734,10 +758,34 @@
           "incompleta": "Seules {{n}} unités sur {{total}} apportent une date d'installation.",
           "mixta": "Cette création mélange des installations des {{meses}} derniers mois avec d'autres plus anciennes. Il vaut peut-être mieux la scinder."
         }
+      },
+      "seCreara_one": "Sera créé dans",
+      "seCreara_other": "Seront créés dans",
+      "nUnidadesLabel": "Nombre d’unités",
+      "unidadesACrear_one": "unité à créer",
+      "unidadesACrear_other": "unités à créer",
+      "pickHint_one": "Choisis le modèle et affecte l’unité à une de ses références.",
+      "pickHint_other": "Choisis le modèle et répartis les {{count}} unités entre ses références.",
+      "pendientesReparto_one": "Il reste 1 unité à répartir.",
+      "pendientesReparto_other": "Il reste {{count}} unités à répartir.",
+      "repartoCompleto_one": "1 unité répartie.",
+      "repartoCompleto_other": "{{count}} unités réparties.",
+      "bloqueado": "Choisis d’abord le modèle et répartis les unités.",
+      "sinFechas": "Ce type d’équipement n’a aucune date significative. Rien à remplir ici.",
+      "resumenPie_one": "1 équipement dans « {{carpeta}} »",
+      "resumenPie_other": "{{count}} équipements dans « {{carpeta}} »",
+      "crear_one": "Créer 1 équipement",
+      "crear_other": "Créer {{count}} équipements",
+      "pie": {
+        "reparto": "Complète le modèle et la répartition pour pouvoir créer",
+        "campos_one": "1 champ obligatoire manquant (étape 5)",
+        "campos_other": "{{count}} champs obligatoires manquants (étape 5)"
       }
     },
     "historial": {
       "filtro": "Filtrer par type d'événement",
+      "contador": "Historique · {{count}} événement",
+      "contador_other": "Historique · {{count}} événements",
       "vacio": "Aucun événement avec ce filtre.",
       "anulada": "Annulée",
       "pendiente": "À venir",
@@ -769,7 +817,8 @@
       "title": "Cloner l'équipement",
       "origen": "On clone un {{modelo}}, référence {{referencia}}.",
       "identificadores": "Les identifiants arrivent vides à dessein : chaque équipement a le sien, et les dupliquer dupliquerait l'identité physique.",
-      "crear": "Créer le clone"
+      "crear": "Créer le clone",
+      "unaUnidad": "un clone à la fois"
     },
     "conjunto": {
       "tag": "Ensemble",

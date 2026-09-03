@@ -414,7 +414,25 @@
       "colCodigo": "Identificación",
       "colProxima": "Próxima rev.",
       "colEstado": "Estado",
-      "validaHasta": "Su revisión vale hasta el {{fecha}}"
+      "validaHasta": "Su revisión vale hasta el {{fecha}}",
+      "pideUno": "Marca un elemento con su casilla",
+      "pideSoloUno": "Marca un solo elemento",
+      "pideAlMenosUno": "Marca al menos un elemento",
+      "pideDos": "Marca dos o más elementos",
+      "yaAgrupados": "Alguno de los marcados ya está en un conjunto"
+    },
+    "orden": {
+      "menu": "Ordenar por",
+      "tipo": "Tipo de elemento",
+      "estado": "Estado",
+      "proxima": "Fecha próxima revisión",
+      "quitar": "Quitar orden",
+      "subir": "Subir",
+      "alPrincipio": "Subir al principio",
+      "bajar": "Bajar",
+      "alFinal": "Bajar al final",
+      "soloEnCarpeta": "El orden a mano es de la carpeta: cambia a «Esta carpeta»",
+      "soloSinOrden": "Quita el orden de la lista para colocarlos a mano"
     },
     "situacion": {
       "sin_revisar": "Sin revisar",
@@ -492,6 +510,7 @@
       "editando": "Editando el elemento",
       "identificacion": "Identificación",
       "sinIdentificadores": "Su tipo no pide ningún identificador.",
+      "imagen": "Imagen del modelo",
       "situacion": "Situación actual",
       "estado": "Situación",
       "cicloVida": "Estado",
@@ -524,7 +543,9 @@
     },
     "normativa": {
       "soloLectura": "La normativa la fija el catálogo, no la ficha: se cambia en la referencia, el modelo o el tipo.",
-      "cumple": "Normativa que cumple",
+      "hereda": "Este elemento hereda la normativa de su tipo o modelo",
+      "propia": "Establecer normativa propia para este elemento",
+      "sinNormas": "Sin normas.",
       "sinOrigen": "Sin referencia de catálogo: no hay normativa que resolver.",
       "origen": {
         "referencia": "Definida en su referencia de catálogo.",
@@ -566,30 +587,33 @@
       }
     },
     "alta": {
-      "title": "Dar de alta elementos",
+      "title": "Nuevo elemento de seguridad",
       "enCarpeta": "En «{{carpeta}}»",
       "nUnidades": "{{count}} unidades",
       "nFechas": "{{count}} fechas · según el tipo",
       "sinCampos": "El tipo de este equipo no pide campos personalizados.",
       "sinIdentificativos": "El tipo de este equipo no pide identificadores.",
-      "buscarModelo": "Buscar el modelo en el catálogo",
+      "buscarModelo": "Buscar modelo…",
       "cambiarModelo": "Cambiar",
       "totalReparto": "{{count}} unidades a crear",
-      "rango": "(máx. {{max}})",
+      "rango": "(1–{{max}})",
       "copiarAbajo": "Copiar hacia abajo",
       "unicoTitle": "No puede repetirse en otro equipo",
       "campoFijado": "Lo fija la referencia: no se edita al dar de alta",
       "finVida": "Fin de vida útil",
       "faltaFirma": "Falta decir quién firma la revisión.",
-      "resumenPie": "{{count}} unidades en «{{carpeta}}»",
-      "crear": "Crear {{count}} elementos",
       "creados": "{{count}} elementos dados de alta.",
       "pasos": {
-        "modelo": "Modelo y unidades",
+        "modelo": "Fabricante, modelo y tipo",
         "identificacion": "Identificación",
         "fechas": "Fechas significativas",
         "campos": "Campos personalizados",
-        "eventos": "Arranque del contador"
+        "eventos": "Arranque del contador",
+        "unidades": "¿Cuántas unidades?",
+        "modeloHint": "mismo modelo para todas las unidades",
+        "sinIdentHint": "este tipo de elemento no pide identificadores",
+        "camposHint": "según el tipo de elemento",
+        "sinCamposHint": "este tipo de elemento no tiene campos"
       },
       "cols": {
         "referencia": "Referencia",
@@ -645,10 +669,34 @@
           "incompleta": "Solo {{n}} de {{total}} unidades aportan fecha de instalación.",
           "mixta": "El alta mezcla instalaciones de los últimos {{meses}} meses con otras más antiguas. Quizá convenga partirla en dos."
         }
+      },
+      "seCreara_one": "Se creará en",
+      "seCreara_other": "Se crearán en",
+      "nUnidadesLabel": "Número de unidades",
+      "unidadesACrear_one": "unidad a crear",
+      "unidadesACrear_other": "unidades a crear",
+      "pickHint_one": "Elige el modelo y asigna la unidad a una de sus referencias.",
+      "pickHint_other": "Elige el modelo y reparte las {{count}} unidades entre sus referencias.",
+      "pendientesReparto_one": "Queda 1 unidad por repartir entre las referencias.",
+      "pendientesReparto_other": "Quedan {{count}} unidades por repartir entre las referencias.",
+      "repartoCompleto_one": "1 unidad repartida.",
+      "repartoCompleto_other": "{{count}} unidades repartidas.",
+      "bloqueado": "Elige primero el modelo y reparte las unidades.",
+      "sinFechas": "Este tipo de equipo no pide ninguna fecha significativa. Nada que rellenar en este paso.",
+      "resumenPie_one": "1 elemento en «{{carpeta}}»",
+      "resumenPie_other": "{{count}} elementos en «{{carpeta}}»",
+      "crear_one": "Crear 1 elemento",
+      "crear_other": "Crear {{count}} elementos",
+      "pie": {
+        "reparto": "Completa el modelo y el reparto para poder crear",
+        "campos_one": "Falta 1 campo obligatorio (paso 5)",
+        "campos_other": "Faltan {{count}} campos obligatorios (paso 5)"
       }
     },
     "historial": {
       "filtro": "Filtrar por tipo de evento",
+      "contador": "Historial · {{count}} evento",
+      "contador_other": "Historial · {{count}} eventos",
       "vacio": "Sin eventos con este filtro.",
       "anulada": "Anulada",
       "pendiente": "Pendiente",
@@ -680,7 +728,8 @@
       "title": "Clonar elemento",
       "origen": "Se clona un {{modelo}}, referencia {{referencia}}.",
       "identificadores": "Los identificadores llegan vacíos a propósito: cada equipo tiene el suyo y duplicarlos sería duplicar identidad física.",
-      "crear": "Crear el clon"
+      "crear": "Crear el clon",
+      "unaUnidad": "un clon cada vez"
     },
     "conjunto": {
       "tag": "Conjunto",

@@ -503,7 +503,25 @@
       "colCodigo": "Identification",
       "colProxima": "Next insp.",
       "colEstado": "Status",
-      "validaHasta": "Its inspection is valid until {{fecha}}"
+      "validaHasta": "Its inspection is valid until {{fecha}}",
+      "pideUno": "Tick one item with its checkbox",
+      "pideSoloUno": "Tick a single item",
+      "pideAlMenosUno": "Tick at least one item",
+      "pideDos": "Tick two or more items",
+      "yaAgrupados": "One of the ticked items is already in a set"
+    },
+    "orden": {
+      "menu": "Sort by",
+      "tipo": "Item type",
+      "estado": "Status",
+      "proxima": "Next inspection date",
+      "quitar": "Clear sorting",
+      "subir": "Move up",
+      "alPrincipio": "Move to top",
+      "bajar": "Move down",
+      "alFinal": "Move to bottom",
+      "soloEnCarpeta": "Manual order belongs to the folder: switch to “This folder”",
+      "soloSinOrden": "Clear the list sorting to arrange them by hand"
     },
     "situacion": {
       "sin_revisar": "Not inspected",
@@ -581,6 +599,7 @@
       "editando": "Editing the item",
       "identificacion": "Identification",
       "sinIdentificadores": "Its type asks for no identifier.",
+      "imagen": "Model picture",
       "situacion": "Current status",
       "estado": "Status",
       "cicloVida": "State",
@@ -613,7 +632,9 @@
     },
     "normativa": {
       "soloLectura": "Standards come from the catalogue, not from this record: change them on the reference, the model or the type.",
-      "cumple": "Standards it meets",
+      "hereda": "This item inherits the standards of its type or model",
+      "propia": "Set standards of its own for this item",
+      "sinNormas": "No standards.",
       "sinOrigen": "No catalogue reference: there are no standards to resolve.",
       "origen": {
         "referencia": "Set on its catalogue reference.",
@@ -655,30 +676,33 @@
       }
     },
     "alta": {
-      "title": "Register items",
+      "title": "New safety item",
       "enCarpeta": "In “{{carpeta}}”",
       "nUnidades": "{{count}} units",
       "nFechas": "{{count}} dates · per element type",
       "sinCampos": "This element type asks for no custom fields.",
       "sinIdentificativos": "This element type asks for no identifiers.",
-      "buscarModelo": "Find the model in the catalogue",
+      "buscarModelo": "Find model…",
       "cambiarModelo": "Change",
       "totalReparto": "{{count}} units to create",
-      "rango": "(max. {{max}})",
+      "rango": "(1–{{max}})",
       "copiarAbajo": "Copy down",
       "unicoTitle": "Cannot repeat on another item",
       "campoFijado": "Fixed by the reference: not editable on registration",
       "finVida": "End of service life",
       "faltaFirma": "The inspection still needs someone to sign it.",
-      "resumenPie": "{{count}} units in “{{carpeta}}”",
-      "crear": "Create {{count}} items",
       "creados": "{{count}} items registered.",
       "pasos": {
-        "modelo": "Model and units",
+        "modelo": "Manufacturer, model and kind",
         "identificacion": "Identification",
         "fechas": "Key dates",
         "campos": "Custom fields",
-        "eventos": "Starting the clock"
+        "eventos": "Starting the clock",
+        "unidades": "How many units?",
+        "modeloHint": "same model for every unit",
+        "sinIdentHint": "this kind of item asks for no identifiers",
+        "camposHint": "depending on the kind of item",
+        "sinCamposHint": "this kind of item has no custom fields"
       },
       "cols": {
         "referencia": "Reference",
@@ -734,10 +758,34 @@
           "incompleta": "Only {{n}} of {{total}} units provide an installation date.",
           "mixta": "This registration mixes installations from the last {{meses}} months with older ones. Consider splitting it in two."
         }
+      },
+      "seCreara_one": "Will be created in",
+      "seCreara_other": "Will be created in",
+      "nUnidadesLabel": "Number of units",
+      "unidadesACrear_one": "unit to create",
+      "unidadesACrear_other": "units to create",
+      "pickHint_one": "Pick the model and assign the unit to one of its references.",
+      "pickHint_other": "Pick the model and split the {{count}} units across its references.",
+      "pendientesReparto_one": "1 unit still to assign to a reference.",
+      "pendientesReparto_other": "{{count}} units still to assign to a reference.",
+      "repartoCompleto_one": "1 unit assigned.",
+      "repartoCompleto_other": "{{count}} units assigned.",
+      "bloqueado": "Pick the model and split the units first.",
+      "sinFechas": "This kind of equipment has no significant dates. Nothing to fill in here.",
+      "resumenPie_one": "1 item in “{{carpeta}}”",
+      "resumenPie_other": "{{count}} items in “{{carpeta}}”",
+      "crear_one": "Create 1 item",
+      "crear_other": "Create {{count}} items",
+      "pie": {
+        "reparto": "Complete the model and the split to be able to create",
+        "campos_one": "1 required field missing (step 5)",
+        "campos_other": "{{count}} required fields missing (step 5)"
       }
     },
     "historial": {
       "filtro": "Filter by event kind",
+      "contador": "History · {{count}} event",
+      "contador_other": "History · {{count}} events",
       "vacio": "No events with this filter.",
       "anulada": "Voided",
       "pendiente": "Upcoming",
@@ -769,7 +817,8 @@
       "title": "Clone item",
       "origen": "Cloning a {{modelo}}, reference {{referencia}}.",
       "identificadores": "Identifiers come in empty on purpose: each item has its own, and duplicating them would duplicate physical identity.",
-      "crear": "Create clone"
+      "crear": "Create clone",
+      "unaUnidad": "one clone at a time"
     },
     "conjunto": {
       "tag": "Set",
