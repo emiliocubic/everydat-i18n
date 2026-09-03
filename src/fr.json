@@ -1031,7 +1031,18 @@
       "pais": "Pays",
       "cp": "Code postal",
       "direccion": "Adresse",
-      "codigo": "Code"
+      "codigo": "Code",
+      "elementos": "Équipements de sécurité",
+      "elementosTitle": "Nombre total d'équipements de sécurité",
+      "revision": "Équipements en cours de vérification",
+      "revisionTitle": "Nombre d'équipements avec une vérification ouverte",
+      "incidencias": "Incidents",
+      "incidenciasTitle": "Nombre d’incidents : non conformes, fin de vie, vérification périmée ou en réparation",
+      "informes": "Rapports",
+      "informesTitle": "Nombre de rapports émis",
+      "proxRev": "Date de prochaine vérification",
+      "proxRevCol": "Proch. vér.",
+      "proxRevTitle": "Date de vérification programmée la plus proche du site"
     },
     "errors": {
       "clienteRequired": "Veuillez sélectionner un client."
@@ -1104,6 +1115,16 @@
       "sinAcceso": "Personne n’a accès.",
       "borrarRegistroConfirm": "Supprimer cette entrée du journal ? Action irréversible.",
       "sinClienteParaArbol": "Ce site n'a pas de client : l'arborescence s'active dès qu'il en a un."
+    },
+    "grupos": {
+      "contadores": "Compteurs",
+      "revision": "Vérification"
+    },
+    "proxRevHint": {
+      "ninguna": "Aucune vérification programmée",
+      "programada": "Date programmée",
+      "vencida": "Date programmée · dépassée",
+      "proxima": "Date programmée · dans moins de 30 jours"
     }
   },
   "localizaciones": {

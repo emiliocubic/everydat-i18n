@@ -942,7 +942,18 @@
       "pais": "País",
       "cp": "Código postal",
       "direccion": "Dirección",
-      "codigo": "Código"
+      "codigo": "Código",
+      "elementos": "Elementos de seguridad",
+      "elementosTitle": "N.º total de elementos de seguridad",
+      "revision": "Elementos en revisión",
+      "revisionTitle": "N.º de elementos con una revisión abierta",
+      "incidencias": "Incidencias",
+      "incidenciasTitle": "N.º de incidencias: elementos no aptos, fin de vida, revisión caducada o en reparación",
+      "informes": "Informes",
+      "informesTitle": "N.º de informes emitidos",
+      "proxRev": "Fecha próxima revisión",
+      "proxRevCol": "Próx. rev.",
+      "proxRevTitle": "Fecha de próxima revisión más cercana del emplazamiento"
     },
     "errors": {
       "clienteRequired": "Debes seleccionar un cliente."
@@ -1015,6 +1026,16 @@
       "sinAcceso": "Nadie con acceso.",
       "borrarRegistroConfirm": "¿Borrar este registro de la bitácora? No se puede deshacer.",
       "sinClienteParaArbol": "Este emplazamiento no tiene cliente asignado: el árbol se activa al asignarle uno."
+    },
+    "grupos": {
+      "contadores": "Contadores",
+      "revision": "Revisión"
+    },
+    "proxRevHint": {
+      "ninguna": "Sin revisión programada",
+      "programada": "Fecha programada",
+      "vencida": "Fecha programada · vencida",
+      "proxima": "Fecha programada · en menos de 30 días"
     }
   },
   "localizaciones": {

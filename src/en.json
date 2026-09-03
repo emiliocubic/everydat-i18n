@@ -1031,7 +1031,18 @@
       "pais": "Country",
       "cp": "Post code",
       "direccion": "Address",
-      "codigo": "Code"
+      "codigo": "Code",
+      "elementos": "Safety equipment",
+      "elementosTitle": "Total number of safety items",
+      "revision": "Items under inspection",
+      "revisionTitle": "Number of items with an open inspection",
+      "incidencias": "Issues",
+      "incidenciasTitle": "Number of issues: failed, end of life, overdue inspection or under repair",
+      "informes": "Reports",
+      "informesTitle": "Number of reports issued",
+      "proxRev": "Next inspection date",
+      "proxRevCol": "Next insp.",
+      "proxRevTitle": "Site's earliest scheduled inspection date"
     },
     "errors": {
       "clienteRequired": "Please select a customer."
@@ -1104,6 +1115,16 @@
       "sinAcceso": "Nobody has access.",
       "borrarRegistroConfirm": "Delete this log entry? This cannot be undone.",
       "sinClienteParaArbol": "This site has no client assigned: the tree becomes available once it has one."
+    },
+    "grupos": {
+      "contadores": "Counters",
+      "revision": "Inspection"
+    },
+    "proxRevHint": {
+      "ninguna": "No inspection scheduled",
+      "programada": "Scheduled date",
+      "vencida": "Scheduled date · overdue",
+      "proxima": "Scheduled date · in less than 30 days"
     }
   },
   "localizaciones": {
