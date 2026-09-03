@@ -22,6 +22,7 @@
     "call": "Call",
     "saving": "Saving…",
     "dontShowAgain": "Don't show again",
+    "contador": "({{filtered}} of {{total}})",
     "pagination": {
       "showing": "Showing {{from}}–{{to}} of {{total}}",
       "prev": "Previous",
@@ -804,7 +805,8 @@
     "traslado": {
       "accion": "Move to another folder",
       "title": "Move",
-      "sujeto": "{{count}} selected items",
+      "sujeto_one": "{{count}} selected item",
+      "sujeto_other": "{{count}} selected items",
       "cliente": "Client",
       "emplazamiento": "Site",
       "carpeta": "Destination folder",

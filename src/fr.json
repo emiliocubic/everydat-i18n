@@ -22,6 +22,7 @@
     "call": "Appeler",
     "saving": "Enregistrement…",
     "dontShowAgain": "Ne plus afficher",
+    "contador": "({{filtered}} sur {{total}})",
     "pagination": {
       "showing": "Affichage {{from}}–{{to}} sur {{total}}",
       "prev": "Précédent",
@@ -804,7 +805,8 @@
     "traslado": {
       "accion": "Déplacer vers un autre dossier",
       "title": "Déplacer",
-      "sujeto": "{{count}} équipements sélectionnés",
+      "sujeto_one": "{{count}} équipement sélectionné",
+      "sujeto_other": "{{count}} équipements sélectionnés",
       "cliente": "Client",
       "emplazamiento": "Site",
       "carpeta": "Dossier de destination",
