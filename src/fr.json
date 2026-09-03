@@ -780,7 +780,8 @@
         "reparto": "Complète le modèle et la répartition pour pouvoir créer",
         "campos_one": "1 champ obligatoire manquant (étape 5)",
         "campos_other": "{{count}} champs obligatoires manquants (étape 5)"
-      }
+      },
+      "confirmarRepetidos": "Tu vas créer plusieurs unités avec la même valeur dans : {{campos}}. Cet identifiant ne devrait pas se répéter entre équipements. Continuer quand même ?"
     },
     "historial": {
       "filtro": "Filtrer par type d'événement",

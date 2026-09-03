@@ -780,7 +780,8 @@
         "reparto": "Complete the model and the split to be able to create",
         "campos_one": "1 required field missing (step 5)",
         "campos_other": "{{count}} required fields missing (step 5)"
-      }
+      },
+      "confirmarRepetidos": "You are about to create several units sharing the same value in: {{campos}}. That identifier should not repeat across items. Continue anyway?"
     },
     "historial": {
       "filtro": "Filter by event kind",
