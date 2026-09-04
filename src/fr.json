@@ -502,8 +502,8 @@
     "censo": {
       "acciones": "Actions de l'inventaire",
       "alcance": "Portée de la liste",
-      "alcanceNodo": "Ce dossier",
-      "alcanceRama": "Toute la branche",
+      "alcanceNodo": "Ce nœud",
+      "alcanceRama": "Voir toute la branche",
       "verDescatalogados": "Voir les réformés",
       "seleccionarTodos": "Sélectionner tous les éléments",
       "seleccionados": "{{count}} sélectionné",
@@ -561,7 +561,7 @@
       "sinRevisar": "Non inspectés",
       "descatalogados": "Réformés",
       "buscar": "Chercher un élément",
-      "buscarPlaceholder": "Type, marque, modèle, référence ou n° de série…",
+      "buscarPlaceholder": "Saisis type, marque, modèle ou code de l’élément…",
       "sinResultados": "Aucun élément ne correspond.",
       "excepciones": "Exceptions détectées",
       "sinExcepciones": "Rien à signaler : tout le matériel est couvert jusqu'à sa prochaine inspection.",
@@ -704,7 +704,7 @@
       "creados": "{{count}} équipements créés.",
       "pasos": {
         "modelo": "Fabricant, modèle et type",
-        "identificacion": "Identification",
+        "identificacion": "Identifiants",
         "fechas": "Dates significatives",
         "campos": "Champs personnalisés",
         "eventos": "Démarrage du compteur",
@@ -894,7 +894,7 @@
     "createTitle": "Créer un utilisateur",
     "editTitle": "Modifier l'utilisateur",
     "createByType": {
-      "tenant": "Nouvel utilisateur interne",
+      "tenant": "Nouvel utilisateur",
       "colaborador_externo": "Nouveau collaborateur",
       "invitado": "Nouvel utilisateur invité"
     },
@@ -1271,7 +1271,7 @@
     "editTitle": "Modifier le groupe de clients",
     "empty": "Aucun groupe de clients trouvé.",
     "backToList": "Retour aux groupes",
-    "searchPlaceholder": "Rechercher par nom...",
+    "searchPlaceholder": "Rechercher un groupe par nom ou description…",
     "clientes": "Clients du groupe",
     "admins": "Administrateurs assignés",
     "noClientes": "Aucun client dans ce groupe.",
@@ -1280,7 +1280,7 @@
     "selectClientesTitle": "Clients du groupe",
     "selectAdminsTitle": "Administrateurs du groupe",
     "fields": {
-      "nombre": "Nom",
+      "nombre": "Groupe",
       "descripcion": "Description",
       "clientes": "Clients",
       "emplazamientos": "Emplacements"
@@ -1864,7 +1864,7 @@
         "subNew": "Ajout à la checklist du type",
         "subEdit": "Checklist du type",
         "grupo": "Groupe",
-        "grupoHint": "Le groupe classe le point de contrôle par axe d'inspection.",
+        "grupoHint": "Le groupe classe le point de contrôle par axe d'inspection. La liste des groupes se définit sur un autre écran.",
         "enunciado": "Énoncé",
         "enunciadoPlaceholder": "p. ex. Sangles et bandes sans coupures, usure ni abrasion",
         "enunciadoHint": "Rédigez-le sous forme affirmative d'état : ce qui doit être vérifié pour valider le point.",
@@ -2274,7 +2274,7 @@
       "aprobado": "Approuvé",
       "planificado": "Planifié",
       "en_ejecucion": "En cours",
-      "ejecucion_paralizada": "Suspendu",
+      "ejecucion_paralizada": "Exécution suspendue",
       "en_certificacion": "En certification",
       "finalizado": "Clôturé",
       "descartado": "Abandonné"
@@ -2306,16 +2306,16 @@
     "tabPendiente": "Cet onglet arrive dans une tâche ultérieure.",
     "tabs": {
       "datos": "Données projet",
-      "propuesta": "Proposition",
+      "propuesta": "Données proposition",
       "planificacion": "Planification",
       "ejecucion": "Exécution",
       "certificacion": "Certification",
       "aria": "Sections du projet"
     },
     "mando": {
-      "cambiar": "Changer l'état pour…",
+      "cambiar": "Changer l’état du projet en…",
       "confirmar": "Passer le projet à « {{estado}} »",
-      "bloqueado": "Impossible de passer à « {{estado}} »",
+      "bloqueado": "Impossible pour l’instant de passer à « {{estado}} »",
       "motivo": "Motif",
       "motivoPh": "Il se lit ensuite dans la liste et la fiche",
       "hecho": "Le projet passe à « {{estado}} ».",
@@ -2349,8 +2349,9 @@
       "arranque": "Passer en exécution automatiquement à la date de début",
       "arranqueHint": "Désactivez-le si la date est une prévision et que vous voulez valider avant que l'équipe puisse enregistrer du travail.",
       "personal": "Personnel affecté",
+      "administrador": "Admin",
       "administradorHint": "Sans responsable de projet, impossible de planifier.",
-      "equipo": "Équipe de terrain",
+      "equipo": "Techniciens de terrain",
       "accesoPendiente": "L'accès de l'équipe lié à la fenêtre d'exécution (3 jours avant, 7 après) est en attente : pour l'instant l'accès vient des périmètres de l'utilisateur.",
       "guardado": "Planification enregistrée."
     }

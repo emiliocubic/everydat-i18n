@@ -174,7 +174,7 @@
         "emails": "Emails",
         "etiqueta": "Etiqueta",
         "plazoRevisiones": "Plazo base revisiones",
-        "descuento": "Descuento de cliente",
+        "descuento": "Descuento cliente",
         "appCliente": "APP de cliente",
         "recibirNotif": "Recibir notificaciones",
         "alertaCliente": "Alerta del cliente"
@@ -260,7 +260,7 @@
       "nombreComercial": "Nombre comercial",
       "codigo": "Código",
       "razonSocial": "Razón social",
-      "nif": "NIF / CIF",
+      "nif": "CIF / NIF",
       "sector": "Sector",
       "telefono": "Teléfono",
       "notas": "Notas",
@@ -413,8 +413,8 @@
     "censo": {
       "acciones": "Acciones del censo",
       "alcance": "Alcance del listado",
-      "alcanceNodo": "Esta carpeta",
-      "alcanceRama": "Toda la rama",
+      "alcanceNodo": "Ver nodo",
+      "alcanceRama": "Ver toda la rama",
       "verDescatalogados": "Ver descatalogados",
       "seleccionarTodos": "Seleccionar todos los elementos",
       "seleccionados": "{{count}} seleccionado",
@@ -472,7 +472,7 @@
       "sinRevisar": "Sin revisar",
       "descatalogados": "Descatalogados",
       "buscar": "Buscar un elemento",
-      "buscarPlaceholder": "Tipo, marca, modelo, referencia o nº de serie…",
+      "buscarPlaceholder": "Escribe tipo, marca, modelo o código del elemento…",
       "sinResultados": "Ningún elemento coincide.",
       "excepciones": "Excepciones detectadas",
       "sinExcepciones": "Nada que avisar: todo el material llega cubierto a su próxima revisión.",
@@ -615,7 +615,7 @@
       "creados": "{{count}} elementos dados de alta.",
       "pasos": {
         "modelo": "Fabricante, modelo y tipo",
-        "identificacion": "Identificación",
+        "identificacion": "Identificadores",
         "fechas": "Fechas significativas",
         "campos": "Campos personalizados",
         "eventos": "Arranque del contador",
@@ -805,7 +805,7 @@
     "createTitle": "Crear usuario",
     "editTitle": "Editar usuario",
     "createByType": {
-      "tenant": "Nuevo usuario interno",
+      "tenant": "Nuevo usuario",
       "colaborador_externo": "Nuevo colaborador",
       "invitado": "Nuevo usuario invitado"
     },
@@ -1271,7 +1271,7 @@
     "editTitle": "Editar grupo de clientes",
     "empty": "No hay grupos de clientes.",
     "backToList": "Volver a grupos",
-    "searchPlaceholder": "Buscar por nombre...",
+    "searchPlaceholder": "Buscar grupo por nombre o descripción…",
     "clientes": "Clientes del grupo",
     "admins": "Administradores asignados",
     "noClientes": "Sin clientes en este grupo.",
@@ -1280,7 +1280,7 @@
     "selectClientesTitle": "Clientes del grupo",
     "selectAdminsTitle": "Administradores del grupo",
     "fields": {
-      "nombre": "Nombre",
+      "nombre": "Grupo",
       "descripcion": "Descripción",
       "clientes": "Clientes",
       "emplazamientos": "Emplazamientos"
@@ -1864,7 +1864,7 @@
         "subNew": "Alta en el checklist del tipo",
         "subEdit": "Checklist del tipo",
         "grupo": "Grupo",
-        "grupoHint": "El grupo clasifica el checkpoint por eje de inspección.",
+        "grupoHint": "El grupo clasifica el checkpoint por eje de inspección. La lista de grupos se define en otra pantalla.",
         "enunciado": "Enunciado",
         "enunciadoPlaceholder": "p. ej. Cintas y bandas sin cortes, desgaste ni abrasión",
         "enunciadoHint": "Redáctalo en forma afirmativa de estado: lo que debe cumplirse para dar el punto por correcto.",
@@ -2274,7 +2274,7 @@
       "aprobado": "Aprobado",
       "planificado": "Planificado",
       "en_ejecucion": "En ejecución",
-      "ejecucion_paralizada": "Paralizado",
+      "ejecucion_paralizada": "Ejecución paralizada",
       "en_certificacion": "En certificación",
       "finalizado": "Finalizado",
       "descartado": "Descartado"
@@ -2306,16 +2306,16 @@
     "tabPendiente": "Esta pestaña llega en una tarea posterior.",
     "tabs": {
       "datos": "Datos proyecto",
-      "propuesta": "Propuesta",
+      "propuesta": "Datos propuesta",
       "planificacion": "Planificación",
       "ejecucion": "Ejecución",
       "certificacion": "Certificación",
       "aria": "Secciones del proyecto"
     },
     "mando": {
-      "cambiar": "Cambiar estado a…",
+      "cambiar": "Cambiar estado proyecto a…",
       "confirmar": "Pasar el proyecto a «{{estado}}»",
-      "bloqueado": "No se puede pasar a «{{estado}}»",
+      "bloqueado": "Todavía no se puede pasar a «{{estado}}»",
       "motivo": "Motivo",
       "motivoPh": "Se lee luego en el listado y en la ficha",
       "hecho": "El proyecto pasa a «{{estado}}».",
@@ -2349,8 +2349,9 @@
       "arranque": "Pasar a ejecución solo al llegar la fecha de inicio",
       "arranqueHint": "Apágalo si la fecha es una previsión y quieres dar el visto bueno antes de que el equipo pueda registrar trabajo.",
       "personal": "Personal asignado",
+      "administrador": "Admin",
       "administradorHint": "Sin administrador de proyecto no se puede planificar.",
-      "equipo": "Equipo de campo",
+      "equipo": "Técnicos de campo",
       "accesoPendiente": "El acceso del equipo atado a la ventana de ejecución (3 días antes, 7 después) está pendiente: de momento el acceso se da por los alcances del usuario.",
       "guardado": "Planificación guardada."
     }

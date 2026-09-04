@@ -502,8 +502,8 @@
     "censo": {
       "acciones": "Inventory actions",
       "alcance": "List scope",
-      "alcanceNodo": "This folder",
-      "alcanceRama": "Whole branch",
+      "alcanceNodo": "This node",
+      "alcanceRama": "View whole branch",
       "verDescatalogados": "Show retired",
       "seleccionarTodos": "Select all items",
       "seleccionados": "{{count}} selected",
@@ -561,7 +561,7 @@
       "sinRevisar": "Not inspected",
       "descatalogados": "Retired",
       "buscar": "Find an item",
-      "buscarPlaceholder": "Type, brand, model, reference or serial no.…",
+      "buscarPlaceholder": "Type brand, model or item code…",
       "sinResultados": "No item matches.",
       "excepciones": "Detected exceptions",
       "sinExcepciones": "Nothing to flag: all equipment is covered up to its next inspection.",
@@ -704,7 +704,7 @@
       "creados": "{{count}} items registered.",
       "pasos": {
         "modelo": "Manufacturer, model and kind",
-        "identificacion": "Identification",
+        "identificacion": "Identifiers",
         "fechas": "Key dates",
         "campos": "Custom fields",
         "eventos": "Starting the clock",
@@ -894,7 +894,7 @@
     "createTitle": "Create user",
     "editTitle": "Edit user",
     "createByType": {
-      "tenant": "New internal user",
+      "tenant": "New user",
       "colaborador_externo": "New collaborator",
       "invitado": "New guest user"
     },
@@ -1271,7 +1271,7 @@
     "editTitle": "Edit customer group",
     "empty": "No customer groups found.",
     "backToList": "Back to groups",
-    "searchPlaceholder": "Search by name...",
+    "searchPlaceholder": "Search groups by name or description…",
     "clientes": "Group customers",
     "admins": "Assigned administrators",
     "noClientes": "No customers in this group.",
@@ -1280,7 +1280,7 @@
     "selectClientesTitle": "Group customers",
     "selectAdminsTitle": "Group administrators",
     "fields": {
-      "nombre": "Name",
+      "nombre": "Group",
       "descripcion": "Description",
       "clientes": "Customers",
       "emplazamientos": "Locations"
@@ -1864,7 +1864,7 @@
         "subNew": "Add to the type's checklist",
         "subEdit": "Type's checklist",
         "grupo": "Group",
-        "grupoHint": "The group classifies the checkpoint by inspection axis.",
+        "grupoHint": "The group classifies the checkpoint by inspection axis. The list of groups is defined on another screen.",
         "enunciado": "Statement",
         "enunciadoPlaceholder": "e.g. Webbing and straps free of cuts, wear or abrasion",
         "enunciadoHint": "Write it as an affirmative statement of condition: what must hold for the point to pass.",
@@ -2274,7 +2274,7 @@
       "aprobado": "Approved",
       "planificado": "Scheduled",
       "en_ejecucion": "In progress",
-      "ejecucion_paralizada": "Paused",
+      "ejecucion_paralizada": "Execution paused",
       "en_certificacion": "In certification",
       "finalizado": "Closed",
       "descartado": "Dropped"
@@ -2306,16 +2306,16 @@
     "tabPendiente": "This tab comes in a later task.",
     "tabs": {
       "datos": "Project data",
-      "propuesta": "Proposal",
+      "propuesta": "Proposal data",
       "planificacion": "Scheduling",
       "ejecucion": "Execution",
       "certificacion": "Certification",
       "aria": "Project sections"
     },
     "mando": {
-      "cambiar": "Change status to…",
+      "cambiar": "Change project status to…",
       "confirmar": "Move the project to “{{estado}}”",
-      "bloqueado": "Cannot move to “{{estado}}”",
+      "bloqueado": "Cannot move to “{{estado}}” yet",
       "motivo": "Reason",
       "motivoPh": "Shown later in the list and the record",
       "hecho": "The project is now “{{estado}}”.",
@@ -2349,8 +2349,9 @@
       "arranque": "Move to execution automatically on the start date",
       "arranqueHint": "Turn it off if the date is a forecast and you want to sign off before the team can log work.",
       "personal": "Assigned people",
+      "administrador": "Admin",
       "administradorHint": "Without a project owner the project cannot be scheduled.",
-      "equipo": "Field team",
+      "equipo": "Field technicians",
       "accesoPendiente": "Team access tied to the execution window (3 days before, 7 after) is pending: for now access comes from the user's scopes.",
       "guardado": "Scheduling saved."
     }
