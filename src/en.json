@@ -480,14 +480,23 @@
       "permisosPlaceholder": "Client portal access permissions will be configured here.",
       "logPlaceholder": "The portal account activity log will be shown here.",
       "altaContacto": "New contact",
+      "altaInvitado": "New guest user",
       "altaPendiente": "The creation form will arrive with the final mockups.",
       "darBaja": "Deactivate",
       "darAlta": "Reactivate",
       "crear": "Create contact",
+      "crearInvitado": "Create guest",
       "guardar": "Save changes",
       "errorEstado": "Could not change status",
       "errorGuardar": "Could not save"
     }
+  },
+  "invitados": {
+    "title": "Guest users",
+    "create": "New guest",
+    "empty": "No guest users found.",
+    "searchPlaceholder": "Search by name, email or phone…",
+    "masClientes": "{{count}} more customers"
   },
   "elementos": {
     "censo": {
@@ -968,7 +977,9 @@
     },
     "grupos": {
       "identidad": "Identity",
-      "roles": "Roles and permissions"
+      "roles": "Roles and permissions",
+      "adscripcion": "Assignment",
+      "actividad": "Activity"
     },
     "sheet": {
       "title": "User record",
@@ -2143,6 +2154,7 @@
       "usuarios": "Users",
       "usuariosInternos": "Internal users",
       "usuariosColaboradores": "Collaborators",
+      "usuariosInvitados": "Guests",
       "equiposTrabajo": "Teams",
       "clientes": "Customers",
       "clientesListado": "Customers",

@@ -391,14 +391,23 @@
       "permisosPlaceholder": "Aquí se configurarán los permisos de acceso al portal de cliente.",
       "logPlaceholder": "Aquí se mostrará el registro de actividad de la cuenta de portal.",
       "altaContacto": "Alta de contacto",
+      "altaInvitado": "Alta de invitado",
       "altaPendiente": "El formulario de alta llegará con las maquetas definitivas.",
       "darBaja": "Dar de baja",
       "darAlta": "Dar de alta",
       "crear": "Crear contacto",
+      "crearInvitado": "Crear invitado",
       "guardar": "Guardar cambios",
       "errorEstado": "Error al cambiar el estado",
       "errorGuardar": "Error al guardar"
     }
+  },
+  "invitados": {
+    "title": "Usuarios invitados",
+    "create": "Nuevo invitado",
+    "empty": "No hay usuarios invitados.",
+    "searchPlaceholder": "Buscar por nombre, email o teléfono…",
+    "masClientes": "{{count}} clientes más"
   },
   "elementos": {
     "censo": {
@@ -879,7 +888,9 @@
     },
     "grupos": {
       "identidad": "Identidad",
-      "roles": "Roles y permisos"
+      "roles": "Roles y permisos",
+      "adscripcion": "Adscripción",
+      "actividad": "Actividad"
     },
     "sheet": {
       "title": "Ficha de usuario",
@@ -2143,6 +2154,7 @@
       "usuarios": "Usuarios",
       "usuariosInternos": "Internos",
       "usuariosColaboradores": "Colaboradores",
+      "usuariosInvitados": "Invitados",
       "equiposTrabajo": "Equipos",
       "clientes": "Clientes",
       "clientesListado": "Clientes",

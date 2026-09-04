@@ -480,14 +480,23 @@
       "permisosPlaceholder": "Les permissions d’accès au portail client se configureront ici.",
       "logPlaceholder": "Le journal d’activité du compte portail s’affichera ici.",
       "altaContacto": "Nouveau contact",
+      "altaInvitado": "Nouvel invité",
       "altaPendiente": "Le formulaire de création arrivera avec les maquettes définitives.",
       "darBaja": "Désactiver",
       "darAlta": "Réactiver",
       "crear": "Créer le contact",
+      "crearInvitado": "Créer l'invité",
       "guardar": "Enregistrer",
       "errorEstado": "Impossible de changer le statut",
       "errorGuardar": "Impossible d’enregistrer"
     }
+  },
+  "invitados": {
+    "title": "Utilisateurs invités",
+    "create": "Nouvel invité",
+    "empty": "Aucun utilisateur invité.",
+    "searchPlaceholder": "Rechercher par nom, e-mail ou téléphone…",
+    "masClientes": "{{count}} clients de plus"
   },
   "elementos": {
     "censo": {
@@ -968,7 +977,9 @@
     },
     "grupos": {
       "identidad": "Identité",
-      "roles": "Rôles et permissions"
+      "roles": "Rôles et permissions",
+      "adscripcion": "Rattachement",
+      "actividad": "Activité"
     },
     "sheet": {
       "title": "Fiche utilisateur",
@@ -2143,6 +2154,7 @@
       "usuarios": "Utilisateurs",
       "usuariosInternos": "Utilisateurs internes",
       "usuariosColaboradores": "Collaborateurs",
+      "usuariosInvitados": "Invités",
       "equiposTrabajo": "Équipes",
       "clientes": "Clients",
       "clientesListado": "Clients",
