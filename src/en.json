@@ -35,7 +35,8 @@
     "understood": "Got it",
     "selectAll": "Select all",
     "selectRow": "Select row",
-    "accept": "Accept"
+    "accept": "Accept",
+    "listado": "List"
   },
   "merge": {
     "disappears": "Disappears",
@@ -511,7 +512,7 @@
       "vacio": "This folder has no items.",
       "colElemento": "Item",
       "colCodigo": "Identification",
-      "colProxima": "Next insp.",
+      "colProxima": "Next inspection",
       "colEstado": "Status",
       "validaHasta": "Its inspection is valid until {{fecha}}",
       "pideUno": "Tick one item with its checkbox",
@@ -537,8 +538,8 @@
       "sin_revisar": "Not inspected",
       "apto": "Pass",
       "no_apto": "Fail",
-      "rev_caducada": "Inspection overdue",
-      "fin_vida": "End of service life"
+      "rev_caducada": "Insp. overdue",
+      "fin_vida": "End of life"
     },
     "estado": {
       "activo": "Active",
@@ -570,9 +571,9 @@
       "avisoRaiz": "{{count}} item to deal with before going back",
       "avisoRaiz_other": "{{count}} items to deal with before going back",
       "exc": {
-        "revision": "Their inspection expires before we go back",
-        "vida": "They reach end of service life before we go back",
-        "sin_cobertura": "No planned inspection covers them"
+        "revision": "Expire before their next inspection",
+        "vida": "Reach end of service life before their next inspection",
+        "sin_cobertura": "No next-inspection date covers them"
       }
     },
     "lote": {
@@ -821,7 +822,7 @@
       "carpeta": "Destination folder",
       "actual": "current",
       "eligeAntes": "Choose the client and the site first.",
-      "mover": "Move",
+      "mover": "Move here",
       "hecho": "{{count}} items moved."
     },
     "clonar": {
@@ -850,7 +851,7 @@
       "situacionHint": "The set's status is the worst of its items."
     },
     "tabla": {
-      "buscar": "Search by identification, model or path",
+      "buscar": "Search by type, brand, model, serial no. or location…",
       "vacio": "No items",
       "vacioHint": "This site has no equipment registered yet.",
       "grupoCampos": "{{tipo}} fields",
@@ -1094,7 +1095,7 @@
       "pais": "Country",
       "cp": "Post code",
       "direccion": "Address",
-      "codigo": "Code",
+      "codigo": "My code",
       "elementos": "Safety equipment",
       "elementosTitle": "Total number of safety items",
       "revision": "Items under inspection",
@@ -1111,7 +1112,7 @@
       "clienteRequired": "Please select a customer."
     },
     "estado": {
-      "operativos": "Active and prospective",
+      "operativos": "Active + Prospective",
       "activo": "Active",
       "potencial": "Prospective",
       "baja": "Inactive"
@@ -1153,12 +1154,13 @@
         "telefonos": "Phone numbers",
         "telefono": "Phone",
         "emails": "Emails",
-        "plazoRevisiones": "Inspection interval",
-        "appAcceso": "Field app access"
+        "plazoRevisiones": "Base inspection interval",
+        "appAcceso": "Client app",
+        "notificaciones": "Generate notifications"
       },
       "notif": {
         "revisiones": "Inspections",
-        "caducidades": "Expiries"
+        "caducidades": "End of life"
       },
       "motivo": {
         "global": "Global access",
@@ -1195,13 +1197,15 @@
     "empty": "No locations found.",
     "selectHint": "Select a location from the tree",
     "addChild": "Add sub-location",
-    "createTitle": "Create location",
+    "createTitle": "New folder",
+    "createCta": "Create folder",
     "editTitle": "Edit location",
     "parentLabel": "Inside",
     "deleteConfirm": "Delete location {{nombre}}?",
     "root": "Root",
     "fields": {
       "nombre": "Name",
+      "nombrePlaceholder": "e.g. North roof",
       "descripcion": "Description",
       "orden": "Order",
       "parentId": "Parent"
@@ -1543,7 +1547,7 @@
           "title": "Documentation",
           "resumen": "{{n}} documents",
           "vacio": "This model has no documentation yet.",
-          "subir": "Upload document",
+          "subir": "Add document",
           "subido": "Document added.",
           "enlazar": "Fetch the manufacturer's",
           "enlazados": "{{n}} manufacturer documents linked.",
@@ -1656,6 +1660,7 @@
         "fecha": "Date"
       },
       "newTitle": "New field",
+      "newSubtitle": "New custom field",
       "unnamed": "Unnamed field",
       "detail": "Details",
       "definition": "Definition",
@@ -1737,7 +1742,7 @@
         "assignFirst": "Assign a catalog field to the type",
         "assignAnother": "Assign another catalog field to the type",
         "allAssigned": "All catalog fields are already assigned to this type.",
-        "defineSpecific": "Define a type-specific field",
+        "defineSpecific": "Assign a SPECIFIC field for this element type",
         "oblig": "Required",
         "obligTitle": "Required when registering an element of this type",
         "asignacionCol": "Assignment to the type",
@@ -2167,7 +2172,7 @@
       "configNormativa": "Standards",
       "configCampos": "Custom fields",
       "configFabricantes": "Manufacturers",
-      "configModelos": "Catalogue",
+      "configModelos": "Models",
       "configChecklists": "Checklists",
       "configTipos": "Families & types",
       "roles": "Roles",

@@ -35,7 +35,8 @@
     "understood": "Compris",
     "selectAll": "Tout sélectionner",
     "selectRow": "Sélectionner la ligne",
-    "accept": "Accepter"
+    "accept": "Accepter",
+    "listado": "Liste"
   },
   "merge": {
     "disappears": "Disparaît",
@@ -511,7 +512,7 @@
       "vacio": "Ce dossier n'a aucun élément.",
       "colElemento": "Élément",
       "colCodigo": "Identification",
-      "colProxima": "Proch. insp.",
+      "colProxima": "Proch. inspection",
       "colEstado": "État",
       "validaHasta": "Son inspection est valable jusqu'au {{fecha}}",
       "pideUno": "Cochez un élément avec sa case",
@@ -537,8 +538,8 @@
       "sin_revisar": "Non inspecté",
       "apto": "Conforme",
       "no_apto": "Non conforme",
-      "rev_caducada": "Inspection échue",
-      "fin_vida": "Fin de vie utile"
+      "rev_caducada": "Insp. échue",
+      "fin_vida": "Fin de vie"
     },
     "estado": {
       "activo": "Actif",
@@ -570,9 +571,9 @@
       "avisoRaiz": "{{count}} élément à traiter avant d'y retourner",
       "avisoRaiz_other": "{{count}} éléments à traiter avant d'y retourner",
       "exc": {
-        "revision": "Leur inspection expire avant notre retour",
-        "vida": "Ils atteignent leur fin de vie utile avant notre retour",
-        "sin_cobertura": "Aucune inspection planifiée ne les couvre"
+        "revision": "Expirent avant leur prochaine inspection",
+        "vida": "Atteignent la fin de vie utile avant leur prochaine inspection",
+        "sin_cobertura": "Sans date de prochaine inspection qui les couvre"
       }
     },
     "lote": {
@@ -821,7 +822,7 @@
       "carpeta": "Dossier de destination",
       "actual": "actuel",
       "eligeAntes": "Choisissez d'abord le client et le site.",
-      "mover": "Déplacer",
+      "mover": "Déplacer ici",
       "hecho": "{{count}} équipements déplacés."
     },
     "clonar": {
@@ -850,7 +851,7 @@
       "situacionHint": "L'état de l'ensemble est le pire de ses équipements."
     },
     "tabla": {
-      "buscar": "Rechercher par identification, modèle ou chemin",
+      "buscar": "Rechercher par type, marque, modèle, n° de série ou localisation…",
       "vacio": "Aucun équipement",
       "vacioHint": "Ce site n'a encore aucun équipement enregistré.",
       "grupoCampos": "Champs de {{tipo}}",
@@ -1094,7 +1095,7 @@
       "pais": "Pays",
       "cp": "Code postal",
       "direccion": "Adresse",
-      "codigo": "Code",
+      "codigo": "Mon code",
       "elementos": "Équipements de sécurité",
       "elementosTitle": "Nombre total d'équipements de sécurité",
       "revision": "Équipements en cours de vérification",
@@ -1111,7 +1112,7 @@
       "clienteRequired": "Veuillez sélectionner un client."
     },
     "estado": {
-      "operativos": "Actifs et potentiels",
+      "operativos": "Actif + Potentiel",
       "activo": "Actif",
       "potencial": "Potentiel",
       "baja": "Inactif"
@@ -1153,12 +1154,13 @@
         "telefonos": "Téléphones",
         "telefono": "Téléphone",
         "emails": "E-mails",
-        "plazoRevisiones": "Délai des révisions",
-        "appAcceso": "Accès depuis l'app"
+        "plazoRevisiones": "Délai de base des révisions",
+        "appAcceso": "APP client",
+        "notificaciones": "Générer des notifications"
       },
       "notif": {
         "revisiones": "Révisions",
-        "caducidades": "Échéances"
+        "caducidades": "Fins de vie"
       },
       "motivo": {
         "global": "Accès global",
@@ -1174,7 +1176,7 @@
       "sinContratista": "Sans contractant",
       "contrataLaPropiedad": "Le propriétaire contracte",
       "heredaDelCliente": "Hérite de celui du client",
-      "vigente": "En cours",
+      "vigente": "Actuellement",
       "sinAcceso": "Personne n’a accès.",
       "borrarRegistroConfirm": "Supprimer cette entrée du journal ? Action irréversible.",
       "sinClienteParaArbol": "Ce site n'a pas de client : l'arborescence s'active dès qu'il en a un."
@@ -1195,13 +1197,15 @@
     "empty": "Aucune localisation trouvée.",
     "selectHint": "Sélectionnez une localisation dans l'arbre",
     "addChild": "Ajouter une sous-localisation",
-    "createTitle": "Créer une localisation",
+    "createTitle": "Nouveau dossier",
+    "createCta": "Créer le dossier",
     "editTitle": "Modifier la localisation",
     "parentLabel": "Dans",
     "deleteConfirm": "Supprimer la localisation {{nombre}} ?",
     "root": "Racine",
     "fields": {
       "nombre": "Nom",
+      "nombrePlaceholder": "p. ex. Toiture nord",
       "descripcion": "Description",
       "orden": "Ordre",
       "parentId": "Parent"
@@ -1543,7 +1547,7 @@
           "title": "Documentation",
           "resumen": "{{n}} documents",
           "vacio": "Ce modèle n'a pas encore de documentation.",
-          "subir": "Téléverser un document",
+          "subir": "Ajouter un document",
           "subido": "Document ajouté.",
           "enlazar": "Récupérer celle du fabricant",
           "enlazados": "{{n}} documents du fabricant liés.",
@@ -1656,6 +1660,7 @@
         "fecha": "Date"
       },
       "newTitle": "Nouveau champ",
+      "newSubtitle": "Création d'un champ personnalisé",
       "unnamed": "Champ sans nom",
       "detail": "Détail",
       "definition": "Définition",
@@ -1737,7 +1742,7 @@
         "assignFirst": "Assigner un champ du catalogue au type",
         "assignAnother": "Assigner un autre champ du catalogue au type",
         "allAssigned": "Tous les champs du catalogue sont déjà assignés à ce type.",
-        "defineSpecific": "Définir un champ spécifique au type",
+        "defineSpecific": "Assigner un champ SPÉCIFIQUE pour ce type d'élément",
         "oblig": "Obligatoire",
         "obligTitle": "Exigé lors de l'enregistrement d'un élément de ce type",
         "asignacionCol": "Affectation au type",
@@ -2167,7 +2172,7 @@
       "configNormativa": "Normes",
       "configCampos": "Champs personnalisés",
       "configFabricantes": "Fabricants",
-      "configModelos": "Catalogue",
+      "configModelos": "Modèles",
       "configChecklists": "Checklists",
       "configTipos": "Familles et types",
       "roles": "Rôles",

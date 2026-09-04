@@ -35,7 +35,8 @@
     "understood": "Entendido",
     "selectAll": "Seleccionar todos",
     "selectRow": "Seleccionar fila",
-    "accept": "Aceptar"
+    "accept": "Aceptar",
+    "listado": "Listado"
   },
   "merge": {
     "disappears": "Desaparece",
@@ -422,7 +423,7 @@
       "vacio": "Esta carpeta no tiene elementos.",
       "colElemento": "Elemento",
       "colCodigo": "Identificación",
-      "colProxima": "Próxima rev.",
+      "colProxima": "Próx. revisión",
       "colEstado": "Estado",
       "validaHasta": "Su revisión vale hasta el {{fecha}}",
       "pideUno": "Marca un elemento con su casilla",
@@ -448,8 +449,8 @@
       "sin_revisar": "Sin revisar",
       "apto": "Apto",
       "no_apto": "No apto",
-      "rev_caducada": "Revisión caducada",
-      "fin_vida": "Fin de vida útil"
+      "rev_caducada": "Rev. caducada",
+      "fin_vida": "Fin vida útil"
     },
     "estado": {
       "activo": "Activo",
@@ -481,9 +482,9 @@
       "avisoRaiz": "{{count}} elemento que revisar antes de volver",
       "avisoRaiz_other": "{{count}} elementos que revisar antes de volver",
       "exc": {
-        "revision": "Su revisión caduca antes de que volvamos",
-        "vida": "Agotan su vida útil antes de que volvamos",
-        "sin_cobertura": "Sin ninguna revisión planificada que los cubra"
+        "revision": "Caducan antes de su próxima revisión",
+        "vida": "Llegan a fin de vida útil antes de su próxima revisión",
+        "sin_cobertura": "Sin fecha de próxima revisión que los cubra"
       }
     },
     "lote": {
@@ -732,7 +733,7 @@
       "carpeta": "Carpeta de destino",
       "actual": "actual",
       "eligeAntes": "Elige antes el cliente y el emplazamiento.",
-      "mover": "Trasladar",
+      "mover": "Trasladar aquí",
       "hecho": "{{count}} elementos trasladados."
     },
     "clonar": {
@@ -761,7 +762,7 @@
       "situacionHint": "La situación del conjunto es la peor de sus equipos."
     },
     "tabla": {
-      "buscar": "Busca por identificación, modelo o ruta",
+      "buscar": "Buscar por tipo, marca, modelo, n.º de serie o localización…",
       "vacio": "Sin elementos",
       "vacioHint": "Este emplazamiento aún no tiene equipos dados de alta.",
       "grupoCampos": "Campos de {{tipo}}",
@@ -1005,7 +1006,7 @@
       "pais": "País",
       "cp": "Código postal",
       "direccion": "Dirección",
-      "codigo": "Código",
+      "codigo": "Mi código",
       "elementos": "Elementos de seguridad",
       "elementosTitle": "N.º total de elementos de seguridad",
       "revision": "Elementos en revisión",
@@ -1022,7 +1023,7 @@
       "clienteRequired": "Debes seleccionar un cliente."
     },
     "estado": {
-      "operativos": "Activos y potenciales",
+      "operativos": "Activo + Potencial",
       "activo": "Activo",
       "potencial": "Potencial",
       "baja": "Baja"
@@ -1064,12 +1065,13 @@
         "telefonos": "Teléfonos",
         "telefono": "Teléfono",
         "emails": "Emails",
-        "plazoRevisiones": "Plazo de revisiones",
-        "appAcceso": "Acceso desde la app"
+        "plazoRevisiones": "Plazo base revisiones",
+        "appAcceso": "APP de cliente",
+        "notificaciones": "Generar notificaciones"
       },
       "notif": {
         "revisiones": "Revisiones",
-        "caducidades": "Caducidades"
+        "caducidades": "Finales de vida"
       },
       "motivo": {
         "global": "Acceso global",
@@ -1085,7 +1087,7 @@
       "sinContratista": "Sin contratista",
       "contrataLaPropiedad": "Contrata la propiedad",
       "heredaDelCliente": "Hereda el del cliente",
-      "vigente": "Vigente",
+      "vigente": "Actualidad",
       "sinAcceso": "Nadie con acceso.",
       "borrarRegistroConfirm": "¿Borrar este registro de la bitácora? No se puede deshacer.",
       "sinClienteParaArbol": "Este emplazamiento no tiene cliente asignado: el árbol se activa al asignarle uno."
@@ -1106,13 +1108,15 @@
     "empty": "Sin localizaciones.",
     "selectHint": "Selecciona una localización del árbol",
     "addChild": "Añadir sublocalización",
-    "createTitle": "Crear localización",
+    "createTitle": "Nueva carpeta",
+    "createCta": "Crear carpeta",
     "editTitle": "Editar localización",
     "parentLabel": "Dentro de",
     "deleteConfirm": "¿Eliminar la localización {{nombre}}?",
     "root": "Raíz",
     "fields": {
       "nombre": "Nombre",
+      "nombrePlaceholder": "p. ej. Cubierta norte",
       "descripcion": "Descripción",
       "orden": "Orden",
       "parentId": "Padre"
@@ -1543,7 +1547,7 @@
           "title": "Documentación",
           "resumen": "{{n}} documentos",
           "vacio": "Este modelo aún no tiene documentación.",
-          "subir": "Subir documento",
+          "subir": "Añadir documento",
           "subido": "Documento añadido.",
           "enlazar": "Traer la del fabricante",
           "enlazados": "{{n}} documentos del fabricante enlazados.",
@@ -1656,6 +1660,7 @@
         "fecha": "Fecha"
       },
       "newTitle": "Nuevo campo",
+      "newSubtitle": "Alta de campo personalizado",
       "unnamed": "Campo sin nombre",
       "detail": "Detalle",
       "definition": "Definición",
@@ -1737,7 +1742,7 @@
         "assignFirst": "Asignar campo de catálogo al tipo",
         "assignAnother": "Asignar otro campo de catálogo al tipo",
         "allAssigned": "Todos los campos del catálogo ya están asignados a este tipo.",
-        "defineSpecific": "Definir campo específico del tipo",
+        "defineSpecific": "Asignar un campo ESPECÍFICO para este tipo de elemento",
         "oblig": "Obligatorio",
         "obligTitle": "Exigido al registrar un elemento de este tipo",
         "asignacionCol": "Asignación al tipo",
@@ -2167,7 +2172,7 @@
       "configNormativa": "Normativa",
       "configCampos": "Campos personalizados",
       "configFabricantes": "Fabricantes",
-      "configModelos": "Catálogo",
+      "configModelos": "Modelos",
       "configChecklists": "Checklists",
       "configTipos": "Familias y tipos",
       "roles": "Roles",
