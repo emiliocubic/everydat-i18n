@@ -782,6 +782,30 @@
       }
     }
   },
+  "instancia": {
+    "title": "Instancia",
+    "subtitle": "Lo contratado por este tenant. Solo soporte.",
+    "modulos": "Módulos contratados",
+    "modulosHint": "Apagar un módulo lo quita del menú y de las rutas, no solo del permiso.",
+    "modulo": {
+      "planificador": "Planificador",
+      "ia": "Asistente e IA",
+      "portal": "Portal del cliente con gestión",
+      "integraciones": "Integraciones (WS y webhooks)"
+    },
+    "limite": "Límite de usuarios internos",
+    "limiteHint": "Vacío = sin límite. Bajarlo no expulsa a nadie: solo cierra las altas.",
+    "usuariosInternos": "{{count}} internos activos ahora",
+    "idiomas": "Idiomas activos",
+    "idiomasHint": "Los que el tenant puede elegir para la interfaz, los informes y los correos.",
+    "vigencia": "Vigencia",
+    "vigenciaHint": "Vacío = no caduca.",
+    "caducada": "Licencia caducada",
+    "guardar": "Guardar",
+    "guardado": "Instancia guardada",
+    "errorCarga": "No se ha podido cargar la instancia.",
+    "soloSoporte": "Esta pantalla es de soporte."
+  },
   "admins": {
     "title": "Usuarios",
     "subtitle": "Gestión de todas las cuentas del sistema",
@@ -2180,7 +2204,8 @@
       "rolesMatrix": "Matriz de permisos",
       "gruposClientes": "Grupos de clientes",
       "admins": "Administradores",
-      "proyectos": "Proyectos"
+      "proyectos": "Proyectos",
+      "instancia": "Instancia"
     },
     "prefs": {
       "themeLight": "Tema claro",

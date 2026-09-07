@@ -871,6 +871,30 @@
       }
     }
   },
+  "instancia": {
+    "title": "Instance",
+    "subtitle": "What this tenant has contracted. Support only.",
+    "modulos": "Contracted modules",
+    "modulosHint": "Switching a module off removes it from the menu and the routes, not just the permission.",
+    "modulo": {
+      "planificador": "Planner",
+      "ia": "Assistant and AI",
+      "portal": "Client portal with management",
+      "integraciones": "Integrations (WS and webhooks)"
+    },
+    "limite": "Internal user limit",
+    "limiteHint": "Empty = no limit. Lowering it expels nobody: it only closes new sign-ups.",
+    "usuariosInternos": "{{count}} internal users active now",
+    "idiomas": "Active languages",
+    "idiomasHint": "The ones the tenant can pick for the interface, reports and emails.",
+    "vigencia": "Valid until",
+    "vigenciaHint": "Empty = never expires.",
+    "caducada": "Licence expired",
+    "guardar": "Save",
+    "guardado": "Instance saved",
+    "errorCarga": "The instance could not be loaded.",
+    "soloSoporte": "This screen is for support."
+  },
   "admins": {
     "title": "Users",
     "subtitle": "Manage all system accounts",
@@ -2180,7 +2204,8 @@
       "rolesMatrix": "Permissions matrix",
       "gruposClientes": "Customer groups",
       "admins": "Administrators",
-      "proyectos": "Projects"
+      "proyectos": "Projects",
+      "instancia": "Instance"
     },
     "prefs": {
       "themeLight": "Light theme",

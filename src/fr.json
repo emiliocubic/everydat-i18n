@@ -871,6 +871,30 @@
       }
     }
   },
+  "instancia": {
+    "title": "Instance",
+    "subtitle": "Ce que ce tenant a contracté. Support uniquement.",
+    "modulos": "Modules contractés",
+    "modulosHint": "Désactiver un module le retire du menu et des routes, pas seulement de la permission.",
+    "modulo": {
+      "planificador": "Planificateur",
+      "ia": "Assistant et IA",
+      "portal": "Portail client avec gestion",
+      "integraciones": "Intégrations (WS et webhooks)"
+    },
+    "limite": "Limite d'utilisateurs internes",
+    "limiteHint": "Vide = sans limite. La baisser n'expulse personne : elle ferme seulement les créations.",
+    "usuariosInternos": "{{count}} internes actifs actuellement",
+    "idiomas": "Langues actives",
+    "idiomasHint": "Celles que le tenant peut choisir pour l'interface, les rapports et les courriels.",
+    "vigencia": "Validité",
+    "vigenciaHint": "Vide = n'expire pas.",
+    "caducada": "Licence expirée",
+    "guardar": "Enregistrer",
+    "guardado": "Instance enregistrée",
+    "errorCarga": "Impossible de charger l'instance.",
+    "soloSoporte": "Cet écran est réservé au support."
+  },
   "admins": {
     "title": "Utilisateurs",
     "subtitle": "Gestion de tous les comptes du système",
@@ -2180,7 +2204,8 @@
       "rolesMatrix": "Matrice des permissions",
       "gruposClientes": "Groupes de clients",
       "admins": "Administrateurs",
-      "proyectos": "Projets"
+      "proyectos": "Projets",
+      "instancia": "Instance"
     },
     "prefs": {
       "themeLight": "Thème clair",
