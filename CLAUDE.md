@@ -14,7 +14,9 @@ src/index.ts                            — punto de entrada del paquete
 ## Convenciones
 
 - **Los tres diccionarios se tocan a la vez.** Añadir una clave solo en `es.json` deja
-  huecos silenciosos en `en`/`fr`.
+  huecos silenciosos en `en`/`fr`. Para meter un lote de claves de golpe:
+  `node scripts/anadir-claves.mjs claves.json` con `{ "es": {...}, "en": {...}, "fr": {...} }`
+  (fusiona anidado y reescribe los tres ficheros con el mismo formato).
 - Las claves de dominio (nombre, apellidos, teléfono, dirección…) se centralizan aquí para
   no repetir la misma traducción en cada módulo del admin. En el consumidor, el patrón es
   un objeto `FIELDS` envuelto en `useMemo`.
