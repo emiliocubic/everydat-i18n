@@ -2136,6 +2136,24 @@
       }
     },
     "parametros": {
+      "grupoMarca": "Marque et langue",
+      "marca": {
+        "titulo": "Marque",
+        "desc": "Le nom commercial, la couleur principale et le logo apparaissent dans le panneau, les rapports et les courriels.",
+        "nombre": "Nom commercial",
+        "nombrePlaceholder": "Everydat Pro",
+        "color": "Couleur principale",
+        "colorHint": "Hexadécimal à six chiffres. Vide = couleur par défaut.",
+        "logo": "Logo",
+        "logoHint": "PNG, JPG, SVG ou WEBP, jusqu'à 1 Mo. Enregistré dès qu'il est choisi.",
+        "sinLogo": "Sans logo"
+      },
+      "idioma": {
+        "titulo": "Langue",
+        "desc": "La langue par défaut de l'instance. Chaque personne choisit celle de son interface et chaque client celle de ses rapports.",
+        "defecto": "Langue par défaut",
+        "hint": "Uniquement parmi les langues actives de la licence."
+      },
       "grupoCaracterizacion": "Paramètres de caractérisation des équipements",
       "formaDeUso": "Mode d’application",
       "familiaTipo": "Famille / Type",

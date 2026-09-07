@@ -2136,6 +2136,24 @@
       }
     },
     "parametros": {
+      "grupoMarca": "Brand and language",
+      "marca": {
+        "titulo": "Brand",
+        "desc": "The trade name, primary colour and logo appear in the panel, in reports and in emails.",
+        "nombre": "Trade name",
+        "nombrePlaceholder": "Everydat Pro",
+        "color": "Primary colour",
+        "colorHint": "Six-digit hexadecimal. Empty = the default colour.",
+        "logo": "Logo",
+        "logoHint": "PNG, JPG, SVG or WEBP, up to 1 MB. Saved as soon as you pick it.",
+        "sinLogo": "No logo"
+      },
+      "idioma": {
+        "titulo": "Language",
+        "desc": "The instance's default language. Each person picks their interface language and each client the language of their reports.",
+        "defecto": "Default language",
+        "hint": "Only among the languages active in the licence."
+      },
       "grupoCaracterizacion": "Element characterisation parameters",
       "formaDeUso": "How it applies",
       "familiaTipo": "Family / Type",
