@@ -921,9 +921,29 @@
       "title": "Ficha de usuario",
       "seccionesLabel": "Secciones de la ficha",
       "altaUsuario": "Alta de usuario",
+      "permisos": {
+        "titulo": "Permisos, uno a uno",
+        "hint": "Lo que marca el rol y lo que se le concede o se le quita encima. Volver al valor del rol borra el ajuste.",
+        "rol": "del rol",
+        "conceder": "concedido",
+        "revocar": "revocado",
+        "reservado": "solo soporte",
+        "modulos": {
+          "usuarios": "Usuarios y equipos",
+          "clientes": "Clientes y contactos",
+          "emplazamientos": "Emplazamientos y elementos",
+          "revisiones": "Revisiones",
+          "proyectos": "Proyectos",
+          "documentos": "Documentos",
+          "configuracion": "Configuración",
+          "portal": "Portal",
+          "otros": "Otros"
+        }
+      },
       "tabs": {
         "datos": "Datos",
         "roles": "Roles",
+        "permisos": "Permisos",
         "cuentas": "Cuentas"
       },
       "datosPersonales": "Datos personales",

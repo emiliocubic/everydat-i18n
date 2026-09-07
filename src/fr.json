@@ -1010,9 +1010,29 @@
       "title": "Fiche utilisateur",
       "seccionesLabel": "Sections de la fiche",
       "altaUsuario": "Nouvel utilisateur",
+      "permisos": {
+        "titulo": "Permissions, une à une",
+        "hint": "Ce que donne le rôle et ce qui est accordé ou retiré par-dessus. Revenir à la valeur du rôle efface l'ajustement.",
+        "rol": "du rôle",
+        "conceder": "accordé",
+        "revocar": "retiré",
+        "reservado": "support uniquement",
+        "modulos": {
+          "usuarios": "Utilisateurs et équipes",
+          "clientes": "Clients et contacts",
+          "emplazamientos": "Sites et éléments",
+          "revisiones": "Inspections",
+          "proyectos": "Projets",
+          "documentos": "Documents",
+          "configuracion": "Configuration",
+          "portal": "Portail",
+          "otros": "Autres"
+        }
+      },
       "tabs": {
         "datos": "Données",
         "roles": "Rôles",
+        "permisos": "Permissions",
         "cuentas": "Comptes"
       },
       "datosPersonales": "Données personnelles",

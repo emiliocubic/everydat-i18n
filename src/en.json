@@ -1010,9 +1010,29 @@
       "title": "User record",
       "seccionesLabel": "Record sections",
       "altaUsuario": "New user",
+      "permisos": {
+        "titulo": "Permissions, one by one",
+        "hint": "What the role grants and what is granted or removed on top. Going back to the role's value clears the adjustment.",
+        "rol": "from role",
+        "conceder": "granted",
+        "revocar": "revoked",
+        "reservado": "support only",
+        "modulos": {
+          "usuarios": "Users and teams",
+          "clientes": "Clients and contacts",
+          "emplazamientos": "Sites and elements",
+          "revisiones": "Inspections",
+          "proyectos": "Projects",
+          "documentos": "Documents",
+          "configuracion": "Settings",
+          "portal": "Portal",
+          "otros": "Other"
+        }
+      },
       "tabs": {
         "datos": "Data",
         "roles": "Roles",
+        "permisos": "Permissions",
         "cuentas": "Accounts"
       },
       "datosPersonales": "Personal data",
