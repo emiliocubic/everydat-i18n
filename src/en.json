@@ -232,7 +232,6 @@
         "emplazamientos": "Sites",
         "docs": "Documents",
         "proyectos": "Projects",
-        "presupuestos": "Quotes",
         "informes": "Reports",
         "comunicaciones": "Communications",
         "logs": "Logs",
@@ -332,6 +331,18 @@
         "deleteFolderConfirm": "Delete the folder “{{nombre}}”?",
         "deleteFolderError": "A folder that contains subfolders or files cannot be deleted.",
         "deleteFileConfirm": "Delete the file “{{nombre}}”?"
+      },
+      "proyectosTab": {
+        "vacio": "This client has no projects. They are born by planning a site's tree or from Projects.",
+        "propuesta": "Proposal",
+        "importe": "Amount",
+        "estadoPropuesta": {
+          "borrador": "Draft",
+          "enviada": "Sent",
+          "aceptada": "Accepted",
+          "rechazada": "Rejected",
+          "caducada": "Expired"
+        }
       }
     },
     "title": "Customers",
@@ -366,14 +377,14 @@
       "seguridad_short": "Safe.",
       "proyectosActivos": "Active projects",
       "proyectosActivos_short": "Proj.",
-      "presupuestos": "Estimates",
-      "presupuestos_short": "Est.",
       "informes": "Reports",
       "informes_short": "Rep.",
       "alertas": "Alerts",
       "alertas_short": "Alrt.",
       "fechaAlta": "Registration date",
-      "fechaAlta_short": "Since"
+      "fechaAlta_short": "Since",
+      "propuestas": "Proposals",
+      "propuestas_short": "Prop."
     },
     "grupos": {
       "identidad": "Identity",
@@ -385,6 +396,10 @@
       "activo": "Active",
       "potencial": "Potential",
       "baja": "Inactive"
+    },
+    "nuevo": {
+      "creado": "Client created.",
+      "pie": "Fields marked with * are required. The rest can be completed later in the record."
     }
   },
   "contactos": {
@@ -1236,6 +1251,10 @@
       "programada": "Scheduled date",
       "vencida": "Scheduled date · overdue",
       "proxima": "Scheduled date · in less than 30 days"
+    },
+    "nuevo": {
+      "creado": "Site created.",
+      "pie": "Owner and name are required. The tree and the items are added later, in the record."
     }
   },
   "localizaciones": {
@@ -2238,6 +2257,22 @@
           "global": "Use the same dates for every element type",
           "personalizado": "Set the dates to use per family and/or element type"
         }
+      },
+      "grupoProyectos": "Projects",
+      "certificacion": {
+        "titulo": "Certification",
+        "desc": "Phase in which a senior technician validates field inspections before the project is closed. Native and free.",
+        "usar": "Use the certification phase",
+        "hintOn": "Active: no project is closed without going through it.",
+        "hintOff": "Off: execution goes straight to finished."
+      },
+      "planificador": {
+        "titulo": "Planner",
+        "desc": "People-by-day calendar, project pool and assignment proposal. A separately priced module.",
+        "usar": "Use the planner module",
+        "hint": "When off, simple planning continues from the project record.",
+        "noContratado": "This instance's licence does not include the planner.",
+        "avisoCoste": "Enabling the planner has a separate cost and starts the module in a 30-day trial. Continue?"
       }
     }
   },
@@ -2269,7 +2304,16 @@
       "gruposClientes": "Customer groups",
       "admins": "Administrators",
       "proyectos": "Projects",
-      "instancia": "Instance"
+      "instancia": "Instance",
+      "proyectosGeneral": "General",
+      "proyectosFuturos": "Upcoming",
+      "proyectosEnCurso": "In progress",
+      "proyectosDescartados": "Discarded",
+      "proyectosFinalizados": "Finished",
+      "informes": "Reports",
+      "repositorioDocumental": "Document repository",
+      "mailCenter": "Mail Center",
+      "explotacion": "Data queries"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -2333,6 +2377,13 @@
     },
     "common": {
       "close": "Close"
+    },
+    "enConstruccion": {
+      "tag": "Under construction",
+      "informes": "Inspection reports and conformity certificates, with the tenant's brand and in the client's language. They arrive with the reports layer.",
+      "documentos": "The instance's single archive: documents of clients, sites, items and inspections, with permissions per folder. The module already exists inside; the screen is missing.",
+      "mailCenter": "The log of automatic notices and manual e-mails to clients, as in GestLínea. It arrives with the notices layer.",
+      "explotacion": "Cross queries with filters over items and inspections, as in GestLínea. It arrives in its own layer."
     }
   },
   "proyectos": {
@@ -2349,7 +2400,25 @@
       "estado": "Status",
       "propuesta": "Proposal",
       "origen": "Source",
-      "administrador": "Owner"
+      "administrador": "Owner",
+      "codigo": "Code",
+      "avisado": "Notified",
+      "propuestaEstado": "Proposal",
+      "importe": "Amount",
+      "probabilidad": "Probability",
+      "contactoComercial": "Sales contact",
+      "contactoTecnico": "Technical contact",
+      "inicioPrevisto": "Planned start",
+      "finPrevisto": "Planned end",
+      "inicioReal": "Actual start",
+      "finReal": "Actual end",
+      "avance": "Progress",
+      "equipo": "Team",
+      "motivoParalizacion": "Reason for halt",
+      "stateOrigin": "Discarded",
+      "fechaDescarte": "Discard date",
+      "motivoDescarte": "Discard reason",
+      "duracion": "Duration"
     },
     "campos": {
       "cliente": "Client",
@@ -2521,6 +2590,25 @@
       "seleccionadas": "{{count}} selected",
       "seleccionadas_other": "{{count}} selected",
       "validarSeleccion": "Validate {{count}}"
+    },
+    "vistas": {
+      "futuros": "Upcoming",
+      "futurosHint": "The pipeline: not planned yet.",
+      "en-curso": "In progress",
+      "en-cursoHint": "Planned, running, halted or being certified.",
+      "descartados": "Discarded",
+      "descartadosHint": "What left the flow: by hand or by expiring in the pipeline. Reversible.",
+      "finalizados": "Finished",
+      "finalizadosHint": "What is closed."
+    },
+    "stateOrigin": {
+      "manual": "By hand",
+      "caducidad": "Expired in pipeline",
+      "arranque_automatico": "Automatic start"
+    },
+    "descartados": {
+      "mes": "Projects of the month",
+      "mesTitle": "Projects whose tentative date fell in that month, in any year"
     }
   },
   "revisiones": {

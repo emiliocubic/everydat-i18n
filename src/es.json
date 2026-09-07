@@ -143,7 +143,6 @@
         "emplazamientos": "Emplazamientos",
         "docs": "Documentación",
         "proyectos": "Proyectos",
-        "presupuestos": "Presupuestos",
         "informes": "Informes",
         "comunicaciones": "Comunicaciones",
         "logs": "Logs",
@@ -243,6 +242,18 @@
         "deleteFolderConfirm": "¿Eliminar la carpeta «{{nombre}}»?",
         "deleteFolderError": "No se puede eliminar una carpeta que contiene subcarpetas o archivos.",
         "deleteFileConfirm": "¿Eliminar el archivo «{{nombre}}»?"
+      },
+      "proyectosTab": {
+        "vacio": "Este cliente no tiene proyectos. Nacen al planificar el árbol de un emplazamiento o desde Proyectos.",
+        "propuesta": "Propuesta",
+        "importe": "Importe",
+        "estadoPropuesta": {
+          "borrador": "Borrador",
+          "enviada": "Enviada",
+          "aceptada": "Aceptada",
+          "rechazada": "Rechazada",
+          "caducada": "Caducada"
+        }
       }
     },
     "title": "Clientes",
@@ -277,14 +288,14 @@
       "seguridad_short": "Seg.",
       "proyectosActivos": "Proyectos activos",
       "proyectosActivos_short": "Proy.",
-      "presupuestos": "Presupuestos",
-      "presupuestos_short": "Pres.",
       "informes": "Informes",
       "informes_short": "Inf.",
       "alertas": "Alertas",
       "alertas_short": "Alrt.",
       "fechaAlta": "Fecha de alta",
-      "fechaAlta_short": "Alta"
+      "fechaAlta_short": "Alta",
+      "propuestas": "Propuestas",
+      "propuestas_short": "Prop."
     },
     "grupos": {
       "identidad": "Identidad",
@@ -296,6 +307,10 @@
       "activo": "Activo",
       "potencial": "Potencial",
       "baja": "Baja"
+    },
+    "nuevo": {
+      "creado": "Cliente creado.",
+      "pie": "Los campos marcados con * son obligatorios. El resto se completa después en la ficha."
     }
   },
   "contactos": {
@@ -1147,6 +1162,10 @@
       "programada": "Fecha programada",
       "vencida": "Fecha programada · vencida",
       "proxima": "Fecha programada · en menos de 30 días"
+    },
+    "nuevo": {
+      "creado": "Emplazamiento creado.",
+      "pie": "Propietario y nombre son obligatorios. El árbol y los elementos se dan de alta después, en la ficha."
     }
   },
   "localizaciones": {
@@ -2238,6 +2257,22 @@
           "global": "Utilizar las mismas fechas en todos los tipos de elementos",
           "personalizado": "Personalizar las fechas a utilizar por familias y/o por tipos de elementos"
         }
+      },
+      "grupoProyectos": "Proyectos",
+      "certificacion": {
+        "titulo": "Certificación",
+        "desc": "Fase en la que un técnico de rango superior valida las revisiones de campo antes de cerrar el proyecto. Es nativa y no tiene coste.",
+        "usar": "Usar la fase de certificación",
+        "hintOn": "Activa: ningún proyecto se cierra sin pasar por ella.",
+        "hintOff": "Desactivada: la ejecución pasa directa a finalizado."
+      },
+      "planificador": {
+        "titulo": "Planificador",
+        "desc": "Calendario de personas por días, pool de proyectos y propuesta de asignación. Es un módulo con coste aparte.",
+        "usar": "Usar el módulo planificador",
+        "hint": "Al desactivarlo se sigue planificando de forma sencilla desde la ficha del proyecto.",
+        "noContratado": "La licencia de esta instancia no incluye el planificador.",
+        "avisoCoste": "Activar el planificador tiene un coste independiente y da de alta el módulo en modo de prueba de 30 días. ¿Continuar?"
       }
     }
   },
@@ -2269,7 +2304,16 @@
       "gruposClientes": "Grupos de clientes",
       "admins": "Administradores",
       "proyectos": "Proyectos",
-      "instancia": "Instancia"
+      "instancia": "Instancia",
+      "proyectosGeneral": "General",
+      "proyectosFuturos": "Futuros",
+      "proyectosEnCurso": "En curso",
+      "proyectosDescartados": "Descartados",
+      "proyectosFinalizados": "Finalizados",
+      "informes": "Informes",
+      "repositorioDocumental": "Repositorio documental",
+      "mailCenter": "Mail Center",
+      "explotacion": "Explotación de datos"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -2333,6 +2377,13 @@
     },
     "common": {
       "close": "Cerrar"
+    },
+    "enConstruccion": {
+      "tag": "En construcción",
+      "informes": "Los informes de revisión y los certificados de conformidad, con la marca del tenant y en el idioma del cliente. Llegan con la capa de informes.",
+      "documentos": "El archivo único de la instancia: documentos de clientes, emplazamientos, equipos y revisiones, con permisos por carpeta. El módulo ya existe por dentro; falta la pantalla.",
+      "mailCenter": "El registro de avisos automáticos y el envío manual de correos a los clientes, como en GestLínea. Llega con la capa de avisos.",
+      "explotacion": "Consultas transversales con filtros sobre elementos y revisiones, como en GestLínea. Llega en su capa."
     }
   },
   "proyectos": {
@@ -2349,7 +2400,25 @@
       "estado": "Estado",
       "propuesta": "Propuesta",
       "origen": "Origen",
-      "administrador": "Responsable"
+      "administrador": "Responsable",
+      "codigo": "Código",
+      "avisado": "Avisado",
+      "propuestaEstado": "Propuesta",
+      "importe": "Importe",
+      "probabilidad": "Probabilidad",
+      "contactoComercial": "Contacto comercial",
+      "contactoTecnico": "Contacto técnico",
+      "inicioPrevisto": "Inicio previsto",
+      "finPrevisto": "Fin previsto",
+      "inicioReal": "Inicio real",
+      "finReal": "Fin real",
+      "avance": "Avance",
+      "equipo": "Equipo",
+      "motivoParalizacion": "Motivo de paralización",
+      "stateOrigin": "Descartado",
+      "fechaDescarte": "Fecha de descarte",
+      "motivoDescarte": "Motivo del descarte",
+      "duracion": "Duración"
     },
     "campos": {
       "cliente": "Cliente",
@@ -2521,6 +2590,25 @@
       "seleccionadas": "{{count}} seleccionada",
       "seleccionadas_other": "{{count}} seleccionadas",
       "validarSeleccion": "Validar {{count}}"
+    },
+    "vistas": {
+      "futuros": "Futuros",
+      "futurosHint": "La cartera: lo que todavía no se ha planificado.",
+      "en-curso": "En curso",
+      "en-cursoHint": "Lo planificado, en marcha, paralizado o certificándose.",
+      "descartados": "Descartados",
+      "descartadosHint": "Lo que salió del flujo: a mano o por caducidad en cartera. Es reversible.",
+      "finalizados": "Finalizados",
+      "finalizadosHint": "Lo cerrado."
+    },
+    "stateOrigin": {
+      "manual": "A mano",
+      "caducidad": "Caducó en cartera",
+      "arranque_automatico": "Arranque automático"
+    },
+    "descartados": {
+      "mes": "Proyectos del mes",
+      "mesTitle": "Proyectos cuya fecha tentativa caía en ese mes, de cualquier año"
     }
   },
   "revisiones": {

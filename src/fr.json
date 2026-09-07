@@ -232,7 +232,6 @@
         "emplazamientos": "Sites",
         "docs": "Documents",
         "proyectos": "Projets",
-        "presupuestos": "Devis",
         "informes": "Rapports",
         "comunicaciones": "Communications",
         "logs": "Journaux",
@@ -332,6 +331,18 @@
         "deleteFolderConfirm": "Supprimer le dossier « {{nombre}} » ?",
         "deleteFolderError": "Impossible de supprimer un dossier contenant des sous-dossiers ou des fichiers.",
         "deleteFileConfirm": "Supprimer le fichier « {{nombre}} » ?"
+      },
+      "proyectosTab": {
+        "vacio": "Ce client n'a aucun projet. Ils naissent en planifiant l'arbre d'un site ou depuis Projets.",
+        "propuesta": "Proposition",
+        "importe": "Montant",
+        "estadoPropuesta": {
+          "borrador": "Brouillon",
+          "enviada": "Envoyée",
+          "aceptada": "Acceptée",
+          "rechazada": "Refusée",
+          "caducada": "Expirée"
+        }
       }
     },
     "title": "Clients",
@@ -366,14 +377,14 @@
       "seguridad_short": "Séc.",
       "proyectosActivos": "Projets actifs",
       "proyectosActivos_short": "Proj.",
-      "presupuestos": "Devis",
-      "presupuestos_short": "Dev.",
       "informes": "Rapports",
       "informes_short": "Rap.",
       "alertas": "Alertes",
       "alertas_short": "Alrt.",
       "fechaAlta": "Date d'inscription",
-      "fechaAlta_short": "Depuis"
+      "fechaAlta_short": "Depuis",
+      "propuestas": "Propositions",
+      "propuestas_short": "Prop."
     },
     "grupos": {
       "identidad": "Identité",
@@ -385,6 +396,10 @@
       "activo": "Actif",
       "potencial": "Potentiel",
       "baja": "Inactif"
+    },
+    "nuevo": {
+      "creado": "Client créé.",
+      "pie": "Les champs marqués * sont obligatoires. Le reste se complète ensuite dans la fiche."
     }
   },
   "contactos": {
@@ -1236,6 +1251,10 @@
       "programada": "Date programmée",
       "vencida": "Date programmée · dépassée",
       "proxima": "Date programmée · dans moins de 30 jours"
+    },
+    "nuevo": {
+      "creado": "Site créé.",
+      "pie": "Le propriétaire et le nom sont obligatoires. L'arbre et les équipements se créent ensuite, dans la fiche."
     }
   },
   "localizaciones": {
@@ -2238,6 +2257,22 @@
           "global": "Utiliser les mêmes dates pour tous les types d’équipement",
           "personalizado": "Paramétrer les dates par famille et/ou par type d’équipement"
         }
+      },
+      "grupoProyectos": "Projets",
+      "certificacion": {
+        "titulo": "Certification",
+        "desc": "Phase où un technicien de rang supérieur valide les contrôles de terrain avant la clôture du projet. Native et sans coût.",
+        "usar": "Utiliser la phase de certification",
+        "hintOn": "Active : aucun projet ne se clôture sans y passer.",
+        "hintOff": "Désactivée : l'exécution passe directement à terminé."
+      },
+      "planificador": {
+        "titulo": "Planificateur",
+        "desc": "Calendrier des personnes par jour, réserve de projets et proposition d'affectation. Module facturé à part.",
+        "usar": "Utiliser le module planificateur",
+        "hint": "Désactivé, la planification simple continue depuis la fiche du projet.",
+        "noContratado": "La licence de cette instance n'inclut pas le planificateur.",
+        "avisoCoste": "Activer le planificateur a un coût indépendant et ouvre le module en essai de 30 jours. Continuer ?"
       }
     }
   },
@@ -2269,7 +2304,16 @@
       "gruposClientes": "Groupes de clients",
       "admins": "Administrateurs",
       "proyectos": "Projets",
-      "instancia": "Instance"
+      "instancia": "Instance",
+      "proyectosGeneral": "Général",
+      "proyectosFuturos": "À venir",
+      "proyectosEnCurso": "En cours",
+      "proyectosDescartados": "Écartés",
+      "proyectosFinalizados": "Terminés",
+      "informes": "Rapports",
+      "repositorioDocumental": "Dépôt documentaire",
+      "mailCenter": "Mail Center",
+      "explotacion": "Exploitation des données"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -2333,6 +2377,13 @@
     },
     "common": {
       "close": "Fermer"
+    },
+    "enConstruccion": {
+      "tag": "En construction",
+      "informes": "Les rapports de contrôle et les certificats de conformité, à la marque du tenant et dans la langue du client. Ils arrivent avec la couche des rapports.",
+      "documentos": "L'archive unique de l'instance : documents des clients, sites, équipements et contrôles, avec permissions par dossier. Le module existe déjà en interne ; l'écran manque.",
+      "mailCenter": "Le registre des avis automatiques et l'envoi manuel de courriels aux clients, comme dans GestLínea. Il arrive avec la couche des avis.",
+      "explotacion": "Requêtes transversales avec filtres sur équipements et contrôles, comme dans GestLínea. Elle arrive dans sa couche."
     }
   },
   "proyectos": {
@@ -2349,7 +2400,25 @@
       "estado": "État",
       "propuesta": "Proposition",
       "origen": "Origine",
-      "administrador": "Responsable"
+      "administrador": "Responsable",
+      "codigo": "Code",
+      "avisado": "Prévenu",
+      "propuestaEstado": "Proposition",
+      "importe": "Montant",
+      "probabilidad": "Probabilité",
+      "contactoComercial": "Contact commercial",
+      "contactoTecnico": "Contact technique",
+      "inicioPrevisto": "Début prévu",
+      "finPrevisto": "Fin prévue",
+      "inicioReal": "Début réel",
+      "finReal": "Fin réelle",
+      "avance": "Avancement",
+      "equipo": "Équipe",
+      "motivoParalizacion": "Motif de suspension",
+      "stateOrigin": "Écarté",
+      "fechaDescarte": "Date d'écartement",
+      "motivoDescarte": "Motif d'écartement",
+      "duracion": "Durée"
     },
     "campos": {
       "cliente": "Client",
@@ -2521,6 +2590,25 @@
       "seleccionadas": "{{count}} sélectionné",
       "seleccionadas_other": "{{count}} sélectionnés",
       "validarSeleccion": "Valider {{count}}"
+    },
+    "vistas": {
+      "futuros": "À venir",
+      "futurosHint": "Le portefeuille : pas encore planifié.",
+      "en-curso": "En cours",
+      "en-cursoHint": "Planifié, en marche, suspendu ou en certification.",
+      "descartados": "Écartés",
+      "descartadosHint": "Ce qui est sorti du flux : à la main ou par expiration. Réversible.",
+      "finalizados": "Terminés",
+      "finalizadosHint": "Ce qui est clôturé."
+    },
+    "stateOrigin": {
+      "manual": "À la main",
+      "caducidad": "Expiré en portefeuille",
+      "arranque_automatico": "Démarrage automatique"
+    },
+    "descartados": {
+      "mes": "Projets du mois",
+      "mesTitle": "Projets dont la date prévue tombait ce mois-là, quelle que soit l'année"
     }
   },
   "revisiones": {
