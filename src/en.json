@@ -1048,10 +1048,11 @@
       "cuentas": {
         "clientes": "Clients",
         "grupos": "Client groups",
+        "emplazamientos": "Individual sites",
         "buscar": "Search…",
         "sinResultados": "No results",
         "seleccionadas": "{{count}} selected",
-        "hint": "The user will only see these accounts and those of their groups.",
+        "hint": "The user will only see these accounts, those of their groups and the individual sites (one specific site, not the rest of its client's).",
         "guardarPrimero": "Save the user first to assign accounts."
       }
     }

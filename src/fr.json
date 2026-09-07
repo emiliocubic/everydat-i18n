@@ -1048,10 +1048,11 @@
       "cuentas": {
         "clientes": "Clients",
         "grupos": "Groupes de clients",
+        "emplazamientos": "Sites isolés",
         "buscar": "Rechercher…",
         "sinResultados": "Aucun résultat",
         "seleccionadas": "{{count}} sélectionnés",
-        "hint": "L'utilisateur ne verra que ces comptes et ceux de ses groupes.",
+        "hint": "L'utilisateur ne verra que ces comptes, ceux de ses groupes et les sites isolés (un site précis, sans les autres de son client).",
         "guardarPrimero": "Enregistre l'utilisateur pour pouvoir lui attribuer des comptes."
       }
     }

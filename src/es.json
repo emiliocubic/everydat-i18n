@@ -959,10 +959,11 @@
       "cuentas": {
         "clientes": "Clientes",
         "grupos": "Grupos de clientes",
+        "emplazamientos": "Emplazamientos sueltos",
         "buscar": "Buscar…",
         "sinResultados": "Sin resultados",
         "seleccionadas": "{{count}} seleccionadas",
-        "hint": "El usuario verá solo estas cuentas y las de sus grupos.",
+        "hint": "El usuario verá solo estas cuentas, las de sus grupos y los emplazamientos sueltos (una obra concreta, sin el resto de las de su cliente).",
         "guardarPrimero": "Guarda el usuario para poder asignarle cuentas."
       }
     }
