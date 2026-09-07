@@ -2698,5 +2698,130 @@
       "certHint": "Certifying validates the field work. The closed inspection is not rewritten: the correction is stored separately and is what counts for the fleet.",
       "firma": "Inspected by {{revisor}} · Responsible {{tecnico}}"
     }
+  },
+  "app": {
+    "comun": {
+      "sinRed": "No connection. Showing what is on the device."
+    },
+    "instancia": {
+      "titulo": "Which instance do you connect to?",
+      "sub": "Every company has its own Everydat. Type the address your administrator gave you.",
+      "campo": "Instance address",
+      "conectar": "Connect",
+      "noResponde": "Nothing answers at {{url}}. Check the address and the connection.",
+      "ayuda": "Checked once and remembered. You can change it by signing out."
+    },
+    "login": {
+      "sub": "Field app",
+      "email": "Email",
+      "password": "Password",
+      "entrar": "Sign in",
+      "error": "Could not sign in. Check the email and password."
+    },
+    "bloqueo": {
+      "titulo": "Unlock",
+      "crear": "Create your PIN",
+      "repetir": "Repeat the PIN",
+      "crearAyuda": "Without coverage the password cannot be checked: this four-digit PIN unlocks the app on this device.",
+      "noCoincide": "The two PINs do not match. Start again.",
+      "pinMal": "Wrong PIN.",
+      "biometria": "Unlock Everydat",
+      "usarBiometria": "Use fingerprint or face",
+      "otraCuenta": "Sign in with another account"
+    },
+    "trabajo": {
+      "titulo": "My work",
+      "bajados": "On this device",
+      "sinBajados": "No project downloaded yet. With a connection, pick one from the list below and tap \"Download\".",
+      "disponibles": "My projects",
+      "sinNuevos": "No more assigned projects.",
+      "bajar": "Download",
+      "actualizar": "Refresh",
+      "descartar": "Remove",
+      "bajadoEl": "downloaded {{fecha}}",
+      "noDescartar": "There is unsent work",
+      "noDescartarHint": "This project has inspections waiting to be sent. Send them before removing it from the device.",
+      "descartarConfirm": "What was downloaded for this project is deleted from the device. You can download it again with a connection."
+    },
+    "proyecto": {
+      "titulo": "Project",
+      "ventana": "Window",
+      "responsable": "Manager",
+      "avance": "Inspected today",
+      "avanceTxt": "{{hechos}} of {{total}}",
+      "todoHecho": "All inspected. Send the work when you have a connection.",
+      "arbol": "Site",
+      "sinArbol": "This site has no tree.",
+      "enCarpeta": "{{total}} items · {{pendientes}} to inspect",
+      "contactos": "Contacts"
+    },
+    "censo": {
+      "titulo": "Items",
+      "elemento": "Item",
+      "sinTipo": "Untyped item",
+      "validaHasta": "valid until {{fecha}}",
+      "revisadoHoy": "Inspected",
+      "revisar": "Inspect",
+      "seguirRevision": "Continue inspection",
+      "sinChecklist": "No checklist",
+      "sinChecklistHint": "This item has no checklist: the inspection is recorded without points, only with remarks.",
+      "hechasAqui": "Inspections done on this device",
+      "enviada": "Sent to the server",
+      "pendienteEnvio": "Waiting to be sent"
+    },
+    "revision": {
+      "titulo": "Inspection",
+      "cerrar": "Close inspection",
+      "cerrarTitulo": "Closing is signing",
+      "cerrarConfirm": "Expected verdict: {{veredicto}}. Once closed it cannot be edited. Sign?",
+      "firmar": "Sign",
+      "descartar": "Discard inspection",
+      "descartarConfirm": "This unsent inspection is deleted. Marked points are lost.",
+      "anadirObservacion": "+ Remark",
+      "previsto": "All checked. Expected verdict: {{veredicto}}."
+    },
+    "envio": {
+      "titulo": "Send",
+      "pendientesTitulo": "{{count}} operation to send",
+      "pendientesTitulo_other": "{{count}} operations to send",
+      "pendientesHint": "Sent when you ask for it, with a connection.",
+      "enviar": "Send ({{count}})",
+      "pendientes": "To send",
+      "nadaPendiente": "Nothing to send.",
+      "rechazadas": "Rejected by the server",
+      "aceptadas": "{{count}} sent",
+      "aceptadas_other": "{{count}} sent",
+      "limpiar": "Clear the sent ones",
+      "reintentar": "Retry",
+      "descartar": "Discard",
+      "descartarConfirm": "The operation is removed from the queue. What was done on the device is kept, but will not be sent.",
+      "sesion": "The server no longer recognises the session. Sign in again: pending work is kept.",
+      "sinRed": "No connection. {{count}} sent; the rest stays queued.",
+      "hecho": "Sent {{aceptadas}} · rejected {{rechazadas}}.",
+      "tipo": {
+        "revision": "Inspection"
+      },
+      "estado": {
+        "pendiente": "Pending",
+        "enviando": "Sending",
+        "aceptada": "Sent",
+        "rechazada": "Rejected"
+      }
+    },
+    "ajustes": {
+      "titulo": "Settings",
+      "idioma": "Language",
+      "sesion": "Session",
+      "instancia": "Instance",
+      "refrescar": "Refresh my permissions",
+      "salir": "Sign out",
+      "salirConfirm": "Everything downloaded is deleted from the device. Sign out?",
+      "salirConPendientes": "There is unsent work",
+      "salirConPendientesHint": "If you sign out now, pending work stays on the device until you sign in again with the same account.",
+      "salirIgual": "Sign out anyway",
+      "diagnostico": "Diagnostics",
+      "version": "App version",
+      "minima": "minimum"
+    }
   }
 }

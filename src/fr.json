@@ -2698,5 +2698,130 @@
       "certHint": "Certifier valide le travail de terrain. Le contrôle clôturé n'est pas réécrit : la correction est stockée à part et c'est elle qui compte pour le parc.",
       "firma": "Contrôlé par {{revisor}} · Responsable {{tecnico}}"
     }
+  },
+  "app": {
+    "comun": {
+      "sinRed": "Pas de connexion. Affichage de ce qui est sur l'appareil."
+    },
+    "instancia": {
+      "titulo": "À quelle instance vous connectez-vous ?",
+      "sub": "Chaque entreprise a son propre Everydat. Saisissez l'adresse fournie par votre administrateur.",
+      "campo": "Adresse de l'instance",
+      "conectar": "Se connecter",
+      "noResponde": "Rien ne répond à {{url}}. Vérifiez l'adresse et la connexion.",
+      "ayuda": "Vérifiée une fois et mémorisée. Vous pouvez la changer en vous déconnectant."
+    },
+    "login": {
+      "sub": "Application de terrain",
+      "email": "E-mail",
+      "password": "Mot de passe",
+      "entrar": "Entrer",
+      "error": "Connexion impossible. Vérifiez l'e-mail et le mot de passe."
+    },
+    "bloqueo": {
+      "titulo": "Déverrouiller",
+      "crear": "Créez votre code PIN",
+      "repetir": "Répétez le code PIN",
+      "crearAyuda": "Sans couverture, le mot de passe ne peut pas être vérifié : ce code à quatre chiffres déverrouille l'application sur cet appareil.",
+      "noCoincide": "Les deux codes ne correspondent pas. Recommencez.",
+      "pinMal": "Code incorrect.",
+      "biometria": "Déverrouiller Everydat",
+      "usarBiometria": "Utiliser l'empreinte ou le visage",
+      "otraCuenta": "Entrer avec un autre compte"
+    },
+    "trabajo": {
+      "titulo": "Mon travail",
+      "bajados": "Sur cet appareil",
+      "sinBajados": "Aucun projet téléchargé. Avec une connexion, choisissez-en un dans la liste ci-dessous et appuyez sur « Télécharger ».",
+      "disponibles": "Mes projets",
+      "sinNuevos": "Pas d'autres projets affectés.",
+      "bajar": "Télécharger",
+      "actualizar": "Actualiser",
+      "descartar": "Retirer",
+      "bajadoEl": "téléchargé le {{fecha}}",
+      "noDescartar": "Du travail n'a pas été envoyé",
+      "noDescartarHint": "Ce projet a des contrôles en attente d'envoi. Envoyez-les avant de le retirer de l'appareil.",
+      "descartarConfirm": "Ce qui a été téléchargé pour ce projet est supprimé de l'appareil. Vous pourrez le retélécharger avec une connexion."
+    },
+    "proyecto": {
+      "titulo": "Projet",
+      "ventana": "Fenêtre",
+      "responsable": "Responsable",
+      "avance": "Contrôlés aujourd'hui",
+      "avanceTxt": "{{hechos}} sur {{total}}",
+      "todoHecho": "Tout est contrôlé. Envoyez le travail dès que vous avez une connexion.",
+      "arbol": "Installation",
+      "sinArbol": "Ce site n'a pas d'arbre.",
+      "enCarpeta": "{{total}} équipements · {{pendientes}} à contrôler",
+      "contactos": "Contacts"
+    },
+    "censo": {
+      "titulo": "Équipements",
+      "elemento": "Équipement",
+      "sinTipo": "Équipement sans type",
+      "validaHasta": "valable jusqu'au {{fecha}}",
+      "revisadoHoy": "Contrôlé",
+      "revisar": "Contrôler",
+      "seguirRevision": "Poursuivre le contrôle",
+      "sinChecklist": "Sans checklist",
+      "sinChecklistHint": "Cet équipement n'a pas de checklist : le contrôle est consigné sans points, avec des observations seulement.",
+      "hechasAqui": "Contrôles faits sur cet appareil",
+      "enviada": "Envoyé au serveur",
+      "pendienteEnvio": "En attente d'envoi"
+    },
+    "revision": {
+      "titulo": "Contrôle",
+      "cerrar": "Clôturer le contrôle",
+      "cerrarTitulo": "Clôturer, c'est signer",
+      "cerrarConfirm": "Verdict prévu : {{veredicto}}. Une fois clôturé, il n'est plus modifiable. Signer ?",
+      "firmar": "Signer",
+      "descartar": "Abandonner le contrôle",
+      "descartarConfirm": "Ce contrôle non envoyé est supprimé. Les points marqués sont perdus.",
+      "anadirObservacion": "+ Observation",
+      "previsto": "Tout vérifié. Verdict prévu : {{veredicto}}."
+    },
+    "envio": {
+      "titulo": "Envoyer",
+      "pendientesTitulo": "{{count}} opération à envoyer",
+      "pendientesTitulo_other": "{{count}} opérations à envoyer",
+      "pendientesHint": "Envoyées quand vous le demandez, avec une connexion.",
+      "enviar": "Envoyer ({{count}})",
+      "pendientes": "À envoyer",
+      "nadaPendiente": "Rien à envoyer.",
+      "rechazadas": "Refusées par le serveur",
+      "aceptadas": "{{count}} envoyée",
+      "aceptadas_other": "{{count}} envoyées",
+      "limpiar": "Effacer les envoyées",
+      "reintentar": "Réessayer",
+      "descartar": "Abandonner",
+      "descartarConfirm": "L'opération est retirée de la file. Ce qui a été fait sur l'appareil est conservé, mais ne sera pas envoyé.",
+      "sesion": "Le serveur ne reconnaît plus la session. Reconnectez-vous : le travail en attente est conservé.",
+      "sinRed": "Pas de connexion. {{count}} envoyées ; le reste reste en file.",
+      "hecho": "Envoyées {{aceptadas}} · refusées {{rechazadas}}.",
+      "tipo": {
+        "revision": "Contrôle"
+      },
+      "estado": {
+        "pendiente": "En attente",
+        "enviando": "Envoi",
+        "aceptada": "Envoyée",
+        "rechazada": "Refusée"
+      }
+    },
+    "ajustes": {
+      "titulo": "Réglages",
+      "idioma": "Langue",
+      "sesion": "Session",
+      "instancia": "Instance",
+      "refrescar": "Actualiser mes permissions",
+      "salir": "Se déconnecter",
+      "salirConfirm": "Tout ce qui a été téléchargé est supprimé de l'appareil. Se déconnecter ?",
+      "salirConPendientes": "Du travail n'a pas été envoyé",
+      "salirConPendientesHint": "Si vous vous déconnectez maintenant, le travail en attente reste sur l'appareil jusqu'à votre prochaine connexion avec le même compte.",
+      "salirIgual": "Se déconnecter quand même",
+      "diagnostico": "Diagnostic",
+      "version": "Version de l'application",
+      "minima": "minimale"
+    }
   }
 }

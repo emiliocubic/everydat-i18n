@@ -2698,5 +2698,130 @@
       "certHint": "Certificar valida el trabajo de campo. La revisión cerrada no se reescribe: la corrección se guarda aparte y es la que cuenta en el parque.",
       "firma": "Revisó {{revisor}} · Responde {{tecnico}}"
     }
+  },
+  "app": {
+    "comun": {
+      "sinRed": "Sin conexión. Se enseña lo que hay en el dispositivo."
+    },
+    "instancia": {
+      "titulo": "¿A qué instancia te conectas?",
+      "sub": "Cada empresa tiene su propio Everydat. Escribe la dirección que te ha dado tu administrador.",
+      "campo": "Dirección de la instancia",
+      "conectar": "Conectar",
+      "noResponde": "No responde nadie en {{url}}. Comprueba la dirección y la conexión.",
+      "ayuda": "Se comprueba una vez y se recuerda. Puedes cambiarla saliendo de la sesión."
+    },
+    "login": {
+      "sub": "App de campo",
+      "email": "Correo",
+      "password": "Contraseña",
+      "entrar": "Entrar",
+      "error": "No se ha podido entrar. Comprueba el correo y la contraseña."
+    },
+    "bloqueo": {
+      "titulo": "Desbloquear",
+      "crear": "Crea tu PIN",
+      "repetir": "Repite el PIN",
+      "crearAyuda": "Sin cobertura no se puede comprobar la contraseña: este PIN de cuatro cifras desbloquea la app en este dispositivo.",
+      "noCoincide": "Los dos PIN no coinciden. Vuelve a empezar.",
+      "pinMal": "PIN incorrecto.",
+      "biometria": "Desbloquear Everydat",
+      "usarBiometria": "Usar huella o cara",
+      "otraCuenta": "Entrar con otra cuenta"
+    },
+    "trabajo": {
+      "titulo": "Mi trabajo",
+      "bajados": "En este dispositivo",
+      "sinBajados": "No tienes ningún proyecto bajado. Con conexión, elige uno de la lista de abajo y pulsa «Bajar».",
+      "disponibles": "Mis proyectos",
+      "sinNuevos": "No hay más proyectos asignados.",
+      "bajar": "Bajar",
+      "actualizar": "Actualizar",
+      "descartar": "Quitar",
+      "bajadoEl": "bajado {{fecha}}",
+      "noDescartar": "Hay trabajo sin enviar",
+      "noDescartarHint": "Este proyecto tiene revisiones pendientes de enviar. Envíalas antes de quitarlo del dispositivo.",
+      "descartarConfirm": "Se borra del dispositivo lo bajado de este proyecto. Lo puedes volver a bajar con conexión."
+    },
+    "proyecto": {
+      "titulo": "Proyecto",
+      "ventana": "Ventana",
+      "responsable": "Responsable",
+      "avance": "Revisados hoy",
+      "avanceTxt": "{{hechos}} de {{total}}",
+      "todoHecho": "Todo revisado. Envía el trabajo cuando tengas conexión.",
+      "arbol": "Instalación",
+      "sinArbol": "Este emplazamiento no tiene árbol.",
+      "enCarpeta": "{{total}} equipos · {{pendientes}} por revisar",
+      "contactos": "Contactos"
+    },
+    "censo": {
+      "titulo": "Equipos",
+      "elemento": "Equipo",
+      "sinTipo": "Equipo sin tipo",
+      "validaHasta": "válida hasta {{fecha}}",
+      "revisadoHoy": "Revisado",
+      "revisar": "Revisar",
+      "seguirRevision": "Seguir la revisión",
+      "sinChecklist": "Sin checklist",
+      "sinChecklistHint": "Este equipo no tiene checklist: la revisión se consigna sin puntos, solo con observaciones.",
+      "hechasAqui": "Revisiones hechas en este dispositivo",
+      "enviada": "Enviada al servidor",
+      "pendienteEnvio": "Pendiente de enviar"
+    },
+    "revision": {
+      "titulo": "Revisión",
+      "cerrar": "Cerrar revisión",
+      "cerrarTitulo": "Cerrar es firmar",
+      "cerrarConfirm": "Veredicto previsto: {{veredicto}}. Una vez cerrada no se edita. ¿Firmar?",
+      "firmar": "Firmar",
+      "descartar": "Descartar revisión",
+      "descartarConfirm": "Se borra esta revisión sin enviar. Los puntos marcados se pierden.",
+      "anadirObservacion": "+ Observación",
+      "previsto": "Todo comprobado. Veredicto previsto: {{veredicto}}."
+    },
+    "envio": {
+      "titulo": "Enviar",
+      "pendientesTitulo": "{{count}} operación por enviar",
+      "pendientesTitulo_other": "{{count}} operaciones por enviar",
+      "pendientesHint": "Se envían cuando tú lo pides, con conexión.",
+      "enviar": "Enviar ({{count}})",
+      "pendientes": "Por enviar",
+      "nadaPendiente": "Nada por enviar.",
+      "rechazadas": "Rechazadas por el servidor",
+      "aceptadas": "{{count}} enviada",
+      "aceptadas_other": "{{count}} enviadas",
+      "limpiar": "Limpiar las enviadas",
+      "reintentar": "Reintentar",
+      "descartar": "Descartar",
+      "descartarConfirm": "La operación se borra de la cola. Lo hecho en el dispositivo se conserva, pero no se enviará.",
+      "sesion": "El servidor ya no reconoce la sesión. Entra de nuevo: el trabajo pendiente se conserva.",
+      "sinRed": "Sin conexión. Se han enviado {{count}}; el resto sigue en la cola.",
+      "hecho": "Enviadas {{aceptadas}} · rechazadas {{rechazadas}}.",
+      "tipo": {
+        "revision": "Revisión"
+      },
+      "estado": {
+        "pendiente": "Pendiente",
+        "enviando": "Enviando",
+        "aceptada": "Enviada",
+        "rechazada": "Rechazada"
+      }
+    },
+    "ajustes": {
+      "titulo": "Ajustes",
+      "idioma": "Idioma",
+      "sesion": "Sesión",
+      "instancia": "Instancia",
+      "refrescar": "Actualizar mis permisos",
+      "salir": "Cerrar sesión",
+      "salirConfirm": "Se borra del dispositivo todo lo bajado. ¿Cerrar sesión?",
+      "salirConPendientes": "Hay trabajo sin enviar",
+      "salirConPendientesHint": "Si cierras la sesión ahora, lo pendiente se conserva en el dispositivo hasta que vuelvas a entrar con la misma cuenta.",
+      "salirIgual": "Cerrar igualmente",
+      "diagnostico": "Diagnóstico",
+      "version": "Versión de la app",
+      "minima": "mínima"
+    }
   }
 }
