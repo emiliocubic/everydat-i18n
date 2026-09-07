@@ -603,7 +603,8 @@
       "tab": {
         "caract": "Details and status",
         "normativa": "Standards",
-        "historial": "History"
+        "historial": "History",
+        "revisiones": "Inspections"
       },
       "anterior": "Previous (Alt+↑)",
       "siguiente": "Next (Alt+↓)",
@@ -1310,6 +1311,31 @@
       "depSubzonas_other": "{{count}} sub-zones inside it",
       "depPlanificacion": "One scheduled inspection date",
       "sinDependencias": "Nothing hangs from this zone."
+    },
+    "revision": {
+      "titulo": "Start inspection",
+      "botonRaiz": "Start inspection of the whole site",
+      "botonNodo": "Start inspection of this folder and its branch",
+      "alcanceRaiz": "Whole site · {{nombre}}",
+      "alcanceZona": "Zone \"{{nombre}}\" and its whole branch",
+      "alcanceCarpeta": "Folder \"{{nombre}}\" and its whole branch",
+      "nota": "An inspection project is created already under way, with no prior proposal or follow-up. Items in scope become pending and their folders stay marked until done.",
+      "administrador": "Project manager",
+      "fecha": "Start date",
+      "fechaHoy": "Starts right away.",
+      "fechaFutura": "Stays planned and starts by itself on that date.",
+      "nombre": "Project name",
+      "notas": "Notes",
+      "pie": "The project is closed from the projects screen.",
+      "confirmar": "Start inspection",
+      "creado": "Inspection project created: {{count}} item pending.",
+      "creado_other": "Inspection project created: {{count}} items pending.",
+      "verProyecto": "Open project",
+      "pendientesRama": "{{count}} item to inspect in this branch",
+      "pendientesRama_other": "{{count}} items to inspect in this branch",
+      "ramaCompleta": "Inspection completed in this branch",
+      "pendienteFila": "Pending inspection in the running project",
+      "revisadoFila": "Inspected in the running project"
     }
   },
   "gruposClientes": {
@@ -2423,6 +2449,94 @@
       "equipo": "Field technicians",
       "accesoPendiente": "Team access tied to the execution window (3 days before, 7 after) is pending: for now access comes from the user's scopes.",
       "guardado": "Scheduling saved."
+    }
+  },
+  "revisiones": {
+    "estado": {
+      "en_curso": "In progress",
+      "cerrada": "Closed",
+      "anulada": "Voided"
+    },
+    "resultado": {
+      "apto": "Pass",
+      "vigilar": "Watch",
+      "no_apto": "Fail"
+    },
+    "marca": {
+      "apto": "Pass",
+      "vigilar": "Watch",
+      "no_apto": "Fail",
+      "no_aplica": "N/A"
+    },
+    "via": {
+      "periodica": "Periodic",
+      "inicial": "Initial",
+      "instalacion": "Installation record",
+      "extraordinaria": "Extraordinary"
+    },
+    "eje": {
+      "visual": "Visual",
+      "funcional": "Functional",
+      "documental": "Documentary"
+    },
+    "lista": {
+      "nueva": "New inspection",
+      "vacio": "This item has no recorded inspections.",
+      "checklist": "Checklist: {{nombre}}",
+      "sinChecklist": "Its type has no checklist: the inspection is recorded without a script.",
+      "periodicidad": "every {{count}} month",
+      "periodicidad_other": "every {{count}} months",
+      "estado": "Status",
+      "resultado": "Result",
+      "validaHasta": "Valid until",
+      "fueraDeServicio": "A withdrawn or destroyed item is no longer inspected.",
+      "yaEnCurso": "An inspection is already in progress: close or void it before opening another."
+    },
+    "sheet": {
+      "aria": "Inspection",
+      "nueva": "New inspection",
+      "titulo": "Inspection of {{fecha}}",
+      "sinChecklist": "no checklist",
+      "cabecera": "Inspection details",
+      "fecha": "Date",
+      "via": "Kind",
+      "proyecto": "Project",
+      "revisor": "Inspector",
+      "tecnico": "Responsible technician",
+      "observaciones": "General remarks",
+      "abrir": "Open inspection",
+      "abierta": "Inspection opened: the checklist is now frozen.",
+      "guardarCabecera": "Save details",
+      "validaHasta": "Valid until {{fecha}}",
+      "checklist": "Checklist",
+      "pendientes": "{{count}} point unchecked",
+      "pendientes_other": "{{count}} points unchecked",
+      "todoComprobado": "All checked",
+      "sinPuntos": "No checkpoints: recorded without a script.",
+      "cuandoProceda": "(where applicable)",
+      "observacionPh": "Remark on this point…",
+      "anadirFoto": "Add photo",
+      "quitarFoto": "Remove photo",
+      "quitarFotoConfirm": "Remove this photo from the inspection?",
+      "cerrar": "Close inspection",
+      "cerrarConfirm": "Closing signs the inspection: it can no longer be edited. Continue?",
+      "cerrada": "Inspection closed.",
+      "anular": "Void",
+      "anularConfirm": "Voiding leaves the inspection without effect: no verdict and no validity extension. It stays in the history. Continue?",
+      "anulada": "Inspection voided.",
+      "certificacion": "Certification",
+      "certificar": "Certify",
+      "certificada": "Inspection certified.",
+      "certificadaPill": "Certified",
+      "certificadaPor": "Certified by {{quien}} on {{fecha}}",
+      "veredictoCorregido": "verdict corrected to {{resultado}}",
+      "retirarCert": "Withdraw certification",
+      "veredicto": "Verdict",
+      "comoDerivado": "As derived ({{resultado}})",
+      "corregirA": "Correct to {{resultado}}",
+      "comentarioCert": "Certifier's comment",
+      "certHint": "Certifying validates the field work. The closed inspection is not rewritten: the correction is stored separately and is what counts for the fleet.",
+      "firma": "Inspected by {{revisor}} · Responsible {{tecnico}}"
     }
   }
 }

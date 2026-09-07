@@ -514,7 +514,8 @@
       "tab": {
         "caract": "Características y estado",
         "normativa": "Normativa",
-        "historial": "Historial"
+        "historial": "Historial",
+        "revisiones": "Revisiones"
       },
       "anterior": "Anterior (Alt+↑)",
       "siguiente": "Siguiente (Alt+↓)",
@@ -1221,6 +1222,31 @@
       "depSubzonas_other": "{{count}} sub-zonas dentro de esta",
       "depPlanificacion": "Una fecha de revisión planificada",
       "sinDependencias": "No cuelga nada de esta zona."
+    },
+    "revision": {
+      "titulo": "Poner en revisión",
+      "botonRaiz": "Poner en revisión todo el emplazamiento",
+      "botonNodo": "Poner en revisión esta carpeta y su rama",
+      "alcanceRaiz": "Todo el emplazamiento · {{nombre}}",
+      "alcanceZona": "Zona «{{nombre}}» y toda su rama",
+      "alcanceCarpeta": "Carpeta «{{nombre}}» y toda su rama",
+      "nota": "Se crea un proyecto de revisión ya en marcha, sin propuesta ni seguimiento previos. Los equipos del alcance quedan pendientes de revisar y sus carpetas marcadas hasta completarlas.",
+      "administrador": "Administrador del proyecto",
+      "fecha": "Fecha de inicio",
+      "fechaHoy": "Arranca en el acto.",
+      "fechaFutura": "Queda planificado y arranca solo al llegar la fecha.",
+      "nombre": "Nombre del proyecto",
+      "notas": "Notas",
+      "pie": "El proyecto se cierra desde la pantalla de proyectos.",
+      "confirmar": "Poner en revisión",
+      "creado": "Proyecto de revisión creado: {{count}} equipo pendiente.",
+      "creado_other": "Proyecto de revisión creado: {{count}} equipos pendientes.",
+      "verProyecto": "Ver proyecto",
+      "pendientesRama": "{{count}} equipo por revisar en esta rama",
+      "pendientesRama_other": "{{count}} equipos por revisar en esta rama",
+      "ramaCompleta": "Revisión completada en esta rama",
+      "pendienteFila": "Pendiente de revisar en el proyecto en marcha",
+      "revisadoFila": "Revisado en el proyecto en marcha"
     }
   },
   "modelPicker": {
@@ -2423,6 +2449,94 @@
       "equipo": "Técnicos de campo",
       "accesoPendiente": "El acceso del equipo atado a la ventana de ejecución (3 días antes, 7 después) está pendiente: de momento el acceso se da por los alcances del usuario.",
       "guardado": "Planificación guardada."
+    }
+  },
+  "revisiones": {
+    "estado": {
+      "en_curso": "En curso",
+      "cerrada": "Cerrada",
+      "anulada": "Anulada"
+    },
+    "resultado": {
+      "apto": "Apto",
+      "vigilar": "Vigilar",
+      "no_apto": "No apto"
+    },
+    "marca": {
+      "apto": "Apto",
+      "vigilar": "Vigilar",
+      "no_apto": "No apto",
+      "no_aplica": "N/A"
+    },
+    "via": {
+      "periodica": "Periódica",
+      "inicial": "Inicial",
+      "instalacion": "Acta de instalación",
+      "extraordinaria": "Extraordinaria"
+    },
+    "eje": {
+      "visual": "Visual",
+      "funcional": "Funcional",
+      "documental": "Documental"
+    },
+    "lista": {
+      "nueva": "Nueva revisión",
+      "vacio": "Este equipo no tiene revisiones registradas.",
+      "checklist": "Checklist: {{nombre}}",
+      "sinChecklist": "Su tipo no tiene checklist: la revisión se consigna sin guion.",
+      "periodicidad": "cada {{count}} mes",
+      "periodicidad_other": "cada {{count}} meses",
+      "estado": "Estado",
+      "resultado": "Resultado",
+      "validaHasta": "Válida hasta",
+      "fueraDeServicio": "Un equipo retirado o destruido ya no se revisa.",
+      "yaEnCurso": "Ya hay una revisión en curso: ciérrala o anúlala antes de abrir otra."
+    },
+    "sheet": {
+      "aria": "Revisión",
+      "nueva": "Nueva revisión",
+      "titulo": "Revisión del {{fecha}}",
+      "sinChecklist": "sin checklist",
+      "cabecera": "Datos de la revisión",
+      "fecha": "Fecha",
+      "via": "Vía",
+      "proyecto": "Proyecto",
+      "revisor": "Revisor",
+      "tecnico": "Técnico responsable",
+      "observaciones": "Observaciones generales",
+      "abrir": "Abrir revisión",
+      "abierta": "Revisión abierta: el checklist queda congelado.",
+      "guardarCabecera": "Guardar datos",
+      "validaHasta": "Válida hasta {{fecha}}",
+      "checklist": "Checklist",
+      "pendientes": "{{count}} punto sin comprobar",
+      "pendientes_other": "{{count}} puntos sin comprobar",
+      "todoComprobado": "Todo comprobado",
+      "sinPuntos": "Sin puntos de comprobación: se consigna sin guion.",
+      "cuandoProceda": "(cuando proceda)",
+      "observacionPh": "Observación del punto…",
+      "anadirFoto": "Añadir foto",
+      "quitarFoto": "Quitar foto",
+      "quitarFotoConfirm": "¿Quitar esta foto de la revisión?",
+      "cerrar": "Cerrar revisión",
+      "cerrarConfirm": "Cerrar la revisión la firma: a partir de aquí no se edita. ¿Continuar?",
+      "cerrada": "Revisión cerrada.",
+      "anular": "Anular",
+      "anularConfirm": "Anular deja la revisión sin efecto: no da veredicto ni prorroga la validez. Se conserva en el historial. ¿Continuar?",
+      "anulada": "Revisión anulada.",
+      "certificacion": "Certificación",
+      "certificar": "Certificar",
+      "certificada": "Revisión certificada.",
+      "certificadaPill": "Certificada",
+      "certificadaPor": "Certificada por {{quien}} el {{fecha}}",
+      "veredictoCorregido": "veredicto corregido a {{resultado}}",
+      "retirarCert": "Retirar la certificación",
+      "veredicto": "Veredicto",
+      "comoDerivado": "Como el derivado ({{resultado}})",
+      "corregirA": "Corregir a {{resultado}}",
+      "comentarioCert": "Comentario del certificador",
+      "certHint": "Certificar valida el trabajo de campo. La revisión cerrada no se reescribe: la corrección se guarda aparte y es la que cuenta en el parque.",
+      "firma": "Revisó {{revisor}} · Responde {{tecnico}}"
     }
   }
 }

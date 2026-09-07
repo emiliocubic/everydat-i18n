@@ -603,7 +603,8 @@
       "tab": {
         "caract": "Caractéristiques et état",
         "normativa": "Normes",
-        "historial": "Historique"
+        "historial": "Historique",
+        "revisiones": "Contrôles"
       },
       "anterior": "Précédent (Alt+↑)",
       "siguiente": "Suivant (Alt+↓)",
@@ -1310,6 +1311,31 @@
       "depSubzonas_other": "{{count}} sous-zones à l’intérieur",
       "depPlanificacion": "Une date de contrôle planifiée",
       "sinDependencias": "Rien ne dépend de cette zone."
+    },
+    "revision": {
+      "titulo": "Mettre en contrôle",
+      "botonRaiz": "Mettre en contrôle tout le site",
+      "botonNodo": "Mettre en contrôle ce dossier et sa branche",
+      "alcanceRaiz": "Tout le site · {{nombre}}",
+      "alcanceZona": "Zone « {{nombre}} » et toute sa branche",
+      "alcanceCarpeta": "Dossier « {{nombre}} » et toute sa branche",
+      "nota": "Un projet de contrôle est créé déjà en cours, sans proposition ni suivi préalables. Les équipements du périmètre passent en attente et leurs dossiers restent marqués jusqu'à leur achèvement.",
+      "administrador": "Chef de projet",
+      "fecha": "Date de début",
+      "fechaHoy": "Démarre immédiatement.",
+      "fechaFutura": "Reste planifié et démarre seul à cette date.",
+      "nombre": "Nom du projet",
+      "notas": "Notes",
+      "pie": "Le projet se clôture depuis l'écran des projets.",
+      "confirmar": "Mettre en contrôle",
+      "creado": "Projet de contrôle créé : {{count}} équipement en attente.",
+      "creado_other": "Projet de contrôle créé : {{count}} équipements en attente.",
+      "verProyecto": "Voir le projet",
+      "pendientesRama": "{{count}} équipement à contrôler dans cette branche",
+      "pendientesRama_other": "{{count}} équipements à contrôler dans cette branche",
+      "ramaCompleta": "Contrôle terminé dans cette branche",
+      "pendienteFila": "En attente de contrôle dans le projet en cours",
+      "revisadoFila": "Contrôlé dans le projet en cours"
     }
   },
   "gruposClientes": {
@@ -2423,6 +2449,94 @@
       "equipo": "Techniciens de terrain",
       "accesoPendiente": "L'accès de l'équipe lié à la fenêtre d'exécution (3 jours avant, 7 après) est en attente : pour l'instant l'accès vient des périmètres de l'utilisateur.",
       "guardado": "Planification enregistrée."
+    }
+  },
+  "revisiones": {
+    "estado": {
+      "en_curso": "En cours",
+      "cerrada": "Clôturé",
+      "anulada": "Annulé"
+    },
+    "resultado": {
+      "apto": "Apte",
+      "vigilar": "À surveiller",
+      "no_apto": "Non apte"
+    },
+    "marca": {
+      "apto": "Apte",
+      "vigilar": "Surveiller",
+      "no_apto": "Non apte",
+      "no_aplica": "N/A"
+    },
+    "via": {
+      "periodica": "Périodique",
+      "inicial": "Initial",
+      "instalacion": "PV d'installation",
+      "extraordinaria": "Extraordinaire"
+    },
+    "eje": {
+      "visual": "Visuel",
+      "funcional": "Fonctionnel",
+      "documental": "Documentaire"
+    },
+    "lista": {
+      "nueva": "Nouveau contrôle",
+      "vacio": "Cet équipement n'a aucun contrôle enregistré.",
+      "checklist": "Checklist : {{nombre}}",
+      "sinChecklist": "Son type n'a pas de checklist : le contrôle est consigné sans trame.",
+      "periodicidad": "tous les {{count}} mois",
+      "periodicidad_other": "tous les {{count}} mois",
+      "estado": "État",
+      "resultado": "Résultat",
+      "validaHasta": "Valable jusqu'au",
+      "fueraDeServicio": "Un équipement retiré ou détruit ne se contrôle plus.",
+      "yaEnCurso": "Un contrôle est déjà en cours : clôturez-le ou annulez-le avant d'en ouvrir un autre."
+    },
+    "sheet": {
+      "aria": "Contrôle",
+      "nueva": "Nouveau contrôle",
+      "titulo": "Contrôle du {{fecha}}",
+      "sinChecklist": "sans checklist",
+      "cabecera": "Données du contrôle",
+      "fecha": "Date",
+      "via": "Voie",
+      "proyecto": "Projet",
+      "revisor": "Contrôleur",
+      "tecnico": "Technicien responsable",
+      "observaciones": "Observations générales",
+      "abrir": "Ouvrir le contrôle",
+      "abierta": "Contrôle ouvert : la checklist est figée.",
+      "guardarCabecera": "Enregistrer",
+      "validaHasta": "Valable jusqu'au {{fecha}}",
+      "checklist": "Checklist",
+      "pendientes": "{{count}} point non vérifié",
+      "pendientes_other": "{{count}} points non vérifiés",
+      "todoComprobado": "Tout vérifié",
+      "sinPuntos": "Aucun point de contrôle : consigné sans trame.",
+      "cuandoProceda": "(le cas échéant)",
+      "observacionPh": "Observation sur ce point…",
+      "anadirFoto": "Ajouter une photo",
+      "quitarFoto": "Retirer la photo",
+      "quitarFotoConfirm": "Retirer cette photo du contrôle ?",
+      "cerrar": "Clôturer le contrôle",
+      "cerrarConfirm": "Clôturer signe le contrôle : il ne sera plus modifiable. Continuer ?",
+      "cerrada": "Contrôle clôturé.",
+      "anular": "Annuler",
+      "anularConfirm": "Annuler laisse le contrôle sans effet : ni verdict ni prolongation de validité. Il reste dans l'historique. Continuer ?",
+      "anulada": "Contrôle annulé.",
+      "certificacion": "Certification",
+      "certificar": "Certifier",
+      "certificada": "Contrôle certifié.",
+      "certificadaPill": "Certifié",
+      "certificadaPor": "Certifié par {{quien}} le {{fecha}}",
+      "veredictoCorregido": "verdict corrigé en {{resultado}}",
+      "retirarCert": "Retirer la certification",
+      "veredicto": "Verdict",
+      "comoDerivado": "Comme dérivé ({{resultado}})",
+      "corregirA": "Corriger en {{resultado}}",
+      "comentarioCert": "Commentaire du certificateur",
+      "certHint": "Certifier valide le travail de terrain. Le contrôle clôturé n'est pas réécrit : la correction est stockée à part et c'est elle qui compte pour le parc.",
+      "firma": "Contrôlé par {{revisor}} · Responsable {{tecnico}}"
     }
   }
 }
