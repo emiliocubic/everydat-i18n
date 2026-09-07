@@ -2778,7 +2778,19 @@
       "descartar": "Descartar revisión",
       "descartarConfirm": "Se borra esta revisión sin enviar. Los puntos marcados se pierden.",
       "anadirObservacion": "+ Observación",
-      "previsto": "Todo comprobado. Veredicto previsto: {{veredicto}}."
+      "previsto": "Todo comprobado. Veredicto previsto: {{veredicto}}.",
+      "fotos": "Fotos",
+      "fotosEquipo": "Fotos del equipo",
+      "camara": "Cámara",
+      "galeria": "Galería",
+      "quitarFoto": "Quitar foto",
+      "quitarFotoConfirm": "La foto se borra del teléfono.",
+      "permisoCamara": "Sin permiso de cámara: actívalo en los ajustes del teléfono.",
+      "fotoError": "No se pudo guardar la foto.",
+      "fotosPorSubir": "{{count}} foto por subir",
+      "fotosPorSubir_other": "{{count}} fotos por subir",
+      "fotosSubidas": "{{count}} foto enviada",
+      "fotosSubidas_other": "{{count}} fotos enviadas"
     },
     "envio": {
       "titulo": "Enviar",
@@ -2799,14 +2811,17 @@
       "sinRed": "Sin conexión. Se han enviado {{count}}; el resto sigue en la cola.",
       "hecho": "Enviadas {{aceptadas}} · rechazadas {{rechazadas}}.",
       "tipo": {
-        "revision": "Revisión"
+        "revision": "Revisión",
+        "adjunto": "Foto"
       },
       "estado": {
         "pendiente": "Pendiente",
         "enviando": "Enviando",
         "aceptada": "Enviada",
         "rechazada": "Rechazada"
-      }
+      },
+      "esperando": "{{count}} foto espera a que el core acepte su revisión.",
+      "esperando_other": "{{count}} fotos esperan a que el core acepte su revisión."
     },
     "ajustes": {
       "titulo": "Ajustes",

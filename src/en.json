@@ -2778,7 +2778,19 @@
       "descartar": "Discard inspection",
       "descartarConfirm": "This unsent inspection is deleted. Marked points are lost.",
       "anadirObservacion": "+ Remark",
-      "previsto": "All checked. Expected verdict: {{veredicto}}."
+      "previsto": "All checked. Expected verdict: {{veredicto}}.",
+      "fotos": "Photos",
+      "fotosEquipo": "Equipment photos",
+      "camara": "Camera",
+      "galeria": "Gallery",
+      "quitarFoto": "Remove photo",
+      "quitarFotoConfirm": "The photo is deleted from the phone.",
+      "permisoCamara": "No camera permission: enable it in the phone settings.",
+      "fotoError": "The photo could not be saved.",
+      "fotosPorSubir": "{{count}} photo to upload",
+      "fotosPorSubir_other": "{{count}} photos to upload",
+      "fotosSubidas": "{{count}} photo sent",
+      "fotosSubidas_other": "{{count}} photos sent"
     },
     "envio": {
       "titulo": "Send",
@@ -2799,14 +2811,17 @@
       "sinRed": "No connection. {{count}} sent; the rest stays queued.",
       "hecho": "Sent {{aceptadas}} · rejected {{rechazadas}}.",
       "tipo": {
-        "revision": "Inspection"
+        "revision": "Inspection",
+        "adjunto": "Photo"
       },
       "estado": {
         "pendiente": "Pending",
         "enviando": "Sending",
         "aceptada": "Sent",
         "rechazada": "Rejected"
-      }
+      },
+      "esperando": "{{count}} photo is waiting for its inspection to be accepted.",
+      "esperando_other": "{{count}} photos are waiting for their inspection to be accepted."
     },
     "ajustes": {
       "titulo": "Settings",

@@ -2778,7 +2778,19 @@
       "descartar": "Abandonner le contrôle",
       "descartarConfirm": "Ce contrôle non envoyé est supprimé. Les points marqués sont perdus.",
       "anadirObservacion": "+ Observation",
-      "previsto": "Tout vérifié. Verdict prévu : {{veredicto}}."
+      "previsto": "Tout vérifié. Verdict prévu : {{veredicto}}.",
+      "fotos": "Photos",
+      "fotosEquipo": "Photos de l'équipement",
+      "camara": "Appareil photo",
+      "galeria": "Galerie",
+      "quitarFoto": "Retirer la photo",
+      "quitarFotoConfirm": "La photo est supprimée du téléphone.",
+      "permisoCamara": "Pas d'accès à l'appareil photo : activez-le dans les réglages du téléphone.",
+      "fotoError": "La photo n'a pas pu être enregistrée.",
+      "fotosPorSubir": "{{count}} photo à envoyer",
+      "fotosPorSubir_other": "{{count}} photos à envoyer",
+      "fotosSubidas": "{{count}} photo envoyée",
+      "fotosSubidas_other": "{{count}} photos envoyées"
     },
     "envio": {
       "titulo": "Envoyer",
@@ -2799,14 +2811,17 @@
       "sinRed": "Pas de connexion. {{count}} envoyées ; le reste reste en file.",
       "hecho": "Envoyées {{aceptadas}} · refusées {{rechazadas}}.",
       "tipo": {
-        "revision": "Contrôle"
+        "revision": "Contrôle",
+        "adjunto": "Photo"
       },
       "estado": {
         "pendiente": "En attente",
         "enviando": "Envoi",
         "aceptada": "Envoyée",
         "rechazada": "Refusée"
-      }
+      },
+      "esperando": "{{count}} photo attend que son inspection soit acceptée.",
+      "esperando_other": "{{count}} photos attendent que leur inspection soit acceptée."
     },
     "ajustes": {
       "titulo": "Réglages",
