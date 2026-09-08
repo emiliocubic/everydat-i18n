@@ -1521,7 +1521,8 @@
         "tabs": {
           "datos": "Data & references",
           "docs": "Documentation",
-          "selector": "Section"
+          "selector": "Section",
+          "checklist": "Checklist"
         },
         "imagen": {
           "hint": "Model image",
@@ -1673,6 +1674,18 @@
             "seguimiento": "Tracking sheet",
             "otros": "Other document"
           }
+        },
+        "nElementos_one": "{{count}} item",
+        "nElementos_other": "{{count}} items",
+        "checklist": {
+          "title": "Model checklist",
+          "resumen_one": "{{count}} checklist",
+          "resumen_other": "{{count}} checklists",
+          "gestionar": "Manage in Checklists by model",
+          "vacio": "This model has no checklist of its own: its items are inspected with the checklist of their type.",
+          "nCheckpoints_one": "{{count}} checkpoint",
+          "nCheckpoints_other": "{{count}} checkpoints",
+          "sinItems": "This checklist has no checkpoints yet."
         }
       }
     },

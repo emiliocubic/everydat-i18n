@@ -1521,7 +1521,8 @@
         "tabs": {
           "datos": "Datos y referencias",
           "docs": "Documentación",
-          "selector": "Sección"
+          "selector": "Sección",
+          "checklist": "Checklist"
         },
         "imagen": {
           "hint": "Imagen del modelo",
@@ -1673,6 +1674,18 @@
             "seguimiento": "Ficha de seguimiento",
             "otros": "Otro documento"
           }
+        },
+        "nElementos_one": "{{count}} elemento",
+        "nElementos_other": "{{count}} elementos",
+        "checklist": {
+          "title": "Checklist del modelo",
+          "resumen_one": "{{count}} checklist",
+          "resumen_other": "{{count}} checklists",
+          "gestionar": "Gestionar en Checklists por modelo",
+          "vacio": "Este modelo no tiene checklist propio: sus elementos se revisan con el checklist de su tipo.",
+          "nCheckpoints_one": "{{count}} checkpoint",
+          "nCheckpoints_other": "{{count}} checkpoints",
+          "sinItems": "Este checklist todavía no tiene checkpoints."
         }
       }
     },
