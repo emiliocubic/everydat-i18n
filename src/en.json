@@ -2354,7 +2354,9 @@
       "informes": "Reports",
       "repositorioDocumental": "Document repository",
       "mailCenter": "Mail Center",
-      "explotacion": "Data queries"
+      "explotacion": "Data queries",
+      "proyectosPropuestas": "Proposals",
+      "proyectosSeguimiento": "Follow-up"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -2459,7 +2461,12 @@
       "stateOrigin": "Discarded",
       "fechaDescarte": "Discard date",
       "motivoDescarte": "Discard reason",
-      "duracion": "Duration"
+      "duracion": "Duration",
+      "contacto": "Contact",
+      "proyecto": "Project",
+      "validez": "Valid for",
+      "elementos": "Items",
+      "seguimiento": "Latest note"
     },
     "campos": {
       "cliente": "Client",
@@ -2642,7 +2649,13 @@
       "descartados": "Discarded",
       "descartadosHint": "What left the flow: by hand or by expiring in the pipeline. Reversible.",
       "finalizados": "Finished",
-      "finalizadosHint": "What is closed."
+      "finalizadosHint": "What is closed.",
+      "propuestas": "Proposals",
+      "propuestasHint": "Before quoting: what has no issued proposal and what was rejected but can still be quoted again.",
+      "propuestasVacio": "Nothing to quote in this window",
+      "seguimiento": "Follow-up",
+      "seguimientoHint": "After quoting: what was sent and accepted, with its validity clock. An accepted project stays until you move it.",
+      "seguimientoVacio": "No proposals under follow-up in this window"
     },
     "stateOrigin": {
       "manual": "By hand",
@@ -2834,6 +2847,15 @@
         "sinCatalogo": "There are no products in the catalogue. They are set up in Configuration, general parameters.",
         "vacioRo": "This version does not include other products."
       }
+    },
+    "sinNombre": "Unnamed",
+    "sinContacto": "No contact assigned",
+    "sinSeguimiento": "No interactions",
+    "sinPropuestaCorto": "No proposal",
+    "ventana": {
+      "label": "Window",
+      "meses": "{{count}} month",
+      "meses_other": "{{count}} months"
     }
   },
   "revisiones": {

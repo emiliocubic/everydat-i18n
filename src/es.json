@@ -2354,7 +2354,9 @@
       "informes": "Informes",
       "repositorioDocumental": "Repositorio documental",
       "mailCenter": "Mail Center",
-      "explotacion": "Explotación de datos"
+      "explotacion": "Explotación de datos",
+      "proyectosPropuestas": "Propuestas",
+      "proyectosSeguimiento": "Seguimiento"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -2459,7 +2461,12 @@
       "stateOrigin": "Descartado",
       "fechaDescarte": "Fecha de descarte",
       "motivoDescarte": "Motivo del descarte",
-      "duracion": "Duración"
+      "duracion": "Duración",
+      "contacto": "Contacto",
+      "proyecto": "Proyecto",
+      "validez": "Validez",
+      "elementos": "Equipos",
+      "seguimiento": "Último apunte"
     },
     "campos": {
       "cliente": "Cliente",
@@ -2642,7 +2649,13 @@
       "descartados": "Descartados",
       "descartadosHint": "Lo que salió del flujo: a mano o por caducidad en cartera. Es reversible.",
       "finalizados": "Finalizados",
-      "finalizadosHint": "Lo cerrado."
+      "finalizadosHint": "Lo cerrado.",
+      "propuestas": "Propuestas",
+      "propuestasHint": "El antes de presupuestar: lo que no tiene propuesta emitida y lo rechazado, que aún se puede represupuestar.",
+      "propuestasVacio": "Nada por presupuestar en esta ventana",
+      "seguimiento": "Seguimiento",
+      "seguimientoHint": "El después: lo enviado y lo aceptado, con su reloj de validez. Un proyecto aceptado se queda hasta que lo muevas.",
+      "seguimientoVacio": "Ninguna propuesta en seguimiento en esta ventana"
     },
     "stateOrigin": {
       "manual": "A mano",
@@ -2834,6 +2847,15 @@
         "sinCatalogo": "No hay productos en el catálogo. Se dan de alta en Configuración, Parámetros generales.",
         "vacioRo": "Esta versión no incluye otros productos."
       }
+    },
+    "sinNombre": "Sin nombre",
+    "sinContacto": "Sin contacto asignado",
+    "sinSeguimiento": "Sin interacciones",
+    "sinPropuestaCorto": "Sin propuesta",
+    "ventana": {
+      "label": "Ventana",
+      "meses": "{{count}} mes",
+      "meses_other": "{{count}} meses"
     }
   },
   "revisiones": {

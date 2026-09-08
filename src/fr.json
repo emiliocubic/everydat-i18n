@@ -2354,7 +2354,9 @@
       "informes": "Rapports",
       "repositorioDocumental": "Dépôt documentaire",
       "mailCenter": "Mail Center",
-      "explotacion": "Exploitation des données"
+      "explotacion": "Exploitation des données",
+      "proyectosPropuestas": "Propositions",
+      "proyectosSeguimiento": "Suivi"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -2459,7 +2461,12 @@
       "stateOrigin": "Écarté",
       "fechaDescarte": "Date d'écartement",
       "motivoDescarte": "Motif d'écartement",
-      "duracion": "Durée"
+      "duracion": "Durée",
+      "contacto": "Contact",
+      "proyecto": "Projet",
+      "validez": "Validité",
+      "elementos": "Équipements",
+      "seguimiento": "Dernière note"
     },
     "campos": {
       "cliente": "Client",
@@ -2642,7 +2649,13 @@
       "descartados": "Écartés",
       "descartadosHint": "Ce qui est sorti du flux : à la main ou par expiration. Réversible.",
       "finalizados": "Terminés",
-      "finalizadosHint": "Ce qui est clôturé."
+      "finalizadosHint": "Ce qui est clôturé.",
+      "propuestas": "Propositions",
+      "propuestasHint": "Avant de chiffrer : ce qui n'a pas de proposition émise et ce qui a été refusé mais peut encore être rechiffré.",
+      "propuestasVacio": "Rien à chiffrer dans cette fenêtre",
+      "seguimiento": "Suivi",
+      "seguimientoHint": "Après : ce qui a été envoyé et accepté, avec son horloge de validité. Un projet accepté reste jusqu'à ce que vous le déplaciez.",
+      "seguimientoVacio": "Aucune proposition en suivi dans cette fenêtre"
     },
     "stateOrigin": {
       "manual": "À la main",
@@ -2834,6 +2847,15 @@
         "sinCatalogo": "Aucun produit au catalogue. Ils se créent dans Configuration, paramètres généraux.",
         "vacioRo": "Cette version n'inclut pas d'autres produits."
       }
+    },
+    "sinNombre": "Sans nom",
+    "sinContacto": "Aucun contact assigné",
+    "sinSeguimiento": "Aucune interaction",
+    "sinPropuestaCorto": "Sans proposition",
+    "ventana": {
+      "label": "Fenêtre",
+      "meses": "{{count}} mois",
+      "meses_other": "{{count}} mois"
     }
   },
   "revisiones": {
