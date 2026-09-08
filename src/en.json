@@ -2812,7 +2812,8 @@
       "hecho": "Sent {{aceptadas}} · rejected {{rechazadas}}.",
       "tipo": {
         "revision": "Inspection",
-        "adjunto": "Photo"
+        "adjunto": "Photo",
+        "alta": "New equipment"
       },
       "estado": {
         "pendiente": "Pending",
@@ -2837,6 +2838,24 @@
       "diagnostico": "Diagnostics",
       "version": "App version",
       "minima": "minimum"
+    },
+    "alta": {
+      "titulo": "Add equipment",
+      "boton": "Add a piece of equipment",
+      "modelo": "Model",
+      "elegirModelo": "Pick the model among those already on this site (downloaded catalogue).",
+      "sinModelos": "The package has no models: there is no catalogue to add equipment offline.",
+      "cambiar": "Change",
+      "referencia": "Reference",
+      "sinEspecificar": "Unspecified",
+      "identificacion": "Identification",
+      "fechas": "Dates",
+      "fechaPh": "dd/mm/yyyy",
+      "fechaMal": "“{{nombre}}”: invalid date. Type it as dd/mm/yyyy.",
+      "campos": "Characteristics",
+      "descripcion": "Description",
+      "guardar": "Save and queue",
+      "pendiente": "Pending upload"
     }
   }
 }

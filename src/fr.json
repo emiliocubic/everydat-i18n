@@ -2812,7 +2812,8 @@
       "hecho": "Envoyées {{aceptadas}} · refusées {{rechazadas}}.",
       "tipo": {
         "revision": "Contrôle",
-        "adjunto": "Photo"
+        "adjunto": "Photo",
+        "alta": "Nouvel équipement"
       },
       "estado": {
         "pendiente": "En attente",
@@ -2837,6 +2838,24 @@
       "diagnostico": "Diagnostic",
       "version": "Version de l'application",
       "minima": "minimale"
+    },
+    "alta": {
+      "titulo": "Ajouter un équipement",
+      "boton": "Ajouter un équipement",
+      "modelo": "Modèle",
+      "elegirModelo": "Choisissez le modèle parmi ceux déjà présents sur ce site (catalogue téléchargé).",
+      "sinModelos": "Le paquet ne contient aucun modèle : pas de catalogue pour un ajout hors ligne.",
+      "cambiar": "Changer",
+      "referencia": "Référence",
+      "sinEspecificar": "Non précisée",
+      "identificacion": "Identification",
+      "fechas": "Dates",
+      "fechaPh": "jj/mm/aaaa",
+      "fechaMal": "« {{nombre}} » : date invalide. Saisissez-la sous la forme jj/mm/aaaa.",
+      "campos": "Caractéristiques",
+      "descripcion": "Description",
+      "guardar": "Enregistrer et mettre en file",
+      "pendiente": "Ajout à envoyer"
     }
   }
 }

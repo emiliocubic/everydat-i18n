@@ -2812,7 +2812,8 @@
       "hecho": "Enviadas {{aceptadas}} · rechazadas {{rechazadas}}.",
       "tipo": {
         "revision": "Revisión",
-        "adjunto": "Foto"
+        "adjunto": "Foto",
+        "alta": "Alta de equipo"
       },
       "estado": {
         "pendiente": "Pendiente",
@@ -2837,6 +2838,24 @@
       "diagnostico": "Diagnóstico",
       "version": "Versión de la app",
       "minima": "mínima"
+    },
+    "alta": {
+      "titulo": "Dar de alta",
+      "boton": "Dar de alta un equipo",
+      "modelo": "Modelo",
+      "elegirModelo": "Elige el modelo entre los que ya hay en esta instalación (catálogo bajado).",
+      "sinModelos": "El paquete no trae ningún modelo: no hay catálogo para dar de alta sin red.",
+      "cambiar": "Cambiar",
+      "referencia": "Referencia",
+      "sinEspecificar": "Sin especificar",
+      "identificacion": "Identificación",
+      "fechas": "Fechas",
+      "fechaPh": "dd/mm/aaaa",
+      "fechaMal": "«{{nombre}}»: fecha no válida. Escríbela como dd/mm/aaaa.",
+      "campos": "Características",
+      "descripcion": "Descripción",
+      "guardar": "Guardar y poner en la cola",
+      "pendiente": "Alta por enviar"
     }
   }
 }
