@@ -808,7 +808,14 @@
         "campos_one": "1 required field missing (step 5)",
         "campos_other": "{{count}} required fields missing (step 5)"
       },
-      "confirmarRepetidos": "You are about to create several units sharing the same value in: {{campos}}. That identifier should not repeat across items. Continue anyway?"
+      "confirmarRepetidos": "You are about to create several units sharing the same value in: {{campos}}. That identifier should not repeat across items. Continue anyway?",
+      "comodin": {
+        "noLoSe": "I don't know which one",
+        "hint": "Just say what kind of equipment it is: it enters the system with its checklist and dates, and can be identified later from its record.",
+        "tipo": "Equipment type",
+        "usar": "Use unspecified",
+        "marca": "Unspecified"
+      }
     },
     "historial": {
       "filtro": "Filter by event kind",
@@ -1472,7 +1479,8 @@
         "note": "“{{from}}” will cease to exist: its references — and the {{n}} elements hanging from them — move to “{{to}}”. This cannot be undone.",
         "confirm": "Merge models",
         "done": "“{{from}}” was merged into “{{to}}”"
-      }
+      },
+      "sinEspecificar": "Unspecified"
     },
     "modelos": {
       "fabricante": "Manufacturer",

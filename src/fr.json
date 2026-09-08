@@ -808,7 +808,14 @@
         "campos_one": "1 champ obligatoire manquant (étape 5)",
         "campos_other": "{{count}} champs obligatoires manquants (étape 5)"
       },
-      "confirmarRepetidos": "Tu vas créer plusieurs unités avec la même valeur dans : {{campos}}. Cet identifiant ne devrait pas se répéter entre équipements. Continuer quand même ?"
+      "confirmarRepetidos": "Tu vas créer plusieurs unités avec la même valeur dans : {{campos}}. Cet identifiant ne devrait pas se répéter entre équipements. Continuer quand même ?",
+      "comodin": {
+        "noLoSe": "Je ne sais pas lequel",
+        "hint": "Il suffit d'indiquer le type d'équipement : il entre dans le système avec sa checklist et ses dates, et pourra être identifié plus tard depuis sa fiche.",
+        "tipo": "Type d'équipement",
+        "usar": "Utiliser non précisé",
+        "marca": "Non précisé"
+      }
     },
     "historial": {
       "filtro": "Filtrer par type d'événement",
@@ -1472,7 +1479,8 @@
         "note": "« {{from}} » cessera d'exister : ses références — et les {{n}} éléments qui en dépendent — passent à « {{to}} ». Action irréversible.",
         "confirm": "Fusionner les modèles",
         "done": "« {{from}} » a été fusionné dans « {{to}} »"
-      }
+      },
+      "sinEspecificar": "Non précisé"
     },
     "modelos": {
       "fabricante": "Fabricant",

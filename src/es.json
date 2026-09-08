@@ -719,7 +719,14 @@
         "campos_one": "Falta 1 campo obligatorio (paso 5)",
         "campos_other": "Faltan {{count}} campos obligatorios (paso 5)"
       },
-      "confirmarRepetidos": "Vas a dar de alta varias unidades con el mismo valor en: {{campos}}. Ese identificador no debería repetirse entre equipos. ¿Continúas igualmente?"
+      "confirmarRepetidos": "Vas a dar de alta varias unidades con el mismo valor en: {{campos}}. Ese identificador no debería repetirse entre equipos. ¿Continúas igualmente?",
+      "comodin": {
+        "noLoSe": "No sé cuál es",
+        "hint": "Basta con decir qué tipo de equipo es: entra en el sistema con su checklist y sus fechas, y se identifica más adelante desde su ficha.",
+        "tipo": "Tipo de equipo",
+        "usar": "Usar sin especificar",
+        "marca": "Sin especificar"
+      }
     },
     "historial": {
       "filtro": "Filtrar por tipo de evento",
@@ -1472,7 +1479,8 @@
         "note": "«{{from}}» dejará de existir: sus referencias —y los {{n}} elementos que cuelgan de ellas— pasan a «{{to}}». Esta acción no se puede deshacer.",
         "confirm": "Fusionar modelos",
         "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
-      }
+      },
+      "sinEspecificar": "Sin especificar"
     },
     "modelos": {
       "fabricante": "Fabricante",
