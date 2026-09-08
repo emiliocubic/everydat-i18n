@@ -2504,7 +2504,9 @@
       "soloLectura": "Este estado deja la ficha en solo lectura.",
       "fijoTitle": "El proyecto nació de aquí: moverlo de sitio sería otro proyecto.",
       "todoElEmplazamiento": "Todo el emplazamiento",
-      "nZonas": "{{count}} zonas"
+      "nZonas": "{{count}} zonas",
+      "propuesta": "Propuesta",
+      "sinPropuesta": "Sin propuesta"
     },
     "planificacion": {
       "ventana": "Ventana de ejecución",
@@ -2609,6 +2611,157 @@
     "descartados": {
       "mes": "Proyectos del mes",
       "mesTitle": "Proyectos cuya fecha tentativa caía en ese mes, de cualquier año"
+    },
+    "propuesta": {
+      "cero": {
+        "crear": "Crear presupuesto",
+        "externa": "Cargar presupuesto externo",
+        "hint": "Una propuesta se compone aquí sobre los precios parametrizados o se carga hecha de fuera con su documento. El origen se fija al elegir y no se mezcla."
+      },
+      "estado": {
+        "componiendo": "Componiendo",
+        "bloqueada": "Generada y bloqueada",
+        "desbloqueada": "Desbloqueada"
+      },
+      "top": {
+        "guardar": "Guardar",
+        "generar": "Generar",
+        "eliminar": "Eliminar",
+        "eliminarTitle": "Elimina el detalle y vuelve al inicio",
+        "eliminarBloqueado": "Con versiones generadas la propuesta ya no se elimina: lo emitido no desaparece",
+        "desbloquear": "Desbloquear",
+        "descargar": "Descargar"
+      },
+      "detalle": "Detalle de conceptos",
+      "documento": "Documento del presupuesto",
+      "externa": {
+        "adjuntar": "Adjuntar documento",
+        "adjuntarHint": "PDF, DOCX o similar",
+        "cambiar": "Pulsa para cambiar el documento",
+        "adjunto": "Documento adjunto",
+        "subiendo": "Subiendo…",
+        "importe": "Importe",
+        "emision": "Fecha de emisión",
+        "validez": "Fecha de validez",
+        "validoHasta": "Válida hasta el {{fecha}}"
+      },
+      "bandas": {
+        "revision": "Revisión de elementos",
+        "revisionSrc": "según precios de revisión",
+        "otros": "Otros productos",
+        "otrosSrc": "según el catálogo de otros productos",
+        "libre": "Conceptos libres",
+        "libreSrc": "directos en el presupuesto",
+        "sinLineas": "Sin líneas",
+        "lineas": "{{count}} línea · {{importe}}",
+        "lineas_other": "{{count}} líneas · {{importe}}",
+        "elementos": "{{count}} elemento · {{importe}}",
+        "elementos_other": "{{count}} elementos · {{importe}}",
+        "enConstruccion": "Este bloque llega en una tarea posterior."
+      },
+      "revision": {
+        "vacio": "Aún no has cargado elementos.",
+        "vacioHint": "Carga los elementos a revisar desde las zonas del emplazamiento; se agregan por tipo según su criterio de precio de revisión.",
+        "vacioRo": "Esta versión no incluye revisión de elementos.",
+        "cargar": "Cargar del emplazamiento",
+        "recargar": "Volver a cargar del emplazamiento",
+        "recargarHint": "Volver a cargar reemplaza las filas actuales.",
+        "cargado": "Censo cargado en el bloque de revisión.",
+        "sinEmplazamiento": "No hay emplazamiento asignado al proyecto",
+        "sinEmplazamientoHint": "Para presupuestar la revisión a partir de un emplazamiento existente, asígnalo antes en la pestaña Datos proyecto. Si aún no está descrito, compón el bloque a mano poniendo unidades por tipo.",
+        "manual": "Componer a mano por unidades",
+        "manualPendiente": "La composición a mano por tipos llega con la siguiente tarea.",
+        "sinMultiplicador": "sin medida"
+      },
+      "libre": {
+        "vacio": "Aún no has añadido conceptos.",
+        "vacioHint": "Líneas directas que no salen de ningún parámetro: escribe el concepto, las unidades, el importe unitario y el descuento.",
+        "vacioRo": "Esta versión no incluye conceptos libres.",
+        "anadir": "Añadir concepto",
+        "conceptoPh": "Escribe el concepto…"
+      },
+      "cols": {
+        "tipo": "Tipo de elemento",
+        "concepto": "Concepto",
+        "uds": "Uds.",
+        "mult": "Multiplicador",
+        "precio": "Importe unitario",
+        "dto": "Dto (%)",
+        "subtotal": "Subtotal",
+        "quitar": "Quitar"
+      },
+      "tot": {
+        "suma": "Suma de conceptos",
+        "dtoCliente": "Descuento cliente",
+        "total": "Total propuesta"
+      },
+      "gen": {
+        "title": "Generar propuesta",
+        "lead": "Fija las fechas del presupuesto antes de generarlo. La versión guarda el detalle congelado y su importe; el PDF llegará con el motor de informes.",
+        "emision": "Fecha de emisión",
+        "validez": "Fecha de validez",
+        "confirmar": "Generar",
+        "generada": "Versión {{numero}} generada. El detalle queda bloqueado."
+      },
+      "versiones": {
+        "title": "Versiones de la propuesta",
+        "version": "Versión",
+        "origen": "Origen",
+        "importe": "Importe",
+        "emision": "Emisión",
+        "validez": "Validez",
+        "envio": "Envío",
+        "estado": "Estado",
+        "vigente": "vigente",
+        "vigenteTitle": "Reflejada en el detalle de conceptos",
+        "caducada": "caducada",
+        "dias": "{{count}} día",
+        "dias_other": "{{count}} días",
+        "cambiarEstado": "Cambiar estado",
+        "descargar": "Descargar documento"
+      },
+      "origenVersion": {
+        "interna": "Creada aquí",
+        "externa": "Externa"
+      },
+      "estadoVersion": {
+        "generada": "Generada",
+        "enviada": "Enviada",
+        "aceptada": "Aceptada",
+        "rechazada": "Rechazada"
+      },
+      "prob": {
+        "title": "Probabilidad de aprobación",
+        "sinEstimar": "Sin estimar",
+        "nivel": {
+          "1": "Muy baja",
+          "2": "Baja",
+          "3": "Media",
+          "4": "Alta",
+          "5": "Confirmada"
+        },
+        "aviso100": "Un 100 % de probabilidad marca la propuesta vigente como ACEPTADA. Aprobar el proyecto sigue siendo un acto manual desde el mando de estado.",
+        "guardada": "Probabilidad guardada."
+      },
+      "seg": {
+        "title": "Seguimiento",
+        "anadir": "Añadir interacción",
+        "ph": "Anota lo hablado o acordado con el cliente…",
+        "enviar": "Añadir al seguimiento",
+        "vacio": "Aún no hay interacciones registradas.",
+        "automatico": "automático"
+      },
+      "msgs": {
+        "guardado": "Propuesta guardada.",
+        "sinCambios": "No hay cambios que guardar.",
+        "eliminarConfirm": "Se elimina el detalle de la propuesta y el proyecto vuelve a no tener propuesta. ¿Continuar?",
+        "eliminada": "Propuesta eliminada.",
+        "desbloqueada": "Propuesta desbloqueada: el detalle vuelve a ser editable.",
+        "estadoCambiado": "La versión {{numero}} pasa a «{{estado}}».",
+        "bloqueada": "La propuesta está bloqueada por una versión generada. Desbloquéala para editar el detalle.",
+        "soloLectura": "Este estado del proyecto deja la propuesta en solo lectura.",
+        "externaIncompleta": "Una propuesta externa necesita su documento y su importe antes de generarse."
+      }
     }
   },
   "revisiones": {

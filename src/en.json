@@ -2504,7 +2504,9 @@
       "soloLectura": "This status leaves the record read-only.",
       "fijoTitle": "The project was born here: moving it elsewhere would be another project.",
       "todoElEmplazamiento": "The whole site",
-      "nZonas": "{{count}} zones"
+      "nZonas": "{{count}} zones",
+      "propuesta": "Proposal",
+      "sinPropuesta": "No proposal"
     },
     "planificacion": {
       "ventana": "Execution window",
@@ -2609,6 +2611,157 @@
     "descartados": {
       "mes": "Projects of the month",
       "mesTitle": "Projects whose tentative date fell in that month, in any year"
+    },
+    "propuesta": {
+      "cero": {
+        "crear": "Create quote",
+        "externa": "Upload external quote",
+        "hint": "A proposal is either composed here on the configured prices or uploaded as an external document. The origin is fixed when chosen and never mixed."
+      },
+      "estado": {
+        "componiendo": "Composing",
+        "bloqueada": "Generated and locked",
+        "desbloqueada": "Unlocked"
+      },
+      "top": {
+        "guardar": "Save",
+        "generar": "Generate",
+        "eliminar": "Delete",
+        "eliminarTitle": "Deletes the detail and goes back to the start",
+        "eliminarBloqueado": "Once versions exist the proposal can no longer be deleted: what was issued does not disappear",
+        "desbloquear": "Unlock",
+        "descargar": "Download"
+      },
+      "detalle": "Line items",
+      "documento": "Quote document",
+      "externa": {
+        "adjuntar": "Attach document",
+        "adjuntarHint": "PDF, DOCX or similar",
+        "cambiar": "Click to replace the document",
+        "adjunto": "Document attached",
+        "subiendo": "Uploading…",
+        "importe": "Amount",
+        "emision": "Issue date",
+        "validez": "Valid until",
+        "validoHasta": "Valid until {{fecha}}"
+      },
+      "bandas": {
+        "revision": "Equipment inspection",
+        "revisionSrc": "per inspection prices",
+        "otros": "Other products",
+        "otrosSrc": "per the other-products catalogue",
+        "libre": "Free items",
+        "libreSrc": "typed directly into the quote",
+        "sinLineas": "No lines",
+        "lineas": "{{count}} line · {{importe}}",
+        "lineas_other": "{{count}} lines · {{importe}}",
+        "elementos": "{{count}} item · {{importe}}",
+        "elementos_other": "{{count}} items · {{importe}}",
+        "enConstruccion": "This block arrives in a later task."
+      },
+      "revision": {
+        "vacio": "No equipment loaded yet.",
+        "vacioHint": "Load the equipment to inspect from the site zones; it is aggregated by type according to its inspection price rule.",
+        "vacioRo": "This version does not include equipment inspection.",
+        "cargar": "Load from site",
+        "recargar": "Reload from site",
+        "recargarHint": "Reloading replaces the current rows.",
+        "cargado": "Census loaded into the inspection block.",
+        "sinEmplazamiento": "The project has no site assigned",
+        "sinEmplazamientoHint": "To quote the inspection from an existing site, assign it first in the Project data tab. If it is not described yet, compose the block by hand with units per type.",
+        "manual": "Compose by hand per units",
+        "manualPendiente": "Manual composition by type arrives with the next task.",
+        "sinMultiplicador": "no measure"
+      },
+      "libre": {
+        "vacio": "No items added yet.",
+        "vacioHint": "Direct lines that come from no parameter: type the concept, units, unit price and discount.",
+        "vacioRo": "This version does not include free items.",
+        "anadir": "Add item",
+        "conceptoPh": "Type the concept…"
+      },
+      "cols": {
+        "tipo": "Equipment type",
+        "concepto": "Concept",
+        "uds": "Units",
+        "mult": "Multiplier",
+        "precio": "Unit price",
+        "dto": "Disc. (%)",
+        "subtotal": "Subtotal",
+        "quitar": "Remove"
+      },
+      "tot": {
+        "suma": "Sum of items",
+        "dtoCliente": "Customer discount",
+        "total": "Proposal total"
+      },
+      "gen": {
+        "title": "Generate proposal",
+        "lead": "Set the quote dates before generating it. The version stores the frozen detail and its amount; the PDF will come with the reports engine.",
+        "emision": "Issue date",
+        "validez": "Valid until",
+        "confirmar": "Generate",
+        "generada": "Version {{numero}} generated. The detail is now locked."
+      },
+      "versiones": {
+        "title": "Proposal versions",
+        "version": "Version",
+        "origen": "Origin",
+        "importe": "Amount",
+        "emision": "Issued",
+        "validez": "Valid until",
+        "envio": "Sent",
+        "estado": "Status",
+        "vigente": "current",
+        "vigenteTitle": "Reflected in the line items",
+        "caducada": "expired",
+        "dias": "{{count}} day",
+        "dias_other": "{{count}} days",
+        "cambiarEstado": "Change status",
+        "descargar": "Download document"
+      },
+      "origenVersion": {
+        "interna": "Created here",
+        "externa": "External"
+      },
+      "estadoVersion": {
+        "generada": "Generated",
+        "enviada": "Sent",
+        "aceptada": "Accepted",
+        "rechazada": "Rejected"
+      },
+      "prob": {
+        "title": "Approval probability",
+        "sinEstimar": "Not estimated",
+        "nivel": {
+          "1": "Very low",
+          "2": "Low",
+          "3": "Medium",
+          "4": "High",
+          "5": "Confirmed"
+        },
+        "aviso100": "A 100 % probability marks the current proposal as ACCEPTED. Approving the project is still a manual act from the status control.",
+        "guardada": "Probability saved."
+      },
+      "seg": {
+        "title": "Follow-up",
+        "anadir": "Add interaction",
+        "ph": "Note what was discussed or agreed with the customer…",
+        "enviar": "Add to follow-up",
+        "vacio": "No interactions recorded yet.",
+        "automatico": "automatic"
+      },
+      "msgs": {
+        "guardado": "Proposal saved.",
+        "sinCambios": "Nothing to save.",
+        "eliminarConfirm": "The proposal detail will be deleted and the project goes back to having no proposal. Continue?",
+        "eliminada": "Proposal deleted.",
+        "desbloqueada": "Proposal unlocked: the detail is editable again.",
+        "estadoCambiado": "Version {{numero}} is now \"{{estado}}\".",
+        "bloqueada": "The proposal is locked by a generated version. Unlock it to edit the detail.",
+        "soloLectura": "This project status leaves the proposal read-only.",
+        "externaIncompleta": "An external proposal needs its document and amount before it can be generated."
+      }
     }
   },
   "revisiones": {

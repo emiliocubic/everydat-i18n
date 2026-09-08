@@ -2504,7 +2504,9 @@
       "soloLectura": "Cet état laisse la fiche en lecture seule.",
       "fijoTitle": "Le projet est né ici : le déplacer serait un autre projet.",
       "todoElEmplazamiento": "Tout le site",
-      "nZonas": "{{count}} zones"
+      "nZonas": "{{count}} zones",
+      "propuesta": "Proposition",
+      "sinPropuesta": "Sans proposition"
     },
     "planificacion": {
       "ventana": "Fenêtre d'exécution",
@@ -2609,6 +2611,157 @@
     "descartados": {
       "mes": "Projets du mois",
       "mesTitle": "Projets dont la date prévue tombait ce mois-là, quelle que soit l'année"
+    },
+    "propuesta": {
+      "cero": {
+        "crear": "Créer un devis",
+        "externa": "Charger un devis externe",
+        "hint": "Une proposition se compose ici sur les prix paramétrés ou se charge depuis un document externe. L'origine est fixée au choix et ne se mélange pas."
+      },
+      "estado": {
+        "componiendo": "En composition",
+        "bloqueada": "Générée et verrouillée",
+        "desbloqueada": "Déverrouillée"
+      },
+      "top": {
+        "guardar": "Enregistrer",
+        "generar": "Générer",
+        "eliminar": "Supprimer",
+        "eliminarTitle": "Supprime le détail et revient au début",
+        "eliminarBloqueado": "Avec des versions générées, la proposition ne se supprime plus : ce qui a été émis ne disparaît pas",
+        "desbloquear": "Déverrouiller",
+        "descargar": "Télécharger"
+      },
+      "detalle": "Détail des concepts",
+      "documento": "Document du devis",
+      "externa": {
+        "adjuntar": "Joindre un document",
+        "adjuntarHint": "PDF, DOCX ou similaire",
+        "cambiar": "Cliquez pour changer le document",
+        "adjunto": "Document joint",
+        "subiendo": "Envoi…",
+        "importe": "Montant",
+        "emision": "Date d'émission",
+        "validez": "Date de validité",
+        "validoHasta": "Valide jusqu'au {{fecha}}"
+      },
+      "bandas": {
+        "revision": "Révision des équipements",
+        "revisionSrc": "selon les prix de révision",
+        "otros": "Autres produits",
+        "otrosSrc": "selon le catalogue des autres produits",
+        "libre": "Concepts libres",
+        "libreSrc": "saisis directement dans le devis",
+        "sinLineas": "Sans lignes",
+        "lineas": "{{count}} ligne · {{importe}}",
+        "lineas_other": "{{count}} lignes · {{importe}}",
+        "elementos": "{{count}} équipement · {{importe}}",
+        "elementos_other": "{{count}} équipements · {{importe}}",
+        "enConstruccion": "Ce bloc arrive dans une tâche ultérieure."
+      },
+      "revision": {
+        "vacio": "Aucun équipement chargé pour l'instant.",
+        "vacioHint": "Chargez les équipements à réviser depuis les zones du site ; ils sont agrégés par type selon leur critère de prix.",
+        "vacioRo": "Cette version n'inclut pas de révision d'équipements.",
+        "cargar": "Charger depuis le site",
+        "recargar": "Recharger depuis le site",
+        "recargarHint": "Recharger remplace les lignes actuelles.",
+        "cargado": "Recensement chargé dans le bloc de révision.",
+        "sinEmplazamiento": "Le projet n'a pas de site assigné",
+        "sinEmplazamientoHint": "Pour chiffrer la révision à partir d'un site existant, assignez-le d'abord dans l'onglet Données du projet. S'il n'est pas encore décrit, composez le bloc à la main avec des unités par type.",
+        "manual": "Composer à la main par unités",
+        "manualPendiente": "La composition manuelle par type arrive avec la tâche suivante.",
+        "sinMultiplicador": "sans mesure"
+      },
+      "libre": {
+        "vacio": "Aucun concept ajouté pour l'instant.",
+        "vacioHint": "Lignes directes qui ne proviennent d'aucun paramètre : saisissez le concept, les unités, le prix unitaire et la remise.",
+        "vacioRo": "Cette version n'inclut pas de concepts libres.",
+        "anadir": "Ajouter un concept",
+        "conceptoPh": "Saisissez le concept…"
+      },
+      "cols": {
+        "tipo": "Type d'équipement",
+        "concepto": "Concept",
+        "uds": "Unités",
+        "mult": "Multiplicateur",
+        "precio": "Prix unitaire",
+        "dto": "Remise (%)",
+        "subtotal": "Sous-total",
+        "quitar": "Retirer"
+      },
+      "tot": {
+        "suma": "Somme des concepts",
+        "dtoCliente": "Remise client",
+        "total": "Total de la proposition"
+      },
+      "gen": {
+        "title": "Générer la proposition",
+        "lead": "Fixez les dates du devis avant de le générer. La version conserve le détail figé et son montant ; le PDF viendra avec le moteur de rapports.",
+        "emision": "Date d'émission",
+        "validez": "Date de validité",
+        "confirmar": "Générer",
+        "generada": "Version {{numero}} générée. Le détail est verrouillé."
+      },
+      "versiones": {
+        "title": "Versions de la proposition",
+        "version": "Version",
+        "origen": "Origine",
+        "importe": "Montant",
+        "emision": "Émission",
+        "validez": "Validité",
+        "envio": "Envoi",
+        "estado": "Statut",
+        "vigente": "en vigueur",
+        "vigenteTitle": "Reflétée dans le détail des concepts",
+        "caducada": "expirée",
+        "dias": "{{count}} jour",
+        "dias_other": "{{count}} jours",
+        "cambiarEstado": "Changer le statut",
+        "descargar": "Télécharger le document"
+      },
+      "origenVersion": {
+        "interna": "Créée ici",
+        "externa": "Externe"
+      },
+      "estadoVersion": {
+        "generada": "Générée",
+        "enviada": "Envoyée",
+        "aceptada": "Acceptée",
+        "rechazada": "Refusée"
+      },
+      "prob": {
+        "title": "Probabilité d'approbation",
+        "sinEstimar": "Non estimée",
+        "nivel": {
+          "1": "Très faible",
+          "2": "Faible",
+          "3": "Moyenne",
+          "4": "Élevée",
+          "5": "Confirmée"
+        },
+        "aviso100": "Une probabilité de 100 % marque la proposition en vigueur comme ACCEPTÉE. Approuver le projet reste un acte manuel depuis la commande d'état.",
+        "guardada": "Probabilité enregistrée."
+      },
+      "seg": {
+        "title": "Suivi",
+        "anadir": "Ajouter une interaction",
+        "ph": "Notez ce qui a été discuté ou convenu avec le client…",
+        "enviar": "Ajouter au suivi",
+        "vacio": "Aucune interaction enregistrée pour l'instant.",
+        "automatico": "automatique"
+      },
+      "msgs": {
+        "guardado": "Proposition enregistrée.",
+        "sinCambios": "Rien à enregistrer.",
+        "eliminarConfirm": "Le détail de la proposition sera supprimé et le projet n'aura plus de proposition. Continuer ?",
+        "eliminada": "Proposition supprimée.",
+        "desbloqueada": "Proposition déverrouillée : le détail est à nouveau modifiable.",
+        "estadoCambiado": "La version {{numero}} passe à « {{estado}} ».",
+        "bloqueada": "La proposition est verrouillée par une version générée. Déverrouillez-la pour modifier le détail.",
+        "soloLectura": "Cet état du projet laisse la proposition en lecture seule.",
+        "externaIncompleta": "Une proposition externe a besoin de son document et de son montant avant d'être générée."
+      }
     }
   },
   "revisiones": {
