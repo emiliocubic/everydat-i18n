@@ -2273,6 +2273,27 @@
         "hint": "Al desactivarlo se sigue planificando de forma sencilla desde la ficha del proyecto.",
         "noContratado": "La licencia de esta instancia no incluye el planificador.",
         "avisoCoste": "Activar el planificador tiene un coste independiente y da de alta el módulo en modo de prueba de 30 días. ¿Continuar?"
+      },
+      "grupoPresupuesto": "Parámetros presupuestarios",
+      "precios": {
+        "title": "Precios de revisión",
+        "desc": "Los importes unitarios de revisión con los que se compone un presupuesto. El importe puede ser fijo por unidad de equipo, o depender de un valor del propio equipo: el precio por metro de una línea de vida, o por cada punto de anclaje que la compone.",
+        "nota": "Solo los campos numéricos del tipo pueden multiplicar el precio: por un texto no se multiplica.",
+        "vacio": "Todavía no hay tipos de elemento en el catálogo.",
+        "conImporte": "{{n}}/{{total}} con importe",
+        "colTipo": "Tipo de elemento",
+        "colCriterio": "Criterio",
+        "colCampo": "Variable de cálculo",
+        "colImporte": "Importe de revisión",
+        "criterio": {
+          "fijo": "Fijo por unidad",
+          "por_campo": "Por valor de un campo",
+          "base_mas_campo": "Fijo más valor de un campo"
+        },
+        "porUnidad": "€ / ud.",
+        "porMedida": "€ / unidad de medida",
+        "base": "Fijo por unidad",
+        "sinCampos": "Sin campos numéricos"
       }
     }
   },
@@ -2671,7 +2692,9 @@
         "sinEmplazamientoHint": "Para presupuestar la revisión a partir de un emplazamiento existente, asígnalo antes en la pestaña Datos proyecto. Si aún no está descrito, compón el bloque a mano poniendo unidades por tipo.",
         "manual": "Componer a mano por unidades",
         "manualPendiente": "La composición a mano por tipos llega con la siguiente tarea.",
-        "sinMultiplicador": "sin medida"
+        "sinMultiplicador": "sin medida",
+        "editarManual": "Editar unidades a mano",
+        "editarManualHint": "Reabre el catálogo con las unidades ya puestas."
       },
       "libre": {
         "vacio": "Aún no has añadido conceptos.",
@@ -2761,6 +2784,30 @@
         "bloqueada": "La propuesta está bloqueada por una versión generada. Desbloquéala para editar el detalle.",
         "soloLectura": "Este estado del proyecto deja la propuesta en solo lectura.",
         "externaIncompleta": "Una propuesta externa necesita su documento y su importe antes de generarse."
+      },
+      "censo": {
+        "title": "Cargar elementos a revisar",
+        "lead": "Marca las zonas del emplazamiento. Los equipos se agregan por tipo según su criterio de precio de revisión.",
+        "sinZonas": "Este emplazamiento no está zonificado: se carga el censo entero.",
+        "todoElEmplazamiento": "Sin ninguna zona marcada se carga el emplazamiento entero.",
+        "saldria": "Lo que se cargaría",
+        "vacio": "No hay equipos en servicio en la selección.",
+        "sinTarifa": "sin tarifa",
+        "resumen": "{{filas}} líneas · {{equipos}} equipos · {{importe}}",
+        "cargar": "Cargar en la propuesta"
+      },
+      "manual": {
+        "title": "Revisión por unidades",
+        "lead": "Pon las unidades a revisar de cada tipo del catálogo. Si un tipo tiene medidas distintas, duplica su fila.",
+        "buscar": "Buscar tipo o familia…",
+        "soloConUds": "Solo con unidades",
+        "sinCatalogo": "No hay tipos de elemento con precio de revisión parametrizado.",
+        "duplicar": "Duplicar fila",
+        "faltaMedida": "falta la medida",
+        "incompletas": "{{count}} fila sin medida",
+        "incompletas_other": "{{count}} filas sin medida",
+        "ponUnidades": "Pon unidades en al menos un tipo",
+        "anadir": "Añadir a la propuesta"
       }
     }
   },

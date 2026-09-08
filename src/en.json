@@ -2273,6 +2273,27 @@
         "hint": "When off, simple planning continues from the project record.",
         "noContratado": "This instance's licence does not include the planner.",
         "avisoCoste": "Enabling the planner has a separate cost and starts the module in a 30-day trial. Continue?"
+      },
+      "grupoPresupuesto": "Quoting parameters",
+      "precios": {
+        "title": "Inspection prices",
+        "desc": "The unit inspection prices a quote is built from. The amount can be fixed per item, or depend on a value of the item itself: the price per metre of a lifeline, or per anchor point it is made of.",
+        "nota": "Only the numeric fields of the type can multiply the price: you do not multiply by text.",
+        "vacio": "There are no equipment types in the catalogue yet.",
+        "conImporte": "{{n}}/{{total}} priced",
+        "colTipo": "Equipment type",
+        "colCriterio": "Rule",
+        "colCampo": "Calculation variable",
+        "colImporte": "Inspection price",
+        "criterio": {
+          "fijo": "Fixed per unit",
+          "por_campo": "Per field value",
+          "base_mas_campo": "Fixed plus field value"
+        },
+        "porUnidad": "€ / unit",
+        "porMedida": "€ / measure unit",
+        "base": "Fixed per unit",
+        "sinCampos": "No numeric fields"
       }
     }
   },
@@ -2671,7 +2692,9 @@
         "sinEmplazamientoHint": "To quote the inspection from an existing site, assign it first in the Project data tab. If it is not described yet, compose the block by hand with units per type.",
         "manual": "Compose by hand per units",
         "manualPendiente": "Manual composition by type arrives with the next task.",
-        "sinMultiplicador": "no measure"
+        "sinMultiplicador": "no measure",
+        "editarManual": "Edit units by hand",
+        "editarManualHint": "Reopens the catalogue with the units already entered."
       },
       "libre": {
         "vacio": "No items added yet.",
@@ -2761,6 +2784,30 @@
         "bloqueada": "The proposal is locked by a generated version. Unlock it to edit the detail.",
         "soloLectura": "This project status leaves the proposal read-only.",
         "externaIncompleta": "An external proposal needs its document and amount before it can be generated."
+      },
+      "censo": {
+        "title": "Load equipment to inspect",
+        "lead": "Tick the site zones. Equipment is aggregated by type according to its inspection price rule.",
+        "sinZonas": "This site has no zones: the whole census is loaded.",
+        "todoElEmplazamiento": "With no zone ticked the whole site is loaded.",
+        "saldria": "What would be loaded",
+        "vacio": "No in-service equipment in the selection.",
+        "sinTarifa": "no price",
+        "resumen": "{{filas}} lines · {{equipos}} items · {{importe}}",
+        "cargar": "Load into the proposal"
+      },
+      "manual": {
+        "title": "Inspection by units",
+        "lead": "Enter the units to inspect for each catalogue type. If a type comes in different measures, duplicate its row.",
+        "buscar": "Search type or family…",
+        "soloConUds": "Only with units",
+        "sinCatalogo": "There are no equipment types with an inspection price set.",
+        "duplicar": "Duplicate row",
+        "faltaMedida": "measure missing",
+        "incompletas": "{{count}} row without measure",
+        "incompletas_other": "{{count}} rows without measure",
+        "ponUnidades": "Enter units in at least one type",
+        "anadir": "Add to the proposal"
       }
     }
   },

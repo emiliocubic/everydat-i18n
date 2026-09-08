@@ -2273,6 +2273,27 @@
         "hint": "Désactivé, la planification simple continue depuis la fiche du projet.",
         "noContratado": "La licence de cette instance n'inclut pas le planificateur.",
         "avisoCoste": "Activer le planificateur a un coût indépendant et ouvre le module en essai de 30 jours. Continuer ?"
+      },
+      "grupoPresupuesto": "Paramètres de devis",
+      "precios": {
+        "title": "Prix de révision",
+        "desc": "Les prix unitaires de révision avec lesquels se compose un devis. Le montant peut être fixe par unité, ou dépendre d'une valeur de l'équipement : le prix au mètre d'une ligne de vie, ou par point d'ancrage qui la compose.",
+        "nota": "Seuls les champs numériques du type peuvent multiplier le prix : on ne multiplie pas par un texte.",
+        "vacio": "Il n'y a pas encore de types d'équipement au catalogue.",
+        "conImporte": "{{n}}/{{total}} avec montant",
+        "colTipo": "Type d'équipement",
+        "colCriterio": "Critère",
+        "colCampo": "Variable de calcul",
+        "colImporte": "Montant de révision",
+        "criterio": {
+          "fijo": "Fixe par unité",
+          "por_campo": "Selon la valeur d'un champ",
+          "base_mas_campo": "Fixe plus valeur d'un champ"
+        },
+        "porUnidad": "€ / u.",
+        "porMedida": "€ / unité de mesure",
+        "base": "Fixe par unité",
+        "sinCampos": "Sans champs numériques"
       }
     }
   },
@@ -2671,7 +2692,9 @@
         "sinEmplazamientoHint": "Pour chiffrer la révision à partir d'un site existant, assignez-le d'abord dans l'onglet Données du projet. S'il n'est pas encore décrit, composez le bloc à la main avec des unités par type.",
         "manual": "Composer à la main par unités",
         "manualPendiente": "La composition manuelle par type arrive avec la tâche suivante.",
-        "sinMultiplicador": "sans mesure"
+        "sinMultiplicador": "sans mesure",
+        "editarManual": "Modifier les unités à la main",
+        "editarManualHint": "Rouvre le catalogue avec les unités déjà saisies."
       },
       "libre": {
         "vacio": "Aucun concept ajouté pour l'instant.",
@@ -2761,6 +2784,30 @@
         "bloqueada": "La proposition est verrouillée par une version générée. Déverrouillez-la pour modifier le détail.",
         "soloLectura": "Cet état du projet laisse la proposition en lecture seule.",
         "externaIncompleta": "Une proposition externe a besoin de son document et de son montant avant d'être générée."
+      },
+      "censo": {
+        "title": "Charger les équipements à réviser",
+        "lead": "Cochez les zones du site. Les équipements sont agrégés par type selon leur critère de prix de révision.",
+        "sinZonas": "Ce site n'est pas zoné : le recensement entier est chargé.",
+        "todoElEmplazamiento": "Sans zone cochée, le site entier est chargé.",
+        "saldria": "Ce qui serait chargé",
+        "vacio": "Aucun équipement en service dans la sélection.",
+        "sinTarifa": "sans tarif",
+        "resumen": "{{filas}} lignes · {{equipos}} équipements · {{importe}}",
+        "cargar": "Charger dans la proposition"
+      },
+      "manual": {
+        "title": "Révision par unités",
+        "lead": "Saisissez les unités à réviser de chaque type du catalogue. Si un type a des mesures différentes, dupliquez sa ligne.",
+        "buscar": "Chercher un type ou une famille…",
+        "soloConUds": "Seulement avec unités",
+        "sinCatalogo": "Aucun type d'équipement n'a de prix de révision paramétré.",
+        "duplicar": "Dupliquer la ligne",
+        "faltaMedida": "mesure manquante",
+        "incompletas": "{{count}} ligne sans mesure",
+        "incompletas_other": "{{count}} lignes sans mesure",
+        "ponUnidades": "Saisissez des unités dans au moins un type",
+        "anadir": "Ajouter à la proposition"
       }
     }
   },
