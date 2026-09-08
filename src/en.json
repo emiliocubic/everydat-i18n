@@ -2294,6 +2294,26 @@
         "porMedida": "€ / measure unit",
         "base": "Fixed per unit",
         "sinCampos": "No numeric fields"
+      },
+      "otros": {
+        "title": "Other products",
+        "desc": "The catalogue of what you invoice and is not equipment: working days and hours, allowances and travel, machinery use, repairs. It is what a proposal offers you to pick from.",
+        "nota": "The group is just a folder: it makes a long quote readable and changes no amount.",
+        "vacio": "There are no product groups yet.",
+        "grupoVacio": "This group has no products yet.",
+        "grupoNombre": "Group name",
+        "grupoPh": "e.g. Allowances and travel",
+        "grupoSinNombre": "Unnamed group",
+        "nProductos": "{{count}} product",
+        "nProductos_other": "{{count}} products",
+        "quitarGrupo": "Remove the group with its products",
+        "anadirGrupo": "Add group",
+        "anadirProducto": "Add product",
+        "colNombre": "Product",
+        "colDesc": "Description",
+        "colPrecio": "Price",
+        "nombrePh": "e.g. Technician day",
+        "descPh": "What it is for, in one line"
       }
     }
   },
@@ -2808,6 +2828,11 @@
         "incompletas_other": "{{count}} rows without measure",
         "ponUnidades": "Enter units in at least one type",
         "anadir": "Add to the proposal"
+      },
+      "otros": {
+        "colProducto": "Product",
+        "sinCatalogo": "There are no products in the catalogue. They are set up in Configuration, general parameters.",
+        "vacioRo": "This version does not include other products."
       }
     }
   },

@@ -2294,6 +2294,26 @@
         "porMedida": "€ / unité de mesure",
         "base": "Fixe par unité",
         "sinCampos": "Sans champs numériques"
+      },
+      "otros": {
+        "title": "Autres produits",
+        "desc": "Le catalogue de ce que vous facturez et qui n'est pas un équipement : journées et heures de travail, indemnités et déplacements, usage de machines, réparations. C'est ce que propose la composition d'une proposition.",
+        "nota": "Le groupe n'est qu'un dossier : il rend lisible un devis long et ne change aucun montant.",
+        "vacio": "Il n'y a encore aucun groupe de produits.",
+        "grupoVacio": "Ce groupe n'a pas encore de produits.",
+        "grupoNombre": "Nom du groupe",
+        "grupoPh": "p. ex. Indemnités et déplacements",
+        "grupoSinNombre": "Groupe sans nom",
+        "nProductos": "{{count}} produit",
+        "nProductos_other": "{{count}} produits",
+        "quitarGrupo": "Retirer le groupe avec ses produits",
+        "anadirGrupo": "Ajouter un groupe",
+        "anadirProducto": "Ajouter un produit",
+        "colNombre": "Produit",
+        "colDesc": "Description",
+        "colPrecio": "Prix",
+        "nombrePh": "p. ex. Journée d'opérateur",
+        "descPh": "À quoi il sert, en une ligne"
       }
     }
   },
@@ -2808,6 +2828,11 @@
         "incompletas_other": "{{count}} lignes sans mesure",
         "ponUnidades": "Saisissez des unités dans au moins un type",
         "anadir": "Ajouter à la proposition"
+      },
+      "otros": {
+        "colProducto": "Produit",
+        "sinCatalogo": "Aucun produit au catalogue. Ils se créent dans Configuration, paramètres généraux.",
+        "vacioRo": "Cette version n'inclut pas d'autres produits."
       }
     }
   },

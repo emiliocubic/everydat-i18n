@@ -2294,6 +2294,26 @@
         "porMedida": "€ / unidad de medida",
         "base": "Fijo por unidad",
         "sinCampos": "Sin campos numéricos"
+      },
+      "otros": {
+        "title": "Otros productos",
+        "desc": "El catálogo de lo que facturas y no es un equipo: jornadas y horas de trabajo, dietas y desplazamientos, uso de maquinaria, reparaciones. Es lo que se ofrece al componer una propuesta.",
+        "nota": "El grupo es solo una carpeta: ordena la lectura de un presupuesto largo y no cambia ningún importe.",
+        "vacio": "Todavía no hay ningún grupo de productos.",
+        "grupoVacio": "Este grupo aún no tiene productos.",
+        "grupoNombre": "Nombre del grupo",
+        "grupoPh": "p. ej. Dietas y desplazamientos",
+        "grupoSinNombre": "Grupo sin nombre",
+        "nProductos": "{{count}} producto",
+        "nProductos_other": "{{count}} productos",
+        "quitarGrupo": "Quitar el grupo con sus productos",
+        "anadirGrupo": "Añadir grupo",
+        "anadirProducto": "Añadir producto",
+        "colNombre": "Producto",
+        "colDesc": "Descripción",
+        "colPrecio": "Precio",
+        "nombrePh": "p. ej. Jornada de operario",
+        "descPh": "Para qué es, en una línea"
       }
     }
   },
@@ -2808,6 +2828,11 @@
         "incompletas_other": "{{count}} filas sin medida",
         "ponUnidades": "Pon unidades en al menos un tipo",
         "anadir": "Añadir a la propuesta"
+      },
+      "otros": {
+        "colProducto": "Producto",
+        "sinCatalogo": "No hay productos en el catálogo. Se dan de alta en Configuración, Parámetros generales.",
+        "vacioRo": "Esta versión no incluye otros productos."
       }
     }
   },
