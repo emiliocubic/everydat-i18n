@@ -1681,11 +1681,13 @@
           "title": "Model checklist",
           "resumen_one": "{{count}} checklist",
           "resumen_other": "{{count}} checklists",
-          "gestionar": "Manage in Checklists by model",
-          "vacio": "This model has no checklist of its own: its items are inspected with the checklist of their type.",
+          "gestionar": "Manage in Checklists",
+          "vacio": "Neither the model nor its type has a checklist yet: its items are inspected without a script.",
           "nCheckpoints_one": "{{count}} checkpoint",
           "nCheckpoints_other": "{{count}} checkpoints",
-          "sinItems": "This checklist has no checkpoints yet."
+          "sinItems": "This checklist has no checkpoints yet.",
+          "delTipo_one": "no checklist of its own: its type's «{{tipo}}» ({{count}} checklist)",
+          "delTipo_other": "no checklist of its own: its type's «{{tipo}}» ({{count}} checklists)"
         }
       }
     },
@@ -1935,9 +1937,9 @@
         "aria": "Checklist starting point",
         "q": "How do you want to create the checklist for",
         "sub": "Choose a starting point; you can freely edit the checklist afterwards.",
-        "iaTitle": "Load AI-suggested checklist",
-        "iaDesc": "Starts from a set of checkpoints generated automatically from the standards that apply to the element type.",
-        "iaNoNormas": "This type has no standards assigned, so there is no checklist to suggest. Create it manually.",
+        "iaTitle": "Compose from the type's standards",
+        "iaDesc": "Start from the canonical checkpoints of the standards that apply to the item type, deduplicated; then edit freely.",
+        "iaNoNormas": "This type has no standards assigned, so there is nothing to compose. Create it manually.",
         "counting": "Calculating…",
         "nSug_one": "{{count}} suggested checkpoint",
         "nSug_other": "{{count}} suggested checkpoints",

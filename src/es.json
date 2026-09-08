@@ -1681,11 +1681,13 @@
           "title": "Checklist del modelo",
           "resumen_one": "{{count}} checklist",
           "resumen_other": "{{count}} checklists",
-          "gestionar": "Gestionar en Checklists por modelo",
-          "vacio": "Este modelo no tiene checklist propio: sus elementos se revisan con el checklist de su tipo.",
+          "gestionar": "Gestionar en Checklists",
+          "vacio": "Ni el modelo ni su tipo tienen checklist todavía: sus elementos se revisan sin guion.",
           "nCheckpoints_one": "{{count}} checkpoint",
           "nCheckpoints_other": "{{count}} checkpoints",
-          "sinItems": "Este checklist todavía no tiene checkpoints."
+          "sinItems": "Este checklist todavía no tiene checkpoints.",
+          "delTipo_one": "sin checklist propio: el de su tipo «{{tipo}}» ({{count}} checklist)",
+          "delTipo_other": "sin checklist propio: los de su tipo «{{tipo}}» ({{count}} checklists)"
         }
       }
     },
@@ -1935,9 +1937,9 @@
         "aria": "Punto de partida del checklist",
         "q": "¿Cómo quieres crear el checklist de",
         "sub": "Elige un punto de partida; después podrás editar el checklist libremente.",
-        "iaTitle": "Cargar checklist sugerido por IA",
-        "iaDesc": "Parte de una colección de checkpoints generados automáticamente a partir de la normativa que aplica al tipo de elemento.",
-        "iaNoNormas": "Este tipo no tiene normas asignadas, así que no hay checklist que sugerir. Créalo manualmente.",
+        "iaTitle": "Componer desde las normas del tipo",
+        "iaDesc": "Parte de los checkpoints del canon de las normas que aplican al tipo de elemento, deduplicados; después lo editas libremente.",
+        "iaNoNormas": "Este tipo no tiene normas asignadas, así que no hay nada que componer. Créalo manualmente.",
         "counting": "Calculando…",
         "nSug_one": "{{count}} checkpoint sugerido",
         "nSug_other": "{{count}} checkpoints sugeridos",

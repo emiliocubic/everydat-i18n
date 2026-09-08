@@ -1681,11 +1681,13 @@
           "title": "Checklist du modèle",
           "resumen_one": "{{count}} checklist",
           "resumen_other": "{{count}} checklists",
-          "gestionar": "Gérer dans Checklists par modèle",
-          "vacio": "Ce modèle n’a pas de checklist propre : ses éléments sont révisés avec la checklist de leur type.",
+          "gestionar": "Gérer dans Checklists",
+          "vacio": "Ni le modèle ni son type n’ont encore de checklist : ses éléments sont révisés sans guide.",
           "nCheckpoints_one": "{{count}} checkpoint",
           "nCheckpoints_other": "{{count}} checkpoints",
-          "sinItems": "Cette checklist n’a pas encore de checkpoints."
+          "sinItems": "Cette checklist n’a pas encore de checkpoints.",
+          "delTipo_one": "sans checklist propre : celle de son type « {{tipo}} » ({{count}} checklist)",
+          "delTipo_other": "sans checklist propre : celles de son type « {{tipo}} » ({{count}} checklists)"
         }
       }
     },
@@ -1935,9 +1937,9 @@
         "aria": "Point de départ de la checklist",
         "q": "Comment voulez-vous créer la checklist de",
         "sub": "Choisissez un point de départ ; vous pourrez ensuite modifier librement la checklist.",
-        "iaTitle": "Charger la checklist suggérée par l'IA",
-        "iaDesc": "Part d'un ensemble de points de contrôle générés automatiquement à partir des normes applicables au type d'élément.",
-        "iaNoNormas": "Ce type n'a aucune norme assignée, il n'y a donc pas de checklist à suggérer. Créez-la manuellement.",
+        "iaTitle": "Composer depuis les normes du type",
+        "iaDesc": "Part des checkpoints du canon des normes applicables au type d’élément, dédupliqués ; ensuite modifiable librement.",
+        "iaNoNormas": "Ce type n’a aucune norme associée : il n’y a rien à composer. Créez-la manuellement.",
         "counting": "Calcul en cours…",
         "nSug_one": "{{count}} point de contrôle suggéré",
         "nSug_other": "{{count}} points de contrôle suggérés",
