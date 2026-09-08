@@ -2343,7 +2343,8 @@
         "colPrecio": "Precio",
         "nombrePh": "p. ej. Jornada de operario",
         "descPh": "Para qué es, en una línea"
-      }
+      },
+      "banda": "Parámetros generales de aplicación"
     }
   },
   "shell": {

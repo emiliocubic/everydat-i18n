@@ -2343,7 +2343,8 @@
         "colPrecio": "Prix",
         "nombrePh": "p. ex. Journée d'opérateur",
         "descPh": "À quoi il sert, en une ligne"
-      }
+      },
+      "banda": "Paramètres généraux de l’application"
     }
   },
   "shell": {

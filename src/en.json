@@ -2343,7 +2343,8 @@
         "colPrecio": "Price",
         "nombrePh": "e.g. Technician day",
         "descPh": "What it is for, in one line"
-      }
+      },
+      "banda": "General application settings"
     }
   },
   "shell": {
