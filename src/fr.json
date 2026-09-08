@@ -1731,7 +1731,10 @@
         "noCampos": "Cette norme n'a aucun champ suggéré.",
         "whenApplies": "Uniquement si applicable",
         "conditional": "Conditionnel"
-      }
+      },
+      "canonDetail": "Détail (lecture seule)",
+      "candadoTitle": "Norme préinstallée : elle ne se modifie ni ne se supprime.",
+      "canonNote": "Cette norme fait partie du canon curé par Cubic : consultable mais non modifiable. Les normes que vous créez vous-même se modifient et se suppriment."
     },
     "campos": {
       "create": "Nouveau champ",

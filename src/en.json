@@ -1731,7 +1731,10 @@
         "noCampos": "This standard has no suggested fields.",
         "whenApplies": "Only when applicable",
         "conditional": "Conditional"
-      }
+      },
+      "canonDetail": "Detail (read-only)",
+      "candadoTitle": "Preinstalled standard: it cannot be edited or deleted.",
+      "canonNote": "This standard is part of the canon curated by Cubic: it can be consulted but not edited. The standards you create yourself can be edited and deleted."
     },
     "campos": {
       "create": "New field",

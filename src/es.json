@@ -1731,7 +1731,10 @@
         "noCampos": "Esta norma no tiene campos sugeridos.",
         "whenApplies": "Solo cuando procede",
         "conditional": "Condicional"
-      }
+      },
+      "canonDetail": "Detalle (solo lectura)",
+      "candadoTitle": "Norma preinstalada: ni se edita ni se borra.",
+      "canonNote": "Esta norma forma parte del canon curado por Cubic: es consultable pero no editable. Las normas que crees tú sí se editan y se borran."
     },
     "campos": {
       "create": "Nuevo campo",
