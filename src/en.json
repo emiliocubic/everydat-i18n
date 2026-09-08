@@ -1737,7 +1737,9 @@
         "tipo": "Field type",
         "valores": "Values",
         "descripcion": "Description",
-        "origen": "Origin"
+        "origen": "Origin",
+        "usos": "Uses",
+        "usosTitle": "Number of standards using it"
       },
       "tipoLabel": "Field type",
       "familiaLabel": "Family",
@@ -1879,7 +1881,24 @@
         "editarCampo": "Edit field",
         "verCampo": "View field"
       },
-      "normasAria": "Standards"
+      "normasAria": "Standards",
+      "emptyHint": "No field matches the search or filters.",
+      "uso": {
+        "title": "Usage",
+        "normas": "Standards",
+        "sinNormas": "No standards assigned.",
+        "note": "This field appears on the items of {{normas}} and on the {{tipos}} that inherit it.",
+        "nNormas_one": "{{count}} standard",
+        "nNormas_other": "{{count}} standards",
+        "nTipos_one": "{{count}} item type",
+        "nTipos_other": "{{count}} item types",
+        "chipNormas_one": "standard",
+        "chipNormas_other": "standards",
+        "chipNormasTitle": "Standards using this field",
+        "chipTipos_one": "type",
+        "chipTipos_other": "types",
+        "chipTiposTitle": "Item types inheriting it"
+      }
     },
     "checklists": {
       "tabsAria": "Checklist views",
@@ -2186,7 +2205,9 @@
         "note": "“{{from}}” will cease to exist: its {{n}} items move to “{{to}}” with that type’s configuration (standards, fields and checklists). This cannot be undone.",
         "confirm": "Merge types",
         "done": "“{{from}}” was merged into “{{to}}”"
-      }
+      },
+      "familiaTodas": "All",
+      "filtrarFamilia": "Filter by family"
     },
     "parametros": {
       "grupoMarca": "Brand and language",

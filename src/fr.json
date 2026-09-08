@@ -1737,7 +1737,9 @@
         "tipo": "Type de champ",
         "valores": "Valeurs",
         "descripcion": "Description",
-        "origen": "Origine"
+        "origen": "Origine",
+        "usos": "Usages",
+        "usosTitle": "Nombre de normes qui l’utilisent"
       },
       "tipoLabel": "Type de champ",
       "familiaLabel": "Famille",
@@ -1879,7 +1881,24 @@
         "editarCampo": "Modifier le champ",
         "verCampo": "Voir le champ"
       },
-      "normasAria": "Normes"
+      "normasAria": "Normes",
+      "emptyHint": "Aucun champ ne correspond à la recherche ou aux filtres.",
+      "uso": {
+        "title": "Usage",
+        "normas": "Normes",
+        "sinNormas": "Aucune norme associée.",
+        "note": "Ce champ apparaît sur les éléments de {{normas}} et sur les {{tipos}} qui en héritent.",
+        "nNormas_one": "{{count}} norme",
+        "nNormas_other": "{{count}} normes",
+        "nTipos_one": "{{count}} type d’élément",
+        "nTipos_other": "{{count}} types d’élément",
+        "chipNormas_one": "norme",
+        "chipNormas_other": "normes",
+        "chipNormasTitle": "Normes qui utilisent ce champ",
+        "chipTipos_one": "type",
+        "chipTipos_other": "types",
+        "chipTiposTitle": "Types d’élément qui en héritent"
+      }
     },
     "checklists": {
       "tabsAria": "Vues des checklists",
@@ -2186,7 +2205,9 @@
         "note": "« {{from}} » cessera d’exister : ses {{n}} éléments passent à « {{to}} » avec la configuration de celui-ci (normes, champs et checklists). Action irréversible.",
         "confirm": "Fusionner les types",
         "done": "« {{from}} » a été fusionné dans « {{to}} »"
-      }
+      },
+      "familiaTodas": "Toutes",
+      "filtrarFamilia": "Filtrer par famille"
     },
     "parametros": {
       "grupoMarca": "Marque et langue",

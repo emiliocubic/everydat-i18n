@@ -1737,7 +1737,9 @@
         "tipo": "Tipo de campo",
         "valores": "Valores",
         "descripcion": "Descripción",
-        "origen": "Origen"
+        "origen": "Origen",
+        "usos": "Usos",
+        "usosTitle": "Nº de normas que lo usan"
       },
       "tipoLabel": "Tipo de campo",
       "familiaLabel": "Familia",
@@ -1879,7 +1881,24 @@
         "editarCampo": "Editar campo",
         "verCampo": "Ver campo"
       },
-      "normasAria": "Normas"
+      "normasAria": "Normas",
+      "emptyHint": "Ningún campo coincide con la búsqueda o los filtros.",
+      "uso": {
+        "title": "Uso",
+        "normas": "Normas",
+        "sinNormas": "Sin normas asignadas.",
+        "note": "Este campo aparece en los elementos de {{normas}} y en los {{tipos}} que lo heredan.",
+        "nNormas_one": "{{count}} norma",
+        "nNormas_other": "{{count}} normas",
+        "nTipos_one": "{{count}} tipo de elemento",
+        "nTipos_other": "{{count}} tipos de elemento",
+        "chipNormas_one": "norma",
+        "chipNormas_other": "normas",
+        "chipNormasTitle": "Normas que usan este campo",
+        "chipTipos_one": "tipo",
+        "chipTipos_other": "tipos",
+        "chipTiposTitle": "Tipos de elemento que lo heredan"
+      }
     },
     "checklists": {
       "tabsAria": "Vistas de checklists",
@@ -2186,7 +2205,9 @@
         "note": "«{{from}}» dejará de existir: sus {{n}} elementos pasan a «{{to}}» con la configuración de este (normativa, campos y checklists). Esta acción no se puede deshacer.",
         "confirm": "Fusionar tipos",
         "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
-      }
+      },
+      "familiaTodas": "Todas",
+      "filtrarFamilia": "Filtrar por familia"
     },
     "parametros": {
       "grupoMarca": "Marca e idioma",
