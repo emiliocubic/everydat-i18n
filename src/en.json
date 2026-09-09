@@ -36,7 +36,12 @@
     "selectAll": "Select all",
     "selectRow": "Select row",
     "accept": "Accept",
-    "listado": "List"
+    "listado": "List",
+    "duplicados": {
+      "titulo_one": "Possible duplicate:",
+      "titulo_other": "{{count}} possible duplicates:",
+      "unificar": "Merge"
+    }
   },
   "merge": {
     "disappears": "Disappears",
@@ -2095,6 +2100,17 @@
       "stats": {
         "modelos": "Models in the catalogue",
         "elementos": "Elements in the field"
+      },
+      "merge": {
+        "handle": "Drag onto another manufacturer to merge them",
+        "title": "Merge these two manufacturers?",
+        "desc": "You are about to merge «{{from}}» into «{{to}}»: its whole catalogue moves to the one that remains.",
+        "nModelos": "{{n}} models",
+        "modelos": "Models —and the references and items hanging from them— change manufacturer without moving.",
+        "valores": "Per-brand value lists keep those of «{{to}}»; the absorbed one's only apply where «{{to}}» had none.",
+        "note": "«{{from}}» will cease to exist: its models —and the {{n}} fleet items hanging from them— move to «{{to}}». This cannot be undone.",
+        "confirm": "Merge manufacturers",
+        "done": "«{{from}}» has been merged into «{{to}}»"
       }
     },
     "tipos": {

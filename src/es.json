@@ -36,7 +36,12 @@
     "selectAll": "Seleccionar todos",
     "selectRow": "Seleccionar fila",
     "accept": "Aceptar",
-    "listado": "Listado"
+    "listado": "Listado",
+    "duplicados": {
+      "titulo_one": "Posible duplicado:",
+      "titulo_other": "{{count}} posibles duplicados:",
+      "unificar": "Unificar"
+    }
   },
   "merge": {
     "disappears": "Desaparece",
@@ -2095,6 +2100,17 @@
       "stats": {
         "modelos": "Nº de modelos en el catálogo",
         "elementos": "Nº de elementos del parque"
+      },
+      "merge": {
+        "handle": "Arrastrar sobre otro fabricante para unificarlos",
+        "title": "¿Fusionar estos dos fabricantes?",
+        "desc": "Vas a fusionar «{{from}}» dentro de «{{to}}»: todo su catálogo pasa al que se conserva.",
+        "nModelos": "{{n}} modelos",
+        "modelos": "Los modelos —y las referencias y los elementos que cuelgan de ellos— cambian de fabricante sin moverse de sitio.",
+        "valores": "Las listas de valores por marca se conservan las de «{{to}}»; las del absorbido solo entran donde «{{to}}» no tenía lista.",
+        "note": "«{{from}}» dejará de existir: sus modelos —y los {{n}} elementos del parque que cuelgan de ellos— pasan a «{{to}}». Esta acción no se puede deshacer.",
+        "confirm": "Fusionar fabricantes",
+        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
       }
     },
     "tipos": {
