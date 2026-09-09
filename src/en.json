@@ -42,7 +42,9 @@
       "titulo_other": "{{count}} possible duplicates:",
       "unificar": "Merge"
     },
-    "contadorSeleccion": "{{n}} clients selected"
+    "contadorSeleccion": "{{n}} clients selected",
+    "deletedOk": "Deleted",
+    "download": "Download"
   },
   "merge": {
     "disappears": "Disappears",

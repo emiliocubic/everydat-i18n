@@ -42,7 +42,9 @@
       "titulo_other": "{{count}} doublons possibles :",
       "unificar": "Fusionner"
     },
-    "contadorSeleccion": "{{n}} clients sélectionnés"
+    "contadorSeleccion": "{{n}} clients sélectionnés",
+    "deletedOk": "Supprimé",
+    "download": "Télécharger"
   },
   "merge": {
     "disappears": "Disparaît",
