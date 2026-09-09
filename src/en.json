@@ -962,7 +962,12 @@
     "guardar": "Save",
     "guardado": "Instance saved",
     "errorCarga": "The instance could not be loaded.",
-    "soloSoporte": "This screen is for support."
+    "soloSoporte": "This screen is for support.",
+    "qrdat": "qrdat sticker hub",
+    "qrdatHint": "Where to notify when a sticker is attached to an item or released. Empty = nobody is notified.",
+    "qrdatUrlHint": "URL of the Cubic hub.",
+    "qrdatSinToken": "No token",
+    "qrdatQuitarToken": "Remove token"
   },
   "admins": {
     "title": "Users",
@@ -2521,12 +2526,16 @@
       }
     },
     "scan": {
-      "title": "Scan QR code",
+      "title": "Scan code",
       "manual": "Enter manually",
       "code": "Code",
       "submit": "Search",
       "camHint": "Point the camera at the QR code",
-      "gunHint": "Scan with the reader or type the code"
+      "gunHint": "Scan with the reader or type the code",
+      "placeholder": "Code, serial number or sticker URL",
+      "varios": "{{count}} items with that code",
+      "sinResultado": "No item carries “{{codigo}}”.",
+      "error": "The code could not be looked up."
     },
     "nfc": {
       "title": "Read NFC tag",

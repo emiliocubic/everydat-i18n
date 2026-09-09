@@ -873,7 +873,12 @@
     "guardar": "Guardar",
     "guardado": "Instancia guardada",
     "errorCarga": "No se ha podido cargar la instancia.",
-    "soloSoporte": "Esta pantalla es de soporte."
+    "soloSoporte": "Esta pantalla es de soporte.",
+    "qrdat": "Central de pegatinas qrdat",
+    "qrdatHint": "A dónde se avisa cuando una pegatina se asocia a un equipo o se suelta. Vacío = no se avisa a nadie.",
+    "qrdatUrlHint": "URL de la central de Cubic.",
+    "qrdatSinToken": "Sin token",
+    "qrdatQuitarToken": "Quitar token"
   },
   "admins": {
     "title": "Usuarios",
@@ -2521,12 +2526,16 @@
       }
     },
     "scan": {
-      "title": "Escanear código QR",
+      "title": "Escanear código",
       "manual": "Introducir manualmente",
       "code": "Código",
       "submit": "Buscar",
       "camHint": "Apunta la cámara al código QR",
-      "gunHint": "Escanea con el lector o escribe el código"
+      "gunHint": "Escanea con el lector o escribe el código",
+      "placeholder": "Código, nº de serie o URL de la pegatina",
+      "varios": "{{count}} equipos con ese código",
+      "sinResultado": "Ningún equipo lleva «{{codigo}}».",
+      "error": "No se ha podido consultar el código."
     },
     "nfc": {
       "title": "Leer etiqueta NFC",

@@ -937,7 +937,12 @@
     "guardar": "Enregistrer",
     "guardado": "Instance enregistrée",
     "errorCarga": "Impossible de charger l'instance.",
-    "soloSoporte": "Cet écran est réservé au support."
+    "soloSoporte": "Cet écran est réservé au support.",
+    "qrdat": "Centrale des étiquettes qrdat",
+    "qrdatHint": "Où prévenir quand une étiquette est associée à un équipement ou libérée. Vide = personne n’est prévenu.",
+    "qrdatUrlHint": "URL de la centrale Cubic.",
+    "qrdatSinToken": "Sans jeton",
+    "qrdatQuitarToken": "Retirer le jeton"
   },
   "admins": {
     "title": "Utilisateurs",
@@ -2489,12 +2494,16 @@
       }
     },
     "scan": {
-      "title": "Scanner un code QR",
+      "title": "Scanner un code",
       "manual": "Saisir manuellement",
       "code": "Code",
       "submit": "Rechercher",
       "camHint": "Pointez la caméra vers le code QR",
-      "gunHint": "Scannez avec le lecteur ou tapez le code"
+      "gunHint": "Scannez avec le lecteur ou tapez le code",
+      "placeholder": "Code, nº de série ou URL de l’étiquette",
+      "varios": "{{count}} équipements avec ce code",
+      "sinResultado": "Aucun équipement ne porte « {{codigo}} ».",
+      "error": "Impossible de consulter le code."
     },
     "nfc": {
       "title": "Lire une étiquette NFC",
