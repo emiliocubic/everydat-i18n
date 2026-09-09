@@ -661,7 +661,8 @@
         "caract": "Details and status",
         "normativa": "Standards",
         "historial": "History",
-        "revisiones": "Inspections"
+        "revisiones": "Inspections",
+        "actuaciones": "Interventions"
       },
       "anterior": "Previous (Alt+↑)",
       "siguiente": "Next (Alt+↓)",
@@ -869,7 +870,8 @@
       "familia": {
         "fecha": "Item dates",
         "administrativo": "Administrative",
-        "operativo": "Operational"
+        "operativo": "Operational",
+        "actuacion": "Interventions"
       },
       "resultado": {
         "apto": "Pass",
@@ -3276,5 +3278,68 @@
       "parametros_updated": "Settings updated",
       "pivot_updated": "Relation updated"
     }
+  },
+  "actuaciones": {
+    "titulo": "Interventions",
+    "nueva": "New intervention",
+    "editar": "Edit intervention",
+    "vacio": "No interventions recorded for this item.",
+    "intro": "What has happened to the item that was not an inspection.",
+    "borrar": "Delete intervention",
+    "borrarConfirma": "It is removed from the history. Any attached documents stay in document management.",
+    "guardar": "Save intervention",
+    "crear": "Record intervention",
+    "tipo": {
+      "instalacion": "Installation",
+      "reparacion": "Repair",
+      "mantenimiento": "Maintenance",
+      "desmontaje": "Removal",
+      "caida_retenida": "Arrested fall",
+      "aviso_fabricante": "Manufacturer notice",
+      "revision_profundidad": "In-depth inspection",
+      "otra": "Other"
+    },
+    "fields": {
+      "tipo": "Type",
+      "fecha": "Date",
+      "usuario": "Who (in-house)",
+      "realizadaPor": "Who (external)",
+      "descripcion": "What was done",
+      "proximaRevision": "Next inspection",
+      "adjuntos": "Documents"
+    },
+    "hint": {
+      "fecha": "When it happened, not when it is recorded.",
+      "usuario": "Leave blank if it was done by someone external.",
+      "realizadaPor": "The workshop, the manufacturer or whoever.",
+      "descripcionOtra": "An intervention of type \"other\" has to say what it was.",
+      "proximaRevision": "Optional. If it falls before the item's expiry, it prevails: {{fecha}}.",
+      "proximaRevisionSinFecha": "Optional. Brings the item's inspection expiry forward if it falls earlier.",
+      "proximaRevisionLarga": "It falls after the item's expiry, so it changes nothing.",
+      "adjuntos": "The workshop report, the manufacturer's note, the photos."
+    },
+    "adjuntos": {
+      "subir": "Add document",
+      "vacio": "No documents.",
+      "quitar": "Remove document",
+      "subiendo": "Uploading…",
+      "primeroGuarda": "Save the intervention before attaching documents.",
+      "contador": "{{count}} document",
+      "contador_other": "{{count}} documents"
+    },
+    "consecuencia": {
+      "titulo": "And also",
+      "nota": "None of this happens on its own: tick what you want to happen.",
+      "finVida": "Declare the item finished as of this date",
+      "finVidaMotivo": "Reason for end of life",
+      "finVidaYaEsta": "The item already has its end of life declared.",
+      "estado": "Set the item to",
+      "estadoMotivo": "Reason for the status change",
+      "estadoSin": "Leave it as it is",
+      "aplicada": "Intervention recorded and consequence applied.",
+      "fallo": "The intervention was recorded, but the consequence could not be applied."
+    },
+    "proximaChip": "Look at it again on {{fecha}}",
+    "adelantada": "Brought forward by an intervention"
   }
 }

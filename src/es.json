@@ -572,7 +572,8 @@
         "caract": "Características y estado",
         "normativa": "Normativa",
         "historial": "Historial",
-        "revisiones": "Revisiones"
+        "revisiones": "Revisiones",
+        "actuaciones": "Actuaciones"
       },
       "anterior": "Anterior (Alt+↑)",
       "siguiente": "Siguiente (Alt+↓)",
@@ -780,7 +781,8 @@
       "familia": {
         "fecha": "Fechas del equipo",
         "administrativo": "Administrativos",
-        "operativo": "Operativos"
+        "operativo": "Operativos",
+        "actuacion": "Actuaciones"
       },
       "resultado": {
         "apto": "Apto",
@@ -3276,5 +3278,68 @@
       "parametros_updated": "Parámetros actualizados",
       "pivot_updated": "Relación actualizada"
     }
+  },
+  "actuaciones": {
+    "titulo": "Actuaciones",
+    "nueva": "Nueva actuación",
+    "editar": "Editar actuación",
+    "vacio": "Este equipo no tiene actuaciones registradas.",
+    "intro": "Lo que le ha pasado al equipo y no ha sido una revisión.",
+    "borrar": "Eliminar actuación",
+    "borrarConfirma": "Se quita del historial. Los documentos que lleve colgados se quedan en la gestión documental.",
+    "guardar": "Guardar actuación",
+    "crear": "Registrar actuación",
+    "tipo": {
+      "instalacion": "Instalación",
+      "reparacion": "Reparación",
+      "mantenimiento": "Mantenimiento",
+      "desmontaje": "Desmontaje",
+      "caida_retenida": "Caída retenida",
+      "aviso_fabricante": "Aviso del fabricante",
+      "revision_profundidad": "Revisión en profundidad",
+      "otra": "Otra"
+    },
+    "fields": {
+      "tipo": "Tipo",
+      "fecha": "Fecha",
+      "usuario": "Quién (de casa)",
+      "realizadaPor": "Quién (externo)",
+      "descripcion": "Qué se hizo",
+      "proximaRevision": "Próxima revisión",
+      "adjuntos": "Documentos"
+    },
+    "hint": {
+      "fecha": "Cuándo pasó, no cuándo se anota.",
+      "usuario": "Deja en blanco si la hizo alguien de fuera.",
+      "realizadaPor": "El taller, el fabricante o quien fuera.",
+      "descripcionOtra": "Una actuación de tipo «otra» tiene que decir qué fue.",
+      "proximaRevision": "Opcional. Si cae antes que la caducidad del equipo, manda: {{fecha}}.",
+      "proximaRevisionSinFecha": "Opcional. Adelanta la caducidad de la revisión del equipo si cae antes.",
+      "proximaRevisionLarga": "Cae después de la caducidad del equipo, así que no cambia nada.",
+      "adjuntos": "El parte del taller, la nota del fabricante, las fotos."
+    },
+    "adjuntos": {
+      "subir": "Añadir documento",
+      "vacio": "Sin documentos.",
+      "quitar": "Quitar documento",
+      "subiendo": "Subiendo…",
+      "primeroGuarda": "Guarda la actuación para poder colgarle documentos.",
+      "contador": "{{count}} documento",
+      "contador_other": "{{count}} documentos"
+    },
+    "consecuencia": {
+      "titulo": "Y además",
+      "nota": "Nada de esto se hace solo: marca lo que quieras que pase.",
+      "finVida": "Dar el equipo por acabado a esta fecha",
+      "finVidaMotivo": "Motivo del fin de vida",
+      "finVidaYaEsta": "El equipo ya tiene el fin de vida declarado.",
+      "estado": "Poner el equipo en",
+      "estadoMotivo": "Motivo del cambio de estado",
+      "estadoSin": "Dejarlo como está",
+      "aplicada": "Actuación registrada y consecuencia aplicada.",
+      "fallo": "La actuación se registró, pero la consecuencia no se pudo aplicar."
+    },
+    "proximaChip": "Volver a mirarlo el {{fecha}}",
+    "adelantada": "Adelantada por una actuación"
   }
 }

@@ -636,7 +636,8 @@
         "caract": "Caractéristiques et état",
         "normativa": "Normes",
         "historial": "Historique",
-        "revisiones": "Contrôles"
+        "revisiones": "Contrôles",
+        "actuaciones": "Interventions"
       },
       "anterior": "Précédent (Alt+↑)",
       "siguiente": "Suivant (Alt+↓)",
@@ -844,7 +845,8 @@
       "familia": {
         "fecha": "Dates de l'équipement",
         "administrativo": "Administratifs",
-        "operativo": "Opérationnels"
+        "operativo": "Opérationnels",
+        "actuacion": "Interventions"
       },
       "resultado": {
         "apto": "Conforme",
@@ -3244,5 +3246,68 @@
       "parametros_updated": "Paramètres mis à jour",
       "pivot_updated": "Relation mise à jour"
     }
+  },
+  "actuaciones": {
+    "titulo": "Interventions",
+    "nueva": "Nouvelle intervention",
+    "editar": "Modifier l'intervention",
+    "vacio": "Aucune intervention enregistrée pour cet équipement.",
+    "intro": "Ce qui est arrivé à l'équipement et qui n'était pas une vérification.",
+    "borrar": "Supprimer l'intervention",
+    "borrarConfirma": "Elle est retirée de l'historique. Les documents joints restent dans la gestion documentaire.",
+    "guardar": "Enregistrer l'intervention",
+    "crear": "Enregistrer l'intervention",
+    "tipo": {
+      "instalacion": "Installation",
+      "reparacion": "Réparation",
+      "mantenimiento": "Maintenance",
+      "desmontaje": "Démontage",
+      "caida_retenida": "Chute arrêtée",
+      "aviso_fabricante": "Avis du fabricant",
+      "revision_profundidad": "Vérification approfondie",
+      "otra": "Autre"
+    },
+    "fields": {
+      "tipo": "Type",
+      "fecha": "Date",
+      "usuario": "Qui (interne)",
+      "realizadaPor": "Qui (externe)",
+      "descripcion": "Ce qui a été fait",
+      "proximaRevision": "Prochaine vérification",
+      "adjuntos": "Documents"
+    },
+    "hint": {
+      "fecha": "Quand cela s'est passé, pas quand on le saisit.",
+      "usuario": "Laisser vide si c'est un intervenant externe.",
+      "realizadaPor": "L'atelier, le fabricant ou qui que ce soit.",
+      "descripcionOtra": "Une intervention de type « autre » doit préciser ce dont il s'agit.",
+      "proximaRevision": "Facultatif. Si elle tombe avant l'échéance de l'équipement, elle prévaut : {{fecha}}.",
+      "proximaRevisionSinFecha": "Facultatif. Avance l'échéance de vérification de l'équipement si elle tombe plus tôt.",
+      "proximaRevisionLarga": "Elle tombe après l'échéance de l'équipement, donc elle ne change rien.",
+      "adjuntos": "Le rapport de l'atelier, la note du fabricant, les photos."
+    },
+    "adjuntos": {
+      "subir": "Ajouter un document",
+      "vacio": "Aucun document.",
+      "quitar": "Retirer le document",
+      "subiendo": "Envoi…",
+      "primeroGuarda": "Enregistrez l'intervention avant d'y joindre des documents.",
+      "contador": "{{count}} document",
+      "contador_other": "{{count}} documents"
+    },
+    "consecuencia": {
+      "titulo": "Et aussi",
+      "nota": "Rien de tout cela ne se fait tout seul : cochez ce que vous voulez.",
+      "finVida": "Déclarer l'équipement fini à cette date",
+      "finVidaMotivo": "Motif de la fin de vie",
+      "finVidaYaEsta": "La fin de vie de l'équipement est déjà déclarée.",
+      "estado": "Mettre l'équipement en",
+      "estadoMotivo": "Motif du changement d'état",
+      "estadoSin": "Le laisser tel quel",
+      "aplicada": "Intervention enregistrée et conséquence appliquée.",
+      "fallo": "L'intervention a été enregistrée, mais la conséquence n'a pas pu être appliquée."
+    },
+    "proximaChip": "À revoir le {{fecha}}",
+    "adelantada": "Avancée par une intervention"
   }
 }
