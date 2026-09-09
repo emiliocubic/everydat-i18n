@@ -271,12 +271,14 @@
         "descuento": "Customer discount",
         "appCliente": "Client app",
         "recibirNotif": "Receive notifications",
-        "alertaCliente": "Client alert"
+        "alertaCliente": "Client alert",
+        "cargo": "Role"
       },
       "app": {
-        "off": "Disabled",
+        "off": "No portal",
         "read": "Read only",
-        "full": "Editing allowed"
+        "full": "Editing allowed",
+        "si": "Has portal"
       },
       "notif": {
         "revisiones": "Reviews",
@@ -286,8 +288,8 @@
         "activa": "Active",
         "sin": "No alert",
         "mostrar": "Show alert",
-        "placeholder": "Warning text (e.g. \"Do not attend by phone until payment is settled\").",
-        "hint": "Shown as a prominent warning in the header of this client and all its sites, projects and quotes.",
+        "placeholder": "Short warning shown when the record is opened (e.g. \"overdue: do not work without office approval\").",
+        "hint": "Shown as a highlighted banner on this record and on all of its sites.",
         "eliminar": "Remove alert",
         "empty": "Alert enabled without text — add the warning message.",
         "editar": "Edit alert"
@@ -348,6 +350,12 @@
           "rechazada": "Rejected",
           "caducada": "Expired"
         }
+      },
+      "accesos": {
+        "nivel": {
+          "lectura": "Read",
+          "edicion": "Edit"
+        }
       }
     },
     "title": "Customers",
@@ -389,7 +397,8 @@
       "fechaAlta": "Registration date",
       "fechaAlta_short": "Since",
       "propuestas": "Proposals",
-      "propuestas_short": "Prop."
+      "propuestas_short": "Prop.",
+      "cargo": "Role"
     },
     "grupos": {
       "identidad": "Identity",
@@ -399,12 +408,24 @@
     },
     "estado": {
       "activo": "Active",
-      "potencial": "Potential",
       "baja": "Inactive"
     },
     "nuevo": {
       "creado": "Client created.",
       "pie": "Fields marked with * are required. The rest can be completed later in the record."
+    },
+    "grupos_filtro": "Group",
+    "acciones": {
+      "anadirAGrupo": "Add to group",
+      "anadidos": "{{n}} clients added to \"{{grupo}}\"."
+    },
+    "fusion": {
+      "titulo": "Merge duplicates",
+      "accion": "Merge into this record",
+      "elegir": "Record to absorb",
+      "aviso": "Everything from the absorbed client moves to this record and the absorbed one is retired. This cannot be undone.",
+      "avisoContacto": "Everything from the absorbed person moves to this record and the absorbed one is retired. This cannot be undone.",
+      "hecha": "Records merged."
     }
   },
   "contactos": {
@@ -1215,7 +1236,8 @@
         "bitacora": "Customer log",
         "internos": "Access · Internal users",
         "colaboradores": "Access · Collaborators",
-        "invitados": "Access · Guests"
+        "invitados": "Access · Guests",
+        "contactos": "Contacts reaching this site"
       },
       "cols": {
         "nombre": "Name",
@@ -1252,7 +1274,17 @@
       "vigente": "Current",
       "sinAcceso": "Nobody has access.",
       "borrarRegistroConfirm": "Delete this log entry? This cannot be undone.",
-      "sinClienteParaArbol": "This site has no client assigned: the tree becomes available once it has one."
+      "sinClienteParaArbol": "This site has no client assigned: the tree becomes available once it has one.",
+      "herencia": {
+        "comoCliente": "Same as client",
+        "apagado": "Off"
+      },
+      "alertaCliente": "Client alert",
+      "contactos": {
+        "vacio": "No contact reaches this site.",
+        "soloLectura": "Granted on the contact record.",
+        "sinPermisos": "No permissions"
+      }
     },
     "grupos": {
       "contadores": "Counters",

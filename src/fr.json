@@ -274,9 +274,10 @@
         "alertaCliente": "Alerte client"
       },
       "app": {
-        "off": "Desactivee",
+        "off": "Sans portail",
         "read": "Lecture seule",
-        "full": "Edition autorisee"
+        "full": "Edition autorisee",
+        "si": "Avec portail"
       },
       "notif": {
         "revisiones": "Revisions",
@@ -348,6 +349,12 @@
           "rechazada": "Refusée",
           "caducada": "Expirée"
         }
+      },
+      "accesos": {
+        "nivel": {
+          "lectura": "Lecture",
+          "edicion": "Édition"
+        }
       }
     },
     "title": "Clients",
@@ -399,7 +406,6 @@
     },
     "estado": {
       "activo": "Actif",
-      "potencial": "Potentiel",
       "baja": "Inactif"
     },
     "nuevo": {
@@ -1252,7 +1258,11 @@
       "vigente": "Actuellement",
       "sinAcceso": "Personne n’a accès.",
       "borrarRegistroConfirm": "Supprimer cette entrée du journal ? Action irréversible.",
-      "sinClienteParaArbol": "Ce site n'a pas de client : l'arborescence s'active dès qu'il en a un."
+      "sinClienteParaArbol": "Ce site n'a pas de client : l'arborescence s'active dès qu'il en a un.",
+      "herencia": {
+        "comoCliente": "Comme le client",
+        "apagado": "Désactivé"
+      }
     },
     "grupos": {
       "contadores": "Compteurs",

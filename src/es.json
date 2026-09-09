@@ -182,12 +182,14 @@
         "descuento": "Descuento cliente",
         "appCliente": "APP de cliente",
         "recibirNotif": "Recibir notificaciones",
-        "alertaCliente": "Alerta del cliente"
+        "alertaCliente": "Alerta del cliente",
+        "cargo": "Cargo"
       },
       "app": {
-        "off": "Desactivada",
+        "off": "Sin portal",
         "read": "Solo lectura",
-        "full": "Edición permitida"
+        "full": "Edición permitida",
+        "si": "Con portal"
       },
       "notif": {
         "revisiones": "Revisiones",
@@ -197,8 +199,8 @@
         "activa": "Activa",
         "sin": "Sin alerta",
         "mostrar": "Mostrar alerta",
-        "placeholder": "Texto de aviso (p. ej. «No atender por teléfono hasta regularizar el pago»).",
-        "hint": "Se muestra como aviso destacado en la cabecera de este cliente y de todos sus emplazamientos, proyectos y presupuestos.",
+        "placeholder": "Aviso corto que se verá al abrir la ficha (p. ej. «moroso: no trabajar sin OK de oficina»).",
+        "hint": "Se muestra como banda destacada en esta ficha y en la de todos sus emplazamientos.",
         "eliminar": "Eliminar alerta",
         "empty": "Alerta activada sin texto — añade el mensaje de aviso.",
         "editar": "Editar alerta"
@@ -259,6 +261,12 @@
           "rechazada": "Rechazada",
           "caducada": "Caducada"
         }
+      },
+      "accesos": {
+        "nivel": {
+          "lectura": "Lectura",
+          "edicion": "Edición"
+        }
       }
     },
     "title": "Clientes",
@@ -300,7 +308,8 @@
       "fechaAlta": "Fecha de alta",
       "fechaAlta_short": "Alta",
       "propuestas": "Propuestas",
-      "propuestas_short": "Prop."
+      "propuestas_short": "Prop.",
+      "cargo": "Cargo"
     },
     "grupos": {
       "identidad": "Identidad",
@@ -310,12 +319,24 @@
     },
     "estado": {
       "activo": "Activo",
-      "potencial": "Potencial",
       "baja": "Baja"
     },
     "nuevo": {
       "creado": "Cliente creado.",
       "pie": "Los campos marcados con * son obligatorios. El resto se completa después en la ficha."
+    },
+    "grupos_filtro": "Grupo",
+    "acciones": {
+      "anadirAGrupo": "Añadir a grupo",
+      "anadidos": "{{n}} clientes añadidos a «{{grupo}}»."
+    },
+    "fusion": {
+      "titulo": "Unificar duplicados",
+      "accion": "Unificar con esta ficha",
+      "elegir": "Ficha que se absorbe",
+      "aviso": "Todo lo del cliente absorbido pasa a esta ficha y el absorbido se retira. No tiene vuelta atrás.",
+      "avisoContacto": "Todo lo de la persona absorbida pasa a esta ficha y la absorbida se retira. No tiene vuelta atrás.",
+      "hecha": "Fichas unificadas."
     }
   },
   "contactos": {
@@ -1126,7 +1147,8 @@
         "bitacora": "Bitácora de clientes",
         "internos": "Acceso · Usuarios internos",
         "colaboradores": "Acceso · Usuarios colaboradores",
-        "invitados": "Acceso · Usuarios invitados"
+        "invitados": "Acceso · Usuarios invitados",
+        "contactos": "Contactos que alcanzan esta instalación"
       },
       "cols": {
         "nombre": "Nombre",
@@ -1163,7 +1185,17 @@
       "vigente": "Actualidad",
       "sinAcceso": "Nadie con acceso.",
       "borrarRegistroConfirm": "¿Borrar este registro de la bitácora? No se puede deshacer.",
-      "sinClienteParaArbol": "Este emplazamiento no tiene cliente asignado: el árbol se activa al asignarle uno."
+      "sinClienteParaArbol": "Este emplazamiento no tiene cliente asignado: el árbol se activa al asignarle uno.",
+      "herencia": {
+        "comoCliente": "Como el cliente",
+        "apagado": "Apagado"
+      },
+      "alertaCliente": "Alerta del cliente",
+      "contactos": {
+        "vacio": "Ningún contacto alcanza esta instalación.",
+        "soloLectura": "Se conceden en la ficha del contacto.",
+        "sinPermisos": "Sin permisos"
+      }
     },
     "grupos": {
       "contadores": "Contadores",
