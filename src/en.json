@@ -41,7 +41,8 @@
       "titulo_one": "Possible duplicate:",
       "titulo_other": "{{count}} possible duplicates:",
       "unificar": "Merge"
-    }
+    },
+    "contadorSeleccion": "{{n}} clients selected"
   },
   "merge": {
     "disappears": "Disappears",

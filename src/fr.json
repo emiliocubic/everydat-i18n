@@ -41,7 +41,8 @@
       "titulo_one": "Doublon possible :",
       "titulo_other": "{{count}} doublons possibles :",
       "unificar": "Fusionner"
-    }
+    },
+    "contadorSeleccion": "{{n}} clients sélectionnés"
   },
   "merge": {
     "disappears": "Disparaît",
