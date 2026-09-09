@@ -2420,7 +2420,8 @@
       "mailCenter": "Mail Center",
       "explotacion": "Exploitation des données",
       "proyectosPropuestas": "Propositions",
-      "proyectosSeguimiento": "Suivi"
+      "proyectosSeguimiento": "Suivi",
+      "auditoria": "Journal d'audit"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -3167,6 +3168,65 @@
       "descripcion": "Description",
       "guardar": "Enregistrer et mettre en file",
       "pendiente": "Ajout à envoyer"
+    }
+  },
+  "auditoria": {
+    "buscar": "Rechercher par nom ou courriel de l'utilisateur",
+    "vacio": "Aucune activité enregistrée",
+    "campos": {
+      "fecha": "Date",
+      "evento": "Événement",
+      "entidad": "Entité",
+      "registro": "Enregistrement",
+      "usuario": "Utilisateur",
+      "ip": "IP"
+    },
+    "detalle": {
+      "titulo": "Détail de l'entrée",
+      "antes": "Avant",
+      "despues": "Après",
+      "sinValores": "Aucune valeur",
+      "navegador": "Navigateur",
+      "sinEntidad": "Sans entité"
+    },
+    "eventos": {
+      "created": "Création",
+      "updated": "Modification",
+      "deleted": "Suppression",
+      "restored": "Restauration",
+      "login": "Connexion",
+      "logout": "Déconnexion",
+      "login_failed": "Échec de connexion",
+      "login_blocked_service": "Connexion bloquée (compte de service)",
+      "password_changed": "Mot de passe modifié",
+      "password_reset": "Mot de passe réinitialisé",
+      "impersonate_start": "Usurpation démarrée",
+      "impersonate_stop": "Usurpation terminée",
+      "profile_updated": "Profil mis à jour",
+      "permisos_updated": "Permissions mises à jour",
+      "permiso_added": "Permission accordée",
+      "permiso_removed": "Permission révoquée",
+      "cuentas_updated": "Comptes mis à jour",
+      "access_granted": "Accès accordé",
+      "access_revoked": "Accès retiré",
+      "access_changed": "Accès modifié",
+      "estado_cambiado": "Changement d'état",
+      "estado": "Changement d'état",
+      "moved": "Déplacement",
+      "transferred": "Transfert",
+      "reordered": "Réordonnancement",
+      "promoted": "Promotion en zone",
+      "demoted": "Zone rétrogradée",
+      "attached": "Lien ajouté",
+      "detached": "Lien retiré",
+      "adjunto_added": "Pièce jointe ajoutée",
+      "adjunto_removed": "Pièce jointe retirée",
+      "certificada": "Inspection certifiée",
+      "descertificada": "Certification retirée",
+      "fin_vida": "Fin de vie",
+      "licencia_updated": "Instance mise à jour",
+      "parametros_updated": "Paramètres mis à jour",
+      "pivot_updated": "Relation mise à jour"
     }
   }
 }

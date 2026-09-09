@@ -2420,7 +2420,8 @@
       "mailCenter": "Mail Center",
       "explotacion": "Data queries",
       "proyectosPropuestas": "Proposals",
-      "proyectosSeguimiento": "Follow-up"
+      "proyectosSeguimiento": "Follow-up",
+      "auditoria": "Audit log"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -3167,6 +3168,65 @@
       "descripcion": "Description",
       "guardar": "Save and queue",
       "pendiente": "Pending upload"
+    }
+  },
+  "auditoria": {
+    "buscar": "Search by user name or email",
+    "vacio": "No recorded activity",
+    "campos": {
+      "fecha": "Date",
+      "evento": "Event",
+      "entidad": "Entity",
+      "registro": "Record",
+      "usuario": "User",
+      "ip": "IP"
+    },
+    "detalle": {
+      "titulo": "Entry detail",
+      "antes": "Before",
+      "despues": "After",
+      "sinValores": "No values",
+      "navegador": "Browser",
+      "sinEntidad": "No entity"
+    },
+    "eventos": {
+      "created": "Created",
+      "updated": "Updated",
+      "deleted": "Deleted",
+      "restored": "Restored",
+      "login": "Sign in",
+      "logout": "Sign out",
+      "login_failed": "Failed sign in",
+      "login_blocked_service": "Sign in blocked (service account)",
+      "password_changed": "Password changed",
+      "password_reset": "Password reset",
+      "impersonate_start": "Impersonation started",
+      "impersonate_stop": "Impersonation ended",
+      "profile_updated": "Profile updated",
+      "permisos_updated": "Permissions updated",
+      "permiso_added": "Permission granted",
+      "permiso_removed": "Permission revoked",
+      "cuentas_updated": "Accounts updated",
+      "access_granted": "Access granted",
+      "access_revoked": "Access revoked",
+      "access_changed": "Access changed",
+      "estado_cambiado": "Status change",
+      "estado": "Status change",
+      "moved": "Moved",
+      "transferred": "Transferred",
+      "reordered": "Reordered",
+      "promoted": "Promoted to zone",
+      "demoted": "Zone demoted",
+      "attached": "Link added",
+      "detached": "Link removed",
+      "adjunto_added": "Attachment added",
+      "adjunto_removed": "Attachment removed",
+      "certificada": "Inspection certified",
+      "descertificada": "Certification withdrawn",
+      "fin_vida": "End of life",
+      "licencia_updated": "Instance updated",
+      "parametros_updated": "Settings updated",
+      "pivot_updated": "Relation updated"
     }
   }
 }

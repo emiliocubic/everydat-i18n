@@ -2420,7 +2420,8 @@
       "mailCenter": "Mail Center",
       "explotacion": "Explotación de datos",
       "proyectosPropuestas": "Propuestas",
-      "proyectosSeguimiento": "Seguimiento"
+      "proyectosSeguimiento": "Seguimiento",
+      "auditoria": "Auditoría"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -3167,6 +3168,65 @@
       "descripcion": "Descripción",
       "guardar": "Guardar y poner en la cola",
       "pendiente": "Alta por enviar"
+    }
+  },
+  "auditoria": {
+    "buscar": "Buscar por nombre o correo del usuario",
+    "vacio": "No hay actividad registrada",
+    "campos": {
+      "fecha": "Fecha",
+      "evento": "Evento",
+      "entidad": "Entidad",
+      "registro": "Registro",
+      "usuario": "Usuario",
+      "ip": "IP"
+    },
+    "detalle": {
+      "titulo": "Detalle del registro",
+      "antes": "Antes",
+      "despues": "Después",
+      "sinValores": "Sin valores",
+      "navegador": "Navegador",
+      "sinEntidad": "Sin entidad"
+    },
+    "eventos": {
+      "created": "Alta",
+      "updated": "Edición",
+      "deleted": "Baja",
+      "restored": "Restauración",
+      "login": "Acceso",
+      "logout": "Salida",
+      "login_failed": "Acceso fallido",
+      "login_blocked_service": "Acceso bloqueado (cuenta de servicio)",
+      "password_changed": "Contraseña cambiada",
+      "password_reset": "Contraseña restablecida",
+      "impersonate_start": "Suplantación iniciada",
+      "impersonate_stop": "Suplantación finalizada",
+      "profile_updated": "Perfil actualizado",
+      "permisos_updated": "Permisos actualizados",
+      "permiso_added": "Permiso concedido",
+      "permiso_removed": "Permiso revocado",
+      "cuentas_updated": "Cuentas actualizadas",
+      "access_granted": "Acceso concedido",
+      "access_revoked": "Acceso retirado",
+      "access_changed": "Acceso modificado",
+      "estado_cambiado": "Cambio de estado",
+      "estado": "Cambio de estado",
+      "moved": "Traslado",
+      "transferred": "Transferencia",
+      "reordered": "Reordenación",
+      "promoted": "Promoción a zona",
+      "demoted": "Zona degradada",
+      "attached": "Vínculo añadido",
+      "detached": "Vínculo retirado",
+      "adjunto_added": "Adjunto añadido",
+      "adjunto_removed": "Adjunto retirado",
+      "certificada": "Revisión certificada",
+      "descertificada": "Certificación retirada",
+      "fin_vida": "Fin de vida",
+      "licencia_updated": "Instancia actualizada",
+      "parametros_updated": "Parámetros actualizados",
+      "pivot_updated": "Relación actualizada"
     }
   }
 }
