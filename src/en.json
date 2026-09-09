@@ -425,7 +425,20 @@
       "elegir": "Record to absorb",
       "aviso": "Everything from the absorbed client moves to this record and the absorbed one is retired. This cannot be undone.",
       "avisoContacto": "Everything from the absorbed person moves to this record and the absorbed one is retired. This cannot be undone.",
-      "hecha": "Records merged."
+      "hecha": "Records merged.",
+      "asa": "Drag this record onto the one that stays to merge them",
+      "huecos": "Nothing already written on \"{{to}}\" is overwritten; only its blanks are filled from the other record.",
+      "alias": "\"{{from}}\" does not fully disappear: it keeps pointing at \"{{to}}\", so a later import will not recreate it.",
+      "cliente": {
+        "desc": "\"{{from}}\" is absorbed into \"{{to}}\", the record that stays.",
+        "traspasa": "Sites, contacts, permissions, groups, projects, documents and audit trail move to \"{{to}}\".",
+        "contador": "{{n}} sites"
+      },
+      "contacto": {
+        "desc": "\"{{from}}\" is absorbed into \"{{to}}\", the record that stays.",
+        "traspasa": "Client links, reachable sites and permissions move to \"{{to}}\". If both had a portal account, only the one on \"{{to}}\" survives.",
+        "contador": "{{n}} clients"
+      }
     }
   },
   "contactos": {
@@ -498,7 +511,9 @@
         "cargando": "Loading sites…",
         "sinEmplazamientos": "This client has no sites.",
         "sinClientes": "This contact is not linked to any client.",
-        "soloContactoNota": "The Web access columns require the contact to be an “App user”."
+        "soloContactoNota": "The Web access columns require the contact to be an “App user”.",
+        "cargoPlaceholder": "Role",
+        "cargoAria": "Role at {{name}}"
       },
       "comentariosPlaceholder": "Internal notes about the contact",
       "telefonoPlaceholder": "+34 600 000 000",

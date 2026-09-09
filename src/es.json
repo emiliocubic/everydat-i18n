@@ -336,7 +336,20 @@
       "elegir": "Ficha que se absorbe",
       "aviso": "Todo lo del cliente absorbido pasa a esta ficha y el absorbido se retira. No tiene vuelta atrás.",
       "avisoContacto": "Todo lo de la persona absorbida pasa a esta ficha y la absorbida se retira. No tiene vuelta atrás.",
-      "hecha": "Fichas unificadas."
+      "hecha": "Fichas unificadas.",
+      "asa": "Arrastra esta ficha sobre la que se queda para unificarlas",
+      "huecos": "Lo que «{{to}}» tenga escrito no se toca; solo se rellenan sus huecos con lo que la otra ficha sí tenía.",
+      "alias": "«{{from}}» no desaparece del todo: se queda apuntando a «{{to}}», para que una importación posterior no la vuelva a crear.",
+      "cliente": {
+        "desc": "«{{from}}» se absorbe dentro de «{{to}}», que es la ficha que se queda.",
+        "traspasa": "Pasan a «{{to}}» sus instalaciones, contactos, permisos, grupos, proyectos, documentos y auditoría.",
+        "contador": "{{n}} instalaciones"
+      },
+      "contacto": {
+        "desc": "«{{from}}» se absorbe dentro de «{{to}}», que es la ficha que se queda.",
+        "traspasa": "Pasan a «{{to}}» sus vínculos con clientes, los emplazamientos que alcanza y sus permisos. Si las dos tenían cuenta de portal, solo sobrevive la de «{{to}}».",
+        "contador": "{{n}} clientes"
+      }
     }
   },
   "contactos": {
@@ -409,7 +422,9 @@
         "cargando": "Cargando emplazamientos…",
         "sinEmplazamientos": "Este cliente no tiene emplazamientos.",
         "sinClientes": "Este contacto no está asociado a ningún cliente.",
-        "soloContactoNota": "Las columnas de Acceso web requieren que el contacto sea «Usuario aplicación»."
+        "soloContactoNota": "Las columnas de Acceso web requieren que el contacto sea «Usuario aplicación».",
+        "cargoPlaceholder": "Cargo",
+        "cargoAria": "Cargo en {{name}}"
       },
       "comentariosPlaceholder": "Anotaciones internas sobre el contacto",
       "telefonoPlaceholder": "+34 600 000 000",

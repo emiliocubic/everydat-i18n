@@ -411,6 +411,9 @@
     "nuevo": {
       "creado": "Client créé.",
       "pie": "Les champs marqués * sont obligatoires. Le reste se complète ensuite dans la fiche."
+    },
+    "fusion": {
+      "asa": "Faites glisser cette fiche sur celle qui reste pour les fusionner"
     }
   },
   "contactos": {
@@ -483,7 +486,9 @@
         "cargando": "Chargement des sites…",
         "sinEmplazamientos": "Ce client n’a aucun site.",
         "sinClientes": "Ce contact n’est associé à aucun client.",
-        "soloContactoNota": "Les colonnes Accès web nécessitent que le contact soit un « Utilisateur application »."
+        "soloContactoNota": "Les colonnes Accès web nécessitent que le contact soit un « Utilisateur application ».",
+        "cargoPlaceholder": "Fonction",
+        "cargoAria": "Fonction chez {{name}}"
       },
       "comentariosPlaceholder": "Notes internes sur le contact",
       "telefonoPlaceholder": "+34 600 000 000",
