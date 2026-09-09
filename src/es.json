@@ -3308,7 +3308,8 @@
       "realizadaPor": "Quién (externo)",
       "descripcion": "Qué se hizo",
       "proximaRevision": "Próxima revisión",
-      "adjuntos": "Documentos"
+      "adjuntos": "Documentos",
+      "autor": "Quién"
     },
     "hint": {
       "fecha": "Cuándo pasó, no cuándo se anota.",

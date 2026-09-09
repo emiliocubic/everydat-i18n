@@ -3276,7 +3276,8 @@
       "realizadaPor": "Qui (externe)",
       "descripcion": "Ce qui a été fait",
       "proximaRevision": "Prochaine vérification",
-      "adjuntos": "Documents"
+      "adjuntos": "Documents",
+      "autor": "Qui"
     },
     "hint": {
       "fecha": "Quand cela s'est passé, pas quand on le saisit.",
