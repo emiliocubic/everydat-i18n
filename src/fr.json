@@ -2502,12 +2502,15 @@
         "criterio": {
           "fijo": "Fixe par unité",
           "por_campo": "Selon la valeur d'un champ",
-          "base_mas_campo": "Fixe plus valeur d'un champ"
+          "base_mas_campo": "Fixe plus valeur d'un champ",
+          "por_componentes": "Par composant du système",
+          "base_mas_componentes": "Fixe plus composant du système"
         },
         "porUnidad": "€ / u.",
         "porMedida": "€ / unité de mesure",
         "base": "Fixe par unité",
-        "sinCampos": "Sans champs numériques"
+        "sinCampos": "Sans champs numériques",
+        "porComponente": "€ / composant"
       },
       "otros": {
         "title": "Autres produits",

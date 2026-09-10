@@ -2534,12 +2534,15 @@
         "criterio": {
           "fijo": "Fijo por unidad",
           "por_campo": "Por valor de un campo",
-          "base_mas_campo": "Fijo más valor de un campo"
+          "base_mas_campo": "Fijo más valor de un campo",
+          "por_componentes": "Por componente del sistema",
+          "base_mas_componentes": "Fijo más componente del sistema"
         },
         "porUnidad": "€ / ud.",
         "porMedida": "€ / unidad de medida",
         "base": "Fijo por unidad",
-        "sinCampos": "Sin campos numéricos"
+        "sinCampos": "Sin campos numéricos",
+        "porComponente": "€ / componente"
       },
       "otros": {
         "title": "Otros productos",

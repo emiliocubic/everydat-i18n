@@ -2534,12 +2534,15 @@
         "criterio": {
           "fijo": "Fixed per unit",
           "por_campo": "Per field value",
-          "base_mas_campo": "Fixed plus field value"
+          "base_mas_campo": "Fixed plus field value",
+          "por_componentes": "Per system component",
+          "base_mas_componentes": "Fixed plus system component"
         },
         "porUnidad": "€ / unit",
         "porMedida": "€ / measure unit",
         "base": "Fixed per unit",
-        "sinCampos": "No numeric fields"
+        "sinCampos": "No numeric fields",
+        "porComponente": "€ / component"
       },
       "otros": {
         "title": "Other products",
