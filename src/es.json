@@ -2561,7 +2561,16 @@
         "nombrePh": "p. ej. Jornada de operario",
         "descPh": "Para qué es, en una línea"
       },
-      "banda": "Parámetros generales de aplicación"
+      "banda": "Parámetros generales de aplicación",
+      "cartera": {
+        "titulo": "Cartera comercial",
+        "desc": "Cuánto aguanta un proyecto futuro sin fecha firme y qué tramo enseñan las vistas comerciales.",
+        "caducidad": "Descartar los futuros vencidos a los",
+        "dias": "días",
+        "ventana": "Ventana de las vistas comerciales",
+        "meses": "meses",
+        "hint": "El descarte por caducidad lo hace un barrido diario y queda anotado como automático. La ventana es solo el valor de partida: cada persona la cambia en la pantalla."
+      }
     }
   },
   "shell": {
@@ -2731,7 +2740,9 @@
       "ventana": "Ventana de ejecución",
       "probabilidad": "Probabilidad de aprobación",
       "zonas": "Alcance",
-      "motivoDescarte": "Motivo del descarte"
+      "motivoDescarte": "Motivo del descarte",
+      "contacto": "Contacto",
+      "avisado": "Avisado al cliente"
     },
     "estado": {
       "futuro": "Futuro",
@@ -2747,7 +2758,8 @@
       "instalacion": "Instalación",
       "revision": "Revisión",
       "suministro": "Suministro",
-      "reparacion": "Reparación"
+      "reparacion": "Reparación",
+      "otro": "Otro"
     },
     "origen": {
       "manual": "Creado a mano",
@@ -2764,7 +2776,8 @@
       "creado": "Proyecto creado.",
       "nombrePlaceholder": "Si lo dejas vacío se compone solo",
       "fechaHint": "Aunque sea provisional: sin fecha el proyecto se pierde en la lista.",
-      "sinEmplazamiento": "Sin emplazamiento el proyecto vive en la cartera, pero no se podrá aprobar."
+      "sinEmplazamiento": "Sin emplazamiento el proyecto vive en la cartera, pero no se podrá aprobar.",
+      "otroHint": "Un trabajo de otra área: no lleva censo de equipos ni encadena el ciclo siguiente."
     },
     "title": "Proyectos",
     "volver": "Volver al listado",
@@ -3108,6 +3121,9 @@
       "label": "Ventana",
       "meses": "{{count}} mes",
       "meses_other": "{{count}} meses"
+    },
+    "avisado": {
+      "ayuda": "Se le ha avisado de que le toca revisión"
     }
   },
   "revisiones": {

@@ -2529,7 +2529,16 @@
         "nombrePh": "p. ex. Journée d'opérateur",
         "descPh": "À quoi il sert, en une ligne"
       },
-      "banda": "Paramètres généraux de l’application"
+      "banda": "Paramètres généraux de l’application",
+      "cartera": {
+        "titulo": "Portefeuille commercial",
+        "desc": "Combien de temps un projet à venir tient sans date ferme, et quelle plage affichent les vues commerciales.",
+        "caducidad": "Abandonner les projets à venir échus après",
+        "dias": "jours",
+        "ventana": "Plage par défaut des vues commerciales",
+        "meses": "mois",
+        "hint": "L'abandon pour échéance est fait par un balayage quotidien et reste consigné comme automatique. La plage n'est que la valeur de départ : chacun la change à l'écran."
+      }
     }
   },
   "shell": {
@@ -2699,7 +2708,9 @@
       "ventana": "Fenêtre d'exécution",
       "probabilidad": "Probabilité d'approbation",
       "zonas": "Périmètre",
-      "motivoDescarte": "Motif de l'abandon"
+      "motivoDescarte": "Motif de l'abandon",
+      "contacto": "Contact",
+      "avisado": "Client prévenu"
     },
     "estado": {
       "futuro": "Futur",
@@ -2715,7 +2726,8 @@
       "instalacion": "Installation",
       "revision": "Vérification",
       "suministro": "Fourniture",
-      "reparacion": "Réparation"
+      "reparacion": "Réparation",
+      "otro": "Autre"
     },
     "origen": {
       "manual": "Créé à la main",
@@ -2732,7 +2744,8 @@
       "creado": "Projet créé.",
       "nombrePlaceholder": "Laissez vide et il se compose tout seul",
       "fechaHint": "Même provisoire : sans date le projet se perd dans la liste.",
-      "sinEmplazamiento": "Sans site le projet vit dans le portefeuille, mais ne pourra pas être approuvé."
+      "sinEmplazamiento": "Sans site le projet vit dans le portefeuille, mais ne pourra pas être approuvé.",
+      "otroHint": "Un travail d'un autre domaine : sans recensement d'équipements et sans enchaîner le cycle suivant."
     },
     "title": "Projets",
     "volver": "Retour à la liste",
@@ -3076,6 +3089,9 @@
       "label": "Fenêtre",
       "meses": "{{count}} mois",
       "meses_other": "{{count}} mois"
+    },
+    "avisado": {
+      "ayuda": "Le client a été prévenu qu'une vérification est due"
     }
   },
   "revisiones": {

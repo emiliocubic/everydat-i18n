@@ -2561,7 +2561,16 @@
         "nombrePh": "e.g. Technician day",
         "descPh": "What it is for, in one line"
       },
-      "banda": "General application settings"
+      "banda": "General application settings",
+      "cartera": {
+        "titulo": "Sales pipeline",
+        "desc": "How long an upcoming project survives without a firm date, and what date range the sales views show.",
+        "caducidad": "Discard overdue upcoming projects after",
+        "dias": "days",
+        "ventana": "Default range of the sales views",
+        "meses": "months",
+        "hint": "Discarding by expiry is done by a daily sweep and is logged as automatic. The range is only the starting value: each person changes it on screen."
+      }
     }
   },
   "shell": {
@@ -2731,7 +2740,9 @@
       "ventana": "Execution window",
       "probabilidad": "Approval probability",
       "zonas": "Scope",
-      "motivoDescarte": "Reason for dropping"
+      "motivoDescarte": "Reason for dropping",
+      "contacto": "Contact",
+      "avisado": "Client notified"
     },
     "estado": {
       "futuro": "Future",
@@ -2747,7 +2758,8 @@
       "instalacion": "Installation",
       "revision": "Inspection",
       "suministro": "Supply",
-      "reparacion": "Repair"
+      "reparacion": "Repair",
+      "otro": "Other"
     },
     "origen": {
       "manual": "Created by hand",
@@ -2764,7 +2776,8 @@
       "creado": "Project created.",
       "nombrePlaceholder": "Leave empty and it composes itself",
       "fechaHint": "Even if provisional: with no date the project gets lost in the list.",
-      "sinEmplazamiento": "With no site the project lives in the pipeline, but cannot be approved."
+      "sinEmplazamiento": "With no site the project lives in the pipeline, but cannot be approved.",
+      "otroHint": "Work from another area: no equipment census and it does not chain the next cycle."
     },
     "title": "Projects",
     "volver": "Back to list",
@@ -3108,6 +3121,9 @@
       "label": "Window",
       "meses": "{{count}} month",
       "meses_other": "{{count}} months"
+    },
+    "avisado": {
+      "ayuda": "The client has been told an inspection is due"
     }
   },
   "revisiones": {
