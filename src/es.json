@@ -1261,6 +1261,16 @@
     "nuevo": {
       "creado": "Emplazamiento creado.",
       "pie": "Propietario y nombre son obligatorios. El árbol y los elementos se dan de alta después, en la ficha."
+    },
+    "filtroCliente": {
+      "placeholder": "Todos",
+      "aria": "Filtrar por cliente",
+      "limpiar": "Quitar el filtro de cliente"
+    },
+    "borrar": {
+      "accion": "Eliminar",
+      "confirmar": "¿Eliminar «{{nombre}}»? Solo se puede porque no tiene ningún equipo.",
+      "hecho": "Emplazamiento eliminado"
     }
   },
   "localizaciones": {

@@ -1350,6 +1350,16 @@
     "nuevo": {
       "creado": "Site created.",
       "pie": "Owner and name are required. The tree and the items are added later, in the record."
+    },
+    "filtroCliente": {
+      "placeholder": "All",
+      "aria": "Filter by client",
+      "limpiar": "Clear client filter"
+    },
+    "borrar": {
+      "accion": "Delete",
+      "confirmar": "Delete \"{{nombre}}\"? This is only possible because it has no equipment.",
+      "hecho": "Site deleted"
     }
   },
   "localizaciones": {

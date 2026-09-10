@@ -1318,6 +1318,16 @@
     "nuevo": {
       "creado": "Site créé.",
       "pie": "Le propriétaire et le nom sont obligatoires. L'arbre et les équipements se créent ensuite, dans la fiche."
+    },
+    "filtroCliente": {
+      "placeholder": "Tous",
+      "aria": "Filtrer par client",
+      "limpiar": "Retirer le filtre client"
+    },
+    "borrar": {
+      "accion": "Supprimer",
+      "confirmar": "Supprimer « {{nombre}} »? Possible uniquement parce qu'il n'a aucun équipement.",
+      "hecho": "Site supprimé"
     }
   },
   "localizaciones": {
