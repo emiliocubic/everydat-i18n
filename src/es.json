@@ -575,7 +575,8 @@
         "normativa": "Normativa",
         "historial": "Historial",
         "revisiones": "Revisiones",
-        "actuaciones": "Actuaciones"
+        "actuaciones": "Actuaciones",
+        "componentes": "Componentes"
       },
       "anterior": "Anterior (Alt+↑)",
       "siguiente": "Siguiente (Alt+↓)",
@@ -849,6 +850,31 @@
         "validaHasta": "Revisión válida hasta",
         "conjunto": "Conjunto"
       }
+    },
+    "componentes": {
+      "titulo": "Componentes del sistema",
+      "hint": "El despiece de la instalación: qué piezas la forman y cuántas. Los componentes no son equipos: no se revisan por su cuenta ni cuentan en el censo, se revisa el sistema entero.",
+      "hintKit": "Despiece del kit {{kit}} de la EN 17235: qué piezas forman la instalación y cuántas. Los componentes no son equipos: se revisa el sistema entero.",
+      "anadir": "Añadir pieza",
+      "vacio": "Este sistema aún no tiene despiece. Añade las piezas del papel del fabricante.",
+      "col": {
+        "pieza": "Pieza",
+        "denominacion": "Denominación",
+        "cantidad": "Uds.",
+        "serie": "Nº de serie",
+        "lote": "Lote",
+        "fabricacion": "Fabricación",
+        "notas": "Notas"
+      },
+      "editar": "Editar la pieza",
+      "quitar": "Quitar del despiece",
+      "quitado": "Pieza quitada del despiece.",
+      "confirmQuitar": "¿Quitar «{{pieza}}» del despiece? Si lo que ha pasado es que se ha sustituido, edita su fila en vez de quitarla.",
+      "elegirPieza": "Elegir la pieza del catálogo",
+      "elegirReferencia": "Elige la referencia",
+      "pideReferencia": "Falta decir qué pieza es: elígela del catálogo.",
+      "totalPiezas": "{{count}} pieza distinta",
+      "totalPiezas_other": "{{count}} piezas distintas"
     }
   },
   "instancia": {

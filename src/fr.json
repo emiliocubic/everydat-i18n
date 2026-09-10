@@ -639,7 +639,8 @@
         "normativa": "Normes",
         "historial": "Historique",
         "revisiones": "Contrôles",
-        "actuaciones": "Interventions"
+        "actuaciones": "Interventions",
+        "componentes": "Composants"
       },
       "anterior": "Précédent (Alt+↑)",
       "siguiente": "Suivant (Alt+↓)",
@@ -913,6 +914,31 @@
         "validaHasta": "Vérification valable jusqu'au",
         "conjunto": "Ensemble"
       }
+    },
+    "componentes": {
+      "titulo": "Composants du système",
+      "hint": "Le détail de l'installation : quelles pièces la composent et combien. Les composants ne sont pas des équipements : ils ne sont pas contrôlés séparément et ne comptent pas dans le recensement — c'est le système entier qui est contrôlé.",
+      "hintKit": "Détail du kit {{kit}} de l'EN 17235 : quelles pièces composent l'installation et combien. Les composants ne sont pas des équipements : c'est le système entier qui est contrôlé.",
+      "anadir": "Ajouter une pièce",
+      "vacio": "Ce système n'a pas encore de détail. Ajoutez les pièces d'après la documentation du fabricant.",
+      "col": {
+        "pieza": "Pièce",
+        "denominacion": "Désignation",
+        "cantidad": "Qté",
+        "serie": "N° de série",
+        "lote": "Lot",
+        "fabricacion": "Fabrication",
+        "notas": "Notes"
+      },
+      "editar": "Modifier la pièce",
+      "quitar": "Retirer du détail",
+      "quitado": "Pièce retirée du détail.",
+      "confirmQuitar": "Retirer « {{pieza}} » du détail ? Si la pièce a été remplacée, modifiez sa ligne au lieu de la retirer.",
+      "elegirPieza": "Choisir la pièce dans le catalogue",
+      "elegirReferencia": "Choisissez la référence",
+      "pideReferencia": "Il manque la pièce : choisissez-la dans le catalogue.",
+      "totalPiezas": "{{count}} pièce distincte",
+      "totalPiezas_other": "{{count}} pièces distinctes"
     }
   },
   "instancia": {

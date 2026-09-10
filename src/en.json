@@ -664,7 +664,8 @@
         "normativa": "Standards",
         "historial": "History",
         "revisiones": "Inspections",
-        "actuaciones": "Interventions"
+        "actuaciones": "Interventions",
+        "componentes": "Components"
       },
       "anterior": "Previous (Alt+↑)",
       "siguiente": "Next (Alt+↓)",
@@ -938,6 +939,31 @@
         "validaHasta": "Inspection valid until",
         "conjunto": "Set"
       }
+    },
+    "componentes": {
+      "titulo": "System components",
+      "hint": "The breakdown of the installation: which parts make it up and how many. Components are not equipment: they are not inspected on their own and do not count in the census — the whole system is inspected.",
+      "hintKit": "Breakdown of EN 17235 kit {{kit}}: which parts make up the installation and how many. Components are not equipment: the whole system is inspected.",
+      "anadir": "Add part",
+      "vacio": "This system has no breakdown yet. Add the parts from the manufacturer's documentation.",
+      "col": {
+        "pieza": "Part",
+        "denominacion": "Description",
+        "cantidad": "Qty",
+        "serie": "Serial no.",
+        "lote": "Batch",
+        "fabricacion": "Manufactured",
+        "notas": "Notes"
+      },
+      "editar": "Edit the part",
+      "quitar": "Remove from breakdown",
+      "quitado": "Part removed from the breakdown.",
+      "confirmQuitar": "Remove “{{pieza}}” from the breakdown? If the part was replaced, edit its row instead of removing it.",
+      "elegirPieza": "Pick the part from the catalogue",
+      "elegirReferencia": "Choose the reference",
+      "pideReferencia": "The part is missing: pick it from the catalogue.",
+      "totalPiezas": "{{count}} distinct part",
+      "totalPiezas_other": "{{count}} distinct parts"
     }
   },
   "instancia": {
