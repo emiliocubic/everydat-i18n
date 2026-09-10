@@ -1357,7 +1357,8 @@
       "motivo": {
         "global": "Global access",
         "cuentas": "Through their accounts",
-        "emplazamiento": "Site shared directly"
+        "emplazamiento": "Site shared directly",
+        "proyecto": "Through an ongoing project"
       },
       "rol": {
         "super": "Superadmin",

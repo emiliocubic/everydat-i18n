@@ -1268,7 +1268,8 @@
       "motivo": {
         "global": "Acceso global",
         "cuentas": "Por sus cuentas",
-        "emplazamiento": "Emplazamiento compartido"
+        "emplazamiento": "Emplazamiento compartido",
+        "proyecto": "Por un proyecto en marcha"
       },
       "rol": {
         "super": "Superadmin",

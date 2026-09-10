@@ -1331,7 +1331,8 @@
       "motivo": {
         "global": "Accès global",
         "cuentas": "Par ses comptes",
-        "emplazamiento": "Site partagé"
+        "emplazamiento": "Site partagé",
+        "proyecto": "Par un projet en cours"
       },
       "rol": {
         "super": "Superadmin",
