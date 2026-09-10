@@ -675,7 +675,8 @@
         "historial": "History",
         "revisiones": "Inspections",
         "actuaciones": "Interventions",
-        "componentes": "Components"
+        "componentes": "Components",
+        "archivos": "Files"
       },
       "anterior": "Previous (Alt+↑)",
       "siguiente": "Next (Alt+↓)",
@@ -705,7 +706,22 @@
       "descripcion": "Description",
       "notasInternas": "Internal notes",
       "coordenadas": "Coordinates",
-      "campoSinValores": "Its type has no values assigned for this field."
+      "campoSinValores": "Its type has no values assigned for this field.",
+      "archivos": {
+        "imagenes": "Images",
+        "heredada": "Model documentation",
+        "heredadaNota": "Inherited, not editable here",
+        "sinHeredada": "The model has no documentation loaded.",
+        "origenModelo": "Model",
+        "abrirFabricante": "Open on the manufacturer's site",
+        "propia": "Equipment's own documentation",
+        "sinPropia": "No documents of its own.",
+        "origen": {
+          "elemento": "Equipment",
+          "actuacion": "Intervention",
+          "revision": "Inspection"
+        }
+      }
     },
     "fecha": {
       "fabricacion": "Manufacture",
@@ -1386,6 +1402,10 @@
         "vacio": "No contact reaches this site.",
         "soloLectura": "Granted on the contact record.",
         "sinPermisos": "No permissions"
+      },
+      "planos": {
+        "planos": "Drawings",
+        "fotos": "Photos"
       }
     },
     "grupos": {
@@ -3520,5 +3540,106 @@
     },
     "proximaChip": "Look at it again on {{fecha}}",
     "adelantada": "Brought forward by an intervention"
+  },
+  "documentos": {
+    "subir": "Upload files",
+    "descargar": "Download",
+    "ver": "Preview",
+    "ficha": "File details",
+    "raiz": "Home",
+    "migas": "Folder path",
+    "vacio": "No folders or files here.",
+    "galeriaVacia": "Nothing here yet.",
+    "restringida": "Restricted folder",
+    "pagina": "Page {{actual}} of {{total}}",
+    "clase": {
+      "label": "Kind",
+      "documento": "Document",
+      "plano": "Drawing",
+      "foto": "Photo"
+    },
+    "entidad": {
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "localizacion": "Location",
+      "elemento": "Equipment",
+      "revision": "Inspection",
+      "modelo": "Model",
+      "proyecto": "Project",
+      "actuacion": "Intervention"
+    },
+    "permiso": {
+      "usuario": "User",
+      "rol": "Role",
+      "todos": "All internal staff"
+    },
+    "nivel": {
+      "lectura": "View",
+      "descarga": "Download",
+      "gestion": "Manage"
+    },
+    "carpeta": {
+      "nueva": "New folder",
+      "nuevaPrompt": "Folder name",
+      "renombrar": "Rename",
+      "renombrarPrompt": "New folder name",
+      "borrarConfirm": "Delete the folder “{{nombre}}”. Only possible if it is empty.",
+      "borrarError": "The folder could not be deleted."
+    },
+    "archivo": {
+      "borrarConfirm": "Delete “{{nombre}}”. You can restore it from the bin."
+    },
+    "subida": {
+      "titulo": "Upload files",
+      "tituloImagen": "Upload images",
+      "ayuda": "Drag the files or pick them. You can upload several and give each one a title.",
+      "ayudaUnico": "Drag the file or pick it. You can give it a title.",
+      "arrastra": "Drag here or browse your computer",
+      "pista": "PDF, Office, drawings, images… several at once",
+      "pistaImagen": "Images (JPG, PNG, WEBP…)",
+      "tituloArchivo": "File title",
+      "anadir": "Add files",
+      "quitar": "Remove from queue",
+      "enCola": "{{count}} file queued",
+      "enCola_other": "{{count}} files queued",
+      "vacio": "No files added",
+      "subir": "Upload",
+      "subiendo": "Uploading…"
+    },
+    "visor": {
+      "error": "The file could not be opened."
+    },
+    "drawer": {
+      "datos": "What it is",
+      "vinculos": "Where it appears",
+      "vinculosAyuda": "A file exists once and shows up in every record it is linked to.",
+      "sinVinculos": "No links: this is a general document.",
+      "desvincular": "Remove link",
+      "tipoEntidad": "Record type",
+      "buscar": "Search by name",
+      "permisos": "Who can see it",
+      "hereda": "Inherits permissions from its folder.",
+      "propios": "Has its own permissions: inheritance is broken.",
+      "sinPermisos": "No permissions of its own.",
+      "restringir": "Restrict this file"
+    },
+    "papelera": {
+      "titulo": "Bin",
+      "vacia": "The bin is empty.",
+      "carpeta": "Folder",
+      "restaurar": "Restore"
+    },
+    "repositorio": {
+      "generales": "General documents",
+      "entidadAyuda": "Find the record and jump to its documents. A client's papers live in their record, not in a separate folder.",
+      "escribeParaBuscar": "Type at least two letters to search.",
+      "sinResultados": "No results.",
+      "tabsAria": "Document repository sections",
+      "tabs": {
+        "generales": "General documents",
+        "entidad": "By record",
+        "papelera": "Bin"
+      }
+    }
   }
 }

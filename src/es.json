@@ -586,7 +586,8 @@
         "historial": "Historial",
         "revisiones": "Revisiones",
         "actuaciones": "Actuaciones",
-        "componentes": "Componentes"
+        "componentes": "Componentes",
+        "archivos": "Archivos"
       },
       "anterior": "Anterior (Alt+↑)",
       "siguiente": "Siguiente (Alt+↓)",
@@ -616,7 +617,22 @@
       "descripcion": "Descripción",
       "notasInternas": "Notas internas",
       "coordenadas": "Coordenadas",
-      "campoSinValores": "Su tipo no tiene valores asignados para este campo."
+      "campoSinValores": "Su tipo no tiene valores asignados para este campo.",
+      "archivos": {
+        "imagenes": "Imágenes",
+        "heredada": "Documentación del modelo",
+        "heredadaNota": "Heredada, no editable aquí",
+        "sinHeredada": "El modelo no tiene documentación cargada.",
+        "origenModelo": "Modelo",
+        "abrirFabricante": "Abrir en la web del fabricante",
+        "propia": "Documentación propia del equipo",
+        "sinPropia": "Sin documentos propios.",
+        "origen": {
+          "elemento": "Del equipo",
+          "actuacion": "De una actuación",
+          "revision": "De una revisión"
+        }
+      }
     },
     "fecha": {
       "fabricacion": "Fabricación",
@@ -1297,6 +1313,10 @@
         "vacio": "Ningún contacto alcanza esta instalación.",
         "soloLectura": "Se conceden en la ficha del contacto.",
         "sinPermisos": "Sin permisos"
+      },
+      "planos": {
+        "planos": "Planos",
+        "fotos": "Fotos"
       }
     },
     "grupos": {
@@ -3520,5 +3540,106 @@
     },
     "proximaChip": "Volver a mirarlo el {{fecha}}",
     "adelantada": "Adelantada por una actuación"
+  },
+  "documentos": {
+    "subir": "Subir archivos",
+    "descargar": "Descargar",
+    "ver": "Previsualizar",
+    "ficha": "Ficha del archivo",
+    "raiz": "Inicio",
+    "migas": "Ruta de carpetas",
+    "vacio": "No hay carpetas ni archivos aquí.",
+    "galeriaVacia": "Todavía no hay nada aquí.",
+    "restringida": "Carpeta restringida",
+    "pagina": "Página {{actual}} de {{total}}",
+    "clase": {
+      "label": "Clase",
+      "documento": "Documento",
+      "plano": "Plano",
+      "foto": "Foto"
+    },
+    "entidad": {
+      "cliente": "Cliente",
+      "emplazamiento": "Emplazamiento",
+      "localizacion": "Localización",
+      "elemento": "Equipo",
+      "revision": "Revisión",
+      "modelo": "Modelo",
+      "proyecto": "Proyecto",
+      "actuacion": "Actuación"
+    },
+    "permiso": {
+      "usuario": "Usuario",
+      "rol": "Rol",
+      "todos": "Todo el personal interno"
+    },
+    "nivel": {
+      "lectura": "Ver",
+      "descarga": "Descargar",
+      "gestion": "Gestionar"
+    },
+    "carpeta": {
+      "nueva": "Nueva carpeta",
+      "nuevaPrompt": "Nombre de la carpeta",
+      "renombrar": "Renombrar",
+      "renombrarPrompt": "Nuevo nombre de la carpeta",
+      "borrarConfirm": "Se elimina la carpeta «{{nombre}}». Solo se puede si está vacía.",
+      "borrarError": "No se ha podido eliminar la carpeta."
+    },
+    "archivo": {
+      "borrarConfirm": "Se elimina «{{nombre}}». Podrás recuperarlo desde la papelera."
+    },
+    "subida": {
+      "titulo": "Subir archivos",
+      "tituloImagen": "Subir imágenes",
+      "ayuda": "Arrastra los archivos o selecciónalos. Puedes subir varios y poner un título a cada uno.",
+      "ayudaUnico": "Arrastra el archivo o selecciónalo. Puedes ponerle un título.",
+      "arrastra": "Arrastra aquí o examina tu equipo",
+      "pista": "PDF, Office, planos, imágenes… varios a la vez",
+      "pistaImagen": "Imágenes (JPG, PNG, WEBP…)",
+      "tituloArchivo": "Título del archivo",
+      "anadir": "Añadir archivos",
+      "quitar": "Quitar de la cola",
+      "enCola": "{{count}} archivo en cola",
+      "enCola_other": "{{count}} archivos en cola",
+      "vacio": "Ningún archivo añadido",
+      "subir": "Subir",
+      "subiendo": "Subiendo…"
+    },
+    "visor": {
+      "error": "No se ha podido abrir el archivo."
+    },
+    "drawer": {
+      "datos": "Qué es",
+      "vinculos": "Dónde aparece",
+      "vinculosAyuda": "Un archivo existe una vez y aparece en todas las fichas a las que se vincula.",
+      "sinVinculos": "Sin vínculos: es un documento general.",
+      "desvincular": "Quitar el vínculo",
+      "tipoEntidad": "Tipo de ficha",
+      "buscar": "Buscar por nombre",
+      "permisos": "Quién lo ve",
+      "hereda": "Hereda los permisos de su carpeta.",
+      "propios": "Tiene permisos propios: la herencia está rota.",
+      "sinPermisos": "Sin permisos propios.",
+      "restringir": "Restringir este archivo"
+    },
+    "papelera": {
+      "titulo": "Papelera",
+      "vacia": "La papelera está vacía.",
+      "carpeta": "Carpeta",
+      "restaurar": "Restaurar"
+    },
+    "repositorio": {
+      "generales": "Documentos generales",
+      "entidadAyuda": "Busca la ficha y salta a su documentación. Los papeles de un cliente viven en su ficha, no en una carpeta aparte.",
+      "escribeParaBuscar": "Escribe al menos dos letras para buscar.",
+      "sinResultados": "Sin resultados.",
+      "tabsAria": "Secciones del repositorio documental",
+      "tabs": {
+        "generales": "Documentos generales",
+        "entidad": "Por entidad",
+        "papelera": "Papelera"
+      }
+    }
   }
 }
