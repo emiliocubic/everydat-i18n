@@ -920,7 +920,38 @@
         "situacion": "État",
         "estado": "Statut",
         "validaHasta": "Vérification valable jusqu'au",
-        "conjunto": "Ensemble"
+        "conjunto": "Ensemble",
+        "descripcion": "Description",
+        "serie": "Numéro de série",
+        "lote": "Numéro de lot",
+        "tag": "Tag / Chip ID",
+        "referencia_interna": "Référence interne",
+        "notasInternas": "Notes internes",
+        "fecha_fabricacion": "Fabrication",
+        "fecha_suministro": "Fourniture",
+        "fecha_instalacion": "Installation",
+        "fecha_puesta_servicio": "Mise en service",
+        "ultimaRev": "Dernière inspection",
+        "ultimaRes": "Résultat",
+        "revisor": "Inspecteur",
+        "notaRev": "Note d'inspection",
+        "cobertura": "Visite planifiée"
+      },
+      "grupos": {
+        "familia": "Famille",
+        "identificacion": "Identification",
+        "fechas": "Dates",
+        "revision": "Inspection"
+      },
+      "borrar": "Supprimer l'équipement",
+      "borrarConfirmar": "Supprimer « {{nombre}} »? Possible uniquement parce qu'il n'a aucune inspection.",
+      "ambito": {
+        "rotulo": "Type",
+        "todos": "Tous",
+        "varios": "{{count}} types",
+        "ayuda": "Limite les lignes à ces types et révèle leurs champs propres",
+        "quitar": "Retirer le périmètre",
+        "sinTipos": "Aucun équipement sur ce site pour l'instant"
       }
     },
     "componentes": {

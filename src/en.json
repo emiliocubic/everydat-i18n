@@ -945,7 +945,38 @@
         "situacion": "Status",
         "estado": "State",
         "validaHasta": "Inspection valid until",
-        "conjunto": "Set"
+        "conjunto": "Set",
+        "descripcion": "Description",
+        "serie": "Serial number",
+        "lote": "Batch number",
+        "tag": "Tag / Chip ID",
+        "referencia_interna": "Internal reference",
+        "notasInternas": "Internal notes",
+        "fecha_fabricacion": "Manufactured",
+        "fecha_suministro": "Supplied",
+        "fecha_instalacion": "Installed",
+        "fecha_puesta_servicio": "In service since",
+        "ultimaRev": "Last inspection",
+        "ultimaRes": "Result",
+        "revisor": "Inspector",
+        "notaRev": "Inspection note",
+        "cobertura": "Planned visit"
+      },
+      "grupos": {
+        "familia": "Family",
+        "identificacion": "Identification",
+        "fechas": "Dates",
+        "revision": "Inspection"
+      },
+      "borrar": "Delete item",
+      "borrarConfirmar": "Delete \"{{nombre}}\"? This is only possible because it has no inspections.",
+      "ambito": {
+        "rotulo": "Type",
+        "todos": "All",
+        "varios": "{{count}} types",
+        "ayuda": "Narrows rows to those types and reveals their own fields",
+        "quitar": "Clear the scope",
+        "sinTipos": "No equipment in this site yet"
       }
     },
     "componentes": {

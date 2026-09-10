@@ -856,7 +856,38 @@
         "situacion": "Situación",
         "estado": "Estado",
         "validaHasta": "Revisión válida hasta",
-        "conjunto": "Conjunto"
+        "conjunto": "Conjunto",
+        "descripcion": "Descripción",
+        "serie": "Nº de serie",
+        "lote": "Nº de lote",
+        "tag": "Tag / Chip ID",
+        "referencia_interna": "Referencia interna",
+        "notasInternas": "Notas internas",
+        "fecha_fabricacion": "Fabricación",
+        "fecha_suministro": "Suministro",
+        "fecha_instalacion": "Instalación",
+        "fecha_puesta_servicio": "Puesta en servicio",
+        "ultimaRev": "Última revisión",
+        "ultimaRes": "Resultado",
+        "revisor": "Revisor",
+        "notaRev": "Nota de la revisión",
+        "cobertura": "Visita planificada"
+      },
+      "grupos": {
+        "familia": "Familia",
+        "identificacion": "Identificación",
+        "fechas": "Fechas",
+        "revision": "Revisión"
+      },
+      "borrar": "Eliminar el equipo",
+      "borrarConfirmar": "¿Eliminar «{{nombre}}»? Solo se puede porque no tiene ninguna revisión.",
+      "ambito": {
+        "rotulo": "Tipo",
+        "todos": "Todos",
+        "varios": "{{count}} tipos",
+        "ayuda": "Acota las filas a esos tipos y enseña sus campos propios",
+        "quitar": "Quitar el ámbito",
+        "sinTipos": "Todavía no hay equipos en este emplazamiento"
       }
     },
     "componentes": {
