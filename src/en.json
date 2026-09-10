@@ -633,7 +633,13 @@
         "revision": "Expire before their next inspection",
         "vida": "Reach end of service life before their next inspection",
         "sin_cobertura": "No next-inspection date covers them"
-      }
+      },
+      "aptos": "Pass",
+      "enRevision": "Being inspected",
+      "nuncaRevisados": "Never inspected",
+      "deEllosActivos": "{{count}} in service",
+      "deEllosDescatalogados": "{{count}} withdrawn",
+      "deEllosDescatalogados_other": "{{count}} withdrawn"
     },
     "lote": {
       "motivo": "Reason",

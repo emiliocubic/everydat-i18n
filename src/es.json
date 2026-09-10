@@ -544,7 +544,13 @@
         "revision": "Caducan antes de su próxima revisión",
         "vida": "Llegan a fin de vida útil antes de su próxima revisión",
         "sin_cobertura": "Sin fecha de próxima revisión que los cubra"
-      }
+      },
+      "aptos": "Aptos",
+      "enRevision": "En revisión",
+      "nuncaRevisados": "Nunca revisados",
+      "deEllosActivos": "{{count}} en servicio",
+      "deEllosDescatalogados": "{{count}} descatalogado",
+      "deEllosDescatalogados_other": "{{count}} descatalogados"
     },
     "lote": {
       "motivo": "Motivo",

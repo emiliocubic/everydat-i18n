@@ -608,7 +608,13 @@
         "revision": "Expirent avant leur prochaine inspection",
         "vida": "Atteignent la fin de vie utile avant leur prochaine inspection",
         "sin_cobertura": "Sans date de prochaine inspection qui les couvre"
-      }
+      },
+      "aptos": "Conformes",
+      "enRevision": "En cours d'inspection",
+      "nuncaRevisados": "Jamais inspectés",
+      "deEllosActivos": "{{count}} en service",
+      "deEllosDescatalogados": "{{count}} retiré",
+      "deEllosDescatalogados_other": "{{count}} retirés"
     },
     "lote": {
       "motivo": "Motif",
