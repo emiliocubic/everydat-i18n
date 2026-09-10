@@ -893,7 +893,8 @@
       "actual": "current",
       "eligeAntes": "Choose the client and the site first.",
       "mover": "Move here",
-      "hecho": "{{count}} items moved."
+      "hecho": "{{count}} items moved.",
+      "buscarCliente": "Type two letters of the client"
     },
     "clonar": {
       "accion": "Clone item",
@@ -1035,7 +1036,7 @@
         "operario": "Internal operator",
         "operarioDesc": "Field mobile app; no panel access.",
         "colaborador": "External collaborator",
-        "colaboradorDesc": "Scope limited to assigned sites."
+        "colaboradorDesc": "Inspects in the field like an operator, only on what is shared with them."
       },
       "cuentaLabel": "Account type"
     },
@@ -1198,7 +1199,9 @@
         "seleccionadas": "{{count}} selected",
         "hint": "The user will only see these accounts, those of their groups and the individual sites (one specific site, not the rest of its client's).",
         "guardarPrimero": "Save the user first to assign accounts."
-      }
+      },
+      "colaboradorQueHace": "Works in the field from the app: registers equipment, opens, scores and closes inspections, logs interventions and uploads documents. Cannot void inspections, delete equipment or certify.",
+      "alcanceColaboradorHelp": "With no accounts assigned they see nothing: a collaborator only reaches what is shared here and the projects they are put on."
     }
   },
   "emplazamientos": {
@@ -1360,6 +1363,9 @@
       "accion": "Delete",
       "confirmar": "Delete \"{{nombre}}\"? This is only possible because it has no equipment.",
       "hecho": "Site deleted"
+    },
+    "mapa": {
+      "abrir": "Open in maps"
     }
   },
   "localizaciones": {
@@ -1378,7 +1384,9 @@
       "nombrePlaceholder": "e.g. North roof",
       "descripcion": "Description",
       "orden": "Order",
-      "parentId": "Parent"
+      "parentId": "Parent",
+      "gps": "Coordinates",
+      "gpsHint": "Latitude and longitude separated by a comma. They enable \"open in maps\"."
     },
     "arbol": {
       "aria": "Site structure tree",
@@ -1445,7 +1453,17 @@
       "planSinSugerencia": "There is no data to suggest a date for that scope",
       "planMotivoCaducidad": "the first item's inspection expires then",
       "planMotivoContractual": "it is the client's contractual interval",
-      "planMotivoPeriodicidad": "it is the interval required by the catalogue"
+      "planMotivoPeriodicidad": "it is the interval required by the catalogue",
+      "trasladar": "Move folder and its branch to another site",
+      "noTrasladarRaiz": "The whole site cannot be moved: it is the root, not one of its folders",
+      "trasladarSujeto": "the \"{{nombre}}\" folder and everything under it",
+      "trasladada": "\"{{nombre}}\" moved with its whole branch",
+      "elementosRama": "{{count}} item in the branch",
+      "elementosRama_other": "{{count}} items in the branch",
+      "alcanceCuenta": {
+        "nodo": "Active items in this folder",
+        "rama": "Active items in this folder and every folder under it"
+      }
     },
     "zona": {
       "promoverTitulo": "Create a sub-zone",
@@ -1487,7 +1505,9 @@
       "ramaCompleta": "Inspection completed in this branch",
       "pendienteFila": "Pending inspection in the running project",
       "revisadoFila": "Inspected in the running project"
-    }
+    },
+    "dentroDe": "It will be created inside \"{{nombre}}\"",
+    "dentroDeRaiz": "It will be created at the root of \"{{nombre}}\""
   },
   "gruposClientes": {
     "title": "Customer groups",

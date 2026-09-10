@@ -804,7 +804,8 @@
       "actual": "actual",
       "eligeAntes": "Elige antes el cliente y el emplazamiento.",
       "mover": "Trasladar aquí",
-      "hecho": "{{count}} elementos trasladados."
+      "hecho": "{{count}} elementos trasladados.",
+      "buscarCliente": "Escribe dos letras del cliente"
     },
     "clonar": {
       "accion": "Clonar el elemento",
@@ -946,7 +947,7 @@
         "operario": "Operario interno",
         "operarioDesc": "App móvil de campo; sin acceso al panel.",
         "colaborador": "Colaborador externo",
-        "colaboradorDesc": "Alcance limitado a los emplazamientos asignados."
+        "colaboradorDesc": "Revisa en campo como el operario, solo en lo que se le comparta."
       },
       "cuentaLabel": "Tipo de cuenta"
     },
@@ -1109,7 +1110,9 @@
         "seleccionadas": "{{count}} seleccionadas",
         "hint": "El usuario verá solo estas cuentas, las de sus grupos y los emplazamientos sueltos (una obra concreta, sin el resto de las de su cliente).",
         "guardarPrimero": "Guarda el usuario para poder asignarle cuentas."
-      }
+      },
+      "colaboradorQueHace": "Trabaja en campo con la app: da de alta equipos, abre, puntúa y cierra revisiones, anota actuaciones y sube documentos. No anula revisiones, no borra equipos y no certifica.",
+      "alcanceColaboradorHelp": "Sin cuentas asignadas no ve nada: el colaborador solo alcanza lo que se le comparte aquí y los proyectos en los que se le mete en el equipo."
     }
   },
   "emplazamientos": {
@@ -1271,6 +1274,9 @@
       "accion": "Eliminar",
       "confirmar": "¿Eliminar «{{nombre}}»? Solo se puede porque no tiene ningún equipo.",
       "hecho": "Emplazamiento eliminado"
+    },
+    "mapa": {
+      "abrir": "Abrir en mapa"
     }
   },
   "localizaciones": {
@@ -1289,7 +1295,9 @@
       "nombrePlaceholder": "p. ej. Cubierta norte",
       "descripcion": "Descripción",
       "orden": "Orden",
-      "parentId": "Padre"
+      "parentId": "Padre",
+      "gps": "Coordenadas",
+      "gpsHint": "Latitud y longitud separadas por coma. Encienden «abrir en mapa»."
     },
     "arbol": {
       "aria": "Árbol estructural del emplazamiento",
@@ -1356,7 +1364,17 @@
       "planSinSugerencia": "No hay datos para sugerir una fecha en ese alcance",
       "planMotivoCaducidad": "es cuando caduca la revisión del primer equipo",
       "planMotivoContractual": "es el plazo contractual del cliente",
-      "planMotivoPeriodicidad": "es la periodicidad que pide el catálogo"
+      "planMotivoPeriodicidad": "es la periodicidad que pide el catálogo",
+      "trasladar": "Trasladar la carpeta y su rama a otro emplazamiento",
+      "noTrasladarRaiz": "El emplazamiento entero no se traslada: es la raíz, no una carpeta",
+      "trasladarSujeto": "la carpeta «{{nombre}}» y todo lo que cuelga de ella",
+      "trasladada": "«{{nombre}}» trasladada con toda su rama",
+      "elementosRama": "{{count}} equipo en la rama",
+      "elementosRama_other": "{{count}} equipos en la rama",
+      "alcanceCuenta": {
+        "nodo": "Equipos activos de esta carpeta",
+        "rama": "Equipos activos de esta carpeta y de todas las que cuelgan de ella"
+      }
     },
     "zona": {
       "promoverTitulo": "Crear una sub-zona",
@@ -1398,7 +1416,9 @@
       "ramaCompleta": "Revisión completada en esta rama",
       "pendienteFila": "Pendiente de revisar en el proyecto en marcha",
       "revisadoFila": "Revisado en el proyecto en marcha"
-    }
+    },
+    "dentroDe": "Se creará dentro de «{{nombre}}»",
+    "dentroDeRaiz": "Se creará en la raíz de «{{nombre}}»"
   },
   "modelPicker": {
     "title": "Elegir modelos",

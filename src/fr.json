@@ -868,7 +868,8 @@
       "actual": "actuel",
       "eligeAntes": "Choisissez d'abord le client et le site.",
       "mover": "Déplacer ici",
-      "hecho": "{{count}} équipements déplacés."
+      "hecho": "{{count}} équipements déplacés.",
+      "buscarCliente": "Saisissez deux lettres du client"
     },
     "clonar": {
       "accion": "Cloner l'équipement",
@@ -1010,7 +1011,7 @@
         "operario": "Opérateur interne",
         "operarioDesc": "Application mobile de terrain ; sans accès au panneau.",
         "colaborador": "Collaborateur externe",
-        "colaboradorDesc": "Périmètre limité aux sites assignés."
+        "colaboradorDesc": "Contrôle sur le terrain comme l'opérateur, uniquement sur ce qui lui est partagé."
       },
       "cuentaLabel": "Type de compte"
     },
@@ -1173,7 +1174,9 @@
         "seleccionadas": "{{count}} sélectionnés",
         "hint": "L'utilisateur ne verra que ces comptes, ceux de ses groupes et les sites isolés (un site précis, sans les autres de son client).",
         "guardarPrimero": "Enregistre l'utilisateur pour pouvoir lui attribuer des comptes."
-      }
+      },
+      "colaboradorQueHace": "Travaille sur le terrain avec l'application : enregistre des équipements, ouvre, note et clôture des contrôles, consigne des interventions et téléverse des documents. Il n'annule pas les contrôles, ne supprime pas d'équipements et ne certifie pas.",
+      "alcanceColaboradorHelp": "Sans comptes assignés, il ne voit rien : le collaborateur n'atteint que ce qui lui est partagé ici et les projets où il est affecté."
     }
   },
   "emplazamientos": {
@@ -1328,6 +1331,9 @@
       "accion": "Supprimer",
       "confirmar": "Supprimer « {{nombre}} »? Possible uniquement parce qu'il n'a aucun équipement.",
       "hecho": "Site supprimé"
+    },
+    "mapa": {
+      "abrir": "Ouvrir sur la carte"
     }
   },
   "localizaciones": {
@@ -1346,7 +1352,9 @@
       "nombrePlaceholder": "p. ex. Toiture nord",
       "descripcion": "Description",
       "orden": "Ordre",
-      "parentId": "Parent"
+      "parentId": "Parent",
+      "gps": "Coordonnées",
+      "gpsHint": "Latitude et longitude séparées par une virgule. Elles activent « ouvrir sur la carte »."
     },
     "arbol": {
       "aria": "Arborescence du site",
@@ -1413,7 +1421,17 @@
       "planSinSugerencia": "Pas de données pour suggérer une date sur ce périmètre",
       "planMotivoCaducidad": "c'est l'échéance de la révision du premier équipement",
       "planMotivoContractual": "c'est le délai contractuel du client",
-      "planMotivoPeriodicidad": "c'est la périodicité exigée par le catalogue"
+      "planMotivoPeriodicidad": "c'est la périodicité exigée par le catalogue",
+      "trasladar": "Déplacer le dossier et sa branche vers un autre site",
+      "noTrasladarRaiz": "Le site entier ne se déplace pas: c'est la racine, pas un de ses dossiers",
+      "trasladarSujeto": "le dossier « {{nombre}} » et tout ce qui en dépend",
+      "trasladada": "« {{nombre}} » déplacé avec toute sa branche",
+      "elementosRama": "{{count}} équipement dans la branche",
+      "elementosRama_other": "{{count}} équipements dans la branche",
+      "alcanceCuenta": {
+        "nodo": "Équipements actifs de ce dossier",
+        "rama": "Équipements actifs de ce dossier et de tous ceux qui en dépendent"
+      }
     },
     "zona": {
       "promoverTitulo": "Créer une sous-zone",
@@ -1455,7 +1473,9 @@
       "ramaCompleta": "Contrôle terminé dans cette branche",
       "pendienteFila": "En attente de contrôle dans le projet en cours",
       "revisadoFila": "Contrôlé dans le projet en cours"
-    }
+    },
+    "dentroDe": "Sera créé dans « {{nombre}} »",
+    "dentroDeRaiz": "Sera créé à la racine de « {{nombre}} »"
   },
   "gruposClientes": {
     "title": "Groupes de clients",
