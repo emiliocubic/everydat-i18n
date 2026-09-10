@@ -900,7 +900,8 @@
       "deshacerHint": "Les équipements restent dans leur dossier ; rien n'est supprimé.",
       "confirmDeshacer": "Défaire l'ensemble « {{nombre}} » ? Les équipements restent libres dans leur dossier.",
       "deshecho": "Ensemble défait.",
-      "situacionHint": "L'état de l'ensemble est le pire de ses équipements."
+      "situacionHint": "L'état de l'ensemble est le pire de ses équipements.",
+      "abrir": "Ouvrir l'ensemble"
     },
     "tabla": {
       "buscar": "Rechercher par type, marque, modèle, n° de série ou localisation…",
@@ -946,6 +947,11 @@
       "pideReferencia": "Il manque la pièce : choisissez-la dans le catalogue.",
       "totalPiezas": "{{count}} pièce distincte",
       "totalPiezas_other": "{{count}} pièces distinctes"
+    },
+    "completitud": {
+      "faltan": "{{count}} donnée manquante",
+      "faltan_other": "{{count}} données manquantes",
+      "aria": "Fiche complète: {{puestos}} sur {{total}}"
     }
   },
   "instancia": {

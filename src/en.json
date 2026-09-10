@@ -925,7 +925,8 @@
       "deshacerHint": "Items stay in their folder; nothing is deleted.",
       "confirmDeshacer": "Undo the set “{{nombre}}”? Items stay loose in their folder.",
       "deshecho": "Set undone.",
-      "situacionHint": "The set's status is the worst of its items."
+      "situacionHint": "The set's status is the worst of its items.",
+      "abrir": "Open the assembly"
     },
     "tabla": {
       "buscar": "Search by type, brand, model, serial no. or location…",
@@ -971,6 +972,11 @@
       "pideReferencia": "The part is missing: pick it from the catalogue.",
       "totalPiezas": "{{count}} distinct part",
       "totalPiezas_other": "{{count}} distinct parts"
+    },
+    "completitud": {
+      "faltan": "{{count}} field missing",
+      "faltan_other": "{{count}} fields missing",
+      "aria": "Record complete: {{puestos}} of {{total}}"
     }
   },
   "instancia": {

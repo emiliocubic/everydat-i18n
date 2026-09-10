@@ -836,7 +836,8 @@
       "deshacerHint": "Los equipos quedan sueltos en su carpeta; no se borra ninguno.",
       "confirmDeshacer": "¿Deshacer el conjunto «{{nombre}}»? Los equipos quedan sueltos en su carpeta.",
       "deshecho": "Conjunto deshecho.",
-      "situacionHint": "La situación del conjunto es la peor de sus equipos."
+      "situacionHint": "La situación del conjunto es la peor de sus equipos.",
+      "abrir": "Abrir el conjunto"
     },
     "tabla": {
       "buscar": "Buscar por tipo, marca, modelo, n.º de serie o localización…",
@@ -882,6 +883,11 @@
       "pideReferencia": "Falta decir qué pieza es: elígela del catálogo.",
       "totalPiezas": "{{count}} pieza distinta",
       "totalPiezas_other": "{{count}} piezas distintas"
+    },
+    "completitud": {
+      "faltan": "Falta {{count}} dato",
+      "faltan_other": "Faltan {{count}} datos",
+      "aria": "Ficha completa al {{puestos}} de {{total}}"
     }
   },
   "instancia": {
