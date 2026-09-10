@@ -3640,6 +3640,12 @@
         "entidad": "By record",
         "papelera": "Bin"
       }
+    },
+    "campos": {
+      "nombre": "Title",
+      "descripcion": "Description",
+      "fichero": "File",
+      "tipoMime": "Type"
     }
   }
 }

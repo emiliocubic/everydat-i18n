@@ -3640,6 +3640,12 @@
         "entidad": "Por entidad",
         "papelera": "Papelera"
       }
+    },
+    "campos": {
+      "nombre": "Título",
+      "descripcion": "Descripción",
+      "fichero": "Fichero",
+      "tipoMime": "Tipo"
     }
   }
 }
