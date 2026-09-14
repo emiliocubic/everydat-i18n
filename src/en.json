@@ -1928,14 +1928,22 @@
         "checkpoints": "Checkpoints",
         "checkpointsTitle": "Number of canon checkpoints",
         "campos": "Fields",
-        "camposTitle": "Number of suggested fields"
+        "camposTitle": "Number of suggested fields",
+        "equivalente": "Equivalent",
+        "equivalenteTitle": "Designation of the standard in this instance's market (UNE, BS, DIN, NF). Informative only: the standard is the EN."
+      },
+      "adopcion": {
+        "sin_adoptar": "Not adopted in this market",
+        "sin_verificar": "Adoption not verified"
       },
       "tabs": {
         "general": "General"
       },
       "field": {
         "codigo": "Standard code",
-        "codigoPlaceholder": "e.g. UNE-EN 361:2002",
+        "codigoPlaceholder": "e.g. EN 361:2002",
+        "equivalente": "Equivalent in this market",
+        "categoria": "Base standard / category",
         "descripcion": "Description",
         "descripcionPlaceholder": "Scope and subject of the standard…",
         "descripcionHint": "Briefly describe the equipment or situation this standard regulates."

@@ -1872,14 +1872,22 @@
         "checkpoints": "Points de contrôle",
         "checkpointsTitle": "Nombre de points de contrôle du canon",
         "campos": "Champs",
-        "camposTitle": "Nombre de champs suggérés"
+        "camposTitle": "Nombre de champs suggérés",
+        "equivalente": "Équivalent",
+        "equivalenteTitle": "Désignation de la norme sur le marché de cette instance (UNE, BS, DIN, NF). Informatif : la norme est l’EN."
+      },
+      "adopcion": {
+        "sin_adoptar": "Non adoptée sur ce marché",
+        "sin_verificar": "Adoption non vérifiée"
       },
       "tabs": {
         "general": "Général"
       },
       "field": {
         "codigo": "Code de la norme",
-        "codigoPlaceholder": "p. ex. UNE-EN 361:2002",
+        "codigoPlaceholder": "p. ex. EN 361:2002",
+        "equivalente": "Équivalent sur ce marché",
+        "categoria": "Norme de base / catégorie",
         "descripcion": "Description",
         "descripcionPlaceholder": "Champ d’application et objet de la norme…",
         "descripcionHint": "Décrivez brièvement l’équipement ou la situation que cette norme régit."

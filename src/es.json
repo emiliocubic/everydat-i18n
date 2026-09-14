@@ -1928,14 +1928,22 @@
         "checkpoints": "Checkpoints",
         "checkpointsTitle": "Nº de checkpoints del canon",
         "campos": "Campos",
-        "camposTitle": "Nº de campos sugeridos"
+        "camposTitle": "Nº de campos sugeridos",
+        "equivalente": "Equivalente",
+        "equivalenteTitle": "Designación de la norma en el mercado de esta instancia (UNE, BS, DIN, NF). Solo informativa: la norma es la EN."
+      },
+      "adopcion": {
+        "sin_adoptar": "No adoptada en este mercado",
+        "sin_verificar": "Adopción sin verificar"
       },
       "tabs": {
         "general": "General"
       },
       "field": {
         "codigo": "Código de norma",
-        "codigoPlaceholder": "p. ej. UNE-EN 361:2002",
+        "codigoPlaceholder": "p. ej. EN 361:2002",
+        "equivalente": "Equivalente en este mercado",
+        "categoria": "Norma base / categoría",
         "descripcion": "Descripción",
         "descripcionPlaceholder": "Ámbito y objeto de la norma…",
         "descripcionHint": "Describe brevemente el equipo o situación que regula esta norma."
