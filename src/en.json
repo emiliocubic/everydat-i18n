@@ -68,7 +68,10 @@
   },
   "home": {
     "title": "Home",
-    "subtitle": "Welcome to Everydat"
+    "subtitle": "Welcome to Everydat",
+    "pendientesCatalogo_one": "{{count}} catalogue entry pending validation",
+    "pendientesCatalogo_other": "{{count}} catalogue entries pending validation",
+    "pendientesCatalogoIr": "Open the tray"
   },
   "agent": {
     "title": "AI Assistant",
@@ -128,7 +131,31 @@
     "empty": "No models match the filter.",
     "more": "Show more models",
     "clear": "Clear",
-    "confirm": "Confirm selection"
+    "confirm": "Confirm selection",
+    "pendiente": "Pending validation",
+    "escalera": {
+      "noEsta": "Not in your catalogue?",
+      "buscarRepo": "Search the repository",
+      "crear": "Create it",
+      "repoHint": "Search by name or code; the repository is not listed in full.",
+      "repoVacio": "Nothing in the repository for that text.",
+      "repoTipo": "Element type to import it as",
+      "importar": "Import",
+      "importado": "Imported from the repository",
+      "yaImportado": "Already in your catalogue",
+      "crearTitulo": "New model",
+      "crearHint": "You have checked your catalogue and the repository. What you create will await validation by whoever manages the catalogue, but it can be used right away.",
+      "fabricante": "Manufacturer",
+      "fabricanteOtro": "Other manufacturer…",
+      "fabricanteNombre": "Manufacturer name",
+      "nombre": "Model",
+      "codigo": "Code (optional)",
+      "tipo": "Element type",
+      "referencia": "Reference or size (optional)",
+      "crearBtn": "Create and use",
+      "creado": "Model created",
+      "volver": "Back to search"
+    }
   },
   "datatable": {
     "records": "records",
@@ -1270,7 +1297,9 @@
         "hint": "Named groups of permissions added on top of the access type.",
         "soloSuperadmin": "Only the superadmin grants or removes capabilities.",
         "gestion_usuarios": "User management",
-        "gestion_usuariosHint": "sees the Users menu and creates, edits and deactivates internal users, collaborators and work teams"
+        "gestion_usuariosHint": "sees the Users menu and creates, edits and deactivates internal users, collaborators and work teams",
+        "gestion_catalogo": "Catalogue management",
+        "gestion_catalogoHint": "sees the Catalogue menu, edits standards, types, fields, checklists, manufacturers and models, sets element characterisation and validates what others create"
       }
     }
   },
@@ -1700,7 +1729,10 @@
         "confirm": "Merge models",
         "done": "“{{from}}” was merged into “{{to}}”"
       },
-      "sinEspecificar": "Unspecified"
+      "sinEspecificar": "Unspecified",
+      "importBloqueCta": "Bulk import",
+      "pendienteChip": "Pending validation",
+      "pendienteChipTitle": "Created by someone without the catalogue management capability; usable, but not yet validated."
     },
     "modelos": {
       "fabricante": "Manufacturer",
@@ -1908,6 +1940,14 @@
           "sinItems": "This checklist has no checkpoints yet.",
           "delTipo_one": "no checklist of its own: its type's «{{tipo}}» ({{count}} checklist)",
           "delTipo_other": "no checklist of its own: its type's «{{tipo}}» ({{count}} checklists)"
+        },
+        "pendiente": {
+          "titulo": "Pending validation",
+          "texto": "Created by {{quien}} without the catalogue management capability. It can be used already; validating accepts it together with its new manufacturer and references.",
+          "textoSinQuien": "Created by someone without the catalogue management capability. It can be used already; validating accepts it together with its new manufacturer and references.",
+          "validar": "Validate",
+          "validado": "Model validated",
+          "referenciaChip": "Pending"
         }
       }
     },
@@ -2614,6 +2654,39 @@
         "meses": "months",
         "hint": "Discarding by expiry is done by a daily sweep and is logged as automatic. The range is only the starting value: each person changes it on screen."
       }
+    },
+    "caracterizacion": {
+      "banda": "Element characterisation",
+      "intro": "What identifies an element and which dates describe it. Applies to everything that is registered."
+    },
+    "pendientes": {
+      "banda": "Pending validation",
+      "intro": "What was created by someone without the catalogue management capability. It is usable from the start; here it is accepted, corrected, merged into what already existed or deleted.",
+      "vacio": "Nothing pending validation.",
+      "modelos": "Models",
+      "referencias": "Loose references",
+      "fabricanteNuevo": "new manufacturer",
+      "sinTipo": "No type",
+      "creadoPor": "Created by {{quien}} on {{fecha}}",
+      "creadoSinQuien": "Created on {{fecha}}",
+      "elementos_one": "{{count}} element already hangs from it",
+      "elementos_other": "{{count}} elements already hang from it",
+      "sinElementos": "No elements yet",
+      "candidatos": "Similar entries that already exist:",
+      "sinCandidatos": "Nothing similar in the catalogue.",
+      "esEste": "It's this one",
+      "esEsteTitle": "Merge into this one: the pending entry disappears and its elements move here",
+      "noFusionable": "Only mergeable into a local model of the same manufacturer and type; otherwise, fix it from the sheet.",
+      "validar": "Validate",
+      "abrir": "Open sheet",
+      "borrar": "Delete",
+      "borrarTitle": "Only if it has no elements behind",
+      "validado": "Validated",
+      "borrado": "Deleted",
+      "fusionado": "Merged into “{{nombre}}”",
+      "confirmBorrar": "Delete “{{nombre}}”? It has no elements behind.",
+      "confirmFusionar": "“{{de}}” will disappear and its elements will move to “{{a}}”. Continue?",
+      "referenciaDe": "Reference of {{modelo}}"
     }
   },
   "shell": {
@@ -2655,7 +2728,10 @@
       "explotacion": "Data queries",
       "proyectosPropuestas": "Proposals",
       "proyectosSeguimiento": "Follow-up",
-      "auditoria": "Audit log"
+      "auditoria": "Audit log",
+      "catalogo": "Catalogue",
+      "catalogoCaracterizacion": "Characterisation",
+      "catalogoPendientes": "Pending validation"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -2736,7 +2812,8 @@
       "texto": "You do not have permission to {{que}}. If you need it, ask your company's superadmin.",
       "usuarios": "manage users",
       "equipos": "manage work teams",
-      "volver": "Back to home"
+      "volver": "Back to home",
+      "catalogo": "manage the catalogue"
     }
   },
   "proyectos": {

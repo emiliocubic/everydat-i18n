@@ -68,7 +68,10 @@
   },
   "home": {
     "title": "Inicio",
-    "subtitle": "Bienvenido a Everydat"
+    "subtitle": "Bienvenido a Everydat",
+    "pendientesCatalogo_one": "{{count}} alta del catálogo pendiente de validar",
+    "pendientesCatalogo_other": "{{count}} altas del catálogo pendientes de validar",
+    "pendientesCatalogoIr": "Ir a la bandeja"
   },
   "agent": {
     "title": "Asistente IA",
@@ -1181,7 +1184,9 @@
         "hint": "Grupos de permisos con nombre propio que se añaden al tipo de acceso.",
         "soloSuperadmin": "Solo el superadmin concede o quita capacidades.",
         "gestion_usuarios": "Gestión de usuarios",
-        "gestion_usuariosHint": "ve el menú Usuarios y da de alta, edita y da de baja internos, colaboradores y equipos de trabajo"
+        "gestion_usuariosHint": "ve el menú Usuarios y da de alta, edita y da de baja internos, colaboradores y equipos de trabajo",
+        "gestion_catalogo": "Gestión del catálogo",
+        "gestion_catalogoHint": "ve el menú Catálogo, escribe normas, tipos, campos, checklists, fabricantes y modelos, fija la caracterización de los elementos y valida lo que otros dan de alta"
       }
     }
   },
@@ -1518,7 +1523,31 @@
     "empty": "Sin modelos que coincidan con el filtro.",
     "more": "Ver más modelos",
     "clear": "Vaciar",
-    "confirm": "Confirmar selección"
+    "confirm": "Confirmar selección",
+    "pendiente": "Pendiente de validar",
+    "escalera": {
+      "noEsta": "¿No está en tu catálogo?",
+      "buscarRepo": "Buscar en el repositorio",
+      "crear": "Darlo de alta",
+      "repoHint": "Busca por nombre o código; el repositorio no se vuelca entero.",
+      "repoVacio": "Nada en el repositorio con ese texto.",
+      "repoTipo": "Tipo de elemento con el que se importa",
+      "importar": "Importar",
+      "importado": "Importado del repositorio",
+      "yaImportado": "Ya en tu catálogo",
+      "crearTitulo": "Nuevo modelo",
+      "crearHint": "Ya has mirado en tu catálogo y en el repositorio. Lo que crees quedará pendiente de que lo valide quien gestiona el catálogo, pero se puede usar ya.",
+      "fabricante": "Fabricante",
+      "fabricanteOtro": "Otro fabricante…",
+      "fabricanteNombre": "Nombre del fabricante",
+      "nombre": "Modelo",
+      "codigo": "Código (opcional)",
+      "tipo": "Tipo de elemento",
+      "referencia": "Referencia o talla (opcional)",
+      "crearBtn": "Crear y usar",
+      "creado": "Modelo creado",
+      "volver": "Volver a la búsqueda"
+    }
   },
   "datatable": {
     "records": "registros",
@@ -1700,7 +1729,10 @@
         "confirm": "Fusionar modelos",
         "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
       },
-      "sinEspecificar": "Sin especificar"
+      "sinEspecificar": "Sin especificar",
+      "importBloqueCta": "Importar en bloque",
+      "pendienteChip": "Pendiente de validar",
+      "pendienteChipTitle": "Lo dio de alta alguien sin la capacidad de gestión del catálogo; se usa, pero falta validarlo."
     },
     "modelos": {
       "fabricante": "Fabricante",
@@ -1908,6 +1940,14 @@
           "sinItems": "Este checklist todavía no tiene checkpoints.",
           "delTipo_one": "sin checklist propio: el de su tipo «{{tipo}}» ({{count}} checklist)",
           "delTipo_other": "sin checklist propio: los de su tipo «{{tipo}}» ({{count}} checklists)"
+        },
+        "pendiente": {
+          "titulo": "Pendiente de validar",
+          "texto": "Lo dio de alta {{quien}} sin la capacidad de gestión del catálogo. Se puede usar ya; validarlo lo da por bueno junto con su fabricante y sus referencias nuevas.",
+          "textoSinQuien": "Lo dio de alta alguien sin la capacidad de gestión del catálogo. Se puede usar ya; validarlo lo da por bueno junto con su fabricante y sus referencias nuevas.",
+          "validar": "Validar",
+          "validado": "Modelo validado",
+          "referenciaChip": "Pendiente"
         }
       }
     },
@@ -2614,6 +2654,39 @@
         "meses": "meses",
         "hint": "El descarte por caducidad lo hace un barrido diario y queda anotado como automático. La ventana es solo el valor de partida: cada persona la cambia en la pantalla."
       }
+    },
+    "caracterizacion": {
+      "banda": "Caracterización de los elementos",
+      "intro": "Qué identifica a un elemento y qué fechas lo describen. Se aplica a todo lo que se da de alta."
+    },
+    "pendientes": {
+      "banda": "Pendientes de validar",
+      "intro": "Lo que dio de alta alguien sin la capacidad de gestión del catálogo. Se usa desde el primer momento; aquí se acepta, se corrige, se fusiona con lo que ya existía o se borra.",
+      "vacio": "No hay nada pendiente de validar.",
+      "modelos": "Modelos",
+      "referencias": "Referencias sueltas",
+      "fabricanteNuevo": "fabricante nuevo",
+      "sinTipo": "Sin tipo",
+      "creadoPor": "Lo dio de alta {{quien}} el {{fecha}}",
+      "creadoSinQuien": "Dado de alta el {{fecha}}",
+      "elementos_one": "{{count}} elemento ya cuelga de él",
+      "elementos_other": "{{count}} elementos ya cuelgan de él",
+      "sinElementos": "Sin elementos todavía",
+      "candidatos": "Parecidos que ya existen:",
+      "sinCandidatos": "No hay nada parecido en el catálogo.",
+      "esEste": "Es este",
+      "esEsteTitle": "Fusionar en este: lo pendiente desaparece y su parque pasa aquí",
+      "noFusionable": "Solo se fusiona con un modelo local del mismo fabricante y tipo; para el resto, corrígelo desde la ficha.",
+      "validar": "Validar",
+      "abrir": "Abrir ficha",
+      "borrar": "Borrar",
+      "borrarTitle": "Solo si no tiene elementos detrás",
+      "validado": "Validado",
+      "borrado": "Borrado",
+      "fusionado": "Fusionado en «{{nombre}}»",
+      "confirmBorrar": "¿Borrar «{{nombre}}»? No tiene elementos detrás.",
+      "confirmFusionar": "«{{de}}» desaparecerá y su parque pasará a «{{a}}». ¿Seguir?",
+      "referenciaDe": "Referencia de {{modelo}}"
     }
   },
   "shell": {
@@ -2655,7 +2728,10 @@
       "explotacion": "Explotación de datos",
       "proyectosPropuestas": "Propuestas",
       "proyectosSeguimiento": "Seguimiento",
-      "auditoria": "Auditoría"
+      "auditoria": "Auditoría",
+      "catalogo": "Catálogo",
+      "catalogoCaracterizacion": "Caracterización",
+      "catalogoPendientes": "Pendientes de validar"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -2736,7 +2812,8 @@
       "texto": "No tienes permiso para {{que}}. Si lo necesitas, pídeselo al superadmin de tu empresa.",
       "usuarios": "gestionar usuarios",
       "equipos": "gestionar equipos de trabajo",
-      "volver": "Volver al inicio"
+      "volver": "Volver al inicio",
+      "catalogo": "gestionar el catálogo"
     }
   },
   "proyectos": {

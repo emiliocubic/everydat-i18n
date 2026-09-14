@@ -68,7 +68,10 @@
   },
   "home": {
     "title": "Accueil",
-    "subtitle": "Bienvenue sur Everydat"
+    "subtitle": "Bienvenue sur Everydat",
+    "pendientesCatalogo_one": "{{count}} entrée du catalogue en attente de validation",
+    "pendientesCatalogo_other": "{{count}} entrées du catalogue en attente de validation",
+    "pendientesCatalogoIr": "Ouvrir la corbeille"
   },
   "agent": {
     "title": "Assistant IA",
@@ -128,7 +131,31 @@
     "empty": "Aucun modèle ne correspond au filtre.",
     "more": "Voir plus de modèles",
     "clear": "Vider",
-    "confirm": "Confirmer la sélection"
+    "confirm": "Confirmer la sélection",
+    "pendiente": "En attente de validation",
+    "escalera": {
+      "noEsta": "Pas dans votre catalogue ?",
+      "buscarRepo": "Chercher dans le référentiel",
+      "crear": "Le créer",
+      "repoHint": "Cherchez par nom ou code ; le référentiel n'est pas listé en entier.",
+      "repoVacio": "Rien dans le référentiel pour ce texte.",
+      "repoTipo": "Type d'élément pour l'import",
+      "importar": "Importer",
+      "importado": "Importé du référentiel",
+      "yaImportado": "Déjà dans votre catalogue",
+      "crearTitulo": "Nouveau modèle",
+      "crearHint": "Vous avez vérifié votre catalogue et le référentiel. Ce que vous créez attendra la validation du gestionnaire du catalogue, mais peut être utilisé tout de suite.",
+      "fabricante": "Fabricant",
+      "fabricanteOtro": "Autre fabricant…",
+      "fabricanteNombre": "Nom du fabricant",
+      "nombre": "Modèle",
+      "codigo": "Code (facultatif)",
+      "tipo": "Type d'élément",
+      "referencia": "Référence ou taille (facultatif)",
+      "crearBtn": "Créer et utiliser",
+      "creado": "Modèle créé",
+      "volver": "Retour à la recherche"
+    }
   },
   "datatable": {
     "records": "enregistrements",
@@ -1225,7 +1252,9 @@
         "hint": "Groupes de permissions nommés qui s'ajoutent au type d'accès.",
         "soloSuperadmin": "Seul le superadmin accorde ou retire les capacités.",
         "gestion_usuarios": "Gestion des utilisateurs",
-        "gestion_usuariosHint": "voit le menu Utilisateurs et crée, modifie et désactive les internes, les collaborateurs et les équipes de travail"
+        "gestion_usuariosHint": "voit le menu Utilisateurs et crée, modifie et désactive les internes, les collaborateurs et les équipes de travail",
+        "gestion_catalogo": "Gestion du catalogue",
+        "gestion_catalogoHint": "voit le menu Catalogue, modifie normes, types, champs, checklists, fabricants et modèles, fixe la caractérisation des éléments et valide ce que les autres créent"
       }
     }
   },
@@ -1644,7 +1673,10 @@
         "confirm": "Fusionner les modèles",
         "done": "« {{from}} » a été fusionné dans « {{to}} »"
       },
-      "sinEspecificar": "Non précisé"
+      "sinEspecificar": "Non précisé",
+      "importBloqueCta": "Import en bloc",
+      "pendienteChip": "En attente de validation",
+      "pendienteChipTitle": "Créé par quelqu'un sans la capacité de gestion du catalogue ; utilisable, mais pas encore validé."
     },
     "modelos": {
       "fabricante": "Fabricant",
@@ -1852,6 +1884,14 @@
           "sinItems": "Cette checklist n’a pas encore de checkpoints.",
           "delTipo_one": "sans checklist propre : celle de son type « {{tipo}} » ({{count}} checklist)",
           "delTipo_other": "sans checklist propre : celles de son type « {{tipo}} » ({{count}} checklists)"
+        },
+        "pendiente": {
+          "titulo": "En attente de validation",
+          "texto": "Créé par {{quien}} sans la capacité de gestion du catalogue. Il peut déjà être utilisé ; le valider l'accepte avec son nouveau fabricant et ses références.",
+          "textoSinQuien": "Créé par quelqu'un sans la capacité de gestion du catalogue. Il peut déjà être utilisé ; le valider l'accepte avec son nouveau fabricant et ses références.",
+          "validar": "Valider",
+          "validado": "Modèle validé",
+          "referenciaChip": "En attente"
         }
       }
     },
@@ -2558,6 +2598,39 @@
         "meses": "mois",
         "hint": "L'abandon pour échéance est fait par un balayage quotidien et reste consigné comme automatique. La plage n'est que la valeur de départ : chacun la change à l'écran."
       }
+    },
+    "caracterizacion": {
+      "banda": "Caractérisation des éléments",
+      "intro": "Ce qui identifie un élément et quelles dates le décrivent. S'applique à tout ce qui est enregistré."
+    },
+    "pendientes": {
+      "banda": "En attente de validation",
+      "intro": "Ce qui a été créé par quelqu'un sans la capacité de gestion du catalogue. Utilisable dès le départ ; ici on l'accepte, on le corrige, on le fusionne avec l'existant ou on le supprime.",
+      "vacio": "Rien en attente de validation.",
+      "modelos": "Modèles",
+      "referencias": "Références isolées",
+      "fabricanteNuevo": "nouveau fabricant",
+      "sinTipo": "Sans type",
+      "creadoPor": "Créé par {{quien}} le {{fecha}}",
+      "creadoSinQuien": "Créé le {{fecha}}",
+      "elementos_one": "{{count}} élément en dépend déjà",
+      "elementos_other": "{{count}} éléments en dépendent déjà",
+      "sinElementos": "Aucun élément pour l'instant",
+      "candidatos": "Entrées semblables déjà existantes :",
+      "sinCandidatos": "Rien de semblable dans le catalogue.",
+      "esEste": "C'est celui-ci",
+      "esEsteTitle": "Fusionner dans celui-ci : l'entrée en attente disparaît et ses éléments passent ici",
+      "noFusionable": "Fusion possible seulement avec un modèle local du même fabricant et du même type ; sinon, corrigez depuis la fiche.",
+      "validar": "Valider",
+      "abrir": "Ouvrir la fiche",
+      "borrar": "Supprimer",
+      "borrarTitle": "Seulement s'il n'a aucun élément derrière",
+      "validado": "Validé",
+      "borrado": "Supprimé",
+      "fusionado": "Fusionné dans « {{nombre}} »",
+      "confirmBorrar": "Supprimer « {{nombre}} » ? Aucun élément n'en dépend.",
+      "confirmFusionar": "« {{de}} » disparaîtra et ses éléments passeront à « {{a}} ». Continuer ?",
+      "referenciaDe": "Référence de {{modelo}}"
     }
   },
   "shell": {
@@ -2599,7 +2672,10 @@
       "explotacion": "Exploitation des données",
       "proyectosPropuestas": "Propositions",
       "proyectosSeguimiento": "Suivi",
-      "auditoria": "Journal d'audit"
+      "auditoria": "Journal d'audit",
+      "catalogo": "Catalogue",
+      "catalogoCaracterizacion": "Caractérisation",
+      "catalogoPendientes": "En attente de validation"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -2680,7 +2756,8 @@
       "texto": "Vous n'avez pas la permission de {{que}}. Si vous en avez besoin, demandez-la au superadmin de votre entreprise.",
       "usuarios": "gérer les utilisateurs",
       "equipos": "gérer les équipes de travail",
-      "volver": "Retour à l'accueil"
+      "volver": "Retour à l'accueil",
+      "catalogo": "gérer le catalogue"
     }
   },
   "proyectos": {
