@@ -1933,7 +1933,7 @@
         "equivalenteTitle": "Designation of the standard in this instance's market (UNE, BS, DIN, NF). Informative only: the standard is the EN."
       },
       "adopcion": {
-        "sin_adoptar": "Not adopted in this market",
+        "sin_adoptar": "Not adopted",
         "sin_verificar": "Adoption not verified"
       },
       "tabs": {

@@ -1933,7 +1933,7 @@
         "equivalenteTitle": "Designación de la norma en el mercado de esta instancia (UNE, BS, DIN, NF). Solo informativa: la norma es la EN."
       },
       "adopcion": {
-        "sin_adoptar": "No adoptada en este mercado",
+        "sin_adoptar": "Sin adoptar",
         "sin_verificar": "Adopción sin verificar"
       },
       "tabs": {

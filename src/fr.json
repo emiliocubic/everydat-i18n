@@ -1877,7 +1877,7 @@
         "equivalenteTitle": "Désignation de la norme sur le marché de cette instance (UNE, BS, DIN, NF). Informatif : la norme est l’EN."
       },
       "adopcion": {
-        "sin_adoptar": "Non adoptée sur ce marché",
+        "sin_adoptar": "Non adoptée",
         "sin_verificar": "Adoption non vérifiée"
       },
       "tabs": {
