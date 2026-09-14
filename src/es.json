@@ -374,7 +374,7 @@
       "telefono": "Teléfono",
       "notifyAllRevisions": "Recibir notificaciones de revisiones",
       "email": "Email",
-      "cuenta": "Cuenta",
+      "cuenta": "Acceso al sistema",
       "clientes": "Clientes",
       "ultimoAcceso": "Último acceso"
     },
@@ -1175,7 +1175,14 @@
         "guardarPrimero": "Guarda el usuario para poder asignarle cuentas."
       },
       "colaboradorQueHace": "Trabaja en campo con la app: da de alta equipos, abre, puntúa y cierra revisiones, anota actuaciones y sube documentos. No anula revisiones, no borra equipos y no certifica.",
-      "alcanceColaboradorHelp": "Sin cuentas asignadas no ve nada: el colaborador solo alcanza lo que se le comparte aquí y los proyectos en los que se le mete en el equipo."
+      "alcanceColaboradorHelp": "Sin cuentas asignadas no ve nada: el colaborador solo alcanza lo que se le comparte aquí y los proyectos en los que se le mete en el equipo.",
+      "capacidades": {
+        "titulo": "Capacidades",
+        "hint": "Grupos de permisos con nombre propio que se añaden al tipo de acceso.",
+        "soloSuperadmin": "Solo el superadmin concede o quita capacidades.",
+        "gestion_usuarios": "Gestión de usuarios",
+        "gestion_usuariosHint": "ve el menú Usuarios y da de alta, edita y da de baja internos, colaboradores y equipos de trabajo"
+      }
     }
   },
   "emplazamientos": {
@@ -2608,7 +2615,6 @@
       "usuarios": "Usuarios",
       "usuariosInternos": "Internos",
       "usuariosColaboradores": "Colaboradores",
-      "usuariosInvitados": "Invitados",
       "equiposTrabajo": "Equipos",
       "clientes": "Clientes",
       "clientesListado": "Clientes",
@@ -2716,6 +2722,13 @@
       "documentos": "El archivo único de la instancia: documentos de clientes, emplazamientos, equipos y revisiones, con permisos por carpeta. El módulo ya existe por dentro; falta la pantalla.",
       "mailCenter": "El registro de avisos automáticos y el envío manual de correos a los clientes, como en GestLínea. Llega con la capa de avisos.",
       "explotacion": "Consultas transversales con filtros sobre elementos y revisiones, como en GestLínea. Llega en su capa."
+    },
+    "sinPermiso": {
+      "titulo": "Sin permiso",
+      "texto": "No tienes permiso para {{que}}. Si lo necesitas, pídeselo al superadmin de tu empresa.",
+      "usuarios": "gestionar usuarios",
+      "equipos": "gestionar equipos de trabajo",
+      "volver": "Volver al inicio"
     }
   },
   "proyectos": {

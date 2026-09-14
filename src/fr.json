@@ -438,7 +438,7 @@
       "telefono": "Téléphone",
       "notifyAllRevisions": "Recevoir les notifications de révisions",
       "email": "E-mail",
-      "cuenta": "Compte",
+      "cuenta": "Accès au système",
       "clientes": "Clients",
       "ultimoAcceso": "Dernière connexion"
     },
@@ -1219,7 +1219,14 @@
         "guardarPrimero": "Enregistre l'utilisateur pour pouvoir lui attribuer des comptes."
       },
       "colaboradorQueHace": "Travaille sur le terrain avec l'application : enregistre des équipements, ouvre, note et clôture des contrôles, consigne des interventions et téléverse des documents. Il n'annule pas les contrôles, ne supprime pas d'équipements et ne certifie pas.",
-      "alcanceColaboradorHelp": "Sans comptes assignés, il ne voit rien : le collaborateur n'atteint que ce qui lui est partagé ici et les projets où il est affecté."
+      "alcanceColaboradorHelp": "Sans comptes assignés, il ne voit rien : le collaborateur n'atteint que ce qui lui est partagé ici et les projets où il est affecté.",
+      "capacidades": {
+        "titulo": "Capacités",
+        "hint": "Groupes de permissions nommés qui s'ajoutent au type d'accès.",
+        "soloSuperadmin": "Seul le superadmin accorde ou retire les capacités.",
+        "gestion_usuarios": "Gestion des utilisateurs",
+        "gestion_usuariosHint": "voit le menu Utilisateurs et crée, modifie et désactive les internes, les collaborateurs et les équipes de travail"
+      }
     }
   },
   "emplazamientos": {
@@ -2552,7 +2559,6 @@
       "usuarios": "Utilisateurs",
       "usuariosInternos": "Utilisateurs internes",
       "usuariosColaboradores": "Collaborateurs",
-      "usuariosInvitados": "Invités",
       "equiposTrabajo": "Équipes",
       "clientes": "Clients",
       "clientesListado": "Clients",
@@ -2660,6 +2666,13 @@
       "documentos": "L'archive unique de l'instance : documents des clients, sites, équipements et contrôles, avec permissions par dossier. Le module existe déjà en interne ; l'écran manque.",
       "mailCenter": "Le registre des avis automatiques et l'envoi manuel de courriels aux clients, comme dans GestLínea. Il arrive avec la couche des avis.",
       "explotacion": "Requêtes transversales avec filtres sur équipements et contrôles, comme dans GestLínea. Elle arrive dans sa couche."
+    },
+    "sinPermiso": {
+      "titulo": "Sans permission",
+      "texto": "Vous n'avez pas la permission de {{que}}. Si vous en avez besoin, demandez-la au superadmin de votre entreprise.",
+      "usuarios": "gérer les utilisateurs",
+      "equipos": "gérer les équipes de travail",
+      "volver": "Retour à l'accueil"
     }
   },
   "proyectos": {

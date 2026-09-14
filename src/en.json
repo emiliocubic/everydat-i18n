@@ -463,7 +463,7 @@
       "telefono": "Phone",
       "notifyAllRevisions": "Receive revision notifications",
       "email": "Email",
-      "cuenta": "Account",
+      "cuenta": "System access",
       "clientes": "Customers",
       "ultimoAcceso": "Last sign-in"
     },
@@ -1264,7 +1264,14 @@
         "guardarPrimero": "Save the user first to assign accounts."
       },
       "colaboradorQueHace": "Works in the field from the app: registers equipment, opens, scores and closes inspections, logs interventions and uploads documents. Cannot void inspections, delete equipment or certify.",
-      "alcanceColaboradorHelp": "With no accounts assigned they see nothing: a collaborator only reaches what is shared here and the projects they are put on."
+      "alcanceColaboradorHelp": "With no accounts assigned they see nothing: a collaborator only reaches what is shared here and the projects they are put on.",
+      "capacidades": {
+        "titulo": "Capabilities",
+        "hint": "Named groups of permissions added on top of the access type.",
+        "soloSuperadmin": "Only the superadmin grants or removes capabilities.",
+        "gestion_usuarios": "User management",
+        "gestion_usuariosHint": "sees the Users menu and creates, edits and deactivates internal users, collaborators and work teams"
+      }
     }
   },
   "emplazamientos": {
@@ -2608,7 +2615,6 @@
       "usuarios": "Users",
       "usuariosInternos": "Internal users",
       "usuariosColaboradores": "Collaborators",
-      "usuariosInvitados": "Guests",
       "equiposTrabajo": "Teams",
       "clientes": "Customers",
       "clientesListado": "Customers",
@@ -2716,6 +2722,13 @@
       "documentos": "The instance's single archive: documents of clients, sites, items and inspections, with permissions per folder. The module already exists inside; the screen is missing.",
       "mailCenter": "The log of automatic notices and manual e-mails to clients, as in GestLínea. It arrives with the notices layer.",
       "explotacion": "Cross queries with filters over items and inspections, as in GestLínea. It arrives in its own layer."
+    },
+    "sinPermiso": {
+      "titulo": "No permission",
+      "texto": "You do not have permission to {{que}}. If you need it, ask your company's superadmin.",
+      "usuarios": "manage users",
+      "equipos": "manage work teams",
+      "volver": "Back to home"
     }
   },
   "proyectos": {
