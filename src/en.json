@@ -1157,7 +1157,8 @@
       "telefono": "Phone",
       "notas": "Notes",
       "status": "Status",
-      "actions": "Actions"
+      "actions": "Actions",
+      "nombreCompleto": "Full name"
     },
     "detail": {
       "tabDatos": "User data"
@@ -1302,6 +1303,15 @@
         "gestion_usuariosHint": "sees the Users menu and creates, edits and deactivates internal users, collaborators and work teams",
         "gestion_catalogo": "Catalogue management",
         "gestion_catalogoHint": "sees the Catalogue menu, edits standards, types, fields, checklists, manufacturers and models, sets element characterisation and validates what others create"
+      }
+    },
+    "soporte": {
+      "nota": {
+        "superadmin": "Superadmin: has every capability by default. Sees the Catalogue menu, validates pending models and manages users.",
+        "conCatalogo": "Has the catalogue management capability: sees the Catalogue menu and, on entry, the models pending validation (home card and menu counter).",
+        "sinCatalogo": "Lacks the catalogue capability: does not see the Catalogue menu and any model created from an equipment intake stays pending validation.",
+        "conUsuarios": "Manages users: sees the Users menu.",
+        "sinUsuarios": "Does not manage users: no Users menu."
       }
     }
   },

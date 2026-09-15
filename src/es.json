@@ -1044,7 +1044,8 @@
       "telefono": "Teléfono",
       "notas": "Notas",
       "status": "Estado",
-      "actions": "Acciones"
+      "actions": "Acciones",
+      "nombreCompleto": "Nombre y apellidos"
     },
     "detail": {
       "tabDatos": "Datos del usuario"
@@ -1189,6 +1190,15 @@
         "gestion_usuariosHint": "ve el menú Usuarios y da de alta, edita y da de baja internos, colaboradores y equipos de trabajo",
         "gestion_catalogo": "Gestión del catálogo",
         "gestion_catalogoHint": "ve el menú Catálogo, escribe normas, tipos, campos, checklists, fabricantes y modelos, fija la caracterización de los elementos y valida lo que otros dan de alta"
+      }
+    },
+    "soporte": {
+      "nota": {
+        "superadmin": "Superadmin: lleva todas las capacidades de serie. Ve el menú Catálogo, valida los modelos pendientes y gestiona usuarios.",
+        "conCatalogo": "Tiene la capacidad de gestión del catálogo: ve el menú Catálogo y, al entrar, los modelos pendientes de validar (tarjeta en Inicio y contador en el menú).",
+        "sinCatalogo": "No tiene la capacidad de catálogo: no ve el menú Catálogo y, si da de alta un modelo desde el alta de un equipo, queda pendiente de validar.",
+        "conUsuarios": "Gestiona usuarios: ve el menú Usuarios.",
+        "sinUsuarios": "No gestiona usuarios: no ve el menú Usuarios."
       }
     }
   },

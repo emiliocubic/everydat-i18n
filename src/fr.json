@@ -1112,7 +1112,8 @@
       "telefono": "Téléphone",
       "notas": "Notes",
       "status": "Statut",
-      "actions": "Actions"
+      "actions": "Actions",
+      "nombreCompleto": "Nom et prénom"
     },
     "detail": {
       "tabDatos": "Données de l'utilisateur"
@@ -1257,6 +1258,15 @@
         "gestion_usuariosHint": "voit le menu Utilisateurs et crée, modifie et désactive les internes, les collaborateurs et les équipes de travail",
         "gestion_catalogo": "Gestion du catalogue",
         "gestion_catalogoHint": "voit le menu Catalogue, modifie normes, types, champs, checklists, fabricants et modèles, fixe la caractérisation des éléments et valide ce que les autres créent"
+      }
+    },
+    "soporte": {
+      "nota": {
+        "superadmin": "Superadmin : toutes les capacités par défaut. Voit le menu Catalogue, valide les modèles en attente et gère les utilisateurs.",
+        "conCatalogo": "A la capacité de gestion du catalogue : voit le menu Catalogue et, à l'entrée, les modèles en attente de validation (carte d'accueil et compteur du menu).",
+        "sinCatalogo": "Sans capacité catalogue : ne voit pas le menu Catalogue et tout modèle créé depuis l'enregistrement d'un équipement reste en attente de validation.",
+        "conUsuarios": "Gère les utilisateurs : voit le menu Utilisateurs.",
+        "sinUsuarios": "Ne gère pas les utilisateurs : pas de menu Utilisateurs."
       }
     }
   },
