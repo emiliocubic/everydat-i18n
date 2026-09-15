@@ -1676,7 +1676,7 @@
           "ia": "AI-assisted",
           "manual": "Manual entry only"
         },
-        "viaTitle": "How to add the model",
+        "viaTitle": "How to add it",
         "viaRecomendada": "Recommended",
         "viaCatalogo": "Manufacturer catalogue",
         "viaCatalogoSub": "Pick the model from the manufacturer's available catalogue.",
@@ -1725,7 +1725,8 @@
         "fabricanteBuscar": "Search manufacturer…",
         "fabricanteSinCoincidencias": "No matches",
         "crumbFabricante": "Manufacturer",
-        "crumbCatalogo": "Catalogue"
+        "crumbCatalogo": "Catalogue",
+        "fabricanteLabel": "Brand / Manufacturer"
       },
       "pick": {
         "existing": "Already in your catalogue",

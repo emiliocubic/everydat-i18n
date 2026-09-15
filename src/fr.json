@@ -1620,7 +1620,7 @@
           "ia": "Assisté par IA",
           "manual": "Saisie manuelle seulement"
         },
-        "viaTitle": "Comment ajouter le modèle",
+        "viaTitle": "Comment l'ajouter",
         "viaRecomendada": "Recommandé",
         "viaCatalogo": "Catalogue du fabricant",
         "viaCatalogoSub": "Choisissez le modèle dans le catalogue disponible du fabricant.",
@@ -1669,7 +1669,8 @@
         "fabricanteBuscar": "Chercher un fabricant…",
         "fabricanteSinCoincidencias": "Aucune correspondance",
         "crumbFabricante": "Fabricant",
-        "crumbCatalogo": "Catalogue"
+        "crumbCatalogo": "Catalogue",
+        "fabricanteLabel": "Marque / Fabricant"
       },
       "pick": {
         "existing": "Déjà dans votre catalogue",

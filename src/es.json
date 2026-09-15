@@ -1676,7 +1676,7 @@
           "ia": "Asistido por IA",
           "manual": "Solo alta manual"
         },
-        "viaTitle": "Cómo dar de alta el modelo",
+        "viaTitle": "Cómo dar de alta",
         "viaRecomendada": "Recomendado",
         "viaCatalogo": "Catálogo del fabricante",
         "viaCatalogoSub": "Elige el modelo del catálogo disponible del fabricante.",
@@ -1725,7 +1725,8 @@
         "fabricanteBuscar": "Buscar fabricante…",
         "fabricanteSinCoincidencias": "Sin coincidencias",
         "crumbFabricante": "Fabricante",
-        "crumbCatalogo": "Catálogo"
+        "crumbCatalogo": "Catálogo",
+        "fabricanteLabel": "Marca / Fabricante"
       },
       "pick": {
         "existing": "Ya en tu catálogo",
