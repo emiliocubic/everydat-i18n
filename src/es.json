@@ -71,7 +71,9 @@
     "subtitle": "Bienvenido a Everydat",
     "pendientesCatalogo_one": "{{count}} alta del catálogo pendiente de validar",
     "pendientesCatalogo_other": "{{count}} altas del catálogo pendientes de validar",
-    "pendientesCatalogoIr": "Ir a la bandeja"
+    "pendientesCatalogoIr": "Ir a la bandeja",
+    "soporteSubtitle": "Soporte de Cubic",
+    "soporteAccesos": "Accesos de soporte"
   },
   "agent": {
     "title": "Asistente IA",

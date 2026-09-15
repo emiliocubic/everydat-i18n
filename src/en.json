@@ -71,7 +71,9 @@
     "subtitle": "Welcome to Everydat",
     "pendientesCatalogo_one": "{{count}} catalogue entry pending validation",
     "pendientesCatalogo_other": "{{count}} catalogue entries pending validation",
-    "pendientesCatalogoIr": "Open the tray"
+    "pendientesCatalogoIr": "Open the tray",
+    "soporteSubtitle": "Cubic support",
+    "soporteAccesos": "Support shortcuts"
   },
   "agent": {
     "title": "AI Assistant",

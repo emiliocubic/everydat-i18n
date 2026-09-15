@@ -71,7 +71,9 @@
     "subtitle": "Bienvenue sur Everydat",
     "pendientesCatalogo_one": "{{count}} entrée du catalogue en attente de validation",
     "pendientesCatalogo_other": "{{count}} entrées du catalogue en attente de validation",
-    "pendientesCatalogoIr": "Ouvrir la corbeille"
+    "pendientesCatalogoIr": "Ouvrir la corbeille",
+    "soporteSubtitle": "Support Cubic",
+    "soporteAccesos": "Accès du support"
   },
   "agent": {
     "title": "Assistant IA",
