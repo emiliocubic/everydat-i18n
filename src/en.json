@@ -1718,7 +1718,10 @@
         "addRefsBtn": "Add references",
         "created": "Model created with {{n}} reference(s).",
         "refsAdded": "{{n}} reference(s) added.",
-        "error": "The model could not be created."
+        "error": "The model could not be created.",
+        "ctaAbrir": "Open the {{fab}} catalogue",
+        "ctaBuscar": "Search for {{fab}} models",
+        "ctaDesc": "Opens almost full screen so you can pick the model comfortably. Your entry waits here behind."
       },
       "pick": {
         "existing": "Already in your catalogue",
@@ -1770,7 +1773,15 @@
       "sinEspecificar": "Unspecified",
       "importBloqueCta": "Bulk import",
       "pendienteChip": "Pending validation",
-      "pendienteChipTitle": "Created by someone without the catalogue management capability; usable, but not yet validated."
+      "pendienteChipTitle": "Created by someone without the catalogue management capability; usable, but not yet validated.",
+      "modal": {
+        "title": "{{fab}} catalogue",
+        "iaSub": "{{fab}} models are located with AI assistance.",
+        "iaRecuperando": "Retrieving references for {{name}}…",
+        "volver": "Back to the catalogue",
+        "statusVacio": "Pick a model to continue.",
+        "statusModelo": "{{name}} · {{n}} reference(s) will be imported"
+      }
     },
     "modelos": {
       "fabricante": "Manufacturer",
@@ -2907,7 +2918,12 @@
       "validez": "Valid for",
       "elementos": "Items",
       "seguimiento": "Latest note",
-      "ejecucion": "% Execution"
+      "ejecucion": "% Execution",
+      "compromiso": "Committed",
+      "ventana": "Window",
+      "arranque": "Start",
+      "dias": "Days",
+      "certificacion": "Certification"
     },
     "campos": {
       "cliente": "Client",
@@ -2963,12 +2979,9 @@
     "volver": "Back to list",
     "tabPendiente": "This tab comes in a later task.",
     "tabs": {
-      "datos": "Project data",
-      "propuesta": "Proposal data",
-      "planificacion": "Scheduling",
-      "ejecucion": "Execution",
-      "certificacion": "Certification",
-      "aria": "Project sections"
+      "general": "Overview",
+      "seguimiento": "Follow-up",
+      "propuestas": "Quotes"
     },
     "mando": {
       "cambiar": "Change project status to…",
@@ -3319,12 +3332,29 @@
       "meses_other": "{{count}} months"
     },
     "avisado": {
-      "ayuda": "The client has been told an inspection is due"
+      "ayuda": "The client has been told an inspection is due",
+      "noAplica": "Not applicable: not an inspection"
     },
     "buscarDescartados": "Search by code, name, client, site or reason",
     "abrirCliente": "Open the client record",
     "abrirEmplazamiento": "Open the site",
-    "sinEquipo": "Unassigned"
+    "sinEquipo": "Unassigned",
+    "subestado": {
+      "aprobado": "Approved, not scheduled yet: what was promised to the client, who and where, and the awarded amount.",
+      "planificado": "Set up and waiting for their date. What matters here is whether they will start on their own, and when.",
+      "en_ejecucion": "Work under way: real progress, field team and expected end date.",
+      "en_certificacion": "Work finished, waiting for someone to validate it.",
+      "ejecucion_paralizada": "Still approved but something blocks them: the reason, the days on hold and the progress reached."
+    },
+    "suma": {
+      "descartados": "Discarded amount",
+      "finalizados": "Executed amount"
+    },
+    "arranque": {
+      "auto": "Automatic",
+      "manual": "Manual"
+    },
+    "sinVentana": "no window"
   },
   "revisiones": {
     "estado": {

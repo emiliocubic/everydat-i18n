@@ -1662,7 +1662,10 @@
         "addRefsBtn": "Ajouter des références",
         "created": "Modèle créé avec {{n}} référence(s).",
         "refsAdded": "{{n}} référence(s) ajoutée(s).",
-        "error": "Le modèle n'a pas pu être créé."
+        "error": "Le modèle n'a pas pu être créé.",
+        "ctaAbrir": "Ouvrir le catalogue de {{fab}}",
+        "ctaBuscar": "Chercher des modèles {{fab}}",
+        "ctaDesc": "S'ouvre presque en plein écran pour choisir le modèle à l'aise. Votre saisie vous attend derrière."
       },
       "pick": {
         "existing": "Déjà dans votre catalogue",
@@ -1714,7 +1717,15 @@
       "sinEspecificar": "Non précisé",
       "importBloqueCta": "Import en bloc",
       "pendienteChip": "En attente de validation",
-      "pendienteChipTitle": "Créé par quelqu'un sans la capacité de gestion du catalogue ; utilisable, mais pas encore validé."
+      "pendienteChipTitle": "Créé par quelqu'un sans la capacité de gestion du catalogue ; utilisable, mais pas encore validé.",
+      "modal": {
+        "title": "Catalogue de {{fab}}",
+        "iaSub": "Les modèles {{fab}} sont localisés avec l’aide de l’IA.",
+        "iaRecuperando": "Récupération des références de {{name}}…",
+        "volver": "Revenir au catalogue",
+        "statusVacio": "Choisissez un modèle pour continuer.",
+        "statusModelo": "{{name}} · {{n}} référence(s) seront importées"
+      }
     },
     "modelos": {
       "fabricante": "Fabricant",
@@ -2851,7 +2862,12 @@
       "validez": "Validité",
       "elementos": "Équipements",
       "seguimiento": "Dernière note",
-      "ejecucion": "% Exécution"
+      "ejecucion": "% Exécution",
+      "compromiso": "Engagement",
+      "ventana": "Fenêtre",
+      "arranque": "Démarrage",
+      "dias": "Jours",
+      "certificacion": "Certification"
     },
     "campos": {
       "cliente": "Client",
@@ -2907,12 +2923,9 @@
     "volver": "Retour à la liste",
     "tabPendiente": "Cet onglet arrive dans une tâche ultérieure.",
     "tabs": {
-      "datos": "Données projet",
-      "propuesta": "Données proposition",
-      "planificacion": "Planification",
-      "ejecucion": "Exécution",
-      "certificacion": "Certification",
-      "aria": "Sections du projet"
+      "general": "Vue générale",
+      "seguimiento": "Suivi",
+      "propuestas": "Devis"
     },
     "mando": {
       "cambiar": "Changer l’état du projet en…",
@@ -3247,12 +3260,29 @@
       "meses_other": "{{count}} mois"
     },
     "avisado": {
-      "ayuda": "Le client a été prévenu qu'une vérification est due"
+      "ayuda": "Le client a été prévenu qu'une vérification est due",
+      "noAplica": "Sans objet : ce n’est pas une vérification"
     },
     "buscarDescartados": "Rechercher par code, nom, client, site ou motif",
     "abrirCliente": "Ouvrir la fiche du client",
     "abrirEmplazamiento": "Ouvrir le site",
-    "sinEquipo": "Non assigné"
+    "sinEquipo": "Non assigné",
+    "subestado": {
+      "aprobado": "Approuvés et non planifiés : l’engagement pris avec le client, qui et où, et le montant adjugé.",
+      "planificado": "Configurés et en attente de leur date. Ce qui compte ici : démarreront-ils seuls, et quand.",
+      "en_ejecucion": "Exécution en cours : avancement réel, équipe sur site et fin prévue.",
+      "en_certificacion": "Exécution terminée, en attente de validation.",
+      "ejecucion_paralizada": "Toujours approuvés mais bloqués : le motif, les jours à l’arrêt et l’avancement atteint."
+    },
+    "suma": {
+      "descartados": "Montant abandonné",
+      "finalizados": "Montant exécuté"
+    },
+    "arranque": {
+      "auto": "Automatique",
+      "manual": "Manuel"
+    },
+    "sinVentana": "sans fenêtre"
   },
   "revisiones": {
     "estado": {

@@ -1718,7 +1718,10 @@
         "addRefsBtn": "Añadir referencias",
         "created": "Modelo creado con {{n}} referencia(s).",
         "refsAdded": "{{n}} referencia(s) añadida(s).",
-        "error": "No se pudo crear el modelo."
+        "error": "No se pudo crear el modelo.",
+        "ctaAbrir": "Abrir el catálogo de {{fab}}",
+        "ctaBuscar": "Buscar modelos de {{fab}}",
+        "ctaDesc": "Se abre a pantalla casi completa para elegir el modelo con comodidad. El alta te espera aquí detrás."
       },
       "pick": {
         "existing": "Ya en tu catálogo",
@@ -1770,7 +1773,15 @@
       "sinEspecificar": "Sin especificar",
       "importBloqueCta": "Importar en bloque",
       "pendienteChip": "Pendiente de validar",
-      "pendienteChipTitle": "Lo dio de alta alguien sin la capacidad de gestión del catálogo; se usa, pero falta validarlo."
+      "pendienteChipTitle": "Lo dio de alta alguien sin la capacidad de gestión del catálogo; se usa, pero falta validarlo.",
+      "modal": {
+        "title": "Catálogo de {{fab}}",
+        "iaSub": "Los modelos de {{fab}} se localizan con ayuda de la IA.",
+        "iaRecuperando": "Recuperando las referencias de {{name}}…",
+        "volver": "Volver al catálogo",
+        "statusVacio": "Elige un modelo para continuar el alta.",
+        "statusModelo": "{{name}} · se importarán {{n}} referencia(s)"
+      }
     },
     "modelos": {
       "fabricante": "Fabricante",
@@ -2907,7 +2918,12 @@
       "validez": "Validez",
       "elementos": "Elementos",
       "seguimiento": "Último apunte",
-      "ejecucion": "% Ejecución"
+      "ejecucion": "% Ejecución",
+      "compromiso": "Compromiso",
+      "ventana": "Ventana",
+      "arranque": "Arranque",
+      "dias": "Días",
+      "certificacion": "Certificación"
     },
     "campos": {
       "cliente": "Cliente",
@@ -2963,12 +2979,9 @@
     "volver": "Volver al listado",
     "tabPendiente": "Esta pestaña llega en una tarea posterior.",
     "tabs": {
-      "datos": "Datos proyecto",
-      "propuesta": "Datos propuesta",
-      "planificacion": "Planificación",
-      "ejecucion": "Ejecución",
-      "certificacion": "Certificación",
-      "aria": "Secciones del proyecto"
+      "general": "Vista general",
+      "seguimiento": "Seguimiento",
+      "propuestas": "Propuestas"
     },
     "mando": {
       "cambiar": "Cambiar estado proyecto a…",
@@ -3319,12 +3332,29 @@
       "meses_other": "{{count}} meses"
     },
     "avisado": {
-      "ayuda": "Se le ha avisado de que le toca revisión"
+      "ayuda": "Se le ha avisado de que le toca revisión",
+      "noAplica": "No aplica: no es una revisión"
     },
     "buscarDescartados": "Buscar por código, nombre, cliente, emplazamiento o motivo",
     "abrirCliente": "Abrir la ficha del cliente",
     "abrirEmplazamiento": "Abrir el emplazamiento",
-    "sinEquipo": "Sin asignar"
+    "sinEquipo": "Sin asignar",
+    "subestado": {
+      "aprobado": "Aprobados sin planificar: el compromiso con el cliente, quién y dónde, y el importe adjudicado.",
+      "planificado": "Configurados y esperando su fecha. Lo que importa aquí es si van a arrancar solos y cuándo.",
+      "en_ejecucion": "Ejecución en curso: avance real, equipo en obra y fin previsto.",
+      "en_certificacion": "Ejecución terminada, pendiente de validar lo que se hizo.",
+      "ejecucion_paralizada": "Siguen aprobados pero algo impide continuar: el motivo, los días parados y el avance alcanzado."
+    },
+    "suma": {
+      "descartados": "Importe descartado",
+      "finalizados": "Importe ejecutado"
+    },
+    "arranque": {
+      "auto": "Automático",
+      "manual": "A mano"
+    },
+    "sinVentana": "sin ventana"
   },
   "revisiones": {
     "estado": {
