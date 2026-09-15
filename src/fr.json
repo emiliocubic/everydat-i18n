@@ -1899,7 +1899,7 @@
       "create": "Nouvelle norme",
       "empty": "Aucune norme pour l’instant.",
       "emptyHint": "Créez la première norme du catalogue.",
-      "search": "Rechercher par code ou description…",
+      "search": "Rechercher par code, classe ou description…",
       "section": "Identification",
       "detail": "Détail",
       "newTitle": "Nouvelle norme",
@@ -1907,6 +1907,8 @@
       "close": "Fermer",
       "delete": "Supprimer la norme",
       "cols": {
+        "clase": "Classe d’équipement",
+        "claseTitle": "Nom de l’équipement couvert par la norme. C’est ce qui apparaît dans la liste des éléments et dans l’en-tête du rapport.",
         "codigo": "Norme",
         "descripcion": "Description",
         "checkpoints": "Points de contrôle",
@@ -1924,6 +1926,7 @@
         "general": "Général"
       },
       "field": {
+        "clase": "Classe d’équipement",
         "codigo": "Code de la norme",
         "codigoPlaceholder": "p. ex. EN 361:2002",
         "equivalente": "Équivalent sur ce marché",

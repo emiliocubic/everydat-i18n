@@ -1955,7 +1955,7 @@
       "create": "New standard",
       "empty": "No standards yet.",
       "emptyHint": "Create the first standard in the catalogue.",
-      "search": "Search by code or description…",
+      "search": "Search by code, class or description…",
       "section": "Identification",
       "detail": "Details",
       "newTitle": "New standard",
@@ -1963,6 +1963,8 @@
       "close": "Close",
       "delete": "Delete standard",
       "cols": {
+        "clase": "Equipment class",
+        "claseTitle": "Name of the equipment the standard covers. This is what appears in the item list and in the report header.",
         "codigo": "Standard",
         "descripcion": "Description",
         "checkpoints": "Checkpoints",
@@ -1980,6 +1982,7 @@
         "general": "General"
       },
       "field": {
+        "clase": "Equipment class",
         "codigo": "Standard code",
         "codigoPlaceholder": "e.g. EN 361:2002",
         "equivalente": "Equivalent in this market",

@@ -1955,7 +1955,7 @@
       "create": "Nueva norma",
       "empty": "No hay normas todavía.",
       "emptyHint": "Crea la primera norma del catálogo.",
-      "search": "Buscar por código o descripción…",
+      "search": "Buscar por código, clase o descripción…",
       "section": "Identificación",
       "detail": "Detalle",
       "newTitle": "Nueva norma",
@@ -1963,6 +1963,8 @@
       "close": "Cerrar",
       "delete": "Eliminar norma",
       "cols": {
+        "clase": "Clase de equipo",
+        "claseTitle": "Nombre del equipo que ampara la norma. Es lo que sale en la lista de elementos y en la cabecera del informe.",
         "codigo": "Norma",
         "descripcion": "Descripción",
         "checkpoints": "Checkpoints",
@@ -1980,6 +1982,7 @@
         "general": "General"
       },
       "field": {
+        "clase": "Clase de equipo",
         "codigo": "Código de norma",
         "codigoPlaceholder": "p. ej. EN 361:2002",
         "equivalente": "Equivalente en este mercado",
