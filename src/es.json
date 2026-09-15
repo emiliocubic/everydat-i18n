@@ -1784,7 +1784,9 @@
         "iaRecuperando": "Recuperando las referencias de {{name}}…",
         "volver": "Volver al catálogo",
         "statusVacio": "Elige un modelo para continuar el alta.",
-        "statusModelo": "{{name}} · se importarán {{n}} referencia(s)"
+        "statusModelo": "{{name}} · se importarán {{n}} referencia(s)",
+        "categorias": "Categorías del fabricante",
+        "todas": "Todo el catálogo"
       }
     },
     "modelos": {

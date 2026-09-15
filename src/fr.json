@@ -1728,7 +1728,9 @@
         "iaRecuperando": "Récupération des références de {{name}}…",
         "volver": "Revenir au catalogue",
         "statusVacio": "Choisissez un modèle pour continuer.",
-        "statusModelo": "{{name}} · {{n}} référence(s) seront importées"
+        "statusModelo": "{{name}} · {{n}} référence(s) seront importées",
+        "categorias": "Catégories du fabricant",
+        "todas": "Tout le catalogue"
       }
     },
     "modelos": {
