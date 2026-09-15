@@ -1721,7 +1721,11 @@
         "error": "The model could not be created.",
         "ctaAbrir": "Open the {{fab}} catalogue",
         "ctaBuscar": "Search for {{fab}} models",
-        "ctaDesc": "Opens almost full screen so you can pick the model comfortably. Your entry waits here behind."
+        "ctaDesc": "Opens almost full screen so you can pick the model comfortably. Your entry waits here behind.",
+        "fabricanteBuscar": "Search manufacturer…",
+        "fabricanteSinCoincidencias": "No matches",
+        "crumbFabricante": "Manufacturer",
+        "crumbCatalogo": "Catalogue"
       },
       "pick": {
         "existing": "Already in your catalogue",

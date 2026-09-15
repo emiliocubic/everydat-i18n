@@ -1721,7 +1721,11 @@
         "error": "No se pudo crear el modelo.",
         "ctaAbrir": "Abrir el catálogo de {{fab}}",
         "ctaBuscar": "Buscar modelos de {{fab}}",
-        "ctaDesc": "Se abre a pantalla casi completa para elegir el modelo con comodidad. El alta te espera aquí detrás."
+        "ctaDesc": "Se abre a pantalla casi completa para elegir el modelo con comodidad. El alta te espera aquí detrás.",
+        "fabricanteBuscar": "Buscar fabricante…",
+        "fabricanteSinCoincidencias": "Sin coincidencias",
+        "crumbFabricante": "Fabricante",
+        "crumbCatalogo": "Catálogo"
       },
       "pick": {
         "existing": "Ya en tu catálogo",

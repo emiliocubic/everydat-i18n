@@ -1665,7 +1665,11 @@
         "error": "Le modèle n'a pas pu être créé.",
         "ctaAbrir": "Ouvrir le catalogue de {{fab}}",
         "ctaBuscar": "Chercher des modèles {{fab}}",
-        "ctaDesc": "S'ouvre presque en plein écran pour choisir le modèle à l'aise. Votre saisie vous attend derrière."
+        "ctaDesc": "S'ouvre presque en plein écran pour choisir le modèle à l'aise. Votre saisie vous attend derrière.",
+        "fabricanteBuscar": "Chercher un fabricant…",
+        "fabricanteSinCoincidencias": "Aucune correspondance",
+        "crumbFabricante": "Fabricant",
+        "crumbCatalogo": "Catalogue"
       },
       "pick": {
         "existing": "Déjà dans votre catalogue",
