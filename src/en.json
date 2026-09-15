@@ -2436,6 +2436,16 @@
       "vidaUtil": "Max. service life (years)",
       "vidaUtilShort": "Max. service life {{n}} years",
       "fechasEmpty": "No reference date in use.",
+      "fechasHint": "Which dates are requested and their service life are set in <0>Characterization</0>, globally or per type.",
+      "imagen": {
+        "hint": "Type image",
+        "guardaPrimero": "Save the type to add an image",
+        "subir": "Upload image",
+        "cambiar": "Change",
+        "quitar": "Remove image",
+        "confirmQuitar": "Remove the type image?",
+        "errorSubir": "The image could not be uploaded (use JPG, PNG or WEBP, max. 4 MB)."
+      },
       "statsTitle": "Statistics",
       "stats": {
         "elementos": "Elements of this type",

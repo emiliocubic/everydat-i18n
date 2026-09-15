@@ -2436,6 +2436,16 @@
       "vidaUtil": "Vida útil máxima (años)",
       "vidaUtilShort": "Vida útil máx. {{n}} años",
       "fechasEmpty": "Ninguna fecha de referencia en uso.",
+      "fechasHint": "Qué fechas se piden y su vida útil se configuran en <0>Caracterización</0>, en modo global o por tipo.",
+      "imagen": {
+        "hint": "Imagen del tipo",
+        "guardaPrimero": "Guarda el tipo para añadirle imagen",
+        "subir": "Subir imagen",
+        "cambiar": "Cambiar",
+        "quitar": "Quitar imagen",
+        "confirmQuitar": "¿Quitar la imagen del tipo?",
+        "errorSubir": "No se pudo subir la imagen (usa JPG, PNG o WEBP, máx. 4 MB)."
+      },
       "statsTitle": "Estadísticas",
       "stats": {
         "elementos": "Nº de elementos de este tipo",

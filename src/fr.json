@@ -2380,6 +2380,16 @@
       "vidaUtil": "Durée de vie max. (années)",
       "vidaUtilShort": "Durée de vie max. {{n}} ans",
       "fechasEmpty": "Aucune date de référence utilisée.",
+      "fechasHint": "Les dates demandées et leur durée de vie se règlent dans <0>Caractérisation</0>, en mode global ou par type.",
+      "imagen": {
+        "hint": "Image du type",
+        "guardaPrimero": "Enregistrez le type pour ajouter une image",
+        "subir": "Téléverser une image",
+        "cambiar": "Changer",
+        "quitar": "Retirer l'image",
+        "confirmQuitar": "Retirer l'image du type ?",
+        "errorSubir": "Impossible de téléverser l'image (JPG, PNG ou WEBP, 4 Mo max.)."
+      },
       "statsTitle": "Statistiques",
       "stats": {
         "elementos": "Éléments de ce type",
