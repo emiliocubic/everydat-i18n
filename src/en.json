@@ -1669,8 +1669,22 @@
       "importCta": "Import from repository",
       "nuevoCta": "New model",
       "nuevo": {
-        "title": "New local model",
-        "subtitle": "Add your own model with its manufacturer and references.",
+        "title": "New model",
+        "subtitle": "Import it from the sector repository or add it by hand.",
+        "viaTitle": "Where the model comes from",
+        "viaRepo": "From the sector repository",
+        "viaRecomendada": "Recommended",
+        "viaRepoSub": "Manufacturer, model, references and standards already curated.",
+        "viaManual": "By hand",
+        "viaManualSub": "A model of your own that is not in the repository.",
+        "repoTitle": "Search the repository",
+        "repoPlaceholder": "Model or reference name or code…",
+        "repoHint": "Search by name or code; the repository is not listed in full. To bring many models at once, use “Bulk import”.",
+        "repoVacio": "Nothing in the repository matches that text.",
+        "repoImportar": "Import",
+        "repoYaImportado": "Already in your catalogue",
+        "repoNoEsta": "Not in the repository?",
+        "repoIrManual": "Add it by hand",
         "fabricanteTitle": "Manufacturer",
         "fabricantePlaceholder": "Type or pick a manufacturer…",
         "fabricanteHint": "Pick a manufacturer already on file. New ones are created in Settings → Manufacturers.",
@@ -2842,7 +2856,7 @@
     }
   },
   "proyectos": {
-    "buscar": "Search by client, site or name",
+    "buscar": "Search by code, name, client or site",
     "vacio": "No projects",
     "vacioHint": "Inspection projects are born when you schedule a site's tree.",
     "sinEmplazamiento": "not located",
@@ -2878,7 +2892,8 @@
       "proyecto": "Project",
       "validez": "Valid for",
       "elementos": "Items",
-      "seguimiento": "Latest note"
+      "seguimiento": "Latest note",
+      "ejecucion": "% Execution"
     },
     "campos": {
       "cliente": "Client",
@@ -3291,7 +3306,11 @@
     },
     "avisado": {
       "ayuda": "The client has been told an inspection is due"
-    }
+    },
+    "buscarDescartados": "Search by code, name, client, site or reason",
+    "abrirCliente": "Open the client record",
+    "abrirEmplazamiento": "Open the site",
+    "sinEquipo": "Unassigned"
   },
   "revisiones": {
     "estado": {

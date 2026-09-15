@@ -1669,8 +1669,22 @@
       "importCta": "Importar del repositorio",
       "nuevoCta": "Nuevo modelo",
       "nuevo": {
-        "title": "Nuevo modelo local",
-        "subtitle": "Da de alta un modelo propio con su fabricante y sus referencias.",
+        "title": "Nuevo modelo",
+        "subtitle": "Impórtalo del repositorio sectorial o dalo de alta a mano.",
+        "viaTitle": "De dónde sale el modelo",
+        "viaRepo": "Del repositorio sectorial",
+        "viaRecomendada": "Recomendado",
+        "viaRepoSub": "Fabricante, modelo, referencias y normas ya curados.",
+        "viaManual": "A mano",
+        "viaManualSub": "Un modelo propio que no está en el repositorio.",
+        "repoTitle": "Buscar en el repositorio",
+        "repoPlaceholder": "Nombre o código de modelo o referencia…",
+        "repoHint": "Busca por nombre o código; el repositorio no se vuelca entero. Para traer muchos modelos de golpe, usa «Importar en bloque».",
+        "repoVacio": "Nada en el repositorio con ese texto.",
+        "repoImportar": "Importar",
+        "repoYaImportado": "Ya en tu catálogo",
+        "repoNoEsta": "¿No está en el repositorio?",
+        "repoIrManual": "Darlo de alta a mano",
         "fabricanteTitle": "Fabricante",
         "fabricantePlaceholder": "Escribe o elige un fabricante…",
         "fabricanteHint": "Elige un fabricante ya dado de alta. Los nuevos se crean en Configuración → Fabricantes.",
@@ -2842,7 +2856,7 @@
     }
   },
   "proyectos": {
-    "buscar": "Busca por cliente, emplazamiento o nombre",
+    "buscar": "Buscar por código, nombre, cliente o emplazamiento",
     "vacio": "Sin proyectos",
     "vacioHint": "Los proyectos de revisión nacen al planificar el árbol de un emplazamiento.",
     "sinEmplazamiento": "sin localizar",
@@ -2877,8 +2891,9 @@
       "contacto": "Contacto",
       "proyecto": "Proyecto",
       "validez": "Validez",
-      "elementos": "Equipos",
-      "seguimiento": "Último apunte"
+      "elementos": "Elementos",
+      "seguimiento": "Último apunte",
+      "ejecucion": "% Ejecución"
     },
     "campos": {
       "cliente": "Cliente",
@@ -3291,7 +3306,11 @@
     },
     "avisado": {
       "ayuda": "Se le ha avisado de que le toca revisión"
-    }
+    },
+    "buscarDescartados": "Buscar por código, nombre, cliente, emplazamiento o motivo",
+    "abrirCliente": "Abrir la ficha del cliente",
+    "abrirEmplazamiento": "Abrir el emplazamiento",
+    "sinEquipo": "Sin asignar"
   },
   "revisiones": {
     "estado": {

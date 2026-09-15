@@ -1613,8 +1613,22 @@
       "importCta": "Importer du référentiel",
       "nuevoCta": "Nouveau modèle",
       "nuevo": {
-        "title": "Nouveau modèle local",
-        "subtitle": "Ajoutez votre propre modèle avec son fabricant et ses références.",
+        "title": "Nouveau modèle",
+        "subtitle": "Importez-le du référentiel sectoriel ou ajoutez-le à la main.",
+        "viaTitle": "D'où vient le modèle",
+        "viaRepo": "Du référentiel sectoriel",
+        "viaRecomendada": "Recommandé",
+        "viaRepoSub": "Fabricant, modèle, références et normes déjà curés.",
+        "viaManual": "À la main",
+        "viaManualSub": "Un modèle à vous qui n'est pas dans le référentiel.",
+        "repoTitle": "Chercher dans le référentiel",
+        "repoPlaceholder": "Nom ou code de modèle ou de référence…",
+        "repoHint": "Cherchez par nom ou code ; le référentiel n'est pas listé en entier. Pour ramener beaucoup de modèles d'un coup, utilisez « Import en bloc ».",
+        "repoVacio": "Rien dans le référentiel avec ce texte.",
+        "repoImportar": "Importer",
+        "repoYaImportado": "Déjà dans votre catalogue",
+        "repoNoEsta": "Pas dans le référentiel ?",
+        "repoIrManual": "L'ajouter à la main",
         "fabricanteTitle": "Fabricant",
         "fabricantePlaceholder": "Saisissez ou choisissez un fabricant…",
         "fabricanteHint": "Choisissez un fabricant déjà enregistré. Les nouveaux se créent dans Configuration → Fabricants.",
@@ -2786,7 +2800,7 @@
     }
   },
   "proyectos": {
-    "buscar": "Rechercher par client, site ou nom",
+    "buscar": "Rechercher par code, nom, client ou site",
     "vacio": "Aucun projet",
     "vacioHint": "Les projets de vérification naissent en planifiant l'arbre d'un site.",
     "sinEmplazamiento": "non localisé",
@@ -2822,7 +2836,8 @@
       "proyecto": "Projet",
       "validez": "Validité",
       "elementos": "Équipements",
-      "seguimiento": "Dernière note"
+      "seguimiento": "Dernière note",
+      "ejecucion": "% Exécution"
     },
     "campos": {
       "cliente": "Client",
@@ -3219,7 +3234,11 @@
     },
     "avisado": {
       "ayuda": "Le client a été prévenu qu'une vérification est due"
-    }
+    },
+    "buscarDescartados": "Rechercher par code, nom, client, site ou motif",
+    "abrirCliente": "Ouvrir la fiche du client",
+    "abrirEmplazamiento": "Ouvrir le site",
+    "sinEquipo": "Non assigné"
   },
   "revisiones": {
     "estado": {
