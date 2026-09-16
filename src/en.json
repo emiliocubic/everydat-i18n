@@ -2682,6 +2682,14 @@
         "noContratado": "This instance's licence does not include the planner.",
         "avisoCoste": "Enabling the planner has a separate cost and starts the module in a 30-day trial. Continue?"
       },
+      "calendario": {
+        "titulo": "Working calendar",
+        "desc": "How many hours a working day yields and which days of the week are worked. It does not depend on the planner module: any calculation that counts working days uses it.",
+        "jornada": "A working day yields",
+        "horas": "hours",
+        "dias": "Working days",
+        "hint": "The planner spreads work over these days and deducts holidays and absences. The last selected day cannot be cleared."
+      },
       "grupoPresupuesto": "Quoting parameters",
       "precios": {
         "title": "Inspection prices",

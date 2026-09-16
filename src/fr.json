@@ -2626,6 +2626,14 @@
         "noContratado": "La licence de cette instance n'inclut pas le planificateur.",
         "avisoCoste": "Activer le planificateur a un coût indépendant et ouvre le module en essai de 30 jours. Continuer ?"
       },
+      "calendario": {
+        "titulo": "Calendrier de travail",
+        "desc": "Combien d'heures rend une journée de travail et quels jours de la semaine sont travaillés. Indépendant du module planificateur : tout calcul qui compte des jours ouvrés l'utilise.",
+        "jornada": "Une journée rend",
+        "horas": "heures",
+        "dias": "Jours ouvrés",
+        "hint": "Le planificateur répartit le travail sur ces jours et déduit fériés et absences. Le dernier jour coché ne peut pas être décoché."
+      },
       "grupoPresupuesto": "Paramètres de devis",
       "precios": {
         "title": "Prix de révision",

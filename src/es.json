@@ -2682,6 +2682,14 @@
         "noContratado": "La licencia de esta instancia no incluye el planificador.",
         "avisoCoste": "Activar el planificador tiene un coste independiente y da de alta el módulo en modo de prueba de 30 días. ¿Continuar?"
       },
+      "calendario": {
+        "titulo": "Calendario laboral",
+        "desc": "Cuánto rinde un día de trabajo y qué días de la semana se trabaja. No depende del módulo planificador: cualquier cálculo que cuente días hábiles lo usa.",
+        "jornada": "Una jornada rinde",
+        "horas": "horas",
+        "dias": "Días laborables",
+        "hint": "El planificador reparte el trabajo sobre estos días y descuenta festivos y ausencias. El último día marcado no se puede quitar."
+      },
       "grupoPresupuesto": "Parámetros presupuestarios",
       "precios": {
         "title": "Precios de revisión",
