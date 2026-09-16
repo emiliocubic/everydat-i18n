@@ -68,7 +68,7 @@
   },
   "home": {
     "title": "Home",
-    "subtitle": "Welcome to Everydat",
+    "subtitle": "Welcome to GestLínea",
     "pendientesCatalogo_one": "{{count}} catalogue entry pending validation",
     "pendientesCatalogo_other": "{{count}} catalogue entries pending validation",
     "pendientesCatalogoIr": "Open the tray",
@@ -2584,7 +2584,7 @@
         "titulo": "Brand",
         "desc": "The trade name, primary colour and logo appear in the panel, in reports and in emails.",
         "nombre": "Trade name",
-        "nombrePlaceholder": "Everydat Pro",
+        "nombrePlaceholder": "GestLínea Pro",
         "color": "Primary colour",
         "colorHint": "Six-digit hexadecimal. Empty = the default colour.",
         "logo": "Logo",
@@ -2812,7 +2812,7 @@
       "fontIncrease": "Increase font"
     },
     "topbar": {
-      "root": "Everydat Pro",
+      "root": "GestLínea",
       "breadcrumb": "Breadcrumb",
       "toggleMenu": "Toggle menu",
       "notifications": "Notifications",
@@ -2836,7 +2836,7 @@
       "name": "Sherpa",
       "status": "Connecting…",
       "assistant": "AI assistant",
-      "greeting": "Hi! I'm Sherpa, your Everydat assistant. I can help you check equipment status, prepare reports or answer questions about inspections.",
+      "greeting": "Hi! I'm Sherpa, your GestLínea assistant. I can help you check equipment status, prepare reports or answer questions about inspections.",
       "thinking": "Sherpa is thinking…",
       "you": "You",
       "newChat": "New conversation",

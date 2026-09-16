@@ -68,7 +68,7 @@
   },
   "home": {
     "title": "Inicio",
-    "subtitle": "Bienvenido a Everydat",
+    "subtitle": "Bienvenido a GestLínea",
     "pendientesCatalogo_one": "{{count}} alta del catálogo pendiente de validar",
     "pendientesCatalogo_other": "{{count}} altas del catálogo pendientes de validar",
     "pendientesCatalogoIr": "Ir a la bandeja",
@@ -2584,7 +2584,7 @@
         "titulo": "Marca",
         "desc": "El nombre comercial, el color primario y el logo salen en el panel, en los informes y en los correos.",
         "nombre": "Nombre comercial",
-        "nombrePlaceholder": "Everydat Pro",
+        "nombrePlaceholder": "GestLínea Pro",
         "color": "Color primario",
         "colorHint": "Hexadecimal de seis cifras. Vacío = el color de serie.",
         "logo": "Logo",
@@ -2812,7 +2812,7 @@
       "fontIncrease": "Aumentar fuente"
     },
     "topbar": {
-      "root": "Everydat Pro",
+      "root": "GestLínea",
       "breadcrumb": "Ruta de navegación",
       "toggleMenu": "Alternar menú",
       "notifications": "Notificaciones",
@@ -2836,7 +2836,7 @@
       "name": "Sherpa",
       "status": "Conectando…",
       "assistant": "Asistente IA",
-      "greeting": "¡Hola! Soy Sherpa, tu asistente de Everydat. Puedo ayudarte a consultar el estado de los equipos, preparar informes o responder dudas sobre revisiones.",
+      "greeting": "¡Hola! Soy Sherpa, tu asistente de GestLínea. Puedo ayudarte a consultar el estado de los equipos, preparar informes o responder dudas sobre revisiones.",
       "thinking": "Sherpa está pensando…",
       "you": "Tú",
       "newChat": "Nueva conversación",
