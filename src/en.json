@@ -1689,6 +1689,7 @@
         "colaborador": "Partner manufacturer",
         "catalogoOficial": "{{n}} models in the official catalogue",
         "catalogoFiltro": "Filter by name or code…",
+        "catalogoFiltroEnCat": "Search in {{cat}}…",
         "catalogoVacio": "No matching models.",
         "catalogoMas": "Load more",
         "iaPlaceholder": "Search for a {{fab}} model…",

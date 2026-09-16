@@ -1633,6 +1633,7 @@
         "colaborador": "Fabricant partenaire",
         "catalogoOficial": "{{n}} modèles dans le catalogue officiel",
         "catalogoFiltro": "Filtrer par nom ou code…",
+        "catalogoFiltroEnCat": "Rechercher dans {{cat}}…",
         "catalogoVacio": "Aucun modèle correspondant.",
         "catalogoMas": "Charger plus",
         "iaPlaceholder": "Cherchez un modèle {{fab}}…",
