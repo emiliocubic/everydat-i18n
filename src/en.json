@@ -1787,9 +1787,14 @@
         "iaRecuperando": "Retrieving references for {{name}}…",
         "volver": "Back to the catalogue",
         "statusVacio": "Pick a model to continue.",
-        "statusModelo": "{{name}} · {{n}} reference(s) will be imported",
+        "statusModelo_one": "{{name}} · 1 reference will be imported",
+        "statusModelo_other": "{{name}} · {{count}} references will be imported",
         "categorias": "Manufacturer categories",
-        "todas": "Whole catalogue"
+        "todas": "Whole catalogue",
+        "refCodigo": "Reference",
+        "refNombre": "Description",
+        "refEan": "EAN",
+        "docsTitle": "Manufacturer documents"
       }
     },
     "modelos": {
@@ -1820,7 +1825,8 @@
         "normasTitle": "Model standards",
         "referenciasTitle": "References to import ({{n}})",
         "monoSku": "Single-reference model: a mirror reference with the same data will be created.",
-        "docsPendientes": "The manufacturer publishes {{n}} document(s) for this model. PDFs are not imported yet (asset delivery pending).",
+        "docsPendientes_one": "The manufacturer publishes 1 document for this model. PDFs are not imported yet (asset delivery pending).",
+        "docsPendientes_other": "The manufacturer publishes {{count}} documents for this model. PDFs are not imported yet (asset delivery pending).",
         "sinDocs": "Manufacturer documents (PDFs) are not imported yet in this trial.",
         "iaFuente": "Data located with AI assistance. Confirm the source before importing:",
         "iaWeb": "manufacturer's website",

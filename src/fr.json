@@ -1731,9 +1731,14 @@
         "iaRecuperando": "Récupération des références de {{name}}…",
         "volver": "Revenir au catalogue",
         "statusVacio": "Choisissez un modèle pour continuer.",
-        "statusModelo": "{{name}} · {{n}} référence(s) seront importées",
+        "statusModelo_one": "{{name}} · 1 référence sera importée",
+        "statusModelo_other": "{{name}} · {{count}} références seront importées",
         "categorias": "Catégories du fabricant",
-        "todas": "Tout le catalogue"
+        "todas": "Tout le catalogue",
+        "refCodigo": "Référence",
+        "refNombre": "Description",
+        "refEan": "EAN",
+        "docsTitle": "Documents du fabricant"
       }
     },
     "modelos": {
@@ -1764,7 +1769,8 @@
         "normasTitle": "Normes du modèle",
         "referenciasTitle": "Références à importer ({{n}})",
         "monoSku": "Modèle à référence unique : une référence miroir avec les mêmes données sera créée.",
-        "docsPendientes": "Le fabricant publie {{n}} document(s) pour ce modèle. Les PDF ne sont pas encore importés (livraison des assets en attente).",
+        "docsPendientes_one": "Le fabricant publie 1 document pour ce modèle. Les PDF ne sont pas encore importés (livraison des assets en attente).",
+        "docsPendientes_other": "Le fabricant publie {{count}} documents pour ce modèle. Les PDF ne sont pas encore importés (livraison des assets en attente).",
         "sinDocs": "Les documents du fabricant (PDF) ne sont pas encore importés dans cet essai.",
         "iaFuente": "Données localisées avec l'aide de l'IA. Confirmez la source avant d'importer :",
         "iaWeb": "site du fabricant",
