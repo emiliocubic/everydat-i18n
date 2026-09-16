@@ -1692,6 +1692,7 @@
         "catalogoFiltroEnCat": "Search in {{cat}}…",
         "catalogoVacio": "No matching models.",
         "catalogoMas": "Load more",
+        "nRefs": "{{n}} ref.",
         "iaPlaceholder": "Search for a {{fab}} model…",
         "iaHint": "Type the name of the model you are looking for.",
         "iaBuscando": "Searching the manufacturer's website…",

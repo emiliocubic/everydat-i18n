@@ -1636,6 +1636,7 @@
         "catalogoFiltroEnCat": "Rechercher dans {{cat}}…",
         "catalogoVacio": "Aucun modèle correspondant.",
         "catalogoMas": "Charger plus",
+        "nRefs": "{{n}} réf.",
         "iaPlaceholder": "Cherchez un modèle {{fab}}…",
         "iaHint": "Saisissez le nom du modèle que vous cherchez.",
         "iaBuscando": "Recherche sur le site du fabricant…",

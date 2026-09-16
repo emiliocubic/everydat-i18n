@@ -1692,6 +1692,7 @@
         "catalogoFiltroEnCat": "Buscar en {{cat}}…",
         "catalogoVacio": "Sin modelos que coincidan.",
         "catalogoMas": "Cargar más",
+        "nRefs": "{{n}} ref.",
         "iaPlaceholder": "Busca un modelo de {{fab}}…",
         "iaHint": "Escribe el nombre del modelo que buscas.",
         "iaBuscando": "Buscando en la web del fabricante…",
