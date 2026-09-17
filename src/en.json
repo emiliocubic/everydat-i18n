@@ -607,7 +607,11 @@
       "pideSoloUno": "Tick a single item",
       "pideAlMenosUno": "Tick at least one item",
       "pideDos": "Tick two or more items",
-      "yaAgrupados": "One of the ticked items is already in a set"
+      "yaAgrupados": "One of the ticked items is already in a set",
+      "enReparacionFila": "Under repair",
+      "arrastrar": "Drag the selection onto a tree folder to move it",
+      "soltando": "Moving {{count}} item…",
+      "soltando_other": "Moving {{count}} items…"
     },
     "orden": {
       "menu": "Sort by",
@@ -678,15 +682,15 @@
       "motivo": "Reason",
       "motivoPlaceholder": "E.g. faulty manufacturer batch",
       "titulo": {
-        "retirar": "Withdraw from service",
+        "retirar": "Withdraw / Decommission",
         "eliminar": "Delete from inventory"
       },
       "texto": {
-        "retirar": "They leave service and stop counting as usable equipment, but keep their whole inspection history: EN 365 requires it to prove the equipment was usable.",
+        "retirar": "Withdrawing is decommissioning: they leave service and stop counting as usable equipment, but keep their whole inspection history, which is what EN 365 requires to prove the equipment was usable. Destruction of the equipment is one of the possible reasons, not a separate action.",
         "eliminar": "This is for items created by mistake. If the equipment existed and left service, withdraw it instead of deleting it."
       },
       "accion": {
-        "retirar": "Withdraw",
+        "retirar": "Withdraw / Decommission",
         "eliminar": "Delete"
       },
       "hecho": {
@@ -750,7 +754,14 @@
           "actuacion": "Intervention",
           "revision": "Inspection"
         }
-      }
+      },
+      "finVidaEditar": "Declare or correct the end of service life",
+      "finVidaQuitar": "Remove the declared end of service life",
+      "finVidaCalculado": "Computed from its type",
+      "finVidaDeclarado": "Declared manually",
+      "finVidaSinCriterio": "Its type sets no expiry",
+      "anadirValor": "Add another",
+      "quitarValor": "Remove this value"
     },
     "fecha": {
       "fabricacion": "Manufacture",
@@ -776,7 +787,7 @@
       "titulo": {
         "activo": "Return to service",
         "en_reparacion": "Send for repair",
-        "retirado": "Withdraw from service",
+        "retirado": "Withdraw / Decommission",
         "destruido": "Mark as destroyed",
         "fin_vida": "Declare end of service life",
         "quitar_fin_vida": "Remove the declared end of life"
@@ -784,7 +795,7 @@
       "texto": {
         "activo": "It counts as usable equipment again. This needs a reason: it states the item can be used once more.",
         "en_reparacion": "It stays in the inventory but cannot be used, and counts as an issue.",
-        "retirado": "It leaves service and keeps its whole inspection history: EN 365 requires it to prove the equipment was usable.",
+        "retirado": "Withdrawing is decommissioning: it leaves service and keeps its whole inspection history, which is what EN 365 requires to prove the equipment was usable. Destruction of the equipment is one of the possible reasons, not a separate action.",
         "destruido": "There is no way back. This is the terminal state: mistakes are fixed through support.",
         "fin_vida": "Declare the item dead before the calculation does, for instance after it arrested a fall. It does not take it out of service: that is a separate decision.",
         "quitar_fin_vida": "The item goes back to its type's service-life calculation, and the reason on record disappears."
@@ -797,7 +808,7 @@
       "confirmar": {
         "activo": "Return to service",
         "en_reparacion": "Send for repair",
-        "retirado": "Withdraw",
+        "retirado": "Withdraw / Decommission",
         "destruido": "Mark as destroyed",
         "fin_vida": "Declare",
         "quitar_fin_vida": "Remove"
@@ -1579,7 +1590,8 @@
       "alcanceCuenta": {
         "nodo": "Active items in this folder",
         "rama": "Active items in this folder and every folder under it"
-      }
+      },
+      "clonarPendiente": "Clone folder — design pending"
     },
     "zona": {
       "promoverTitulo": "Create a sub-zone",

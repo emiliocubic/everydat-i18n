@@ -494,7 +494,11 @@
       "pideSoloUno": "Marca un solo elemento",
       "pideAlMenosUno": "Marca al menos un elemento",
       "pideDos": "Marca dos o más elementos",
-      "yaAgrupados": "Alguno de los marcados ya está en un conjunto"
+      "yaAgrupados": "Alguno de los marcados ya está en un conjunto",
+      "enReparacionFila": "En reparación",
+      "arrastrar": "Arrastra la selección a una carpeta del árbol para moverla",
+      "soltando": "Moviendo {{count}} elemento…",
+      "soltando_other": "Moviendo {{count}} elementos…"
     },
     "orden": {
       "menu": "Ordenar por",
@@ -565,15 +569,15 @@
       "motivo": "Motivo",
       "motivoPlaceholder": "Ej.: lote defectuoso del fabricante",
       "titulo": {
-        "retirar": "Retirar del servicio",
+        "retirar": "Retirar / Descatalogar",
         "eliminar": "Eliminar del inventario"
       },
       "texto": {
-        "retirar": "Salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones: es lo que la EN 365 exige conservar para demostrar que el equipo era usable.",
+        "retirar": "Retirar es descatalogar: salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones, que es lo que la EN 365 exige conservar para demostrar que el equipo era usable. Que el equipo se haya destruido es uno de los motivos posibles, no una acción aparte.",
         "eliminar": "Esto es para cuando se dieron de alta por error. Si los equipos existieron y salieron de servicio, lo que toca es retirarlos, no borrarlos."
       },
       "accion": {
-        "retirar": "Retirar",
+        "retirar": "Retirar / Descatalogar",
         "eliminar": "Eliminar"
       },
       "hecho": {
@@ -637,7 +641,14 @@
           "actuacion": "De una actuación",
           "revision": "De una revisión"
         }
-      }
+      },
+      "finVidaEditar": "Declarar o corregir el fin de vida útil",
+      "finVidaQuitar": "Quitar el fin de vida declarado",
+      "finVidaCalculado": "Lo calcula su tipo",
+      "finVidaDeclarado": "Declarado a mano",
+      "finVidaSinCriterio": "Su tipo no fija caducidad",
+      "anadirValor": "Añadir otro",
+      "quitarValor": "Quitar este valor"
     },
     "fecha": {
       "fabricacion": "Fabricación",
@@ -663,7 +674,7 @@
       "titulo": {
         "activo": "Devolver al servicio",
         "en_reparacion": "Mandar a reparación",
-        "retirado": "Retirar del servicio",
+        "retirado": "Retirar / Descatalogar",
         "destruido": "Dar por destruido",
         "fin_vida": "Declarar fin de vida útil",
         "quitar_fin_vida": "Quitar el fin de vida declarado"
@@ -671,7 +682,7 @@
       "texto": {
         "activo": "Vuelve a contar como material utilizable. Hay que justificarlo: es afirmar que el equipo puede volver a usarse.",
         "en_reparacion": "Sigue en el censo pero no se puede usar, y cuenta como incidencia.",
-        "retirado": "Sale de servicio y conserva todo su historial de revisiones: es lo que la EN 365 exige para demostrar que el equipo era usable.",
+        "retirado": "Retirar es descatalogar: sale de servicio y conserva todo su historial de revisiones, que es lo que la EN 365 exige para demostrar que el equipo era usable. Que el equipo se haya destruido es uno de los motivos posibles, no una acción aparte.",
         "destruido": "No tiene vuelta atrás. Es el estado terminal: si se hace por error, se arregla desde soporte.",
         "fin_vida": "Dar el equipo por muerto antes de que lo diga el cálculo, por ejemplo si ha retenido una caída. No lo saca de servicio: eso es otra decisión.",
         "quitar_fin_vida": "El equipo vuelve al cálculo de vida útil de su tipo, y el motivo que había desaparece."
@@ -684,7 +695,7 @@
       "confirmar": {
         "activo": "Devolver al servicio",
         "en_reparacion": "Mandar a reparación",
-        "retirado": "Retirar",
+        "retirado": "Retirar / Descatalogar",
         "destruido": "Dar por destruido",
         "fin_vida": "Declarar",
         "quitar_fin_vida": "Quitar"
@@ -1466,7 +1477,8 @@
       "alcanceCuenta": {
         "nodo": "Equipos activos de esta carpeta",
         "rama": "Equipos activos de esta carpeta y de todas las que cuelgan de ella"
-      }
+      },
+      "clonarPendiente": "Clonar carpeta — pendiente de diseño"
     },
     "zona": {
       "promoverTitulo": "Crear una sub-zona",
