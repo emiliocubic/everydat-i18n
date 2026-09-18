@@ -642,10 +642,8 @@
           "revision": "De una revisión"
         }
       },
-      "finVidaEditar": "Declarar o corregir el fin de vida útil",
-      "finVidaQuitar": "Quitar el fin de vida declarado",
       "finVidaCalculado": "Lo calcula su tipo",
-      "finVidaDeclarado": "Declarado a mano",
+      "finVidaDeclarado": "Puesta a mano",
       "finVidaSinCriterio": "Su tipo no fija caducidad",
       "anadirValor": "Añadir otro",
       "quitarValor": "Quitar este valor"
@@ -670,25 +668,19 @@
       "delTipoNota": "Es otra cosa: qué normativa es pertinente para esa familia de equipo, y de donde salen sus campos y sus checklists."
     },
     "accion": {
-      "fecha": "Fecha",
       "titulo": {
         "activo": "Devolver al servicio",
         "en_reparacion": "Mandar a reparación",
         "retirado": "Retirar / Descatalogar",
-        "destruido": "Dar por destruido",
-        "fin_vida": "Declarar fin de vida útil",
-        "quitar_fin_vida": "Quitar el fin de vida declarado"
+        "destruido": "Dar por destruido"
       },
       "texto": {
         "activo": "Vuelve a contar como material utilizable. Hay que justificarlo: es afirmar que el equipo puede volver a usarse.",
         "en_reparacion": "Sigue en el censo pero no se puede usar, y cuenta como incidencia.",
         "retirado": "Retirar es descatalogar: sale de servicio y conserva todo su historial de revisiones, que es lo que la EN 365 exige para demostrar que el equipo era usable. Que el equipo se haya destruido es uno de los motivos posibles, no una acción aparte.",
-        "destruido": "No tiene vuelta atrás. Es el estado terminal: si se hace por error, se arregla desde soporte.",
-        "fin_vida": "Dar el equipo por muerto antes de que lo diga el cálculo, por ejemplo si ha retenido una caída. No lo saca de servicio: eso es otra decisión.",
-        "quitar_fin_vida": "El equipo vuelve al cálculo de vida útil de su tipo, y el motivo que había desaparece."
+        "destruido": "No tiene vuelta atrás. Es el estado terminal: si se hace por error, se arregla desde soporte."
       },
       "motivoPlaceholder": {
-        "fin_vida": "Ej.: ha retenido una caída",
         "retirado": "Ej.: costura dañada",
         "activo": "Ej.: reparado en taller y verificado"
       },
@@ -696,9 +688,7 @@
         "activo": "Devolver al servicio",
         "en_reparacion": "Mandar a reparación",
         "retirado": "Retirar / Descatalogar",
-        "destruido": "Dar por destruido",
-        "fin_vida": "Declarar",
-        "quitar_fin_vida": "Quitar"
+        "destruido": "Dar por destruido"
       }
     },
     "alta": {

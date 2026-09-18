@@ -710,10 +710,8 @@
       "notasInternas": "Notes internes",
       "coordenadas": "Coordonnées",
       "campoSinValores": "Son type n'a aucune valeur assignée pour ce champ.",
-      "finVidaEditar": "Déclarer ou corriger la fin de vie utile",
-      "finVidaQuitar": "Retirer la fin de vie déclarée",
       "finVidaCalculado": "Calculée par son type",
-      "finVidaDeclarado": "Déclarée à la main",
+      "finVidaDeclarado": "Saisie à la main",
       "finVidaSinCriterio": "Son type ne fixe pas de péremption",
       "anadirValor": "Ajouter un autre",
       "quitarValor": "Retirer cette valeur"
@@ -738,25 +736,19 @@
       "delTipoNota": "C'est autre chose : quelles normes sont pertinentes pour cette famille d'équipement, et d'où viennent ses champs et ses check-lists."
     },
     "accion": {
-      "fecha": "Date",
       "titulo": {
         "activo": "Remettre en service",
         "en_reparacion": "Envoyer en réparation",
         "retirado": "Retirer / Déclasser",
-        "destruido": "Déclarer détruit",
-        "fin_vida": "Déclarer la fin de vie utile",
-        "quitar_fin_vida": "Retirer la fin de vie déclarée"
+        "destruido": "Déclarer détruit"
       },
       "texto": {
         "activo": "Il compte à nouveau comme matériel utilisable. Il faut le justifier : c'est affirmer que l'équipement peut resservir.",
         "en_reparacion": "Il reste à l'inventaire mais ne peut pas être utilisé, et compte comme incident.",
         "retirado": "Retirer, c'est déclasser : l'équipement sort du service et conserve tout son historique d'inspections, ce que la norme EN 365 exige pour prouver qu'il était utilisable. La destruction de l'équipement est l'un des motifs possibles, pas une action distincte.",
-        "destruido": "Sans retour possible. C'est l'état terminal : une erreur se corrige via le support.",
-        "fin_vida": "Déclarer l'équipement mort avant que le calcul ne le dise, par exemple après avoir arrêté une chute. Cela ne le sort pas du service : c'est une autre décision.",
-        "quitar_fin_vida": "L'équipement revient au calcul de vie utile de son type, et le motif enregistré disparaît."
+        "destruido": "Sans retour possible. C'est l'état terminal : une erreur se corrige via le support."
       },
       "motivoPlaceholder": {
-        "fin_vida": "Ex. : a arrêté une chute",
         "retirado": "Ex. : couture endommagée",
         "activo": "Ex. : réparé en atelier et vérifié"
       },
@@ -764,9 +756,7 @@
         "activo": "Remettre en service",
         "en_reparacion": "Envoyer en réparation",
         "retirado": "Retirer / Déclasser",
-        "destruido": "Déclarer détruit",
-        "fin_vida": "Déclarer",
-        "quitar_fin_vida": "Retirer"
+        "destruido": "Déclarer détruit"
       }
     },
     "alta": {
