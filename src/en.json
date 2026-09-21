@@ -926,8 +926,7 @@
       "validaHasta": "Valid until {{fecha}}",
       "nuevo": "New event",
       "evento": {
-        "revision": "Inspection",
-        "actuacion": "Intervention"
+        "revision": "Inspection"
       },
       "descargarPorDefinir": "Download the event PDF (to be defined)",
       "resultado": {
@@ -3703,17 +3702,19 @@
     "guardar": "Save intervention",
     "crear": "Record intervention",
     "tipo": {
-      "instalacion": "Installation",
       "reparacion": "Repair",
-      "mantenimiento": "Maintenance",
-      "desmontaje": "Removal",
+      "incidencia": "Incident",
+      "otra": "Other"
+    },
+    "subtipo": {
       "caida_retenida": "Arrested fall",
+      "dano_observado": "Damage observed",
       "aviso_fabricante": "Manufacturer notice",
-      "revision_profundidad": "In-depth inspection",
       "otra": "Other"
     },
     "fields": {
       "tipo": "Type",
+      "subtipo": "Kind of incident",
       "fecha": "Date",
       "usuario": "Who (in-house)",
       "realizadaPor": "Who (external)",

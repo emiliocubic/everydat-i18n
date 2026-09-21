@@ -881,8 +881,7 @@
       "validaHasta": "Valable jusqu'au {{fecha}}",
       "nuevo": "Nouvel événement",
       "evento": {
-        "revision": "Contrôle",
-        "actuacion": "Intervention"
+        "revision": "Contrôle"
       },
       "descargarPorDefinir": "Télécharger le PDF de l'événement (à définir)",
       "resultado": {
@@ -3630,17 +3629,19 @@
     "guardar": "Enregistrer l'intervention",
     "crear": "Enregistrer l'intervention",
     "tipo": {
-      "instalacion": "Installation",
       "reparacion": "Réparation",
-      "mantenimiento": "Maintenance",
-      "desmontaje": "Démontage",
+      "incidencia": "Incident",
+      "otra": "Autre"
+    },
+    "subtipo": {
       "caida_retenida": "Chute arrêtée",
+      "dano_observado": "Dommage constaté",
       "aviso_fabricante": "Avis du fabricant",
-      "revision_profundidad": "Vérification approfondie",
       "otra": "Autre"
     },
     "fields": {
       "tipo": "Type",
+      "subtipo": "Type d'incident",
       "fecha": "Date",
       "usuario": "Qui (interne)",
       "realizadaPor": "Qui (externe)",

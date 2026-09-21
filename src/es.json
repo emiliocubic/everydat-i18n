@@ -813,8 +813,7 @@
       "validaHasta": "Válida hasta {{fecha}}",
       "nuevo": "Nuevo evento",
       "evento": {
-        "revision": "Revisión",
-        "actuacion": "Actuación"
+        "revision": "Revisión"
       },
       "descargarPorDefinir": "Descargar el PDF del evento (por definir)",
       "resultado": {
@@ -3703,17 +3702,19 @@
     "guardar": "Guardar actuación",
     "crear": "Registrar actuación",
     "tipo": {
-      "instalacion": "Instalación",
       "reparacion": "Reparación",
-      "mantenimiento": "Mantenimiento",
-      "desmontaje": "Desmontaje",
+      "incidencia": "Incidencia",
+      "otra": "Otros"
+    },
+    "subtipo": {
       "caida_retenida": "Caída retenida",
+      "dano_observado": "Daño observado",
       "aviso_fabricante": "Aviso del fabricante",
-      "revision_profundidad": "Revisión en profundidad",
       "otra": "Otra"
     },
     "fields": {
       "tipo": "Tipo",
+      "subtipo": "Clase de incidencia",
       "fecha": "Fecha",
       "usuario": "Quién (de casa)",
       "realizadaPor": "Quién (externo)",
