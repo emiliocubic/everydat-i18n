@@ -3375,6 +3375,7 @@
       "guardarCabecera": "Enregistrer",
       "validaHasta": "Valable jusqu'au {{fecha}}",
       "checklist": "Checklist",
+      "checklistSeccion": "Checklist du contrôle",
       "pendientes": "{{count}} point non vérifié",
       "pendientes_other": "{{count}} points non vérifiés",
       "todoComprobado": "Tout vérifié",

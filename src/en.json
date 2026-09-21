@@ -3447,6 +3447,7 @@
       "guardarCabecera": "Save details",
       "validaHasta": "Valid until {{fecha}}",
       "checklist": "Checklist",
+      "checklistSeccion": "Inspection checklist",
       "pendientes": "{{count}} point unchecked",
       "pendientes_other": "{{count}} points unchecked",
       "todoComprobado": "All checked",

@@ -3447,6 +3447,7 @@
       "guardarCabecera": "Guardar datos",
       "validaHasta": "Válida hasta {{fecha}}",
       "checklist": "Checklist",
+      "checklistSeccion": "Checklist de la revisión",
       "pendientes": "{{count}} punto sin comprobar",
       "pendientes_other": "{{count}} puntos sin comprobar",
       "todoComprobado": "Todo comprobado",
