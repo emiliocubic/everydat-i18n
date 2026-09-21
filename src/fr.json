@@ -677,8 +677,6 @@
         "caract": "Caractéristiques et état",
         "normativa": "Normes",
         "historial": "Historique",
-        "revisiones": "Contrôles",
-        "actuaciones": "Interventions",
         "componentes": "Composants"
       },
       "anterior": "Précédent (Alt+↑)",
@@ -875,18 +873,18 @@
       }
     },
     "historial": {
-      "filtro": "Filtrer par type d'événement",
       "contador": "Historique · {{count}} événement",
       "contador_other": "Historique · {{count}} événements",
-      "vacio": "Aucun événement avec ce filtre.",
+      "vacio": "Aucun événement.",
       "anulada": "Annulée",
       "pendiente": "À venir",
-      "familia": {
-        "fecha": "Dates de l'équipement",
-        "administrativo": "Administratifs",
-        "operativo": "Opérationnels",
-        "actuacion": "Interventions"
+      "validaHasta": "Valable jusqu'au {{fecha}}",
+      "nuevo": "Nouvel événement",
+      "evento": {
+        "revision": "Contrôle",
+        "actuacion": "Intervention"
       },
+      "descargarPorDefinir": "Télécharger le PDF de l'événement (à définir)",
       "resultado": {
         "apto": "Conforme",
         "vigilar": "À surveiller",
@@ -3645,7 +3643,7 @@
       "realizadaPor": "Qui (externe)",
       "descripcion": "Ce qui a été fait",
       "proximaRevision": "Prochaine vérification",
-      "adjuntos": "Documents",
+      "adjuntos": "Fichiers",
       "autor": "Qui"
     },
     "hint": {
@@ -3666,6 +3664,13 @@
       "primeroGuarda": "Enregistrez l'intervention avant d'y joindre des documents.",
       "contador": "{{count}} document",
       "contador_other": "{{count}} documents"
+    },
+    "imagenes": {
+      "titulo": "Images",
+      "anadir": "Ajouter une image",
+      "quitar": "Retirer l'image",
+      "vacio": "Aucune image.",
+      "primeroGuarda": "Enregistrez l'intervention avant d'y ajouter des images."
     },
     "consecuencia": {
       "titulo": "Et aussi",

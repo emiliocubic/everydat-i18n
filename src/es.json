@@ -593,8 +593,6 @@
         "caract": "Características y estado",
         "normativa": "Normativa",
         "historial": "Historial",
-        "revisiones": "Revisiones",
-        "actuaciones": "Actuaciones",
         "componentes": "Componentes",
         "archivos": "Archivos"
       },
@@ -807,18 +805,18 @@
       }
     },
     "historial": {
-      "filtro": "Filtrar por tipo de evento",
       "contador": "Historial · {{count}} evento",
       "contador_other": "Historial · {{count}} eventos",
-      "vacio": "Sin eventos con este filtro.",
+      "vacio": "Sin eventos.",
       "anulada": "Anulada",
       "pendiente": "Pendiente",
-      "familia": {
-        "fecha": "Fechas del equipo",
-        "administrativo": "Administrativos",
-        "operativo": "Operativos",
-        "actuacion": "Actuaciones"
+      "validaHasta": "Válida hasta {{fecha}}",
+      "nuevo": "Nuevo evento",
+      "evento": {
+        "revision": "Revisión",
+        "actuacion": "Actuación"
       },
+      "descargarPorDefinir": "Descargar el PDF del evento (por definir)",
       "resultado": {
         "apto": "Apto",
         "vigilar": "Vigilar",
@@ -3718,7 +3716,7 @@
       "realizadaPor": "Quién (externo)",
       "descripcion": "Qué se hizo",
       "proximaRevision": "Próxima revisión",
-      "adjuntos": "Documentos",
+      "adjuntos": "Archivos",
       "autor": "Quién"
     },
     "hint": {
@@ -3739,6 +3737,13 @@
       "primeroGuarda": "Guarda la actuación para poder colgarle documentos.",
       "contador": "{{count}} documento",
       "contador_other": "{{count}} documentos"
+    },
+    "imagenes": {
+      "titulo": "Imágenes",
+      "anadir": "Añadir imagen",
+      "quitar": "Quitar imagen",
+      "vacio": "Sin imágenes.",
+      "primeroGuarda": "Guarda la actuación para poder añadirle imágenes."
     },
     "consecuencia": {
       "titulo": "Y además",

@@ -706,8 +706,6 @@
         "caract": "Details and status",
         "normativa": "Standards",
         "historial": "History",
-        "revisiones": "Inspections",
-        "actuaciones": "Interventions",
         "componentes": "Components",
         "archivos": "Files"
       },
@@ -920,18 +918,18 @@
       }
     },
     "historial": {
-      "filtro": "Filter by event kind",
       "contador": "History · {{count}} event",
       "contador_other": "History · {{count}} events",
-      "vacio": "No events with this filter.",
+      "vacio": "No events.",
       "anulada": "Voided",
       "pendiente": "Upcoming",
-      "familia": {
-        "fecha": "Item dates",
-        "administrativo": "Administrative",
-        "operativo": "Operational",
-        "actuacion": "Interventions"
+      "validaHasta": "Valid until {{fecha}}",
+      "nuevo": "New event",
+      "evento": {
+        "revision": "Inspection",
+        "actuacion": "Intervention"
       },
+      "descargarPorDefinir": "Download the event PDF (to be defined)",
       "resultado": {
         "apto": "Pass",
         "vigilar": "Watch",
@@ -3718,7 +3716,7 @@
       "realizadaPor": "Who (external)",
       "descripcion": "What was done",
       "proximaRevision": "Next inspection",
-      "adjuntos": "Documents",
+      "adjuntos": "Files",
       "autor": "Who"
     },
     "hint": {
@@ -3739,6 +3737,13 @@
       "primeroGuarda": "Save the intervention before attaching documents.",
       "contador": "{{count}} document",
       "contador_other": "{{count}} documents"
+    },
+    "imagenes": {
+      "titulo": "Images",
+      "anadir": "Add image",
+      "quitar": "Remove image",
+      "vacio": "No images.",
+      "primeroGuarda": "Save the intervention before adding images."
     },
     "consecuencia": {
       "titulo": "And also",
