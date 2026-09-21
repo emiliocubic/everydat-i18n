@@ -3358,7 +3358,12 @@
       "cabecera": "Données du contrôle",
       "fecha": "Date",
       "revisor": "Contrôleur",
-      "tecnico": "Technicien responsable",
+      "resultado": "Résultat",
+      "validaHastaCampo": "Valable jusqu'au",
+      "checkpoint": "Point de contrôle",
+      "comentario": "Commentaire",
+      "bloquear": "Verrouiller la checklist",
+      "desbloquear": "Déverrouiller pour corriger",
       "observaciones": "Observations",
       "observacionesPh": "Détails, défauts constatés, recommandations…",
       "crear": "Créer le contrôle",
@@ -3392,12 +3397,11 @@
       "certificadaPor": "Certifié par {{quien}} le {{fecha}}",
       "veredictoCorregido": "verdict corrigé en {{resultado}}",
       "retirarCert": "Retirer la certification",
-      "veredicto": "Verdict",
       "comoDerivado": "Comme dérivé ({{resultado}})",
       "corregirA": "Corriger en {{resultado}}",
       "comentarioCert": "Commentaire du certificateur",
       "certHint": "Certifier valide le travail de terrain. Le contrôle clôturé n'est pas réécrit : la correction est stockée à part et c'est elle qui compte pour le parc.",
-      "firma": "Contrôlé par {{revisor}} · Responsable {{tecnico}}"
+      "firma": "Contrôlé par {{revisor}}"
     }
   },
   "app": {
