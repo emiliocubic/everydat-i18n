@@ -818,7 +818,6 @@
       "descargarPorDefinir": "Descargar el PDF del evento (por definir)",
       "resultado": {
         "apto": "Apto",
-        "vigilar": "Vigilar",
         "no_apto": "No apto"
       }
     },
@@ -3057,7 +3056,6 @@
       "kpiRevisiones": "Revisiones",
       "kpiRevisionesFuente": "censo de equipos del proyecto",
       "kpiNoAptos": "No aptos",
-      "kpiVigilar": "{{count}} a vigilar",
       "kpiAbiertas": "Abiertas",
       "kpiAbiertasFuente": "revisiones en curso sin cerrar",
       "kpiCalendario": "Calendario",
@@ -3074,14 +3072,12 @@
         "pendiente": "Pendientes",
         "en_curso": "Abiertas",
         "apto": "Aptos",
-        "vigilar": "Vigilar",
         "no_apto": "No aptos"
       },
       "situacion": {
         "pendiente": "Pendiente",
         "en_curso": "En curso",
         "apto": "Apto",
-        "vigilar": "Vigilar",
         "no_apto": "No apto",
         "reparacion": "Reparación"
       },
@@ -3387,9 +3383,13 @@
       "cerrada": "Cerrada",
       "anulada": "Anulada"
     },
+    "destino": {
+      "cliente": "Se lo queda el cliente",
+      "retira": "Se retira",
+      "destruye": "Se destruye"
+    },
     "resultado": {
       "apto": "Apto",
-      "vigilar": "Vigilar",
       "no_apto": "No apto"
     },
     "marca": {
@@ -3431,6 +3431,10 @@
       "fecha": "Fecha",
       "revisor": "Revisor",
       "resultado": "Resultado",
+      "reparable": "¿Tiene arreglo?",
+      "reparableSi": "Reparable",
+      "reparableNo": "No reparable",
+      "destino": "¿Dónde acaba el equipo?",
       "validaHastaCampo": "Válida hasta",
       "checkpoint": "Checkpoint",
       "comentario": "Comentario",

@@ -931,7 +931,6 @@
       "descargarPorDefinir": "Download the event PDF (to be defined)",
       "resultado": {
         "apto": "Pass",
-        "vigilar": "Watch",
         "no_apto": "Fail"
       }
     },
@@ -3057,7 +3056,6 @@
       "kpiRevisiones": "Inspections",
       "kpiRevisionesFuente": "project item census",
       "kpiNoAptos": "Failed",
-      "kpiVigilar": "{{count}} to watch",
       "kpiAbiertas": "Open",
       "kpiAbiertasFuente": "inspections in progress, not closed",
       "kpiCalendario": "Calendar",
@@ -3074,14 +3072,12 @@
         "pendiente": "Pending",
         "en_curso": "Open",
         "apto": "Pass",
-        "vigilar": "Watch",
         "no_apto": "Fail"
       },
       "situacion": {
         "pendiente": "Pending",
         "en_curso": "In progress",
         "apto": "Pass",
-        "vigilar": "Watch",
         "no_apto": "Fail",
         "reparacion": "Repair"
       },
@@ -3387,9 +3383,13 @@
       "cerrada": "Closed",
       "anulada": "Voided"
     },
+    "destino": {
+      "cliente": "The client keeps it",
+      "retira": "Taken away",
+      "destruye": "Destroyed"
+    },
     "resultado": {
       "apto": "Pass",
-      "vigilar": "Watch",
       "no_apto": "Fail"
     },
     "marca": {
@@ -3431,6 +3431,10 @@
       "fecha": "Date",
       "revisor": "Inspector",
       "resultado": "Result",
+      "reparable": "Can it be repaired?",
+      "reparableSi": "Repairable",
+      "reparableNo": "Beyond repair",
+      "destino": "Where does the equipment end up?",
       "validaHastaCampo": "Valid until",
       "checkpoint": "Checkpoint",
       "comentario": "Comment",
