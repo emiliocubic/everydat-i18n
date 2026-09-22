@@ -2998,7 +2998,13 @@
     "tabs": {
       "general": "Overview",
       "seguimiento": "Follow-up",
-      "propuestas": "Quotes"
+      "propuestas": "Quotes",
+      "aria": "Project sections",
+      "datos": "Project data",
+      "propuesta": "Proposal data",
+      "planificacion": "Scheduling",
+      "ejecucion": "Execution",
+      "certificacion": "Certification"
     },
     "mando": {
       "cambiar": "Change project status to…",

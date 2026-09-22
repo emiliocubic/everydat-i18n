@@ -2946,7 +2946,13 @@
     "tabs": {
       "general": "Vue générale",
       "seguimiento": "Suivi",
-      "propuestas": "Devis"
+      "propuestas": "Devis",
+      "aria": "Sections du projet",
+      "datos": "Données du projet",
+      "propuesta": "Données de la proposition",
+      "planificacion": "Planification",
+      "ejecucion": "Exécution",
+      "certificacion": "Certification"
     },
     "mando": {
       "cambiar": "Changer l’état du projet en…",

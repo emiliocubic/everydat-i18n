@@ -2998,7 +2998,13 @@
     "tabs": {
       "general": "Vista general",
       "seguimiento": "Seguimiento",
-      "propuestas": "Propuestas"
+      "propuestas": "Propuestas",
+      "aria": "Secciones del proyecto",
+      "datos": "Datos proyecto",
+      "propuesta": "Datos propuesta",
+      "planificacion": "Planificación",
+      "ejecucion": "Ejecución",
+      "certificacion": "Certificación"
     },
     "mando": {
       "cambiar": "Cambiar estado proyecto a…",
