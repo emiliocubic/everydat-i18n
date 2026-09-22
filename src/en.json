@@ -668,15 +668,10 @@
         "sin_cobertura": "No next-inspection date covers them"
       },
       "aptos": "Pass",
-      "enRevision": "Being inspected",
       "nuncaRevisados": "Never inspected",
       "deEllosActivos": "{{count}} in service",
       "deEllosDescatalogados": "{{count}} withdrawn",
-      "deEllosDescatalogados_other": "{{count}} withdrawn",
-      "abandonadas": "{{count}} abandoned inspection in progress",
-      "abandonadas_other": "{{count}} abandoned inspections in progress",
-      "abandonadasHint": "Opened under a project that is no longer running, or standalone and untouched for more than a week. They do not close by themselves: close or cancel them.",
-      "abandonadaDesde": "untouched since {{fecha}}"
+      "deEllosDescatalogados_other": "{{count}} withdrawn"
     },
     "lote": {
       "motivo": "Reason",
@@ -724,7 +719,6 @@
       "declarado": "declared",
       "ultimaRevision": "Last inspection",
       "validaHasta": "Valid until",
-      "enRevision": "Under inspection",
       "fechas": "Significant dates",
       "sinFechas": "Its type uses no dates.",
       "vidaUtil": "Max. service life {{count}} year",
@@ -921,7 +915,6 @@
       "contador": "History · {{count}} event",
       "contador_other": "History · {{count}} events",
       "vacio": "No events.",
-      "anulada": "Voided",
       "pendiente": "Upcoming",
       "validaHasta": "Valid until {{fecha}}",
       "nuevo": "New event",
@@ -1354,8 +1347,6 @@
       "codigo": "My code",
       "elementos": "Safety equipment",
       "elementosTitle": "Total number of safety items",
-      "revision": "Items under inspection",
-      "revisionTitle": "Number of items with an open inspection",
       "incidencias": "Issues",
       "incidenciasTitle": "Number of issues: failed, end of life, overdue inspection or under repair",
       "informes": "Reports",
@@ -1528,7 +1519,6 @@
       "elementos_other": "{{count}} items",
       "colActivos": "Active items in the folder (branch total when collapsed)",
       "colIncidencias": "Issues: unfit items (end of life, overdue inspection, failed)",
-      "colEnRevision": "Items under inspection",
       "colDescatalogados": "Discontinued items",
       "colProxRevision": "Next inspection",
       "zonaPromocionar": "Promote to zone",
@@ -3056,8 +3046,6 @@
       "kpiRevisiones": "Inspections",
       "kpiRevisionesFuente": "project item census",
       "kpiNoAptos": "Failed",
-      "kpiAbiertas": "Open",
-      "kpiAbiertasFuente": "inspections in progress, not closed",
       "kpiCalendario": "Calendar",
       "kpiInstalaciones": "Installations",
       "enPreparacion": "In preparation",
@@ -3076,7 +3064,6 @@
       },
       "situacion": {
         "pendiente": "Pending",
-        "en_curso": "In progress",
         "apto": "Pass",
         "no_apto": "Fail",
         "reparacion": "Repair"
@@ -3093,8 +3080,6 @@
     "certificacion": {
       "progreso": "Certification",
       "revisiones": "inspections validated",
-      "abiertas": "{{count}} inspection still open",
-      "abiertas_other": "{{count}} inspections still open",
       "completar": "Certification completed",
       "completarConfirm": "Close the project: certification is completed and, if it is an inspection project, the next one is created. Continue?",
       "completada": "Project finished.",
@@ -3378,11 +3363,6 @@
     "sinVentana": "no window"
   },
   "revisiones": {
-    "estado": {
-      "en_curso": "In progress",
-      "cerrada": "Closed",
-      "anulada": "Voided"
-    },
     "destino": {
       "cliente": "The client keeps it",
       "retira": "Taken away",
@@ -3416,11 +3396,9 @@
       "sinChecklist": "Its type has no checklist: the inspection is recorded without a script.",
       "periodicidad": "every {{count}} month",
       "periodicidad_other": "every {{count}} months",
-      "estado": "Status",
       "resultado": "Result",
       "validaHasta": "Valid until",
-      "fueraDeServicio": "A withdrawn or destroyed item is no longer inspected.",
-      "yaEnCurso": "An inspection is already in progress: close or void it before opening another."
+      "fueraDeServicio": "A withdrawn or destroyed item is no longer inspected."
     },
     "sheet": {
       "aria": "Inspection",
@@ -3465,12 +3443,6 @@
       "anadirFoto": "Add photo",
       "quitarFoto": "Remove photo",
       "quitarFotoConfirm": "Remove this photo from the inspection?",
-      "cerrar": "Close inspection",
-      "cerrarConfirm": "Closing the inspection signs it: from here on only the certifier corrects it. Continue?",
-      "cerrada": "Inspection closed.",
-      "anular": "Void",
-      "anularConfirm": "Cancelling leaves the inspection without effect: no verdict and no validity. It stays in the history, with the reason.",
-      "anulada": "Inspection voided.",
       "certificacion": "Certification",
       "certificar": "Certify",
       "certificada": "Inspection certified.",
@@ -3480,10 +3452,10 @@
       "comentarioCert": "Certifier's comment",
       "certHint": "Certifying approves the inspection. Anything to correct (marks, texts, photos, verdict) is corrected first, right here.",
       "firma": "Inspected by {{revisor}}",
-      "anularMotivoPh": "Reason for cancelling (required)",
-      "anularConfirmar": "Confirm cancellation",
-      "anuladaPor": "Cancelled by {{quien}} on {{fecha}}: {{motivo}}",
-      "corrigeHint": "You are correcting a closed inspection: every change goes through the closing again (verdict and validity). No visible trace is left."
+      "corrigeHint": "You are correcting a recorded inspection: every change recalculates the item validity. No visible trace is left.",
+      "borrar": "Delete inspection",
+      "borrada": "Inspection deleted.",
+      "borrarConfirm": "Deleting the inspection removes it from the history along with its points and photos, and the item falls back to the previous validity. This cannot be undone. Continue?"
     }
   },
   "app": {

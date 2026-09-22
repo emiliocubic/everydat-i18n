@@ -643,7 +643,6 @@
         "sin_cobertura": "Sans date de prochaine inspection qui les couvre"
       },
       "aptos": "Conformes",
-      "enRevision": "En cours d'inspection",
       "nuncaRevisados": "Jamais inspectés",
       "deEllosActivos": "{{count}} en service",
       "deEllosDescatalogados": "{{count}} retiré",
@@ -694,7 +693,6 @@
       "declarado": "déclarée",
       "ultimaRevision": "Dernière inspection",
       "validaHasta": "Valable jusqu'au",
-      "enRevision": "En inspection",
       "fechas": "Dates significatives",
       "sinFechas": "Son type ne prévoit aucune date.",
       "vidaUtil": "Vie utile max. {{count}} an",
@@ -876,7 +874,6 @@
       "contador": "Historique · {{count}} événement",
       "contador_other": "Historique · {{count}} événements",
       "vacio": "Aucun événement.",
-      "anulada": "Annulée",
       "pendiente": "À venir",
       "validaHasta": "Valable jusqu'au {{fecha}}",
       "nuevo": "Nouvel événement",
@@ -1309,8 +1306,6 @@
       "codigo": "Mon code",
       "elementos": "Équipements de sécurité",
       "elementosTitle": "Nombre total d'équipements de sécurité",
-      "revision": "Équipements en cours de vérification",
-      "revisionTitle": "Nombre d'équipements avec une vérification ouverte",
       "incidencias": "Incidents",
       "incidenciasTitle": "Nombre d’incidents : non conformes, fin de vie, vérification périmée ou en réparation",
       "informes": "Rapports",
@@ -1472,7 +1467,6 @@
       "elementos_other": "{{count}} équipements",
       "colActivos": "Équipements actifs du dossier (total de la branche si replié)",
       "colIncidencias": "Anomalies : équipements non conformes (fin de vie, contrôle échu, non conforme)",
-      "colEnRevision": "Équipements en cours de contrôle",
       "colDescatalogados": "Équipements déclassés",
       "colProxRevision": "Prochain contrôle",
       "zonaPromocionar": "Promouvoir en zone",
@@ -3000,8 +2994,6 @@
       "kpiRevisiones": "Contrôles",
       "kpiRevisionesFuente": "recensement des équipements du projet",
       "kpiNoAptos": "Non aptes",
-      "kpiAbiertas": "Ouverts",
-      "kpiAbiertasFuente": "contrôles en cours non clôturés",
       "kpiCalendario": "Calendrier",
       "kpiInstalaciones": "Installations",
       "enPreparacion": "En préparation",
@@ -3020,7 +3012,6 @@
       },
       "situacion": {
         "pendiente": "En attente",
-        "en_curso": "En cours",
         "apto": "Apte",
         "no_apto": "Non apte"
       },
@@ -3036,8 +3027,6 @@
     "certificacion": {
       "progreso": "Certification",
       "revisiones": "contrôles validés",
-      "abiertas": "{{count}} contrôle encore ouvert",
-      "abiertas_other": "{{count}} contrôles encore ouverts",
       "completar": "Certification terminée",
       "completarConfirm": "Clôturer le projet : la certification est terminée et, s'il s'agit d'un projet de contrôle, le suivant est créé. Continuer ?",
       "completada": "Projet terminé.",
@@ -3306,11 +3295,6 @@
     "sinVentana": "sans fenêtre"
   },
   "revisiones": {
-    "estado": {
-      "en_curso": "En cours",
-      "cerrada": "Clôturé",
-      "anulada": "Annulé"
-    },
     "destino": {
       "cliente": "Le client le garde",
       "retira": "Repris",
@@ -3344,11 +3328,9 @@
       "sinChecklist": "Son type n'a pas de checklist : le contrôle est consigné sans trame.",
       "periodicidad": "tous les {{count}} mois",
       "periodicidad_other": "tous les {{count}} mois",
-      "estado": "État",
       "resultado": "Résultat",
       "validaHasta": "Valable jusqu'au",
-      "fueraDeServicio": "Un équipement retiré ou détruit ne se contrôle plus.",
-      "yaEnCurso": "Un contrôle est déjà en cours : clôturez-le ou annulez-le avant d'en ouvrir un autre."
+      "fueraDeServicio": "Un équipement retiré ou détruit ne se contrôle plus."
     },
     "sheet": {
       "aria": "Contrôle",
@@ -3393,12 +3375,6 @@
       "anadirFoto": "Ajouter une photo",
       "quitarFoto": "Retirer la photo",
       "quitarFotoConfirm": "Retirer cette photo du contrôle ?",
-      "cerrar": "Clôturer le contrôle",
-      "cerrarConfirm": "Clôturer signe le contrôle : il ne sera plus modifiable. Continuer ?",
-      "cerrada": "Contrôle clôturé.",
-      "anular": "Annuler",
-      "anularConfirm": "Annuler laisse le contrôle sans effet : ni verdict ni prolongation de validité. Il reste dans l'historique. Continuer ?",
-      "anulada": "Contrôle annulé.",
       "certificacion": "Certification",
       "certificar": "Certifier",
       "certificada": "Contrôle certifié.",
@@ -3410,7 +3386,11 @@
       "corregirA": "Corriger en {{resultado}}",
       "comentarioCert": "Commentaire du certificateur",
       "certHint": "Certifier valide le travail de terrain. Le contrôle clôturé n'est pas réécrit : la correction est stockée à part et c'est elle qui compte pour le parc.",
-      "firma": "Contrôlé par {{revisor}}"
+      "firma": "Contrôlé par {{revisor}}",
+      "borrar": "Supprimer le contrôle",
+      "borrada": "Contrôle supprimé.",
+      "borrarConfirm": "Supprimer le contrôle le retire de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Action irréversible. Continuer ?",
+      "corrigeHint": "Vous corrigez un contrôle déjà enregistré : chaque modification recalcule la validité de l'équipement. Aucune trace visible n'est laissée."
     }
   },
   "app": {

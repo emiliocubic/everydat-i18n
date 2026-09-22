@@ -555,15 +555,10 @@
         "sin_cobertura": "Sin fecha de próxima revisión que los cubra"
       },
       "aptos": "Aptos",
-      "enRevision": "En revisión",
       "nuncaRevisados": "Nunca revisados",
       "deEllosActivos": "{{count}} en servicio",
       "deEllosDescatalogados": "{{count}} descatalogado",
-      "deEllosDescatalogados_other": "{{count}} descatalogados",
-      "abandonadas": "{{count}} revisión en curso abandonada",
-      "abandonadas_other": "{{count}} revisiones en curso abandonadas",
-      "abandonadasHint": "Abiertas bajo un proyecto que ya no está en marcha, o sueltas y sin tocar desde hace más de una semana. No se cierran solas: ciérralas o anúlalas.",
-      "abandonadaDesde": "sin tocar desde {{fecha}}"
+      "deEllosDescatalogados_other": "{{count}} descatalogados"
     },
     "lote": {
       "motivo": "Motivo",
@@ -611,7 +606,6 @@
       "declarado": "declarado",
       "ultimaRevision": "Última revisión",
       "validaHasta": "Válida hasta",
-      "enRevision": "En revisión",
       "fechas": "Fechas significativas",
       "sinFechas": "Su tipo no contempla ninguna fecha.",
       "vidaUtil": "Vida útil máx. {{count}} año",
@@ -808,7 +802,6 @@
       "contador": "Historial · {{count}} evento",
       "contador_other": "Historial · {{count}} eventos",
       "vacio": "Sin eventos.",
-      "anulada": "Anulada",
       "pendiente": "Pendiente",
       "validaHasta": "Válida hasta {{fecha}}",
       "nuevo": "Nuevo evento",
@@ -1241,8 +1234,6 @@
       "codigo": "Mi código",
       "elementos": "Elementos de seguridad",
       "elementosTitle": "N.º total de elementos de seguridad",
-      "revision": "Elementos en revisión",
-      "revisionTitle": "N.º de elementos con una revisión abierta",
       "incidencias": "Incidencias",
       "incidenciasTitle": "N.º de incidencias: elementos no aptos, fin de vida, revisión caducada o en reparación",
       "informes": "Informes",
@@ -1415,7 +1406,6 @@
       "elementos_other": "{{count}} elementos",
       "colActivos": "Elementos activos de la carpeta (agregado de la rama si está plegada)",
       "colIncidencias": "Incidencias: elementos no aptos (fin de vida, revisión caducada, no apto)",
-      "colEnRevision": "Elementos en proceso de revisión",
       "colDescatalogados": "Elementos descatalogados",
       "colProxRevision": "Próxima revisión",
       "zonaPromocionar": "Promocionar a zona",
@@ -3056,8 +3046,6 @@
       "kpiRevisiones": "Revisiones",
       "kpiRevisionesFuente": "censo de equipos del proyecto",
       "kpiNoAptos": "No aptos",
-      "kpiAbiertas": "Abiertas",
-      "kpiAbiertasFuente": "revisiones en curso sin cerrar",
       "kpiCalendario": "Calendario",
       "kpiInstalaciones": "Instalaciones",
       "enPreparacion": "En preparación",
@@ -3076,7 +3064,6 @@
       },
       "situacion": {
         "pendiente": "Pendiente",
-        "en_curso": "En curso",
         "apto": "Apto",
         "no_apto": "No apto",
         "reparacion": "Reparación"
@@ -3093,8 +3080,6 @@
     "certificacion": {
       "progreso": "Certificación",
       "revisiones": "revisiones validadas",
-      "abiertas": "{{count}} revisión abierta sin cerrar",
-      "abiertas_other": "{{count}} revisiones abiertas sin cerrar",
       "completar": "Certificación completada",
       "completarConfirm": "Cerrar el proyecto: la certificación queda completada y, si es de revisión, nace solo el siguiente. ¿Continuar?",
       "completada": "Proyecto finalizado.",
@@ -3378,11 +3363,6 @@
     "sinVentana": "sin ventana"
   },
   "revisiones": {
-    "estado": {
-      "en_curso": "En curso",
-      "cerrada": "Cerrada",
-      "anulada": "Anulada"
-    },
     "destino": {
       "cliente": "Se lo queda el cliente",
       "retira": "Se retira",
@@ -3416,11 +3396,9 @@
       "sinChecklist": "Su tipo no tiene checklist: la revisión se consigna sin guion.",
       "periodicidad": "cada {{count}} mes",
       "periodicidad_other": "cada {{count}} meses",
-      "estado": "Estado",
       "resultado": "Resultado",
       "validaHasta": "Válida hasta",
-      "fueraDeServicio": "Un equipo retirado o destruido ya no se revisa.",
-      "yaEnCurso": "Ya hay una revisión en curso: ciérrala o anúlala antes de abrir otra."
+      "fueraDeServicio": "Un equipo retirado o destruido ya no se revisa."
     },
     "sheet": {
       "aria": "Revisión",
@@ -3465,12 +3443,6 @@
       "anadirFoto": "Añadir foto",
       "quitarFoto": "Quitar foto",
       "quitarFotoConfirm": "¿Quitar esta foto de la revisión?",
-      "cerrar": "Cerrar revisión",
-      "cerrarConfirm": "Cerrar la revisión la firma: a partir de aquí solo la corrige quien certifica. ¿Continuar?",
-      "cerrada": "Revisión cerrada.",
-      "anular": "Anular",
-      "anularConfirm": "Anular deja la revisión sin efecto: no da veredicto ni prorroga la validez. Se conserva en el historial, con el motivo.",
-      "anulada": "Revisión anulada.",
       "certificacion": "Certificación",
       "certificar": "Certificar",
       "certificada": "Revisión certificada.",
@@ -3480,10 +3452,10 @@
       "comentarioCert": "Comentario del certificador",
       "certHint": "Certificar da por buena la revisión. Lo que haya que corregir (marcas, textos, fotos, veredicto) se corrige antes, aquí mismo.",
       "firma": "Revisó {{revisor}}",
-      "anularMotivoPh": "Motivo de la anulación (obligatorio)",
-      "anularConfirmar": "Confirmar anulación",
-      "anuladaPor": "Anulada por {{quien}} el {{fecha}}: {{motivo}}",
-      "corrigeHint": "Estás corrigiendo una revisión cerrada: cada cambio vuelve a pasar por el cierre (veredicto y validez). No queda traza visible."
+      "corrigeHint": "Estás corrigiendo una revisión ya registrada: cada cambio recalcula la validez del equipo. No queda traza visible.",
+      "borrar": "Borrar revisión",
+      "borrada": "Revisión borrada.",
+      "borrarConfirm": "Borrar la revisión la quita del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. No se puede deshacer. ¿Continuar?"
     }
   },
   "app": {
