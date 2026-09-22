@@ -3549,7 +3549,9 @@
       "fotosPorSubir": "{{count}} foto por subir",
       "fotosPorSubir_other": "{{count}} fotos por subir",
       "fotosSubidas": "{{count}} foto enviada",
-      "fotosSubidas_other": "{{count}} fotos enviadas"
+      "fotosSubidas_other": "{{count}} fotos enviadas",
+      "borradorEnCurso": "Sin terminar",
+      "borradorTerminada": "Terminada"
     },
     "envio": {
       "titulo": "Enviar",
