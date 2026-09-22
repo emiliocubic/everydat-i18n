@@ -3253,7 +3253,7 @@
       "propuestasHint": "El antes de presupuestar: lo que no tiene propuesta emitida y lo rechazado, que aún se puede represupuestar.",
       "propuestasVacio": "Nada por presupuestar en esta ventana",
       "seguimiento": "Seguimiento",
-      "seguimientoHint": "El después: lo enviado y lo aceptado, con su reloj de validez. Un proyecto aceptado se queda hasta que lo muevas.",
+      "seguimientoHint": "El después: lo generado, lo enviado y lo aceptado, con su reloj de validez. Un proyecto aceptado se queda hasta que lo muevas.",
       "seguimientoVacio": "Ninguna propuesta en seguimiento en esta ventana"
     },
     "stateOrigin": {

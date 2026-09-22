@@ -3185,7 +3185,7 @@
       "propuestasHint": "Avant de chiffrer : ce qui n'a pas de proposition émise et ce qui a été refusé mais peut encore être rechiffré.",
       "propuestasVacio": "Rien à chiffrer dans cette fenêtre",
       "seguimiento": "Suivi",
-      "seguimientoHint": "Après : ce qui a été envoyé et accepté, avec son horloge de validité. Un projet accepté reste jusqu'à ce que vous le déplaciez.",
+      "seguimientoHint": "Après : ce qui a été généré, envoyé et accepté, avec son horloge de validité. Un projet accepté reste jusqu'à ce que vous le déplaciez.",
       "seguimientoVacio": "Aucune proposition en suivi dans cette fenêtre"
     },
     "stateOrigin": {

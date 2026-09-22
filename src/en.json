@@ -3253,7 +3253,7 @@
       "propuestasHint": "Before quoting: what has no issued proposal and what was rejected but can still be quoted again.",
       "propuestasVacio": "Nothing to quote in this window",
       "seguimiento": "Follow-up",
-      "seguimientoHint": "After quoting: what was sent and accepted, with its validity clock. An accepted project stays until you move it.",
+      "seguimientoHint": "After quoting: what was generated, sent and accepted, with its validity clock. An accepted project stays until you move it.",
       "seguimientoVacio": "No proposals under follow-up in this window"
     },
     "stateOrigin": {
