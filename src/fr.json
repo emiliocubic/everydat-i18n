@@ -583,7 +583,6 @@
       "pideAlMenosUno": "Cochez au moins un élément",
       "pideDos": "Cochez deux éléments ou plus",
       "yaAgrupados": "L’un des éléments cochés fait déjà partie d’un ensemble",
-      "enReparacionFila": "En réparation",
       "arrastrar": "Faites glisser la sélection sur un dossier de l'arbre pour la déplacer",
       "soltando": "Déplacement de {{count}} élément…",
       "soltando_other": "Déplacement de {{count}} éléments…"
@@ -610,9 +609,6 @@
     },
     "estado": {
       "activo": "Actif",
-      "en_reparacion": "En réparation",
-      "retirado": "Retiré",
-      "destruido": "Détruit",
       "descatalogado": "Réformé"
     },
     "cuadro": {
@@ -650,25 +646,29 @@
     },
     "lote": {
       "motivo": "Motif",
-      "motivoPlaceholder": "Ex. : lot défectueux du fabricant",
       "titulo": {
-        "retirar": "Retirer / Déclasser",
-        "eliminar": "Supprimer de l'inventaire"
+        "eliminar": "Supprimer de l'inventaire",
+        "descatalogar": "Réformer"
       },
       "texto": {
-        "retirar": "Retirer, c'est déclasser : ils sortent du service et cessent de compter comme matériel utilisable, mais conservent tout leur historique d'inspections, ce que la norme EN 365 exige pour prouver que l'équipement était utilisable. La destruction de l'équipement est l'un des motifs possibles, pas une action distincte.",
-        "eliminar": "C'est pour les éléments créés par erreur. Si l'équipement a existé et est sorti du service, il faut le retirer, pas le supprimer."
+        "eliminar": "C'est pour les éléments créés par erreur. Si l'équipement a existé et est sorti du service, il faut le réformer, pas le supprimer.",
+        "descatalogar": "Ils sortent du service et cessent de compter comme matériel utilisable, mais conservent tout leur historique d'inspections, ce que la norme EN 365 exige. On peut les réactiver. Date, motif et photos sont les mêmes pour tous les éléments sélectionnés."
       },
       "accion": {
-        "retirar": "Retirer / Déclasser",
-        "eliminar": "Supprimer"
+        "eliminar": "Supprimer",
+        "descatalogar": "Réformer"
       },
       "hecho": {
-        "retirar": "{{count}} élément retiré",
-        "retirar_other": "{{count}} éléments retirés",
         "eliminar": "{{count}} élément supprimé",
-        "eliminar_other": "{{count}} éléments supprimés"
-      }
+        "eliminar_other": "{{count}} éléments supprimés",
+        "descatalogar": "{{count}} élément réformé",
+        "descatalogar_other": "{{count}} éléments réformés"
+      },
+      "fecha": "Date",
+      "observaciones": "Observations",
+      "observacionesPh": "Ce qui s'est passé, où finit l'équipement…",
+      "fotos": "Photos",
+      "anadirFoto": "Ajouter une photo"
     },
     "ficha": {
       "aria": "Fiche de l'élément",
@@ -689,8 +689,6 @@
       "cicloVida": "État",
       "motivo": "Motif",
       "finVida": "Fin de vie utile",
-      "finVidaMotivo": "Motif de la fin de vie",
-      "declarado": "déclarée",
       "ultimaRevision": "Dernière inspection",
       "validaHasta": "Valable jusqu'au",
       "fechas": "Dates significatives",
@@ -707,10 +705,10 @@
       "coordenadas": "Coordonnées",
       "campoSinValores": "Son type n'a aucune valeur assignée pour ce champ.",
       "finVidaCalculado": "Calculée par son type",
-      "finVidaDeclarado": "Saisie à la main",
       "finVidaSinCriterio": "Son type ne fixe pas de péremption",
       "anadirValor": "Ajouter un autre",
-      "quitarValor": "Retirer cette valeur"
+      "quitarValor": "Retirer cette valeur",
+      "observaciones": "Observations"
     },
     "fecha": {
       "fabricacion": "Fabrication",
@@ -733,26 +731,13 @@
     },
     "accion": {
       "titulo": {
-        "activo": "Remettre en service",
-        "en_reparacion": "Envoyer en réparation",
-        "retirado": "Retirer / Déclasser",
-        "destruido": "Déclarer détruit"
+        "activo": "Réactiver"
       },
       "texto": {
-        "activo": "Il compte à nouveau comme matériel utilisable. Il faut le justifier : c'est affirmer que l'équipement peut resservir.",
-        "en_reparacion": "Il reste à l'inventaire mais ne peut pas être utilisé, et compte comme incident.",
-        "retirado": "Retirer, c'est déclasser : l'équipement sort du service et conserve tout son historique d'inspections, ce que la norme EN 365 exige pour prouver qu'il était utilisable. La destruction de l'équipement est l'un des motifs possibles, pas une action distincte.",
-        "destruido": "Sans retour possible. C'est l'état terminal : une erreur se corrige via le support."
-      },
-      "motivoPlaceholder": {
-        "retirado": "Ex. : couture endommagée",
-        "activo": "Ex. : réparé en atelier et vérifié"
+        "activo": "Il revient à l'inventaire vivant et compte à nouveau comme matériel utilisable. Son historique reste intact ; la date et le motif de la réforme sont effacés."
       },
       "confirmar": {
-        "activo": "Remettre en service",
-        "en_reparacion": "Envoyer en réparation",
-        "retirado": "Retirer / Déclasser",
-        "destruido": "Déclarer détruit"
+        "activo": "Réactiver"
       }
     },
     "alta": {
@@ -770,14 +755,13 @@
       "unicoTitle": "Ne peut pas se répéter sur un autre équipement",
       "campoFijado": "Figé par la référence : non modifiable à la création",
       "finVida": "Fin de durée de vie",
-      "faltaFirma": "Il manque qui signe la vérification.",
       "creados": "{{count}} équipements créés.",
       "pasos": {
         "modelo": "Fabricant, modèle et type",
         "identificacion": "Identifiants",
         "fechas": "Dates significatives",
         "campos": "Champs personnalisés",
-        "eventos": "Démarrage du compteur",
+        "eventos": "Vérification initiale",
         "unidades": "Combien d’unités ?",
         "modeloHint": "même modèle pour toutes les unités",
         "sinIdentHint": "ce type d’équipement ne demande pas d’identifiants",
@@ -799,45 +783,16 @@
         "noSeInstala": "« {{tipo}} » ne s'installe pas : aucune date d'installation n'est demandée."
       },
       "eventos": {
-        "title": "D'où part le compteur",
-        "sugerido": "Suggéré",
-        "arrancaDe": "Part de",
-        "incluirActa": "Inclure le procès-verbal d'installation",
-        "sinActaHint": "L'acte d'installation est enregistré, sans détail consultable.",
-        "fechaActa": "Date du procès-verbal",
-        "segunUnidad": "selon chaque unité",
-        "tecnico": "Technicien responsable",
         "revisor": "Vérificateur",
         "resultado": "Résultat",
-        "apto": "Conforme",
         "fechaRevision": "Date de la vérification",
         "validaHasta": "Valable jusqu'au",
         "nPuntos": "{{count}} points",
         "cuandoProceda": "(le cas échéant)",
-        "actaSinNoApto": "Un procès-verbal d'installation n'admet pas de points non conformes : corrigez l'installation ou enregistrez une vérification non conforme.",
-        "modo": {
-          "ninguno": "Ne pas démarrer le compteur",
-          "fecha_significativa": "À partir d'une date de l'équipement lui-même",
-          "revision": "À partir d'une vérification faite aujourd'hui"
-        },
-        "desc": {
-          "ninguno": "L'équipement reste non vérifié jusqu'à ce que quelqu'un l'inspecte.",
-          "fecha_significativa": "La création accompagne l'acte d'installer : ce qui démarre le compteur, c'est cet acte, pas une vérification.",
-          "revision": "L'équipement existait déjà : le compteur part du contrôle que nous faisons aujourd'hui, pas d'une date antérieure."
-        },
-        "cp": {
-          "apto": "Conforme",
-          "vigilar": "À surveiller",
-          "no_apto": "Non conforme",
-          "no_aplica": "S.O."
-        },
-        "diag": {
-          "sinInstalacion": "Ce type d'équipement ne s'installe pas : le compteur part d'une vérification.",
-          "reciente": "Installé le {{fecha}}, dans les {{meses}} derniers mois : la création accompagne l'acte d'installer.",
-          "heredada": "Installé le {{fecha}}, il y a plus de {{meses}} mois : l'équipement était déjà là et entre maintenant dans le système.",
-          "incompleta": "Seules {{n}} unités sur {{total}} apportent une date d'installation.",
-          "mixta": "Cette création mélange des installations des {{meses}} derniers mois avec d'autres plus anciennes. Il vaut peut-être mieux la scinder."
-        }
+        "incluir": "Enregistrer une vérification initiale avec la création",
+        "conRevisionHint": "La même vérification sur chaque unité : qui, checklist, résultat et, si conforme, valable jusqu'au.",
+        "sinRevisionHint": "Sans vérification initiale, les équipements entrent non vérifiés, jusqu'à ce que quelqu'un les inspecte.",
+        "checklist": "Checklist"
       },
       "seCreara_one": "Sera créé dans",
       "seCreara_other": "Seront créés dans",
@@ -868,6 +823,11 @@
         "tipo": "Type d'équipement",
         "usar": "Utiliser non précisé",
         "marca": "Non précisé"
+      },
+      "faltaRevision": {
+        "firma": "Indiquez qui a fait la vérification initiale.",
+        "resultado": "La vérification initiale a besoin d'un résultat.",
+        "cascada": "Complétez la vérification initiale : valable jusqu'au si elle est conforme, ou ses questions complémentaires."
       }
     },
     "historial": {
@@ -883,7 +843,8 @@
       "descargarPorDefinir": "Télécharger le PDF de l'événement (à définir)",
       "resultado": {
         "apto": "Conforme",
-        "no_apto": "Non conforme"
+        "no_apto": "Non conforme",
+        "no_revisada": "Non vérifié"
       }
     },
     "traslado": {
@@ -1006,6 +967,15 @@
       "faltan": "{{count}} donnée manquante",
       "faltan_other": "{{count}} données manquantes",
       "aria": "Fiche complète: {{puestos}} sur {{total}}"
+    },
+    "descatalogacion": {
+      "motivo": {
+        "fin_vida_util": "Fin de vie utile",
+        "dano_irreparable": "Dommage irréparable",
+        "obsolescencia": "Obsolescence",
+        "retirada_preventiva": "Retrait préventif",
+        "otro": "Autre"
+      }
     }
   },
   "instancia": {
@@ -3082,7 +3052,8 @@
       "situacion": {
         "pendiente": "En attente",
         "apto": "Apte",
-        "no_apto": "Non apte"
+        "no_apto": "Non apte",
+        "no_revisada": "Non vérifié"
       },
       "buscar": "Rechercher par dossier, type, modèle ou code",
       "colElemento": "Équipement",
@@ -3433,26 +3404,16 @@
     "sinVentana": "sans fenêtre"
   },
   "revisiones": {
-    "destino": {
-      "cliente": "Le client le garde",
-      "retira": "Repris",
-      "destruye": "Détruit"
-    },
     "resultado": {
       "apto": "Apte",
-      "no_apto": "Non apte"
+      "no_apto": "Non apte",
+      "no_revisada": "Non vérifié"
     },
     "marca": {
-      "apto": "Apte",
+      "apto": "OK",
       "vigilar": "Surveiller",
-      "no_apto": "Non apte",
+      "no_apto": "KO",
       "no_aplica": "N/A"
-    },
-    "via": {
-      "periodica": "Périodique",
-      "inicial": "Initial",
-      "instalacion": "PV d'installation",
-      "extraordinaria": "Extraordinaire"
     },
     "eje": {
       "visual": "Visuel",
@@ -3468,7 +3429,7 @@
       "periodicidad_other": "tous les {{count}} mois",
       "resultado": "Résultat",
       "validaHasta": "Valable jusqu'au",
-      "fueraDeServicio": "Un équipement retiré ou détruit ne se contrôle plus."
+      "fueraDeServicio": "Un équipement réformé ne se contrôle plus : réactivez-le d'abord."
     },
     "sheet": {
       "aria": "Contrôle",
@@ -3482,7 +3443,6 @@
       "reparable": "Réparable ?",
       "reparableSi": "Réparable",
       "reparableNo": "Irréparable",
-      "destino": "Où finit l'équipement ?",
       "validaHastaCampo": "Valable jusqu'au",
       "validaHastaSugerida": "Calculée à partir de la périodicité de cet équipement ({{count}} mois). Modifiez-la si besoin.",
       "validaHastaSugerida_other": "Calculée à partir de la périodicité de cet équipement ({{count}} mois). Modifiez-la si besoin.",
@@ -3495,7 +3455,7 @@
       "crear": "Créer le contrôle",
       "creada": "Contrôle enregistré et clôturé.",
       "enBlancoHint": "Cochez ce que vous avez vérifié ; ce qui reste vide n'empêche pas d'enregistrer. À l'enregistrement, la checklist est copiée telle quelle et ne change plus.",
-      "faltanDatos": "Date, opérateur et résultat sont obligatoires pour enregistrer.",
+      "faltanDatos": "Pour enregistrer il faut une date, un contrôleur et un résultat, plus valable jusqu'au si conforme.",
       "imagenes": "Images du contrôle",
       "imagenesAlCrear": "{{count}} image sera envoyée à l'enregistrement du contrôle.",
       "imagenesAlCrear_other": "{{count}} images seront envoyées à l'enregistrement du contrôle.",
@@ -3528,7 +3488,32 @@
       "borrar": "Supprimer le contrôle",
       "borrada": "Contrôle supprimé.",
       "borrarConfirm": "Supprimer le contrôle le retire de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Action irréversible. Continuer ?",
-      "corrigeHint": "Vous corrigez un contrôle déjà enregistré : chaque modification recalcule la validité de l'équipement. Aucune trace visible n'est laissée."
+      "corrigeHint": "Vous corrigez un contrôle déjà enregistré : chaque modification recalcule le verdict et la validité de l'équipement. Aucune trace visible.",
+      "revisorNombre": "Nom",
+      "revisorNombrePh": "Personne ou entreprise ayant contrôlé",
+      "medida": "Qu'a-t-on fait de l'équipement ?",
+      "noRevisadaMotivo": "Pourquoi n'a-t-il pas été contrôlé ?",
+      "noRevisadaDetalle": "Lequel ?",
+      "sinChecklistOpcion": "Sans checklist",
+      "todo": "Tout {{marca}}",
+      "validaHastaObligatoria": "Obligatoire pour un contrôle conforme."
+    },
+    "medida": {
+      "senaliza": "Signalé comme non utilisable",
+      "retira": "Retiré du site",
+      "destruye": "Détruit",
+      "ninguna": "Aucune"
+    },
+    "noRevisada": {
+      "no_encontrado": "Non trouvé",
+      "en_montaje": "En cours de montage",
+      "sin_acceso": "Sans accès",
+      "otro": "Autre"
+    },
+    "revisorTipo": {
+      "interno": "Personnel interne",
+      "colaborador": "Collaborateur externe",
+      "otro": "Autre personne ou entreprise"
     }
   },
   "app": {
@@ -3753,45 +3738,51 @@
   },
   "actuaciones": {
     "titulo": "Interventions",
-    "nueva": "Nouvelle intervention",
-    "editar": "Modifier l'intervention",
+    "nueva": {
+      "reparacion": "Nouvelle réparation",
+      "incidencia": "Nouvel incident"
+    },
+    "editar": {
+      "reparacion": "Modifier la réparation",
+      "incidencia": "Modifier l'incident"
+    },
     "vacio": "Aucune intervention enregistrée pour cet équipement.",
-    "intro": "Ce qui est arrivé à l'équipement et qui n'était pas une vérification.",
+    "intro": {
+      "reparacion": "Ce qui a été fait à l'équipement et comment cela s'est terminé.",
+      "incidencia": "Ce qui est arrivé à l'équipement entre deux vérifications."
+    },
     "borrar": "Supprimer l'intervention",
     "borrarConfirma": "Elle est retirée de l'historique. Les documents joints restent dans la gestion documentaire.",
     "guardar": "Enregistrer l'intervention",
     "crear": "Enregistrer l'intervention",
     "tipo": {
       "reparacion": "Réparation",
-      "incidencia": "Incident",
-      "otra": "Autre"
+      "incidencia": "Incident"
     },
     "subtipo": {
       "caida_retenida": "Chute arrêtée",
       "dano_observado": "Dommage constaté",
-      "aviso_fabricante": "Avis du fabricant",
-      "otra": "Autre"
+      "aviso_fabricante": "Avis du fabricant"
     },
     "fields": {
       "tipo": "Type",
       "subtipo": "Type d'incident",
       "fecha": "Date",
-      "usuario": "Qui (interne)",
-      "realizadaPor": "Qui (externe)",
-      "descripcion": "Ce qui a été fait",
-      "proximaRevision": "Prochaine vérification",
+      "descripcion": {
+        "reparacion": "Ce qui a été fait",
+        "incidencia": "Description"
+      },
       "adjuntos": "Fichiers",
-      "autor": "Qui"
+      "autor": "Qui",
+      "quien": "Réparé par",
+      "diagnostico": "Diagnostic",
+      "declaraNoApto": "Déclarer l'équipement NON APTE"
     },
     "hint": {
       "fecha": "Quand cela s'est passé, pas quand on le saisit.",
-      "usuario": "Laisser vide si c'est un intervenant externe.",
-      "realizadaPor": "L'atelier, le fabricant ou qui que ce soit.",
-      "descripcionOtra": "Une intervention de type « autre » doit préciser ce dont il s'agit.",
-      "proximaRevision": "Facultatif. Si elle tombe avant l'échéance de l'équipement, elle prévaut : {{fecha}}.",
-      "proximaRevisionSinFecha": "Facultatif. Avance l'échéance de vérification de l'équipement si elle tombe plus tôt.",
-      "proximaRevisionLarga": "Elle tombe après l'échéance de l'équipement, donc elle ne change rien.",
-      "adjuntos": "Le rapport de l'atelier, la note du fabricant, les photos."
+      "adjuntos": "Le rapport de l'atelier, la note du fabricant, les photos.",
+      "declaraNoApto": "L'équipement reste non apte jusqu'au prochain contrôle conforme. Sans la case, l'incident n'est qu'une note.",
+      "reparacionNoDevuelve": "La réparation ne remet pas l'équipement en service : c'est le prochain contrôle conforme qui le fait."
     },
     "adjuntos": {
       "subir": "Ajouter un document",
@@ -3809,19 +3800,11 @@
       "vacio": "Aucune image.",
       "primeroGuarda": "Enregistrez l'intervention avant d'y ajouter des images."
     },
-    "consecuencia": {
-      "titulo": "Et aussi",
-      "nota": "Rien de tout cela ne se fait tout seul : cochez ce que vous voulez.",
-      "finVida": "Déclarer l'équipement fini à cette date",
-      "finVidaMotivo": "Motif de la fin de vie",
-      "finVidaYaEsta": "La fin de vie de l'équipement est déjà déclarée.",
-      "estado": "Mettre l'équipement en",
-      "estadoMotivo": "Motif du changement d'état",
-      "estadoSin": "Le laisser tel quel",
-      "aplicada": "Intervention enregistrée et conséquence appliquée.",
-      "fallo": "L'intervention a été enregistrée, mais la conséquence n'a pas pu être appliquée."
+    "diagnostico": {
+      "reparado": "Réparé",
+      "no_reparado": "Non réparé",
+      "no_reparable": "Irréparable"
     },
-    "proximaChip": "À revoir le {{fecha}}",
-    "adelantada": "Avancée par une intervention"
+    "noAptoChip": "Déclaré non apte"
   }
 }

@@ -495,7 +495,6 @@
       "pideAlMenosUno": "Marca al menos un elemento",
       "pideDos": "Marca dos o más elementos",
       "yaAgrupados": "Alguno de los marcados ya está en un conjunto",
-      "enReparacionFila": "En reparación",
       "arrastrar": "Arrastra la selección a una carpeta del árbol para moverla",
       "soltando": "Moviendo {{count}} elemento…",
       "soltando_other": "Moviendo {{count}} elementos…"
@@ -522,9 +521,6 @@
     },
     "estado": {
       "activo": "Activo",
-      "en_reparacion": "En reparación",
-      "retirado": "Retirado",
-      "destruido": "Destruido",
       "descatalogado": "Descatalogado"
     },
     "cuadro": {
@@ -562,25 +558,29 @@
     },
     "lote": {
       "motivo": "Motivo",
-      "motivoPlaceholder": "Ej.: lote defectuoso del fabricante",
       "titulo": {
-        "retirar": "Retirar / Descatalogar",
-        "eliminar": "Eliminar del inventario"
+        "eliminar": "Eliminar del inventario",
+        "descatalogar": "Descatalogar"
       },
       "texto": {
-        "retirar": "Retirar es descatalogar: salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones, que es lo que la EN 365 exige conservar para demostrar que el equipo era usable. Que el equipo se haya destruido es uno de los motivos posibles, no una acción aparte.",
-        "eliminar": "Esto es para cuando se dieron de alta por error. Si los equipos existieron y salieron de servicio, lo que toca es retirarlos, no borrarlos."
+        "eliminar": "Esto es para cuando se dieron de alta por error. Si los equipos existieron y salieron de servicio, lo que toca es descatalogarlos, no borrarlos.",
+        "descatalogar": "Salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones, que es lo que la EN 365 exige conservar. Se puede reactivar. La fecha, el motivo y las fotos son los mismos para todos los seleccionados."
       },
       "accion": {
-        "retirar": "Retirar / Descatalogar",
-        "eliminar": "Eliminar"
+        "eliminar": "Eliminar",
+        "descatalogar": "Descatalogar"
       },
       "hecho": {
-        "retirar": "{{count}} elemento retirado",
-        "retirar_other": "{{count}} elementos retirados",
         "eliminar": "{{count}} elemento eliminado",
-        "eliminar_other": "{{count}} elementos eliminados"
-      }
+        "eliminar_other": "{{count}} elementos eliminados",
+        "descatalogar": "{{count}} elemento descatalogado",
+        "descatalogar_other": "{{count}} elementos descatalogados"
+      },
+      "fecha": "Fecha",
+      "observaciones": "Observaciones",
+      "observacionesPh": "Qué pasó, dónde queda el equipo…",
+      "fotos": "Fotos",
+      "anadirFoto": "Añadir foto"
     },
     "ficha": {
       "aria": "Ficha del elemento",
@@ -602,8 +602,6 @@
       "cicloVida": "Estado",
       "motivo": "Motivo",
       "finVida": "Fin de vida útil",
-      "finVidaMotivo": "Motivo del fin de vida",
-      "declarado": "declarado",
       "ultimaRevision": "Última revisión",
       "validaHasta": "Válida hasta",
       "fechas": "Fechas significativas",
@@ -635,10 +633,10 @@
         }
       },
       "finVidaCalculado": "Lo calcula su tipo",
-      "finVidaDeclarado": "Puesta a mano",
       "finVidaSinCriterio": "Su tipo no fija caducidad",
       "anadirValor": "Añadir otro",
-      "quitarValor": "Quitar este valor"
+      "quitarValor": "Quitar este valor",
+      "observaciones": "Observaciones"
     },
     "fecha": {
       "fabricacion": "Fabricación",
@@ -661,26 +659,13 @@
     },
     "accion": {
       "titulo": {
-        "activo": "Devolver al servicio",
-        "en_reparacion": "Mandar a reparación",
-        "retirado": "Retirar / Descatalogar",
-        "destruido": "Dar por destruido"
+        "activo": "Reactivar"
       },
       "texto": {
-        "activo": "Vuelve a contar como material utilizable. Hay que justificarlo: es afirmar que el equipo puede volver a usarse.",
-        "en_reparacion": "Sigue en el censo pero no se puede usar, y cuenta como incidencia.",
-        "retirado": "Retirar es descatalogar: sale de servicio y conserva todo su historial de revisiones, que es lo que la EN 365 exige para demostrar que el equipo era usable. Que el equipo se haya destruido es uno de los motivos posibles, no una acción aparte.",
-        "destruido": "No tiene vuelta atrás. Es el estado terminal: si se hace por error, se arregla desde soporte."
-      },
-      "motivoPlaceholder": {
-        "retirado": "Ej.: costura dañada",
-        "activo": "Ej.: reparado en taller y verificado"
+        "activo": "Vuelve al censo vivo y a contar como material utilizable. Su historial sigue intacto; la fecha y el motivo de la descatalogación se borran."
       },
       "confirmar": {
-        "activo": "Devolver al servicio",
-        "en_reparacion": "Mandar a reparación",
-        "retirado": "Retirar / Descatalogar",
-        "destruido": "Dar por destruido"
+        "activo": "Reactivar"
       }
     },
     "alta": {
@@ -698,14 +683,13 @@
       "unicoTitle": "No puede repetirse en otro equipo",
       "campoFijado": "Lo fija la referencia: no se edita al dar de alta",
       "finVida": "Fin de vida útil",
-      "faltaFirma": "Falta decir quién firma la revisión.",
       "creados": "{{count}} elementos dados de alta.",
       "pasos": {
         "modelo": "Fabricante, modelo y tipo",
         "identificacion": "Identificadores",
         "fechas": "Fechas significativas",
         "campos": "Campos personalizados",
-        "eventos": "Arranque del contador",
+        "eventos": "Revisión inicial",
         "unidades": "¿Cuántas unidades?",
         "modeloHint": "mismo modelo para todas las unidades",
         "sinIdentHint": "este tipo de elemento no pide identificadores",
@@ -727,45 +711,16 @@
         "noSeInstala": "«{{tipo}}» no se instala: no se le pide fecha de instalación."
       },
       "eventos": {
-        "title": "De qué arranca el contador",
-        "sugerido": "Sugerido",
-        "arrancaDe": "Arranca de",
-        "incluirActa": "Incluir acta de instalación",
-        "sinActaHint": "Queda constancia del acto de instalación, sin detalle consultable.",
-        "fechaActa": "Fecha del acta",
-        "segunUnidad": "según cada unidad",
-        "tecnico": "Técnico responsable",
-        "revisor": "Revisor",
+        "revisor": "Quién revisa",
         "resultado": "Resultado",
-        "apto": "Apto",
         "fechaRevision": "Fecha de la revisión",
         "validaHasta": "Válida hasta",
         "nPuntos": "{{count}} puntos",
         "cuandoProceda": "(cuando proceda)",
-        "actaSinNoApto": "Un acta de instalación no admite puntos no aptos: corrige la instalación o registra una revisión actual no apta.",
-        "modo": {
-          "ninguno": "No arrancar el contador",
-          "fecha_significativa": "Desde una fecha del propio equipo",
-          "revision": "Desde una revisión hecha hoy"
-        },
-        "desc": {
-          "ninguno": "El equipo queda sin revisar hasta que alguien lo inspeccione.",
-          "fecha_significativa": "El alta acompaña al acto de instalar: lo que arranca el contador es el propio acto, no una revisión.",
-          "revision": "El equipo ya existía: el contador arranca de la comprobación que hacemos hoy, no de una fecha anterior."
-        },
-        "cp": {
-          "apto": "Apto",
-          "vigilar": "Vigilar",
-          "no_apto": "No apto",
-          "no_aplica": "N/A"
-        },
-        "diag": {
-          "sinInstalacion": "Este tipo de equipo no se instala, así que el contador arranca de una revisión.",
-          "reciente": "Instalado el {{fecha}}, dentro de los últimos {{meses}} meses: el alta acompaña al acto de instalar.",
-          "heredada": "Instalado el {{fecha}}, hace más de {{meses}} meses: el equipo ya estaba ahí y entra ahora en el sistema.",
-          "incompleta": "Solo {{n}} de {{total}} unidades aportan fecha de instalación.",
-          "mixta": "El alta mezcla instalaciones de los últimos {{meses}} meses con otras más antiguas. Quizá convenga partirla en dos."
-        }
+        "incluir": "Registrar una revisión inicial con el alta",
+        "conRevisionHint": "La misma revisión sobre cada unidad: quién, checklist, resultado y, si es apta, hasta cuándo vale.",
+        "sinRevisionHint": "Sin revisión inicial los equipos entran sin revisar, hasta que alguien los inspeccione.",
+        "checklist": "Checklist"
       },
       "seCreara_one": "Se creará en",
       "seCreara_other": "Se crearán en",
@@ -796,6 +751,11 @@
         "tipo": "Tipo de equipo",
         "usar": "Usar sin especificar",
         "marca": "Sin especificar"
+      },
+      "faltaRevision": {
+        "firma": "Falta decir quién hizo la revisión inicial.",
+        "resultado": "Falta el resultado de la revisión inicial.",
+        "cascada": "Completa la revisión inicial: hasta cuándo vale si es apta, o su cascada."
       }
     },
     "historial": {
@@ -811,7 +771,8 @@
       "descargarPorDefinir": "Descargar el PDF del evento (por definir)",
       "resultado": {
         "apto": "Apto",
-        "no_apto": "No apto"
+        "no_apto": "No apto",
+        "no_revisada": "No revisada"
       }
     },
     "traslado": {
@@ -934,6 +895,15 @@
       "faltan": "Falta {{count}} dato",
       "faltan_other": "Faltan {{count}} datos",
       "aria": "Ficha completa al {{puestos}} de {{total}}"
+    },
+    "descatalogacion": {
+      "motivo": {
+        "fin_vida_util": "Fin de vida útil",
+        "dano_irreparable": "Daño irreparable",
+        "obsolescencia": "Obsolescencia",
+        "retirada_preventiva": "Retirada preventiva",
+        "otro": "Otro"
+      }
     }
   },
   "instancia": {
@@ -3135,7 +3105,8 @@
         "pendiente": "Pendiente",
         "apto": "Apto",
         "no_apto": "No apto",
-        "reparacion": "Reparación"
+        "reparacion": "Reparación",
+        "no_revisada": "No revisada"
       },
       "buscar": "Buscar por carpeta, tipo, modelo o código",
       "colElemento": "Elemento",
@@ -3198,7 +3169,6 @@
       "abrir": "Abrir la revisión",
       "validadasDe": "{{validadas}} de {{total}} validadas",
       "soloLectura": "El proyecto está finalizado: la certificación es de solo lectura.",
-      "proximaRevision": "Próxima revisión impuesta: {{fecha}}",
       "titulo": "Certificación del proyecto",
       "autosave": "Las validaciones y correcciones se guardan solas",
       "reabrir": "Reabrir",
@@ -3501,26 +3471,16 @@
     "sinVentana": "sin ventana"
   },
   "revisiones": {
-    "destino": {
-      "cliente": "Se lo queda el cliente",
-      "retira": "Se retira",
-      "destruye": "Se destruye"
-    },
     "resultado": {
       "apto": "Apto",
-      "no_apto": "No apto"
+      "no_apto": "No apto",
+      "no_revisada": "No revisada"
     },
     "marca": {
-      "apto": "Apto",
+      "apto": "OK",
       "vigilar": "Vigilar",
-      "no_apto": "No apto",
+      "no_apto": "KO",
       "no_aplica": "N/A"
-    },
-    "via": {
-      "periodica": "Periódica",
-      "inicial": "Inicial",
-      "instalacion": "Acta de instalación",
-      "extraordinaria": "Extraordinaria"
     },
     "eje": {
       "visual": "Visual",
@@ -3536,7 +3496,7 @@
       "periodicidad_other": "cada {{count}} meses",
       "resultado": "Resultado",
       "validaHasta": "Válida hasta",
-      "fueraDeServicio": "Un equipo retirado o destruido ya no se revisa."
+      "fueraDeServicio": "Un equipo descatalogado ya no se revisa: reactívalo antes."
     },
     "sheet": {
       "aria": "Revisión",
@@ -3545,12 +3505,11 @@
       "sinChecklist": "sin checklist",
       "cabecera": "Datos de la revisión",
       "fecha": "Fecha",
-      "revisor": "Revisor",
+      "revisor": "Quién revisa",
       "resultado": "Resultado",
       "reparable": "¿Tiene arreglo?",
       "reparableSi": "Reparable",
       "reparableNo": "No reparable",
-      "destino": "¿Dónde acaba el equipo?",
       "validaHastaCampo": "Válida hasta",
       "validaHastaSugerida": "Calculada con la periodicidad de este equipo ({{count}} mes). Cámbiala si hace falta.",
       "validaHastaSugerida_other": "Calculada con la periodicidad de este equipo ({{count}} meses). Cámbiala si hace falta.",
@@ -3563,7 +3522,7 @@
       "crear": "Crear revisión",
       "creada": "Revisión guardada y cerrada.",
       "enBlancoHint": "Marca lo que hayas comprobado; lo que dejes sin marcar no impide guardar. Al guardar, el checklist se copia tal cual y ya no cambia.",
-      "faltanDatos": "Para guardar hacen falta fecha, operario y resultado.",
+      "faltanDatos": "Para guardar hacen falta fecha, quién revisa y resultado, con hasta cuándo vale si es apta.",
       "imagenes": "Imágenes de la revisión",
       "imagenesAlCrear": "{{count}} imagen se subirá al guardar la revisión.",
       "imagenesAlCrear_other": "{{count}} imágenes se subirán al guardar la revisión.",
@@ -3590,10 +3549,35 @@
       "comentarioCert": "Comentario del certificador",
       "certHint": "Certificar da por buena la revisión. Lo que haya que corregir (marcas, textos, fotos, veredicto) se corrige antes, aquí mismo.",
       "firma": "Revisó {{revisor}}",
-      "corrigeHint": "Estás corrigiendo una revisión ya registrada: cada cambio recalcula la validez del equipo. No queda traza visible.",
+      "corrigeHint": "Estás corrigiendo una revisión ya registrada: cada cambio recalcula el veredicto y la validez del equipo. No queda traza visible.",
       "borrar": "Borrar revisión",
       "borrada": "Revisión borrada.",
-      "borrarConfirm": "Borrar la revisión la quita del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. No se puede deshacer. ¿Continuar?"
+      "borrarConfirm": "Borrar la revisión la quita del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. No se puede deshacer. ¿Continuar?",
+      "revisorNombre": "Nombre",
+      "revisorNombrePh": "Persona o empresa que revisó",
+      "medida": "¿Qué se hizo con el equipo?",
+      "noRevisadaMotivo": "¿Por qué no se revisó?",
+      "noRevisadaDetalle": "¿Cuál?",
+      "sinChecklistOpcion": "Sin checklist",
+      "todo": "Todo {{marca}}",
+      "validaHastaObligatoria": "Obligatoria en una revisión apta."
+    },
+    "medida": {
+      "senaliza": "Se señaliza como no utilizable",
+      "retira": "Se retira del emplazamiento",
+      "destruye": "Se destruye",
+      "ninguna": "Ninguna"
+    },
+    "noRevisada": {
+      "no_encontrado": "No encontrado",
+      "en_montaje": "En proceso de montaje",
+      "sin_acceso": "Sin acceso",
+      "otro": "Otro"
+    },
+    "revisorTipo": {
+      "interno": "Personal interno",
+      "colaborador": "Colaborador externo",
+      "otro": "Otra persona o empresa"
     }
   },
   "app": {
@@ -3818,45 +3802,51 @@
   },
   "actuaciones": {
     "titulo": "Actuaciones",
-    "nueva": "Nueva actuación",
-    "editar": "Editar actuación",
+    "nueva": {
+      "reparacion": "Nueva reparación",
+      "incidencia": "Nueva incidencia"
+    },
+    "editar": {
+      "reparacion": "Editar reparación",
+      "incidencia": "Editar incidencia"
+    },
     "vacio": "Este equipo no tiene actuaciones registradas.",
-    "intro": "Lo que le ha pasado al equipo y no ha sido una revisión.",
+    "intro": {
+      "reparacion": "Qué se le hizo al equipo y cómo acabó.",
+      "incidencia": "Qué le ha pasado al equipo entre revisiones."
+    },
     "borrar": "Eliminar actuación",
     "borrarConfirma": "Se quita del historial. Los documentos que lleve colgados se quedan en la gestión documental.",
     "guardar": "Guardar actuación",
     "crear": "Registrar actuación",
     "tipo": {
       "reparacion": "Reparación",
-      "incidencia": "Incidencia",
-      "otra": "Otros"
+      "incidencia": "Incidencia"
     },
     "subtipo": {
       "caida_retenida": "Caída retenida",
       "dano_observado": "Daño observado",
-      "aviso_fabricante": "Aviso del fabricante",
-      "otra": "Otra"
+      "aviso_fabricante": "Aviso del fabricante"
     },
     "fields": {
       "tipo": "Tipo",
       "subtipo": "Clase de incidencia",
       "fecha": "Fecha",
-      "usuario": "Quién (de casa)",
-      "realizadaPor": "Quién (externo)",
-      "descripcion": "Qué se hizo",
-      "proximaRevision": "Próxima revisión",
+      "descripcion": {
+        "reparacion": "Qué se hizo",
+        "incidencia": "Descripción"
+      },
       "adjuntos": "Archivos",
-      "autor": "Quién"
+      "autor": "Quién",
+      "quien": "Quién reparó",
+      "diagnostico": "Diagnóstico",
+      "declaraNoApto": "Declarar el equipo NO APTO"
     },
     "hint": {
       "fecha": "Cuándo pasó, no cuándo se anota.",
-      "usuario": "Deja en blanco si la hizo alguien de fuera.",
-      "realizadaPor": "El taller, el fabricante o quien fuera.",
-      "descripcionOtra": "Una actuación de tipo «otra» tiene que decir qué fue.",
-      "proximaRevision": "Opcional. Si cae antes que la caducidad del equipo, manda: {{fecha}}.",
-      "proximaRevisionSinFecha": "Opcional. Adelanta la caducidad de la revisión del equipo si cae antes.",
-      "proximaRevisionLarga": "Cae después de la caducidad del equipo, así que no cambia nada.",
-      "adjuntos": "El parte del taller, la nota del fabricante, las fotos."
+      "adjuntos": "El parte del taller, la nota del fabricante, las fotos.",
+      "declaraNoApto": "El equipo queda no apto hasta la siguiente revisión apta. Sin marcarlo, la incidencia es solo un apunte.",
+      "reparacionNoDevuelve": "La reparación no devuelve el equipo al servicio: eso lo hace la siguiente revisión apta."
     },
     "adjuntos": {
       "subir": "Añadir documento",
@@ -3874,20 +3864,12 @@
       "vacio": "Sin imágenes.",
       "primeroGuarda": "Guarda la actuación para poder añadirle imágenes."
     },
-    "consecuencia": {
-      "titulo": "Y además",
-      "nota": "Nada de esto se hace solo: marca lo que quieras que pase.",
-      "finVida": "Dar el equipo por acabado a esta fecha",
-      "finVidaMotivo": "Motivo del fin de vida",
-      "finVidaYaEsta": "El equipo ya tiene el fin de vida declarado.",
-      "estado": "Poner el equipo en",
-      "estadoMotivo": "Motivo del cambio de estado",
-      "estadoSin": "Dejarlo como está",
-      "aplicada": "Actuación registrada y consecuencia aplicada.",
-      "fallo": "La actuación se registró, pero la consecuencia no se pudo aplicar."
+    "diagnostico": {
+      "reparado": "Reparado",
+      "no_reparado": "No reparado",
+      "no_reparable": "No reparable"
     },
-    "proximaChip": "Volver a mirarlo el {{fecha}}",
-    "adelantada": "Adelantada por una actuación"
+    "noAptoChip": "Declarado no apto"
   },
   "documentos": {
     "subir": "Subir archivos",

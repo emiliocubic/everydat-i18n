@@ -608,7 +608,6 @@
       "pideAlMenosUno": "Tick at least one item",
       "pideDos": "Tick two or more items",
       "yaAgrupados": "One of the ticked items is already in a set",
-      "enReparacionFila": "Under repair",
       "arrastrar": "Drag the selection onto a tree folder to move it",
       "soltando": "Moving {{count}} item…",
       "soltando_other": "Moving {{count}} items…"
@@ -635,9 +634,6 @@
     },
     "estado": {
       "activo": "Active",
-      "en_reparacion": "Under repair",
-      "retirado": "Withdrawn",
-      "destruido": "Destroyed",
       "descatalogado": "Retired"
     },
     "cuadro": {
@@ -675,25 +671,29 @@
     },
     "lote": {
       "motivo": "Reason",
-      "motivoPlaceholder": "E.g. faulty manufacturer batch",
       "titulo": {
-        "retirar": "Withdraw / Decommission",
-        "eliminar": "Delete from inventory"
+        "eliminar": "Delete from inventory",
+        "descatalogar": "Retire"
       },
       "texto": {
-        "retirar": "Withdrawing is decommissioning: they leave service and stop counting as usable equipment, but keep their whole inspection history, which is what EN 365 requires to prove the equipment was usable. Destruction of the equipment is one of the possible reasons, not a separate action.",
-        "eliminar": "This is for items created by mistake. If the equipment existed and left service, withdraw it instead of deleting it."
+        "eliminar": "This is for items created by mistake. If the equipment existed and left service, retire it instead of deleting it.",
+        "descatalogar": "They leave service and stop counting as usable equipment, but keep their whole inspection history, which is what EN 365 requires. They can be reactivated. Date, reason and photos are the same for every selected item."
       },
       "accion": {
-        "retirar": "Withdraw / Decommission",
-        "eliminar": "Delete"
+        "eliminar": "Delete",
+        "descatalogar": "Retire"
       },
       "hecho": {
-        "retirar": "{{count}} item withdrawn",
-        "retirar_other": "{{count}} items withdrawn",
         "eliminar": "{{count}} item deleted",
-        "eliminar_other": "{{count}} items deleted"
-      }
+        "eliminar_other": "{{count}} items deleted",
+        "descatalogar": "{{count}} item retired",
+        "descatalogar_other": "{{count}} items retired"
+      },
+      "fecha": "Date",
+      "observaciones": "Notes",
+      "observacionesPh": "What happened, where the item ends up…",
+      "fotos": "Photos",
+      "anadirFoto": "Add photo"
     },
     "ficha": {
       "aria": "Item record",
@@ -715,8 +715,6 @@
       "cicloVida": "State",
       "motivo": "Reason",
       "finVida": "End of service life",
-      "finVidaMotivo": "End-of-life reason",
-      "declarado": "declared",
       "ultimaRevision": "Last inspection",
       "validaHasta": "Valid until",
       "fechas": "Significant dates",
@@ -748,10 +746,10 @@
         }
       },
       "finVidaCalculado": "Computed from its type",
-      "finVidaDeclarado": "Set by hand",
       "finVidaSinCriterio": "Its type sets no expiry",
       "anadirValor": "Add another",
-      "quitarValor": "Remove this value"
+      "quitarValor": "Remove this value",
+      "observaciones": "Notes"
     },
     "fecha": {
       "fabricacion": "Manufacture",
@@ -774,26 +772,13 @@
     },
     "accion": {
       "titulo": {
-        "activo": "Return to service",
-        "en_reparacion": "Send for repair",
-        "retirado": "Withdraw / Decommission",
-        "destruido": "Mark as destroyed"
+        "activo": "Reactivate"
       },
       "texto": {
-        "activo": "It counts as usable equipment again. This needs a reason: it states the item can be used once more.",
-        "en_reparacion": "It stays in the inventory but cannot be used, and counts as an issue.",
-        "retirado": "Withdrawing is decommissioning: it leaves service and keeps its whole inspection history, which is what EN 365 requires to prove the equipment was usable. Destruction of the equipment is one of the possible reasons, not a separate action.",
-        "destruido": "There is no way back. This is the terminal state: mistakes are fixed through support."
-      },
-      "motivoPlaceholder": {
-        "retirado": "E.g. damaged stitching",
-        "activo": "E.g. repaired and verified in workshop"
+        "activo": "It returns to the live inventory and counts as usable equipment again. Its history stays intact; the retirement date and reason are cleared."
       },
       "confirmar": {
-        "activo": "Return to service",
-        "en_reparacion": "Send for repair",
-        "retirado": "Withdraw / Decommission",
-        "destruido": "Mark as destroyed"
+        "activo": "Reactivate"
       }
     },
     "alta": {
@@ -811,14 +796,13 @@
       "unicoTitle": "Cannot repeat on another item",
       "campoFijado": "Fixed by the reference: not editable on registration",
       "finVida": "End of service life",
-      "faltaFirma": "The inspection still needs someone to sign it.",
       "creados": "{{count}} items registered.",
       "pasos": {
         "modelo": "Manufacturer, model and kind",
         "identificacion": "Identifiers",
         "fechas": "Key dates",
         "campos": "Custom fields",
-        "eventos": "Starting the clock",
+        "eventos": "Initial inspection",
         "unidades": "How many units?",
         "modeloHint": "same model for every unit",
         "sinIdentHint": "this kind of item asks for no identifiers",
@@ -840,45 +824,16 @@
         "noSeInstala": "“{{tipo}}” is not installed: no installation date is asked for."
       },
       "eventos": {
-        "title": "What starts the clock",
-        "sugerido": "Suggested",
-        "arrancaDe": "Starts from",
-        "incluirActa": "Include installation record",
-        "sinActaHint": "The installation is recorded, with no consultable detail.",
-        "fechaActa": "Record date",
-        "segunUnidad": "per unit",
-        "tecnico": "Responsible technician",
         "revisor": "Inspector",
         "resultado": "Result",
-        "apto": "Pass",
         "fechaRevision": "Inspection date",
         "validaHasta": "Valid until",
         "nPuntos": "{{count}} points",
         "cuandoProceda": "(where applicable)",
-        "actaSinNoApto": "An installation record admits no failed points: fix the installation or log a failed inspection instead.",
-        "modo": {
-          "ninguno": "Do not start the clock",
-          "fecha_significativa": "From a date of the item itself",
-          "revision": "From an inspection made today"
-        },
-        "desc": {
-          "ninguno": "The item stays uninspected until someone checks it.",
-          "fecha_significativa": "Registration goes with the act of installing: what starts the clock is that act, not an inspection.",
-          "revision": "The item already existed: the clock starts from today's check, not from an earlier date."
-        },
-        "cp": {
-          "apto": "Pass",
-          "vigilar": "Watch",
-          "no_apto": "Fail",
-          "no_aplica": "N/A"
-        },
-        "diag": {
-          "sinInstalacion": "This kind of item is not installed, so the clock starts from an inspection.",
-          "reciente": "Installed on {{fecha}}, within the last {{meses}} months: registration goes with the act of installing.",
-          "heredada": "Installed on {{fecha}}, more than {{meses}} months ago: the item was already there and enters the system now.",
-          "incompleta": "Only {{n}} of {{total}} units provide an installation date.",
-          "mixta": "This registration mixes installations from the last {{meses}} months with older ones. Consider splitting it in two."
-        }
+        "incluir": "Record an initial inspection with the registration",
+        "conRevisionHint": "The same inspection on every unit: who, checklist, result and, if it passes, valid until.",
+        "sinRevisionHint": "Without an initial inspection the items enter uninspected, until someone checks them.",
+        "checklist": "Checklist"
       },
       "seCreara_one": "Will be created in",
       "seCreara_other": "Will be created in",
@@ -909,6 +864,11 @@
         "tipo": "Equipment type",
         "usar": "Use unspecified",
         "marca": "Unspecified"
+      },
+      "faltaRevision": {
+        "firma": "Say who carried out the initial inspection.",
+        "resultado": "The initial inspection needs a result.",
+        "cascada": "Complete the initial inspection: valid until if it passes, or its follow-up questions."
       }
     },
     "historial": {
@@ -924,7 +884,8 @@
       "descargarPorDefinir": "Download the event PDF (to be defined)",
       "resultado": {
         "apto": "Pass",
-        "no_apto": "Fail"
+        "no_apto": "Fail",
+        "no_revisada": "Not inspected"
       }
     },
     "traslado": {
@@ -1047,6 +1008,15 @@
       "faltan": "{{count}} field missing",
       "faltan_other": "{{count}} fields missing",
       "aria": "Record complete: {{puestos}} of {{total}}"
+    },
+    "descatalogacion": {
+      "motivo": {
+        "fin_vida_util": "End of service life",
+        "dano_irreparable": "Irreparable damage",
+        "obsolescencia": "Obsolescence",
+        "retirada_preventiva": "Preventive withdrawal",
+        "otro": "Other"
+      }
     }
   },
   "instancia": {
@@ -3135,7 +3105,8 @@
         "pendiente": "Pending",
         "apto": "Pass",
         "no_apto": "Fail",
-        "reparacion": "Repair"
+        "reparacion": "Repair",
+        "no_revisada": "Not inspected"
       },
       "buscar": "Search by folder, type, model or code",
       "colElemento": "Item",
@@ -3198,7 +3169,6 @@
       "abrir": "Open the inspection",
       "validadasDe": "{{validadas}} of {{total}} validated",
       "soloLectura": "The project is finished: certification is read-only.",
-      "proximaRevision": "Next inspection imposed: {{fecha}}",
       "titulo": "Project certification",
       "autosave": "Validations and corrections are saved automatically",
       "reabrir": "Reopen",
@@ -3501,26 +3471,16 @@
     "sinVentana": "no window"
   },
   "revisiones": {
-    "destino": {
-      "cliente": "The client keeps it",
-      "retira": "Taken away",
-      "destruye": "Destroyed"
-    },
     "resultado": {
       "apto": "Pass",
-      "no_apto": "Fail"
+      "no_apto": "Fail",
+      "no_revisada": "Not inspected"
     },
     "marca": {
-      "apto": "Pass",
+      "apto": "OK",
       "vigilar": "Watch",
-      "no_apto": "Fail",
+      "no_apto": "KO",
       "no_aplica": "N/A"
-    },
-    "via": {
-      "periodica": "Periodic",
-      "inicial": "Initial",
-      "instalacion": "Installation record",
-      "extraordinaria": "Extraordinary"
     },
     "eje": {
       "visual": "Visual",
@@ -3536,7 +3496,7 @@
       "periodicidad_other": "every {{count}} months",
       "resultado": "Result",
       "validaHasta": "Valid until",
-      "fueraDeServicio": "A withdrawn or destroyed item is no longer inspected."
+      "fueraDeServicio": "A retired item is no longer inspected: reactivate it first."
     },
     "sheet": {
       "aria": "Inspection",
@@ -3550,7 +3510,6 @@
       "reparable": "Can it be repaired?",
       "reparableSi": "Repairable",
       "reparableNo": "Beyond repair",
-      "destino": "Where does the equipment end up?",
       "validaHastaCampo": "Valid until",
       "validaHastaSugerida": "Worked out from this item’s inspection interval ({{count}} month). Change it if needed.",
       "validaHastaSugerida_other": "Worked out from this item’s inspection interval ({{count}} months). Change it if needed.",
@@ -3563,7 +3522,7 @@
       "crear": "Create inspection",
       "creada": "Inspection saved and closed.",
       "enBlancoHint": "Mark whatever you checked; anything left unmarked will not stop you saving. On saving, the checklist is copied as it stands and no longer changes.",
-      "faltanDatos": "Date, operative and result are required to save.",
+      "faltanDatos": "Saving needs a date, an inspector and a result, plus valid until if it passes.",
       "imagenes": "Inspection images",
       "imagenesAlCrear": "{{count}} image will be uploaded when the inspection is saved.",
       "imagenesAlCrear_other": "{{count}} images will be uploaded when the inspection is saved.",
@@ -3590,10 +3549,35 @@
       "comentarioCert": "Certifier's comment",
       "certHint": "Certifying approves the inspection. Anything to correct (marks, texts, photos, verdict) is corrected first, right here.",
       "firma": "Inspected by {{revisor}}",
-      "corrigeHint": "You are correcting a recorded inspection: every change recalculates the item validity. No visible trace is left.",
+      "corrigeHint": "You are correcting a recorded inspection: every change recalculates the item's verdict and validity. No visible trace is left.",
       "borrar": "Delete inspection",
       "borrada": "Inspection deleted.",
-      "borrarConfirm": "Deleting the inspection removes it from the history along with its points and photos, and the item falls back to the previous validity. This cannot be undone. Continue?"
+      "borrarConfirm": "Deleting the inspection removes it from the history along with its points and photos, and the item falls back to the previous validity. This cannot be undone. Continue?",
+      "revisorNombre": "Name",
+      "revisorNombrePh": "Person or company who inspected",
+      "medida": "What was done with the equipment?",
+      "noRevisadaMotivo": "Why was it not inspected?",
+      "noRevisadaDetalle": "Which?",
+      "sinChecklistOpcion": "No checklist",
+      "todo": "All {{marca}}",
+      "validaHastaObligatoria": "Required for a passing inspection."
+    },
+    "medida": {
+      "senaliza": "Tagged as not usable",
+      "retira": "Removed from the site",
+      "destruye": "Destroyed",
+      "ninguna": "None"
+    },
+    "noRevisada": {
+      "no_encontrado": "Not found",
+      "en_montaje": "Being installed",
+      "sin_acceso": "No access",
+      "otro": "Other"
+    },
+    "revisorTipo": {
+      "interno": "In-house staff",
+      "colaborador": "External collaborator",
+      "otro": "Another person or company"
     }
   },
   "app": {
@@ -3818,45 +3802,51 @@
   },
   "actuaciones": {
     "titulo": "Interventions",
-    "nueva": "New intervention",
-    "editar": "Edit intervention",
+    "nueva": {
+      "reparacion": "New repair",
+      "incidencia": "New incident"
+    },
+    "editar": {
+      "reparacion": "Edit repair",
+      "incidencia": "Edit incident"
+    },
     "vacio": "No interventions recorded for this item.",
-    "intro": "What has happened to the item that was not an inspection.",
+    "intro": {
+      "reparacion": "What was done to the item and how it ended.",
+      "incidencia": "What happened to the item between inspections."
+    },
     "borrar": "Delete intervention",
     "borrarConfirma": "It is removed from the history. Any attached documents stay in document management.",
     "guardar": "Save intervention",
     "crear": "Record intervention",
     "tipo": {
       "reparacion": "Repair",
-      "incidencia": "Incident",
-      "otra": "Other"
+      "incidencia": "Incident"
     },
     "subtipo": {
       "caida_retenida": "Arrested fall",
       "dano_observado": "Damage observed",
-      "aviso_fabricante": "Manufacturer notice",
-      "otra": "Other"
+      "aviso_fabricante": "Manufacturer notice"
     },
     "fields": {
       "tipo": "Type",
       "subtipo": "Kind of incident",
       "fecha": "Date",
-      "usuario": "Who (in-house)",
-      "realizadaPor": "Who (external)",
-      "descripcion": "What was done",
-      "proximaRevision": "Next inspection",
+      "descripcion": {
+        "reparacion": "What was done",
+        "incidencia": "Description"
+      },
       "adjuntos": "Files",
-      "autor": "Who"
+      "autor": "Who",
+      "quien": "Repaired by",
+      "diagnostico": "Outcome",
+      "declaraNoApto": "Declare the item FAILED"
     },
     "hint": {
       "fecha": "When it happened, not when it is recorded.",
-      "usuario": "Leave blank if it was done by someone external.",
-      "realizadaPor": "The workshop, the manufacturer or whoever.",
-      "descripcionOtra": "An intervention of type \"other\" has to say what it was.",
-      "proximaRevision": "Optional. If it falls before the item's expiry, it prevails: {{fecha}}.",
-      "proximaRevisionSinFecha": "Optional. Brings the item's inspection expiry forward if it falls earlier.",
-      "proximaRevisionLarga": "It falls after the item's expiry, so it changes nothing.",
-      "adjuntos": "The workshop report, the manufacturer's note, the photos."
+      "adjuntos": "The workshop report, the manufacturer's note, the photos.",
+      "declaraNoApto": "The item stays failed until the next passing inspection. Unticked, the incident is just a note.",
+      "reparacionNoDevuelve": "A repair does not return the item to service: the next passing inspection does."
     },
     "adjuntos": {
       "subir": "Add document",
@@ -3874,20 +3864,12 @@
       "vacio": "No images.",
       "primeroGuarda": "Save the intervention before adding images."
     },
-    "consecuencia": {
-      "titulo": "And also",
-      "nota": "None of this happens on its own: tick what you want to happen.",
-      "finVida": "Declare the item finished as of this date",
-      "finVidaMotivo": "Reason for end of life",
-      "finVidaYaEsta": "The item already has its end of life declared.",
-      "estado": "Set the item to",
-      "estadoMotivo": "Reason for the status change",
-      "estadoSin": "Leave it as it is",
-      "aplicada": "Intervention recorded and consequence applied.",
-      "fallo": "The intervention was recorded, but the consequence could not be applied."
+    "diagnostico": {
+      "reparado": "Repaired",
+      "no_reparado": "Not repaired",
+      "no_reparable": "Beyond repair"
     },
-    "proximaChip": "Look at it again on {{fecha}}",
-    "adelantada": "Brought forward by an intervention"
+    "noAptoChip": "Declared failed"
   },
   "documentos": {
     "subir": "Upload files",
