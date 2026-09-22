@@ -3436,6 +3436,8 @@
       "reparableNo": "Beyond repair",
       "destino": "Where does the equipment end up?",
       "validaHastaCampo": "Valid until",
+      "validaHastaSugerida": "Worked out from this item’s inspection interval ({{count}} month). Change it if needed.",
+      "validaHastaSugerida_other": "Worked out from this item’s inspection interval ({{count}} months). Change it if needed.",
       "checkpoint": "Checkpoint",
       "comentario": "Comment",
       "bloquear": "Lock the checklist",

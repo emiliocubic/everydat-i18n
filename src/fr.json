@@ -3364,6 +3364,8 @@
       "reparableNo": "Irréparable",
       "destino": "Où finit l'équipement ?",
       "validaHastaCampo": "Valable jusqu'au",
+      "validaHastaSugerida": "Calculée à partir de la périodicité de cet équipement ({{count}} mois). Modifiez-la si besoin.",
+      "validaHastaSugerida_other": "Calculée à partir de la périodicité de cet équipement ({{count}} mois). Modifiez-la si besoin.",
       "checkpoint": "Point de contrôle",
       "comentario": "Commentaire",
       "bloquear": "Verrouiller la checklist",

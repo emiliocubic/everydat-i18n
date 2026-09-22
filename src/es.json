@@ -3436,6 +3436,8 @@
       "reparableNo": "No reparable",
       "destino": "¿Dónde acaba el equipo?",
       "validaHastaCampo": "Válida hasta",
+      "validaHastaSugerida": "Calculada con la periodicidad de este equipo ({{count}} mes). Cámbiala si hace falta.",
+      "validaHastaSugerida_other": "Calculada con la periodicidad de este equipo ({{count}} meses). Cámbiala si hace falta.",
       "checkpoint": "Checkpoint",
       "comentario": "Comentario",
       "bloquear": "Bloquear el checklist",
