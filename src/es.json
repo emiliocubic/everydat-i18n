@@ -1355,7 +1355,8 @@
       "orden": "Orden",
       "parentId": "Padre",
       "gps": "Coordenadas",
-      "gpsHint": "Latitud y longitud separadas por coma. Encienden «abrir en mapa»."
+      "gpsHint": "Latitud y longitud separadas por coma. Encienden «abrir en mapa».",
+      "gpsInvalido": "Las coordenadas no se entienden: escribe latitud y longitud separadas por coma, como 40.4168, -3.7038, o deja el campo vacío."
     },
     "arbol": {
       "aria": "Árbol estructural del emplazamiento",

@@ -1416,7 +1416,8 @@
       "orden": "Ordre",
       "parentId": "Parent",
       "gps": "Coordonnées",
-      "gpsHint": "Latitude et longitude séparées par une virgule. Elles activent « ouvrir sur la carte »."
+      "gpsHint": "Latitude et longitude séparées par une virgule. Elles activent « ouvrir sur la carte ».",
+      "gpsInvalido": "Coordonnées incompréhensibles : saisissez latitude et longitude séparées par une virgule, comme 40.4168, -3.7038, ou laissez le champ vide."
     },
     "arbol": {
       "aria": "Arborescence du site",

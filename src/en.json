@@ -1468,7 +1468,8 @@
       "orden": "Order",
       "parentId": "Parent",
       "gps": "Coordinates",
-      "gpsHint": "Latitude and longitude separated by a comma. They enable \"open in maps\"."
+      "gpsHint": "Latitude and longitude separated by a comma. They enable \"open in maps\".",
+      "gpsInvalido": "Coordinates not understood: enter latitude and longitude separated by a comma, like 40.4168, -3.7038, or leave the field empty."
     },
     "arbol": {
       "aria": "Site structure tree",
