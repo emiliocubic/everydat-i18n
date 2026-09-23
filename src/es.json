@@ -44,7 +44,10 @@
     },
     "contadorSeleccion": "{{n}} clientes seleccionados",
     "deletedOk": "Eliminado",
-    "download": "Descargar"
+    "download": "Descargar",
+    "quitar": "Quitar",
+    "desactivar": "Desactivar",
+    "deshacer": "Deshacer"
   },
   "merge": {
     "disappears": "Desaparece",
