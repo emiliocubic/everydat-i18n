@@ -900,11 +900,6 @@
       "totalPiezas": "{{count}} pieza distinta",
       "totalPiezas_other": "{{count}} piezas distintas"
     },
-    "completitud": {
-      "faltan": "Falta {{count}} dato",
-      "faltan_other": "Faltan {{count}} datos",
-      "aria": "Ficha completa al {{puestos}} de {{total}}"
-    },
     "descatalogacion": {
       "motivo": {
         "fin_vida_util": "Fin de vida útil",

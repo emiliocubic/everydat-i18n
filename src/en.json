@@ -1013,11 +1013,6 @@
       "totalPiezas": "{{count}} distinct part",
       "totalPiezas_other": "{{count}} distinct parts"
     },
-    "completitud": {
-      "faltan": "{{count}} field missing",
-      "faltan_other": "{{count}} fields missing",
-      "aria": "Record complete: {{puestos}} of {{total}}"
-    },
     "descatalogacion": {
       "motivo": {
         "fin_vida_util": "End of service life",

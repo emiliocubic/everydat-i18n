@@ -972,11 +972,6 @@
       "totalPiezas": "{{count}} pièce distincte",
       "totalPiezas_other": "{{count}} pièces distinctes"
     },
-    "completitud": {
-      "faltan": "{{count}} donnée manquante",
-      "faltan_other": "{{count}} données manquantes",
-      "aria": "Fiche complète: {{puestos}} sur {{total}}"
-    },
     "descatalogacion": {
       "motivo": {
         "fin_vida_util": "Fin de vie utile",
