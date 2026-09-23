@@ -483,7 +483,8 @@
       "alcance": "Alcance del listado",
       "alcanceNodo": "Ver nodo",
       "alcanceRama": "Ver toda la rama",
-      "verDescatalogados": "Ver descatalogados",
+      "verDescatalogados": "Ver retirados",
+      "ocultarDescatalogados": "Ocultar retirados",
       "seleccionarTodos": "Seleccionar todos los elementos",
       "seleccionados": "{{count}} seleccionado",
       "seleccionados_other": "{{count}} seleccionados",
@@ -525,7 +526,7 @@
     },
     "estado": {
       "activo": "Activo",
-      "descatalogado": "Descatalogado"
+      "descatalogado": "Retirado"
     },
     "cuadro": {
       "titulo": "Cuadro de mando del emplazamiento",
@@ -539,7 +540,7 @@
       "activos": "En servicio",
       "incidencias": "Incidencias",
       "sinRevisar": "Sin revisar",
-      "descatalogados": "Descatalogados",
+      "descatalogados": "Retirados",
       "buscar": "Buscar un elemento",
       "buscarPlaceholder": "Escribe tipo, marca, modelo o código del elemento…",
       "sinResultados": "Ningún elemento coincide.",
@@ -557,28 +558,28 @@
       "aptos": "Aptos",
       "nuncaRevisados": "Nunca revisados",
       "deEllosActivos": "{{count}} en servicio",
-      "deEllosDescatalogados": "{{count}} descatalogado",
-      "deEllosDescatalogados_other": "{{count}} descatalogados"
+      "deEllosDescatalogados": "{{count}} retirado",
+      "deEllosDescatalogados_other": "{{count}} retirados"
     },
     "lote": {
       "motivo": "Motivo",
       "titulo": {
         "eliminar": "Eliminar del inventario",
-        "descatalogar": "Descatalogar"
+        "descatalogar": "Retirar del servicio"
       },
       "texto": {
-        "eliminar": "Esto es para cuando se dieron de alta por error. Si los equipos existieron y salieron de servicio, lo que toca es descatalogarlos, no borrarlos.",
+        "eliminar": "Esto es para cuando se dieron de alta por error. Si los equipos existieron y salieron de servicio, lo que toca es retirarlos, no borrarlos.",
         "descatalogar": "Salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones, que es lo que la EN 365 exige conservar. Se puede reactivar. La fecha, el motivo y las fotos son los mismos para todos los seleccionados."
       },
       "accion": {
         "eliminar": "Eliminar",
-        "descatalogar": "Descatalogar"
+        "descatalogar": "Retirar"
       },
       "hecho": {
         "eliminar": "{{count}} elemento eliminado",
         "eliminar_other": "{{count}} elementos eliminados",
-        "descatalogar": "{{count}} elemento descatalogado",
-        "descatalogar_other": "{{count}} elementos descatalogados"
+        "descatalogar": "{{count}} elemento retirado",
+        "descatalogar_other": "{{count}} elementos retirados"
       },
       "fecha": "Fecha",
       "observaciones": "Observaciones",
@@ -666,7 +667,7 @@
         "activo": "Reactivar"
       },
       "texto": {
-        "activo": "Vuelve al censo vivo y a contar como material utilizable. Su historial sigue intacto; la fecha y el motivo de la descatalogación se borran."
+        "activo": "Vuelve al censo vivo y a contar como material utilizable. Su historial sigue intacto; la fecha y el motivo de la retirada se borran."
       },
       "confirmar": {
         "activo": "Reactivar"
@@ -1376,14 +1377,15 @@
       "desplegar": "Desplegar",
       "recargar": "Recargar el árbol",
       "redimensionar": "Arrastrar para redimensionar · doble clic para restablecer",
-      "verDescatalogadas": "Ver descatalogadas",
+      "verDescatalogadas": "Ver retiradas",
+      "ocultarDescatalogadas": "Ocultar retiradas",
       "renombrar": "Renombrar la carpeta",
       "zona": "Zona",
       "elementos": "{{count}} elemento",
       "elementos_other": "{{count}} elementos",
       "colActivos": "Elementos activos de la carpeta (agregado de la rama si está plegada)",
       "colIncidencias": "Incidencias: elementos no aptos (fin de vida, revisión caducada, no apto)",
-      "colDescatalogados": "Elementos descatalogados",
+      "colDescatalogados": "Elementos retirados",
       "colProxRevision": "Próxima revisión",
       "zonaPromocionar": "Promocionar a zona",
       "zonaPromocionarSub": "Promocionar a sub-zona",
@@ -3500,7 +3502,7 @@
       "periodicidad_other": "cada {{count}} meses",
       "resultado": "Resultado",
       "validaHasta": "Válida hasta",
-      "fueraDeServicio": "Un equipo descatalogado ya no se revisa: reactívalo antes."
+      "fueraDeServicio": "Un equipo retirado ya no se revisa: reactívalo antes."
     },
     "sheet": {
       "aria": "Revisión",
