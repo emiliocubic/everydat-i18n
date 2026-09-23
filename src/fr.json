@@ -839,8 +839,9 @@
         "icono": "Type",
         "fecha": "Date",
         "evento": "Événement",
-        "registra": "Enregistré par",
-        "ejecuta": "Réalisé par"
+        "ejecuta": "Réalisé par",
+        "resultado": "Résultat",
+        "validez": "Validité"
       },
       "pendiente": "À venir",
       "validaHasta": "Valable jusqu'au {{fecha}}",
@@ -3446,6 +3447,8 @@
       "sinChecklist": "sans checklist",
       "cabecera": "Données du contrôle",
       "fecha": "Date",
+      "hora": "Heure",
+      "horaHint": "Heure, si connue (facultatif)",
       "revisor": "Contrôleur",
       "resultado": "Résultat",
       "reparable": "Réparable ?",
@@ -3739,6 +3742,29 @@
     }
   },
   "actuaciones": {
+    "panel": {
+      "volver": "Retour à {{elemento}}",
+      "elemento": "Élément : {{elemento}}",
+      "datos": "Données · {{tipo}}",
+      "hora": "Heure",
+      "horaHint": "Heure facultative",
+      "realizadoPor": "Réalisé par",
+      "resultado": "Résultat",
+      "noApto": "Verdict",
+      "observaciones": "Observations",
+      "observacionesPh": {
+        "reparacion": "Ce qui a été réparé ou remplacé, détails, contexte…",
+        "incidencia": "Ce qui s’est passé, détails, contexte…"
+      },
+      "adjuntos": "Pièces jointes",
+      "arrastra": "Glissez photos ou documents ici",
+      "examinar": "Parcourir",
+      "alGuardar": "Sera envoyé à l’enregistrement",
+      "soloLectura": "lecture seule",
+      "eliminar": "Supprimer l’événement",
+      "crear": "Créer l’événement",
+      "guardar": "Enregistrer les modifications"
+    },
     "titulo": "Interventions",
     "nueva": {
       "reparacion": "Nouvelle réparation",

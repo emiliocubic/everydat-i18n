@@ -880,8 +880,9 @@
         "icono": "Type",
         "fecha": "Date",
         "evento": "Event",
-        "registra": "Recorded by",
-        "ejecuta": "Performed by"
+        "ejecuta": "Performed by",
+        "resultado": "Result",
+        "validez": "Valid until"
       },
       "pendiente": "Upcoming",
       "validaHasta": "Valid until {{fecha}}",
@@ -3513,6 +3514,8 @@
       "sinChecklist": "no checklist",
       "cabecera": "Inspection details",
       "fecha": "Date",
+      "hora": "Time",
+      "horaHint": "Time, if known (optional)",
       "revisor": "Inspector",
       "resultado": "Result",
       "reparable": "Can it be repaired?",
@@ -3803,6 +3806,29 @@
     }
   },
   "actuaciones": {
+    "panel": {
+      "volver": "Back to {{elemento}}",
+      "elemento": "Item: {{elemento}}",
+      "datos": "Details · {{tipo}}",
+      "hora": "Time",
+      "horaHint": "Optional time",
+      "realizadoPor": "Performed by",
+      "resultado": "Result",
+      "noApto": "Verdict",
+      "observaciones": "Notes",
+      "observacionesPh": {
+        "reparacion": "What was repaired or replaced, details, context…",
+        "incidencia": "What happened, details, context…"
+      },
+      "adjuntos": "Attachments",
+      "arrastra": "Drag photos or documents here",
+      "examinar": "Browse files",
+      "alGuardar": "Will upload on save",
+      "soloLectura": "read only",
+      "eliminar": "Delete event",
+      "crear": "Create event",
+      "guardar": "Save changes"
+    },
     "titulo": "Interventions",
     "nueva": {
       "reparacion": "New repair",

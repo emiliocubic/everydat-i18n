@@ -767,8 +767,9 @@
         "icono": "Tipo",
         "fecha": "Fecha",
         "evento": "Evento",
-        "registra": "Registrado por",
-        "ejecuta": "Realizado por"
+        "ejecuta": "Realizado por",
+        "resultado": "Resultado",
+        "validez": "Validez"
       },
       "pendiente": "Pendiente",
       "validaHasta": "Válida hasta {{fecha}}",
@@ -3513,6 +3514,8 @@
       "sinChecklist": "sin checklist",
       "cabecera": "Datos de la revisión",
       "fecha": "Fecha",
+      "hora": "Hora",
+      "horaHint": "Hora, si se sabe (opcional)",
       "revisor": "Quién revisa",
       "resultado": "Resultado",
       "reparable": "¿Tiene arreglo?",
@@ -3803,6 +3806,29 @@
     }
   },
   "actuaciones": {
+    "panel": {
+      "volver": "Volver a {{elemento}}",
+      "elemento": "Elemento: {{elemento}}",
+      "datos": "Datos · {{tipo}}",
+      "hora": "Hora",
+      "horaHint": "Hora opcional",
+      "realizadoPor": "Realizado por",
+      "resultado": "Resultado",
+      "noApto": "Veredicto",
+      "observaciones": "Observaciones",
+      "observacionesPh": {
+        "reparacion": "Qué se reparó o sustituyó, detalles, contexto…",
+        "incidencia": "Qué pasó, detalles, contexto…"
+      },
+      "adjuntos": "Adjuntos",
+      "arrastra": "Arrastra fotos o documentos aquí",
+      "examinar": "Examinar archivos",
+      "alGuardar": "Se subirá al guardar",
+      "soloLectura": "solo lectura",
+      "eliminar": "Eliminar evento",
+      "crear": "Crear evento",
+      "guardar": "Guardar cambios"
+    },
     "titulo": "Actuaciones",
     "nueva": {
       "reparacion": "Nueva reparación",
