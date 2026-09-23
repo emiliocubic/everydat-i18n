@@ -763,6 +763,13 @@
       "contador": "Historial · {{count}} evento",
       "contador_other": "Historial · {{count}} eventos",
       "vacio": "Sin eventos.",
+      "tabla": {
+        "icono": "Tipo",
+        "fecha": "Fecha",
+        "evento": "Evento",
+        "registra": "Registrado por",
+        "ejecuta": "Realizado por"
+      },
       "pendiente": "Pendiente",
       "validaHasta": "Válida hasta {{fecha}}",
       "nuevo": "Nuevo evento",

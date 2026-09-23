@@ -835,6 +835,13 @@
       "contador": "Historique · {{count}} événement",
       "contador_other": "Historique · {{count}} événements",
       "vacio": "Aucun événement.",
+      "tabla": {
+        "icono": "Type",
+        "fecha": "Date",
+        "evento": "Événement",
+        "registra": "Enregistré par",
+        "ejecuta": "Réalisé par"
+      },
       "pendiente": "À venir",
       "validaHasta": "Valable jusqu'au {{fecha}}",
       "nuevo": "Nouvel événement",
