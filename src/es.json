@@ -1063,6 +1063,7 @@
         "titulo": "Permisos, uno a uno",
         "hint": "Lo que marca el rol y lo que se le concede o se le quita encima. Volver al valor del rol borra el ajuste.",
         "rol": "del rol",
+        "capacidad": "de la capacidad",
         "conceder": "concedido",
         "revocar": "revocado",
         "reservado": "solo soporte",

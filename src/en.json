@@ -1176,6 +1176,7 @@
         "titulo": "Permissions, one by one",
         "hint": "What the role grants and what is granted or removed on top. Going back to the role's value clears the adjustment.",
         "rol": "from role",
+        "capacidad": "from capability",
         "conceder": "granted",
         "revocar": "revoked",
         "reservado": "support only",
