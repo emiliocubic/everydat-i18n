@@ -779,13 +779,19 @@
       "contador": "Historial · {{count}} evento",
       "contador_other": "Historial · {{count}} eventos",
       "vacio": "Sin eventos.",
+      "vista": {
+        "aria": "Vista del historial",
+        "compacta": "Vista compacta",
+        "ampliada": "Vista ampliada"
+      },
       "tabla": {
         "icono": "Tipo",
         "fecha": "Fecha",
         "evento": "Evento",
         "ejecuta": "Realizado por",
         "resultado": "Resultado",
-        "validez": "Validez"
+        "validez": "Validez",
+        "pdf": "PDF"
       },
       "pendiente": "Pendiente",
       "validaHasta": "Válida hasta {{fecha}}",

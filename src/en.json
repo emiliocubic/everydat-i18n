@@ -894,13 +894,19 @@
       "contador": "History · {{count}} event",
       "contador_other": "History · {{count}} events",
       "vacio": "No events.",
+      "vista": {
+        "aria": "History view",
+        "compacta": "Compact view",
+        "ampliada": "Expanded view"
+      },
       "tabla": {
         "icono": "Type",
         "fecha": "Date",
         "evento": "Event",
         "ejecuta": "Performed by",
         "resultado": "Result",
-        "validez": "Valid until"
+        "validez": "Valid until",
+        "pdf": "PDF"
       },
       "pendiente": "Upcoming",
       "validaHasta": "Valid until {{fecha}}",

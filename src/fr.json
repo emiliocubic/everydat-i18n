@@ -853,13 +853,19 @@
       "contador": "Historique · {{count}} événement",
       "contador_other": "Historique · {{count}} événements",
       "vacio": "Aucun événement.",
+      "vista": {
+        "aria": "Vue de l'historique",
+        "compacta": "Vue compacte",
+        "ampliada": "Vue détaillée"
+      },
       "tabla": {
         "icono": "Type",
         "fecha": "Date",
         "evento": "Événement",
         "ejecuta": "Réalisé par",
         "resultado": "Résultat",
-        "validez": "Validité"
+        "validez": "Validité",
+        "pdf": "PDF"
       },
       "pendiente": "À venir",
       "validaHasta": "Valable jusqu'au {{fecha}}",
