@@ -686,7 +686,6 @@
       "rango": "(1–{{max}})",
       "copiarAbajo": "Copiar hacia abajo",
       "unicoTitle": "No puede repetirse en otro equipo",
-      "campoFijado": "Lo fija la referencia: no se edita al dar de alta",
       "finVida": "Fin de vida útil",
       "creados": "{{count}} elementos dados de alta.",
       "pasos": {
@@ -723,8 +722,8 @@
         "nPuntos": "{{count}} puntos",
         "cuandoProceda": "(cuando proceda)",
         "incluir": "Registrar una revisión inicial con el alta",
-        "conRevisionHint": "La misma revisión sobre cada unidad: quién, checklist, resultado y, si es apta, hasta cuándo vale.",
-        "sinRevisionHint": "Sin revisión inicial los equipos entran sin revisar, hasta que alguien los inspeccione.",
+        "conRevisionHint": "Se aplicarán los mismos datos de revisión a todas las unidades dadas de alta en este proceso.",
+        "sinRevisionHint": "Sin revisión inicial solo se declara su existencia, sin especificar estado, fecha de validez o de próxima revisión.",
         "checklist": "Checklist"
       },
       "seCreara_one": "Se creará en",
@@ -751,8 +750,8 @@
       },
       "confirmarRepetidos": "Vas a dar de alta varias unidades con el mismo valor en: {{campos}}. Ese identificador no debería repetirse entre equipos. ¿Continúas igualmente?",
       "comodin": {
-        "noLoSe": "No sé cuál es",
-        "hint": "Basta con decir qué tipo de equipo es: entra en el sistema con su checklist y sus fechas, y se identifica más adelante desde su ficha.",
+        "noLoSe": "No sé el fabricante y/o el modelo",
+        "hint": "Indica al menos el TIPO de elemento y luego estarás a tiempo de terminar de definirlo en su ficha de características.",
         "tipo": "Tipo de equipo",
         "usar": "Usar sin especificar",
         "marca": "Sin especificar"
@@ -761,6 +760,19 @@
         "firma": "Falta decir quién hizo la revisión inicial.",
         "resultado": "Falta el resultado de la revisión inicial.",
         "cascada": "Completa la revisión inicial: hasta cuándo vale si es apta, o su cascada."
+      },
+      "camposFijados": "Tabla de opciones abiertas. Los campos fijados por el modelo no se preguntan aquí.",
+      "abrev": {
+        "serie": "Nº serie",
+        "lote": "Nº lote",
+        "referencia_interna": "Ref. interna",
+        "tag": "Tag/ChipID",
+        "qr": "Cód. scan",
+        "qrdat": "QRDAT",
+        "fabricacion": "F. Fabricación",
+        "instalacion": "F. Instalación",
+        "suministro": "F. Suministro",
+        "puesta_servicio": "F. Puesta en servicio"
       }
     },
     "historial": {
@@ -807,8 +819,8 @@
       "title": "Clonar elemento",
       "origen": "Se clona un {{modelo}}, referencia {{referencia}}.",
       "identificadores": "Los identificadores llegan vacíos a propósito: cada equipo tiene el suyo y duplicarlos sería duplicar identidad física.",
-      "crear": "Crear el clon",
-      "unaUnidad": "un clon cada vez"
+      "crear_one": "Crear 1 clon",
+      "crear_other": "Crear {{count}} clones"
     },
     "conjunto": {
       "tag": "Conjunto",
@@ -1527,7 +1539,9 @@
       "crearBtn": "Crear y usar",
       "creado": "Modelo creado",
       "volver": "Volver a la búsqueda"
-    }
+    },
+    "titleSingle": "Elegir modelo",
+    "subSingle": "Pulsa en un modelo para elegirlo."
   },
   "datatable": {
     "records": "registros",

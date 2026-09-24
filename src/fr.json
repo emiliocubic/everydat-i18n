@@ -160,7 +160,9 @@
       "crearBtn": "Créer et utiliser",
       "creado": "Modèle créé",
       "volver": "Retour à la recherche"
-    }
+    },
+    "titleSingle": "Choisir un modèle",
+    "subSingle": "Cliquez sur un modèle pour le choisir."
   },
   "datatable": {
     "records": "enregistrements",
@@ -758,7 +760,6 @@
       "rango": "(1–{{max}})",
       "copiarAbajo": "Copier vers le bas",
       "unicoTitle": "Ne peut pas se répéter sur un autre équipement",
-      "campoFijado": "Figé par la référence : non modifiable à la création",
       "finVida": "Fin de durée de vie",
       "creados": "{{count}} équipements créés.",
       "pasos": {
@@ -795,8 +796,8 @@
         "nPuntos": "{{count}} points",
         "cuandoProceda": "(le cas échéant)",
         "incluir": "Enregistrer une vérification initiale avec la création",
-        "conRevisionHint": "La même vérification sur chaque unité : qui, checklist, résultat et, si conforme, valable jusqu'au.",
-        "sinRevisionHint": "Sans vérification initiale, les équipements entrent non vérifiés, jusqu'à ce que quelqu'un les inspecte.",
+        "conRevisionHint": "Les mêmes données de vérification seront appliquées à toutes les unités créées dans ce processus.",
+        "sinRevisionHint": "Sans vérification initiale, seule son existence est déclarée, sans état, date de validité ni date de prochaine vérification.",
         "checklist": "Checklist"
       },
       "seCreara_one": "Sera créé dans",
@@ -823,8 +824,8 @@
       },
       "confirmarRepetidos": "Tu vas créer plusieurs unités avec la même valeur dans : {{campos}}. Cet identifiant ne devrait pas se répéter entre équipements. Continuer quand même ?",
       "comodin": {
-        "noLoSe": "Je ne sais pas lequel",
-        "hint": "Il suffit d'indiquer le type d'équipement : il entre dans le système avec sa checklist et ses dates, et pourra être identifié plus tard depuis sa fiche.",
+        "noLoSe": "Je ne connais pas le fabricant et/ou le modèle",
+        "hint": "Indiquez au moins le TYPE d'équipement ; vous pourrez finir de le définir plus tard depuis sa fiche de caractéristiques.",
         "tipo": "Type d'équipement",
         "usar": "Utiliser non précisé",
         "marca": "Non précisé"
@@ -833,6 +834,19 @@
         "firma": "Indiquez qui a fait la vérification initiale.",
         "resultado": "La vérification initiale a besoin d'un résultat.",
         "cascada": "Complétez la vérification initiale : valable jusqu'au si elle est conforme, ou ses questions complémentaires."
+      },
+      "camposFijados": "Options ouvertes seulement. Les champs fixés par le modèle ne sont pas demandés ici.",
+      "abrev": {
+        "serie": "N° série",
+        "lote": "N° lot",
+        "referencia_interna": "Réf. interne",
+        "tag": "Tag/ChipID",
+        "qr": "Code scan",
+        "qrdat": "QRDAT",
+        "fabricacion": "D. fabrication",
+        "instalacion": "D. installation",
+        "suministro": "D. fourniture",
+        "puesta_servicio": "D. mise en service"
       }
     },
     "historial": {
@@ -879,8 +893,8 @@
       "title": "Cloner l'équipement",
       "origen": "On clone un {{modelo}}, référence {{referencia}}.",
       "identificadores": "Les identifiants arrivent vides à dessein : chaque équipement a le sien, et les dupliquer dupliquerait l'identité physique.",
-      "crear": "Créer le clone",
-      "unaUnidad": "un clone à la fois"
+      "crear_one": "Créer 1 clone",
+      "crear_other": "Créer {{count}} clones"
     },
     "conjunto": {
       "tag": "Ensemble",

@@ -160,7 +160,9 @@
       "crearBtn": "Create and use",
       "creado": "Model created",
       "volver": "Back to search"
-    }
+    },
+    "titleSingle": "Choose a model",
+    "subSingle": "Click a model to choose it."
   },
   "datatable": {
     "records": "records",
@@ -799,7 +801,6 @@
       "rango": "(1–{{max}})",
       "copiarAbajo": "Copy down",
       "unicoTitle": "Cannot repeat on another item",
-      "campoFijado": "Fixed by the reference: not editable on registration",
       "finVida": "End of service life",
       "creados": "{{count}} items registered.",
       "pasos": {
@@ -836,8 +837,8 @@
         "nPuntos": "{{count}} points",
         "cuandoProceda": "(where applicable)",
         "incluir": "Record an initial inspection with the registration",
-        "conRevisionHint": "The same inspection on every unit: who, checklist, result and, if it passes, valid until.",
-        "sinRevisionHint": "Without an initial inspection the items enter uninspected, until someone checks them.",
+        "conRevisionHint": "The same inspection data will be applied to every unit created in this process.",
+        "sinRevisionHint": "Without an initial inspection only its existence is declared, with no status, validity date or next inspection date.",
         "checklist": "Checklist"
       },
       "seCreara_one": "Will be created in",
@@ -864,8 +865,8 @@
       },
       "confirmarRepetidos": "You are about to create several units sharing the same value in: {{campos}}. That identifier should not repeat across items. Continue anyway?",
       "comodin": {
-        "noLoSe": "I don't know which one",
-        "hint": "Just say what kind of equipment it is: it enters the system with its checklist and dates, and can be identified later from its record.",
+        "noLoSe": "I don't know the manufacturer and/or the model",
+        "hint": "Give at least the TYPE of item; you can finish defining it later from its characteristics record.",
         "tipo": "Equipment type",
         "usar": "Use unspecified",
         "marca": "Unspecified"
@@ -874,6 +875,19 @@
         "firma": "Say who carried out the initial inspection.",
         "resultado": "The initial inspection needs a result.",
         "cascada": "Complete the initial inspection: valid until if it passes, or its follow-up questions."
+      },
+      "camposFijados": "Open options only. Fields fixed by the model are not asked here.",
+      "abrev": {
+        "serie": "Serial no.",
+        "lote": "Batch no.",
+        "referencia_interna": "Int. ref.",
+        "tag": "Tag/ChipID",
+        "qr": "Scan code",
+        "qrdat": "QRDAT",
+        "fabricacion": "Mfg. date",
+        "instalacion": "Inst. date",
+        "suministro": "Supply date",
+        "puesta_servicio": "In-service date"
       }
     },
     "historial": {
@@ -920,8 +934,8 @@
       "title": "Clone item",
       "origen": "Cloning a {{modelo}}, reference {{referencia}}.",
       "identificadores": "Identifiers come in empty on purpose: each item has its own, and duplicating them would duplicate physical identity.",
-      "crear": "Create clone",
-      "unaUnidad": "one clone at a time"
+      "crear_one": "Create 1 clone",
+      "crear_other": "Create {{count}} clones"
     },
     "conjunto": {
       "tag": "Set",
