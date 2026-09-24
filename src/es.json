@@ -800,7 +800,7 @@
       "eligeAntes": "Elige antes el cliente y el emplazamiento.",
       "mover": "Trasladar aquí",
       "hecho": "{{count}} elementos trasladados.",
-      "buscarCliente": "Escribe dos letras del cliente"
+      "buscarCliente": "Busca o elige un cliente…"
     },
     "clonar": {
       "accion": "Clonar el elemento",

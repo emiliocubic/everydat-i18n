@@ -913,7 +913,7 @@
       "eligeAntes": "Choose the client and the site first.",
       "mover": "Move here",
       "hecho": "{{count}} items moved.",
-      "buscarCliente": "Type two letters of the client"
+      "buscarCliente": "Search or pick a client…"
     },
     "clonar": {
       "accion": "Clone item",

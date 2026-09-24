@@ -872,7 +872,7 @@
       "eligeAntes": "Choisissez d'abord le client et le site.",
       "mover": "Déplacer ici",
       "hecho": "{{count}} équipements déplacés.",
-      "buscarCliente": "Saisissez deux lettres du client"
+      "buscarCliente": "Cherchez ou choisissez un client…"
     },
     "clonar": {
       "accion": "Cloner l'équipement",
