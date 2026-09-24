@@ -1910,7 +1910,7 @@
             "identificacion": "Identificación",
             "campos": "Campos personalizados",
             "metadatos": "Metadatos del fabricante",
-            "conformidad": "Conformidad normativa"
+            "normativas": "Normativas aplicables"
           },
           "merge": {
             "title": "Unificar referencias",

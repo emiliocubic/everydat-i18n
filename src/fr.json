@@ -1857,7 +1857,7 @@
             "identificacion": "Identification",
             "campos": "Champs personnalisés",
             "metadatos": "Métadonnées du fabricant",
-            "conformidad": "Conformité normative"
+            "normativas": "Normes applicables"
           },
           "merge": {
             "title": "Unifier des références",

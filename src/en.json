@@ -1910,7 +1910,7 @@
             "identificacion": "Identification",
             "campos": "Custom fields",
             "metadatos": "Manufacturer metadata",
-            "conformidad": "Standards compliance"
+            "normativas": "Applicable standards"
           },
           "merge": {
             "title": "Merge references",
