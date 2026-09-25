@@ -1154,8 +1154,8 @@
       "superadmin_short": "Super",
       "admin": "Administrateur",
       "admin_short": "Admin",
-      "operario": "Opérateur",
-      "operario_short": "Opér."
+      "operario": "Technicien de terrain",
+      "operario_short": "Tech."
     },
     "estado": {
       "activo": "Actif",
@@ -1226,18 +1226,6 @@
       "cuentasAsignadas": "Comptes clients assignés",
       "sinAsignacion": "Aucune assignation",
       "cuentasHint": "L'assignation des comptes clients est reportée jusqu'à ce que la gestion des clients dans le CRM soit définie.",
-      "tipoAcceso": "Type d'accès",
-      "tipoAccesoRequerido": "Choisis un type d'accès",
-      "tipos": {
-        "admin": "Administrateur",
-        "adminHint": "gestion au bureau uniquement",
-        "oper": "Opérateur",
-        "operHint": "usage sur le terrain uniquement",
-        "ambos": "Administrateur et opérateur",
-        "ambosHint": "les deux usages"
-      },
-      "alcanceAdmin": "Périmètre d'administration",
-      "alcanceOper": "Accès de l'opérateur",
       "alcanceColaborador": "Périmètre du collaborateur",
       "alcanceClientesHelp": "Indiquez dans l'onglet Comptes les clients et groupes auxquels il accède.",
       "alcances": {
@@ -1248,7 +1236,6 @@
         "ninguno": "Projets attribués uniquement",
         "ningunoHint": "sans périmètre propre sur les clients"
       },
-      "ambosHelp": "Le périmètre définit les clients gérés ; sur le terrain, l'opérateur travaille sur ces mêmes comptes.",
       "superadminLocked": "Superadmin : le rôle est conservé et ne s'édite pas ici.",
       "cuentas": {
         "clientes": "Clients",
@@ -1264,12 +1251,38 @@
       "alcanceColaboradorHelp": "Sans comptes assignés, il ne voit rien : le collaborateur n'atteint que ce qui lui est partagé ici et les projets où il est affecté.",
       "capacidades": {
         "titulo": "Capacités",
-        "hint": "Groupes de permissions nommés qui s'ajoutent au type d'accès.",
+        "hint": "Tout interne a la base ; les capacités s’activent par-dessus. Dans chacune, chaque action peut être désactivée ou activée pour cette personne.",
         "soloSuperadmin": "Seul le superadmin accorde ou retire les capacités.",
         "gestion_usuarios": "Gestion des utilisateurs",
-        "gestion_usuariosHint": "voit le menu Utilisateurs et crée, modifie et désactive les internes, les collaborateurs et les équipes de travail",
+        "gestion_usuariosHint": "voit le menu Utilisateurs, crée, modifie et désactive internes, collaborateurs et équipes, et attribue les groupes de clients",
         "gestion_catalogo": "Gestion du catalogue",
-        "gestion_catalogoHint": "voit le menu Catalogue, modifie normes, types, champs, checklists, fabricants et modèles, fixe la caractérisation des éléments et valide ce que les autres créent"
+        "gestion_catalogoHint": "voit le menu Catalogue, modifie normes, types, champs, checklists, fabricants et modèles, fixe la caractérisation des éléments et valide ce que les autres créent",
+        "base": "Base de l’interne",
+        "baseHint": "ce que fait tout interne : voir ce qu’il atteint, enregistrer des équipements, inspecter, noter des interventions et déposer des documents ; supprimer son propre travail tant que personne n’y a touché",
+        "operativa": "Opérations",
+        "operativaHint": "le travail de bureau : modifier clients et contacts, tenir les sites, corriger et supprimer le travail de terrain, créer des projets et gérer les documents",
+        "cartera": "Portefeuille",
+        "carteraHint": "créer et supprimer des clients, fusionner les doublons, contracter portail, avis et périodicité, donner accès au portail et groupes de clients",
+        "certificacion": "Certification",
+        "certificacionHint": "signer les inspections et voir la file à certifier",
+        "planificacion": "Planification",
+        "planificacionHint": "faire avancer les projets, affecter équipes et techniciens, planificateur et calendrier de travail",
+        "presupuestos": "Devis",
+        "presupuestosHint": "faire des propositions et voir montants et probabilité"
+      },
+      "presets": {
+        "titulo": "Point de départ",
+        "tecnico": "Technicien de terrain",
+        "tecnicoHint": "voit ce qu’il atteint, enregistre des équipements, inspecte et dépose des documents ; ne supprime pas le travail d’autrui ni ne certifie",
+        "administrador": "Administrateur",
+        "administradorHint": "en plus, le travail de bureau : opérations, portefeuille, certification, planification et devis",
+        "help": "C’est un raccourci : il active des capacités à ajuster ensuite dans l’onglet Permissions."
+      },
+      "copiar": {
+        "titulo": "Copier les permissions d’une autre personne",
+        "placeholder": "Choisir qui copier…",
+        "hint": "Copie ses capacités et ses ajustements. Appliqué à l’enregistrement.",
+        "hintAlta": "Copie ses capacités ; les ajustements fins se copient une fois l’utilisateur créé."
       }
     },
     "soporte": {

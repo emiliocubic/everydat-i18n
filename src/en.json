@@ -1191,8 +1191,8 @@
       "superadmin_short": "Super",
       "admin": "Administrator",
       "admin_short": "Admin",
-      "operario": "Operative",
-      "operario_short": "Oper."
+      "operario": "Field technician",
+      "operario_short": "Tech."
     },
     "estado": {
       "activo": "Active",
@@ -1264,18 +1264,6 @@
       "cuentasAsignadas": "Assigned customer accounts",
       "sinAsignacion": "No assignment yet",
       "cuentasHint": "Customer account assignment is deferred until customer management in the CRM is defined.",
-      "tipoAcceso": "Access type",
-      "tipoAccesoRequerido": "Choose an access type",
-      "tipos": {
-        "admin": "Administrator",
-        "adminHint": "office and desktop management only",
-        "oper": "Operative",
-        "operHint": "field use only",
-        "ambos": "Administrator and operative",
-        "ambosHint": "both uses"
-      },
-      "alcanceAdmin": "Management scope",
-      "alcanceOper": "Operative access",
       "alcanceColaborador": "Collaborator scope",
       "alcanceClientesHelp": "Pick the clients and groups they can access in the Accounts tab.",
       "alcances": {
@@ -1286,7 +1274,6 @@
         "ninguno": "Assigned projects only",
         "ningunoHint": "no scope of their own over clients"
       },
-      "ambosHelp": "The scope defines which clients they manage; in the field, the operative works on those same accounts.",
       "superadminLocked": "Superadmin: the role is kept and cannot be edited here.",
       "cuentas": {
         "clientes": "Clients",
@@ -1302,12 +1289,38 @@
       "alcanceColaboradorHelp": "With no accounts assigned they see nothing: a collaborator only reaches what is shared here and the projects they are put on.",
       "capacidades": {
         "titulo": "Capabilities",
-        "hint": "Named groups of permissions added on top of the access type.",
+        "hint": "Every internal user has the base; capabilities are switched on top. Inside each one, every action can be switched off or on for this person.",
         "soloSuperadmin": "Only the superadmin grants or removes capabilities.",
         "gestion_usuarios": "User management",
-        "gestion_usuariosHint": "sees the Users menu and creates, edits and deactivates internal users, collaborators and work teams",
+        "gestion_usuariosHint": "sees the Users menu, creates, edits and deactivates internal users, collaborators and work teams, and assigns client groups",
         "gestion_catalogo": "Catalogue management",
-        "gestion_catalogoHint": "sees the Catalogue menu, edits standards, types, fields, checklists, manufacturers and models, sets element characterisation and validates what others create"
+        "gestion_catalogoHint": "sees the Catalogue menu, edits standards, types, fields, checklists, manufacturers and models, sets element characterisation and validates what others create",
+        "base": "Internal base",
+        "baseHint": "what every internal user does: see what they reach, register equipment, inspect, log interventions and upload documents; delete their own work while nobody else has touched it",
+        "operativa": "Operations",
+        "operativaHint": "office work: edit clients and contacts, maintain sites, correct and delete field work, create projects and manage documents",
+        "cartera": "Portfolio",
+        "carteraHint": "create and remove clients, merge duplicates, contract portal, notices and interval, grant portal access and client groups",
+        "certificacion": "Certification",
+        "certificacionHint": "sign inspections and see the pending certification tray",
+        "planificacion": "Planning",
+        "planificacionHint": "move projects through their states, assign teams and technicians, planner and work calendar",
+        "presupuestos": "Quotes",
+        "presupuestosHint": "make proposals and see amounts and probability"
+      },
+      "presets": {
+        "titulo": "Starting point",
+        "tecnico": "Field technician",
+        "tecnicoHint": "sees what they reach, registers equipment, inspects and uploads documents; does not delete others' work or certify",
+        "administrador": "Administrator",
+        "administradorHint": "plus office work: operations, portfolio, certification, planning and quotes",
+        "help": "A shortcut: it switches on capabilities you can then fine-tune in the Permissions tab."
+      },
+      "copiar": {
+        "titulo": "Copy permissions from someone else",
+        "placeholder": "Choose whom to copy…",
+        "hint": "Copies their capabilities and adjustments. Applied when you save.",
+        "hintAlta": "Copies their capabilities; fine adjustments are copied once the user exists."
       }
     },
     "soporte": {

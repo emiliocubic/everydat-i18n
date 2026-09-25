@@ -1077,8 +1077,8 @@
       "superadmin_short": "Super",
       "admin": "Administrador",
       "admin_short": "Admin",
-      "operario": "Operario",
-      "operario_short": "Oper."
+      "operario": "Técnico de campo",
+      "operario_short": "Técnico"
     },
     "estado": {
       "activo": "Activo",
@@ -1150,18 +1150,6 @@
       "cuentasAsignadas": "Cuentas de cliente asignadas",
       "sinAsignacion": "Sin asignación todavía",
       "cuentasHint": "La asignación de cuentas de cliente se pospone hasta que esté definida la gestión de clientes en el CRM.",
-      "tipoAcceso": "Tipo de acceso",
-      "tipoAccesoRequerido": "Elige un tipo de acceso",
-      "tipos": {
-        "admin": "Administrador",
-        "adminHint": "solo uso de gestión en PC u oficina",
-        "oper": "Operario",
-        "operHint": "solo uso en campo",
-        "ambos": "Administrador y operario",
-        "ambosHint": "ambos usos"
-      },
-      "alcanceAdmin": "Alcance de administración",
-      "alcanceOper": "Acceso de operario",
       "alcanceColaborador": "Alcance del colaborador",
       "alcanceClientesHelp": "Indica en la pestaña Cuentas a qué clientes y grupos accede.",
       "alcances": {
@@ -1172,7 +1160,6 @@
         "ninguno": "Solo proyectos asignados",
         "ningunoHint": "sin alcance propio sobre clientes"
       },
-      "ambosHelp": "El alcance define qué clientes gestiona; en campo, el operario trabaja sobre esas mismas cuentas.",
       "superadminLocked": "Superadmin: el rol se conserva y no se edita desde aquí.",
       "cuentas": {
         "clientes": "Clientes",
@@ -1188,12 +1175,38 @@
       "alcanceColaboradorHelp": "Sin cuentas asignadas no ve nada: el colaborador solo alcanza lo que se le comparte aquí y los proyectos en los que se le mete en el equipo.",
       "capacidades": {
         "titulo": "Capacidades",
-        "hint": "Grupos de permisos con nombre propio que se añaden al tipo de acceso.",
+        "hint": "La base va con cualquier interno; encima se encienden las capacidades. Dentro de cada una, cada acción se puede apagar o encender a esta persona.",
         "soloSuperadmin": "Solo el superadmin concede o quita capacidades.",
         "gestion_usuarios": "Gestión de usuarios",
-        "gestion_usuariosHint": "ve el menú Usuarios y da de alta, edita y da de baja internos, colaboradores y equipos de trabajo",
+        "gestion_usuariosHint": "ve el menú Usuarios, da de alta, edita y da de baja internos, colaboradores y equipos de trabajo, y reparte grupos de clientes",
         "gestion_catalogo": "Gestión del catálogo",
-        "gestion_catalogoHint": "ve el menú Catálogo, escribe normas, tipos, campos, checklists, fabricantes y modelos, fija la caracterización de los elementos y valida lo que otros dan de alta"
+        "gestion_catalogoHint": "ve el menú Catálogo, escribe normas, tipos, campos, checklists, fabricantes y modelos, fija la caracterización de los elementos y valida lo que otros dan de alta",
+        "base": "Base del interno",
+        "baseHint": "lo de cualquier interno: ver lo que alcanza, dar de alta equipos, revisar, anotar actuaciones y subir documentos; borrar lo propio mientras nadie lo haya tocado",
+        "operativa": "Operativa",
+        "operativaHint": "el trabajo de oficina: editar clientes y contactos, mantener emplazamientos, corregir y borrar el trabajo de campo, crear proyectos y gestionar documentos",
+        "cartera": "Cartera",
+        "carteraHint": "alta y baja de clientes, fusionar duplicados, contratar portal, avisos y plazo, dar acceso al portal y grupos de clientes",
+        "certificacion": "Certificación",
+        "certificacionHint": "firmar revisiones y ver la bandeja por certificar",
+        "planificacion": "Planificación",
+        "planificacionHint": "mover proyectos de estado, asignar equipos y técnicos, planificador y calendario laboral",
+        "presupuestos": "Presupuestos",
+        "presupuestosHint": "hacer propuestas y ver importes y probabilidad"
+      },
+      "presets": {
+        "titulo": "Punto de partida",
+        "tecnico": "Técnico de campo",
+        "tecnicoHint": "ve lo que alcanza, da de alta equipos, revisa y sube documentos; no borra lo de otros ni certifica",
+        "administrador": "Administrador",
+        "administradorHint": "además, el trabajo de oficina: operativa, cartera, certificación, planificación y presupuestos",
+        "help": "Es un atajo: enciende capacidades que luego se ajustan en la pestaña Permisos."
+      },
+      "copiar": {
+        "titulo": "Copiar permisos de otra persona",
+        "placeholder": "Elige a quién copiar…",
+        "hint": "Copia sus capacidades y sus ajustes. Se guarda al guardar la ficha.",
+        "hintAlta": "Copia sus capacidades; los ajustes finos se copian con la ficha ya creada."
       }
     },
     "soporte": {
