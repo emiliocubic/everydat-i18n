@@ -446,6 +446,7 @@
       "tipoContacto": "Tipo de contacto",
       "soloContacto": "Solo contacto",
       "soloContactoDesc": "Figura como contacto. Sin acceso a la aplicación.",
+      "sinPermisoPortal": "Dar o quitar el acceso a la aplicación es de quien gestiona la cartera.",
       "usuarioApp": "Usuario aplicación",
       "usuarioAppDesc": "Acceso al portal de cliente.",
       "tipoContactoHint": "La cuenta de portal y sus permisos se gestionarán en la pestaña Permisos (próximamente).",

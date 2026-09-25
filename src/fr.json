@@ -535,6 +535,7 @@
       "tipoContacto": "Type de contact",
       "soloContacto": "Contact uniquement",
       "soloContactoDesc": "Figure comme contact. Sans accès à l’application.",
+      "sinPermisoPortal": "Donner ou retirer l’accès à l’application revient à qui gère le portefeuille clients.",
       "usuarioApp": "Utilisateur application",
       "usuarioAppDesc": "Accès au portail client.",
       "tipoContactoHint": "Le compte portail et ses permissions se géreront dans l’onglet Permissions (prochainement).",

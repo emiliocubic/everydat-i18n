@@ -560,6 +560,7 @@
       "tipoContacto": "Contact type",
       "soloContacto": "Contact only",
       "soloContactoDesc": "Listed as a contact. No app access.",
+      "sinPermisoPortal": "Granting or removing app access is up to whoever manages the client portfolio.",
       "usuarioApp": "App user",
       "usuarioAppDesc": "Access to the client portal.",
       "tipoContactoHint": "The portal account and its permissions will be managed in the Permissions tab (coming soon).",
