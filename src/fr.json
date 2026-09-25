@@ -570,8 +570,8 @@
     "censo": {
       "acciones": "Actions de l'inventaire",
       "alcance": "Portée de la liste",
-      "alcanceNodo": "Ce nœud",
-      "alcanceRama": "Voir toute la branche",
+      "alcanceNodo": "Ce nœud ({{count}} équipement)",
+      "alcanceRama": "Toute la branche ({{count}} équipement)",
       "verDescatalogados": "Voir les réformés",
       "ocultarDescatalogados": "Masquer les réformés",
       "seleccionarTodos": "Sélectionner tous les éléments",
@@ -591,7 +591,9 @@
       "yaAgrupados": "L’un des éléments cochés fait déjà partie d’un ensemble",
       "arrastrar": "Faites glisser la sélection sur un dossier de l'arbre pour la déplacer",
       "soltando": "Déplacement de {{count}} élément…",
-      "soltando_other": "Déplacement de {{count}} éléments…"
+      "soltando_other": "Déplacement de {{count}} éléments…",
+      "alcanceNodo_other": "Ce nœud ({{count}} équipements)",
+      "alcanceRama_other": "Toute la branche ({{count}} équipements)"
     },
     "orden": {
       "menu": "Trier par",
@@ -603,7 +605,7 @@
       "alPrincipio": "Placer en premier",
       "bajar": "Descendre",
       "alFinal": "Placer en dernier",
-      "soloEnCarpeta": "L’ordre manuel appartient au dossier : passez à « Ce dossier »",
+      "soloEnCarpeta": "Uniquement dans un dossier individuel",
       "soloSinOrden": "Supprimez le tri de la liste pour les placer à la main"
     },
     "situacion": {
@@ -657,8 +659,10 @@
         "descatalogar": "Réformer"
       },
       "texto": {
-        "eliminar": "C'est pour les éléments créés par erreur. Si l'équipement a existé et est sorti du service, il faut le réformer, pas le supprimer.",
-        "descatalogar": "Ils sortent du service et cessent de compter comme matériel utilisable, mais conservent tout leur historique d'inspections, ce que la norme EN 365 exige. On peut les réactiver. Date, motif et photos sont les mêmes pour tous les éléments sélectionnés."
+        "eliminar": "Recommandation : supprimer uniquement si la création était une erreur. Si l'équipement a existé et est sorti du service, utilisez l'option RÉFORMER.",
+        "descatalogar": "Ils sortent du service et cessent de compter comme matériel utilisable, mais conservent tout leur historique d'inspections, ce que la norme EN 365 exige. On peut les réactiver.",
+        "descatalogarLote": "Date, motif et photos sont les mêmes pour tous les éléments sélectionnés.",
+        "conHistorial": "Impossible de supprimer des éléments ayant un historique d'interventions. RÉFORMER est l'option adaptée dans ce cas."
       },
       "accion": {
         "eliminar": "Supprimer",
@@ -1522,8 +1526,6 @@
       "noTrasladarRaiz": "Le site entier ne se déplace pas: c'est la racine, pas un de ses dossiers",
       "trasladarSujeto": "le dossier « {{nombre}} » et tout ce qui en dépend",
       "trasladada": "« {{nombre}} » déplacé avec toute sa branche",
-      "elementosRama": "{{count}} équipement dans la branche",
-      "elementosRama_other": "{{count}} équipements dans la branche",
       "alcanceCuenta": {
         "nodo": "Équipements actifs de ce dossier",
         "rama": "Équipements actifs de ce dossier et de tous ceux qui en dépendent"

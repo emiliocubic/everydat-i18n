@@ -595,8 +595,8 @@
     "censo": {
       "acciones": "Inventory actions",
       "alcance": "List scope",
-      "alcanceNodo": "This node",
-      "alcanceRama": "View whole branch",
+      "alcanceNodo": "This node ({{count}} item)",
+      "alcanceRama": "Whole branch ({{count}} item)",
       "verDescatalogados": "Show retired",
       "ocultarDescatalogados": "Hide retired",
       "seleccionarTodos": "Select all items",
@@ -616,7 +616,9 @@
       "yaAgrupados": "One of the ticked items is already in a set",
       "arrastrar": "Drag the selection onto a tree folder to move it",
       "soltando": "Moving {{count}} item…",
-      "soltando_other": "Moving {{count}} items…"
+      "soltando_other": "Moving {{count}} items…",
+      "alcanceNodo_other": "This node ({{count}} items)",
+      "alcanceRama_other": "Whole branch ({{count}} items)"
     },
     "orden": {
       "menu": "Sort by",
@@ -628,7 +630,7 @@
       "alPrincipio": "Move to top",
       "bajar": "Move down",
       "alFinal": "Move to bottom",
-      "soloEnCarpeta": "Manual order belongs to the folder: switch to “This folder”",
+      "soloEnCarpeta": "Only allowed in a single folder",
       "soloSinOrden": "Clear the list sorting to arrange them by hand"
     },
     "situacion": {
@@ -682,8 +684,10 @@
         "descatalogar": "Retire"
       },
       "texto": {
-        "eliminar": "This is for items created by mistake. If the equipment existed and left service, retire it instead of deleting it.",
-        "descatalogar": "They leave service and stop counting as usable equipment, but keep their whole inspection history, which is what EN 365 requires. They can be reactivated. Date, reason and photos are the same for every selected item."
+        "eliminar": "Recommendation: delete only if the item was created by mistake. If the equipment existed and left service, use RETIRE instead.",
+        "descatalogar": "They leave service and stop counting as usable equipment, but keep their whole inspection history, which is what EN 365 requires. They can be reactivated.",
+        "descatalogarLote": "Date, reason and photos are the same for every selected item.",
+        "conHistorial": "Items with a history of events cannot be deleted. RETIRE is the right option here."
       },
       "accion": {
         "eliminar": "Delete",
@@ -1571,8 +1575,6 @@
       "noTrasladarRaiz": "The whole site cannot be moved: it is the root, not one of its folders",
       "trasladarSujeto": "the \"{{nombre}}\" folder and everything under it",
       "trasladada": "\"{{nombre}}\" moved with its whole branch",
-      "elementosRama": "{{count}} item in the branch",
-      "elementosRama_other": "{{count}} items in the branch",
       "alcanceCuenta": {
         "nodo": "Active items in this folder",
         "rama": "Active items in this folder and every folder under it"

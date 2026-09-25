@@ -481,8 +481,8 @@
     "censo": {
       "acciones": "Acciones del censo",
       "alcance": "Alcance del listado",
-      "alcanceNodo": "Ver nodo",
-      "alcanceRama": "Ver toda la rama",
+      "alcanceNodo": "Ver nodo ({{count}} elemento)",
+      "alcanceRama": "Ver toda la rama ({{count}} elemento)",
       "verDescatalogados": "Ver retirados",
       "ocultarDescatalogados": "Ocultar retirados",
       "seleccionarTodos": "Seleccionar todos los elementos",
@@ -502,7 +502,9 @@
       "yaAgrupados": "Alguno de los marcados ya está en un conjunto",
       "arrastrar": "Arrastra la selección a una carpeta del árbol para moverla",
       "soltando": "Moviendo {{count}} elemento…",
-      "soltando_other": "Moviendo {{count}} elementos…"
+      "soltando_other": "Moviendo {{count}} elementos…",
+      "alcanceNodo_other": "Ver nodo ({{count}} elementos)",
+      "alcanceRama_other": "Ver toda la rama ({{count}} elementos)"
     },
     "orden": {
       "menu": "Ordenar por",
@@ -514,7 +516,7 @@
       "alPrincipio": "Subir al principio",
       "bajar": "Bajar",
       "alFinal": "Bajar al final",
-      "soloEnCarpeta": "El orden a mano es de la carpeta: cambia a «Esta carpeta»",
+      "soloEnCarpeta": "Solo permitido en carpetas individuales",
       "soloSinOrden": "Quita el orden de la lista para colocarlos a mano"
     },
     "situacion": {
@@ -568,8 +570,10 @@
         "descatalogar": "Retirar del servicio"
       },
       "texto": {
-        "eliminar": "Esto es para cuando se dieron de alta por error. Si los equipos existieron y salieron de servicio, lo que toca es retirarlos, no borrarlos.",
-        "descatalogar": "Salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones, que es lo que la EN 365 exige conservar. Se puede reactivar. La fecha, el motivo y las fotos son los mismos para todos los seleccionados."
+        "eliminar": "Recomendación: borrar solo si el alta fue por error. Si los equipos existieron y salieron de servicio, usar la opción de RETIRAR.",
+        "descatalogar": "Salen de servicio y dejan de contar como material utilizable, pero se quedan con todo su historial de revisiones, que es lo que la EN 365 exige conservar. Se puede reactivar.",
+        "descatalogarLote": "La fecha, el motivo y las fotos son los mismos para todos los seleccionados.",
+        "conHistorial": "No es posible borrar elementos con un historial de actuaciones. RETIRAR es la opción adecuada para este caso."
       },
       "accion": {
         "eliminar": "Eliminar",
@@ -1457,8 +1461,6 @@
       "noTrasladarRaiz": "El emplazamiento entero no se traslada: es la raíz, no una carpeta",
       "trasladarSujeto": "la carpeta «{{nombre}}» y todo lo que cuelga de ella",
       "trasladada": "«{{nombre}}» trasladada con toda su rama",
-      "elementosRama": "{{count}} equipo en la rama",
-      "elementosRama_other": "{{count}} equipos en la rama",
       "alcanceCuenta": {
         "nodo": "Equipos activos de esta carpeta",
         "rama": "Equipos activos de esta carpeta y de todas las que cuelgan de ella"
