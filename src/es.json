@@ -2924,7 +2924,9 @@
       "volver": "Volver al inicio",
       "catalogo": "gestionar el catálogo",
       "altaClientes": "dar de alta clientes",
-      "altaEmplazamientos": "dar de alta emplazamientos"
+      "altaEmplazamientos": "dar de alta emplazamientos",
+      "api": "No tienes permiso para esta acción: {{accion}}.",
+      "apiCapacidad": "No tienes permiso para esta acción: {{accion}}. Lo da la capacidad {{capacidad}}."
     }
   },
   "proyectos": {

@@ -2875,7 +2875,9 @@
       "volver": "Retour à l'accueil",
       "catalogo": "gérer le catalogue",
       "altaClientes": "créer des clients",
-      "altaEmplazamientos": "créer des sites"
+      "altaEmplazamientos": "créer des sites",
+      "api": "Vous n'avez pas la permission pour cette action : {{accion}}.",
+      "apiCapacidad": "Vous n'avez pas la permission pour cette action : {{accion}}. Elle vient avec la capacité {{capacidad}}."
     }
   },
   "proyectos": {
