@@ -3629,6 +3629,14 @@
       "interno": "Personal interno",
       "colaborador": "Colaborador externo",
       "otro": "Otra persona o empresa"
+    },
+    "lote": {
+      "titulo": "Revisión múltiple",
+      "sub": "{{count}} equipos seleccionados",
+      "aviso": "Se aplicarán los mismos datos de revisión a todos los equipos seleccionados. IMPORTANTE: asegúrese antes de hacerlo. Esta acción no se puede revertir.",
+      "noPosible": "La revisión múltiple solo es posible en elementos sujetos al mismo checklist o criterio de revisión",
+      "crear": "Registrar {{count}} revisiones",
+      "hecho": "{{count}} revisiones registradas"
     }
   },
   "app": {
@@ -3922,7 +3930,7 @@
       "fecha": "Cuándo pasó, no cuándo se anota.",
       "adjuntos": "El parte del taller, la nota del fabricante, las fotos.",
       "declaraNoApto": "El equipo queda no apto hasta la siguiente revisión apta. Sin marcarlo, la incidencia es solo un apunte.",
-      "reparacionNoDevuelve": "La reparación no devuelve el equipo al servicio: eso lo hace la siguiente revisión apta."
+      "reparacionNoDevuelve": "La reparación no modifica el estado del equipo. Eso solo lo hace una revisión."
     },
     "adjuntos": {
       "subir": "Añadir documento",
@@ -3945,7 +3953,12 @@
       "no_reparado": "No reparado",
       "no_reparable": "No reparable"
     },
-    "noAptoChip": "Declarado no apto"
+    "noAptoChip": "Declarado no apto",
+    "lote": {
+      "volver": "Volver al censo",
+      "sub": "{{count}} equipos seleccionados. Se registrará la misma {{tipo}} en cada uno; los adjuntos se añaden después, equipo a equipo.",
+      "hecho": "{{count}} actuaciones registradas"
+    }
   },
   "documentos": {
     "subir": "Subir archivos",

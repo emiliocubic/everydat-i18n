@@ -3629,6 +3629,14 @@
       "interno": "In-house staff",
       "colaborador": "External collaborator",
       "otro": "Another person or company"
+    },
+    "lote": {
+      "titulo": "Multiple inspection",
+      "sub": "{{count}} items selected",
+      "aviso": "The same inspection data will be applied to every selected item. IMPORTANT: make sure before you proceed. This action cannot be undone.",
+      "noPosible": "A multiple inspection is only possible for items subject to the same checklist or inspection criterion",
+      "crear": "Record {{count}} inspections",
+      "hecho": "{{count}} inspections recorded"
     }
   },
   "app": {
@@ -3922,7 +3930,7 @@
       "fecha": "When it happened, not when it is recorded.",
       "adjuntos": "The workshop report, the manufacturer's note, the photos.",
       "declaraNoApto": "The item stays failed until the next passing inspection. Unticked, the incident is just a note.",
-      "reparacionNoDevuelve": "A repair does not return the item to service: the next passing inspection does."
+      "reparacionNoDevuelve": "A repair does not change the item's status. Only an inspection does."
     },
     "adjuntos": {
       "subir": "Add document",
@@ -3945,7 +3953,12 @@
       "no_reparado": "Not repaired",
       "no_reparable": "Beyond repair"
     },
-    "noAptoChip": "Declared failed"
+    "noAptoChip": "Declared failed",
+    "lote": {
+      "volver": "Back to the inventory",
+      "sub": "{{count}} items selected. The same {{tipo}} will be recorded on each one; attachments are added afterwards, item by item.",
+      "hecho": "{{count}} actions recorded"
+    }
   },
   "documentos": {
     "subir": "Upload files",

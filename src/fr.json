@@ -3568,6 +3568,14 @@
       "interno": "Personnel interne",
       "colaborador": "Collaborateur externe",
       "otro": "Autre personne ou entreprise"
+    },
+    "lote": {
+      "titulo": "Contrôle multiple",
+      "sub": "{{count}} équipements sélectionnés",
+      "aviso": "Les mêmes données de contrôle seront appliquées à tous les équipements sélectionnés. IMPORTANT : assurez-vous avant de continuer. Cette action est irréversible.",
+      "noPosible": "Le contrôle multiple n'est possible que pour des équipements soumis à la même checklist ou au même critère de contrôle",
+      "crear": "Enregistrer {{count}} contrôles",
+      "hecho": "{{count}} contrôles enregistrés"
     }
   },
   "app": {
@@ -3861,7 +3869,7 @@
       "fecha": "Quand cela s'est passé, pas quand on le saisit.",
       "adjuntos": "Le rapport de l'atelier, la note du fabricant, les photos.",
       "declaraNoApto": "L'équipement reste non apte jusqu'au prochain contrôle conforme. Sans la case, l'incident n'est qu'une note.",
-      "reparacionNoDevuelve": "La réparation ne remet pas l'équipement en service : c'est le prochain contrôle conforme qui le fait."
+      "reparacionNoDevuelve": "La réparation ne modifie pas l'état de l'équipement. Seul un contrôle le fait."
     },
     "adjuntos": {
       "subir": "Ajouter un document",
@@ -3884,6 +3892,11 @@
       "no_reparado": "Non réparé",
       "no_reparable": "Irréparable"
     },
-    "noAptoChip": "Déclaré non apte"
+    "noAptoChip": "Déclaré non apte",
+    "lote": {
+      "volver": "Retour à l'inventaire",
+      "sub": "{{count}} équipements sélectionnés. La même {{tipo}} sera enregistrée sur chacun ; les pièces jointes s'ajoutent ensuite, équipement par équipement.",
+      "hecho": "{{count}} interventions enregistrées"
+    }
   }
 }
