@@ -715,7 +715,12 @@
       "finVidaSinCriterio": "Son type ne fixe pas de péremption",
       "anadirValor": "Ajouter un autre",
       "quitarValor": "Retirer cette valeur",
-      "observaciones": "Observations"
+      "observaciones": "Observations",
+      "archivos": {
+        "origen": {
+          "conjunto": "De l’ensemble"
+        }
+      }
     },
     "fecha": {
       "fabricacion": "Fabrication",
@@ -904,6 +909,14 @@
     },
     "conjunto": {
       "tag": "Ensemble",
+      "altaHint": "Regroupement de {{count}} équipements. Rien n’est obligatoire : un ensemble peut n’être identifié que par son n° de série.",
+      "nombreOpcional": "Nom (facultatif)",
+      "crearBtn": "Créer l’ensemble",
+      "sinNombre": "Ensemble sans nom",
+      "ident": {
+        "serie": "N° de série",
+        "referencia_interna": "Référence interne"
+      },
       "agrupar": "Grouper en un ensemble",
       "pideNombre": "Nom de l'ensemble :",
       "creado": "Ensemble « {{nombre}} » créé.",
@@ -918,7 +931,9 @@
       "confirmDeshacer": "Défaire l'ensemble « {{nombre}} » ? Les équipements restent libres dans leur dossier.",
       "deshecho": "Ensemble défait.",
       "situacionHint": "L'état de l'ensemble est le pire de ses équipements.",
-      "abrir": "Ouvrir l'ensemble"
+      "abrir": "Ouvrir l'ensemble",
+      "colComponente": "Composant",
+      "normativaHereda": "Cet ensemble hérite des normes des équipements qui le composent."
     },
     "tabla": {
       "buscar": "Rechercher par type, marque, modèle, n° de série ou localisation…",
@@ -3522,7 +3537,8 @@
       "noRevisadaDetalle": "Lequel ?",
       "sinChecklistOpcion": "Sans checklist",
       "todo": "Tout {{marca}}",
-      "validaHastaObligatoria": "Obligatoire pour un contrôle conforme."
+      "validaHastaObligatoria": "Obligatoire pour un contrôle conforme.",
+      "checklistPorMiembro": "Une checklist par équipement ({{count}})"
     },
     "medida": {
       "senaliza": "Signalé comme non utilisable",
@@ -3784,7 +3800,9 @@
       "soloLectura": "lecture seule",
       "eliminar": "Supprimer l’événement",
       "crear": "Créer l’événement",
-      "guardar": "Enregistrer les modifications"
+      "guardar": "Enregistrer les modifications",
+      "afectados": "Composants concernés",
+      "afectadosHint": "Cochez-en au moins un : l’action n’est enregistrée que sur les composants concernés."
     },
     "titulo": "Interventions",
     "nueva": {

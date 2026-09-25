@@ -749,7 +749,8 @@
         "origen": {
           "elemento": "Equipment",
           "actuacion": "Intervention",
-          "revision": "Inspection"
+          "revision": "Inspection",
+          "conjunto": "From the set"
         }
       },
       "finVidaCalculado": "Computed from its type",
@@ -945,6 +946,14 @@
     },
     "conjunto": {
       "tag": "Set",
+      "altaHint": "Grouping {{count}} items. Nothing is required: a set may be known only by its serial number.",
+      "nombreOpcional": "Name (optional)",
+      "crearBtn": "Create the set",
+      "sinNombre": "Unnamed set",
+      "ident": {
+        "serie": "Serial number",
+        "referencia_interna": "Internal reference"
+      },
       "agrupar": "Group into a set",
       "pideNombre": "Set name:",
       "creado": "Set “{{nombre}}” created.",
@@ -959,7 +968,9 @@
       "confirmDeshacer": "Undo the set “{{nombre}}”? Items stay loose in their folder.",
       "deshecho": "Set undone.",
       "situacionHint": "The set's status is the worst of its items.",
-      "abrir": "Open the assembly"
+      "abrir": "Open the assembly",
+      "colComponente": "Component",
+      "normativaHereda": "This set inherits the standards of the items that make it up."
     },
     "tabla": {
       "buscar": "Search by type, brand, model, serial no. or location…",
@@ -3587,7 +3598,8 @@
       "noRevisadaDetalle": "Which?",
       "sinChecklistOpcion": "No checklist",
       "todo": "All {{marca}}",
-      "validaHastaObligatoria": "Required for a passing inspection."
+      "validaHastaObligatoria": "Required for a passing inspection.",
+      "checklistPorMiembro": "One checklist per item ({{count}})"
     },
     "medida": {
       "senaliza": "Tagged as not usable",
@@ -3849,7 +3861,9 @@
       "soloLectura": "read only",
       "eliminar": "Delete event",
       "crear": "Create event",
-      "guardar": "Save changes"
+      "guardar": "Save changes",
+      "afectados": "Affected components",
+      "afectadosHint": "Tick at least one: the action is only recorded on the affected ones."
     },
     "titulo": "Interventions",
     "nueva": {

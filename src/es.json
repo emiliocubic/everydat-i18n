@@ -634,7 +634,8 @@
         "origen": {
           "elemento": "Del equipo",
           "actuacion": "De una actuación",
-          "revision": "De una revisión"
+          "revision": "De una revisión",
+          "conjunto": "Del conjunto"
         }
       },
       "finVidaCalculado": "Lo calcula su tipo",
@@ -830,6 +831,14 @@
     },
     "conjunto": {
       "tag": "Conjunto",
+      "altaHint": "Se agrupan {{count}} equipos. Nada es obligatorio: un conjunto puede llamarse solo por su nº de serie.",
+      "nombreOpcional": "Nombre (opcional)",
+      "crearBtn": "Crear el conjunto",
+      "sinNombre": "Conjunto sin nombre",
+      "ident": {
+        "serie": "Nº de serie",
+        "referencia_interna": "Referencia interna"
+      },
       "agrupar": "Agrupar en un conjunto",
       "pideNombre": "Nombre del conjunto:",
       "creado": "Conjunto «{{nombre}}» creado.",
@@ -844,7 +853,9 @@
       "confirmDeshacer": "¿Deshacer el conjunto «{{nombre}}»? Los equipos quedan sueltos en su carpeta.",
       "deshecho": "Conjunto deshecho.",
       "situacionHint": "La situación del conjunto es la peor de sus equipos.",
-      "abrir": "Abrir el conjunto"
+      "abrir": "Abrir el conjunto",
+      "colComponente": "Componente",
+      "normativaHereda": "Este equipo hereda las normativas de los elementos que lo componen."
     },
     "tabla": {
       "buscar": "Buscar por tipo, marca, modelo, n.º de serie o localización…",
@@ -3587,7 +3598,8 @@
       "noRevisadaDetalle": "¿Cuál?",
       "sinChecklistOpcion": "Sin checklist",
       "todo": "Todo {{marca}}",
-      "validaHastaObligatoria": "Obligatoria en una revisión apta."
+      "validaHastaObligatoria": "Obligatoria en una revisión apta.",
+      "checklistPorMiembro": "Un checklist por equipo ({{count}})"
     },
     "medida": {
       "senaliza": "Se señaliza como no utilizable",
@@ -3849,7 +3861,9 @@
       "soloLectura": "solo lectura",
       "eliminar": "Eliminar evento",
       "crear": "Crear evento",
-      "guardar": "Guardar cambios"
+      "guardar": "Guardar cambios",
+      "afectados": "Componentes afectados",
+      "afectadosHint": "Marca al menos uno: la actuación solo se anota en los afectados."
     },
     "titulo": "Actuaciones",
     "nueva": {
