@@ -154,7 +154,6 @@
       "fabricanteOtro": "Autre fabricant…",
       "fabricanteNombre": "Nom du fabricant",
       "nombre": "Modèle",
-      "codigo": "Code (facultatif)",
       "tipo": "Type d'élément",
       "referencia": "Référence ou taille (facultatif)",
       "crearBtn": "Créer et utiliser",
@@ -1655,8 +1654,7 @@
         "modeloTitle": "Modèle",
         "modeloPlaceholder": "Saisissez ou choisissez un modèle…",
         "modeloDisabled": "Choisissez d'abord un fabricant",
-        "modeloCodigo": "Code (facultatif)",
-        "tipoPlaceholder": "Aucun type pour l'instant…",
+        "tipoPlaceholder": "Choisissez le type d’équipement…",
         "addingRefsTo": "Ajout de références à « {{name}} »",
         "referenciasTitle": "Références",
         "referenciasEmptyHint": "Si vous n'ajoutez aucune référence, une sera créée avec le code du modèle.",
@@ -1678,7 +1676,12 @@
         "fabricanteSinCoincidencias": "Aucune correspondance",
         "crumbFabricante": "Fabricant",
         "crumbCatalogo": "Catalogue",
-        "fabricanteLabel": "Marque / Fabricant"
+        "fabricanteLabel": "Marque / Fabricant",
+        "familiaLabel": "Famille",
+        "familiaPlaceholder": "Choisissez la famille…",
+        "tipoLabel": "Type d’équipement",
+        "familiaKits": "Systèmes EN 17235",
+        "tipoHint": "Le type apporte la checklist, les champs et les dates du modèle."
       },
       "pick": {
         "existing": "Déjà dans votre catalogue",

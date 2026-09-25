@@ -154,7 +154,6 @@
       "fabricanteOtro": "Other manufacturer…",
       "fabricanteNombre": "Manufacturer name",
       "nombre": "Model",
-      "codigo": "Code (optional)",
       "tipo": "Element type",
       "referencia": "Reference or size (optional)",
       "crearBtn": "Create and use",
@@ -1704,8 +1703,7 @@
         "modeloTitle": "Model",
         "modeloPlaceholder": "Type or pick a model…",
         "modeloDisabled": "Pick a manufacturer first",
-        "modeloCodigo": "Code (optional)",
-        "tipoPlaceholder": "No type for now…",
+        "tipoPlaceholder": "Choose the item type…",
         "addingRefsTo": "Adding references to “{{name}}”",
         "referenciasTitle": "References",
         "referenciasEmptyHint": "If you add no references, one will be created using the model code.",
@@ -1727,7 +1725,12 @@
         "fabricanteSinCoincidencias": "No matches",
         "crumbFabricante": "Manufacturer",
         "crumbCatalogo": "Catalogue",
-        "fabricanteLabel": "Brand / Manufacturer"
+        "fabricanteLabel": "Brand / Manufacturer",
+        "familiaLabel": "Family",
+        "familiaPlaceholder": "Choose the family…",
+        "tipoLabel": "Item type",
+        "familiaKits": "EN 17235 systems",
+        "tipoHint": "The type brings the checklist, fields and dates of the model."
       },
       "pick": {
         "existing": "Already in your catalogue",
