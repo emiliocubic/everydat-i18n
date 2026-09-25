@@ -3809,7 +3809,8 @@
       "entidad": "Entity",
       "registro": "Record",
       "usuario": "User",
-      "ip": "IP"
+      "ip": "IP",
+      "suplantador": "Impersonated by"
     },
     "detalle": {
       "titulo": "Entry detail",
@@ -3857,7 +3858,8 @@
       "licencia_updated": "Instance updated",
       "parametros_updated": "Settings updated",
       "pivot_updated": "Relation updated"
-    }
+    },
+    "via": "via {{nombre}}"
   },
   "actuaciones": {
     "panel": {

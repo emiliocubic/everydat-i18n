@@ -3748,7 +3748,8 @@
       "entidad": "Entité",
       "registro": "Enregistrement",
       "usuario": "Utilisateur",
-      "ip": "IP"
+      "ip": "IP",
+      "suplantador": "Incarné par"
     },
     "detalle": {
       "titulo": "Détail de l'entrée",
@@ -3796,7 +3797,8 @@
       "licencia_updated": "Instance mise à jour",
       "parametros_updated": "Paramètres mis à jour",
       "pivot_updated": "Relation mise à jour"
-    }
+    },
+    "via": "via {{nombre}}"
   },
   "actuaciones": {
     "panel": {
