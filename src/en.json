@@ -4144,7 +4144,23 @@
       "hereda": "Inherits permissions from its folder.",
       "propios": "Has its own permissions: inheritance is broken.",
       "sinPermisos": "No permissions of its own.",
-      "restringir": "Restrict this file"
+      "restringir": "Restrict this file",
+      "nivel": "Permission level",
+      "buscarSujeto": "Give access to a person or role",
+      "primerPermiso": "The first permission breaks inheritance: from then on only those on the list get in."
+    },
+    "rol": {
+      "superadmin": "Superadmin",
+      "interno": "Internal staff",
+      "colaborador_externo": "External contractors",
+      "usuario_invitado": "Guest users",
+      "operativa": "Operations",
+      "cartera": "Portfolio",
+      "certificacion": "Certification",
+      "planificacion": "Planning",
+      "presupuestos": "Quotes",
+      "gestion_usuarios": "User management",
+      "gestion_catalogo": "Catalogue management"
     },
     "papelera": {
       "titulo": "Bin",

@@ -4144,7 +4144,23 @@
       "hereda": "Hereda los permisos de su carpeta.",
       "propios": "Tiene permisos propios: la herencia está rota.",
       "sinPermisos": "Sin permisos propios.",
-      "restringir": "Restringir este archivo"
+      "restringir": "Restringir este archivo",
+      "nivel": "Nivel del permiso",
+      "buscarSujeto": "Dar permiso a una persona o rol",
+      "primerPermiso": "El primer permiso rompe la herencia: desde ese momento solo entra quien esté en la lista."
+    },
+    "rol": {
+      "superadmin": "Superadmin",
+      "interno": "Personal interno",
+      "colaborador_externo": "Colaboradores externos",
+      "usuario_invitado": "Usuarios invitados",
+      "operativa": "Operativa",
+      "cartera": "Cartera",
+      "certificacion": "Certificación",
+      "planificacion": "Planificación",
+      "presupuestos": "Presupuestos",
+      "gestion_usuarios": "Gestión de usuarios",
+      "gestion_catalogo": "Gestión del catálogo"
     },
     "papelera": {
       "titulo": "Papelera",
