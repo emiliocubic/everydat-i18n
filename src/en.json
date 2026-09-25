@@ -740,6 +740,7 @@
       "notasInternas": "Internal notes",
       "coordenadas": "Coordinates",
       "campoSinValores": "Its type has no values assigned for this field.",
+      "campoFijado": "Fixed by its catalogue reference: it cannot be changed from the record.",
       "archivos": {
         "imagenes": "Images",
         "heredada": "Model documentation",
@@ -1910,7 +1911,7 @@
           "deleted": "Reference deleted.",
           "confirmDelete": "Delete reference “{{nombre}}”?",
           "descatalogadaHint": "Discontinued by the manufacturer: it stays visible, because its fleet is still in use and must be inspected.",
-          "normasHeredadas": "Inherits the model's standards: {{codigos}}",
+          "normasHeredadas": "Inherits the model's standards:",
           "normasPropias": "Standards specific to this reference: they override the model's.",
           "normaHeredadaTitle": "Inherited from the model",
           "fijadoOn": "Fixed value: item registration cannot change it",

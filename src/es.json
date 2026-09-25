@@ -626,6 +626,7 @@
       "notasInternas": "Notas internas",
       "coordenadas": "Coordenadas",
       "campoSinValores": "Su tipo no tiene valores asignados para este campo.",
+      "campoFijado": "Fijado por su referencia de catálogo: no se cambia desde la ficha.",
       "archivos": {
         "imagenes": "Imágenes",
         "heredada": "Documentación del modelo",
@@ -859,7 +860,7 @@
       "situacionHint": "La situación del conjunto es la peor de sus equipos.",
       "abrir": "Abrir el conjunto",
       "colComponente": "Componente",
-      "normativaHereda": "Este equipo hereda las normativas de los elementos que lo componen."
+      "normativaHereda": "Este conjunto hereda la normativa de los equipos que lo componen."
     },
     "tabla": {
       "buscar": "Buscar por tipo, marca, modelo, n.º de serie o localización…",
@@ -1910,7 +1911,7 @@
           "deleted": "Referencia eliminada.",
           "confirmDelete": "¿Eliminar la referencia «{{nombre}}»?",
           "descatalogadaHint": "Descatalogada por el fabricante: sigue a la vista, porque su parque continúa en uso y hay que revisarlo.",
-          "normasHeredadas": "Hereda la normativa del modelo: {{codigos}}",
+          "normasHeredadas": "Hereda la normativa del modelo:",
           "normasPropias": "Normativa propia de esta referencia: sustituye a la del modelo.",
           "normaHeredadaTitle": "Heredada del modelo",
           "fijadoOn": "Valor fijado: el alta de elemento no lo puede cambiar",
