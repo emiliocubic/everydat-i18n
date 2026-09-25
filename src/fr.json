@@ -2871,9 +2871,11 @@
       "titulo": "Sans permission",
       "texto": "Vous n'avez pas la permission de {{que}}. Si vous en avez besoin, demandez-la au superadmin de votre entreprise.",
       "usuarios": "gérer les utilisateurs",
-      "equipos": "gérer les équipes de travail",
+      "equipos": "voir les équipes de travail",
       "volver": "Retour à l'accueil",
-      "catalogo": "gérer le catalogue"
+      "catalogo": "gérer le catalogue",
+      "altaClientes": "créer des clients",
+      "altaEmplazamientos": "créer des sites"
     }
   },
   "proyectos": {

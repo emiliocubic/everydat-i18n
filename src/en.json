@@ -2920,9 +2920,11 @@
       "titulo": "No permission",
       "texto": "You do not have permission to {{que}}. If you need it, ask your company's superadmin.",
       "usuarios": "manage users",
-      "equipos": "manage work teams",
+      "equipos": "view work teams",
       "volver": "Back to home",
-      "catalogo": "manage the catalogue"
+      "catalogo": "manage the catalogue",
+      "altaClientes": "create customers",
+      "altaEmplazamientos": "create sites"
     }
   },
   "proyectos": {

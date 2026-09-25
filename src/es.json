@@ -2920,9 +2920,11 @@
       "titulo": "Sin permiso",
       "texto": "No tienes permiso para {{que}}. Si lo necesitas, pídeselo al superadmin de tu empresa.",
       "usuarios": "gestionar usuarios",
-      "equipos": "gestionar equipos de trabajo",
+      "equipos": "ver los equipos de trabajo",
       "volver": "Volver al inicio",
-      "catalogo": "gestionar el catálogo"
+      "catalogo": "gestionar el catálogo",
+      "altaClientes": "dar de alta clientes",
+      "altaEmplazamientos": "dar de alta emplazamientos"
     }
   },
   "proyectos": {
