@@ -111,6 +111,54 @@
       "subtitle": "Set a new password",
       "submit": "Change password",
       "success": "Password updated. You can now sign in."
+    },
+    "segundoFactor": {
+      "codigoLabel": "Verification code",
+      "codigoHint": "Enter the six-digit code from your authenticator app.",
+      "verificar": "Verify",
+      "verificando": "Verifying...",
+      "usarRecuperacion": "Use a recovery code",
+      "usarCodigo": "Use the app code",
+      "recuperacionLabel": "Recovery code",
+      "recuperacionHint": "Each recovery code works only once.",
+      "codigoMalo": "The code is not valid.",
+      "volver": "Back",
+      "altaIntro": "Your role requires two-step verification. Set it up to sign in.",
+      "altaPaso1": "Scan this code with your authenticator app (Google Authenticator, Microsoft Authenticator or similar).",
+      "altaManual": "Can't scan it? Enter this key:",
+      "altaPaso2": "Enter the six-digit code the app shows you.",
+      "activar": "Turn on",
+      "activarYEntrar": "Turn on and sign in",
+      "errorAlta": "Setup could not be started.",
+      "codigosTitulo": "Recovery codes",
+      "codigosIntro": "Keep them somewhere safe. If you lose your phone, each one lets you sign in once. They won't be shown again.",
+      "copiar": "Copy",
+      "copiados": "Copied",
+      "guardados": "I've saved them",
+      "titulo": "Two-step verification"
+    },
+    "perfil": {
+      "titulo": "My profile",
+      "contrasena": "Password",
+      "contrasenaHint": "The one you use to sign in to the panel and the app.",
+      "cambiarContrasena": "Change password",
+      "dosPasos": "Two-step verification",
+      "dosPasosHint": "Besides your password, a code from your phone that changes every 30 seconds.",
+      "activa": "On since {{fecha}}.",
+      "inactiva": "Off.",
+      "obligatoria": "Your role requires it.",
+      "codigosRestantes_one": "You have {{count}} recovery code left.",
+      "codigosRestantes_other": "You have {{count}} recovery codes left.",
+      "activar": "Turn on",
+      "codigosNuevos": "New recovery codes",
+      "cambiarDispositivo": "Change device",
+      "cambiarDispositivoHint": "Once you continue, your current device stops working until you confirm the new one.",
+      "desactivar": "Turn off",
+      "confirmaPassword": "Enter your password to continue.",
+      "continuar": "Continue",
+      "activada": "Two-step verification turned on.",
+      "desactivada": "Two-step verification turned off.",
+      "hecho": "Done"
     }
   },
   "modelPicker": {
@@ -2885,6 +2933,30 @@
         "weekly": "Weekly summary",
         "reviews": "Upcoming inspections",
         "report": "Generate report"
+      },
+      "plan": {
+        "title": "Waiting for your confirmation",
+        "confirm": "Confirm",
+        "confirming": "Applying…",
+        "discard": "Discard",
+        "done": "Done",
+        "discarded": "Discarded: nothing has changed",
+        "failed": "Nothing was applied. Step {{paso}} failed: {{motivo}}",
+        "error": "I couldn't complete the action. Please try again.",
+        "open": "Open",
+        "ref": "the one created in step {{n}}",
+        "num": "no. {{id}}",
+        "steps": {
+          "crear_cliente": "Create the client “{{nombre}}”",
+          "actualizar_cliente": "Change client {{cliente}}: {{cambios}}",
+          "crear_emplazamiento": "Create the site “{{nombre}}” for client {{cliente}}",
+          "crear_usuario": "Add internal user {{nombre}} ({{email}})",
+          "crear_colaborador": "Add external collaborator {{nombre}} ({{email}})",
+          "crear_equipo": "Create the work team “{{nombre}}”",
+          "asignar_usuarios_equipo_one": "Leave team {{equipo}} with {{count}} member",
+          "asignar_usuarios_equipo_other": "Leave team {{equipo}} with {{count}} members",
+          "otro": "Run {{herramienta}}"
+        }
       }
     },
     "scan": {
@@ -3876,7 +3948,11 @@
       "fin_vida": "End of life",
       "licencia_updated": "Instance updated",
       "parametros_updated": "Settings updated",
-      "pivot_updated": "Relation updated"
+      "pivot_updated": "Relation updated",
+      "login_failed_segundo_factor": "Failed sign-in (verification code)",
+      "segundo_factor_activado": "Two-step verification turned on",
+      "segundo_factor_desactivado": "Two-step verification turned off",
+      "segundo_factor_codigos": "New recovery codes"
     },
     "via": "via {{nombre}}"
   },

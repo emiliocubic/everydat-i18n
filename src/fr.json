@@ -111,6 +111,54 @@
       "subtitle": "Définissez un nouveau mot de passe",
       "submit": "Changer le mot de passe",
       "success": "Mot de passe mis à jour. Vous pouvez maintenant vous connecter."
+    },
+    "segundoFactor": {
+      "codigoLabel": "Code de vérification",
+      "codigoHint": "Saisissez le code à six chiffres de votre application d'authentification.",
+      "verificar": "Vérifier",
+      "verificando": "Vérification...",
+      "usarRecuperacion": "Utiliser un code de récupération",
+      "usarCodigo": "Utiliser le code de l'application",
+      "recuperacionLabel": "Code de récupération",
+      "recuperacionHint": "Chaque code de récupération ne sert qu'une fois.",
+      "codigoMalo": "Le code n'est pas valide.",
+      "volver": "Retour",
+      "altaIntro": "Votre rôle exige la validation en deux étapes. Configurez-la pour vous connecter.",
+      "altaPaso1": "Scannez ce code avec votre application d'authentification (Google Authenticator, Microsoft Authenticator ou similaire).",
+      "altaManual": "Impossible de le scanner ? Saisissez cette clé :",
+      "altaPaso2": "Saisissez le code à six chiffres affiché par l'application.",
+      "activar": "Activer",
+      "activarYEntrar": "Activer et se connecter",
+      "errorAlta": "Impossible de préparer la configuration.",
+      "codigosTitulo": "Codes de récupération",
+      "codigosIntro": "Conservez-les en lieu sûr. Si vous perdez votre téléphone, chacun vous permet de vous connecter une fois. Ils ne seront plus affichés.",
+      "copiar": "Copier",
+      "copiados": "Copiés",
+      "guardados": "Je les ai enregistrés",
+      "titulo": "Validation en deux étapes"
+    },
+    "perfil": {
+      "titulo": "Mon profil",
+      "contrasena": "Mot de passe",
+      "contrasenaHint": "Celui que vous utilisez pour le panneau et l'application.",
+      "cambiarContrasena": "Changer le mot de passe",
+      "dosPasos": "Validation en deux étapes",
+      "dosPasosHint": "En plus du mot de passe, un code de votre téléphone qui change toutes les 30 secondes.",
+      "activa": "Activée depuis le {{fecha}}.",
+      "inactiva": "Désactivée.",
+      "obligatoria": "Votre rôle l'exige.",
+      "codigosRestantes_one": "Il vous reste {{count}} code de récupération.",
+      "codigosRestantes_other": "Il vous reste {{count}} codes de récupération.",
+      "activar": "Activer",
+      "codigosNuevos": "Nouveaux codes de récupération",
+      "cambiarDispositivo": "Changer d'appareil",
+      "cambiarDispositivoHint": "En continuant, l'appareil actuel cesse de fonctionner jusqu'à ce que vous confirmiez le nouveau.",
+      "desactivar": "Désactiver",
+      "confirmaPassword": "Saisissez votre mot de passe pour continuer.",
+      "continuar": "Continuer",
+      "activada": "Validation en deux étapes activée.",
+      "desactivada": "Validation en deux étapes désactivée.",
+      "hecho": "Terminé"
     }
   },
   "modelPicker": {
@@ -2836,6 +2884,30 @@
         "weekly": "Résumé hebdomadaire",
         "reviews": "Prochaines inspections",
         "report": "Générer un rapport"
+      },
+      "plan": {
+        "title": "En attente de confirmation",
+        "confirm": "Confirmer",
+        "confirming": "Application…",
+        "discard": "Annuler",
+        "done": "Fait",
+        "discarded": "Annulé : rien n'a été modifié",
+        "failed": "Rien n'a été appliqué. L'étape {{paso}} a échoué : {{motivo}}",
+        "error": "Je n'ai pas pu terminer l'action. Réessayez.",
+        "open": "Ouvrir",
+        "ref": "celui créé à l'étape {{n}}",
+        "num": "n° {{id}}",
+        "steps": {
+          "crear_cliente": "Créer le client « {{nombre}} »",
+          "actualizar_cliente": "Modifier le client {{cliente}} : {{cambios}}",
+          "crear_emplazamiento": "Créer le site « {{nombre}} » pour le client {{cliente}}",
+          "crear_usuario": "Ajouter l'utilisateur interne {{nombre}} ({{email}})",
+          "crear_colaborador": "Ajouter le collaborateur externe {{nombre}} ({{email}})",
+          "crear_equipo": "Créer l'équipe de travail « {{nombre}} »",
+          "asignar_usuarios_equipo_one": "Laisser l'équipe {{equipo}} avec {{count}} membre",
+          "asignar_usuarios_equipo_other": "Laisser l'équipe {{equipo}} avec {{count}} membres",
+          "otro": "Exécuter {{herramienta}}"
+        }
       }
     },
     "scan": {
@@ -3815,7 +3887,11 @@
       "fin_vida": "Fin de vie",
       "licencia_updated": "Instance mise à jour",
       "parametros_updated": "Paramètres mis à jour",
-      "pivot_updated": "Relation mise à jour"
+      "pivot_updated": "Relation mise à jour",
+      "login_failed_segundo_factor": "Échec de connexion (code de vérification)",
+      "segundo_factor_activado": "Validation en deux étapes activée",
+      "segundo_factor_desactivado": "Validation en deux étapes désactivée",
+      "segundo_factor_codigos": "Nouveaux codes de récupération"
     },
     "via": "via {{nombre}}"
   },

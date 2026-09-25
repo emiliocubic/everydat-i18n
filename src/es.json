@@ -111,6 +111,54 @@
       "subtitle": "Establece una nueva contraseña",
       "submit": "Cambiar contraseña",
       "success": "Contraseña actualizada. Ya puedes iniciar sesión."
+    },
+    "segundoFactor": {
+      "codigoLabel": "Código de verificación",
+      "codigoHint": "Escribe el código de seis cifras de tu aplicación de autenticación.",
+      "verificar": "Verificar",
+      "verificando": "Verificando...",
+      "usarRecuperacion": "Usar un código de recuperación",
+      "usarCodigo": "Usar el código de la aplicación",
+      "recuperacionLabel": "Código de recuperación",
+      "recuperacionHint": "Cada código de recuperación sirve una sola vez.",
+      "codigoMalo": "El código no es válido.",
+      "volver": "Volver",
+      "altaIntro": "Tu rol exige verificación en dos pasos. Configúrala para entrar.",
+      "altaPaso1": "Escanea este código con tu aplicación de autenticación (Google Authenticator, Microsoft Authenticator o similar).",
+      "altaManual": "¿No puedes escanearlo? Escribe esta clave:",
+      "altaPaso2": "Escribe el código de seis cifras que te da la aplicación.",
+      "activar": "Activar",
+      "activarYEntrar": "Activar y entrar",
+      "errorAlta": "No se ha podido preparar el alta.",
+      "codigosTitulo": "Códigos de recuperación",
+      "codigosIntro": "Guárdalos en un lugar seguro. Si pierdes el móvil, cada uno te deja entrar una vez. No se volverán a mostrar.",
+      "copiar": "Copiar",
+      "copiados": "Copiados",
+      "guardados": "Ya los he guardado",
+      "titulo": "Verificación en dos pasos"
+    },
+    "perfil": {
+      "titulo": "Mi perfil",
+      "contrasena": "Contraseña",
+      "contrasenaHint": "La que usas para entrar en el panel y en la app.",
+      "cambiarContrasena": "Cambiar contraseña",
+      "dosPasos": "Verificación en dos pasos",
+      "dosPasosHint": "Además de la contraseña, un código de tu móvil que cambia cada 30 segundos.",
+      "activa": "Activa desde el {{fecha}}.",
+      "inactiva": "No activa.",
+      "obligatoria": "Tu rol la exige.",
+      "codigosRestantes_one": "Te queda {{count}} código de recuperación.",
+      "codigosRestantes_other": "Te quedan {{count}} códigos de recuperación.",
+      "activar": "Activar",
+      "codigosNuevos": "Códigos de recuperación nuevos",
+      "cambiarDispositivo": "Cambiar de dispositivo",
+      "cambiarDispositivoHint": "Al continuar, el dispositivo actual deja de valer hasta que confirmes el nuevo.",
+      "desactivar": "Desactivar",
+      "confirmaPassword": "Escribe tu contraseña para continuar.",
+      "continuar": "Continuar",
+      "activada": "Verificación en dos pasos activada.",
+      "desactivada": "Verificación en dos pasos desactivada.",
+      "hecho": "Hecho"
     }
   },
   "roles": {
@@ -2885,6 +2933,30 @@
         "weekly": "Resumen semanal",
         "reviews": "Próximas revisiones",
         "report": "Generar informe"
+      },
+      "plan": {
+        "title": "Pendiente de confirmar",
+        "confirm": "Confirmar",
+        "confirming": "Aplicando…",
+        "discard": "Descartar",
+        "done": "Hecho",
+        "discarded": "Descartado: no se ha cambiado nada",
+        "failed": "No se ha aplicado nada. Falla el paso {{paso}}: {{motivo}}",
+        "error": "No he podido completar la acción. Inténtalo de nuevo.",
+        "open": "Abrir",
+        "ref": "el creado en el paso {{n}}",
+        "num": "n.º {{id}}",
+        "steps": {
+          "crear_cliente": "Crear el cliente «{{nombre}}»",
+          "actualizar_cliente": "Modificar el cliente {{cliente}}: {{cambios}}",
+          "crear_emplazamiento": "Crear el emplazamiento «{{nombre}}» en el cliente {{cliente}}",
+          "crear_usuario": "Dar de alta al usuario interno {{nombre}} ({{email}})",
+          "crear_colaborador": "Dar de alta al colaborador externo {{nombre}} ({{email}})",
+          "crear_equipo": "Crear el equipo de trabajo «{{nombre}}»",
+          "asignar_usuarios_equipo_one": "Dejar el equipo {{equipo}} con {{count}} miembro",
+          "asignar_usuarios_equipo_other": "Dejar el equipo {{equipo}} con {{count}} miembros",
+          "otro": "Ejecutar {{herramienta}}"
+        }
       }
     },
     "scan": {
@@ -3876,7 +3948,11 @@
       "fin_vida": "Fin de vida",
       "licencia_updated": "Instancia actualizada",
       "parametros_updated": "Parámetros actualizados",
-      "pivot_updated": "Relación actualizada"
+      "pivot_updated": "Relación actualizada",
+      "login_failed_segundo_factor": "Acceso fallido (código de verificación)",
+      "segundo_factor_activado": "Verificación en dos pasos activada",
+      "segundo_factor_desactivado": "Verificación en dos pasos desactivada",
+      "segundo_factor_codigos": "Códigos de recuperación nuevos"
     },
     "via": "vía {{nombre}}"
   },
