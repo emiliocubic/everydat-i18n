@@ -3604,7 +3604,14 @@
       "sinChecklistOpcion": "No checklist",
       "todo": "All {{marca}}",
       "validaHastaObligatoria": "Required for a passing inspection.",
-      "checklistPorMiembro": "One checklist per item ({{count}})"
+      "checklistPorMiembro": "One checklist per item ({{count}})",
+      "adjuntos": "Attachments",
+      "arrastra": "Drag documents here",
+      "examinar": "Browse files",
+      "subiendo": "Uploading…",
+      "alCrear": "Will upload when the inspection is created",
+      "quitarAdjunto": "Remove document",
+      "sinAdjuntos": "This inspection has no attachments."
     },
     "medida": {
       "senaliza": "Tagged as not usable",

@@ -3604,7 +3604,14 @@
       "sinChecklistOpcion": "Sin checklist",
       "todo": "Todo {{marca}}",
       "validaHastaObligatoria": "Obligatoria en una revisión apta.",
-      "checklistPorMiembro": "Un checklist por equipo ({{count}})"
+      "checklistPorMiembro": "Un checklist por equipo ({{count}})",
+      "adjuntos": "Adjuntos",
+      "arrastra": "Arrastra documentos aquí",
+      "examinar": "Examinar archivos",
+      "subiendo": "Subiendo…",
+      "alCrear": "Se subirá al crear la revisión",
+      "quitarAdjunto": "Quitar documento",
+      "sinAdjuntos": "Esta revisión no tiene adjuntos."
     },
     "medida": {
       "senaliza": "Se señaliza como no utilizable",

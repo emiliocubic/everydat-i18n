@@ -3543,7 +3543,14 @@
       "sinChecklistOpcion": "Sans checklist",
       "todo": "Tout {{marca}}",
       "validaHastaObligatoria": "Obligatoire pour un contrôle conforme.",
-      "checklistPorMiembro": "Une checklist par équipement ({{count}})"
+      "checklistPorMiembro": "Une checklist par équipement ({{count}})",
+      "adjuntos": "Pièces jointes",
+      "arrastra": "Glissez des documents ici",
+      "examinar": "Parcourir",
+      "subiendo": "Envoi…",
+      "alCrear": "Sera envoyé à la création du contrôle",
+      "quitarAdjunto": "Retirer le document",
+      "sinAdjuntos": "Ce contrôle n'a pas de pièces jointes."
     },
     "medida": {
       "senaliza": "Signalé comme non utilisable",
