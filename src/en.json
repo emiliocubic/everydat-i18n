@@ -3757,7 +3757,17 @@
       "email": "Email",
       "password": "Password",
       "entrar": "Sign in",
-      "error": "Could not sign in. Check the email and password."
+      "error": "Could not sign in. Check the email and password.",
+      "segundoFactor": {
+        "pide": "Two-step verification is on. Enter the code from your authenticator app.",
+        "pideRecuperacion": "Enter one of your recovery codes. Each one works for a single sign-in.",
+        "codigo": "Verification code",
+        "recuperacion": "Recovery code",
+        "usarRecuperacion": "Use a recovery code",
+        "usarAutenticador": "Use the authenticator app",
+        "invalido": "The code is not valid or has already been used.",
+        "alta": "Your role requires two-step verification and you have not set it up yet. Sign in to the web panel first."
+      }
     },
     "bloqueo": {
       "titulo": "Unlock",

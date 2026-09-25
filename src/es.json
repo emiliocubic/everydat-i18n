@@ -3757,7 +3757,17 @@
       "email": "Correo",
       "password": "Contraseña",
       "entrar": "Entrar",
-      "error": "No se ha podido entrar. Comprueba el correo y la contraseña."
+      "error": "No se ha podido entrar. Comprueba el correo y la contraseña.",
+      "segundoFactor": {
+        "pide": "Tienes activada la verificación en dos pasos. Escribe el código de tu aplicación de autenticación.",
+        "pideRecuperacion": "Escribe uno de tus códigos de recuperación. Cada uno vale para una sola entrada.",
+        "codigo": "Código de verificación",
+        "recuperacion": "Código de recuperación",
+        "usarRecuperacion": "Usar un código de recuperación",
+        "usarAutenticador": "Usar la aplicación de autenticación",
+        "invalido": "El código no es válido o ya se ha usado.",
+        "alta": "Tu rol exige la verificación en dos pasos y aún no la has configurado. Entra primero desde el panel web."
+      }
     },
     "bloqueo": {
       "titulo": "Desbloquear",

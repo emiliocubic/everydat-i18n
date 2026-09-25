@@ -3696,7 +3696,17 @@
       "email": "E-mail",
       "password": "Mot de passe",
       "entrar": "Entrer",
-      "error": "Connexion impossible. Vérifiez l'e-mail et le mot de passe."
+      "error": "Connexion impossible. Vérifiez l'e-mail et le mot de passe.",
+      "segundoFactor": {
+        "pide": "La vérification en deux étapes est activée. Saisissez le code de votre application d'authentification.",
+        "pideRecuperacion": "Saisissez l'un de vos codes de récupération. Chacun ne sert qu'une seule fois.",
+        "codigo": "Code de vérification",
+        "recuperacion": "Code de récupération",
+        "usarRecuperacion": "Utiliser un code de récupération",
+        "usarAutenticador": "Utiliser l'application d'authentification",
+        "invalido": "Le code n'est pas valide ou a déjà été utilisé.",
+        "alta": "Votre rôle exige la vérification en deux étapes et vous ne l'avez pas encore configurée. Connectez-vous d'abord au panneau web."
+      }
     },
     "bloqueo": {
       "titulo": "Déverrouiller",
