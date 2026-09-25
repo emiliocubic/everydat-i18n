@@ -943,7 +943,8 @@
         "ultimaRes": "Resultado",
         "revisor": "Revisor",
         "notaRev": "Nota de la revisión",
-        "cobertura": "Visita planificada"
+        "cobertura": "Visita planificada",
+        "familia": "Familia"
       },
       "grupos": {
         "familia": "Familia",

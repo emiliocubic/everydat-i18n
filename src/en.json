@@ -1058,7 +1058,8 @@
         "ultimaRes": "Result",
         "revisor": "Inspector",
         "notaRev": "Inspection note",
-        "cobertura": "Planned visit"
+        "cobertura": "Planned visit",
+        "familia": "Family"
       },
       "grupos": {
         "familia": "Family",

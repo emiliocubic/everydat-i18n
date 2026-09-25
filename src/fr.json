@@ -1021,7 +1021,8 @@
         "ultimaRes": "Résultat",
         "revisor": "Inspecteur",
         "notaRev": "Note d'inspection",
-        "cobertura": "Visite planifiée"
+        "cobertura": "Visite planifiée",
+        "familia": "Famille"
       },
       "grupos": {
         "familia": "Famille",
