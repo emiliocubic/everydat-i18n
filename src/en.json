@@ -273,7 +273,8 @@
       "next": "Next",
       "first": "First",
       "last": "Last"
-    }
+    },
+    "filtroFijo": "{{campo}}: {{valor}}"
   },
   "roles": {
     "title": "Roles",
@@ -1379,7 +1380,9 @@
         "conUsuarios": "Manages users: sees the Users menu.",
         "sinUsuarios": "Does not manage users: no Users menu."
       }
-    }
+    },
+    "impersonate": "Impersonate",
+    "impersonateConfirm": "Impersonate {{nombre}}?"
   },
   "emplazamientos": {
     "title": "Sites",
@@ -1720,6 +1723,9 @@
       "nombre": "Name",
       "descripcion": "Description",
       "usuarios": "Members"
+    },
+    "grupos": {
+      "contadores": "Counters"
     }
   },
   "cfg": {

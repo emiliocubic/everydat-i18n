@@ -273,7 +273,8 @@
       "next": "Suivant",
       "first": "Première",
       "last": "Dernière"
-    }
+    },
+    "filtroFijo": "{{campo}} : {{valor}}"
   },
   "roles": {
     "title": "Rôles",
@@ -1341,7 +1342,9 @@
         "conUsuarios": "Gère les utilisateurs : voit le menu Utilisateurs.",
         "sinUsuarios": "Ne gère pas les utilisateurs : pas de menu Utilisateurs."
       }
-    }
+    },
+    "impersonate": "Emprunter l'identité",
+    "impersonateConfirm": "Emprunter l'identité de {{nombre}} ?"
   },
   "emplazamientos": {
     "title": "Sites",
@@ -1671,6 +1674,9 @@
       "nombre": "Nom",
       "descripcion": "Description",
       "usuarios": "Membres"
+    },
+    "grupos": {
+      "contadores": "Compteurs"
     }
   },
   "cfg": {

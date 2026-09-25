@@ -1265,7 +1265,9 @@
         "conUsuarios": "Gestiona usuarios: ve el menú Usuarios.",
         "sinUsuarios": "No gestiona usuarios: no ve el menú Usuarios."
       }
-    }
+    },
+    "impersonate": "Impersonar",
+    "impersonateConfirm": "¿Impersonar a {{nombre}}?"
   },
   "emplazamientos": {
     "title": "Emplazamientos",
@@ -1686,7 +1688,8 @@
       "next": "Siguiente",
       "first": "Primera",
       "last": "Última"
-    }
+    },
+    "filtroFijo": "{{campo}}: {{valor}}"
   },
   "gruposClientes": {
     "title": "Grupos de clientes",
@@ -1720,6 +1723,9 @@
       "nombre": "Nombre",
       "descripcion": "Descripción",
       "usuarios": "Miembros"
+    },
+    "grupos": {
+      "contadores": "Contadores"
     }
   },
   "cfg": {
