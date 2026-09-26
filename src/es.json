@@ -1435,6 +1435,69 @@
     },
     "mapa": {
       "abrir": "Abrir en mapa"
+    },
+    "cesta": {
+      "titulo": "Recepción de equipos",
+      "sub": "Equipos que el cliente entrega en oficina · {{nombre}}",
+      "nEnCesta_one": "{{count}} en la cesta",
+      "nEnCesta_other": "{{count}} en la cesta",
+      "placeholder": "Escanea o escribe el código del equipo…",
+      "codigo": "Código del equipo",
+      "enLaCesta": "En la cesta",
+      "hace_one": "hace {{count}} día",
+      "hace_other": "hace {{count}} días",
+      "hoy": "hoy",
+      "en_one": "en {{count}} día",
+      "en_other": "en {{count}} días",
+      "tramo": {
+        "cad": "Caducado",
+        "p30": "Vence en 30 días o menos",
+        "p90": "Vence en 90 días o menos",
+        "ok": "En plazo"
+      },
+      "aviso": {
+        "recibido": "Recibido · {{equipo}}",
+        "yaEnCesta": "{{equipo}} ya está en la cesta",
+        "enRevision": "{{equipo}} ya está en un proyecto de revisión en curso: no se añade",
+        "noEncontrado": "Ningún equipo de este emplazamiento con el código «{{codigo}}»",
+        "varios_one": "{{count}} equipo lleva ese código: elígelo en la lista",
+        "varios_other": "{{count}} equipos llevan ese código: elige cuál en la lista"
+      },
+      "resumen": {
+        "cad_one": "caducado",
+        "cad_other": "caducados",
+        "p30": "≤ 30 d",
+        "prog_one": "con revisión programada",
+        "prog_other": "con revisión programada",
+        "norev_one": "no revisable",
+        "norev_other": "no revisables"
+      },
+      "programada": "Programada {{fecha}}",
+      "programadaHint": "Tiene una revisión programada; se revisará igualmente en este proyecto",
+      "noRevisable": "No revisable",
+      "noRevisableHint": "Fin de vida útil o no apto: se sustituye, no se revisa",
+      "vacia": "Escanea o teclea el código de cada equipo que entrega el cliente.",
+      "cols": {
+        "estado": "Estado",
+        "elemento": "Elemento",
+        "codigo": "Código",
+        "localizacion": "Localización",
+        "proxRevision": "Próx. revisión"
+      },
+      "quitar": "Quitar de la cesta",
+      "quitarEquipo": "Quitar {{equipo}}",
+      "pie": "Se crea un proyecto de revisión ya en curso, sin propuesta ni presupuesto.",
+      "vaciar": "Vaciar cesta",
+      "crear": "Crear proyecto de revisión",
+      "crearN": "Crear proyecto de revisión · {{count}}",
+      "creado_one": "Proyecto de revisión creado en curso · {{count}} equipo recibido en oficina",
+      "creado_other": "Proyecto de revisión creado en curso · {{count}} equipos recibidos en oficina",
+      "recibirSeleccion": "Recibir en la cesta",
+      "recibidos_one": "{{count}} equipo recibido en la cesta",
+      "recibidos_other": "{{count}} equipos recibidos en la cesta",
+      "omitidos_one": "{{count}} omitido (descatalogado o ya en revisión)",
+      "omitidos_other": "{{count}} omitidos (descatalogados o ya en revisión)",
+      "abrir": "Abrir la cesta"
     }
   },
   "localizaciones": {
@@ -3093,7 +3156,8 @@
       "zona": "Zona planificada",
       "emplazamiento": "Emplazamiento planificado",
       "cierre_revision": "Revisión anterior",
-      "sobrevenido": "Puesto en revisión desde el árbol"
+      "sobrevenido": "Puesto en revisión desde el árbol",
+      "recepcion": "Recepción en oficina"
     },
     "nuevo": {
       "cta": "Nuevo proyecto",
@@ -3180,7 +3244,9 @@
       "anadirDocHint": "PDF, DOCX, imagen…",
       "docSubido": "Documento anexado al proyecto.",
       "docQuitado": "Documento quitado.",
-      "quitarDocConfirm": "¿Quitar «{{nombre}}» del proyecto?"
+      "quitarDocConfirm": "¿Quitar «{{nombre}}» del proyecto?",
+      "nRecibidos_one": "{{count}} equipo recibido en oficina",
+      "nRecibidos_other": "{{count}} equipos recibidos en oficina"
     },
     "planificacion": {
       "ventana": "Ventana de ejecución",

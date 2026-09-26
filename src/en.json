@@ -1550,6 +1550,69 @@
     },
     "mapa": {
       "abrir": "Open in maps"
+    },
+    "cesta": {
+      "titulo": "Equipment drop-off",
+      "sub": "Equipment the customer hands in at the office · {{nombre}}",
+      "nEnCesta_one": "{{count}} in the basket",
+      "nEnCesta_other": "{{count}} in the basket",
+      "placeholder": "Scan or type the equipment code…",
+      "codigo": "Equipment code",
+      "enLaCesta": "In the basket",
+      "hace_one": "{{count}} day ago",
+      "hace_other": "{{count}} days ago",
+      "hoy": "today",
+      "en_one": "in {{count}} day",
+      "en_other": "in {{count}} days",
+      "tramo": {
+        "cad": "Expired",
+        "p30": "Due in 30 days or less",
+        "p90": "Due in 90 days or less",
+        "ok": "On time"
+      },
+      "aviso": {
+        "recibido": "Received · {{equipo}}",
+        "yaEnCesta": "{{equipo}} is already in the basket",
+        "enRevision": "{{equipo}} is already in an inspection project in progress: not added",
+        "noEncontrado": "No equipment on this site with the code “{{codigo}}”",
+        "varios_one": "{{count}} item carries that code: pick it from the list",
+        "varios_other": "{{count}} items carry that code: pick one from the list"
+      },
+      "resumen": {
+        "cad_one": "expired",
+        "cad_other": "expired",
+        "p30": "≤ 30 d",
+        "prog_one": "with a scheduled inspection",
+        "prog_other": "with a scheduled inspection",
+        "norev_one": "not inspectable",
+        "norev_other": "not inspectable"
+      },
+      "programada": "Scheduled {{fecha}}",
+      "programadaHint": "It has a scheduled inspection; it will be inspected in this project anyway",
+      "noRevisable": "Not inspectable",
+      "noRevisableHint": "End of service life or failed: it is replaced, not inspected",
+      "vacia": "Scan or type the code of each item the customer hands in.",
+      "cols": {
+        "estado": "Status",
+        "elemento": "Item",
+        "codigo": "Code",
+        "localizacion": "Location",
+        "proxRevision": "Next inspection"
+      },
+      "quitar": "Remove from the basket",
+      "quitarEquipo": "Remove {{equipo}}",
+      "pie": "An inspection project is created already in progress, with no proposal or quote.",
+      "vaciar": "Empty basket",
+      "crear": "Create inspection project",
+      "crearN": "Create inspection project · {{count}}",
+      "creado_one": "Inspection project created in progress · {{count}} item received at the office",
+      "creado_other": "Inspection project created in progress · {{count}} items received at the office",
+      "recibirSeleccion": "Receive in the basket",
+      "recibidos_one": "{{count}} item received in the basket",
+      "recibidos_other": "{{count}} items received in the basket",
+      "omitidos_one": "{{count}} skipped (retired or already under inspection)",
+      "omitidos_other": "{{count}} skipped (retired or already under inspection)",
+      "abrir": "Open the basket"
     }
   },
   "localizaciones": {
@@ -3093,7 +3156,8 @@
       "zona": "Scheduled zone",
       "emplazamiento": "Scheduled site",
       "cierre_revision": "Previous inspection",
-      "sobrevenido": "Started from the tree"
+      "sobrevenido": "Started from the tree",
+      "recepcion": "Office drop-off"
     },
     "nuevo": {
       "cta": "New project",
@@ -3180,7 +3244,9 @@
       "anadirDocHint": "PDF, DOCX, image…",
       "docSubido": "Document attached to the project.",
       "docQuitado": "Document removed.",
-      "quitarDocConfirm": "Remove “{{nombre}}” from the project?"
+      "quitarDocConfirm": "Remove “{{nombre}}” from the project?",
+      "nRecibidos_one": "{{count}} item received at the office",
+      "nRecibidos_other": "{{count}} items received at the office"
     },
     "planificacion": {
       "ventana": "Execution window",

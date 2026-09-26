@@ -1501,6 +1501,69 @@
     },
     "mapa": {
       "abrir": "Ouvrir sur la carte"
+    },
+    "cesta": {
+      "titulo": "Réception des équipements",
+      "sub": "Équipements que le client dépose au bureau · {{nombre}}",
+      "nEnCesta_one": "{{count}} dans le panier",
+      "nEnCesta_other": "{{count}} dans le panier",
+      "placeholder": "Scannez ou saisissez le code de l’équipement…",
+      "codigo": "Code de l’équipement",
+      "enLaCesta": "Dans le panier",
+      "hace_one": "il y a {{count}} jour",
+      "hace_other": "il y a {{count}} jours",
+      "hoy": "aujourd’hui",
+      "en_one": "dans {{count}} jour",
+      "en_other": "dans {{count}} jours",
+      "tramo": {
+        "cad": "Expiré",
+        "p30": "Échéance dans 30 jours ou moins",
+        "p90": "Échéance dans 90 jours ou moins",
+        "ok": "Dans les délais"
+      },
+      "aviso": {
+        "recibido": "Reçu · {{equipo}}",
+        "yaEnCesta": "{{equipo}} est déjà dans le panier",
+        "enRevision": "{{equipo}} est déjà dans un projet de contrôle en cours : non ajouté",
+        "noEncontrado": "Aucun équipement de ce site avec le code « {{codigo}} »",
+        "varios_one": "{{count}} équipement porte ce code : choisissez-le dans la liste",
+        "varios_other": "{{count}} équipements portent ce code : choisissez dans la liste"
+      },
+      "resumen": {
+        "cad_one": "expiré",
+        "cad_other": "expirés",
+        "p30": "≤ 30 j",
+        "prog_one": "avec un contrôle programmé",
+        "prog_other": "avec un contrôle programmé",
+        "norev_one": "non contrôlable",
+        "norev_other": "non contrôlables"
+      },
+      "programada": "Programmé {{fecha}}",
+      "programadaHint": "Il a un contrôle programmé ; il sera tout de même contrôlé dans ce projet",
+      "noRevisable": "Non contrôlable",
+      "noRevisableHint": "Fin de vie ou non conforme : il se remplace, il ne se contrôle pas",
+      "vacia": "Scannez ou saisissez le code de chaque équipement déposé par le client.",
+      "cols": {
+        "estado": "État",
+        "elemento": "Élément",
+        "codigo": "Code",
+        "localizacion": "Emplacement",
+        "proxRevision": "Proch. contrôle"
+      },
+      "quitar": "Retirer du panier",
+      "quitarEquipo": "Retirer {{equipo}}",
+      "pie": "Un projet de contrôle est créé déjà en cours, sans proposition ni devis.",
+      "vaciar": "Vider le panier",
+      "crear": "Créer le projet de contrôle",
+      "crearN": "Créer le projet de contrôle · {{count}}",
+      "creado_one": "Projet de contrôle créé en cours · {{count}} équipement reçu au bureau",
+      "creado_other": "Projet de contrôle créé en cours · {{count}} équipements reçus au bureau",
+      "recibirSeleccion": "Recevoir dans le panier",
+      "recibidos_one": "{{count}} équipement reçu dans le panier",
+      "recibidos_other": "{{count}} équipements reçus dans le panier",
+      "omitidos_one": "{{count}} ignoré (retiré ou déjà en contrôle)",
+      "omitidos_other": "{{count}} ignorés (retirés ou déjà en contrôle)",
+      "abrir": "Ouvrir le panier"
     }
   },
   "localizaciones": {
@@ -3044,7 +3107,8 @@
       "zona": "Zone planifiée",
       "emplazamiento": "Site planifié",
       "cierre_revision": "Vérification précédente",
-      "sobrevenido": "Mis en contrôle depuis l'arbre"
+      "sobrevenido": "Mis en contrôle depuis l'arbre",
+      "recepcion": "Réception au bureau"
     },
     "nuevo": {
       "cta": "Nouveau projet",
@@ -3131,7 +3195,9 @@
       "anadirDocHint": "PDF, DOCX, image…",
       "docSubido": "Document joint au projet.",
       "docQuitado": "Document retiré.",
-      "quitarDocConfirm": "Retirer « {{nombre}} » du projet ?"
+      "quitarDocConfirm": "Retirer « {{nombre}} » du projet ?",
+      "nRecibidos_one": "{{count}} équipement reçu au bureau",
+      "nRecibidos_other": "{{count}} équipements reçus au bureau"
     },
     "planificacion": {
       "ventana": "Fenêtre d'exécution",
