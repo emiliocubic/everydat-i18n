@@ -2960,6 +2960,15 @@
         "ventana": "Default range of the sales views",
         "meses": "months",
         "hint": "Discarding by expiry is done by a daily sweep and is logged as automatic. The range is only the starting value: each person changes it on screen."
+      },
+      "grupoInformes": "Reports",
+      "informes": {
+        "titulo": "How reports are printed",
+        "desc": "Applies to every report issued from now on; reports already issued do not change.",
+        "anonimizar": "Anonymise inspectors",
+        "anonimizarHint": "Inspectors with an account appear by their alias. The signatory always appears by name.",
+        "nacional": "National designation of the standard",
+        "nacionalHint": "Next to the EN edition, in brackets, the one of the site's country (UNE, NF…) if it exists."
       }
     },
     "caracterizacion": {

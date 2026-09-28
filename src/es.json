@@ -2960,6 +2960,15 @@
         "ventana": "Ventana de las vistas comerciales",
         "meses": "meses",
         "hint": "El descarte por caducidad lo hace un barrido diario y queda anotado como automático. La ventana es solo el valor de partida: cada persona la cambia en la pantalla."
+      },
+      "grupoInformes": "Informes",
+      "informes": {
+        "titulo": "Cómo se imprimen los informes",
+        "desc": "Afecta a todos los informes que se emitan desde ahora; los ya emitidos no cambian.",
+        "anonimizar": "Anonimizar a los revisores",
+        "anonimizarHint": "Los revisores con cuenta salen por su alias. El firmante sale siempre con su nombre.",
+        "nacional": "Designación nacional de la norma",
+        "nacionalHint": "Junto a la edición EN, entre paréntesis, la del país de la obra (UNE, NF…) si existe."
       }
     },
     "caracterizacion": {
