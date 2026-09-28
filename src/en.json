@@ -1780,7 +1780,7 @@
       "administrador": "Project manager",
       "fecha": "Start date",
       "fechaHoy": "Starts right away.",
-      "fechaFutura": "Stays planned and starts by itself on that date.",
+      "fechaFutura": "It stays approved and starts on its own when the date arrives.",
       "nombre": "Project name",
       "notas": "Notes",
       "pie": "The project is closed from the projects screen.",
@@ -2991,6 +2991,18 @@
         "anonimizarHint": "Inspectors with an account appear by their alias. The signatory always appears by name.",
         "nacional": "National designation of the standard",
         "nacionalHint": "Next to the EN edition, in brackets, the one of the site's country (UNE, NF…) if it exists."
+      },
+      "sello": {
+        "titulo": "Electronic seal",
+        "desc": "The company's .p12 certificate to sign reports issued with «Sign». Without a seal, reports are issued anyway, unsigned. The password is stored encrypted and never shown again.",
+        "sinSello": "No seal configured.",
+        "titular": "Holder",
+        "caduca": "Valid until",
+        "caducado": "The certificate has expired: reports will be signed with an invalid seal.",
+        "fichero": "Certificate (.p12 or .pfx)",
+        "clave": "Certificate password",
+        "quitar": "Remove the seal",
+        "quitarConfirmar": "Remove the seal? Reports will no longer be signed. What is already signed does not change."
       }
     },
     "caracterizacion": {
@@ -3255,7 +3267,10 @@
       "ejecucion_paralizada": "Execution paused",
       "en_certificacion": "In certification",
       "finalizado": "Closed",
-      "descartado": "Dropped"
+      "descartado": "Dropped",
+      "abierto": "Open",
+      "cerrado": "Closed",
+      "cancelado": "Cancelled"
     },
     "tipo": {
       "instalacion": "Installation",
@@ -3270,7 +3285,8 @@
       "emplazamiento": "Scheduled site",
       "cierre_revision": "Previous inspection",
       "sobrevenido": "Started from the tree",
-      "recepcion": "Office drop-off"
+      "recepcion": "Office drop-off",
+      "propuesta": "Accepted proposal"
     },
     "nuevo": {
       "cta": "New project",
@@ -3284,7 +3300,11 @@
       "otroHint": "Work from another area: no equipment census and it does not chain the next cycle.",
       "buscarCliente": "Search client…",
       "buscarEmplazamiento": "Search site…",
-      "antesCliente": "Select the client first"
+      "antesCliente": "Select the client first",
+      "zona": "Only zone {{zona}}, the one with the inspection date.",
+      "finAntes": "The planned end cannot be earlier than the start.",
+      "orientativas": "Dates are approximate",
+      "orientativasHint": "When checked, the project does not start on its own when the start date arrives: someone has to press «Start now» once it is known."
     },
     "title": "Projects",
     "volver": "Back to list",
@@ -3405,7 +3425,24 @@
       "seleccionadas": "{{count}} person selected",
       "seleccionadas_other": "{{count}} people selected",
       "hecho": "Done",
-      "sinInternos": "There are no internal users to assign."
+      "sinInternos": "There are no internal users to assign.",
+      "orientativas": "Dates are tentative: do not start automatically on the start date",
+      "reglaOrientativas": "The dates are an estimate: the project waits until someone clicks “Start now”.",
+      "reglaSinAdmin": "Without a manager it will not start: assign one under “Assigned staff”.",
+      "barra": {
+        "titulo": "Planning",
+        "vacia": "No dates and no manager.",
+        "faltaAdmin": "Dates set; manager missing.",
+        "faltanFechas": "Manager assigned; dates missing.",
+        "completa": "Dates and manager: ready to start."
+      },
+      "nota": {
+        "en_ejecucion": "The project is in progress. Any change to the window or the staff affects a schedule that is already running.",
+        "paralizado": "The project is stopped. The window and the staff are kept until someone resumes it.",
+        "en_certificacion": "Field work finished: the project is in certification. Planning is now for reference only.",
+        "cerrado": "Project closed: planning is kept as a record, read-only.",
+        "cancelado": "Project cancelled:"
+      }
     },
     "ejecucion": {
       "kpiRevisiones": "Inspections",
@@ -3451,7 +3488,9 @@
       "colSerie": "Serial no.",
       "colRevision": "Inspection",
       "abrirRevision": "Open the inspection",
-      "registrarRevision": "Record the inspection"
+      "registrarRevision": "Record the inspection",
+      "parado": "Stopped since {{fecha}} ({{count}} day).",
+      "parado_other": "Stopped since {{fecha}} ({{count}} days)."
     },
     "certificacion": {
       "progreso": "Certification",
@@ -3534,7 +3573,10 @@
       "sinResultados": "No results",
       "sinResultadosHint": "No project action matches the active filters.",
       "corregirTitle": "Click to correct",
-      "reabierta": "Certification is open again."
+      "reabierta": "Certification is open again.",
+      "cerradoBadge": "Project closed",
+      "roCerrado": "The project is closed: certification is read-only.",
+      "roCancelado": "The project is cancelled: certification is read-only."
     },
     "vistas": {
       "futuros": "Upcoming",
@@ -3761,6 +3803,12 @@
         "colProducto": "Product",
         "sinCatalogo": "There are no products in the catalogue. They are set up in Configuration, general parameters.",
         "vacioRo": "This version does not include other products."
+      },
+      "estadoComercial": {
+        "abierta": "Open",
+        "aceptada": "Accepted",
+        "descartada": "Discarded",
+        "caducada": "Expired"
       }
     },
     "sinNombre": "Unnamed",
@@ -3789,13 +3837,191 @@
     },
     "suma": {
       "descartados": "Discarded amount",
-      "finalizados": "Executed amount"
+      "finalizados": "Executed amount",
+      "perdidos": "Lost amount"
     },
     "arranque": {
       "auto": "Automatic",
       "manual": "Manual"
     },
-    "sinVentana": "no window"
+    "sinVentana": "no window",
+    "enMarcha": "Running",
+    "paralizado": "Halted",
+    "fase": {
+      "aprobado": "Approved",
+      "en_ejecucion": "In progress",
+      "en_certificacion": "In certification"
+    },
+    "listas": {
+      "cols": {
+        "clase": "Type",
+        "alcance": "Scope",
+        "planificacion": "Planning",
+        "inicio": "Start",
+        "finCampo": "Fieldwork end",
+        "motivo": "Reason"
+      },
+      "clase": {
+        "fecha": "Date",
+        "propuesta": "Proposal",
+        "proyecto": "Project"
+      },
+      "pestana": {
+        "aprobado": "Approved",
+        "en_ejecucion": "In progress",
+        "en_certificacion": "Certification"
+      },
+      "hint": {
+        "aprobado": "Committed work being planned: the bar shows whether it already has dates and an owner. It starts on its own when the start date arrives, unless the dates are approximate.",
+        "en_ejecucion": "On site: actual progress, the team and the planned end. Halted projects stay here, with their red pill and the days they have been halted.",
+        "en_certificacion": "Fieldwork finished, pending validation of what was done."
+      },
+      "enCursoHint": "Nothing in this phase with these filters.",
+      "finalizadosHint": "Closed projects.",
+      "generalHint": "Everything open: inspection dates without a proposal, open proposals and open projects.",
+      "buscarGeneral": "Search by client, site or project…",
+      "buscarPerdidos": "Search by client, site or reason…",
+      "todosEmplazamientos": "All sites",
+      "zonaSinNombre": "Unnamed zone",
+      "sinAlcance": "No site",
+      "sinDocumento": "No document",
+      "version": "v{{numero}} · {{estado}}",
+      "vencida": "Overdue",
+      "caducada": "Expired",
+      "descartada": "Discarded",
+      "orientativas": "Approximate",
+      "orientativasTitle": "Approximate dates: it does not start on its own on the start date",
+      "plan": {
+        "vacia": "Not planned",
+        "faltaAdmin": "No owner yet",
+        "faltanFechas": "No dates yet",
+        "completa": "Planned"
+      },
+      "mes": "Month of year",
+      "mesTitle": "What had its planned date in that month, in any year",
+      "perdidosVacio": "Nothing lost with these filters",
+      "perdidosHint": "Discarded or expired proposals and cancelled projects: the list for winning back business."
+    },
+    "oportunidades": {
+      "title": "Opportunities",
+      "pestana": {
+        "fechas": "Dates without proposal",
+        "propuestas": "Proposals"
+      },
+      "hint": {
+        "fechas": "Inspection dates within the window, or overdue for less than {{count}} month, not covered by any proposal or project. Select several from the same client to group them in a single proposal.",
+        "fechas_other": "Inspection dates within the window, or overdue for less than {{count}} months, not covered by any proposal or project. Select several from the same client to group them in a single proposal.",
+        "propuestas": "Open proposals, with or without a document: the sales folder with its notes, its probability and, when the time comes, the quote."
+      },
+      "cols": {
+        "fecha": "Next inspection"
+      },
+      "buscarFechas": "Search by client, site or zone…",
+      "buscarPropuestas": "Search by client or site…",
+      "fechasVacio": "No dates without a proposal in this window",
+      "fechasVacioHint": "Inspection dates are set on the site or on its zones.",
+      "propuestasVacio": "No open proposals",
+      "propuestasVacioHint": "A proposal is born from a date: by logging a contact with the client or by creating it.",
+      "anotar": "Log",
+      "anotarTitle": "Log a contact with the client: the proposal is created with the note inside",
+      "anotarPregunta": "What did you discuss with the client about {{emplazamiento}}?",
+      "anotada": "Note saved: the date moves to «Proposals».",
+      "proponer": "Proposal",
+      "proponerTitle": "Create the proposal for this date",
+      "proponerVarias": "Create one proposal with the selected dates",
+      "mezclaClientes": "The selected dates belong to several clients, and a proposal is for a single client.",
+      "proyectar": "Project",
+      "proyectarTitle": "Create the project directly, without a proposal (under contract)"
+    },
+    "accion": {
+      "arrancar": "Start now",
+      "parar": "Stop",
+      "reanudar": "Resume",
+      "pasar_certificacion": "Move to certification",
+      "cerrar": "Close project",
+      "cancelar": "Cancel project",
+      "reabrir": "Reopen",
+      "faltaMotivo": "A reason is required: it is shown later in the list and on the record.",
+      "pregunta": {
+        "parar": "Why is the project being stopped? It is shown later in the list and on the record.",
+        "cancelar": "Why is the project being cancelled? Its inspections and notes are kept, and the reason is shown under Lost."
+      },
+      "confirmar": {
+        "pasar_certificacion": "Field work is considered finished and the project moves to certification, even if some equipment has not been inspected.",
+        "cerrar": "The project will be closed. If it is an inspection project, what was inspected gets its next inspection date in the tree."
+      },
+      "hecho": {
+        "arrancar": "The project starts today: it moves to “In progress”.",
+        "parar": "Project stopped.",
+        "reanudar": "Project resumed.",
+        "pasar_certificacion": "The project moves to “In certification”.",
+        "cerrar": "Project closed.",
+        "cancelar": "Project cancelled.",
+        "reabrir": "The project is open again."
+      },
+      "pista": {
+        "pasar_certificacion": "Field work is finished",
+        "cerrar": "The work is finished"
+      }
+    },
+    "ficha": {
+      "paralizado": "Stopped · {{count}} day",
+      "paralizado_other": "Stopped · {{count}} days",
+      "eliminarConfirm": "The project will be deleted. This is only possible if no work has been recorded; otherwise, cancel it. Continue?",
+      "eliminado": "Project deleted.",
+      "propuestaN": "Proposal no. {{id}}",
+      "abrirPropuesta": "Open the proposal",
+      "motivoCancelacion": "Cancellation reason"
+    },
+    "fichaPropuesta": {
+      "titulo": "Proposal",
+      "datos": "Proposal details",
+      "fechaPrevista": "Expected date",
+      "proyectos": "Projects",
+      "sinProyectosAbierta": "They are created when the proposal is accepted: one per site in scope.",
+      "sinProyectos": "The proposal did not create any project.",
+      "sinPermiso": "Proposals can only be viewed with the sales management permission.",
+      "sinDocumento": "The proposal has no document yet: it is the folder for notes and probability. When it is time to quote, compose it here or upload an external one.",
+      "sinGuardar": "The inspection block comes preloaded with the proposal scope. Until you save, the proposal still has no document.",
+      "sinAlcance": "The proposal does not cover any site",
+      "sinAlcanceHint": "To quote the inspection from a site, add it to the scope. If it is not registered yet, compose the block manually by entering units per type.",
+      "fueraDeAlcance": "No site in scope",
+      "aviso100": "A 100% probability marks the current version as ACCEPTED. Projects are created by accepting the proposal, top right.",
+      "descartar": "Discard",
+      "descartarPregunta": "Why is the proposal being discarded? The reason is shown later under Lost.",
+      "descartada": "Proposal discarded.",
+      "eliminarConfirm": "The proposal and its notes will be deleted. This is for one created by mistake: one that is going nowhere should be discarded. Continue?",
+      "noEliminable": "With generated versions or created projects the proposal can no longer be deleted: discard it instead.",
+      "notaAceptada": "Proposal accepted on {{fecha}}: it is now read-only.",
+      "notaDescartada": "Proposal discarded on {{fecha}}:",
+      "aceptada_zero": "Proposal accepted, with no projects to create.",
+      "aceptada": "Proposal accepted: {{count}} project has been created.",
+      "aceptada_other": "Proposal accepted: {{count}} projects have been created.",
+      "alcance": {
+        "titulo": "Scope",
+        "sub": "Sites and zones covered",
+        "vacio": "No site: a supply, or a site not registered yet.",
+        "anadir": "Add site",
+        "elegir": "Choose one of the client's sites…",
+        "zona": "Zone",
+        "quitar": "Remove from scope"
+      },
+      "aceptar": {
+        "boton": "Accept · create projects",
+        "titulo": "Accept the proposal",
+        "lead": "The client has said yes: the proposal is accepted and one open project is created per site, with the expected date as a tentative start.",
+        "naceran": "One project will be created at:",
+        "naceran_other": "{{count}} projects will be created, one per site:",
+        "emplazamiento": "Project site",
+        "sinAlcance": "The proposal does not cover any site, and a project always belongs to one: choose where the work is done.",
+        "tipos": "Project type",
+        "sinProyectos": "Accept without creating projects (it is only delivering something, a supply)",
+        "soloAceptar": "Accept without projects",
+        "crear": "Accept and create the project",
+        "crear_other": "Accept and create {{count}} projects",
+        "sinPermiso": "Accepting creates projects: the create projects permission is required."
+      }
+    }
   },
   "revisiones": {
     "resultado": {

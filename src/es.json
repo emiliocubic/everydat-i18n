@@ -1665,7 +1665,7 @@
       "administrador": "Administrador del proyecto",
       "fecha": "Fecha de inicio",
       "fechaHoy": "Arranca en el acto.",
-      "fechaFutura": "Queda planificado y arranca solo al llegar la fecha.",
+      "fechaFutura": "Queda aprobado y arranca solo al llegar la fecha.",
       "nombre": "Nombre del proyecto",
       "notas": "Notas",
       "pie": "El proyecto se cierra desde la pantalla de proyectos.",
@@ -2991,6 +2991,18 @@
         "anonimizarHint": "Los revisores con cuenta salen por su alias. El firmante sale siempre con su nombre.",
         "nacional": "Designación nacional de la norma",
         "nacionalHint": "Junto a la edición EN, entre paréntesis, la del país de la obra (UNE, NF…) si existe."
+      },
+      "sello": {
+        "titulo": "Sello electrónico",
+        "desc": "Certificado .p12 de la empresa para firmar los informes que se emitan con «Firmar». Sin sello, los informes salen igual, sin firma. La contraseña se guarda cifrada y no se vuelve a enseñar.",
+        "sinSello": "No hay sello configurado.",
+        "titular": "Titular",
+        "caduca": "Válido hasta",
+        "caducado": "El certificado ha caducado: los informes se firmarán con un sello no válido.",
+        "fichero": "Certificado (.p12 o .pfx)",
+        "clave": "Contraseña del certificado",
+        "quitar": "Quitar el sello",
+        "quitarConfirmar": "¿Quitar el sello? Los informes dejarán de firmarse. Lo ya firmado no cambia."
       }
     },
     "caracterizacion": {
@@ -3255,7 +3267,10 @@
       "ejecucion_paralizada": "Ejecución paralizada",
       "en_certificacion": "En certificación",
       "finalizado": "Finalizado",
-      "descartado": "Descartado"
+      "descartado": "Descartado",
+      "abierto": "Abierto",
+      "cerrado": "Cerrado",
+      "cancelado": "Cancelado"
     },
     "tipo": {
       "instalacion": "Instalación",
@@ -3270,7 +3285,8 @@
       "emplazamiento": "Emplazamiento planificado",
       "cierre_revision": "Revisión anterior",
       "sobrevenido": "Puesto en revisión desde el árbol",
-      "recepcion": "Recepción en oficina"
+      "recepcion": "Recepción en oficina",
+      "propuesta": "Propuesta aceptada"
     },
     "nuevo": {
       "cta": "Nuevo proyecto",
@@ -3284,7 +3300,11 @@
       "otroHint": "Un trabajo de otra área: no lleva censo de equipos ni encadena el ciclo siguiente.",
       "buscarCliente": "Buscar cliente…",
       "buscarEmplazamiento": "Buscar emplazamiento…",
-      "antesCliente": "Selecciona antes el cliente"
+      "antesCliente": "Selecciona antes el cliente",
+      "zona": "Solo la zona {{zona}}, la de la fecha de revisión.",
+      "finAntes": "El fin previsto no puede ser anterior al inicio.",
+      "orientativas": "Las fechas son orientativas",
+      "orientativasHint": "Marcado, el proyecto no arranca solo al llegar el inicio: habrá que pulsar «Arrancar ahora» cuando se sepa."
     },
     "title": "Proyectos",
     "volver": "Volver al listado",
@@ -3405,7 +3425,24 @@
       "seleccionadas": "{{count}} persona seleccionada",
       "seleccionadas_other": "{{count}} personas seleccionadas",
       "hecho": "Hecho",
-      "sinInternos": "No hay usuarios internos que asignar."
+      "sinInternos": "No hay usuarios internos que asignar.",
+      "orientativas": "Las fechas son orientativas: no arrancar solo al llegar el inicio",
+      "reglaOrientativas": "Las fechas son una previsión: el proyecto espera a que alguien pulse «Arrancar ahora».",
+      "reglaSinAdmin": "Sin administrador no arranca: asígnalo en «Personal asignado».",
+      "barra": {
+        "titulo": "Planificación",
+        "vacia": "Sin fechas ni administrador.",
+        "faltaAdmin": "Hay fechas; falta el administrador.",
+        "faltanFechas": "Hay administrador; faltan las fechas.",
+        "completa": "Fechas y administrador: listo para arrancar."
+      },
+      "nota": {
+        "en_ejecucion": "El proyecto está en ejecución. Todo cambio en la ventana o en el personal afecta a un calendario ya en marcha.",
+        "paralizado": "El proyecto está parado. La ventana y el personal se conservan hasta que alguien lo reanude.",
+        "en_certificacion": "Trabajo de campo terminado: el proyecto está en certificación. La planificación ya solo sirve de referencia.",
+        "cerrado": "Proyecto cerrado: la planificación queda como registro, en solo lectura.",
+        "cancelado": "Proyecto cancelado:"
+      }
     },
     "ejecucion": {
       "kpiRevisiones": "Revisiones",
@@ -3451,7 +3488,9 @@
       "colSerie": "Nº de serie",
       "colRevision": "Revisión",
       "abrirRevision": "Abrir la revisión",
-      "registrarRevision": "Registrar la revisión"
+      "registrarRevision": "Registrar la revisión",
+      "parado": "Parado desde el {{fecha}} ({{count}} día).",
+      "parado_other": "Parado desde el {{fecha}} ({{count}} días)."
     },
     "certificacion": {
       "progreso": "Certificación",
@@ -3534,7 +3573,10 @@
       "sinResultados": "Sin resultados",
       "sinResultadosHint": "Ninguna actuación del proyecto coincide con los filtros activos.",
       "corregirTitle": "Pulsa para corregir",
-      "reabierta": "La certificación vuelve a estar abierta."
+      "reabierta": "La certificación vuelve a estar abierta.",
+      "cerradoBadge": "Proyecto cerrado",
+      "roCerrado": "El proyecto está cerrado: la certificación es de solo lectura.",
+      "roCancelado": "El proyecto está cancelado: la certificación es de solo lectura."
     },
     "vistas": {
       "futuros": "Futuros",
@@ -3761,6 +3803,12 @@
         "colProducto": "Producto",
         "sinCatalogo": "No hay productos en el catálogo. Se dan de alta en Configuración, Parámetros generales.",
         "vacioRo": "Esta versión no incluye otros productos."
+      },
+      "estadoComercial": {
+        "abierta": "Abierta",
+        "aceptada": "Aceptada",
+        "descartada": "Descartada",
+        "caducada": "Caducada"
       }
     },
     "sinNombre": "Sin nombre",
@@ -3789,13 +3837,191 @@
     },
     "suma": {
       "descartados": "Importe descartado",
-      "finalizados": "Importe ejecutado"
+      "finalizados": "Importe ejecutado",
+      "perdidos": "Importe perdido"
     },
     "arranque": {
       "auto": "Automático",
       "manual": "A mano"
     },
-    "sinVentana": "sin ventana"
+    "sinVentana": "sin ventana",
+    "enMarcha": "En marcha",
+    "paralizado": "Paralizado",
+    "fase": {
+      "aprobado": "Aprobado",
+      "en_ejecucion": "En ejecución",
+      "en_certificacion": "En certificación"
+    },
+    "listas": {
+      "cols": {
+        "clase": "Tipo",
+        "alcance": "Alcance",
+        "planificacion": "Planificación",
+        "inicio": "Inicio",
+        "finCampo": "Fin de campo",
+        "motivo": "Motivo"
+      },
+      "clase": {
+        "fecha": "Fecha",
+        "propuesta": "Propuesta",
+        "proyecto": "Proyecto"
+      },
+      "pestana": {
+        "aprobado": "Aprobados",
+        "en_ejecucion": "En ejecución",
+        "en_certificacion": "Certificación"
+      },
+      "hint": {
+        "aprobado": "Trabajo comprometido que se planifica: la barra dice si ya tiene fechas y administrador. Arranca solo al llegar el inicio, salvo que las fechas sean orientativas.",
+        "en_ejecucion": "En obra: el avance real, el equipo y el fin previsto. Los paralizados siguen aquí, con su pastilla roja y los días que llevan parados.",
+        "en_certificacion": "Trabajo de campo terminado, pendiente de validar lo que se hizo."
+      },
+      "enCursoHint": "Nada en esta fase con estos filtros.",
+      "finalizadosHint": "Los proyectos cerrados.",
+      "generalHint": "Todo lo abierto: fechas de revisión sin propuesta, propuestas abiertas y proyectos abiertos.",
+      "buscarGeneral": "Buscar por cliente, emplazamiento o proyecto…",
+      "buscarPerdidos": "Buscar por cliente, emplazamiento o motivo…",
+      "todosEmplazamientos": "Todos los emplazamientos",
+      "zonaSinNombre": "Zona sin nombre",
+      "sinAlcance": "Sin emplazamiento",
+      "sinDocumento": "Sin documento",
+      "version": "v{{numero}} · {{estado}}",
+      "vencida": "Vencida",
+      "caducada": "Caducada",
+      "descartada": "Descartada",
+      "orientativas": "Orientativa",
+      "orientativasTitle": "Fechas orientativas: no arranca solo al llegar el inicio",
+      "plan": {
+        "vacia": "Sin planificar",
+        "faltaAdmin": "Falta administrador",
+        "faltanFechas": "Faltan fechas",
+        "completa": "Planificado"
+      },
+      "mes": "Mes del año",
+      "mesTitle": "Lo que tenía la fecha prevista en ese mes, de cualquier año",
+      "perdidosVacio": "Nada perdido con estos filtros",
+      "perdidosHint": "Propuestas descartadas o caducadas y proyectos cancelados: la lista del rescate comercial."
+    },
+    "oportunidades": {
+      "title": "Oportunidades",
+      "pestana": {
+        "fechas": "Fechas sin propuesta",
+        "propuestas": "Propuestas"
+      },
+      "hint": {
+        "fechas": "Fechas de revisión que caen en la ventana, o que vencieron hace menos de {{count}} mes, sin propuesta ni proyecto que las cubra. Marca varias del mismo cliente para juntarlas en una sola propuesta.",
+        "fechas_other": "Fechas de revisión que caen en la ventana, o que vencieron hace menos de {{count}} meses, sin propuesta ni proyecto que las cubra. Marca varias del mismo cliente para juntarlas en una sola propuesta.",
+        "propuestas": "Las propuestas abiertas, con documento o sin él: la carpeta comercial con sus notas, su probabilidad y, cuando toque, el presupuesto."
+      },
+      "cols": {
+        "fecha": "Próxima revisión"
+      },
+      "buscarFechas": "Buscar por cliente, emplazamiento o zona…",
+      "buscarPropuestas": "Buscar por cliente o emplazamiento…",
+      "fechasVacio": "Ninguna fecha sin propuesta en esta ventana",
+      "fechasVacioHint": "Las fechas de revisión se ponen en el emplazamiento o en sus zonas.",
+      "propuestasVacio": "Ninguna propuesta abierta",
+      "propuestasVacioHint": "Una propuesta nace desde una fecha: al anotar un contacto con el cliente o al crearla.",
+      "anotar": "Anotar",
+      "anotarTitle": "Anotar un contacto con el cliente: nace la propuesta con la nota dentro",
+      "anotarPregunta": "¿Qué has hablado con el cliente sobre {{emplazamiento}}?",
+      "anotada": "Nota guardada: la fecha pasa a «Propuestas».",
+      "proponer": "Propuesta",
+      "proponerTitle": "Crear la propuesta de esta fecha",
+      "proponerVarias": "Crear una propuesta con las seleccionadas",
+      "mezclaClientes": "Las fechas seleccionadas son de varios clientes, y una propuesta es de un solo cliente.",
+      "proyectar": "Proyecto",
+      "proyectarTitle": "Crear el proyecto directamente, sin propuesta (va por contrato)"
+    },
+    "accion": {
+      "arrancar": "Arrancar ahora",
+      "parar": "Parar",
+      "reanudar": "Reanudar",
+      "pasar_certificacion": "Pasar a certificación",
+      "cerrar": "Cerrar proyecto",
+      "cancelar": "Cancelar proyecto",
+      "reabrir": "Reabrir",
+      "faltaMotivo": "Hace falta decir por qué: se lee luego en el listado y en la ficha.",
+      "pregunta": {
+        "parar": "¿Por qué se para el proyecto? Se lee luego en el listado y en la ficha.",
+        "cancelar": "¿Por qué se cancela el proyecto? Se conservan sus revisiones y notas, y el motivo se lee en Perdidos."
+      },
+      "confirmar": {
+        "pasar_certificacion": "Se da por terminado el trabajo de campo y el proyecto pasa a certificación, aunque queden equipos sin revisar.",
+        "cerrar": "Se cierra el proyecto. Si es de revisión, lo revisado recibe su próxima fecha de revisión en el árbol."
+      },
+      "hecho": {
+        "arrancar": "El proyecto arranca hoy: pasa a «En ejecución».",
+        "parar": "Proyecto parado.",
+        "reanudar": "Proyecto reanudado.",
+        "pasar_certificacion": "El proyecto pasa a «En certificación».",
+        "cerrar": "Proyecto cerrado.",
+        "cancelar": "Proyecto cancelado.",
+        "reabrir": "El proyecto vuelve a estar abierto."
+      },
+      "pista": {
+        "pasar_certificacion": "El trabajo de campo ha terminado",
+        "cerrar": "El trabajo ha terminado"
+      }
+    },
+    "ficha": {
+      "paralizado": "Paralizado · {{count}} día",
+      "paralizado_other": "Paralizado · {{count}} días",
+      "eliminarConfirm": "Se elimina el proyecto. Solo se puede si no tiene trabajo registrado; si lo tiene, cancélalo. ¿Continuar?",
+      "eliminado": "Proyecto eliminado.",
+      "propuestaN": "Propuesta nº {{id}}",
+      "abrirPropuesta": "Abrir la propuesta",
+      "motivoCancelacion": "Motivo de la cancelación"
+    },
+    "fichaPropuesta": {
+      "titulo": "Propuesta",
+      "datos": "Datos de la propuesta",
+      "fechaPrevista": "Fecha prevista",
+      "proyectos": "Proyectos",
+      "sinProyectosAbierta": "Se crean al aceptar la propuesta: uno por emplazamiento del alcance.",
+      "sinProyectos": "La propuesta no creó ningún proyecto.",
+      "sinPermiso": "Las propuestas solo se ven con el permiso de gestión comercial.",
+      "sinDocumento": "La propuesta aún no tiene documento: es la carpeta de las notas y la probabilidad. Cuando toque presupuestar, compónlo aquí o carga el de fuera.",
+      "sinGuardar": "El bloque de revisión viene precargado con el alcance de la propuesta. Hasta que guardes, la propuesta sigue sin documento.",
+      "sinAlcance": "La propuesta no abarca ningún emplazamiento",
+      "sinAlcanceHint": "Para presupuestar la revisión a partir de un emplazamiento, añádelo al alcance. Si aún no está dado de alta, compón el bloque a mano poniendo unidades por tipo.",
+      "fueraDeAlcance": "Sin emplazamiento del alcance",
+      "aviso100": "Un 100 % de probabilidad marca la versión vigente como ACEPTADA. Los proyectos se crean al aceptar la propuesta, arriba a la derecha.",
+      "descartar": "Descartar",
+      "descartarPregunta": "¿Por qué se descarta la propuesta? El motivo se lee luego en Perdidos.",
+      "descartada": "Propuesta descartada.",
+      "eliminarConfirm": "Se elimina la propuesta con sus notas. Es para la creada por error: la que no va a ningún sitio se descarta. ¿Continuar?",
+      "noEliminable": "Con versiones generadas o proyectos creados la propuesta ya no se elimina: se descarta.",
+      "notaAceptada": "Propuesta aceptada el {{fecha}}: queda en solo lectura.",
+      "notaDescartada": "Propuesta descartada el {{fecha}}:",
+      "aceptada_zero": "Propuesta aceptada, sin proyectos que crear.",
+      "aceptada": "Propuesta aceptada: se ha creado {{count}} proyecto.",
+      "aceptada_other": "Propuesta aceptada: se han creado {{count}} proyectos.",
+      "alcance": {
+        "titulo": "Alcance",
+        "sub": "Emplazamientos y zonas que abarca",
+        "vacio": "Ningún emplazamiento: un suministro, o una nave aún sin dar de alta.",
+        "anadir": "Añadir emplazamiento",
+        "elegir": "Elige un emplazamiento del cliente…",
+        "zona": "Zona",
+        "quitar": "Quitar del alcance"
+      },
+      "aceptar": {
+        "boton": "Aceptar · crear proyectos",
+        "titulo": "Aceptar la propuesta",
+        "lead": "El cliente ha dicho que sí: la propuesta queda aceptada y nace un proyecto abierto por emplazamiento, con la fecha prevista como inicio orientativo.",
+        "naceran": "Nacerá un proyecto en:",
+        "naceran_other": "Nacerán {{count}} proyectos, uno por emplazamiento:",
+        "emplazamiento": "Emplazamiento del proyecto",
+        "sinAlcance": "La propuesta no abarca ningún emplazamiento, y el proyecto siempre es de uno: elige en cuál se hace el trabajo.",
+        "tipos": "Tipo de los proyectos",
+        "sinProyectos": "Aceptar sin crear proyectos (solo es entregar algo, un suministro)",
+        "soloAceptar": "Aceptar sin proyectos",
+        "crear": "Aceptar y crear el proyecto",
+        "crear_other": "Aceptar y crear {{count}} proyectos",
+        "sinPermiso": "Aceptar crea proyectos: hace falta el permiso de crear proyectos."
+      }
+    }
   },
   "revisiones": {
     "resultado": {
