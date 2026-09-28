@@ -425,7 +425,7 @@
         "deleteFileConfirm": "Supprimer le fichier « {{nombre}} » ?"
       },
       "proyectosTab": {
-        "vacio": "Ce client n'a aucun projet. Ils naissent en planifiant l'arbre d'un site ou depuis Projets.",
+        "vacio": "Ce client n’a ni propositions ni projets. Les propositions naissent dans Opportunités ; les projets, quand elles sont acceptées ou depuis Projets.",
         "propuesta": "Proposition",
         "importe": "Montant",
         "estadoPropuesta": {
@@ -433,8 +433,15 @@
           "enviada": "Envoyée",
           "aceptada": "Acceptée",
           "rechazada": "Refusée",
-          "caducada": "Expirée"
-        }
+          "caducada": "Expirée",
+          "abierta": "Ouverte",
+          "descartada": "Écartée"
+        },
+        "propuestas": "Propositions",
+        "proyectos": "Projets",
+        "fechaPrevista": "Date prévue",
+        "ultimaNota": "Dernière note",
+        "sinEmplazamiento": "Sans site"
       },
       "accesos": {
         "nivel": {
@@ -1575,6 +1582,17 @@
       "aDemanda": "{{nombre}} est désormais révisé à la demande",
       "aDemandaPierde": "{{nombre}} est désormais révisé à la demande et perd sa date programmée",
       "cajaAyuda": "Révisé à la demande : pas de date de prochaine révision"
+    },
+    "cartera": {
+      "titulo": "En cours",
+      "proximaRevision": "Prochaine vérification",
+      "sinFecha": "Sans date",
+      "propuesta": "Proposition",
+      "sinPropuesta": "Aucune ouverte",
+      "verPropuesta": "Proposition · {{fecha}}",
+      "caducada": "Expirée",
+      "proyectos": "Projets",
+      "sinProyectos": "Aucun ouvert"
     }
   },
   "localizaciones": {
@@ -1639,11 +1657,11 @@
       "aplicarFecha": "Valider la date",
       "planZonas": "Zones…",
       "planZonasProyecto": "Zones de cette visite…",
-      "planTitulo": "Zones à planifier",
+      "planTitulo": "Zones à dater",
       "planTituloProyecto": "Zones de cette visite",
       "planTodo": "Tout le site",
       "planCiertas": "Certaines zones",
-      "planSoloFuera": "Seulement ce qui n'appartient à aucune zone",
+      "planSoloFuera": "Le site seulement (les zones avec leur propre date la conservent)",
       "planSubzona": "sous-zone",
       "planSinZonas": "Aucune zone sélectionnée",
       "planZonasSel": "{{count}} zone sélectionnée",
@@ -1652,10 +1670,10 @@
       "planExcepcionadas_other": "{{count}} sous-zones exclues : {{nombres}}. Leur matériel ne fait pas partie de la visite.",
       "planFuera": "Exclue",
       "planFueraAyuda": "Cette zone ne fait pas partie de la visite planifiée",
-      "planAplicada": "Révision planifiée pour le {{fecha}}",
-      "planRetirada": "Planification retirée",
-      "planComprometidaTitulo": "Projet déjà approuvé",
-      "planComprometida": "Le projet « {{proyecto}} » est {{estado}} et couvre ce que vous avez coché. Sa date se modifie depuis le projet, ou abandonnez-le s’il n’aura pas lieu.",
+      "planAplicada": "Prochaine vérification le {{fecha}}",
+      "planRetirada": "Date supprimée",
+      "planComprometidaTitulo": "Couvert par un projet ouvert",
+      "planComprometida": "Le projet « {{proyecto}} » est ouvert et couvre ce que vous avez sélectionné : sa clôture fixera la prochaine date.",
       "planIrAlProyecto": "Aller au projet",
       "planSugerir": "Suggérer une date",
       "planSugerida": "Suggérée le {{fecha}} : {{motivo}}",
@@ -1677,7 +1695,10 @@
       "planBloqueDemanda": "Révisions à la demande",
       "planDemandaAyuda": "Aucune date précise n'est fixée : les équipements sont révisés au fur et à mesure qu'ils sont disponibles.",
       "planDemanda": "À la demande",
-      "planAplicarModo": "Valider"
+      "planAplicarModo": "Valider",
+      "planPeriodicidad": "Tous les",
+      "planPeriodicidadAria": "Périodicité de la vérification, en mois",
+      "planMeses": "mois"
     },
     "zona": {
       "promoverTitulo": "Créer une sous-zone",
@@ -2902,13 +2923,14 @@
       },
       "banda": "Paramètres généraux de l’application",
       "cartera": {
-        "titulo": "Portefeuille commercial",
-        "desc": "Combien de temps un projet à venir tient sans date ferme, et quelle plage affichent les vues commerciales.",
+        "titulo": "Opportunités",
+        "desc": "Quelles dates de prochaine vérification le commercial voit dans Opportunités.",
         "caducidad": "Abandonner les projets à venir échus après",
         "dias": "jours",
-        "ventana": "Plage par défaut des vues commerciales",
+        "ventana": "Mois à venir regardés",
         "meses": "mois",
-        "hint": "L'abandon pour échéance est fait par un balayage quotidien et reste consigné comme automatique. La plage n'est que la valeur de départ : chacun la change à l'écran."
+        "hint": "Passés les mois de grâce, une date échue n’apparaît plus dans Opportunités, mais elle reste sur le site : rien n’est écarté tout seul. La fenêtre n’est que la valeur de départ : chacun la modifie à l’écran.",
+        "gracia": "Une date échue reste affichée pendant"
       }
     },
     "caracterizacion": {
@@ -2987,7 +3009,9 @@
       "auditoria": "Journal d'audit",
       "catalogo": "Catalogue",
       "catalogoCaracterizacion": "Caractérisation",
-      "catalogoPendientes": "En attente de validation"
+      "catalogoPendientes": "En attente de validation",
+      "proyectosOportunidades": "Opportunités",
+      "proyectosPerdidos": "Perdus"
     },
     "prefs": {
       "themeLight": "Thème clair",

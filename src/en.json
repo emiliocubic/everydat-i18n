@@ -426,7 +426,7 @@
         "deleteFileConfirm": "Delete the file “{{nombre}}”?"
       },
       "proyectosTab": {
-        "vacio": "This client has no projects. They are born by planning a site's tree or from Projects.",
+        "vacio": "This client has no proposals or projects. Proposals are born in Opportunities; projects, when they are accepted or from Projects.",
         "propuesta": "Proposal",
         "importe": "Amount",
         "estadoPropuesta": {
@@ -434,8 +434,15 @@
           "enviada": "Sent",
           "aceptada": "Accepted",
           "rechazada": "Rejected",
-          "caducada": "Expired"
-        }
+          "caducada": "Expired",
+          "abierta": "Open",
+          "descartada": "Discarded"
+        },
+        "propuestas": "Proposals",
+        "proyectos": "Projects",
+        "fechaPrevista": "Expected date",
+        "ultimaNota": "Latest note",
+        "sinEmplazamiento": "No site"
       },
       "accesos": {
         "nivel": {
@@ -1624,6 +1631,17 @@
       "aDemanda": "{{nombre}} is now inspected on demand",
       "aDemandaPierde": "{{nombre}} is now inspected on demand and loses its scheduled date",
       "cajaAyuda": "Inspected on demand: it has no next inspection date"
+    },
+    "cartera": {
+      "titulo": "Under way",
+      "proximaRevision": "Next inspection",
+      "sinFecha": "No date",
+      "propuesta": "Proposal",
+      "sinPropuesta": "None open",
+      "verPropuesta": "Proposal · {{fecha}}",
+      "caducada": "Expired",
+      "proyectos": "Projects",
+      "sinProyectos": "None open"
     }
   },
   "localizaciones": {
@@ -1689,11 +1707,11 @@
       "aplicarFecha": "Apply the date",
       "planZonas": "Zones…",
       "planZonasProyecto": "Zones in this visit…",
-      "planTitulo": "Zones to plan",
+      "planTitulo": "Zones to date",
       "planTituloProyecto": "Zones in this visit",
       "planTodo": "Whole site",
       "planCiertas": "Some zones",
-      "planSoloFuera": "Only what belongs to no zone",
+      "planSoloFuera": "The site only (zones with their own date keep it)",
       "planSubzona": "sub-zone",
       "planSinZonas": "No zones selected",
       "planZonasSel": "{{count}} zone selected",
@@ -1702,10 +1720,10 @@
       "planExcepcionadas_other": "{{count}} sub-zones left out: {{nombres}}. Their equipment is not part of the visit.",
       "planFuera": "Out",
       "planFueraAyuda": "This zone is not part of the planned visit",
-      "planAplicada": "Inspection planned for {{fecha}}",
-      "planRetirada": "Planning removed",
-      "planComprometidaTitulo": "Project already approved",
-      "planComprometida": "Project “{{proyecto}}” is {{estado}} and covers what you selected. Its date is changed from the project, or discard it if it will not happen.",
+      "planAplicada": "Next inspection on {{fecha}}",
+      "planRetirada": "Date removed",
+      "planComprometidaTitulo": "Covered by an open project",
+      "planComprometida": "Project “{{proyecto}}” is open and covers what you selected: closing it will set the next date.",
       "planIrAlProyecto": "Go to the project",
       "planSugerir": "Suggest a date",
       "planSugerida": "Suggested {{fecha}}: {{motivo}}",
@@ -1728,7 +1746,10 @@
       "planDemandaAyuda": "No specific dates are set; equipment is inspected as it becomes available.",
       "planDemanda": "On demand",
       "planAplicarModo": "Apply",
-      "aplicar": "Apply"
+      "aplicar": "Apply",
+      "planPeriodicidad": "Every",
+      "planPeriodicidadAria": "Inspection interval, in months",
+      "planMeses": "months"
     },
     "zona": {
       "promoverTitulo": "Create a sub-zone",
@@ -2953,13 +2974,14 @@
       },
       "banda": "General application settings",
       "cartera": {
-        "titulo": "Sales pipeline",
-        "desc": "How long an upcoming project survives without a firm date, and what date range the sales views show.",
+        "titulo": "Opportunities",
+        "desc": "Which next-inspection dates sales staff see in Opportunities.",
         "caducidad": "Discard overdue upcoming projects after",
         "dias": "days",
-        "ventana": "Default range of the sales views",
+        "ventana": "Months ahead to look at",
         "meses": "months",
-        "hint": "Discarding by expiry is done by a daily sweep and is logged as automatic. The range is only the starting value: each person changes it on screen."
+        "hint": "After the grace months an overdue date no longer shows in Opportunities, but it stays on the site: nothing is discarded on its own. The window is only the starting value: anyone can change it on the screen.",
+        "gracia": "An overdue date keeps showing for"
       },
       "grupoInformes": "Reports",
       "informes": {
@@ -3047,7 +3069,9 @@
       "auditoria": "Audit log",
       "catalogo": "Catalogue",
       "catalogoCaracterizacion": "Characterisation",
-      "catalogoPendientes": "Pending validation"
+      "catalogoPendientes": "Pending validation",
+      "proyectosOportunidades": "Opportunities",
+      "proyectosPerdidos": "Lost"
     },
     "prefs": {
       "themeLight": "Light theme",

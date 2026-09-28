@@ -311,7 +311,7 @@
         "deleteFileConfirm": "¿Eliminar el archivo «{{nombre}}»?"
       },
       "proyectosTab": {
-        "vacio": "Este cliente no tiene proyectos. Nacen al planificar el árbol de un emplazamiento o desde Proyectos.",
+        "vacio": "Este cliente no tiene propuestas ni proyectos. Las propuestas nacen en Oportunidades; los proyectos, al aceptarlas o desde Proyectos.",
         "propuesta": "Propuesta",
         "importe": "Importe",
         "estadoPropuesta": {
@@ -319,8 +319,15 @@
           "enviada": "Enviada",
           "aceptada": "Aceptada",
           "rechazada": "Rechazada",
-          "caducada": "Caducada"
-        }
+          "caducada": "Caducada",
+          "abierta": "Abierta",
+          "descartada": "Descartada"
+        },
+        "propuestas": "Propuestas",
+        "proyectos": "Proyectos",
+        "fechaPrevista": "Fecha prevista",
+        "ultimaNota": "Última nota",
+        "sinEmplazamiento": "Sin emplazamiento"
       },
       "accesos": {
         "nivel": {
@@ -1509,6 +1516,17 @@
       "aDemanda": "{{nombre}} se revisa ahora a demanda",
       "aDemandaPierde": "{{nombre}} se revisa ahora a demanda y pierde su fecha programada",
       "cajaAyuda": "Se revisa a demanda: no lleva fecha de próxima revisión"
+    },
+    "cartera": {
+      "titulo": "En marcha",
+      "proximaRevision": "Próxima revisión",
+      "sinFecha": "Sin fecha",
+      "propuesta": "Propuesta",
+      "sinPropuesta": "Ninguna abierta",
+      "verPropuesta": "Propuesta · {{fecha}}",
+      "caducada": "Caducada",
+      "proyectos": "Proyectos",
+      "sinProyectos": "Ninguno abierto"
     }
   },
   "localizaciones": {
@@ -1574,11 +1592,11 @@
       "aplicarFecha": "Validar la fecha",
       "planZonas": "Zonas…",
       "planZonasProyecto": "Zonas de la visita…",
-      "planTitulo": "Zonas a planificar",
+      "planTitulo": "Zonas a fechar",
       "planTituloProyecto": "Zonas de esta visita",
       "planTodo": "Todo el emplazamiento",
       "planCiertas": "Ciertas zonas",
-      "planSoloFuera": "Solo lo que no pertenece a ninguna zona",
+      "planSoloFuera": "Solo el emplazamiento (las zonas con fecha propia la conservan)",
       "planSubzona": "sub-zona",
       "planSinZonas": "Sin zonas seleccionadas",
       "planZonasSel": "{{count}} zona seleccionada",
@@ -1587,10 +1605,10 @@
       "planExcepcionadas_other": "{{count}} sub-zonas fuera: {{nombres}}. Sus elementos no entran en la visita.",
       "planFuera": "Fuera",
       "planFueraAyuda": "Esta zona no entra en la visita planificada",
-      "planAplicada": "Revisión planificada para el {{fecha}}",
-      "planRetirada": "Planificación retirada",
-      "planComprometidaTitulo": "Proyecto ya aprobado",
-      "planComprometida": "El proyecto «{{proyecto}}» está {{estado}} y cubre lo que has marcado. Su fecha se cambia desde el proyecto, o se descarta si al final no se va a hacer.",
+      "planAplicada": "Próxima revisión el {{fecha}}",
+      "planRetirada": "Fecha quitada",
+      "planComprometidaTitulo": "Lo cubre un proyecto abierto",
+      "planComprometida": "El proyecto «{{proyecto}}» está abierto y cubre lo que has marcado: la siguiente fecha la pondrá su cierre.",
       "planIrAlProyecto": "Ir al proyecto",
       "planSugerir": "Sugerir una fecha",
       "planSugerida": "Sugerida el {{fecha}}: {{motivo}}",
@@ -1613,7 +1631,10 @@
       "planDemandaAyuda": "No se especifican fechas concretas, se revisan los equipos tal cual vayan estando disponibles para ello.",
       "planDemanda": "A demanda",
       "planAplicarModo": "Validar",
-      "aplicar": "Aplicar"
+      "aplicar": "Aplicar",
+      "planPeriodicidad": "Cada",
+      "planPeriodicidadAria": "Periodicidad de la revisión, en meses",
+      "planMeses": "meses"
     },
     "zona": {
       "promoverTitulo": "Crear una sub-zona",
@@ -2953,13 +2974,14 @@
       },
       "banda": "Parámetros generales de aplicación",
       "cartera": {
-        "titulo": "Cartera comercial",
-        "desc": "Cuánto aguanta un proyecto futuro sin fecha firme y qué tramo enseñan las vistas comerciales.",
+        "titulo": "Oportunidades",
+        "desc": "Qué fechas de próxima revisión ve el comercial en Oportunidades.",
         "caducidad": "Descartar los futuros vencidos a los",
         "dias": "días",
-        "ventana": "Ventana de las vistas comerciales",
+        "ventana": "Meses por delante que se miran",
         "meses": "meses",
-        "hint": "El descarte por caducidad lo hace un barrido diario y queda anotado como automático. La ventana es solo el valor de partida: cada persona la cambia en la pantalla."
+        "hint": "Pasados los meses de gracia, una fecha vencida deja de salir en Oportunidades, pero sigue en el emplazamiento: nada se descarta solo. La ventana es solo el valor de partida: cada persona la cambia en la pantalla.",
+        "gracia": "Una fecha vencida sigue saliendo durante"
       },
       "grupoInformes": "Informes",
       "informes": {
@@ -3047,7 +3069,9 @@
       "auditoria": "Auditoría",
       "catalogo": "Catálogo",
       "catalogoCaracterizacion": "Caracterización",
-      "catalogoPendientes": "Pendientes de validar"
+      "catalogoPendientes": "Pendientes de validar",
+      "proyectosOportunidades": "Oportunidades",
+      "proyectosPerdidos": "Perdidos"
     },
     "prefs": {
       "themeLight": "Tema claro",
