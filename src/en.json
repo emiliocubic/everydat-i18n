@@ -4675,7 +4675,8 @@
         "contenido": "Content",
         "datos": "Details",
         "vista": "Preview",
-        "versiones": "Versions"
+        "versiones": "Versions",
+        "ajustes": "Adjustments"
       }
     },
     "contenido": {
@@ -4768,6 +4769,51 @@
       "campo_vacio": "A mandatory field is empty.",
       "texto_sin_idioma": "A template text is not in the report's language.",
       "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned."
+    },
+    "ajustes": {
+      "hint": "Point at a block or an inspection in the report. Changes apply to this report only: the template does not change.",
+      "titulo": "Changes from the template",
+      "tituloHint": "How this report differs from “{{plantilla}}”, plus the notes and photos chosen per inspection.",
+      "ninguno": "This report follows the template as is.",
+      "deshacer": "Undo",
+      "verCambios": "See changes",
+      "actualizar": "Update from template",
+      "actualizarConfirmar": "The published template is copied again and these changes are lost: {{lista}}. Notes and photos per inspection are kept.",
+      "actualizado": "Report updated from the template ({{n}} changes removed)",
+      "sinPerdidas": "The report already matches the template",
+      "guardarPlantilla": "Save as new template",
+      "guardarPlantillaPregunta": "Name of the new template. It is created as a draft with this report's layout, without its notes or photos per inspection.",
+      "plantillaCreada": "Template “{{nombre}}” created as a draft",
+      "abrir": "Open",
+      "texto": "text",
+      "revision": "Inspection in this report",
+      "fotos": "Photos",
+      "sinFotos": "This inspection has no photos.",
+      "fotosBloque": "As the block says",
+      "fotosElegir": "Choose which",
+      "fotosHint": "The ticked ones are printed, in the order you tick them.",
+      "nota": "Report note",
+      "notaHint": "Printed on this inspection's sheet as a note of the report. The inspection does not change.",
+      "desv": {
+        "oculto": "Hidden: {{bloque}}",
+        "mostrado": "Shown: {{bloque}}",
+        "parametro": "{{bloque}} · {{param}}: {{antes}} → {{despues}}",
+        "condicion": "{{bloque}} · when shown: {{antes}} → {{despues}}",
+        "anadido": "Added: {{bloque}}",
+        "quitado": "Removed: {{bloque}}",
+        "orden": "Block order changed",
+        "general": "Changed: {{que}}",
+        "nota": "Note on {{equipo}} ({{fecha}})",
+        "fotos": "Chosen photos ({{n}}) on {{equipo}} ({{fecha}})"
+      },
+      "generales": {
+        "pagina": "page",
+        "cabecera": "header",
+        "pie": "footer",
+        "campos": "report fields",
+        "seleccion": "default selection",
+        "partir": "how it is split"
+      }
     }
   },
   "plantillasInforme": {

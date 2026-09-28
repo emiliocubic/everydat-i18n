@@ -4675,7 +4675,8 @@
         "contenido": "Contenido",
         "datos": "Datos",
         "vista": "Vista previa",
-        "versiones": "Versiones"
+        "versiones": "Versiones",
+        "ajustes": "Cambios puntuales"
       }
     },
     "contenido": {
@@ -4768,6 +4769,51 @@
       "campo_vacio": "Hay un campo obligatorio vacío.",
       "texto_sin_idioma": "Un texto de la plantilla no está en el idioma del informe.",
       "sin_sello": "Se pidió firmar, pero no hay sello configurado: saldrá sin firma."
+    },
+    "ajustes": {
+      "hint": "Señala un bloque o una revisión del informe. Los cambios son solo de este informe: la plantilla no cambia.",
+      "titulo": "Cambios sobre la plantilla",
+      "tituloHint": "En qué se aparta este informe de «{{plantilla}}», y las notas y fotos elegidas por revisión.",
+      "ninguno": "Este informe sale tal cual la plantilla.",
+      "deshacer": "Deshacer",
+      "verCambios": "Ver cambios",
+      "actualizar": "Actualizar desde la plantilla",
+      "actualizarConfirmar": "Se vuelve a copiar la plantilla publicada y se pierden estos cambios: {{lista}}. Las notas y fotos por revisión se conservan.",
+      "actualizado": "Informe actualizado desde la plantilla ({{n}} cambios quitados)",
+      "sinPerdidas": "El informe ya coincide con la plantilla",
+      "guardarPlantilla": "Guardar como plantilla nueva",
+      "guardarPlantillaPregunta": "Nombre de la plantilla nueva. Queda en borrador, con la composición de este informe y sin sus notas ni fotos por revisión.",
+      "plantillaCreada": "Plantilla «{{nombre}}» creada en borrador",
+      "abrir": "Abrir",
+      "texto": "texto",
+      "revision": "Revisión en este informe",
+      "fotos": "Fotos",
+      "sinFotos": "Esta revisión no tiene fotos.",
+      "fotosBloque": "Las que diga el bloque",
+      "fotosElegir": "Elegir cuáles",
+      "fotosHint": "Salen las marcadas, en el orden en que las marques.",
+      "nota": "Nota del informe",
+      "notaHint": "Se imprime en la ficha de esta revisión como nota del informe. La revisión no cambia.",
+      "desv": {
+        "oculto": "Oculto: {{bloque}}",
+        "mostrado": "Mostrado: {{bloque}}",
+        "parametro": "{{bloque}} · {{param}}: {{antes}} → {{despues}}",
+        "condicion": "{{bloque}} · cuándo sale: {{antes}} → {{despues}}",
+        "anadido": "Añadido: {{bloque}}",
+        "quitado": "Quitado: {{bloque}}",
+        "orden": "Orden de los bloques cambiado",
+        "general": "Cambiado: {{que}}",
+        "nota": "Nota en {{equipo}} ({{fecha}})",
+        "fotos": "Fotos elegidas ({{n}}) en {{equipo}} ({{fecha}})"
+      },
+      "generales": {
+        "pagina": "página",
+        "cabecera": "cabecera",
+        "pie": "pie",
+        "campos": "campos del informe",
+        "seleccion": "selección por defecto",
+        "partir": "cómo se parte"
+      }
     }
   },
   "plantillasInforme": {
