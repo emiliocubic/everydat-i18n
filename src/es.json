@@ -3083,7 +3083,8 @@
       "catalogoCaracterizacion": "Caracterización",
       "catalogoPendientes": "Pendientes de validar",
       "proyectosOportunidades": "Oportunidades",
-      "proyectosPerdidos": "Perdidos"
+      "proyectosPerdidos": "Perdidos",
+      "configPlantillasInforme": "Plantillas de informe"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -3194,7 +3195,8 @@
       "altaEmplazamientos": "dar de alta emplazamientos",
       "api": "No tienes permiso para esta acción: {{accion}}.",
       "apiCapacidad": "No tienes permiso para esta acción: {{accion}}. Lo da la capacidad {{capacidad}}.",
-      "informes": "ver los informes"
+      "informes": "ver los informes",
+      "plantillasInforme": "editar las plantillas de informe"
     }
   },
   "proyectos": {
@@ -4766,6 +4768,139 @@
       "campo_vacio": "Hay un campo obligatorio vacío.",
       "texto_sin_idioma": "Un texto de la plantilla no está en el idioma del informe.",
       "sin_sello": "Se pidió firmar, pero no hay sello configurado: saldrá sin firma."
+    }
+  },
+  "plantillasInforme": {
+    "titulo": "Plantillas de informe",
+    "nueva": "Nueva plantilla",
+    "nuevaHint": "Nace en borrador: no se ofrece al crear informes hasta que la publiques.",
+    "crear": "Crear plantilla",
+    "vacio": "No hay plantillas",
+    "sinPublicar": "Cambios sin publicar",
+    "deFabrica": "De fábrica",
+    "origenHint": "Si el informe lleva revisiones, equipos o nada variable (un certificado fijo). No se cambia después.",
+    "campos": {
+      "nombre": "Nombre",
+      "descripcion": "Descripción",
+      "origen": "Origen",
+      "idioma": "Idioma",
+      "estado": "Estado",
+      "fabrica": "De fábrica",
+      "cambios": "Sin publicar",
+      "publicada": "Publicada"
+    },
+    "origenes": {
+      "revisiones": "Revisiones",
+      "elementos": "Equipos",
+      "fijo": "Fijo"
+    },
+    "estados": {
+      "borrador": "Borrador",
+      "publicada": "Publicada",
+      "archivada": "Archivada"
+    },
+    "partir": {
+      "ninguno": "Un solo PDF",
+      "zona": "Un PDF por zona",
+      "familia": "Un PDF por familia",
+      "elemento": "Un PDF por equipo"
+    },
+    "tiposCampo": {
+      "texto": "Texto",
+      "textarea": "Texto largo",
+      "fecha": "Fecha"
+    },
+    "opciones": {
+      "ninguna": "Ninguna",
+      "foto_emplazamiento": "Foto de la obra",
+      "ninguno": "Sin agrupar",
+      "zona": "Zona",
+      "carpeta": "Carpeta",
+      "resultado": "Resultado",
+      "equipo": "Equipo",
+      "tipo": "Tipo",
+      "identificador": "Identificación",
+      "fecha": "Fecha",
+      "valida_hasta": "Válido hasta",
+      "revisor": "Revisor",
+      "estado": "Estado",
+      "valido_hasta": "Válido hasta",
+      "ultima_revision": "Última revisión",
+      "siempre": "Siempre",
+      "solo_no_apta": "Solo en los no aptos",
+      "nunca": "Nunca",
+      "todos": "Todos",
+      "no_conformes": "Solo los defectos",
+      "2": "Hasta 2",
+      "4": "Hasta 4",
+      "todas": "Todas",
+      "fotos": "Fotos",
+      "planos": "Planos",
+      "ambos": "Fotos y planos",
+      "rejilla": "En rejilla",
+      "una_por_pagina": "Una por página",
+      "identificacion": "Identificación",
+      "fechas": "Fechas",
+      "caracteristicas": "Características",
+      "normas": "Normas",
+      "vertical": "Vertical",
+      "horizontal": "Horizontal"
+    },
+    "editor": {
+      "catalogo": "Bloques",
+      "catalogoHint": "Arrástralos al lienzo, o pulsa para añadirlos detrás del elegido.",
+      "anadirBloque": "Añadir este bloque",
+      "lienzo": "Lienzo de la plantilla",
+      "muestra": "Obra de muestra",
+      "elegirMuestra": "Elige una obra",
+      "sinMuestra": "Elige una obra de muestra para ver la plantilla con datos reales.",
+      "lienzoHint": "Pulsa un bloque para ver sus opciones; arrástralo para cambiarlo de sitio.",
+      "lienzoHintLectura": "Solo lectura.",
+      "errorLienzo": "No se pudo pintar el lienzo.",
+      "verPlantilla": "Ver la plantilla",
+      "subir": "Subir",
+      "bajar": "Bajar",
+      "duplicar": "Duplicar",
+      "quitar": "Quitar",
+      "condicion": "Cuándo sale",
+      "siempre": "Siempre",
+      "oculto": "Ocultar este bloque",
+      "textoDeSerie": "Vacío: el texto de serie",
+      "marcadores": "Marcadores: {{ejemplo}}…",
+      "plantilla": "Plantilla",
+      "formato": "Papel",
+      "orientacion": "Orientación",
+      "partir": "Cómo sale la emisión",
+      "cabecera": "Cabecera de cada página",
+      "pie": "Pie de cada página",
+      "textoPieza": "Texto",
+      "anadirPieza": "Añadir pieza",
+      "campos": "Campos que se preguntan",
+      "camposHint": "Se preguntan al crear cada informe y se usan en los textos como {{ejemplo}}.",
+      "campoNuevo": "Campo nuevo",
+      "etiqueta": "Etiqueta",
+      "defecto": "Valor de serie",
+      "obligatorio": "Obligatorio",
+      "anadirCampo": "Añadir campo",
+      "seleccion": "Selección de contenido por defecto",
+      "seleccionHint": "Lo que se incluye solo al crear un informe con «Rellenarlo ya».",
+      "sel_sin_informe": "Solo las revisiones sin informe emitido",
+      "sel_ultima": "Solo la última de cada equipo",
+      "verPdf": "Ver PDF",
+      "duplicarPlantilla": "Duplicar",
+      "archivar": "Archivar",
+      "desarchivar": "Desarchivar",
+      "archivarConfirmar": "¿Archivar la plantilla? Dejará de ofrecerse al crear informes; los informes ya creados no cambian.",
+      "publicar": "Publicar",
+      "publicada": "Plantilla publicada: los informes nuevos la usarán",
+      "duplicada": "Copia creada en borrador",
+      "fabricaAviso": "Plantilla de fábrica: no se edita. Duplícala para adaptarla a tu empresa.",
+      "estadoGuardado": {
+        "guardado": "Borrador guardado",
+        "pendiente": "Cambios sin guardar…",
+        "guardando": "Guardando…",
+        "error": "No se pudo guardar"
+      }
     }
   }
 }

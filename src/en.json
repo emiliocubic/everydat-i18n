@@ -3083,7 +3083,8 @@
       "catalogoCaracterizacion": "Characterisation",
       "catalogoPendientes": "Pending validation",
       "proyectosOportunidades": "Opportunities",
-      "proyectosPerdidos": "Lost"
+      "proyectosPerdidos": "Lost",
+      "configPlantillasInforme": "Report templates"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -3194,7 +3195,8 @@
       "altaEmplazamientos": "create sites",
       "api": "You do not have permission for this action: {{accion}}.",
       "apiCapacidad": "You do not have permission for this action: {{accion}}. It comes with the {{capacidad}} capability.",
-      "informes": "view reports"
+      "informes": "view reports",
+      "plantillasInforme": "edit report templates"
     }
   },
   "proyectos": {
@@ -4766,6 +4768,139 @@
       "campo_vacio": "A mandatory field is empty.",
       "texto_sin_idioma": "A template text is not in the report's language.",
       "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned."
+    }
+  },
+  "plantillasInforme": {
+    "titulo": "Report templates",
+    "nueva": "New template",
+    "nuevaHint": "It starts as a draft: it is not offered when creating reports until you publish it.",
+    "crear": "Create template",
+    "vacio": "No templates",
+    "sinPublicar": "Unpublished changes",
+    "deFabrica": "Built-in",
+    "origenHint": "Whether the report carries inspections, equipment or nothing variable (a fixed certificate). It cannot be changed later.",
+    "campos": {
+      "nombre": "Name",
+      "descripcion": "Description",
+      "origen": "Source",
+      "idioma": "Language",
+      "estado": "Status",
+      "fabrica": "Built-in",
+      "cambios": "Unpublished",
+      "publicada": "Published"
+    },
+    "origenes": {
+      "revisiones": "Inspections",
+      "elementos": "Equipment",
+      "fijo": "Fixed"
+    },
+    "estados": {
+      "borrador": "Draft",
+      "publicada": "Published",
+      "archivada": "Archived"
+    },
+    "partir": {
+      "ninguno": "A single PDF",
+      "zona": "One PDF per zone",
+      "familia": "One PDF per family",
+      "elemento": "One PDF per item"
+    },
+    "tiposCampo": {
+      "texto": "Text",
+      "textarea": "Long text",
+      "fecha": "Date"
+    },
+    "opciones": {
+      "ninguna": "None",
+      "foto_emplazamiento": "Site photo",
+      "ninguno": "Not grouped",
+      "zona": "Zone",
+      "carpeta": "Folder",
+      "resultado": "Result",
+      "equipo": "Equipment",
+      "tipo": "Type",
+      "identificador": "Identification",
+      "fecha": "Date",
+      "valida_hasta": "Valid until",
+      "revisor": "Inspector",
+      "estado": "Status",
+      "valido_hasta": "Valid until",
+      "ultima_revision": "Last inspection",
+      "siempre": "Always",
+      "solo_no_apta": "Only on failed items",
+      "nunca": "Never",
+      "todos": "All",
+      "no_conformes": "Only defects",
+      "2": "Up to 2",
+      "4": "Up to 4",
+      "todas": "All",
+      "fotos": "Photos",
+      "planos": "Plans",
+      "ambos": "Photos and plans",
+      "rejilla": "In a grid",
+      "una_por_pagina": "One per page",
+      "identificacion": "Identification",
+      "fechas": "Dates",
+      "caracteristicas": "Characteristics",
+      "normas": "Standards",
+      "vertical": "Portrait",
+      "horizontal": "Landscape"
+    },
+    "editor": {
+      "catalogo": "Blocks",
+      "catalogoHint": "Drag them onto the canvas, or click to add them after the selected one.",
+      "anadirBloque": "Add this block",
+      "lienzo": "Template canvas",
+      "muestra": "Sample site",
+      "elegirMuestra": "Choose a site",
+      "sinMuestra": "Choose a sample site to see the template with real data.",
+      "lienzoHint": "Click a block to see its options; drag it to move it.",
+      "lienzoHintLectura": "Read only.",
+      "errorLienzo": "The canvas could not be drawn.",
+      "verPlantilla": "See the template",
+      "subir": "Move up",
+      "bajar": "Move down",
+      "duplicar": "Duplicate",
+      "quitar": "Remove",
+      "condicion": "When it is printed",
+      "siempre": "Always",
+      "oculto": "Hide this block",
+      "textoDeSerie": "Empty: the default text",
+      "marcadores": "Placeholders: {{ejemplo}}…",
+      "plantilla": "Template",
+      "formato": "Paper",
+      "orientacion": "Orientation",
+      "partir": "How it is issued",
+      "cabecera": "Header of each page",
+      "pie": "Footer of each page",
+      "textoPieza": "Text",
+      "anadirPieza": "Add piece",
+      "campos": "Fields asked",
+      "camposHint": "Asked when creating each report and usable in texts as {{ejemplo}}.",
+      "campoNuevo": "New field",
+      "etiqueta": "Label",
+      "defecto": "Default value",
+      "obligatorio": "Mandatory",
+      "anadirCampo": "Add field",
+      "seleccion": "Default content selection",
+      "seleccionHint": "What is included when creating a report with «Fill it now».",
+      "sel_sin_informe": "Only inspections not in an issued report",
+      "sel_ultima": "Only the latest of each item",
+      "verPdf": "View PDF",
+      "duplicarPlantilla": "Duplicate",
+      "archivar": "Archive",
+      "desarchivar": "Unarchive",
+      "archivarConfirmar": "Archive the template? It will no longer be offered when creating reports; existing reports do not change.",
+      "publicar": "Publish",
+      "publicada": "Template published: new reports will use it",
+      "duplicada": "Copy created as a draft",
+      "fabricaAviso": "Built-in template: it cannot be edited. Duplicate it to adapt it to your company.",
+      "estadoGuardado": {
+        "guardado": "Draft saved",
+        "pendiente": "Unsaved changes…",
+        "guardando": "Saving…",
+        "error": "Could not save"
+      }
     }
   }
 }
