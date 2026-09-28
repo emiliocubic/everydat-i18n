@@ -1729,7 +1729,7 @@
       "administrador": "Chef de projet",
       "fecha": "Date de début",
       "fechaHoy": "Démarre immédiatement.",
-      "fechaFutura": "Reste planifié et démarre seul à cette date.",
+      "fechaFutura": "Il reste approuvé et démarre tout seul à la date prévue.",
       "nombre": "Nom du projet",
       "notas": "Notes",
       "pie": "Le projet se clôture depuis l'écran des projets.",
@@ -3195,7 +3195,10 @@
       "ejecucion_paralizada": "Exécution suspendue",
       "en_certificacion": "En certification",
       "finalizado": "Clôturé",
-      "descartado": "Abandonné"
+      "descartado": "Abandonné",
+      "abierto": "Ouvert",
+      "cerrado": "Clôturé",
+      "cancelado": "Annulé"
     },
     "tipo": {
       "instalacion": "Installation",
@@ -3210,7 +3213,8 @@
       "emplazamiento": "Site planifié",
       "cierre_revision": "Vérification précédente",
       "sobrevenido": "Mis en contrôle depuis l'arbre",
-      "recepcion": "Réception au bureau"
+      "recepcion": "Réception au bureau",
+      "propuesta": "Proposition acceptée"
     },
     "nuevo": {
       "cta": "Nouveau projet",
@@ -3224,7 +3228,11 @@
       "otroHint": "Un travail d'un autre domaine : sans recensement d'équipements et sans enchaîner le cycle suivant.",
       "buscarCliente": "Rechercher un client…",
       "buscarEmplazamiento": "Rechercher un site…",
-      "antesCliente": "Sélectionnez d'abord le client"
+      "antesCliente": "Sélectionnez d'abord le client",
+      "zona": "Uniquement la zone {{zona}}, celle de la date de vérification.",
+      "finAntes": "La fin prévue ne peut pas être antérieure au début.",
+      "orientativas": "Les dates sont indicatives",
+      "orientativasHint": "Si coché, le projet ne démarre pas tout seul à la date de début : il faudra appuyer sur « Démarrer maintenant » le moment venu."
     },
     "title": "Projets",
     "volver": "Retour à la liste",
@@ -3345,7 +3353,24 @@
       "seleccionadas": "{{count}} personne sélectionnée",
       "seleccionadas_other": "{{count}} personnes sélectionnées",
       "hecho": "Terminé",
-      "sinInternos": "Aucun utilisateur interne à affecter."
+      "sinInternos": "Aucun utilisateur interne à affecter.",
+      "orientativas": "Les dates sont indicatives : ne pas démarrer automatiquement à la date de début",
+      "reglaOrientativas": "Les dates sont une prévision : le projet attend que quelqu’un clique sur « Démarrer maintenant ».",
+      "reglaSinAdmin": "Sans responsable, il ne démarre pas : désignez-en un dans « Personnel affecté ».",
+      "barra": {
+        "titulo": "Planification",
+        "vacia": "Ni dates ni responsable.",
+        "faltaAdmin": "Dates saisies ; il manque le responsable.",
+        "faltanFechas": "Responsable désigné ; il manque les dates.",
+        "completa": "Dates et responsable : prêt à démarrer."
+      },
+      "nota": {
+        "en_ejecucion": "Le projet est en exécution. Toute modification de la fenêtre ou du personnel affecte un calendrier déjà en cours.",
+        "paralizado": "Le projet est arrêté. La fenêtre et le personnel sont conservés jusqu’à ce que quelqu’un le reprenne.",
+        "en_certificacion": "Travail sur le terrain terminé : le projet est en certification. La planification ne sert plus que de référence.",
+        "cerrado": "Projet clôturé : la planification est conservée comme archive, en lecture seule.",
+        "cancelado": "Projet annulé :"
+      }
     },
     "ejecucion": {
       "kpiRevisiones": "Contrôles",
@@ -3390,7 +3415,9 @@
       "colSerie": "Nº de série",
       "colRevision": "Inspection",
       "abrirRevision": "Ouvrir l'inspection",
-      "registrarRevision": "Enregistrer l'inspection"
+      "registrarRevision": "Enregistrer l'inspection",
+      "parado": "Arrêté depuis le {{fecha}} ({{count}} jour).",
+      "parado_other": "Arrêté depuis le {{fecha}} ({{count}} jours)."
     },
     "certificacion": {
       "progreso": "Certification",
@@ -3459,7 +3486,10 @@
       "sinResultados": "Aucun résultat",
       "sinResultadosHint": "Aucune action du projet ne correspond aux filtres actifs.",
       "corregirTitle": "Cliquez pour corriger",
-      "reabierta": "La certification est de nouveau ouverte."
+      "reabierta": "La certification est de nouveau ouverte.",
+      "cerradoBadge": "Projet clôturé",
+      "roCerrado": "Le projet est clôturé : la certification est en lecture seule.",
+      "roCancelado": "Le projet est annulé : la certification est en lecture seule."
     },
     "vistas": {
       "futuros": "À venir",
@@ -3686,6 +3716,12 @@
         "colProducto": "Produit",
         "sinCatalogo": "Aucun produit au catalogue. Ils se créent dans Configuration, paramètres généraux.",
         "vacioRo": "Cette version n'inclut pas d'autres produits."
+      },
+      "estadoComercial": {
+        "abierta": "Ouverte",
+        "aceptada": "Acceptée",
+        "descartada": "Écartée",
+        "caducada": "Expirée"
       }
     },
     "sinNombre": "Sans nom",
@@ -3714,13 +3750,191 @@
     },
     "suma": {
       "descartados": "Montant abandonné",
-      "finalizados": "Montant exécuté"
+      "finalizados": "Montant exécuté",
+      "perdidos": "Montant perdu"
     },
     "arranque": {
       "auto": "Automatique",
       "manual": "Manuel"
     },
-    "sinVentana": "sans fenêtre"
+    "sinVentana": "sans fenêtre",
+    "enMarcha": "En marche",
+    "paralizado": "Suspendu",
+    "fase": {
+      "aprobado": "Approuvé",
+      "en_ejecucion": "En exécution",
+      "en_certificacion": "En certification"
+    },
+    "listas": {
+      "cols": {
+        "clase": "Type",
+        "alcance": "Périmètre",
+        "planificacion": "Planification",
+        "inicio": "Début",
+        "finCampo": "Fin du terrain",
+        "motivo": "Motif"
+      },
+      "clase": {
+        "fecha": "Date",
+        "propuesta": "Proposition",
+        "proyecto": "Projet"
+      },
+      "pestana": {
+        "aprobado": "Approuvés",
+        "en_ejecucion": "En cours",
+        "en_certificacion": "Certification"
+      },
+      "hint": {
+        "aprobado": "Travail engagé en cours de planification : la barre indique s'il a déjà des dates et un responsable. Il démarre tout seul à la date de début, sauf si les dates sont indicatives.",
+        "en_ejecucion": "Sur le terrain : l'avancement réel, l'équipe et la fin prévue. Les projets suspendus restent ici, avec leur pastille rouge et le nombre de jours d'arrêt.",
+        "en_certificacion": "Travail de terrain terminé, en attente de validation de ce qui a été fait."
+      },
+      "enCursoHint": "Rien dans cette phase avec ces filtres.",
+      "finalizadosHint": "Les projets clôturés.",
+      "generalHint": "Tout ce qui est ouvert : dates de vérification sans proposition, propositions ouvertes et projets ouverts.",
+      "buscarGeneral": "Rechercher par client, site ou projet…",
+      "buscarPerdidos": "Rechercher par client, site ou motif…",
+      "todosEmplazamientos": "Tous les sites",
+      "zonaSinNombre": "Zone sans nom",
+      "sinAlcance": "Sans site",
+      "sinDocumento": "Sans document",
+      "version": "v{{numero}} · {{estado}}",
+      "vencida": "Échue",
+      "caducada": "Expirée",
+      "descartada": "Écartée",
+      "orientativas": "Indicative",
+      "orientativasTitle": "Dates indicatives : il ne démarre pas tout seul à la date de début",
+      "plan": {
+        "vacia": "Non planifié",
+        "faltaAdmin": "Sans responsable",
+        "faltanFechas": "Sans dates",
+        "completa": "Planifié"
+      },
+      "mes": "Mois de l'année",
+      "mesTitle": "Ce dont la date prévue tombait ce mois-là, quelle que soit l'année",
+      "perdidosVacio": "Rien de perdu avec ces filtres",
+      "perdidosHint": "Propositions écartées ou expirées et projets annulés : la liste pour relancer le commercial."
+    },
+    "oportunidades": {
+      "title": "Opportunités",
+      "pestana": {
+        "fechas": "Dates sans proposition",
+        "propuestas": "Propositions"
+      },
+      "hint": {
+        "fechas": "Dates de vérification comprises dans la fenêtre, ou échues depuis moins de {{count}} mois, qu'aucune proposition ni aucun projet ne couvre. Cochez-en plusieurs du même client pour les regrouper dans une seule proposition.",
+        "fechas_other": "Dates de vérification comprises dans la fenêtre, ou échues depuis moins de {{count}} mois, qu'aucune proposition ni aucun projet ne couvre. Cochez-en plusieurs du même client pour les regrouper dans une seule proposition.",
+        "propuestas": "Les propositions ouvertes, avec ou sans document : le dossier commercial avec ses notes, sa probabilité et, le moment venu, le devis."
+      },
+      "cols": {
+        "fecha": "Prochaine vérification"
+      },
+      "buscarFechas": "Rechercher par client, site ou zone…",
+      "buscarPropuestas": "Rechercher par client ou site…",
+      "fechasVacio": "Aucune date sans proposition dans cette fenêtre",
+      "fechasVacioHint": "Les dates de vérification se fixent sur le site ou sur ses zones.",
+      "propuestasVacio": "Aucune proposition ouverte",
+      "propuestasVacioHint": "Une proposition naît d'une date : en notant un contact avec le client ou en la créant.",
+      "anotar": "Noter",
+      "anotarTitle": "Noter un contact avec le client : la proposition est créée avec la note dedans",
+      "anotarPregunta": "Qu'avez-vous convenu avec le client au sujet de {{emplazamiento}} ?",
+      "anotada": "Note enregistrée : la date passe dans « Propositions ».",
+      "proponer": "Proposition",
+      "proponerTitle": "Créer la proposition de cette date",
+      "proponerVarias": "Créer une proposition avec les dates sélectionnées",
+      "mezclaClientes": "Les dates sélectionnées appartiennent à plusieurs clients, et une proposition est pour un seul client.",
+      "proyectar": "Projet",
+      "proyectarTitle": "Créer le projet directement, sans proposition (sous contrat)"
+    },
+    "accion": {
+      "arrancar": "Démarrer maintenant",
+      "parar": "Arrêter",
+      "reanudar": "Reprendre",
+      "pasar_certificacion": "Passer en certification",
+      "cerrar": "Clôturer le projet",
+      "cancelar": "Annuler le projet",
+      "reabrir": "Rouvrir",
+      "faltaMotivo": "Il faut indiquer pourquoi : le motif s’affiche ensuite dans la liste et dans la fiche.",
+      "pregunta": {
+        "parar": "Pourquoi le projet est-il arrêté ? Le motif s’affiche ensuite dans la liste et dans la fiche.",
+        "cancelar": "Pourquoi le projet est-il annulé ? Ses vérifications et ses notes sont conservées, et le motif s’affiche dans Perdus."
+      },
+      "confirmar": {
+        "pasar_certificacion": "Le travail sur le terrain est considéré comme terminé et le projet passe en certification, même s’il reste des équipements non vérifiés.",
+        "cerrar": "Le projet va être clôturé. S’il s’agit d’un projet de vérification, ce qui a été vérifié reçoit sa prochaine date de vérification dans l’arborescence."
+      },
+      "hecho": {
+        "arrancar": "Le projet démarre aujourd’hui : il passe « En exécution ».",
+        "parar": "Projet arrêté.",
+        "reanudar": "Projet repris.",
+        "pasar_certificacion": "Le projet passe « En certification ».",
+        "cerrar": "Projet clôturé.",
+        "cancelar": "Projet annulé.",
+        "reabrir": "Le projet est de nouveau ouvert."
+      },
+      "pista": {
+        "pasar_certificacion": "Le travail sur le terrain est terminé",
+        "cerrar": "Le travail est terminé"
+      }
+    },
+    "ficha": {
+      "paralizado": "Arrêté · {{count}} jour",
+      "paralizado_other": "Arrêté · {{count}} jours",
+      "eliminarConfirm": "Le projet va être supprimé. Ce n’est possible que s’il n’a aucun travail enregistré ; sinon, annulez-le. Continuer ?",
+      "eliminado": "Projet supprimé.",
+      "propuestaN": "Proposition n° {{id}}",
+      "abrirPropuesta": "Ouvrir la proposition",
+      "motivoCancelacion": "Motif de l’annulation"
+    },
+    "fichaPropuesta": {
+      "titulo": "Proposition",
+      "datos": "Données de la proposition",
+      "fechaPrevista": "Date prévue",
+      "proyectos": "Projets",
+      "sinProyectosAbierta": "Ils sont créés à l’acceptation de la proposition : un par site du périmètre.",
+      "sinProyectos": "La proposition n’a créé aucun projet.",
+      "sinPermiso": "Les propositions ne sont visibles qu’avec l’autorisation de gestion commerciale.",
+      "sinDocumento": "La proposition n’a pas encore de document : c’est le dossier des notes et de la probabilité. Le moment venu, composez le devis ici ou chargez celui fait à l’extérieur.",
+      "sinGuardar": "Le bloc de vérification est prérempli avec le périmètre de la proposition. Tant que vous n’enregistrez pas, la proposition reste sans document.",
+      "sinAlcance": "La proposition ne couvre aucun site",
+      "sinAlcanceHint": "Pour chiffrer la vérification à partir d’un site, ajoutez-le au périmètre. S’il n’est pas encore enregistré, composez le bloc à la main en saisissant des unités par type.",
+      "fueraDeAlcance": "Sans site du périmètre",
+      "aviso100": "Une probabilité de 100 % marque la version en vigueur comme ACCEPTÉE. Les projets sont créés en acceptant la proposition, en haut à droite.",
+      "descartar": "Écarter",
+      "descartarPregunta": "Pourquoi la proposition est-elle écartée ? Le motif s’affiche ensuite dans Perdus.",
+      "descartada": "Proposition écartée.",
+      "eliminarConfirm": "La proposition et ses notes vont être supprimées. C’est pour celle créée par erreur : celle qui n’aboutit pas s’écarte. Continuer ?",
+      "noEliminable": "Avec des versions générées ou des projets créés, la proposition ne se supprime plus : elle s’écarte.",
+      "notaAceptada": "Proposition acceptée le {{fecha}} : elle est désormais en lecture seule.",
+      "notaDescartada": "Proposition écartée le {{fecha}} :",
+      "aceptada_zero": "Proposition acceptée, sans projet à créer.",
+      "aceptada": "Proposition acceptée : {{count}} projet a été créé.",
+      "aceptada_other": "Proposition acceptée : {{count}} projets ont été créés.",
+      "alcance": {
+        "titulo": "Périmètre",
+        "sub": "Sites et zones couverts",
+        "vacio": "Aucun site : une fourniture, ou un site pas encore enregistré.",
+        "anadir": "Ajouter un site",
+        "elegir": "Choisissez un site du client…",
+        "zona": "Zone",
+        "quitar": "Retirer du périmètre"
+      },
+      "aceptar": {
+        "boton": "Accepter · créer les projets",
+        "titulo": "Accepter la proposition",
+        "lead": "Le client a dit oui : la proposition est acceptée et un projet ouvert est créé par site, avec la date prévue comme début indicatif.",
+        "naceran": "Un projet sera créé sur :",
+        "naceran_other": "{{count}} projets seront créés, un par site :",
+        "emplazamiento": "Site du projet",
+        "sinAlcance": "La proposition ne couvre aucun site, et un projet appartient toujours à un site : choisissez où le travail est réalisé.",
+        "tipos": "Type des projets",
+        "sinProyectos": "Accepter sans créer de projet (il s’agit seulement de livrer quelque chose, une fourniture)",
+        "soloAceptar": "Accepter sans projet",
+        "crear": "Accepter et créer le projet",
+        "crear_other": "Accepter et créer {{count}} projets",
+        "sinPermiso": "Accepter crée des projets : l’autorisation de créer des projets est nécessaire."
+      }
+    }
   },
   "revisiones": {
     "resultado": {
