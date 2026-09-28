@@ -3193,7 +3193,8 @@
       "altaClientes": "create customers",
       "altaEmplazamientos": "create sites",
       "api": "You do not have permission for this action: {{accion}}.",
-      "apiCapacidad": "You do not have permission for this action: {{accion}}. It comes with the {{capacidad}} capability."
+      "apiCapacidad": "You do not have permission for this action: {{accion}}. It comes with the {{capacidad}} capability.",
+      "informes": "view reports"
     }
   },
   "proyectos": {
@@ -4603,6 +4604,168 @@
       "descripcion": "Description",
       "fichero": "File",
       "tipoMime": "Type"
+    }
+  },
+  "informes": {
+    "titulo": "Reports",
+    "nuevo": "New report",
+    "buscar": "Search by code, title, client or site",
+    "vacio": "No reports yet",
+    "vacioHint": "Create the first one with «New report»: choose a template and a site and it is filled with the inspections not yet reported.",
+    "campos": {
+      "codigo": "Code",
+      "titulo": "Title",
+      "estado": "Status",
+      "plantilla": "Template",
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "proyecto": "Project",
+      "version": "Current version",
+      "ultimaEmision": "Last issued",
+      "firmado": "Signed",
+      "contenido": "Content",
+      "idioma": "Language",
+      "firmar": "Sign with the company seal"
+    },
+    "estados": {
+      "borrador": "Draft",
+      "emitido": "Issued",
+      "generando": "Generating PDF…",
+      "error": "Issue failed"
+    },
+    "idiomas": {
+      "es": "Spanish",
+      "en": "English"
+    },
+    "resultados": {
+      "apto": "Pass",
+      "no_apto": "Fail",
+      "no_revisada": "Not inspected"
+    },
+    "alta": {
+      "titulo": "New report",
+      "hint": "It starts as a draft: prepare it, preview it and issue it when ready.",
+      "creado": "Report created",
+      "sinPlantillas": "No published templates",
+      "elegirEmplazamiento": "Choose the site",
+      "idiomaCliente": "The client's",
+      "rellenar": "Fill it now with the template's selection (inspections not yet reported)",
+      "crear": "Create report"
+    },
+    "ficha": {
+      "identificacion": "Identification",
+      "campos": "Report details",
+      "firmarHint": "Without a seal set up in Parameters › Brand, the report is issued anyway, unsigned.",
+      "reabrir": "Reopen",
+      "reabrirConfirmar": "Reopen the report? The version the client holds will be withdrawn and its inspections can be corrected. You will then issue the next version.",
+      "reabierto": "Report reopened: it is a draft again",
+      "borrarConfirmar": "Delete the report «{{titulo}}»?",
+      "emitir": "Issue",
+      "reintentar": "Retry issuing",
+      "volver": "Back",
+      "generando": "Generating the PDF in the background. This page updates by itself.",
+      "falloEmision": "It could not be issued:",
+      "emitidoAviso": "Issued: version {{codigo}} of {{fecha}}. To correct it, reopen it.",
+      "emitidoOk": "Report issued",
+      "enColaOk": "Issuing: the PDF is being generated",
+      "tabs": {
+        "aria": "Report sections",
+        "contenido": "Content",
+        "datos": "Details",
+        "vista": "Preview",
+        "versiones": "Versions"
+      }
+    },
+    "contenido": {
+      "nRevisiones_one": "{{count}} inspection",
+      "nRevisiones_other": "{{count}} inspections",
+      "nEquipos_one": "{{count}} item",
+      "nEquipos_other": "{{count}} items",
+      "anadir": "Add",
+      "quitar_one": "Remove {{count}}",
+      "quitar_other": "Remove {{count}}",
+      "quitarConfirmar_one": "Remove {{count}} row from the report?",
+      "quitarConfirmar_other": "Remove {{count}} rows from the report?",
+      "anadidos_one": "{{count}} added to the report",
+      "anadidos_other": "{{count}} added to the report",
+      "vacio": "The report has nothing yet",
+      "vacioHint": "Press «Add» to choose inspections with the site filters.",
+      "fecha": "Date",
+      "resultado": "Result",
+      "equipo": "Equipment",
+      "identificador": "Identification",
+      "tipo": "Type",
+      "carpeta": "Location",
+      "revisor": "Inspector",
+      "validaHasta": "Valid until"
+    },
+    "selector": {
+      "titulo": "Add to the report",
+      "desde": "From",
+      "hasta": "To",
+      "resultado": "Result",
+      "opciones": "Which inspections",
+      "sinInforme": "Only those not in any issued report",
+      "ultima": "Only the latest of each item",
+      "estado": "Equipment status",
+      "enServicio": "In service",
+      "descatalogados": "Withdrawn",
+      "carpetas": "Folders",
+      "carpetasHint": "Each folder brings its branch. With none ticked, the whole site.",
+      "casan_one": "{{count}} matches the filters",
+      "casan_other": "{{count}} match the filters",
+      "nada": "Nothing matches these filters (what is already included is not repeated).",
+      "cargarMas": "Load more",
+      "anadirTodo_one": "Add the one that matches",
+      "anadirTodo_other": "Add the {{count}} that match",
+      "anadirMarcadas_one": "Add {{count}} ticked",
+      "anadirMarcadas_other": "Add {{count}} ticked"
+    },
+    "vista": {
+      "titulo": "Report preview",
+      "hint": "With today's data and marked as a draft. It is the same paper that is issued.",
+      "recargar": "Reload",
+      "verPdf": "View PDF",
+      "generandoPdf": "Generating…",
+      "errorPdf": "The PDF service is not responding right now."
+    },
+    "versiones": {
+      "estados": {
+        "vigente": "Current",
+        "sustituida": "Superseded",
+        "retirada": "Withdrawn"
+      },
+      "firmada": "Signed",
+      "fechaEmision": "Printed date",
+      "emitida": "Issued",
+      "firmante": "Signatory",
+      "observaciones": "Remarks",
+      "descargar": "Download PDF",
+      "vacio": "Not issued",
+      "vacioHint": "Each issue leaves its version here with the archived PDF."
+    },
+    "emitir": {
+      "titulo": "Issue the report",
+      "hint": "What the paper says is saved, the PDF is archived in the site documentation and its inspections are frozen while this version is current.",
+      "comprobando": "Checking…",
+      "avisos_one": "{{count}} warning before issuing",
+      "avisos_other": "{{count}} warnings before issuing",
+      "avisosHint": "They are warnings: it can be issued anyway.",
+      "sinAvisos": "No warnings: all in order.",
+      "numero": "Version no.",
+      "fecha": "Printed date",
+      "observaciones": "Remarks on this version",
+      "observacionesHint": "For example: provisional report with 20 inspections",
+      "emitir": "Issue"
+    },
+    "avisos": {
+      "sin_contenido": "The report has no inspection and no equipment.",
+      "sin_certificar": "Inspection not certified: {{equipo}}.",
+      "equipo_trasladado": "The item is no longer at this site: {{equipo}}.",
+      "no_apto_sin_foto": "Failed item without photo: {{equipo}}.",
+      "campo_vacio": "A mandatory field is empty.",
+      "texto_sin_idioma": "A template text is not in the report's language.",
+      "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned."
     }
   }
 }

@@ -3193,7 +3193,8 @@
       "altaClientes": "dar de alta clientes",
       "altaEmplazamientos": "dar de alta emplazamientos",
       "api": "No tienes permiso para esta acción: {{accion}}.",
-      "apiCapacidad": "No tienes permiso para esta acción: {{accion}}. Lo da la capacidad {{capacidad}}."
+      "apiCapacidad": "No tienes permiso para esta acción: {{accion}}. Lo da la capacidad {{capacidad}}.",
+      "informes": "ver los informes"
     }
   },
   "proyectos": {
@@ -4603,6 +4604,168 @@
       "descripcion": "Descripción",
       "fichero": "Fichero",
       "tipoMime": "Tipo"
+    }
+  },
+  "informes": {
+    "titulo": "Informes",
+    "nuevo": "Nuevo informe",
+    "buscar": "Buscar por código, título, cliente u obra",
+    "vacio": "Todavía no hay informes",
+    "vacioHint": "Crea el primero con «Nuevo informe»: eliges plantilla y obra y se rellena con las revisiones sin informe.",
+    "campos": {
+      "codigo": "Código",
+      "titulo": "Título",
+      "estado": "Estado",
+      "plantilla": "Plantilla",
+      "cliente": "Cliente",
+      "emplazamiento": "Emplazamiento",
+      "proyecto": "Proyecto",
+      "version": "Versión vigente",
+      "ultimaEmision": "Última emisión",
+      "firmado": "Firmado",
+      "contenido": "Contenido",
+      "idioma": "Idioma",
+      "firmar": "Firmar con el sello de la empresa"
+    },
+    "estados": {
+      "borrador": "Borrador",
+      "emitido": "Emitido",
+      "generando": "Generando PDF…",
+      "error": "Error al emitir"
+    },
+    "idiomas": {
+      "es": "Español",
+      "en": "Inglés"
+    },
+    "resultados": {
+      "apto": "Apto",
+      "no_apto": "No apto",
+      "no_revisada": "No revisado"
+    },
+    "alta": {
+      "titulo": "Nuevo informe",
+      "hint": "Nace en borrador: lo preparas, lo ves y, cuando esté listo, lo emites.",
+      "creado": "Informe creado",
+      "sinPlantillas": "No hay plantillas publicadas",
+      "elegirEmplazamiento": "Elige el emplazamiento",
+      "idiomaCliente": "El del cliente",
+      "rellenar": "Rellenarlo ya con la selección de la plantilla (las revisiones sin informe)",
+      "crear": "Crear informe"
+    },
+    "ficha": {
+      "identificacion": "Identificación",
+      "campos": "Datos del informe",
+      "firmarHint": "Sin sello configurado en Parámetros › Marca, el informe sale igual, sin firma.",
+      "reabrir": "Reabrir",
+      "reabrirConfirmar": "¿Reabrir el informe? La versión que tiene el cliente quedará retirada y sus revisiones se podrán corregir. Emitirás después la siguiente versión.",
+      "reabierto": "Informe reabierto: vuelve a estar en borrador",
+      "borrarConfirmar": "¿Borrar el informe «{{titulo}}»?",
+      "emitir": "Emitir",
+      "reintentar": "Reintentar la emisión",
+      "volver": "Volver",
+      "generando": "Generando el PDF en segundo plano. Esta ficha se actualiza sola.",
+      "falloEmision": "No se pudo emitir:",
+      "emitidoAviso": "Emitido: versión {{codigo}} del {{fecha}}. Para corregirlo, reábrelo.",
+      "emitidoOk": "Informe emitido",
+      "enColaOk": "Emisión en marcha: el PDF se está generando",
+      "tabs": {
+        "aria": "Secciones del informe",
+        "contenido": "Contenido",
+        "datos": "Datos",
+        "vista": "Vista previa",
+        "versiones": "Versiones"
+      }
+    },
+    "contenido": {
+      "nRevisiones_one": "{{count}} revisión",
+      "nRevisiones_other": "{{count}} revisiones",
+      "nEquipos_one": "{{count}} equipo",
+      "nEquipos_other": "{{count}} equipos",
+      "anadir": "Añadir",
+      "quitar_one": "Quitar {{count}}",
+      "quitar_other": "Quitar {{count}}",
+      "quitarConfirmar_one": "¿Quitar {{count}} fila del informe?",
+      "quitarConfirmar_other": "¿Quitar {{count}} filas del informe?",
+      "anadidos_one": "{{count}} añadida al informe",
+      "anadidos_other": "{{count}} añadidas al informe",
+      "vacio": "El informe no lleva nada todavía",
+      "vacioHint": "Pulsa «Añadir» para elegir revisiones con los filtros de la obra.",
+      "fecha": "Fecha",
+      "resultado": "Resultado",
+      "equipo": "Equipo",
+      "identificador": "Identificación",
+      "tipo": "Tipo",
+      "carpeta": "Ubicación",
+      "revisor": "Revisor",
+      "validaHasta": "Válido hasta"
+    },
+    "selector": {
+      "titulo": "Añadir al informe",
+      "desde": "Desde",
+      "hasta": "Hasta",
+      "resultado": "Resultado",
+      "opciones": "Qué revisiones",
+      "sinInforme": "Solo las que no están en ningún informe emitido",
+      "ultima": "Solo la última de cada equipo",
+      "estado": "Estado del equipo",
+      "enServicio": "En servicio",
+      "descatalogados": "Descatalogados",
+      "carpetas": "Carpetas",
+      "carpetasHint": "Cada carpeta trae su rama. Sin marcar ninguna, toda la obra.",
+      "casan_one": "{{count}} casa con los filtros",
+      "casan_other": "{{count}} casan con los filtros",
+      "nada": "Nada casa con estos filtros (lo ya incluido no se repite).",
+      "cargarMas": "Cargar más",
+      "anadirTodo_one": "Añadir la que casa",
+      "anadirTodo_other": "Añadir las {{count}} que casan",
+      "anadirMarcadas_one": "Añadir {{count}} marcada",
+      "anadirMarcadas_other": "Añadir {{count}} marcadas"
+    },
+    "vista": {
+      "titulo": "Vista previa del informe",
+      "hint": "Con los datos de hoy y marcado como borrador. Es el mismo papel que sale al emitir.",
+      "recargar": "Recargar",
+      "verPdf": "Ver PDF",
+      "generandoPdf": "Generando…",
+      "errorPdf": "El servicio de PDF no responde ahora mismo."
+    },
+    "versiones": {
+      "estados": {
+        "vigente": "Vigente",
+        "sustituida": "Sustituida",
+        "retirada": "Retirada"
+      },
+      "firmada": "Firmada",
+      "fechaEmision": "Fecha impresa",
+      "emitida": "Emitida",
+      "firmante": "Firmante",
+      "observaciones": "Observaciones",
+      "descargar": "Descargar PDF",
+      "vacio": "Sin emitir",
+      "vacioHint": "Cada emisión deja aquí su versión con el PDF custodiado."
+    },
+    "emitir": {
+      "titulo": "Emitir el informe",
+      "hint": "Se guarda lo que dice el papel, se archiva el PDF en la documentación de la obra y sus revisiones quedan congeladas mientras esta versión esté vigente.",
+      "comprobando": "Comprobando…",
+      "avisos_one": "{{count}} aviso antes de emitir",
+      "avisos_other": "{{count}} avisos antes de emitir",
+      "avisosHint": "Son avisos: se puede emitir igual.",
+      "sinAvisos": "Sin avisos: todo en orden.",
+      "numero": "Nº de versión",
+      "fecha": "Fecha que sale impresa",
+      "observaciones": "Observaciones de esta versión",
+      "observacionesHint": "Por ejemplo: informe provisional con 20 revisiones",
+      "emitir": "Emitir"
+    },
+    "avisos": {
+      "sin_contenido": "El informe no lleva ninguna revisión ni ningún equipo.",
+      "sin_certificar": "Revisión sin certificar: {{equipo}}.",
+      "equipo_trasladado": "El equipo ya no está en esta obra: {{equipo}}.",
+      "no_apto_sin_foto": "No apto sin foto: {{equipo}}.",
+      "campo_vacio": "Hay un campo obligatorio vacío.",
+      "texto_sin_idioma": "Un texto de la plantilla no está en el idioma del informe.",
+      "sin_sello": "Se pidió firmar, pero no hay sello configurado: saldrá sin firma."
     }
   }
 }
