@@ -4791,7 +4791,13 @@
       "observaciones": "Observaciones",
       "descargar": "Descargar PDF",
       "vacio": "Sin emitir",
-      "vacioHint": "Cada emisión deja aquí su versión con el PDF custodiado."
+      "vacioHint": "Cada emisión deja aquí su versión con el PDF custodiado.",
+      "huella": "Huella SHA-256",
+      "parte": {
+        "zona": "Zona",
+        "familia": "Familia",
+        "elemento": "Equipo"
+      }
     },
     "emitir": {
       "titulo": "Emitir el informe",

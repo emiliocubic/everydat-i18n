@@ -4791,7 +4791,13 @@
       "observaciones": "Remarks",
       "descargar": "Download PDF",
       "vacio": "Not issued",
-      "vacioHint": "Each issue leaves its version here with the archived PDF."
+      "vacioHint": "Each issue leaves its version here with the archived PDF.",
+      "huella": "SHA-256 fingerprint",
+      "parte": {
+        "zona": "Zone",
+        "familia": "Family",
+        "elemento": "Equipment"
+      }
     },
     "emitir": {
       "titulo": "Issue the report",
