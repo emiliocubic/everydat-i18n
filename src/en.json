@@ -770,7 +770,8 @@
         "normativa": "Standards",
         "historial": "History",
         "componentes": "Components",
-        "archivos": "Files"
+        "archivos": "Files",
+        "informe": "Report"
       },
       "anterior": "Previous (Alt+↑)",
       "siguiente": "Next (Alt+↓)",
@@ -982,7 +983,11 @@
         "apto": "Pass",
         "no_apto": "Fail",
         "no_revisada": "Not inspected"
-      }
+      },
+      "descargarParte": "Download the record as PDF",
+      "errorParte": "The record could not be generated",
+      "informe": "Report {{codigo}}",
+      "verInforme": "Open the issued report that includes this inspection"
     },
     "traslado": {
       "accion": "Move to another folder",
@@ -1118,6 +1123,47 @@
         "obsolescencia": "Obsolescence",
         "retirada_preventiva": "Preventive withdrawal",
         "otro": "Other"
+      }
+    },
+    "informe": {
+      "predefinidas": "Predefined sheets",
+      "ficha": {
+        "titulo": "Technical sheet",
+        "hint": "Identification, specifications and current status"
+      },
+      "historial": {
+        "titulo": "Inspection history",
+        "hint": "Every inspection of the equipment in date order"
+      },
+      "aMedida": "Custom report",
+      "marcarTodo": "Select all",
+      "desmarcarTodo": "Clear all",
+      "intro": "Choose which sections go into this equipment's PDF. It is an extract with today's data: it does not replace the issued report.",
+      "nada": "Nothing selected",
+      "seleccionados_one": "{{count}} section selected",
+      "seleccionados_other": "{{count}} sections selected",
+      "descargar": "Download PDF",
+      "generando": "Generating…",
+      "error": "The PDF could not be generated",
+      "grupos": {
+        "caract": "Specifications sheet",
+        "hist": "History",
+        "files": "Files"
+      },
+      "apartados": {
+        "caract_ident": "Identification",
+        "caract_situ": "Current status",
+        "caract_fechas": "Key dates",
+        "caract_tech": "Technical specifications",
+        "hist_rev": "Inspections",
+        "hist_rev_fotos": "Include photos",
+        "hist_rev_check": "Include checklist",
+        "hist_rep": "Repairs",
+        "hist_auto": "Automatic events",
+        "hist_auto_hint": "everything else",
+        "files_img": "Images",
+        "files_own": "Links to own documents",
+        "files_inh": "Links to model and type documents"
       }
     }
   },
@@ -4890,7 +4936,8 @@
       "caracteristicas": "Characteristics",
       "normas": "Standards",
       "vertical": "Portrait",
-      "horizontal": "Landscape"
+      "horizontal": "Landscape",
+      "situacion": "Current status"
     },
     "editor": {
       "catalogo": "Blocks",

@@ -655,7 +655,8 @@
         "normativa": "Normativa",
         "historial": "Historial",
         "componentes": "Componentes",
-        "archivos": "Archivos"
+        "archivos": "Archivos",
+        "informe": "Informe"
       },
       "anterior": "Anterior (Alt+↑)",
       "siguiente": "Siguiente (Alt+↓)",
@@ -867,7 +868,11 @@
         "apto": "Apto",
         "no_apto": "No apto",
         "no_revisada": "No revisada"
-      }
+      },
+      "descargarParte": "Descargar el parte en PDF",
+      "errorParte": "No se pudo generar el parte",
+      "informe": "Informe {{codigo}}",
+      "verInforme": "Abrir el informe emitido que lleva esta revisión"
     },
     "traslado": {
       "accion": "Trasladar a otra carpeta",
@@ -1003,6 +1008,47 @@
         "obsolescencia": "Obsolescencia",
         "retirada_preventiva": "Retirada preventiva",
         "otro": "Otro"
+      }
+    },
+    "informe": {
+      "predefinidas": "Fichas predefinidas",
+      "ficha": {
+        "titulo": "Ficha técnica",
+        "hint": "Identificación, características y situación actual"
+      },
+      "historial": {
+        "titulo": "Historial de revisiones",
+        "hint": "Todas las revisiones del equipo en orden cronológico"
+      },
+      "aMedida": "Informe a medida",
+      "marcarTodo": "Marcar todo",
+      "desmarcarTodo": "Desmarcar todo",
+      "intro": "Elige qué apartados incluir en el PDF de este equipo. Es un extracto con los datos de hoy: no sustituye al informe emitido.",
+      "nada": "Nada seleccionado",
+      "seleccionados_one": "{{count}} apartado seleccionado",
+      "seleccionados_other": "{{count}} apartados seleccionados",
+      "descargar": "Descargar PDF",
+      "generando": "Generando…",
+      "error": "No se pudo generar el PDF",
+      "grupos": {
+        "caract": "Ficha de características",
+        "hist": "Historial",
+        "files": "Archivos"
+      },
+      "apartados": {
+        "caract_ident": "Datos de identificación",
+        "caract_situ": "Situación actual",
+        "caract_fechas": "Fechas significativas",
+        "caract_tech": "Características técnicas",
+        "hist_rev": "Revisiones",
+        "hist_rev_fotos": "Incluir fotos",
+        "hist_rev_check": "Incluir checklist",
+        "hist_rep": "Reparaciones",
+        "hist_auto": "Eventos automáticos",
+        "hist_auto_hint": "todos los demás",
+        "files_img": "Imágenes",
+        "files_own": "Enlaces a documentos propios",
+        "files_inh": "Enlaces a documentos del modelo y el tipo"
       }
     }
   },
@@ -4890,7 +4936,8 @@
       "caracteristicas": "Características",
       "normas": "Normas",
       "vertical": "Vertical",
-      "horizontal": "Horizontal"
+      "horizontal": "Horizontal",
+      "situacion": "Situación actual"
     },
     "editor": {
       "catalogo": "Bloques",
