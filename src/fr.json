@@ -122,6 +122,7 @@
       "recuperacionLabel": "Code de récupération",
       "recuperacionHint": "Chaque code de récupération ne sert qu'une fois.",
       "codigoMalo": "Le code n'est pas valide.",
+      "recordar": "Se souvenir de cet appareil pendant 30 jours",
       "volver": "Retour",
       "altaIntro": "Votre rôle exige la validation en deux étapes. Configurez-la pour vous connecter.",
       "altaPaso1": "Scannez ce code avec votre application d'authentification (Google Authenticator, Microsoft Authenticator ou similaire).",

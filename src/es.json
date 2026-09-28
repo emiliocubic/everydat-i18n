@@ -122,6 +122,7 @@
       "recuperacionLabel": "Código de recuperación",
       "recuperacionHint": "Cada código de recuperación sirve una sola vez.",
       "codigoMalo": "El código no es válido.",
+      "recordar": "Recordar este dispositivo 30 días",
       "volver": "Volver",
       "altaIntro": "Tu rol exige verificación en dos pasos. Configúrala para entrar.",
       "altaPaso1": "Escanea este código con tu aplicación de autenticación (Google Authenticator, Microsoft Authenticator o similar).",

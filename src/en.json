@@ -122,6 +122,7 @@
       "recuperacionLabel": "Recovery code",
       "recuperacionHint": "Each recovery code works only once.",
       "codigoMalo": "The code is not valid.",
+      "recordar": "Remember this device for 30 days",
       "volver": "Back",
       "altaIntro": "Your role requires two-step verification. Set it up to sign in.",
       "altaPaso1": "Scan this code with your authenticator app (Google Authenticator, Microsoft Authenticator or similar).",
