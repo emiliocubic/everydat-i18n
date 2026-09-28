@@ -1675,6 +1675,7 @@
       "elementos_other": "{{count}} items",
       "colActivos": "Active items in the folder (branch total when collapsed)",
       "colIncidencias": "Issues: unfit items (end of life, overdue inspection, failed)",
+      "colPendientes": "Items awaiting inspection right now in a running project",
       "colDescatalogados": "Retired items",
       "colProxRevision": "Next inspection",
       "zonaPromocionar": "Promote to zone",
@@ -1726,7 +1727,8 @@
       "planBloqueDemanda": "On-demand inspections",
       "planDemandaAyuda": "No specific dates are set; equipment is inspected as it becomes available.",
       "planDemanda": "On demand",
-      "planAplicarModo": "Apply"
+      "planAplicarModo": "Apply",
+      "aplicar": "Apply"
     },
     "zona": {
       "promoverTitulo": "Create a sub-zone",

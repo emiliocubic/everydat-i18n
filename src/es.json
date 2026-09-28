@@ -1560,6 +1560,7 @@
       "elementos_other": "{{count}} elementos",
       "colActivos": "Elementos activos de la carpeta (agregado de la rama si está plegada)",
       "colIncidencias": "Incidencias: elementos no aptos (fin de vida, revisión caducada, no apto)",
+      "colPendientes": "Elementos pendientes de revisar ahora mismo en un proyecto en marcha",
       "colDescatalogados": "Elementos retirados",
       "colProxRevision": "Próxima revisión",
       "zonaPromocionar": "Promocionar a zona",
@@ -1611,7 +1612,8 @@
       "planBloqueDemanda": "Revisiones a demanda",
       "planDemandaAyuda": "No se especifican fechas concretas, se revisan los equipos tal cual vayan estando disponibles para ello.",
       "planDemanda": "A demanda",
-      "planAplicarModo": "Validar"
+      "planAplicarModo": "Validar",
+      "aplicar": "Aplicar"
     },
     "zona": {
       "promoverTitulo": "Crear una sub-zona",
