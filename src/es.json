@@ -4797,7 +4797,9 @@
         "zona": "Zona",
         "familia": "Familia",
         "elemento": "Equipo"
-      }
+      },
+      "verificacion": "Verificación",
+      "verificacionHint": "Abrir la página pública de verificación, la que abre el QR del pie"
     },
     "emitir": {
       "titulo": "Emitir el informe",

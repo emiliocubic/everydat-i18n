@@ -4797,7 +4797,9 @@
         "zona": "Zone",
         "familia": "Family",
         "elemento": "Equipment"
-      }
+      },
+      "verificacion": "Verification",
+      "verificacionHint": "Open the public verification page, the one the footer QR opens"
     },
     "emitir": {
       "titulo": "Issue the report",
