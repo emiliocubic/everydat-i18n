@@ -1613,6 +1613,16 @@
       "omitidos_one": "{{count}} skipped (retired or already under inspection)",
       "omitidos_other": "{{count}} skipped (retired or already under inspection)",
       "abrir": "Open the basket"
+    },
+    "modoRevision": {
+      "titulo": "Inspection mode",
+      "fechas": "On scheduled dates",
+      "demanda": "On demand",
+      "heredaEmplazamiento": "Inherits the site's",
+      "heredaZona": "Inherits from zone «{{zona}}»",
+      "aDemanda": "{{nombre}} is now inspected on demand",
+      "aDemandaPierde": "{{nombre}} is now inspected on demand and loses its scheduled date",
+      "cajaAyuda": "Inspected on demand: it has no next inspection date"
     }
   },
   "localizaciones": {
@@ -1710,7 +1720,12 @@
         "rama": "Active items in this folder and every folder under it"
       },
       "clonar": "Clone folder",
-      "noClonarRaiz": "The site is not cloned: pick a folder"
+      "noClonarRaiz": "The site is not cloned: pick a folder",
+      "planBloqueFechas": "On set dates",
+      "planBloqueDemanda": "On-demand inspections",
+      "planDemandaAyuda": "No specific dates are set; equipment is inspected as it becomes available.",
+      "planDemanda": "On demand",
+      "planAplicarModo": "Apply"
     },
     "zona": {
       "promoverTitulo": "Create a sub-zone",
@@ -1726,7 +1741,9 @@
       "depSubzonas": "{{count}} sub-zone inside it",
       "depSubzonas_other": "{{count}} sub-zones inside it",
       "depPlanificacion": "One scheduled inspection date",
-      "sinDependencias": "Nothing hangs from this zone."
+      "sinDependencias": "Nothing hangs from this zone.",
+      "promoverZonaTitulo": "Promote to zone",
+      "promoverZonaAccion": "Promote"
     },
     "revision": {
       "titulo": "Start inspection",

@@ -1498,6 +1498,16 @@
       "omitidos_one": "{{count}} omitido (descatalogado o ya en revisión)",
       "omitidos_other": "{{count}} omitidos (descatalogados o ya en revisión)",
       "abrir": "Abrir la cesta"
+    },
+    "modoRevision": {
+      "titulo": "Modo de revisión",
+      "fechas": "Por fechas especificadas",
+      "demanda": "A demanda",
+      "heredaEmplazamiento": "Hereda el del emplazamiento",
+      "heredaZona": "Hereda el de la zona «{{zona}}»",
+      "aDemanda": "{{nombre}} se revisa ahora a demanda",
+      "aDemandaPierde": "{{nombre}} se revisa ahora a demanda y pierde su fecha programada",
+      "cajaAyuda": "Se revisa a demanda: no lleva fecha de próxima revisión"
     }
   },
   "localizaciones": {
@@ -1595,7 +1605,12 @@
         "rama": "Equipos activos de esta carpeta y de todas las que cuelgan de ella"
       },
       "clonar": "Clonar carpeta",
-      "noClonarRaiz": "El emplazamiento no se clona: elige una carpeta"
+      "noClonarRaiz": "El emplazamiento no se clona: elige una carpeta",
+      "planBloqueFechas": "Por fechas determinadas",
+      "planBloqueDemanda": "Revisiones a demanda",
+      "planDemandaAyuda": "No se especifican fechas concretas, se revisan los equipos tal cual vayan estando disponibles para ello.",
+      "planDemanda": "A demanda",
+      "planAplicarModo": "Validar"
     },
     "zona": {
       "promoverTitulo": "Crear una sub-zona",
@@ -1611,7 +1626,9 @@
       "depSubzonas": "{{count}} sub-zona dentro de esta",
       "depSubzonas_other": "{{count}} sub-zonas dentro de esta",
       "depPlanificacion": "Una fecha de revisión planificada",
-      "sinDependencias": "No cuelga nada de esta zona."
+      "sinDependencias": "No cuelga nada de esta zona.",
+      "promoverZonaTitulo": "Promocionar a zona",
+      "promoverZonaAccion": "Promocionar"
     },
     "revision": {
       "titulo": "Poner en revisión",

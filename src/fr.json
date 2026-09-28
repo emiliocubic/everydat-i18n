@@ -1564,6 +1564,16 @@
       "omitidos_one": "{{count}} ignoré (retiré ou déjà en contrôle)",
       "omitidos_other": "{{count}} ignorés (retirés ou déjà en contrôle)",
       "abrir": "Ouvrir le panier"
+    },
+    "modoRevision": {
+      "titulo": "Mode de révision",
+      "fechas": "À dates fixées",
+      "demanda": "À la demande",
+      "heredaEmplazamiento": "Hérite de celui du site",
+      "heredaZona": "Hérite de celui de la zone « {{zona}} »",
+      "aDemanda": "{{nombre}} est désormais révisé à la demande",
+      "aDemandaPierde": "{{nombre}} est désormais révisé à la demande et perd sa date programmée",
+      "cajaAyuda": "Révisé à la demande : pas de date de prochaine révision"
     }
   },
   "localizaciones": {
@@ -1661,7 +1671,12 @@
         "rama": "Équipements actifs de ce dossier et de tous ceux qui en dépendent"
       },
       "clonar": "Cloner le dossier",
-      "noClonarRaiz": "Le site ne se clone pas : choisissez un dossier"
+      "noClonarRaiz": "Le site ne se clone pas : choisissez un dossier",
+      "planBloqueFechas": "À dates déterminées",
+      "planBloqueDemanda": "Révisions à la demande",
+      "planDemandaAyuda": "Aucune date précise n'est fixée : les équipements sont révisés au fur et à mesure qu'ils sont disponibles.",
+      "planDemanda": "À la demande",
+      "planAplicarModo": "Valider"
     },
     "zona": {
       "promoverTitulo": "Créer une sous-zone",
@@ -1677,7 +1692,9 @@
       "depSubzonas": "{{count}} sous-zone à l’intérieur",
       "depSubzonas_other": "{{count}} sous-zones à l’intérieur",
       "depPlanificacion": "Une date de contrôle planifiée",
-      "sinDependencias": "Rien ne dépend de cette zone."
+      "sinDependencias": "Rien ne dépend de cette zone.",
+      "promoverZonaTitulo": "Promouvoir en zone",
+      "promoverZonaAccion": "Promouvoir"
     },
     "revision": {
       "titulo": "Mettre en contrôle",
