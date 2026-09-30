@@ -499,6 +499,7 @@
     },
     "estado": {
       "activo": "Actif",
+      "potencial": "Prospect",
       "baja": "Inactif"
     },
     "nuevo": {
@@ -3008,7 +3009,7 @@
       "admins": "Administrateurs",
       "proyectos": "Projets",
       "instancia": "Instance",
-      "proyectosGeneral": "Général",
+      "proyectosGeneral": "Vue générale",
       "proyectosFuturos": "À venir",
       "proyectosEnCurso": "En cours",
       "proyectosDescartados": "Écartés",
@@ -3243,6 +3244,7 @@
       "buscarEmplazamiento": "Rechercher un site…",
       "antesCliente": "Sélectionnez d'abord le client",
       "zona": "Uniquement la zone {{zona}}, celle de la date de vérification.",
+      "desdeFecha": "Commence le {{fecha}}, date de vérification, à titre indicatif : il ne démarrera pas tout seul.",
       "finAntes": "La fin prévue ne peut pas être antérieure au début.",
       "orientativas": "Les dates sont indicatives",
       "orientativasHint": "Si coché, le projet ne démarre pas tout seul à la date de début : il faudra appuyer sur « Démarrer maintenant » le moment venu."
@@ -3282,7 +3284,7 @@
     "datos": {
       "identificacion": "Identification",
       "parametros": "Paramètres principaux",
-      "parametrosHint": "Modifiables dans leur onglet",
+      "parametrosHint": "(à titre informatif, non modifiables ici)",
       "notas": "Notes",
       "sinNotas": "Aucune note.",
       "soloLectura": "Cet état laisse la fiche en lecture seule.",
@@ -3367,7 +3369,12 @@
       "seleccionadas_other": "{{count}} personnes sélectionnées",
       "hecho": "Terminé",
       "sinInternos": "Aucun utilisateur interne à affecter.",
-      "orientativas": "Les dates sont indicatives : ne pas démarrer automatiquement à la date de début",
+      "arranqueOrientativa": "La date de début est indicative : ne pas démarrer automatiquement ce jour-là",
+      "arranqueFirme": "La date de début est ferme : démarrer automatiquement le {{fecha}}",
+      "arranqueFirmeSinFecha": "La date de début est ferme : démarrer automatiquement à la date de début",
+      "avisoArranqueTitulo": "Passage en exécution",
+      "avisoArranque": "La date de début ({{fecha}}) est aujourd’hui ou déjà passée, elle est ferme et le projet a un responsable : à l’enregistrement, il passera EN EXÉCUTION. Continuer ?",
+      "avisoArranqueBoton": "Enregistrer et démarrer",
       "reglaOrientativas": "Les dates sont une prévision : le projet attend que quelqu’un clique sur « Démarrer maintenant ».",
       "reglaSinAdmin": "Sans responsable, il ne démarre pas : désignez-en un dans « Personnel affecté ».",
       "barra": {
@@ -3502,7 +3509,11 @@
       "reabierta": "La certification est de nouveau ouverte.",
       "cerradoBadge": "Projet clôturé",
       "roCerrado": "Le projet est clôturé : la certification est en lecture seule.",
-      "roCancelado": "Le projet est annulé : la certification est en lecture seule."
+      "roCancelado": "Le projet est annulé : la certification est en lecture seule.",
+      "editarRevision": "Modifier le contrôle",
+      "editarRevisionTitle": "Ouvrir le contrôle dans l'éditeur pour le corriger",
+      "noRevisado": "Non vérifié",
+      "verComentarios": "Ouvrir le contrôle avec les commentaires dépliés"
     },
     "vistas": {
       "futuros": "À venir",
@@ -3616,7 +3627,7 @@
       },
       "gen": {
         "title": "Générer la proposition",
-        "lead": "Fixez les dates du devis avant de le générer. La version conserve le détail figé et son montant ; le PDF viendra avec le moteur de rapports.",
+        "lead": "Fixez les dates du devis avant de le générer. La version conserve le détail figé et son montant.",
         "emision": "Date d'émission",
         "validez": "Date de validité",
         "confirmar": "Générer",
@@ -3679,7 +3690,8 @@
       "msgs": {
         "guardado": "Proposition enregistrée.",
         "sinCambios": "Rien à enregistrer.",
-        "eliminarConfirm": "Le détail de la proposition sera supprimé et le projet n'aura plus de proposition. Continuer ?",
+        "eliminarConfirm": "Le document de la proposition sera abandonné et le dossier redeviendra sans document ; les notes et le périmètre sont conservés. Continuer ?",
+        "documentoQuitado": "Document abandonné : la proposition est de nouveau sans document.",
         "eliminada": "Proposition supprimée.",
         "desbloqueada": "Proposition déverrouillée : le détail est à nouveau modifiable.",
         "estadoCambiado": "La version {{numero}} passe à « {{estado}} ».",
@@ -3785,12 +3797,18 @@
         "planificacion": "Planification",
         "inicio": "Début",
         "finCampo": "Fin du terrain",
-        "motivo": "Motif"
+        "motivo": "Motif",
+        "fechas": "Dates"
       },
       "clase": {
         "fecha": "Date",
         "propuesta": "Proposition",
         "proyecto": "Projet"
+      },
+      "claseTip": {
+        "fecha": "Échéance pas encore transformée en projet",
+        "propuesta": "Projet potentiel en attente d'approbation",
+        "proyecto": "Projet approuvé en cours"
       },
       "pestana": {
         "aprobado": "Approuvés",
@@ -3798,8 +3816,8 @@
         "en_certificacion": "Certification"
       },
       "hint": {
-        "aprobado": "Travail engagé en cours de planification : la barre indique s'il a déjà des dates et un responsable. Il démarre tout seul à la date de début, sauf si les dates sont indicatives.",
-        "en_ejecucion": "Sur le terrain : l'avancement réel, l'équipe et la fin prévue. Les projets suspendus restent ici, avec leur pastille rouge et le nombre de jours d'arrêt.",
+        "aprobado": "Travail engagé en cours de planification : la barre indique s'il a déjà des dates et un responsable. Le projet démarrera tout seul à la date de début, sauf si celle-ci est encore indicative.",
+        "en_ejecucion": "Sur le terrain : les dates, l'avancement réel et l'équipe. Les projets suspendus restent ici, avec la pause rouge dans leur état.",
         "en_certificacion": "Travail de terrain terminé, en attente de validation de ce qui a été fait."
       },
       "enCursoHint": "Rien dans cette phase avec ces filtres.",
@@ -3807,6 +3825,8 @@
       "generalHint": "Tout ce qui est ouvert : dates de vérification sans proposition, propositions ouvertes et projets ouverts.",
       "buscarGeneral": "Rechercher par client, site ou projet…",
       "buscarPerdidos": "Rechercher par client, site ou motif…",
+      "buscarTexto": "Rechercher du texte…",
+      "todosClientes": "Tous les clients",
       "todosEmplazamientos": "Tous les sites",
       "zonaSinNombre": "Zone sans nom",
       "sinAlcance": "Sans site",
@@ -3825,6 +3845,16 @@
       },
       "mes": "Mois de l'année",
       "mesTitle": "Ce dont la date prévue tombait ce mois-là, quelle que soit l'année",
+      "rango": {
+        "title": "Entre deux dates : la date prévue de la proposition ou le début prévu du projet",
+        "desde": "Du",
+        "hasta": "Au"
+      },
+      "perdido": {
+        "caducada": "A expiré",
+        "cancelado": "A été annulé",
+        "descartada": "A été écartée"
+      },
       "perdidosVacio": "Rien de perdu avec ces filtres",
       "perdidosHint": "Propositions écartées ou expirées et projets annulés : la liste pour relancer le commercial."
     },
@@ -3835,9 +3865,22 @@
         "propuestas": "Propositions"
       },
       "hint": {
-        "fechas": "Dates de vérification comprises dans la fenêtre, ou échues depuis moins de {{count}} mois, qu'aucune proposition ni aucun projet ne couvre. Cochez-en plusieurs du même client pour les regrouper dans une seule proposition.",
-        "fechas_other": "Dates de vérification comprises dans la fenêtre, ou échues depuis moins de {{count}} mois, qu'aucune proposition ni aucun projet ne couvre. Cochez-en plusieurs du même client pour les regrouper dans une seule proposition.",
-        "propuestas": "Les propositions ouvertes, avec ou sans document : le dossier commercial avec ses notes, sa probabilité et, le moment venu, le devis."
+        "fechas": "Dates de vérification prévues dans les {{ventana}} à venir, ou échues depuis moins de {{gracia}}, qu'aucune proposition ni aucun projet ne couvre. Vous pouvez en cocher plusieurs du même client pour les regrouper dans une seule proposition.",
+        "propuestas": "Propositions ouvertes actuellement, avec ou sans offre chiffrée : le dossier commercial avec ses notes, sa probabilité et, éventuellement, le devis."
+      },
+      "rango": {
+        "sinEstimar": "Non estimée",
+        "baja": "Faible (jusqu'à 40 %)",
+        "media": "Moyenne (41–79 %)",
+        "alta": "Élevée (80–99 %)",
+        "confirmada": "Confirmée (100 %)"
+      },
+      "nueva": {
+        "cta": "Nouvelle opportunité",
+        "title": "Nouvelle opportunité",
+        "para": "Choisissez le client. L'opportunité naît vide et se complète dans sa fiche : sites, notes, probabilité et, si besoin, devis.",
+        "crear": "Créer l'opportunité",
+        "creada": "Opportunité créée."
       },
       "cols": {
         "fecha": "Prochaine vérification"
@@ -3847,7 +3890,7 @@
       "fechasVacio": "Aucune date sans proposition dans cette fenêtre",
       "fechasVacioHint": "Les dates de vérification se fixent sur le site ou sur ses zones.",
       "propuestasVacio": "Aucune proposition ouverte",
-      "propuestasVacioHint": "Une proposition naît d'une date : en notant un contact avec le client ou en la créant.",
+      "propuestasVacioHint": "Une proposition naît d'une date, en notant un contact avec le client ou en la créant, ou de zéro avec « Nouvelle opportunité ».",
       "anotar": "Noter",
       "anotarTitle": "Noter un contact avec le client : la proposition est créée avec la note dedans",
       "anotarPregunta": "Qu'avez-vous convenu avec le client au sujet de {{emplazamiento}} ?",
@@ -4009,6 +4052,7 @@
       "imagenesAlCrear_other": "{{count}} images seront envoyées à l'enregistrement du contrôle.",
       "sinImagenes": "Ce contrôle n'a pas d'images.",
       "guardar": "Enregistrer les modifications",
+      "guardarModificaciones": "Enregistrer les modifications",
       "validaHasta": "Valable jusqu'au {{fecha}}",
       "checklist": "Checklist",
       "checklistSeccion": "Checklist du contrôle",

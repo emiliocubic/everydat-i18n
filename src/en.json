@@ -501,6 +501,7 @@
     },
     "estado": {
       "activo": "Active",
+      "potencial": "Prospect",
       "baja": "Inactive"
     },
     "nuevo": {
@@ -3118,7 +3119,7 @@
       "admins": "Administrators",
       "proyectos": "Projects",
       "instancia": "Instance",
-      "proyectosGeneral": "General",
+      "proyectosGeneral": "Overview",
       "proyectosFuturos": "Upcoming",
       "proyectosEnCurso": "In progress",
       "proyectosDescartados": "Discarded",
@@ -3356,6 +3357,7 @@
       "buscarEmplazamiento": "Search site…",
       "antesCliente": "Select the client first",
       "zona": "Only zone {{zona}}, the one with the inspection date.",
+      "desdeFecha": "Starts on {{fecha}}, the inspection date, as an approximate date: it will not start on its own.",
       "finAntes": "The planned end cannot be earlier than the start.",
       "orientativas": "Dates are approximate",
       "orientativasHint": "When checked, the project does not start on its own when the start date arrives: someone has to press «Start now» once it is known."
@@ -3395,7 +3397,7 @@
     "datos": {
       "identificacion": "Identification",
       "parametros": "Main parameters",
-      "parametrosHint": "Edited in their own tab",
+      "parametrosHint": "(for information, not edited here)",
       "notas": "Notes",
       "sinNotas": "No notes.",
       "soloLectura": "This status leaves the record read-only.",
@@ -3480,7 +3482,12 @@
       "seleccionadas_other": "{{count}} people selected",
       "hecho": "Done",
       "sinInternos": "There are no internal users to assign.",
-      "orientativas": "Dates are tentative: do not start automatically on the start date",
+      "arranqueOrientativa": "The start date is tentative: do not start automatically on that day",
+      "arranqueFirme": "The start date is firm: start automatically on {{fecha}}",
+      "arranqueFirmeSinFecha": "The start date is firm: start automatically on the start date",
+      "avisoArranqueTitulo": "It will move to execution",
+      "avisoArranque": "The start date ({{fecha}}) is today or already past, it is firm and the project has a manager: when saved it will move to IN EXECUTION. Continue?",
+      "avisoArranqueBoton": "Save and start",
       "reglaOrientativas": "The dates are an estimate: the project waits until someone clicks “Start now”.",
       "reglaSinAdmin": "Without a manager it will not start: assign one under “Assigned staff”.",
       "barra": {
@@ -3630,7 +3637,11 @@
       "reabierta": "Certification is open again.",
       "cerradoBadge": "Project closed",
       "roCerrado": "The project is closed: certification is read-only.",
-      "roCancelado": "The project is cancelled: certification is read-only."
+      "roCancelado": "The project is cancelled: certification is read-only.",
+      "editarRevision": "Edit inspection",
+      "editarRevisionTitle": "Open the inspection in the editor to amend it",
+      "noRevisado": "Not inspected",
+      "verComentarios": "Open the inspection with its comments expanded"
     },
     "vistas": {
       "futuros": "Upcoming",
@@ -3744,7 +3755,7 @@
       },
       "gen": {
         "title": "Generate proposal",
-        "lead": "Set the quote dates before generating it. The version stores the frozen detail and its amount; the PDF will come with the reports engine.",
+        "lead": "Set the quote dates before generating it. The version stores the frozen detail and its amount.",
         "emision": "Issue date",
         "validez": "Valid until",
         "confirmar": "Generate",
@@ -3807,7 +3818,8 @@
       "msgs": {
         "guardado": "Proposal saved.",
         "sinCambios": "Nothing to save.",
-        "eliminarConfirm": "The proposal detail will be deleted and the project goes back to having no proposal. Continue?",
+        "eliminarConfirm": "The proposal document will be discarded and the folder goes back to having no document; notes and scope are kept. Continue?",
+        "documentoQuitado": "Document discarded: the proposal has no document again.",
         "eliminada": "Proposal deleted.",
         "desbloqueada": "Proposal unlocked: the detail is editable again.",
         "estadoCambiado": "Version {{numero}} is now \"{{estado}}\".",
@@ -3913,12 +3925,18 @@
         "planificacion": "Planning",
         "inicio": "Start",
         "finCampo": "Fieldwork end",
-        "motivo": "Reason"
+        "motivo": "Reason",
+        "fechas": "Dates"
       },
       "clase": {
         "fecha": "Date",
         "propuesta": "Proposal",
         "proyecto": "Project"
+      },
+      "claseTip": {
+        "fecha": "Due date not yet turned into a project",
+        "propuesta": "Potential project awaiting approval",
+        "proyecto": "Current approved project"
       },
       "pestana": {
         "aprobado": "Approved",
@@ -3926,8 +3944,8 @@
         "en_certificacion": "Certification"
       },
       "hint": {
-        "aprobado": "Committed work being planned: the bar shows whether it already has dates and an owner. It starts on its own when the start date arrives, unless the dates are approximate.",
-        "en_ejecucion": "On site: actual progress, the team and the planned end. Halted projects stay here, with their red pill and the days they have been halted.",
+        "aprobado": "Committed work being planned: the bar shows whether it already has dates and an owner. The project will start on its own when the start date arrives, unless the start date is still approximate.",
+        "en_ejecucion": "On site: the dates, actual progress and the team. Halted projects stay here, with the red pause in their status.",
         "en_certificacion": "Fieldwork finished, pending validation of what was done."
       },
       "enCursoHint": "Nothing in this phase with these filters.",
@@ -3935,6 +3953,8 @@
       "generalHint": "Everything open: inspection dates without a proposal, open proposals and open projects.",
       "buscarGeneral": "Search by client, site or project…",
       "buscarPerdidos": "Search by client, site or reason…",
+      "buscarTexto": "Search text…",
+      "todosClientes": "All clients",
       "todosEmplazamientos": "All sites",
       "zonaSinNombre": "Unnamed zone",
       "sinAlcance": "No site",
@@ -3953,6 +3973,16 @@
       },
       "mes": "Month of year",
       "mesTitle": "What had its planned date in that month, in any year",
+      "rango": {
+        "title": "Between two dates: the proposal's expected date or the project's planned start",
+        "desde": "From",
+        "hasta": "To"
+      },
+      "perdido": {
+        "caducada": "Expired",
+        "cancelado": "Was cancelled",
+        "descartada": "Was discarded"
+      },
       "perdidosVacio": "Nothing lost with these filters",
       "perdidosHint": "Discarded or expired proposals and cancelled projects: the list for winning back business."
     },
@@ -3963,9 +3993,22 @@
         "propuestas": "Proposals"
       },
       "hint": {
-        "fechas": "Inspection dates within the window, or overdue for less than {{count}} month, not covered by any proposal or project. Select several from the same client to group them in a single proposal.",
-        "fechas_other": "Inspection dates within the window, or overdue for less than {{count}} months, not covered by any proposal or project. Select several from the same client to group them in a single proposal.",
-        "propuestas": "Open proposals, with or without a document: the sales folder with its notes, its probability and, when the time comes, the quote."
+        "fechas": "Inspection dates due in the next {{ventana}}, or overdue for less than {{gracia}}, not covered by any proposal or project. You can select several from the same client to group them in a single proposal.",
+        "propuestas": "Currently open proposals, with or without a quote: the sales folder with its notes, its probability and, optionally, the quote."
+      },
+      "rango": {
+        "sinEstimar": "Not estimated",
+        "baja": "Low (up to 40 %)",
+        "media": "Medium (41–79 %)",
+        "alta": "High (80–99 %)",
+        "confirmada": "Confirmed (100 %)"
+      },
+      "nueva": {
+        "cta": "New opportunity",
+        "title": "New opportunity",
+        "para": "Choose the client. The opportunity starts empty and is completed in its record: sites, notes, probability and, if needed, a quote.",
+        "crear": "Create opportunity",
+        "creada": "Opportunity created."
       },
       "cols": {
         "fecha": "Next inspection"
@@ -3975,7 +4018,7 @@
       "fechasVacio": "No dates without a proposal in this window",
       "fechasVacioHint": "Inspection dates are set on the site or on its zones.",
       "propuestasVacio": "No open proposals",
-      "propuestasVacioHint": "A proposal is born from a date: by logging a contact with the client or by creating it.",
+      "propuestasVacioHint": "A proposal is born from a date, by logging a contact with the client or by creating it, or from scratch with «New opportunity».",
       "anotar": "Log",
       "anotarTitle": "Log a contact with the client: the proposal is created with the note inside",
       "anotarPregunta": "What did you discuss with the client about {{emplazamiento}}?",
@@ -4137,6 +4180,7 @@
       "imagenesAlCrear_other": "{{count}} images will be uploaded when the inspection is saved.",
       "sinImagenes": "This inspection has no images.",
       "guardar": "Save changes",
+      "guardarModificaciones": "Save amendments",
       "validaHasta": "Valid until {{fecha}}",
       "checklist": "Checklist",
       "checklistSeccion": "Inspection checklist",

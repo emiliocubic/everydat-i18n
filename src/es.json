@@ -386,6 +386,7 @@
     },
     "estado": {
       "activo": "Activo",
+      "potencial": "Potencial",
       "baja": "Baja"
     },
     "nuevo": {
@@ -3118,7 +3119,7 @@
       "admins": "Administradores",
       "proyectos": "Proyectos",
       "instancia": "Instancia",
-      "proyectosGeneral": "General",
+      "proyectosGeneral": "Vista general",
       "proyectosFuturos": "Futuros",
       "proyectosEnCurso": "En curso",
       "proyectosDescartados": "Descartados",
@@ -3356,6 +3357,7 @@
       "buscarEmplazamiento": "Buscar emplazamiento…",
       "antesCliente": "Selecciona antes el cliente",
       "zona": "Solo la zona {{zona}}, la de la fecha de revisión.",
+      "desdeFecha": "Empieza el {{fecha}}, la fecha de revisión, como fecha orientativa: no arrancará solo.",
       "finAntes": "El fin previsto no puede ser anterior al inicio.",
       "orientativas": "Las fechas son orientativas",
       "orientativasHint": "Marcado, el proyecto no arranca solo al llegar el inicio: habrá que pulsar «Arrancar ahora» cuando se sepa."
@@ -3395,7 +3397,7 @@
     "datos": {
       "identificacion": "Identificación",
       "parametros": "Parámetros principales",
-      "parametrosHint": "Se editan en su pestaña",
+      "parametrosHint": "(informativo, no se editan aquí)",
       "notas": "Notas",
       "sinNotas": "Sin notas.",
       "soloLectura": "Este estado deja la ficha en solo lectura.",
@@ -3480,7 +3482,12 @@
       "seleccionadas_other": "{{count}} personas seleccionadas",
       "hecho": "Hecho",
       "sinInternos": "No hay usuarios internos que asignar.",
-      "orientativas": "Las fechas son orientativas: no arrancar solo al llegar el inicio",
+      "arranqueOrientativa": "La fecha de inicio es orientativa: no arrancar automáticamente en ese momento",
+      "arranqueFirme": "La fecha de inicio es firme: arrancar automáticamente el día {{fecha}}",
+      "arranqueFirmeSinFecha": "La fecha de inicio es firme: arrancar automáticamente el día de inicio",
+      "avisoArranqueTitulo": "Pasará a ejecución",
+      "avisoArranque": "La fecha de inicio ({{fecha}}) es hoy o ya ha pasado, es firme y el proyecto tiene administrador: al guardar pasará a EN EJECUCIÓN. ¿Continuar?",
+      "avisoArranqueBoton": "Guardar y arrancar",
       "reglaOrientativas": "Las fechas son una previsión: el proyecto espera a que alguien pulse «Arrancar ahora».",
       "reglaSinAdmin": "Sin administrador no arranca: asígnalo en «Personal asignado».",
       "barra": {
@@ -3630,7 +3637,11 @@
       "reabierta": "La certificación vuelve a estar abierta.",
       "cerradoBadge": "Proyecto cerrado",
       "roCerrado": "El proyecto está cerrado: la certificación es de solo lectura.",
-      "roCancelado": "El proyecto está cancelado: la certificación es de solo lectura."
+      "roCancelado": "El proyecto está cancelado: la certificación es de solo lectura.",
+      "editarRevision": "Editar revisión",
+      "editarRevisionTitle": "Abrir la revisión en el editor para enmendarla",
+      "noRevisado": "No revisado",
+      "verComentarios": "Abrir la revisión con los comentarios desplegados"
     },
     "vistas": {
       "futuros": "Futuros",
@@ -3744,7 +3755,7 @@
       },
       "gen": {
         "title": "Generar propuesta",
-        "lead": "Fija las fechas del presupuesto antes de generarlo. La versión guarda el detalle congelado y su importe; el PDF llegará con el motor de informes.",
+        "lead": "Fija las fechas del presupuesto antes de generarlo. La versión guarda el detalle congelado y su importe.",
         "emision": "Fecha de emisión",
         "validez": "Fecha de validez",
         "confirmar": "Generar",
@@ -3807,7 +3818,8 @@
       "msgs": {
         "guardado": "Propuesta guardada.",
         "sinCambios": "No hay cambios que guardar.",
-        "eliminarConfirm": "Se elimina el detalle de la propuesta y el proyecto vuelve a no tener propuesta. ¿Continuar?",
+        "eliminarConfirm": "Se descarta el documento de la propuesta y la carpeta vuelve a quedar sin documento; las notas y el alcance se conservan. ¿Continuar?",
+        "documentoQuitado": "Documento descartado: la propuesta vuelve a estar sin documento.",
         "eliminada": "Propuesta eliminada.",
         "desbloqueada": "Propuesta desbloqueada: el detalle vuelve a ser editable.",
         "estadoCambiado": "La versión {{numero}} pasa a «{{estado}}».",
@@ -3913,12 +3925,18 @@
         "planificacion": "Planificación",
         "inicio": "Inicio",
         "finCampo": "Fin de campo",
-        "motivo": "Motivo"
+        "motivo": "Motivo",
+        "fechas": "Fechas"
       },
       "clase": {
         "fecha": "Fecha",
         "propuesta": "Propuesta",
         "proyecto": "Proyecto"
+      },
+      "claseTip": {
+        "fecha": "Vencimiento pendiente de convertir en proyecto",
+        "propuesta": "Proyecto potencial pendiente de aprobación",
+        "proyecto": "Proyecto aprobado actual"
       },
       "pestana": {
         "aprobado": "Aprobados",
@@ -3926,8 +3944,8 @@
         "en_certificacion": "Certificación"
       },
       "hint": {
-        "aprobado": "Trabajo comprometido que se planifica: la barra dice si ya tiene fechas y administrador. Arranca solo al llegar el inicio, salvo que las fechas sean orientativas.",
-        "en_ejecucion": "En obra: el avance real, el equipo y el fin previsto. Los paralizados siguen aquí, con su pastilla roja y los días que llevan parados.",
+        "aprobado": "Trabajo comprometido que se planifica: la barra dice si ya tiene fechas y administrador. El proyecto arrancará por sí solo al llegar la fecha de inicio, salvo que la fecha de inicio esté todavía como orientativa.",
+        "en_ejecucion": "En obra: las fechas, el avance real y el equipo. Los paralizados siguen aquí, con la pausa roja en su estado.",
         "en_certificacion": "Trabajo de campo terminado, pendiente de validar lo que se hizo."
       },
       "enCursoHint": "Nada en esta fase con estos filtros.",
@@ -3935,6 +3953,8 @@
       "generalHint": "Todo lo abierto: fechas de revisión sin propuesta, propuestas abiertas y proyectos abiertos.",
       "buscarGeneral": "Buscar por cliente, emplazamiento o proyecto…",
       "buscarPerdidos": "Buscar por cliente, emplazamiento o motivo…",
+      "buscarTexto": "Buscar texto…",
+      "todosClientes": "Todos los clientes",
       "todosEmplazamientos": "Todos los emplazamientos",
       "zonaSinNombre": "Zona sin nombre",
       "sinAlcance": "Sin emplazamiento",
@@ -3953,6 +3973,16 @@
       },
       "mes": "Mes del año",
       "mesTitle": "Lo que tenía la fecha prevista en ese mes, de cualquier año",
+      "rango": {
+        "title": "Entre dos fechas: la prevista de la propuesta o el inicio previsto del proyecto",
+        "desde": "Desde",
+        "hasta": "Hasta"
+      },
+      "perdido": {
+        "caducada": "Caducó",
+        "cancelado": "Se canceló",
+        "descartada": "Se descartó"
+      },
       "perdidosVacio": "Nada perdido con estos filtros",
       "perdidosHint": "Propuestas descartadas o caducadas y proyectos cancelados: la lista del rescate comercial."
     },
@@ -3963,9 +3993,22 @@
         "propuestas": "Propuestas"
       },
       "hint": {
-        "fechas": "Fechas de revisión que caen en la ventana, o que vencieron hace menos de {{count}} mes, sin propuesta ni proyecto que las cubra. Marca varias del mismo cliente para juntarlas en una sola propuesta.",
-        "fechas_other": "Fechas de revisión que caen en la ventana, o que vencieron hace menos de {{count}} meses, sin propuesta ni proyecto que las cubra. Marca varias del mismo cliente para juntarlas en una sola propuesta.",
-        "propuestas": "Las propuestas abiertas, con documento o sin él: la carpeta comercial con sus notas, su probabilidad y, cuando toque, el presupuesto."
+        "fechas": "Fechas de revisión previstas para los próximos {{ventana}}, o que vencieron hace menos de {{gracia}}, sin propuesta ni proyecto que las cubra. Puedes marcar varias del mismo cliente para juntarlas en una sola propuesta.",
+        "propuestas": "Propuestas abiertas actualmente, con oferta presupuestaria o sin ella: la carpeta comercial con sus notas, su probabilidad y opcionalmente el presupuesto."
+      },
+      "rango": {
+        "sinEstimar": "Sin estimar",
+        "baja": "Baja (hasta 40 %)",
+        "media": "Media (41–79 %)",
+        "alta": "Alta (80–99 %)",
+        "confirmada": "Confirmada (100 %)"
+      },
+      "nueva": {
+        "cta": "Nueva oportunidad",
+        "title": "Nueva oportunidad",
+        "para": "Elige el cliente. La oportunidad nace vacía y se completa en su ficha: emplazamientos, notas, probabilidad y, si hace falta, presupuesto.",
+        "crear": "Crear oportunidad",
+        "creada": "Oportunidad creada."
       },
       "cols": {
         "fecha": "Próxima revisión"
@@ -3975,7 +4018,7 @@
       "fechasVacio": "Ninguna fecha sin propuesta en esta ventana",
       "fechasVacioHint": "Las fechas de revisión se ponen en el emplazamiento o en sus zonas.",
       "propuestasVacio": "Ninguna propuesta abierta",
-      "propuestasVacioHint": "Una propuesta nace desde una fecha: al anotar un contacto con el cliente o al crearla.",
+      "propuestasVacioHint": "Una propuesta nace desde una fecha, al anotar un contacto con el cliente o al crearla, o desde cero con «Nueva oportunidad».",
       "anotar": "Anotar",
       "anotarTitle": "Anotar un contacto con el cliente: nace la propuesta con la nota dentro",
       "anotarPregunta": "¿Qué has hablado con el cliente sobre {{emplazamiento}}?",
@@ -4137,6 +4180,7 @@
       "imagenesAlCrear_other": "{{count}} imágenes se subirán al guardar la revisión.",
       "sinImagenes": "Esta revisión no tiene imágenes.",
       "guardar": "Guardar cambios",
+      "guardarModificaciones": "Guardar modificaciones",
       "validaHasta": "Válida hasta {{fecha}}",
       "checklist": "Checklist",
       "checklistSeccion": "Checklist de la revisión",
