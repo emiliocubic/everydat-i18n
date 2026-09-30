@@ -3089,6 +3089,75 @@
       "confirmBorrar": "Delete “{{nombre}}”? It has no elements behind.",
       "confirmFusionar": "“{{de}}” will disappear and its elements will move to “{{a}}”. Continue?",
       "referenciaDe": "Reference of {{modelo}}"
+    },
+    "ia": {
+      "banda": "Artificial intelligence",
+      "error": "It could not be completed. Please try again.",
+      "sinModulo": "The AI module is not included in this instance.",
+      "guardar": "Save",
+      "cerrar": "Close",
+      "titular": {
+        "cubic": "Cubic key",
+        "cliente": "Own key"
+      },
+      "proveedores": {
+        "titulo": "Providers",
+        "desc": "The AI services this instance can talk to. All of them use the common OpenAI format: Groq, Mistral, OpenAI, Anthropic or one installed on your own server. A new provider must be tested before it is put in a slot.",
+        "vacio": "There are no providers: every slot uses the server one.",
+        "clavePuesta": "Key saved",
+        "sinClave": "No key",
+        "editar": "Edit",
+        "probar": "Test",
+        "borrar": "Delete",
+        "borrarConfirmar": "Delete the provider {{nombre}}?",
+        "anadir": "Add provider",
+        "nombre": "Name",
+        "direccion": "API address",
+        "direccionAyuda": "The address compatible with the OpenAI format, usually ending in /v1.",
+        "clave": "API key",
+        "claveConservar": "Leave it empty to keep the current one",
+        "claveAyuda": "It is stored encrypted and never shown again, not even to support.",
+        "titular": "Who pays"
+      },
+      "examen": {
+        "modelo": "Model",
+        "vision": "Also test vision (reading an image)",
+        "ayuda": "Three instructions that require calling functions, an answer with a fixed structure and, if ticked, an image. It uses a few tokens from this provider.",
+        "lanzar": "Run the test",
+        "examinando": "Testing…",
+        "fecha": "Tested on {{fecha}}",
+        "apto": "Pass",
+        "noApto": "Fail",
+        "noPedida": "Not requested",
+        "pruebas": {
+          "herramientas": "Tools",
+          "estructura": "Structure",
+          "vision": "Vision"
+        }
+      },
+      "ranuras": {
+        "titulo": "Model slots",
+        "desc": "Which provider and model does each task. An empty slot uses the server one ({{modelo}}).",
+        "entorno": "The server one",
+        "herramientas": {
+          "titulo": "Tools",
+          "ayuda": "Understands instructions and calls the API: Sherpa uses it. Requires a model that passed the tools test."
+        },
+        "redaccion": {
+          "titulo": "Writing",
+          "ayuda": "Long texts: conversation summaries and, later on, observations and emails."
+        },
+        "vision": {
+          "titulo": "Vision",
+          "ayuda": "Reading a photo, such as an equipment label. Requires a model that passed the vision test."
+        }
+      },
+      "empresa": {
+        "titulo": "About our company",
+        "desc": "What the assistant should know about how you work, in plain words: vocabulary, habits, deadlines. It is added to the guide the assistant always reads.",
+        "placeholder": "For example: we call sites “centres”; roofs are inspected every six months.",
+        "ayuda": "{{n}} characters left."
+      }
     }
   },
   "shell": {
@@ -3136,7 +3205,8 @@
       "catalogoPendientes": "Pending validation",
       "proyectosOportunidades": "Opportunities",
       "proyectosPerdidos": "Lost",
-      "configPlantillasInforme": "Report templates"
+      "configPlantillasInforme": "Report templates",
+      "configIa": "Artificial intelligence"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -3205,7 +3275,8 @@
           "asignar_usuarios_equipo_other": "Leave team {{equipo}} with {{count}} members",
           "otro": "Run {{herramienta}}"
         }
-      }
+      },
+      "deleteChat": "Delete conversation"
     },
     "scan": {
       "title": "Scan code",
@@ -3248,7 +3319,8 @@
       "api": "You do not have permission for this action: {{accion}}.",
       "apiCapacidad": "You do not have permission for this action: {{accion}}. It comes with the {{capacidad}} capability.",
       "informes": "view reports",
-      "plantillasInforme": "edit report templates"
+      "plantillasInforme": "edit report templates",
+      "ia": "configure artificial intelligence"
     }
   },
   "proyectos": {

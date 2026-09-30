@@ -2979,6 +2979,75 @@
       "confirmBorrar": "Supprimer « {{nombre}} » ? Aucun élément n'en dépend.",
       "confirmFusionar": "« {{de}} » disparaîtra et ses éléments passeront à « {{a}} ». Continuer ?",
       "referenciaDe": "Référence de {{modelo}}"
+    },
+    "ia": {
+      "banda": "Intelligence artificielle",
+      "error": "Impossible de terminer. Veuillez réessayer.",
+      "sinModulo": "Le module IA n’est pas inclus dans cette instance.",
+      "guardar": "Enregistrer",
+      "cerrar": "Fermer",
+      "titular": {
+        "cubic": "Clé de Cubic",
+        "cliente": "Clé propre"
+      },
+      "proveedores": {
+        "titulo": "Fournisseurs",
+        "desc": "Les services d’IA avec lesquels l’instance peut dialoguer. Tous utilisent le format commun d’OpenAI : Groq, Mistral, OpenAI, Anthropic ou un modèle installé sur votre serveur. Un nouveau fournisseur doit être testé avant d’occuper un emplacement.",
+        "vacio": "Aucun fournisseur : tous les emplacements utilisent celui du serveur.",
+        "clavePuesta": "Clé enregistrée",
+        "sinClave": "Sans clé",
+        "editar": "Modifier",
+        "probar": "Tester",
+        "borrar": "Supprimer",
+        "borrarConfirmar": "Supprimer le fournisseur {{nombre}} ?",
+        "anadir": "Ajouter un fournisseur",
+        "nombre": "Nom",
+        "direccion": "Adresse de l’API",
+        "direccionAyuda": "L’adresse compatible avec le format d’OpenAI, se terminant généralement par /v1.",
+        "clave": "Clé de l’API",
+        "claveConservar": "Laissez-la vide pour conserver la clé actuelle",
+        "claveAyuda": "Elle est stockée chiffrée et n’est plus jamais affichée, pas même au support.",
+        "titular": "Qui paie"
+      },
+      "examen": {
+        "modelo": "Modèle",
+        "vision": "Tester aussi la vision (lire une image)",
+        "ayuda": "Trois consignes qui exigent d’appeler des fonctions, une réponse à structure fixe et, si coché, une image. Consomme quelques jetons de ce fournisseur.",
+        "lanzar": "Lancer le test",
+        "examinando": "Test en cours…",
+        "fecha": "Testé le {{fecha}}",
+        "apto": "Conforme",
+        "noApto": "Non conforme",
+        "noPedida": "Non demandé",
+        "pruebas": {
+          "herramientas": "Outils",
+          "estructura": "Structure",
+          "vision": "Vision"
+        }
+      },
+      "ranuras": {
+        "titulo": "Emplacements de modèle",
+        "desc": "Quel fournisseur et quel modèle réalisent chaque tâche. Un emplacement vide utilise celui du serveur ({{modelo}}).",
+        "entorno": "Celui du serveur",
+        "herramientas": {
+          "titulo": "Outils",
+          "ayuda": "Comprend les consignes et appelle l’API : c’est celui qu’utilise Sherpa. Exige un modèle conforme en outils."
+        },
+        "redaccion": {
+          "titulo": "Rédaction",
+          "ayuda": "Textes longs : résumé des conversations et, plus tard, observations et courriels."
+        },
+        "vision": {
+          "titulo": "Vision",
+          "ayuda": "Lire une photo, comme l’étiquette d’un équipement. Exige un modèle conforme en vision."
+        }
+      },
+      "empresa": {
+        "titulo": "À propos de notre entreprise",
+        "desc": "Ce que l’assistant doit savoir de votre façon de travailler, en langage simple : vocabulaire, habitudes, délais. S’ajoute au guide que l’assistant lit toujours.",
+        "placeholder": "Par exemple : ici, nous appelons « centres » les sites ; les toitures sont inspectées tous les six mois.",
+        "ayuda": "Il reste {{n}} caractères."
+      }
     }
   },
   "shell": {
@@ -3025,7 +3094,8 @@
       "catalogoCaracterizacion": "Caractérisation",
       "catalogoPendientes": "En attente de validation",
       "proyectosOportunidades": "Opportunités",
-      "proyectosPerdidos": "Perdus"
+      "proyectosPerdidos": "Perdus",
+      "configIa": "Intelligence artificielle"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -3094,7 +3164,8 @@
           "asignar_usuarios_equipo_other": "Laisser l'équipe {{equipo}} avec {{count}} membres",
           "otro": "Exécuter {{herramienta}}"
         }
-      }
+      },
+      "deleteChat": "Supprimer la conversation"
     },
     "scan": {
       "title": "Scanner un code",
@@ -3135,7 +3206,8 @@
       "altaClientes": "créer des clients",
       "altaEmplazamientos": "créer des sites",
       "api": "Vous n'avez pas la permission pour cette action : {{accion}}.",
-      "apiCapacidad": "Vous n'avez pas la permission pour cette action : {{accion}}. Elle vient avec la capacité {{capacidad}}."
+      "apiCapacidad": "Vous n'avez pas la permission pour cette action : {{accion}}. Elle vient avec la capacité {{capacidad}}.",
+      "ia": "configurer l’intelligence artificielle"
     }
   },
   "proyectos": {

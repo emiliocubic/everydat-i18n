@@ -3089,6 +3089,75 @@
       "confirmBorrar": "¿Borrar «{{nombre}}»? No tiene elementos detrás.",
       "confirmFusionar": "«{{de}}» desaparecerá y su parque pasará a «{{a}}». ¿Seguir?",
       "referenciaDe": "Referencia de {{modelo}}"
+    },
+    "ia": {
+      "banda": "Inteligencia artificial",
+      "error": "No se ha podido completar. Inténtalo de nuevo.",
+      "sinModulo": "El módulo de IA no está contratado en esta instancia.",
+      "guardar": "Guardar",
+      "cerrar": "Cerrar",
+      "titular": {
+        "cubic": "Clave de Cubic",
+        "cliente": "Clave propia"
+      },
+      "proveedores": {
+        "titulo": "Proveedores",
+        "desc": "Los servicios de IA con los que puede hablar la instancia. Todos usan el formato común de OpenAI: Groq, Mistral, OpenAI, Anthropic o uno instalado en vuestro servidor. Un proveedor nuevo hay que probarlo antes de ponerlo en una ranura.",
+        "vacio": "No hay proveedores: todas las ranuras usan el del servidor.",
+        "clavePuesta": "Clave guardada",
+        "sinClave": "Sin clave",
+        "editar": "Editar",
+        "probar": "Probar",
+        "borrar": "Borrar",
+        "borrarConfirmar": "¿Borrar el proveedor {{nombre}}?",
+        "anadir": "Añadir proveedor",
+        "nombre": "Nombre",
+        "direccion": "Dirección de la API",
+        "direccionAyuda": "La dirección compatible con el formato de OpenAI, normalmente acabada en /v1.",
+        "clave": "Clave de la API",
+        "claveConservar": "Déjala vacía para conservar la que hay",
+        "claveAyuda": "Se guarda cifrada y no se vuelve a mostrar nunca, ni siquiera a soporte.",
+        "titular": "Quién paga"
+      },
+      "examen": {
+        "modelo": "Modelo",
+        "vision": "Probar también la visión (leer una imagen)",
+        "ayuda": "Tres órdenes que exigen llamar a funciones, una respuesta con estructura fija y, si se marca, una imagen. Gasta unos pocos tokens de este proveedor.",
+        "lanzar": "Lanzar el examen",
+        "examinando": "Examinando…",
+        "fecha": "Examinado el {{fecha}}",
+        "apto": "Apto",
+        "noApto": "No apto",
+        "noPedida": "No pedida",
+        "pruebas": {
+          "herramientas": "Herramientas",
+          "estructura": "Estructura",
+          "vision": "Visión"
+        }
+      },
+      "ranuras": {
+        "titulo": "Ranuras de modelo",
+        "desc": "Qué proveedor y modelo hace cada tarea. Una ranura vacía usa el del servidor ({{modelo}}).",
+        "entorno": "El del servidor",
+        "herramientas": {
+          "titulo": "Herramientas",
+          "ayuda": "Entiende órdenes y llama a la API: es el que usa Sherpa. Exige un modelo apto en herramientas."
+        },
+        "redaccion": {
+          "titulo": "Redacción",
+          "ayuda": "Textos largos: el resumen de las conversaciones y, más adelante, observaciones y correos."
+        },
+        "vision": {
+          "titulo": "Visión",
+          "ayuda": "Leer una foto, como la etiqueta de un equipo. Exige un modelo apto en visión."
+        }
+      },
+      "empresa": {
+        "titulo": "Sobre nuestra empresa",
+        "desc": "Lo que el asistente debe saber de cómo trabajáis, en llano: vocabulario, costumbres, plazos. Se suma a la guía que el asistente lee siempre.",
+        "placeholder": "Por ejemplo: aquí llamamos centros a los emplazamientos; las cubiertas se revisan cada seis meses.",
+        "ayuda": "Quedan {{n}} caracteres."
+      }
     }
   },
   "shell": {
@@ -3136,7 +3205,8 @@
       "catalogoPendientes": "Pendientes de validar",
       "proyectosOportunidades": "Oportunidades",
       "proyectosPerdidos": "Perdidos",
-      "configPlantillasInforme": "Plantillas de informe"
+      "configPlantillasInforme": "Plantillas de informe",
+      "configIa": "Inteligencia artificial"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -3205,7 +3275,8 @@
           "asignar_usuarios_equipo_other": "Dejar el equipo {{equipo}} con {{count}} miembros",
           "otro": "Ejecutar {{herramienta}}"
         }
-      }
+      },
+      "deleteChat": "Borrar conversación"
     },
     "scan": {
       "title": "Escanear código",
@@ -3248,7 +3319,8 @@
       "api": "No tienes permiso para esta acción: {{accion}}.",
       "apiCapacidad": "No tienes permiso para esta acción: {{accion}}. Lo da la capacidad {{capacidad}}.",
       "informes": "ver los informes",
-      "plantillasInforme": "editar las plantillas de informe"
+      "plantillasInforme": "editar las plantillas de informe",
+      "ia": "configurar la inteligencia artificial"
     }
   },
   "proyectos": {
