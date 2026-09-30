@@ -4394,7 +4394,7 @@
       "equipo": "Équipement",
       "buscarClientePh": "Nom ou code du client",
       "buscarEmplazamientoPh": "Nom du site",
-      "buscarEquipoPh": "Nº de série, code ou étiquette",
+      "buscarEquipoPh": "Nº de série ou code",
       "escanear": "Lire le QR",
       "listado": "Liste"
     },

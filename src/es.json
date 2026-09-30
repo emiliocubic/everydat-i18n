@@ -4519,7 +4519,7 @@
       "equipo": "Equipo",
       "buscarClientePh": "Nombre o código del cliente",
       "buscarEmplazamientoPh": "Nombre del emplazamiento",
-      "buscarEquipoPh": "Nº de serie, código o pegatina",
+      "buscarEquipoPh": "Nº de serie o código",
       "escanear": "Leer QR",
       "listado": "Listado"
     },
