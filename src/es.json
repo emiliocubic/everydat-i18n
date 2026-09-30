@@ -2876,14 +2876,19 @@
       "grupoMarca": "Marca e idioma",
       "marca": {
         "titulo": "Marca",
-        "desc": "El nombre comercial, el color primario y el logo salen en el panel, en los informes y en los correos.",
+        "desc": "El nombre comercial, el color primario, el logo y el sello salen en el panel, en los informes y en los correos.",
         "nombre": "Nombre comercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Color primario",
         "colorHint": "Hexadecimal de seis cifras. Vacío = el color de serie.",
         "logo": "Logo",
         "logoHint": "PNG, JPG, SVG o WEBP, hasta 1 MB. Se guarda al elegirlo.",
-        "sinLogo": "Sin logo"
+        "sinLogo": "Sin logo",
+        "sello": "Sello",
+        "sinSello": "Sin sello",
+        "selloHint": "La imagen del sello de la empresa: sale en el bloque de firma de los informes que piden «Firmar con sello». PNG, JPG, SVG o WEBP, hasta 1 MB.",
+        "quitarSello": "Quitar el sello",
+        "quitarSelloConfirmar": "¿Quitar la imagen del sello? Los informes que la pidan saldrán sin ella; lo ya emitido no cambia."
       },
       "idioma": {
         "titulo": "Idioma",
@@ -3039,16 +3044,16 @@
         "nacionalHint": "Junto a la edición EN, entre paréntesis, la del país de la obra (UNE, NF…) si existe."
       },
       "sello": {
-        "titulo": "Sello electrónico",
-        "desc": "Certificado .p12 de la empresa para firmar los informes que se emitan con «Firmar». Sin sello, los informes salen igual, sin firma. La contraseña se guarda cifrada y no se vuelve a enseñar.",
-        "sinSello": "No hay sello configurado.",
+        "titulo": "Firma electrónica",
+        "desc": "Certificado .p12 de la empresa para firmar los informes que se emitan con «Firma electrónica». Sin certificado, los informes salen igual, sin firma. La contraseña se guarda cifrada y no se vuelve a enseñar.",
+        "sinSello": "No hay certificado configurado.",
         "titular": "Titular",
         "caduca": "Válido hasta",
-        "caducado": "El certificado ha caducado: los informes se firmarán con un sello no válido.",
+        "caducado": "El certificado ha caducado: los informes se firmarán con un certificado no válido.",
         "fichero": "Certificado (.p12 o .pfx)",
         "clave": "Contraseña del certificado",
-        "quitar": "Quitar el sello",
-        "quitarConfirmar": "¿Quitar el sello? Los informes dejarán de firmarse. Lo ya firmado no cambia."
+        "quitar": "Quitar el certificado",
+        "quitarConfirmar": "¿Quitar el certificado? Los informes dejarán de firmarse. Lo ya firmado no cambia."
       }
     },
     "caracterizacion": {
@@ -4673,7 +4678,8 @@
       "firmado": "Firmado",
       "contenido": "Contenido",
       "idioma": "Idioma",
-      "firmar": "Firmar con el sello de la empresa"
+      "firmar": "Firma electrónica",
+      "sellar": "Firmar con sello"
     },
     "estados": {
       "borrador": "Borrador",
@@ -4688,7 +4694,8 @@
     "resultados": {
       "apto": "Apto",
       "no_apto": "No apto",
-      "no_revisada": "No revisado"
+      "no_revisada": "No revisado",
+      "retirado": "Retirado"
     },
     "alta": {
       "titulo": "Nuevo informe",
@@ -4702,8 +4709,8 @@
     },
     "ficha": {
       "identificacion": "Identificación",
-      "campos": "Datos del informe",
-      "firmarHint": "Sin sello configurado en Parámetros › Marca, el informe sale igual, sin firma.",
+      "campos": "Parámetros del informe",
+      "firmarHint": "Firma el PDF con el certificado .p12 de Parámetros › Marca. Sin certificado, sale igual, sin firma.",
       "reabrir": "Reabrir",
       "reabrirConfirmar": "¿Reabrir el informe? La versión que tiene el cliente quedará retirada y sus revisiones se podrán corregir. Emitirás después la siguiente versión.",
       "reabierto": "Informe reabierto: vuelve a estar en borrador",
@@ -4719,11 +4726,12 @@
       "tabs": {
         "aria": "Secciones del informe",
         "contenido": "Contenido",
-        "datos": "Datos",
+        "datos": "Datos y recursos",
         "vista": "Vista previa",
         "versiones": "Versiones",
         "ajustes": "Cambios puntuales"
-      }
+      },
+      "sellarHint": "Estampa la imagen del sello de Parámetros › Marca en el bloque de firma."
     },
     "contenido": {
       "nRevisiones_one": "{{count}} revisión",
@@ -4746,7 +4754,27 @@
       "tipo": "Tipo",
       "carpeta": "Ubicación",
       "revisor": "Revisor",
-      "validaHasta": "Válido hasta"
+      "validaHasta": "Válido hasta",
+      "marca": "Marca",
+      "modelo": "Modelo",
+      "referencia": "Referencia",
+      "estado": "Estado actual",
+      "validez": "Validez",
+      "sinCarpeta": "Sin carpeta",
+      "segmentar": "Agrupar",
+      "segmentos": {
+        "ninguna": "Sin segmentar",
+        "completa": "Carpeta a carpeta",
+        "nivel": "Hasta el nivel {{n}}"
+      },
+      "plegar": "Plegar",
+      "desplegar": "Desplegar",
+      "ordenArbol": "Orden del árbol",
+      "ordenArbolHint": "Las carpetas están en un orden hecho a mano. Vuelve al del árbol del emplazamiento.",
+      "arrastrar": "Arrastra las carpetas para cambiar su orden",
+      "ordenarPor": "Ordenar por {{columna}}",
+      "seleccionarTodo": "Seleccionar todo",
+      "seleccionarCarpeta": "Seleccionar lo de {{carpeta}}"
     },
     "selector": {
       "titulo": "Añadir al informe",
@@ -4758,7 +4786,7 @@
       "ultima": "Solo la última de cada equipo",
       "estado": "Estado del equipo",
       "enServicio": "En servicio",
-      "descatalogados": "Descatalogados",
+      "descatalogados": "Retirados",
       "carpetas": "Carpetas",
       "carpetasHint": "Cada carpeta trae su rama. Sin marcar ninguna, toda la obra.",
       "casan_one": "{{count}} casa con los filtros",
@@ -4768,7 +4796,15 @@
       "anadirTodo_one": "Añadir la que casa",
       "anadirTodo_other": "Añadir las {{count}} que casan",
       "anadirMarcadas_one": "Añadir {{count}} marcada",
-      "anadirMarcadas_other": "Añadir {{count}} marcadas"
+      "anadirMarcadas_other": "Añadir {{count}} marcadas",
+      "ambos": "Ambos",
+      "familiasTipos": "Familias y tipos",
+      "familiasTiposHint": "Marca tipos sueltos o una familia entera. Sin marcar ninguno, todos.",
+      "sinFamilia": "Sin familia",
+      "fechas": "Fechas significativas",
+      "revisados": "Revisados entre",
+      "desplegarTodo": "Desplegar todo",
+      "plegarTodo": "Plegar todo"
     },
     "vista": {
       "titulo": "Vista previa del informe",
@@ -4911,6 +4947,8 @@
       "fecha": "Fecha"
     },
     "opciones": {
+      "2": "Hasta 2",
+      "4": "Hasta 4",
       "ninguna": "Ninguna",
       "foto_emplazamiento": "Foto de la obra",
       "ninguno": "Sin agrupar",
@@ -4923,7 +4961,7 @@
       "fecha": "Fecha",
       "valida_hasta": "Válido hasta",
       "revisor": "Revisor",
-      "estado": "Estado",
+      "estado": "Estado actual",
       "valido_hasta": "Válido hasta",
       "ultima_revision": "Última revisión",
       "siempre": "Siempre",
@@ -4931,8 +4969,6 @@
       "nunca": "Nunca",
       "todos": "Todos",
       "no_conformes": "Solo los defectos",
-      "2": "Hasta 2",
-      "4": "Hasta 4",
       "todas": "Todas",
       "fotos": "Fotos",
       "planos": "Planos",
@@ -4945,7 +4981,10 @@
       "normas": "Normas",
       "vertical": "Vertical",
       "horizontal": "Horizontal",
-      "situacion": "Situación actual"
+      "situacion": "Situación actual",
+      "marca": "Marca",
+      "modelo": "Modelo",
+      "referencia": "Referencia"
     },
     "editor": {
       "catalogo": "Bloques",
@@ -5001,7 +5040,12 @@
         "pendiente": "Cambios sin guardar…",
         "guardando": "Guardando…",
         "error": "No se pudo guardar"
-      }
+      },
+      "carpetas": "Carpetas en las listas"
+    },
+    "carpetas": {
+      "ruta": "Ruta completa en una fila",
+      "anidadas": "Títulos anidados"
     }
   }
 }

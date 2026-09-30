@@ -2876,14 +2876,19 @@
       "grupoMarca": "Brand and language",
       "marca": {
         "titulo": "Brand",
-        "desc": "The trade name, primary colour and logo appear in the panel, in reports and in emails.",
+        "desc": "The trade name, primary colour, logo and seal appear in the panel, in reports and in emails.",
         "nombre": "Trade name",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Primary colour",
         "colorHint": "Six-digit hexadecimal. Empty = the default colour.",
         "logo": "Logo",
         "logoHint": "PNG, JPG, SVG or WEBP, up to 1 MB. Saved as soon as you pick it.",
-        "sinLogo": "No logo"
+        "sinLogo": "No logo",
+        "sello": "Seal",
+        "sinSello": "No seal",
+        "selloHint": "The company seal image: it appears on the signature block of reports that ask to «Sign with seal». PNG, JPG, SVG or WEBP, up to 1 MB.",
+        "quitarSello": "Remove seal",
+        "quitarSelloConfirmar": "Remove the seal image? Reports that ask for it will be issued without it; what was already issued does not change."
       },
       "idioma": {
         "titulo": "Language",
@@ -3039,16 +3044,16 @@
         "nacionalHint": "Next to the EN edition, in brackets, the one of the site's country (UNE, NF…) if it exists."
       },
       "sello": {
-        "titulo": "Electronic seal",
-        "desc": "The company's .p12 certificate to sign reports issued with «Sign». Without a seal, reports are issued anyway, unsigned. The password is stored encrypted and never shown again.",
-        "sinSello": "No seal configured.",
+        "titulo": "Electronic signature",
+        "desc": "The company .p12 certificate used to sign reports issued with «Electronic signature». Without a certificate, reports are issued unsigned. The password is stored encrypted and never shown again.",
+        "sinSello": "No certificate configured.",
         "titular": "Holder",
         "caduca": "Valid until",
-        "caducado": "The certificate has expired: reports will be signed with an invalid seal.",
+        "caducado": "The certificate has expired: reports will be signed with an invalid certificate.",
         "fichero": "Certificate (.p12 or .pfx)",
         "clave": "Certificate password",
-        "quitar": "Remove the seal",
-        "quitarConfirmar": "Remove the seal? Reports will no longer be signed. What is already signed does not change."
+        "quitar": "Remove certificate",
+        "quitarConfirmar": "Remove the certificate? Reports will no longer be signed. What was already signed does not change."
       }
     },
     "caracterizacion": {
@@ -4673,7 +4678,8 @@
       "firmado": "Signed",
       "contenido": "Content",
       "idioma": "Language",
-      "firmar": "Sign with the company seal"
+      "firmar": "Electronic signature",
+      "sellar": "Sign with seal"
     },
     "estados": {
       "borrador": "Draft",
@@ -4688,7 +4694,8 @@
     "resultados": {
       "apto": "Pass",
       "no_apto": "Fail",
-      "no_revisada": "Not inspected"
+      "no_revisada": "Not inspected",
+      "retirado": "Withdrawn"
     },
     "alta": {
       "titulo": "New report",
@@ -4702,8 +4709,8 @@
     },
     "ficha": {
       "identificacion": "Identification",
-      "campos": "Report details",
-      "firmarHint": "Without a seal set up in Parameters › Brand, the report is issued anyway, unsigned.",
+      "campos": "Report settings",
+      "firmarHint": "Signs the PDF with the .p12 certificate in Settings › Brand. Without a certificate, it is issued unsigned.",
       "reabrir": "Reopen",
       "reabrirConfirmar": "Reopen the report? The version the client holds will be withdrawn and its inspections can be corrected. You will then issue the next version.",
       "reabierto": "Report reopened: it is a draft again",
@@ -4719,11 +4726,12 @@
       "tabs": {
         "aria": "Report sections",
         "contenido": "Content",
-        "datos": "Details",
+        "datos": "Data and resources",
         "vista": "Preview",
         "versiones": "Versions",
         "ajustes": "Adjustments"
-      }
+      },
+      "sellarHint": "Stamps the company seal image from Settings › Brand on the signature block."
     },
     "contenido": {
       "nRevisiones_one": "{{count}} inspection",
@@ -4746,7 +4754,27 @@
       "tipo": "Type",
       "carpeta": "Location",
       "revisor": "Inspector",
-      "validaHasta": "Valid until"
+      "validaHasta": "Valid until",
+      "marca": "Brand",
+      "modelo": "Model",
+      "referencia": "Reference",
+      "estado": "Current status",
+      "validez": "Valid until",
+      "sinCarpeta": "No folder",
+      "segmentar": "Group",
+      "segmentos": {
+        "ninguna": "No grouping",
+        "completa": "Folder by folder",
+        "nivel": "Down to level {{n}}"
+      },
+      "plegar": "Collapse",
+      "desplegar": "Expand",
+      "ordenArbol": "Tree order",
+      "ordenArbolHint": "Folders are in a manual order. Go back to the site tree order.",
+      "arrastrar": "Drag folders to change their order",
+      "ordenarPor": "Sort by {{columna}}",
+      "seleccionarTodo": "Select all",
+      "seleccionarCarpeta": "Select everything in {{carpeta}}"
     },
     "selector": {
       "titulo": "Add to the report",
@@ -4768,7 +4796,15 @@
       "anadirTodo_one": "Add the one that matches",
       "anadirTodo_other": "Add the {{count}} that match",
       "anadirMarcadas_one": "Add {{count}} ticked",
-      "anadirMarcadas_other": "Add {{count}} ticked"
+      "anadirMarcadas_other": "Add {{count}} ticked",
+      "ambos": "Both",
+      "familiasTipos": "Families and types",
+      "familiasTiposHint": "Tick single types or a whole family. With none ticked, all.",
+      "sinFamilia": "No family",
+      "fechas": "Key dates",
+      "revisados": "Inspected between",
+      "desplegarTodo": "Expand all",
+      "plegarTodo": "Collapse all"
     },
     "vista": {
       "titulo": "Report preview",
@@ -4911,6 +4947,8 @@
       "fecha": "Date"
     },
     "opciones": {
+      "2": "Up to 2",
+      "4": "Up to 4",
       "ninguna": "None",
       "foto_emplazamiento": "Site photo",
       "ninguno": "Not grouped",
@@ -4923,7 +4961,7 @@
       "fecha": "Date",
       "valida_hasta": "Valid until",
       "revisor": "Inspector",
-      "estado": "Status",
+      "estado": "Current status",
       "valido_hasta": "Valid until",
       "ultima_revision": "Last inspection",
       "siempre": "Always",
@@ -4931,8 +4969,6 @@
       "nunca": "Never",
       "todos": "All",
       "no_conformes": "Only defects",
-      "2": "Up to 2",
-      "4": "Up to 4",
       "todas": "All",
       "fotos": "Photos",
       "planos": "Plans",
@@ -4945,7 +4981,10 @@
       "normas": "Standards",
       "vertical": "Portrait",
       "horizontal": "Landscape",
-      "situacion": "Current status"
+      "situacion": "Current status",
+      "marca": "Brand",
+      "modelo": "Model",
+      "referencia": "Reference"
     },
     "editor": {
       "catalogo": "Blocks",
@@ -5001,7 +5040,12 @@
         "pendiente": "Unsaved changes…",
         "guardando": "Saving…",
         "error": "Could not save"
-      }
+      },
+      "carpetas": "Folders in lists"
+    },
+    "carpetas": {
+      "ruta": "Full path in one row",
+      "anidadas": "Nested headings"
     }
   }
 }

@@ -2779,14 +2779,19 @@
       "grupoMarca": "Marque et langue",
       "marca": {
         "titulo": "Marque",
-        "desc": "Le nom commercial, la couleur principale et le logo apparaissent dans le panneau, les rapports et les courriels.",
+        "desc": "Le nom commercial, la couleur principale, le logo et le cachet apparaissent dans le panneau, les rapports et les e-mails.",
         "nombre": "Nom commercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Couleur principale",
         "colorHint": "Hexadécimal à six chiffres. Vide = couleur par défaut.",
         "logo": "Logo",
         "logoHint": "PNG, JPG, SVG ou WEBP, jusqu'à 1 Mo. Enregistré dès qu'il est choisi.",
-        "sinLogo": "Sans logo"
+        "sinLogo": "Sans logo",
+        "sello": "Cachet",
+        "sinSello": "Sans cachet",
+        "selloHint": "L'image du cachet de l'entreprise : elle apparaît sur le bloc de signature des rapports qui demandent « Signer avec cachet ». PNG, JPG, SVG ou WEBP, jusqu'à 1 Mo.",
+        "quitarSello": "Retirer le cachet",
+        "quitarSelloConfirmar": "Retirer l'image du cachet ? Les rapports qui la demandent sortiront sans elle ; ce qui a déjà été émis ne change pas."
       },
       "idioma": {
         "titulo": "Langue",
@@ -2931,6 +2936,14 @@
         "meses": "mois",
         "hint": "Passés les mois de grâce, une date échue n’apparaît plus dans Opportunités, mais elle reste sur le site : rien n’est écarté tout seul. La fenêtre n’est que la valeur de départ : chacun la modifie à l’écran.",
         "gracia": "Une date échue reste affichée pendant"
+      },
+      "sello": {
+        "titulo": "Signature électronique",
+        "desc": "Certificat .p12 de l'entreprise pour signer les rapports émis avec « Signature électronique ». Sans certificat, les rapports sont émis sans signature. Le mot de passe est stocké chiffré et n'est plus jamais affiché.",
+        "sinSello": "Aucun certificat configuré.",
+        "caducado": "Le certificat a expiré : les rapports seront signés avec un certificat non valide.",
+        "quitar": "Retirer le certificat",
+        "quitarConfirmar": "Retirer le certificat ? Les rapports ne seront plus signés. Ce qui a déjà été signé ne change pas."
       }
     },
     "caracterizacion": {
@@ -4396,6 +4409,71 @@
       "volver": "Retour à l'inventaire",
       "sub": "{{count}} équipements sélectionnés. La même {{tipo}} sera enregistrée sur chacun ; les pièces jointes s'ajoutent ensuite, équipement par équipement.",
       "hecho": "{{count}} interventions enregistrées"
+    }
+  },
+  "informes": {
+    "ficha": {
+      "campos": "Paramètres du rapport",
+      "firmarHint": "Signe le PDF avec le certificat .p12 de Paramètres › Marque. Sans certificat, il est émis sans signature.",
+      "sellarHint": "Appose l'image du cachet de Paramètres › Marque sur le bloc de signature.",
+      "tabs": {
+        "datos": "Données et ressources"
+      }
+    },
+    "campos": {
+      "firmar": "Signature électronique",
+      "sellar": "Signer avec cachet"
+    },
+    "resultados": {
+      "retirado": "Retiré"
+    },
+    "contenido": {
+      "marca": "Marque",
+      "modelo": "Modèle",
+      "referencia": "Référence",
+      "estado": "État actuel",
+      "validez": "Validité",
+      "sinCarpeta": "Sans dossier",
+      "segmentar": "Regrouper",
+      "segmentos": {
+        "ninguna": "Sans regroupement",
+        "completa": "Dossier par dossier",
+        "nivel": "Jusqu'au niveau {{n}}"
+      },
+      "plegar": "Replier",
+      "desplegar": "Déplier",
+      "ordenArbol": "Ordre de l'arborescence",
+      "ordenArbolHint": "Les dossiers sont dans un ordre manuel. Revenir à l'ordre de l'arborescence du site.",
+      "arrastrar": "Faites glisser les dossiers pour changer leur ordre",
+      "ordenarPor": "Trier par {{columna}}",
+      "seleccionarTodo": "Tout sélectionner",
+      "seleccionarCarpeta": "Sélectionner tout {{carpeta}}"
+    },
+    "selector": {
+      "descatalogados": "Retirés",
+      "ambos": "Les deux",
+      "familiasTipos": "Familles et types",
+      "familiasTiposHint": "Cochez des types ou une famille entière. Sans rien coché, tous.",
+      "sinFamilia": "Sans famille",
+      "fechas": "Dates clés",
+      "revisados": "Vérifiés entre",
+      "desplegarTodo": "Tout déplier",
+      "plegarTodo": "Tout replier"
+    }
+  },
+  "plantillasInforme": {
+    "editor": {
+      "carpetas": "Dossiers dans les listes"
+    },
+    "carpetas": {
+      "ruta": "Chemin complet sur une ligne",
+      "anidadas": "Titres imbriqués"
+    },
+    "opciones": {
+      "marca": "Marque",
+      "modelo": "Modèle",
+      "referencia": "Référence",
+      "estado": "État actuel"
     }
   }
 }
