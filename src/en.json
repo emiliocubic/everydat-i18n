@@ -3507,7 +3507,8 @@
       "docQuitado": "Document removed.",
       "quitarDocConfirm": "Remove “{{nombre}}” from the project?",
       "nRecibidos_one": "{{count}} item received at the office",
-      "nRecibidos_other": "{{count}} items received at the office"
+      "nRecibidos_other": "{{count}} items received at the office",
+      "soloLecturaCancelado": "This status leaves the record read-only. A discarded project cannot be reactivated, so that the history is kept: not only of what clients accepted but also of what they turned down. If the work is recovered some time after it was discarded, create a new opportunity or project from the Opportunities or Projects in progress view"
     },
     "planificacion": {
       "ventana": "Execution window",
@@ -3575,7 +3576,8 @@
         "en_certificacion": "Field work finished: the project is in certification. Planning is now for reference only.",
         "cerrado": "Project closed: planning is kept as a record, read-only.",
         "cancelado": "Project cancelled:"
-      }
+      },
+      "finSinInicio": "Set the planned start date first"
     },
     "ejecucion": {
       "kpiRevisiones": "Inspections",
@@ -4190,6 +4192,13 @@
         "crear_other": "Accept and create {{count}} projects",
         "sinPermiso": "Accepting creates projects: the create projects permission is required."
       }
+    },
+    "cierre": {
+      "inicio": "Start date",
+      "fin": "End date",
+      "proxima": "Next inspection date",
+      "proximaPista": "Suggested: project start + the site's base inspection interval. It is written to the tree on closing.",
+      "finAntesDeInicio": "The end cannot be earlier than the start."
     }
   },
   "revisiones": {

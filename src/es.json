@@ -3507,7 +3507,8 @@
       "docQuitado": "Documento quitado.",
       "quitarDocConfirm": "¿Quitar «{{nombre}}» del proyecto?",
       "nRecibidos_one": "{{count}} equipo recibido en oficina",
-      "nRecibidos_other": "{{count}} equipos recibidos en oficina"
+      "nRecibidos_other": "{{count}} equipos recibidos en oficina",
+      "soloLecturaCancelado": "Este estado deja la ficha en solo lectura, el proyecto descartado no puede reactivarse para no perder la traza histórica, no sólo de lo aceptado sino también de lo rechazado por los clientes. Si se ha rescatado el trabajo un tiempo después del descarte, es necesario crear una nueva oportunidad o proyecto desde la vista de Oportunidades o de Proyectos en Curso"
     },
     "planificacion": {
       "ventana": "Ventana de ejecución",
@@ -3575,7 +3576,8 @@
         "en_certificacion": "Trabajo de campo terminado: el proyecto está en certificación. La planificación ya solo sirve de referencia.",
         "cerrado": "Proyecto cerrado: la planificación queda como registro, en solo lectura.",
         "cancelado": "Proyecto cancelado:"
-      }
+      },
+      "finSinInicio": "Pon antes la fecha de inicio prevista"
     },
     "ejecucion": {
       "kpiRevisiones": "Revisiones",
@@ -4190,6 +4192,13 @@
         "crear_other": "Aceptar y crear {{count}} proyectos",
         "sinPermiso": "Aceptar crea proyectos: hace falta el permiso de crear proyectos."
       }
+    },
+    "cierre": {
+      "inicio": "Fecha de inicio",
+      "fin": "Fecha de fin",
+      "proxima": "Próxima fecha de revisión",
+      "proximaPista": "Sugerida: inicio del proyecto + plazo base de revisiones del emplazamiento. Se escribe en el árbol al cerrar.",
+      "finAntesDeInicio": "El fin no puede ser anterior al inicio."
     }
   },
   "revisiones": {

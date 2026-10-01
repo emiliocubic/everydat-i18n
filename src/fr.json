@@ -3394,7 +3394,8 @@
       "docQuitado": "Document retiré.",
       "quitarDocConfirm": "Retirer « {{nombre}} » du projet ?",
       "nRecibidos_one": "{{count}} équipement reçu au bureau",
-      "nRecibidos_other": "{{count}} équipements reçus au bureau"
+      "nRecibidos_other": "{{count}} équipements reçus au bureau",
+      "soloLecturaCancelado": "Cet état laisse la fiche en lecture seule. Un projet écarté ne peut pas être réactivé, afin de garder l'historique : non seulement ce que les clients ont accepté, mais aussi ce qu'ils ont refusé. Si le travail est récupéré quelque temps après, il faut créer une nouvelle opportunité ou un nouveau projet depuis la vue Opportunités ou Projets en cours"
     },
     "planificacion": {
       "ventana": "Fenêtre d'exécution",
@@ -3462,7 +3463,8 @@
         "en_certificacion": "Travail sur le terrain terminé : le projet est en certification. La planification ne sert plus que de référence.",
         "cerrado": "Projet clôturé : la planification est conservée comme archive, en lecture seule.",
         "cancelado": "Projet annulé :"
-      }
+      },
+      "finSinInicio": "Indiquez d'abord la date de début prévue"
     },
     "ejecucion": {
       "kpiRevisiones": "Contrôles",
@@ -4062,6 +4064,13 @@
         "crear_other": "Accepter et créer {{count}} projets",
         "sinPermiso": "Accepter crée des projets : l’autorisation de créer des projets est nécessaire."
       }
+    },
+    "cierre": {
+      "inicio": "Date de début",
+      "fin": "Date de fin",
+      "proxima": "Prochaine date de vérification",
+      "proximaPista": "Suggérée : début du projet + délai de base des vérifications du site. Elle est inscrite dans l'arbre à la clôture.",
+      "finAntesDeInicio": "La fin ne peut pas précéder le début."
     }
   },
   "revisiones": {
