@@ -3421,7 +3421,7 @@
       "para": "Enter the basic project details. You can complete it later.",
       "crear": "Create project",
       "creado": "Project created.",
-      "nombrePlaceholder": "Leave empty and it composes itself",
+      "nombrePlaceholder": "Recommended, optional",
       "fechaHint": "Even if provisional: with no date the project gets lost in the list.",
       "sinEmplazamiento": "With no site the project lives in the pipeline, but cannot be approved.",
       "otroHint": "Work from another area: no equipment census and it does not chain the next cycle.",

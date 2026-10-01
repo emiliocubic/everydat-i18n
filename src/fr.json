@@ -3308,7 +3308,7 @@
       "para": "Indiquez les données de base du projet. Vous pourrez le compléter plus tard.",
       "crear": "Créer le projet",
       "creado": "Projet créé.",
-      "nombrePlaceholder": "Laissez vide et il se compose tout seul",
+      "nombrePlaceholder": "Recommandé, facultatif",
       "fechaHint": "Même provisoire : sans date le projet se perd dans la liste.",
       "sinEmplazamiento": "Sans site le projet vit dans le portefeuille, mais ne pourra pas être approuvé.",
       "otroHint": "Un travail d'un autre domaine : sans recensement d'équipements et sans enchaîner le cycle suivant.",

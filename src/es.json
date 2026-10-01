@@ -3421,7 +3421,7 @@
       "para": "Indica los datos básicos del proyecto. Podrás completarlo posteriormente.",
       "crear": "Crear proyecto",
       "creado": "Proyecto creado.",
-      "nombrePlaceholder": "Si lo dejas vacío se compone solo",
+      "nombrePlaceholder": "Recomendado, opcional",
       "fechaHint": "Aunque sea provisional: sin fecha el proyecto se pierde en la lista.",
       "sinEmplazamiento": "Sin emplazamiento el proyecto vive en la cartera, pero no se podrá aprobar.",
       "otroHint": "Un trabajo de otra área: no lleva censo de equipos ni encadena el ciclo siguiente.",
