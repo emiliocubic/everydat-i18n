@@ -5247,5 +5247,40 @@
       "ruta": "Ruta completa en una fila",
       "anidadas": "Títulos anidados"
     }
+  },
+  "tiposRevision": {
+    "campo": "Tipo de revisión",
+    "otras": "Otras revisiones",
+    "nombre": {
+      "periodica": "Revisión periódica",
+      "ensayo_testigo": "Ensayo de testigo",
+      "ensayo_extraccion": "Ensayo de extracción",
+      "centro_autorizado": "Revisión en centro autorizado"
+    },
+    "desde": {
+      "fabricacion": "fabricación",
+      "instalacion": "instalación",
+      "suministro": "suministro",
+      "puesta_servicio": "puesta en servicio"
+    },
+    "regla": {
+      "primera": "primera a los",
+      "plazoInicial": "Meses hasta la primera",
+      "mesesDesde": "meses desde",
+      "desdeAria": "Fecha desde la que se cuenta",
+      "despuesCada": "y después cada",
+      "periodicidad": "Meses entre las siguientes",
+      "meses": "meses",
+      "quitar": "Quitar esta revisión",
+      "anadir": "Añadir revisión",
+      "soloPeriodica": "Solo la periódica",
+      "resumen": "primera a los {{inicial}} meses desde {{desde}}, después cada {{cada}} meses"
+    },
+    "vigencia": {
+      "noApto": "No apto",
+      "sinRevisar": "Sin revisar",
+      "plazoInicial": "primer plazo, aún sin hacer",
+      "sinFecha": "vencida: falta la fecha de la que se cuenta"
+    }
   }
 }

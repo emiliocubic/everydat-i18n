@@ -4675,5 +4675,40 @@
       "referencia": "Référence",
       "estado": "État actuel"
     }
+  },
+  "tiposRevision": {
+    "campo": "Type d’inspection",
+    "otras": "Autres inspections",
+    "nombre": {
+      "periodica": "Inspection périodique",
+      "ensayo_testigo": "Essai de maille témoin",
+      "ensayo_extraccion": "Essai d’arrachement",
+      "centro_autorizado": "Révision en centre agréé"
+    },
+    "desde": {
+      "fabricacion": "fabrication",
+      "instalacion": "installation",
+      "suministro": "livraison",
+      "puesta_servicio": "mise en service"
+    },
+    "regla": {
+      "primera": "première au bout de",
+      "plazoInicial": "Mois jusqu’à la première",
+      "mesesDesde": "mois depuis",
+      "desdeAria": "Date de départ du décompte",
+      "despuesCada": "puis tous les",
+      "periodicidad": "Mois entre les suivantes",
+      "meses": "mois",
+      "quitar": "Retirer cette inspection",
+      "anadir": "Ajouter une inspection",
+      "soloPeriodica": "Périodique uniquement",
+      "resumen": "première au bout de {{inicial}} mois depuis {{desde}}, puis tous les {{cada}} mois"
+    },
+    "vigencia": {
+      "noApto": "Non conforme",
+      "sinRevisar": "Non inspecté",
+      "plazoInicial": "premier délai, pas encore fait",
+      "sinFecha": "échue : il manque la date de départ"
+    }
   }
 }

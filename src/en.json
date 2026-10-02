@@ -5247,5 +5247,40 @@
       "ruta": "Full path in one row",
       "anidadas": "Nested headings"
     }
+  },
+  "tiposRevision": {
+    "campo": "Inspection type",
+    "otras": "Other inspections",
+    "nombre": {
+      "periodica": "Periodic inspection",
+      "ensayo_testigo": "Test sample test",
+      "ensayo_extraccion": "Pull-out test",
+      "centro_autorizado": "Authorised service centre inspection"
+    },
+    "desde": {
+      "fabricacion": "manufacture",
+      "instalacion": "installation",
+      "suministro": "supply",
+      "puesta_servicio": "first use"
+    },
+    "regla": {
+      "primera": "first after",
+      "plazoInicial": "Months until the first one",
+      "mesesDesde": "months from",
+      "desdeAria": "Date it counts from",
+      "despuesCada": "then every",
+      "periodicidad": "Months between the next ones",
+      "meses": "months",
+      "quitar": "Remove this inspection",
+      "anadir": "Add inspection",
+      "soloPeriodica": "Periodic only",
+      "resumen": "first after {{inicial}} months from {{desde}}, then every {{cada}} months"
+    },
+    "vigencia": {
+      "noApto": "Fail",
+      "sinRevisar": "Not inspected",
+      "plazoInicial": "first deadline, not done yet",
+      "sinFecha": "overdue: the date it counts from is missing"
+    }
   }
 }
