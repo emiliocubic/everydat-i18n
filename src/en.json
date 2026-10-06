@@ -210,7 +210,12 @@
       "volver": "Back to search"
     },
     "titleSingle": "Choose a model",
-    "subSingle": "Click a model to choose it."
+    "subSingle": "Click a model to choose it.",
+    "filterFamily": "Filter by family",
+    "allFamilies": "All families",
+    "subSingleRef": "Click a model, then choose its reference.",
+    "refHint": "Choose the reference",
+    "refVacio": "This model has no references."
   },
   "datatable": {
     "records": "records",
@@ -821,7 +826,9 @@
       "finVidaSinCriterio": "Its type sets no expiry",
       "anadirValor": "Add another",
       "quitarValor": "Remove this value",
-      "observaciones": "Notes"
+      "observaciones": "Notes",
+      "familia": "Family",
+      "buscarOtroModelo": "Find another model"
     },
     "fecha": {
       "fabricacion": "Manufacture",

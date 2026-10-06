@@ -706,7 +706,9 @@
       "finVidaSinCriterio": "Su tipo no fija caducidad",
       "anadirValor": "Añadir otro",
       "quitarValor": "Quitar este valor",
-      "observaciones": "Observaciones"
+      "observaciones": "Observaciones",
+      "familia": "Familia",
+      "buscarOtroModelo": "Buscar otro modelo"
     },
     "fecha": {
       "fabricacion": "Fabricación",
@@ -1836,7 +1838,12 @@
       "volver": "Volver a la búsqueda"
     },
     "titleSingle": "Elegir modelo",
-    "subSingle": "Pulsa en un modelo para elegirlo."
+    "subSingle": "Pulsa en un modelo para elegirlo.",
+    "filterFamily": "Filtrar por familia",
+    "allFamilies": "Todas las familias",
+    "subSingleRef": "Pulsa en un modelo y elige su referencia.",
+    "refHint": "Elige la referencia",
+    "refVacio": "Este modelo no tiene referencias."
   },
   "datatable": {
     "records": "registros",

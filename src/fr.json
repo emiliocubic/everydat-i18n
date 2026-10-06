@@ -210,7 +210,12 @@
       "volver": "Retour à la recherche"
     },
     "titleSingle": "Choisir un modèle",
-    "subSingle": "Cliquez sur un modèle pour le choisir."
+    "subSingle": "Cliquez sur un modèle pour le choisir.",
+    "filterFamily": "Filtrer par famille",
+    "allFamilies": "Toutes les familles",
+    "subSingleRef": "Cliquez sur un modèle, puis choisissez sa référence.",
+    "refHint": "Choisissez la référence",
+    "refVacio": "Ce modèle n'a aucune référence."
   },
   "datatable": {
     "records": "enregistrements",
@@ -783,7 +788,9 @@
         "origen": {
           "conjunto": "De l’ensemble"
         }
-      }
+      },
+      "familia": "Famille",
+      "buscarOtroModelo": "Chercher un autre modèle"
     },
     "fecha": {
       "fabricacion": "Fabrication",
