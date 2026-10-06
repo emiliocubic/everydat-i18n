@@ -4527,28 +4527,27 @@
     },
     "inicio": {
       "titulo": "Home",
-      "misProyectos": "My projects",
       "sinProyectos": "You have no assigned projects.",
       "buscar": "Search",
-      "clientes": "Clients",
       "emplazamientos": "Sites",
-      "equipo": "Equipment",
-      "buscarClientePh": "Client name or code",
-      "buscarEmplazamientoPh": "Site name",
-      "buscarEquipoPh": "Serial number or code",
-      "escanear": "Scan QR",
-      "listado": "List"
+      "buscarEmplazamientoPh": "Name or address",
+      "proyectosActuales": "Current projects",
+      "elementos": "Equipment",
+      "buscarElementoPh": "Serial no., reference, batch…",
+      "resultados_one": "{{count}} result",
+      "resultados_other": "{{count}} results"
     },
     "buscar": {
-      "clientes": "Clients",
       "emplazamientos": "Sites",
       "cliente": "Client",
-      "buscarPh": "Search…",
-      "sinResultados": "Nothing matches “{{q}}”.",
-      "escribe": "Type to search.",
+      "buscarPh": "Customer or site",
+      "sinResultados": "No results for “{{q}}”",
       "sinRedListado": "Offline: only downloaded sites are shown.",
-      "emplazamientosDe": "Sites of {{cliente}}",
-      "sinEmplazamientos": "This client has no sites."
+      "sinResultadosHint": "Try the customer's name or part of the site name.",
+      "cuenta": "{{n}} of {{total}} sites",
+      "total_one": "{{count}} site",
+      "total_other": "{{count}} sites",
+      "cargando": "Loading sites…"
     },
     "emplazamiento": {
       "titulo": "Site",

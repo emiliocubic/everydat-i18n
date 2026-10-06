@@ -4402,28 +4402,27 @@
     },
     "inicio": {
       "titulo": "Accueil",
-      "misProyectos": "Mes projets",
       "sinProyectos": "Aucun projet ne vous est assigné.",
       "buscar": "Rechercher",
-      "clientes": "Clients",
       "emplazamientos": "Sites",
-      "equipo": "Équipement",
-      "buscarClientePh": "Nom ou code du client",
-      "buscarEmplazamientoPh": "Nom du site",
-      "buscarEquipoPh": "Nº de série ou code",
-      "escanear": "Lire le QR",
-      "listado": "Liste"
+      "buscarEmplazamientoPh": "Nom ou adresse",
+      "proyectosActuales": "Projets en cours",
+      "elementos": "Équipements",
+      "buscarElementoPh": "N° de série, référence, lot…",
+      "resultados_one": "{{count}} résultat",
+      "resultados_other": "{{count}} résultats"
     },
     "buscar": {
-      "clientes": "Clients",
       "emplazamientos": "Sites",
       "cliente": "Client",
-      "buscarPh": "Rechercher…",
-      "sinResultados": "Rien avec « {{q}} ».",
-      "escribe": "Saisissez pour rechercher.",
+      "buscarPh": "Client ou site",
+      "sinResultados": "Aucun résultat pour « {{q}} »",
       "sinRedListado": "Hors ligne : seuls les sites déjà téléchargés sont affichés.",
-      "emplazamientosDe": "Sites de {{cliente}}",
-      "sinEmplazamientos": "Ce client n'a aucun site."
+      "sinResultadosHint": "Essayez le nom du client ou une partie du nom du site.",
+      "cuenta": "{{n}} sur {{total}} sites",
+      "total_one": "{{count}} site",
+      "total_other": "{{count}} sites",
+      "cargando": "Chargement des sites…"
     },
     "emplazamiento": {
       "titulo": "Site",

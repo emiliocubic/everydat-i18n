@@ -4527,28 +4527,27 @@
     },
     "inicio": {
       "titulo": "Inicio",
-      "misProyectos": "Mis proyectos",
       "sinProyectos": "No tienes proyectos asignados.",
       "buscar": "Buscar",
-      "clientes": "Clientes",
       "emplazamientos": "Emplazamientos",
-      "equipo": "Equipo",
-      "buscarClientePh": "Nombre o código del cliente",
-      "buscarEmplazamientoPh": "Nombre del emplazamiento",
-      "buscarEquipoPh": "Nº de serie o código",
-      "escanear": "Leer QR",
-      "listado": "Listado"
+      "buscarEmplazamientoPh": "Nombre o dirección",
+      "proyectosActuales": "Proyectos actuales",
+      "elementos": "Elementos",
+      "buscarElementoPh": "Nº serie, referencia, lote…",
+      "resultados_one": "{{count}} resultado",
+      "resultados_other": "{{count}} resultados"
     },
     "buscar": {
-      "clientes": "Clientes",
       "emplazamientos": "Emplazamientos",
       "cliente": "Cliente",
-      "buscarPh": "Buscar…",
-      "sinResultados": "Nada con «{{q}}».",
-      "escribe": "Escribe para buscar.",
+      "buscarPh": "Cliente o emplazamiento",
+      "sinResultados": "Sin resultados para «{{q}}»",
       "sinRedListado": "Sin conexión: solo se enseñan los emplazamientos ya bajados.",
-      "emplazamientosDe": "Emplazamientos de {{cliente}}",
-      "sinEmplazamientos": "Este cliente no tiene emplazamientos."
+      "sinResultadosHint": "Prueba con el nombre del cliente o parte del emplazamiento.",
+      "cuenta": "{{n}} de {{total}} emplazamientos",
+      "total_one": "{{count}} emplazamiento",
+      "total_other": "{{count}} emplazamientos",
+      "cargando": "Cargando emplazamientos…"
     },
     "emplazamiento": {
       "titulo": "Emplazamiento",
