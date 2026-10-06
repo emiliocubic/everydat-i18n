@@ -4647,6 +4647,10 @@
       "quitarConfirm": "Retirer le code {{codigo}} de cet équipement ?",
       "quitar": "Retirer",
       "quitarAria": "Retirer le code {{codigo}}"
+    },
+    "tipos": {
+      "titulo": "Quelle inspection ?",
+      "elige": "Choisissez l'inspection à faire"
     }
   },
   "auditoria": {

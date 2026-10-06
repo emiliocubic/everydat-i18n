@@ -4772,6 +4772,10 @@
       "quitarConfirm": "Remove code {{codigo}} from this equipment?",
       "quitar": "Remove",
       "quitarAria": "Remove code {{codigo}}"
+    },
+    "tipos": {
+      "titulo": "Which inspection?",
+      "elige": "Choose the inspection you are doing"
     }
   },
   "auditoria": {

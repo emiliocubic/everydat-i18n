@@ -4772,6 +4772,10 @@
       "quitarConfirm": "¿Quitar el código {{codigo}} de este equipo?",
       "quitar": "Quitar",
       "quitarAria": "Quitar el código {{codigo}}"
+    },
+    "tipos": {
+      "titulo": "¿Qué revisión?",
+      "elige": "Elige qué revisión vas a hacer"
     }
   },
   "auditoria": {
