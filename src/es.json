@@ -4447,7 +4447,10 @@
       "revisionReciente": "Revisión reciente",
       "recienteSinEnviar": "(sin enviar)",
       "recienteTitulo": "Revisión reciente",
-      "recienteConfirm": "Este equipo se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?"
+      "recienteConfirm": "Este equipo se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?",
+      "borrar": "Borrar",
+      "borrarTitulo": "Borrar revisión",
+      "borrarConfirm": "Se borrará la revisión del {{fecha}} con sus puntos y sus fotos, también del servidor si ya se envió. No se puede deshacer."
     },
     "revision": {
       "titulo": "Revisión",
@@ -4517,7 +4520,8 @@
       "tipo": {
         "revision": "Revisión",
         "adjunto": "Foto",
-        "alta": "Alta de equipo"
+        "alta": "Alta de equipo",
+        "borrado": "Borrado de revisión"
       },
       "estado": {
         "pendiente": "Pendiente",

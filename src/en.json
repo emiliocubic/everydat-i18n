@@ -4447,7 +4447,10 @@
       "revisionReciente": "Recent inspection",
       "recienteSinEnviar": "(not sent)",
       "recienteTitulo": "Recent inspection",
-      "recienteConfirm": "This equipment was inspected on {{fecha}} ({{resultado}}). Inspect it again?"
+      "recienteConfirm": "This equipment was inspected on {{fecha}} ({{resultado}}). Inspect it again?",
+      "borrar": "Delete",
+      "borrarTitulo": "Delete inspection",
+      "borrarConfirm": "The inspection of {{fecha}} will be deleted with its checkpoints and photos, also from the server if it was already sent. This cannot be undone."
     },
     "revision": {
       "titulo": "Inspection",
@@ -4517,7 +4520,8 @@
       "tipo": {
         "revision": "Inspection",
         "adjunto": "Photo",
-        "alta": "New equipment"
+        "alta": "New equipment",
+        "borrado": "Inspection deletion"
       },
       "estado": {
         "pendiente": "Pending",

@@ -4322,7 +4322,10 @@
       "revisionReciente": "Vérification récente",
       "recienteSinEnviar": "(non envoyée)",
       "recienteTitulo": "Vérification récente",
-      "recienteConfirm": "Cet équipement a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?"
+      "recienteConfirm": "Cet équipement a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?",
+      "borrar": "Supprimer",
+      "borrarTitulo": "Supprimer l'inspection",
+      "borrarConfirm": "L'inspection du {{fecha}} sera supprimée avec ses points et ses photos, y compris sur le serveur si elle a déjà été envoyée. Action irréversible."
     },
     "revision": {
       "titulo": "Contrôle",
@@ -4392,7 +4395,8 @@
       "tipo": {
         "revision": "Contrôle",
         "adjunto": "Photo",
-        "alta": "Nouvel équipement"
+        "alta": "Nouvel équipement",
+        "borrado": "Suppression d'inspection"
       },
       "estado": {
         "pendiente": "En attente",
