@@ -4450,6 +4450,24 @@
       "varios": "Plusieurs équipements portent ce code. Choisissez-en un.",
       "apunta": "Visez le QR ou le code-barres de l'équipement.",
       "otraVez": "Lire un autre"
+    },
+    "cabecera": {
+      "enviar": "Envoyer ({{count}})"
+    },
+    "barra": {
+      "inicio": "Accueil",
+      "buscar": "Rechercher",
+      "leerQr": "Lire le QR",
+      "leerNfc": "Lire NFC",
+      "perfil": "Profil",
+      "nfcProximamente": "Lire NFC : bientôt disponible",
+      "nfcProximamenteHint": "La lecture des puces NFC arrivera dans une version ultérieure. En attendant, lisez le QR ou le code-barres de l'équipement."
+    },
+    "ui": {
+      "borrar": "Effacer le texte",
+      "buscar": "Rechercher",
+      "listado": "Voir la liste complète",
+      "minimo3": "Saisissez au moins 3 caractères."
     }
   },
   "auditoria": {

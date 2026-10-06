@@ -4575,6 +4575,24 @@
       "varios": "Several pieces of equipment carry that code. Pick one.",
       "apunta": "Point at the equipment's QR or barcode.",
       "otraVez": "Read another"
+    },
+    "cabecera": {
+      "enviar": "Send ({{count}})"
+    },
+    "barra": {
+      "inicio": "Home",
+      "buscar": "Search",
+      "leerQr": "Scan QR",
+      "leerNfc": "Read NFC",
+      "perfil": "Profile",
+      "nfcProximamente": "Read NFC: coming soon",
+      "nfcProximamenteHint": "NFC tag reading will arrive in a later version. In the meantime, scan the QR or barcode of the equipment."
+    },
+    "ui": {
+      "borrar": "Clear the text",
+      "buscar": "Search",
+      "listado": "See the full list",
+      "minimo3": "Type at least 3 characters."
     }
   },
   "auditoria": {

@@ -4575,6 +4575,24 @@
       "varios": "Varios equipos llevan ese código. Elige uno.",
       "apunta": "Apunta al QR o al código de barras del equipo.",
       "otraVez": "Leer otro"
+    },
+    "cabecera": {
+      "enviar": "Enviar ({{count}})"
+    },
+    "barra": {
+      "inicio": "Inicio",
+      "buscar": "Buscar",
+      "leerQr": "Leer QR",
+      "leerNfc": "Leer NFC",
+      "perfil": "Perfil",
+      "nfcProximamente": "Leer NFC: próximamente",
+      "nfcProximamenteHint": "La lectura de chips NFC llegará en una versión posterior. Mientras tanto, lee el QR o el código de barras del equipo."
+    },
+    "ui": {
+      "borrar": "Borrar el texto",
+      "buscar": "Buscar",
+      "listado": "Ver el listado completo",
+      "minimo3": "Escribe al menos 3 caracteres."
     }
   },
   "auditoria": {
