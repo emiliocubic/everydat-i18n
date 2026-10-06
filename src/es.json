@@ -4626,10 +4626,14 @@
       "buscar": "Buscar",
       "buscando": "Buscando…",
       "noEncontrado": "Ningún equipo con «{{codigo}}».",
-      "noEncontradoSinRed": "No está en lo bajado y no hay conexión para preguntar al servidor.",
+      "noEncontradoSinRed": "No está en el móvil y no hay conexión para preguntar al servidor.",
       "varios": "Varios equipos llevan ese código. Elige uno.",
       "apunta": "Apunta al QR o al código de barras del equipo.",
-      "otraVez": "Leer otro"
+      "otraVez": "Leer otro",
+      "linterna": "Linterna",
+      "leido": "Código leído",
+      "abrirFicha": "Abrir la ficha de",
+      "abrir": "Abrir"
     },
     "cabecera": {
       "enviar": "Enviar ({{count}})"

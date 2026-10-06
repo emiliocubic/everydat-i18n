@@ -4501,10 +4501,14 @@
       "buscar": "Rechercher",
       "buscando": "Recherche…",
       "noEncontrado": "Aucun équipement avec « {{codigo}} ».",
-      "noEncontradoSinRed": "Absent du travail téléchargé et pas de connexion pour interroger le serveur.",
+      "noEncontradoSinRed": "Il n'est pas sur ce mobile et il n'y a pas de connexion pour interroger le serveur.",
       "varios": "Plusieurs équipements portent ce code. Choisissez-en un.",
       "apunta": "Visez le QR ou le code-barres de l'équipement.",
-      "otraVez": "Lire un autre"
+      "otraVez": "Lire un autre",
+      "linterna": "Lampe torche",
+      "leido": "Code lu",
+      "abrirFicha": "Ouvrir la fiche de",
+      "abrir": "Ouvrir"
     },
     "cabecera": {
       "enviar": "Envoyer ({{count}})"

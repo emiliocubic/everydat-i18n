@@ -4626,10 +4626,14 @@
       "buscar": "Search",
       "buscando": "Searching…",
       "noEncontrado": "No equipment with “{{codigo}}”.",
-      "noEncontradoSinRed": "Not in the downloaded work and no connection to ask the server.",
+      "noEncontradoSinRed": "It isn't on this device and there's no connection to ask the server.",
       "varios": "Several pieces of equipment carry that code. Pick one.",
       "apunta": "Point at the equipment's QR or barcode.",
-      "otraVez": "Read another"
+      "otraVez": "Read another",
+      "linterna": "Torch",
+      "leido": "Code read",
+      "abrirFicha": "Open the record of",
+      "abrir": "Open"
     },
     "cabecera": {
       "enviar": "Send ({{count}})"
