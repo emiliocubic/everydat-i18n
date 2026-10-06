@@ -4282,10 +4282,11 @@
       "situacionDesc": {
         "sin_revisar": "Jamais contrôlé",
         "apto": "Contrôle en vigueur",
-        "no_apto": "Aussi « Non contrôlé » au dernier contrôle",
+        "no_apto": "La dernière inspection l'a déclaré non apte",
         "rev_caducada": "Était apte ; la date du prochain contrôle est passée",
         "fin_vida": "Durée de vie du fabricant atteinte",
-        "descatalogado": "N'est plus en service ; masqué sauf si « Voir les retirés » est activé"
+        "descatalogado": "N'est plus utilisé : l'emporte sur toute autre couleur et ne porte jamais la clé ; masqué sauf si « Voir les retirés » est activé",
+        "no_revisada": "Tentée dans ce projet sans succès (introuvable, pas d'accès…) : ne porte plus la clé"
       },
       "ordenar": "Trier la liste",
       "ordenTitulo": "Trier les équipements",
@@ -4398,7 +4399,8 @@
         "alta": "Nouvel équipement",
         "borrado": "Suppression d'inspection",
         "modelo": "Nouveau modèle",
-        "edicion": "Modification d'équipement"
+        "edicion": "Modification d'équipement",
+        "codigo": "Code QR"
       },
       "estado": {
         "pendiente": "En attente",
@@ -4624,6 +4626,27 @@
       "restar": "Retirer un",
       "sumar": "Ajouter un",
       "obligatorio": "obligatoire"
+    },
+    "qr": {
+      "titulo": "Attribuer un code QR",
+      "apunta": "Pointez la caméra vers le code QR de l'équipement.",
+      "manualPh": "Code QR ou étiquette",
+      "quedara": "Il sera attribué à cet équipement.",
+      "asignar": "Attribuer le code",
+      "noLoPide": "Le type de cet équipement ne prend pas ce genre de code.",
+      "yaLoLleva": "Cet équipement porte déjà ce code.",
+      "enUsoTitulo": "Code sur un autre équipement",
+      "enUso": "Ce code est déjà sur un autre équipement ({{donde}}). Le retirer et l'attribuer à celui-ci ?",
+      "reasignar": "Réattribuer",
+      "codigoQr": "Code QR",
+      "sinAsignar": "Non attribué",
+      "asignados_one": "{{count}} attribué",
+      "asignados_other": "{{count}} attribués",
+      "asignarAria": "Attribuer un code QR",
+      "quitarTitulo": "Retirer le code",
+      "quitarConfirm": "Retirer le code {{codigo}} de cet équipement ?",
+      "quitar": "Retirer",
+      "quitarAria": "Retirer le code {{codigo}}"
     }
   },
   "auditoria": {

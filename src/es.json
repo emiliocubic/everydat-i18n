@@ -4407,10 +4407,11 @@
       "situacionDesc": {
         "sin_revisar": "Nunca se ha revisado",
         "apto": "Revisión vigente",
-        "no_apto": "También «No revisada» en la última revisión",
+        "no_apto": "La última revisión lo dio por no apto",
         "rev_caducada": "Fue apto; pasó la fecha de próxima revisión",
         "fin_vida": "Alcanzada la vida útil del fabricante",
-        "descatalogado": "Ya no está en uso; oculto salvo que actives «Ver descatalogados»"
+        "descatalogado": "Ya no está en uso: gana a cualquier otro color y nunca lleva llave; oculto salvo que actives «Ver descatalogados»",
+        "no_revisada": "Se intentó en este proyecto y no se pudo (no se encontró, sin acceso…): ya no lleva llave"
       },
       "ordenar": "Ordenar la lista",
       "ordenTitulo": "Ordenar equipos",
@@ -4523,7 +4524,8 @@
         "alta": "Alta de equipo",
         "borrado": "Borrado de revisión",
         "modelo": "Alta de modelo",
-        "edicion": "Edición de equipo"
+        "edicion": "Edición de equipo",
+        "codigo": "Código QR"
       },
       "estado": {
         "pendiente": "Pendiente",
@@ -4749,6 +4751,27 @@
       "restar": "Restar uno",
       "sumar": "Sumar uno",
       "obligatorio": "obligatorio"
+    },
+    "qr": {
+      "titulo": "Asignar código QR",
+      "apunta": "Apunta la cámara al código QR del equipo.",
+      "manualPh": "Código QR o pegatina",
+      "quedara": "Quedará asignado a este equipo.",
+      "asignar": "Asignar código",
+      "noLoPide": "El tipo de este equipo no lleva códigos de esta clase.",
+      "yaLoLleva": "Este equipo ya lleva ese código.",
+      "enUsoTitulo": "Código en otro equipo",
+      "enUso": "Ese código ya lo lleva otro equipo ({{donde}}). ¿Quitárselo y asignarlo a este?",
+      "reasignar": "Reasignar",
+      "codigoQr": "Código QR",
+      "sinAsignar": "Sin asignar",
+      "asignados_one": "{{count}} asignado",
+      "asignados_other": "{{count}} asignados",
+      "asignarAria": "Asignar código QR",
+      "quitarTitulo": "Quitar código",
+      "quitarConfirm": "¿Quitar el código {{codigo}} de este equipo?",
+      "quitar": "Quitar",
+      "quitarAria": "Quitar el código {{codigo}}"
     }
   },
   "auditoria": {

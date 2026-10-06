@@ -4407,10 +4407,11 @@
       "situacionDesc": {
         "sin_revisar": "Never inspected",
         "apto": "Inspection in force",
-        "no_apto": "Also \"Not inspected\" in the last inspection",
+        "no_apto": "The last inspection found it unfit",
         "rev_caducada": "Was fit; the next inspection date has passed",
         "fin_vida": "Manufacturer service life reached",
-        "descatalogado": "No longer in use; hidden unless you turn on \"Show retired items\""
+        "descatalogado": "No longer in use: beats any other colour and never carries the wrench; hidden unless «Show discontinued» is on",
+        "no_revisada": "Attempted in this project but not possible (not found, no access…): no longer carries the wrench"
       },
       "ordenar": "Sort the list",
       "ordenTitulo": "Sort items",
@@ -4523,7 +4524,8 @@
         "alta": "New equipment",
         "borrado": "Inspection deletion",
         "modelo": "New model",
-        "edicion": "Equipment edit"
+        "edicion": "Equipment edit",
+        "codigo": "QR code"
       },
       "estado": {
         "pendiente": "Pending",
@@ -4749,6 +4751,27 @@
       "restar": "Subtract one",
       "sumar": "Add one",
       "obligatorio": "required"
+    },
+    "qr": {
+      "titulo": "Assign QR code",
+      "apunta": "Point the camera at the equipment QR code.",
+      "manualPh": "QR code or sticker",
+      "quedara": "It will be assigned to this equipment.",
+      "asignar": "Assign code",
+      "noLoPide": "This equipment type does not take codes of this kind.",
+      "yaLoLleva": "This equipment already has that code.",
+      "enUsoTitulo": "Code on another equipment",
+      "enUso": "That code is already on another equipment ({{donde}}). Remove it there and assign it here?",
+      "reasignar": "Reassign",
+      "codigoQr": "QR code",
+      "sinAsignar": "Not assigned",
+      "asignados_one": "{{count}} assigned",
+      "asignados_other": "{{count}} assigned",
+      "asignarAria": "Assign QR code",
+      "quitarTitulo": "Remove code",
+      "quitarConfirm": "Remove code {{codigo}} from this equipment?",
+      "quitar": "Remove",
+      "quitarAria": "Remove code {{codigo}}"
     }
   },
   "auditoria": {
