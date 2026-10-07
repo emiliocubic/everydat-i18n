@@ -4520,7 +4520,9 @@
       "multipleContexto_other": "Revisión múltiple · {{count}} equipos",
       "variosEquipos": "Varios equipos",
       "validaHastaCadaUno": "En blanco, cada equipo con su periodicidad.",
-      "validaHastaAlgunoSin": "Algún equipo no tiene periodicidad: escribe hasta cuándo vale."
+      "validaHastaAlgunoSin": "Algún equipo no tiene periodicidad: escribe hasta cuándo vale.",
+      "validaHastaHintVarios_one": "Propuesta con la periodicidad de los equipos ({{count}} mes). Cámbiala si hace falta.",
+      "validaHastaHintVarios_other": "Propuesta con la periodicidad de los equipos ({{count}} meses). Cámbiala si hace falta."
     },
     "envio": {
       "titulo": "Enviar",

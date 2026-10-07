@@ -4395,7 +4395,9 @@
       "multipleContexto_other": "Vérification groupée · {{count}} équipements",
       "variosEquipos": "Plusieurs équipements",
       "validaHastaCadaUno": "Laissez vide pour appliquer la périodicité de chaque équipement.",
-      "validaHastaAlgunoSin": "Un équipement n'a pas de périodicité : indiquez la date de validité."
+      "validaHastaAlgunoSin": "Un équipement n'a pas de périodicité : indiquez la date de validité.",
+      "validaHastaHintVarios_one": "Proposée avec la périodicité des équipements ({{count}} mois). Modifiez-la si besoin.",
+      "validaHastaHintVarios_other": "Proposée avec la périodicité des équipements ({{count}} mois). Modifiez-la si besoin."
     },
     "envio": {
       "titulo": "Envoyer",

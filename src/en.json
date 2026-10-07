@@ -4520,7 +4520,9 @@
       "multipleContexto_other": "Bulk inspection · {{count}} items",
       "variosEquipos": "Several items",
       "validaHastaCadaUno": "Leave blank to use each item's own interval.",
-      "validaHastaAlgunoSin": "Some item has no inspection interval: enter the valid-until date."
+      "validaHastaAlgunoSin": "Some item has no inspection interval: enter the valid-until date.",
+      "validaHastaHintVarios_one": "Proposed from the items' periodicity ({{count}} month). Change it if needed.",
+      "validaHastaHintVarios_other": "Proposed from the items' periodicity ({{count}} months). Change it if needed."
     },
     "envio": {
       "titulo": "Send",
