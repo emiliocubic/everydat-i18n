@@ -2968,7 +2968,7 @@
       },
       "fechas": {
         "titulo": "Fechas significativas",
-        "desc": "Establece qué fechas significativas se utilizarán para describir a los elementos. Algunas pueden marcarse además para el cálculo automático de los años de vida útil. Pueden usarse las mismas fechas para todos los tipos de elementos, o definirlas por separado por familias o tipos.",
+        "desc": "Establece qué fechas significativas se utilizarán para describir a los elementos. En la tabla de abajo se decide, por familias o por tipos, cuáles se piden y desde cuáles se cuentan los años de vida útil.",
         "campos": "Fechas a utilizar",
         "add": "Añadir fecha a medida",
         "placeholder": "Nombre de la fecha…",
@@ -2978,7 +2978,7 @@
         "usarAria": "Usar {{campo}}",
         "eliminar": "Eliminar fecha",
         "eliminarAria": "Eliminar {{campo}}",
-        "matrizVacia": "Activa al menos una fecha en «Fechas a utilizar» para particularizarla por tipo.",
+        "matrizVacia": "Activa al menos una fecha en «Fechas a utilizar» para configurarla por tipo.",
         "calc": "Usar para cálculo de vida útil",
         "calcAria": "Usar {{campo}} para el cálculo de vida útil",
         "aniosGlobal": "Años",
@@ -2989,7 +2989,10 @@
         "modo": {
           "global": "Utilizar las mismas fechas en todos los tipos de elementos",
           "personalizado": "Personalizar las fechas a utilizar por familias y/o por tipos de elementos"
-        }
+        },
+        "personalizar": "Personaliza las fechas a utilizar por familias y/o por tipos de elemento",
+        "vidaUtilLbl": "Uso para cálculo de vida útil:",
+        "vidaUtilAyuda": "es posible establecer años de vida útil en aquellos tipos de elementos sujetos a caducidad, y a partir de diferentes fechas significativas. Caso de establecer plazos desde diferentes fechas significativas, el sistema aplicará siempre el criterio más restrictivo. Esta posibilidad de establecer plazos desde fechas significativas existe también a nivel de modelos de elementos, de modo que lo que se aplique al modelo tendrá siempre prioridad, actuando lo aplicado aquí solo cuando los modelos concretos del tipo correspondiente no tengan ningún criterio especificado."
       },
       "grupoProyectos": "Proyectos",
       "certificacion": {

@@ -2968,7 +2968,7 @@
       },
       "fechas": {
         "titulo": "Significant dates",
-        "desc": "Choose which significant dates describe an element. Some can also be flagged for automatic service-life calculation. You can use the same dates for every element type, or define them per family or type.",
+        "desc": "Set which significant dates will be used to describe elements. The table below decides, by family or by type, which ones are asked for and from which ones the years of service life are counted.",
         "campos": "Dates in use",
         "add": "Add custom date",
         "placeholder": "Date name…",
@@ -2978,7 +2978,7 @@
         "usarAria": "Use {{campo}}",
         "eliminar": "Delete date",
         "eliminarAria": "Delete {{campo}}",
-        "matrizVacia": "Enable at least one date under “Dates in use” to set it per type.",
+        "matrizVacia": "Activate at least one date in «Dates to use» to configure it by type.",
         "calc": "Use for service-life calculation",
         "calcAria": "Use {{campo}} for the service-life calculation",
         "aniosGlobal": "Years",
@@ -2989,7 +2989,10 @@
         "modo": {
           "global": "Use the same dates for every element type",
           "personalizado": "Set the dates to use per family and/or element type"
-        }
+        },
+        "personalizar": "Customise the dates to use by family and/or by element type",
+        "vidaUtilLbl": "Use for service life calculation:",
+        "vidaUtilAyuda": "you can set years of service life for element types that expire, counted from different significant dates. If periods are set from several significant dates, the system always applies the most restrictive one. Periods from significant dates can also be set on element models, and what is set on the model always takes precedence: what is set here only applies when the specific models of that type have no criterion of their own."
       },
       "grupoProyectos": "Projects",
       "certificacion": {

@@ -2871,7 +2871,7 @@
       },
       "fechas": {
         "titulo": "Dates significatives",
-        "desc": "Définissez les dates significatives qui décrivent un équipement. Certaines peuvent être marquées pour le calcul automatique de la durée de vie. Vous pouvez utiliser les mêmes dates pour tous les types d’équipement, ou les définir par famille ou par type.",
+        "desc": "Définissez quelles dates significatives serviront à décrire les éléments. Le tableau ci-dessous décide, par famille ou par type, lesquelles sont demandées et à partir desquelles se comptent les années de durée de vie.",
         "campos": "Dates utilisées",
         "add": "Ajouter une date personnalisée",
         "placeholder": "Nom de la date…",
@@ -2881,7 +2881,7 @@
         "usarAria": "Utiliser {{campo}}",
         "eliminar": "Supprimer la date",
         "eliminarAria": "Supprimer {{campo}}",
-        "matrizVacia": "Activez au moins une date dans « Dates utilisées » pour la paramétrer par type.",
+        "matrizVacia": "Activez au moins une date dans « Dates à utiliser » pour la configurer par type.",
         "calc": "Utiliser pour le calcul de la durée de vie",
         "calcAria": "Utiliser {{campo}} pour le calcul de la durée de vie",
         "aniosGlobal": "Années",
@@ -2892,7 +2892,10 @@
         "modo": {
           "global": "Utiliser les mêmes dates pour tous les types d’équipement",
           "personalizado": "Paramétrer les dates par famille et/ou par type d’équipement"
-        }
+        },
+        "personalizar": "Personnalisez les dates à utiliser par familles et/ou par types d'élément",
+        "vidaUtilLbl": "Calcul de la durée de vie :",
+        "vidaUtilAyuda": "vous pouvez fixer des années de durée de vie pour les types d'éléments soumis à péremption, à partir de différentes dates significatives. Si des délais sont fixés à partir de plusieurs dates, le système applique toujours le plus restrictif. Ces délais peuvent aussi être fixés au niveau des modèles d'éléments, et ce qui est fixé sur le modèle a toujours la priorité : ce qui est fixé ici ne s'applique que lorsque les modèles du type concerné n'ont aucun critère propre."
       },
       "grupoProyectos": "Projets",
       "certificacion": {
