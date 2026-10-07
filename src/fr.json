@@ -2253,7 +2253,12 @@
         "categoria": "Norme de base / catégorie",
         "descripcion": "Description",
         "descripcionPlaceholder": "Champ d’application et objet de la norme…",
-        "descripcionHint": "Décrivez brièvement l’équipement ou la situation que cette norme régit."
+        "descripcionHint": "Décrivez brièvement l’équipement ou la situation que cette norme régit.",
+        "codigoHint": "L'édition EN complète, avec l'année et la partie ou classe : EN 361:2002, EN 795:2012 A.",
+        "equivalentePlaceholder": "p. ex. NF EN 361",
+        "categoriaPlaceholder": "p. ex. EN 795 A",
+        "clasePlaceholder": "p. ex. Point d'ancrage fixe",
+        "claseHint": "Le nom de l'équipement : il figure dans la liste des éléments, dans l'en-tête du rapport et dans le titre de la checklist."
       },
       "codigoWarning": "ATTENTION : ne modifiez le code de la norme que pour des détails mineurs, comme inclure ou non le code pays ou l’année de version.\n\nNe changez jamais la norme elle-même, car elle est liée aux types d’éléments, aux checklists, aux champs personnalisés, etc.",
       "confirmDelete": "Supprimer la norme « {{codigo}} » ?",
@@ -2269,7 +2274,8 @@
         "whenApplies": "Uniquement si applicable",
         "conditional": "Conditionnel",
         "checkpointsNota": "Si vous choisissez de composer automatiquement la checklist d'un type d'élément à partir de ses normes, voici les points de contrôle qu'apportera cette norme. La liste fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Dans la section des checklists, vous pourrez écarter et/ou ajouter des points de contrôle à votre guise pour chaque type d'élément.",
-        "camposNota": "Si vous choisissez de composer automatiquement les champs personnalisés d'un type d'élément à partir de ses normes, voici les champs (et leurs valeurs suggérées pour les listes) qu'apportera cette norme. La liste fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Dans la section des champs personnalisés, vous pourrez écarter et/ou ajouter des champs à votre guise pour chaque type d'élément, et les restreindre pour un modèle précis."
+        "camposNota": "Si vous choisissez de composer automatiquement les champs personnalisés d'un type d'élément à partir de ses normes, voici les champs (et leurs valeurs suggérées pour les listes) qu'apportera cette norme. La liste fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Dans la section des champs personnalisés, vous pourrez écarter et/ou ajouter des champs à votre guise pour chaque type d'élément, et les restreindre pour un modèle précis.",
+        "camposNotaLocal": "Voici les champs qu'apportera cette norme lorsque les champs personnalisés d'un type d'élément sont composés à partir de ses normes. Comme c'est une norme créée dans cette installation, ses champs s'affectent dans Champs personnalisés › Champs par norme."
       },
       "canonDetail": "Détail (lecture seule)",
       "candadoTitle": "Norme préinstallée : elle ne se modifie ni ne se supprime.",
@@ -2377,7 +2383,7 @@
       "noFields": "Aucun champ",
       "intro": {
         "q": "À quoi servent les champs par norme ?",
-        "sub": "En affectant des champs du catalogue aux normes, l'ensemble des champs personnalisés de chaque type d'élément peut être généré automatiquement, puisque chaque type reprend les champs personnalisés des normes qui lui sont applicables.",
+        "sub": "Chaque norme apporte les champs demandés aux équipements qui la respectent : lorsque les champs d'un type d'élément sont composés à partir de ses normes, ils lui sont proposés. Les normes préinstallées apportent les leurs, curés par EVERYDAT, et se consultent ; vous pouvez affecter des champs du catalogue aux normes que vous créez.",
         "cta": "Utilisez la colonne des normes à gauche pour voir les champs de chaque norme."
       },
       "searchCatalog": "Rechercher un champ du catalogue…",
@@ -2474,6 +2480,14 @@
       "tipoOpcion": {
         "select": "Liste de valeurs à choix unique",
         "select_multiple": "Liste de valeurs à choix multiple"
+      },
+      "pornorma": {
+        "notaCanon": "Champs curés par EVERYDAT pour cette norme : ils se consultent, ils ne se modifient pas. Dans « Champs par type », vous pouvez ajouter ou retirer des champs à chaque type d'élément.",
+        "notaLocal": "Norme créée dans cette installation : affectez-lui les champs du catalogue qu'elle apportera lorsqu'un type d'élément est composé à partir de ses normes.",
+        "asignarPrimero": "Affecter un champ du catalogue à la norme",
+        "asignarOtro": "Affecter un autre champ du catalogue à la norme",
+        "todosAsignados": "Tous les champs du catalogue sont déjà affectés à cette norme.",
+        "quitar": "Retirer « {{label}} » de la norme"
       }
     },
     "checklists": {

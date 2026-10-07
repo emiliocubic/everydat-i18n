@@ -2350,7 +2350,12 @@
         "categoria": "Base standard / category",
         "descripcion": "Description",
         "descripcionPlaceholder": "Scope and subject of the standard…",
-        "descripcionHint": "Briefly describe the equipment or situation this standard regulates."
+        "descripcionHint": "Briefly describe the equipment or situation this standard regulates.",
+        "codigoHint": "The full EN edition, with the year and the part or class: EN 361:2002, EN 795:2012 A.",
+        "equivalentePlaceholder": "e.g. BS EN 361:2002",
+        "categoriaPlaceholder": "e.g. EN 795 A",
+        "clasePlaceholder": "e.g. Fixed anchor point",
+        "claseHint": "The name of the equipment: it appears in the element list, in the report header and in the checklist title."
       },
       "codigoWarning": "WARNING: only change the standard code for minor edits, such as whether to include the country code or the version year.\n\nNever change the standard itself, as it is linked to element types, checklists, custom fields, etc.",
       "confirmDelete": "Delete the standard “{{codigo}}”?",
@@ -2366,7 +2371,8 @@
         "whenApplies": "Only when applicable",
         "conditional": "Conditional",
         "checkpointsNota": "If you choose to build an element type's checklist automatically from its standards, these are the checkpoints this standard will contribute. The list is part of the EVERYDAT base canon: it can be consulted but not edited. In the checklists section you can discard and/or add checkpoints as you like for each element type.",
-        "camposNota": "If you choose to build an element type's custom fields automatically from its standards, these are the fields (and their suggested values, for selectors) this standard will contribute. The list is part of the EVERYDAT base canon: it can be consulted but not edited. In the custom fields section you can discard and/or add custom fields as you like for each element type, and narrow them down for a specific model."
+        "camposNota": "If you choose to build an element type's custom fields automatically from its standards, these are the fields (and their suggested values, for selectors) this standard will contribute. The list is part of the EVERYDAT base canon: it can be consulted but not edited. In the custom fields section you can discard and/or add custom fields as you like for each element type, and narrow them down for a specific model.",
+        "camposNotaLocal": "These are the fields this standard will contribute when an element type's custom fields are built from its standards. As it is a standard created in this installation, its fields are assigned in Custom fields › Fields by standard."
       },
       "canonDetail": "Detail (read-only)",
       "candadoTitle": "Preinstalled standard: it cannot be edited or deleted.",
@@ -2474,7 +2480,7 @@
       "noFields": "No fields",
       "intro": {
         "q": "What are fields by standard for?",
-        "sub": "By assigning catalogue fields to standards, the set of custom fields of every element type can be generated automatically, since each type takes on the custom fields of the standards that apply to it.",
+        "sub": "Each standard contributes the fields asked of the equipment that complies with it: when an element type's fields are built from its standards, they are offered to it. Preinstalled standards bring their own, curated by EVERYDAT, and are consulted; you can assign catalogue fields to the standards you create.",
         "cta": "Use the column of standards on the left to see the fields of each standard."
       },
       "searchCatalog": "Search catalogue field…",
@@ -2571,6 +2577,14 @@
       "tipoOpcion": {
         "select": "List of values, single choice",
         "select_multiple": "List of values, multiple choice"
+      },
+      "pornorma": {
+        "notaCanon": "Fields curated by EVERYDAT for this standard: they are consulted, not edited. In «Fields by type» you can add or remove fields for each element type.",
+        "notaLocal": "Standard created in this installation: assign it the catalogue fields it will contribute when an element type is built from its standards.",
+        "asignarPrimero": "Assign a catalogue field to the standard",
+        "asignarOtro": "Assign another catalogue field to the standard",
+        "todosAsignados": "All the catalogue fields are already assigned to this standard.",
+        "quitar": "Remove «{{label}}» from the standard"
       }
     },
     "checklists": {

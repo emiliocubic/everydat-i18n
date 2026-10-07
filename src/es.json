@@ -2350,7 +2350,12 @@
         "categoria": "Norma base / categoría",
         "descripcion": "Descripción",
         "descripcionPlaceholder": "Ámbito y objeto de la norma…",
-        "descripcionHint": "Describe brevemente el equipo o situación que regula esta norma."
+        "descripcionHint": "Describe brevemente el equipo o situación que regula esta norma.",
+        "codigoHint": "La edición EN completa, con el año y la parte o clase: EN 361:2002, EN 795:2012 A.",
+        "equivalentePlaceholder": "p. ej. UNE-EN 361:2002",
+        "categoriaPlaceholder": "p. ej. EN 795 A",
+        "clasePlaceholder": "p. ej. Punto de anclaje fijo",
+        "claseHint": "El nombre del equipo: sale en la lista de elementos, en la cabecera del informe y en el título del checklist."
       },
       "codigoWarning": "ATENCIÓN: modifique el código de la norma únicamente para cambiar detalles menores, como incluir o no el código de país o el año de la versión.\n\nNunca cambie la norma en sí, porque está ligada a tipos de elementos, checklists, campos personalizados, etc.",
       "confirmDelete": "¿Eliminar la norma «{{codigo}}»?",
@@ -2366,7 +2371,8 @@
         "whenApplies": "Solo cuando procede",
         "conditional": "Condicional",
         "checkpointsNota": "Si se elige componer el checklist de un tipo de elemento automáticamente a partir de sus normas, estos son los checkpoints que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de checklists podrás descartar y/o añadir checkpoints a tu gusto para cada tipo de elemento.",
-        "camposNota": "Si se elige componer la batería de campos personalizados de un tipo de elemento automáticamente a partir de sus normas, estos son los campos (y sus valores sugeridos en el caso de selectores) que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de campos personalizados podrás descartar y/o añadir campos personalizados a tu gusto para cada tipo de elemento, y recortarlos para un modelo concreto."
+        "camposNota": "Si se elige componer la batería de campos personalizados de un tipo de elemento automáticamente a partir de sus normas, estos son los campos (y sus valores sugeridos en el caso de selectores) que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de campos personalizados podrás descartar y/o añadir campos personalizados a tu gusto para cada tipo de elemento, y recortarlos para un modelo concreto.",
+        "camposNotaLocal": "Estos son los campos que aportará esta norma al componer la batería de campos personalizados de un tipo de elemento a partir de sus normas. Como es una norma creada en esta instalación, sus campos se asignan en Campos personalizados › Campos por norma."
       },
       "canonDetail": "Detalle (solo lectura)",
       "candadoTitle": "Norma preinstalada: ni se edita ni se borra.",
@@ -2474,7 +2480,7 @@
       "noFields": "Sin campos",
       "intro": {
         "q": "¿Para qué sirven los campos por norma?",
-        "sub": "Asignando campos del catálogo a las normas, es posible generar automáticamente la colección de campos personalizados de cada tipo de elemento, ya que asumirán los campos personalizados correspondientes a las normas que apliquen a ese tipo de elemento.",
+        "sub": "Cada norma aporta los campos que se piden a los equipos que la cumplen: al componer los campos de un tipo de elemento a partir de sus normas, se le ofrecen. Las normas preinstaladas traen los suyos, curados por EVERYDAT, y se consultan; a las que crees tú puedes asignarles campos del catálogo.",
         "cta": "Utiliza la columna de normas del lateral para ver los campos asociados a cada norma."
       },
       "searchCatalog": "Buscar campo del catálogo…",
@@ -2571,6 +2577,14 @@
       "tipoOpcion": {
         "select": "Lista de valores con selección única",
         "select_multiple": "Lista de valores con selección múltiple"
+      },
+      "pornorma": {
+        "notaCanon": "Campos curados por EVERYDAT para esta norma: se consultan, no se editan. En «Campos por tipo» puedes añadir o quitar campos a cada tipo de elemento.",
+        "notaLocal": "Norma creada en esta instalación: asígnale los campos del catálogo que aportará al componer un tipo de elemento a partir de sus normas.",
+        "asignarPrimero": "Asignar campo de catálogo a la norma",
+        "asignarOtro": "Asignar otro campo de catálogo a la norma",
+        "todosAsignados": "Todos los campos del catálogo ya están asignados a esta norma.",
+        "quitar": "Quitar «{{label}}» de la norma"
       }
     },
     "checklists": {
