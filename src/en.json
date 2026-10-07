@@ -2587,7 +2587,8 @@
         "asignarOtro": "Assign another catalogue field to the standard",
         "todosAsignados": "All the catalogue fields are already assigned to this standard.",
         "quitar": "Remove «{{label}}» from the standard"
-      }
+      },
+      "especificoNota": "Field specific to «{{tipo}}»: it only exists for this element type and does not appear in the general catalogue. If you want to reuse it in other types, create it in the catalogue."
     },
     "checklists": {
       "tabsAria": "Checklist views",

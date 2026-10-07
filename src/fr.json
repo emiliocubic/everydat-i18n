@@ -2490,7 +2490,8 @@
         "asignarOtro": "Affecter un autre champ du catalogue à la norme",
         "todosAsignados": "Tous les champs du catalogue sont déjà affectés à cette norme.",
         "quitar": "Retirer « {{label}} » de la norme"
-      }
+      },
+      "especificoNota": "Champ spécifique à « {{tipo}} » : il n'existe que pour ce type d'élément et n'apparaît pas dans le catalogue général. Pour le réutiliser dans d'autres types, créez-le dans le catalogue."
     },
     "checklists": {
       "tabsAria": "Vues des checklists",

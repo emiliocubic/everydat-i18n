@@ -2587,7 +2587,8 @@
         "asignarOtro": "Asignar otro campo de catálogo a la norma",
         "todosAsignados": "Todos los campos del catálogo ya están asignados a esta norma.",
         "quitar": "Quitar «{{label}}» de la norma"
-      }
+      },
+      "especificoNota": "Campo específico de «{{tipo}}»: solo existe para este tipo de elemento y no aparece en el catálogo general. Si quieres reutilizarlo en otros tipos, créalo en el catálogo."
     },
     "checklists": {
       "tabsAria": "Vistas de checklists",
