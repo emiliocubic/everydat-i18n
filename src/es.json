@@ -4840,6 +4840,22 @@
     "tipos": {
       "titulo": "¿Qué revisión?",
       "elige": "Elige qué revisión vas a hacer"
+    },
+    "elementos": {
+      "titulo": "Elementos",
+      "cliente": "Cliente",
+      "emplazamiento": "Emplazamiento",
+      "buscar": "Buscar",
+      "buscarPh": "Nº serie, lote, ref. interna…",
+      "sinCoincidencias": "Sin coincidencias.",
+      "quitarFiltro": "Quitar filtro",
+      "cuenta_one": "{{count}} equipo",
+      "cuenta_other": "{{count}} equipos",
+      "cuentaMas": "Primeros {{count}} equipos: afina la búsqueda",
+      "sinResultados": "Sin resultados",
+      "sinResultadosHint": "Quita algún filtro o cambia el texto de búsqueda.",
+      "sinRed": "Sin conexión: solo se busca entre los equipos ya bajados a este móvil.",
+      "cargando": "Buscando equipos…"
     }
   },
   "auditoria": {

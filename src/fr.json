@@ -4715,6 +4715,22 @@
     "tipos": {
       "titulo": "Quelle inspection ?",
       "elige": "Choisissez l'inspection à faire"
+    },
+    "elementos": {
+      "titulo": "Équipements",
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "buscar": "Rechercher",
+      "buscarPh": "N° de série, lot, réf. interne…",
+      "sinCoincidencias": "Aucune correspondance.",
+      "quitarFiltro": "Retirer le filtre",
+      "cuenta_one": "{{count}} équipement",
+      "cuenta_other": "{{count}} équipements",
+      "cuentaMas": "Premiers {{count}} équipements : affinez la recherche",
+      "sinResultados": "Aucun résultat",
+      "sinResultadosHint": "Retirez un filtre ou modifiez le texte de recherche.",
+      "sinRed": "Hors ligne : la recherche ne porte que sur les équipements déjà téléchargés sur ce téléphone.",
+      "cargando": "Recherche des équipements…"
     }
   },
   "auditoria": {

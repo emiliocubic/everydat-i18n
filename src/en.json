@@ -4840,6 +4840,22 @@
     "tipos": {
       "titulo": "Which inspection?",
       "elige": "Choose the inspection you are doing"
+    },
+    "elementos": {
+      "titulo": "Items",
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "buscar": "Search",
+      "buscarPh": "Serial no., batch, internal ref…",
+      "sinCoincidencias": "No matches.",
+      "quitarFiltro": "Clear filter",
+      "cuenta_one": "{{count}} item",
+      "cuenta_other": "{{count}} items",
+      "cuentaMas": "First {{count}} items: narrow the search",
+      "sinResultados": "No results",
+      "sinResultadosHint": "Clear a filter or change the search text.",
+      "sinRed": "Offline: only the items already downloaded to this phone are searched.",
+      "cargando": "Searching items…"
     }
   },
   "auditoria": {
