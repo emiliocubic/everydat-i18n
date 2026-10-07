@@ -2355,7 +2355,8 @@
         "equivalentePlaceholder": "p. ej. UNE-EN 361:2002",
         "categoriaPlaceholder": "p. ej. EN 795 A",
         "clasePlaceholder": "p. ej. Punto de anclaje fijo",
-        "claseHint": "El nombre del equipo: sale en la lista de elementos, en la cabecera del informe y en el título del checklist."
+        "claseHint": "El nombre del equipo: sale en la lista de elementos, en la cabecera del informe y en el título del checklist.",
+        "sinEn": "No existe norma EN equivalente"
       },
       "codigoWarning": "ATENCIÓN: modifique el código de la norma únicamente para cambiar detalles menores, como incluir o no el código de país o el año de la versión.\n\nNunca cambie la norma en sí, porque está ligada a tipos de elementos, checklists, campos personalizados, etc.",
       "confirmDelete": "¿Eliminar la norma «{{codigo}}»?",
@@ -2370,13 +2371,14 @@
         "noCampos": "Esta norma no tiene campos sugeridos.",
         "whenApplies": "Solo cuando procede",
         "conditional": "Condicional",
-        "checkpointsNota": "Si se elige componer el checklist de un tipo de elemento automáticamente a partir de sus normas, estos son los checkpoints que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de checklists podrás descartar y/o añadir checkpoints a tu gusto para cada tipo de elemento.",
+        "checkpointsNota": "Si se elige componer el checklist de un tipo de elemento automáticamente a partir de sus normas, estos son los checkpoints que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de checklists podrás descartar y/o añadir checkpoints a tu gusto para cada tipo de elemento o modelo.",
         "camposNota": "Si se elige componer la batería de campos personalizados de un tipo de elemento automáticamente a partir de sus normas, estos son los campos (y sus valores sugeridos en el caso de selectores) que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de campos personalizados podrás descartar y/o añadir campos personalizados a tu gusto para cada tipo de elemento, y recortarlos para un modelo concreto.",
         "camposNotaLocal": "Estos son los campos que aportará esta norma al componer la batería de campos personalizados de un tipo de elemento a partir de sus normas. Como es una norma creada en esta instalación, sus campos se asignan en Campos personalizados › Campos por norma."
       },
       "canonDetail": "Detalle (solo lectura)",
       "candadoTitle": "Norma preinstalada: ni se edita ni se borra.",
-      "canonNote": "Esta norma forma parte del canon base de EVERYDAT: es consultable pero no editable. Las normas que crees tú sí que son editables."
+      "canonNote": "Esta norma forma parte del canon base de EVERYDAT: es consultable pero no editable. Las normas que crees tú sí que son editables.",
+      "sinEnAviso": "El alta de normas sin código EN dificultará la relación de los equipos dotados de ellas con los catálogos del sector y otras referencias documentales basadas en la normativa europea.\n\nConfirma solo si de verdad no existe una norma EN equivalente."
     },
     "campos": {
       "create": "Nuevo campo",
