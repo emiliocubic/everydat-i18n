@@ -4257,7 +4257,7 @@
       "descartar": "Retirer",
       "bajadoEl": "téléchargé le {{fecha}}",
       "noDescartar": "Du travail n'a pas été envoyé",
-      "noDescartarHint": "Ce projet a des contrôles en attente d'envoi. Envoyez-les avant de le retirer de l'appareil.",
+      "noDescartarHint": "Ce site a du travail non envoyé : contrôles, ajouts, dossiers ou modifications d'équipements. Envoyez-le avant de le retirer de l'appareil.",
       "descartarConfirm": "Ce qui a été téléchargé pour ce projet est supprimé de l'appareil. Vous pourrez le retélécharger avec une connexion."
     },
     "censo": {
@@ -4343,7 +4343,14 @@
       "sinMultiple": {
         "descatalogado": "Certains équipements cochés sont retirés.",
         "checklist": "Les équipements cochés n'ont pas la même checklist de vérification périodique."
-      }
+      },
+      "titulo_zona": "Fiche zone",
+      "contextoCarpeta_zona": "Zone : {{nombre}}",
+      "sinDescatalogados_zona": "Aucun équipement retiré dans cette zone",
+      "sinPropios_zona": "Cette zone n'a pas d'équipements propres.",
+      "todoRevisado_zona": "Plus rien à contrôler dans cette zone.",
+      "nuevaSubcarpeta": "Nouveau sous-dossier",
+      "nuevaSubcarpetaHint": "Il sera ajouté à la fin des sous-dossiers de {{nombre}}."
     },
     "revision": {
       "titulo": "Contrôle",
@@ -4425,7 +4432,8 @@
         "modelo": "Nouveau modèle",
         "edicion": "Modification d'équipement",
         "codigo": "Code QR",
-        "foto_alta": "Photo de l'ajout"
+        "foto_alta": "Photo de l'ajout",
+        "carpeta": "Nouveau dossier"
       },
       "estado": {
         "pendiente": "En attente",
@@ -4536,7 +4544,8 @@
       "creadosEn": "Dans « {{carpeta}} ». En file d'attente : ils seront envoyés en appuyant sur « Envoyer ».",
       "sinRevision": "Sans vérification",
       "otraAlta": "Ajouter d'autres équipements",
-      "volverCarpeta": "Retour au dossier"
+      "volverCarpeta": "Retour au dossier",
+      "volverCarpeta_zona": "Retour à la zone"
     },
     "inicio": {
       "titulo": "Accueil",
@@ -4594,7 +4603,9 @@
       "sinArbol": "Ce site n'a pas d'arbre.",
       "enEsteMovil": "Sur ce téléphone",
       "bajado": "Téléchargé le {{fecha}}",
-      "quitarDelMovil": "Retirer du téléphone"
+      "quitarDelMovil": "Retirer du téléphone",
+      "nuevaCarpeta": "Nouveau dossier",
+      "nuevaCarpetaHint": "Il sera ajouté à la fin de l'arbre."
     },
     "escaner": {
       "titulo": "Lire un code",
@@ -4755,6 +4766,14 @@
       "sinResultadosHint": "Retirez un filtre ou modifiez le texte de recherche.",
       "sinRed": "Hors ligne : la recherche ne porte que sur les équipements déjà téléchargés sur ce téléphone.",
       "cargando": "Recherche des équipements…"
+    },
+    "carpetaNueva": {
+      "nombre": "Nom",
+      "ejemplo": "p. ex. Parking souterrain",
+      "ejemploSub": "p. ex. Lanterneau central",
+      "crear": "Créer le dossier",
+      "crearSub": "Créer le sous-dossier",
+      "recienCreada": "Vient d'être créé"
     }
   },
   "auditoria": {

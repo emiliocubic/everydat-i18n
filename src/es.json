@@ -4382,7 +4382,7 @@
       "descartar": "Quitar",
       "bajadoEl": "bajado {{fecha}}",
       "noDescartar": "Hay trabajo sin enviar",
-      "noDescartarHint": "Este proyecto tiene revisiones pendientes de enviar. Envíalas antes de quitarlo del dispositivo.",
+      "noDescartarHint": "Este emplazamiento tiene trabajo sin enviar: revisiones, altas, carpetas o cambios en equipos. Envíalo antes de quitarlo del móvil.",
       "descartarConfirm": "Se borra del dispositivo lo bajado de este proyecto. Lo puedes volver a bajar con conexión."
     },
     "censo": {
@@ -4468,7 +4468,14 @@
       "sinMultiple": {
         "descatalogado": "Hay equipos descatalogados entre los marcados.",
         "checklist": "Los marcados no comparten el checklist de la revisión periódica."
-      }
+      },
+      "titulo_zona": "Ficha de zona",
+      "contextoCarpeta_zona": "Zona: {{nombre}}",
+      "sinDescatalogados_zona": "No hay descatalogados en esta zona",
+      "sinPropios_zona": "Esta zona no tiene equipos propios.",
+      "todoRevisado_zona": "No queda nada por revisar en esta zona.",
+      "nuevaSubcarpeta": "Nueva subcarpeta",
+      "nuevaSubcarpetaHint": "Se añadirá al final de las subcarpetas de {{nombre}}."
     },
     "revision": {
       "titulo": "Revisión",
@@ -4550,7 +4557,8 @@
         "modelo": "Alta de modelo",
         "edicion": "Edición de equipo",
         "codigo": "Código QR",
-        "foto_alta": "Foto del alta"
+        "foto_alta": "Foto del alta",
+        "carpeta": "Carpeta nueva"
       },
       "estado": {
         "pendiente": "Pendiente",
@@ -4661,7 +4669,8 @@
       "creadosEn": "En «{{carpeta}}». Quedan en la cola: se enviarán al pulsar «Enviar».",
       "sinRevision": "Sin revisión",
       "otraAlta": "Dar de alta más equipos",
-      "volverCarpeta": "Volver a la carpeta"
+      "volverCarpeta": "Volver a la carpeta",
+      "volverCarpeta_zona": "Volver a la zona"
     },
     "inicio": {
       "titulo": "Inicio",
@@ -4719,7 +4728,9 @@
       "sinArbol": "Este emplazamiento no tiene árbol.",
       "enEsteMovil": "En este móvil",
       "bajado": "Bajado {{fecha}}",
-      "quitarDelMovil": "Quitar del móvil"
+      "quitarDelMovil": "Quitar del móvil",
+      "nuevaCarpeta": "Nueva carpeta",
+      "nuevaCarpetaHint": "Se añadirá al final del árbol."
     },
     "escaner": {
       "titulo": "Leer código",
@@ -4880,6 +4891,14 @@
       "sinResultadosHint": "Quita algún filtro o cambia el texto de búsqueda.",
       "sinRed": "Sin conexión: solo se busca entre los equipos ya bajados a este móvil.",
       "cargando": "Buscando equipos…"
+    },
+    "carpetaNueva": {
+      "nombre": "Nombre",
+      "ejemplo": "p. ej. Aparcamiento subterráneo",
+      "ejemploSub": "p. ej. Lucernario central",
+      "crear": "Crear carpeta",
+      "crearSub": "Crear subcarpeta",
+      "recienCreada": "Recién creada"
     }
   },
   "auditoria": {

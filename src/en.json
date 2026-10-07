@@ -4382,7 +4382,7 @@
       "descartar": "Remove",
       "bajadoEl": "downloaded {{fecha}}",
       "noDescartar": "There is unsent work",
-      "noDescartarHint": "This project has inspections waiting to be sent. Send them before removing it from the device.",
+      "noDescartarHint": "This site has unsent work: inspections, new equipment, folders or equipment changes. Send it before removing it from the device.",
       "descartarConfirm": "What was downloaded for this project is deleted from the device. You can download it again with a connection."
     },
     "censo": {
@@ -4468,7 +4468,14 @@
       "sinMultiple": {
         "descatalogado": "Some of the selected items are retired.",
         "checklist": "The selected items do not share the periodic inspection checklist."
-      }
+      },
+      "titulo_zona": "Zone sheet",
+      "contextoCarpeta_zona": "Zone: {{nombre}}",
+      "sinDescatalogados_zona": "No retired items in this zone",
+      "sinPropios_zona": "This zone has no items of its own.",
+      "todoRevisado_zona": "Nothing left to inspect in this zone.",
+      "nuevaSubcarpeta": "New subfolder",
+      "nuevaSubcarpetaHint": "It will be added at the end of the subfolders of {{nombre}}."
     },
     "revision": {
       "titulo": "Inspection",
@@ -4550,7 +4557,8 @@
         "modelo": "New model",
         "edicion": "Equipment edit",
         "codigo": "QR code",
-        "foto_alta": "New equipment photo"
+        "foto_alta": "New equipment photo",
+        "carpeta": "New folder"
       },
       "estado": {
         "pendiente": "Pending",
@@ -4661,7 +4669,8 @@
       "creadosEn": "In «{{carpeta}}». They are queued: they will be sent when you tap «Send».",
       "sinRevision": "Not inspected",
       "otraAlta": "Add more equipment",
-      "volverCarpeta": "Back to the folder"
+      "volverCarpeta": "Back to the folder",
+      "volverCarpeta_zona": "Back to the zone"
     },
     "inicio": {
       "titulo": "Home",
@@ -4719,7 +4728,9 @@
       "sinArbol": "This site has no tree.",
       "enEsteMovil": "On this phone",
       "bajado": "Downloaded {{fecha}}",
-      "quitarDelMovil": "Remove from phone"
+      "quitarDelMovil": "Remove from phone",
+      "nuevaCarpeta": "New folder",
+      "nuevaCarpetaHint": "It will be added at the end of the tree."
     },
     "escaner": {
       "titulo": "Read code",
@@ -4880,6 +4891,14 @@
       "sinResultadosHint": "Clear a filter or change the search text.",
       "sinRed": "Offline: only the items already downloaded to this phone are searched.",
       "cargando": "Searching items…"
+    },
+    "carpetaNueva": {
+      "nombre": "Name",
+      "ejemplo": "e.g. Underground car park",
+      "ejemploSub": "e.g. Central skylight",
+      "crear": "Create folder",
+      "crearSub": "Create subfolder",
+      "recienCreada": "Just created"
     }
   },
   "auditoria": {
