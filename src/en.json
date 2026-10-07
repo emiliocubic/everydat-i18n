@@ -2884,7 +2884,7 @@
       "grupoMarca": "Brand and language",
       "marca": {
         "titulo": "Brand",
-        "desc": "The trade name, primary colour, logo and seal appear in the panel, in reports and in emails.",
+        "desc": "The trade name, primary colour, logo and seal appear in the panel, in reports and in emails; the logo for dark backgrounds, in the header of the field app.",
         "nombre": "Trade name",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Primary colour",
@@ -2896,7 +2896,12 @@
         "sinSello": "No seal",
         "selloHint": "The company seal image: it appears on the signature block of reports that ask to «Sign with seal». PNG, JPG, SVG or WEBP, up to 1 MB.",
         "quitarSello": "Remove seal",
-        "quitarSelloConfirmar": "Remove the seal image? Reports that ask for it will be issued without it; what was already issued does not change."
+        "quitarSelloConfirmar": "Remove the seal image? Reports that ask for it will be issued without it; what was already issued does not change.",
+        "logoOscuro": "Logo for dark backgrounds",
+        "sinLogoOscuro": "No logo for dark backgrounds",
+        "logoOscuroHint": "A light version of the logo for the dark header of the field app; without it, the app shows the usual logo. PNG, JPG or WEBP, up to 1 MB.",
+        "quitarLogoOscuro": "Remove the logo for dark backgrounds",
+        "quitarLogoOscuroConfirmar": "Remove the logo for dark backgrounds? The app will show the usual logo again."
       },
       "idioma": {
         "titulo": "Language",

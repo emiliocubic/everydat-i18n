@@ -2787,7 +2787,7 @@
       "grupoMarca": "Marque et langue",
       "marca": {
         "titulo": "Marque",
-        "desc": "Le nom commercial, la couleur principale, le logo et le cachet apparaissent dans le panneau, les rapports et les e-mails.",
+        "desc": "Le nom commercial, la couleur principale, le logo et le cachet apparaissent dans le panneau, les rapports et les e-mails ; le logo pour fond sombre, dans l'en-tête de l'application de terrain.",
         "nombre": "Nom commercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Couleur principale",
@@ -2799,7 +2799,12 @@
         "sinSello": "Sans cachet",
         "selloHint": "L'image du cachet de l'entreprise : elle apparaît sur le bloc de signature des rapports qui demandent « Signer avec cachet ». PNG, JPG, SVG ou WEBP, jusqu'à 1 Mo.",
         "quitarSello": "Retirer le cachet",
-        "quitarSelloConfirmar": "Retirer l'image du cachet ? Les rapports qui la demandent sortiront sans elle ; ce qui a déjà été émis ne change pas."
+        "quitarSelloConfirmar": "Retirer l'image du cachet ? Les rapports qui la demandent sortiront sans elle ; ce qui a déjà été émis ne change pas.",
+        "logoOscuro": "Logo pour fond sombre",
+        "sinLogoOscuro": "Pas de logo pour fond sombre",
+        "logoOscuroHint": "Une version claire du logo pour l'en-tête sombre de l'application de terrain ; sans elle, l'application affiche le logo habituel. PNG, JPG ou WEBP, jusqu'à 1 Mo.",
+        "quitarLogoOscuro": "Retirer le logo pour fond sombre",
+        "quitarLogoOscuroConfirmar": "Retirer le logo pour fond sombre ? L'application affichera de nouveau le logo habituel."
       },
       "idioma": {
         "titulo": "Langue",

@@ -2884,7 +2884,7 @@
       "grupoMarca": "Marca e idioma",
       "marca": {
         "titulo": "Marca",
-        "desc": "El nombre comercial, el color primario, el logo y el sello salen en el panel, en los informes y en los correos.",
+        "desc": "El nombre comercial, el color primario, el logo y el sello salen en el panel, en los informes y en los correos; el logo para fondo oscuro, en la cabecera de la app de campo.",
         "nombre": "Nombre comercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Color primario",
@@ -2896,7 +2896,12 @@
         "sinSello": "Sin sello",
         "selloHint": "La imagen del sello de la empresa: sale en el bloque de firma de los informes que piden «Firmar con sello». PNG, JPG, SVG o WEBP, hasta 1 MB.",
         "quitarSello": "Quitar el sello",
-        "quitarSelloConfirmar": "¿Quitar la imagen del sello? Los informes que la pidan saldrán sin ella; lo ya emitido no cambia."
+        "quitarSelloConfirmar": "¿Quitar la imagen del sello? Los informes que la pidan saldrán sin ella; lo ya emitido no cambia.",
+        "logoOscuro": "Logo para fondo oscuro",
+        "sinLogoOscuro": "Sin logo para fondo oscuro",
+        "logoOscuroHint": "Una versión clara del logo para la cabecera oscura de la app de campo; sin ella, la app pinta el logo de siempre. PNG, JPG o WEBP, hasta 1 MB.",
+        "quitarLogoOscuro": "Quitar el logo para fondo oscuro",
+        "quitarLogoOscuroConfirmar": "¿Quitar el logo para fondo oscuro? La app volverá a pintar el logo de siempre."
       },
       "idioma": {
         "titulo": "Idioma",
