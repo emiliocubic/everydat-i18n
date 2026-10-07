@@ -4588,7 +4588,14 @@
       "catalogoNunca": "Not downloaded",
       "catalogoModelos": "Models",
       "catalogoActualizar": "Update the catalogue",
-      "catalogoError": "The catalogue could not be downloaded."
+      "catalogoError": "The catalogue could not be downloaded.",
+      "envios": "Outbox",
+      "porEnviar": "{{count}} to send",
+      "refrescado": "Up to date",
+      "refrescarError": "There is no connection to the server. The saved permissions are still in use.",
+      "sincronizaciones": "Latest synchronisations",
+      "sinSincronizaciones": "Nothing has been downloaded or sent yet.",
+      "dispositivo": "This device"
     },
     "alta": {
       "titulo": "Add equipment",
@@ -4757,7 +4764,6 @@
       "buscar": "Search",
       "leerQr": "Scan QR",
       "leerNfc": "Read NFC",
-      "perfil": "Profile",
       "nfcProximamente": "Read NFC: coming soon",
       "nfcProximamenteHint": "NFC tag reading will arrive in a later version. In the meantime, scan the QR or barcode of the equipment."
     },

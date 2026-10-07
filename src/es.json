@@ -4588,7 +4588,14 @@
       "catalogoNunca": "Sin bajar",
       "catalogoModelos": "Modelos",
       "catalogoActualizar": "Actualizar el catálogo",
-      "catalogoError": "No se ha podido bajar el catálogo."
+      "catalogoError": "No se ha podido bajar el catálogo.",
+      "envios": "Envíos",
+      "porEnviar": "{{count}} por enviar",
+      "refrescado": "Al día",
+      "refrescarError": "No hay conexión con el servidor. Se siguen usando los permisos guardados.",
+      "sincronizaciones": "Últimas sincronizaciones",
+      "sinSincronizaciones": "Todavía no se ha bajado ni enviado nada.",
+      "dispositivo": "Este dispositivo"
     },
     "alta": {
       "titulo": "Alta de equipos",
@@ -4757,7 +4764,6 @@
       "buscar": "Buscar",
       "leerQr": "Leer QR",
       "leerNfc": "Leer NFC",
-      "perfil": "Perfil",
       "nfcProximamente": "Leer NFC: próximamente",
       "nfcProximamenteHint": "La lectura de chips NFC llegará en una versión posterior. Mientras tanto, lee el QR o el código de barras del equipo."
     },

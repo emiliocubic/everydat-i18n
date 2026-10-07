@@ -4463,7 +4463,14 @@
       "catalogoNunca": "Non téléchargé",
       "catalogoModelos": "Modèles",
       "catalogoActualizar": "Mettre à jour le catalogue",
-      "catalogoError": "Impossible de télécharger le catalogue."
+      "catalogoError": "Impossible de télécharger le catalogue.",
+      "envios": "Envois",
+      "porEnviar": "{{count}} à envoyer",
+      "refrescado": "À jour",
+      "refrescarError": "Pas de connexion avec le serveur. Les permissions enregistrées restent en vigueur.",
+      "sincronizaciones": "Dernières synchronisations",
+      "sinSincronizaciones": "Rien n'a encore été téléchargé ni envoyé.",
+      "dispositivo": "Cet appareil"
     },
     "alta": {
       "titulo": "Ajout d'équipements",
@@ -4632,7 +4639,6 @@
       "buscar": "Rechercher",
       "leerQr": "Lire le QR",
       "leerNfc": "Lire NFC",
-      "perfil": "Profil",
       "nfcProximamente": "Lire NFC : bientôt disponible",
       "nfcProximamenteHint": "La lecture des puces NFC arrivera dans une version ultérieure. En attendant, lisez le QR ou le code-barres de l'équipement."
     },
