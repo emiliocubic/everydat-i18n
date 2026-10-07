@@ -2359,16 +2359,18 @@
       "deleted": "Norma eliminada",
       "consulta": {
         "tabsAria": "Canon de la norma",
-        "checkpoints": "Checkpoints del checklist",
-        "campos": "Campos sugeridos",
+        "checkpoints": "Sugerencias checklist",
+        "campos": "Sugerencia campos personalizados",
         "noCheckpoints": "Esta norma no tiene checkpoints en el canon.",
         "noCampos": "Esta norma no tiene campos sugeridos.",
         "whenApplies": "Solo cuando procede",
-        "conditional": "Condicional"
+        "conditional": "Condicional",
+        "checkpointsNota": "Si se elige componer el checklist de un tipo de elemento automáticamente a partir de sus normas, estos son los checkpoints que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de checklists podrás descartar y/o añadir checkpoints a tu gusto para cada tipo de elemento.",
+        "camposNota": "Si se elige componer la batería de campos personalizados de un tipo de elemento automáticamente a partir de sus normas, estos son los campos (y sus valores sugeridos en el caso de selectores) que aportará esta norma. La lista forma parte del canon base de EVERYDAT: es consultable pero no editable. En la sección de campos personalizados podrás descartar y/o añadir campos personalizados a tu gusto para cada tipo de elemento, y recortarlos para un modelo concreto."
       },
       "canonDetail": "Detalle (solo lectura)",
       "candadoTitle": "Norma preinstalada: ni se edita ni se borra.",
-      "canonNote": "Esta norma forma parte del canon curado por Cubic: es consultable pero no editable. Las normas que crees tú sí se editan y se borran."
+      "canonNote": "Esta norma forma parte del canon base de EVERYDAT: es consultable pero no editable. Las normas que crees tú sí que son editables."
     },
     "campos": {
       "create": "Nuevo campo",
@@ -2441,20 +2443,26 @@
         "placeholder": "Texto del valor…",
         "add": "Añadir valor",
         "borrar": "Borrar de la lista",
-        "retirar": "Retirar (dejar de ofrecerlo)",
+        "retirar": "Dejar de ofrecerlo",
         "reactivar": "Volver a ofrecerlo",
         "retiradoTag": "retirado",
         "retiradoTitle": "Retirado: no se ofrece para elementos nuevos, pero sigue intacto en los que ya lo tienen.",
-        "descartados": "Descartados por las normas del tipo",
-        "descartadosHint": "Púlsalos para devolverlos a la lista: la norma sugiere, no encierra.",
+        "descartados": "Valores descartados",
+        "descartadosHint": "A nivel general, el campo {{campo}} admitiría más valores. A continuación se muestran los que admitía y se han descartado. Puedes devolverlos a la lista pulsándolos.",
         "interseccionVacia": "Las normas de este tipo no coinciden en ningún valor. No hay propuesta posible: decide la lista a mano.",
-        "canonNote": "Lista curada por Cubic, de solo lectura. La que se usa de verdad es la copia de cada tipo, editable en «Campos por tipo».",
+        "canonNote": "Esta lista forma parte del canon EVERYDAT, de solo lectura. Al asignar el campo a un tipo de elemento concreto, podrás modificar los valores propuestos en cualquier momento.",
         "saved": "Valores guardados",
         "maestraNote": "Lista maestra del campo: es la que se copia al asignarlo a un tipo. Cada tipo puede recortarla después sin tocar esta.",
         "localNote": "Lista maestra del campo. Lo que se usa de verdad es la copia de cada tipo, editable en «Campos por tipo».",
         "traer_one": "Traer el valor que propone el campo",
         "traer_other": "Traer los {{count}} valores que propone el campo",
-        "errorLista": "El campo se ha guardado, pero su lista de valores no. Vuelve a abrirlo para revisarla."
+        "errorLista": "El campo se ha guardado, pero su lista de valores no. Vuelve a abrirlo para revisarla.",
+        "borrarAria": "Qué hacer con los elementos que llevan el valor",
+        "borrarEnUso_one": "{{count}} elemento lleva «{{valor}}». ¿Qué hacer con él?",
+        "borrarEnUso_other": "{{count}} elementos llevan «{{valor}}». ¿Qué hacer con ellos?",
+        "conservar": "Dejárselo (sale de la lista y deja de ofrecerse)",
+        "cambiarA": "Cambiarlo a: {{valor}}",
+        "aplicar": "Aplicar"
       },
       "searchNorma": "Buscar norma…",
       "created": "Campo creado",
@@ -2495,21 +2503,31 @@
         "defineSpecific": "Asignar un campo ESPECÍFICO para este tipo de elemento",
         "oblig": "Obligatorio",
         "obligTitle": "Exigido al registrar un elemento de este tipo",
-        "asignacionCol": "Asignación al tipo",
+        "asignacionCol": "Norma",
         "proc": {
           "norma": "Procedente de {{codigo}}",
           "normaTitle": "El campo llegó al tipo desde esa norma. Es una copia: cambiar la norma después no lo toca.",
           "catalogo": "Elegido del catálogo",
           "tipo": "Creado para este tipo"
         },
-        "variableCol": "Variable por marca",
+        "variableCol": "¿Por marca?",
         "variableTip": "Cada fabricante puede tener un conjunto de valores diferente para este campo. Aquí se muestra el listado por defecto, pero se puede personalizar desde la pantalla de fabricantes.",
         "editTitle": "Editar la asignación de «{{label}}»",
         "confirmRemove": "¿Quitar «{{label}}» de este tipo?",
         "removeWarn": "Los valores ya registrados se conservan en la base de datos, pero dejarán de verse para cualquier usuario.",
         "removeNormaWarn": "Este campo lo propone {{codigo}}: quitarlo no toca la norma, y mientras siga asignada al tipo podrás volver a asignarlo con un clic.",
         "sinCampos": "Este tipo todavía no tiene campos. Vuelca los de sus normas o elige del catálogo.",
-        "sinFamilia": "Sin familia"
+        "sinFamilia": "Sin familia",
+        "fuenteCol": "Fuente",
+        "fuente": {
+          "canon": "Preinstalado",
+          "canonTitle": "Viene preinstalado con la aplicación: se consulta, no se edita.",
+          "catalogo": "Catálogo",
+          "catalogoTitle": "Campo del catálogo general de esta instalación.",
+          "especifico": "Específico",
+          "especificoTitle": "Campo creado para este tipo de elemento."
+        },
+        "normaColTitle": "Norma de la que procede el campo. Vacía si se asignó directamente al tipo."
       },
       "origen": {
         "canon": "Preinstalado",
@@ -2518,7 +2536,7 @@
         "localTitle": "Definido en esta instalación: se puede editar y borrar."
       },
       "canonDetail": "Detalle (solo lectura)",
-      "canonNote": "Este campo forma parte del canon curado por Cubic: es consultable pero no editable. Su lista de valores se ajusta tipo a tipo, en «Campos por tipo».",
+      "canonNote": "Este campo forma parte del canon EVERYDAT: aquí es consultable pero no editable. Su lista de valores se ajusta tipo a tipo, en «Campos por tipo».",
       "candadoCol": "Preinstalado",
       "candadoTitle": "Campo preinstalado: ni se edita ni se borra.",
       "avisoNormas_one": "Se está aplicando a {{count}} norma.",
@@ -2548,6 +2566,11 @@
         "chipTipos_one": "tipo",
         "chipTipos_other": "tipos",
         "chipTiposTitle": "Tipos de elemento que lo heredan"
+      },
+      "canonNoteSinLista": "Este campo forma parte del canon EVERYDAT: es consultable pero no editable.",
+      "tipoOpcion": {
+        "select": "Lista de valores con selección única",
+        "select_multiple": "Lista de valores con selección múltiple"
       }
     },
     "checklists": {

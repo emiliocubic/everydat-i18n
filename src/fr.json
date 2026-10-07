@@ -2262,16 +2262,18 @@
       "deleted": "Norme supprimée",
       "consulta": {
         "tabsAria": "Canon de la norme",
-        "checkpoints": "Points de contrôle de la checklist",
-        "campos": "Champs suggérés",
+        "checkpoints": "Suggestions de checklist",
+        "campos": "Suggestions de champs personnalisés",
         "noCheckpoints": "Cette norme n'a aucun point de contrôle dans le canon.",
         "noCampos": "Cette norme n'a aucun champ suggéré.",
         "whenApplies": "Uniquement si applicable",
-        "conditional": "Conditionnel"
+        "conditional": "Conditionnel",
+        "checkpointsNota": "Si vous choisissez de composer automatiquement la checklist d'un type d'élément à partir de ses normes, voici les points de contrôle qu'apportera cette norme. La liste fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Dans la section des checklists, vous pourrez écarter et/ou ajouter des points de contrôle à votre guise pour chaque type d'élément.",
+        "camposNota": "Si vous choisissez de composer automatiquement les champs personnalisés d'un type d'élément à partir de ses normes, voici les champs (et leurs valeurs suggérées pour les listes) qu'apportera cette norme. La liste fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Dans la section des champs personnalisés, vous pourrez écarter et/ou ajouter des champs à votre guise pour chaque type d'élément, et les restreindre pour un modèle précis."
       },
       "canonDetail": "Détail (lecture seule)",
       "candadoTitle": "Norme préinstallée : elle ne se modifie ni ne se supprime.",
-      "canonNote": "Cette norme fait partie du canon curé par Cubic : consultable mais non modifiable. Les normes que vous créez vous-même se modifient et se suppriment."
+      "canonNote": "Cette norme fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Les normes que vous créez vous-même sont modifiables."
     },
     "campos": {
       "create": "Nouveau champ",
@@ -2344,20 +2346,26 @@
         "placeholder": "Texte de la valeur…",
         "add": "Ajouter une valeur",
         "borrar": "Supprimer de la liste",
-        "retirar": "Retirer (ne plus la proposer)",
+        "retirar": "Ne plus le proposer",
         "reactivar": "La proposer à nouveau",
         "retiradoTag": "retirée",
         "retiradoTitle": "Retirée : non proposée pour les nouveaux éléments, mais intacte dans ceux qui l'utilisent déjà.",
-        "descartados": "Écartées par les normes du type",
-        "descartadosHint": "Cliquez pour les remettre dans la liste : la norme suggère, elle n'enferme pas.",
+        "descartados": "Valeurs écartées",
+        "descartadosHint": "De façon générale, le champ {{campo}} admettrait plus de valeurs. Voici celles qu'il admettait et qui ont été écartées. Cliquez dessus pour les remettre dans la liste.",
         "interseccionVacia": "Les normes de ce type n'ont aucune valeur commune. Aucune proposition possible : composez la liste à la main.",
-        "canonNote": "Liste curée par Cubic, en lecture seule. Celle réellement utilisée est la copie de chaque type, modifiable dans « Champs par type ».",
+        "canonNote": "Cette liste fait partie du canon EVERYDAT, en lecture seule. Une fois le champ affecté à un type d'élément précis, vous pourrez modifier à tout moment les valeurs proposées.",
         "saved": "Valeurs enregistrées",
         "maestraNote": "Liste maîtresse du champ : c'est elle qui est copiée lors de l'affectation à un type. Chaque type pourra ensuite réduire sa copie sans toucher à celle-ci.",
         "localNote": "Liste maîtresse du champ. Ce qui sert vraiment, c'est la copie de chaque type, modifiable dans « Champs par type ».",
         "traer_one": "Importer la valeur proposée par le champ",
         "traer_other": "Importer les {{count}} valeurs proposées par le champ",
-        "errorLista": "Le champ a été enregistré, mais pas sa liste de valeurs. Rouvrez-le pour la vérifier."
+        "errorLista": "Le champ a été enregistré, mais pas sa liste de valeurs. Rouvrez-le pour la vérifier.",
+        "borrarAria": "Que faire des éléments qui portent cette valeur",
+        "borrarEnUso_one": "{{count}} élément porte « {{valor}} ». Que faut-il en faire ?",
+        "borrarEnUso_other": "{{count}} éléments portent « {{valor}} ». Que faut-il en faire ?",
+        "conservar": "La leur laisser (elle sort de la liste et n'est plus proposée)",
+        "cambiarA": "La remplacer par : {{valor}}",
+        "aplicar": "Appliquer"
       },
       "searchNorma": "Rechercher une norme…",
       "created": "Champ créé",
@@ -2398,21 +2406,31 @@
         "defineSpecific": "Assigner un champ SPÉCIFIQUE pour ce type d'élément",
         "oblig": "Obligatoire",
         "obligTitle": "Exigé lors de l'enregistrement d'un élément de ce type",
-        "asignacionCol": "Affectation au type",
+        "asignacionCol": "Norme",
         "proc": {
           "norma": "Provient de {{codigo}}",
           "normaTitle": "Le champ est arrivé au type depuis cette norme. C'est une copie : modifier la norme ensuite n'y touche pas.",
           "catalogo": "Choisi dans le catalogue",
           "tipo": "Créé pour ce type"
         },
-        "variableCol": "Variable selon la marque",
+        "variableCol": "Par marque ?",
         "variableTip": "Chaque fabricant peut avoir un ensemble de valeurs différent pour ce champ. La liste par défaut est affichée ici, mais elle peut être personnalisée depuis l'écran des fabricants.",
         "editTitle": "Modifier l'affectation de « {{label}} »",
         "confirmRemove": "Retirer « {{label}} » de ce type ?",
         "removeWarn": "Les valeurs déjà enregistrées restent en base, mais ne seront plus visibles pour aucun utilisateur.",
         "removeNormaWarn": "Ce champ est proposé par {{codigo}} : le retirer ne touche pas la norme, et tant qu'elle reste affectée au type vous pourrez le réaffecter en un clic.",
         "sinCampos": "Ce type n'a pas encore de champs. Importez ceux de ses normes ou choisissez dans le catalogue.",
-        "sinFamilia": "Sans famille"
+        "sinFamilia": "Sans famille",
+        "fuenteCol": "Source",
+        "fuente": {
+          "canon": "Préinstallé",
+          "canonTitle": "Fourni avec l'application : il se consulte, il ne se modifie pas.",
+          "catalogo": "Catalogue",
+          "catalogoTitle": "Champ du catalogue général de cette installation.",
+          "especifico": "Spécifique",
+          "especificoTitle": "Champ créé pour ce type d'élément."
+        },
+        "normaColTitle": "Norme d'où vient le champ. Vide s'il a été affecté directement au type."
       },
       "origen": {
         "canon": "Préinstallé",
@@ -2421,7 +2439,7 @@
         "localTitle": "Défini dans cette installation : modifiable et supprimable."
       },
       "canonDetail": "Détail (lecture seule)",
-      "canonNote": "Ce champ fait partie du canon curé par Cubic : il est consultable mais non modifiable. Sa liste de valeurs s'ajuste type par type, dans « Champs par type ».",
+      "canonNote": "Ce champ fait partie du canon EVERYDAT : ici il est consultable mais non modifiable. Sa liste de valeurs s'ajuste type par type, dans « Champs par type ».",
       "candadoCol": "Préinstallé",
       "candadoTitle": "Champ préinstallé : ni modifiable ni supprimable.",
       "avisoNormas_one": "Il est appliqué à {{count}} norme.",
@@ -2451,6 +2469,11 @@
         "chipTipos_one": "type",
         "chipTipos_other": "types",
         "chipTiposTitle": "Types d’élément qui en héritent"
+      },
+      "canonNoteSinLista": "Ce champ fait partie du canon EVERYDAT : consultable mais non modifiable.",
+      "tipoOpcion": {
+        "select": "Liste de valeurs à choix unique",
+        "select_multiple": "Liste de valeurs à choix multiple"
       }
     },
     "checklists": {

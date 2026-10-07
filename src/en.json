@@ -2359,16 +2359,18 @@
       "deleted": "Standard deleted",
       "consulta": {
         "tabsAria": "Standard canon",
-        "checkpoints": "Checklist checkpoints",
-        "campos": "Suggested fields",
+        "checkpoints": "Checklist suggestions",
+        "campos": "Custom field suggestions",
         "noCheckpoints": "This standard has no checkpoints in the canon.",
         "noCampos": "This standard has no suggested fields.",
         "whenApplies": "Only when applicable",
-        "conditional": "Conditional"
+        "conditional": "Conditional",
+        "checkpointsNota": "If you choose to build an element type's checklist automatically from its standards, these are the checkpoints this standard will contribute. The list is part of the EVERYDAT base canon: it can be consulted but not edited. In the checklists section you can discard and/or add checkpoints as you like for each element type.",
+        "camposNota": "If you choose to build an element type's custom fields automatically from its standards, these are the fields (and their suggested values, for selectors) this standard will contribute. The list is part of the EVERYDAT base canon: it can be consulted but not edited. In the custom fields section you can discard and/or add custom fields as you like for each element type, and narrow them down for a specific model."
       },
       "canonDetail": "Detail (read-only)",
       "candadoTitle": "Preinstalled standard: it cannot be edited or deleted.",
-      "canonNote": "This standard is part of the canon curated by Cubic: it can be consulted but not edited. The standards you create yourself can be edited and deleted."
+      "canonNote": "This standard is part of the EVERYDAT base canon: it can be consulted but not edited. The standards you create yourself can be edited."
     },
     "campos": {
       "create": "New field",
@@ -2441,20 +2443,26 @@
         "placeholder": "Value text…",
         "add": "Add value",
         "borrar": "Remove from the list",
-        "retirar": "Retire (stop offering it)",
+        "retirar": "Stop offering it",
         "reactivar": "Offer it again",
         "retiradoTag": "retired",
         "retiradoTitle": "Retired: not offered for new elements, but untouched in those that already use it.",
-        "descartados": "Ruled out by the type's standards",
-        "descartadosHint": "Click to bring them back into the list: the standard suggests, it does not lock.",
+        "descartados": "Discarded values",
+        "descartadosHint": "In general, the field {{campo}} would accept more values. Below are the ones it accepted and have been discarded. Click them to put them back on the list.",
         "interseccionVacia": "The standards of this type share no common value. No proposal is possible: decide the list by hand.",
-        "canonNote": "List curated by Cubic, read-only. The one actually used is each type's copy, editable under “Fields by type”.",
+        "canonNote": "This list is part of the EVERYDAT canon, read-only. Once the field is assigned to a specific element type, you can change the proposed values at any time.",
         "saved": "Values saved",
         "maestraNote": "Master list of the field: this is what gets copied when you assign it to a type. Each type can trim its own copy afterwards without touching this one.",
         "localNote": "Master list of the field. What is actually used is each type's copy, editable in «Fields by type».",
         "traer_one": "Pull in the value the field proposes",
         "traer_other": "Pull in the {{count}} values the field proposes",
-        "errorLista": "The field was saved, but its list of values was not. Open it again to review the list."
+        "errorLista": "The field was saved, but its list of values was not. Open it again to review the list.",
+        "borrarAria": "What to do with the elements that have this value",
+        "borrarEnUso_one": "{{count}} element has «{{valor}}». What should happen to it?",
+        "borrarEnUso_other": "{{count}} elements have «{{valor}}». What should happen to them?",
+        "conservar": "Keep it (it leaves the list and is no longer offered)",
+        "cambiarA": "Change it to: {{valor}}",
+        "aplicar": "Apply"
       },
       "searchNorma": "Search standard…",
       "created": "Field created",
@@ -2495,21 +2503,31 @@
         "defineSpecific": "Assign a SPECIFIC field for this element type",
         "oblig": "Required",
         "obligTitle": "Required when registering an element of this type",
-        "asignacionCol": "Assignment to the type",
+        "asignacionCol": "Standard",
         "proc": {
           "norma": "From {{codigo}}",
           "normaTitle": "The field reached the type from that standard. It is a copy: changing the standard later does not touch it.",
           "catalogo": "Chosen from the catalogue",
           "tipo": "Created for this type"
         },
-        "variableCol": "Varies by brand",
+        "variableCol": "By brand?",
         "variableTip": "Each manufacturer may have a different set of values for this field. The default list is shown here, but it can be customised from the manufacturers screen.",
         "editTitle": "Edit the assignment of “{{label}}”",
         "confirmRemove": "Remove “{{label}}” from this type?",
         "removeWarn": "Values already recorded stay in the database, but will no longer be visible to any user.",
         "removeNormaWarn": "This field is proposed by {{codigo}}: removing it does not touch the standard, and while the standard stays assigned to the type you can pull it back in with one click.",
         "sinCampos": "This type has no fields yet. Pull in the ones from its standards or pick from the catalogue.",
-        "sinFamilia": "No family"
+        "sinFamilia": "No family",
+        "fuenteCol": "Source",
+        "fuente": {
+          "canon": "Preinstalled",
+          "canonTitle": "Comes preinstalled with the application: it is consulted, not edited.",
+          "catalogo": "Catalogue",
+          "catalogoTitle": "Field from this installation's general catalogue.",
+          "especifico": "Specific",
+          "especificoTitle": "Field created for this element type."
+        },
+        "normaColTitle": "Standard the field comes from. Empty if it was assigned to the type directly."
       },
       "origen": {
         "canon": "Preinstalled",
@@ -2518,7 +2536,7 @@
         "localTitle": "Defined in this installation: editable and removable."
       },
       "canonDetail": "Detail (read-only)",
-      "canonNote": "This field is part of the canon curated by Cubic: it can be viewed but not edited. Its value list is tuned type by type, under “Fields by type”.",
+      "canonNote": "This field is part of the EVERYDAT canon: here it can be consulted but not edited. Its list of values is adjusted type by type, in «Fields by type».",
       "candadoCol": "Preinstalled",
       "candadoTitle": "Preinstalled field: it can't be edited or deleted.",
       "avisoNormas_one": "It is applied to {{count}} standard.",
@@ -2548,6 +2566,11 @@
         "chipTipos_one": "type",
         "chipTipos_other": "types",
         "chipTiposTitle": "Item types inheriting it"
+      },
+      "canonNoteSinLista": "This field is part of the EVERYDAT canon: it can be consulted but not edited.",
+      "tipoOpcion": {
+        "select": "List of values, single choice",
+        "select_multiple": "List of values, multiple choice"
       }
     },
     "checklists": {
