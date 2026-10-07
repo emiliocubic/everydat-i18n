@@ -4451,7 +4451,24 @@
       "recienteConfirm": "This equipment was inspected on {{fecha}} ({{resultado}}). Inspect it again?",
       "borrar": "Delete",
       "borrarTitulo": "Delete inspection",
-      "borrarConfirm": "The inspection of {{fecha}} will be deleted with its checkpoints and photos, also from the server if it was already sent. This cannot be undone."
+      "borrarConfirm": "The inspection of {{fecha}} will be deleted with its checkpoints and photos, also from the server if it was already sent. This cannot be undone.",
+      "multi": "MULTI",
+      "multiAria": "Multiple selection",
+      "marcarTodos": "Select all",
+      "marcados_one": "{{count}} selected",
+      "marcados_other": "{{count}} selected",
+      "conDescatalogadosCorto": "with retired",
+      "accionMultiple": "Bulk action…",
+      "accionMultipleN": "Bulk action… ({{count}})",
+      "accionMultipleTitulo": "Bulk action",
+      "equiposMarcados_one": "{{count}} item selected",
+      "equiposMarcados_other": "{{count}} items selected",
+      "marcaAlMenosUno": "Select at least one item",
+      "revisionMultiple": "Bulk inspection",
+      "sinMultiple": {
+        "descatalogado": "Some of the selected items are retired.",
+        "checklist": "The selected items do not share the periodic inspection checklist."
+      }
     },
     "revision": {
       "titulo": "Inspection",
@@ -4498,7 +4515,12 @@
       "salirTitulo": "Leave without saving?",
       "salirConfirm": "What you have filled in is lost: no draft is kept.",
       "salir": "Leave",
-      "seguirRevisando": "Keep inspecting"
+      "seguirRevisando": "Keep inspecting",
+      "multipleContexto_one": "Bulk inspection · {{count}} item",
+      "multipleContexto_other": "Bulk inspection · {{count}} items",
+      "variosEquipos": "Several items",
+      "validaHastaCadaUno": "Leave blank to use each item's own interval.",
+      "validaHastaAlgunoSin": "Some item has no inspection interval: enter the valid-until date."
     },
     "envio": {
       "titulo": "Send",

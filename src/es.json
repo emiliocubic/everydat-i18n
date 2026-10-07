@@ -4451,7 +4451,24 @@
       "recienteConfirm": "Este equipo se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?",
       "borrar": "Borrar",
       "borrarTitulo": "Borrar revisión",
-      "borrarConfirm": "Se borrará la revisión del {{fecha}} con sus puntos y sus fotos, también del servidor si ya se envió. No se puede deshacer."
+      "borrarConfirm": "Se borrará la revisión del {{fecha}} con sus puntos y sus fotos, también del servidor si ya se envió. No se puede deshacer.",
+      "multi": "MULTI",
+      "multiAria": "Selección múltiple",
+      "marcarTodos": "Marcar todos",
+      "marcados_one": "{{count}} marcado",
+      "marcados_other": "{{count}} marcados",
+      "conDescatalogadosCorto": "con descatalogados",
+      "accionMultiple": "Acción múltiple…",
+      "accionMultipleN": "Acción múltiple… ({{count}})",
+      "accionMultipleTitulo": "Acción múltiple",
+      "equiposMarcados_one": "{{count}} equipo marcado",
+      "equiposMarcados_other": "{{count}} equipos marcados",
+      "marcaAlMenosUno": "Marca al menos un equipo",
+      "revisionMultiple": "Revisión múltiple",
+      "sinMultiple": {
+        "descatalogado": "Hay equipos descatalogados entre los marcados.",
+        "checklist": "Los marcados no comparten el checklist de la revisión periódica."
+      }
     },
     "revision": {
       "titulo": "Revisión",
@@ -4498,7 +4515,12 @@
       "salirTitulo": "¿Salir sin guardar?",
       "salirConfirm": "Lo que has rellenado se pierde: no queda ningún borrador.",
       "salir": "Salir",
-      "seguirRevisando": "Seguir revisando"
+      "seguirRevisando": "Seguir revisando",
+      "multipleContexto_one": "Revisión múltiple · {{count}} equipo",
+      "multipleContexto_other": "Revisión múltiple · {{count}} equipos",
+      "variosEquipos": "Varios equipos",
+      "validaHastaCadaUno": "En blanco, cada equipo con su periodicidad.",
+      "validaHastaAlgunoSin": "Algún equipo no tiene periodicidad: escribe hasta cuándo vale."
     },
     "envio": {
       "titulo": "Enviar",

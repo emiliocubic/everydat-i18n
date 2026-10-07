@@ -4326,7 +4326,24 @@
       "recienteConfirm": "Cet équipement a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?",
       "borrar": "Supprimer",
       "borrarTitulo": "Supprimer l'inspection",
-      "borrarConfirm": "L'inspection du {{fecha}} sera supprimée avec ses points et ses photos, y compris sur le serveur si elle a déjà été envoyée. Action irréversible."
+      "borrarConfirm": "L'inspection du {{fecha}} sera supprimée avec ses points et ses photos, y compris sur le serveur si elle a déjà été envoyée. Action irréversible.",
+      "multi": "MULTI",
+      "multiAria": "Sélection multiple",
+      "marcarTodos": "Tout cocher",
+      "marcados_one": "{{count}} coché",
+      "marcados_other": "{{count}} cochés",
+      "conDescatalogadosCorto": "avec retirés",
+      "accionMultiple": "Action groupée…",
+      "accionMultipleN": "Action groupée… ({{count}})",
+      "accionMultipleTitulo": "Action groupée",
+      "equiposMarcados_one": "{{count}} équipement coché",
+      "equiposMarcados_other": "{{count}} équipements cochés",
+      "marcaAlMenosUno": "Cochez au moins un équipement",
+      "revisionMultiple": "Vérification groupée",
+      "sinMultiple": {
+        "descatalogado": "Certains équipements cochés sont retirés.",
+        "checklist": "Les équipements cochés n'ont pas la même checklist de vérification périodique."
+      }
     },
     "revision": {
       "titulo": "Contrôle",
@@ -4373,7 +4390,12 @@
       "salirTitulo": "Quitter sans enregistrer ?",
       "salirConfirm": "Ce que vous avez saisi est perdu : aucun brouillon n'est conservé.",
       "salir": "Quitter",
-      "seguirRevisando": "Continuer la vérification"
+      "seguirRevisando": "Continuer la vérification",
+      "multipleContexto_one": "Vérification groupée · {{count}} équipement",
+      "multipleContexto_other": "Vérification groupée · {{count}} équipements",
+      "variosEquipos": "Plusieurs équipements",
+      "validaHastaCadaUno": "Laissez vide pour appliquer la périodicité de chaque équipement.",
+      "validaHastaAlgunoSin": "Un équipement n'a pas de périodicité : indiquez la date de validité."
     },
     "envio": {
       "titulo": "Envoyer",
