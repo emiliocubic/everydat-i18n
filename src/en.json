@@ -1173,6 +1173,10 @@
         "files_own": "Links to own documents",
         "files_inh": "Links to model and type documents"
       }
+    },
+    "avisoRepetido": {
+      "serie": "There is already a {{fabricante}} item with {{campo}} «{{valor}}» ({{donde}}): is it the same one?",
+      "cliente": "There is already an item of this client with {{campo}} «{{valor}}» ({{donde}}): is it the same one?"
     }
   },
   "instancia": {
@@ -2981,6 +2985,14 @@
         "modo": {
           "global": "Use the same identifying fields for every element type",
           "personalizado": "Set the fields to use per family and/or element type"
+        },
+        "regla": {
+          "uno": "One per element",
+          "varios": "Several per element",
+          "instancia": "never repeated",
+          "fabricante": "warns if repeated within the same manufacturer",
+          "cliente": "warns if repeated within the same client",
+          "libre": "can be repeated"
         }
       },
       "fechas": {

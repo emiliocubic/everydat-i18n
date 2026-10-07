@@ -1090,6 +1090,10 @@
         "retirada_preventiva": "Retrait préventif",
         "otro": "Autre"
       }
+    },
+    "avisoRepetido": {
+      "serie": "Il existe déjà un équipement {{fabricante}} avec le {{campo}} « {{valor}} » ({{donde}}) : est-ce le même ?",
+      "cliente": "Il existe déjà un équipement de ce client avec la {{campo}} « {{valor}} » ({{donde}}) : est-ce le même ?"
     }
   },
   "instancia": {
@@ -2884,6 +2888,14 @@
         "modo": {
           "global": "Utiliser les mêmes champs d’identification pour tous les types d’équipement",
           "personalizado": "Paramétrer les champs par famille et/ou par type d’équipement"
+        },
+        "regla": {
+          "uno": "Un par élément",
+          "varios": "Plusieurs par élément",
+          "instancia": "ne se répète pas",
+          "fabricante": "avertit s'il se répète chez un même fabricant",
+          "cliente": "avertit s'il se répète chez un même client",
+          "libre": "peut se répéter"
         }
       },
       "fechas": {

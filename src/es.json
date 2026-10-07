@@ -1053,6 +1053,10 @@
         "files_own": "Enlaces a documentos propios",
         "files_inh": "Enlaces a documentos del modelo y el tipo"
       }
+    },
+    "avisoRepetido": {
+      "serie": "Ya hay un equipo de {{fabricante}} con el {{campo}} «{{valor}}» ({{donde}}): ¿es el mismo?",
+      "cliente": "Ya hay un equipo de este cliente con la {{campo}} «{{valor}}» ({{donde}}): ¿es el mismo?"
     }
   },
   "instancia": {
@@ -2981,6 +2985,14 @@
         "modo": {
           "global": "Utilizar los mismos campos identificativos en todos los tipos de elementos",
           "personalizado": "Personalizar los campos a utilizar por familias y/o por tipos de elementos"
+        },
+        "regla": {
+          "uno": "Uno por elemento",
+          "varios": "Varios por elemento",
+          "instancia": "no se repite",
+          "fabricante": "si se repite en un mismo fabricante, avisa",
+          "cliente": "si se repite en un mismo cliente, avisa",
+          "libre": "puede repetirse"
         }
       },
       "fechas": {
