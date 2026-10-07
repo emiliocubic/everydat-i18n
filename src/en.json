@@ -280,7 +280,12 @@
       "first": "First",
       "last": "Last"
     },
-    "filtroFijo": "{{campo}}: {{valor}}"
+    "filtroFijo": "{{campo}}: {{valor}}",
+    "exportFilas": "Rows",
+    "exportPagina": "This page's",
+    "exportTodas": "All",
+    "exportFormato": "Format",
+    "exportPdf": "PDF (via print)"
   },
   "roles": {
     "title": "Roles",

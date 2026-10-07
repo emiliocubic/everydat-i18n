@@ -1912,7 +1912,12 @@
       "first": "Primera",
       "last": "Última"
     },
-    "filtroFijo": "{{campo}}: {{valor}}"
+    "filtroFijo": "{{campo}}: {{valor}}",
+    "exportFilas": "Filas",
+    "exportPagina": "Las de esta página",
+    "exportTodas": "Todas",
+    "exportFormato": "Formato",
+    "exportPdf": "PDF (desde imprimir)"
   },
   "gruposClientes": {
     "title": "Grupos de clientes",
