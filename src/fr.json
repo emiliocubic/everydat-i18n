@@ -3012,6 +3012,16 @@
         "caducado": "Le certificat a expiré : les rapports seront signés avec un certificat non valide.",
         "quitar": "Retirer le certificat",
         "quitarConfirmar": "Retirer le certificat ? Les rapports ne seront plus signés. Ce qui a déjà été signé ne change pas."
+      },
+      "normas": {
+        "titulo": "Normes à utiliser",
+        "desc": "Définit comment nommer les normes utilisées dans le système (désignations nationales ou internationales).",
+        "op": {
+          "en": "Internationale",
+          "nacional": "Nationale",
+          "ambas": "Les deux"
+        },
+        "hint": "S'applique à toute l'application : listes, fiches et rapports. Une norme sans désignation nationale s'écrit avec l'EN, et dans les rapports la nationale est celle du pays du chantier. On recherche par les deux."
       }
     },
     "caracterizacion": {

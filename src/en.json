@@ -3107,9 +3107,7 @@
         "titulo": "How reports are printed",
         "desc": "Applies to every report issued from now on; reports already issued do not change.",
         "anonimizar": "Anonymise inspectors",
-        "anonimizarHint": "Inspectors with an account appear by their alias. The signatory always appears by name.",
-        "nacional": "National designation of the standard",
-        "nacionalHint": "Next to the EN edition, in brackets, the one of the site's country (UNE, NF…) if it exists."
+        "anonimizarHint": "Inspectors with an account appear by their alias. The signatory always appears by name."
       },
       "sello": {
         "titulo": "Electronic signature",
@@ -3122,6 +3120,16 @@
         "clave": "Certificate password",
         "quitar": "Remove certificate",
         "quitarConfirmar": "Remove the certificate? Reports will no longer be signed. What was already signed does not change."
+      },
+      "normas": {
+        "titulo": "Standards to use",
+        "desc": "Sets how the standards used in the system are named (national or international designations).",
+        "op": {
+          "en": "International",
+          "nacional": "National",
+          "ambas": "Both"
+        },
+        "hint": "Applies to the whole application: lists, records and reports. A standard with no national designation is written with the EN one, and in reports the national one is that of the site's country. You can search by either."
       }
     },
     "caracterizacion": {

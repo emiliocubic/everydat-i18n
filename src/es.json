@@ -3107,9 +3107,7 @@
         "titulo": "Cómo se imprimen los informes",
         "desc": "Afecta a todos los informes que se emitan desde ahora; los ya emitidos no cambian.",
         "anonimizar": "Anonimizar a los revisores",
-        "anonimizarHint": "Los revisores con cuenta salen por su alias. El firmante sale siempre con su nombre.",
-        "nacional": "Designación nacional de la norma",
-        "nacionalHint": "Junto a la edición EN, entre paréntesis, la del país de la obra (UNE, NF…) si existe."
+        "anonimizarHint": "Los revisores con cuenta salen por su alias. El firmante sale siempre con su nombre."
       },
       "sello": {
         "titulo": "Firma electrónica",
@@ -3122,6 +3120,16 @@
         "clave": "Contraseña del certificado",
         "quitar": "Quitar el certificado",
         "quitarConfirmar": "¿Quitar el certificado? Los informes dejarán de firmarse. Lo ya firmado no cambia."
+      },
+      "normas": {
+        "titulo": "Normativas a utilizar",
+        "desc": "Establece cómo denominar las normativas utilizadas en el sistema (denominaciones nacionales o internacionales).",
+        "op": {
+          "en": "Internacional",
+          "nacional": "Nacional",
+          "ambas": "Ambas"
+        },
+        "hint": "Vale para toda la aplicación: listados, fichas e informes. Una norma sin designación nacional se escribe con la EN, y en los informes la nacional es la del país de la obra. Se busca por las dos."
       }
     },
     "caracterizacion": {
