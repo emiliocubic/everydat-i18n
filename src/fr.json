@@ -1950,7 +1950,6 @@
         "familiaLabel": "Famille",
         "familiaPlaceholder": "Choisissez la famille…",
         "tipoLabel": "Type d’équipement",
-        "familiaKits": "Systèmes EN 17235",
         "tipoHint": "Le type apporte la checklist, les champs et les dates du modèle."
       },
       "pick": {
@@ -2823,16 +2822,14 @@
       "tabs": {
         "general": "Général",
         "campos": "Champs personnalisés",
-        "checklist": "Checklist",
-        "composicion": "Composition"
+        "checklist": "Checklist"
       },
       "charTitle": "Caractérisation",
       "field": {
         "familia": "Famille",
         "nombre": "Nom du type",
         "validez": "Validité des inspections",
-        "normas": "Normes",
-        "kit": "Kit"
+        "normas": "Normes"
       },
       "nombrePlaceholder": "p. ex. Harnais antichute",
       "validezUnit": "mois depuis la dernière inspection CONFORME",
@@ -2878,7 +2875,6 @@
         "normas": "Normes",
         "campos": "Champs personnalisés",
         "elementos": "Nb d'éléments",
-        "kit": "Kit",
         "checklists": "Nb de checklists"
       },
       "familias": {
@@ -2894,34 +2890,6 @@
         "deleted": "Famille supprimée",
         "confirmDelete": "Supprimer la famille « {{nombre}} » ?",
         "cantDelete": "Suppression impossible : contient des types"
-      },
-      "scopeAria": "Domaines des types d'élément",
-      "scope": {
-        "general": "Général",
-        "en17235": "Systèmes EN 17235",
-        "generalNote": "EPI, systèmes antichute antérieurs à l'EN 17235 et, en général, tous les types d'éléments hormis ceux relevant de l'EN 17235.",
-        "en17235Note": "Les systèmes EN 17235 sont quatre kits fixes (A-D) : ils ne se créent pas, ne se suppriment pas et ne se regroupent pas en familles. Leurs normes applicables et la validité de leurs vérifications restent modifiables."
-      },
-      "composicion": {
-        "scaffold": "Maquette indicative.",
-        "scaffoldHint": "Le modèle de données des systèmes EN 17235 reste à définir avec un fabricant.",
-        "notice": "Composition du système selon l'EN 17235. La conformité s'évalue sur le système complet, structure support comprise.",
-        "estructurales": {
-          "title": "Composants structurels",
-          "hint": "pièces propres au système · par référence et nombre d'unités"
-        },
-        "accesorios": {
-          "title": "Accessoires fonctionnels",
-          "hint": "équipements à part entière (type, marque, modèle, nº de série)"
-        },
-        "fijacion": {
-          "title": "Éléments de fixation",
-          "hint": "visserie en vrac — données typiques uniquement (métrique)"
-        },
-        "epis": {
-          "title": "EPI recommandés",
-          "hint": "au niveau du type et de la norme, pas du modèle"
-        }
       },
       "merge": {
         "handle": "Faire glisser sur un autre type pour les unifier",

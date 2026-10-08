@@ -2047,7 +2047,6 @@
         "familiaLabel": "Familia",
         "familiaPlaceholder": "Elige la familia…",
         "tipoLabel": "Tipo de elemento",
-        "familiaKits": "Sistemas EN 17235",
         "tipoHint": "Con el tipo llegan el checklist, los campos y las fechas del modelo."
       },
       "pick": {
@@ -2920,16 +2919,14 @@
       "tabs": {
         "general": "General",
         "campos": "Campos personalizados",
-        "checklist": "Checklist",
-        "composicion": "Composición"
+        "checklist": "Checklist"
       },
       "charTitle": "Caracterización",
       "field": {
         "familia": "Familia",
         "nombre": "Nombre del tipo",
         "validez": "Validez revisiones",
-        "normas": "Normas",
-        "kit": "Kit"
+        "normas": "Normas"
       },
       "nombrePlaceholder": "p. ej. Arnés anticaídas",
       "validezUnit": "meses desde última revisión APTA",
@@ -2975,7 +2972,6 @@
         "normas": "Normas",
         "campos": "Campos personalizados",
         "elementos": "Nº de elementos",
-        "kit": "Kit",
         "checklists": "Nº de checklists"
       },
       "familias": {
@@ -2991,34 +2987,6 @@
         "deleted": "Familia eliminada",
         "confirmDelete": "¿Eliminar la familia «{{nombre}}»?",
         "cantDelete": "No se puede borrar: tiene tipos"
-      },
-      "scopeAria": "Ámbitos de tipos de elemento",
-      "scope": {
-        "general": "General",
-        "en17235": "Sistemas EN 17235",
-        "generalNote": "EPIS, sistemas anticaídas pre-EN 17235 y en general todos los tipos de elementos excepto aquellos bajo EN 17235.",
-        "en17235Note": "Los sistemas EN 17235 son cuatro kits fijos (A-D): no se crean, no se borran y no se agrupan en familias. Sí se les puede ajustar la normativa aplicable y la validez de sus revisiones."
-      },
-      "composicion": {
-        "scaffold": "Maquetación orientativa.",
-        "scaffoldHint": "Pendiente de definir el modelo de datos de los sistemas EN 17235 con algún fabricante.",
-        "notice": "Composición del sistema según EN 17235. La conformidad se evalúa sobre el sistema completo, incluida la estructura soporte.",
-        "estructurales": {
-          "title": "Componentes estructurales",
-          "hint": "piezas propias del sistema · por referencia y nº de unidades"
-        },
-        "accesorios": {
-          "title": "Accesorios funcionales",
-          "hint": "equipos con entidad propia (su tipo, marca, modelo, nº de serie)"
-        },
-        "fijacion": {
-          "title": "Elementos de fijación",
-          "hint": "tornillería a granel — solo datos típicos (métrica)"
-        },
-        "epis": {
-          "title": "EPIs recomendados",
-          "hint": "a nivel de tipo y norma, no de modelo concreto"
-        }
       },
       "merge": {
         "handle": "Arrastrar sobre otro tipo para unificarlos",
