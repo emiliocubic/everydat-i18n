@@ -215,7 +215,8 @@
     "allFamilies": "Toutes les familles",
     "subSingleRef": "Cliquez sur un modèle, puis choisissez sa référence.",
     "refHint": "Choisissez la référence",
-    "refVacio": "Ce modèle n'a aucune référence."
+    "refVacio": "Ce modèle n'a aucune référence.",
+    "typeLocked": "Type fixé par le composant fonctionnel"
   },
   "datatable": {
     "records": "enregistrements",
@@ -2047,7 +2048,8 @@
           "datos": "Données et références",
           "docs": "Documentation",
           "selector": "Section",
-          "checklist": "Checklist"
+          "checklist": "Checklist",
+          "datosComponentes": "Données et composants"
         },
         "imagen": {
           "hint": "Image du modèle",
@@ -2221,6 +2223,97 @@
           "validar": "Valider",
           "validado": "Modèle validé",
           "referenciaChip": "En attente"
+        }
+      },
+      "estructura": {
+        "titulo": "Composants",
+        "resumen": "{{e}} structurels · {{m}} de montage · {{f}} fonctionnels · {{p}} EPI recommandés",
+        "multicomponente": "Multicomposant",
+        "hintOn": "Défini par composants, pas par références.",
+        "hintOff": "Modèle simple : défini par références.",
+        "creado": "Modèle multicomposant créé",
+        "guardada": "Composants enregistrés",
+        "sinGuardar": "Des modifications des composants ne sont pas enregistrées.",
+        "incompleta": "Des emplacements à modèles fixés n'ont aucun modèle : choisissez-en au moins un ou passez à « N'importe quel modèle du type ».",
+        "apagarAviso": "Le modèle redevient un équipement simple : ses références réapparaissent et les composants restent enregistrés, sans usage. Continuer ?",
+        "encenderAviso": "Le modèle sera défini par composants : ses références sont masquées (pas supprimées) et ses éléments dépendront de la référence « Non spécifiée ». Continuer ?",
+        "encenderAvisoElementos_one": "Le modèle sera défini par composants et ses références sont masquées. L'élément qui dépend de l'une d'elles passera à la référence « Non spécifiée » et perdra ce que la référence fixait. Continuer ?",
+        "encenderAvisoElementos_other": "Le modèle sera défini par composants et ses références sont masquées. Les {{count}} éléments qui en dépendent passeront à la référence « Non spécifiée » et perdront ce que la référence fixait. Continuer ?",
+        "noApagable_one": "Il a un élément : un multicomposant en service ne redevient pas un équipement simple.",
+        "noApagable_other": "Il a {{count}} éléments : un multicomposant en service ne redevient pas un équipement simple.",
+        "noSectorial": "Un modèle du référentiel sectoriel n'est pas converti : le référentiel apportera sa structure.",
+        "estructurales": "Composants structurels",
+        "estructuralesHint": "Pièces propres à ce système, du même fabricant. À l'enregistrement du système, on indique seulement le nombre d'unités de chacune.",
+        "estructuralesVacio": "Aucun composant structurel.",
+        "nPiezas_one": "{{count}} pièce",
+        "nPiezas_other": "{{count}} pièces",
+        "anadirComponente": "Ajouter un composant",
+        "montaje": "Accessoires de montage",
+        "grupoSeparado": "Groupe séparé",
+        "montajeVacio": "Aucun accessoire de montage. Ils se définissent comme les structurels.",
+        "montajeNoSeparado": "Ce fabricant ne sépare pas les accessoires de montage : ils sont inclus dans les composants structurels.",
+        "funcionales": "Composants fonctionnels",
+        "funcionalesHint": "Équipements avec leur propre numéro de série. À l'enregistrement du système, chaque emplacement reçoit un ou plusieurs éléments du même dossier, des modèles admis.",
+        "funcionalesVacio": "Aucun composant fonctionnel.",
+        "nTipos_one": "{{count}} type",
+        "nTipos_other": "{{count}} types",
+        "anadirTipos": "Ajouter des types",
+        "modo": "Modèles admis",
+        "modos": {
+          "fijados": "Modèles fixés",
+          "tipo": "N'importe quel modèle du type"
+        },
+        "quitarHueco": "Retirer {{tipo}}",
+        "quitarModelo": "Retirer le modèle",
+        "elegirModelos": "Choisir des modèles",
+        "editarModelos": "Modifier les modèles",
+        "sinFijados": "Aucun modèle fixé : choisissez-en au moins un ou passez à « N'importe quel modèle du type ».",
+        "cualquiera": "À l'enregistrement, tout élément de type {{tipo}} sera admis, quels que soient son modèle et sa marque.",
+        "epis": "EPI recommandés",
+        "episVacio": "Aucun EPI recommandé.",
+        "condicionantesPh": "Conditions supplémentaires stipulées pour ce système (facultatif)",
+        "modelosAdmitidos": "Modèles admis · {{tipo}}",
+        "modelosAdmitidosSub": "À l'enregistrement du système, cet emplacement n'acceptera que les éléments des modèles cochés. Ils peuvent être d'une autre marque compatible.",
+        "sinImagen": "Sans image : ajoutez-la en modifiant le composant",
+        "cols": {
+          "codigo": "Code",
+          "componente": "Composant"
+        },
+        "grupo": {
+          "estructural": "composant structurel",
+          "montaje": "accessoire de montage"
+        },
+        "pieza": {
+          "nueva": "Nouveau composant",
+          "anadir": "Ajouter un {{grupo}}",
+          "editar": "Modifier le {{grupo}}",
+          "codigo": "Code",
+          "codigoPh": "ex. AIO-ENDS-10",
+          "nombre": "Nom du composant",
+          "nombrePh": "Description du fabricant",
+          "imagen": "Image",
+          "subirImagen": "Téléverser une image",
+          "cambiarImagen": "Changer l'image",
+          "quitarImagen": "Retirer l'image",
+          "anadirBtn": "Ajouter"
+        },
+        "picker": {
+          "tituloHuecos": "Ajouter des composants fonctionnels",
+          "subHuecos": "Choisissez les types d'élément affectés au système. Ensuite vous fixerez les modèles admis de chacun.",
+          "tituloEpis": "Ajouter des EPI recommandés",
+          "subEpis": "Choisissez les types d'EPI recommandés par le fabricant. Ensuite vous pourrez ajouter leurs conditions.",
+          "buscar": "Rechercher un type, une famille ou une norme…",
+          "nTipos_one": "{{count}} type",
+          "nTipos_other": "{{count}} types",
+          "tipo": "Type d'élément",
+          "familia": "Famille",
+          "normas": "Normes",
+          "vacio": "Aucun type ne correspond au filtre.",
+          "yaAnadido": "Déjà ajouté",
+          "marca": "Cochez un ou plusieurs types",
+          "nSeleccionados_one": "{{count}} type sélectionné",
+          "nSeleccionados_other": "{{count}} types sélectionnés",
+          "anadir": "Ajouter"
         }
       }
     },

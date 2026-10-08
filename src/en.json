@@ -215,7 +215,8 @@
     "allFamilies": "All families",
     "subSingleRef": "Click a model, then choose its reference.",
     "refHint": "Choose the reference",
-    "refVacio": "This model has no references."
+    "refVacio": "This model has no references.",
+    "typeLocked": "Type fixed by the functional component"
   },
   "datatable": {
     "records": "records",
@@ -2144,7 +2145,8 @@
           "datos": "Data & references",
           "docs": "Documentation",
           "selector": "Section",
-          "checklist": "Checklist"
+          "checklist": "Checklist",
+          "datosComponentes": "Data and components"
         },
         "imagen": {
           "hint": "Model image",
@@ -2318,6 +2320,97 @@
           "validar": "Validate",
           "validado": "Model validated",
           "referenciaChip": "Pending"
+        }
+      },
+      "estructura": {
+        "titulo": "Components",
+        "resumen": "{{e}} structural · {{m}} mounting · {{f}} functional · {{p}} recommended PPE",
+        "multicomponente": "Multi-component",
+        "hintOn": "Defined by components, not by references.",
+        "hintOff": "Simple model: defined by references.",
+        "creado": "Multi-component model created",
+        "guardada": "Components saved",
+        "sinGuardar": "There are unsaved changes in the components.",
+        "incompleta": "Some slots with fixed models have no model: choose at least one or switch to «Any model of the type».",
+        "apagarAviso": "The model will become simple equipment again: its references show again and the components stay saved, unused. Continue?",
+        "encenderAviso": "The model will be defined by components: its references are hidden (not deleted) and its items will hang from the «Unspecified» reference. Continue?",
+        "encenderAvisoElementos_one": "The model will be defined by components and its references are hidden. The item hanging from one of them will move to the «Unspecified» reference and lose what the reference fixed (locked fields, own standards). Continue?",
+        "encenderAvisoElementos_other": "The model will be defined by components and its references are hidden. The {{count}} items hanging from them will move to the «Unspecified» reference and lose what the reference fixed (locked fields, own standards). Continue?",
+        "noApagable_one": "It has one item: a multi-component model in use does not go back to simple equipment.",
+        "noApagable_other": "It has {{count}} items: a multi-component model in use does not go back to simple equipment.",
+        "noSectorial": "A model from the sector repository is not converted: the repository will bring its structure.",
+        "estructurales": "Structural components",
+        "estructuralesHint": "Parts specific to this system, from the same manufacturer. When the system is registered, only the number of units of each is entered.",
+        "estructuralesVacio": "No structural components.",
+        "nPiezas_one": "{{count}} part",
+        "nPiezas_other": "{{count}} parts",
+        "anadirComponente": "Add component",
+        "montaje": "Mounting accessories",
+        "grupoSeparado": "Separate group",
+        "montajeVacio": "No mounting accessories. They are defined like the structural ones.",
+        "montajeNoSeparado": "This manufacturer does not separate mounting accessories: they are included in the structural components.",
+        "funcionales": "Functional components",
+        "funcionalesHint": "Equipment with its own serial number. When the system is registered, each slot is filled with one or more specific items from the same folder, of the admitted models.",
+        "funcionalesVacio": "No functional components.",
+        "nTipos_one": "{{count}} type",
+        "nTipos_other": "{{count}} types",
+        "anadirTipos": "Add types",
+        "modo": "Admitted models",
+        "modos": {
+          "fijados": "Fixed models",
+          "tipo": "Any model of the type"
+        },
+        "quitarHueco": "Remove {{tipo}}",
+        "quitarModelo": "Remove model",
+        "elegirModelos": "Choose models",
+        "editarModelos": "Edit models",
+        "sinFijados": "No fixed models: choose at least one or switch to «Any model of the type».",
+        "cualquiera": "On registration, any item of type {{tipo}} will be admitted, whatever its model and brand.",
+        "epis": "Recommended PPE",
+        "episVacio": "No recommended PPE.",
+        "condicionantesPh": "Additional conditions stipulated for this system (optional)",
+        "modelosAdmitidos": "Admitted models · {{tipo}}",
+        "modelosAdmitidosSub": "When the system is registered, this slot will only accept items of the selected models. They may be of another compatible brand.",
+        "sinImagen": "No image: upload it by editing the component",
+        "cols": {
+          "codigo": "Code",
+          "componente": "Component"
+        },
+        "grupo": {
+          "estructural": "structural component",
+          "montaje": "mounting accessory"
+        },
+        "pieza": {
+          "nueva": "New component",
+          "anadir": "Add {{grupo}}",
+          "editar": "Edit {{grupo}}",
+          "codigo": "Code",
+          "codigoPh": "e.g. AIO-ENDS-10",
+          "nombre": "Component name",
+          "nombrePh": "Manufacturer's description",
+          "imagen": "Image",
+          "subirImagen": "Upload image",
+          "cambiarImagen": "Change image",
+          "quitarImagen": "Remove image",
+          "anadirBtn": "Add"
+        },
+        "picker": {
+          "tituloHuecos": "Add functional components",
+          "subHuecos": "Choose the item types assigned to the system. Then you will fix the admitted models of each one.",
+          "tituloEpis": "Add recommended PPE",
+          "subEpis": "Choose the PPE types the manufacturer recommends. Then you can add their conditions to each one.",
+          "buscar": "Search type, family or standard…",
+          "nTipos_one": "{{count}} type",
+          "nTipos_other": "{{count}} types",
+          "tipo": "Item type",
+          "familia": "Family",
+          "normas": "Standards",
+          "vacio": "No types match the filter.",
+          "yaAnadido": "Already added",
+          "marca": "Select one or more types",
+          "nSeleccionados_one": "{{count}} type selected",
+          "nSeleccionados_other": "{{count}} types selected",
+          "anadir": "Add"
         }
       }
     },

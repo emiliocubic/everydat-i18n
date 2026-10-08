@@ -1847,7 +1847,8 @@
     "allFamilies": "Todas las familias",
     "subSingleRef": "Pulsa en un modelo y elige su referencia.",
     "refHint": "Elige la referencia",
-    "refVacio": "Este modelo no tiene referencias."
+    "refVacio": "Este modelo no tiene referencias.",
+    "typeLocked": "Tipo fijado por el componente funcional"
   },
   "datatable": {
     "records": "registros",
@@ -2144,7 +2145,8 @@
           "datos": "Datos y referencias",
           "docs": "Documentación",
           "selector": "Sección",
-          "checklist": "Checklist"
+          "checklist": "Checklist",
+          "datosComponentes": "Datos y componentes"
         },
         "imagen": {
           "hint": "Imagen del modelo",
@@ -2318,6 +2320,97 @@
           "validar": "Validar",
           "validado": "Modelo validado",
           "referenciaChip": "Pendiente"
+        }
+      },
+      "estructura": {
+        "titulo": "Componentes",
+        "resumen": "{{e}} estructurales · {{m}} de montaje · {{f}} funcionales · {{p}} EPIs recomendados",
+        "multicomponente": "Multicomponente",
+        "hintOn": "Se define por componentes, no por referencias.",
+        "hintOff": "Modelo simple: se define por referencias.",
+        "creado": "Modelo multicomponente creado",
+        "guardada": "Componentes guardados",
+        "sinGuardar": "Hay cambios sin guardar en los componentes.",
+        "incompleta": "Hay huecos con modelos fijados sin ningún modelo: elige al menos uno o cambia a «Cualquier modelo del tipo».",
+        "apagarAviso": "El modelo volverá a ser un equipo simple: sus referencias vuelven a verse y los componentes se quedan guardados, sin uso. ¿Seguir?",
+        "encenderAviso": "El modelo pasa a definirse por componentes: sus referencias se ocultan (no se borran) y sus elementos colgarán de la referencia «Sin especificar». ¿Seguir?",
+        "encenderAvisoElementos_one": "El modelo pasa a definirse por componentes y sus referencias se ocultan. El elemento que cuelga de una de ellas pasará a la referencia «Sin especificar» y perderá lo que la referencia fijaba (campos con candado, normas propias). ¿Seguir?",
+        "encenderAvisoElementos_other": "El modelo pasa a definirse por componentes y sus referencias se ocultan. Los {{count}} elementos que cuelgan de ellas pasarán a la referencia «Sin especificar» y perderán lo que la referencia fijaba (campos con candado, normas propias). ¿Seguir?",
+        "noApagable_one": "Tiene un elemento: un multicomponente con parque no vuelve a equipo simple.",
+        "noApagable_other": "Tiene {{count}} elementos: un multicomponente con parque no vuelve a equipo simple.",
+        "noSectorial": "Un modelo del repositorio sectorial no se convierte: su estructura la traerá el repositorio.",
+        "estructurales": "Componentes estructurales",
+        "estructuralesHint": "Piezas propias de este sistema, del mismo fabricante. Al dar de alta el sistema solo se indica cuántas unidades lleva de cada una.",
+        "estructuralesVacio": "Sin componentes estructurales.",
+        "nPiezas_one": "{{count}} pieza",
+        "nPiezas_other": "{{count}} piezas",
+        "anadirComponente": "Añadir componente",
+        "montaje": "Accesorios de montaje",
+        "grupoSeparado": "Grupo separado",
+        "montajeVacio": "Sin accesorios de montaje. Se definen igual que los estructurales.",
+        "montajeNoSeparado": "Este fabricante no separa los accesorios de montaje: van incluidos en los componentes estructurales.",
+        "funcionales": "Componentes funcionales",
+        "funcionalesHint": "Equipos con nº de serie propio. Al dar de alta el sistema, cada hueco se rellena con uno o varios elementos concretos de la misma carpeta, de los modelos admitidos.",
+        "funcionalesVacio": "Sin componentes funcionales.",
+        "nTipos_one": "{{count}} tipo",
+        "nTipos_other": "{{count}} tipos",
+        "anadirTipos": "Añadir tipos",
+        "modo": "Modelos admitidos",
+        "modos": {
+          "fijados": "Modelos fijados",
+          "tipo": "Cualquier modelo del tipo"
+        },
+        "quitarHueco": "Quitar {{tipo}}",
+        "quitarModelo": "Quitar modelo",
+        "elegirModelos": "Elegir modelos",
+        "editarModelos": "Editar modelos",
+        "sinFijados": "Sin modelos fijados: elige al menos uno o cambia a «Cualquier modelo del tipo».",
+        "cualquiera": "Al dar de alta se admitirá cualquier elemento de tipo {{tipo}}, sea cual sea su modelo y su marca.",
+        "epis": "EPIs recomendados",
+        "episVacio": "Sin EPIs recomendados.",
+        "condicionantesPh": "Condicionantes adicionales estipulados para este sistema (opcional)",
+        "modelosAdmitidos": "Modelos admitidos · {{tipo}}",
+        "modelosAdmitidosSub": "Al dar de alta el sistema, este hueco solo aceptará elementos de los modelos marcados. Pueden ser de otra marca compatible.",
+        "sinImagen": "Sin imagen: súbela editando el componente",
+        "cols": {
+          "codigo": "Código",
+          "componente": "Componente"
+        },
+        "grupo": {
+          "estructural": "componente estructural",
+          "montaje": "accesorio de montaje"
+        },
+        "pieza": {
+          "nueva": "Nuevo componente",
+          "anadir": "Añadir {{grupo}}",
+          "editar": "Editar {{grupo}}",
+          "codigo": "Código",
+          "codigoPh": "p. ej. AIO-ENDS-10",
+          "nombre": "Nombre del componente",
+          "nombrePh": "Descripción del fabricante",
+          "imagen": "Imagen",
+          "subirImagen": "Subir imagen",
+          "cambiarImagen": "Cambiar imagen",
+          "quitarImagen": "Quitar imagen",
+          "anadirBtn": "Añadir"
+        },
+        "picker": {
+          "tituloHuecos": "Añadir componentes funcionales",
+          "subHuecos": "Elige los tipos de elemento que se asignan al sistema. Después fijarás los modelos admitidos de cada uno.",
+          "tituloEpis": "Añadir EPIs recomendados",
+          "subEpis": "Elige los tipos de EPI que recomienda el fabricante. Después puedes añadir sus condicionantes a cada uno.",
+          "buscar": "Buscar tipo, familia o norma…",
+          "nTipos_one": "{{count}} tipo",
+          "nTipos_other": "{{count}} tipos",
+          "tipo": "Tipo de elemento",
+          "familia": "Familia",
+          "normas": "Normas",
+          "vacio": "Sin tipos que coincidan con el filtro.",
+          "yaAnadido": "Ya añadido",
+          "marca": "Marca uno o varios tipos",
+          "nSeleccionados_one": "{{count}} tipo seleccionado",
+          "nSeleccionados_other": "{{count}} tipos seleccionados",
+          "anadir": "Añadir"
         }
       }
     },
