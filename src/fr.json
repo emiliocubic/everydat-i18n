@@ -975,7 +975,9 @@
       "eligeAntes": "Choisissez d'abord le client et le site.",
       "mover": "Déplacer ici",
       "hecho": "{{count}} équipements déplacés.",
-      "buscarCliente": "Cherchez ou choisissez un client…"
+      "buscarCliente": "Cherchez ou choisissez un client…",
+      "conjuntoViaja_one": "Un ensemble voyage entier : avec la sélection, un autre équipement de son ensemble sera aussi déplacé, et l'ensemble avec eux. Continuer ?",
+      "conjuntoViaja_other": "Un ensemble voyage entier : avec la sélection, {{count}} autres équipements de leurs ensembles seront aussi déplacés, et les ensembles avec eux. Continuer ?"
     },
     "clonar": {
       "accion": "Cloner l'équipement",

@@ -889,7 +889,9 @@
       "eligeAntes": "Elige antes el cliente y el emplazamiento.",
       "mover": "Trasladar aquí",
       "hecho": "{{count}} elementos trasladados.",
-      "buscarCliente": "Busca o elige un cliente…"
+      "buscarCliente": "Busca o elige un cliente…",
+      "conjuntoViaja_one": "Un conjunto viaja entero: con lo marcado se trasladará también otro equipo de su conjunto, y el conjunto con ellos. ¿Seguir?",
+      "conjuntoViaja_other": "Un conjunto viaja entero: con lo marcado se trasladarán también otros {{count}} equipos de sus conjuntos, y los conjuntos con ellos. ¿Seguir?"
     },
     "clonar": {
       "accion": "Clonar el elemento",

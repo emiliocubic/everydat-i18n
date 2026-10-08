@@ -1017,7 +1017,9 @@
       "eligeAntes": "Choose the client and the site first.",
       "mover": "Move here",
       "hecho": "{{count}} items moved.",
-      "buscarCliente": "Search or pick a client…"
+      "buscarCliente": "Search or pick a client…",
+      "conjuntoViaja_one": "A set travels whole: along with your selection, another item of its set will also be moved, and the set with them. Continue?",
+      "conjuntoViaja_other": "A set travels whole: along with your selection, {{count}} more items of their sets will also be moved, and the sets with them. Continue?"
     },
     "clonar": {
       "accion": "Clone item",
