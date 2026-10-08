@@ -216,7 +216,9 @@
     "subSingleRef": "Click a model, then choose its reference.",
     "refHint": "Choose the reference",
     "refVacio": "This model has no references.",
-    "typeLocked": "Type fixed by the functional component"
+    "typeLocked": "Type fixed by the functional component",
+    "multi": "Multi-component",
+    "multiTitle": "Multi-component system or equipment: registered one at a time"
   },
   "datatable": {
     "records": "records",
@@ -1105,31 +1107,6 @@
         "sinTipos": "No equipment in this site yet"
       }
     },
-    "componentes": {
-      "titulo": "System components",
-      "hint": "The breakdown of the installation: which parts make it up and how many. Components are not equipment: they are not inspected on their own and do not count in the census — the whole system is inspected.",
-      "hintKit": "Breakdown of EN 17235 kit {{kit}}: which parts make up the installation and how many. Components are not equipment: the whole system is inspected.",
-      "anadir": "Add part",
-      "vacio": "This system has no breakdown yet. Add the parts from the manufacturer's documentation.",
-      "col": {
-        "pieza": "Part",
-        "denominacion": "Description",
-        "cantidad": "Qty",
-        "serie": "Serial no.",
-        "lote": "Batch",
-        "fabricacion": "Manufactured",
-        "notas": "Notes"
-      },
-      "editar": "Edit the part",
-      "quitar": "Remove from breakdown",
-      "quitado": "Part removed from the breakdown.",
-      "confirmQuitar": "Remove “{{pieza}}” from the breakdown? If the part was replaced, edit its row instead of removing it.",
-      "elegirPieza": "Pick the part from the catalogue",
-      "elegirReferencia": "Choose the reference",
-      "pideReferencia": "The part is missing: pick it from the catalogue.",
-      "totalPiezas": "{{count}} distinct part",
-      "totalPiezas_other": "{{count}} distinct parts"
-    },
     "descatalogacion": {
       "motivo": {
         "fin_vida_util": "End of service life",
@@ -1183,6 +1160,47 @@
     "avisoRepetido": {
       "serie": "There is already a {{fabricante}} item with {{campo}} «{{valor}}» ({{donde}}): is it the same one?",
       "cliente": "There is already an item of this client with {{campo}} «{{valor}}» ({{donde}}): is it the same one?"
+    },
+    "sistema": {
+      "notaAlta": "Model breakdown. Completing it is not required to create the item: you can leave it half done and finish it later from its record.",
+      "notaUnidades": "Select only ONE unit when registering multi-component systems or equipment.",
+      "estructurales": "Structural components",
+      "montaje": "Mounting accessories",
+      "funcionales": "Functional components",
+      "funcionalesHint": "Equipment with its own serial number already registered in this folder. When assigned they form a set with the system.",
+      "epis": "Recommended PPE",
+      "nUds_one": "{{count}} unit",
+      "nUds_other": "{{count}} units",
+      "nAsignados_one": "{{count}} assigned",
+      "nAsignados_other": "{{count}} assigned",
+      "sinPiezas": "The model has no parts in its breakdown.",
+      "admiteModelos": "Models: {{modelos}}",
+      "admiteTipo": "Any model of the type",
+      "retirado": "Retired",
+      "quitar": "Remove from the system",
+      "sinAsignados": "No items assigned.",
+      "asignar": "Assign an item from the folder",
+      "asignarMas": "Assign more items from the folder",
+      "imagen": "Image",
+      "codigo": "Code",
+      "componente": "Component",
+      "unidades": "Units",
+      "unidadesDe": "Units of {{pieza}}",
+      "estaCarpeta": "this folder",
+      "picker": {
+        "titulo": "Assign {{tipo}}",
+        "sub": "Specific items in {{carpeta}} · admitted: {{admitidos}}",
+        "buscar": "Search by serial number, brand, model…",
+        "nElementos_one": "{{count}} item",
+        "nElementos_other": "{{count}} items",
+        "marca": "Brand",
+        "modelo": "Model",
+        "serie": "Serial no.",
+        "vacio": "No items in this folder fit the slot. You can create it and assign it later from the system's record.",
+        "nSeleccionados_one": "{{count}} item selected",
+        "nSeleccionados_other": "{{count}} items selected",
+        "asignar": "Assign"
+      }
     }
   },
   "instancia": {

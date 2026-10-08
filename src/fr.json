@@ -216,7 +216,9 @@
     "subSingleRef": "Cliquez sur un modèle, puis choisissez sa référence.",
     "refHint": "Choisissez la référence",
     "refVacio": "Ce modèle n'a aucune référence.",
-    "typeLocked": "Type fixé par le composant fonctionnel"
+    "typeLocked": "Type fixé par le composant fonctionnel",
+    "multi": "Multicomposant",
+    "multiTitle": "Système ou équipement multicomposant : s'enregistre un par un"
   },
   "datatable": {
     "records": "enregistrements",
@@ -1063,31 +1065,6 @@
         "sinTipos": "Aucun équipement sur ce site pour l'instant"
       }
     },
-    "componentes": {
-      "titulo": "Composants du système",
-      "hint": "Le détail de l'installation : quelles pièces la composent et combien. Les composants ne sont pas des équipements : ils ne sont pas contrôlés séparément et ne comptent pas dans le recensement — c'est le système entier qui est contrôlé.",
-      "hintKit": "Détail du kit {{kit}} de l'EN 17235 : quelles pièces composent l'installation et combien. Les composants ne sont pas des équipements : c'est le système entier qui est contrôlé.",
-      "anadir": "Ajouter une pièce",
-      "vacio": "Ce système n'a pas encore de détail. Ajoutez les pièces d'après la documentation du fabricant.",
-      "col": {
-        "pieza": "Pièce",
-        "denominacion": "Désignation",
-        "cantidad": "Qté",
-        "serie": "N° de série",
-        "lote": "Lot",
-        "fabricacion": "Fabrication",
-        "notas": "Notes"
-      },
-      "editar": "Modifier la pièce",
-      "quitar": "Retirer du détail",
-      "quitado": "Pièce retirée du détail.",
-      "confirmQuitar": "Retirer « {{pieza}} » du détail ? Si la pièce a été remplacée, modifiez sa ligne au lieu de la retirer.",
-      "elegirPieza": "Choisir la pièce dans le catalogue",
-      "elegirReferencia": "Choisissez la référence",
-      "pideReferencia": "Il manque la pièce : choisissez-la dans le catalogue.",
-      "totalPiezas": "{{count}} pièce distincte",
-      "totalPiezas_other": "{{count}} pièces distinctes"
-    },
     "descatalogacion": {
       "motivo": {
         "fin_vida_util": "Fin de vie utile",
@@ -1100,6 +1077,47 @@
     "avisoRepetido": {
       "serie": "Il existe déjà un équipement {{fabricante}} avec le {{campo}} « {{valor}} » ({{donde}}) : est-ce le même ?",
       "cliente": "Il existe déjà un équipement de ce client avec la {{campo}} « {{valor}} » ({{donde}}) : est-ce le même ?"
+    },
+    "sistema": {
+      "notaAlta": "Nomenclature du modèle. La compléter n'est pas obligatoire pour créer l'élément : vous pouvez la terminer plus tard depuis sa fiche.",
+      "notaUnidades": "Sélectionnez une SEULE unité pour enregistrer des systèmes ou équipements multicomposants.",
+      "estructurales": "Composants structurels",
+      "montaje": "Accessoires de montage",
+      "funcionales": "Composants fonctionnels",
+      "funcionalesHint": "Équipements avec leur propre numéro de série déjà enregistrés dans ce dossier. Une fois affectés, ils forment un ensemble avec le système.",
+      "epis": "EPI recommandés",
+      "nUds_one": "{{count}} unité",
+      "nUds_other": "{{count}} unités",
+      "nAsignados_one": "{{count}} affecté",
+      "nAsignados_other": "{{count}} affectés",
+      "sinPiezas": "Le modèle n'a pas de pièces dans sa nomenclature.",
+      "admiteModelos": "Modèles : {{modelos}}",
+      "admiteTipo": "N'importe quel modèle du type",
+      "retirado": "Réformé",
+      "quitar": "Retirer du système",
+      "sinAsignados": "Aucun élément affecté.",
+      "asignar": "Affecter un élément du dossier",
+      "asignarMas": "Affecter d'autres éléments du dossier",
+      "imagen": "Image",
+      "codigo": "Code",
+      "componente": "Composant",
+      "unidades": "Unités",
+      "unidadesDe": "Unités de {{pieza}}",
+      "estaCarpeta": "ce dossier",
+      "picker": {
+        "titulo": "Affecter {{tipo}}",
+        "sub": "Éléments de {{carpeta}} · admis : {{admitidos}}",
+        "buscar": "Rechercher par n° de série, marque, modèle…",
+        "nElementos_one": "{{count}} élément",
+        "nElementos_other": "{{count}} éléments",
+        "marca": "Marque",
+        "modelo": "Modèle",
+        "serie": "N° de série",
+        "vacio": "Aucun élément de ce dossier ne correspond à l'emplacement. Vous pouvez le créer et l'affecter plus tard depuis la fiche du système.",
+        "nSeleccionados_one": "{{count}} élément sélectionné",
+        "nSeleccionados_other": "{{count}} éléments sélectionnés",
+        "asignar": "Affecter"
+      }
     }
   },
   "instancia": {

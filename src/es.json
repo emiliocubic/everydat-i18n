@@ -979,31 +979,6 @@
         "sinTipos": "Todavía no hay equipos en este emplazamiento"
       }
     },
-    "componentes": {
-      "titulo": "Componentes del sistema",
-      "hint": "El despiece de la instalación: qué piezas la forman y cuántas. Los componentes no son equipos: no se revisan por su cuenta ni cuentan en el censo, se revisa el sistema entero.",
-      "hintKit": "Despiece del kit {{kit}} de la EN 17235: qué piezas forman la instalación y cuántas. Los componentes no son equipos: se revisa el sistema entero.",
-      "anadir": "Añadir pieza",
-      "vacio": "Este sistema aún no tiene despiece. Añade las piezas del papel del fabricante.",
-      "col": {
-        "pieza": "Pieza",
-        "denominacion": "Denominación",
-        "cantidad": "Uds.",
-        "serie": "Nº de serie",
-        "lote": "Lote",
-        "fabricacion": "Fabricación",
-        "notas": "Notas"
-      },
-      "editar": "Editar la pieza",
-      "quitar": "Quitar del despiece",
-      "quitado": "Pieza quitada del despiece.",
-      "confirmQuitar": "¿Quitar «{{pieza}}» del despiece? Si lo que ha pasado es que se ha sustituido, edita su fila en vez de quitarla.",
-      "elegirPieza": "Elegir la pieza del catálogo",
-      "elegirReferencia": "Elige la referencia",
-      "pideReferencia": "Falta decir qué pieza es: elígela del catálogo.",
-      "totalPiezas": "{{count}} pieza distinta",
-      "totalPiezas_other": "{{count}} piezas distintas"
-    },
     "descatalogacion": {
       "motivo": {
         "fin_vida_util": "Fin de vida útil",
@@ -1057,6 +1032,47 @@
     "avisoRepetido": {
       "serie": "Ya hay un equipo de {{fabricante}} con el {{campo}} «{{valor}}» ({{donde}}): ¿es el mismo?",
       "cliente": "Ya hay un equipo de este cliente con la {{campo}} «{{valor}}» ({{donde}}): ¿es el mismo?"
+    },
+    "sistema": {
+      "notaAlta": "Despiece del modelo. Completarlo no es obligatorio para crear el elemento: puedes dejarlo a medias y terminarlo después desde su ficha.",
+      "notaUnidades": "Seleccione solo UNA unidad si el alta es de sistemas o equipos multicomponente.",
+      "estructurales": "Componentes estructurales",
+      "montaje": "Accesorios de montaje",
+      "funcionales": "Componentes funcionales",
+      "funcionalesHint": "Equipos con nº de serie propio ya dados de alta en esta carpeta. Al asignarlos forman un conjunto con el sistema.",
+      "epis": "EPIs recomendados",
+      "nUds_one": "{{count}} ud.",
+      "nUds_other": "{{count}} uds.",
+      "nAsignados_one": "{{count}} asignado",
+      "nAsignados_other": "{{count}} asignados",
+      "sinPiezas": "El modelo no tiene piezas en su despiece.",
+      "admiteModelos": "Modelos: {{modelos}}",
+      "admiteTipo": "Cualquier modelo del tipo",
+      "retirado": "Retirado",
+      "quitar": "Quitar del sistema",
+      "sinAsignados": "Sin elementos asignados.",
+      "asignar": "Asignar elemento de la carpeta",
+      "asignarMas": "Asignar más elementos de la carpeta",
+      "imagen": "Imagen",
+      "codigo": "Código",
+      "componente": "Componente",
+      "unidades": "Unidades",
+      "unidadesDe": "Unidades de {{pieza}}",
+      "estaCarpeta": "esta carpeta",
+      "picker": {
+        "titulo": "Asignar {{tipo}}",
+        "sub": "Elementos concretos de {{carpeta}} · admitidos: {{admitidos}}",
+        "buscar": "Buscar por nº de serie, marca, modelo…",
+        "nElementos_one": "{{count}} elemento",
+        "nElementos_other": "{{count}} elementos",
+        "marca": "Marca",
+        "modelo": "Modelo",
+        "serie": "Nº de serie",
+        "vacio": "No hay elementos en esta carpeta que encajen en el hueco. Puedes crearlo y asignarlo después desde la ficha del sistema.",
+        "nSeleccionados_one": "{{count}} elemento seleccionado",
+        "nSeleccionados_other": "{{count}} elementos seleccionados",
+        "asignar": "Asignar"
+      }
     }
   },
   "instancia": {
@@ -1848,7 +1864,9 @@
     "subSingleRef": "Pulsa en un modelo y elige su referencia.",
     "refHint": "Elige la referencia",
     "refVacio": "Este modelo no tiene referencias.",
-    "typeLocked": "Tipo fijado por el componente funcional"
+    "typeLocked": "Tipo fijado por el componente funcional",
+    "multi": "Multicomponente",
+    "multiTitle": "Sistema o equipo multicomponente: se da de alta de uno en uno"
   },
   "datatable": {
     "records": "registros",
