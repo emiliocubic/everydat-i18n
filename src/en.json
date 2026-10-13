@@ -2702,7 +2702,7 @@
         "select_multiple": "List of values, multiple choice"
       },
       "pornorma": {
-        "notaCanon": "Fields curated by EVERYDAT for this standard: they are consulted, not edited. In «Fields by type» you can add or remove fields for each element type.",
+        "notaCanon": "Preinstalled fields derived from the content of the standard: for reference only, they cannot be modified. In fields by type you can edit the fields that apply to each element type, including those derived from the standard.",
         "notaLocal": "Standard created in this installation: assign it the catalogue fields it will contribute when an element type is built from its standards.",
         "asignarPrimero": "Assign a catalogue field to the standard",
         "asignarOtro": "Assign another catalogue field to the standard",
@@ -2961,7 +2961,7 @@
       },
       "infoTable": "Informative table.",
       "campos": {
-        "notice": "The type's custom fields are managed in the configuration area.",
+        "notice": "The custom fields of all element types are managed from the dedicated <0>CUSTOM FIELDS</0> section.",
         "empty": "No custom fields to show yet."
       },
       "checklist": {
@@ -2974,12 +2974,16 @@
         "normas": "Standards",
         "campos": "Custom fields",
         "elementos": "No. of elements",
-        "checklists": "No. of checklists"
+        "checklists": "No. of checklists",
+        "modelos": "No. of models",
+        "periodicidad": "Validity (months)",
+        "nCampos": "No. of fields",
+        "nNormas": "No. of standards"
       },
       "familias": {
         "title": "Families",
         "sub": "Functional grouping · tenant's choice",
-        "hint": "Families are the first classification layer. They can be two broad worlds (PPE / Systems) or more granular — as the tenant prefers.",
+        "hint": "Families are the first classification layer; their purpose is to make segmenting the information easier. There is complete freedom to name and segment them as {{tenant}} prefers.",
         "empty": "No families yet.",
         "count": "{{n}} types",
         "reorder": "Drag to reorder",
@@ -3005,10 +3009,15 @@
         "identidadCampo": "A field is kept only if it is the same catalogue field in both types. Sharing a name is not enough: renaming a field to match does not merge them.",
         "note": "“{{from}}” will cease to exist: its {{n}} items move to “{{to}}” with that type’s configuration (standards, fields and checklists). This cannot be undone.",
         "confirm": "Merge types",
-        "done": "“{{from}}” was merged into “{{to}}”"
+        "done": "“{{from}}” was merged into “{{to}}”",
+        "noCompatibleTitle": "Cannot merge",
+        "noCompatible": "“{{from}}” cannot be merged into “{{to}}”: “{{from}}” belongs to the {{fa}} family and “{{to}}” to {{fb}}. A type can only be merged with another one of its own family.",
+        "entendido": "Got it"
       },
       "familiaTodas": "All",
-      "filtrarFamilia": "Filter by family"
+      "filtrarFamilia": "Filter by family",
+      "filtrarNormas": "Filter by standard",
+      "normasTodas": "All"
     },
     "parametros": {
       "grupoMarca": "Brand and language",

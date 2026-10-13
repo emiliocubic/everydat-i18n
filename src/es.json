@@ -2702,7 +2702,7 @@
         "select_multiple": "Lista de valores con selección múltiple"
       },
       "pornorma": {
-        "notaCanon": "Campos curados por EVERYDAT para esta norma: se consultan, no se editan. En «Campos por tipo» puedes añadir o quitar campos a cada tipo de elemento.",
+        "notaCanon": "Campos preinstalados derivados del contenido de la norma: información para consulta, no se pueden modificar. En campos por tipo es posible editar los campos que afectan a cada tipo de elemento, incluidos éstos que derivan de la norma.",
         "notaLocal": "Norma creada en esta instalación: asígnale los campos del catálogo que aportará al componer un tipo de elemento a partir de sus normas.",
         "asignarPrimero": "Asignar campo de catálogo a la norma",
         "asignarOtro": "Asignar otro campo de catálogo a la norma",
@@ -2961,7 +2961,7 @@
       },
       "infoTable": "Tabla informativa.",
       "campos": {
-        "notice": "Los campos personalizados del tipo se gestionan en el área de configuración.",
+        "notice": "Los campos personalizados de todos los tipos de elementos se gestionan desde la sección específica de <0>CAMPOS PERSONALIZADOS</0>.",
         "empty": "Aún no hay campos personalizados que mostrar."
       },
       "checklist": {
@@ -2974,12 +2974,16 @@
         "normas": "Normas",
         "campos": "Campos personalizados",
         "elementos": "Nº de elementos",
-        "checklists": "Nº de checklists"
+        "checklists": "Nº de checklists",
+        "modelos": "Nº de modelos",
+        "periodicidad": "Validez (meses)",
+        "nCampos": "Nº de campos",
+        "nNormas": "Nº de normas"
       },
       "familias": {
         "title": "Familias",
         "sub": "Agrupación funcional · a gusto del tenant",
-        "hint": "Las familias son la primera capa de clasificación. Pueden ser dos grandes mundos (EPIs / Sistemas) o más granulares — como prefiera el tenant.",
+        "hint": "Las familias son la primera capa de clasificación, y su utilidad es facilitar la segmentación de la información. Hay libertad completa para denominar y segmentar al gusto de {{tenant}}.",
         "empty": "No hay familias todavía.",
         "count": "{{n}} tipos",
         "reorder": "Arrastrar para reordenar",
@@ -3005,10 +3009,15 @@
         "identidadCampo": "Un campo se conserva solo si es el mismo campo del catálogo en los dos tipos. No basta con que se llame igual: renombrar un campo para que coincida no los une.",
         "note": "«{{from}}» dejará de existir: sus {{n}} elementos pasan a «{{to}}» con la configuración de este (normativa, campos y checklists). Esta acción no se puede deshacer.",
         "confirm": "Fusionar tipos",
-        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
+        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»",
+        "noCompatibleTitle": "No se puede unificar",
+        "noCompatible": "«{{from}}» no se puede unificar con «{{to}}»: «{{from}}» está en la familia {{fa}} y «{{to}}» en {{fb}}. Un tipo solo se unifica con otro de su misma familia.",
+        "entendido": "Entendido"
       },
       "familiaTodas": "Todas",
-      "filtrarFamilia": "Filtrar por familia"
+      "filtrarFamilia": "Filtrar por familia",
+      "filtrarNormas": "Filtrar por norma",
+      "normasTodas": "Todas"
     },
     "parametros": {
       "grupoMarca": "Marca e idioma",

@@ -2605,7 +2605,7 @@
         "select_multiple": "Liste de valeurs à choix multiple"
       },
       "pornorma": {
-        "notaCanon": "Champs curés par EVERYDAT pour cette norme : ils se consultent, ils ne se modifient pas. Dans « Champs par type », vous pouvez ajouter ou retirer des champs à chaque type d'élément.",
+        "notaCanon": "Champs préinstallés dérivés du contenu de la norme : information à titre consultatif, non modifiable. Dans champs par type, il est possible de modifier les champs qui concernent chaque type d'élément, y compris ceux qui dérivent de la norme.",
         "notaLocal": "Norme créée dans cette installation : affectez-lui les champs du catalogue qu'elle apportera lorsqu'un type d'élément est composé à partir de ses normes.",
         "asignarPrimero": "Affecter un champ du catalogue à la norme",
         "asignarOtro": "Affecter un autre champ du catalogue à la norme",
@@ -2864,7 +2864,7 @@
       },
       "infoTable": "Tableau informatif.",
       "campos": {
-        "notice": "Les champs personnalisés du type se gèrent dans la zone de configuration.",
+        "notice": "Les champs personnalisés de tous les types d'éléments se gèrent depuis la section spécifique <0>CHAMPS PERSONNALISÉS</0>.",
         "empty": "Aucun champ personnalisé à afficher pour l'instant."
       },
       "checklist": {
@@ -2877,12 +2877,16 @@
         "normas": "Normes",
         "campos": "Champs personnalisés",
         "elementos": "Nb d'éléments",
-        "checklists": "Nb de checklists"
+        "checklists": "Nb de checklists",
+        "modelos": "Nb de modèles",
+        "periodicidad": "Validité (mois)",
+        "nCampos": "Nb de champs",
+        "nNormas": "Nb de normes"
       },
       "familias": {
         "title": "Familles",
         "sub": "Regroupement fonctionnel · au choix du locataire",
-        "hint": "Les familles sont la première couche de classification. Elles peuvent être deux grands mondes (EPI / Systèmes) ou plus granulaires — selon la préférence du locataire.",
+        "hint": "Les familles sont la première couche de classification ; leur utilité est de faciliter la segmentation de l'information. Liberté complète pour les nommer et les segmenter au goût de {{tenant}}.",
         "empty": "Aucune famille pour l'instant.",
         "count": "{{n}} types",
         "reorder": "Glisser pour réordonner",
@@ -2908,10 +2912,15 @@
         "identidadCampo": "Un champ n’est conservé que s’il s’agit du même champ du catalogue dans les deux types. Un nom identique ne suffit pas : renommer un champ ne les unit pas.",
         "note": "« {{from}} » cessera d’exister : ses {{n}} éléments passent à « {{to}} » avec la configuration de celui-ci (normes, champs et checklists). Action irréversible.",
         "confirm": "Fusionner les types",
-        "done": "« {{from}} » a été fusionné dans « {{to}} »"
+        "done": "« {{from}} » a été fusionné dans « {{to}} »",
+        "noCompatibleTitle": "Fusion impossible",
+        "noCompatible": "« {{from}} » ne peut pas être fusionné avec « {{to}} » : « {{from}} » appartient à la famille {{fa}} et « {{to}} » à {{fb}}. Un type ne se fusionne qu'avec un autre de sa propre famille.",
+        "entendido": "Compris"
       },
       "familiaTodas": "Toutes",
-      "filtrarFamilia": "Filtrer par famille"
+      "filtrarFamilia": "Filtrer par famille",
+      "filtrarNormas": "Filtrer par norme",
+      "normasTodas": "Toutes"
     },
     "parametros": {
       "grupoMarca": "Marque et langue",
