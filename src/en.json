@@ -1190,7 +1190,6 @@
       "notaAlta": "Model breakdown. Completing it is not required to create the item: you can leave it half done and finish it later from its record.",
       "notaUnidades": "Select only ONE unit when registering multi-component systems or equipment.",
       "estructurales": "Structural components",
-      "montaje": "Mounting accessories",
       "funcionales": "Functional components",
       "funcionalesHint": "Equipment with its own serial number already registered in this folder. When assigned they form a set with the system.",
       "epis": "Recommended PPE",
@@ -2078,7 +2077,8 @@
         "familiaLabel": "Family",
         "familiaPlaceholder": "Choose the family…",
         "tipoLabel": "Item type",
-        "tipoHint": "The type brings the checklist, fields and dates of the model."
+        "tipoHint": "The type brings the checklist, fields and dates of the model.",
+        "modeloNombreLabel": "Model name"
       },
       "pick": {
         "existing": "Already in your catalogue",
@@ -2144,7 +2144,10 @@
         "refCodigo": "Reference",
         "refNombre": "Description",
         "refEan": "EAN",
-        "docsTitle": "Manufacturer documents"
+        "docsTitle": "Manufacturer documents",
+        "avisoCatalogo": "Data obtained by automated procedures. Refer to the manufacturer's official support to verify critical data. Under no circumstances do EVERYDAT or the Manufacturer guarantee the information; verify it at the official source.",
+        "avisoIa": "Data obtained by indirect procedures, secondary sources and model training, without the direct involvement of the manufacturer. Refer to the official support to verify critical data. Under no circumstances does EVERYDAT guarantee the information; verify it at the official source.",
+        "fechaRecoleccion": "Date these data were collected or updated: {{fecha}}"
       }
     },
     "modelos": {
@@ -2372,7 +2375,7 @@
       },
       "estructura": {
         "titulo": "Components",
-        "resumen": "{{e}} structural · {{m}} mounting · {{f}} functional · {{p}} recommended PPE",
+        "resumen": "{{e}} structural · {{f}} functional · {{p}} recommended PPE",
         "multicomponente": "Multi-component",
         "hintOn": "Defined by components, not by references.",
         "hintOff": "Simple model: defined by references.",
@@ -2388,50 +2391,36 @@
         "noApagable_other": "It has {{count}} items: a multi-component model in use does not go back to simple equipment.",
         "noSectorial": "A model from the sector repository is not converted: the repository will bring its structure.",
         "estructurales": "Structural components",
-        "estructuralesHint": "Parts specific to this system, from the same manufacturer. When the system is registered, only the number of units of each is entered.",
+        "estructuralesHint": "Parts specific to this system, from the same manufacturer, in a single list (accessories and mounting parts included). When the system is registered, only the number of units of each is entered.",
         "estructuralesVacio": "No structural components.",
         "nPiezas_one": "{{count}} part",
         "nPiezas_other": "{{count}} parts",
         "anadirComponente": "Add component",
-        "montaje": "Mounting accessories",
-        "grupoSeparado": "Separate group",
-        "montajeVacio": "No mounting accessories. They are defined like the structural ones.",
-        "montajeNoSeparado": "This manufacturer does not separate mounting accessories: they are included in the structural components.",
         "funcionales": "Functional components",
-        "funcionalesHint": "Equipment with its own serial number. When the system is registered, each slot is filled with one or more specific items from the same folder, of the admitted models.",
+        "funcionalesHint": "Equipment with its own serial number (trolley, absorber): specific models, usually from {{fab}}. When the system is registered, each slot is filled with items from the folder of those models.",
         "funcionalesVacio": "No functional components.",
         "nTipos_one": "{{count}} type",
         "nTipos_other": "{{count}} types",
         "anadirTipos": "Add types",
-        "modo": "Admitted models",
-        "modos": {
-          "fijados": "Fixed models",
-          "tipo": "Any model of the type"
-        },
         "quitarHueco": "Remove {{tipo}}",
         "quitarModelo": "Remove model",
         "elegirModelos": "Choose models",
         "editarModelos": "Edit models",
         "sinFijados": "No fixed models: choose at least one or switch to «Any model of the type».",
-        "cualquiera": "On registration, any item of type {{tipo}} will be admitted, whatever its model and brand.",
+        "cualquiera": "Saved as «any model of type {{tipo}}»: choose specific models to narrow it down.",
         "epis": "Recommended PPE",
         "episVacio": "No recommended PPE.",
         "condicionantesPh": "Additional conditions stipulated for this system (optional)",
         "modelosAdmitidos": "Admitted models · {{tipo}}",
-        "modelosAdmitidosSub": "When the system is registered, this slot will only accept items of the selected models. They may be of another compatible brand.",
         "sinImagen": "No image: upload it by editing the component",
         "cols": {
           "codigo": "Code",
           "componente": "Component"
         },
-        "grupo": {
-          "estructural": "structural component",
-          "montaje": "mounting accessory"
-        },
         "pieza": {
           "nueva": "New component",
-          "anadir": "Add {{grupo}}",
-          "editar": "Edit {{grupo}}",
+          "anadir": "Add structural component",
+          "editar": "Edit structural component",
           "codigo": "Code",
           "codigoPh": "e.g. AIO-ENDS-10",
           "nombre": "Component name",
@@ -2443,8 +2432,6 @@
           "anadirBtn": "Add"
         },
         "picker": {
-          "tituloHuecos": "Add functional components",
-          "subHuecos": "Choose the item types assigned to the system. Then you will fix the admitted models of each one.",
           "tituloEpis": "Add recommended PPE",
           "subEpis": "Choose the PPE types the manufacturer recommends. Then you can add their conditions to each one.",
           "buscar": "Search type, family or standard…",
@@ -2459,7 +2446,15 @@
           "nSeleccionados_one": "{{count}} type selected",
           "nSeleccionados_other": "{{count}} types selected",
           "anadir": "Add"
-        }
+        },
+        "funcionalesHintSinFab": "Equipment with its own serial number (trolley, absorber): specific models, usually from the same manufacturer as the system. When the system is registered, each slot is filled with items from the folder of those models.",
+        "nModelos_one": "{{count}} model",
+        "nModelos_other": "{{count}} models",
+        "anadirModelos": "Add models",
+        "elegirModelosTitulo": "Functional components",
+        "elegirModelosSub": "Usually from the same manufacturer as the system ({{fab}}); compatible models of another brand are also admitted. Each model goes into the slot of its item type.",
+        "elegirModelosSubSinFab": "Usually from the same manufacturer as the system; compatible models of another brand are also admitted. Each model goes into the slot of its item type.",
+        "sinTipo": "«{{modelo}}» has no item type: set it in its sheet before fixing it."
       }
     },
     "normativa": {

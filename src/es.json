@@ -1062,7 +1062,6 @@
       "notaAlta": "Despiece del modelo. Completarlo no es obligatorio para crear el elemento: puedes dejarlo a medias y terminarlo después desde su ficha.",
       "notaUnidades": "Seleccione solo UNA unidad si el alta es de sistemas o equipos multicomponente.",
       "estructurales": "Componentes estructurales",
-      "montaje": "Accesorios de montaje",
       "funcionales": "Componentes funcionales",
       "funcionalesHint": "Equipos con nº de serie propio ya dados de alta en esta carpeta. Al asignarlos forman un conjunto con el sistema.",
       "epis": "EPIs recomendados",
@@ -1096,7 +1095,9 @@
         "vacio": "No hay elementos en esta carpeta que encajen en el hueco. Puedes crearlo y asignarlo después desde la ficha del sistema.",
         "nSeleccionados_one": "{{count}} elemento seleccionado",
         "nSeleccionados_other": "{{count}} elementos seleccionados",
-        "asignar": "Asignar"
+        "asignar": "Asignar",
+        "fijado": "Modelo fijado",
+        "aviso": "{{fab}} limita la compatibilidad a los modelos {{modelos}}. No obstante, mostramos todos los elementos de marca {{fab}} del mismo tipo de elemento disponibles en la misma carpeta, por si alguno correspondiera pero se hubiera nombrado de forma distinta. Queda a criterio técnico del usuario escogerlos adecuadamente."
       }
     }
   },
@@ -2078,7 +2079,8 @@
         "familiaLabel": "Familia",
         "familiaPlaceholder": "Elige la familia…",
         "tipoLabel": "Tipo de elemento",
-        "tipoHint": "Con el tipo llegan el checklist, los campos y las fechas del modelo."
+        "tipoHint": "Con el tipo llegan el checklist, los campos y las fechas del modelo.",
+        "modeloNombreLabel": "Nombre del modelo"
       },
       "pick": {
         "existing": "Ya en tu catálogo",
@@ -2144,7 +2146,10 @@
         "refCodigo": "Referencia",
         "refNombre": "Descripción",
         "refEan": "EAN",
-        "docsTitle": "Documentación del fabricante"
+        "docsTitle": "Documentación del fabricante",
+        "avisoCatalogo": "Datos obtenidos por procedimientos automatizados. Remitirse al soporte oficial del fabricante para la verificación de datos críticos. En ningún caso ni EVERYDAT ni el Fabricante garantizan la información, verificar en la fuente oficial.",
+        "avisoIa": "Datos obtenidos por procedimientos indirectos, fuentes secundarias y entrenamiento de modelos, sin participación directa del fabricante. Remitirse al soporte oficial para la verificación de datos críticos. En ningún caso EVERYDAT garantiza la información, verificar en la fuente oficial.",
+        "fechaRecoleccion": "Fecha de recolección o actualización de estos datos: {{fecha}}"
       }
     },
     "modelos": {
@@ -2372,7 +2377,7 @@
       },
       "estructura": {
         "titulo": "Componentes",
-        "resumen": "{{e}} estructurales · {{m}} de montaje · {{f}} funcionales · {{p}} EPIs recomendados",
+        "resumen": "{{e}} estructurales · {{f}} funcionales · {{p}} EPIs recomendados",
         "multicomponente": "Multicomponente",
         "hintOn": "Se define por componentes, no por referencias.",
         "hintOff": "Modelo simple: se define por referencias.",
@@ -2388,50 +2393,36 @@
         "noApagable_other": "Tiene {{count}} elementos: un multicomponente con parque no vuelve a equipo simple.",
         "noSectorial": "Un modelo del repositorio sectorial no se convierte: su estructura la traerá el repositorio.",
         "estructurales": "Componentes estructurales",
-        "estructuralesHint": "Piezas propias de este sistema, del mismo fabricante. Al dar de alta el sistema solo se indica cuántas unidades lleva de cada una.",
+        "estructuralesHint": "Piezas propias de este sistema, del mismo fabricante, en una sola lista (también los accesorios y lo de montaje). Al dar de alta el sistema solo se indica cuántas unidades lleva de cada una.",
         "estructuralesVacio": "Sin componentes estructurales.",
         "nPiezas_one": "{{count}} pieza",
         "nPiezas_other": "{{count}} piezas",
         "anadirComponente": "Añadir componente",
-        "montaje": "Accesorios de montaje",
-        "grupoSeparado": "Grupo separado",
-        "montajeVacio": "Sin accesorios de montaje. Se definen igual que los estructurales.",
-        "montajeNoSeparado": "Este fabricante no separa los accesorios de montaje: van incluidos en los componentes estructurales.",
         "funcionales": "Componentes funcionales",
-        "funcionalesHint": "Equipos con nº de serie propio. Al dar de alta el sistema, cada hueco se rellena con uno o varios elementos concretos de la misma carpeta, de los modelos admitidos.",
+        "funcionalesHint": "Equipos con nº de serie propio (carro, absorbedor): modelos concretos, normalmente de {{fab}}. Al dar de alta el sistema, cada hueco se rellena con elementos de la carpeta de esos modelos.",
         "funcionalesVacio": "Sin componentes funcionales.",
         "nTipos_one": "{{count}} tipo",
         "nTipos_other": "{{count}} tipos",
         "anadirTipos": "Añadir tipos",
-        "modo": "Modelos admitidos",
-        "modos": {
-          "fijados": "Modelos fijados",
-          "tipo": "Cualquier modelo del tipo"
-        },
         "quitarHueco": "Quitar {{tipo}}",
         "quitarModelo": "Quitar modelo",
         "elegirModelos": "Elegir modelos",
         "editarModelos": "Editar modelos",
         "sinFijados": "Sin modelos fijados: elige al menos uno o cambia a «Cualquier modelo del tipo».",
-        "cualquiera": "Al dar de alta se admitirá cualquier elemento de tipo {{tipo}}, sea cual sea su modelo y su marca.",
+        "cualquiera": "Guardado como «cualquier modelo del tipo {{tipo}}»: elige modelos concretos para acotarlo.",
         "epis": "EPIs recomendados",
         "episVacio": "Sin EPIs recomendados.",
         "condicionantesPh": "Condicionantes adicionales estipulados para este sistema (opcional)",
         "modelosAdmitidos": "Modelos admitidos · {{tipo}}",
-        "modelosAdmitidosSub": "Al dar de alta el sistema, este hueco solo aceptará elementos de los modelos marcados. Pueden ser de otra marca compatible.",
         "sinImagen": "Sin imagen: súbela editando el componente",
         "cols": {
           "codigo": "Código",
           "componente": "Componente"
         },
-        "grupo": {
-          "estructural": "componente estructural",
-          "montaje": "accesorio de montaje"
-        },
         "pieza": {
           "nueva": "Nuevo componente",
-          "anadir": "Añadir {{grupo}}",
-          "editar": "Editar {{grupo}}",
+          "anadir": "Añadir componente estructural",
+          "editar": "Editar componente estructural",
           "codigo": "Código",
           "codigoPh": "p. ej. AIO-ENDS-10",
           "nombre": "Nombre del componente",
@@ -2443,8 +2434,6 @@
           "anadirBtn": "Añadir"
         },
         "picker": {
-          "tituloHuecos": "Añadir componentes funcionales",
-          "subHuecos": "Elige los tipos de elemento que se asignan al sistema. Después fijarás los modelos admitidos de cada uno.",
           "tituloEpis": "Añadir EPIs recomendados",
           "subEpis": "Elige los tipos de EPI que recomienda el fabricante. Después puedes añadir sus condicionantes a cada uno.",
           "buscar": "Buscar tipo, familia o norma…",
@@ -2459,7 +2448,15 @@
           "nSeleccionados_one": "{{count}} tipo seleccionado",
           "nSeleccionados_other": "{{count}} tipos seleccionados",
           "anadir": "Añadir"
-        }
+        },
+        "funcionalesHintSinFab": "Equipos con nº de serie propio (carro, absorbedor): modelos concretos, normalmente del mismo fabricante que el sistema. Al dar de alta el sistema, cada hueco se rellena con elementos de la carpeta de esos modelos.",
+        "nModelos_one": "{{count}} modelo",
+        "nModelos_other": "{{count}} modelos",
+        "anadirModelos": "Añadir modelos",
+        "elegirModelosTitulo": "Componentes funcionales",
+        "elegirModelosSub": "Normalmente del mismo fabricante que el sistema ({{fab}}); también se admiten modelos compatibles de otra marca. Cada modelo entra en el hueco de su tipo de elemento.",
+        "elegirModelosSubSinFab": "Normalmente del mismo fabricante que el sistema; también se admiten modelos compatibles de otra marca. Cada modelo entra en el hueco de su tipo de elemento.",
+        "sinTipo": "«{{modelo}}» no tiene tipo de elemento: asígnaselo en su ficha antes de fijarlo."
       }
     },
     "normativa": {

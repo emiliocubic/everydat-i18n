@@ -1107,7 +1107,6 @@
       "notaAlta": "Nomenclature du modèle. La compléter n'est pas obligatoire pour créer l'élément : vous pouvez la terminer plus tard depuis sa fiche.",
       "notaUnidades": "Sélectionnez une SEULE unité pour enregistrer des systèmes ou équipements multicomposants.",
       "estructurales": "Composants structurels",
-      "montaje": "Accessoires de montage",
       "funcionales": "Composants fonctionnels",
       "funcionalesHint": "Équipements avec leur propre numéro de série déjà enregistrés dans ce dossier. Une fois affectés, ils forment un ensemble avec le système.",
       "epis": "EPI recommandés",
@@ -1981,7 +1980,8 @@
         "familiaLabel": "Famille",
         "familiaPlaceholder": "Choisissez la famille…",
         "tipoLabel": "Type d’équipement",
-        "tipoHint": "Le type apporte la checklist, les champs et les dates du modèle."
+        "tipoHint": "Le type apporte la checklist, les champs et les dates du modèle.",
+        "modeloNombreLabel": "Nom du modèle"
       },
       "pick": {
         "existing": "Déjà dans votre catalogue",
@@ -2047,7 +2047,10 @@
         "refCodigo": "Référence",
         "refNombre": "Description",
         "refEan": "EAN",
-        "docsTitle": "Documents du fabricant"
+        "docsTitle": "Documents du fabricant",
+        "avisoCatalogo": "Données obtenues par des procédés automatisés. Adressez-vous au support officiel du fabricant pour vérifier les données critiques. En aucun cas ni EVERYDAT ni le Fabricant ne garantissent l'information ; vérifiez-la à la source officielle.",
+        "avisoIa": "Données obtenues par des procédés indirects, des sources secondaires et l'entraînement de modèles, sans participation directe du fabricant. Adressez-vous au support officiel pour vérifier les données critiques. En aucun cas EVERYDAT ne garantit l'information ; vérifiez-la à la source officielle.",
+        "fechaRecoleccion": "Date de collecte ou de mise à jour de ces données : {{fecha}}"
       }
     },
     "modelos": {
@@ -2275,7 +2278,7 @@
       },
       "estructura": {
         "titulo": "Composants",
-        "resumen": "{{e}} structurels · {{m}} de montage · {{f}} fonctionnels · {{p}} EPI recommandés",
+        "resumen": "{{e}} structurels · {{f}} fonctionnels · {{p}} EPI recommandés",
         "multicomponente": "Multicomposant",
         "hintOn": "Défini par composants, pas par références.",
         "hintOff": "Modèle simple : défini par références.",
@@ -2291,50 +2294,36 @@
         "noApagable_other": "Il a {{count}} éléments : un multicomposant en service ne redevient pas un équipement simple.",
         "noSectorial": "Un modèle du référentiel sectoriel n'est pas converti : le référentiel apportera sa structure.",
         "estructurales": "Composants structurels",
-        "estructuralesHint": "Pièces propres à ce système, du même fabricant. À l'enregistrement du système, on indique seulement le nombre d'unités de chacune.",
+        "estructuralesHint": "Pièces propres à ce système, du même fabricant, dans une seule liste (accessoires et pièces de montage compris). À l'enregistrement du système, on indique seulement le nombre d'unités de chacune.",
         "estructuralesVacio": "Aucun composant structurel.",
         "nPiezas_one": "{{count}} pièce",
         "nPiezas_other": "{{count}} pièces",
         "anadirComponente": "Ajouter un composant",
-        "montaje": "Accessoires de montage",
-        "grupoSeparado": "Groupe séparé",
-        "montajeVacio": "Aucun accessoire de montage. Ils se définissent comme les structurels.",
-        "montajeNoSeparado": "Ce fabricant ne sépare pas les accessoires de montage : ils sont inclus dans les composants structurels.",
         "funcionales": "Composants fonctionnels",
-        "funcionalesHint": "Équipements avec leur propre numéro de série. À l'enregistrement du système, chaque emplacement reçoit un ou plusieurs éléments du même dossier, des modèles admis.",
+        "funcionalesHint": "Équipements avec leur propre numéro de série (chariot, absorbeur) : des modèles concrets, en général de {{fab}}. À l'enregistrement du système, chaque emplacement reçoit des éléments du dossier de ces modèles.",
         "funcionalesVacio": "Aucun composant fonctionnel.",
         "nTipos_one": "{{count}} type",
         "nTipos_other": "{{count}} types",
         "anadirTipos": "Ajouter des types",
-        "modo": "Modèles admis",
-        "modos": {
-          "fijados": "Modèles fixés",
-          "tipo": "N'importe quel modèle du type"
-        },
         "quitarHueco": "Retirer {{tipo}}",
         "quitarModelo": "Retirer le modèle",
         "elegirModelos": "Choisir des modèles",
         "editarModelos": "Modifier les modèles",
         "sinFijados": "Aucun modèle fixé : choisissez-en au moins un ou passez à « N'importe quel modèle du type ».",
-        "cualquiera": "À l'enregistrement, tout élément de type {{tipo}} sera admis, quels que soient son modèle et sa marque.",
+        "cualquiera": "Enregistré comme « n'importe quel modèle du type {{tipo}} » : choisissez des modèles concrets pour le restreindre.",
         "epis": "EPI recommandés",
         "episVacio": "Aucun EPI recommandé.",
         "condicionantesPh": "Conditions supplémentaires stipulées pour ce système (facultatif)",
         "modelosAdmitidos": "Modèles admis · {{tipo}}",
-        "modelosAdmitidosSub": "À l'enregistrement du système, cet emplacement n'acceptera que les éléments des modèles cochés. Ils peuvent être d'une autre marque compatible.",
         "sinImagen": "Sans image : ajoutez-la en modifiant le composant",
         "cols": {
           "codigo": "Code",
           "componente": "Composant"
         },
-        "grupo": {
-          "estructural": "composant structurel",
-          "montaje": "accessoire de montage"
-        },
         "pieza": {
           "nueva": "Nouveau composant",
-          "anadir": "Ajouter un {{grupo}}",
-          "editar": "Modifier le {{grupo}}",
+          "anadir": "Ajouter un composant structurel",
+          "editar": "Modifier le composant structurel",
           "codigo": "Code",
           "codigoPh": "ex. AIO-ENDS-10",
           "nombre": "Nom du composant",
@@ -2346,8 +2335,6 @@
           "anadirBtn": "Ajouter"
         },
         "picker": {
-          "tituloHuecos": "Ajouter des composants fonctionnels",
-          "subHuecos": "Choisissez les types d'élément affectés au système. Ensuite vous fixerez les modèles admis de chacun.",
           "tituloEpis": "Ajouter des EPI recommandés",
           "subEpis": "Choisissez les types d'EPI recommandés par le fabricant. Ensuite vous pourrez ajouter leurs conditions.",
           "buscar": "Rechercher un type, une famille ou une norme…",
@@ -2362,7 +2349,15 @@
           "nSeleccionados_one": "{{count}} type sélectionné",
           "nSeleccionados_other": "{{count}} types sélectionnés",
           "anadir": "Ajouter"
-        }
+        },
+        "funcionalesHintSinFab": "Équipements avec leur propre numéro de série (chariot, absorbeur) : des modèles concrets, en général du même fabricant que le système. À l'enregistrement du système, chaque emplacement reçoit des éléments du dossier de ces modèles.",
+        "nModelos_one": "{{count}} modèle",
+        "nModelos_other": "{{count}} modèles",
+        "anadirModelos": "Ajouter des modèles",
+        "elegirModelosTitulo": "Composants fonctionnels",
+        "elegirModelosSub": "En général du même fabricant que le système ({{fab}}) ; des modèles compatibles d'une autre marque sont aussi admis. Chaque modèle entre dans l'emplacement de son type d'élément.",
+        "elegirModelosSubSinFab": "En général du même fabricant que le système ; des modèles compatibles d'une autre marque sont aussi admis. Chaque modèle entre dans l'emplacement de son type d'élément.",
+        "sinTipo": "« {{modelo}} » n'a pas de type d'élément : attribuez-le dans sa fiche avant de le fixer."
       }
     },
     "normativa": {
