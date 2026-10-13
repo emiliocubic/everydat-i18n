@@ -1720,7 +1720,8 @@
         "revision": "Inspection",
         "reparacion": "Repair",
         "tipRevision": "To be inspected",
-        "tipReparacion": "To be repaired"
+        "tipReparacion": "To be repaired",
+        "marcarTodos": "Check or uncheck all"
       },
       "quitar": "Remove from the basket",
       "quitarEquipo": "Remove {{equipo}}",
@@ -3961,6 +3962,8 @@
       "aReparar": "To repair",
       "reparado": "Repaired",
       "noSeRevisa": "Not inspected",
+      "kpiReparaciones": "Repairs",
+      "aRevisar": "To inspect",
       "parado": "Stopped since {{fecha}} ({{count}} day).",
       "parado_other": "Stopped since {{fecha}} ({{count}} days)."
     },

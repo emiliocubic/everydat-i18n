@@ -1625,7 +1625,8 @@
         "revision": "Inspection",
         "reparacion": "Réparation",
         "tipRevision": "À inspecter",
-        "tipReparacion": "À réparer"
+        "tipReparacion": "À réparer",
+        "marcarTodos": "Cocher ou décocher tout"
       },
       "quitar": "Retirer du panier",
       "quitarEquipo": "Retirer {{equipo}}",
@@ -3849,6 +3850,8 @@
       "aReparar": "À réparer",
       "reparado": "Réparé",
       "noSeRevisa": "Non inspecté",
+      "kpiReparaciones": "Réparations",
+      "aRevisar": "À inspecter",
       "parado": "Arrêté depuis le {{fecha}} ({{count}} jour).",
       "parado_other": "Arrêté depuis le {{fecha}} ({{count}} jours)."
     },

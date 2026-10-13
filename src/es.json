@@ -1592,7 +1592,8 @@
         "revision": "Revisión",
         "reparacion": "Reparación",
         "tipRevision": "Se revisa",
-        "tipReparacion": "Se repara"
+        "tipReparacion": "Se repara",
+        "marcarTodos": "Marcar o desmarcar todos"
       },
       "quitar": "Quitar de la cesta",
       "quitarEquipo": "Quitar {{equipo}}",
@@ -3961,6 +3962,8 @@
       "aReparar": "A reparar",
       "reparado": "Reparado",
       "noSeRevisa": "No se revisa",
+      "kpiReparaciones": "Reparaciones",
+      "aRevisar": "A revisar",
       "parado": "Parado desde el {{fecha}} ({{count}} día).",
       "parado_other": "Parado desde el {{fecha}} ({{count}} días)."
     },
