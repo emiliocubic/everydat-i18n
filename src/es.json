@@ -47,7 +47,20 @@
     "download": "Descargar",
     "quitar": "Quitar",
     "desactivar": "Desactivar",
-    "deshacer": "Deshacer"
+    "deshacer": "Deshacer",
+    "estadoPill": {
+      "activo": "ALTA",
+      "potencial": "POTENCIAL",
+      "baja": "BAJA",
+      "retirado": "RETIRADO"
+    },
+    "estadoLetra": {
+      "activo": "A",
+      "potencial": "P",
+      "baja": "B",
+      "retirado": "R"
+    },
+    "abrirEnMaps": "Abrir en Google Maps"
   },
   "merge": {
     "disappears": "Desaparece",
@@ -376,7 +389,9 @@
       "fechaAlta_short": "Alta",
       "propuestas": "Propuestas",
       "propuestas_short": "Prop.",
-      "cargo": "Cargo"
+      "cargo": "Cargo",
+      "direccion": "Dirección",
+      "email": "Email"
     },
     "grupos": {
       "identidad": "Identidad",
@@ -441,7 +456,9 @@
       "email": "Email",
       "cuenta": "Acceso al sistema",
       "clientes": "Clientes",
-      "ultimoAcceso": "Último acceso"
+      "ultimoAcceso": "Último acceso",
+      "fechaAlta": "Fecha de alta",
+      "cuentaTitulo": "Tiene cuenta de usuario"
     },
     "sheet": {
       "tabs": {
@@ -526,6 +543,11 @@
       "guardar": "Guardar cambios",
       "errorEstado": "Error al cambiar el estado",
       "errorGuardar": "Error al guardar"
+    },
+    "eliminar": {
+      "accion": "Eliminar contacto",
+      "confirmar": "¿Eliminar definitivamente a {{nombre}}? No se puede deshacer.",
+      "hecho": "Contacto eliminado."
     }
   },
   "invitados": {
@@ -962,7 +984,8 @@
         "revisor": "Revisor",
         "notaRev": "Nota de la revisión",
         "cobertura": "Visita planificada",
-        "familia": "Familia"
+        "familia": "Familia",
+        "gps": "Coordenadas GPS"
       },
       "grupos": {
         "familia": "Familia",
@@ -1176,7 +1199,9 @@
       "notas": "Notas",
       "status": "Estado",
       "actions": "Acciones",
-      "nombreCompleto": "Nombre y apellidos"
+      "nombreCompleto": "Nombre y apellidos",
+      "created_at": "Fecha de alta",
+      "last_login_at": "Último acceso"
     },
     "detail": {
       "tabDatos": "Datos del usuario"
@@ -1373,7 +1398,7 @@
       "latitud": "Latitud",
       "longitud": "Longitud",
       "notas": "Notas",
-      "coordenadas": "Coordenadas",
+      "coordenadas": "Coordenadas GPS",
       "propietario": "Propietario",
       "clienteActual": "Cliente activo",
       "fechaDesde": "Fecha alta",
@@ -1397,7 +1422,8 @@
       "informesTitle": "N.º de informes emitidos",
       "proxRev": "Fecha próxima revisión",
       "proxRevCol": "Próx. rev.",
-      "proxRevTitle": "Fecha de próxima revisión más cercana del emplazamiento"
+      "proxRevTitle": "Fecha de próxima revisión más cercana del emplazamiento",
+      "coordenadasCol": "GPS"
     },
     "errors": {
       "clienteRequired": "Debes seleccionar un cliente."
@@ -1599,6 +1625,9 @@
       "proyectos": "Proyectos",
       "sinProyectos": "Ninguno abierto"
     }
+    },
+    "fichaCliente": {
+      "nuevo": "Nuevo emplazamiento"
   },
   "localizaciones": {
     "tree": "Árbol de localizaciones",

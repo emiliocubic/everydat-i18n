@@ -47,7 +47,20 @@
     "download": "Download",
     "quitar": "Remove",
     "desactivar": "Deactivate",
-    "deshacer": "Undo"
+    "deshacer": "Undo",
+    "estadoPill": {
+      "activo": "ACTIVE",
+      "potencial": "POTENTIAL",
+      "baja": "INACTIVE",
+      "retirado": "RETIRED"
+    },
+    "estadoLetra": {
+      "activo": "A",
+      "potencial": "P",
+      "baja": "I",
+      "retirado": "R"
+    },
+    "abrirEnMaps": "Open in Google Maps"
   },
   "merge": {
     "disappears": "Disappears",
@@ -504,7 +517,9 @@
       "fechaAlta_short": "Since",
       "propuestas": "Proposals",
       "propuestas_short": "Prop.",
-      "cargo": "Role"
+      "cargo": "Role",
+      "direccion": "Address",
+      "email": "Email"
     },
     "grupos": {
       "identidad": "Identity",
@@ -569,7 +584,9 @@
       "email": "Email",
       "cuenta": "System access",
       "clientes": "Customers",
-      "ultimoAcceso": "Last sign-in"
+      "ultimoAcceso": "Last sign-in",
+      "fechaAlta": "Created on",
+      "cuentaTitulo": "Has a user account"
     },
     "sheet": {
       "tabs": {
@@ -654,6 +671,11 @@
       "guardar": "Save changes",
       "errorEstado": "Could not change status",
       "errorGuardar": "Could not save"
+    },
+    "eliminar": {
+      "accion": "Delete contact",
+      "confirmar": "Permanently delete {{nombre}}? This cannot be undone.",
+      "hecho": "Contact deleted."
     }
   },
   "invitados": {
@@ -1090,7 +1112,8 @@
         "revisor": "Inspector",
         "notaRev": "Inspection note",
         "cobertura": "Planned visit",
-        "familia": "Family"
+        "familia": "Family",
+        "gps": "GPS coordinates"
       },
       "grupos": {
         "familia": "Family",
@@ -1304,7 +1327,9 @@
       "notas": "Notes",
       "status": "Status",
       "actions": "Actions",
-      "nombreCompleto": "Full name"
+      "nombreCompleto": "Full name",
+      "created_at": "Created on",
+      "last_login_at": "Last login"
     },
     "detail": {
       "tabDatos": "User data"
@@ -1501,7 +1526,7 @@
       "latitud": "Latitude",
       "longitud": "Longitude",
       "notas": "Notes",
-      "coordenadas": "Coordinates",
+      "coordenadas": "GPS coordinates",
       "propietario": "Owner",
       "clienteActual": "Active customer",
       "fechaDesde": "Start date",
@@ -1525,7 +1550,8 @@
       "informesTitle": "Number of reports issued",
       "proxRev": "Next inspection date",
       "proxRevCol": "Next insp.",
-      "proxRevTitle": "Site's earliest scheduled inspection date"
+      "proxRevTitle": "Site's earliest scheduled inspection date",
+      "coordenadasCol": "GPS"
     },
     "errors": {
       "clienteRequired": "Please select a customer."
@@ -1727,6 +1753,9 @@
       "proyectos": "Projects",
       "sinProyectos": "None open"
     }
+    },
+    "fichaCliente": {
+      "nuevo": "New site"
   },
   "localizaciones": {
     "tree": "Location tree",

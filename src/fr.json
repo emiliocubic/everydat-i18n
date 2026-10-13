@@ -47,7 +47,20 @@
     "download": "Télécharger",
     "quitar": "Retirer",
     "desactivar": "Désactiver",
-    "deshacer": "Défaire"
+    "deshacer": "Défaire",
+    "estadoPill": {
+      "activo": "ACTIF",
+      "potencial": "POTENTIEL",
+      "baja": "DÉSACTIVÉ",
+      "retirado": "RÉFORMÉ"
+    },
+    "estadoLetra": {
+      "activo": "A",
+      "potencial": "P",
+      "baja": "D",
+      "retirado": "R"
+    },
+    "abrirEnMaps": "Ouvrir dans Google Maps"
   },
   "merge": {
     "disappears": "Disparaît",
@@ -502,7 +515,9 @@
       "fechaAlta": "Date d'inscription",
       "fechaAlta_short": "Depuis",
       "propuestas": "Propositions",
-      "propuestas_short": "Prop."
+      "propuestas_short": "Prop.",
+      "direccion": "Adresse",
+      "email": "Email"
     },
     "grupos": {
       "identidad": "Identité",
@@ -544,7 +559,9 @@
       "email": "E-mail",
       "cuenta": "Accès au système",
       "clientes": "Clients",
-      "ultimoAcceso": "Dernière connexion"
+      "ultimoAcceso": "Dernière connexion",
+      "fechaAlta": "Date de création",
+      "cuentaTitulo": "A un compte utilisateur"
     },
     "sheet": {
       "tabs": {
@@ -629,6 +646,11 @@
       "guardar": "Enregistrer",
       "errorEstado": "Impossible de changer le statut",
       "errorGuardar": "Impossible d’enregistrer"
+    },
+    "eliminar": {
+      "accion": "Supprimer le contact",
+      "confirmar": "Supprimer définitivement {{nombre}} ? Cette action est irréversible.",
+      "hecho": "Contact supprimé."
     }
   },
   "invitados": {
@@ -1048,7 +1070,8 @@
         "revisor": "Inspecteur",
         "notaRev": "Note d'inspection",
         "cobertura": "Visite planifiée",
-        "familia": "Famille"
+        "familia": "Famille",
+        "gps": "Coordonnées GPS"
       },
       "grupos": {
         "familia": "Famille",
@@ -1221,7 +1244,9 @@
       "notas": "Notes",
       "status": "Statut",
       "actions": "Actions",
-      "nombreCompleto": "Nom et prénom"
+      "nombreCompleto": "Nom et prénom",
+      "created_at": "Date de création",
+      "last_login_at": "Dernière connexion"
     },
     "detail": {
       "tabDatos": "Données de l'utilisateur"
@@ -1417,7 +1442,7 @@
       "latitud": "Latitude",
       "longitud": "Longitude",
       "notas": "Notes",
-      "coordenadas": "Coordonnées",
+      "coordenadas": "Coordonnées GPS",
       "propietario": "Propriétaire",
       "clienteActual": "Client actif",
       "fechaDesde": "Date de début",
@@ -1441,7 +1466,8 @@
       "informesTitle": "Nombre de rapports émis",
       "proxRev": "Date de prochaine vérification",
       "proxRevCol": "Proch. vér.",
-      "proxRevTitle": "Date de vérification programmée la plus proche du site"
+      "proxRevTitle": "Date de vérification programmée la plus proche du site",
+      "coordenadasCol": "GPS"
     },
     "errors": {
       "clienteRequired": "Veuillez sélectionner un client."
@@ -1632,6 +1658,9 @@
       "proyectos": "Projets",
       "sinProyectos": "Aucun ouvert"
     }
+    },
+    "fichaCliente": {
+      "nuevo": "Nouveau site"
   },
   "localizaciones": {
     "tree": "Arbre des localisations",
