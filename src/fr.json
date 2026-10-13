@@ -2886,8 +2886,8 @@
         "ia": "Assisté par IA",
         "manual": "Saisie manuelle uniquement",
         "repo": "Fiche dans le référentiel",
-        "catalogoTitle": "Catalogue disponible : les modèles se créent depuis le catalogue officiel du fabricant",
-        "iaTitle": "Assisté par IA : le fabricant est dans le référentiel sans accord signé"
+        "catalogoTitle": "Catalogue disponible. Données complètes obtenues directement auprès du fabricant",
+        "iaTitle": "Assisté par IA : il est possible de consulter partiellement les données publiques de ce fabricant"
       },
       "escalas": {
         "title": "Échelles par fabricant",

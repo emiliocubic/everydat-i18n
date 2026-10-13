@@ -2983,8 +2983,8 @@
         "ia": "AI assisted",
         "manual": "Manual entry only",
         "repo": "Listed in the repository",
-        "catalogoTitle": "Catalogue available: models are created from the manufacturer's official catalogue",
-        "iaTitle": "AI assisted: the manufacturer is in the repository without a signed agreement"
+        "catalogoTitle": "Catalogue available. Complete data obtained directly from the manufacturer",
+        "iaTitle": "AI assisted: public data from this manufacturer can be partially consulted"
       },
       "escalas": {
         "title": "Manufacturer scales",

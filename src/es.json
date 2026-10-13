@@ -2983,8 +2983,8 @@
         "ia": "Asistido por IA",
         "manual": "Solo alta manual",
         "repo": "Con ficha en el repositorio",
-        "catalogoTitle": "Catálogo disponible: los modelos se dan de alta desde el catálogo oficial del fabricante",
-        "iaTitle": "Asistido por IA: el fabricante está en el repositorio sin acuerdo firmado"
+        "catalogoTitle": "Catálogo disponible. Datos completos obtenidos directamente del fabricante",
+        "iaTitle": "Asistido por IA: es posible consultar parcialmente datos públicos de este fabricante"
       },
       "escalas": {
         "title": "Escalas por fabricante",
