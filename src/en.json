@@ -2809,7 +2809,9 @@
         "nSug_other": "{{count}} suggested checkpoints",
         "noSugFor": "no suggestable checkpoints for {{normas}}",
         "manualTitle": "Create checklist manually",
-        "manualDesc": "Start from scratch: add your own checkpoints one by one."
+        "manualDesc": "Start from scratch: add your own checkpoints one by one.",
+        "iaPeriodica": "The automatically generated checklist is always a PERIODIC INSPECTION one.",
+        "tipoACrear": "Type of checklist to create"
       },
       "pick": {
         "q": "Select an element type",
@@ -2903,7 +2905,8 @@
         "masModelos": "+{{count}} more",
         "elegirModelos": "Choose models",
         "editarModelos": "Edit models",
-        "modelosRequeridos": "The checklist needs at least one model"
+        "modelosRequeridos": "The checklist needs at least one model",
+        "variosModelos": "Several models"
       },
       "sinChecklist": "No checklist yet",
       "clCount_one": "checklist",
@@ -3057,8 +3060,9 @@
         "empty": "No custom fields to show yet."
       },
       "checklist": {
-        "notice": "The type's checklist is managed in the configuration area.",
-        "empty": "No checklist to show yet."
+        "notice": "The checklists of every element type are managed from the dedicated <0>CHECKLISTS</0> section.",
+        "empty": "No checklist to show yet.",
+        "vacio": "No checkpoints yet."
       },
       "cols": {
         "familia": "Family",
@@ -3109,7 +3113,12 @@
       "familiaTodas": "All",
       "filtrarFamilia": "Filter by family",
       "filtrarNormas": "Filter by standard",
-      "normasTodas": "All"
+      "normasTodas": "All",
+      "revisionesTitle": "Inspections",
+      "revisionPeriodica": "Periodic inspection - {{n}} months from the last PASSED inspection",
+      "revisionPeriodicaNo": "Periodic inspection - Does not apply",
+      "revisionesNota": "For information. The different inspections and their intervals are managed in the <0>CHARACTERISATION</0> section of the catalogue.",
+      "fechasNota": "For information. These reference date settings are edited on the catalogue <0>CHARACTERISATION</0> screen."
     },
     "parametros": {
       "grupoMarca": "Brand and language",
@@ -3317,6 +3326,68 @@
           "ambas": "Both"
         },
         "hint": "Applies to the whole application: lists, records and reports. A standard with no national designation is written with the EN one, and in reports the national one is that of the site's country. You can search by either."
+      },
+      "grupoRevisiones": "Inspection parameters",
+      "revisiones": {
+        "meses": "months",
+        "desde": "from",
+        "tipoPlaceholder": "Choose element type…",
+        "periodica": {
+          "title": "Periodic inspection",
+          "desc": "Applies to every element type with the same interval, except for the exceptions you set.",
+          "periodicidad": "Default interval",
+          "periodicidadAria": "Default interval (months)",
+          "hayExcep": "Any exceptions?",
+          "hayExcepAria": "Any exceptions to the periodic inspection?",
+          "colTipo": "Element type",
+          "colAplica": "Applies",
+          "colPeriodicidad": "Interval",
+          "noAplica": "Periodic inspection does not apply",
+          "addExcep": "Add exception",
+          "quitar": "Remove exception",
+          "excepcion": "exception",
+          "aplicaAria": "Periodic inspection applies · {{tipo}}",
+          "mesesAria": "Interval (months) · {{tipo}}"
+        },
+        "adicionales": {
+          "title": "Additional inspections",
+          "desc": "Specific inspections with their own type and validity, which only apply to certain element types.",
+          "nombrePlaceholder": "Inspection name…",
+          "nombreAria": "Additional inspection name",
+          "cubre": "Covers the periodic inspection",
+          "resumen_one": "{{count}} type",
+          "resumen_other": "{{count}} types",
+          "activa": "Active",
+          "inactiva": "Inactive",
+          "usar": "Use {{nombre}}",
+          "eliminar": "Delete inspection",
+          "protegida": "Comes with the application: it cannot be deleted, but it can be switched off.",
+          "enUso": "Already in use (inspections, checklists or models): it cannot be deleted, but it can be switched off.",
+          "plegar": "Collapse",
+          "desplegar": "Expand",
+          "col": {
+            "seUsaEn": "Used on",
+            "primera": "First inspection",
+            "respectoA": "Counted from",
+            "siguientes": "Then every"
+          },
+          "quitarTipo": "Remove element type",
+          "sinTipos": "Not assigned to any element type.",
+          "addTipo": "Add element type",
+          "add": "Add additional inspection",
+          "nueva": "new inspection",
+          "tipoNuevo": "new type"
+        },
+        "agrupacion": {
+          "title": "Checklist grouping",
+          "desc": "Decide whether the checkpoints of each checklist are split into groups.",
+          "opciones": "Options",
+          "aria": "Checkpoint grouping",
+          "grupos": "Show checkpoints by group",
+          "gruposSub": "Checkpoints are split into 3 groups: visual, functional and documentary.",
+          "lista": "Do not split checkpoints into groups",
+          "listaSub": "All checkpoints are shown as a single list in the checklist."
+        }
       }
     },
     "caracterizacion": {
@@ -5849,9 +5920,9 @@
     "otras": "Other inspections",
     "nombre": {
       "periodica": "Periodic inspection",
-      "ensayo_testigo": "Test sample test",
-      "ensayo_extraccion": "Pull-out test",
-      "centro_autorizado": "Authorised service centre inspection"
+      "ensayo_testigo": "Test sample testing",
+      "ensayo_extraccion": "Static anchor test",
+      "en_profundidad": "In-depth inspection"
     },
     "desde": {
       "fabricacion": "manufacture",

@@ -2809,7 +2809,9 @@
         "nSug_other": "{{count}} checkpoints sugeridos",
         "noSugFor": "no hay checkpoints sugeribles para {{normas}}",
         "manualTitle": "Crear checklist manualmente",
-        "manualDesc": "Empiezas en blanco: añades tus propios checkpoints uno a uno."
+        "manualDesc": "Empiezas en blanco: añades tus propios checkpoints uno a uno.",
+        "iaPeriodica": "El checklist generado automáticamente es siempre de tipo REVISIÓN PERIÓDICA.",
+        "tipoACrear": "Tipo de checklist a crear"
       },
       "pick": {
         "q": "Selecciona un tipo de elemento",
@@ -2903,7 +2905,8 @@
         "masModelos": "+{{count}} más",
         "elegirModelos": "Elegir modelos",
         "editarModelos": "Editar modelos",
-        "modelosRequeridos": "El checklist necesita al menos un modelo"
+        "modelosRequeridos": "El checklist necesita al menos un modelo",
+        "variosModelos": "Varios modelos"
       },
       "sinChecklist": "Sin checklist todavía",
       "clCount_one": "checklist",
@@ -3057,8 +3060,9 @@
         "empty": "Aún no hay campos personalizados que mostrar."
       },
       "checklist": {
-        "notice": "El checklist del tipo se gestiona en el área de configuración.",
-        "empty": "Aún no hay checklist que mostrar."
+        "notice": "Los checklists de todos los tipos de elementos se gestionan desde la sección específica de <0>CHECKLISTS</0>.",
+        "empty": "Aún no hay checklist que mostrar.",
+        "vacio": "Sin checkpoints todavía."
       },
       "cols": {
         "familia": "Familia",
@@ -3109,7 +3113,12 @@
       "familiaTodas": "Todas",
       "filtrarFamilia": "Filtrar por familia",
       "filtrarNormas": "Filtrar por norma",
-      "normasTodas": "Todas"
+      "normasTodas": "Todas",
+      "revisionesTitle": "Revisiones",
+      "revisionPeriodica": "Revisión periódica - {{n}} meses desde última revisión APTA",
+      "revisionPeriodicaNo": "Revisión periódica - No se le aplica",
+      "revisionesNota": "Informativo. Las diferentes revisiones y su periodicidad se gestionan en la sección de <0>CARACTERIZACIÓN</0> del catálogo.",
+      "fechasNota": "Dato informativo. Estos parámetros de fechas de referencia se editan en la pantalla de <0>CARACTERIZACIÓN</0> del catálogo."
     },
     "parametros": {
       "grupoMarca": "Marca e idioma",
@@ -3317,6 +3326,68 @@
           "ambas": "Ambas"
         },
         "hint": "Vale para toda la aplicación: listados, fichas e informes. Una norma sin designación nacional se escribe con la EN, y en los informes la nacional es la del país de la obra. Se busca por las dos."
+      },
+      "grupoRevisiones": "Parámetros de revisiones",
+      "revisiones": {
+        "meses": "meses",
+        "desde": "desde",
+        "tipoPlaceholder": "Elige tipo de elemento…",
+        "periodica": {
+          "title": "Revisión periódica",
+          "desc": "Se aplica a todos los tipos de elementos con la misma periodicidad, salvo las excepciones que indiques.",
+          "periodicidad": "Periodicidad por defecto",
+          "periodicidadAria": "Periodicidad por defecto (meses)",
+          "hayExcep": "¿Hay excepciones?",
+          "hayExcepAria": "¿Hay excepciones a la revisión periódica?",
+          "colTipo": "Tipo de elemento",
+          "colAplica": "Aplica",
+          "colPeriodicidad": "Periodicidad",
+          "noAplica": "No se le aplica la revisión periódica",
+          "addExcep": "Añadir excepción",
+          "quitar": "Quitar excepción",
+          "excepcion": "excepción",
+          "aplicaAria": "Se le aplica la revisión periódica · {{tipo}}",
+          "mesesAria": "Periodicidad (meses) · {{tipo}}"
+        },
+        "adicionales": {
+          "title": "Revisiones adicionales",
+          "desc": "Revisiones específicas de diferentes tipologías y rangos de validez, que solo aplican a determinados tipos de elementos.",
+          "nombrePlaceholder": "Nombre de la revisión…",
+          "nombreAria": "Nombre de la revisión adicional",
+          "cubre": "Cubre la revisión periódica",
+          "resumen_one": "{{count}} tipo",
+          "resumen_other": "{{count}} tipos",
+          "activa": "Activa",
+          "inactiva": "Inactiva",
+          "usar": "Usar {{nombre}}",
+          "eliminar": "Eliminar revisión",
+          "protegida": "Viene con la aplicación: no se puede eliminar, pero sí apagar.",
+          "enUso": "Ya se usa (revisiones, checklists o modelos): no se puede eliminar, pero sí apagar.",
+          "plegar": "Plegar",
+          "desplegar": "Desplegar",
+          "col": {
+            "seUsaEn": "Se usa en",
+            "primera": "Primera revisión",
+            "respectoA": "Respecto a",
+            "siguientes": "Siguientes cada"
+          },
+          "quitarTipo": "Quitar tipo de elemento",
+          "sinTipos": "Sin asignar a ningún tipo de elemento.",
+          "addTipo": "Añadir tipo de elemento",
+          "add": "Añadir revisión adicional",
+          "nueva": "revisión nueva",
+          "tipoNuevo": "tipo nuevo"
+        },
+        "agrupacion": {
+          "title": "Agrupación de los checklists",
+          "desc": "Decide si los checkpoints de cada checklist se reparten o no en grupos.",
+          "opciones": "Opciones",
+          "aria": "Agrupación de los checkpoints",
+          "grupos": "Mostrar los checkpoints por grupos",
+          "gruposSub": "Los checkpoints se distribuyen en 3 grupos: visual, funcional y documental.",
+          "lista": "No distribuir los checkpoints por grupos",
+          "listaSub": "Todos los checkpoints se mostrarán como una lista única en el checklist."
+        }
       }
     },
     "caracterizacion": {
@@ -5849,9 +5920,9 @@
     "otras": "Otras revisiones",
     "nombre": {
       "periodica": "Revisión periódica",
-      "ensayo_testigo": "Ensayo de testigo",
-      "ensayo_extraccion": "Ensayo de extracción",
-      "centro_autorizado": "Revisión en centro autorizado"
+      "ensayo_testigo": "Ensayo de testigos",
+      "ensayo_extraccion": "Ensayo estático de anclajes",
+      "en_profundidad": "Revisión en profundidad"
     },
     "desde": {
       "fabricacion": "fabricación",

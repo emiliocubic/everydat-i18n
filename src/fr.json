@@ -2712,7 +2712,9 @@
         "nSug_other": "{{count}} points de contrôle suggérés",
         "noSugFor": "aucun point de contrôle suggérable pour {{normas}}",
         "manualTitle": "Créer la checklist manuellement",
-        "manualDesc": "Partez de zéro : ajoutez vos propres points de contrôle un à un."
+        "manualDesc": "Partez de zéro : ajoutez vos propres points de contrôle un à un.",
+        "iaPeriodica": "La checklist générée automatiquement est toujours de type VÉRIFICATION PÉRIODIQUE.",
+        "tipoACrear": "Type de checklist à créer"
       },
       "pick": {
         "q": "Sélectionnez un type d'élément",
@@ -2806,7 +2808,8 @@
         "masModelos": "+{{count}} de plus",
         "elegirModelos": "Choisir des modèles",
         "editarModelos": "Modifier les modèles",
-        "modelosRequeridos": "La checklist a besoin d'au moins un modèle"
+        "modelosRequeridos": "La checklist a besoin d'au moins un modèle",
+        "variosModelos": "Plusieurs modèles"
       },
       "sinChecklist": "Pas encore de checklist",
       "clCount_one": "checklist",
@@ -2960,8 +2963,9 @@
         "empty": "Aucun champ personnalisé à afficher pour l'instant."
       },
       "checklist": {
-        "notice": "La checklist du type se gère dans la zone de configuration.",
-        "empty": "Aucune checklist à afficher pour l'instant."
+        "notice": "Les checklists de tous les types d'éléments se gèrent depuis la section dédiée <0>CHECKLISTS</0>.",
+        "empty": "Aucune checklist à afficher pour l'instant.",
+        "vacio": "Aucun point de contrôle pour l'instant."
       },
       "cols": {
         "familia": "Famille",
@@ -3012,7 +3016,12 @@
       "familiaTodas": "Toutes",
       "filtrarFamilia": "Filtrer par famille",
       "filtrarNormas": "Filtrer par norme",
-      "normasTodas": "Toutes"
+      "normasTodas": "Toutes",
+      "revisionesTitle": "Vérifications",
+      "revisionPeriodica": "Vérification périodique - {{n}} mois depuis la dernière vérification APTE",
+      "revisionPeriodicaNo": "Vérification périodique - Ne s'applique pas",
+      "revisionesNota": "Pour information. Les différentes vérifications et leur périodicité se gèrent dans la section <0>CARACTÉRISATION</0> du catalogue.",
+      "fechasNota": "Pour information. Ces paramètres de dates de référence se modifient dans l'écran <0>CARACTÉRISATION</0> du catalogue."
     },
     "parametros": {
       "grupoMarca": "Marque et langue",
@@ -3209,6 +3218,68 @@
           "ambas": "Les deux"
         },
         "hint": "S'applique à toute l'application : listes, fiches et rapports. Une norme sans désignation nationale s'écrit avec l'EN, et dans les rapports la nationale est celle du pays du chantier. On recherche par les deux."
+      },
+      "grupoRevisiones": "Paramètres des vérifications",
+      "revisiones": {
+        "meses": "mois",
+        "desde": "à partir de",
+        "tipoPlaceholder": "Choisissez un type d'élément…",
+        "periodica": {
+          "title": "Vérification périodique",
+          "desc": "S'applique à tous les types d'éléments avec la même périodicité, sauf les exceptions indiquées.",
+          "periodicidad": "Périodicité par défaut",
+          "periodicidadAria": "Périodicité par défaut (mois)",
+          "hayExcep": "Y a-t-il des exceptions ?",
+          "hayExcepAria": "Y a-t-il des exceptions à la vérification périodique ?",
+          "colTipo": "Type d'élément",
+          "colAplica": "S'applique",
+          "colPeriodicidad": "Périodicité",
+          "noAplica": "La vérification périodique ne s'applique pas",
+          "addExcep": "Ajouter une exception",
+          "quitar": "Retirer l'exception",
+          "excepcion": "exception",
+          "aplicaAria": "La vérification périodique s'applique · {{tipo}}",
+          "mesesAria": "Périodicité (mois) · {{tipo}}"
+        },
+        "adicionales": {
+          "title": "Vérifications supplémentaires",
+          "desc": "Vérifications spécifiques, de types et de validités différents, qui ne s'appliquent qu'à certains types d'éléments.",
+          "nombrePlaceholder": "Nom de la vérification…",
+          "nombreAria": "Nom de la vérification supplémentaire",
+          "cubre": "Couvre la vérification périodique",
+          "resumen_one": "{{count}} type",
+          "resumen_other": "{{count}} types",
+          "activa": "Active",
+          "inactiva": "Inactive",
+          "usar": "Utiliser {{nombre}}",
+          "eliminar": "Supprimer la vérification",
+          "protegida": "Fournie avec l'application : elle ne peut pas être supprimée, mais elle peut être désactivée.",
+          "enUso": "Déjà utilisée (vérifications, checklists ou modèles) : elle ne peut pas être supprimée, mais elle peut être désactivée.",
+          "plegar": "Replier",
+          "desplegar": "Déplier",
+          "col": {
+            "seUsaEn": "Utilisée sur",
+            "primera": "Première vérification",
+            "respectoA": "À compter de",
+            "siguientes": "Puis tous les"
+          },
+          "quitarTipo": "Retirer le type d'élément",
+          "sinTipos": "Affectée à aucun type d'élément.",
+          "addTipo": "Ajouter un type d'élément",
+          "add": "Ajouter une vérification supplémentaire",
+          "nueva": "nouvelle vérification",
+          "tipoNuevo": "nouveau type"
+        },
+        "agrupacion": {
+          "title": "Regroupement des checklists",
+          "desc": "Décidez si les points de contrôle de chaque checklist sont répartis en groupes.",
+          "opciones": "Options",
+          "aria": "Regroupement des points de contrôle",
+          "grupos": "Afficher les points de contrôle par groupes",
+          "gruposSub": "Les points de contrôle sont répartis en 3 groupes : visuel, fonctionnel et documentaire.",
+          "lista": "Ne pas répartir les points de contrôle en groupes",
+          "listaSub": "Tous les points de contrôle s'affichent dans une liste unique."
+        }
       }
     },
     "caracterizacion": {
@@ -5279,9 +5350,9 @@
     "otras": "Autres inspections",
     "nombre": {
       "periodica": "Inspection périodique",
-      "ensayo_testigo": "Essai de maille témoin",
-      "ensayo_extraccion": "Essai d’arrachement",
-      "centro_autorizado": "Révision en centre agréé"
+      "ensayo_testigo": "Essai des témoins",
+      "ensayo_extraccion": "Essai statique des ancrages",
+      "en_profundidad": "Vérification approfondie"
     },
     "desde": {
       "fabricacion": "fabrication",
