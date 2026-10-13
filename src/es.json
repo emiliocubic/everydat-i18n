@@ -1414,7 +1414,7 @@
       "pais": "País",
       "cp": "Código postal",
       "direccion": "Dirección",
-      "codigo": "Mi código",
+      "codigo": "Código",
       "elementos": "Elementos de seguridad",
       "elementosTitle": "N.º total de elementos de seguridad",
       "incidencias": "Incidencias",
@@ -1625,10 +1625,10 @@
       "caducada": "Caducada",
       "proyectos": "Proyectos",
       "sinProyectos": "Ninguno abierto"
-    }
     },
     "fichaCliente": {
       "nuevo": "Nuevo emplazamiento"
+    }
   },
   "localizaciones": {
     "tree": "Árbol de localizaciones",
@@ -2101,7 +2101,9 @@
         "elementos": "Nº de elementos",
         "repo": "Repositorio sectorial",
         "repoShort": "REPO",
-        "repoTitle": "Repositorio sectorial — este modelo salió del repositorio"
+        "repoTitle": "Repositorio sectorial — este modelo salió del repositorio",
+        "codigo": "Código",
+        "estructura": "Estructura"
       },
       "importar": {
         "title": "Importar del repositorio sectorial",
@@ -2127,7 +2129,16 @@
         "caracterizacion": "Rige la caracterización de «{{to}}»: validez de revisiones, fechas y documentación. Lo que definía «{{from}}» deja de aplicarse.",
         "note": "«{{from}}» dejará de existir: sus referencias —y los {{n}} elementos que cuelgan de ellas— pasan a «{{to}}». Esta acción no se puede deshacer.",
         "confirm": "Fusionar modelos",
-        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
+        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»",
+        "noTitle": "No se pueden unificar",
+        "no": {
+          "mismo": "Es el mismo modelo.",
+          "sectorial": "«{{from}}» viene del repositorio sectorial: es el que manda y no se disuelve dentro de otro. Sí puede recibir a un modelo local: arrastra el otro sobre este.",
+          "multicomponente": "Los modelos multicomponente no se unifican: sus elementos llevan piezas y huecos propios de cada modelo.",
+          "fabricante": "Son de fabricantes distintos ({{a}} y {{b}}): unificar a través de fabricantes no sería unificar un duplicado, sería reescribir el catálogo.",
+          "sinTipo": "«{{nombre}}» no tiene tipo de elemento: sin tipo no se sabe si son el mismo modelo escrito de dos maneras.",
+          "tipo": "Son de tipos de elemento distintos ({{a}} y {{b}}): solo se unifican modelos del mismo tipo."
+        }
       },
       "sinEspecificar": "Sin especificar",
       "importBloqueCta": "Importar en bloque",
@@ -2150,7 +2161,13 @@
         "avisoCatalogo": "Datos obtenidos por procedimientos automatizados. Remitirse al soporte oficial del fabricante para la verificación de datos críticos. En ningún caso ni EVERYDAT ni el Fabricante garantizan la información, verificar en la fuente oficial.",
         "avisoIa": "Datos obtenidos por procedimientos indirectos, fuentes secundarias y entrenamiento de modelos, sin participación directa del fabricante. Remitirse al soporte oficial para la verificación de datos críticos. En ningún caso EVERYDAT garantiza la información, verificar en la fuente oficial.",
         "fechaRecoleccion": "Fecha de recolección o actualización de estos datos: {{fecha}}"
-      }
+      },
+      "estructura": {
+        "simple": "Simple",
+        "multi": "Multicomponente"
+      },
+      "tiposTodos": "Todos",
+      "tiposN": "{{n}} tipos"
     },
     "modelos": {
       "fabricante": "Fabricante",
@@ -2235,7 +2252,30 @@
             "norma": "de norma",
             "catalogo": "de catálogo",
             "tipo": "del tipo"
-          }
+          },
+          "acotar": "Acotar campos",
+          "acotarSub": "Campos aplicables al modelo y valores viables",
+          "acotarHint": "Pulsa un valor para excluirlo o admitirlo en este modelo. El valor por defecto y su bloqueo se fijan en cada referencia.",
+          "acotarCols": {
+            "uso": "Uso",
+            "campo": "Campo",
+            "obligatorio": "Obligatorio",
+            "valores": "Valores viables"
+          },
+          "oblig": {
+            "segunTipo": "Según tipo ({{v}})",
+            "si": "Sí",
+            "no": "No"
+          },
+          "sinDominio": {
+            "numero": "Número — sin dominio",
+            "texto": "Texto libre — sin dominio",
+            "otro": "{{tipo}} — sin dominio"
+          },
+          "nValores_one": "{{count}} valor",
+          "nValores_other": "{{count}} valores",
+          "nValoresTitle": "Valores posibles: pasa el ratón para verlos",
+          "guardado": "Campos del modelo guardados"
         },
         "referencias": {
           "title": "Referencias",

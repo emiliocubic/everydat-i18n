@@ -1140,7 +1140,9 @@
         "vacio": "Aucun élément de ce dossier ne correspond à l'emplacement. Vous pouvez le créer et l'affecter plus tard depuis la fiche du système.",
         "nSeleccionados_one": "{{count}} élément sélectionné",
         "nSeleccionados_other": "{{count}} éléments sélectionnés",
-        "asignar": "Affecter"
+        "asignar": "Affecter",
+        "fijado": "Modèle fixé",
+        "aviso": "{{fab}} limite la compatibilité aux modèles {{modelos}}. Nous montrons toutefois tous les éléments de marque {{fab}} du même type d'élément disponibles dans le même dossier, au cas où l'un d'eux correspondrait mais aurait été nommé autrement. Il revient au jugement technique de l'utilisateur de les choisir correctement."
       }
     }
   },
@@ -1456,7 +1458,7 @@
       "pais": "Pays",
       "cp": "Code postal",
       "direccion": "Adresse",
-      "codigo": "Mon code",
+      "codigo": "Code",
       "elementos": "Équipements de sécurité",
       "elementosTitle": "Nombre total d'équipements de sécurité",
       "incidencias": "Incidents",
@@ -1656,10 +1658,10 @@
       "caducada": "Expirée",
       "proyectos": "Projets",
       "sinProyectos": "Aucun ouvert"
-    }
     },
     "fichaCliente": {
       "nuevo": "Nouveau site"
+    }
   },
   "localizaciones": {
     "tree": "Arbre des localisations",
@@ -2002,7 +2004,9 @@
         "elementos": "Nb d'éléments",
         "repo": "Référentiel sectoriel",
         "repoShort": "RÉF.",
-        "repoTitle": "Référentiel sectoriel — ce modèle provient du référentiel"
+        "repoTitle": "Référentiel sectoriel — ce modèle provient du référentiel",
+        "codigo": "Code",
+        "estructura": "Structure"
       },
       "importar": {
         "title": "Importer du référentiel sectoriel",
@@ -2028,7 +2032,16 @@
         "caracterizacion": "La caractérisation de « {{to}} » prévaut : validité des vérifications, dates et documentation. Ce que définissait « {{from}} » ne s'applique plus.",
         "note": "« {{from}} » cessera d'exister : ses références — et les {{n}} éléments qui en dépendent — passent à « {{to}} ». Action irréversible.",
         "confirm": "Fusionner les modèles",
-        "done": "« {{from}} » a été fusionné dans « {{to}} »"
+        "done": "« {{from}} » a été fusionné dans « {{to}} »",
+        "noTitle": "Impossible de les unifier",
+        "no": {
+          "mismo": "C'est le même modèle.",
+          "sectorial": "« {{from}} » provient du référentiel sectoriel : il fait foi et ne se dissout jamais dans un autre. Il peut en revanche recevoir un modèle local : faites glisser l'autre dessus.",
+          "multicomponente": "Les modèles multicomposants ne se fusionnent pas : leurs éléments portent des pièces et des emplacements propres à chaque modèle.",
+          "fabricante": "Ils sont de fabricants différents ({{a}} et {{b}}) : fusionner entre fabricants ne serait pas unifier un doublon, ce serait réécrire le catalogue.",
+          "sinTipo": "« {{nombre}} » n'a pas de type d'élément : sans type, impossible de savoir s'il s'agit du même modèle écrit deux fois.",
+          "tipo": "Ils sont de types d'élément différents ({{a}} et {{b}}) : seuls les modèles du même type se fusionnent."
+        }
       },
       "sinEspecificar": "Non précisé",
       "importBloqueCta": "Import en bloc",
@@ -2051,7 +2064,13 @@
         "avisoCatalogo": "Données obtenues par des procédés automatisés. Adressez-vous au support officiel du fabricant pour vérifier les données critiques. En aucun cas ni EVERYDAT ni le Fabricant ne garantissent l'information ; vérifiez-la à la source officielle.",
         "avisoIa": "Données obtenues par des procédés indirects, des sources secondaires et l'entraînement de modèles, sans participation directe du fabricant. Adressez-vous au support officiel pour vérifier les données critiques. En aucun cas EVERYDAT ne garantit l'information ; vérifiez-la à la source officielle.",
         "fechaRecoleccion": "Date de collecte ou de mise à jour de ces données : {{fecha}}"
-      }
+      },
+      "estructura": {
+        "simple": "Simple",
+        "multi": "Multicomposant"
+      },
+      "tiposTodos": "Tous",
+      "tiposN": "{{n}} types"
     },
     "modelos": {
       "fabricante": "Fabricant",
@@ -2136,7 +2155,30 @@
             "norma": "de norme",
             "catalogo": "de catalogue",
             "tipo": "du type"
-          }
+          },
+          "acotar": "Restreindre les champs",
+          "acotarSub": "Champs applicables au modèle et valeurs admissibles",
+          "acotarHint": "Cliquez sur une valeur pour l'exclure ou l'admettre dans ce modèle. La valeur par défaut et son verrouillage se fixent sur chaque référence.",
+          "acotarCols": {
+            "uso": "Usage",
+            "campo": "Champ",
+            "obligatorio": "Obligatoire",
+            "valores": "Valeurs admissibles"
+          },
+          "oblig": {
+            "segunTipo": "Selon le type ({{v}})",
+            "si": "Oui",
+            "no": "Non"
+          },
+          "sinDominio": {
+            "numero": "Nombre — sans domaine",
+            "texto": "Texte libre — sans domaine",
+            "otro": "{{tipo}} — sans domaine"
+          },
+          "nValores_one": "{{count}} valeur",
+          "nValores_other": "{{count}} valeurs",
+          "nValoresTitle": "Valeurs possibles : survolez pour les voir",
+          "guardado": "Champs du modèle enregistrés"
         },
         "referencias": {
           "title": "Références",

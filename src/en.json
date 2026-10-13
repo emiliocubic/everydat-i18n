@@ -1223,7 +1223,9 @@
         "vacio": "No items in this folder fit the slot. You can create it and assign it later from the system's record.",
         "nSeleccionados_one": "{{count}} item selected",
         "nSeleccionados_other": "{{count}} items selected",
-        "asignar": "Assign"
+        "asignar": "Assign",
+        "fijado": "Fixed model",
+        "aviso": "{{fab}} limits compatibility to the models {{modelos}}. However, we show all {{fab}} items of the same item type available in the same folder, in case one of them matches but was named differently. Choosing them properly is left to the user's technical judgement."
       }
     }
   },
@@ -1540,7 +1542,7 @@
       "pais": "Country",
       "cp": "Post code",
       "direccion": "Address",
-      "codigo": "My code",
+      "codigo": "Code",
       "elementos": "Safety equipment",
       "elementosTitle": "Total number of safety items",
       "incidencias": "Issues",
@@ -1751,10 +1753,10 @@
       "caducada": "Expired",
       "proyectos": "Projects",
       "sinProyectos": "None open"
-    }
     },
     "fichaCliente": {
       "nuevo": "New site"
+    }
   },
   "localizaciones": {
     "tree": "Location tree",
@@ -2099,7 +2101,9 @@
         "elementos": "No. of elements",
         "repo": "Industry repository",
         "repoShort": "REPO",
-        "repoTitle": "Industry repository — this model came from the repository"
+        "repoTitle": "Industry repository — this model came from the repository",
+        "codigo": "Code",
+        "estructura": "Structure"
       },
       "importar": {
         "title": "Import from the sector repository",
@@ -2125,7 +2129,16 @@
         "caracterizacion": "The characterisation of “{{to}}” prevails: inspection validity, dates and documentation. Whatever “{{from}}” defined no longer applies.",
         "note": "“{{from}}” will cease to exist: its references — and the {{n}} elements hanging from them — move to “{{to}}”. This cannot be undone.",
         "confirm": "Merge models",
-        "done": "“{{from}}” was merged into “{{to}}”"
+        "done": "“{{from}}” was merged into “{{to}}”",
+        "noTitle": "They cannot be merged",
+        "no": {
+          "mismo": "It is the same model.",
+          "sectorial": "“{{from}}” comes from the sector repository: it takes precedence and is never dissolved into another. It can receive a local model, though: drag the other one onto it.",
+          "multicomponente": "Multi-component models are not merged: their elements carry parts and slots specific to each model.",
+          "fabricante": "They belong to different manufacturers ({{a}} and {{b}}): merging across manufacturers would not be merging a duplicate, it would be rewriting the catalogue.",
+          "sinTipo": "“{{nombre}}” has no element type: without a type there is no way to know whether they are the same model written twice.",
+          "tipo": "They are of different element types ({{a}} and {{b}}): only models of the same type are merged."
+        }
       },
       "sinEspecificar": "Unspecified",
       "importBloqueCta": "Bulk import",
@@ -2148,7 +2161,13 @@
         "avisoCatalogo": "Data obtained by automated procedures. Refer to the manufacturer's official support to verify critical data. Under no circumstances do EVERYDAT or the Manufacturer guarantee the information; verify it at the official source.",
         "avisoIa": "Data obtained by indirect procedures, secondary sources and model training, without the direct involvement of the manufacturer. Refer to the official support to verify critical data. Under no circumstances does EVERYDAT guarantee the information; verify it at the official source.",
         "fechaRecoleccion": "Date these data were collected or updated: {{fecha}}"
-      }
+      },
+      "estructura": {
+        "simple": "Simple",
+        "multi": "Multi-component"
+      },
+      "tiposTodos": "All",
+      "tiposN": "{{n}} types"
     },
     "modelos": {
       "fabricante": "Manufacturer",
@@ -2233,7 +2252,30 @@
             "norma": "from standard",
             "catalogo": "from catalogue",
             "tipo": "from type"
-          }
+          },
+          "acotar": "Narrow fields",
+          "acotarSub": "Fields applicable to the model and viable values",
+          "acotarHint": "Click a value to exclude or admit it in this model. The default value and its lock are set on each reference.",
+          "acotarCols": {
+            "uso": "Use",
+            "campo": "Field",
+            "obligatorio": "Required",
+            "valores": "Viable values"
+          },
+          "oblig": {
+            "segunTipo": "Per type ({{v}})",
+            "si": "Yes",
+            "no": "No"
+          },
+          "sinDominio": {
+            "numero": "Number — no domain",
+            "texto": "Free text — no domain",
+            "otro": "{{tipo}} — no domain"
+          },
+          "nValores_one": "{{count}} value",
+          "nValores_other": "{{count}} values",
+          "nValoresTitle": "Possible values: hover to see them",
+          "guardado": "Model fields saved"
         },
         "referencias": {
           "title": "References",
