@@ -2798,16 +2798,19 @@
       "nombrePlaceholder": "p. ex. Petzl",
       "sectorialNote": "Ce fabricant provient du référentiel sectoriel : son nom y est maintenu et ne peut être ni modifié ni supprimé ici.",
       "cols": {
-        "nombre": "Fabricant",
+        "nombre": "Fabricant / Marque",
         "repo": "Référentiel sectoriel",
         "repoShort": "RÉF.",
         "repoTitle": "Référentiel sectoriel — ce fabricant a une fiche dans le référentiel",
         "modelos": "Nb de modèles",
-        "elementos": "Nb d'éléments"
+        "elementos": "Nb d'éléments",
+        "origen": "Provenance",
+        "valores": "Valeurs des champs personnalisés"
       },
       "field": {
         "nombre": "Nom",
-        "repositorio": "Référentiel sectoriel"
+        "repositorio": "Référentiel sectoriel",
+        "elementos": "Nb d'éléments"
       },
       "origen": {
         "local": "Fabricant propre",
@@ -2831,7 +2834,25 @@
         "note": "« {{from}} » cessera d’exister : ses modèles —et les {{n}} éléments du parc qui en dépendent— passent à « {{to}} ». Irréversible.",
         "confirm": "Fusionner les fabricants",
         "done": "« {{from}} » a été fusionné dans « {{to}} »"
-      }
+      },
+      "nivel": {
+        "catalogo": "Catalogue disponible",
+        "ia": "Assisté par IA",
+        "manual": "Saisie manuelle uniquement",
+        "repo": "Fiche dans le référentiel",
+        "catalogoTitle": "Catalogue disponible : les modèles se créent depuis le catalogue officiel du fabricant",
+        "iaTitle": "Assisté par IA : le fabricant est dans le référentiel sans accord signé"
+      },
+      "escalas": {
+        "title": "Échelles par fabricant",
+        "hint": "Cochez les valeurs que propose cette marque. Les nouvelles valeurs s'ajoutent à sa propre liste ; sans aucune valeur cochée, le champ prend les valeurs par défaut du type d'élément.",
+        "sinValores": "Pas encore de valeurs",
+        "addPlaceholder": "Ajouter une valeur…",
+        "add": "Ajouter une valeur",
+        "ninguno": "Aucun champ personnalisé n'admet de valeurs par marque.",
+        "predeterminados": "Valeurs par défaut du type"
+      },
+      "detail": "Détail"
     },
     "tipos": {
       "created": "Type créé",

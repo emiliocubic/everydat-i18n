@@ -2895,16 +2895,19 @@
       "nombrePlaceholder": "p. ej. Petzl",
       "sectorialNote": "Este fabricante viene del repositorio sectorial: su nombre se mantiene desde allí y no se edita ni se borra aquí.",
       "cols": {
-        "nombre": "Fabricante",
+        "nombre": "Fabricante / Marca",
         "repo": "Repositorio sectorial",
         "repoShort": "REPO",
         "repoTitle": "Repositorio sectorial — hay ficha de este fabricante en el repositorio",
         "modelos": "Nº de modelos",
-        "elementos": "Nº de elementos"
+        "elementos": "Nº de elementos",
+        "origen": "Procedencia",
+        "valores": "Valores de campos personalizados"
       },
       "field": {
         "nombre": "Nombre",
-        "repositorio": "Repositorio sectorial"
+        "repositorio": "Repositorio sectorial",
+        "elementos": "Nº de elementos"
       },
       "origen": {
         "local": "Fabricante propio",
@@ -2928,7 +2931,25 @@
         "note": "«{{from}}» dejará de existir: sus modelos —y los {{n}} elementos del parque que cuelgan de ellos— pasan a «{{to}}». Esta acción no se puede deshacer.",
         "confirm": "Fusionar fabricantes",
         "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
-      }
+      },
+      "nivel": {
+        "catalogo": "Catálogo disponible",
+        "ia": "Asistido por IA",
+        "manual": "Solo alta manual",
+        "repo": "Con ficha en el repositorio",
+        "catalogoTitle": "Catálogo disponible: los modelos se dan de alta desde el catálogo oficial del fabricante",
+        "iaTitle": "Asistido por IA: el fabricante está en el repositorio sin acuerdo firmado"
+      },
+      "escalas": {
+        "title": "Escalas por fabricante",
+        "hint": "Marca los valores que ofrece esta marca. Los valores nuevos se añaden a su lista propia; sin ninguno marcado, el campo toma los valores predeterminados del tipo de elemento.",
+        "sinValores": "Sin valores todavía",
+        "addPlaceholder": "Añadir valor…",
+        "add": "Añadir valor",
+        "ninguno": "Ningún campo personalizado admite valores por marca.",
+        "predeterminados": "Predeterminados del tipo"
+      },
+      "detail": "Detalle"
     },
     "tipos": {
       "created": "Tipo creado",

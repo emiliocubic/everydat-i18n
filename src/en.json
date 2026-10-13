@@ -2895,16 +2895,19 @@
       "nombrePlaceholder": "e.g. Petzl",
       "sectorialNote": "This manufacturer comes from the industry repository: its name is maintained there and cannot be edited or deleted here.",
       "cols": {
-        "nombre": "Manufacturer",
+        "nombre": "Manufacturer / Brand",
         "repo": "Industry repository",
         "repoShort": "REPO",
         "repoTitle": "Industry repository — this manufacturer has a record in the repository",
         "modelos": "No. of models",
-        "elementos": "No. of elements"
+        "elementos": "No. of elements",
+        "origen": "Source",
+        "valores": "Custom field values"
       },
       "field": {
         "nombre": "Name",
-        "repositorio": "Industry repository"
+        "repositorio": "Industry repository",
+        "elementos": "No. of elements"
       },
       "origen": {
         "local": "Own manufacturer",
@@ -2928,7 +2931,25 @@
         "note": "«{{from}}» will cease to exist: its models —and the {{n}} fleet items hanging from them— move to «{{to}}». This cannot be undone.",
         "confirm": "Merge manufacturers",
         "done": "«{{from}}» has been merged into «{{to}}»"
-      }
+      },
+      "nivel": {
+        "catalogo": "Catalogue available",
+        "ia": "AI assisted",
+        "manual": "Manual entry only",
+        "repo": "Listed in the repository",
+        "catalogoTitle": "Catalogue available: models are created from the manufacturer's official catalogue",
+        "iaTitle": "AI assisted: the manufacturer is in the repository without a signed agreement"
+      },
+      "escalas": {
+        "title": "Manufacturer scales",
+        "hint": "Tick the values this brand offers. New values are added to its own list; with none ticked, the field takes the element type's default values.",
+        "sinValores": "No values yet",
+        "addPlaceholder": "Add value…",
+        "add": "Add value",
+        "ninguno": "No custom field allows values per brand.",
+        "predeterminados": "Type defaults"
+      },
+      "detail": "Details"
     },
     "tipos": {
       "created": "Type created",
