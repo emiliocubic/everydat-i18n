@@ -1621,10 +1621,15 @@
         "elemento": "Élément",
         "codigo": "Code",
         "localizacion": "Emplacement",
-        "proxRevision": "Proch. contrôle"
+        "proxRevision": "Proch. contrôle",
+        "revision": "Inspection",
+        "reparacion": "Réparation",
+        "tipRevision": "À inspecter",
+        "tipReparacion": "À réparer"
       },
       "quitar": "Retirer du panier",
       "quitarEquipo": "Retirer {{equipo}}",
+      "sinMarca": "Cochez inspection, réparation ou les deux pour chaque équipement.",
       "pie": "Un projet de contrôle est créé déjà en cours, sans proposition ni devis.",
       "vaciar": "Vider le panier",
       "crear": "Créer le projet de contrôle",
@@ -3769,6 +3774,10 @@
       "colRevision": "Inspection",
       "abrirRevision": "Ouvrir l'inspection",
       "registrarRevision": "Enregistrer l'inspection",
+      "colReparacion": "Réparation",
+      "aReparar": "À réparer",
+      "reparado": "Réparé",
+      "noSeRevisa": "Non inspecté",
       "parado": "Arrêté depuis le {{fecha}} ({{count}} jour).",
       "parado_other": "Arrêté depuis le {{fecha}} ({{count}} jours)."
     },

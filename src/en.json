@@ -1716,10 +1716,15 @@
         "elemento": "Item",
         "codigo": "Code",
         "localizacion": "Location",
-        "proxRevision": "Next inspection"
+        "proxRevision": "Next inspection",
+        "revision": "Inspection",
+        "reparacion": "Repair",
+        "tipRevision": "To be inspected",
+        "tipReparacion": "To be repaired"
       },
       "quitar": "Remove from the basket",
       "quitarEquipo": "Remove {{equipo}}",
+      "sinMarca": "Tick inspection, repair or both for every item.",
       "pie": "An inspection project is created already in progress, with no proposal or quote.",
       "vaciar": "Empty basket",
       "crear": "Create inspection project",
@@ -3881,6 +3886,10 @@
       "colRevision": "Inspection",
       "abrirRevision": "Open the inspection",
       "registrarRevision": "Record the inspection",
+      "colReparacion": "Repair",
+      "aReparar": "To repair",
+      "reparado": "Repaired",
+      "noSeRevisa": "Not inspected",
       "parado": "Stopped since {{fecha}} ({{count}} day).",
       "parado_other": "Stopped since {{fecha}} ({{count}} days)."
     },

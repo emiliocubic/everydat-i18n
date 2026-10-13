@@ -1588,10 +1588,15 @@
         "elemento": "Elemento",
         "codigo": "Código",
         "localizacion": "Localización",
-        "proxRevision": "Próx. revisión"
+        "proxRevision": "Próx. revisión",
+        "revision": "Revisión",
+        "reparacion": "Reparación",
+        "tipRevision": "Se revisa",
+        "tipReparacion": "Se repara"
       },
       "quitar": "Quitar de la cesta",
       "quitarEquipo": "Quitar {{equipo}}",
+      "sinMarca": "Marca revisión, reparación o las dos en cada equipo.",
       "pie": "Se crea un proyecto de revisión ya en curso, sin propuesta ni presupuesto.",
       "vaciar": "Vaciar cesta",
       "crear": "Crear proyecto de revisión",
@@ -3881,6 +3886,10 @@
       "colRevision": "Revisión",
       "abrirRevision": "Abrir la revisión",
       "registrarRevision": "Registrar la revisión",
+      "colReparacion": "Reparación",
+      "aReparar": "A reparar",
+      "reparado": "Reparado",
+      "noSeRevisa": "No se revisa",
       "parado": "Parado desde el {{fecha}} ({{count}} día).",
       "parado_other": "Parado desde el {{fecha}} ({{count}} días)."
     },
