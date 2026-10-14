@@ -1736,7 +1736,7 @@
       "planTituloProyecto": "Zones de cette visite",
       "planTodo": "Tout le site",
       "planCiertas": "Certaines zones",
-      "planSoloFuera": "Le site seulement (les zones avec leur propre date la conservent)",
+      "planSoloFuera": "Tout le site sauf les zones",
       "planSubzona": "sous-zone",
       "planSinZonas": "Aucune zone sélectionnée",
       "planZonasSel": "{{count}} zone sélectionnée",
@@ -2928,7 +2928,8 @@
         "familia": "Famille",
         "nombre": "Nom du type",
         "validez": "Validité des inspections",
-        "normas": "Normes"
+        "normas": "Normes",
+        "epi": "Est un EPI"
       },
       "nombrePlaceholder": "p. ex. Harnais antichute",
       "validezUnit": "mois depuis la dernière inspection CONFORME",
@@ -2993,7 +2994,9 @@
         "added": "Famille créée",
         "deleted": "Famille supprimée",
         "confirmDelete": "Supprimer la famille « {{nombre}} » ?",
-        "cantDelete": "Suppression impossible : contient des types"
+        "cantDelete": "Suppression impossible : contient des types",
+        "epi": "Tous ses types sont des EPI",
+        "epiAlgunos": "Seuls certains de ses types sont des EPI : en la cochant, ils le deviennent tous"
       },
       "merge": {
         "handle": "Faire glisser sur un autre type pour les unifier",
@@ -3023,7 +3026,8 @@
       "revisionPeriodica": "Vérification périodique - {{n}} mois depuis la dernière vérification APTE",
       "revisionPeriodicaNo": "Vérification périodique - Ne s'applique pas",
       "revisionesNota": "Pour information. Les différentes vérifications et leur périodicité se gèrent dans la section <0>CARACTÉRISATION</0> du catalogue.",
-      "fechasNota": "Pour information. Ces paramètres de dates de référence se modifient dans l'écran <0>CARACTÉRISATION</0> du catalogue."
+      "fechasNota": "Pour information. Ces paramètres de dates de référence se modifient dans l'écran <0>CARACTÉRISATION</0> du catalogue.",
+      "epiAviso": "Les EPI ne s'installent pas : à l'enregistrement, la date d'installation sera retirée de ce type. Les équipements qui l'ont déjà la conservent, mais elle n'est plus affichée ni utilisée."
     },
     "parametros": {
       "grupoMarca": "Marque et langue",
@@ -3122,7 +3126,8 @@
         },
         "personalizar": "Personnalisez les dates à utiliser par familles et/ou par types d'élément",
         "vidaUtilLbl": "Calcul de la durée de vie :",
-        "vidaUtilAyuda": "vous pouvez fixer des années de durée de vie pour les types d'éléments soumis à péremption, à partir de différentes dates significatives. Si des délais sont fixés à partir de plusieurs dates, le système applique toujours le plus restrictif. Ces délais peuvent aussi être fixés au niveau des modèles d'éléments, et ce qui est fixé sur le modèle a toujours la priorité : ce qui est fixé ici ne s'applique que lorsque les modèles du type concerné n'ont aucun critère propre."
+        "vidaUtilAyuda": "vous pouvez fixer des années de durée de vie pour les types d'éléments soumis à péremption, à partir de différentes dates significatives. Si des délais sont fixés à partir de plusieurs dates, le système applique toujours le plus restrictif. Ces délais peuvent aussi être fixés au niveau des modèles d'éléments, et ce qui est fixé sur le modèle a toujours la priorité : ce qui est fixé ici ne s'applique que lorsque les modèles du type concerné n'ont aucun critère propre.",
+        "epiNoInstala": "Les EPI ne s'installent pas"
       },
       "grupoProyectos": "Projets",
       "certificacion": {

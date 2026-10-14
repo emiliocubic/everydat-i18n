@@ -1832,7 +1832,7 @@
       "planTituloProyecto": "Zones in this visit",
       "planTodo": "Whole site",
       "planCiertas": "Some zones",
-      "planSoloFuera": "The site only (zones with their own date keep it)",
+      "planSoloFuera": "The whole site except the zones",
       "planSubzona": "sub-zone",
       "planSinZonas": "No zones selected",
       "planZonasSel": "{{count}} zone selected",
@@ -3025,7 +3025,8 @@
         "familia": "Family",
         "nombre": "Type name",
         "validez": "Inspection validity",
-        "normas": "Standards"
+        "normas": "Standards",
+        "epi": "Is PPE"
       },
       "nombrePlaceholder": "e.g. Fall-arrest harness",
       "validezUnit": "months since last PASS inspection",
@@ -3090,7 +3091,9 @@
         "added": "Family created",
         "deleted": "Family deleted",
         "confirmDelete": "Delete family “{{nombre}}”?",
-        "cantDelete": "Cannot delete: has types"
+        "cantDelete": "Cannot delete: has types",
+        "epi": "All its types are PPE",
+        "epiAlgunos": "Only some of its types are PPE: ticking it makes all of them PPE"
       },
       "merge": {
         "handle": "Drag onto another type to merge them",
@@ -3120,7 +3123,8 @@
       "revisionPeriodica": "Periodic inspection - {{n}} months from the last PASSED inspection",
       "revisionPeriodicaNo": "Periodic inspection - Does not apply",
       "revisionesNota": "For information. The different inspections and their intervals are managed in the <0>CHARACTERISATION</0> section of the catalogue.",
-      "fechasNota": "For information. These reference date settings are edited on the catalogue <0>CHARACTERISATION</0> screen."
+      "fechasNota": "For information. These reference date settings are edited on the catalogue <0>CHARACTERISATION</0> screen.",
+      "epiAviso": "PPE is not installed: saving will remove the installation date from this type. Equipment that already has one keeps it, but it is no longer shown or used."
     },
     "parametros": {
       "grupoMarca": "Brand and language",
@@ -3219,7 +3223,8 @@
         },
         "personalizar": "Customise the dates to use by family and/or by element type",
         "vidaUtilLbl": "Use for service life calculation:",
-        "vidaUtilAyuda": "you can set years of service life for element types that expire, counted from different significant dates. If periods are set from several significant dates, the system always applies the most restrictive one. Periods from significant dates can also be set on element models, and what is set on the model always takes precedence: what is set here only applies when the specific models of that type have no criterion of their own."
+        "vidaUtilAyuda": "you can set years of service life for element types that expire, counted from different significant dates. If periods are set from several significant dates, the system always applies the most restrictive one. Periods from significant dates can also be set on element models, and what is set on the model always takes precedence: what is set here only applies when the specific models of that type have no criterion of their own.",
+        "epiNoInstala": "PPE is not installed"
       },
       "grupoProyectos": "Projects",
       "certificacion": {

@@ -1704,7 +1704,7 @@
       "planTituloProyecto": "Zonas de esta visita",
       "planTodo": "Todo el emplazamiento",
       "planCiertas": "Ciertas zonas",
-      "planSoloFuera": "Solo el emplazamiento (las zonas con fecha propia la conservan)",
+      "planSoloFuera": "Todo el emplazamiento excepto las zonas",
       "planSubzona": "sub-zona",
       "planSinZonas": "Sin zonas seleccionadas",
       "planZonasSel": "{{count}} zona seleccionada",
@@ -3025,7 +3025,8 @@
         "familia": "Familia",
         "nombre": "Nombre del tipo",
         "validez": "Validez revisiones",
-        "normas": "Normas"
+        "normas": "Normas",
+        "epi": "Es EPI"
       },
       "nombrePlaceholder": "p. ej. Arnés anticaídas",
       "validezUnit": "meses desde última revisión APTA",
@@ -3090,7 +3091,9 @@
         "added": "Familia creada",
         "deleted": "Familia eliminada",
         "confirmDelete": "¿Eliminar la familia «{{nombre}}»?",
-        "cantDelete": "No se puede borrar: tiene tipos"
+        "cantDelete": "No se puede borrar: tiene tipos",
+        "epi": "Todos sus tipos son EPI",
+        "epiAlgunos": "Solo algunos de sus tipos son EPI: al marcarla pasan a serlo todos"
       },
       "merge": {
         "handle": "Arrastrar sobre otro tipo para unificarlos",
@@ -3120,7 +3123,8 @@
       "revisionPeriodica": "Revisión periódica - {{n}} meses desde última revisión APTA",
       "revisionPeriodicaNo": "Revisión periódica - No se le aplica",
       "revisionesNota": "Informativo. Las diferentes revisiones y su periodicidad se gestionan en la sección de <0>CARACTERIZACIÓN</0> del catálogo.",
-      "fechasNota": "Dato informativo. Estos parámetros de fechas de referencia se editan en la pantalla de <0>CARACTERIZACIÓN</0> del catálogo."
+      "fechasNota": "Dato informativo. Estos parámetros de fechas de referencia se editan en la pantalla de <0>CARACTERIZACIÓN</0> del catálogo.",
+      "epiAviso": "Los EPI no se instalan: al guardarlo se le quitará la fecha de instalación. Los equipos que ya la tengan la conservan, pero deja de mostrarse y de usarse."
     },
     "parametros": {
       "grupoMarca": "Marca e idioma",
@@ -3219,7 +3223,8 @@
         },
         "personalizar": "Personaliza las fechas a utilizar por familias y/o por tipos de elemento",
         "vidaUtilLbl": "Uso para cálculo de vida útil:",
-        "vidaUtilAyuda": "es posible establecer años de vida útil en aquellos tipos de elementos sujetos a caducidad, y a partir de diferentes fechas significativas. Caso de establecer plazos desde diferentes fechas significativas, el sistema aplicará siempre el criterio más restrictivo. Esta posibilidad de establecer plazos desde fechas significativas existe también a nivel de modelos de elementos, de modo que lo que se aplique al modelo tendrá siempre prioridad, actuando lo aplicado aquí solo cuando los modelos concretos del tipo correspondiente no tengan ningún criterio especificado."
+        "vidaUtilAyuda": "es posible establecer años de vida útil en aquellos tipos de elementos sujetos a caducidad, y a partir de diferentes fechas significativas. Caso de establecer plazos desde diferentes fechas significativas, el sistema aplicará siempre el criterio más restrictivo. Esta posibilidad de establecer plazos desde fechas significativas existe también a nivel de modelos de elementos, de modo que lo que se aplique al modelo tendrá siempre prioridad, actuando lo aplicado aquí solo cuando los modelos concretos del tipo correspondiente no tengan ningún criterio especificado.",
+        "epiNoInstala": "Los EPI no se instalan"
       },
       "grupoProyectos": "Proyectos",
       "certificacion": {
