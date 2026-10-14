@@ -942,7 +942,9 @@
         "incluir": "Record an initial inspection with the registration",
         "conRevisionHint": "The same inspection data will be applied to every unit created in this process.",
         "sinRevisionHint": "Without an initial inspection only its existence is declared, with no status, validity date or next inspection date.",
-        "checklist": "Checklist"
+        "checklist": "Checklist",
+        "instalacion": "Record this initial inspection as an INSTALLATION",
+        "revisorInstalacion": "Who certifies the installation"
       },
       "seCreara_one": "Will be created in",
       "seCreara_other": "Will be created in",
@@ -1015,7 +1017,8 @@
       "validaHasta": "Valid until {{fecha}}",
       "nuevo": "New event",
       "evento": {
-        "revision": "Inspection"
+        "revision": "Inspection",
+        "instalacion": "Installation"
       },
       "descargarPorDefinir": "Download the event PDF (to be defined)",
       "resultado": {
@@ -1722,11 +1725,13 @@
         "reparacion": "Repair",
         "tipRevision": "To be inspected",
         "tipReparacion": "To be repaired",
-        "marcarTodos": "Check or uncheck all"
+        "marcarTodos": "Check or uncheck all",
+        "instalacion": "Installation",
+        "tipInstalacion": "To be installed"
       },
       "quitar": "Remove from the basket",
       "quitarEquipo": "Remove {{equipo}}",
-      "sinMarca": "Tick inspection, repair or both for every item.",
+      "sinMarca": "Tick inspection, repair or installation for every item.",
       "pie": "An inspection project is created already in progress, with no proposal or quote.",
       "vaciar": "Empty basket",
       "crear": "Create inspection project",
@@ -1738,7 +1743,8 @@
       "recibidos_other": "{{count}} items received in the basket",
       "omitidos_one": "{{count}} skipped (retired or already under inspection)",
       "omitidos_other": "{{count}} skipped (retired or already under inspection)",
-      "abrir": "Open the basket"
+      "abrir": "Open the basket",
+      "epiNoSeInstala": "PPE is not installed"
     },
     "modoRevision": {
       "titulo": "Inspection mode",
@@ -3971,7 +3977,12 @@
       "kpiReparaciones": "Repairs",
       "aRevisar": "To inspect",
       "parado": "Stopped since {{fecha}} ({{count}} day).",
-      "parado_other": "Stopped since {{fecha}} ({{count}} days)."
+      "parado_other": "Stopped since {{fecha}} ({{count}} days).",
+      "colInstalacion": "Installation",
+      "aInstalar": "To install",
+      "instalado": "Installed",
+      "abrirInstalacion": "Open the installation",
+      "registrarInstalacion": "Record the installation"
     },
     "certificacion": {
       "progreso": "Certification",
@@ -4578,11 +4589,13 @@
     "detalleFinVida": "End of useful life: {{fecha}}. Nothing is blocked, but the usual course is to {{accion}}.",
     "accion": {
       "revisar": "mark it as not inspected",
-      "reparar": "mark it as not repairable"
+      "reparar": "mark it as not repairable",
+      "instalar": "not install it"
     },
     "accionFinVida": {
       "revisar": "fail it and withdraw it",
-      "reparar": "mark it as not repairable"
+      "reparar": "mark it as not repairable",
+      "instalar": "not install it"
     },
     "varios": "{{count}} of the items carry a warning (not repairable, to be destroyed or end of useful life): {{lista}}. Nothing is blocked, but the usual course is to handle them separately."
   },
@@ -4682,7 +4695,29 @@
       "subiendo": "Uploading…",
       "alCrear": "Will upload when the inspection is created",
       "quitarAdjunto": "Remove document",
-      "sinAdjuntos": "This inspection has no attachments."
+      "sinAdjuntos": "This inspection has no attachments.",
+      "aria_instalacion": "Installation",
+      "nueva_instalacion": "New installation",
+      "titulo_instalacion": "Installation of {{fecha}}",
+      "cabecera_instalacion": "Installation details",
+      "revisor_instalacion": "Who certifies the installation",
+      "crear_instalacion": "Create installation",
+      "creada_instalacion": "Installation saved and closed.",
+      "faltanDatos_instalacion": "Saving needs a date and who certifies the installation, plus valid until.",
+      "imagenes_instalacion": "Installation images",
+      "imagenesGaleria": "In installations, the attached images are also added to the item's own Image Gallery, as well as to this installation.",
+      "imagenesAlCrear_instalacion": "{{count}} image will be uploaded when the installation is saved.",
+      "imagenesAlCrear_instalacion_other": "{{count}} images will be uploaded when the installation is saved.",
+      "sinImagenes_instalacion": "This installation has no images.",
+      "checklistSeccion_instalacion": "Installation checks checklist",
+      "quitarFotoConfirm_instalacion": "Remove this photo from the installation?",
+      "firma_instalacion": "Installation certified by {{revisor}}",
+      "corrigeHint_instalacion": "You are correcting a recorded installation: every change recalculates the item's validity. No visible trace is left.",
+      "borrar_instalacion": "Delete installation",
+      "borrada_instalacion": "Installation deleted.",
+      "borrarConfirm_instalacion": "Deleting the installation removes it from the history along with its points and photos, and the item falls back to the previous validity. This cannot be undone. Continue?",
+      "alCrear_instalacion": "Will upload when the installation is created",
+      "sinAdjuntos_instalacion": "This installation has no attachments."
     },
     "medida": {
       "senaliza": "Tagged as not usable",

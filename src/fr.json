@@ -904,7 +904,9 @@
         "incluir": "Enregistrer une vérification initiale avec la création",
         "conRevisionHint": "Les mêmes données de vérification seront appliquées à toutes les unités créées dans ce processus.",
         "sinRevisionHint": "Sans vérification initiale, seule son existence est déclarée, sans état, date de validité ni date de prochaine vérification.",
-        "checklist": "Checklist"
+        "checklist": "Checklist",
+        "instalacion": "Enregistrer cette vérification initiale comme acte d'INSTALLATION",
+        "revisorInstalacion": "Qui certifie l'installation"
       },
       "seCreara_one": "Sera créé dans",
       "seCreara_other": "Seront créés dans",
@@ -977,7 +979,8 @@
       "validaHasta": "Valable jusqu'au {{fecha}}",
       "nuevo": "Nouvel événement",
       "evento": {
-        "revision": "Contrôle"
+        "revision": "Contrôle",
+        "instalacion": "Installation"
       },
       "descargarPorDefinir": "Télécharger le PDF de l'événement (à définir)",
       "resultado": {
@@ -1627,11 +1630,13 @@
         "reparacion": "Réparation",
         "tipRevision": "À inspecter",
         "tipReparacion": "À réparer",
-        "marcarTodos": "Cocher ou décocher tout"
+        "marcarTodos": "Cocher ou décocher tout",
+        "instalacion": "Installation",
+        "tipInstalacion": "À installer"
       },
       "quitar": "Retirer du panier",
       "quitarEquipo": "Retirer {{equipo}}",
-      "sinMarca": "Cochez inspection, réparation ou les deux pour chaque équipement.",
+      "sinMarca": "Cochez inspection, réparation ou installation pour chaque équipement.",
       "pie": "Un projet de contrôle est créé déjà en cours, sans proposition ni devis.",
       "vaciar": "Vider le panier",
       "crear": "Créer le projet de contrôle",
@@ -1643,7 +1648,8 @@
       "recibidos_other": "{{count}} équipements reçus dans le panier",
       "omitidos_one": "{{count}} ignoré (retiré ou déjà en contrôle)",
       "omitidos_other": "{{count}} ignorés (retirés ou déjà en contrôle)",
-      "abrir": "Ouvrir le panier"
+      "abrir": "Ouvrir le panier",
+      "epiNoSeInstala": "Un EPI ne s'installe pas"
     },
     "modoRevision": {
       "titulo": "Mode de révision",
@@ -3859,7 +3865,12 @@
       "kpiReparaciones": "Réparations",
       "aRevisar": "À inspecter",
       "parado": "Arrêté depuis le {{fecha}} ({{count}} jour).",
-      "parado_other": "Arrêté depuis le {{fecha}} ({{count}} jours)."
+      "parado_other": "Arrêté depuis le {{fecha}} ({{count}} jours).",
+      "colInstalacion": "Installation",
+      "aInstalar": "À installer",
+      "instalado": "Installé",
+      "abrirInstalacion": "Ouvrir l'installation",
+      "registrarInstalacion": "Enregistrer l'installation"
     },
     "certificacion": {
       "progreso": "Certification",
@@ -4452,11 +4463,13 @@
     "detalleFinVida": "Fin de durée de vie : {{fecha}}. Rien n'est bloqué, mais le plus habituel est de {{accion}}.",
     "accion": {
       "revisar": "le marquer comme non inspecté",
-      "reparar": "le marquer comme non réparable"
+      "reparar": "le marquer comme non réparable",
+      "instalar": "ne pas l'installer"
     },
     "accionFinVida": {
       "revisar": "le déclarer non apte et le retirer",
-      "reparar": "le marquer comme non réparable"
+      "reparar": "le marquer comme non réparable",
+      "instalar": "ne pas l'installer"
     },
     "varios": "{{count}} équipements portent un avertissement (non réparable, à détruire ou fin de durée de vie) : {{lista}}. Rien n'est bloqué, mais le plus habituel est de les traiter à part."
   },
@@ -4559,7 +4572,29 @@
       "subiendo": "Envoi…",
       "alCrear": "Sera envoyé à la création du contrôle",
       "quitarAdjunto": "Retirer le document",
-      "sinAdjuntos": "Ce contrôle n'a pas de pièces jointes."
+      "sinAdjuntos": "Ce contrôle n'a pas de pièces jointes.",
+      "aria_instalacion": "Installation",
+      "nueva_instalacion": "Nouvelle installation",
+      "titulo_instalacion": "Installation du {{fecha}}",
+      "cabecera_instalacion": "Données de l'installation",
+      "revisor_instalacion": "Qui certifie l'installation",
+      "crear_instalacion": "Créer l'installation",
+      "creada_instalacion": "Installation enregistrée et clôturée.",
+      "faltanDatos_instalacion": "Pour enregistrer il faut une date et qui certifie l'installation, plus valable jusqu'au.",
+      "imagenes_instalacion": "Images de l'installation",
+      "imagenesGaleria": "Pour les installations, les images jointes sont aussi ajoutées à la Galerie d'images de l'élément lui-même, en plus de cet acte d'installation.",
+      "imagenesAlCrear_instalacion": "{{count}} image sera envoyée à l'enregistrement de l'installation.",
+      "imagenesAlCrear_instalacion_other": "{{count}} images seront envoyées à l'enregistrement de l'installation.",
+      "sinImagenes_instalacion": "Cette installation n'a pas d'images.",
+      "checklistSeccion_instalacion": "Checklist des vérifications de l'installation",
+      "quitarFotoConfirm_instalacion": "Retirer cette photo de l'installation ?",
+      "firma_instalacion": "Installation certifiée par {{revisor}}",
+      "corrigeHint_instalacion": "Vous corrigez une installation déjà enregistrée : chaque modification recalcule la validité de l'équipement. Aucune trace visible.",
+      "borrar_instalacion": "Supprimer l'installation",
+      "borrada_instalacion": "Installation supprimée.",
+      "borrarConfirm_instalacion": "Supprimer l'installation la retire de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Action irréversible. Continuer ?",
+      "alCrear_instalacion": "Sera envoyé à la création de l'installation",
+      "sinAdjuntos_instalacion": "Cette installation n'a pas de pièces jointes."
     },
     "medida": {
       "senaliza": "Signalé comme non utilisable",

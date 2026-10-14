@@ -814,7 +814,9 @@
         "incluir": "Registrar una revisión inicial con el alta",
         "conRevisionHint": "Se aplicarán los mismos datos de revisión a todas las unidades dadas de alta en este proceso.",
         "sinRevisionHint": "Sin revisión inicial solo se declara su existencia, sin especificar estado, fecha de validez o de próxima revisión.",
-        "checklist": "Checklist"
+        "checklist": "Checklist",
+        "instalacion": "Registrar esta revisión inicial como acto de INSTALACIÓN",
+        "revisorInstalacion": "Quién certifica la instalación"
       },
       "seCreara_one": "Se creará en",
       "seCreara_other": "Se crearán en",
@@ -887,7 +889,8 @@
       "validaHasta": "Válida hasta {{fecha}}",
       "nuevo": "Nuevo evento",
       "evento": {
-        "revision": "Revisión"
+        "revision": "Revisión",
+        "instalacion": "Instalación"
       },
       "descargarPorDefinir": "Descargar el PDF del evento (por definir)",
       "resultado": {
@@ -1594,11 +1597,13 @@
         "reparacion": "Reparación",
         "tipRevision": "Se revisa",
         "tipReparacion": "Se repara",
-        "marcarTodos": "Marcar o desmarcar todos"
+        "marcarTodos": "Marcar o desmarcar todos",
+        "instalacion": "Instalación",
+        "tipInstalacion": "Se instala"
       },
       "quitar": "Quitar de la cesta",
       "quitarEquipo": "Quitar {{equipo}}",
-      "sinMarca": "Marca revisión, reparación o las dos en cada equipo.",
+      "sinMarca": "Marca revisión, reparación o instalación en cada equipo.",
       "pie": "Se crea un proyecto de revisión ya en curso, sin propuesta ni presupuesto.",
       "vaciar": "Vaciar cesta",
       "crear": "Crear proyecto de revisión",
@@ -1610,7 +1615,8 @@
       "recibidos_other": "{{count}} equipos recibidos en la cesta",
       "omitidos_one": "{{count}} omitido (descatalogado o ya en revisión)",
       "omitidos_other": "{{count}} omitidos (descatalogados o ya en revisión)",
-      "abrir": "Abrir la cesta"
+      "abrir": "Abrir la cesta",
+      "epiNoSeInstala": "Un EPI no se instala"
     },
     "modoRevision": {
       "titulo": "Modo de revisión",
@@ -3971,7 +3977,12 @@
       "kpiReparaciones": "Reparaciones",
       "aRevisar": "A revisar",
       "parado": "Parado desde el {{fecha}} ({{count}} día).",
-      "parado_other": "Parado desde el {{fecha}} ({{count}} días)."
+      "parado_other": "Parado desde el {{fecha}} ({{count}} días).",
+      "colInstalacion": "Instalación",
+      "aInstalar": "A instalar",
+      "instalado": "Instalado",
+      "abrirInstalacion": "Abrir la instalación",
+      "registrarInstalacion": "Registrar la instalación"
     },
     "certificacion": {
       "progreso": "Certificación",
@@ -4578,11 +4589,13 @@
     "detalleFinVida": "Fin de vida útil: {{fecha}}. No se bloquea nada, pero lo habitual es {{accion}}.",
     "accion": {
       "revisar": "marcarlo como no revisado",
-      "reparar": "marcarlo como no reparable"
+      "reparar": "marcarlo como no reparable",
+      "instalar": "no instalarlo"
     },
     "accionFinVida": {
       "revisar": "darlo como no apto y retirarlo",
-      "reparar": "marcarlo como no reparable"
+      "reparar": "marcarlo como no reparable",
+      "instalar": "no instalarlo"
     },
     "varios": "{{count}} de los equipos traen un aviso (no reparable, a destruir o fin de vida útil): {{lista}}. No se bloquea nada, pero lo habitual es tratarlos aparte."
   },
@@ -4682,7 +4695,29 @@
       "subiendo": "Subiendo…",
       "alCrear": "Se subirá al crear la revisión",
       "quitarAdjunto": "Quitar documento",
-      "sinAdjuntos": "Esta revisión no tiene adjuntos."
+      "sinAdjuntos": "Esta revisión no tiene adjuntos.",
+      "aria_instalacion": "Instalación",
+      "nueva_instalacion": "Nueva instalación",
+      "titulo_instalacion": "Instalación del {{fecha}}",
+      "cabecera_instalacion": "Datos de la instalación",
+      "revisor_instalacion": "Quién certifica la instalación",
+      "crear_instalacion": "Crear instalación",
+      "creada_instalacion": "Instalación guardada y cerrada.",
+      "faltanDatos_instalacion": "Para guardar hacen falta fecha y quién certifica la instalación, con hasta cuándo vale.",
+      "imagenes_instalacion": "Imágenes de la instalación",
+      "imagenesGaleria": "En las instalaciones, las imágenes anexadas quedan también incorporadas a la Galería de Imágenes del propio elemento, además de a este acto de instalación.",
+      "imagenesAlCrear_instalacion": "{{count}} imagen se subirá al guardar la instalación.",
+      "imagenesAlCrear_instalacion_other": "{{count}} imágenes se subirán al guardar la instalación.",
+      "sinImagenes_instalacion": "Esta instalación no tiene imágenes.",
+      "checklistSeccion_instalacion": "Checklist de comprobaciones de la instalación",
+      "quitarFotoConfirm_instalacion": "¿Quitar esta foto de la instalación?",
+      "firma_instalacion": "Certificó la instalación {{revisor}}",
+      "corrigeHint_instalacion": "Estás corrigiendo una instalación ya registrada: cada cambio recalcula la validez del equipo. No queda traza visible.",
+      "borrar_instalacion": "Borrar instalación",
+      "borrada_instalacion": "Instalación borrada.",
+      "borrarConfirm_instalacion": "Borrar la instalación la quita del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. No se puede deshacer. ¿Continuar?",
+      "alCrear_instalacion": "Se subirá al crear la instalación",
+      "sinAdjuntos_instalacion": "Esta instalación no tiene adjuntos."
     },
     "medida": {
       "senaliza": "Se señaliza como no utilizable",
