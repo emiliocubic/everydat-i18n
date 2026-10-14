@@ -4551,6 +4551,9 @@
       "reparacion": {
         "no_reparable": "La reparación anterior diagnosticó el equipo como NO REPARABLE",
         "destruir": "La reparación anterior diagnosticó el equipo como A DESTRUIR"
+      },
+      "vida_util": {
+        "fin_vida": "El equipo ha llegado al FINAL DE SU VIDA ÚTIL"
       }
     },
     "corto": {
@@ -4561,14 +4564,22 @@
       "reparacion": {
         "no_reparable": "La reparación del {{fecha}} diagnosticó el equipo como no reparable",
         "destruir": "La reparación del {{fecha}} diagnosticó el equipo como a destruir"
+      },
+      "vida_util": {
+        "fin_vida": "El equipo llegó al final de su vida útil el {{fecha}}"
       }
     },
     "detalle": "Diagnóstico del {{fecha}}. No se bloquea nada, pero lo habitual es {{accion}}.",
+    "detalleFinVida": "Fin de vida útil: {{fecha}}. No se bloquea nada, pero lo habitual es {{accion}}.",
     "accion": {
       "revisar": "marcarlo como no revisado",
       "reparar": "marcarlo como no reparable"
     },
-    "varios": "{{count}} de los equipos traen un diagnóstico anterior de no reparable o a destruir: {{lista}}. No se bloquea nada, pero lo habitual es marcarlos como no revisados."
+    "accionFinVida": {
+      "revisar": "darlo como no apto y retirarlo",
+      "reparar": "marcarlo como no reparable"
+    },
+    "varios": "{{count}} de los equipos traen un aviso (no reparable, a destruir o fin de vida útil): {{lista}}. No se bloquea nada, pero lo habitual es tratarlos aparte."
   },
   "revisiones": {
     "resultado": {

@@ -4551,6 +4551,9 @@
       "reparacion": {
         "no_reparable": "The previous repair diagnosed this item as NOT REPAIRABLE",
         "destruir": "The previous repair diagnosed this item as TO BE DESTROYED"
+      },
+      "vida_util": {
+        "fin_vida": "This item has reached the END OF ITS USEFUL LIFE"
       }
     },
     "corto": {
@@ -4561,14 +4564,22 @@
       "reparacion": {
         "no_reparable": "The repair of {{fecha}} diagnosed this item as not repairable",
         "destruir": "The repair of {{fecha}} diagnosed this item as to be destroyed"
+      },
+      "vida_util": {
+        "fin_vida": "This item reached the end of its useful life on {{fecha}}"
       }
     },
     "detalle": "Diagnosis of {{fecha}}. Nothing is blocked, but the usual course is to {{accion}}.",
+    "detalleFinVida": "End of useful life: {{fecha}}. Nothing is blocked, but the usual course is to {{accion}}.",
     "accion": {
       "revisar": "mark it as not inspected",
       "reparar": "mark it as not repairable"
     },
-    "varios": "{{count}} of the items carry a previous diagnosis of not repairable or to be destroyed: {{lista}}. Nothing is blocked, but the usual course is to mark them as not inspected."
+    "accionFinVida": {
+      "revisar": "fail it and withdraw it",
+      "reparar": "mark it as not repairable"
+    },
+    "varios": "{{count}} of the items carry a warning (not repairable, to be destroyed or end of useful life): {{lista}}. Nothing is blocked, but the usual course is to handle them separately."
   },
   "revisiones": {
     "resultado": {

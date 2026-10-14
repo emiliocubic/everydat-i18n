@@ -4425,6 +4425,9 @@
       "reparacion": {
         "no_reparable": "La réparation précédente a diagnostiqué l'équipement comme NON RÉPARABLE",
         "destruir": "La réparation précédente a diagnostiqué l'équipement comme À DÉTRUIRE"
+      },
+      "vida_util": {
+        "fin_vida": "L'équipement a atteint la FIN DE SA DURÉE DE VIE"
       }
     },
     "corto": {
@@ -4435,14 +4438,22 @@
       "reparacion": {
         "no_reparable": "La réparation du {{fecha}} a diagnostiqué l'équipement comme non réparable",
         "destruir": "La réparation du {{fecha}} a diagnostiqué l'équipement comme à détruire"
+      },
+      "vida_util": {
+        "fin_vida": "L'équipement a atteint la fin de sa durée de vie le {{fecha}}"
       }
     },
     "detalle": "Diagnostic du {{fecha}}. Rien n'est bloqué, mais le plus habituel est de {{accion}}.",
+    "detalleFinVida": "Fin de durée de vie : {{fecha}}. Rien n'est bloqué, mais le plus habituel est de {{accion}}.",
     "accion": {
       "revisar": "le marquer comme non inspecté",
       "reparar": "le marquer comme non réparable"
     },
-    "varios": "{{count}} équipements portent un diagnostic précédent de non réparable ou à détruire : {{lista}}. Rien n'est bloqué, mais le plus habituel est de les marquer comme non inspectés."
+    "accionFinVida": {
+      "revisar": "le déclarer non apte et le retirer",
+      "reparar": "le marquer comme non réparable"
+    },
+    "varios": "{{count}} équipements portent un avertissement (non réparable, à détruire ou fin de durée de vie) : {{lista}}. Rien n'est bloqué, mais le plus habituel est de les traiter à part."
   },
   "revisiones": {
     "resultado": {
