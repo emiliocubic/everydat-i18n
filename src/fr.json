@@ -4416,6 +4416,34 @@
       "finAntesDeInicio": "La fin ne peut pas précéder le début."
     }
   },
+  "avisoDiagnostico": {
+    "titulo": {
+      "revision": {
+        "no_reparable": "L'inspection précédente a diagnostiqué l'équipement comme NON RÉPARABLE",
+        "destruir": "L'inspection précédente a diagnostiqué l'équipement comme À DÉTRUIRE"
+      },
+      "reparacion": {
+        "no_reparable": "La réparation précédente a diagnostiqué l'équipement comme NON RÉPARABLE",
+        "destruir": "La réparation précédente a diagnostiqué l'équipement comme À DÉTRUIRE"
+      }
+    },
+    "corto": {
+      "revision": {
+        "no_reparable": "L'inspection du {{fecha}} a diagnostiqué l'équipement comme non réparable",
+        "destruir": "L'inspection du {{fecha}} a diagnostiqué l'équipement comme à détruire"
+      },
+      "reparacion": {
+        "no_reparable": "La réparation du {{fecha}} a diagnostiqué l'équipement comme non réparable",
+        "destruir": "La réparation du {{fecha}} a diagnostiqué l'équipement comme à détruire"
+      }
+    },
+    "detalle": "Diagnostic du {{fecha}}. Rien n'est bloqué, mais le plus habituel est de {{accion}}.",
+    "accion": {
+      "revisar": "le marquer comme non inspecté",
+      "reparar": "le marquer comme non réparable"
+    },
+    "varios": "{{count}} équipements portent un diagnostic précédent de non réparable ou à détruire : {{lista}}. Rien n'est bloqué, mais le plus habituel est de les marquer comme non inspectés."
+  },
   "revisiones": {
     "resultado": {
       "apto": "Apte",

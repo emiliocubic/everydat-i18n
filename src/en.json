@@ -4542,6 +4542,34 @@
       "finAntesDeInicio": "The end cannot be earlier than the start."
     }
   },
+  "avisoDiagnostico": {
+    "titulo": {
+      "revision": {
+        "no_reparable": "The previous inspection diagnosed this item as NOT REPAIRABLE",
+        "destruir": "The previous inspection diagnosed this item as TO BE DESTROYED"
+      },
+      "reparacion": {
+        "no_reparable": "The previous repair diagnosed this item as NOT REPAIRABLE",
+        "destruir": "The previous repair diagnosed this item as TO BE DESTROYED"
+      }
+    },
+    "corto": {
+      "revision": {
+        "no_reparable": "The inspection of {{fecha}} diagnosed this item as not repairable",
+        "destruir": "The inspection of {{fecha}} diagnosed this item as to be destroyed"
+      },
+      "reparacion": {
+        "no_reparable": "The repair of {{fecha}} diagnosed this item as not repairable",
+        "destruir": "The repair of {{fecha}} diagnosed this item as to be destroyed"
+      }
+    },
+    "detalle": "Diagnosis of {{fecha}}. Nothing is blocked, but the usual course is to {{accion}}.",
+    "accion": {
+      "revisar": "mark it as not inspected",
+      "reparar": "mark it as not repairable"
+    },
+    "varios": "{{count}} of the items carry a previous diagnosis of not repairable or to be destroyed: {{lista}}. Nothing is blocked, but the usual course is to mark them as not inspected."
+  },
   "revisiones": {
     "resultado": {
       "apto": "Pass",

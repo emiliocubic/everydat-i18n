@@ -4542,6 +4542,34 @@
       "finAntesDeInicio": "El fin no puede ser anterior al inicio."
     }
   },
+  "avisoDiagnostico": {
+    "titulo": {
+      "revision": {
+        "no_reparable": "La revisión anterior diagnosticó el equipo como NO REPARABLE",
+        "destruir": "La revisión anterior diagnosticó el equipo como A DESTRUIR"
+      },
+      "reparacion": {
+        "no_reparable": "La reparación anterior diagnosticó el equipo como NO REPARABLE",
+        "destruir": "La reparación anterior diagnosticó el equipo como A DESTRUIR"
+      }
+    },
+    "corto": {
+      "revision": {
+        "no_reparable": "La revisión del {{fecha}} diagnosticó el equipo como no reparable",
+        "destruir": "La revisión del {{fecha}} diagnosticó el equipo como a destruir"
+      },
+      "reparacion": {
+        "no_reparable": "La reparación del {{fecha}} diagnosticó el equipo como no reparable",
+        "destruir": "La reparación del {{fecha}} diagnosticó el equipo como a destruir"
+      }
+    },
+    "detalle": "Diagnóstico del {{fecha}}. No se bloquea nada, pero lo habitual es {{accion}}.",
+    "accion": {
+      "revisar": "marcarlo como no revisado",
+      "reparar": "marcarlo como no reparable"
+    },
+    "varios": "{{count}} de los equipos traen un diagnóstico anterior de no reparable o a destruir: {{lista}}. No se bloquea nada, pero lo habitual es marcarlos como no revisados."
+  },
   "revisiones": {
     "resultado": {
       "apto": "Apto",
