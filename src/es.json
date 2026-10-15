@@ -5102,7 +5102,10 @@
       "faltaCertifica": "Di quién certifica la instalación.",
       "guardarCambios": "Guardar cambios",
       "salirCorreccion": "Los cambios que has hecho se pierden y la revisión se queda como estaba.",
-      "seguirCorrigiendo": "Seguir corrigiendo"
+      "seguirCorrigiendo": "Seguir corrigiendo",
+      "faltanPuntosDe_one": "Falta {{count}} punto por marcar ({{equipo}}).",
+      "faltanPuntosDe_other": "Faltan {{count}} puntos por marcar ({{equipo}}).",
+      "faltanPuntosEnVarios": "Faltan {{count}} puntos por marcar en {{elementos}} elementos."
     },
     "envio": {
       "titulo": "Enviar",
@@ -5134,7 +5137,8 @@
         "carpeta": "Carpeta nueva",
         "correccion": "Corrección de revisión",
         "reparacion": "Reparación",
-        "adjunto_reparacion": "Adjunto de la reparación"
+        "adjunto_reparacion": "Adjunto de la reparación",
+        "revision_conjunto": "Revisión de conjunto"
       },
       "estado": {
         "pendiente": "Pendiente",
@@ -5315,7 +5319,8 @@
       "bajado": "Bajado {{fecha}}",
       "quitarDelMovil": "Quitar del móvil",
       "nuevaCarpeta": "Nueva carpeta",
-      "nuevaCarpetaHint": "Se añadirá al final del árbol."
+      "nuevaCarpetaHint": "Se añadirá al final del árbol.",
+      "conjuntoNoEnPaquete": "El conjunto buscado no está en el alcance de este proyecto."
     },
     "escaner": {
       "titulo": "Leer código",
@@ -5493,6 +5498,18 @@
       "adjuntoError": "No se pudo añadir el archivo.",
       "guardar": "Guardar reparación",
       "seguir": "Seguir con la reparación"
+    },
+    "conjunto": {
+      "titulo": "Ficha de conjunto",
+      "resumen_one": "Conjunto · {{count}} elemento",
+      "resumen_other": "Conjunto · {{count}} elementos",
+      "elementos": "Elementos del conjunto",
+      "verFicha": "Ver ficha",
+      "verFichaAria": "Ver ficha de {{equipo}}",
+      "noRevisable": "Este conjunto se revisa equipo a equipo: alguno de sus equipos está retirado o no entra en este proyecto.",
+      "revision": "Revisión de conjunto",
+      "nElementos_one": "({{count}} elemento)",
+      "nElementos_other": "({{count}} elementos)"
     }
   },
   "auditoria": {

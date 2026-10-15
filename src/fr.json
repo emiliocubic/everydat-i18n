@@ -4979,7 +4979,10 @@
       "faltaCertifica": "Indiquez qui certifie l'installation.",
       "guardarCambios": "Enregistrer les modifications",
       "salirCorreccion": "Vos modifications sont perdues et la révision reste telle quelle.",
-      "seguirCorrigiendo": "Continuer la correction"
+      "seguirCorrigiendo": "Continuer la correction",
+      "faltanPuntosDe_one": "Il reste {{count}} point à marquer ({{equipo}}).",
+      "faltanPuntosDe_other": "Il reste {{count}} points à marquer ({{equipo}}).",
+      "faltanPuntosEnVarios": "Il reste {{count}} points à marquer sur {{elementos}} équipements."
     },
     "envio": {
       "titulo": "Envoyer",
@@ -5011,7 +5014,8 @@
         "carpeta": "Nouveau dossier",
         "correccion": "Correction de contrôle",
         "reparacion": "Réparation",
-        "adjunto_reparacion": "Pièce jointe de la réparation"
+        "adjunto_reparacion": "Pièce jointe de la réparation",
+        "revision_conjunto": "Contrôle d'ensemble"
       },
       "estado": {
         "pendiente": "En attente",
@@ -5192,7 +5196,8 @@
       "bajado": "Téléchargé le {{fecha}}",
       "quitarDelMovil": "Retirer du téléphone",
       "nuevaCarpeta": "Nouveau dossier",
-      "nuevaCarpetaHint": "Il sera ajouté à la fin de l'arbre."
+      "nuevaCarpetaHint": "Il sera ajouté à la fin de l'arbre.",
+      "conjuntoNoEnPaquete": "L'ensemble recherché n'est pas dans le périmètre de ce projet."
     },
     "escaner": {
       "titulo": "Lire un code",
@@ -5370,6 +5375,18 @@
       "adjuntoError": "Impossible d'ajouter le fichier.",
       "guardar": "Enregistrer la réparation",
       "seguir": "Continuer la réparation"
+    },
+    "conjunto": {
+      "titulo": "Fiche d'ensemble",
+      "resumen_one": "Ensemble · {{count}} équipement",
+      "resumen_other": "Ensemble · {{count}} équipements",
+      "elementos": "Équipements de l'ensemble",
+      "verFicha": "Voir la fiche",
+      "verFichaAria": "Voir la fiche de {{equipo}}",
+      "noRevisable": "Cet ensemble se contrôle équipement par équipement : l'un d'eux est réformé ou hors de ce projet.",
+      "revision": "Contrôle d'ensemble",
+      "nElementos_one": "({{count}} équipement)",
+      "nElementos_other": "({{count}} équipements)"
     }
   },
   "auditoria": {

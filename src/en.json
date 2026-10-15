@@ -5102,7 +5102,10 @@
       "faltaCertifica": "Say who certifies the installation.",
       "guardarCambios": "Save changes",
       "salirCorreccion": "Your changes are lost and the inspection stays as it was.",
-      "seguirCorrigiendo": "Keep correcting"
+      "seguirCorrigiendo": "Keep correcting",
+      "faltanPuntosDe_one": "{{count}} point left to mark ({{equipo}}).",
+      "faltanPuntosDe_other": "{{count}} points left to mark ({{equipo}}).",
+      "faltanPuntosEnVarios": "{{count}} points left to mark across {{elementos}} items."
     },
     "envio": {
       "titulo": "Send",
@@ -5134,7 +5137,8 @@
         "carpeta": "New folder",
         "correccion": "Inspection correction",
         "reparacion": "Repair",
-        "adjunto_reparacion": "Repair attachment"
+        "adjunto_reparacion": "Repair attachment",
+        "revision_conjunto": "Set inspection"
       },
       "estado": {
         "pendiente": "Pending",
@@ -5315,7 +5319,8 @@
       "bajado": "Downloaded {{fecha}}",
       "quitarDelMovil": "Remove from phone",
       "nuevaCarpeta": "New folder",
-      "nuevaCarpetaHint": "It will be added at the end of the tree."
+      "nuevaCarpetaHint": "It will be added at the end of the tree.",
+      "conjuntoNoEnPaquete": "The set you looked for is not in the scope of this project."
     },
     "escaner": {
       "titulo": "Read code",
@@ -5493,6 +5498,18 @@
       "adjuntoError": "The file could not be added.",
       "guardar": "Save repair",
       "seguir": "Keep editing the repair"
+    },
+    "conjunto": {
+      "titulo": "Set sheet",
+      "resumen_one": "Set · {{count}} item",
+      "resumen_other": "Set · {{count}} items",
+      "elementos": "Items in the set",
+      "verFicha": "View sheet",
+      "verFichaAria": "View the sheet of {{equipo}}",
+      "noRevisable": "This set is inspected item by item: one of its items is retired or outside this project.",
+      "revision": "Set inspection",
+      "nElementos_one": "({{count}} item)",
+      "nElementos_other": "({{count}} items)"
     }
   },
   "auditoria": {
