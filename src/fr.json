@@ -4791,7 +4791,10 @@
         "usarAutenticador": "Utiliser l'application d'authentification",
         "invalido": "Le code n'est pas valide ou a déjà été utilisé.",
         "alta": "Votre rôle exige la vérification en deux étapes et vous ne l'avez pas encore configurée. Connectez-vous d'abord au panneau web."
-      }
+      },
+      "caducada": "La session a expiré sur le serveur. Saisissez à nouveau le mot de passe : rien de ce qui se trouve sur cet appareil n'est perdu, y compris ce qui reste à envoyer.",
+      "sinRed": "Pas de connexion : il faut du réseau pour vérifier le mot de passe.",
+      "seguirSinRed": "Continuer hors connexion avec le code PIN"
     },
     "bloqueo": {
       "titulo": "Déverrouiller",
@@ -5122,7 +5125,8 @@
       "elementos": "Équipements",
       "buscarElementoPh": "N° de série, référence, lot…",
       "resultados_one": "{{count}} résultat",
-      "resultados_other": "{{count}} résultats"
+      "resultados_other": "{{count}} résultats",
+      "recargar": "Recharger"
     },
     "buscar": {
       "emplazamientos": "Sites",

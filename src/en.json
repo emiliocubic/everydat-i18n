@@ -4914,7 +4914,10 @@
         "usarAutenticador": "Use the authenticator app",
         "invalido": "The code is not valid or has already been used.",
         "alta": "Your role requires two-step verification and you have not set it up yet. Sign in to the web panel first."
-      }
+      },
+      "caducada": "Your session has expired on the server. Enter your password again: nothing on this device is lost, including what is waiting to be sent.",
+      "sinRed": "No connection: a network is needed to check the password.",
+      "seguirSinRed": "Continue offline with the PIN"
     },
     "bloqueo": {
       "titulo": "Unlock",
@@ -5245,7 +5248,8 @@
       "elementos": "Equipment",
       "buscarElementoPh": "Serial no., reference, batch…",
       "resultados_one": "{{count}} result",
-      "resultados_other": "{{count}} results"
+      "resultados_other": "{{count}} results",
+      "recargar": "Reload"
     },
     "buscar": {
       "emplazamientos": "Sites",

@@ -4914,7 +4914,10 @@
         "usarAutenticador": "Usar la aplicación de autenticación",
         "invalido": "El código no es válido o ya se ha usado.",
         "alta": "Tu rol exige la verificación en dos pasos y aún no la has configurado. Entra primero desde el panel web."
-      }
+      },
+      "caducada": "La sesión ha caducado en el servidor. Vuelve a escribir la contraseña: no se pierde nada de lo que hay en este móvil, tampoco lo pendiente de enviar.",
+      "sinRed": "Sin conexión: hace falta red para comprobar la contraseña.",
+      "seguirSinRed": "Seguir sin conexión con el PIN"
     },
     "bloqueo": {
       "titulo": "Desbloquear",
@@ -5245,7 +5248,8 @@
       "elementos": "Elementos",
       "buscarElementoPh": "Nº serie, referencia, lote…",
       "resultados_one": "{{count}} resultado",
-      "resultados_other": "{{count}} resultados"
+      "resultados_other": "{{count}} resultados",
+      "recargar": "Recargar"
     },
     "buscar": {
       "emplazamientos": "Emplazamientos",
