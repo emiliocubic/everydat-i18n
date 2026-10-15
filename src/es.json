@@ -5525,7 +5525,8 @@
       "revision": "Revisión de conjunto",
       "nElementos_one": "({{count}} elemento)",
       "nElementos_other": "({{count}} elementos)"
-    }
+    },
+    "guardarError": "No se ha podido guardar en el móvil. Lo rellenado sigue aquí: inténtalo de nuevo."
   },
   "auditoria": {
     "buscar": "Buscar por nombre o correo del usuario",

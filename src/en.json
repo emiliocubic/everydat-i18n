@@ -5525,7 +5525,8 @@
       "revision": "Set inspection",
       "nElementos_one": "({{count}} item)",
       "nElementos_other": "({{count}} items)"
-    }
+    },
+    "guardarError": "It could not be saved on the device. What you filled in is still here: try again."
   },
   "auditoria": {
     "buscar": "Search by user name or email",

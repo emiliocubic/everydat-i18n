@@ -5402,7 +5402,8 @@
       "revision": "Contrôle d'ensemble",
       "nElementos_one": "({{count}} équipement)",
       "nElementos_other": "({{count}} équipements)"
-    }
+    },
+    "guardarError": "Impossible d'enregistrer sur l'appareil. Ce que vous avez saisi est toujours là : réessayez."
   },
   "auditoria": {
     "buscar": "Rechercher par nom ou courriel de l'utilisateur",
