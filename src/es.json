@@ -5131,7 +5131,10 @@
         "edicion": "Edición de equipo",
         "codigo": "Código QR",
         "foto_alta": "Foto del alta",
-        "carpeta": "Carpeta nueva"
+        "carpeta": "Carpeta nueva",
+        "correccion": "Corrección de revisión",
+        "reparacion": "Reparación",
+        "adjunto_reparacion": "Adjunto de la reparación"
       },
       "estado": {
         "pendiente": "Pendiente",

@@ -5008,7 +5008,10 @@
         "edicion": "Modification d'équipement",
         "codigo": "Code QR",
         "foto_alta": "Photo de l'ajout",
-        "carpeta": "Nouveau dossier"
+        "carpeta": "Nouveau dossier",
+        "correccion": "Correction de contrôle",
+        "reparacion": "Réparation",
+        "adjunto_reparacion": "Pièce jointe de la réparation"
       },
       "estado": {
         "pendiente": "En attente",

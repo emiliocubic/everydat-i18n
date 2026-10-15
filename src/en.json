@@ -5131,7 +5131,10 @@
         "edicion": "Equipment edit",
         "codigo": "QR code",
         "foto_alta": "New equipment photo",
-        "carpeta": "New folder"
+        "carpeta": "New folder",
+        "correccion": "Inspection correction",
+        "reparacion": "Repair",
+        "adjunto_reparacion": "Repair attachment"
       },
       "estado": {
         "pendiente": "Pending",
