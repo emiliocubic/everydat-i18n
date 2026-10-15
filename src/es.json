@@ -5038,7 +5038,8 @@
       "reparacion": "Reparación",
       "revisionInstalacion": "Revisión de instalación",
       "paralizadoConfirm_reparacion": "Este proyecto está paralizado. ¿Registrar la reparación igualmente?",
-      "paralizadoConfirm_instalacion": "Este proyecto está paralizado. ¿Revisar la instalación igualmente?"
+      "paralizadoConfirm_instalacion": "Este proyecto está paralizado. ¿Revisar la instalación igualmente?",
+      "equipoNoEnMovil": "Este equipo no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto."
     },
     "revision": {
       "titulo": "Revisión",
@@ -5524,7 +5525,8 @@
       "noRevisable": "Este conjunto se revisa equipo a equipo: alguno de sus equipos está retirado o no entra en este proyecto.",
       "revision": "Revisión de conjunto",
       "nElementos_one": "({{count}} elemento)",
-      "nElementos_other": "({{count}} elementos)"
+      "nElementos_other": "({{count}} elementos)",
+      "noEnMovil": "Este conjunto no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto."
     },
     "guardarError": "No se ha podido guardar en el móvil. Lo rellenado sigue aquí: inténtalo de nuevo."
   },

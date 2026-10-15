@@ -4915,7 +4915,8 @@
       "reparacion": "Réparation",
       "revisionInstalacion": "Contrôle d'installation",
       "paralizadoConfirm_reparacion": "Ce projet est en pause. Enregistrer la réparation quand même ?",
-      "paralizadoConfirm_instalacion": "Ce projet est en pause. Contrôler l'installation quand même ?"
+      "paralizadoConfirm_instalacion": "Ce projet est en pause. Contrôler l'installation quand même ?",
+      "equipoNoEnMovil": "Cet équipement n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet."
     },
     "revision": {
       "titulo": "Contrôle",
@@ -5401,7 +5402,8 @@
       "noRevisable": "Cet ensemble se contrôle équipement par équipement : l'un d'eux est réformé ou hors de ce projet.",
       "revision": "Contrôle d'ensemble",
       "nElementos_one": "({{count}} équipement)",
-      "nElementos_other": "({{count}} équipements)"
+      "nElementos_other": "({{count}} équipements)",
+      "noEnMovil": "Cet ensemble n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet."
     },
     "guardarError": "Impossible d'enregistrer sur l'appareil. Ce que vous avez saisi est toujours là : réessayez."
   },

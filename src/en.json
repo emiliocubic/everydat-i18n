@@ -5038,7 +5038,8 @@
       "reparacion": "Repair",
       "revisionInstalacion": "Installation inspection",
       "paralizadoConfirm_reparacion": "This project is paused. Record the repair anyway?",
-      "paralizadoConfirm_instalacion": "This project is paused. Inspect the installation anyway?"
+      "paralizadoConfirm_instalacion": "This project is paused. Inspect the installation anyway?",
+      "equipoNoEnMovil": "This equipment is not in what was downloaded to the device. If it should be, download its project again."
     },
     "revision": {
       "titulo": "Inspection",
@@ -5524,7 +5525,8 @@
       "noRevisable": "This set is inspected item by item: one of its items is retired or outside this project.",
       "revision": "Set inspection",
       "nElementos_one": "({{count}} item)",
-      "nElementos_other": "({{count}} items)"
+      "nElementos_other": "({{count}} items)",
+      "noEnMovil": "This set is not in what was downloaded to the device. If it should be, download its project again."
     },
     "guardarError": "It could not be saved on the device. What you filled in is still here: try again."
   },
