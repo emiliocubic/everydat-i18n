@@ -4570,7 +4570,8 @@
         "guardado": "Modifications enregistrées",
         "anulado": "Bon {{codigo}} annulé",
         "eliminado": "Bon {{codigo}} supprimé"
-      }
+      },
+      "sinFirma": "Travail réalisé au bureau : ce bon n'a pas besoin de la signature du client."
     }
   },
   "avisoDiagnostico": {

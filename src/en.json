@@ -4696,7 +4696,8 @@
         "guardado": "Changes saved",
         "anulado": "Report {{codigo}} voided",
         "eliminado": "Report {{codigo}} deleted"
-      }
+      },
+      "sinFirma": "Work done at the office: this report does not need the customer's signature."
     }
   },
   "avisoDiagnostico": {

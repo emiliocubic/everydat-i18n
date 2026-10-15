@@ -4696,7 +4696,8 @@
         "guardado": "Cambios guardados",
         "anulado": "Parte {{codigo}} anulado",
         "eliminado": "Parte {{codigo}} eliminado"
-      }
+      },
+      "sinFirma": "Trabajo hecho en la oficina: este parte no necesita la firma del cliente."
     }
   },
   "avisoDiagnostico": {
