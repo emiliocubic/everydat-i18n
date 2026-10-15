@@ -5152,6 +5152,7 @@
       "notasInternas": "Notes internes",
       "planos": "Plans",
       "deRevisados": "sur {{total}} contrôlés",
+      "deTotal": "sur {{total}}",
       "porRevisar": "à contrôler",
       "soloPendientes": "Seulement en attente",
       "desplegarTodo": "Tout déplier",

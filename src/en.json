@@ -5275,6 +5275,7 @@
       "notasInternas": "Internal notes",
       "planos": "Drawings",
       "deRevisados": "of {{total}} inspected",
+      "deTotal": "of {{total}}",
       "porRevisar": "to inspect",
       "soloPendientes": "Pending only",
       "desplegarTodo": "Expand all",

@@ -5275,6 +5275,7 @@
       "notasInternas": "Notas internas",
       "planos": "Planos",
       "deRevisados": "de {{total}} revisados",
+      "deTotal": "de {{total}}",
       "porRevisar": "por revisar",
       "soloPendientes": "Solo pendientes",
       "desplegarTodo": "Desplegar todo",
