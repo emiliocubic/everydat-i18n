@@ -4697,7 +4697,12 @@
         "anulado": "Parte {{codigo}} anulado",
         "eliminado": "Parte {{codigo}} eliminado"
       },
-      "sinFirma": "Trabajo hecho en la oficina: este parte no necesita la firma del cliente."
+      "sinFirma": "Trabajo hecho en la oficina: este parte no necesita la firma del cliente.",
+      "conflicto": "Esta actuación también está en {{partes}}: un parte de la APP llegó con algo que ya estaba en otro parte. Anula uno de los dos.",
+      "conflicto_other": "{{count}} actuaciones también están en {{partes}}: un parte de la APP llegó con algo que ya estaba en otro parte. Anula uno de los dos.",
+      "cedidas": "Una actuación de este borrador ha pasado a {{partes}}, hecho desde la APP.",
+      "cedidas_other": "{{count}} actuaciones de este borrador han pasado a {{partes}}, hecho desde la APP.",
+      "conflictoBanda": "Comparte actuaciones con otro parte: hay que anular uno de los dos"
     }
   },
   "avisoDiagnostico": {

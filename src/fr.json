@@ -4571,7 +4571,12 @@
         "anulado": "Bon {{codigo}} annulé",
         "eliminado": "Bon {{codigo}} supprimé"
       },
-      "sinFirma": "Travail réalisé au bureau : ce bon n'a pas besoin de la signature du client."
+      "sinFirma": "Travail réalisé au bureau : ce bon n'a pas besoin de la signature du client.",
+      "conflicto": "Cette intervention figure aussi dans {{partes}} : un bon de l'APP est arrivé avec une intervention déjà présente dans un autre bon. Annulez l'un des deux.",
+      "conflicto_other": "{{count}} interventions figurent aussi dans {{partes}} : un bon de l'APP est arrivé avec des interventions déjà présentes dans un autre bon. Annulez l'un des deux.",
+      "cedidas": "Une intervention de ce brouillon est passée au bon {{partes}}, établi depuis l'APP.",
+      "cedidas_other": "{{count}} interventions de ce brouillon sont passées au bon {{partes}}, établi depuis l'APP.",
+      "conflictoBanda": "Partage des interventions avec un autre bon : il faut annuler l'un des deux"
     }
   },
   "avisoDiagnostico": {

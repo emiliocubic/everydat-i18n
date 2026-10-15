@@ -4697,7 +4697,12 @@
         "anulado": "Report {{codigo}} voided",
         "eliminado": "Report {{codigo}} deleted"
       },
-      "sinFirma": "Work done at the office: this report does not need the customer's signature."
+      "sinFirma": "Work done at the office: this report does not need the customer's signature.",
+      "conflicto": "This job is also in {{partes}}: a report from the APP arrived with something already in another report. Void one of the two.",
+      "conflicto_other": "{{count}} jobs are also in {{partes}}: a report from the APP arrived with something already in another report. Void one of the two.",
+      "cedidas": "One job in this draft has moved to {{partes}}, made from the APP.",
+      "cedidas_other": "{{count}} jobs in this draft have moved to {{partes}}, made from the APP.",
+      "conflictoBanda": "Shares jobs with another report: one of the two must be voided"
     }
   },
   "avisoDiagnostico": {
