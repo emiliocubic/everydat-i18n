@@ -5526,7 +5526,8 @@
       "revision": "Revisión de conjunto",
       "nElementos_one": "({{count}} elemento)",
       "nElementos_other": "({{count}} elementos)",
-      "noEnMovil": "Este conjunto no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto."
+      "noEnMovil": "Este conjunto no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto.",
+      "recienteConfirm": "Este conjunto se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?"
     },
     "guardarError": "No se ha podido guardar en el móvil. Lo rellenado sigue aquí: inténtalo de nuevo."
   },
