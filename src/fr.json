@@ -4911,7 +4911,11 @@
       "sinPropios_zona": "Cette zone n'a pas d'équipements propres.",
       "todoRevisado_zona": "Plus rien à contrôler dans cette zone.",
       "nuevaSubcarpeta": "Nouveau sous-dossier",
-      "nuevaSubcarpetaHint": "Il sera ajouté à la fin des sous-dossiers de {{nombre}}."
+      "nuevaSubcarpetaHint": "Il sera ajouté à la fin des sous-dossiers de {{nombre}}.",
+      "reparacion": "Réparation",
+      "revisionInstalacion": "Contrôle d'installation",
+      "paralizadoConfirm_reparacion": "Ce projet est en pause. Enregistrer la réparation quand même ?",
+      "paralizadoConfirm_instalacion": "Ce projet est en pause. Contrôler l'installation quand même ?"
     },
     "revision": {
       "titulo": "Contrôle",
@@ -4965,7 +4969,17 @@
       "validaHastaCadaUno": "Laissez vide pour appliquer la périodicité de chaque équipement.",
       "validaHastaAlgunoSin": "Un équipement n'a pas de périodicité : indiquez la date de validité.",
       "validaHastaHintVarios_one": "Proposée avec la périodicité des équipements ({{count}} mois). Modifiez-la si besoin.",
-      "validaHastaHintVarios_other": "Proposée avec la périodicité des équipements ({{count}} mois). Modifiez-la si besoin."
+      "validaHastaHintVarios_other": "Proposée avec la périodicité des équipements ({{count}} mois). Modifiez-la si besoin.",
+      "instalacion": "Installation",
+      "documentos": "Documents",
+      "documentoError": "Impossible d'ouvrir le document.",
+      "verConRed": "Les photos et les documents s'affichent avec une connexion.",
+      "eligeCertifica": "Choisissez qui certifie",
+      "escribirNombre": "Saisir le nom",
+      "faltaCertifica": "Indiquez qui certifie l'installation.",
+      "guardarCambios": "Enregistrer les modifications",
+      "salirCorreccion": "Vos modifications sont perdues et la révision reste telle quelle.",
+      "seguirCorrigiendo": "Continuer la correction"
     },
     "envio": {
       "titulo": "Envoyer",
@@ -5343,6 +5357,16 @@
       "crear": "Créer le dossier",
       "crearSub": "Créer le sous-dossier",
       "recienCreada": "Vient d'être créé"
+    },
+    "reparacion": {
+      "titulo": "Réparation",
+      "noCambiaSituacion": "La réparation ne change pas la situation de l'équipement. Seul un contrôle le fait.",
+      "opcional": "(facultatif)",
+      "archivo": "Fichier",
+      "quitar": "Retirer",
+      "adjuntoError": "Impossible d'ajouter le fichier.",
+      "guardar": "Enregistrer la réparation",
+      "seguir": "Continuer la réparation"
     }
   },
   "auditoria": {

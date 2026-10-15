@@ -5034,7 +5034,11 @@
       "sinPropios_zona": "Esta zona no tiene equipos propios.",
       "todoRevisado_zona": "No queda nada por revisar en esta zona.",
       "nuevaSubcarpeta": "Nueva subcarpeta",
-      "nuevaSubcarpetaHint": "Se añadirá al final de las subcarpetas de {{nombre}}."
+      "nuevaSubcarpetaHint": "Se añadirá al final de las subcarpetas de {{nombre}}.",
+      "reparacion": "Reparación",
+      "revisionInstalacion": "Revisión de instalación",
+      "paralizadoConfirm_reparacion": "Este proyecto está paralizado. ¿Registrar la reparación igualmente?",
+      "paralizadoConfirm_instalacion": "Este proyecto está paralizado. ¿Revisar la instalación igualmente?"
     },
     "revision": {
       "titulo": "Revisión",
@@ -5088,7 +5092,17 @@
       "validaHastaCadaUno": "En blanco, cada equipo con su periodicidad.",
       "validaHastaAlgunoSin": "Algún equipo no tiene periodicidad: escribe hasta cuándo vale.",
       "validaHastaHintVarios_one": "Propuesta con la periodicidad de los equipos ({{count}} mes). Cámbiala si hace falta.",
-      "validaHastaHintVarios_other": "Propuesta con la periodicidad de los equipos ({{count}} meses). Cámbiala si hace falta."
+      "validaHastaHintVarios_other": "Propuesta con la periodicidad de los equipos ({{count}} meses). Cámbiala si hace falta.",
+      "instalacion": "Instalación",
+      "documentos": "Documentos",
+      "documentoError": "No se pudo abrir el documento.",
+      "verConRed": "Las fotos y los documentos se ven con conexión.",
+      "eligeCertifica": "Elige quién certifica",
+      "escribirNombre": "Escribir el nombre",
+      "faltaCertifica": "Di quién certifica la instalación.",
+      "guardarCambios": "Guardar cambios",
+      "salirCorreccion": "Los cambios que has hecho se pierden y la revisión se queda como estaba.",
+      "seguirCorrigiendo": "Seguir corrigiendo"
     },
     "envio": {
       "titulo": "Enviar",
@@ -5466,6 +5480,16 @@
       "crear": "Crear carpeta",
       "crearSub": "Crear subcarpeta",
       "recienCreada": "Recién creada"
+    },
+    "reparacion": {
+      "titulo": "Reparación",
+      "noCambiaSituacion": "La reparación no cambia la situación del equipo. Eso solo lo hace una revisión.",
+      "opcional": "(opcional)",
+      "archivo": "Archivo",
+      "quitar": "Quitar",
+      "adjuntoError": "No se pudo añadir el archivo.",
+      "guardar": "Guardar reparación",
+      "seguir": "Seguir con la reparación"
     }
   },
   "auditoria": {

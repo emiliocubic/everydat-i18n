@@ -5034,7 +5034,11 @@
       "sinPropios_zona": "This zone has no items of its own.",
       "todoRevisado_zona": "Nothing left to inspect in this zone.",
       "nuevaSubcarpeta": "New subfolder",
-      "nuevaSubcarpetaHint": "It will be added at the end of the subfolders of {{nombre}}."
+      "nuevaSubcarpetaHint": "It will be added at the end of the subfolders of {{nombre}}.",
+      "reparacion": "Repair",
+      "revisionInstalacion": "Installation inspection",
+      "paralizadoConfirm_reparacion": "This project is paused. Record the repair anyway?",
+      "paralizadoConfirm_instalacion": "This project is paused. Inspect the installation anyway?"
     },
     "revision": {
       "titulo": "Inspection",
@@ -5088,7 +5092,17 @@
       "validaHastaCadaUno": "Leave blank to use each item's own interval.",
       "validaHastaAlgunoSin": "Some item has no inspection interval: enter the valid-until date.",
       "validaHastaHintVarios_one": "Proposed from the items' periodicity ({{count}} month). Change it if needed.",
-      "validaHastaHintVarios_other": "Proposed from the items' periodicity ({{count}} months). Change it if needed."
+      "validaHastaHintVarios_other": "Proposed from the items' periodicity ({{count}} months). Change it if needed.",
+      "instalacion": "Installation",
+      "documentos": "Documents",
+      "documentoError": "The document could not be opened.",
+      "verConRed": "Photos and documents can be seen when online.",
+      "eligeCertifica": "Choose who certifies",
+      "escribirNombre": "Type the name",
+      "faltaCertifica": "Say who certifies the installation.",
+      "guardarCambios": "Save changes",
+      "salirCorreccion": "Your changes are lost and the inspection stays as it was.",
+      "seguirCorrigiendo": "Keep correcting"
     },
     "envio": {
       "titulo": "Send",
@@ -5466,6 +5480,16 @@
       "crear": "Create folder",
       "crearSub": "Create subfolder",
       "recienCreada": "Just created"
+    },
+    "reparacion": {
+      "titulo": "Repair",
+      "noCambiaSituacion": "A repair does not change the equipment's status. Only an inspection does that.",
+      "opcional": "(optional)",
+      "archivo": "File",
+      "quitar": "Remove",
+      "adjuntoError": "The file could not be added.",
+      "guardar": "Save repair",
+      "seguir": "Keep editing the repair"
     }
   },
   "auditoria": {
