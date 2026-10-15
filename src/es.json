@@ -5158,7 +5158,8 @@
         "foto_alta": "Se borra del móvil esta foto del alta: no se subirá.",
         "edicion": "Los cambios del equipo no se envían y su ficha vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
         "codigo": "El cambio de código no se envía y la ficha del equipo vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
-        "modelo": "Se borra del móvil el modelo nuevo y, con él, los equipos dados de alta con ese modelo y lo hecho sobre ellos sin enviar."
+        "modelo": "Se borra del móvil el modelo nuevo y, con él, los equipos dados de alta con ese modelo y lo hecho sobre ellos sin enviar.",
+        "correccion": "Se deshace en el móvil la corrección: la revisión vuelve a como la tiene el servidor."
       },
       "descartarArrastra_one": "Con ella se va {{count}} operación más, que dependía de ella.",
       "descartarArrastra_other": "Con ella se van {{count}} operaciones más, que dependían de ella."

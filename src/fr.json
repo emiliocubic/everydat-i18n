@@ -5035,7 +5035,8 @@
         "foto_alta": "Cette photo de l'ajout est supprimée de l'appareil : elle ne sera pas envoyée.",
         "edicion": "Les modifications de l'équipement ne sont pas envoyées et sa fiche revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
         "codigo": "Le changement de code n'est pas envoyé et la fiche de l'équipement revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
-        "modelo": "Le nouveau modèle est supprimé de l'appareil et, avec lui, les équipements ajoutés avec ce modèle et ce qui a été fait dessus sans être envoyé."
+        "modelo": "Le nouveau modèle est supprimé de l'appareil et, avec lui, les équipements ajoutés avec ce modèle et ce qui a été fait dessus sans être envoyé.",
+        "correccion": "La correction est annulée sur l'appareil : le contrôle revient à ce qu'a le serveur."
       },
       "descartarArrastra_one": "{{count}} autre opération qui en dépendait part avec elle.",
       "descartarArrastra_other": "{{count}} autres opérations qui en dépendaient partent avec elle."

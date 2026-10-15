@@ -5158,7 +5158,8 @@
         "foto_alta": "This photo of the new equipment is deleted from the device: it will not be uploaded.",
         "edicion": "The changes to the equipment are not sent and its record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
         "codigo": "The code change is not sent and the equipment record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
-        "modelo": "The new model is deleted from the device and, with it, the equipment added with that model and what was done on it and not yet sent."
+        "modelo": "The new model is deleted from the device and, with it, the equipment added with that model and what was done on it and not yet sent.",
+        "correccion": "The correction is undone on the device: the inspection goes back to how the server has it."
       },
       "descartarArrastra_one": "{{count}} more operation that depended on it goes with it.",
       "descartarArrastra_other": "{{count}} more operations that depended on it go with it."
