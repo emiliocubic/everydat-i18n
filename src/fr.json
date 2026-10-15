@@ -5024,7 +5024,21 @@
         "rechazada": "Refusée"
       },
       "esperando": "{{count}} photo attend que son inspection soit acceptée.",
-      "esperando_other": "{{count}} photos attendent que leur inspection soit acceptée."
+      "esperando_other": "{{count}} photos attendent que leur inspection soit acceptée.",
+      "descartarQue": {
+        "alta": "Le nouvel équipement est supprimé de l'appareil, avec ce qui a été fait dessus et pas encore envoyé : ses contrôles, réparations, modifications et codes. Si c'était la dernière unité de son ajout, les photos de l'ajout partent aussi.",
+        "revision": "Le contrôle est supprimé de l'appareil, avec ses points et ses photos.",
+        "adjunto": "Cette photo est supprimée de l'appareil : elle ne sera pas envoyée.",
+        "revision_conjunto": "Le contrôle d'ensemble est supprimé de l'appareil, avec ses points et ses photos, et ses équipements ne le comptent plus comme fait.",
+        "reparacion": "La réparation est supprimée de l'appareil, avec ses photos et documents.",
+        "adjunto_reparacion": "Cette pièce jointe de la réparation est supprimée de l'appareil : elle ne sera pas envoyée.",
+        "foto_alta": "Cette photo de l'ajout est supprimée de l'appareil : elle ne sera pas envoyée.",
+        "edicion": "Les modifications de l'équipement ne sont pas envoyées et sa fiche revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
+        "codigo": "Le changement de code n'est pas envoyé et la fiche de l'équipement revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
+        "modelo": "Le nouveau modèle est supprimé de l'appareil et, avec lui, les équipements ajoutés avec ce modèle et ce qui a été fait dessus sans être envoyé."
+      },
+      "descartarArrastra_one": "{{count}} autre opération qui en dépendait part avec elle.",
+      "descartarArrastra_other": "{{count}} autres opérations qui en dépendaient partent avec elle."
     },
     "ajustes": {
       "titulo": "Réglages",

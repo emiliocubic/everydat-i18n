@@ -5147,7 +5147,21 @@
         "rechazada": "Rechazada"
       },
       "esperando": "{{count}} foto espera a que el core acepte su revisión.",
-      "esperando_other": "{{count}} fotos esperan a que el core acepte su revisión."
+      "esperando_other": "{{count}} fotos esperan a que el core acepte su revisión.",
+      "descartarQue": {
+        "alta": "Se borra del móvil el equipo dado de alta y lo hecho sobre él sin enviar: sus revisiones, reparaciones, cambios y códigos. Si era la última unidad de su alta, también las fotos del alta.",
+        "revision": "Se borra del móvil la revisión, con sus puntos y sus fotos.",
+        "adjunto": "Se borra del móvil esta foto: no se subirá.",
+        "revision_conjunto": "Se borra del móvil la revisión del conjunto, con sus puntos y sus fotos, y sus equipos dejan de contarla como hecha.",
+        "reparacion": "Se borra del móvil la reparación, con sus fotos y documentos.",
+        "adjunto_reparacion": "Se borra del móvil este adjunto de la reparación: no se subirá.",
+        "foto_alta": "Se borra del móvil esta foto del alta: no se subirá.",
+        "edicion": "Los cambios del equipo no se envían y su ficha vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
+        "codigo": "El cambio de código no se envía y la ficha del equipo vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
+        "modelo": "Se borra del móvil el modelo nuevo y, con él, los equipos dados de alta con ese modelo y lo hecho sobre ellos sin enviar."
+      },
+      "descartarArrastra_one": "Con ella se va {{count}} operación más, que dependía de ella.",
+      "descartarArrastra_other": "Con ella se van {{count}} operaciones más, que dependían de ella."
     },
     "ajustes": {
       "titulo": "Ajustes",

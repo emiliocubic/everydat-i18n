@@ -5147,7 +5147,21 @@
         "rechazada": "Rejected"
       },
       "esperando": "{{count}} photo is waiting for its inspection to be accepted.",
-      "esperando_other": "{{count}} photos are waiting for their inspection to be accepted."
+      "esperando_other": "{{count}} photos are waiting for their inspection to be accepted.",
+      "descartarQue": {
+        "alta": "The new equipment is deleted from the device, together with what was done on it and not yet sent: its inspections, repairs, changes and codes. If it was the last unit of its batch, the batch photos go too.",
+        "revision": "The inspection is deleted from the device, with its checkpoints and photos.",
+        "adjunto": "This photo is deleted from the device: it will not be uploaded.",
+        "revision_conjunto": "The set inspection is deleted from the device, with its checkpoints and photos, and its equipment no longer counts it as done.",
+        "reparacion": "The repair is deleted from the device, with its photos and documents.",
+        "adjunto_reparacion": "This repair attachment is deleted from the device: it will not be uploaded.",
+        "foto_alta": "This photo of the new equipment is deleted from the device: it will not be uploaded.",
+        "edicion": "The changes to the equipment are not sent and its record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
+        "codigo": "The code change is not sent and the equipment record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
+        "modelo": "The new model is deleted from the device and, with it, the equipment added with that model and what was done on it and not yet sent."
+      },
+      "descartarArrastra_one": "{{count}} more operation that depended on it goes with it.",
+      "descartarArrastra_other": "{{count}} more operations that depended on it go with it."
     },
     "ajustes": {
       "titulo": "Settings",
