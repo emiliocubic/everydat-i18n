@@ -5163,7 +5163,10 @@
         "datos": "Ce qui est enregistré dans la file"
       },
       "fallidas_one": "{{count}} n'a pas pu être envoyé à cause d'une erreur du serveur : il reste à envoyer.",
-      "fallidas_other": "{{count}} n'ont pas pu être envoyés à cause d'une erreur du serveur : ils restent à envoyer."
+      "fallidas_other": "{{count}} n'ont pas pu être envoyés à cause d'une erreur du serveur : ils restent à envoyer.",
+      "esperaA": "Attend : {{que}}",
+      "esperaAMas_one": "Attend : {{que}} et {{count}} autre",
+      "esperaAMas_other": "Attend : {{que}} et {{count}} autres"
     },
     "ajustes": {
       "titulo": "Réglages",

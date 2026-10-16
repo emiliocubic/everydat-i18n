@@ -5286,7 +5286,10 @@
         "datos": "Lo guardado en la cola"
       },
       "fallidas_one": "{{count}} no se ha podido enviar por un fallo de la central: sigue por enviar.",
-      "fallidas_other": "{{count}} no se han podido enviar por un fallo de la central: siguen por enviar."
+      "fallidas_other": "{{count}} no se han podido enviar por un fallo de la central: siguen por enviar.",
+      "esperaA": "Espera a: {{que}}",
+      "esperaAMas_one": "Espera a: {{que}} y {{count}} más",
+      "esperaAMas_other": "Espera a: {{que}} y {{count}} más"
     },
     "ajustes": {
       "titulo": "Ajustes",

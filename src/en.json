@@ -5286,7 +5286,10 @@
         "datos": "What is stored in the queue"
       },
       "fallidas_one": "{{count}} could not be sent because of a server error: it is still pending.",
-      "fallidas_other": "{{count}} could not be sent because of a server error: they are still pending."
+      "fallidas_other": "{{count}} could not be sent because of a server error: they are still pending.",
+      "esperaA": "Waiting for: {{que}}",
+      "esperaAMas_one": "Waiting for: {{que}} and {{count}} more",
+      "esperaAMas_other": "Waiting for: {{que}} and {{count}} more"
     },
     "ajustes": {
       "titulo": "Settings",
