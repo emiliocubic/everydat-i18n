@@ -5367,9 +5367,7 @@
       "inicio": "Home",
       "buscar": "Search",
       "leerQr": "Scan QR",
-      "leerNfc": "Read NFC",
-      "nfcProximamente": "Read NFC: coming soon",
-      "nfcProximamenteHint": "NFC tag reading will arrive in a later version. In the meantime, scan the QR or barcode of the equipment."
+      "leerNfc": "Read NFC"
     },
     "ui": {
       "borrar": "Clear the text",
@@ -5534,7 +5532,18 @@
       "noEnMovil": "This set is not in what was downloaded to the device. If it should be, download its project again.",
       "recienteConfirm": "This set was inspected on {{fecha}} ({{resultado}}). Inspect it again?"
     },
-    "guardarError": "It could not be saved on the device. What you filled in is still here: try again."
+    "guardarError": "It could not be saved on the device. What you filled in is still here: try again.",
+    "nfc": {
+      "acerca": "Hold the equipment's chip against the back of the phone",
+      "oEscribe": "Or type the identifier",
+      "campo": "NFC identifier",
+      "ejemplo": "NFC-XXXX",
+      "vacio": "Type the chip's identifier.",
+      "ninguno": "No equipment has “{{codigo}}” assigned.",
+      "apagado": "NFC is turned off",
+      "abrirAjustes": "Open settings",
+      "sinNfc": "This phone doesn't read NFC chips. Type the chip's identifier."
+    }
   },
   "auditoria": {
     "buscar": "Search by user name or email",

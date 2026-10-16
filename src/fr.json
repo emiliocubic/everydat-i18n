@@ -5244,9 +5244,7 @@
       "inicio": "Accueil",
       "buscar": "Rechercher",
       "leerQr": "Lire le QR",
-      "leerNfc": "Lire NFC",
-      "nfcProximamente": "Lire NFC : bientôt disponible",
-      "nfcProximamenteHint": "La lecture des puces NFC arrivera dans une version ultérieure. En attendant, lisez le QR ou le code-barres de l'équipement."
+      "leerNfc": "Lire NFC"
     },
     "ui": {
       "borrar": "Effacer le texte",
@@ -5411,7 +5409,18 @@
       "noEnMovil": "Cet ensemble n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet.",
       "recienteConfirm": "Cet ensemble a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?"
     },
-    "guardarError": "Impossible d'enregistrer sur l'appareil. Ce que vous avez saisi est toujours là : réessayez."
+    "guardarError": "Impossible d'enregistrer sur l'appareil. Ce que vous avez saisi est toujours là : réessayez.",
+    "nfc": {
+      "acerca": "Approchez la puce de l'équipement du dos du téléphone",
+      "oEscribe": "Ou saisissez l'identifiant",
+      "campo": "Identifiant NFC",
+      "ejemplo": "NFC-XXXX",
+      "vacio": "Saisissez l'identifiant de la puce.",
+      "ninguno": "Aucun équipement n'a l'identifiant « {{codigo}} ».",
+      "apagado": "Le NFC est désactivé",
+      "abrirAjustes": "Ouvrir les réglages",
+      "sinNfc": "Ce téléphone ne lit pas les puces NFC. Saisissez l'identifiant de la puce."
+    }
   },
   "auditoria": {
     "buscar": "Rechercher par nom ou courriel de l'utilisateur",

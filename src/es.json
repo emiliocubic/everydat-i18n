@@ -5367,9 +5367,7 @@
       "inicio": "Inicio",
       "buscar": "Buscar",
       "leerQr": "Leer QR",
-      "leerNfc": "Leer NFC",
-      "nfcProximamente": "Leer NFC: próximamente",
-      "nfcProximamenteHint": "La lectura de chips NFC llegará en una versión posterior. Mientras tanto, lee el QR o el código de barras del equipo."
+      "leerNfc": "Leer NFC"
     },
     "ui": {
       "borrar": "Borrar el texto",
@@ -5534,7 +5532,18 @@
       "noEnMovil": "Este conjunto no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto.",
       "recienteConfirm": "Este conjunto se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?"
     },
-    "guardarError": "No se ha podido guardar en el móvil. Lo rellenado sigue aquí: inténtalo de nuevo."
+    "guardarError": "No se ha podido guardar en el móvil. Lo rellenado sigue aquí: inténtalo de nuevo.",
+    "nfc": {
+      "acerca": "Acerca el chip del equipo a la parte trasera del teléfono",
+      "oEscribe": "O escribe el identificador",
+      "campo": "Identificador NFC",
+      "ejemplo": "NFC-XXXX",
+      "vacio": "Escribe el identificador del chip.",
+      "ninguno": "Ningún equipo tiene asignado «{{codigo}}».",
+      "apagado": "El NFC está desactivado",
+      "abrirAjustes": "Abrir ajustes",
+      "sinNfc": "Este móvil no lee chips NFC. Escribe el identificador del chip."
+    }
   },
   "auditoria": {
     "buscar": "Buscar por nombre o correo del usuario",
