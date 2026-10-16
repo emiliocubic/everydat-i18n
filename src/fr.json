@@ -4921,7 +4921,8 @@
       "revisionInstalacion": "Contrôle d'installation",
       "paralizadoConfirm_reparacion": "Ce projet est en pause. Enregistrer la réparation quand même ?",
       "paralizadoConfirm_instalacion": "Ce projet est en pause. Contrôler l'installation quand même ?",
-      "equipoNoEnMovil": "Cet équipement n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet."
+      "equipoNoEnMovil": "Cet équipement n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet.",
+      "borrarEnParte": "Cette inspection figure dans un bon d'intervention : elle ne peut être ni supprimée ni corrigée depuis l'appareil."
     },
     "revision": {
       "titulo": "Contrôle",
@@ -5021,7 +5022,9 @@
         "correccion": "Correction de contrôle",
         "reparacion": "Réparation",
         "adjunto_reparacion": "Pièce jointe de la réparation",
-        "revision_conjunto": "Contrôle d'ensemble"
+        "revision_conjunto": "Contrôle d'ensemble",
+        "parte": "Bon d'intervention",
+        "firma_parte": "Signature du bon"
       },
       "estado": {
         "pendiente": "En attente",
@@ -5029,8 +5032,8 @@
         "aceptada": "Envoyée",
         "rechazada": "Refusée"
       },
-      "esperando": "{{count}} photo attend que son inspection soit acceptée.",
-      "esperando_other": "{{count}} photos attendent que leur inspection soit acceptée.",
+      "esperando": "{{count}} opération attend une autre dont elle dépend et partira au prochain envoi.",
+      "esperando_other": "{{count}} opérations attendent d'autres dont elles dépendent et partiront au prochain envoi.",
       "descartarQue": {
         "alta": "Le nouvel équipement est supprimé de l'appareil, avec ce qui a été fait dessus et pas encore envoyé : ses contrôles, réparations, modifications et codes. Si c'était la dernière unité de son ajout, les photos de l'ajout partent aussi.",
         "revision": "Le contrôle est supprimé de l'appareil, avec ses points et ses photos.",
@@ -5042,10 +5045,13 @@
         "edicion": "Les modifications de l'équipement ne sont pas envoyées et sa fiche revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
         "codigo": "Le changement de code n'est pas envoyé et la fiche de l'équipement revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
         "modelo": "Le nouveau modèle est supprimé de l'appareil et, avec lui, les équipements ajoutés avec ce modèle et ce qui a été fait dessus sans être envoyé.",
-        "correccion": "La correction est annulée sur l'appareil : le contrôle revient à ce qu'a le serveur."
+        "correccion": "La correction est annulée sur l'appareil : le contrôle revient à ce qu'a le serveur.",
+        "parte": "Le bon est défait sur l'appareil : ses interventions redeviennent libres pour un autre bon et, si le client l'avait signé, la signature est aussi supprimée.",
+        "firma_parte": "La signature du client est supprimée de l'appareil : le bon redevient non signé."
       },
       "descartarArrastra_one": "{{count}} autre opération qui en dépendait part avec elle.",
-      "descartarArrastra_other": "{{count}} autres opérations qui en dépendaient partent avec elle."
+      "descartarArrastra_other": "{{count}} autres opérations qui en dépendaient partent avec elle.",
+      "enParte": "Ceci figure dans un bon d'intervention non envoyé. Pour l'écarter, écartez d'abord le bon."
     },
     "ajustes": {
       "titulo": "Réglages",
@@ -5423,6 +5429,34 @@
       "apagado": "Le NFC est désactivé",
       "abrirAjustes": "Ouvrir les réglages",
       "sinNfc": "Ce téléphone ne lit pas les puces NFC. Saisissez l'identifiant de la puce."
+    },
+    "partes": {
+      "ninguno": "Il n'y a pas encore de bon d'intervention.",
+      "sinNumero": "Sans numéro",
+      "numeroAlEnviar": "Le numéro est attribué à l'envoi.",
+      "noEsta": "Ce bon n'est plus sur l'appareil.",
+      "emision": "Émission",
+      "selloEmpresa": "Avec le cachet de l'entreprise",
+      "ninguna": "Aucune intervention ne correspond au périmètre.",
+      "confirmarCrear_one": "Créer et émettre le bon avec {{count}} intervention ?",
+      "confirmarCrear_other": "Créer et émettre le bon avec {{count}} interventions ?",
+      "confirmarCrearHint": "Il sera prêt pour la signature du client.",
+      "nombreFirma": "Nom du signataire",
+      "nombrePh": "Nom et prénom",
+      "firma": "Signature",
+      "firmeAqui": "Signez ici avec le doigt",
+      "borrarFirma": "Effacer la signature",
+      "guardarFirma": "Enregistrer la signature",
+      "confirmarFirma": "Enregistrer la signature du client ?",
+      "confirmarFirmaHint": "Le bon sera signé et ne pourra plus être modifié.",
+      "firmado": "Bon signé. Il sera envoyé avec le reste en attente.",
+      "firmaError": "La signature n'a pas pu être enregistrée sur l'appareil. Réessayez.",
+      "firmadoPor": "Signé par",
+      "firmaSinRed": "L'image de la signature est visible avec une connexion.",
+      "firmaPerdida": "L'image de la signature n'est plus sur l'appareil : écartez la signature et recueillez-la à nouveau.",
+      "sinFirmar": "En attente de la signature du client.",
+      "conflicto_one": "Une intervention de ce bon figure aussi dans {{partes}}. Le bureau annulera l'un des deux.",
+      "conflicto_other": "{{count}} interventions de ce bon figurent aussi dans {{partes}}. Le bureau annulera l'un des deux."
     }
   },
   "auditoria": {

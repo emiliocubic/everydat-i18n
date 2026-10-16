@@ -5044,7 +5044,8 @@
       "revisionInstalacion": "Revisión de instalación",
       "paralizadoConfirm_reparacion": "Este proyecto está paralizado. ¿Registrar la reparación igualmente?",
       "paralizadoConfirm_instalacion": "Este proyecto está paralizado. ¿Revisar la instalación igualmente?",
-      "equipoNoEnMovil": "Este equipo no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto."
+      "equipoNoEnMovil": "Este equipo no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto.",
+      "borrarEnParte": "Esta revisión va en un parte de trabajo: no se puede borrar ni corregir desde el móvil."
     },
     "revision": {
       "titulo": "Revisión",
@@ -5144,7 +5145,9 @@
         "correccion": "Corrección de revisión",
         "reparacion": "Reparación",
         "adjunto_reparacion": "Adjunto de la reparación",
-        "revision_conjunto": "Revisión de conjunto"
+        "revision_conjunto": "Revisión de conjunto",
+        "parte": "Parte de trabajo",
+        "firma_parte": "Firma del parte"
       },
       "estado": {
         "pendiente": "Pendiente",
@@ -5152,8 +5155,8 @@
         "aceptada": "Enviada",
         "rechazada": "Rechazada"
       },
-      "esperando": "{{count}} foto espera a que el core acepte su revisión.",
-      "esperando_other": "{{count}} fotos esperan a que el core acepte su revisión.",
+      "esperando": "{{count}} operación espera a otra de la que depende y saldrá en el próximo envío.",
+      "esperando_other": "{{count}} operaciones esperan a otras de las que dependen y saldrán en el próximo envío.",
       "descartarQue": {
         "alta": "Se borra del móvil el equipo dado de alta y lo hecho sobre él sin enviar: sus revisiones, reparaciones, cambios y códigos. Si era la última unidad de su alta, también las fotos del alta.",
         "revision": "Se borra del móvil la revisión, con sus puntos y sus fotos.",
@@ -5165,10 +5168,13 @@
         "edicion": "Los cambios del equipo no se envían y su ficha vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
         "codigo": "El cambio de código no se envía y la ficha del equipo vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
         "modelo": "Se borra del móvil el modelo nuevo y, con él, los equipos dados de alta con ese modelo y lo hecho sobre ellos sin enviar.",
-        "correccion": "Se deshace en el móvil la corrección: la revisión vuelve a como la tiene el servidor."
+        "correccion": "Se deshace en el móvil la corrección: la revisión vuelve a como la tiene el servidor.",
+        "parte": "Se deshace el parte en el móvil: sus actuaciones quedan libres para otro parte y, si el cliente lo había firmado, la firma también se borra.",
+        "firma_parte": "Se borra del móvil la firma del cliente: el parte vuelve a quedar sin firmar."
       },
       "descartarArrastra_one": "Con ella se va {{count}} operación más, que dependía de ella.",
-      "descartarArrastra_other": "Con ella se van {{count}} operaciones más, que dependían de ella."
+      "descartarArrastra_other": "Con ella se van {{count}} operaciones más, que dependían de ella.",
+      "enParte": "Esto va en un parte de trabajo sin enviar. Para descartarlo, descarta antes el parte."
     },
     "ajustes": {
       "titulo": "Ajustes",
@@ -5546,6 +5552,34 @@
       "apagado": "El NFC está desactivado",
       "abrirAjustes": "Abrir ajustes",
       "sinNfc": "Este móvil no lee chips NFC. Escribe el identificador del chip."
+    },
+    "partes": {
+      "ninguno": "Todavía no hay partes de trabajo.",
+      "sinNumero": "Sin número",
+      "numeroAlEnviar": "El número se asigna al enviarlo.",
+      "noEsta": "Este parte ya no está en el móvil.",
+      "emision": "Emisión",
+      "selloEmpresa": "Con el sello de la empresa",
+      "ninguna": "Ninguna actuación cumple el alcance.",
+      "confirmarCrear_one": "¿Crear y emitir el parte con {{count}} actuación?",
+      "confirmarCrear_other": "¿Crear y emitir el parte con {{count}} actuaciones?",
+      "confirmarCrearHint": "Quedará listo para la firma del cliente.",
+      "nombreFirma": "Nombre de quien firma",
+      "nombrePh": "Nombre y apellidos",
+      "firma": "Firma",
+      "firmeAqui": "Firme aquí con el dedo",
+      "borrarFirma": "Borrar firma",
+      "guardarFirma": "Guardar firma",
+      "confirmarFirma": "¿Guardar la firma del cliente?",
+      "confirmarFirmaHint": "El parte quedará firmado y no se podrá modificar.",
+      "firmado": "Parte firmado. Se enviará con lo pendiente.",
+      "firmaError": "No se ha podido guardar la firma en el móvil. Inténtalo de nuevo.",
+      "firmadoPor": "Firmado por",
+      "firmaSinRed": "La imagen de la firma se ve con conexión.",
+      "firmaPerdida": "La imagen de la firma ya no está en el móvil: descarta la firma y vuelve a recogerla.",
+      "sinFirmar": "Pendiente de la firma del cliente.",
+      "conflicto_one": "Una actuación de este parte está también en {{partes}}. La oficina anulará uno de los dos.",
+      "conflicto_other": "{{count}} actuaciones de este parte están también en {{partes}}. La oficina anulará uno de los dos."
     }
   },
   "auditoria": {

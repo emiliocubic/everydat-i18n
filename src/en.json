@@ -5044,7 +5044,8 @@
       "revisionInstalacion": "Installation inspection",
       "paralizadoConfirm_reparacion": "This project is paused. Record the repair anyway?",
       "paralizadoConfirm_instalacion": "This project is paused. Inspect the installation anyway?",
-      "equipoNoEnMovil": "This equipment is not in what was downloaded to the device. If it should be, download its project again."
+      "equipoNoEnMovil": "This equipment is not in what was downloaded to the device. If it should be, download its project again.",
+      "borrarEnParte": "This inspection is in a work report: it cannot be deleted or corrected from the device."
     },
     "revision": {
       "titulo": "Inspection",
@@ -5144,7 +5145,9 @@
         "correccion": "Inspection correction",
         "reparacion": "Repair",
         "adjunto_reparacion": "Repair attachment",
-        "revision_conjunto": "Set inspection"
+        "revision_conjunto": "Set inspection",
+        "parte": "Work report",
+        "firma_parte": "Report signature"
       },
       "estado": {
         "pendiente": "Pending",
@@ -5152,8 +5155,8 @@
         "aceptada": "Sent",
         "rechazada": "Rejected"
       },
-      "esperando": "{{count}} photo is waiting for its inspection to be accepted.",
-      "esperando_other": "{{count}} photos are waiting for their inspection to be accepted.",
+      "esperando": "{{count}} operation is waiting for another one it depends on and will go in the next send.",
+      "esperando_other": "{{count}} operations are waiting for others they depend on and will go in the next send.",
       "descartarQue": {
         "alta": "The new equipment is deleted from the device, together with what was done on it and not yet sent: its inspections, repairs, changes and codes. If it was the last unit of its batch, the batch photos go too.",
         "revision": "The inspection is deleted from the device, with its checkpoints and photos.",
@@ -5165,10 +5168,13 @@
         "edicion": "The changes to the equipment are not sent and its record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
         "codigo": "The code change is not sent and the equipment record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
         "modelo": "The new model is deleted from the device and, with it, the equipment added with that model and what was done on it and not yet sent.",
-        "correccion": "The correction is undone on the device: the inspection goes back to how the server has it."
+        "correccion": "The correction is undone on the device: the inspection goes back to how the server has it.",
+        "parte": "The report is undone on the device: its work becomes free for another report and, if the customer had signed it, the signature is deleted too.",
+        "firma_parte": "The customer's signature is deleted from the device: the report is unsigned again."
       },
       "descartarArrastra_one": "{{count}} more operation that depended on it goes with it.",
-      "descartarArrastra_other": "{{count}} more operations that depended on it go with it."
+      "descartarArrastra_other": "{{count}} more operations that depended on it go with it.",
+      "enParte": "This is in a work report that has not been sent. To discard it, discard the report first."
     },
     "ajustes": {
       "titulo": "Settings",
@@ -5546,6 +5552,34 @@
       "apagado": "NFC is turned off",
       "abrirAjustes": "Open settings",
       "sinNfc": "This phone doesn't read NFC chips. Type the chip's identifier."
+    },
+    "partes": {
+      "ninguno": "There are no work reports yet.",
+      "sinNumero": "No number",
+      "numeroAlEnviar": "The number is assigned when it is sent.",
+      "noEsta": "This report is no longer on the device.",
+      "emision": "Issued",
+      "selloEmpresa": "With the company stamp",
+      "ninguna": "No work matches the scope.",
+      "confirmarCrear_one": "Create and issue the report with {{count}} item of work?",
+      "confirmarCrear_other": "Create and issue the report with {{count}} items of work?",
+      "confirmarCrearHint": "It will be ready for the customer's signature.",
+      "nombreFirma": "Name of the person signing",
+      "nombrePh": "Full name",
+      "firma": "Signature",
+      "firmeAqui": "Sign here with your finger",
+      "borrarFirma": "Clear signature",
+      "guardarFirma": "Save signature",
+      "confirmarFirma": "Save the customer's signature?",
+      "confirmarFirmaHint": "The report will be signed and can no longer be changed.",
+      "firmado": "Report signed. It will be sent with the rest of the pending work.",
+      "firmaError": "The signature could not be saved on the device. Please try again.",
+      "firmadoPor": "Signed by",
+      "firmaSinRed": "The signature image can be seen with a connection.",
+      "firmaPerdida": "The signature image is no longer on the device: discard the signature and collect it again.",
+      "sinFirmar": "Awaiting the customer's signature.",
+      "conflicto_one": "One item of work in this report is also in {{partes}}. The office will void one of the two.",
+      "conflicto_other": "{{count}} items of work in this report are also in {{partes}}. The office will void one of the two."
     }
   },
   "auditoria": {
