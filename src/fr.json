@@ -5407,7 +5407,10 @@
       "nElementos_one": "({{count}} équipement)",
       "nElementos_other": "({{count}} équipements)",
       "noEnMovil": "Cet ensemble n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet.",
-      "recienteConfirm": "Cet ensemble a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?"
+      "recienteConfirm": "Cet ensemble a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?",
+      "formaParte": "Fait partie de l'ensemble",
+      "abrirAria": "Ouvrir la fiche de l'ensemble {{nombre}}",
+      "seCorrigeDesdeConjunto": "Ce contrôle a été fait sur l'ensemble entier : il se corrige depuis la fiche de l'ensemble, pas depuis celle de chaque équipement."
     },
     "guardarError": "Impossible d'enregistrer sur l'appareil. Ce que vous avez saisi est toujours là : réessayez.",
     "nfc": {

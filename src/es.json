@@ -5530,7 +5530,10 @@
       "nElementos_one": "({{count}} elemento)",
       "nElementos_other": "({{count}} elementos)",
       "noEnMovil": "Este conjunto no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto.",
-      "recienteConfirm": "Este conjunto se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?"
+      "recienteConfirm": "Este conjunto se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?",
+      "formaParte": "Forma parte del conjunto",
+      "abrirAria": "Abrir la ficha del conjunto {{nombre}}",
+      "seCorrigeDesdeConjunto": "Esta revisión se hizo al conjunto entero: se corrige desde la ficha del conjunto, no desde la de cada equipo."
     },
     "guardarError": "No se ha podido guardar en el móvil. Lo rellenado sigue aquí: inténtalo de nuevo.",
     "nfc": {

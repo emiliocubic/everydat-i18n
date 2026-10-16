@@ -5530,7 +5530,10 @@
       "nElementos_one": "({{count}} item)",
       "nElementos_other": "({{count}} items)",
       "noEnMovil": "This set is not in what was downloaded to the device. If it should be, download its project again.",
-      "recienteConfirm": "This set was inspected on {{fecha}} ({{resultado}}). Inspect it again?"
+      "recienteConfirm": "This set was inspected on {{fecha}} ({{resultado}}). Inspect it again?",
+      "formaParte": "Part of the set",
+      "abrirAria": "Open the sheet of the set {{nombre}}",
+      "seCorrigeDesdeConjunto": "This inspection was made to the whole set: it is corrected from the set's sheet, not from each item's."
     },
     "guardarError": "It could not be saved on the device. What you filled in is still here: try again.",
     "nfc": {
