@@ -5109,7 +5109,8 @@
         "borrado": "Suppression d'un contrôle déjà envoyé",
         "parte_one": "Bon d'intervention du {{cuando}}, avec {{count}} intervention",
         "parte_other": "Bon d'intervention du {{cuando}}, avec {{count}} interventions",
-        "firma_parte": "Signature de {{nombre}} sur un bon d'intervention"
+        "firma_parte": "Signature de {{nombre}} sur un bon d'intervention",
+        "chip": "Puce {{valor}} pour l'équipement {{equipo}}"
       },
       "detalle": {
         "titulo": "Envoi",
@@ -5587,6 +5588,16 @@
     "planos": {
       "pista": "Ils s'ouvrent avec la visionneuse du téléphone. Sans couverture, seuls ceux déjà ouverts sur ce mobile.",
       "noSeAbre": "Impossible d'ouvrir le plan. Sans couverture, seuls les plans déjà ouverts sur ce mobile peuvent s'ouvrir."
+    },
+    "chip": {
+      "rotulo": "Tag/ID de puce",
+      "titulo": "Attribuer une puce NFC",
+      "sustituye": "Cet équipement porte la puce {{chip}}. Celle que vous lisez ou saisissez la remplace.",
+      "asignar": "Attribuer",
+      "asignando": "Attribution…",
+      "sinUid": "Impossible de lire le numéro de la puce. Approchez-la à nouveau ou saisissez-le.",
+      "enUsoTitulo": "Puce sur un autre équipement",
+      "enUso": "Cette puce est déjà sur un autre équipement ({{donde}}). La retirer et l'attribuer à celui-ci ?"
     }
   },
   "auditoria": {

@@ -5232,7 +5232,8 @@
         "borrado": "Borrado de una revisión ya enviada",
         "parte_one": "Parte de trabajo del {{cuando}}, con {{count}} actuación",
         "parte_other": "Parte de trabajo del {{cuando}}, con {{count}} actuaciones",
-        "firma_parte": "Firma de {{nombre}} en un parte de trabajo"
+        "firma_parte": "Firma de {{nombre}} en un parte de trabajo",
+        "chip": "Chip {{valor}} para el equipo {{equipo}}"
       },
       "detalle": {
         "titulo": "Envío",
@@ -5710,6 +5711,16 @@
     "planos": {
       "pista": "Se abren con el visor del teléfono. Sin cobertura, solo los que ya se abrieron antes en este móvil.",
       "noSeAbre": "No se ha podido abrir el plano. Sin cobertura solo se abren los que ya se abrieron antes en este móvil."
+    },
+    "chip": {
+      "rotulo": "Tag/Chip ID",
+      "titulo": "Asignar chip NFC",
+      "sustituye": "Este equipo lleva el chip {{chip}}. El que leas o escribas lo sustituye.",
+      "asignar": "Asignar",
+      "asignando": "Asignando…",
+      "sinUid": "No se ha podido leer el número del chip. Acércalo otra vez o escríbelo.",
+      "enUsoTitulo": "Chip en otro equipo",
+      "enUso": "Ese chip ya lo lleva otro equipo ({{donde}}). ¿Quitárselo y asignarlo a este?"
     }
   },
   "auditoria": {
