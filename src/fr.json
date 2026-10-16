@@ -5030,7 +5030,8 @@
         "pendiente": "En attente",
         "enviando": "Envoi",
         "aceptada": "Envoyée",
-        "rechazada": "Refusée"
+        "rechazada": "Refusée",
+        "esperando": "Attend une autre"
       },
       "esperando": "{{count}} opération attend une autre dont elle dépend et partira au prochain envoi.",
       "esperando_other": "{{count}} opérations attendent d'autres dont elles dépendent et partiront au prochain envoi.",
@@ -5051,7 +5052,118 @@
       },
       "descartarArrastra_one": "{{count}} autre opération qui en dépendait part avec elle.",
       "descartarArrastra_other": "{{count}} autres opérations qui en dépendaient partent avec elle.",
-      "enParte": "Ceci figure dans un bon d'intervention non envoyé. Pour l'écarter, écartez d'abord le bon."
+      "enParte": "Ceci figure dans un bon d'intervention non envoyé. Pour l'abandonner, annulez d'abord le bon.",
+      "resumen": "Dans la file",
+      "cuenta": {
+        "porEnviar": "À envoyer",
+        "esperando": "En attente d'une autre",
+        "rechazadas": "Refusées",
+        "enviadas": "Envoyées"
+      },
+      "rechazadasHint_one": "Le serveur a refusé {{count}} envoi. Touchez-le pour voir sa réponse, le corriger et le renvoyer.",
+      "rechazadasHint_other": "Le serveur a refusé {{count}} envois. Touchez chacun pour voir sa réponse, le corriger et le renvoyer.",
+      "reenviarTodas": "Renvoyer tous les refusés",
+      "fallos_one": "{{count}} tentative échouée",
+      "fallos_other": "{{count}} tentatives échouées",
+      "clase": {
+        "sin_conexion": "Pas de connexion",
+        "sin_respuesta": "Pas de réponse du serveur"
+      },
+      "explica": {
+        "pendiente": "À envoyer : partira la prochaine fois que vous touchez « Envoyer » avec une connexion.",
+        "esperando": "En attente : partira quand le serveur aura accepté ce dont elle dépend (ci-dessous, « Attend »).",
+        "enviando": "En cours d'envoi.",
+        "aceptada": "Envoyée : le serveur l'a acceptée.",
+        "rechazada": "Refusée : le serveur ne l'a pas acceptée. Sa réponse est ci-dessous. Corrigez-la et renvoyez-la, ou abandonnez-la."
+      },
+      "queHacer": {
+        "sin_conexion": "Il n'y avait pas de connexion. Renvoyez quand vous aurez du réseau.",
+        "sin_respuesta": "Aucune réponse du serveur (connexion ou problème du téléphone). Réessayez ; si cela se répète, partagez le journal avec le support.",
+        "sesion": "Le serveur ne reconnaît plus votre session. Reconnectez-vous avec votre mot de passe : le travail en attente est conservé.",
+        "permiso": "Vous n'avez pas la permission sur le serveur, ou ce n'est plus dans votre périmètre. Demandez au bureau de vérifier et renvoyez.",
+        "no_existe": "Le serveur ne trouve pas quelque chose dont ceci a besoin (le bureau l'a peut-être supprimé). Mettez à jour le projet ; si rien ne change, abandonnez-le ou partagez le journal avec le support.",
+        "conflicto": "Quelqu'un l'a modifié sur le serveur entre-temps. Mettez à jour le projet, vérifiez et renvoyez.",
+        "en_uso": "Un autre équipement porte déjà ce code. Vous pouvez le lui retirer et le donner à celui-ci (« Réattribuer le code »), ou le corriger.",
+        "datos": "Le serveur n'accepte pas certaines données (voir lesquelles ci-dessous). Corrigez-les et renvoyez.",
+        "central": "Le serveur a eu une erreur en la recevant. Elle reste à envoyer et le reste part quand même ; si cela se répète, partagez le journal avec le support.",
+        "otro": "Le serveur ne l'a pas acceptée. Si vous ne savez pas pourquoi, partagez le journal avec le support."
+      },
+      "que": {
+        "equipoSinDatos": "non identifié",
+        "revision": "Contrôle de l'équipement {{equipo}}, {{cuando}}",
+        "instalacion": "Contrôle d'installation de l'équipement {{equipo}}, {{cuando}}",
+        "revision_conjunto": "Contrôle de l'ensemble {{conjunto}}, {{cuando}}",
+        "adjunto": "Photo du contrôle de l'équipement {{equipo}}",
+        "adjuntoConjunto": "Photo du contrôle de l'ensemble {{conjunto}}",
+        "reparacion": "Réparation de l'équipement {{equipo}}, {{cuando}}",
+        "adjunto_reparacion": "Fichier de la réparation de l'équipement {{equipo}}",
+        "alta": "Nouvel équipement {{equipo}}",
+        "foto_alta": "Photo du nouvel équipement {{equipo}}",
+        "edicion": "Modifications de l'équipement {{equipo}}",
+        "codigo": "Code {{valor}} pour l'équipement {{equipo}}",
+        "codigoQuitar": "Retirer le code {{valor}} de l'équipement {{equipo}}",
+        "carpeta": "Nouveau dossier « {{nombre}} »",
+        "correccion": "Correction du dernier contrôle de l'équipement {{equipo}}",
+        "correccionConjunto": "Correction du dernier contrôle de l'ensemble {{conjunto}}",
+        "modelo": "Nouveau modèle « {{modelo}} »",
+        "borrado": "Suppression d'un contrôle déjà envoyé",
+        "parte_one": "Bon d'intervention du {{cuando}}, avec {{count}} intervention",
+        "parte_other": "Bon d'intervention du {{cuando}}, avec {{count}} interventions",
+        "firma_parte": "Signature de {{nombre}} sur un bon d'intervention"
+      },
+      "detalle": {
+        "titulo": "Envoi",
+        "noEsta": "N'est plus dans la file",
+        "noEstaHint": "Il a été envoyé et nettoyé, ou abandonné.",
+        "aceptada": "Le serveur l'a acceptée.",
+        "otraVezRechazada": "Le serveur l'a de nouveau refusée. Sa réponse est ci-dessous.",
+        "sinRed": "Pas de connexion : toujours à envoyer.",
+        "sigue": "Toujours à envoyer : voir ci-dessous ce qu'elle attend ou ce que le serveur a répondu.",
+        "reasignarConfirm": "À l'envoi, le code sera retiré à l'autre équipement et donné à celui-ci.",
+        "nombreCambiado": "Nom modifié. Touchez « Renvoyer » pour l'envoyer de nouveau.",
+        "corregirNombre": "Modifier le nom du dossier",
+        "guardarNombre": "Enregistrer le nom",
+        "deshacerParte": "Annuler le bon",
+        "compartir": "Partager le journal",
+        "reenviar": "Renvoyer",
+        "enviarAhora": "Envoyer maintenant",
+        "estado": "État",
+        "guardada": "Fait sur le téléphone",
+        "fallos": "Tentatives échouées",
+        "esperaA": "Attend",
+        "respuestas": "Ce que le serveur a répondu",
+        "sinRespuestas": "Aucune tentative d'envoi n'a encore échoué.",
+        "codigo": "Erreur {{codigo}}",
+        "corregir": "Corriger",
+        "noSeCorrigeEnParte": "Elle figure dans un bon d'intervention non envoyé et le client l'a vue ainsi : elle ne se corrige ni ne s'abandonne. S'il faut la changer, annulez d'abord le bon.",
+        "reasignar": "Réattribuer le code à cet équipement",
+        "verParte": "Voir le bon qui la contient",
+        "abrir": "Ouvrir"
+      },
+      "carpeta": {
+        "equipos_one": "{{count}} équipement",
+        "equipos_other": "{{count}} équipements",
+        "subcarpetas_one": "{{count}} sous-dossier",
+        "subcarpetas_other": "{{count}} sous-dossiers",
+        "vacia": "Le nouveau dossier est supprimé du téléphone : il est vide.",
+        "aLaMadre": "Le nouveau dossier est retiré du téléphone. Son contenu ({{equipos}} et {{subcarpetas}}) n'est pas perdu : il passe dans « {{madre}} » et y est envoyé.",
+        "bloqueada": "Impossible de l'abandonner : il contient {{equipos}} et {{subcarpetas}} créés ici et, étant de premier niveau, il n'y a pas d'autre dossier où les mettre. Modifiez son nom si besoin et renvoyez-le ; si le serveur ne l'accepte toujours pas, partagez le journal avec le support."
+      },
+      "registro": {
+        "cabecera": "Everydat · journal d'envoi",
+        "que": "Quoi",
+        "tipo": "Type",
+        "estado": "État",
+        "creada": "fait le",
+        "app": "App",
+        "instancia": "Instance",
+        "usuario": "Utilisateur",
+        "intentos": "Tentatives échouées",
+        "sinIntentos": "aucune",
+        "datos": "Ce qui est enregistré dans la file"
+      },
+      "fallidas_one": "{{count}} n'a pas pu être envoyé à cause d'une erreur du serveur : il reste à envoyer.",
+      "fallidas_other": "{{count}} n'ont pas pu être envoyés à cause d'une erreur du serveur : ils restent à envoyer."
     },
     "ajustes": {
       "titulo": "Réglages",
@@ -5244,7 +5356,9 @@
       "abrir": "Ouvrir"
     },
     "cabecera": {
-      "enviar": "Envoyer ({{count}})"
+      "enviar": "Envoyer ({{count}})",
+      "rechazadas_one": "{{count}} refusé",
+      "rechazadas_other": "{{count}} refusés"
     },
     "barra": {
       "inicio": "Accueil",
@@ -5456,7 +5570,12 @@
       "firmaPerdida": "L'image de la signature n'est plus sur l'appareil : écartez la signature et recueillez-la à nouveau.",
       "sinFirmar": "En attente de la signature du client.",
       "conflicto_one": "Une intervention de ce bon figure aussi dans {{partes}}. Le bureau annulera l'un des deux.",
-      "conflicto_other": "{{count}} interventions de ce bon figurent aussi dans {{partes}}. Le bureau annulera l'un des deux."
+      "conflicto_other": "{{count}} interventions de ce bon figurent aussi dans {{partes}}. Le bureau annulera l'un des deux.",
+      "apartadasRechazo_one": "{{count}} intervention faite ici n'est pas proposée car le serveur l'a refusée : corrigez-la dans « Envoyer » et vous pourrez l'inclure.",
+      "apartadasRechazo_other": "{{count}} interventions faites ici ne sont pas proposées car le serveur les a refusées : corrigez-les dans « Envoyer » et vous pourrez les inclure.",
+      "espera": "Ce bon partira quand le serveur aura ce qui a été fait ici et qu'il contient :\n{{lista}}",
+      "esperaRechazo": "Ce bon ne partira pas tant que ce que le serveur a refusé n'est pas corrigé :\n{{lista}}\nCorrigez-le et renvoyez-le dans « Envoyer », ou annulez le bon.",
+      "verEnEnviar": "Voir dans « Envoyer »"
     }
   },
   "auditoria": {

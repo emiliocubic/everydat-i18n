@@ -5122,7 +5122,7 @@
       "enviar": "Enviar ({{count}})",
       "pendientes": "Por enviar",
       "nadaPendiente": "Nada por enviar.",
-      "rechazadas": "Rechazadas por el servidor",
+      "rechazadas": "Rechazadas por la central",
       "aceptadas": "{{count}} enviada",
       "aceptadas_other": "{{count}} enviadas",
       "limpiar": "Limpiar las enviadas",
@@ -5153,7 +5153,8 @@
         "pendiente": "Pendiente",
         "enviando": "Enviando",
         "aceptada": "Enviada",
-        "rechazada": "Rechazada"
+        "rechazada": "Rechazada",
+        "esperando": "Esperando"
       },
       "esperando": "{{count}} operación espera a otra de la que depende y saldrá en el próximo envío.",
       "esperando_other": "{{count}} operaciones esperan a otras de las que dependen y saldrán en el próximo envío.",
@@ -5174,7 +5175,118 @@
       },
       "descartarArrastra_one": "Con ella se va {{count}} operación más, que dependía de ella.",
       "descartarArrastra_other": "Con ella se van {{count}} operaciones más, que dependían de ella.",
-      "enParte": "Esto va en un parte de trabajo sin enviar. Para descartarlo, descarta antes el parte."
+      "enParte": "Esto va en un parte de trabajo sin enviar. Para descartarlo, deshaz antes el parte.",
+      "resumen": "En la cola",
+      "cuenta": {
+        "porEnviar": "Por enviar",
+        "esperando": "Esperando a otra",
+        "rechazadas": "Rechazadas",
+        "enviadas": "Enviadas"
+      },
+      "rechazadasHint_one": "La central ha rechazado {{count}} envío. Tócalo para ver qué ha respondido, corregirlo y reenviarlo.",
+      "rechazadasHint_other": "La central ha rechazado {{count}} envíos. Toca cada uno para ver qué ha respondido, corregirlo y reenviarlo.",
+      "reenviarTodas": "Reenviar todas las rechazadas",
+      "fallos_one": "{{count}} intento fallido",
+      "fallos_other": "{{count}} intentos fallidos",
+      "clase": {
+        "sin_conexion": "Sin conexión",
+        "sin_respuesta": "Sin respuesta de la central"
+      },
+      "explica": {
+        "pendiente": "Por enviar: saldrá la próxima vez que pulses «Enviar» con conexión.",
+        "esperando": "Esperando: saldrá cuando la central acepte aquello de lo que depende (abajo, «Espera a»).",
+        "enviando": "Se está enviando.",
+        "aceptada": "Enviada: la central la ha aceptado.",
+        "rechazada": "Rechazada: la central no la ha aceptado. Abajo está lo que respondió. Corrígela y reenvíala, o descártala."
+      },
+      "queHacer": {
+        "sin_conexion": "No había conexión. Vuelve a enviar cuando tengas cobertura.",
+        "sin_respuesta": "No llegó respuesta de la central (puede ser la conexión o un fallo del móvil). Vuelve a intentarlo; si se repite, comparte el registro con soporte.",
+        "sesion": "La central ya no reconoce tu sesión. Entra de nuevo con tu contraseña: lo pendiente se conserva.",
+        "permiso": "No tienes permiso para esto en la central, o lo que toca ya no está a tu alcance. Pide a la oficina que lo revise y reenvía.",
+        "no_existe": "La central no encuentra algo que esto necesita (puede que lo hayan borrado desde la oficina). Actualiza el proyecto; si sigue igual, descártalo o comparte el registro con soporte.",
+        "conflicto": "Alguien lo cambió en la central entretanto. Actualiza el proyecto, revísalo y reenvía.",
+        "en_uso": "Ese código ya lo lleva otro equipo. Puedes quitárselo y ponérselo a este («Reasignar el código»), o corregirlo.",
+        "datos": "A la central no le valen algunos datos (abajo, cuáles). Corrígelos y reenvía.",
+        "central": "La central tuvo un fallo al recibirla. Se queda por enviar y lo demás sale igual; si se repite, comparte el registro con soporte.",
+        "otro": "La central no la aceptó. Si no sabes por qué, comparte el registro con soporte."
+      },
+      "que": {
+        "equipoSinDatos": "sin identificar",
+        "revision": "Revisión del equipo {{equipo}}, {{cuando}}",
+        "instalacion": "Revisión de instalación del equipo {{equipo}}, {{cuando}}",
+        "revision_conjunto": "Revisión del conjunto {{conjunto}}, {{cuando}}",
+        "adjunto": "Foto de la revisión del equipo {{equipo}}",
+        "adjuntoConjunto": "Foto de la revisión del conjunto {{conjunto}}",
+        "reparacion": "Reparación del equipo {{equipo}}, {{cuando}}",
+        "adjunto_reparacion": "Archivo de la reparación del equipo {{equipo}}",
+        "alta": "Alta del equipo {{equipo}}",
+        "foto_alta": "Foto del alta de {{equipo}}",
+        "edicion": "Cambios en el equipo {{equipo}}",
+        "codigo": "Código {{valor}} para el equipo {{equipo}}",
+        "codigoQuitar": "Quitar el código {{valor}} del equipo {{equipo}}",
+        "carpeta": "Carpeta nueva «{{nombre}}»",
+        "correccion": "Corrección de la última revisión del equipo {{equipo}}",
+        "correccionConjunto": "Corrección de la última revisión del conjunto {{conjunto}}",
+        "modelo": "Modelo nuevo «{{modelo}}»",
+        "borrado": "Borrado de una revisión ya enviada",
+        "parte_one": "Parte de trabajo del {{cuando}}, con {{count}} actuación",
+        "parte_other": "Parte de trabajo del {{cuando}}, con {{count}} actuaciones",
+        "firma_parte": "Firma de {{nombre}} en un parte de trabajo"
+      },
+      "detalle": {
+        "titulo": "Envío",
+        "noEsta": "Ya no está en la cola",
+        "noEstaHint": "Se envió y se limpió, o se descartó.",
+        "aceptada": "La central la ha aceptado.",
+        "otraVezRechazada": "La central la ha vuelto a rechazar. Abajo está lo que ha respondido.",
+        "sinRed": "Sin conexión: sigue por enviar.",
+        "sigue": "Sigue por enviar: abajo, a qué espera o qué ha respondido la central.",
+        "reasignarConfirm": "Al enviarlo, el código se le quitará al otro equipo y se le pondrá a este.",
+        "nombreCambiado": "Nombre cambiado. Pulsa «Reenviar» para mandarla otra vez.",
+        "corregirNombre": "Cambiar el nombre de la carpeta",
+        "guardarNombre": "Guardar el nombre",
+        "deshacerParte": "Deshacer el parte",
+        "compartir": "Compartir el registro",
+        "reenviar": "Reenviar",
+        "enviarAhora": "Enviar ahora",
+        "estado": "Estado",
+        "guardada": "Hecha en el móvil",
+        "fallos": "Intentos fallidos",
+        "esperaA": "Espera a",
+        "respuestas": "Lo que respondió la central",
+        "sinRespuestas": "Todavía no ha fallado ningún intento de enviarla.",
+        "codigo": "Error {{codigo}}",
+        "corregir": "Corregir",
+        "noSeCorrigeEnParte": "Va en un parte de trabajo sin enviar y el cliente la vio así: ni se corrige ni se descarta. Si hay que cambiarla, deshaz antes el parte.",
+        "reasignar": "Reasignar el código a este equipo",
+        "verParte": "Ver el parte que la lleva",
+        "abrir": "Abrir"
+      },
+      "carpeta": {
+        "equipos_one": "{{count}} equipo",
+        "equipos_other": "{{count}} equipos",
+        "subcarpetas_one": "{{count}} subcarpeta",
+        "subcarpetas_other": "{{count}} subcarpetas",
+        "vacia": "Se borra del móvil la carpeta nueva: no tiene nada dentro.",
+        "aLaMadre": "Se quita del móvil la carpeta nueva. Lo que tiene dentro ({{equipos}} y {{subcarpetas}}) no se pierde: pasa a «{{madre}}» y se envía allí.",
+        "bloqueada": "No se puede descartar: tiene dentro {{equipos}} y {{subcarpetas}} hechos aquí y, como es de primer nivel, no hay otra carpeta donde dejarlos. Cámbiale el nombre si hace falta y reenvíala; si la central sigue sin aceptarla, comparte el registro con soporte."
+      },
+      "registro": {
+        "cabecera": "Everydat · registro de envío",
+        "que": "Qué",
+        "tipo": "Tipo",
+        "estado": "Estado",
+        "creada": "hecha el",
+        "app": "App",
+        "instancia": "Instancia",
+        "usuario": "Usuario",
+        "intentos": "Intentos fallidos",
+        "sinIntentos": "ninguno",
+        "datos": "Lo guardado en la cola"
+      },
+      "fallidas_one": "{{count}} no se ha podido enviar por un fallo de la central: sigue por enviar.",
+      "fallidas_other": "{{count}} no se han podido enviar por un fallo de la central: siguen por enviar."
     },
     "ajustes": {
       "titulo": "Ajustes",
@@ -5367,7 +5479,9 @@
       "abrir": "Abrir"
     },
     "cabecera": {
-      "enviar": "Enviar ({{count}})"
+      "enviar": "Enviar ({{count}})",
+      "rechazadas_one": "{{count}} rechazada",
+      "rechazadas_other": "{{count}} rechazadas"
     },
     "barra": {
       "inicio": "Inicio",
@@ -5579,7 +5693,12 @@
       "firmaPerdida": "La imagen de la firma ya no está en el móvil: descarta la firma y vuelve a recogerla.",
       "sinFirmar": "Pendiente de la firma del cliente.",
       "conflicto_one": "Una actuación de este parte está también en {{partes}}. La oficina anulará uno de los dos.",
-      "conflicto_other": "{{count}} actuaciones de este parte están también en {{partes}}. La oficina anulará uno de los dos."
+      "conflicto_other": "{{count}} actuaciones de este parte están también en {{partes}}. La oficina anulará uno de los dos.",
+      "apartadasRechazo_one": "{{count}} actuación hecha aquí no se ofrece porque la central la rechazó: arréglala en «Enviar» y podrás incluirla.",
+      "apartadasRechazo_other": "{{count}} actuaciones hechas aquí no se ofrecen porque la central las rechazó: arréglalas en «Enviar» y podrás incluirlas.",
+      "espera": "Este parte saldrá cuando la central tenga lo hecho aquí que lleva:\n{{lista}}",
+      "esperaRechazo": "Este parte no saldrá mientras no se arregle lo que la central rechazó de lo que lleva:\n{{lista}}\nCorrígelo y reenvíalo en «Enviar», o deshaz el parte.",
+      "verEnEnviar": "Ver en «Enviar»"
     }
   },
   "auditoria": {

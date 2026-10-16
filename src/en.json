@@ -5153,7 +5153,8 @@
         "pendiente": "Pending",
         "enviando": "Sending",
         "aceptada": "Sent",
-        "rechazada": "Rejected"
+        "rechazada": "Rejected",
+        "esperando": "Waiting"
       },
       "esperando": "{{count}} operation is waiting for another one it depends on and will go in the next send.",
       "esperando_other": "{{count}} operations are waiting for others they depend on and will go in the next send.",
@@ -5174,7 +5175,118 @@
       },
       "descartarArrastra_one": "{{count}} more operation that depended on it goes with it.",
       "descartarArrastra_other": "{{count}} more operations that depended on it go with it.",
-      "enParte": "This is in a work report that has not been sent. To discard it, discard the report first."
+      "enParte": "This is in a work report that has not been sent. To discard it, undo the report first.",
+      "resumen": "In the queue",
+      "cuenta": {
+        "porEnviar": "To send",
+        "esperando": "Waiting for another",
+        "rechazadas": "Rejected",
+        "enviadas": "Sent"
+      },
+      "rechazadasHint_one": "The server has rejected {{count}} item. Tap it to see what it answered, correct it and resend it.",
+      "rechazadasHint_other": "The server has rejected {{count}} items. Tap each one to see what it answered, correct it and resend it.",
+      "reenviarTodas": "Resend all rejected",
+      "fallos_one": "{{count}} failed attempt",
+      "fallos_other": "{{count}} failed attempts",
+      "clase": {
+        "sin_conexion": "No connection",
+        "sin_respuesta": "No answer from the server"
+      },
+      "explica": {
+        "pendiente": "To send: it will go the next time you tap “Send” with a connection.",
+        "esperando": "Waiting: it will go once the server accepts what it depends on (below, “Waiting for”).",
+        "enviando": "Being sent.",
+        "aceptada": "Sent: the server has accepted it.",
+        "rechazada": "Rejected: the server has not accepted it. What it answered is below. Correct it and resend it, or discard it."
+      },
+      "queHacer": {
+        "sin_conexion": "There was no connection. Send again when you have coverage.",
+        "sin_respuesta": "No answer came from the server (it may be the connection or a problem on the phone). Try again; if it keeps happening, share the log with support.",
+        "sesion": "The server no longer recognises your session. Sign in again with your password: pending work is kept.",
+        "permiso": "You do not have permission for this on the server, or it is no longer within your scope. Ask the office to check it and resend.",
+        "no_existe": "The server cannot find something this needs (the office may have deleted it). Update the project; if nothing changes, discard it or share the log with support.",
+        "conflicto": "Someone changed it on the server in the meantime. Update the project, check it and resend.",
+        "en_uso": "Another piece of equipment already has that code. You can take it from that one and give it to this one (“Reassign the code”), or correct it.",
+        "datos": "The server does not accept some of the data (see below which). Correct it and resend.",
+        "central": "The server failed while receiving it. It stays pending and the rest still goes; if it keeps happening, share the log with support.",
+        "otro": "The server did not accept it. If you do not know why, share the log with support."
+      },
+      "que": {
+        "equipoSinDatos": "unidentified",
+        "revision": "Inspection of equipment {{equipo}}, {{cuando}}",
+        "instalacion": "Installation inspection of equipment {{equipo}}, {{cuando}}",
+        "revision_conjunto": "Inspection of set {{conjunto}}, {{cuando}}",
+        "adjunto": "Photo of the inspection of equipment {{equipo}}",
+        "adjuntoConjunto": "Photo of the inspection of set {{conjunto}}",
+        "reparacion": "Repair of equipment {{equipo}}, {{cuando}}",
+        "adjunto_reparacion": "File of the repair of equipment {{equipo}}",
+        "alta": "New equipment {{equipo}}",
+        "foto_alta": "Photo of the new {{equipo}}",
+        "edicion": "Changes to equipment {{equipo}}",
+        "codigo": "Code {{valor}} for equipment {{equipo}}",
+        "codigoQuitar": "Remove code {{valor}} from equipment {{equipo}}",
+        "carpeta": "New folder “{{nombre}}”",
+        "correccion": "Correction of the last inspection of equipment {{equipo}}",
+        "correccionConjunto": "Correction of the last inspection of set {{conjunto}}",
+        "modelo": "New model “{{modelo}}”",
+        "borrado": "Deletion of an inspection already sent",
+        "parte_one": "Work report of {{cuando}}, with {{count}} job",
+        "parte_other": "Work report of {{cuando}}, with {{count}} jobs",
+        "firma_parte": "Signature of {{nombre}} on a work report"
+      },
+      "detalle": {
+        "titulo": "Item",
+        "noEsta": "No longer in the queue",
+        "noEstaHint": "It was sent and cleared, or it was discarded.",
+        "aceptada": "The server has accepted it.",
+        "otraVezRechazada": "The server has rejected it again. What it answered is below.",
+        "sinRed": "No connection: still pending.",
+        "sigue": "Still pending: see below what it is waiting for or what the server answered.",
+        "reasignarConfirm": "When sent, the code will be taken from the other equipment and given to this one.",
+        "nombreCambiado": "Name changed. Tap “Resend” to send it again.",
+        "corregirNombre": "Change the folder name",
+        "guardarNombre": "Save the name",
+        "deshacerParte": "Undo the work report",
+        "compartir": "Share the log",
+        "reenviar": "Resend",
+        "enviarAhora": "Send now",
+        "estado": "Status",
+        "guardada": "Done on the phone",
+        "fallos": "Failed attempts",
+        "esperaA": "Waiting for",
+        "respuestas": "What the server answered",
+        "sinRespuestas": "No attempt to send it has failed yet.",
+        "codigo": "Error {{codigo}}",
+        "corregir": "Correct",
+        "noSeCorrigeEnParte": "It is in a work report that has not been sent and the customer saw it like this: it can be neither corrected nor discarded. If it must change, undo the report first.",
+        "reasignar": "Reassign the code to this equipment",
+        "verParte": "See the work report that includes it",
+        "abrir": "Open"
+      },
+      "carpeta": {
+        "equipos_one": "{{count}} piece of equipment",
+        "equipos_other": "{{count}} pieces of equipment",
+        "subcarpetas_one": "{{count}} subfolder",
+        "subcarpetas_other": "{{count}} subfolders",
+        "vacia": "The new folder is removed from the phone: there is nothing in it.",
+        "aLaMadre": "The new folder is removed from the phone. What is inside ({{equipos}} and {{subcarpetas}}) is not lost: it moves to “{{madre}}” and is sent there.",
+        "bloqueada": "It cannot be discarded: it holds {{equipos}} and {{subcarpetas}} created here and, being top level, there is no other folder to put them in. Change its name if needed and resend it; if the server still does not accept it, share the log with support."
+      },
+      "registro": {
+        "cabecera": "Everydat · send log",
+        "que": "What",
+        "tipo": "Type",
+        "estado": "Status",
+        "creada": "done on",
+        "app": "App",
+        "instancia": "Instance",
+        "usuario": "User",
+        "intentos": "Failed attempts",
+        "sinIntentos": "none",
+        "datos": "What is stored in the queue"
+      },
+      "fallidas_one": "{{count}} could not be sent because of a server error: it is still pending.",
+      "fallidas_other": "{{count}} could not be sent because of a server error: they are still pending."
     },
     "ajustes": {
       "titulo": "Settings",
@@ -5367,7 +5479,9 @@
       "abrir": "Open"
     },
     "cabecera": {
-      "enviar": "Send ({{count}})"
+      "enviar": "Send ({{count}})",
+      "rechazadas_one": "{{count}} rejected",
+      "rechazadas_other": "{{count}} rejected"
     },
     "barra": {
       "inicio": "Home",
@@ -5579,7 +5693,12 @@
       "firmaPerdida": "The signature image is no longer on the device: discard the signature and collect it again.",
       "sinFirmar": "Awaiting the customer's signature.",
       "conflicto_one": "One item of work in this report is also in {{partes}}. The office will void one of the two.",
-      "conflicto_other": "{{count}} items of work in this report are also in {{partes}}. The office will void one of the two."
+      "conflicto_other": "{{count}} items of work in this report are also in {{partes}}. The office will void one of the two.",
+      "apartadasRechazo_one": "{{count}} job done here is not offered because the server rejected it: fix it in “Send” and you will be able to include it.",
+      "apartadasRechazo_other": "{{count}} jobs done here are not offered because the server rejected them: fix them in “Send” and you will be able to include them.",
+      "espera": "This work report will go once the server has the work done here that it includes:\n{{lista}}",
+      "esperaRechazo": "This work report will not go until what the server rejected from it is fixed:\n{{lista}}\nCorrect it and resend it in “Send”, or undo the report.",
+      "verEnEnviar": "See in “Send”"
     }
   },
   "auditoria": {
