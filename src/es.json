@@ -5706,6 +5706,10 @@
       "espera": "Este parte saldrá cuando la central tenga lo hecho aquí que lleva:\n{{lista}}",
       "esperaRechazo": "Este parte no saldrá mientras la central no acepte lo que rechazó de lo que lleva:\n{{lista}}\nEn «Enviar» está lo que respondió. Si se arregla en la oficina, reenvíalo; si hay que cambiarlo, deshaz antes el parte.",
       "verEnEnviar": "Ver en «Enviar»"
+    },
+    "planos": {
+      "pista": "Se abren con el visor del teléfono. Sin cobertura, solo los que ya se abrieron antes en este móvil.",
+      "noSeAbre": "No se ha podido abrir el plano. Sin cobertura solo se abren los que ya se abrieron antes en este móvil."
     }
   },
   "auditoria": {

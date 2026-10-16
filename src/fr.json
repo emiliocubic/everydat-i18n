@@ -5583,6 +5583,10 @@
       "espera": "Ce bon partira quand le serveur aura ce qui a été fait ici et qu'il contient :\n{{lista}}",
       "esperaRechazo": "Ce bon ne partira pas tant que le serveur n'aura pas accepté ce qu'il a refusé :\n{{lista}}\n« Envoyer » montre sa réponse. Si le bureau le corrige, renvoyez-le ; s'il faut le changer, annulez d'abord le bon.",
       "verEnEnviar": "Voir dans « Envoyer »"
+    },
+    "planos": {
+      "pista": "Ils s'ouvrent avec la visionneuse du téléphone. Sans couverture, seuls ceux déjà ouverts sur ce mobile.",
+      "noSeAbre": "Impossible d'ouvrir le plan. Sans couverture, seuls les plans déjà ouverts sur ce mobile peuvent s'ouvrir."
     }
   },
   "auditoria": {

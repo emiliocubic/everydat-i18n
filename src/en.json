@@ -5706,6 +5706,10 @@
       "espera": "This work report will go once the server has the work done here that it includes:\n{{lista}}",
       "esperaRechazo": "This work report will not go until the server accepts what it rejected from it:\n{{lista}}\n“Send” shows what it answered. If the office fixes it, resend it; if it must change, undo the report first.",
       "verEnEnviar": "See in “Send”"
+    },
+    "planos": {
+      "pista": "They open in the phone's viewer. Without coverage, only those already opened on this phone.",
+      "noSeAbre": "The plan could not be opened. Without coverage, only plans already opened on this phone can be opened."
     }
   },
   "auditoria": {
