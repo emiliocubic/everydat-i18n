@@ -5128,7 +5128,7 @@
         "reenviar": "Renvoyer",
         "enviarAhora": "Envoyer maintenant",
         "estado": "État",
-        "guardada": "Fait sur le téléphone",
+        "guardada": "Dans la file depuis",
         "fallos": "Tentatives échouées",
         "esperaA": "Attend",
         "respuestas": "Ce que le serveur a répondu",
@@ -5166,7 +5166,10 @@
       "fallidas_other": "{{count}} n'ont pas pu être envoyés à cause d'une erreur du serveur : ils restent à envoyer.",
       "esperaA": "Attend : {{que}}",
       "esperaAMas_one": "Attend : {{que}} et {{count}} autre",
-      "esperaAMas_other": "Attend : {{que}} et {{count}} autres"
+      "esperaAMas_other": "Attend : {{que}} et {{count}} autres",
+      "esperaARechazada": "Attend un envoi refusé : {{que}}",
+      "esperaARechazadaMas_one": "Attend un envoi refusé : {{que}} et {{count}} autre",
+      "esperaARechazadaMas_other": "Attend un envoi refusé : {{que}} et {{count}} autres"
     },
     "ajustes": {
       "titulo": "Réglages",
@@ -5578,7 +5581,7 @@
       "apartadasRechazo_one": "{{count}} intervention faite ici n'est pas proposée car le serveur l'a refusée : corrigez-la dans « Envoyer » et vous pourrez l'inclure.",
       "apartadasRechazo_other": "{{count}} interventions faites ici ne sont pas proposées car le serveur les a refusées : corrigez-les dans « Envoyer » et vous pourrez les inclure.",
       "espera": "Ce bon partira quand le serveur aura ce qui a été fait ici et qu'il contient :\n{{lista}}",
-      "esperaRechazo": "Ce bon ne partira pas tant que ce que le serveur a refusé n'est pas corrigé :\n{{lista}}\nCorrigez-le et renvoyez-le dans « Envoyer », ou annulez le bon.",
+      "esperaRechazo": "Ce bon ne partira pas tant que le serveur n'aura pas accepté ce qu'il a refusé :\n{{lista}}\n« Envoyer » montre sa réponse. Si le bureau le corrige, renvoyez-le ; s'il faut le changer, annulez d'abord le bon.",
       "verEnEnviar": "Voir dans « Envoyer »"
     }
   },

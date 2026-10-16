@@ -5251,7 +5251,7 @@
         "reenviar": "Resend",
         "enviarAhora": "Send now",
         "estado": "Status",
-        "guardada": "Done on the phone",
+        "guardada": "In the queue since",
         "fallos": "Failed attempts",
         "esperaA": "Waiting for",
         "respuestas": "What the server answered",
@@ -5289,7 +5289,10 @@
       "fallidas_other": "{{count}} could not be sent because of a server error: they are still pending.",
       "esperaA": "Waiting for: {{que}}",
       "esperaAMas_one": "Waiting for: {{que}} and {{count}} more",
-      "esperaAMas_other": "Waiting for: {{que}} and {{count}} more"
+      "esperaAMas_other": "Waiting for: {{que}} and {{count}} more",
+      "esperaARechazada": "Waiting for a rejected one: {{que}}",
+      "esperaARechazadaMas_one": "Waiting for a rejected one: {{que}} and {{count}} more",
+      "esperaARechazadaMas_other": "Waiting for a rejected one: {{que}} and {{count}} more"
     },
     "ajustes": {
       "titulo": "Settings",
@@ -5701,7 +5704,7 @@
       "apartadasRechazo_one": "{{count}} job done here is not offered because the server rejected it: fix it in “Send” and you will be able to include it.",
       "apartadasRechazo_other": "{{count}} jobs done here are not offered because the server rejected them: fix them in “Send” and you will be able to include them.",
       "espera": "This work report will go once the server has the work done here that it includes:\n{{lista}}",
-      "esperaRechazo": "This work report will not go until what the server rejected from it is fixed:\n{{lista}}\nCorrect it and resend it in “Send”, or undo the report.",
+      "esperaRechazo": "This work report will not go until the server accepts what it rejected from it:\n{{lista}}\n“Send” shows what it answered. If the office fixes it, resend it; if it must change, undo the report first.",
       "verEnEnviar": "See in “Send”"
     }
   },

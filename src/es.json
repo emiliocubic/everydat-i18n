@@ -5251,7 +5251,7 @@
         "reenviar": "Reenviar",
         "enviarAhora": "Enviar ahora",
         "estado": "Estado",
-        "guardada": "Hecha en el móvil",
+        "guardada": "En la cola desde",
         "fallos": "Intentos fallidos",
         "esperaA": "Espera a",
         "respuestas": "Lo que respondió la central",
@@ -5289,7 +5289,10 @@
       "fallidas_other": "{{count}} no se han podido enviar por un fallo de la central: siguen por enviar.",
       "esperaA": "Espera a: {{que}}",
       "esperaAMas_one": "Espera a: {{que}} y {{count}} más",
-      "esperaAMas_other": "Espera a: {{que}} y {{count}} más"
+      "esperaAMas_other": "Espera a: {{que}} y {{count}} más",
+      "esperaARechazada": "Espera a una rechazada: {{que}}",
+      "esperaARechazadaMas_one": "Espera a una rechazada: {{que}} y {{count}} más",
+      "esperaARechazadaMas_other": "Espera a una rechazada: {{que}} y {{count}} más"
     },
     "ajustes": {
       "titulo": "Ajustes",
@@ -5701,7 +5704,7 @@
       "apartadasRechazo_one": "{{count}} actuación hecha aquí no se ofrece porque la central la rechazó: arréglala en «Enviar» y podrás incluirla.",
       "apartadasRechazo_other": "{{count}} actuaciones hechas aquí no se ofrecen porque la central las rechazó: arréglalas en «Enviar» y podrás incluirlas.",
       "espera": "Este parte saldrá cuando la central tenga lo hecho aquí que lleva:\n{{lista}}",
-      "esperaRechazo": "Este parte no saldrá mientras no se arregle lo que la central rechazó de lo que lleva:\n{{lista}}\nCorrígelo y reenvíalo en «Enviar», o deshaz el parte.",
+      "esperaRechazo": "Este parte no saldrá mientras la central no acepte lo que rechazó de lo que lleva:\n{{lista}}\nEn «Enviar» está lo que respondió. Si se arregla en la oficina, reenvíalo; si hay que cambiarlo, deshaz antes el parte.",
       "verEnEnviar": "Ver en «Enviar»"
     }
   },
