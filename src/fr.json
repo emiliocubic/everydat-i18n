@@ -5545,7 +5545,8 @@
       "ninguno": "Aucun équipement n'a l'identifiant « {{codigo}} ».",
       "apagado": "Le NFC est désactivé",
       "abrirAjustes": "Ouvrir les réglages",
-      "sinNfc": "Ce téléphone ne lit pas les puces NFC. Saisissez l'identifiant de la puce."
+      "sinNfc": "Ce téléphone ne lit pas les puces NFC. Saisissez l'identifiant de la puce.",
+      "sinModulo": "Cette version de l'application ne lit pas les puces : mettez-la à jour. Saisissez l'identifiant."
     },
     "partes": {
       "ninguno": "Il n'y a pas encore de bon d'intervention.",

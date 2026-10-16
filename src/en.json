@@ -5668,7 +5668,8 @@
       "ninguno": "No equipment has “{{codigo}}” assigned.",
       "apagado": "NFC is turned off",
       "abrirAjustes": "Open settings",
-      "sinNfc": "This phone doesn't read NFC chips. Type the chip's identifier."
+      "sinNfc": "This phone doesn't read NFC chips. Type the chip's identifier.",
+      "sinModulo": "This version of the app can't read chips: update it. Type the identifier."
     },
     "partes": {
       "ninguno": "There are no work reports yet.",

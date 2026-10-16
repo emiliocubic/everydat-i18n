@@ -5668,7 +5668,8 @@
       "ninguno": "Ningún equipo tiene asignado «{{codigo}}».",
       "apagado": "El NFC está desactivado",
       "abrirAjustes": "Abrir ajustes",
-      "sinNfc": "Este móvil no lee chips NFC. Escribe el identificador del chip."
+      "sinNfc": "Este móvil no lee chips NFC. Escribe el identificador del chip.",
+      "sinModulo": "Esta versión de la app no lee chips: actualízala. Escribe el identificador."
     },
     "partes": {
       "ninguno": "Todavía no hay partes de trabajo.",
