@@ -5148,7 +5148,8 @@
         "revision_conjunto": "Revisión de conjunto",
         "parte": "Parte de trabajo",
         "firma_parte": "Firma del parte",
-        "nota": "Nota"
+        "nota": "Nota",
+        "foto_elemento": "Foto del equipo"
       },
       "estado": {
         "pendiente": "Pendiente",
@@ -5169,11 +5170,12 @@
         "foto_alta": "Se borra del móvil esta foto del alta: no se subirá.",
         "edicion": "Los cambios del equipo no se envían y su ficha vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
         "codigo": "El cambio de código no se envía y la ficha del equipo vuelve a lo que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
-        "modelo": "Se borra del móvil el modelo nuevo y, con él, los equipos dados de alta con ese modelo y lo hecho sobre ellos sin enviar.",
+        "modelo": "Se borra del móvil el modelo nuevo. Ningún equipo de este móvil lo lleva.",
         "correccion": "Se deshace en el móvil la corrección: la revisión vuelve a como la tiene el servidor.",
         "parte": "Se deshace el parte en el móvil: sus actuaciones quedan libres para otro parte y, si el cliente lo había firmado, la firma también se borra.",
         "firma_parte": "Se borra del móvil la firma del cliente: el parte vuelve a quedar sin firmar.",
-        "nota": "La nota no se envía y vuelve a la que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto."
+        "nota": "La nota no se envía y vuelve a la que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto.",
+        "foto_elemento": "Se borra del móvil esta foto: no se subirá a las imágenes del equipo."
       },
       "descartarArrastra_one": "Con ella se va {{count}} operación más, que dependía de ella.",
       "descartarArrastra_other": "Con ella se van {{count}} operaciones más, que dependían de ella.",
@@ -5237,7 +5239,8 @@
         "firma_parte": "Firma de {{nombre}} en un parte de trabajo",
         "chip": "Chip {{valor}} para el equipo {{equipo}}",
         "notaEmplazamiento": "Nota del emplazamiento «{{nombre}}»",
-        "notaCarpeta": "Nota de la carpeta «{{nombre}}»"
+        "notaCarpeta": "Nota de la carpeta «{{nombre}}»",
+        "foto_elemento": "Foto para las imágenes del equipo {{equipo}}"
       },
       "detalle": {
         "titulo": "Envío",
@@ -5266,7 +5269,11 @@
         "noSeCorrigeEnParte": "Va en un parte de trabajo sin enviar y el cliente la vio así: ni se corrige ni se descarta. Si hay que cambiarla, deshaz antes el parte.",
         "reasignar": "Reasignar el código a este equipo",
         "verParte": "Ver el parte que la lleva",
-        "abrir": "Abrir"
+        "abrir": "Abrir",
+        "corregirModelo": "Corregir el modelo",
+        "modeloTipo": "Tipo: {{tipo}}. El tipo no se cambia: lo llevan sus equipos.",
+        "guardarModelo": "Guardar el modelo",
+        "modeloCorregido": "Modelo corregido. Pulsa «Reenviar» para mandarlo otra vez."
       },
       "carpeta": {
         "equipos_one": "{{count}} equipo",
@@ -5297,7 +5304,11 @@
       "esperaAMas_other": "Espera a: {{que}} y {{count}} más",
       "esperaARechazada": "Espera a una rechazada: {{que}}",
       "esperaARechazadaMas_one": "Espera a una rechazada: {{que}} y {{count}} más",
-      "esperaARechazadaMas_other": "Espera a una rechazada: {{que}} y {{count}} más"
+      "esperaARechazadaMas_other": "Espera a una rechazada: {{que}} y {{count}} más",
+      "modelo": {
+        "bloqueado_one": "Este modelo lo lleva {{count}} equipo de este móvil, que existe: no se descarta. Corrígelo y reenvíalo, o cambia el modelo de ese equipo.",
+        "bloqueado_other": "Este modelo lo llevan {{count}} equipos de este móvil, que existen: no se descarta. Corrígelo y reenvíalo, o cambia el modelo de esos equipos."
+      }
     },
     "ajustes": {
       "titulo": "Ajustes",
@@ -5588,7 +5599,10 @@
       "fechaMal": "La fecha «{{nombre}}» no es válida (dd/mm/aaaa).",
       "restar": "Restar uno",
       "sumar": "Sumar uno",
-      "obligatorio": "obligatorio"
+      "obligatorio": "obligatorio",
+      "fotoPerdida": "La foto ya no está en el móvil. Descártala y vuelve a hacerla.",
+      "nombreFoto": "Foto · {{equipo}} · {{fecha}}",
+      "fotosPista": "Van a las imágenes del equipo, en su ficha. Sin cobertura, se envían con lo pendiente."
     },
     "qr": {
       "titulo": "Asignar código QR",

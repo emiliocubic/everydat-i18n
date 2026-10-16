@@ -5148,7 +5148,8 @@
         "revision_conjunto": "Set inspection",
         "parte": "Work report",
         "firma_parte": "Report signature",
-        "nota": "Note"
+        "nota": "Note",
+        "foto_elemento": "Equipment photo"
       },
       "estado": {
         "pendiente": "Pending",
@@ -5169,11 +5170,12 @@
         "foto_alta": "This photo of the new equipment is deleted from the device: it will not be uploaded.",
         "edicion": "The changes to the equipment are not sent and its record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
         "codigo": "The code change is not sent and the equipment record goes back to what the server has: right away with a connection; otherwise, when the project is downloaded again.",
-        "modelo": "The new model is deleted from the device and, with it, the equipment added with that model and what was done on it and not yet sent.",
+        "modelo": "The new model is deleted from the phone. No equipment on this phone uses it.",
         "correccion": "The correction is undone on the device: the inspection goes back to how the server has it.",
         "parte": "The report is undone on the device: its work becomes free for another report and, if the customer had signed it, the signature is deleted too.",
         "firma_parte": "The customer's signature is deleted from the device: the report is unsigned again.",
-        "nota": "The note is not sent and goes back to the one on the server: right away with a connection; without one, when the project is downloaded again."
+        "nota": "The note is not sent and goes back to the one on the server: right away with a connection; without one, when the project is downloaded again.",
+        "foto_elemento": "This photo is deleted from the phone: it will not be uploaded to the equipment's images."
       },
       "descartarArrastra_one": "{{count}} more operation that depended on it goes with it.",
       "descartarArrastra_other": "{{count}} more operations that depended on it go with it.",
@@ -5237,7 +5239,8 @@
         "firma_parte": "Signature of {{nombre}} on a work report",
         "chip": "Chip {{valor}} for equipment {{equipo}}",
         "notaEmplazamiento": "Note for site “{{nombre}}”",
-        "notaCarpeta": "Note for folder “{{nombre}}”"
+        "notaCarpeta": "Note for folder “{{nombre}}”",
+        "foto_elemento": "Photo for the images of equipment {{equipo}}"
       },
       "detalle": {
         "titulo": "Item",
@@ -5266,7 +5269,11 @@
         "noSeCorrigeEnParte": "It is in a work report that has not been sent and the customer saw it like this: it can be neither corrected nor discarded. If it must change, undo the report first.",
         "reasignar": "Reassign the code to this equipment",
         "verParte": "See the work report that includes it",
-        "abrir": "Open"
+        "abrir": "Open",
+        "corregirModelo": "Correct the model",
+        "modeloTipo": "Type: {{tipo}}. The type cannot be changed: its equipment uses it.",
+        "guardarModelo": "Save the model",
+        "modeloCorregido": "Model corrected. Tap “Resend” to send it again."
       },
       "carpeta": {
         "equipos_one": "{{count}} piece of equipment",
@@ -5297,7 +5304,11 @@
       "esperaAMas_other": "Waiting for: {{que}} and {{count}} more",
       "esperaARechazada": "Waiting for a rejected one: {{que}}",
       "esperaARechazadaMas_one": "Waiting for a rejected one: {{que}} and {{count}} more",
-      "esperaARechazadaMas_other": "Waiting for a rejected one: {{que}} and {{count}} more"
+      "esperaARechazadaMas_other": "Waiting for a rejected one: {{que}} and {{count}} more",
+      "modelo": {
+        "bloqueado_one": "{{count}} equipment on this phone uses this model, and it exists: the model is not discarded. Correct and resend it, or change that equipment's model.",
+        "bloqueado_other": "{{count}} equipment on this phone use this model, and they exist: the model is not discarded. Correct and resend it, or change the model of that equipment."
+      }
     },
     "ajustes": {
       "titulo": "Settings",
@@ -5588,7 +5599,10 @@
       "fechaMal": "The date «{{nombre}}» is not valid (dd/mm/yyyy).",
       "restar": "Subtract one",
       "sumar": "Add one",
-      "obligatorio": "required"
+      "obligatorio": "required",
+      "fotoPerdida": "The photo is no longer on the phone. Discard it and take it again.",
+      "nombreFoto": "Photo · {{equipo}} · {{fecha}}",
+      "fotosPista": "They go to the equipment's images, in its record. Without coverage, they are sent with the pending items."
     },
     "qr": {
       "titulo": "Assign QR code",

@@ -5025,7 +5025,8 @@
         "revision_conjunto": "Contrôle d'ensemble",
         "parte": "Bon d'intervention",
         "firma_parte": "Signature du bon",
-        "nota": "Note"
+        "nota": "Note",
+        "foto_elemento": "Photo de l'équipement"
       },
       "estado": {
         "pendiente": "En attente",
@@ -5046,11 +5047,12 @@
         "foto_alta": "Cette photo de l'ajout est supprimée de l'appareil : elle ne sera pas envoyée.",
         "edicion": "Les modifications de l'équipement ne sont pas envoyées et sa fiche revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
         "codigo": "Le changement de code n'est pas envoyé et la fiche de l'équipement revient à ce qu'a le serveur : tout de suite avec une connexion ; sinon, au prochain téléchargement du projet.",
-        "modelo": "Le nouveau modèle est supprimé de l'appareil et, avec lui, les équipements ajoutés avec ce modèle et ce qui a été fait dessus sans être envoyé.",
+        "modelo": "Le nouveau modèle est supprimé du mobile. Aucun équipement de ce mobile ne l'utilise.",
         "correccion": "La correction est annulée sur l'appareil : le contrôle revient à ce qu'a le serveur.",
         "parte": "Le bon est défait sur l'appareil : ses interventions redeviennent libres pour un autre bon et, si le client l'avait signé, la signature est aussi supprimée.",
         "firma_parte": "La signature du client est supprimée de l'appareil : le bon redevient non signé.",
-        "nota": "La note n'est pas envoyée et revient à celle du serveur : tout de suite avec une connexion ; sans connexion, au prochain téléchargement du projet."
+        "nota": "La note n'est pas envoyée et revient à celle du serveur : tout de suite avec une connexion ; sans connexion, au prochain téléchargement du projet.",
+        "foto_elemento": "Cette photo est supprimée du mobile : elle ne sera pas envoyée aux images de l'équipement."
       },
       "descartarArrastra_one": "{{count}} autre opération qui en dépendait part avec elle.",
       "descartarArrastra_other": "{{count}} autres opérations qui en dépendaient partent avec elle.",
@@ -5114,7 +5116,8 @@
         "firma_parte": "Signature de {{nombre}} sur un bon d'intervention",
         "chip": "Puce {{valor}} pour l'équipement {{equipo}}",
         "notaEmplazamiento": "Note du site « {{nombre}} »",
-        "notaCarpeta": "Note du dossier « {{nombre}} »"
+        "notaCarpeta": "Note du dossier « {{nombre}} »",
+        "foto_elemento": "Photo pour les images de l'équipement {{equipo}}"
       },
       "detalle": {
         "titulo": "Envoi",
@@ -5143,7 +5146,11 @@
         "noSeCorrigeEnParte": "Elle figure dans un bon d'intervention non envoyé et le client l'a vue ainsi : elle ne se corrige ni ne s'abandonne. S'il faut la changer, annulez d'abord le bon.",
         "reasignar": "Réattribuer le code à cet équipement",
         "verParte": "Voir le bon qui la contient",
-        "abrir": "Ouvrir"
+        "abrir": "Ouvrir",
+        "corregirModelo": "Corriger le modèle",
+        "modeloTipo": "Type : {{tipo}}. Le type ne change pas : ses équipements l'utilisent.",
+        "guardarModelo": "Enregistrer le modèle",
+        "modeloCorregido": "Modèle corrigé. Touchez « Renvoyer » pour l'envoyer à nouveau."
       },
       "carpeta": {
         "equipos_one": "{{count}} équipement",
@@ -5174,7 +5181,11 @@
       "esperaAMas_other": "Attend : {{que}} et {{count}} autres",
       "esperaARechazada": "Attend un envoi refusé : {{que}}",
       "esperaARechazadaMas_one": "Attend un envoi refusé : {{que}} et {{count}} autre",
-      "esperaARechazadaMas_other": "Attend un envoi refusé : {{que}} et {{count}} autres"
+      "esperaARechazadaMas_other": "Attend un envoi refusé : {{que}} et {{count}} autres",
+      "modelo": {
+        "bloqueado_one": "{{count}} équipement de ce mobile porte ce modèle, et il existe : il n'est pas supprimé. Corrigez-le et renvoyez-le, ou changez le modèle de cet équipement.",
+        "bloqueado_other": "{{count}} équipements de ce mobile portent ce modèle, et ils existent : il n'est pas supprimé. Corrigez-le et renvoyez-le, ou changez le modèle de ces équipements."
+      }
     },
     "ajustes": {
       "titulo": "Réglages",
@@ -5465,7 +5476,10 @@
       "fechaMal": "La date « {{nombre}} » n'est pas valide (jj/mm/aaaa).",
       "restar": "Retirer un",
       "sumar": "Ajouter un",
-      "obligatorio": "obligatoire"
+      "obligatorio": "obligatoire",
+      "fotoPerdida": "La photo n'est plus sur le mobile. Supprimez-la et reprenez-la.",
+      "nombreFoto": "Photo · {{equipo}} · {{fecha}}",
+      "fotosPista": "Elles vont dans les images de l'équipement, dans sa fiche. Sans couverture, elles partent avec le reste en attente."
     },
     "qr": {
       "titulo": "Attribuer un code QR",
