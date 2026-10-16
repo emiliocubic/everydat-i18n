@@ -5024,7 +5024,8 @@
         "adjunto_reparacion": "Pièce jointe de la réparation",
         "revision_conjunto": "Contrôle d'ensemble",
         "parte": "Bon d'intervention",
-        "firma_parte": "Signature du bon"
+        "firma_parte": "Signature du bon",
+        "nota": "Note"
       },
       "estado": {
         "pendiente": "En attente",
@@ -5048,7 +5049,8 @@
         "modelo": "Le nouveau modèle est supprimé de l'appareil et, avec lui, les équipements ajoutés avec ce modèle et ce qui a été fait dessus sans être envoyé.",
         "correccion": "La correction est annulée sur l'appareil : le contrôle revient à ce qu'a le serveur.",
         "parte": "Le bon est défait sur l'appareil : ses interventions redeviennent libres pour un autre bon et, si le client l'avait signé, la signature est aussi supprimée.",
-        "firma_parte": "La signature du client est supprimée de l'appareil : le bon redevient non signé."
+        "firma_parte": "La signature du client est supprimée de l'appareil : le bon redevient non signé.",
+        "nota": "La note n'est pas envoyée et revient à celle du serveur : tout de suite avec une connexion ; sans connexion, au prochain téléchargement du projet."
       },
       "descartarArrastra_one": "{{count}} autre opération qui en dépendait part avec elle.",
       "descartarArrastra_other": "{{count}} autres opérations qui en dépendaient partent avec elle.",
@@ -5110,7 +5112,9 @@
         "parte_one": "Bon d'intervention du {{cuando}}, avec {{count}} intervention",
         "parte_other": "Bon d'intervention du {{cuando}}, avec {{count}} interventions",
         "firma_parte": "Signature de {{nombre}} sur un bon d'intervention",
-        "chip": "Puce {{valor}} pour l'équipement {{equipo}}"
+        "chip": "Puce {{valor}} pour l'équipement {{equipo}}",
+        "notaEmplazamiento": "Note du site « {{nombre}} »",
+        "notaCarpeta": "Note du dossier « {{nombre}} »"
       },
       "detalle": {
         "titulo": "Envoi",
@@ -5598,6 +5602,14 @@
       "sinUid": "Impossible de lire le numéro de la puce. Approchez-la à nouveau ou saisissez-le.",
       "enUsoTitulo": "Puce sur un autre équipement",
       "enUso": "Cette puce est déjà sur un autre équipement ({{donde}}). La retirer et l'attribuer à celui-ci ?"
+    },
+    "notas": {
+      "campo": "Note",
+      "placeholder": "Ce qu'il faut savoir en arrivant : accès, clés, avertissements…",
+      "guardar": "Enregistrer la note",
+      "sinNota": "Il n'y a pas encore de note.",
+      "escribir": "Écrire une note",
+      "editar": "Modifier la note"
     }
   },
   "auditoria": {

@@ -5147,7 +5147,8 @@
         "adjunto_reparacion": "Adjunto de la reparación",
         "revision_conjunto": "Revisión de conjunto",
         "parte": "Parte de trabajo",
-        "firma_parte": "Firma del parte"
+        "firma_parte": "Firma del parte",
+        "nota": "Nota"
       },
       "estado": {
         "pendiente": "Pendiente",
@@ -5171,7 +5172,8 @@
         "modelo": "Se borra del móvil el modelo nuevo y, con él, los equipos dados de alta con ese modelo y lo hecho sobre ellos sin enviar.",
         "correccion": "Se deshace en el móvil la corrección: la revisión vuelve a como la tiene el servidor.",
         "parte": "Se deshace el parte en el móvil: sus actuaciones quedan libres para otro parte y, si el cliente lo había firmado, la firma también se borra.",
-        "firma_parte": "Se borra del móvil la firma del cliente: el parte vuelve a quedar sin firmar."
+        "firma_parte": "Se borra del móvil la firma del cliente: el parte vuelve a quedar sin firmar.",
+        "nota": "La nota no se envía y vuelve a la que tiene el servidor: con conexión, en el acto; sin ella, al volver a bajar el proyecto."
       },
       "descartarArrastra_one": "Con ella se va {{count}} operación más, que dependía de ella.",
       "descartarArrastra_other": "Con ella se van {{count}} operaciones más, que dependían de ella.",
@@ -5233,7 +5235,9 @@
         "parte_one": "Parte de trabajo del {{cuando}}, con {{count}} actuación",
         "parte_other": "Parte de trabajo del {{cuando}}, con {{count}} actuaciones",
         "firma_parte": "Firma de {{nombre}} en un parte de trabajo",
-        "chip": "Chip {{valor}} para el equipo {{equipo}}"
+        "chip": "Chip {{valor}} para el equipo {{equipo}}",
+        "notaEmplazamiento": "Nota del emplazamiento «{{nombre}}»",
+        "notaCarpeta": "Nota de la carpeta «{{nombre}}»"
       },
       "detalle": {
         "titulo": "Envío",
@@ -5721,6 +5725,14 @@
       "sinUid": "No se ha podido leer el número del chip. Acércalo otra vez o escríbelo.",
       "enUsoTitulo": "Chip en otro equipo",
       "enUso": "Ese chip ya lo lleva otro equipo ({{donde}}). ¿Quitárselo y asignarlo a este?"
+    },
+    "notas": {
+      "campo": "Nota",
+      "placeholder": "Lo que conviene saber al llegar: accesos, llaves, avisos…",
+      "guardar": "Guardar nota",
+      "sinNota": "Aún no hay ninguna nota.",
+      "escribir": "Escribir nota",
+      "editar": "Cambiar la nota"
     }
   },
   "auditoria": {
