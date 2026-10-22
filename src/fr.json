@@ -5872,6 +5872,16 @@
     },
     "alta": {
       "faltanObligatorios": "Champs obligatoires manquants : {{lista}}."
+    },
+    "avisos": {
+      "sin_contenido": "Le rapport ne contient aucune inspection ni aucun équipement.",
+      "sin_certificar": "Inspection non certifiée : {{equipo}}.",
+      "equipo_trasladado": "L'équipement n'est plus sur ce site : {{equipo}}.",
+      "no_apto_sin_foto": "Non conforme sans photo : {{equipo}}.",
+      "campo_vacio": "Un champ obligatoire est vide.",
+      "texto_sin_idioma": "Un texte du modèle n'est pas dans la langue du rapport.",
+      "sin_sello": "La signature a été demandée, mais aucun cachet n'est configuré : il sera émis sans signature.",
+      "plantilla_retirada": "Le rapport utilise un modèle retiré : il sera émis avec l'ancien format, sans les sections qui n'existent plus."
     }
   },
   "tiposRevision": {

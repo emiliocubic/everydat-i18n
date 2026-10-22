@@ -6258,7 +6258,8 @@
       "no_apto_sin_foto": "No apto sin foto: {{equipo}}.",
       "campo_vacio": "Hay un campo obligatorio vacío.",
       "texto_sin_idioma": "Un texto de la plantilla no está en el idioma del informe.",
-      "sin_sello": "Se pidió firmar, pero no hay sello configurado: saldrá sin firma."
+      "sin_sello": "Se pidió firmar, pero no hay sello configurado: saldrá sin firma.",
+      "plantilla_retirada": "El informe usa una plantilla retirada: saldrá con el formato anterior y sin los apartados que ya no existen."
     },
     "ajustes": {
       "titulo": "Cambios sobre la plantilla",

@@ -6258,7 +6258,8 @@
       "no_apto_sin_foto": "Failed item without photo: {{equipo}}.",
       "campo_vacio": "A mandatory field is empty.",
       "texto_sin_idioma": "A template text is not in the report's language.",
-      "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned."
+      "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned.",
+      "plantilla_retirada": "The report uses a retired template: it will be issued in the previous format, without the sections that no longer exist."
     },
     "ajustes": {
       "titulo": "Changes from the template",
