@@ -3551,10 +3551,10 @@
       "catalogoPendientes": "Pendientes de validar",
       "proyectosOportunidades": "Oportunidades",
       "proyectosPerdidos": "Perdidos",
-      "configPlantillasInforme": "Plantillas de informe",
       "configIa": "Inteligencia artificial",
       "explotacionElementos": "Elementos",
-      "explotacionActuaciones": "Actuaciones"
+      "explotacionActuaciones": "Actuaciones",
+      "informesDiseno": "Diseño de informes"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -3667,9 +3667,9 @@
       "api": "No tienes permiso para esta acción: {{accion}}.",
       "apiCapacidad": "No tienes permiso para esta acción: {{accion}}. Lo da la capacidad {{capacidad}}.",
       "informes": "ver los informes",
-      "plantillasInforme": "editar las plantillas de informe",
       "ia": "configurar la inteligencia artificial",
-      "explotacion": "consultar estos datos"
+      "explotacion": "consultar estos datos",
+      "informesDiseno": "diseñar las plantillas de informe"
     }
   },
   "proyectos": {
@@ -6288,148 +6288,6 @@
       }
     }
   },
-  "plantillasInforme": {
-    "titulo": "Plantillas de informe",
-    "nueva": "Nueva plantilla",
-    "nuevaHint": "Nace en borrador: no se ofrece al crear informes hasta que la publiques.",
-    "crear": "Crear plantilla",
-    "vacio": "No hay plantillas",
-    "sinPublicar": "Cambios sin publicar",
-    "deFabrica": "De fábrica",
-    "origenHint": "Si el informe lleva revisiones, equipos o nada variable (un certificado fijo). No se cambia después.",
-    "campos": {
-      "nombre": "Nombre",
-      "descripcion": "Descripción",
-      "origen": "Origen",
-      "idioma": "Idioma",
-      "estado": "Estado",
-      "fabrica": "De fábrica",
-      "cambios": "Sin publicar",
-      "publicada": "Publicada"
-    },
-    "origenes": {
-      "revisiones": "Revisiones",
-      "elementos": "Equipos",
-      "fijo": "Fijo"
-    },
-    "estados": {
-      "borrador": "Borrador",
-      "publicada": "Publicada",
-      "archivada": "Archivada"
-    },
-    "partir": {
-      "ninguno": "Un solo PDF",
-      "zona": "Un PDF por zona",
-      "familia": "Un PDF por familia",
-      "elemento": "Un PDF por equipo"
-    },
-    "tiposCampo": {
-      "texto": "Texto",
-      "textarea": "Texto largo",
-      "fecha": "Fecha"
-    },
-    "opciones": {
-      "2": "Hasta 2",
-      "4": "Hasta 4",
-      "ninguna": "Ninguna",
-      "foto_emplazamiento": "Foto de la obra",
-      "ninguno": "Sin agrupar",
-      "zona": "Zona",
-      "carpeta": "Carpeta",
-      "resultado": "Resultado",
-      "equipo": "Equipo",
-      "tipo": "Tipo",
-      "identificador": "Identificación",
-      "fecha": "Fecha",
-      "valida_hasta": "Válido hasta",
-      "revisor": "Revisor",
-      "estado": "Estado actual",
-      "valido_hasta": "Válido hasta",
-      "ultima_revision": "Última revisión",
-      "siempre": "Siempre",
-      "solo_no_apta": "Solo en los no aptos",
-      "nunca": "Nunca",
-      "todos": "Todos",
-      "no_conformes": "Solo los defectos",
-      "todas": "Todas",
-      "fotos": "Fotos",
-      "planos": "Planos",
-      "ambos": "Fotos y planos",
-      "rejilla": "En rejilla",
-      "una_por_pagina": "Una por página",
-      "identificacion": "Identificación",
-      "fechas": "Fechas",
-      "caracteristicas": "Características",
-      "normas": "Normas",
-      "vertical": "Vertical",
-      "horizontal": "Horizontal",
-      "situacion": "Situación actual",
-      "marca": "Marca",
-      "modelo": "Modelo",
-      "referencia": "Referencia"
-    },
-    "editor": {
-      "catalogo": "Bloques",
-      "catalogoHint": "Arrástralos al lienzo, o pulsa para añadirlos detrás del elegido.",
-      "anadirBloque": "Añadir este bloque",
-      "lienzo": "Lienzo de la plantilla",
-      "muestra": "Obra de muestra",
-      "elegirMuestra": "Elige una obra",
-      "sinMuestra": "Elige una obra de muestra para ver la plantilla con datos reales.",
-      "lienzoHint": "Pulsa un bloque para ver sus opciones; arrástralo para cambiarlo de sitio.",
-      "lienzoHintLectura": "Solo lectura.",
-      "errorLienzo": "No se pudo pintar el lienzo.",
-      "verPlantilla": "Ver la plantilla",
-      "subir": "Subir",
-      "bajar": "Bajar",
-      "duplicar": "Duplicar",
-      "quitar": "Quitar",
-      "condicion": "Cuándo sale",
-      "siempre": "Siempre",
-      "oculto": "Ocultar este bloque",
-      "textoDeSerie": "Vacío: el texto de serie",
-      "marcadores": "Marcadores: {{ejemplo}}…",
-      "plantilla": "Plantilla",
-      "formato": "Papel",
-      "orientacion": "Orientación",
-      "partir": "Cómo sale la emisión",
-      "cabecera": "Cabecera de cada página",
-      "pie": "Pie de cada página",
-      "textoPieza": "Texto",
-      "anadirPieza": "Añadir pieza",
-      "campos": "Campos que se preguntan",
-      "camposHint": "Se preguntan al crear cada informe y se usan en los textos como {{ejemplo}}.",
-      "campoNuevo": "Campo nuevo",
-      "etiqueta": "Etiqueta",
-      "defecto": "Valor de serie",
-      "obligatorio": "Obligatorio",
-      "anadirCampo": "Añadir campo",
-      "seleccion": "Selección de contenido por defecto",
-      "seleccionHint": "Lo que se incluye solo al crear un informe con «Rellenarlo ya».",
-      "sel_sin_informe": "Solo las revisiones sin informe emitido",
-      "sel_ultima": "Solo la última de cada equipo",
-      "verPdf": "Ver PDF",
-      "duplicarPlantilla": "Duplicar",
-      "archivar": "Archivar",
-      "desarchivar": "Desarchivar",
-      "archivarConfirmar": "¿Archivar la plantilla? Dejará de ofrecerse al crear informes; los informes ya creados no cambian.",
-      "publicar": "Publicar",
-      "publicada": "Plantilla publicada: los informes nuevos la usarán",
-      "duplicada": "Copia creada en borrador",
-      "fabricaAviso": "Plantilla de fábrica: no se edita. Duplícala para adaptarla a tu empresa.",
-      "estadoGuardado": {
-        "guardado": "Borrador guardado",
-        "pendiente": "Cambios sin guardar…",
-        "guardando": "Guardando…",
-        "error": "No se pudo guardar"
-      },
-      "carpetas": "Carpetas en las listas"
-    },
-    "carpetas": {
-      "ruta": "Ruta completa en una fila",
-      "anidadas": "Títulos anidados"
-    }
-  },
   "tiposRevision": {
     "campo": "Tipo de revisión",
     "otras": "Otras revisiones",
@@ -6857,6 +6715,357 @@
         "obs": "Observaciones",
         "estado": "Estado actual"
       }
+    }
+  },
+  "informesDiseno": {
+    "proximamente": "Próximamente",
+    "siempre": "Siempre",
+    "opcional": "(opcional)",
+    "vacioSeUsara": "Vacío: se usará «{{valor}}».",
+    "vacioEspanol": "Vacío: se usará el texto en español.",
+    "idiomaTexto": "Idioma del texto",
+    "nombreQueSeMuestra": "Nombre que se muestra",
+    "editar": "Editar {{que}}",
+    "configurar": "Configurar {{que}}",
+    "quitar": "Quitar {{que}}",
+    "vistaPrevia": "Vista previa",
+    "vistaPreviaInforme": "Vista previa del informe",
+    "publicar": "Publicar",
+    "publicada": "Plantilla publicada: los informes nuevos ya la usan.",
+    "duplicar": "Duplicar",
+    "duplicada": "Plantilla duplicada.",
+    "archivar": "Archivar",
+    "desarchivar": "Desarchivar",
+    "archivarConfirmar": "¿Archivar «{{nombre}}»? Dejará de ofrecerse al crear informes. Los informes ya creados no cambian.",
+    "deFabrica": "De fábrica",
+    "sinPublicar": "Sin publicar",
+    "avisoFabrica": "Es una plantilla de fábrica: no se edita. Duplícala para adaptarla.",
+    "avisoArchivada": "La plantilla está archivada: desarchívala para editarla.",
+    "avisoLectura": "No puedes editar esta plantilla.",
+    "noCabenAviso": "Las columnas de la tabla-resumen no caben en el papel elegido: {{lista}}. Mientras no quepan, la plantilla no se guarda. Ábrela para aplicar la sugerencia.",
+    "estados": {
+      "borrador": "Borrador",
+      "publicada": "Publicada",
+      "archivada": "Archivada"
+    },
+    "estadoGuardado": {
+      "guardado": "Borrador guardado",
+      "pendiente": "Cambios sin guardar…",
+      "guardando": "Guardando…",
+      "error": "No se pudo guardar"
+    },
+    "tipos": {
+      "revision_estandar": "Informe de revisión estándar"
+    },
+    "listado": {
+      "nombre": "Nombre",
+      "tipo": "Tipo de informe",
+      "linea": "Línea visual",
+      "estado": "Estado",
+      "cambios": "Cambios sin publicar",
+      "publicada": "Publicada",
+      "nueva": "Nueva plantilla",
+      "nuevaHint": "Nace en borrador: no se ofrece al crear informes hasta que la publiques.",
+      "crear": "Crear",
+      "vacio": "Aún no hay plantillas"
+    },
+    "linea": {
+      "titulo": "Cambiar de línea visual",
+      "aviso": "Se restablecerán los ajustes de aspecto de {{n}} apartado(s): {{lista}}. Tu contenido no cambia.",
+      "cambiar": "Cambiar"
+    },
+    "general": {
+      "titulo": "Configuración general",
+      "nombre": "Nombre de la plantilla",
+      "tipo": "Tipo de informe",
+      "linea": "Línea visual",
+      "papel": "Papel",
+      "orientacion": "Orientación",
+      "orientaciones": {
+        "vertical": "Vertical",
+        "horizontal": "Horizontal"
+      },
+      "idioma": "Idioma por defecto",
+      "paginaHint": "El papel y la orientación valen para todo el informe. Cada informe puede cambiar el idioma.",
+      "aspecto": "Aspecto visual",
+      "aspectoHint": "Tipografías, colores y tamaño de letra de todo el informe.",
+      "aspectoFila": "Tipografías, colores y tamaños",
+      "firmae": "Firma electrónica",
+      "firmaeHint": "Firma los informes con el sello electrónico de tu empresa.",
+      "firmados": "Informes firmados",
+      "sinFirmar": "Informes sin firmar",
+      "desactivada": "Desactivada",
+      "cabeceraPie": "Cabecera y pie",
+      "cabeceraPieHint": "Se repiten en todas las páginas interiores.",
+      "cabecera": "Cabecera",
+      "pie": "Pie de página",
+      "cabeceraFila": "Cabecera de páginas interiores",
+      "pieFila": "Pie de página",
+      "vacio": "Vacío",
+      "campos": "Campos del informe",
+      "camposHint": "Datos específicos que habrás de rellenar al generar cada informe.",
+      "anadirCampo": "Añadir campo",
+      "sinCampos": "Aún no hay campos."
+    },
+    "pila": {
+      "titulo": "Apartados del informe",
+      "anadir": "Añadir apartado",
+      "disponibles": "Apartados disponibles",
+      "elige": "Elige el apartado que quieres añadir",
+      "yaIncluido": "Ya incluido",
+      "hint": "Los nuevos apartados se añaden al final. Arrástralos para cambiar el orden. Cada apartado empieza en página nueva."
+    },
+    "sheet": {
+      "general": "Configuración general de la plantilla",
+      "interiores": "Páginas interiores",
+      "campo": "Campo del informe",
+      "cerrar": "Cerrar panel",
+      "revisaAvisos": "Revisa los avisos antes de guardar"
+    },
+    "secciones": {
+      "titulo": "Título",
+      "tituloYTexto": "Título y texto",
+      "idiomasDesc": "Puedes escribirlo en varios idiomas. Si un idioma queda vacío, se usa el español.",
+      "colocacion": "Colocación",
+      "aspectoLinea": "Aspecto en la línea {{linea}}",
+      "aspectoLineaDesc": "Solo existe en esta línea. Si cambias de línea, se restablece.",
+      "otros": "Más opciones",
+      "contenido": "Contenido"
+    },
+    "ayudas": {
+      "pagina_nueva": "Si lo desactivas, sigue a continuación del apartado anterior.",
+      "en_indice": "Con su título.",
+      "indice": {
+        "numerar": "Por ejemplo, «3. Certificado»."
+      },
+      "portada": {
+        "estructura": "Dónde va la foto del emplazamiento y dónde los textos.",
+        "firmante_on": "La persona que firma el informe."
+      },
+      "firma": {
+        "texto2_on": "Conclusiones, recomendaciones o el alcance de la certificación.",
+        "conforme_cliente": "Espacio en blanco junto a tu firma, para que el cliente firme a mano su conformidad."
+      },
+      "tabla_resumen": {
+        "contadores": "Revisiones · Aptos · No aptos · No revisadas. Se cuentan revisiones, no equipos. Los equipos retirados no se cuentan nunca."
+      },
+      "fichas_revision": {
+        "numerar_carpetas": "Por ejemplo, «2. Cubierta nave almacén».",
+        "en_indice": "Con su título y una entrada por carpeta."
+      }
+    },
+    "datos": {
+      "grupos": {
+        "informe": "Informe",
+        "cliente": "Cliente",
+        "emplazamiento": "Emplazamiento",
+        "proyecto": "Proyecto",
+        "marca": "Tu empresa",
+        "firmante": "Firmante",
+        "contador": "Resultados",
+        "campo": "Campos del informe"
+      }
+    },
+    "texto": {
+      "barra": "Formato de {{label}}",
+      "negrita": "Negrita",
+      "lista": "Lista con viñetas",
+      "insertar": "Insertar dato"
+    },
+    "ejemplos": {
+      "textoTitulo": "Título de la página",
+      "texto": "Escribe aquí tu texto. Con la barra de herramientas puedes poner palabras en **negrita** y crear listas con viñetas.\n\nPara que cada informe se rellene solo, usa «Insertar dato»: por ejemplo, este informe es para {{cliente.razon_social}} y corresponde a {{emplazamiento.nombre}}. Al generar el informe, cada dato se sustituye por su valor.\n\n- Esto es una lista: cada viñeta es una línea. También aquí puedes insertar datos, como {{proyecto.nombre}}.\n- Sustituye estas líneas por las tuyas.\n- Si no necesitas la lista, bórrala.",
+      "firma": "Escribe aquí el texto del certificado. Por ejemplo: **{{marca.nombre}}** certifica que ha revisado los equipos de {{cliente.razon_social}} en {{emplazamiento.nombre}}, con el resultado que se resume a continuación."
+    },
+    "portada": {
+      "aspectoDesc": "Colores, tipografías y tamaños salen del Aspecto visual de la plantilla.",
+      "subirLogo": "Subir logo (PNG o SVG)",
+      "logoActual": "Logo actual",
+      "sinLogo": "Sin logo",
+      "imagen": {
+        "portada": "Imagen de portada",
+        "portadaSubir": "Subir o cambiar imagen",
+        "respaldo": "Imagen de respaldo",
+        "respaldoSubir": "Subir imagen de respaldo"
+      },
+      "sinImagen": "Sin imagen",
+      "titulos": "Título y subtítulo",
+      "fecha": "Fecha de emisión",
+      "fechaHint": "Es la fecha en que generas el informe.",
+      "datos": "Datos del cliente y del emplazamiento",
+      "datosDesc": "Se rellenan solos con los datos de cada informe.",
+      "cliente": "Cliente",
+      "clienteNombre": "Nombre o razón social",
+      "emisor": "Emitido por",
+      "emisorDesc": "Se toma de Parámetros generales. El resto de datos de tu empresa (CIF, dirección, teléfono, email) van en la contraportada."
+    },
+    "indice": {
+      "queAparece": "Qué aparece",
+      "queApareceDesc": "El índice se rellena solo con los apartados que tengan activado «Aparece en el índice», con su número de página.",
+      "paginaPropia": "El índice siempre ocupa su propia página."
+    },
+    "subportada": {
+      "paginaPropia": "La portadilla siempre ocupa su propia página."
+    },
+    "contraportada": {
+      "empresa": "Datos de tu empresa",
+      "empresaDesc": "Se toman de Parámetros generales.",
+      "nombre": "Nombre",
+      "textoFinal": "Texto final",
+      "textoFinalDesc": "Por ejemplo, un aviso legal o de confidencialidad. Puedes escribirlo en varios idiomas.",
+      "ultima": "La contraportada siempre es la última página y no aparece en el índice."
+    },
+    "firma": {
+      "titulosYTextos": "Título y textos",
+      "contadores": "Contadores",
+      "contadoresDesc": "Resumen del resultado, debajo del texto. Se cuentan revisiones, no equipos: un equipo con dos revisiones cuenta dos veces.",
+      "contador": {
+        "total": "Revisiones",
+        "aptos": "Aptos",
+        "no_aptos": "No aptos",
+        "no_revisadas": "No revisadas",
+        "retirados": "Equipos retirados"
+      },
+      "informativo": "Informativo",
+      "lugarFecha": "Lugar y fecha",
+      "empresa": "Firma de tu empresa",
+      "empresaDesc": "El firmante se elige al emitir cada informe. La firma es digital (con certificado) y no se dibuja en el papel.",
+      "firmante": "Datos del firmante",
+      "firmanteNombre": "Nombre",
+      "firmanteCargo": "Cargo",
+      "selloHint": "El sello es el de Parámetros generales. Se estampa si al emitir el informe eliges «Sellar».",
+      "sello": "Sello de tu empresa",
+      "sinSello": "Sin sello",
+      "conforme": "Conforme del cliente"
+    },
+    "planos": {
+      "disposicion": "Disposición",
+      "disposicionDesc": "La calidad de las imágenes va según la disposición, para que el PDF no pese demasiado."
+    },
+    "anexo": {
+      "entrega": "Cómo se entregan",
+      "recomendado": "Recomendado",
+      "documento": "Documento",
+      "origenDesc": "Puede haber PDF, imágenes u otros archivos: cada uno sale con su tipo.",
+      "origenDescPdf": "Solo se incrustan los PDF. Las imágenes van en «Planos e imágenes».",
+      "docsPlantilla": "Documentos de esta plantilla",
+      "sinDocs": "Aún no has añadido documentos.",
+      "anadirDoc": "Añadir documento",
+      "anadirPdf": "Añadir PDF",
+      "vacioNoSale": "Si en un informe no hay ningún documento, el anexo no sale."
+    },
+    "fichas": {
+      "disenoDesc": "Cada diseño trae sus datos. Si necesitas otros, pídenos un diseño nuevo.",
+      "coleccionDesc": "Elige qué datos salen en la cabecera de cada ficha. Siempre salen la carpeta, el resultado, el checklist y las fotos.",
+      "checklist": "Checklist",
+      "checklistDesc": "Afecta a las revisiones aptas. Las no conformidades siempre muestran su checklist, si se usó, salvo integradas en su carpeta cuando además se repiten aparte.",
+      "noConformidadesDesc": "Las revisiones no aptas y no revisadas.",
+      "fotos": "Fotos",
+      "fotosHint": "Las revisiones no revisadas no llevan fotos.",
+      "porFilaHint": "Con más fotos por fila, salen más pequeñas y ocupan menos hojas.",
+      "carpetas": "Carpetas",
+      "carpetasDesc": "Las fichas se ordenan por carpeta, con su ruta entera como cabecera."
+    },
+    "resumen": {
+      "columnas": "Columnas",
+      "columnasDesc": "Marca las que quieres y arrástralas para ordenarlas. Las cortas tienen ancho fijo; las de texto se reparten el espacio que queda.",
+      "corta": "Corta",
+      "texto": "Texto",
+      "sinResultado": "Marca al menos una columna de resultado: color o texto.",
+      "caben": "Caben en el papel elegido.",
+      "noCaben": "No caben en el papel elegido.",
+      "noCabenHint": "Necesitan {{necesita}} mm y el papel deja {{util}} mm; cada columna de texto necesita al menos {{min}} mm. Te sugerimos quitar: {{quitar}}. También puedes poner la plantilla en horizontal o usar letra más pequeña.",
+      "aplicar": "Aplicar sugerencia"
+    },
+    "aspecto": {
+      "banda": "Aspecto visual de tu plantilla",
+      "bandaHint": "Todos los apartados usan estas tipografías, colores y tamaños, salvo que en un apartado especifiques otros.",
+      "tipografias": "Tipografías",
+      "fuente_titulos": "Títulos",
+      "fuente_textos": "Textos",
+      "colores": "Colores principales",
+      "coloresDesc": "Los colores de resultado (Apto, No apto…) son fijos y no cambian.",
+      "color": {
+        "marca": "Color de marca",
+        "marcaHint": "Títulos, bandas y filetes.",
+        "acento": "Color de acento",
+        "acentoHint": "Detalles y franjas de realce.",
+        "tinta": "Color de texto",
+        "tintaHint": "Texto general. El secundario se deriva de él."
+      },
+      "restablecer": "Restablecer",
+      "tamano": "Tamaño de los textos",
+      "tamanoDesc": "Ajusta a la vez todos los textos del informe.",
+      "escalas": {
+        "pequenos": "Pequeños",
+        "medios": "Medios",
+        "grandes": "Grandes"
+      },
+      "muestra": "Así se verá",
+      "muestraTitulo": "Informe de revisión de sistemas anticaídas",
+      "muestraSubtitulo": "Revisión periódica anual · Campaña 2026",
+      "muestraTexto": "Industrias Lácteas Montañesas, S.A. · Planta de envasado Camargo. Se han revisado 48 elementos, de los cuales 45 son aptos."
+    },
+    "firmae": {
+      "titulo": "Firma electrónica",
+      "activa": "Firmar electrónicamente cada informe",
+      "activaHint": "Con el sello electrónico de tu empresa. Acredita quién emite el informe y que no se ha modificado después.",
+      "certValido": "Certificado válido hasta {{hasta}}",
+      "sinCert": "No hay certificado",
+      "sinCertHint": "Sin certificado, los informes se generan sin firmar.",
+      "donde": "El certificado se configura en Parámetros generales.",
+      "marca": "Marca visible",
+      "marcaDesc": "La firma va siempre dentro del PDF. Además, puedes mostrar una marca que lo indique.",
+      "visible": {
+        "certificado": "En el certificado",
+        "ultima": "En la última página",
+        "ninguna": "Sin marca visible"
+      },
+      "visibleAyuda": {
+        "certificado": "Junto a la firma del técnico, si el informe tiene certificado.",
+        "ultima": "Al final del informe.",
+        "ninguna": "La firma solo se ve al abrir el PDF con un lector de firmas."
+      }
+    },
+    "cabpie": {
+      "queAparece": "Qué aparece",
+      "queApareceDesc": "Se repite en todas las páginas interiores. La línea visual decide cómo y dónde se ve cada pieza.",
+      "qrSiempre": "El QR de verificación va siempre en el pie.",
+      "qr": "QR de verificación",
+      "textoLibre": "Texto libre",
+      "textoLibreDesc": "Puedes incluir datos del informe."
+    },
+    "campo": {
+      "nuevo": "Nuevo campo",
+      "campo": "Campo",
+      "campoDesc": "Se te pedirá al crear cada informe. Podrás insertarlo en los textos.",
+      "nombre": "Nombre del campo",
+      "nombrePh": "p. ej. Pedido",
+      "tipo": "Tipo",
+      "tipos": {
+        "texto": "Texto",
+        "textarea": "Texto largo",
+        "opcion": "Opción",
+        "sino": "Sí / No",
+        "fecha": "Fecha",
+        "usuario": "Usuario"
+      },
+      "opciones": "Opciones",
+      "opcionesPh": "Una por línea",
+      "obligatorio": "Obligatorio",
+      "obligatorioCorto": "obligatorio",
+      "obligatorioHint": "No podrás crear el informe sin rellenarlo.",
+      "defecto": "Valor por defecto",
+      "defectoDesc": "Opcional. Se propone al crear el informe y puedes cambiarlo.",
+      "sinValor": "Sin valor",
+      "ayuda": "Ayuda",
+      "ayudaDesc": "Texto que verás bajo el campo al crear el informe."
+    },
+    "preview": {
+      "hint": "Con los datos de hoy de la obra que elijas. Lo que no está guardado también se ve.",
+      "obra": "Obra",
+      "elegirObra": "Elige una obra…",
+      "sinObra": "Elige una obra para ver el informe."
     }
   }
 }

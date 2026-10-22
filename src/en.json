@@ -3551,10 +3551,10 @@
       "catalogoPendientes": "Pending validation",
       "proyectosOportunidades": "Opportunities",
       "proyectosPerdidos": "Lost",
-      "configPlantillasInforme": "Report templates",
       "configIa": "Artificial intelligence",
       "explotacionElementos": "Items",
-      "explotacionActuaciones": "Actions"
+      "explotacionActuaciones": "Actions",
+      "informesDiseno": "Report design"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -3667,9 +3667,9 @@
       "api": "You do not have permission for this action: {{accion}}.",
       "apiCapacidad": "You do not have permission for this action: {{accion}}. It comes with the {{capacidad}} capability.",
       "informes": "view reports",
-      "plantillasInforme": "edit report templates",
       "ia": "configure artificial intelligence",
-      "explotacion": "query this data"
+      "explotacion": "query this data",
+      "informesDiseno": "design report templates"
     }
   },
   "proyectos": {
@@ -6288,148 +6288,6 @@
       }
     }
   },
-  "plantillasInforme": {
-    "titulo": "Report templates",
-    "nueva": "New template",
-    "nuevaHint": "It starts as a draft: it is not offered when creating reports until you publish it.",
-    "crear": "Create template",
-    "vacio": "No templates",
-    "sinPublicar": "Unpublished changes",
-    "deFabrica": "Built-in",
-    "origenHint": "Whether the report carries inspections, equipment or nothing variable (a fixed certificate). It cannot be changed later.",
-    "campos": {
-      "nombre": "Name",
-      "descripcion": "Description",
-      "origen": "Source",
-      "idioma": "Language",
-      "estado": "Status",
-      "fabrica": "Built-in",
-      "cambios": "Unpublished",
-      "publicada": "Published"
-    },
-    "origenes": {
-      "revisiones": "Inspections",
-      "elementos": "Equipment",
-      "fijo": "Fixed"
-    },
-    "estados": {
-      "borrador": "Draft",
-      "publicada": "Published",
-      "archivada": "Archived"
-    },
-    "partir": {
-      "ninguno": "A single PDF",
-      "zona": "One PDF per zone",
-      "familia": "One PDF per family",
-      "elemento": "One PDF per item"
-    },
-    "tiposCampo": {
-      "texto": "Text",
-      "textarea": "Long text",
-      "fecha": "Date"
-    },
-    "opciones": {
-      "2": "Up to 2",
-      "4": "Up to 4",
-      "ninguna": "None",
-      "foto_emplazamiento": "Site photo",
-      "ninguno": "Not grouped",
-      "zona": "Zone",
-      "carpeta": "Folder",
-      "resultado": "Result",
-      "equipo": "Equipment",
-      "tipo": "Type",
-      "identificador": "Identification",
-      "fecha": "Date",
-      "valida_hasta": "Valid until",
-      "revisor": "Inspector",
-      "estado": "Current status",
-      "valido_hasta": "Valid until",
-      "ultima_revision": "Last inspection",
-      "siempre": "Always",
-      "solo_no_apta": "Only on failed items",
-      "nunca": "Never",
-      "todos": "All",
-      "no_conformes": "Only defects",
-      "todas": "All",
-      "fotos": "Photos",
-      "planos": "Plans",
-      "ambos": "Photos and plans",
-      "rejilla": "In a grid",
-      "una_por_pagina": "One per page",
-      "identificacion": "Identification",
-      "fechas": "Dates",
-      "caracteristicas": "Characteristics",
-      "normas": "Standards",
-      "vertical": "Portrait",
-      "horizontal": "Landscape",
-      "situacion": "Current status",
-      "marca": "Brand",
-      "modelo": "Model",
-      "referencia": "Reference"
-    },
-    "editor": {
-      "catalogo": "Blocks",
-      "catalogoHint": "Drag them onto the canvas, or click to add them after the selected one.",
-      "anadirBloque": "Add this block",
-      "lienzo": "Template canvas",
-      "muestra": "Sample site",
-      "elegirMuestra": "Choose a site",
-      "sinMuestra": "Choose a sample site to see the template with real data.",
-      "lienzoHint": "Click a block to see its options; drag it to move it.",
-      "lienzoHintLectura": "Read only.",
-      "errorLienzo": "The canvas could not be drawn.",
-      "verPlantilla": "See the template",
-      "subir": "Move up",
-      "bajar": "Move down",
-      "duplicar": "Duplicate",
-      "quitar": "Remove",
-      "condicion": "When it is printed",
-      "siempre": "Always",
-      "oculto": "Hide this block",
-      "textoDeSerie": "Empty: the default text",
-      "marcadores": "Placeholders: {{ejemplo}}…",
-      "plantilla": "Template",
-      "formato": "Paper",
-      "orientacion": "Orientation",
-      "partir": "How it is issued",
-      "cabecera": "Header of each page",
-      "pie": "Footer of each page",
-      "textoPieza": "Text",
-      "anadirPieza": "Add piece",
-      "campos": "Fields asked",
-      "camposHint": "Asked when creating each report and usable in texts as {{ejemplo}}.",
-      "campoNuevo": "New field",
-      "etiqueta": "Label",
-      "defecto": "Default value",
-      "obligatorio": "Mandatory",
-      "anadirCampo": "Add field",
-      "seleccion": "Default content selection",
-      "seleccionHint": "What is included when creating a report with «Fill it now».",
-      "sel_sin_informe": "Only inspections not in an issued report",
-      "sel_ultima": "Only the latest of each item",
-      "verPdf": "View PDF",
-      "duplicarPlantilla": "Duplicate",
-      "archivar": "Archive",
-      "desarchivar": "Unarchive",
-      "archivarConfirmar": "Archive the template? It will no longer be offered when creating reports; existing reports do not change.",
-      "publicar": "Publish",
-      "publicada": "Template published: new reports will use it",
-      "duplicada": "Copy created as a draft",
-      "fabricaAviso": "Built-in template: it cannot be edited. Duplicate it to adapt it to your company.",
-      "estadoGuardado": {
-        "guardado": "Draft saved",
-        "pendiente": "Unsaved changes…",
-        "guardando": "Saving…",
-        "error": "Could not save"
-      },
-      "carpetas": "Folders in lists"
-    },
-    "carpetas": {
-      "ruta": "Full path in one row",
-      "anidadas": "Nested headings"
-    }
-  },
   "tiposRevision": {
     "campo": "Inspection type",
     "otras": "Other inspections",
@@ -6857,6 +6715,357 @@
         "obs": "Remarks",
         "estado": "Current status"
       }
+    }
+  },
+  "informesDiseno": {
+    "proximamente": "Coming soon",
+    "siempre": "Always",
+    "opcional": "(optional)",
+    "vacioSeUsara": "Empty: «{{valor}}» will be used.",
+    "vacioEspanol": "Empty: the Spanish text will be used.",
+    "idiomaTexto": "Text language",
+    "nombreQueSeMuestra": "Name shown",
+    "editar": "Edit {{que}}",
+    "configurar": "Configure {{que}}",
+    "quitar": "Remove {{que}}",
+    "vistaPrevia": "Preview",
+    "vistaPreviaInforme": "Report preview",
+    "publicar": "Publish",
+    "publicada": "Template published: new reports already use it.",
+    "duplicar": "Duplicate",
+    "duplicada": "Template duplicated.",
+    "archivar": "Archive",
+    "desarchivar": "Unarchive",
+    "archivarConfirmar": "Archive «{{nombre}}»? It will no longer be offered when creating reports. Reports already created do not change.",
+    "deFabrica": "Built-in",
+    "sinPublicar": "Unpublished",
+    "avisoFabrica": "This is a built-in template: it cannot be edited. Duplicate it to adapt it.",
+    "avisoArchivada": "The template is archived: unarchive it to edit it.",
+    "avisoLectura": "You cannot edit this template.",
+    "noCabenAviso": "The summary table columns do not fit on the chosen paper: {{lista}}. Until they fit, the template is not saved. Open it to apply the suggestion.",
+    "estados": {
+      "borrador": "Draft",
+      "publicada": "Published",
+      "archivada": "Archived"
+    },
+    "estadoGuardado": {
+      "guardado": "Draft saved",
+      "pendiente": "Unsaved changes…",
+      "guardando": "Saving…",
+      "error": "Could not save"
+    },
+    "tipos": {
+      "revision_estandar": "Standard inspection report"
+    },
+    "listado": {
+      "nombre": "Name",
+      "tipo": "Report type",
+      "linea": "Visual line",
+      "estado": "Status",
+      "cambios": "Unpublished changes",
+      "publicada": "Published",
+      "nueva": "New template",
+      "nuevaHint": "It starts as a draft: it is not offered when creating reports until you publish it.",
+      "crear": "Create",
+      "vacio": "No templates yet"
+    },
+    "linea": {
+      "titulo": "Change visual line",
+      "aviso": "The look settings of {{n}} section(s) will be reset: {{lista}}. Your content does not change.",
+      "cambiar": "Change"
+    },
+    "general": {
+      "titulo": "General settings",
+      "nombre": "Template name",
+      "tipo": "Report type",
+      "linea": "Visual line",
+      "papel": "Paper",
+      "orientacion": "Orientation",
+      "orientaciones": {
+        "vertical": "Portrait",
+        "horizontal": "Landscape"
+      },
+      "idioma": "Default language",
+      "paginaHint": "Paper and orientation apply to the whole report. Each report can change the language.",
+      "aspecto": "Look",
+      "aspectoHint": "Fonts, colours and text size of the whole report.",
+      "aspectoFila": "Fonts, colours and sizes",
+      "firmae": "Electronic signature",
+      "firmaeHint": "Sign reports with your company's electronic seal.",
+      "firmados": "Signed reports",
+      "sinFirmar": "Unsigned reports",
+      "desactivada": "Off",
+      "cabeceraPie": "Header and footer",
+      "cabeceraPieHint": "They repeat on every inner page.",
+      "cabecera": "Header",
+      "pie": "Footer",
+      "cabeceraFila": "Inner page header",
+      "pieFila": "Footer",
+      "vacio": "Empty",
+      "campos": "Report fields",
+      "camposHint": "Specific data you will fill in when generating each report.",
+      "anadirCampo": "Add field",
+      "sinCampos": "No fields yet."
+    },
+    "pila": {
+      "titulo": "Report sections",
+      "anadir": "Add section",
+      "disponibles": "Available sections",
+      "elige": "Choose the section you want to add",
+      "yaIncluido": "Already included",
+      "hint": "New sections are added at the end. Drag them to change the order. Each section starts on a new page."
+    },
+    "sheet": {
+      "general": "General template settings",
+      "interiores": "Inner pages",
+      "campo": "Report field",
+      "cerrar": "Close panel",
+      "revisaAvisos": "Check the warnings before saving"
+    },
+    "secciones": {
+      "titulo": "Title",
+      "tituloYTexto": "Title and text",
+      "idiomasDesc": "You can write it in several languages. If a language is left empty, Spanish is used.",
+      "colocacion": "Placement",
+      "aspectoLinea": "Look in line {{linea}}",
+      "aspectoLineaDesc": "It only exists in this line. If you change line, it is reset.",
+      "otros": "More options",
+      "contenido": "Content"
+    },
+    "ayudas": {
+      "pagina_nueva": "If you turn it off, it follows on from the previous section.",
+      "en_indice": "With its title.",
+      "indice": {
+        "numerar": "For example, «3. Certificate»."
+      },
+      "portada": {
+        "estructura": "Where the site photo goes and where the texts go.",
+        "firmante_on": "The person who signs the report."
+      },
+      "firma": {
+        "texto2_on": "Conclusions, recommendations or the scope of the certification.",
+        "conforme_cliente": "Blank space next to your signature, for the client to sign their approval by hand."
+      },
+      "tabla_resumen": {
+        "contadores": "Inspections · Passed · Failed · Not inspected. Inspections are counted, not items. Withdrawn items are never counted."
+      },
+      "fichas_revision": {
+        "numerar_carpetas": "For example, «2. Warehouse roof».",
+        "en_indice": "With its title and one entry per folder."
+      }
+    },
+    "datos": {
+      "grupos": {
+        "informe": "Report",
+        "cliente": "Client",
+        "emplazamiento": "Site",
+        "proyecto": "Project",
+        "marca": "Your company",
+        "firmante": "Signatory",
+        "contador": "Results",
+        "campo": "Report fields"
+      }
+    },
+    "texto": {
+      "barra": "{{label}} formatting",
+      "negrita": "Bold",
+      "lista": "Bulleted list",
+      "insertar": "Insert data"
+    },
+    "ejemplos": {
+      "textoTitulo": "Page title",
+      "texto": "Write your text here. With the toolbar you can put words in **bold** and create bulleted lists.\n\nTo have each report fill itself in, use «Insert data»: for example, this report is for {{cliente.razon_social}} and covers {{emplazamiento.nombre}}. When the report is generated, each data item is replaced by its value.\n\n- This is a list: each bullet is one line. You can insert data here too, such as {{proyecto.nombre}}.\n- Replace these lines with your own.\n- If you do not need the list, delete it.",
+      "firma": "Write the certificate text here. For example: **{{marca.nombre}}** certifies that it has inspected the equipment of {{cliente.razon_social}} at {{emplazamiento.nombre}}, with the result summarised below."
+    },
+    "portada": {
+      "aspectoDesc": "Colours, fonts and sizes come from the template's Look.",
+      "subirLogo": "Upload logo (PNG or SVG)",
+      "logoActual": "Current logo",
+      "sinLogo": "No logo",
+      "imagen": {
+        "portada": "Cover image",
+        "portadaSubir": "Upload or change image",
+        "respaldo": "Fallback image",
+        "respaldoSubir": "Upload fallback image"
+      },
+      "sinImagen": "No image",
+      "titulos": "Title and subtitle",
+      "fecha": "Issue date",
+      "fechaHint": "It is the date you generate the report.",
+      "datos": "Client and site details",
+      "datosDesc": "They fill themselves in with each report's data.",
+      "cliente": "Client",
+      "clienteNombre": "Name or company name",
+      "emisor": "Issued by",
+      "emisorDesc": "Taken from General settings. The rest of your company details (tax ID, address, phone, email) go on the back cover."
+    },
+    "indice": {
+      "queAparece": "What appears",
+      "queApareceDesc": "The contents fill themselves in with the sections that have «Listed in the contents» on, with their page number.",
+      "paginaPropia": "The contents always take their own page."
+    },
+    "subportada": {
+      "paginaPropia": "The section cover always takes its own page."
+    },
+    "contraportada": {
+      "empresa": "Your company details",
+      "empresaDesc": "Taken from General settings.",
+      "nombre": "Name",
+      "textoFinal": "Closing text",
+      "textoFinalDesc": "For example, a legal or confidentiality notice. You can write it in several languages.",
+      "ultima": "The back cover is always the last page and is not listed in the contents."
+    },
+    "firma": {
+      "titulosYTextos": "Title and texts",
+      "contadores": "Counters",
+      "contadoresDesc": "Summary of the result, below the text. Inspections are counted, not items: an item with two inspections counts twice.",
+      "contador": {
+        "total": "Inspections",
+        "aptos": "Passed",
+        "no_aptos": "Failed",
+        "no_revisadas": "Not inspected",
+        "retirados": "Withdrawn items"
+      },
+      "informativo": "For information",
+      "lugarFecha": "Place and date",
+      "empresa": "Your company's signature",
+      "empresaDesc": "The signatory is chosen when issuing each report. The signature is digital (with a certificate) and is not drawn on paper.",
+      "firmante": "Signatory details",
+      "firmanteNombre": "Name",
+      "firmanteCargo": "Position",
+      "selloHint": "The stamp is the one in General settings. It is applied if you choose «Stamp» when issuing the report.",
+      "sello": "Your company stamp",
+      "sinSello": "No stamp",
+      "conforme": "Client approval"
+    },
+    "planos": {
+      "disposicion": "Layout",
+      "disposicionDesc": "Image quality depends on the layout, so the PDF does not get too heavy."
+    },
+    "anexo": {
+      "entrega": "How they are delivered",
+      "recomendado": "Recommended",
+      "documento": "Document",
+      "origenDesc": "There may be PDFs, images or other files: each one shows its type.",
+      "origenDescPdf": "Only PDFs are embedded. Images go in «Plans and images».",
+      "docsPlantilla": "Documents of this template",
+      "sinDocs": "You have not added any documents yet.",
+      "anadirDoc": "Add document",
+      "anadirPdf": "Add PDF",
+      "vacioNoSale": "If a report has no documents, the appendix is left out."
+    },
+    "fichas": {
+      "disenoDesc": "Each layout brings its own data. If you need others, ask us for a new layout.",
+      "coleccionDesc": "Choose which data appear in the header of each sheet. The folder, the result, the checklist and the photos always appear.",
+      "checklist": "Checklist",
+      "checklistDesc": "It affects passed inspections. Non-conformities always show their checklist, if one was used, except when integrated in their folder and also repeated separately.",
+      "noConformidadesDesc": "Failed and not inspected items.",
+      "fotos": "Photos",
+      "fotosHint": "Not inspected items carry no photos.",
+      "porFilaHint": "With more photos per row, they are smaller and take fewer pages.",
+      "carpetas": "Folders",
+      "carpetasDesc": "Sheets are sorted by folder, with its full path as header."
+    },
+    "resumen": {
+      "columnas": "Columns",
+      "columnasDesc": "Tick the ones you want and drag them to sort them. Short ones have a fixed width; text ones share the remaining space.",
+      "corta": "Short",
+      "texto": "Text",
+      "sinResultado": "Tick at least one result column: colour or text.",
+      "caben": "They fit on the chosen paper.",
+      "noCaben": "They do not fit on the chosen paper.",
+      "noCabenHint": "They need {{necesita}} mm and the paper leaves {{util}} mm; each text column needs at least {{min}} mm. We suggest removing: {{quitar}}. You can also set the template to landscape or use smaller text.",
+      "aplicar": "Apply suggestion"
+    },
+    "aspecto": {
+      "banda": "Look of your template",
+      "bandaHint": "All sections use these fonts, colours and sizes, unless you specify others in a section.",
+      "tipografias": "Fonts",
+      "fuente_titulos": "Titles",
+      "fuente_textos": "Texts",
+      "colores": "Main colours",
+      "coloresDesc": "Result colours (Passed, Failed…) are fixed and do not change.",
+      "color": {
+        "marca": "Brand colour",
+        "marcaHint": "Titles, bands and rules.",
+        "acento": "Accent colour",
+        "acentoHint": "Details and highlight stripes.",
+        "tinta": "Text colour",
+        "tintaHint": "General text. The secondary one is derived from it."
+      },
+      "restablecer": "Reset",
+      "tamano": "Text size",
+      "tamanoDesc": "Adjusts all the report's texts at once.",
+      "escalas": {
+        "pequenos": "Small",
+        "medios": "Medium",
+        "grandes": "Large"
+      },
+      "muestra": "This is how it will look",
+      "muestraTitulo": "Fall protection systems inspection report",
+      "muestraSubtitulo": "Annual periodic inspection · 2026 campaign",
+      "muestraTexto": "Industrias Lácteas Montañesas, S.A. · Camargo packaging plant. 48 items have been inspected, 45 of which passed."
+    },
+    "firmae": {
+      "titulo": "Electronic signature",
+      "activa": "Electronically sign each report",
+      "activaHint": "With your company's electronic seal. It proves who issues the report and that it has not been modified afterwards.",
+      "certValido": "Certificate valid until {{hasta}}",
+      "sinCert": "No certificate",
+      "sinCertHint": "Without a certificate, reports are generated unsigned.",
+      "donde": "The certificate is set up in General settings.",
+      "marca": "Visible mark",
+      "marcaDesc": "The signature always goes inside the PDF. You can also show a mark that says so.",
+      "visible": {
+        "certificado": "On the certificate",
+        "ultima": "On the last page",
+        "ninguna": "No visible mark"
+      },
+      "visibleAyuda": {
+        "certificado": "Next to the technician's signature, if the report has a certificate.",
+        "ultima": "At the end of the report.",
+        "ninguna": "The signature is only seen when opening the PDF with a signature reader."
+      }
+    },
+    "cabpie": {
+      "queAparece": "What appears",
+      "queApareceDesc": "It repeats on every inner page. The visual line decides how and where each piece is shown.",
+      "qrSiempre": "The verification QR always goes in the footer.",
+      "qr": "Verification QR",
+      "textoLibre": "Free text",
+      "textoLibreDesc": "You can include report data."
+    },
+    "campo": {
+      "nuevo": "New field",
+      "campo": "Field",
+      "campoDesc": "You will be asked for it when creating each report. You can insert it in the texts.",
+      "nombre": "Field name",
+      "nombrePh": "e.g. Order",
+      "tipo": "Type",
+      "tipos": {
+        "texto": "Text",
+        "textarea": "Long text",
+        "opcion": "Option",
+        "sino": "Yes / No",
+        "fecha": "Date",
+        "usuario": "User"
+      },
+      "opciones": "Options",
+      "opcionesPh": "One per line",
+      "obligatorio": "Required",
+      "obligatorioCorto": "required",
+      "obligatorioHint": "You will not be able to create the report without filling it in.",
+      "defecto": "Default value",
+      "defectoDesc": "Optional. It is suggested when creating the report and you can change it.",
+      "sinValor": "No value",
+      "ayuda": "Help",
+      "ayudaDesc": "Text you will see under the field when creating the report."
+    },
+    "preview": {
+      "hint": "With today's data of the site you choose. What is not saved is shown too.",
+      "obra": "Site",
+      "elegirObra": "Choose a site…",
+      "sinObra": "Choose a site to see the report."
     }
   }
 }
