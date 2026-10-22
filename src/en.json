@@ -1493,6 +1493,14 @@
         "placeholder": "Choose whom to copy…",
         "hint": "Copies their capabilities and adjustments. Applied when you save.",
         "hintAlta": "Copies their capabilities; fine adjustments are copied once the user exists."
+      },
+      "firma": {
+        "titulo": "Signature",
+        "sinFirma": "No signature",
+        "subir": "Upload the signature",
+        "quitar": "Remove the signature",
+        "quitarConfirmar": "Remove the signature? Inspection sheets that ask for it will show an empty box; what has already been issued does not change.",
+        "hint": "The image of their signature: it appears on the inspection sheets of reports that carry the inspector's signature. PNG or JPG, up to 1 MB. Saved when chosen."
       }
     },
     "soporte": {
@@ -3136,7 +3144,7 @@
       "grupoMarca": "Brand and language",
       "marca": {
         "titulo": "Brand",
-        "desc": "The trade name, primary colour, logo and seal appear in the panel, in reports and in emails; the logo for dark backgrounds, in the header of the field app.",
+        "desc": "The trade name, primary colour, logo and seal appear in the panel, in reports and in emails; the issuer details, in reports; the logo for dark backgrounds, in the header of the field app.",
         "nombre": "Trade name",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Primary colour",
@@ -3153,7 +3161,16 @@
         "sinLogoOscuro": "No logo for dark backgrounds",
         "logoOscuroHint": "A light version of the logo for the dark header of the field app; without it, the app shows the usual logo. PNG, JPG or WEBP, up to 1 MB.",
         "quitarLogoOscuro": "Remove the logo for dark backgrounds",
-        "quitarLogoOscuroConfirmar": "Remove the logo for dark backgrounds? The app will show the usual logo again."
+        "quitarLogoOscuroConfirmar": "Remove the logo for dark backgrounds? The app will show the usual logo again.",
+        "emisor": {
+          "razon_social": "Company name",
+          "razonSocialHint": "The one shown as issuer in reports. If empty, the trade name is used.",
+          "cif": "Tax ID",
+          "direccion": "Address",
+          "telefono": "Phone",
+          "email": "Email",
+          "web": "Website"
+        }
       },
       "idioma": {
         "titulo": "Language",
@@ -6087,7 +6104,8 @@
       "elegirEmplazamiento": "Choose the site",
       "idiomaCliente": "The client's",
       "rellenar": "Fill it now with the template's selection (inspections not yet reported)",
-      "crear": "Create report"
+      "crear": "Create report",
+      "faltanObligatorios": "Required fields missing: {{lista}}."
     },
     "ficha": {
       "identificacion": "Identification",
@@ -6243,12 +6261,10 @@
       "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned."
     },
     "ajustes": {
-      "hint": "Point at a block or an inspection in the report. Changes apply to this report only: the template does not change.",
       "titulo": "Changes from the template",
       "tituloHint": "How this report differs from “{{plantilla}}”, plus the notes and photos chosen per inspection.",
       "ninguno": "This report follows the template as is.",
       "deshacer": "Undo",
-      "verCambios": "See changes",
       "actualizar": "Update from template",
       "actualizarConfirmar": "The published template is copied again and these changes are lost: {{lista}}. Notes and photos per inspection are kept.",
       "actualizado": "Report updated from the template ({{n}} changes removed)",
@@ -6270,7 +6286,6 @@
         "oculto": "Hidden: {{bloque}}",
         "mostrado": "Shown: {{bloque}}",
         "parametro": "{{bloque}} · {{param}}: {{antes}} → {{despues}}",
-        "condicion": "{{bloque}} · when shown: {{antes}} → {{despues}}",
         "anadido": "Added: {{bloque}}",
         "quitado": "Removed: {{bloque}}",
         "orden": "Block order changed",
@@ -6285,7 +6300,12 @@
         "campos": "report fields",
         "seleccion": "default selection",
         "partir": "how it is split"
-      }
+      },
+      "revisiones": "Inspections in the report",
+      "revisionesHint": "Click an inspection to add a report note or choose which photos appear.",
+      "sinRevisiones": "The report has no inspections yet: add them in Content.",
+      "marcaNota": "Note",
+      "marcaFotos": "{{n}} photos"
     }
   },
   "tiposRevision": {
@@ -6813,14 +6833,19 @@
       "disponibles": "Available sections",
       "elige": "Choose the section you want to add",
       "yaIncluido": "Already included",
-      "hint": "New sections are added at the end. Drag them to change the order. Each section starts on a new page."
+      "hint": "New sections are added at the end. Drag them to change the order. Each section starts on a new page.",
+      "hintInforme": "The template's sections, in order. Click one to hide it or change its content in this report only.",
+      "oculto": "Hidden"
     },
     "sheet": {
       "general": "General template settings",
       "interiores": "Inner pages",
       "campo": "Report field",
       "cerrar": "Close panel",
-      "revisaAvisos": "Check the warnings before saving"
+      "revisaAvisos": "Check the warnings before saving",
+      "enEsteInforme": "In this report",
+      "ocultar": "Hide this section",
+      "ocultarHint": "It does not appear in this report. The template does not change."
     },
     "secciones": {
       "titulo": "Title",

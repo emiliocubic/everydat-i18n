@@ -1409,6 +1409,14 @@
         "placeholder": "Choisir qui copier…",
         "hint": "Copie ses capacités et ses ajustements. Appliqué à l’enregistrement.",
         "hintAlta": "Copie ses capacités ; les ajustements fins se copient une fois l’utilisateur créé."
+      },
+      "firma": {
+        "titulo": "Signature",
+        "sinFirma": "Aucune signature",
+        "subir": "Téléverser la signature",
+        "quitar": "Retirer la signature",
+        "quitarConfirmar": "Retirer la signature ? Les fiches d'inspection qui la demandent afficheront un emplacement vide ; ce qui a déjà été émis ne change pas.",
+        "hint": "L'image de sa signature : elle apparaît sur les fiches d'inspection des rapports qui portent la signature de l'inspecteur. PNG ou JPG, jusqu'à 1 Mo. Enregistrée dès qu'elle est choisie."
       }
     },
     "soporte": {
@@ -3039,7 +3047,7 @@
       "grupoMarca": "Marque et langue",
       "marca": {
         "titulo": "Marque",
-        "desc": "Le nom commercial, la couleur principale, le logo et le cachet apparaissent dans le panneau, les rapports et les e-mails ; le logo pour fond sombre, dans l'en-tête de l'application de terrain.",
+        "desc": "Le nom commercial, la couleur principale, le logo et le cachet apparaissent dans le panneau, les rapports et les e-mails ; les données de l'émetteur, dans les rapports ; le logo pour fond sombre, dans l'en-tête de l'application de terrain.",
         "nombre": "Nom commercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Couleur principale",
@@ -3056,7 +3064,16 @@
         "sinLogoOscuro": "Pas de logo pour fond sombre",
         "logoOscuroHint": "Une version claire du logo pour l'en-tête sombre de l'application de terrain ; sans elle, l'application affiche le logo habituel. PNG, JPG ou WEBP, jusqu'à 1 Mo.",
         "quitarLogoOscuro": "Retirer le logo pour fond sombre",
-        "quitarLogoOscuroConfirmar": "Retirer le logo pour fond sombre ? L'application affichera de nouveau le logo habituel."
+        "quitarLogoOscuroConfirmar": "Retirer le logo pour fond sombre ? L'application affichera de nouveau le logo habituel.",
+        "emisor": {
+          "razon_social": "Raison sociale",
+          "razonSocialHint": "Celle qui apparaît comme émetteur dans les rapports. Vide, le nom commercial est utilisé.",
+          "cif": "N° d'identification fiscale",
+          "direccion": "Adresse",
+          "telefono": "Téléphone",
+          "email": "E-mail",
+          "web": "Site web"
+        }
       },
       "idioma": {
         "titulo": "Langue",
@@ -5845,6 +5862,16 @@
       "revisados": "Vérifiés entre",
       "desplegarTodo": "Tout déplier",
       "plegarTodo": "Tout replier"
+    },
+    "ajustes": {
+      "revisiones": "Inspections du rapport",
+      "revisionesHint": "Cliquez sur une inspection pour ajouter une note du rapport ou choisir les photos qui apparaissent.",
+      "sinRevisiones": "Le rapport n'a pas encore d'inspections : ajoutez-les dans Contenu.",
+      "marcaNota": "Note",
+      "marcaFotos": "{{n}} photos"
+    },
+    "alta": {
+      "faltanObligatorios": "Champs obligatoires manquants : {{lista}}."
     }
   },
   "tiposRevision": {
@@ -6372,14 +6399,19 @@
       "disponibles": "Sections disponibles",
       "elige": "Choisissez la section à ajouter",
       "yaIncluido": "Déjà incluse",
-      "hint": "Les nouvelles sections s'ajoutent à la fin. Faites-les glisser pour changer l'ordre. Chaque section commence sur une nouvelle page."
+      "hint": "Les nouvelles sections s'ajoutent à la fin. Faites-les glisser pour changer l'ordre. Chaque section commence sur une nouvelle page.",
+      "hintInforme": "Les sections du modèle, dans leur ordre. Cliquez sur l'une d'elles pour la masquer ou modifier son contenu dans ce rapport uniquement.",
+      "oculto": "Masquée"
     },
     "sheet": {
       "general": "Configuration générale du modèle",
       "interiores": "Pages intérieures",
       "campo": "Champ du rapport",
       "cerrar": "Fermer le panneau",
-      "revisaAvisos": "Vérifiez les avertissements avant d'enregistrer"
+      "revisaAvisos": "Vérifiez les avertissements avant d'enregistrer",
+      "enEsteInforme": "Dans ce rapport",
+      "ocultar": "Masquer cette section",
+      "ocultarHint": "Elle n'apparaît pas dans ce rapport. Le modèle ne change pas."
     },
     "secciones": {
       "titulo": "Titre",

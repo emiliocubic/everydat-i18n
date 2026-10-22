@@ -1365,6 +1365,14 @@
         "placeholder": "Elige a quién copiar…",
         "hint": "Copia sus capacidades y sus ajustes. Se guarda al guardar la ficha.",
         "hintAlta": "Copia sus capacidades; los ajustes finos se copian con la ficha ya creada."
+      },
+      "firma": {
+        "titulo": "Firma",
+        "sinFirma": "Sin firma",
+        "subir": "Subir la firma",
+        "quitar": "Quitar la firma",
+        "quitarConfirmar": "¿Quitar la firma? Las fichas de revisión que la pidan saldrán con el hueco vacío; lo ya emitido no cambia.",
+        "hint": "La imagen de su firma: sale en las fichas de revisión de los informes que llevan la firma del revisor. PNG o JPG, hasta 1 MB. Se guarda al elegirla."
       }
     },
     "soporte": {
@@ -3136,7 +3144,7 @@
       "grupoMarca": "Marca e idioma",
       "marca": {
         "titulo": "Marca",
-        "desc": "El nombre comercial, el color primario, el logo y el sello salen en el panel, en los informes y en los correos; el logo para fondo oscuro, en la cabecera de la app de campo.",
+        "desc": "El nombre comercial, el color primario, el logo y el sello salen en el panel, en los informes y en los correos; los datos del emisor, en los informes; el logo para fondo oscuro, en la cabecera de la app de campo.",
         "nombre": "Nombre comercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Color primario",
@@ -3153,7 +3161,16 @@
         "sinLogoOscuro": "Sin logo para fondo oscuro",
         "logoOscuroHint": "Una versión clara del logo para la cabecera oscura de la app de campo; sin ella, la app pinta el logo de siempre. PNG, JPG o WEBP, hasta 1 MB.",
         "quitarLogoOscuro": "Quitar el logo para fondo oscuro",
-        "quitarLogoOscuroConfirmar": "¿Quitar el logo para fondo oscuro? La app volverá a pintar el logo de siempre."
+        "quitarLogoOscuroConfirmar": "¿Quitar el logo para fondo oscuro? La app volverá a pintar el logo de siempre.",
+        "emisor": {
+          "razon_social": "Razón social",
+          "razonSocialHint": "La que sale como emisor en los informes. Vacía, sale el nombre comercial.",
+          "cif": "CIF",
+          "direccion": "Dirección",
+          "telefono": "Teléfono",
+          "email": "Email",
+          "web": "Web"
+        }
       },
       "idioma": {
         "titulo": "Idioma",
@@ -6087,7 +6104,8 @@
       "elegirEmplazamiento": "Elige el emplazamiento",
       "idiomaCliente": "El del cliente",
       "rellenar": "Rellenarlo ya con la selección de la plantilla (las revisiones sin informe)",
-      "crear": "Crear informe"
+      "crear": "Crear informe",
+      "faltanObligatorios": "Faltan campos obligatorios: {{lista}}."
     },
     "ficha": {
       "identificacion": "Identificación",
@@ -6243,12 +6261,10 @@
       "sin_sello": "Se pidió firmar, pero no hay sello configurado: saldrá sin firma."
     },
     "ajustes": {
-      "hint": "Señala un bloque o una revisión del informe. Los cambios son solo de este informe: la plantilla no cambia.",
       "titulo": "Cambios sobre la plantilla",
       "tituloHint": "En qué se aparta este informe de «{{plantilla}}», y las notas y fotos elegidas por revisión.",
       "ninguno": "Este informe sale tal cual la plantilla.",
       "deshacer": "Deshacer",
-      "verCambios": "Ver cambios",
       "actualizar": "Actualizar desde la plantilla",
       "actualizarConfirmar": "Se vuelve a copiar la plantilla publicada y se pierden estos cambios: {{lista}}. Las notas y fotos por revisión se conservan.",
       "actualizado": "Informe actualizado desde la plantilla ({{n}} cambios quitados)",
@@ -6270,7 +6286,6 @@
         "oculto": "Oculto: {{bloque}}",
         "mostrado": "Mostrado: {{bloque}}",
         "parametro": "{{bloque}} · {{param}}: {{antes}} → {{despues}}",
-        "condicion": "{{bloque}} · cuándo sale: {{antes}} → {{despues}}",
         "anadido": "Añadido: {{bloque}}",
         "quitado": "Quitado: {{bloque}}",
         "orden": "Orden de los bloques cambiado",
@@ -6285,7 +6300,12 @@
         "campos": "campos del informe",
         "seleccion": "selección por defecto",
         "partir": "cómo se parte"
-      }
+      },
+      "revisiones": "Revisiones del informe",
+      "revisionesHint": "Pulsa una revisión para ponerle una nota del informe o elegir qué fotos salen.",
+      "sinRevisiones": "El informe aún no tiene revisiones: se añaden en Contenido.",
+      "marcaNota": "Nota",
+      "marcaFotos": "{{n}} fotos"
     }
   },
   "tiposRevision": {
@@ -6813,14 +6833,19 @@
       "disponibles": "Apartados disponibles",
       "elige": "Elige el apartado que quieres añadir",
       "yaIncluido": "Ya incluido",
-      "hint": "Los nuevos apartados se añaden al final. Arrástralos para cambiar el orden. Cada apartado empieza en página nueva."
+      "hint": "Los nuevos apartados se añaden al final. Arrástralos para cambiar el orden. Cada apartado empieza en página nueva.",
+      "hintInforme": "Los apartados de la plantilla, en su orden. Pulsa uno para ocultarlo o cambiar su contenido solo en este informe.",
+      "oculto": "Oculto"
     },
     "sheet": {
       "general": "Configuración general de la plantilla",
       "interiores": "Páginas interiores",
       "campo": "Campo del informe",
       "cerrar": "Cerrar panel",
-      "revisaAvisos": "Revisa los avisos antes de guardar"
+      "revisaAvisos": "Revisa los avisos antes de guardar",
+      "enEsteInforme": "En este informe",
+      "ocultar": "Ocultar este apartado",
+      "ocultarHint": "No sale en este informe. La plantilla no cambia."
     },
     "secciones": {
       "titulo": "Título",
