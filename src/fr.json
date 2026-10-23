@@ -5818,14 +5818,12 @@
     "ficha": {
       "campos": "Paramètres du rapport",
       "firmarHint": "Signe le PDF avec le certificat .p12 de Paramètres › Marque. Sans certificat, il est émis sans signature.",
-      "sellarHint": "Appose l'image du cachet de Paramètres › Marque sur le bloc de signature.",
       "tabs": {
         "datos": "Données et ressources"
       }
     },
     "campos": {
-      "firmar": "Signature électronique",
-      "sellar": "Signer avec cachet"
+      "firmar": "Signature électronique"
     },
     "resultados": {
       "retirado": "Retiré"
@@ -5881,6 +5879,8 @@
       "campo_vacio": "Un champ obligatoire est vide.",
       "texto_sin_idioma": "Un texte du modèle n'est pas dans la langue du rapport.",
       "sin_sello": "La signature a été demandée, mais aucun cachet n'est configuré : il sera émis sans signature.",
+      "sin_imagen_sello": "Le certificat porte le tampon de l'entreprise, mais il n'y a pas d'image du tampon dans Paramètres › Marque : l'emplacement restera vide.",
+      "firmante_sin_firma": "{{firmante}} n'a pas d'image de signature : le certificat affichera un emplacement vide avec son nom.",
       "plantilla_retirada": "Le rapport utilise un modèle retiré : il sera émis avec l'ancien format, sans les sections qui n'existent plus."
     }
   },
@@ -6332,13 +6332,11 @@
     "duplicada": "Modèle dupliqué.",
     "archivar": "Archiver",
     "desarchivar": "Désarchiver",
-    "archivarConfirmar": "Archiver « {{nombre}} » ? Il ne sera plus proposé à la création des rapports. Les rapports déjà créés ne changent pas.",
-    "deFabrica": "D'usine",
+    "archivarConfirmar": "« {{nombre}} ». Le modèle est archivé et ne sera plus proposé pour les nouveaux rapports. Les rapports qui s’en servent restent inchangés.",
     "sinPublicar": "Non publié",
-    "avisoFabrica": "C'est un modèle d'usine : il ne se modifie pas. Dupliquez-le pour l'adapter.",
     "avisoArchivada": "Le modèle est archivé : désarchivez-le pour le modifier.",
     "avisoLectura": "Vous ne pouvez pas modifier ce modèle.",
-    "noCabenAviso": "Les colonnes du tableau récapitulatif ne tiennent pas sur le papier choisi : {{lista}}. Tant qu'elles ne tiennent pas, le modèle n'est pas enregistré. Ouvrez-le pour appliquer la suggestion.",
+    "noCabenAviso": "Les colonnes du tableau récapitulatif ne tiennent pas sur le papier choisi : {{lista}}. Tant qu’elles ne tiennent pas, le modèle n’est pas enregistré. Ouvrez-le et retirez une colonne, ou changez le papier ou la taille du texte.",
     "estados": {
       "borrador": "Brouillon",
       "publicada": "Publié",
@@ -6361,8 +6359,6 @@
       "cambios": "Modifications non publiées",
       "publicada": "Publié",
       "nueva": "Nouveau modèle",
-      "nuevaHint": "Il naît en brouillon : il n'est pas proposé à la création des rapports tant que vous ne l'avez pas publié.",
-      "crear": "Créer",
       "vacio": "Aucun modèle pour l'instant"
     },
     "linea": {
@@ -6373,7 +6369,6 @@
     "general": {
       "titulo": "Configuration générale",
       "nombre": "Nom du modèle",
-      "tipo": "Type de rapport",
       "linea": "Ligne visuelle",
       "papel": "Papier",
       "orientacion": "Orientation",
@@ -6385,12 +6380,8 @@
       "paginaHint": "Le papier et l'orientation valent pour tout le rapport. Chaque rapport peut changer la langue.",
       "aspecto": "Aspect visuel",
       "aspectoHint": "Polices, couleurs et taille du texte de tout le rapport.",
-      "aspectoFila": "Polices, couleurs et tailles",
       "firmae": "Signature électronique",
       "firmaeHint": "Signez les rapports avec le cachet électronique de votre entreprise.",
-      "firmados": "Rapports signés",
-      "sinFirmar": "Rapports non signés",
-      "desactivada": "Désactivée",
       "cabeceraPie": "En-tête et pied de page",
       "cabeceraPieHint": "Ils se répètent sur toutes les pages intérieures.",
       "cabecera": "En-tête",
@@ -6401,7 +6392,14 @@
       "campos": "Champs du rapport",
       "camposHint": "Données spécifiques que vous remplirez en générant chaque rapport.",
       "anadirCampo": "Ajouter un champ",
-      "sinCampos": "Aucun champ pour l'instant."
+      "sinCampos": "Aucun champ pour l'instant.",
+      "tipoCorto": "Type",
+      "firmaeFila": {
+        "sin": "Sans signature électronique",
+        "certificado": "Signature électronique avec marque visible sur le certificat",
+        "ultima": "Signature électronique avec marque visible sur la dernière page",
+        "ninguna": "Signature électronique sans marque visible"
+      }
     },
     "pila": {
       "titulo": "Sections du rapport",
@@ -6428,7 +6426,7 @@
       "tituloYTexto": "Titre et texte",
       "idiomasDesc": "Vous pouvez l'écrire en plusieurs langues. Si une langue reste vide, l'espagnol est utilisé.",
       "colocacion": "Placement",
-      "aspectoLinea": "Aspect dans la ligne {{linea}}",
+      "aspectoLinea": "Aspect du style visuel choisi ({{linea}})",
       "aspectoLineaDesc": "N'existe que dans cette ligne. Si vous changez de ligne, il est réinitialisé.",
       "otros": "Plus d'options",
       "contenido": "Contenu"
@@ -6448,7 +6446,7 @@
         "conforme_cliente": "Espace vide à côté de votre signature, pour que le client signe son accord à la main."
       },
       "tabla_resumen": {
-        "contadores": "Vérifications · Aptes · Non aptes · Non vérifiées. On compte les vérifications, pas les équipements. Les équipements retirés ne sont jamais comptés."
+        "contadores": "Vérifications à réaliser · Conformes · Non conformes · Non vérifiées. On compte des vérifications, pas des équipements."
       },
       "fichas_revision": {
         "numerar_carpetas": "Par exemple, « 2. Toiture entrepôt ».",
@@ -6490,15 +6488,16 @@
         "respaldoSubir": "Téléverser une image de secours"
       },
       "sinImagen": "Sans image",
-      "titulos": "Titre et sous-titre",
+      "titulos": "Titre et sous-titre de couverture",
       "fecha": "Date d'émission",
-      "fechaHint": "C'est la date à laquelle vous générez le rapport.",
       "datos": "Données du client et du site",
       "datosDesc": "Elles se remplissent seules avec les données de chaque rapport.",
       "cliente": "Client",
       "clienteNombre": "Nom ou raison sociale",
-      "emisor": "Émis par",
-      "emisorDesc": "Tiré des Paramètres généraux. Les autres données de votre entreprise (SIRET, adresse, téléphone, e-mail) vont en quatrième de couverture."
+      "emisor": "Informations de l’émetteur",
+      "emisorDesc": "Tiré des Paramètres généraux. Les autres données de votre entreprise (SIRET, adresse, téléphone, e-mail) vont en quatrième de couverture.",
+      "titulosDesc": "Utilisez du texte libre ou des données du rapport pour proposer un titre et/ou un sous-titre par défaut, ou laissez-les vides pour les remplir dans chaque rapport.",
+      "distancias": "Espacements"
     },
     "indice": {
       "queAparece": "Ce qui apparaît",
@@ -6521,45 +6520,48 @@
       "contadores": "Compteurs",
       "contadoresDesc": "Résumé du résultat, sous le texte. On compte les vérifications, pas les équipements : un équipement vérifié deux fois compte deux fois.",
       "contador": {
-        "total": "Vérifications",
+        "total": "Vérifications à réaliser",
         "aptos": "Aptes",
         "no_aptos": "Non aptes",
-        "no_revisadas": "Non vérifiées",
-        "retirados": "Équipements retirés"
+        "no_revisadas": "Non vérifiées"
       },
-      "informativo": "Pour information",
       "lugarFecha": "Lieu et date",
       "empresa": "Signature de votre entreprise",
-      "empresaDesc": "Le signataire est choisi à l'émission de chaque rapport. La signature est numérique (avec certificat) et n'est pas dessinée sur le papier.",
+      "empresaDesc": "Signature visible sur le certificat.",
+      "bloqueadaElectronica": "La configuration générale indique une signature électronique avec marque visible sur le certificat. Modifiez ce réglage pour indiquer une autre signature ici.",
       "firmante": "Données du signataire",
       "firmanteNombre": "Nom",
       "firmanteCargo": "Fonction",
-      "selloHint": "Le tampon est celui des Paramètres généraux. Il est apposé si vous choisissez « Tamponner » à l'émission du rapport.",
+      "selloHint": "L'image du tampon est celle de Paramètres › Marque.",
       "sello": "Tampon de votre entreprise",
       "sinSello": "Sans tampon",
       "conforme": "Accord du client"
     },
     "planos": {
-      "disposicion": "Disposition",
-      "disposicionDesc": "La qualité des images dépend de la disposition, pour que le PDF ne soit pas trop lourd."
+      "disposicion": "Disposition"
     },
     "anexo": {
       "entrega": "Mode de remise",
       "recomendado": "Recommandé",
       "documento": "Document",
-      "origenDesc": "Il peut y avoir des PDF, des images ou d'autres fichiers : chacun apparaît avec son type.",
-      "origenDescPdf": "Seuls les PDF sont incorporés. Les images vont dans « Plans et images ».",
-      "docsPlantilla": "Documents de ce modèle",
-      "sinDocs": "Vous n'avez encore ajouté aucun document.",
-      "anadirDoc": "Ajouter un document",
-      "anadirPdf": "Ajouter un PDF",
-      "vacioNoSale": "Si un rapport n'a aucun document, l'annexe n'apparaît pas."
+      "sinDocs": "Vous n'avez encore choisi aucun document.",
+      "elegidos": "Documents de cette annexe",
+      "elegidosDesc": "Ils sortent dans cet ordre. Si vous n'en choisissez aucun, l'annexe n'apparaît pas dans ce rapport.",
+      "buscar": "Rechercher parmi tous les documents",
+      "delEmplazamiento": "Du site",
+      "sinDelEmplazamiento": "Le site n'a aucun document.",
+      "resultados": "Résultats",
+      "sinResultados": "Aucun document portant ce nom.",
+      "documentoN": "Document n° {{id}}",
+      "anadir": "Ajouter à l'annexe",
+      "subir": "Monter",
+      "bajar": "Descendre",
+      "quitar": "Retirer de l'annexe"
     },
     "fichas": {
       "disenoDesc": "Chaque mise en page apporte ses données. S'il vous en faut d'autres, demandez-nous une nouvelle mise en page.",
       "coleccionDesc": "Choisissez les données qui apparaissent dans l'en-tête de chaque fiche. Le dossier, le résultat, la checklist et les photos apparaissent toujours.",
       "checklist": "Checklist",
-      "checklistDesc": "Concerne les vérifications aptes. Les non-conformités montrent toujours leur checklist, si elle a été utilisée, sauf intégrées dans leur dossier quand elles sont aussi répétées à part.",
       "noConformidadesDesc": "Les vérifications non aptes et non vérifiées.",
       "fotos": "Photos",
       "fotosHint": "Les éléments non vérifiés n'ont pas de photos.",
@@ -6575,8 +6577,7 @@
       "sinResultado": "Cochez au moins une colonne de résultat : couleur ou texte.",
       "caben": "Elles tiennent sur le papier choisi.",
       "noCaben": "Elles ne tiennent pas sur le papier choisi.",
-      "noCabenHint": "Elles demandent {{necesita}} mm et le papier en laisse {{util}} ; chaque colonne de texte demande au moins {{min}} mm. Nous suggérons de retirer : {{quitar}}. Vous pouvez aussi passer le modèle en paysage ou utiliser un texte plus petit.",
-      "aplicar": "Appliquer la suggestion"
+      "noCabenHint": "Elles demandent {{necesita}} mm et le papier en laisse {{util}} ; chaque colonne de texte demande au moins {{min}} mm. Nous suggérons de retirer : {{quitar}}. Vous pouvez aussi passer le modèle en paysage ou utiliser un texte plus petit."
     },
     "aspecto": {
       "banda": "Aspect visuel de votre modèle",
@@ -6663,10 +6664,27 @@
       "ayudaDesc": "Texte affiché sous le champ à la création du rapport."
     },
     "preview": {
-      "hint": "Avec les données du jour du site choisi. Ce qui n'est pas enregistré apparaît aussi.",
-      "obra": "Site",
-      "elegirObra": "Choisissez un site…",
-      "sinObra": "Choisissez un site pour voir le rapport."
+      "hint": "Avec les données du jour du site choisi. Elle se met à jour toute seule quand la conception change, y compris ce qui n’est pas encore enregistré.",
+      "emplazamiento": "Site",
+      "elegirEmplazamiento": "Choisissez un site…",
+      "sinEmplazamiento": "Choisissez un site pour voir le rapport.",
+      "refrescar": "Actualiser"
+    },
+    "pendientes": "En attente",
+    "archivarTitulo": "Archiver le modèle",
+    "editarPlantilla": "Modifier le modèle",
+    "alta": {
+      "sub": "Définissez la base du modèle ; vous passerez ensuite à la conception de ses sections.",
+      "tipo": "Type de rapport",
+      "tipoHint": "Il fixe la structure et les options disponibles. Il ne peut pas être modifié ensuite.",
+      "linea": "Style visuel",
+      "lineaHint": "Style graphique commun à la couverture, aux sommaires, aux tableaux et aux fiches.",
+      "papel": "Papier",
+      "tamano": "Format",
+      "carta": "Lettre",
+      "nombre": "Nom du modèle",
+      "nombrePh": "Ex. Vérification périodique normale",
+      "guardar": "Enregistrer et concevoir"
     }
   }
 }

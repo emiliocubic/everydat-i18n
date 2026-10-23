@@ -6077,8 +6077,7 @@
       "firmado": "Signed",
       "contenido": "Content",
       "idioma": "Language",
-      "firmar": "Electronic signature",
-      "sellar": "Sign with seal"
+      "firmar": "Electronic signature"
     },
     "estados": {
       "borrador": "Draft",
@@ -6130,8 +6129,7 @@
         "vista": "Preview",
         "versiones": "Versions",
         "ajustes": "Adjustments"
-      },
-      "sellarHint": "Stamps the company seal image from Settings › Brand on the signature block."
+      }
     },
     "contenido": {
       "nRevisiones_one": "{{count}} inspection",
@@ -6249,7 +6247,9 @@
       "fecha": "Printed date",
       "observaciones": "Remarks on this version",
       "observacionesHint": "For example: provisional report with 20 inspections",
-      "emitir": "Issue"
+      "emitir": "Issue",
+      "firmante": "Signatory",
+      "firmanteHint": "Their signature, name and position appear on the certificate."
     },
     "avisos": {
       "sin_contenido": "The report has no inspection and no equipment.",
@@ -6259,6 +6259,8 @@
       "campo_vacio": "A mandatory field is empty.",
       "texto_sin_idioma": "A template text is not in the report's language.",
       "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned.",
+      "sin_imagen_sello": "The certificate carries the company stamp, but there is no stamp image in Settings › Brand: the space will be left blank.",
+      "firmante_sin_firma": "{{firmante}} has no signature image: the certificate will show a blank space with their name.",
       "plantilla_retirada": "The report uses a retired template: it will be issued in the previous format, without the sections that no longer exist."
     },
     "ajustes": {
@@ -6757,13 +6759,11 @@
     "duplicada": "Template duplicated.",
     "archivar": "Archive",
     "desarchivar": "Unarchive",
-    "archivarConfirmar": "Archive «{{nombre}}»? It will no longer be offered when creating reports. Reports already created do not change.",
-    "deFabrica": "Built-in",
+    "archivarConfirmar": "“{{nombre}}”. The template is archived and will no longer be offered for new reports. Reports based on it stay unchanged.",
     "sinPublicar": "Unpublished",
-    "avisoFabrica": "This is a built-in template: it cannot be edited. Duplicate it to adapt it.",
     "avisoArchivada": "The template is archived: unarchive it to edit it.",
     "avisoLectura": "You cannot edit this template.",
-    "noCabenAviso": "The summary table columns do not fit on the chosen paper: {{lista}}. Until they fit, the template is not saved. Open it to apply the suggestion.",
+    "noCabenAviso": "The summary table columns do not fit the chosen paper: {{lista}}. Until they fit, the template is not saved. Open it and remove a column, or change the paper or the text size.",
     "estados": {
       "borrador": "Draft",
       "publicada": "Published",
@@ -6786,8 +6786,6 @@
       "cambios": "Unpublished changes",
       "publicada": "Published",
       "nueva": "New template",
-      "nuevaHint": "It starts as a draft: it is not offered when creating reports until you publish it.",
-      "crear": "Create",
       "vacio": "No templates yet"
     },
     "linea": {
@@ -6798,7 +6796,6 @@
     "general": {
       "titulo": "General settings",
       "nombre": "Template name",
-      "tipo": "Report type",
       "linea": "Visual line",
       "papel": "Paper",
       "orientacion": "Orientation",
@@ -6810,12 +6807,8 @@
       "paginaHint": "Paper and orientation apply to the whole report. Each report can change the language.",
       "aspecto": "Look",
       "aspectoHint": "Fonts, colours and text size of the whole report.",
-      "aspectoFila": "Fonts, colours and sizes",
       "firmae": "Electronic signature",
       "firmaeHint": "Sign reports with your company's electronic seal.",
-      "firmados": "Signed reports",
-      "sinFirmar": "Unsigned reports",
-      "desactivada": "Off",
       "cabeceraPie": "Header and footer",
       "cabeceraPieHint": "They repeat on every inner page.",
       "cabecera": "Header",
@@ -6826,7 +6819,14 @@
       "campos": "Report fields",
       "camposHint": "Specific data you will fill in when generating each report.",
       "anadirCampo": "Add field",
-      "sinCampos": "No fields yet."
+      "sinCampos": "No fields yet.",
+      "tipoCorto": "Type",
+      "firmaeFila": {
+        "sin": "No electronic signature",
+        "certificado": "Electronic signature with a visible mark on the certificate",
+        "ultima": "Electronic signature with a visible mark on the last page",
+        "ninguna": "Electronic signature without a visible mark"
+      }
     },
     "pila": {
       "titulo": "Report sections",
@@ -6853,7 +6853,7 @@
       "tituloYTexto": "Title and text",
       "idiomasDesc": "You can write it in several languages. If a language is left empty, Spanish is used.",
       "colocacion": "Placement",
-      "aspectoLinea": "Look in line {{linea}}",
+      "aspectoLinea": "Look of the chosen visual style ({{linea}})",
       "aspectoLineaDesc": "It only exists in this line. If you change line, it is reset.",
       "otros": "More options",
       "contenido": "Content"
@@ -6873,7 +6873,7 @@
         "conforme_cliente": "Blank space next to your signature, for the client to sign their approval by hand."
       },
       "tabla_resumen": {
-        "contadores": "Inspections · Passed · Failed · Not inspected. Inspections are counted, not items. Withdrawn items are never counted."
+        "contadores": "Inspections to perform · Passed · Failed · Not inspected. Inspections are counted, not items."
       },
       "fichas_revision": {
         "numerar_carpetas": "For example, «2. Warehouse roof».",
@@ -6915,15 +6915,16 @@
         "respaldoSubir": "Upload fallback image"
       },
       "sinImagen": "No image",
-      "titulos": "Title and subtitle",
+      "titulos": "Cover title and subtitle",
       "fecha": "Issue date",
-      "fechaHint": "It is the date you generate the report.",
       "datos": "Client and site details",
       "datosDesc": "They fill themselves in with each report's data.",
       "cliente": "Client",
       "clienteNombre": "Name or company name",
-      "emisor": "Issued by",
-      "emisorDesc": "Taken from General settings. The rest of your company details (tax ID, address, phone, email) go on the back cover."
+      "emisor": "Issuer information",
+      "emisorDesc": "Taken from General settings. The rest of your company details (tax ID, address, phone, email) go on the back cover.",
+      "titulosDesc": "Use free text or report data to set a default title and/or subtitle, or leave them empty and fill them in for each report.",
+      "distancias": "Spacing"
     },
     "indice": {
       "queAparece": "What appears",
@@ -6946,45 +6947,48 @@
       "contadores": "Counters",
       "contadoresDesc": "Summary of the result, below the text. Inspections are counted, not items: an item with two inspections counts twice.",
       "contador": {
-        "total": "Inspections",
+        "total": "Inspections to perform",
         "aptos": "Passed",
         "no_aptos": "Failed",
-        "no_revisadas": "Not inspected",
-        "retirados": "Withdrawn items"
+        "no_revisadas": "Not inspected"
       },
-      "informativo": "For information",
       "lugarFecha": "Place and date",
       "empresa": "Your company's signature",
-      "empresaDesc": "The signatory is chosen when issuing each report. The signature is digital (with a certificate) and is not drawn on paper.",
+      "empresaDesc": "Signature shown on the certificate.",
+      "bloqueadaElectronica": "The general settings specify an electronic signature with its mark shown on the certificate. Change that setting to specify another signature here.",
       "firmante": "Signatory details",
       "firmanteNombre": "Name",
       "firmanteCargo": "Position",
-      "selloHint": "The stamp is the one in General settings. It is applied if you choose «Stamp» when issuing the report.",
+      "selloHint": "The stamp image is the one in Settings › Brand.",
       "sello": "Your company stamp",
       "sinSello": "No stamp",
       "conforme": "Client approval"
     },
     "planos": {
-      "disposicion": "Layout",
-      "disposicionDesc": "Image quality depends on the layout, so the PDF does not get too heavy."
+      "disposicion": "Layout"
     },
     "anexo": {
       "entrega": "How they are delivered",
       "recomendado": "Recommended",
       "documento": "Document",
-      "origenDesc": "There may be PDFs, images or other files: each one shows its type.",
-      "origenDescPdf": "Only PDFs are embedded. Images go in «Plans and images».",
-      "docsPlantilla": "Documents of this template",
-      "sinDocs": "You have not added any documents yet.",
-      "anadirDoc": "Add document",
-      "anadirPdf": "Add PDF",
-      "vacioNoSale": "If a report has no documents, the appendix is left out."
+      "sinDocs": "You have not chosen any documents yet.",
+      "elegidos": "Documents in this appendix",
+      "elegidosDesc": "They are printed in this order. If you choose none, the appendix is left out of this report.",
+      "buscar": "Search all documents",
+      "delEmplazamiento": "From the site",
+      "sinDelEmplazamiento": "The site has no documents.",
+      "resultados": "Results",
+      "sinResultados": "No document with that name.",
+      "documentoN": "Document #{{id}}",
+      "anadir": "Add to the appendix",
+      "subir": "Move up",
+      "bajar": "Move down",
+      "quitar": "Remove from the appendix"
     },
     "fichas": {
       "disenoDesc": "Each layout brings its own data. If you need others, ask us for a new layout.",
       "coleccionDesc": "Choose which data appear in the header of each sheet. The folder, the result, the checklist and the photos always appear.",
       "checklist": "Checklist",
-      "checklistDesc": "It affects passed inspections. Non-conformities always show their checklist, if one was used, except when integrated in their folder and also repeated separately.",
       "noConformidadesDesc": "Failed and not inspected items.",
       "fotos": "Photos",
       "fotosHint": "Not inspected items carry no photos.",
@@ -7000,8 +7004,7 @@
       "sinResultado": "Tick at least one result column: colour or text.",
       "caben": "They fit on the chosen paper.",
       "noCaben": "They do not fit on the chosen paper.",
-      "noCabenHint": "They need {{necesita}} mm and the paper leaves {{util}} mm; each text column needs at least {{min}} mm. We suggest removing: {{quitar}}. You can also set the template to landscape or use smaller text.",
-      "aplicar": "Apply suggestion"
+      "noCabenHint": "They need {{necesita}} mm and the paper leaves {{util}} mm; each text column needs at least {{min}} mm. We suggest removing: {{quitar}}. You can also set the template to landscape or use smaller text."
     },
     "aspecto": {
       "banda": "Look of your template",
@@ -7088,10 +7091,27 @@
       "ayudaDesc": "Text you will see under the field when creating the report."
     },
     "preview": {
-      "hint": "With today's data of the site you choose. What is not saved is shown too.",
-      "obra": "Site",
-      "elegirObra": "Choose a site…",
-      "sinObra": "Choose a site to see the report."
+      "hint": "With today’s data of the site you choose. It refreshes itself when the design changes, including what is not saved yet.",
+      "emplazamiento": "Site",
+      "elegirEmplazamiento": "Choose a site…",
+      "sinEmplazamiento": "Choose a site to see the report.",
+      "refrescar": "Refresh"
+    },
+    "pendientes": "Pending",
+    "archivarTitulo": "Archive template",
+    "editarPlantilla": "Edit template",
+    "alta": {
+      "sub": "Set the basis of the template; then you will design its sections.",
+      "tipo": "Report type",
+      "tipoHint": "It sets the structure and the options available. It cannot be changed later.",
+      "linea": "Visual style",
+      "lineaHint": "Graphic style shared by the cover, contents, tables and sheets.",
+      "papel": "Paper",
+      "tamano": "Size",
+      "carta": "Letter",
+      "nombre": "Template name",
+      "nombrePh": "E.g. Standard periodic inspection",
+      "guardar": "Save and design"
     }
   }
 }
