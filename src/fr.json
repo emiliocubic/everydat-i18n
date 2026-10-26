@@ -5823,7 +5823,8 @@
       }
     },
     "campos": {
-      "firmar": "Signature électronique"
+      "firmar": "Signature électronique",
+      "tipo": "Type de rapport"
     },
     "resultados": {
       "retirado": "Retiré"
@@ -5848,28 +5849,33 @@
       "arrastrar": "Faites glisser les dossiers pour changer leur ordre",
       "ordenarPor": "Trier par {{columna}}",
       "seleccionarTodo": "Tout sélectionner",
-      "seleccionarCarpeta": "Sélectionner tout {{carpeta}}"
+      "seleccionarCarpeta": "Sélectionner tout {{carpeta}}",
+      "nSerie": "N° série"
     },
     "selector": {
       "descatalogados": "Retirés",
       "ambos": "Les deux",
-      "familiasTipos": "Familles et types",
-      "familiasTiposHint": "Cochez des types ou une famille entière. Sans rien coché, tous.",
       "sinFamilia": "Sans famille",
-      "fechas": "Dates clés",
       "revisados": "Vérifiés entre",
       "desplegarTodo": "Tout déplier",
-      "plegarTodo": "Tout replier"
+      "plegarTodo": "Tout replier",
+      "localizaciones": "Emplacements",
+      "todas": "Toutes",
+      "tiposElemento": "Types d’équipement",
+      "todos": "Tous",
+      "fechaEntre": "{{fecha}} entre"
     },
     "ajustes": {
-      "revisiones": "Inspections du rapport",
-      "revisionesHint": "Cliquez sur une inspection pour ajouter une note du rapport ou choisir les photos qui apparaissent.",
       "sinRevisiones": "Le rapport n'a pas encore d'inspections : ajoutez-les dans Contenu.",
       "marcaNota": "Note",
-      "marcaFotos": "{{n}} photos"
+      "marcaFotos": "{{n}} photos",
+      "datos": "Modifications des données du rapport",
+      "datosHint": "Cliquez sur un élément du rapport pour ajouter une note ou choisir les images à utiliser.",
+      "sinApartados": "Ce type de rapport n’a pas de sections : il n’y a rien à y modifier."
     },
     "alta": {
-      "faltanObligatorios": "Champs obligatoires manquants : {{lista}}."
+      "faltanObligatorios": "Champs obligatoires manquants : {{lista}}.",
+      "sinPlantillas": "Aucun modèle publié de ce type"
     },
     "avisos": {
       "sin_contenido": "Le rapport ne contient aucune inspection ni aucun équipement.",
@@ -5882,6 +5888,13 @@
       "sin_imagen_sello": "Le certificat porte le tampon de l'entreprise, mais il n'y a pas d'image du tampon dans Paramètres › Marque : l'emplacement restera vide.",
       "firmante_sin_firma": "{{firmante}} n'a pas d'image de signature : le certificat affichera un emplacement vide avec son nom.",
       "plantilla_retirada": "Le rapport utilise un modèle retiré : il sera émis avec l'ancien format, sans les sections qui n'existent plus."
+    },
+    "vista": {
+      "pestana": "Ouvrir dans un nouvel onglet",
+      "pdfNDe": "PDF {{n}} sur {{total}}"
+    },
+    "versiones": {
+      "zip": "Télécharger les {{n}} en ZIP"
     }
   },
   "tiposRevision": {

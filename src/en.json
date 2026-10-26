@@ -6063,7 +6063,7 @@
     "nuevo": "New report",
     "buscar": "Search by code, title, client or site",
     "vacio": "No reports yet",
-    "vacioHint": "Create the first one with «New report»: choose a template and a site and it is filled with the inspections not yet reported.",
+    "vacioHint": "Create the first one with “New report”: choose the type, the template and the site, and then what it contains.",
     "campos": {
       "codigo": "Code",
       "titulo": "Title",
@@ -6077,7 +6077,8 @@
       "firmado": "Signed",
       "contenido": "Content",
       "idioma": "Language",
-      "firmar": "Electronic signature"
+      "firmar": "Electronic signature",
+      "tipo": "Report type"
     },
     "estados": {
       "borrador": "Draft",
@@ -6097,12 +6098,11 @@
     },
     "alta": {
       "titulo": "New report",
-      "hint": "It starts as a draft: prepare it, preview it and issue it when ready.",
+      "hint": "It starts as an empty draft: you choose what it contains, preview it and, when it is ready, issue it.",
       "creado": "Report created",
-      "sinPlantillas": "No published templates",
+      "sinPlantillas": "No published templates of this type",
       "elegirEmplazamiento": "Choose the site",
       "idiomaCliente": "The client's",
-      "rellenar": "Fill it now with the template's selection (inspections not yet reported)",
       "crear": "Create report",
       "faltanObligatorios": "Required fields missing: {{lista}}."
     },
@@ -6144,13 +6144,12 @@
       "anadidos_one": "{{count}} added to the report",
       "anadidos_other": "{{count}} added to the report",
       "vacio": "The report has nothing yet",
-      "vacioHint": "Press «Add» to choose inspections with the site filters.",
+      "vacioHint": "Click “Add” to choose the inspections with the filters.",
       "fecha": "Date",
       "resultado": "Result",
       "equipo": "Equipment",
       "identificador": "Identification",
       "tipo": "Type",
-      "carpeta": "Location",
       "revisor": "Inspector",
       "validaHasta": "Valid until",
       "marca": "Brand",
@@ -6172,7 +6171,9 @@
       "arrastrar": "Drag folders to change their order",
       "ordenarPor": "Sort by {{columna}}",
       "seleccionarTodo": "Select all",
-      "seleccionarCarpeta": "Select everything in {{carpeta}}"
+      "seleccionarCarpeta": "Select everything in {{carpeta}}",
+      "vacioHintEquipos": "Click “Add” to choose the equipment with the filters.",
+      "nSerie": "Serial no."
     },
     "selector": {
       "titulo": "Add to the report",
@@ -6185,8 +6186,6 @@
       "estado": "Equipment status",
       "enServicio": "In service",
       "descatalogados": "Withdrawn",
-      "carpetas": "Folders",
-      "carpetasHint": "Each folder brings its branch. With none ticked, the whole site.",
       "casan_one": "{{count}} matches the filters",
       "casan_other": "{{count}} match the filters",
       "nada": "Nothing matches these filters (what is already included is not repeated).",
@@ -6196,13 +6195,15 @@
       "anadirMarcadas_one": "Add {{count}} ticked",
       "anadirMarcadas_other": "Add {{count}} ticked",
       "ambos": "Both",
-      "familiasTipos": "Families and types",
-      "familiasTiposHint": "Tick single types or a whole family. With none ticked, all.",
       "sinFamilia": "No family",
-      "fechas": "Key dates",
       "revisados": "Inspected between",
       "desplegarTodo": "Expand all",
-      "plegarTodo": "Collapse all"
+      "plegarTodo": "Collapse all",
+      "localizaciones": "Locations",
+      "todas": "All",
+      "tiposElemento": "Equipment types",
+      "todos": "All",
+      "fechaEntre": "{{fecha}} between"
     },
     "vista": {
       "titulo": "Report preview",
@@ -6210,7 +6211,12 @@
       "recargar": "Reload",
       "verPdf": "View PDF",
       "generandoPdf": "Generating…",
-      "errorPdf": "The PDF service is not responding right now."
+      "errorPdf": "The PDF service is not responding right now.",
+      "pestana": "Open in a new tab",
+      "hintSueltos": "Each item of equipment gets its own PDF: they are shown one at a time. With today’s data and marked as a draft.",
+      "anterior": "Previous",
+      "siguiente": "Next",
+      "pdfNDe": "PDF {{n}} of {{total}}"
     },
     "versiones": {
       "estados": {
@@ -6233,11 +6239,12 @@
         "elemento": "Equipment"
       },
       "verificacion": "Verification",
-      "verificacionHint": "Open the public verification page, the one the footer QR opens"
+      "verificacionHint": "Open the public verification page, the one the footer QR opens",
+      "zip": "Download all {{n}} as ZIP"
     },
     "emitir": {
       "titulo": "Issue the report",
-      "hint": "What the paper says is saved, the PDF is archived in the site documentation and its inspections are frozen while this version is current.",
+      "hint": "What the paper says is saved, the PDF is filed in the site documentation and its inspections are frozen while this version is current.",
       "comprobando": "Checking…",
       "avisos_one": "{{count}} warning before issuing",
       "avisos_other": "{{count}} warnings before issuing",
@@ -6254,7 +6261,7 @@
     "avisos": {
       "sin_contenido": "The report has no inspection and no equipment.",
       "sin_certificar": "Inspection not certified: {{equipo}}.",
-      "equipo_trasladado": "The item is no longer at this site: {{equipo}}.",
+      "equipo_trasladado": "The equipment is no longer at this site: {{equipo}}.",
       "no_apto_sin_foto": "Failed item without photo: {{equipo}}.",
       "campo_vacio": "A mandatory field is empty.",
       "texto_sin_idioma": "A template text is not in the report's language.",
@@ -6265,17 +6272,13 @@
     },
     "ajustes": {
       "titulo": "Changes from the template",
-      "tituloHint": "How this report differs from “{{plantilla}}”, plus the notes and photos chosen per inspection.",
+      "tituloHint": "How this report differs from its template, “{{plantilla}}”. Each change can be undone.",
       "ninguno": "This report follows the template as is.",
       "deshacer": "Undo",
       "actualizar": "Update from template",
-      "actualizarConfirmar": "The published template is copied again and these changes are lost: {{lista}}. Notes and photos per inspection are kept.",
+      "actualizarConfirmar": "The published template is copied again and these changes are lost: {{lista}}. The chosen notes and photos are kept.",
       "actualizado": "Report updated from the template ({{n}} changes removed)",
       "sinPerdidas": "The report already matches the template",
-      "guardarPlantilla": "Save as new template",
-      "guardarPlantillaPregunta": "Name of the new template. It is created as a draft with this report's layout, without its notes or photos per inspection.",
-      "plantillaCreada": "Template “{{nombre}}” created as a draft",
-      "abrir": "Open",
       "texto": "text",
       "revision": "Inspection in this report",
       "fotos": "Photos",
@@ -6292,9 +6295,7 @@
         "anadido": "Added: {{bloque}}",
         "quitado": "Removed: {{bloque}}",
         "orden": "Block order changed",
-        "general": "Changed: {{que}}",
-        "nota": "Note on {{equipo}} ({{fecha}})",
-        "fotos": "Chosen photos ({{n}}) on {{equipo}} ({{fecha}})"
+        "general": "Changed: {{que}}"
       },
       "generales": {
         "pagina": "page",
@@ -6304,11 +6305,16 @@
         "seleccion": "default selection",
         "partir": "how it is split"
       },
-      "revisiones": "Inspections in the report",
-      "revisionesHint": "Click an inspection to add a report note or choose which photos appear.",
       "sinRevisiones": "The report has no inspections yet: add them in Content.",
       "marcaNota": "Note",
-      "marcaFotos": "{{n}} photos"
+      "marcaFotos": "{{n}} photos",
+      "datos": "Changes to the report data",
+      "datosHint": "Click an item of the report to add a note or choose the images to use.",
+      "sinEquipos": "The report has no equipment yet: add it in Content.",
+      "equipo": "Equipment in this report",
+      "sinFotosEquipo": "This equipment has no photos in document management.",
+      "notaHintEquipo": "Printed on this equipment’s sheet as a report note. The equipment does not change.",
+      "sinApartados": "This report type has no sections, so there is nothing to change in them."
     }
   },
   "tiposRevision": {
@@ -6837,7 +6843,7 @@
       "elige": "Choose the section you want to add",
       "yaIncluido": "Already included",
       "hint": "New sections are added at the end. Drag them to change the order. Each section starts on a new page.",
-      "hintInforme": "The template's sections, in order. Click one to hide it or change its content in this report only.",
+      "hintInforme": "These are the template’s blocks. You can edit them to change some of their content or even hide them in this report. The changes do not affect the template itself, only THIS report.",
       "oculto": "Hidden",
       "hintUnico": "This report type has a single section, one sheet per inspection. Click it to set it up."
     },

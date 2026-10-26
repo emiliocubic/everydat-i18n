@@ -6061,9 +6061,9 @@
   "informes": {
     "titulo": "Informes",
     "nuevo": "Nuevo informe",
-    "buscar": "Buscar por código, título, cliente u obra",
+    "buscar": "Buscar por código, título, cliente o emplazamiento",
     "vacio": "Todavía no hay informes",
-    "vacioHint": "Crea el primero con «Nuevo informe»: eliges plantilla y obra y se rellena con las revisiones sin informe.",
+    "vacioHint": "Crea el primero con «Nuevo informe»: eliges el tipo, la plantilla y el emplazamiento, y después lo que lleva.",
     "campos": {
       "codigo": "Código",
       "titulo": "Título",
@@ -6077,7 +6077,8 @@
       "firmado": "Firmado",
       "contenido": "Contenido",
       "idioma": "Idioma",
-      "firmar": "Firma electrónica"
+      "firmar": "Firma electrónica",
+      "tipo": "Tipo de informe"
     },
     "estados": {
       "borrador": "Borrador",
@@ -6097,12 +6098,11 @@
     },
     "alta": {
       "titulo": "Nuevo informe",
-      "hint": "Nace en borrador: lo preparas, lo ves y, cuando esté listo, lo emites.",
+      "hint": "Nace en borrador y vacío: eliges lo que lleva, lo ves y, cuando esté listo, lo emites.",
       "creado": "Informe creado",
-      "sinPlantillas": "No hay plantillas publicadas",
+      "sinPlantillas": "No hay plantillas publicadas de este tipo",
       "elegirEmplazamiento": "Elige el emplazamiento",
       "idiomaCliente": "El del cliente",
-      "rellenar": "Rellenarlo ya con la selección de la plantilla (las revisiones sin informe)",
       "crear": "Crear informe",
       "faltanObligatorios": "Faltan campos obligatorios: {{lista}}."
     },
@@ -6144,13 +6144,12 @@
       "anadidos_one": "{{count}} añadida al informe",
       "anadidos_other": "{{count}} añadidas al informe",
       "vacio": "El informe no lleva nada todavía",
-      "vacioHint": "Pulsa «Añadir» para elegir revisiones con los filtros de la obra.",
+      "vacioHint": "Pulsa «Añadir» para elegir las revisiones con los filtros.",
       "fecha": "Fecha",
       "resultado": "Resultado",
       "equipo": "Equipo",
       "identificador": "Identificación",
       "tipo": "Tipo",
-      "carpeta": "Ubicación",
       "revisor": "Revisor",
       "validaHasta": "Válido hasta",
       "marca": "Marca",
@@ -6172,7 +6171,9 @@
       "arrastrar": "Arrastra las carpetas para cambiar su orden",
       "ordenarPor": "Ordenar por {{columna}}",
       "seleccionarTodo": "Seleccionar todo",
-      "seleccionarCarpeta": "Seleccionar lo de {{carpeta}}"
+      "seleccionarCarpeta": "Seleccionar lo de {{carpeta}}",
+      "vacioHintEquipos": "Pulsa «Añadir» para elegir los equipos con los filtros.",
+      "nSerie": "Nº serie"
     },
     "selector": {
       "titulo": "Añadir al informe",
@@ -6185,8 +6186,6 @@
       "estado": "Estado del equipo",
       "enServicio": "En servicio",
       "descatalogados": "Retirados",
-      "carpetas": "Carpetas",
-      "carpetasHint": "Cada carpeta trae su rama. Sin marcar ninguna, toda la obra.",
       "casan_one": "{{count}} casa con los filtros",
       "casan_other": "{{count}} casan con los filtros",
       "nada": "Nada casa con estos filtros (lo ya incluido no se repite).",
@@ -6196,13 +6195,15 @@
       "anadirMarcadas_one": "Añadir {{count}} marcada",
       "anadirMarcadas_other": "Añadir {{count}} marcadas",
       "ambos": "Ambos",
-      "familiasTipos": "Familias y tipos",
-      "familiasTiposHint": "Marca tipos sueltos o una familia entera. Sin marcar ninguno, todos.",
       "sinFamilia": "Sin familia",
-      "fechas": "Fechas significativas",
       "revisados": "Revisados entre",
       "desplegarTodo": "Desplegar todo",
-      "plegarTodo": "Plegar todo"
+      "plegarTodo": "Plegar todo",
+      "localizaciones": "Localizaciones",
+      "todas": "Todas",
+      "tiposElemento": "Tipos de elemento",
+      "todos": "Todos",
+      "fechaEntre": "{{fecha}} entre"
     },
     "vista": {
       "titulo": "Vista previa del informe",
@@ -6210,7 +6211,12 @@
       "recargar": "Recargar",
       "verPdf": "Ver PDF",
       "generandoPdf": "Generando…",
-      "errorPdf": "El servicio de PDF no responde ahora mismo."
+      "errorPdf": "El servicio de PDF no responde ahora mismo.",
+      "pestana": "Abrir en pestaña aparte",
+      "hintSueltos": "Cada equipo sale en su propio PDF: se ven de uno en uno. Con los datos de hoy y marcado como borrador.",
+      "anterior": "Anterior",
+      "siguiente": "Siguiente",
+      "pdfNDe": "PDF {{n}} de {{total}}"
     },
     "versiones": {
       "estados": {
@@ -6233,11 +6239,12 @@
         "elemento": "Equipo"
       },
       "verificacion": "Verificación",
-      "verificacionHint": "Abrir la página pública de verificación, la que abre el QR del pie"
+      "verificacionHint": "Abrir la página pública de verificación, la que abre el QR del pie",
+      "zip": "Descargar los {{n}} en ZIP"
     },
     "emitir": {
       "titulo": "Emitir el informe",
-      "hint": "Se guarda lo que dice el papel, se archiva el PDF en la documentación de la obra y sus revisiones quedan congeladas mientras esta versión esté vigente.",
+      "hint": "Se guarda lo que dice el papel, se archiva el PDF en la documentación del emplazamiento y sus revisiones quedan congeladas mientras esta versión esté vigente.",
       "comprobando": "Comprobando…",
       "avisos_one": "{{count}} aviso antes de emitir",
       "avisos_other": "{{count}} avisos antes de emitir",
@@ -6254,7 +6261,7 @@
     "avisos": {
       "sin_contenido": "El informe no lleva ninguna revisión ni ningún equipo.",
       "sin_certificar": "Revisión sin certificar: {{equipo}}.",
-      "equipo_trasladado": "El equipo ya no está en esta obra: {{equipo}}.",
+      "equipo_trasladado": "El equipo ya no está en este emplazamiento: {{equipo}}.",
       "no_apto_sin_foto": "No apto sin foto: {{equipo}}.",
       "campo_vacio": "Hay un campo obligatorio vacío.",
       "texto_sin_idioma": "Un texto de la plantilla no está en el idioma del informe.",
@@ -6265,17 +6272,13 @@
     },
     "ajustes": {
       "titulo": "Cambios sobre la plantilla",
-      "tituloHint": "En qué se aparta este informe de «{{plantilla}}», y las notas y fotos elegidas por revisión.",
+      "tituloHint": "En qué se aparta este informe de su plantilla, «{{plantilla}}». Cada cambio se puede deshacer.",
       "ninguno": "Este informe sale tal cual la plantilla.",
       "deshacer": "Deshacer",
       "actualizar": "Actualizar desde la plantilla",
-      "actualizarConfirmar": "Se vuelve a copiar la plantilla publicada y se pierden estos cambios: {{lista}}. Las notas y fotos por revisión se conservan.",
+      "actualizarConfirmar": "Se vuelve a copiar la plantilla publicada y se pierden estos cambios: {{lista}}. Las notas y fotos elegidas se conservan.",
       "actualizado": "Informe actualizado desde la plantilla ({{n}} cambios quitados)",
       "sinPerdidas": "El informe ya coincide con la plantilla",
-      "guardarPlantilla": "Guardar como plantilla nueva",
-      "guardarPlantillaPregunta": "Nombre de la plantilla nueva. Queda en borrador, con la composición de este informe y sin sus notas ni fotos por revisión.",
-      "plantillaCreada": "Plantilla «{{nombre}}» creada en borrador",
-      "abrir": "Abrir",
       "texto": "texto",
       "revision": "Revisión en este informe",
       "fotos": "Fotos",
@@ -6292,9 +6295,7 @@
         "anadido": "Añadido: {{bloque}}",
         "quitado": "Quitado: {{bloque}}",
         "orden": "Orden de los bloques cambiado",
-        "general": "Cambiado: {{que}}",
-        "nota": "Nota en {{equipo}} ({{fecha}})",
-        "fotos": "Fotos elegidas ({{n}}) en {{equipo}} ({{fecha}})"
+        "general": "Cambiado: {{que}}"
       },
       "generales": {
         "pagina": "página",
@@ -6304,11 +6305,16 @@
         "seleccion": "selección por defecto",
         "partir": "cómo se parte"
       },
-      "revisiones": "Revisiones del informe",
-      "revisionesHint": "Pulsa una revisión para ponerle una nota del informe o elegir qué fotos salen.",
       "sinRevisiones": "El informe aún no tiene revisiones: se añaden en Contenido.",
       "marcaNota": "Nota",
-      "marcaFotos": "{{n}} fotos"
+      "marcaFotos": "{{n}} fotos",
+      "datos": "Cambios sobre los datos del informe",
+      "datosHint": "Pulsa sobre un item del informe para añadir alguna nota o seleccionar las imágenes a utilizar.",
+      "sinEquipos": "El informe aún no tiene equipos: se añaden en Contenido.",
+      "equipo": "Equipo en este informe",
+      "sinFotosEquipo": "Este equipo no tiene fotos en la gestión documental.",
+      "notaHintEquipo": "Se imprime en la ficha de este equipo como nota del informe. El equipo no cambia.",
+      "sinApartados": "Este tipo de informe no tiene apartados, por lo que no es posible actuar sobre ellos."
     }
   },
   "tiposRevision": {
@@ -6837,7 +6843,7 @@
       "elige": "Elige el apartado que quieres añadir",
       "yaIncluido": "Ya incluido",
       "hint": "Los nuevos apartados se añaden al final. Arrástralos para cambiar el orden. Cada apartado empieza en página nueva.",
-      "hintInforme": "Los apartados de la plantilla, en su orden. Pulsa uno para ocultarlo o cambiar su contenido solo en este informe.",
+      "hintInforme": "Estos son los bloques de la plantilla. Puedes editarlos para modificar algo de su contenido o incluso ocultarlos en este informe. Los cambios no afectan a la plantilla en sí, únicamente a ESTE informe concreto.",
       "oculto": "Oculto",
       "hintUnico": "Este tipo de informe lleva un solo apartado, una ficha por revisión. Púlsalo para configurarlo."
     },
