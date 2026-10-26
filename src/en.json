@@ -7153,6 +7153,24 @@
       "ayudaPortada": "PNG or JPG, up to 5 MB. It is cropped to fill its space; with this layout, the space is {{px}} px.",
       "contraportadaTitulo": "Image",
       "contraportadaDesc": "It fills the top of the page; the space is 709 × 945 px."
+    },
+    "piezas": {
+      "titulo": "Content",
+      "desc": "Texts and data tables, in the order they appear on paper.",
+      "texto": "Text",
+      "tabla": "Data table",
+      "anadirTexto": "Add text",
+      "anadirTabla": "Add data table",
+      "subir": "Move up",
+      "bajar": "Move down",
+      "quitar": "Remove",
+      "dato": "Data",
+      "etiqueta": "Label",
+      "anadirFila": "Add data",
+      "quitarFila": "Remove this data",
+      "etiquetaAyuda": "One row per data item, with its value in each report. If you leave the label empty, the data name is shown.",
+      "vacia": "No content yet: add a text or a data table.",
+      "tablaVacia": "With no data, the table does not appear on paper."
     }
   }
 }

@@ -6726,6 +6726,24 @@
       "ayudaPortada": "PNG ou JPG, jusqu'à 5 Mo. Elle est recadrée pour remplir son espace ; avec cette structure, l'espace mesure {{px}} px.",
       "contraportadaTitulo": "Image",
       "contraportadaDesc": "Elle occupe le haut de la page ; l'espace mesure 709 × 945 px."
+    },
+    "piezas": {
+      "titulo": "Contenu",
+      "desc": "Textes et tableaux de données, dans l'ordre où ils apparaissent sur le papier.",
+      "texto": "Texte",
+      "tabla": "Tableau de données",
+      "anadirTexto": "Ajouter un texte",
+      "anadirTabla": "Ajouter un tableau de données",
+      "subir": "Monter",
+      "bajar": "Descendre",
+      "quitar": "Retirer",
+      "dato": "Donnée",
+      "etiqueta": "Libellé",
+      "anadirFila": "Ajouter une donnée",
+      "quitarFila": "Retirer cette donnée",
+      "etiquetaAyuda": "Une ligne par donnée, avec sa valeur dans chaque rapport. Si vous laissez le libellé vide, le nom de la donnée apparaît.",
+      "vacia": "Pas encore de contenu : ajoutez un texte ou un tableau de données.",
+      "tablaVacia": "Sans données, le tableau n'apparaît pas sur le papier."
     }
   }
 }

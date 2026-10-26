@@ -7153,6 +7153,24 @@
       "ayudaPortada": "PNG o JPG, hasta 5 MB. Se recorta para llenar su hueco; con esta estructura, el hueco mide {{px}} px.",
       "contraportadaTitulo": "Imagen",
       "contraportadaDesc": "Ocupa la parte de arriba de la página; el hueco mide 709 × 945 px."
+    },
+    "piezas": {
+      "titulo": "Contenido",
+      "desc": "Textos y tablas de datos, en el orden en que salen en el papel.",
+      "texto": "Texto",
+      "tabla": "Tabla de datos",
+      "anadirTexto": "Añadir texto",
+      "anadirTabla": "Añadir tabla de datos",
+      "subir": "Subir",
+      "bajar": "Bajar",
+      "quitar": "Quitar",
+      "dato": "Dato",
+      "etiqueta": "Etiqueta",
+      "anadirFila": "Añadir dato",
+      "quitarFila": "Quitar este dato",
+      "etiquetaAyuda": "Una fila por dato, con su valor en cada informe. Si dejas la etiqueta vacía, sale el nombre del dato.",
+      "vacia": "Aún no hay contenido: añade un texto o una tabla de datos.",
+      "tablaVacia": "Sin datos, la tabla no sale en el papel."
     }
   }
 }
