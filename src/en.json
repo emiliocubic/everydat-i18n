@@ -6776,7 +6776,9 @@
       "error": "Could not save"
     },
     "tipos": {
-      "revision_estandar": "Standard inspection report"
+      "revision_estandar": "Standard inspection report",
+      "revision_individual": "Single inspection report",
+      "elementos_estandar": "Standard items report"
     },
     "listado": {
       "nombre": "Name",
@@ -6817,7 +6819,7 @@
       "pieFila": "Footer",
       "vacio": "Empty",
       "campos": "Report fields",
-      "camposHint": "Specific data you will fill in when generating each report.",
+      "camposHint": "You can create your own fields in the template, linked to every report built with it. Delete the sample ones if you are not going to use them.",
       "anadirCampo": "Add field",
       "sinCampos": "No fields yet.",
       "tipoCorto": "Type",
@@ -6836,7 +6838,8 @@
       "yaIncluido": "Already included",
       "hint": "New sections are added at the end. Drag them to change the order. Each section starts on a new page.",
       "hintInforme": "The template's sections, in order. Click one to hide it or change its content in this report only.",
-      "oculto": "Hidden"
+      "oculto": "Hidden",
+      "hintUnico": "This report type has a single section, one sheet per inspection. Click it to set it up."
     },
     "sheet": {
       "general": "General template settings",
@@ -6878,6 +6881,9 @@
       "fichas_revision": {
         "numerar_carpetas": "For example, «2. Warehouse roof».",
         "en_indice": "With its title and one entry per folder."
+      },
+      "fichas_instalacion": {
+        "en_indice": "With its title and one entry per folder."
       }
     },
     "datos": {
@@ -6889,7 +6895,8 @@
         "marca": "Your company",
         "firmante": "Signatory",
         "contador": "Results",
-        "campo": "Report fields"
+        "campo": "Report fields",
+        "elemento": "Item"
       }
     },
     "texto": {
@@ -6956,9 +6963,6 @@
       "empresa": "Your company's signature",
       "empresaDesc": "Signature shown on the certificate.",
       "bloqueadaElectronica": "The general settings specify an electronic signature with its mark shown on the certificate. Change that setting to specify another signature here.",
-      "firmante": "Signatory details",
-      "firmanteNombre": "Name",
-      "firmanteCargo": "Position",
       "selloHint": "The stamp image is the one in Settings › Brand.",
       "sello": "Your company stamp",
       "sinSello": "No stamp",
@@ -6986,8 +6990,7 @@
       "quitar": "Remove from the appendix"
     },
     "fichas": {
-      "disenoDesc": "Each layout brings its own data. If you need others, ask us for a new layout.",
-      "coleccionDesc": "Choose which data appear in the header of each sheet. The folder, the result, the checklist and the photos always appear.",
+      "coleccionDesc": "Choose how much information to show for each inspection.",
       "checklist": "Checklist",
       "noConformidadesDesc": "Failed and not inspected items.",
       "fotos": "Photos",
@@ -7112,6 +7115,12 @@
       "nombre": "Template name",
       "nombrePh": "E.g. Standard periodic inspection",
       "guardar": "Save and design"
+    },
+    "fichasElemento": {
+      "certificacion": "Certification",
+      "certificacionDesc": "A text at the foot of each sheet, with the item's data, and your company stamp.",
+      "anexos": "Documents and images",
+      "anexosDesc": "Those of the item's record, not those of its inspections. The images go on the next page."
     }
   }
 }

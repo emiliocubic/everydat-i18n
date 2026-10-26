@@ -6776,7 +6776,9 @@
       "error": "No se pudo guardar"
     },
     "tipos": {
-      "revision_estandar": "Informe de revisión estándar"
+      "revision_estandar": "Informe de revisión estándar",
+      "revision_individual": "Informe de revisión individual",
+      "elementos_estandar": "Informe de elementos estándar"
     },
     "listado": {
       "nombre": "Nombre",
@@ -6817,7 +6819,7 @@
       "pieFila": "Pie de página",
       "vacio": "Vacío",
       "campos": "Campos del informe",
-      "camposHint": "Datos específicos que habrás de rellenar al generar cada informe.",
+      "camposHint": "Puedes crear campos a tu medida en la plantilla que se asocien a todos los informes construidos con ella. Elimina los de ejemplo si no vas a utilizarlos.",
       "anadirCampo": "Añadir campo",
       "sinCampos": "Aún no hay campos.",
       "tipoCorto": "Tipo",
@@ -6836,7 +6838,8 @@
       "yaIncluido": "Ya incluido",
       "hint": "Los nuevos apartados se añaden al final. Arrástralos para cambiar el orden. Cada apartado empieza en página nueva.",
       "hintInforme": "Los apartados de la plantilla, en su orden. Pulsa uno para ocultarlo o cambiar su contenido solo en este informe.",
-      "oculto": "Oculto"
+      "oculto": "Oculto",
+      "hintUnico": "Este tipo de informe lleva un solo apartado, una ficha por revisión. Púlsalo para configurarlo."
     },
     "sheet": {
       "general": "Configuración general de la plantilla",
@@ -6878,6 +6881,9 @@
       "fichas_revision": {
         "numerar_carpetas": "Por ejemplo, «2. Cubierta nave almacén».",
         "en_indice": "Con su título y una entrada por carpeta."
+      },
+      "fichas_instalacion": {
+        "en_indice": "Con su título y una entrada por carpeta."
       }
     },
     "datos": {
@@ -6889,7 +6895,8 @@
         "marca": "Tu empresa",
         "firmante": "Firmante",
         "contador": "Resultados",
-        "campo": "Campos del informe"
+        "campo": "Campos del informe",
+        "elemento": "Elemento"
       }
     },
     "texto": {
@@ -6956,9 +6963,6 @@
       "empresa": "Firma de tu empresa",
       "empresaDesc": "Firma visible en el certificado.",
       "bloqueadaElectronica": "La configuración general indica firma electrónica con marca visible en el certificado. Modifica ese ajuste para especificar otra firma aquí.",
-      "firmante": "Datos del firmante",
-      "firmanteNombre": "Nombre",
-      "firmanteCargo": "Cargo",
       "selloHint": "La imagen del sello es la de Parámetros › Marca.",
       "sello": "Sello de tu empresa",
       "sinSello": "Sin sello",
@@ -6986,8 +6990,7 @@
       "quitar": "Quitar del anexo"
     },
     "fichas": {
-      "disenoDesc": "Cada diseño trae sus datos. Si necesitas otros, pídenos un diseño nuevo.",
-      "coleccionDesc": "Elige qué datos salen en la cabecera de cada ficha. Siempre salen la carpeta, el resultado, el checklist y las fotos.",
+      "coleccionDesc": "Elige la cantidad de información a mostrar por cada revisión.",
       "checklist": "Checklist",
       "noConformidadesDesc": "Las revisiones no aptas y no revisadas.",
       "fotos": "Fotos",
@@ -7112,6 +7115,12 @@
       "nombre": "Nombre de la plantilla",
       "nombrePh": "Ej. Revisión periódica normal",
       "guardar": "Guardar y diseñar"
+    },
+    "fichasElemento": {
+      "certificacion": "Certificación",
+      "certificacionDesc": "Un texto al pie de cada ficha, con datos del elemento, y el sello de tu empresa.",
+      "anexos": "Documentos e imágenes",
+      "anexosDesc": "Los de la ficha del elemento, no los de sus revisiones. Las imágenes van en la hoja siguiente."
     }
   }
 }

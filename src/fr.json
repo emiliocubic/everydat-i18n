@@ -6349,7 +6349,9 @@
       "error": "Échec de l'enregistrement"
     },
     "tipos": {
-      "revision_estandar": "Rapport de vérification standard"
+      "revision_estandar": "Rapport de vérification standard",
+      "revision_individual": "Rapport de vérification individuel",
+      "elementos_estandar": "Rapport d'éléments standard"
     },
     "listado": {
       "nombre": "Nom",
@@ -6390,7 +6392,7 @@
       "pieFila": "Pied de page",
       "vacio": "Vide",
       "campos": "Champs du rapport",
-      "camposHint": "Données spécifiques que vous remplirez en générant chaque rapport.",
+      "camposHint": "Vous pouvez créer vos propres champs dans le modèle, associés à tous les rapports construits avec lui. Supprimez ceux d'exemple si vous ne comptez pas les utiliser.",
       "anadirCampo": "Ajouter un champ",
       "sinCampos": "Aucun champ pour l'instant.",
       "tipoCorto": "Type",
@@ -6409,7 +6411,8 @@
       "yaIncluido": "Déjà incluse",
       "hint": "Les nouvelles sections s'ajoutent à la fin. Faites-les glisser pour changer l'ordre. Chaque section commence sur une nouvelle page.",
       "hintInforme": "Les sections du modèle, dans leur ordre. Cliquez sur l'une d'elles pour la masquer ou modifier son contenu dans ce rapport uniquement.",
-      "oculto": "Masquée"
+      "oculto": "Masquée",
+      "hintUnico": "Ce type de rapport n'a qu'une seule section, une fiche par vérification. Cliquez dessus pour la configurer."
     },
     "sheet": {
       "general": "Configuration générale du modèle",
@@ -6451,6 +6454,9 @@
       "fichas_revision": {
         "numerar_carpetas": "Par exemple, « 2. Toiture entrepôt ».",
         "en_indice": "Avec son titre et une entrée par dossier."
+      },
+      "fichas_instalacion": {
+        "en_indice": "Avec son titre et une entrée par dossier."
       }
     },
     "datos": {
@@ -6462,7 +6468,8 @@
         "marca": "Votre entreprise",
         "firmante": "Signataire",
         "contador": "Résultats",
-        "campo": "Champs du rapport"
+        "campo": "Champs du rapport",
+        "elemento": "Élément"
       }
     },
     "texto": {
@@ -6529,9 +6536,6 @@
       "empresa": "Signature de votre entreprise",
       "empresaDesc": "Signature visible sur le certificat.",
       "bloqueadaElectronica": "La configuration générale indique une signature électronique avec marque visible sur le certificat. Modifiez ce réglage pour indiquer une autre signature ici.",
-      "firmante": "Données du signataire",
-      "firmanteNombre": "Nom",
-      "firmanteCargo": "Fonction",
       "selloHint": "L'image du tampon est celle de Paramètres › Marque.",
       "sello": "Tampon de votre entreprise",
       "sinSello": "Sans tampon",
@@ -6559,8 +6563,7 @@
       "quitar": "Retirer de l'annexe"
     },
     "fichas": {
-      "disenoDesc": "Chaque mise en page apporte ses données. S'il vous en faut d'autres, demandez-nous une nouvelle mise en page.",
-      "coleccionDesc": "Choisissez les données qui apparaissent dans l'en-tête de chaque fiche. Le dossier, le résultat, la checklist et les photos apparaissent toujours.",
+      "coleccionDesc": "Choisissez la quantité d'informations à afficher pour chaque vérification.",
       "checklist": "Checklist",
       "noConformidadesDesc": "Les vérifications non aptes et non vérifiées.",
       "fotos": "Photos",
@@ -6685,6 +6688,12 @@
       "nombre": "Nom du modèle",
       "nombrePh": "Ex. Vérification périodique normale",
       "guardar": "Enregistrer et concevoir"
+    },
+    "fichasElemento": {
+      "certificacion": "Certification",
+      "certificacionDesc": "Un texte au pied de chaque fiche, avec les données de l'élément, et le cachet de votre entreprise.",
+      "anexos": "Documents et images",
+      "anexosDesc": "Ceux de la fiche de l'élément, pas ceux de ses vérifications. Les images vont sur la page suivante."
     }
   }
 }
