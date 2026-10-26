@@ -7121,6 +7121,21 @@
       "certificacionDesc": "Un texto al pie de cada ficha, con datos del elemento, y el sello de tu empresa.",
       "anexos": "Documentos e imágenes",
       "anexosDesc": "Los de la ficha del elemento, no los de sus revisiones. Las imágenes van en la hoja siguiente."
+    },
+    "imagenPlantilla": {
+      "logo": "Logo de la plantilla",
+      "portada": "Imagen de portada",
+      "contraportada": "Imagen de contraportada",
+      "sinImagen": "Sin imagen",
+      "subir": "Subir imagen",
+      "cambiar": "Cambiar imagen",
+      "subiendo": "Subiendo…",
+      "quitar": "Quitar",
+      "ayudaLogo": "PNG o JPG, hasta 1 MB. Sustituye al logo de tu empresa en la cabecera, la portada y la contraportada.",
+      "ayudaImagen": "PNG o JPG, hasta 5 MB. Se recorta para llenar su hueco.",
+      "ayudaPortada": "PNG o JPG, hasta 5 MB. Se recorta para llenar su hueco; con esta estructura, el hueco mide {{px}} px.",
+      "contraportadaTitulo": "Imagen",
+      "contraportadaDesc": "Ocupa la parte de arriba de la página; el hueco mide 709 × 945 px."
     }
   }
 }

@@ -6694,6 +6694,21 @@
       "certificacionDesc": "Un texte au pied de chaque fiche, avec les données de l'élément, et le cachet de votre entreprise.",
       "anexos": "Documents et images",
       "anexosDesc": "Ceux de la fiche de l'élément, pas ceux de ses vérifications. Les images vont sur la page suivante."
+    },
+    "imagenPlantilla": {
+      "logo": "Logo du modèle",
+      "portada": "Image de couverture",
+      "contraportada": "Image de quatrième de couverture",
+      "sinImagen": "Sans image",
+      "subir": "Téléverser une image",
+      "cambiar": "Changer l'image",
+      "subiendo": "Téléversement…",
+      "quitar": "Retirer",
+      "ayudaLogo": "PNG ou JPG, jusqu'à 1 Mo. Remplace le logo de votre entreprise dans l'en-tête, la couverture et la quatrième de couverture.",
+      "ayudaImagen": "PNG ou JPG, jusqu'à 5 Mo. Elle est recadrée pour remplir son espace.",
+      "ayudaPortada": "PNG ou JPG, jusqu'à 5 Mo. Elle est recadrée pour remplir son espace ; avec cette structure, l'espace mesure {{px}} px.",
+      "contraportadaTitulo": "Image",
+      "contraportadaDesc": "Elle occupe le haut de la page ; l'espace mesure 709 × 945 px."
     }
   }
 }

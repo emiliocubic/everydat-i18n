@@ -7121,6 +7121,21 @@
       "certificacionDesc": "A text at the foot of each sheet, with the item's data, and your company stamp.",
       "anexos": "Documents and images",
       "anexosDesc": "Those of the item's record, not those of its inspections. The images go on the next page."
+    },
+    "imagenPlantilla": {
+      "logo": "Template logo",
+      "portada": "Cover image",
+      "contraportada": "Back cover image",
+      "sinImagen": "No image",
+      "subir": "Upload image",
+      "cambiar": "Change image",
+      "subiendo": "Uploading…",
+      "quitar": "Remove",
+      "ayudaLogo": "PNG or JPG, up to 1 MB. Replaces your company logo in the header, the cover and the back cover.",
+      "ayudaImagen": "PNG or JPG, up to 5 MB. It is cropped to fill its space.",
+      "ayudaPortada": "PNG or JPG, up to 5 MB. It is cropped to fill its space; with this layout, the space is {{px}} px.",
+      "contraportadaTitulo": "Image",
+      "contraportadaDesc": "It fills the top of the page; the space is 709 × 945 px."
     }
   }
 }
