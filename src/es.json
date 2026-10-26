@@ -6903,12 +6903,29 @@
       "barra": "Formato de {{label}}",
       "negrita": "Negrita",
       "lista": "Lista con viñetas",
-      "insertar": "Insertar dato"
+      "insertar": "Insertar dato",
+      "cursiva": "Cursiva",
+      "subrayado": "Subrayado",
+      "subtitulo": "Subtítulo",
+      "subtitulo2": "Subtítulo de segundo nivel",
+      "listaNumerada": "Lista numerada",
+      "izquierda": "Alinear a la izquierda",
+      "centrar": "Centrar",
+      "justificar": "Justificar",
+      "verHtml": "Ver el HTML",
+      "verVisual": "Volver al editor",
+      "htmlAyuda": "Pega aquí el HTML que te dé tu IA. Al guardar se queda solo lo que permite la barra: lo demás se quita.",
+      "ia": "¿Quieres maquetar esto con IA?",
+      "iaTitulo": "Maquetar con IA",
+      "iaDesc": "Copia estas instrucciones y pégalas en tu IA junto con tu texto. Lo que te devuelva, pégalo en la vista HTML.",
+      "iaCopiar": "Copiar las instrucciones",
+      "iaInstrucciones": "Maqueta el texto que te doy como un fragmento de HTML para un informe técnico. Reglas:\n- Usa solo estas etiquetas: <p> para los párrafos, <h2> y <h3> para dos niveles de subtítulo, <ul> y <ol> con <li> para las listas (de un solo nivel), <strong> para la negrita, <em> para la cursiva, <u> para el subrayado y <br> para un salto de línea dentro de un párrafo.\n- Para centrar o justificar un párrafo o un subtítulo, usa solo style=\"text-align:center\" o style=\"text-align:justify\". Ningún otro atributo, ni clases, ni colores, ni tipos o tamaños de letra: eso lo pone la plantilla.\n- Nada de tablas, imágenes, enlaces ni scripts, y sin <html>, <head> ni <body>: solo el fragmento.\n- Los datos del informe se escriben entre llaves dobles, tal cual, sin cambiarlos ni traducirlos: por ejemplo, {{cliente.nombre}} se sustituye al generar el informe por el nombre del cliente. Usa solo los de la lista de abajo.\n- No cambies el sentido del texto: solo dale estructura.",
+      "iaDatos": "Datos del informe que puedes usar:"
     },
     "ejemplos": {
       "textoTitulo": "Título de la página",
-      "texto": "Escribe aquí tu texto. Con la barra de herramientas puedes poner palabras en **negrita** y crear listas con viñetas.\n\nPara que cada informe se rellene solo, usa «Insertar dato»: por ejemplo, este informe es para {{cliente.razon_social}} y corresponde a {{emplazamiento.nombre}}. Al generar el informe, cada dato se sustituye por su valor.\n\n- Esto es una lista: cada viñeta es una línea. También aquí puedes insertar datos, como {{proyecto.nombre}}.\n- Sustituye estas líneas por las tuyas.\n- Si no necesitas la lista, bórrala.",
-      "firma": "Escribe aquí el texto del certificado. Por ejemplo: **{{marca.nombre}}** certifica que ha revisado los equipos de {{cliente.razon_social}} en {{emplazamiento.nombre}}, con el resultado que se resume a continuación."
+      "texto": "<h2>Subtítulo de ejemplo</h2><p>Escribe aquí tu texto. Con la barra de herramientas puedes poner palabras en <strong>negrita</strong>, <em>cursiva</em> o <u>subrayado</u>, añadir subtítulos, crear listas y alinear los párrafos.</p><p>Para que cada informe se rellene solo, usa «Insertar dato»: por ejemplo, este informe es para {{cliente.razon_social}} y corresponde a {{emplazamiento.nombre}}. Al generar el informe, cada dato se sustituye por su valor.</p><ul><li>Esto es una lista: cada viñeta es una línea. También aquí puedes insertar datos, como {{proyecto.nombre}}.</li><li>Sustituye estas líneas por las tuyas.</li><li>Si no necesitas la lista, bórrala.</li></ul>",
+      "firma": "<p>Escribe aquí el texto del certificado. Por ejemplo: <strong>{{marca.nombre}}</strong> certifica que ha revisado los equipos de {{cliente.razon_social}} en {{emplazamiento.nombre}}, con el resultado que se resume a continuación.</p>"
     },
     "portada": {
       "aspectoDesc": "Colores, tipografías y tamaños salen del Aspecto visual de la plantilla.",

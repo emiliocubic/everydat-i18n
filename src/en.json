@@ -6903,12 +6903,29 @@
       "barra": "{{label}} formatting",
       "negrita": "Bold",
       "lista": "Bulleted list",
-      "insertar": "Insert data"
+      "insertar": "Insert data",
+      "cursiva": "Italic",
+      "subrayado": "Underline",
+      "subtitulo": "Subheading",
+      "subtitulo2": "Second-level subheading",
+      "listaNumerada": "Numbered list",
+      "izquierda": "Align left",
+      "centrar": "Centre",
+      "justificar": "Justify",
+      "verHtml": "View the HTML",
+      "verVisual": "Back to the editor",
+      "htmlAyuda": "Paste here the HTML your AI gives you. On saving, only what the toolbar allows is kept: the rest is removed.",
+      "ia": "Want to lay this out with AI?",
+      "iaTitulo": "Lay out with AI",
+      "iaDesc": "Copy these instructions and paste them into your AI together with your text. Paste what it returns into the HTML view.",
+      "iaCopiar": "Copy the instructions",
+      "iaInstrucciones": "Lay out the text I give you as an HTML fragment for a technical report. Rules:\n- Use only these tags: <p> for paragraphs, <h2> and <h3> for two levels of subheading, <ul> and <ol> with <li> for lists (one level only), <strong> for bold, <em> for italic, <u> for underline and <br> for a line break inside a paragraph.\n- To centre or justify a paragraph or a subheading, use only style=\"text-align:center\" or style=\"text-align:justify\". No other attributes, no classes, no colours, no fonts or font sizes: the template sets those.\n- No tables, images, links or scripts, and no <html>, <head> or <body>: just the fragment.\n- Report data is written between double braces, exactly as given, without changing or translating it: for example, {{cliente.nombre}} is replaced by the client name when the report is generated. Use only the ones in the list below.\n- Do not change the meaning of the text: only give it structure.",
+      "iaDatos": "Report data you can use:"
     },
     "ejemplos": {
       "textoTitulo": "Page title",
-      "texto": "Write your text here. With the toolbar you can put words in **bold** and create bulleted lists.\n\nTo have each report fill itself in, use «Insert data»: for example, this report is for {{cliente.razon_social}} and covers {{emplazamiento.nombre}}. When the report is generated, each data item is replaced by its value.\n\n- This is a list: each bullet is one line. You can insert data here too, such as {{proyecto.nombre}}.\n- Replace these lines with your own.\n- If you do not need the list, delete it.",
-      "firma": "Write the certificate text here. For example: **{{marca.nombre}}** certifies that it has inspected the equipment of {{cliente.razon_social}} at {{emplazamiento.nombre}}, with the result summarised below."
+      "texto": "<h2>Example subheading</h2><p>Write your text here. With the toolbar you can put words in <strong>bold</strong>, <em>italic</em> or <u>underline</u>, add subheadings, create lists and align paragraphs.</p><p>To have each report fill itself in, use «Insert data»: for example, this report is for {{cliente.razon_social}} and covers {{emplazamiento.nombre}}. When the report is generated, each data item is replaced by its value.</p><ul><li>This is a list: each bullet is one line. You can insert data here too, such as {{proyecto.nombre}}.</li><li>Replace these lines with your own.</li><li>If you do not need the list, delete it.</li></ul>",
+      "firma": "<p>Write the certificate text here. For example: <strong>{{marca.nombre}}</strong> certifies that it has inspected the equipment of {{cliente.razon_social}} at {{emplazamiento.nombre}}, with the result summarised below.</p>"
     },
     "portada": {
       "aspectoDesc": "Colours, fonts and sizes come from the template's Look.",

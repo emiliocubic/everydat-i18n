@@ -6476,12 +6476,29 @@
       "barra": "Mise en forme de {{label}}",
       "negrita": "Gras",
       "lista": "Liste à puces",
-      "insertar": "Insérer une donnée"
+      "insertar": "Insérer une donnée",
+      "cursiva": "Italique",
+      "subrayado": "Souligné",
+      "subtitulo": "Sous-titre",
+      "subtitulo2": "Sous-titre de second niveau",
+      "listaNumerada": "Liste numérotée",
+      "izquierda": "Aligner à gauche",
+      "centrar": "Centrer",
+      "justificar": "Justifier",
+      "verHtml": "Voir le HTML",
+      "verVisual": "Revenir à l'éditeur",
+      "htmlAyuda": "Collez ici le HTML que vous donne votre IA. À l'enregistrement, seul ce que permet la barre est conservé : le reste est supprimé.",
+      "ia": "Mettre en page avec l’IA ?",
+      "iaTitulo": "Mettre en page avec l’IA",
+      "iaDesc": "Copiez ces instructions et collez-les dans votre IA avec votre texte. Collez ce qu’elle vous renvoie dans la vue HTML.",
+      "iaCopiar": "Copier les instructions",
+      "iaInstrucciones": "Mets en page le texte que je te donne sous forme de fragment HTML pour un rapport technique. Règles :\n- Utilise uniquement ces balises : <p> pour les paragraphes, <h2> et <h3> pour deux niveaux de sous-titre, <ul> et <ol> avec <li> pour les listes (un seul niveau), <strong> pour le gras, <em> pour l’italique, <u> pour le souligné et <br> pour un saut de ligne dans un paragraphe.\n- Pour centrer ou justifier un paragraphe ou un sous-titre, utilise uniquement style=\"text-align:center\" ou style=\"text-align:justify\". Aucun autre attribut, ni classes, ni couleurs, ni polices ou tailles : c’est le modèle qui les fixe.\n- Pas de tableaux, d’images, de liens ni de scripts, et pas de <html>, <head> ni <body> : seulement le fragment.\n- Les données du rapport s’écrivent entre doubles accolades, telles quelles, sans les modifier ni les traduire : par exemple, {{cliente.nombre}} est remplacé par le nom du client à la génération du rapport. Utilise uniquement celles de la liste ci-dessous.\n- Ne change pas le sens du texte : donne-lui seulement une structure.",
+      "iaDatos": "Données du rapport utilisables :"
     },
     "ejemplos": {
       "textoTitulo": "Titre de la page",
-      "texto": "Écrivez votre texte ici. Avec la barre d'outils, vous pouvez mettre des mots en **gras** et créer des listes à puces.\n\nPour que chaque rapport se remplisse seul, utilisez « Insérer une donnée » : par exemple, ce rapport est pour {{cliente.razon_social}} et concerne {{emplazamiento.nombre}}. À la génération du rapport, chaque donnée est remplacée par sa valeur.\n\n- Ceci est une liste : chaque puce est une ligne. Vous pouvez aussi y insérer des données, comme {{proyecto.nombre}}.\n- Remplacez ces lignes par les vôtres.\n- Si vous n'avez pas besoin de la liste, supprimez-la.",
-      "firma": "Écrivez ici le texte du certificat. Par exemple : **{{marca.nombre}}** certifie avoir vérifié les équipements de {{cliente.razon_social}} à {{emplazamiento.nombre}}, avec le résultat résumé ci-dessous."
+      "texto": "<h2>Sous-titre d'exemple</h2><p>Écrivez votre texte ici. Avec la barre d'outils, vous pouvez mettre des mots en <strong>gras</strong>, en <em>italique</em> ou <u>soulignés</u>, ajouter des sous-titres, créer des listes et aligner les paragraphes.</p><p>Pour que chaque rapport se remplisse seul, utilisez « Insérer une donnée » : par exemple, ce rapport est pour {{cliente.razon_social}} et concerne {{emplazamiento.nombre}}. À la génération du rapport, chaque donnée est remplacée par sa valeur.</p><ul><li>Ceci est une liste : chaque puce est une ligne. Vous pouvez aussi y insérer des données, comme {{proyecto.nombre}}.</li><li>Remplacez ces lignes par les vôtres.</li><li>Si vous n'avez pas besoin de la liste, supprimez-la.</li></ul>",
+      "firma": "<p>Écrivez ici le texte du certificat. Par exemple : <strong>{{marca.nombre}}</strong> certifie avoir vérifié les équipements de {{cliente.razon_social}} à {{emplazamiento.nombre}}, avec le résultat résumé ci-dessous.</p>"
     },
     "portada": {
       "aspectoDesc": "Les couleurs, polices et tailles viennent de l'Aspect visuel du modèle.",
