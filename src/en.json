@@ -2407,9 +2407,10 @@
             "ficha_tecnica": "Data sheet",
             "declaracion_conformidad": "Declaration of conformity",
             "manual_usuario": "User manual",
-            "mantenimiento": "Maintenance",
-            "revision": "Inspection procedure",
-            "seguimiento": "Tracking sheet",
+            "certificado": "Certificate",
+            "guia_revision": "Inspection guide",
+            "guia_tallas": "Size guide",
+            "folleto": "Brochure or catalogue",
             "otros": "Other document"
           }
         },

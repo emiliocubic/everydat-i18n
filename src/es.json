@@ -2407,9 +2407,10 @@
             "ficha_tecnica": "Ficha técnica",
             "declaracion_conformidad": "Declaración de conformidad",
             "manual_usuario": "Manual de usuario",
-            "mantenimiento": "Mantenimiento",
-            "revision": "Procedimiento de revisión",
-            "seguimiento": "Ficha de seguimiento",
+            "certificado": "Certificado",
+            "guia_revision": "Guía de revisión",
+            "guia_tallas": "Guía de tallas",
+            "folleto": "Folleto o catálogo",
             "otros": "Otro documento"
           }
         },

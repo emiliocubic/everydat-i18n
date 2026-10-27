@@ -2310,9 +2310,10 @@
             "ficha_tecnica": "Fiche technique",
             "declaracion_conformidad": "Déclaration de conformité",
             "manual_usuario": "Manuel d'utilisation",
-            "mantenimiento": "Entretien",
-            "revision": "Procédure de vérification",
-            "seguimiento": "Fiche de suivi",
+            "certificado": "Certificat",
+            "guia_revision": "Guide de vérification",
+            "guia_tallas": "Guide des tailles",
+            "folleto": "Brochure ou catalogue",
             "otros": "Autre document"
           }
         },
