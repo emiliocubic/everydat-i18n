@@ -3336,6 +3336,21 @@
         "anonimizar": "Anonimizar a los revisores",
         "anonimizarHint": "Los revisores con cuenta salen por su alias. El firmante sale siempre con su nombre."
       },
+      "grupoAcreditaciones": "Acreditaciones",
+      "acreditaciones": {
+        "titulo": "Caducidad y matriz",
+        "desc": "Cuándo avisa una acreditación de que va a caducar y qué tipos salen como columnas en la matriz del personal.",
+        "umbral": "Avisar de «próximo a caducar»",
+        "dias": "días antes de la validez",
+        "umbralHint": "Entre 1 y 365 días. Vale para los documentos y para la situación de cada persona.",
+        "umbralInvalido": "El aviso tiene que estar entre 1 y 365 días.",
+        "matriz": "Tipos visibles en la matriz",
+        "todos": "Todos los tipos activos",
+        "algunos": "Solo los que elijo",
+        "desactivado": "desactivado",
+        "matrizVacia": "Elige al menos un tipo, o vuelve a «Todos los tipos activos».",
+        "matrizHint": "Con «Todos los tipos activos», un tipo nuevo sale solo en la matriz."
+      },
       "sello": {
         "titulo": "Firma electrónica",
         "desc": "Certificado .p12 de la empresa para firmar los informes que se emitan con «Firma electrónica». Sin certificado, los informes salen igual, sin firma. La contraseña se guarda cifrada y no se vuelve a enseñar.",
@@ -3561,6 +3576,7 @@
       "repositorioDocumental": "Repositorio documental",
       "mailCenter": "Mail Center",
       "explotacion": "Explotación de datos",
+      "acreditaciones": "Acreditaciones",
       "proyectosPropuestas": "Propuestas",
       "proyectosSeguimiento": "Seguimiento",
       "auditoria": "Auditoría",
@@ -3687,7 +3703,8 @@
       "informes": "ver los informes",
       "ia": "configurar la inteligencia artificial",
       "explotacion": "consultar estos datos",
-      "informesDiseno": "diseñar las plantillas de informe"
+      "informesDiseno": "diseñar las plantillas de informe",
+      "acreditaciones": "gestionar las acreditaciones"
     }
   },
   "proyectos": {
@@ -3922,6 +3939,14 @@
       "seleccionadas_other": "{{count}} personas seleccionadas",
       "hecho": "Hecho",
       "sinInternos": "No hay usuarios internos que asignar.",
+      "acreditaciones": "Acreditaciones requeridas",
+      "sinTiposAcreditacion": "No hay tipos de acreditación activos en el catálogo.",
+      "desactivada": "desactivada",
+      "acreditacionDesactivada": "Este tipo está desactivado en el catálogo: puedes quitarlo, pero no volver a pedirlo.",
+      "soloCumplen": "Mostrar solo los que cumplen todos los requisitos",
+      "cumple": "la tiene hoy",
+      "noCumple": "no la tiene hoy",
+      "cumpleN": "Cumple {{n}} de {{total}} requisitos",
       "arranqueOrientativa": "La fecha de inicio es orientativa: no arrancar automáticamente en ese momento",
       "arranqueFirme": "La fecha de inicio es firme: arrancar automáticamente el día {{fecha}}",
       "arranqueFirmeSinFecha": "La fecha de inicio es firme: arrancar automáticamente el día de inicio",
@@ -7011,7 +7036,23 @@
       "anadir": "Añadir al anexo",
       "subir": "Subir",
       "bajar": "Bajar",
-      "quitar": "Quitar del anexo"
+      "quitar": "Quitar del anexo",
+      "fuente": "De dónde se eligen",
+      "fuenteDocumentos": "Documentos",
+      "fuenteAcreditaciones": "Acreditaciones",
+      "buscarAcreditaciones": "Buscar acreditaciones por nombre o persona",
+      "acreditacionesRecientes": "Las más recientes",
+      "sinAcreditaciones": "No hay acreditaciones que anexar.",
+      "sinAcreditacionesBusqueda": "Ninguna acreditación con ese nombre o persona.",
+      "empresa": "Empresa",
+      "validoHasta": "válido hasta el {{fecha}}",
+      "caducadaHint": "Caducada: se puede anexar, pero ya no está en vigor.",
+      "estado": {
+        "vigente": "Vigente",
+        "proximo": "Próximo a caducar",
+        "caducado": "Caducado",
+        "sin_caducidad": "Sin caducidad"
+      }
     },
     "fichas": {
       "coleccionDesc": "Elige la cantidad de información a mostrar por cada revisión.",
@@ -7179,5 +7220,185 @@
       "vacia": "Aún no hay contenido: añade un texto o una tabla de datos.",
       "tablaVacia": "Sin datos, la tabla no sale en el papel."
     }
+  },
+  "acreditaciones": {
+    "tabs": {
+      "aria": "Vistas de acreditaciones",
+      "documentos": "Documentos",
+      "matriz": "Matriz",
+      "pendientes": "Pendientes",
+      "configuracion": "Configuración"
+    },
+    "estado": {
+      "vigente": "Vigente",
+      "proximo": "Próximo a caducar",
+      "caducado": "Caducado",
+      "sin_caducidad": "Sin caducidad"
+    },
+    "titular": {
+      "empresa": "Empresa",
+      "personas": "Personas",
+      "empresa_personas": "Empresa y personas"
+    },
+    "emisor": {
+      "marca": "marca",
+      "entidad": "entidad"
+    },
+    "campos": {
+      "estado": "Vigencia",
+      "titular": "Titular",
+      "nombre": "Nombre",
+      "entidad": "Entidad acreditadora",
+      "persona": "Persona",
+      "personas": "Personas",
+      "tipo": "Tipo de acreditación",
+      "tipos": "Tipos de acreditación",
+      "emision": "Fecha de emisión",
+      "validez": "Validez",
+      "fichero": "Fichero",
+      "renuevaA": "Renueva a"
+    },
+    "filtros": {
+      "titular": {
+        "empresa": "Incluye empresa",
+        "personas": "Solo personas",
+        "empresa_personas": "Empresa y personas"
+      },
+      "todosTipos": "Todos los tipos",
+      "todasEntidades": "Todas las entidades",
+      "todasPersonas": "Todas las personas",
+      "anulados": "Mostrar anulados"
+    },
+    "marcas": {
+      "anulado": "Anulado",
+      "enInforme": "En informe",
+      "enInformeHint": "Ha ido en un informe emitido: no se puede editar ni borrar.",
+      "renovado": "Renovado",
+      "renovadoHint": "Otro documento lo renueva: ya no avisa."
+    },
+    "notas": {
+      "anulado": "Anulado el {{fecha}}. No cuenta para nada (situaciones, avisos ni matriz), pero sigue existiendo para los informes que lo enlazan.",
+      "enInforme": "Este documento ha ido en un informe emitido: no se puede editar ni borrar, tampoco su fichero. Si tiene un error, anúlalo y sube uno nuevo correcto."
+    },
+    "acciones": {
+      "nuevo": "Nuevo documento",
+      "ver": "Ver el fichero",
+      "descargarSeleccion": "Descargar en un ZIP",
+      "descargarEmpresa": "Acreditaciones de la empresa",
+      "descargarEmpresaHint": "Descarga en un ZIP los documentos de empresa que sirven hoy (vigentes, próximos a caducar o sin caducidad)."
+    },
+    "form": {
+      "etiqueta": "Documento acreditativo",
+      "tituloNuevo": "Nuevo documento acreditativo",
+      "subNuevo": "Alta de documento",
+      "avisoDatos": "No subas documentos con datos de alta protección (certificados médicos, afiliación a la Seguridad Social…). Si los subes, es bajo la responsabilidad de tu empresa.",
+      "titular": "A quién acredita",
+      "aQuien": "Personas y tipos",
+      "documento": "Documento",
+      "renovacion": "Renovación",
+      "personasHelp": "Internos de la casa, activos. Un mismo documento puede acreditar a varias personas con las mismas fechas.",
+      "tiposHelp": "Qué habilita a hacer el documento.",
+      "buscarPersona": "Buscar persona…",
+      "buscarTipo": "Buscar tipo de acreditación…",
+      "elegirEntidad": "Elige quién lo emite",
+      "entidadHelp": "Una entidad del listado o una marca del catálogo. Si no está, dala de alta antes (Configuración o Catálogo).",
+      "nombreHelp": "Cómo se llama el documento, por ejemplo «Diploma curso trabajos en altura, 8 h».",
+      "validezHelp": "La que figura en el documento. Si se deja vacía, no caduca.",
+      "ficheroHelp": "Un único fichero, PDF o imagen. Si tiene anverso y reverso, en un solo PDF.",
+      "faltaFichero": "Adjunta el fichero del documento.",
+      "sustituir": "Sustituir fichero",
+      "sustituirHelp": "El fichero nuevo sustituye al actual en cuanto lo eliges.",
+      "renuevaHelp": "Opcional: el documento de empresa anterior al que sustituye. El anterior deja de avisar.",
+      "noRenuevaNinguno": "No renueva a ninguno",
+      "crear": "Dar de alta"
+    },
+    "anular": {
+      "titulo": "Anular documento",
+      "mensaje": "«{{nombre}}» dejará de contar para todo, pero no desaparece: los informes que lo llevan lo mostrarán como anulado. No se puede deshacer.",
+      "boton": "Anular"
+    },
+    "borrar": {
+      "titulo": "Borrar documento",
+      "mensaje": "¿Borrar «{{nombre}}»? Va a la papelera con su fichero."
+    },
+    "avisos": {
+      "creado": "Documento dado de alta.",
+      "guardado": "Cambios guardados.",
+      "anulado": "Documento anulado.",
+      "borrado": "Documento borrado.",
+      "ficheroSustituido": "Fichero sustituido.",
+      "noRenuevaMarcado": "Marcado como «no se renueva»: deja de avisar."
+    },
+    "matriz": {
+      "contador": "({{personas}} personas · {{tipos}} tipos)",
+      "buscarPersona": "Buscar persona",
+      "celda": "Situación de la persona en el tipo",
+      "documentosQueCubren": "Documentos que la cubren",
+      "vaciaTitulo": "La matriz está vacía",
+      "sinTipos": "No hay tipos de acreditación activos (o los fijados en los parámetros no lo están).",
+      "sinPersonas": "No hay internos activos que sean personas."
+    },
+    "pendientes": {
+      "personas": "Personas",
+      "empresa": "Documentos de empresa",
+      "nadaPersonas": "Ninguna persona tiene acreditaciones próximas a caducar o caducadas.",
+      "nadaEmpresa": "Ningún documento de empresa está próximo a caducar o caducado.",
+      "renovar": "Dar de alta la renovación",
+      "verDocumento": "Ver documento",
+      "verPersona": "Ir a la persona"
+    },
+    "config": {
+      "tipos": "Tipos de acreditación",
+      "entidades": "Entidades acreditadoras",
+      "tipo": "Tipo de acreditación",
+      "tipoNuevo": "Nuevo tipo",
+      "entidadNueva": "Nueva entidad",
+      "entidadNuevaPregunta": "Nombre de la entidad acreditadora (empresa de formación, organismo certificador…):",
+      "entidadRenombrar": "Nuevo nombre de la entidad acreditadora:",
+      "renombrar": "Renombrar",
+      "descripcion": "Descripción",
+      "marca": "Marca vinculada",
+      "sinMarca": "Sin marca",
+      "marcaHelp": "Para las formaciones de fabricante: la marca del catálogo a la que va vinculado el tipo (una como mucho).",
+      "activoHelp": "Un tipo desactivado deja de ofrecerse en documentos nuevos y se conserva en los que ya lo llevan.",
+      "documentos": "Documentos",
+      "deSerie": "De serie",
+      "deSerieHint": "Viene en el juego predefinido de Everydat. Se puede renombrar y desactivar.",
+      "activar": "Activar",
+      "activado": "Activado.",
+      "desactivado": "Desactivado.",
+      "borrarTipo": "¿Borrar el tipo «{{nombre}}»? Si está en uso no se borra: se desactiva.",
+      "borrarEntidad": "¿Borrar la entidad «{{nombre}}»?",
+      "tiposNota": "Lo que una persona puede estar habilitada a hacer. Lo que está en uso no se borra: se desactiva.",
+      "entidadesNota": "Quien emite documentos y no es una marca: empresas de formación, organismos certificadores… Las marcas se mantienen en el Catálogo.",
+      "sinTipos": "Aún no hay tipos de acreditación.",
+      "sinEntidades": "Aún no hay entidades acreditadoras."
+    },
+    "ficha": {
+      "tab": "Acreditaciones",
+      "subir": "Subir documento",
+      "descargar": "Descargar sus acreditaciones",
+      "descargarHint": "Descarga en un ZIP los documentos de esta persona que sirven hoy (vigentes, próximos a caducar o sin caducidad).",
+      "situacion": "Situación por tipo de acreditación",
+      "historico": "Histórico",
+      "cubre": "Documento que la cubre",
+      "sinSituaciones": "Esta persona no tiene ni ha tenido acreditaciones."
+    },
+    "vacio": {
+      "titulo": "No hay documentos acreditativos",
+      "hint": "Da de alta el primero o cambia los filtros."
+    },
+    "buscar": "Buscar por nombre…",
+    "noSeRenueva": "No se renueva",
+    "noSeRenuevaHint": "Marcado como «no se renueva»: no avisa aunque caduque.",
+    "noSeRenuevaEmpresaHint": "Deja de avisar y de salir en Pendientes. Conserva su estado real y se puede quitar cuando quieras.",
+    "noSeRenuevaPersonaHint": "Para esta persona en este tipo: deja de avisar y de salir en Pendientes. Se quita solo si se sube un documento nuevo que la cubra.",
+    "noCaduca": "No caduca",
+    "hasta": "hasta {{fecha}}",
+    "umbral": "Próximo a caducar: menos de {{n}} días.",
+    "baja": "baja",
+    "desactivado": "desactivado",
+    "sinDocumentos": "No hay documentos.",
+    "sinCoincidencias": "Sin coincidencias"
   }
 }

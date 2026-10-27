@@ -3232,6 +3232,21 @@
         "hint": "Passés les mois de grâce, une date échue n’apparaît plus dans Opportunités, mais elle reste sur le site : rien n’est écarté tout seul. La fenêtre n’est que la valeur de départ : chacun la modifie à l’écran.",
         "gracia": "Une date échue reste affichée pendant"
       },
+      "grupoAcreditaciones": "Habilitations",
+      "acreditaciones": {
+        "titulo": "Expiration et matrice",
+        "desc": "Quand une habilitation signale qu'elle va expirer, et quels types apparaissent en colonnes dans la matrice du personnel.",
+        "umbral": "Signaler « bientôt expirée »",
+        "dias": "jours avant la date de validité",
+        "umbralHint": "Entre 1 et 365 jours. S'applique aux documents et à la situation de chaque personne.",
+        "umbralInvalido": "L'alerte doit être comprise entre 1 et 365 jours.",
+        "matriz": "Types visibles dans la matrice",
+        "todos": "Tous les types actifs",
+        "algunos": "Seulement ceux que je choisis",
+        "desactivado": "désactivé",
+        "matrizVacia": "Choisissez au moins un type, ou revenez à « Tous les types actifs ».",
+        "matrizHint": "Avec « Tous les types actifs », un nouveau type apparaît tout seul dans la matrice."
+      },
       "sello": {
         "titulo": "Signature électronique",
         "desc": "Certificat .p12 de l'entreprise pour signer les rapports émis avec « Signature électronique ». Sans certificat, les rapports sont émis sans signature. Le mot de passe est stocké chiffré et n'est plus jamais affiché.",
@@ -3453,6 +3468,7 @@
       "repositorioDocumental": "Dépôt documentaire",
       "mailCenter": "Mail Center",
       "explotacion": "Exploitation des données",
+      "acreditaciones": "Habilitations",
       "proyectosPropuestas": "Propositions",
       "proyectosSeguimiento": "Suivi",
       "auditoria": "Journal d'audit",
@@ -3578,7 +3594,8 @@
       "apiCapacidad": "Vous n'avez pas la permission pour cette action : {{accion}}. Elle vient avec la capacité {{capacidad}}.",
       "ia": "configurer l’intelligence artificielle",
       "explotacion": "consulter ces données",
-      "informesDiseno": "concevoir les modèles de rapport"
+      "informesDiseno": "concevoir les modèles de rapport",
+      "acreditaciones": "gérer les habilitations"
     }
   },
   "proyectos": {
@@ -3813,6 +3830,14 @@
       "seleccionadas_other": "{{count}} personnes sélectionnées",
       "hecho": "Terminé",
       "sinInternos": "Aucun utilisateur interne à affecter.",
+      "acreditaciones": "Habilitations requises",
+      "sinTiposAcreditacion": "Aucun type d'habilitation actif dans le catalogue.",
+      "desactivada": "désactivée",
+      "acreditacionDesactivada": "Ce type est désactivé dans le catalogue : vous pouvez le retirer, mais pas l'exiger à nouveau.",
+      "soloCumplen": "N'afficher que ceux qui remplissent toutes les exigences",
+      "cumple": "détenue aujourd'hui",
+      "noCumple": "non détenue aujourd'hui",
+      "cumpleN": "Remplit {{n}} exigences sur {{total}}",
       "arranqueOrientativa": "La date de début est indicative : ne pas démarrer automatiquement ce jour-là",
       "arranqueFirme": "La date de début est ferme : démarrer automatiquement le {{fecha}}",
       "arranqueFirmeSinFecha": "La date de début est ferme : démarrer automatiquement à la date de début",
@@ -6591,7 +6616,23 @@
       "anadir": "Ajouter à l'annexe",
       "subir": "Monter",
       "bajar": "Descendre",
-      "quitar": "Retirer de l'annexe"
+      "quitar": "Retirer de l'annexe",
+      "fuente": "D'où choisir",
+      "fuenteDocumentos": "Documents",
+      "fuenteAcreditaciones": "Habilitations",
+      "buscarAcreditaciones": "Rechercher des habilitations par nom ou personne",
+      "acreditacionesRecientes": "Les plus récentes",
+      "sinAcreditaciones": "Aucune habilitation à annexer.",
+      "sinAcreditacionesBusqueda": "Aucune habilitation avec ce nom ou cette personne.",
+      "empresa": "Entreprise",
+      "validoHasta": "valable jusqu'au {{fecha}}",
+      "caducadaHint": "Expirée : elle peut être annexée, mais n'est plus en vigueur.",
+      "estado": {
+        "vigente": "En vigueur",
+        "proximo": "Bientôt expirée",
+        "caducado": "Expirée",
+        "sin_caducidad": "Sans expiration"
+      }
     },
     "fichas": {
       "coleccionDesc": "Choisissez la quantité d'informations à afficher pour chaque vérification.",
@@ -6759,5 +6800,185 @@
       "vacia": "Pas encore de contenu : ajoutez un texte ou un tableau de données.",
       "tablaVacia": "Sans données, le tableau n'apparaît pas sur le papier."
     }
+  },
+  "acreditaciones": {
+    "tabs": {
+      "aria": "Vues des habilitations",
+      "documentos": "Documents",
+      "matriz": "Matrice",
+      "pendientes": "En attente",
+      "configuracion": "Configuration"
+    },
+    "estado": {
+      "vigente": "En vigueur",
+      "proximo": "Expire bientôt",
+      "caducado": "Expiré",
+      "sin_caducidad": "Sans expiration"
+    },
+    "titular": {
+      "empresa": "Entreprise",
+      "personas": "Personnes",
+      "empresa_personas": "Entreprise et personnes"
+    },
+    "emisor": {
+      "marca": "marque",
+      "entidad": "organisme"
+    },
+    "campos": {
+      "estado": "Validité",
+      "titular": "Titulaire",
+      "nombre": "Nom",
+      "entidad": "Organisme émetteur",
+      "persona": "Personne",
+      "personas": "Personnes",
+      "tipo": "Type d'habilitation",
+      "tipos": "Types d'habilitation",
+      "emision": "Date d'émission",
+      "validez": "Validité",
+      "fichero": "Fichier",
+      "renuevaA": "Renouvelle"
+    },
+    "filtros": {
+      "titular": {
+        "empresa": "Inclut l'entreprise",
+        "personas": "Personnes seulement",
+        "empresa_personas": "Entreprise et personnes"
+      },
+      "todosTipos": "Tous les types",
+      "todasEntidades": "Tous les organismes",
+      "todasPersonas": "Toutes les personnes",
+      "anulados": "Afficher les annulés"
+    },
+    "marcas": {
+      "anulado": "Annulé",
+      "enInforme": "Dans un rapport",
+      "enInformeHint": "Il figure dans un rapport émis : il ne peut être ni modifié ni supprimé.",
+      "renovado": "Renouvelé",
+      "renovadoHint": "Un autre document le renouvelle : il n'alerte plus."
+    },
+    "notas": {
+      "anulado": "Annulé le {{fecha}}. Il ne compte plus pour rien (situations, alertes, matrice), mais il existe toujours pour les rapports qui le citent.",
+      "enInforme": "Ce document figure dans un rapport émis : ni lui ni son fichier ne peuvent être modifiés ou supprimés. S'il contient une erreur, annulez-le et déposez-en un nouveau."
+    },
+    "acciones": {
+      "nuevo": "Nouveau document",
+      "ver": "Voir le fichier",
+      "descargarSeleccion": "Télécharger en ZIP",
+      "descargarEmpresa": "Habilitations de l'entreprise",
+      "descargarEmpresaHint": "Télécharge en ZIP les documents de l'entreprise valables aujourd'hui (en vigueur, expirant bientôt ou sans expiration)."
+    },
+    "form": {
+      "etiqueta": "Document d'habilitation",
+      "tituloNuevo": "Nouveau document d'habilitation",
+      "subNuevo": "Création du document",
+      "avisoDatos": "Ne déposez pas de documents contenant des données hautement protégées (certificats médicaux, affiliation à la sécurité sociale…). Si vous le faites, c'est sous la responsabilité de votre entreprise.",
+      "titular": "Qui il habilite",
+      "aQuien": "Personnes et types",
+      "documento": "Document",
+      "renovacion": "Renouvellement",
+      "personasHelp": "Personnel interne actif. Un même document peut habiliter plusieurs personnes avec les mêmes dates.",
+      "tiposHelp": "Ce que le document permet de faire.",
+      "buscarPersona": "Rechercher une personne…",
+      "buscarTipo": "Rechercher un type d'habilitation…",
+      "elegirEntidad": "Choisissez l'émetteur",
+      "entidadHelp": "Un organisme de la liste ou une marque du catalogue. S'il manque, créez-le d'abord (Configuration ou Catalogue).",
+      "nombreHelp": "Le nom du document, par exemple « Diplôme travaux en hauteur, 8 h ».",
+      "validezHelp": "Celle indiquée sur le document. Vide, il n'expire pas.",
+      "ficheroHelp": "Un seul fichier, PDF ou image. Recto-verso dans un seul PDF.",
+      "faltaFichero": "Joignez le fichier du document.",
+      "sustituir": "Remplacer le fichier",
+      "sustituirHelp": "Le nouveau fichier remplace l'actuel dès que vous le choisissez.",
+      "renuevaHelp": "Facultatif : le document d'entreprise précédent qu'il remplace. Le précédent n'alerte plus.",
+      "noRenuevaNinguno": "Ne renouvelle aucun document",
+      "crear": "Créer"
+    },
+    "anular": {
+      "titulo": "Annuler le document",
+      "mensaje": "« {{nombre}} » ne comptera plus pour rien, mais il ne disparaît pas : les rapports qui le contiennent l'afficheront comme annulé. C'est irréversible.",
+      "boton": "Annuler le document"
+    },
+    "borrar": {
+      "titulo": "Supprimer le document",
+      "mensaje": "Supprimer « {{nombre}} » ? Il part à la corbeille avec son fichier."
+    },
+    "avisos": {
+      "creado": "Document créé.",
+      "guardado": "Modifications enregistrées.",
+      "anulado": "Document annulé.",
+      "borrado": "Document supprimé.",
+      "ficheroSustituido": "Fichier remplacé.",
+      "noRenuevaMarcado": "Marqué « non renouvelé » : il n'alerte plus."
+    },
+    "matriz": {
+      "contador": "({{personas}} personnes · {{tipos}} types)",
+      "buscarPersona": "Rechercher une personne",
+      "celda": "Situation de la personne pour ce type",
+      "documentosQueCubren": "Documents qui la couvrent",
+      "vaciaTitulo": "La matrice est vide",
+      "sinTipos": "Aucun type d'habilitation actif (ou ceux fixés dans les paramètres ne le sont pas).",
+      "sinPersonas": "Aucun membre du personnel interne actif."
+    },
+    "pendientes": {
+      "personas": "Personnes",
+      "empresa": "Documents d'entreprise",
+      "nadaPersonas": "Personne n'a d'habilitation expirant bientôt ou expirée.",
+      "nadaEmpresa": "Aucun document d'entreprise n'expire bientôt ni n'est expiré.",
+      "renovar": "Créer le renouvellement",
+      "verDocumento": "Voir le document",
+      "verPersona": "Aller à la personne"
+    },
+    "config": {
+      "tipos": "Types d'habilitation",
+      "entidades": "Organismes émetteurs",
+      "tipo": "Type d'habilitation",
+      "tipoNuevo": "Nouveau type",
+      "entidadNueva": "Nouvel organisme",
+      "entidadNuevaPregunta": "Nom de l'organisme émetteur (organisme de formation, certificateur…) :",
+      "entidadRenombrar": "Nouveau nom de l'organisme émetteur :",
+      "renombrar": "Renommer",
+      "descripcion": "Description",
+      "marca": "Marque liée",
+      "sinMarca": "Sans marque",
+      "marcaHelp": "Pour les formations de fabricant : la marque du catalogue liée au type (une au plus).",
+      "activoHelp": "Un type désactivé n'est plus proposé pour les nouveaux documents et reste dans ceux qui l'utilisent.",
+      "documentos": "Documents",
+      "deSerie": "Prédéfini",
+      "deSerieHint": "Fait partie du jeu prédéfini d'Everydat. Il peut être renommé et désactivé.",
+      "activar": "Activer",
+      "activado": "Activé.",
+      "desactivado": "Désactivé.",
+      "borrarTipo": "Supprimer le type « {{nombre}} » ? S'il est utilisé, il n'est pas supprimé : il est désactivé.",
+      "borrarEntidad": "Supprimer l'organisme « {{nombre}} » ?",
+      "tiposNota": "Ce qu'une personne peut être habilitée à faire. Ce qui est utilisé ne se supprime pas : il se désactive.",
+      "entidadesNota": "Les émetteurs qui ne sont pas des marques : organismes de formation, certificateurs… Les marques se gèrent dans le Catalogue.",
+      "sinTipos": "Aucun type d'habilitation pour l'instant.",
+      "sinEntidades": "Aucun organisme émetteur pour l'instant."
+    },
+    "ficha": {
+      "tab": "Habilitations",
+      "subir": "Déposer un document",
+      "descargar": "Télécharger ses habilitations",
+      "descargarHint": "Télécharge en ZIP les documents de cette personne valables aujourd'hui (en vigueur, expirant bientôt ou sans expiration).",
+      "situacion": "Situation par type d'habilitation",
+      "historico": "Historique",
+      "cubre": "Document qui la couvre",
+      "sinSituaciones": "Cette personne n'a et n'a eu aucune habilitation."
+    },
+    "vacio": {
+      "titulo": "Aucun document d'habilitation",
+      "hint": "Créez le premier ou modifiez les filtres."
+    },
+    "buscar": "Rechercher par nom…",
+    "noSeRenueva": "Non renouvelé",
+    "noSeRenuevaHint": "Marqué « non renouvelé » : n'alerte pas même s'il expire.",
+    "noSeRenuevaEmpresaHint": "N'alerte plus et ne figure plus dans En attente. Garde son état réel et peut être retiré à tout moment.",
+    "noSeRenuevaPersonaHint": "Pour cette personne et ce type : n'alerte plus et ne figure plus dans En attente. Se retire seul si un nouveau document la couvre.",
+    "noCaduca": "N'expire pas",
+    "hasta": "jusqu'au {{fecha}}",
+    "umbral": "Expire bientôt : moins de {{n}} jours.",
+    "baja": "inactif",
+    "desactivado": "désactivé",
+    "sinDocumentos": "Aucun document.",
+    "sinCoincidencias": "Aucun résultat"
   }
 }

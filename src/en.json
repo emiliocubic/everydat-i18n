@@ -3336,6 +3336,21 @@
         "anonimizar": "Anonymise inspectors",
         "anonimizarHint": "Inspectors with an account appear by their alias. The signatory always appears by name."
       },
+      "grupoAcreditaciones": "Accreditations",
+      "acreditaciones": {
+        "titulo": "Expiry and matrix",
+        "desc": "When an accreditation warns that it is about to expire, and which types appear as columns in the staff matrix.",
+        "umbral": "Warn of «expiring soon»",
+        "dias": "days before the expiry date",
+        "umbralHint": "Between 1 and 365 days. Applies to documents and to each person's standing.",
+        "umbralInvalido": "The warning must be between 1 and 365 days.",
+        "matriz": "Types shown in the matrix",
+        "todos": "All active types",
+        "algunos": "Only the ones I choose",
+        "desactivado": "deactivated",
+        "matrizVacia": "Choose at least one type, or go back to «All active types».",
+        "matrizHint": "With «All active types», a new type appears in the matrix on its own."
+      },
       "sello": {
         "titulo": "Electronic signature",
         "desc": "The company .p12 certificate used to sign reports issued with «Electronic signature». Without a certificate, reports are issued unsigned. The password is stored encrypted and never shown again.",
@@ -3561,6 +3576,7 @@
       "repositorioDocumental": "Document repository",
       "mailCenter": "Mail Center",
       "explotacion": "Data queries",
+      "acreditaciones": "Accreditations",
       "proyectosPropuestas": "Proposals",
       "proyectosSeguimiento": "Follow-up",
       "auditoria": "Audit log",
@@ -3687,7 +3703,8 @@
       "informes": "view reports",
       "ia": "configure artificial intelligence",
       "explotacion": "query this data",
-      "informesDiseno": "design report templates"
+      "informesDiseno": "design report templates",
+      "acreditaciones": "manage accreditations"
     }
   },
   "proyectos": {
@@ -3922,6 +3939,14 @@
       "seleccionadas_other": "{{count}} people selected",
       "hecho": "Done",
       "sinInternos": "There are no internal users to assign.",
+      "acreditaciones": "Required accreditations",
+      "sinTiposAcreditacion": "There are no active accreditation types in the catalogue.",
+      "desactivada": "deactivated",
+      "acreditacionDesactivada": "This type is deactivated in the catalogue: you can remove it, but not require it again.",
+      "soloCumplen": "Show only those who meet every requirement",
+      "cumple": "held today",
+      "noCumple": "not held today",
+      "cumpleN": "Meets {{n}} of {{total}} requirements",
       "arranqueOrientativa": "The start date is tentative: do not start automatically on that day",
       "arranqueFirme": "The start date is firm: start automatically on {{fecha}}",
       "arranqueFirmeSinFecha": "The start date is firm: start automatically on the start date",
@@ -7011,7 +7036,23 @@
       "anadir": "Add to the appendix",
       "subir": "Move up",
       "bajar": "Move down",
-      "quitar": "Remove from the appendix"
+      "quitar": "Remove from the appendix",
+      "fuente": "Where to choose from",
+      "fuenteDocumentos": "Documents",
+      "fuenteAcreditaciones": "Accreditations",
+      "buscarAcreditaciones": "Search accreditations by name or person",
+      "acreditacionesRecientes": "Most recent",
+      "sinAcreditaciones": "There are no accreditations to attach.",
+      "sinAcreditacionesBusqueda": "No accreditation with that name or person.",
+      "empresa": "Company",
+      "validoHasta": "valid until {{fecha}}",
+      "caducadaHint": "Expired: it can be attached, but it is no longer in force.",
+      "estado": {
+        "vigente": "Valid",
+        "proximo": "Expiring soon",
+        "caducado": "Expired",
+        "sin_caducidad": "No expiry"
+      }
     },
     "fichas": {
       "coleccionDesc": "Choose how much information to show for each inspection.",
@@ -7179,5 +7220,185 @@
       "vacia": "No content yet: add a text or a data table.",
       "tablaVacia": "With no data, the table does not appear on paper."
     }
+  },
+  "acreditaciones": {
+    "tabs": {
+      "aria": "Accreditation views",
+      "documentos": "Documents",
+      "matriz": "Matrix",
+      "pendientes": "Pending",
+      "configuracion": "Settings"
+    },
+    "estado": {
+      "vigente": "Valid",
+      "proximo": "Expiring soon",
+      "caducado": "Expired",
+      "sin_caducidad": "No expiry"
+    },
+    "titular": {
+      "empresa": "Company",
+      "personas": "People",
+      "empresa_personas": "Company and people"
+    },
+    "emisor": {
+      "marca": "brand",
+      "entidad": "body"
+    },
+    "campos": {
+      "estado": "Validity",
+      "titular": "Holder",
+      "nombre": "Name",
+      "entidad": "Accrediting body",
+      "persona": "Person",
+      "personas": "People",
+      "tipo": "Accreditation type",
+      "tipos": "Accreditation types",
+      "emision": "Issue date",
+      "validez": "Valid until",
+      "fichero": "File",
+      "renuevaA": "Renews"
+    },
+    "filtros": {
+      "titular": {
+        "empresa": "Includes company",
+        "personas": "People only",
+        "empresa_personas": "Company and people"
+      },
+      "todosTipos": "All types",
+      "todasEntidades": "All bodies",
+      "todasPersonas": "All people",
+      "anulados": "Show voided"
+    },
+    "marcas": {
+      "anulado": "Voided",
+      "enInforme": "In a report",
+      "enInformeHint": "It went into an issued report: it cannot be edited or deleted.",
+      "renovado": "Renewed",
+      "renovadoHint": "Another document renews it: it no longer warns."
+    },
+    "notas": {
+      "anulado": "Voided on {{fecha}}. It counts for nothing (situations, warnings or matrix), but it still exists for the reports that link to it.",
+      "enInforme": "This document went into an issued report: neither it nor its file can be edited or deleted. If it has a mistake, void it and upload a correct one."
+    },
+    "acciones": {
+      "nuevo": "New document",
+      "ver": "View file",
+      "descargarSeleccion": "Download as ZIP",
+      "descargarEmpresa": "Company accreditations",
+      "descargarEmpresaHint": "Downloads as a ZIP the company documents that are good today (valid, expiring soon or with no expiry)."
+    },
+    "form": {
+      "etiqueta": "Accreditation document",
+      "tituloNuevo": "New accreditation document",
+      "subNuevo": "New document",
+      "avisoDatos": "Do not upload documents with highly protected data (medical certificates, social security registration…). If you do, it is under your company's responsibility.",
+      "titular": "Who it accredits",
+      "aQuien": "People and types",
+      "documento": "Document",
+      "renovacion": "Renewal",
+      "personasHelp": "Active in-house staff. One document can accredit several people with the same dates.",
+      "tiposHelp": "What the document qualifies them to do.",
+      "buscarPersona": "Search person…",
+      "buscarTipo": "Search accreditation type…",
+      "elegirEntidad": "Choose who issues it",
+      "entidadHelp": "A body from the list or a brand from the catalogue. If it is missing, add it first (Settings or Catalogue).",
+      "nombreHelp": "What the document is called, e.g. «Work at height course diploma, 8 h».",
+      "validezHelp": "As stated on the document. If left empty, it does not expire.",
+      "ficheroHelp": "A single file, PDF or image. If it has two sides, in a single PDF.",
+      "faltaFichero": "Attach the document file.",
+      "sustituir": "Replace file",
+      "sustituirHelp": "The new file replaces the current one as soon as you choose it.",
+      "renuevaHelp": "Optional: the previous company document it replaces. The previous one stops warning.",
+      "noRenuevaNinguno": "Does not renew any",
+      "crear": "Add"
+    },
+    "anular": {
+      "titulo": "Void document",
+      "mensaje": "«{{nombre}}» will no longer count for anything, but it does not disappear: the reports that include it will show it as voided. This cannot be undone.",
+      "boton": "Void"
+    },
+    "borrar": {
+      "titulo": "Delete document",
+      "mensaje": "Delete «{{nombre}}»? It goes to the bin with its file."
+    },
+    "avisos": {
+      "creado": "Document added.",
+      "guardado": "Changes saved.",
+      "anulado": "Document voided.",
+      "borrado": "Document deleted.",
+      "ficheroSustituido": "File replaced.",
+      "noRenuevaMarcado": "Marked as «not renewed»: it stops warning."
+    },
+    "matriz": {
+      "contador": "({{personas}} people · {{tipos}} types)",
+      "buscarPersona": "Search person",
+      "celda": "Person's situation in the type",
+      "documentosQueCubren": "Documents that cover it",
+      "vaciaTitulo": "The matrix is empty",
+      "sinTipos": "There are no active accreditation types (or the ones set in the parameters are not active).",
+      "sinPersonas": "There are no active in-house staff who are people."
+    },
+    "pendientes": {
+      "personas": "People",
+      "empresa": "Company documents",
+      "nadaPersonas": "No one has accreditations expiring soon or expired.",
+      "nadaEmpresa": "No company document is expiring soon or expired.",
+      "renovar": "Add the renewal",
+      "verDocumento": "View document",
+      "verPersona": "Go to the person"
+    },
+    "config": {
+      "tipos": "Accreditation types",
+      "entidades": "Accrediting bodies",
+      "tipo": "Accreditation type",
+      "tipoNuevo": "New type",
+      "entidadNueva": "New body",
+      "entidadNuevaPregunta": "Name of the accrediting body (training company, certification body…):",
+      "entidadRenombrar": "New name of the accrediting body:",
+      "renombrar": "Rename",
+      "descripcion": "Description",
+      "marca": "Linked brand",
+      "sinMarca": "No brand",
+      "marcaHelp": "For manufacturer training: the catalogue brand the type is linked to (one at most).",
+      "activoHelp": "A deactivated type is no longer offered for new documents and is kept in the ones that already use it.",
+      "documentos": "Documents",
+      "deSerie": "Built-in",
+      "deSerieHint": "Comes with Everydat's predefined set. It can be renamed and deactivated.",
+      "activar": "Activate",
+      "activado": "Activated.",
+      "desactivado": "Deactivated.",
+      "borrarTipo": "Delete the type «{{nombre}}»? If it is in use it is not deleted: it is deactivated.",
+      "borrarEntidad": "Delete the body «{{nombre}}»?",
+      "tiposNota": "What a person can be qualified to do. What is in use is not deleted: it is deactivated.",
+      "entidadesNota": "Who issues documents and is not a brand: training companies, certification bodies… Brands are kept in the Catalogue.",
+      "sinTipos": "There are no accreditation types yet.",
+      "sinEntidades": "There are no accrediting bodies yet."
+    },
+    "ficha": {
+      "tab": "Accreditations",
+      "subir": "Upload document",
+      "descargar": "Download their accreditations",
+      "descargarHint": "Downloads as a ZIP this person's documents that are good today (valid, expiring soon or with no expiry).",
+      "situacion": "Situation by accreditation type",
+      "historico": "History",
+      "cubre": "Covering document",
+      "sinSituaciones": "This person has no accreditations, now or in the past."
+    },
+    "vacio": {
+      "titulo": "There are no accreditation documents",
+      "hint": "Add the first one or change the filters."
+    },
+    "buscar": "Search by name…",
+    "noSeRenueva": "Not renewed",
+    "noSeRenuevaHint": "Marked as «not renewed»: it does not warn even if it expires.",
+    "noSeRenuevaEmpresaHint": "It stops warning and showing in Pending. It keeps its real status and can be removed whenever you want.",
+    "noSeRenuevaPersonaHint": "For this person in this type: it stops warning and showing in Pending. It is removed by itself if a new document covering them is uploaded.",
+    "noCaduca": "No expiry",
+    "hasta": "until {{fecha}}",
+    "umbral": "Expiring soon: fewer than {{n}} days.",
+    "baja": "inactive",
+    "desactivado": "deactivated",
+    "sinDocumentos": "There are no documents.",
+    "sinCoincidencias": "No matches"
   }
 }
