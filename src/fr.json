@@ -3831,7 +3831,7 @@
       "hecho": "Terminé",
       "sinInternos": "Aucun utilisateur interne à affecter.",
       "acreditaciones": "Habilitations requises",
-      "sinTiposAcreditacion": "Aucun type d'habilitation actif dans le catalogue.",
+      "sinTiposAcreditacion": "Personne dans l'entreprise n'a aujourd'hui d'habilitation valide.",
       "desactivada": "désactivée",
       "acreditacionDesactivada": "Ce type est désactivé dans le catalogue : vous pouvez le retirer, mais pas l'exiger à nouveau.",
       "soloCumplen": "N'afficher que ceux qui remplissent toutes les exigences",
@@ -3860,7 +3860,8 @@
         "cerrado": "Projet clôturé : la planification est conservée comme archive, en lecture seule.",
         "cancelado": "Projet annulé :"
       },
-      "finSinInicio": "Indiquez d'abord la date de début prévue"
+      "finSinInicio": "Indiquez d'abord la date de début prévue",
+      "nadieLaTiene": "personne ne l'a aujourd'hui"
     },
     "ejecucion": {
       "kpiRevisiones": "Contrôles",
@@ -6804,9 +6805,9 @@
   "acreditaciones": {
     "tabs": {
       "aria": "Vues des habilitations",
-      "documentos": "Documents",
-      "matriz": "Matrice",
-      "pendientes": "En attente",
+      "documentos": "Liste et téléchargements",
+      "matriz": "Suivi des dates",
+      "pendientes": "Renouvellements",
       "configuracion": "Configuration"
     },
     "estado": {
@@ -6832,7 +6833,7 @@
       "persona": "Personne",
       "personas": "Personnes",
       "tipo": "Type d'habilitation",
-      "tipos": "Types d'habilitation",
+      "tipos": "Type d'habilitation",
       "emision": "Date d'émission",
       "validez": "Validité",
       "fichero": "Fichier",
@@ -6877,7 +6878,7 @@
       "documento": "Document",
       "renovacion": "Renouvellement",
       "personasHelp": "Personnel interne actif. Un même document peut habiliter plusieurs personnes avec les mêmes dates.",
-      "tiposHelp": "Ce que le document permet de faire.",
+      "tiposHelp": "Ce que le document permet de faire : un par document.",
       "buscarPersona": "Rechercher une personne…",
       "buscarTipo": "Rechercher un type d'habilitation…",
       "elegirEntidad": "Choisissez l'émetteur",
@@ -6890,7 +6891,8 @@
       "sustituirHelp": "Le nouveau fichier remplace l'actuel dès que vous le choisissez.",
       "renuevaHelp": "Facultatif : le document d'entreprise précédent qu'il remplace. Le précédent n'alerte plus.",
       "noRenuevaNinguno": "Ne renouvelle aucun document",
-      "crear": "Créer"
+      "crear": "Créer",
+      "otraMarca": "ATTENTION : vous avez choisi {{elegida}} comme organisme accréditeur, mais le type d'habilitation choisi plus haut est associé à {{ligada}}. Ce n'est pas forcément incorrect, car quelques marques très précises agissent comme distributeurs et accréditeurs d'autres marques, mais ce n'est pas habituel. Vérifiez votre choix."
     },
     "anular": {
       "titulo": "Annuler le document",
@@ -6952,7 +6954,13 @@
       "tiposNota": "Ce qu'une personne peut être habilitée à faire. Ce qui est utilisé ne se supprime pas : il se désactive.",
       "entidadesNota": "Les émetteurs qui ne sont pas des marques : organismes de formation, certificateurs… Les marques se gèrent dans le Catalogue.",
       "sinTipos": "Aucun type d'habilitation pour l'instant.",
-      "sinEntidades": "Aucun organisme émetteur pour l'instant."
+      "sinEntidades": "Aucun organisme émetteur pour l'instant.",
+      "origen": "Origine",
+      "origenTodas": "Toutes",
+      "origenPropio": "Créées par {{tenant}}",
+      "tenant": "l'entreprise",
+      "personas": "Personnes habilitées",
+      "personasHint": "Qui est habilité aujourd'hui dans ce type (avec un document actif non expiré)"
     },
     "ficha": {
       "tab": "Habilitations",

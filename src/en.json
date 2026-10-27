@@ -3940,7 +3940,7 @@
       "hecho": "Done",
       "sinInternos": "There are no internal users to assign.",
       "acreditaciones": "Required accreditations",
-      "sinTiposAcreditacion": "There are no active accreditation types in the catalogue.",
+      "sinTiposAcreditacion": "Nobody in the company holds a valid accreditation today.",
       "desactivada": "deactivated",
       "acreditacionDesactivada": "This type is deactivated in the catalogue: you can remove it, but not require it again.",
       "soloCumplen": "Show only those who meet every requirement",
@@ -3969,7 +3969,8 @@
         "cerrado": "Project closed: planning is kept as a record, read-only.",
         "cancelado": "Project cancelled:"
       },
-      "finSinInicio": "Set the planned start date first"
+      "finSinInicio": "Set the planned start date first",
+      "nadieLaTiene": "nobody holds it today"
     },
     "ejecucion": {
       "kpiRevisiones": "Inspections",
@@ -7224,9 +7225,9 @@
   "acreditaciones": {
     "tabs": {
       "aria": "Accreditation views",
-      "documentos": "Documents",
-      "matriz": "Matrix",
-      "pendientes": "Pending",
+      "documentos": "List and downloads",
+      "matriz": "Date control",
+      "pendientes": "Renewals",
       "configuracion": "Settings"
     },
     "estado": {
@@ -7252,7 +7253,7 @@
       "persona": "Person",
       "personas": "People",
       "tipo": "Accreditation type",
-      "tipos": "Accreditation types",
+      "tipos": "Accreditation type",
       "emision": "Issue date",
       "validez": "Valid until",
       "fichero": "File",
@@ -7297,7 +7298,7 @@
       "documento": "Document",
       "renovacion": "Renewal",
       "personasHelp": "Active in-house staff. One document can accredit several people with the same dates.",
-      "tiposHelp": "What the document qualifies them to do.",
+      "tiposHelp": "What the document qualifies them to do: one per document.",
       "buscarPersona": "Search person…",
       "buscarTipo": "Search accreditation type…",
       "elegirEntidad": "Choose who issues it",
@@ -7310,7 +7311,8 @@
       "sustituirHelp": "The new file replaces the current one as soon as you choose it.",
       "renuevaHelp": "Optional: the previous company document it replaces. The previous one stops warning.",
       "noRenuevaNinguno": "Does not renew any",
-      "crear": "Add"
+      "crear": "Add",
+      "otraMarca": "WARNING: you have chosen {{elegida}} as the accrediting body, but the accreditation type chosen above is linked to {{ligada}}. This is not necessarily wrong, because a few specific brands act as distributors and accreditors for others, but it is unusual. Check your choice to be sure."
     },
     "anular": {
       "titulo": "Void document",
@@ -7372,7 +7374,13 @@
       "tiposNota": "What a person can be qualified to do. What is in use is not deleted: it is deactivated.",
       "entidadesNota": "Who issues documents and is not a brand: training companies, certification bodies… Brands are kept in the Catalogue.",
       "sinTipos": "There are no accreditation types yet.",
-      "sinEntidades": "There are no accrediting bodies yet."
+      "sinEntidades": "There are no accrediting bodies yet.",
+      "origen": "Origin",
+      "origenTodas": "All",
+      "origenPropio": "Created by {{tenant}}",
+      "tenant": "the company",
+      "personas": "Accredited people",
+      "personasHint": "Who is accredited in this type today (with an active, unexpired document)"
     },
     "ficha": {
       "tab": "Accreditations",

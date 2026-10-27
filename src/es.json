@@ -3940,7 +3940,7 @@
       "hecho": "Hecho",
       "sinInternos": "No hay usuarios internos que asignar.",
       "acreditaciones": "Acreditaciones requeridas",
-      "sinTiposAcreditacion": "No hay tipos de acreditación activos en el catálogo.",
+      "sinTiposAcreditacion": "Nadie de la empresa tiene hoy ninguna acreditación vigente.",
       "desactivada": "desactivada",
       "acreditacionDesactivada": "Este tipo está desactivado en el catálogo: puedes quitarlo, pero no volver a pedirlo.",
       "soloCumplen": "Mostrar solo los que cumplen todos los requisitos",
@@ -3969,7 +3969,8 @@
         "cerrado": "Proyecto cerrado: la planificación queda como registro, en solo lectura.",
         "cancelado": "Proyecto cancelado:"
       },
-      "finSinInicio": "Pon antes la fecha de inicio prevista"
+      "finSinInicio": "Pon antes la fecha de inicio prevista",
+      "nadieLaTiene": "nadie la tiene hoy"
     },
     "ejecucion": {
       "kpiRevisiones": "Revisiones",
@@ -7224,9 +7225,9 @@
   "acreditaciones": {
     "tabs": {
       "aria": "Vistas de acreditaciones",
-      "documentos": "Documentos",
-      "matriz": "Matriz",
-      "pendientes": "Pendientes",
+      "documentos": "Listado y descargas",
+      "matriz": "Control de fechas",
+      "pendientes": "Renovaciones",
       "configuracion": "Configuración"
     },
     "estado": {
@@ -7252,7 +7253,7 @@
       "persona": "Persona",
       "personas": "Personas",
       "tipo": "Tipo de acreditación",
-      "tipos": "Tipos de acreditación",
+      "tipos": "Tipo de acreditación",
       "emision": "Fecha de emisión",
       "validez": "Validez",
       "fichero": "Fichero",
@@ -7297,7 +7298,7 @@
       "documento": "Documento",
       "renovacion": "Renovación",
       "personasHelp": "Internos de la casa, activos. Un mismo documento puede acreditar a varias personas con las mismas fechas.",
-      "tiposHelp": "Qué habilita a hacer el documento.",
+      "tiposHelp": "Qué habilita a hacer el documento: uno por documento.",
       "buscarPersona": "Buscar persona…",
       "buscarTipo": "Buscar tipo de acreditación…",
       "elegirEntidad": "Elige quién lo emite",
@@ -7310,7 +7311,8 @@
       "sustituirHelp": "El fichero nuevo sustituye al actual en cuanto lo eliges.",
       "renuevaHelp": "Opcional: el documento de empresa anterior al que sustituye. El anterior deja de avisar.",
       "noRenuevaNinguno": "No renueva a ninguno",
-      "crear": "Dar de alta"
+      "crear": "Dar de alta",
+      "otraMarca": "ATENCIÓN: has elegido {{elegida}} como entidad acreditadora, pero el tipo de acreditación escogido más arriba está asociado a {{ligada}}. Esto no es necesariamente incorrecto, porque algunas marcas muy concretas actúan como distribuidoras y acreditadoras de otras, pero no es lo habitual. Revisa tu elección para asegurarte."
     },
     "anular": {
       "titulo": "Anular documento",
@@ -7372,7 +7374,13 @@
       "tiposNota": "Lo que una persona puede estar habilitada a hacer. Lo que está en uso no se borra: se desactiva.",
       "entidadesNota": "Quien emite documentos y no es una marca: empresas de formación, organismos certificadores… Las marcas se mantienen en el Catálogo.",
       "sinTipos": "Aún no hay tipos de acreditación.",
-      "sinEntidades": "Aún no hay entidades acreditadoras."
+      "sinEntidades": "Aún no hay entidades acreditadoras.",
+      "origen": "Origen",
+      "origenTodas": "Todas",
+      "origenPropio": "Creadas por {{tenant}}",
+      "tenant": "la empresa",
+      "personas": "Personas acreditadas",
+      "personasHint": "Quién está acreditado hoy en este tipo (con un documento activo sin caducar)"
     },
     "ficha": {
       "tab": "Acreditaciones",
