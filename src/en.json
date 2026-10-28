@@ -3545,8 +3545,8 @@
       "inicio": "Home",
       "usuarios": "Users",
       "usuariosInternos": "Internal users",
-      "usuariosColaboradores": "Collaborators",
-      "equiposTrabajo": "Teams",
+      "usuariosColaboradores": "Collaborating users",
+      "equiposTrabajo": "Work teams",
       "clientes": "Customers",
       "clientesListado": "Customers",
       "clientesContactos": "Contacts and users",
@@ -3554,7 +3554,7 @@
       "emplazamientos": "Locations",
       "repositorioSectorial": "Sector repository",
       "configuracion": "Settings",
-      "configParametros": "General parameters",
+      "configParametros": "Technical parameters",
       "configNormativa": "Standards",
       "configCampos": "Custom fields",
       "configFabricantes": "Manufacturers",
@@ -3583,14 +3583,21 @@
       "catalogo": "Technical catalogue",
       "catalogoCaracterizacion": "Characterisation",
       "solicitudesValidacion": "Validation requests",
-      "proyectosOportunidades": "Opportunities",
+      "proyectosOportunidades": "Upcoming",
       "proyectosPerdidos": "Lost",
       "configIa": "Artificial intelligence",
       "explotacionElementos": "Items",
       "explotacionActuaciones": "Actions",
       "informesDiseno": "Report design",
       "panelControl": "Dashboard",
-      "tecnologias": "Technologies"
+      "tecnologias": "Technologies",
+      "notificaciones": "Notifications",
+      "repositorioPropio": "Own repository",
+      "importacion": "Data import",
+      "calidad": "Data quality",
+      "miEmpresa": "My company",
+      "datosCuenta": "Account details",
+      "configMarca": "Brand parameters"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -3689,7 +3696,129 @@
       "informes": "Inspection reports and conformity certificates, with the tenant's brand and in the client's language. They arrive with the reports layer.",
       "documentos": "The instance's single archive: documents of clients, sites, items and inspections, with permissions per folder. The module already exists inside; the screen is missing.",
       "mailCenter": "The log of automatic notices and manual e-mails to clients, as in GestLínea. It arrives with the notices layer.",
-      "explotacion": "Cross queries with filters over items and inspections, as in GestLínea. It arrives in its own layer."
+      "explotacion": "Cross queries with filters over items and inspections, as in GestLínea. It arrives in its own layer.",
+      "tagPrevista": "Planned",
+      "notificaciones": "What's new in Everydat: improvements and changes in each release, which arrive continuously. With a badge in the menu while any is unread.",
+      "repositorioSectorial": "The documents published by manufacturers (data sheets, manuals, declarations of conformity, certificates), looked up in the sector repository without copying them.",
+      "importacion": "Bulk-load the data of a company coming from another program or from spreadsheets: clients, sites, items and their inspection history.",
+      "calidadTitulo": "Data quality improvement tools",
+      "calidad": "Find and fix incomplete, duplicated or inconsistent data, so that reports, notices and queries come out right.",
+      "datosCuenta": "What is contracted and what is used: licence, modules, limits and actual usage of the instance.",
+      "configMarca": "How the company presents itself: trade name, logo, colours, legal entity details, language and electronic signature.",
+      "notas": {
+        "notificaciones": [
+          {
+            "titulo": "Approach",
+            "puntos": [
+              "Release notes are written by Cubic, not by the company: each release ships its notes and the deployment loads them. Each user has their own read mark.",
+              "The bell in the top bar and this page read the same thing: the bell shows the latest ones and \"See all\" brings you here.",
+              "Short notes, in user language, linking to the screen that changes. They can be targeted at holders of a capability: catalogue notes only to whoever manages it."
+            ]
+          },
+          {
+            "titulo": "What it is not",
+            "puntos": [
+              "Work notices (expiries, work orders, validations) belong to the notices layer, with their own design. They may share this page in another tab, not the same list."
+            ]
+          }
+        ],
+        "repositorioSectorial": [
+          {
+            "titulo": "Today",
+            "puntos": [
+              "The manufacturer's documents are already linked from each model's record, without copying them."
+            ]
+          },
+          {
+            "titulo": "Approach",
+            "puntos": [
+              "A query by manufacturer, model and document class over what the sector contract provides; read-only, linking as in the model record.",
+              "From here, attach a document to a report or save it in a folder of the own repository.",
+              "It depends on the sector API exposing documents, which is still pending in the sector repository."
+            ]
+          }
+        ],
+        "importacion": [
+          {
+            "titulo": "Why it is visible",
+            "puntos": [
+              "It is a paid service: onboarding a new client and migrating from another program."
+            ]
+          },
+          {
+            "titulo": "Approach",
+            "puntos": [
+              "Excel templates per entity with the Everydat columns, and a wizard: upload, match columns, see errors row by row, confirm.",
+              "In order: clients, sites with their tree, items and inspections. Each step matches what is already loaded (by code or tax ID) instead of duplicating.",
+              "Models are matched against the catalogue, local and sector, as in item creation; whatever does not match enters pending validation.",
+              "Always in two steps: dry run and load. Each load is logged and can be undone entirely as long as nobody has worked on top of it.",
+              "Reuse what was done for the migration from GestLínea v1 (everydat-migracion)."
+            ]
+          },
+          {
+            "titulo": "Who sees it",
+            "puntos": [
+              "Today, only the superadmin. When the action exists, the \"import\" capability already planned in users will be born."
+            ]
+          }
+        ],
+        "calidad": [
+          {
+            "titulo": "Which checks",
+            "puntos": [
+              "Duplicates: repeated clients and contacts (same tax ID, similar name, same e-mail), with the merge the client list already has.",
+              "Incomplete items: no model or an \"unspecified\" reference, no serial number when the type asks for it, no manufacturing date when there is a service life.",
+              "Catalogue: local models already in the sector repository, references that can be merged, old pending validations.",
+              "Gaps: sites without items, items without any inspection, inspections left uncertified for a long time."
+            ]
+          },
+          {
+            "titulo": "Approach",
+            "puntos": [
+              "A list of checks with their count; each one opens the list already filtered to fix from there.",
+              "Better on the data-query cache than with its own queries.",
+              "Let the AI propose fixes and the person accept them: the AI proposes, the API executes."
+            ]
+          },
+          {
+            "titulo": "Who sees it",
+            "puntos": [
+              "Today, only the superadmin. Catalogue checks could be opened to whoever manages it."
+            ]
+          }
+        ],
+        "datosCuenta": [
+          {
+            "titulo": "What it shows",
+            "puntos": [
+              "Licence: contracted modules, internal user limit, languages and validity. It is what support sees on the Instance screen; here, read-only.",
+              "Actual usage: active internal users against the limit, active items, inspections in the period and space used by documents and photos. It is the same counter the central reads for billing.",
+              "Prices: those of the contract. When the licence is signed by the central, the central will be the source."
+            ]
+          },
+          {
+            "titulo": "Who sees it",
+            "puntos": [
+              "Only the superadmin."
+            ]
+          }
+        ],
+        "configMarca": [
+          {
+            "titulo": "Today",
+            "puntos": [
+              "Until the screen is split, these settings live in Settings › Technical parameters, in the \"Brand and language\" group: trade name, colour, issuer details, logos, default language and seal."
+            ]
+          },
+          {
+            "titulo": "When it is split",
+            "puntos": [
+              "The whole \"Brand and language\" group will come here; Technical parameters keeps projects, reports, accreditations and budget.",
+              "What the menu proposal asks for and does not exist yet: typefaces and more colours."
+            ]
+          }
+        ]
+      }
     },
     "sinPermiso": {
       "titulo": "No permission",
@@ -4468,7 +4597,7 @@
       "perdidosHint": "Discarded or expired proposals and cancelled projects: the list for winning back business."
     },
     "oportunidades": {
-      "title": "Opportunities",
+      "title": "Upcoming",
       "pestana": {
         "fechas": "Dates without proposal",
         "propuestas": "Proposals"

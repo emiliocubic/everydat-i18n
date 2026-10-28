@@ -3544,9 +3544,9 @@
     "nav": {
       "inicio": "Inicio",
       "usuarios": "Usuarios",
-      "usuariosInternos": "Internos",
-      "usuariosColaboradores": "Colaboradores",
-      "equiposTrabajo": "Equipos",
+      "usuariosInternos": "Usuarios internos",
+      "usuariosColaboradores": "Usuarios colaboradores",
+      "equiposTrabajo": "Equipos de trabajo",
       "clientes": "Clientes",
       "clientesListado": "Clientes",
       "clientesContactos": "Contactos y usuarios",
@@ -3554,7 +3554,7 @@
       "emplazamientos": "Emplazamientos",
       "repositorioSectorial": "Repositorio sectorial",
       "configuracion": "Configuración",
-      "configParametros": "Parámetros generales",
+      "configParametros": "Parámetros técnicos",
       "configNormativa": "Normativa",
       "configCampos": "Campos personalizados",
       "configFabricantes": "Fabricantes",
@@ -3583,14 +3583,21 @@
       "catalogo": "Catálogo técnico",
       "catalogoCaracterizacion": "Caracterización",
       "solicitudesValidacion": "Solicitudes de validación",
-      "proyectosOportunidades": "Oportunidades",
+      "proyectosOportunidades": "Futuros",
       "proyectosPerdidos": "Perdidos",
       "configIa": "Inteligencia artificial",
       "explotacionElementos": "Elementos",
       "explotacionActuaciones": "Actuaciones",
       "informesDiseno": "Diseño de informes",
       "panelControl": "Panel de control",
-      "tecnologias": "Tecnologías"
+      "tecnologias": "Tecnologías",
+      "notificaciones": "Notificaciones",
+      "repositorioPropio": "Repositorio propio",
+      "importacion": "Importación de datos",
+      "calidad": "Calidad de datos",
+      "miEmpresa": "Mi empresa",
+      "datosCuenta": "Datos de la cuenta",
+      "configMarca": "Parámetros de marca"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -3689,7 +3696,129 @@
       "informes": "Los informes de revisión y los certificados de conformidad, con la marca del tenant y en el idioma del cliente. Llegan con la capa de informes.",
       "documentos": "El archivo único de la instancia: documentos de clientes, emplazamientos, equipos y revisiones, con permisos por carpeta. El módulo ya existe por dentro; falta la pantalla.",
       "mailCenter": "El registro de avisos automáticos y el envío manual de correos a los clientes, como en GestLínea. Llega con la capa de avisos.",
-      "explotacion": "Consultas transversales con filtros sobre elementos y revisiones, como en GestLínea. Llega en su capa."
+      "explotacion": "Consultas transversales con filtros sobre elementos y revisiones, como en GestLínea. Llega en su capa.",
+      "tagPrevista": "Prevista",
+      "notificaciones": "Las novedades de Everydat: mejoras y cambios de cada versión, que llegan de forma continua. Con una pastilla en el menú mientras haya alguna sin leer.",
+      "repositorioSectorial": "Los documentos que publican los fabricantes (fichas técnicas, manuales, declaraciones de conformidad, certificados), consultados en el repositorio sectorial sin copiarlos.",
+      "importacion": "Cargar de golpe los datos de una empresa que llega de otro programa o de hojas de cálculo: clientes, emplazamientos, elementos y su historial de revisiones.",
+      "calidadTitulo": "Herramientas de mejora de calidad de datos",
+      "calidad": "Encontrar y corregir datos incompletos, duplicados o incoherentes, para que informes, avisos y consultas salgan bien.",
+      "datosCuenta": "Lo contratado y lo consumido: licencia, módulos, límites y uso real de la instancia.",
+      "configMarca": "Cómo se presenta la empresa: nombre comercial, logo, colores, datos de la razón social, idioma y firma electrónica.",
+      "notas": {
+        "notificaciones": [
+          {
+            "titulo": "Cómo enfocarlo",
+            "puntos": [
+              "Las novedades las escribe Cubic, no la empresa: cada versión trae su nota de novedades y el despliegue la carga. Cada usuario tiene su marca de leído.",
+              "La campana de la barra superior y esta página leen lo mismo: la campana enseña las últimas y «Ver todas» trae aquí.",
+              "Notas cortas, en lenguaje de usuario, con enlace a la pantalla que cambia. Se pueden dirigir a quien lleve una capacidad: las del catálogo, solo a quien lo gestiona."
+            ]
+          },
+          {
+            "titulo": "Lo que no es",
+            "puntos": [
+              "Los avisos del trabajo (caducidades, partes, validaciones) son de la capa de avisos, con su propio diseño. Pueden compartir esta página en otra pestaña, no la misma lista."
+            ]
+          }
+        ],
+        "repositorioSectorial": [
+          {
+            "titulo": "Hoy",
+            "puntos": [
+              "Los documentos del fabricante ya se ven enlazados desde la ficha de cada modelo, sin copiarlos."
+            ]
+          },
+          {
+            "titulo": "Cómo enfocarlo",
+            "puntos": [
+              "Una consulta por fabricante, modelo y clase de documento sobre lo que da el contrato del sectorial; solo lectura, enlazando como en la ficha de modelo.",
+              "Desde aquí, anexar un documento a un informe o guardarlo en una carpeta del repositorio propio.",
+              "Depende de que la API del sectorial exponga los documentos, que aún está por hacer en el sectorial."
+            ]
+          }
+        ],
+        "importacion": [
+          {
+            "titulo": "Por qué a la vista",
+            "puntos": [
+              "Es un servicio que se cobra: la implantación de un cliente nuevo y la migración desde otro programa."
+            ]
+          },
+          {
+            "titulo": "Cómo enfocarlo",
+            "puntos": [
+              "Plantillas de Excel por entidad con las columnas de Everydat, y un asistente: subir, casar columnas, ver los errores fila a fila y confirmar.",
+              "Por orden: clientes, emplazamientos con su árbol, elementos y revisiones. Cada paso casa con lo ya cargado (por código o CIF) en vez de duplicar.",
+              "Los modelos se casan con el catálogo, local y sectorial, como en el alta; lo que no case entra pendiente de validar.",
+              "Siempre en dos tiempos: simulación y carga. Cada carga queda registrada y se puede deshacer entera mientras nadie haya trabajado encima.",
+              "Aprovechar lo hecho en la migración desde GestLínea v1 (everydat-migracion)."
+            ]
+          },
+          {
+            "titulo": "Quién la ve",
+            "puntos": [
+              "Hoy, solo el superadmin. Cuando exista la acción nacerá la capacidad «importación», ya prevista en usuarios."
+            ]
+          }
+        ],
+        "calidad": [
+          {
+            "titulo": "Qué comprobaciones",
+            "puntos": [
+              "Duplicados: clientes y contactos repetidos (mismo CIF, nombre parecido, mismo correo), con la fusión que ya tiene el listado de clientes.",
+              "Elementos incompletos: sin modelo o con referencia «sin especificar», sin número de serie cuando el tipo lo pide, sin fecha de fabricación cuando hay vida útil.",
+              "Catálogo: modelos locales que ya están en el sectorial, referencias que se pueden unificar, altas pendientes de validar con mucha antigüedad.",
+              "Huecos: emplazamientos sin elementos, elementos sin ninguna revisión, revisiones sin certificar desde hace tiempo."
+            ]
+          },
+          {
+            "titulo": "Cómo enfocarlo",
+            "puntos": [
+              "Una lista de comprobaciones con su recuento; cada una abre el listado ya filtrado para corregir desde allí.",
+              "Mejor sobre la caché de explotación de datos que con consultas propias.",
+              "Que la IA proponga correcciones y la persona las acepte: la IA propone, la API ejecuta."
+            ]
+          },
+          {
+            "titulo": "Quién la ve",
+            "puntos": [
+              "Hoy, solo el superadmin. Las comprobaciones del catálogo podrían abrirse a quien lo gestiona."
+            ]
+          }
+        ],
+        "datosCuenta": [
+          {
+            "titulo": "Qué enseña",
+            "puntos": [
+              "Licencia: módulos contratados, límite de usuarios internos, idiomas y vigencia. Es lo que soporte ve en la pantalla Instancia; aquí, en solo lectura.",
+              "Consumo real: usuarios internos activos frente al límite, elementos activos, revisiones del periodo y espacio ocupado por documentos y fotos. Es el mismo contador que lee la central para facturar.",
+              "Precios: los del contrato. Cuando la licencia vaya firmada por la central, la central será la fuente."
+            ]
+          },
+          {
+            "titulo": "Quién la ve",
+            "puntos": [
+              "Solo el superadmin."
+            ]
+          }
+        ],
+        "configMarca": [
+          {
+            "titulo": "Hoy",
+            "puntos": [
+              "Mientras no se parta la pantalla, estos ajustes están en Configuración › Parámetros técnicos, en el grupo «Marca e idioma»: nombre comercial, color, datos del emisor, logos, idioma por defecto y sello."
+            ]
+          },
+          {
+            "titulo": "Cuando se parta",
+            "puntos": [
+              "Vendrá aquí el grupo «Marca e idioma» entero; Parámetros técnicos se queda con proyectos, informes, acreditaciones y presupuesto.",
+              "Lo que pide la propuesta de menú y aún no existe: tipografías y más colores."
+            ]
+          }
+        ]
+      }
     },
     "sinPermiso": {
       "titulo": "Sin permiso",
@@ -4468,7 +4597,7 @@
       "perdidosHint": "Propuestas descartadas o caducadas y proyectos cancelados: la lista del rescate comercial."
     },
     "oportunidades": {
-      "title": "Oportunidades",
+      "title": "Futuros",
       "pestana": {
         "fechas": "Fechas sin propuesta",
         "propuestas": "Propuestas"

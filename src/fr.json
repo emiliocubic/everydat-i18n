@@ -3437,8 +3437,8 @@
       "inicio": "Accueil",
       "usuarios": "Utilisateurs",
       "usuariosInternos": "Utilisateurs internes",
-      "usuariosColaboradores": "Collaborateurs",
-      "equiposTrabajo": "Équipes",
+      "usuariosColaboradores": "Utilisateurs collaborateurs",
+      "equiposTrabajo": "Équipes de travail",
       "clientes": "Clients",
       "clientesListado": "Clients",
       "clientesContactos": "Contacts et utilisateurs",
@@ -3446,7 +3446,7 @@
       "emplazamientos": "Sites",
       "repositorioSectorial": "Référentiel sectoriel",
       "configuracion": "Configuration",
-      "configParametros": "Paramètres généraux",
+      "configParametros": "Paramètres techniques",
       "configNormativa": "Normes",
       "configCampos": "Champs personnalisés",
       "configFabricantes": "Fabricants",
@@ -3475,14 +3475,21 @@
       "catalogo": "Catalogue technique",
       "catalogoCaracterizacion": "Caractérisation",
       "solicitudesValidacion": "Demandes de validation",
-      "proyectosOportunidades": "Opportunités",
+      "proyectosOportunidades": "À venir",
       "proyectosPerdidos": "Perdus",
       "configIa": "Intelligence artificielle",
       "explotacionElementos": "Éléments",
       "explotacionActuaciones": "Interventions",
       "informesDiseno": "Conception des rapports",
       "panelControl": "Tableau de bord",
-      "tecnologias": "Technologies"
+      "tecnologias": "Technologies",
+      "notificaciones": "Notifications",
+      "repositorioPropio": "Dépôt propre",
+      "importacion": "Import de données",
+      "calidad": "Qualité des données",
+      "miEmpresa": "Mon entreprise",
+      "datosCuenta": "Données du compte",
+      "configMarca": "Paramètres de marque"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -4344,7 +4351,7 @@
       "perdidosHint": "Propositions écartées ou expirées et projets annulés : la liste pour relancer le commercial."
     },
     "oportunidades": {
-      "title": "Opportunités",
+      "title": "À venir",
       "pestana": {
         "fechas": "Dates sans proposition",
         "propuestas": "Propositions"
