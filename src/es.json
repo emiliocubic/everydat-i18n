@@ -7466,7 +7466,9 @@
       "cola": "Cola de trabajos",
       "correo": "Correo de salida",
       "sectorial": "Repositorio sectorial",
-      "disco": "Espacio libre"
+      "disco": "Espacio libre",
+      "cache": "Caché delante de la web",
+      "php_consola": "PHP de consola (el comando php)"
     },
     "necesita": {
       "ext": "obligatoria",
@@ -7476,7 +7478,8 @@
       "noto": "instalada",
       "cron": "cada minuto",
       "cola": "alguien que la procese",
-      "sectorial": "responde"
+      "sectorial": "responde",
+      "cache": "que no guarde la API"
     },
     "aviso": {
       "entorno": "No está en producción. En una instancia de cliente, APP_ENV tiene que ser production.",
@@ -7515,7 +7518,11 @@
       "sectorial_sin": "No hay conexión configurada con el repositorio sectorial (SECTORIAL_BASE_URL y SECTORIAL_TOKEN).",
       "sectorial_falla": "El sectorial no responde: {{mensaje}}",
       "disco": "Queda libre el {{pct}} % del disco. Las fotos y los documentos de cada instancia crecen: pide más espacio.",
-      "disco_desconocido": "No se ha podido leer el espacio libre."
+      "disco_desconocido": "No se ha podido leer el espacio libre.",
+      "cache_varnish": "Hay un Varnish delante de la web. No estorba, porque la API responde «no-cache, private», pero si algo se ve desactualizado, sospecha de él.",
+      "base_mariadb_recomendada": "Funciona y aún recibe parches, pero la versión recomendada es MariaDB 11.8. En Dinahosting se cambia con la imagen del VPS, que mueve todos sus hostings: antes, comprobar que GestLínea funciona con ella.",
+      "php_consola": "El comando php a secas es la versión {{version}}, con la que Everydat no arranca. En el crontab y al lanzar artisan usa siempre la ruta completa del PHP 8.4 o superior ({{binario}}), o pide al hosting que lo cambie para la cuenta.",
+      "php_consola_desconocido": "No se ha podido saber qué versión es el comando php a secas. En el crontab y al lanzar artisan usa la ruta completa del PHP 8.4 o superior ({{binario}})."
     }
   }
 }

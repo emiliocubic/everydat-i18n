@@ -7466,7 +7466,9 @@
       "cola": "Job queue",
       "correo": "Outgoing mail",
       "sectorial": "Sector repository",
-      "disco": "Free space"
+      "disco": "Free space",
+      "cache": "Cache in front of the web",
+      "php_consola": "Command-line PHP (the php command)"
     },
     "necesita": {
       "ext": "required",
@@ -7476,7 +7478,8 @@
       "noto": "installed",
       "cron": "every minute",
       "cola": "someone processing it",
-      "sectorial": "responds"
+      "sectorial": "responds",
+      "cache": "not to store the API"
     },
     "aviso": {
       "entorno": "Not in production. In a customer instance APP_ENV must be production.",
@@ -7515,7 +7518,11 @@
       "sectorial_sin": "No connection to the sector repository is configured (SECTORIAL_BASE_URL and SECTORIAL_TOKEN).",
       "sectorial_falla": "The sector repository does not respond: {{mensaje}}",
       "disco": "{{pct}} % of the disk is free. Photos and documents of each instance keep growing: ask for more space.",
-      "disco_desconocido": "Could not read the free space."
+      "disco_desconocido": "Could not read the free space.",
+      "cache_varnish": "There is a Varnish in front of the web. It does no harm, because the API answers «no-cache, private», but if something looks outdated, suspect it.",
+      "base_mariadb_recomendada": "It works and still gets patches, but the recommended version is MariaDB 11.8. At Dinahosting it is changed with the VPS image, which moves all its hostings: check first that GestLínea works with it.",
+      "php_consola": "The plain php command is version {{version}}, which Everydat cannot run on. In the crontab and when running artisan always use the full path of PHP 8.4 or later ({{binario}}), or ask the hosting to change it for the account.",
+      "php_consola_desconocido": "Could not tell which version the plain php command is. In the crontab and when running artisan use the full path of PHP 8.4 or later ({{binario}})."
     }
   }
 }

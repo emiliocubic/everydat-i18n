@@ -7046,7 +7046,9 @@
       "cola": "File d'attente",
       "correo": "Courriel sortant",
       "sectorial": "Référentiel sectoriel",
-      "disco": "Espace libre"
+      "disco": "Espace libre",
+      "cache": "Cache devant le web",
+      "php_consola": "PHP en ligne de commande (la commande php)"
     },
     "necesita": {
       "ext": "obligatoire",
@@ -7056,7 +7058,8 @@
       "noto": "installée",
       "cron": "chaque minute",
       "cola": "quelqu'un pour la traiter",
-      "sectorial": "répond"
+      "sectorial": "répond",
+      "cache": "ne pas garder l'API"
     },
     "aviso": {
       "entorno": "Pas en production. Dans une instance client, APP_ENV doit valoir production.",
@@ -7095,7 +7098,11 @@
       "sectorial_sin": "Aucune connexion au référentiel sectoriel n'est configurée (SECTORIAL_BASE_URL et SECTORIAL_TOKEN).",
       "sectorial_falla": "Le référentiel sectoriel ne répond pas : {{mensaje}}",
       "disco": "Il reste {{pct}} % du disque libre. Les photos et documents de chaque instance augmentent : demandez plus d'espace.",
-      "disco_desconocido": "Impossible de lire l'espace libre."
+      "disco_desconocido": "Impossible de lire l'espace libre.",
+      "cache_varnish": "Un Varnish est placé devant le web. Il ne gêne pas, car l'API répond « no-cache, private », mais si quelque chose semble périmé, soupçonnez-le.",
+      "base_mariadb_recomendada": "Cela fonctionne et reçoit encore des correctifs, mais la version recommandée est MariaDB 11.8. Chez Dinahosting, on la change avec l'image du VPS, ce qui déplace tous ses hébergements : vérifiez d'abord que GestLínea fonctionne avec.",
+      "php_consola": "La commande php seule est la version {{version}}, avec laquelle Everydat ne démarre pas. Dans le crontab et pour lancer artisan, utilisez toujours le chemin complet du PHP 8.4 ou plus ({{binario}}), ou demandez à l'hébergeur de la changer pour le compte.",
+      "php_consola_desconocido": "Impossible de savoir quelle version est la commande php seule. Dans le crontab et pour lancer artisan, utilisez le chemin complet du PHP 8.4 ou plus ({{binario}})."
     }
   }
 }
