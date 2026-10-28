@@ -3481,7 +3481,8 @@
       "explotacionElementos": "Éléments",
       "explotacionActuaciones": "Interventions",
       "informesDiseno": "Conception des rapports",
-      "panelControl": "Tableau de bord"
+      "panelControl": "Tableau de bord",
+      "tecnologias": "Technologies"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -6989,5 +6990,112 @@
     "desactivado": "désactivé",
     "sinDocumentos": "Aucun document.",
     "sinCoincidencias": "Aucun résultat"
+  },
+  "tecnologias": {
+    "intro": "Ce dont Everydat a besoin sur le serveur et ce qu'il a. Sert aussi à vérifier si l'hébergement proposé par un client convient : il suffit d'installer Everydat et d'ouvrir cette page.",
+    "soloSoporte": "Seul le support voit cette page.",
+    "errorCarga": "Les vérifications n'ont pas pu être faites.",
+    "comprobando": "Vérification…",
+    "recomprobar": "Vérifier à nouveau",
+    "comprobado": "Vérifié à {{hora}}",
+    "todoBien": "tout va bien",
+    "ultimo": "dernier : {{cuando}}",
+    "resumen": {
+      "ok_one": "{{count}} bien",
+      "ok_other": "{{count}} bien",
+      "aviso_one": "{{count}} avertissement",
+      "aviso_other": "{{count}} avertissements",
+      "error_one": "{{count}} échec",
+      "error_other": "{{count}} échecs"
+    },
+    "estado": {
+      "ok": "Bien",
+      "aviso": "Avertissement",
+      "error": "Échec"
+    },
+    "col": {
+      "estado": "État",
+      "comprobacion": "Vérification",
+      "necesita": "Requis",
+      "tiene": "Actuel"
+    },
+    "grupo": {
+      "aplicacion": "Application",
+      "php": "PHP du web",
+      "extensiones": "Extensions PHP",
+      "base": "Base de données",
+      "pdf": "PDF des rapports",
+      "segundo_plano": "Cron et file d'attente",
+      "correo": "Courriel",
+      "conexiones": "Connexions",
+      "disco": "Disque"
+    },
+    "clave": {
+      "entorno": "Environnement (APP_ENV)",
+      "https": "HTTPS (APP_URL)",
+      "php": "Version de PHP",
+      "subida": "Envoi max. (upload_max_filesize)",
+      "post": "Requête max. (post_max_size)",
+      "memoria": "Mémoire (memory_limit)",
+      "tiempo": "Durée max. (max_execution_time)",
+      "base": "Moteur et version",
+      "pdf": "Moteur PDF",
+      "proc_open": "proc_open (lancer Chromium)",
+      "noto": "Police Noto Sans (extraits et bons d'intervention)",
+      "cron": "Cron chaque minute",
+      "cola": "File d'attente",
+      "correo": "Courriel sortant",
+      "sectorial": "Référentiel sectoriel",
+      "disco": "Espace libre"
+    },
+    "necesita": {
+      "ext": "obligatoire",
+      "ext_opcional": "facultative",
+      "pdf": "un PDF de test",
+      "proc_open": "activée",
+      "noto": "installée",
+      "cron": "chaque minute",
+      "cola": "quelqu'un pour la traiter",
+      "sectorial": "répond"
+    },
+    "aviso": {
+      "entorno": "Pas en production. Dans une instance client, APP_ENV doit valoir production.",
+      "debug": "APP_DEBUG est activé en production : les erreurs montrent des détails internes à tout le monde. Mettez-le à false dans le .env.",
+      "https": "APP_URL n'est pas en https. Les cookies de session de l'admin ont besoin de https.",
+      "php": "Everydat a besoin de PHP 8.4.1 ou plus.",
+      "subida": "La gestion documentaire accepte des fichiers jusqu'à {{mb}} Mo, mais le serveur les coupe avant : un fichier plus gros échouera avec une erreur confuse. Demandez de passer upload_max_filesize à {{mb}} Mo de façon permanente.",
+      "post": "post_max_size doit être d'au moins {{mb}} Mo et pas inférieur à upload_max_filesize, car la requête transporte le fichier et un peu plus. Demandez environ 60 Mo.",
+      "memoria": "Sous 512 Mo, l'aperçu d'un long rapport avec photos peut manquer de mémoire. Demandez d'augmenter memory_limit.",
+      "tiempo": "Une requête longue, comme l'aperçu d'un gros rapport, peut être coupée. Demandez au moins 120 s.",
+      "ext_falta": "L'extension {{ext}} manque : Everydat ne fonctionne pas sans elle.",
+      "ext_gd": "Sans GD, les photos des rapports partent en taille d'origine (PDF bien plus lourds) et la signature du contrôleur n'est pas réduite.",
+      "ext_curl": "Sans cURL, les appels aux autres services (référentiel sectoriel, IA) passent par une voie plus lente.",
+      "ext_exif": "Sans EXIF, les photos de l'appli ne gardent ni l'heure ni la position GPS de la prise.",
+      "base_mariadb": "Cette version de MariaDB ne reçoit plus de correctifs de sécurité. Passez à MariaDB 11.8 avant d'avoir de vrais clients. Chez Dinahosting, cela se fait en changeant l'image du VPS, ce qui déplace tous ses hébergements : vérifiez d'abord que GestLínea fonctionne avec.",
+      "base_mysql": "Une MySQL antérieure à la 8.0 n'est plus prise en charge. Demandez MySQL 8 ou MariaDB 11.8.",
+      "base_pgsql": "Everydat est testé avec MySQL et MariaDB, pas avec PostgreSQL.",
+      "base_sqlite": "SQLite ne sert que pour le développement et les tests.",
+      "base_falla": "Impossible d'interroger la base de données : {{mensaje}}",
+      "pdf_falso": "Il n'y a pas de moteur PDF : mettez INFORMES_CONVERSOR=chromium (le Chromium du serveur) ou gotenberg dans le .env.",
+      "pdf_gotenberg": "Gotenberg ne répond pas à cette adresse.",
+      "pdf_chromium": "Chromium n'a pas pu faire de PDF de test : {{mensaje}}. Si l'erreur parle du sandbox, ajoutez CHROMIUM_SIN_SANDBOX=true au .env.",
+      "proc_open": "proc_open est désactivée, PHP ne peut donc pas lancer Chromium. Demandez à l'hébergeur de la retirer de disable_functions.",
+      "noto": "La police Noto Sans manque : les extraits et les bons d'intervention utiliseront une police proche. Demandez le paquet fonts-noto-core.",
+      "noto_desconocido": "Impossible de vérifier les polices installées (fc-list).",
+      "cron_nunca": "Il n'y a pas de cron : émettre un rapport reste en file d'attente pour toujours et les tâches planifiées ne tournent pas (cache d'exploitation, nettoyage des conversations de Sherpa). Ajoutez ces deux lignes au crontab du compte, avec le PHP 8.4 ou plus en ligne de commande (chez Dinahosting, ~/.bin/php) :",
+      "cron_parado": "Le cron n'est pas passé depuis plus de 5 minutes. Vérifiez le crontab du compte ; il devrait contenir ces lignes :",
+      "cron_php": "Le cron utilise PHP {{php}} et il faut 8.4.1 ou plus. Changez le chemin de PHP dans le crontab.",
+      "cola_sync": "La file d'attente est en mode sync : les rapports sont émis dans la requête elle-même pendant que l'utilisateur attend. Un long rapport avec photos peut être coupé, et il n'y a pas de nouvelles tentatives.",
+      "cola_sin_uso": "Aucune tâche n'a encore été traitée, on ne sait donc pas si quelque chose traite la file. Normalement, c'est la deuxième de ces lignes du crontab :",
+      "cola_parada": "{{pendientes}} tâche(s) en attente et la plus ancienne attend depuis {{minutos}} min : personne ne traite la file, l'émission d'un rapport est bloquée. Vérifiez la deuxième ligne du crontab :",
+      "cola_memoria": "La file tourne avec peu de mémoire : un long rapport avec photos peut échouer à l'émission. Lancez-la avec -d memory_limit=512M, comme dans la deuxième ligne :",
+      "cola_fallidos": "{{fallidos}} tâche(s) ont échoué ces 7 derniers jours. Consultez la table failed_jobs ou le journal de Laravel.",
+      "cola_falla": "Impossible d'interroger la file d'attente : {{mensaje}}",
+      "correo_log": "Le courriel ne part pas : il est écrit dans le journal (MAIL_MAILER=log). Configurez le SMTP de la boîte fournie par le client.",
+      "sectorial_sin": "Aucune connexion au référentiel sectoriel n'est configurée (SECTORIAL_BASE_URL et SECTORIAL_TOKEN).",
+      "sectorial_falla": "Le référentiel sectoriel ne répond pas : {{mensaje}}",
+      "disco": "Il reste {{pct}} % du disque libre. Les photos et documents de chaque instance augmentent : demandez plus d'espace.",
+      "disco_desconocido": "Impossible de lire l'espace libre."
+    }
   }
 }

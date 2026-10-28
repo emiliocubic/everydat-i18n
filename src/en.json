@@ -3589,7 +3589,8 @@
       "explotacionElementos": "Items",
       "explotacionActuaciones": "Actions",
       "informesDiseno": "Report design",
-      "panelControl": "Dashboard"
+      "panelControl": "Dashboard",
+      "tecnologias": "Technologies"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -7409,5 +7410,112 @@
     "desactivado": "deactivated",
     "sinDocumentos": "There are no documents.",
     "sinCoincidencias": "No matches"
+  },
+  "tecnologias": {
+    "intro": "What Everydat needs from the server and what it has. Also useful to check whether a hosting offered by a customer will do: install Everydat and open this page.",
+    "soloSoporte": "Only support can see this page.",
+    "errorCarga": "The checks could not be run.",
+    "comprobando": "Checking…",
+    "recomprobar": "Check again",
+    "comprobado": "Checked at {{hora}}",
+    "todoBien": "all good",
+    "ultimo": "last: {{cuando}}",
+    "resumen": {
+      "ok_one": "{{count}} fine",
+      "ok_other": "{{count}} fine",
+      "aviso_one": "{{count}} warning",
+      "aviso_other": "{{count}} warnings",
+      "error_one": "{{count}} failure",
+      "error_other": "{{count}} failures"
+    },
+    "estado": {
+      "ok": "Fine",
+      "aviso": "Warning",
+      "error": "Failing"
+    },
+    "col": {
+      "estado": "Status",
+      "comprobacion": "Check",
+      "necesita": "Needs",
+      "tiene": "Has"
+    },
+    "grupo": {
+      "aplicacion": "Application",
+      "php": "Web PHP",
+      "extensiones": "PHP extensions",
+      "base": "Database",
+      "pdf": "Report PDFs",
+      "segundo_plano": "Cron and queue",
+      "correo": "Mail",
+      "conexiones": "Connections",
+      "disco": "Disk"
+    },
+    "clave": {
+      "entorno": "Environment (APP_ENV)",
+      "https": "HTTPS (APP_URL)",
+      "php": "PHP version",
+      "subida": "Max upload (upload_max_filesize)",
+      "post": "Max request (post_max_size)",
+      "memoria": "Memory (memory_limit)",
+      "tiempo": "Max time (max_execution_time)",
+      "base": "Engine and version",
+      "pdf": "PDF engine",
+      "proc_open": "proc_open (launch Chromium)",
+      "noto": "Noto Sans font (extracts and work orders)",
+      "cron": "Cron every minute",
+      "cola": "Job queue",
+      "correo": "Outgoing mail",
+      "sectorial": "Sector repository",
+      "disco": "Free space"
+    },
+    "necesita": {
+      "ext": "required",
+      "ext_opcional": "optional",
+      "pdf": "a test PDF",
+      "proc_open": "enabled",
+      "noto": "installed",
+      "cron": "every minute",
+      "cola": "someone processing it",
+      "sectorial": "responds"
+    },
+    "aviso": {
+      "entorno": "Not in production. In a customer instance APP_ENV must be production.",
+      "debug": "APP_DEBUG is on in production: errors show internal details to anyone. Set it to false in .env.",
+      "https": "APP_URL is not https. The admin session cookies need https.",
+      "php": "Everydat needs PHP 8.4.1 or later.",
+      "subida": "Document management accepts files up to {{mb}} MB, but the server cuts them earlier: a bigger one will fail with a confusing error. Ask for upload_max_filesize to be raised to {{mb}} MB permanently.",
+      "post": "post_max_size must be at least {{mb}} MB and not lower than upload_max_filesize, because the request carries the file and a bit more. Ask for about 60 MB.",
+      "memoria": "Below 512 MB, previewing a long report with photos may run out of memory. Ask for a higher memory_limit.",
+      "tiempo": "A long request, such as previewing a big report, may be cut off. Ask for at least 120 s.",
+      "ext_falta": "The {{ext}} extension is missing: Everydat does not work without it.",
+      "ext_gd": "Without GD, report photos go at full size (much heavier PDFs) and the inspector's signature is not resized.",
+      "ext_curl": "Without cURL, calls to other services (sector repository, AI) take a slower path.",
+      "ext_exif": "Without EXIF, app photos do not keep the time or GPS position where they were taken.",
+      "base_mariadb": "This MariaDB version no longer gets security patches. Move to MariaDB 11.8 before having real customers. At Dinahosting this means changing the VPS image, which moves all its hostings: check first that GestLínea works with it.",
+      "base_mysql": "MySQL older than 8.0 is no longer supported. Ask for MySQL 8 or MariaDB 11.8.",
+      "base_pgsql": "Everydat is tested with MySQL and MariaDB, not with PostgreSQL.",
+      "base_sqlite": "SQLite is only for development and tests.",
+      "base_falla": "The database cannot be queried: {{mensaje}}",
+      "pdf_falso": "There is no PDF engine: set INFORMES_CONVERSOR=chromium (the server's Chromium) or gotenberg in .env.",
+      "pdf_gotenberg": "Gotenberg does not respond at that address.",
+      "pdf_chromium": "Chromium could not make a test PDF: {{mensaje}}. If the error mentions the sandbox, add CHROMIUM_SIN_SANDBOX=true to .env.",
+      "proc_open": "proc_open is disabled, so PHP cannot launch Chromium. Ask the hosting to remove it from disable_functions.",
+      "noto": "The Noto Sans font is missing: extracts and work orders will use a similar one. Ask for the fonts-noto-core package.",
+      "noto_desconocido": "Could not check which fonts are installed (fc-list).",
+      "cron_nunca": "There is no cron: issuing a report stays queued forever and scheduled tasks do not run (analytics cache, cleanup of Sherpa conversations). Add these two lines to the account's crontab, with the command-line PHP 8.4 or later (at Dinahosting, ~/.bin/php):",
+      "cron_parado": "The cron has not run for more than 5 minutes. Check the account's crontab; it should have these lines:",
+      "cron_php": "The cron uses PHP {{php}}, and it must be 8.4.1 or later. Change the PHP path in the crontab.",
+      "cola_sync": "The queue is in sync mode: reports are issued inside the request itself while the user waits. A long report with photos may time out, and there are no retries.",
+      "cola_sin_uso": "No job has been processed yet, so it is unknown whether anything processes the queue. Usually it is the second of these crontab lines:",
+      "cola_parada": "{{pendientes}} job(s) waiting and the oldest has been there {{minutos}} min: nothing processes the queue, so issuing a report is stuck. Check the second crontab line:",
+      "cola_memoria": "The queue runs with little memory: a long report with photos may fail when issued. Run it with -d memory_limit=512M, as in the second line:",
+      "cola_fallidos": "{{fallidos}} job(s) failed in the last 7 days. Check the failed_jobs table or the Laravel log.",
+      "cola_falla": "The queue cannot be queried: {{mensaje}}",
+      "correo_log": "Mail is not sent: it is written to the log (MAIL_MAILER=log). Set up the SMTP of the mailbox the customer provides.",
+      "sectorial_sin": "No connection to the sector repository is configured (SECTORIAL_BASE_URL and SECTORIAL_TOKEN).",
+      "sectorial_falla": "The sector repository does not respond: {{mensaje}}",
+      "disco": "{{pct}} % of the disk is free. Photos and documents of each instance keep growing: ask for more space.",
+      "disco_desconocido": "Could not read the free space."
+    }
   }
 }
