@@ -7359,7 +7359,7 @@
       "documentos": "List and downloads",
       "matriz": "Date control",
       "pendientes": "Renewals",
-      "configuracion": "Settings"
+      "configuracion": "Customisation"
     },
     "estado": {
       "vigente": "Valid",
@@ -7387,14 +7387,12 @@
       "tipos": "Accreditation type",
       "emision": "Issue date",
       "validez": "Valid until",
-      "fichero": "File",
-      "renuevaA": "Renews"
+      "fichero": "File"
     },
     "filtros": {
       "titular": {
-        "empresa": "Includes company",
-        "personas": "People only",
-        "empresa_personas": "Company and people"
+        "empresa": "Company",
+        "personas": "People"
       },
       "todosTipos": "All types",
       "todasEntidades": "All bodies",
@@ -7404,9 +7402,7 @@
     "marcas": {
       "anulado": "Voided",
       "enInforme": "In a report",
-      "enInformeHint": "It went into an issued report: it cannot be edited or deleted.",
-      "renovado": "Renewed",
-      "renovadoHint": "Another document renews it: it no longer warns."
+      "enInformeHint": "It went into an issued report: it cannot be edited or deleted."
     },
     "notas": {
       "anulado": "Voided on {{fecha}}. It counts for nothing (situations, warnings or matrix), but it still exists for the reports that link to it.",
@@ -7425,25 +7421,32 @@
       "subNuevo": "New document",
       "avisoDatos": "Do not upload documents with highly protected data (medical certificates, social security registration…). If you do, it is under your company's responsibility.",
       "titular": "Who it accredits",
-      "aQuien": "People and types",
+      "aQuien": "People and type",
       "documento": "Document",
-      "renovacion": "Renewal",
-      "personasHelp": "Active in-house staff. One document can accredit several people with the same dates.",
-      "tiposHelp": "What the document qualifies them to do: one per document.",
+      "personasHelp": "In-house staff, active. Each person is one accreditation (one row of the list) with this same document.",
+      "tiposHelp": "What the document qualifies for: one per document. Only types for people are offered.",
       "buscarPersona": "Search person…",
       "buscarTipo": "Search accreditation type…",
       "elegirEntidad": "Choose who issues it",
-      "entidadHelp": "A body from the list or a brand from the catalogue. If it is missing, add it first (Settings or Catalogue).",
+      "entidadHelp": "A body from the list or a brand from the catalogue. If it is not there, add it first (Customisation or Catalogue).",
       "nombreHelp": "What the document is called, e.g. «Work at height course diploma, 8 h».",
       "validezHelp": "As stated on the document. If left empty, it does not expire.",
       "ficheroHelp": "A single file, PDF or image. If it has two sides, in a single PDF.",
       "faltaFichero": "Attach the document file.",
       "sustituir": "Replace file",
       "sustituirHelp": "The new file replaces the current one as soon as you choose it.",
-      "renuevaHelp": "Optional: the previous company document it replaces. The previous one stops warning.",
-      "noRenuevaNinguno": "Does not renew any",
       "crear": "Add",
-      "otraMarca": "WARNING: you have chosen {{elegida}} as the accrediting body, but the accreditation type chosen above is linked to {{ligada}}. This is not necessarily wrong, because a few specific brands act as distributors and accreditors for others, but it is unusual. Check your choice to be sure."
+      "otraMarca": "WARNING: you have chosen {{elegida}} as the accrediting body, but the accreditation type chosen above is linked to {{ligada}}. This is not necessarily wrong, because a few specific brands act as distributors and accreditors for others, but it is unusual. Check your choice to be sure.",
+      "queAcredita": "What it accredits",
+      "tiposEmpresaHelp": "Optional: what it accredits the company for, e.g. \"PETZL installer company\". Only types for companies are offered.",
+      "sinTipo": "No type",
+      "compartido": "This document accredits {{n}} holders: each one is a row of the list, and what you change here applies to all of them.",
+      "fechas": {
+        "emisionFutura": "The issue date cannot be in the future.",
+        "emisionRara": "Check the year of the issue date.",
+        "validezAnterior": "The expiry date must be after the issue date.",
+        "validezRara": "Check the year of the expiry date."
+      }
     },
     "anular": {
       "titulo": "Void document",
@@ -7468,17 +7471,11 @@
       "celda": "Person's situation in the type",
       "documentosQueCubren": "Documents that cover it",
       "vaciaTitulo": "The matrix is empty",
-      "sinTipos": "There are no active accreditation types (or the ones set in the parameters are not active).",
-      "sinPersonas": "There are no active in-house staff who are people."
-    },
-    "pendientes": {
-      "personas": "People",
-      "empresa": "Company documents",
-      "nadaPersonas": "No one has accreditations expiring soon or expired.",
-      "nadaEmpresa": "No company document is expiring soon or expired.",
-      "renovar": "Add the renewal",
-      "verDocumento": "View document",
-      "verPersona": "Go to the person"
+      "sinTipos": "There are no active accreditation types for people (or the ones set in the parameters are not active).",
+      "sinPersonas": "There are no active in-house staff who are people.",
+      "empresaTitulo": "Company",
+      "personasTitulo": "Staff",
+      "empresaVacia": "The company has no accreditations."
     },
     "config": {
       "tipos": "Accreditation types",
@@ -7502,7 +7499,7 @@
       "desactivado": "Deactivated.",
       "borrarTipo": "Delete the type «{{nombre}}»? If it is in use it is not deleted: it is deactivated.",
       "borrarEntidad": "Delete the body «{{nombre}}»?",
-      "tiposNota": "What a person can be qualified to do. What is in use is not deleted: it is deactivated.",
+      "tiposNota": "What a person or the company can be qualified to do. What is in use is not deleted: it is deactivated.",
       "entidadesNota": "Who issues documents and is not a brand: training companies, certification bodies… Brands are kept in the Catalogue.",
       "sinTipos": "There are no accreditation types yet.",
       "sinEntidades": "There are no accrediting bodies yet.",
@@ -7511,7 +7508,16 @@
       "origenPropio": "Created by {{tenant}}",
       "tenant": "the company",
       "personas": "Accredited people",
-      "personasHint": "Who is accredited in this type today (with an active, unexpired document)"
+      "personasHint": "Who is accredited in this type today (with an active, unexpired document)",
+      "para": "For",
+      "paraPersonas": "Accreditation for people",
+      "paraEmpresa": "Accreditation for the company",
+      "paraHelp": "Who it is offered to when adding a document: at least one.",
+      "paraValor": {
+        "personas": "People",
+        "empresa": "Company",
+        "ambos": "People and company"
+      }
     },
     "ficha": {
       "tab": "Accreditations",
@@ -7524,21 +7530,57 @@
       "sinSituaciones": "This person has no accreditations, now or in the past."
     },
     "vacio": {
-      "titulo": "There are no accreditation documents",
+      "titulo": "There are no accreditations",
       "hint": "Add the first one or change the filters."
     },
-    "buscar": "Search by name…",
+    "buscar": "Search by document or person…",
     "noSeRenueva": "Not renewed",
     "noSeRenuevaHint": "Marked as «not renewed»: it does not warn even if it expires.",
-    "noSeRenuevaEmpresaHint": "It stops warning and showing in Pending. It keeps its real status and can be removed whenever you want.",
-    "noSeRenuevaPersonaHint": "For this person in this type: it stops warning and showing in Pending. It is removed by itself if a new document covering them is uploaded.",
+    "noSeRenuevaPersonaHint": "For the accreditation behind this status: it stops warning and goes to the end of Renewals. It keeps its real status and can be removed whenever you want.",
     "noCaduca": "No expiry",
     "hasta": "until {{fecha}}",
     "umbral": "Expiring soon: fewer than {{n}} days.",
     "baja": "inactive",
     "desactivado": "deactivated",
     "sinDocumentos": "There are no documents.",
-    "sinCoincidencias": "No matches"
+    "sinCoincidencias": "No matches",
+    "quitar": {
+      "titulo": "Remove accreditation",
+      "mensaje": "Remove {{titular}} from \"{{nombre}}\"? The document stays for the other holders ({{count}}).",
+      "hecho": "Accreditation removed. The document stays for the others."
+    },
+    "renovar": {
+      "titulo": "Renew accreditation",
+      "boton": "Renew",
+      "queSeRenueva": "What is renewed",
+      "documentoActual": "Current document",
+      "documentoNuevo": "New document",
+      "emitido": "issued on {{fecha}}",
+      "entidadHelp": "It can be a different one from the previous document.",
+      "nombreHelp": "The previous document's name; change it if the new one is called differently.",
+      "hecho": "Accreditation renewed."
+    },
+    "listado": {
+      "anteriores": "Previous renewals: {{count}}",
+      "anterioresTitulo": "Previous renewals"
+    },
+    "renovaciones": {
+      "situacion": "Status",
+      "grupo": {
+        "caducado": "Expired",
+        "proximo": "Expiring soon",
+        "vigente": "Valid",
+        "sin_caducidad": "No expiry",
+        "no_renueva": "Not renewed"
+      },
+      "documento": "Document",
+      "mostrarNoRenueva": "Show the ones not being renewed",
+      "buscar": "Search by holder, type or document…",
+      "vacio": "There are no accreditations.",
+      "avisar": "Warn again",
+      "avisarHint": "Removes \"not renewed\": it warns again when it expires.",
+      "avisaDeNuevo": "It warns again."
+    }
   },
   "tecnologias": {
     "intro": "What Everydat needs from the server and what it has. Also useful to check whether a hosting offered by a customer will do: install Everydat and open this page.",

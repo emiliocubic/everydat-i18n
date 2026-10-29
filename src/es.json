@@ -7359,7 +7359,7 @@
       "documentos": "Listado y descargas",
       "matriz": "Control de fechas",
       "pendientes": "Renovaciones",
-      "configuracion": "Configuración"
+      "configuracion": "Personalización"
     },
     "estado": {
       "vigente": "Vigente",
@@ -7387,14 +7387,12 @@
       "tipos": "Tipo de acreditación",
       "emision": "Fecha de emisión",
       "validez": "Validez",
-      "fichero": "Fichero",
-      "renuevaA": "Renueva a"
+      "fichero": "Fichero"
     },
     "filtros": {
       "titular": {
-        "empresa": "Incluye empresa",
-        "personas": "Solo personas",
-        "empresa_personas": "Empresa y personas"
+        "empresa": "Empresa",
+        "personas": "Personas"
       },
       "todosTipos": "Todos los tipos",
       "todasEntidades": "Todas las entidades",
@@ -7404,9 +7402,7 @@
     "marcas": {
       "anulado": "Anulado",
       "enInforme": "En informe",
-      "enInformeHint": "Ha ido en un informe emitido: no se puede editar ni borrar.",
-      "renovado": "Renovado",
-      "renovadoHint": "Otro documento lo renueva: ya no avisa."
+      "enInformeHint": "Ha ido en un informe emitido: no se puede editar ni borrar."
     },
     "notas": {
       "anulado": "Anulado el {{fecha}}. No cuenta para nada (situaciones, avisos ni matriz), pero sigue existiendo para los informes que lo enlazan.",
@@ -7425,25 +7421,32 @@
       "subNuevo": "Alta de documento",
       "avisoDatos": "No subas documentos con datos de alta protección (certificados médicos, afiliación a la Seguridad Social…). Si los subes, es bajo la responsabilidad de tu empresa.",
       "titular": "A quién acredita",
-      "aQuien": "Personas y tipos",
+      "aQuien": "Personas y tipo",
       "documento": "Documento",
-      "renovacion": "Renovación",
-      "personasHelp": "Internos de la casa, activos. Un mismo documento puede acreditar a varias personas con las mismas fechas.",
-      "tiposHelp": "Qué habilita a hacer el documento: uno por documento.",
+      "personasHelp": "Internos de la casa, activos. Cada persona es una acreditación (una fila del listado) con este mismo documento.",
+      "tiposHelp": "Qué habilita a hacer el documento: uno por documento. Solo salen los tipos para personas.",
       "buscarPersona": "Buscar persona…",
       "buscarTipo": "Buscar tipo de acreditación…",
       "elegirEntidad": "Elige quién lo emite",
-      "entidadHelp": "Una entidad del listado o una marca del catálogo. Si no está, dala de alta antes (Configuración o Catálogo).",
+      "entidadHelp": "Una entidad del listado o una marca del catálogo. Si no está, dala de alta antes (Personalización o Catálogo).",
       "nombreHelp": "Cómo se llama el documento, por ejemplo «Diploma curso trabajos en altura, 8 h».",
       "validezHelp": "La que figura en el documento. Si se deja vacía, no caduca.",
       "ficheroHelp": "Un único fichero, PDF o imagen. Si tiene anverso y reverso, en un solo PDF.",
       "faltaFichero": "Adjunta el fichero del documento.",
       "sustituir": "Sustituir fichero",
       "sustituirHelp": "El fichero nuevo sustituye al actual en cuanto lo eliges.",
-      "renuevaHelp": "Opcional: el documento de empresa anterior al que sustituye. El anterior deja de avisar.",
-      "noRenuevaNinguno": "No renueva a ninguno",
       "crear": "Dar de alta",
-      "otraMarca": "ATENCIÓN: has elegido {{elegida}} como entidad acreditadora, pero el tipo de acreditación escogido más arriba está asociado a {{ligada}}. Esto no es necesariamente incorrecto, porque algunas marcas muy concretas actúan como distribuidoras y acreditadoras de otras, pero no es lo habitual. Revisa tu elección para asegurarte."
+      "otraMarca": "ATENCIÓN: has elegido {{elegida}} como entidad acreditadora, pero el tipo de acreditación escogido más arriba está asociado a {{ligada}}. Esto no es necesariamente incorrecto, porque algunas marcas muy concretas actúan como distribuidoras y acreditadoras de otras, pero no es lo habitual. Revisa tu elección para asegurarte.",
+      "queAcredita": "Qué acredita",
+      "tiposEmpresaHelp": "Opcional: qué acredita a la empresa, por ejemplo «Empresa instaladora PETZL». Solo salen los tipos para empresa.",
+      "sinTipo": "Sin tipo",
+      "compartido": "Este documento acredita a {{n}} titulares: cada uno es una fila del listado, y lo que cambies aquí vale para todos.",
+      "fechas": {
+        "emisionFutura": "La fecha de emisión no puede ser futura.",
+        "emisionRara": "Revisa el año de la fecha de emisión.",
+        "validezAnterior": "La fecha de validez tiene que ser posterior a la de emisión.",
+        "validezRara": "Revisa el año de la fecha de validez."
+      }
     },
     "anular": {
       "titulo": "Anular documento",
@@ -7468,17 +7471,11 @@
       "celda": "Situación de la persona en el tipo",
       "documentosQueCubren": "Documentos que la cubren",
       "vaciaTitulo": "La matriz está vacía",
-      "sinTipos": "No hay tipos de acreditación activos (o los fijados en los parámetros no lo están).",
-      "sinPersonas": "No hay internos activos que sean personas."
-    },
-    "pendientes": {
-      "personas": "Personas",
-      "empresa": "Documentos de empresa",
-      "nadaPersonas": "Ninguna persona tiene acreditaciones próximas a caducar o caducadas.",
-      "nadaEmpresa": "Ningún documento de empresa está próximo a caducar o caducado.",
-      "renovar": "Dar de alta la renovación",
-      "verDocumento": "Ver documento",
-      "verPersona": "Ir a la persona"
+      "sinTipos": "No hay tipos de acreditación para personas activos (o los fijados en los parámetros no lo están).",
+      "sinPersonas": "No hay internos activos que sean personas.",
+      "empresaTitulo": "Empresa",
+      "personasTitulo": "Personal",
+      "empresaVacia": "La empresa no tiene acreditaciones."
     },
     "config": {
       "tipos": "Tipos de acreditación",
@@ -7502,7 +7499,7 @@
       "desactivado": "Desactivado.",
       "borrarTipo": "¿Borrar el tipo «{{nombre}}»? Si está en uso no se borra: se desactiva.",
       "borrarEntidad": "¿Borrar la entidad «{{nombre}}»?",
-      "tiposNota": "Lo que una persona puede estar habilitada a hacer. Lo que está en uso no se borra: se desactiva.",
+      "tiposNota": "Lo que una persona o la empresa puede estar habilitada a hacer. Lo que está en uso no se borra: se desactiva.",
       "entidadesNota": "Quien emite documentos y no es una marca: empresas de formación, organismos certificadores… Las marcas se mantienen en el Catálogo.",
       "sinTipos": "Aún no hay tipos de acreditación.",
       "sinEntidades": "Aún no hay entidades acreditadoras.",
@@ -7511,7 +7508,16 @@
       "origenPropio": "Creadas por {{tenant}}",
       "tenant": "la empresa",
       "personas": "Personas acreditadas",
-      "personasHint": "Quién está acreditado hoy en este tipo (con un documento activo sin caducar)"
+      "personasHint": "Quién está acreditado hoy en este tipo (con un documento activo sin caducar)",
+      "para": "Para",
+      "paraPersonas": "Acreditación para personas",
+      "paraEmpresa": "Acreditación para empresa",
+      "paraHelp": "A quién se ofrece en el alta: al menos uno.",
+      "paraValor": {
+        "personas": "Personas",
+        "empresa": "Empresa",
+        "ambos": "Personas y empresa"
+      }
     },
     "ficha": {
       "tab": "Acreditaciones",
@@ -7524,21 +7530,57 @@
       "sinSituaciones": "Esta persona no tiene ni ha tenido acreditaciones."
     },
     "vacio": {
-      "titulo": "No hay documentos acreditativos",
+      "titulo": "No hay acreditaciones",
       "hint": "Da de alta el primero o cambia los filtros."
     },
-    "buscar": "Buscar por nombre…",
+    "buscar": "Buscar por documento o persona…",
     "noSeRenueva": "No se renueva",
     "noSeRenuevaHint": "Marcado como «no se renueva»: no avisa aunque caduque.",
-    "noSeRenuevaEmpresaHint": "Deja de avisar y de salir en Pendientes. Conserva su estado real y se puede quitar cuando quieras.",
-    "noSeRenuevaPersonaHint": "Para esta persona en este tipo: deja de avisar y de salir en Pendientes. Se quita solo si se sube un documento nuevo que la cubra.",
+    "noSeRenuevaPersonaHint": "Para la acreditación que da esta situación: deja de avisar y pasa al final de Renovaciones. Conserva su estado real y se puede quitar cuando quieras.",
     "noCaduca": "No caduca",
     "hasta": "hasta {{fecha}}",
     "umbral": "Próximo a caducar: menos de {{n}} días.",
     "baja": "baja",
     "desactivado": "desactivado",
     "sinDocumentos": "No hay documentos.",
-    "sinCoincidencias": "Sin coincidencias"
+    "sinCoincidencias": "Sin coincidencias",
+    "quitar": {
+      "titulo": "Quitar acreditación",
+      "mensaje": "¿Quitar a {{titular}} de «{{nombre}}»? El documento sigue para los demás titulares ({{count}}).",
+      "hecho": "Acreditación quitada. El documento sigue para los demás."
+    },
+    "renovar": {
+      "titulo": "Renovar acreditación",
+      "boton": "Renovar",
+      "queSeRenueva": "Qué se renueva",
+      "documentoActual": "Documento actual",
+      "documentoNuevo": "Documento nuevo",
+      "emitido": "emitido el {{fecha}}",
+      "entidadHelp": "Puede ser otra que la del documento anterior.",
+      "nombreHelp": "Sale el del documento anterior; cámbialo si el nuevo se llama distinto.",
+      "hecho": "Acreditación renovada."
+    },
+    "listado": {
+      "anteriores": "Renovaciones anteriores: {{count}}",
+      "anterioresTitulo": "Renovaciones anteriores"
+    },
+    "renovaciones": {
+      "situacion": "Situación",
+      "grupo": {
+        "caducado": "Caducada",
+        "proximo": "Próxima a caducar",
+        "vigente": "Vigente",
+        "sin_caducidad": "Sin caducidad",
+        "no_renueva": "No se renueva"
+      },
+      "documento": "Documento",
+      "mostrarNoRenueva": "Mostrar las que no se renuevan",
+      "buscar": "Buscar por titular, tipo o documento…",
+      "vacio": "No hay acreditaciones.",
+      "avisar": "Volver a avisar",
+      "avisarHint": "Quita «no se renueva»: vuelve a avisar cuando caduque.",
+      "avisaDeNuevo": "Vuelve a avisar."
+    }
   },
   "tecnologias": {
     "intro": "Lo que Everydat necesita del servidor y lo que tiene. Sirve también para ver si vale el hosting que propone un cliente: basta con instalar Everydat y abrir esta página.",

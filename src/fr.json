@@ -6817,7 +6817,7 @@
       "documentos": "Liste et téléchargements",
       "matriz": "Suivi des dates",
       "pendientes": "Renouvellements",
-      "configuracion": "Configuration"
+      "configuracion": "Personnalisation"
     },
     "estado": {
       "vigente": "En vigueur",
@@ -6845,14 +6845,12 @@
       "tipos": "Type d'habilitation",
       "emision": "Date d'émission",
       "validez": "Validité",
-      "fichero": "Fichier",
-      "renuevaA": "Renouvelle"
+      "fichero": "Fichier"
     },
     "filtros": {
       "titular": {
-        "empresa": "Inclut l'entreprise",
-        "personas": "Personnes seulement",
-        "empresa_personas": "Entreprise et personnes"
+        "empresa": "Entreprise",
+        "personas": "Personnes"
       },
       "todosTipos": "Tous les types",
       "todasEntidades": "Tous les organismes",
@@ -6862,9 +6860,7 @@
     "marcas": {
       "anulado": "Annulé",
       "enInforme": "Dans un rapport",
-      "enInformeHint": "Il figure dans un rapport émis : il ne peut être ni modifié ni supprimé.",
-      "renovado": "Renouvelé",
-      "renovadoHint": "Un autre document le renouvelle : il n'alerte plus."
+      "enInformeHint": "Il figure dans un rapport émis : il ne peut être ni modifié ni supprimé."
     },
     "notas": {
       "anulado": "Annulé le {{fecha}}. Il ne compte plus pour rien (situations, alertes, matrice), mais il existe toujours pour les rapports qui le citent.",
@@ -6883,25 +6879,32 @@
       "subNuevo": "Création du document",
       "avisoDatos": "Ne déposez pas de documents contenant des données hautement protégées (certificats médicaux, affiliation à la sécurité sociale…). Si vous le faites, c'est sous la responsabilité de votre entreprise.",
       "titular": "Qui il habilite",
-      "aQuien": "Personnes et types",
+      "aQuien": "Personnes et type",
       "documento": "Document",
-      "renovacion": "Renouvellement",
-      "personasHelp": "Personnel interne actif. Un même document peut habiliter plusieurs personnes avec les mêmes dates.",
-      "tiposHelp": "Ce que le document permet de faire : un par document.",
+      "personasHelp": "Personnel interne, actif. Chaque personne est une habilitation (une ligne de la liste) avec ce même document.",
+      "tiposHelp": "Ce que le document permet de faire : un par document. Seuls les types pour personnes sont proposés.",
       "buscarPersona": "Rechercher une personne…",
       "buscarTipo": "Rechercher un type d'habilitation…",
       "elegirEntidad": "Choisissez l'émetteur",
-      "entidadHelp": "Un organisme de la liste ou une marque du catalogue. S'il manque, créez-le d'abord (Configuration ou Catalogue).",
+      "entidadHelp": "Un organisme de la liste ou une marque du catalogue. S'il n'y est pas, créez-le d'abord (Personnalisation ou Catalogue).",
       "nombreHelp": "Le nom du document, par exemple « Diplôme travaux en hauteur, 8 h ».",
       "validezHelp": "Celle indiquée sur le document. Vide, il n'expire pas.",
       "ficheroHelp": "Un seul fichier, PDF ou image. Recto-verso dans un seul PDF.",
       "faltaFichero": "Joignez le fichier du document.",
       "sustituir": "Remplacer le fichier",
       "sustituirHelp": "Le nouveau fichier remplace l'actuel dès que vous le choisissez.",
-      "renuevaHelp": "Facultatif : le document d'entreprise précédent qu'il remplace. Le précédent n'alerte plus.",
-      "noRenuevaNinguno": "Ne renouvelle aucun document",
       "crear": "Créer",
-      "otraMarca": "ATTENTION : vous avez choisi {{elegida}} comme organisme accréditeur, mais le type d'habilitation choisi plus haut est associé à {{ligada}}. Ce n'est pas forcément incorrect, car quelques marques très précises agissent comme distributeurs et accréditeurs d'autres marques, mais ce n'est pas habituel. Vérifiez votre choix."
+      "otraMarca": "ATTENTION : vous avez choisi {{elegida}} comme organisme accréditeur, mais le type d'habilitation choisi plus haut est associé à {{ligada}}. Ce n'est pas forcément incorrect, car quelques marques très précises agissent comme distributeurs et accréditeurs d'autres marques, mais ce n'est pas habituel. Vérifiez votre choix.",
+      "queAcredita": "Ce qu'il habilite",
+      "tiposEmpresaHelp": "Facultatif : ce pour quoi il habilite l'entreprise, par exemple « Entreprise installatrice PETZL ». Seuls les types pour entreprise sont proposés.",
+      "sinTipo": "Sans type",
+      "compartido": "Ce document habilite {{n}} titulaires : chacun est une ligne de la liste, et ce que vous modifiez ici vaut pour tous.",
+      "fechas": {
+        "emisionFutura": "La date de délivrance ne peut pas être future.",
+        "emisionRara": "Vérifiez l'année de la date de délivrance.",
+        "validezAnterior": "La date de validité doit être postérieure à la date de délivrance.",
+        "validezRara": "Vérifiez l'année de la date de validité."
+      }
     },
     "anular": {
       "titulo": "Annuler le document",
@@ -6926,17 +6929,11 @@
       "celda": "Situation de la personne pour ce type",
       "documentosQueCubren": "Documents qui la couvrent",
       "vaciaTitulo": "La matrice est vide",
-      "sinTipos": "Aucun type d'habilitation actif (ou ceux fixés dans les paramètres ne le sont pas).",
-      "sinPersonas": "Aucun membre du personnel interne actif."
-    },
-    "pendientes": {
-      "personas": "Personnes",
-      "empresa": "Documents d'entreprise",
-      "nadaPersonas": "Personne n'a d'habilitation expirant bientôt ou expirée.",
-      "nadaEmpresa": "Aucun document d'entreprise n'expire bientôt ni n'est expiré.",
-      "renovar": "Créer le renouvellement",
-      "verDocumento": "Voir le document",
-      "verPersona": "Aller à la personne"
+      "sinTipos": "Il n'y a pas de types d'habilitation pour personnes actifs (ou ceux fixés dans les paramètres ne le sont pas).",
+      "sinPersonas": "Aucun membre du personnel interne actif.",
+      "empresaTitulo": "Entreprise",
+      "personasTitulo": "Personnel",
+      "empresaVacia": "L'entreprise n'a pas d'habilitations."
     },
     "config": {
       "tipos": "Types d'habilitation",
@@ -6960,7 +6957,7 @@
       "desactivado": "Désactivé.",
       "borrarTipo": "Supprimer le type « {{nombre}} » ? S'il est utilisé, il n'est pas supprimé : il est désactivé.",
       "borrarEntidad": "Supprimer l'organisme « {{nombre}} » ?",
-      "tiposNota": "Ce qu'une personne peut être habilitée à faire. Ce qui est utilisé ne se supprime pas : il se désactive.",
+      "tiposNota": "Ce qu'une personne ou l'entreprise peut être habilitée à faire. Ce qui est utilisé n'est pas supprimé : il est désactivé.",
       "entidadesNota": "Les émetteurs qui ne sont pas des marques : organismes de formation, certificateurs… Les marques se gèrent dans le Catalogue.",
       "sinTipos": "Aucun type d'habilitation pour l'instant.",
       "sinEntidades": "Aucun organisme émetteur pour l'instant.",
@@ -6969,7 +6966,16 @@
       "origenPropio": "Créées par {{tenant}}",
       "tenant": "l'entreprise",
       "personas": "Personnes habilitées",
-      "personasHint": "Qui est habilité aujourd'hui dans ce type (avec un document actif non expiré)"
+      "personasHint": "Qui est habilité aujourd'hui dans ce type (avec un document actif non expiré)",
+      "para": "Pour",
+      "paraPersonas": "Habilitation pour personnes",
+      "paraEmpresa": "Habilitation pour l'entreprise",
+      "paraHelp": "À qui il est proposé lors de l'ajout : au moins un.",
+      "paraValor": {
+        "personas": "Personnes",
+        "empresa": "Entreprise",
+        "ambos": "Personnes et entreprise"
+      }
     },
     "ficha": {
       "tab": "Habilitations",
@@ -6982,21 +6988,57 @@
       "sinSituaciones": "Cette personne n'a et n'a eu aucune habilitation."
     },
     "vacio": {
-      "titulo": "Aucun document d'habilitation",
+      "titulo": "Il n'y a pas d'habilitations",
       "hint": "Créez le premier ou modifiez les filtres."
     },
-    "buscar": "Rechercher par nom…",
+    "buscar": "Rechercher par document ou personne…",
     "noSeRenueva": "Non renouvelé",
     "noSeRenuevaHint": "Marqué « non renouvelé » : n'alerte pas même s'il expire.",
-    "noSeRenuevaEmpresaHint": "N'alerte plus et ne figure plus dans En attente. Garde son état réel et peut être retiré à tout moment.",
-    "noSeRenuevaPersonaHint": "Pour cette personne et ce type : n'alerte plus et ne figure plus dans En attente. Se retire seul si un nouveau document la couvre.",
+    "noSeRenuevaPersonaHint": "Pour l'habilitation qui donne cette situation : elle n'alerte plus et passe à la fin des Renouvellements. Elle garde son état réel et peut être retirée quand vous voulez.",
     "noCaduca": "N'expire pas",
     "hasta": "jusqu'au {{fecha}}",
     "umbral": "Expire bientôt : moins de {{n}} jours.",
     "baja": "inactif",
     "desactivado": "désactivé",
     "sinDocumentos": "Aucun document.",
-    "sinCoincidencias": "Aucun résultat"
+    "sinCoincidencias": "Aucun résultat",
+    "quitar": {
+      "titulo": "Retirer l'habilitation",
+      "mensaje": "Retirer {{titular}} de « {{nombre}} » ? Le document reste pour les autres titulaires ({{count}}).",
+      "hecho": "Habilitation retirée. Le document reste pour les autres."
+    },
+    "renovar": {
+      "titulo": "Renouveler l'habilitation",
+      "boton": "Renouveler",
+      "queSeRenueva": "Ce qui est renouvelé",
+      "documentoActual": "Document actuel",
+      "documentoNuevo": "Nouveau document",
+      "emitido": "délivré le {{fecha}}",
+      "entidadHelp": "Il peut être différent de celui du document précédent.",
+      "nombreHelp": "Celui du document précédent ; changez-le si le nouveau s'appelle autrement.",
+      "hecho": "Habilitation renouvelée."
+    },
+    "listado": {
+      "anteriores": "Renouvellements précédents : {{count}}",
+      "anterioresTitulo": "Renouvellements précédents"
+    },
+    "renovaciones": {
+      "situacion": "Situation",
+      "grupo": {
+        "caducado": "Expirée",
+        "proximo": "Expire bientôt",
+        "vigente": "En vigueur",
+        "sin_caducidad": "Sans expiration",
+        "no_renueva": "Non renouvelée"
+      },
+      "documento": "Document",
+      "mostrarNoRenueva": "Afficher celles qui ne sont pas renouvelées",
+      "buscar": "Rechercher par titulaire, type ou document…",
+      "vacio": "Il n'y a pas d'habilitations.",
+      "avisar": "Alerter à nouveau",
+      "avisarHint": "Retire « non renouvelée » : elle alerte à nouveau quand elle expire.",
+      "avisaDeNuevo": "Elle alerte à nouveau."
+    }
   },
   "tecnologias": {
     "intro": "Ce dont Everydat a besoin sur le serveur et ce qu'il a. Sert aussi à vérifier si l'hébergement proposé par un client convient : il suffit d'installer Everydat et d'ouvrir cette page.",
