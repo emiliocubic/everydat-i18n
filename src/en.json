@@ -6933,6 +6933,7 @@
     "avisoArchivada": "The template is archived: unarchive it to edit it.",
     "avisoLectura": "You cannot edit this template.",
     "noCabenAviso": "The summary table columns do not fit the chosen paper: {{lista}}. Until they fit, the template is not saved. Open it and remove a column, or change the paper or the text size.",
+    "textosQueFaltanAviso": "This template uses variable texts that no longer exist: {{lista}}. On paper their slot is left empty. Remove them from the texts or create them again in Reusable variables with the same key.",
     "estados": {
       "borrador": "Draft",
       "publicada": "Published",

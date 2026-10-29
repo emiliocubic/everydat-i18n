@@ -6933,6 +6933,7 @@
     "avisoArchivada": "La plantilla está archivada: desarchívala para editarla.",
     "avisoLectura": "No puedes editar esta plantilla.",
     "noCabenAviso": "Las columnas de la tabla-resumen no caben en el papel elegido: {{lista}}. Mientras no quepan, la plantilla no se guarda. Ábrela y quita alguna columna, o cambia el papel o el tamaño de letra.",
+    "textosQueFaltanAviso": "Esta plantilla usa textos variables que ya no existen: {{lista}}. En el papel su hueco sale vacío. Quítalos de los textos o vuelve a crearlos en Variables reutilizables con la misma clave.",
     "estados": {
       "borrador": "Borrador",
       "publicada": "Publicada",

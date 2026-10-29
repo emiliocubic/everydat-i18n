@@ -6391,6 +6391,7 @@
     "avisoArchivada": "Le modèle est archivé : désarchivez-le pour le modifier.",
     "avisoLectura": "Vous ne pouvez pas modifier ce modèle.",
     "noCabenAviso": "Les colonnes du tableau récapitulatif ne tiennent pas sur le papier choisi : {{lista}}. Tant qu’elles ne tiennent pas, le modèle n’est pas enregistré. Ouvrez-le et retirez une colonne, ou changez le papier ou la taille du texte.",
+    "textosQueFaltanAviso": "Ce modèle utilise des textes variables qui n’existent plus : {{lista}}. Sur le papier, leur emplacement reste vide. Retirez-les des textes ou recréez-les dans Variables réutilisables avec la même clé.",
     "estados": {
       "borrador": "Brouillon",
       "publicada": "Publié",
