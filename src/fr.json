@@ -6904,7 +6904,10 @@
         "emisionRara": "Vérifiez l'année de la date de délivrance.",
         "validezAnterior": "La date de validité doit être postérieure à la date de délivrance.",
         "validezRara": "Vérifiez l'année de la date de validité."
-      }
+      },
+      "yaTiene": "Cela ressemble à un renouvellement. Si c’en est un, renouvelez-le depuis sa ligne : le nouveau document est lié au précédent et l’alerte s’arrête. Sinon, continuez.",
+      "yaTieneFila": "{{titular}} a déjà « {{tipo}} » jusqu’au {{fecha}}.",
+      "yaTieneFilaSinCaducidad": "{{titular}} a déjà « {{tipo}} », sans expiration."
     },
     "anular": {
       "titulo": "Annuler le document",

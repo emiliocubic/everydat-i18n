@@ -7446,7 +7446,10 @@
         "emisionRara": "Check the year of the issue date.",
         "validezAnterior": "The expiry date must be after the issue date.",
         "validezRara": "Check the year of the expiry date."
-      }
+      },
+      "yaTiene": "This looks like a renewal. If it is, renew it from its row: the new document is linked to the previous one and stops the reminder. If not, carry on.",
+      "yaTieneFila": "{{titular}} already has “{{tipo}}” until {{fecha}}.",
+      "yaTieneFilaSinCaducidad": "{{titular}} already has “{{tipo}}”, with no expiry."
     },
     "anular": {
       "titulo": "Void document",

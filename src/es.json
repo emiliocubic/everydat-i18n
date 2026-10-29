@@ -7446,7 +7446,10 @@
         "emisionRara": "Revisa el año de la fecha de emisión.",
         "validezAnterior": "La fecha de validez tiene que ser posterior a la de emisión.",
         "validezRara": "Revisa el año de la fecha de validez."
-      }
+      },
+      "yaTiene": "Esto parece una renovación. Si lo es, renuévala desde su fila: el documento nuevo queda unido al anterior y deja de avisar. Si no, sigue con el alta.",
+      "yaTieneFila": "{{titular}} ya tiene «{{tipo}}» hasta el {{fecha}}.",
+      "yaTieneFilaSinCaducidad": "{{titular}} ya tiene «{{tipo}}», sin caducidad."
     },
     "anular": {
       "titulo": "Anular documento",
