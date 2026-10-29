@@ -7835,7 +7835,7 @@
     },
     "listado": {
       "anteriores": "Renovaciones anteriores: {{count}}",
-      "anterioresTitulo": "Renovaciones anteriores"
+      "anterioresTitulo": "Versiones anteriores de esta acreditación"
     },
     "renovaciones": {
       "situacion": "Situación",

@@ -7293,7 +7293,7 @@
     },
     "listado": {
       "anteriores": "Renouvellements précédents : {{count}}",
-      "anterioresTitulo": "Renouvellements précédents"
+      "anterioresTitulo": "Versions précédentes de cette accréditation"
     },
     "renovaciones": {
       "situacion": "Situation",

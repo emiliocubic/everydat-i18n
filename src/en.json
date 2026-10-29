@@ -7835,7 +7835,7 @@
     },
     "listado": {
       "anteriores": "Previous renewals: {{count}}",
-      "anterioresTitulo": "Previous renewals"
+      "anterioresTitulo": "Previous versions of this credential"
     },
     "renovaciones": {
       "situacion": "Status",
