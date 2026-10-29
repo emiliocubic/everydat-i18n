@@ -6957,7 +6957,8 @@
       "cambios": "Unpublished changes",
       "publicada": "Published",
       "nueva": "New template",
-      "vacio": "No templates yet"
+      "vacio": "No templates yet",
+      "nuevoTexto": "New variable text"
     },
     "linea": {
       "titulo": "Change visual line",
@@ -7065,7 +7066,9 @@
         "firmante": "Signatory",
         "contador": "Results",
         "campo": "Report fields",
-        "elemento": "Item"
+        "elemento": "Item",
+        "tipo": "Item type",
+        "texto": "Variable texts"
       }
     },
     "texto": {
@@ -7489,6 +7492,134 @@
       },
       "colocacionHint": "By default the table follows the previous section (below a text block) and is not listed in the contents.",
       "sinTerminarAviso": "Unfinished dynamic table: {{lista}}. The template is not saved until you choose its item types and columns."
+    },
+    "tabs": {
+      "aria": "Report design",
+      "plantillas": "Templates",
+      "variables": "Reusable variables"
+    },
+    "variables": {
+      "listado": {
+        "casoUso": "Use case",
+        "clave": "Variable name",
+        "utilidad": "Purpose",
+        "vacio": "No variable texts yet",
+        "editar": "Edit",
+        "eliminar": "Delete"
+      },
+      "eliminarTitulo": "Delete variable text",
+      "eliminarConfirmar": "«{{nombre}}» will be deleted. No template uses it, so no report changes.",
+      "eliminado": "Variable text deleted",
+      "guardado": "Variable text saved",
+      "nuevo": "New variable text",
+      "sub": "Variable text · shared by all your templates",
+      "aviso": "Check the warnings before saving",
+      "uso": {
+        "titulo": "Templates that use it",
+        "desc": "A change here applies to all of them in the next reports. Reports already issued do not change.",
+        "ninguna": "No template uses it yet."
+      },
+      "para": {
+        "titulo": "What it is for",
+        "desc": "This is how you will see it in «Insert data → Variable texts», in any text of any template.",
+        "casoUso": "Use case",
+        "casoUsoPh": "For example: Expiry clause",
+        "clave": "Variable name",
+        "claveAlta": "Suggested from the use case. It cannot be changed later: templates use it to find it.",
+        "claveFija": "It cannot be changed: templates use it to find it.",
+        "utilidad": "Purpose",
+        "utilidadPh": "Explain, in plain language, when and what this text is used for."
+      },
+      "modo": {
+        "titulo": "How the text is chosen",
+        "por_tipo": "By item type",
+        "por_tipoAyuda": "On an item sheet, the text of its type is shown. Outside the sheets, one paragraph for each type inspected in the report.",
+        "condicion": "By conditions",
+        "condicionAyuda": "A single text is shown: that of the first case that is met or, if none is met, the default one. Conditions can look at the report or at the item on the sheet."
+      },
+      "textos": {
+        "titulo": "Texts",
+        "descTipo": "«Insert data → Item type» adds the data of each type: validity, service life, standards…",
+        "descCondicion": "Cases are checked in order and the first one that is met wins.",
+        "descIdioma": "If a language is left empty, Spanish is used.",
+        "defecto": "Default text",
+        "defectoTipo": "For all types without a variant.",
+        "defectoCondicion": "If no case is met. Leave it empty if nothing should be shown in that case.",
+        "texto": "Text"
+      },
+      "variante": {
+        "titulo": "Variant {{n}}",
+        "sinAplicar": "Not applied to anything yet",
+        "seUsaPara": "Used for",
+        "vacia": "Choose at least one family or type.",
+        "sombra": "Already resolved by an earlier variant: {{tipos}}.",
+        "anadir": "Add a variant for other types",
+        "ayuda": "A type named in a variant wins over its family. If it fits several, the first one is used.",
+        "quitar": "Remove variant {{n}}"
+      },
+      "caso": {
+        "titulo": "Case {{n}}",
+        "primero": "Checked first",
+        "siguiente": "If no earlier case is met",
+        "seUsaSi": "Used if",
+        "subir": "Check earlier",
+        "quitar": "Remove case {{n}}",
+        "anadir": "Add case"
+      },
+      "alcance": {
+        "familia": "Family {{nombre}}",
+        "todaFamilia": "The whole «{{nombre}}» family",
+        "tipoBorrado": "Deleted type",
+        "familiaBorrada": "Deleted family",
+        "buscar": "Choose a family or a type…",
+        "buscarOtro": "Add another family or type…",
+        "sinResultados": "Nothing matches",
+        "quitar": "Remove {{nombre}}"
+      },
+      "cond": {
+        "cumplir": "Must be met",
+        "todas": "All",
+        "alguna": "Any",
+        "anadir": "Add condition",
+        "vacia": "Add at least one condition.",
+        "incompleta": "Complete this condition.",
+        "quitar": "Remove the condition",
+        "dato": "Data",
+        "operador": "Condition",
+        "delInforme": "Of the report",
+        "delEquipo": "Of the item on the sheet",
+        "soloFicha": "Item conditions are only met when the text is inside an item sheet.",
+        "caracteristica": "Feature",
+        "valor": "Value",
+        "elige": "Choose…",
+        "campoBorrado": "Deleted feature",
+        "hechos": {
+          "equipos": "Inspected items",
+          "resultado": "Inspection results",
+          "idioma": "Report language",
+          "tipo": "Type or family",
+          "caduca": "Its type expires",
+          "resultado_equipo": "Result of its inspection",
+          "caracteristica": "Specific feature"
+        },
+        "ops": {
+          "incluye": "include",
+          "no_incluye": "do not include",
+          "hay": "there is some",
+          "no_hay": "there is none",
+          "es": "is",
+          "no_es": "is not",
+          "si": "yes",
+          "no": "no",
+          "relleno": "is filled in",
+          "vacio": "is empty"
+        },
+        "resultados": {
+          "apto": "Pass",
+          "no_apto": "Fail",
+          "no_revisada": "Not inspected"
+        }
+      }
     }
   },
   "acreditaciones": {

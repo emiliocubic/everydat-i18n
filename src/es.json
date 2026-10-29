@@ -6957,7 +6957,8 @@
       "cambios": "Cambios sin publicar",
       "publicada": "Publicada",
       "nueva": "Nueva plantilla",
-      "vacio": "Aún no hay plantillas"
+      "vacio": "Aún no hay plantillas",
+      "nuevoTexto": "Nuevo texto variable"
     },
     "linea": {
       "titulo": "Cambiar de línea visual",
@@ -7065,7 +7066,9 @@
         "firmante": "Firmante",
         "contador": "Resultados",
         "campo": "Campos del informe",
-        "elemento": "Elemento"
+        "elemento": "Elemento",
+        "tipo": "Tipo de elemento",
+        "texto": "Textos variables"
       }
     },
     "texto": {
@@ -7489,6 +7492,134 @@
       },
       "colocacionHint": "De serie la tabla sigue al apartado anterior (debajo de un bloque de texto) y no sale en el índice.",
       "sinTerminarAviso": "Tabla dinámica sin terminar: {{lista}}. La plantilla no se guarda hasta que elijas sus tipos de elemento y sus columnas."
+    },
+    "tabs": {
+      "aria": "Diseño de informes",
+      "plantillas": "Plantillas",
+      "variables": "Variables reutilizables"
+    },
+    "variables": {
+      "listado": {
+        "casoUso": "Caso de uso",
+        "clave": "Nombre de variable",
+        "utilidad": "Utilidad",
+        "vacio": "Todavía no hay textos variables",
+        "editar": "Editar",
+        "eliminar": "Eliminar"
+      },
+      "eliminarTitulo": "Eliminar texto variable",
+      "eliminarConfirmar": "Se elimina «{{nombre}}». Ninguna plantilla lo usa, así que no cambia ningún informe.",
+      "eliminado": "Texto variable eliminado",
+      "guardado": "Texto variable guardado",
+      "nuevo": "Nuevo texto variable",
+      "sub": "Texto variable · común a todas tus plantillas",
+      "aviso": "Revisa los avisos antes de guardar",
+      "uso": {
+        "titulo": "Plantillas que lo usan",
+        "desc": "Un cambio aquí se aplica a todas ellas en los próximos informes. Los informes ya emitidos no cambian.",
+        "ninguna": "Ninguna plantilla lo usa todavía."
+      },
+      "para": {
+        "titulo": "Para qué sirve",
+        "desc": "Así lo verás en «Insertar dato → Textos variables», en cualquier texto de cualquier plantilla.",
+        "casoUso": "Caso de uso",
+        "casoUsoPh": "Por ejemplo: Coletilla sobre caducidad",
+        "clave": "Nombre de variable",
+        "claveAlta": "Se propone a partir del caso de uso. No se puede cambiar después: las plantillas lo usan para encontrarlo.",
+        "claveFija": "No se puede cambiar: las plantillas lo usan para encontrarlo.",
+        "utilidad": "Utilidad",
+        "utilidadPh": "Explica, en lenguaje natural, cuándo y para qué se usa este texto."
+      },
+      "modo": {
+        "titulo": "Cómo se elige el texto",
+        "por_tipo": "Según el tipo de elemento",
+        "por_tipoAyuda": "En la ficha de un elemento sale el texto de su tipo. Fuera de las fichas, un párrafo por cada tipo revisado en el informe.",
+        "condicion": "Según condiciones",
+        "condicionAyuda": "Sale un solo texto: el del primer caso que se cumpla o, si no se cumple ninguno, el de por defecto. Las condiciones pueden mirar el informe o el elemento de la ficha."
+      },
+      "textos": {
+        "titulo": "Textos",
+        "descTipo": "«Insertar dato → Tipo de elemento» pone los datos de cada tipo: validez, vida útil, normas…",
+        "descCondicion": "Los casos se comprueban en orden y gana el primero que se cumpla.",
+        "descIdioma": "Si un idioma queda vacío, se usa el español.",
+        "defecto": "Texto por defecto",
+        "defectoTipo": "Para todos los tipos que no tengan una variante.",
+        "defectoCondicion": "Si no se cumple ningún caso. Déjalo vacío si en ese caso no debe salir nada.",
+        "texto": "Texto"
+      },
+      "variante": {
+        "titulo": "Variante {{n}}",
+        "sinAplicar": "Sin aplicar a nada todavía",
+        "seUsaPara": "Se usa para",
+        "vacia": "Elige al menos una familia o un tipo.",
+        "sombra": "Ya los resuelve una variante anterior: {{tipos}}.",
+        "anadir": "Añadir variante para otros tipos",
+        "ayuda": "Si un tipo está en una variante, gana a su familia. Si encaja en varias, se usa la primera.",
+        "quitar": "Quitar la variante {{n}}"
+      },
+      "caso": {
+        "titulo": "Caso {{n}}",
+        "primero": "Se comprueba primero",
+        "siguiente": "Si no se cumple ningún caso anterior",
+        "seUsaSi": "Se usa si",
+        "subir": "Comprobar antes",
+        "quitar": "Quitar el caso {{n}}",
+        "anadir": "Añadir caso"
+      },
+      "alcance": {
+        "familia": "Familia {{nombre}}",
+        "todaFamilia": "Toda la familia «{{nombre}}»",
+        "tipoBorrado": "Tipo eliminado",
+        "familiaBorrada": "Familia eliminada",
+        "buscar": "Elige una familia o un tipo…",
+        "buscarOtro": "Añadir otra familia o tipo…",
+        "sinResultados": "Nada coincide",
+        "quitar": "Quitar {{nombre}}"
+      },
+      "cond": {
+        "cumplir": "Tienen que cumplirse",
+        "todas": "Todas",
+        "alguna": "Alguna",
+        "anadir": "Añadir condición",
+        "vacia": "Añade al menos una condición.",
+        "incompleta": "Completa esta condición.",
+        "quitar": "Quitar la condición",
+        "dato": "Dato",
+        "operador": "Condición",
+        "delInforme": "Del informe",
+        "delEquipo": "Del elemento de la ficha",
+        "soloFicha": "Las condiciones del elemento solo se cumplen cuando el texto está dentro de la ficha de un elemento.",
+        "caracteristica": "Característica",
+        "valor": "Valor",
+        "elige": "Elige…",
+        "campoBorrado": "Característica eliminada",
+        "hechos": {
+          "equipos": "Equipos revisados",
+          "resultado": "Resultado de las revisiones",
+          "idioma": "Idioma del informe",
+          "tipo": "Tipo o familia",
+          "caduca": "Su tipo caduca",
+          "resultado_equipo": "Resultado de su revisión",
+          "caracteristica": "Característica específica"
+        },
+        "ops": {
+          "incluye": "incluyen",
+          "no_incluye": "no incluyen",
+          "hay": "hay alguna",
+          "no_hay": "no hay ninguna",
+          "es": "es",
+          "no_es": "no es",
+          "si": "sí",
+          "no": "no",
+          "relleno": "está rellena",
+          "vacio": "está vacía"
+        },
+        "resultados": {
+          "apto": "Apto",
+          "no_apto": "No apto",
+          "no_revisada": "No revisada"
+        }
+      }
     }
   },
   "acreditaciones": {

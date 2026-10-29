@@ -6415,7 +6415,8 @@
       "cambios": "Modifications non publiées",
       "publicada": "Publié",
       "nueva": "Nouveau modèle",
-      "vacio": "Aucun modèle pour l'instant"
+      "vacio": "Aucun modèle pour l'instant",
+      "nuevoTexto": "Nouveau texte variable"
     },
     "linea": {
       "titulo": "Changer de ligne visuelle",
@@ -6523,7 +6524,9 @@
         "firmante": "Signataire",
         "contador": "Résultats",
         "campo": "Champs du rapport",
-        "elemento": "Élément"
+        "elemento": "Élément",
+        "tipo": "Type d'élément",
+        "texto": "Textes variables"
       }
     },
     "texto": {
@@ -6947,6 +6950,134 @@
       },
       "colocacionHint": "Par défaut, le tableau suit la section précédente (sous un bloc de texte) et n'apparaît pas dans le sommaire.",
       "sinTerminarAviso": "Tableau dynamique inachevé : {{lista}}. Le modèle n'est pas enregistré tant que vous n'avez pas choisi ses types d'élément et ses colonnes."
+    },
+    "tabs": {
+      "aria": "Conception des rapports",
+      "plantillas": "Modèles",
+      "variables": "Variables réutilisables"
+    },
+    "variables": {
+      "listado": {
+        "casoUso": "Cas d'usage",
+        "clave": "Nom de la variable",
+        "utilidad": "Utilité",
+        "vacio": "Aucun texte variable pour l'instant",
+        "editar": "Modifier",
+        "eliminar": "Supprimer"
+      },
+      "eliminarTitulo": "Supprimer le texte variable",
+      "eliminarConfirmar": "«{{nombre}}» sera supprimé. Aucun modèle ne l'utilise : aucun rapport ne change.",
+      "eliminado": "Texte variable supprimé",
+      "guardado": "Texte variable enregistré",
+      "nuevo": "Nouveau texte variable",
+      "sub": "Texte variable · commun à tous vos modèles",
+      "aviso": "Vérifiez les avertissements avant d'enregistrer",
+      "uso": {
+        "titulo": "Modèles qui l'utilisent",
+        "desc": "Une modification ici s'applique à tous dans les prochains rapports. Les rapports déjà émis ne changent pas.",
+        "ninguna": "Aucun modèle ne l'utilise encore."
+      },
+      "para": {
+        "titulo": "À quoi il sert",
+        "desc": "C'est ainsi que vous le verrez dans «Insérer une donnée → Textes variables», dans n'importe quel texte de n'importe quel modèle.",
+        "casoUso": "Cas d'usage",
+        "casoUsoPh": "Par exemple : Mention de péremption",
+        "clave": "Nom de la variable",
+        "claveAlta": "Proposé à partir du cas d'usage. Il ne peut plus être modifié : les modèles l'utilisent pour le trouver.",
+        "claveFija": "Il ne peut pas être modifié : les modèles l'utilisent pour le trouver.",
+        "utilidad": "Utilité",
+        "utilidadPh": "Expliquez, en langage courant, quand et pourquoi ce texte est utilisé."
+      },
+      "modo": {
+        "titulo": "Comment le texte est choisi",
+        "por_tipo": "Selon le type d'élément",
+        "por_tipoAyuda": "Sur la fiche d'un élément, le texte de son type. Hors des fiches, un paragraphe par type inspecté dans le rapport.",
+        "condicion": "Selon des conditions",
+        "condicionAyuda": "Un seul texte : celui du premier cas rempli ou, si aucun ne l'est, celui par défaut. Les conditions peuvent porter sur le rapport ou sur l'élément de la fiche."
+      },
+      "textos": {
+        "titulo": "Textes",
+        "descTipo": "«Insérer une donnée → Type d'élément» ajoute les données de chaque type : validité, durée de vie, normes…",
+        "descCondicion": "Les cas sont vérifiés dans l'ordre et le premier rempli l'emporte.",
+        "descIdioma": "Si une langue reste vide, l'espagnol est utilisé.",
+        "defecto": "Texte par défaut",
+        "defectoTipo": "Pour tous les types sans variante.",
+        "defectoCondicion": "Si aucun cas n'est rempli. Laissez-le vide si rien ne doit apparaître dans ce cas.",
+        "texto": "Texte"
+      },
+      "variante": {
+        "titulo": "Variante {{n}}",
+        "sinAplicar": "Pas encore appliquée",
+        "seUsaPara": "Utilisée pour",
+        "vacia": "Choisissez au moins une famille ou un type.",
+        "sombra": "Déjà résolus par une variante précédente : {{tipos}}.",
+        "anadir": "Ajouter une variante pour d'autres types",
+        "ayuda": "Un type nommé dans une variante l'emporte sur sa famille. S'il correspond à plusieurs, la première est utilisée.",
+        "quitar": "Retirer la variante {{n}}"
+      },
+      "caso": {
+        "titulo": "Cas {{n}}",
+        "primero": "Vérifié en premier",
+        "siguiente": "Si aucun cas précédent n'est rempli",
+        "seUsaSi": "Utilisé si",
+        "subir": "Vérifier avant",
+        "quitar": "Retirer le cas {{n}}",
+        "anadir": "Ajouter un cas"
+      },
+      "alcance": {
+        "familia": "Famille {{nombre}}",
+        "todaFamilia": "Toute la famille «{{nombre}}»",
+        "tipoBorrado": "Type supprimé",
+        "familiaBorrada": "Famille supprimée",
+        "buscar": "Choisissez une famille ou un type…",
+        "buscarOtro": "Ajouter une autre famille ou un autre type…",
+        "sinResultados": "Aucun résultat",
+        "quitar": "Retirer {{nombre}}"
+      },
+      "cond": {
+        "cumplir": "Doivent être remplies",
+        "todas": "Toutes",
+        "alguna": "Au moins une",
+        "anadir": "Ajouter une condition",
+        "vacia": "Ajoutez au moins une condition.",
+        "incompleta": "Complétez cette condition.",
+        "quitar": "Retirer la condition",
+        "dato": "Donnée",
+        "operador": "Condition",
+        "delInforme": "Du rapport",
+        "delEquipo": "De l'élément de la fiche",
+        "soloFicha": "Les conditions de l'élément ne sont remplies que lorsque le texte est dans la fiche d'un élément.",
+        "caracteristica": "Caractéristique",
+        "valor": "Valeur",
+        "elige": "Choisissez…",
+        "campoBorrado": "Caractéristique supprimée",
+        "hechos": {
+          "equipos": "Équipements inspectés",
+          "resultado": "Résultat des inspections",
+          "idioma": "Langue du rapport",
+          "tipo": "Type ou famille",
+          "caduca": "Son type expire",
+          "resultado_equipo": "Résultat de son inspection",
+          "caracteristica": "Caractéristique spécifique"
+        },
+        "ops": {
+          "incluye": "incluent",
+          "no_incluye": "n'incluent pas",
+          "hay": "il y en a au moins un",
+          "no_hay": "il n'y en a aucun",
+          "es": "est",
+          "no_es": "n'est pas",
+          "si": "oui",
+          "no": "non",
+          "relleno": "est renseignée",
+          "vacio": "est vide"
+        },
+        "resultados": {
+          "apto": "Apte",
+          "no_apto": "Non apte",
+          "no_revisada": "Non inspecté"
+        }
+      }
     }
   },
   "acreditaciones": {
