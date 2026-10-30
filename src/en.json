@@ -6241,7 +6241,8 @@
       "contenido": "Content",
       "idioma": "Language",
       "firmar": "Electronic signature",
-      "tipo": "Report type"
+      "tipo": "Report type",
+      "tipoPlantilla": "Type/template"
     },
     "estados": {
       "borrador": "Draft",

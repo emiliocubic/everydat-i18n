@@ -6241,7 +6241,8 @@
       "contenido": "Contenido",
       "idioma": "Idioma",
       "firmar": "Firma electrónica",
-      "tipo": "Tipo de informe"
+      "tipo": "Tipo de informe",
+      "tipoPlantilla": "Tipo/plantilla"
     },
     "estados": {
       "borrador": "Borrador",
