@@ -5895,7 +5895,7 @@
     },
     "selector": {
       "descatalogados": "Retirés",
-      "ambos": "Les deux",
+      "ambos": "En service et retirés",
       "sinFamilia": "Sans famille",
       "revisados": "Vérifiés entre",
       "desplegarTodo": "Tout déplier",
@@ -5916,7 +5916,7 @@
     },
     "alta": {
       "faltanObligatorios": "Champs obligatoires manquants : {{lista}}.",
-      "sinPlantillas": "Aucun modèle publié de ce type"
+      "sinPlantillas": "Aucun type de rapport publié"
     },
     "avisos": {
       "sin_contenido": "Le rapport ne contient aucune inspection ni aucun équipement.",

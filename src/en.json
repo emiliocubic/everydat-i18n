@@ -6263,11 +6263,15 @@
       "titulo": "New report",
       "hint": "It starts as an empty draft: you choose what it contains, preview it and, when it is ready, issue it.",
       "creado": "Report created",
-      "sinPlantillas": "No published templates of this type",
+      "sinPlantillas": "No type of report has been published",
       "elegirEmplazamiento": "Choose the site",
       "idiomaCliente": "The client's",
       "crear": "Create report",
-      "faltanObligatorios": "Required fields missing: {{lista}}."
+      "faltanObligatorios": "Required fields missing: {{lista}}.",
+      "tipoInforme": "Type of report to issue",
+      "elegirTipo": "Choose the type of report",
+      "elegirCliente": "Choose the client",
+      "falta": "To create the report you still need: {{lista}}."
     },
     "ficha": {
       "identificacion": "Identification",
@@ -6292,7 +6296,10 @@
         "vista": "Preview",
         "versiones": "Versions",
         "ajustes": "Adjustments"
-      }
+      },
+      "borradorAviso": "Draft: not issued yet. When it is ready, press ISSUE.",
+      "camposEspecificos": "Fields specific to this type of report",
+      "sinCamposEspecificos": "This type of report has no specific fields."
     },
     "contenido": {
       "nRevisiones_one": "{{count}} inspection",
@@ -6353,11 +6360,11 @@
       "casan_other": "{{count}} match the filters",
       "nada": "Nothing matches these filters (what is already included is not repeated).",
       "cargarMas": "Load more",
-      "anadirTodo_one": "Add the one that matches",
-      "anadirTodo_other": "Add the {{count}} that match",
+      "anadirTodo_one": "Add the one that meets the filters",
+      "anadirTodo_other": "Add the {{count}} that meet the filters",
       "anadirMarcadas_one": "Add {{count}} ticked",
       "anadirMarcadas_other": "Add {{count}} ticked",
-      "ambos": "Both",
+      "ambos": "In service and withdrawn",
       "sinFamilia": "No family",
       "revisados": "Inspected between",
       "desplegarTodo": "Expand all",
@@ -6366,7 +6373,14 @@
       "todas": "All",
       "tiposElemento": "Equipment types",
       "todos": "All",
-      "fechaEntre": "{{fecha}} between"
+      "fechaEntre": "{{fecha}} between",
+      "algunos": "Some",
+      "veredicto": "Result of the latest inspection",
+      "veredictos": {
+        "apto": "Pass",
+        "no_apto": "Fail",
+        "sin_veredicto": "Not inspected"
+      }
     },
     "vista": {
       "titulo": "Report preview",

@@ -6263,11 +6263,15 @@
       "titulo": "Nuevo informe",
       "hint": "Nace en borrador y vacío: eliges lo que lleva, lo ves y, cuando esté listo, lo emites.",
       "creado": "Informe creado",
-      "sinPlantillas": "No hay plantillas publicadas de este tipo",
+      "sinPlantillas": "No hay ningún tipo de informe publicado",
       "elegirEmplazamiento": "Elige el emplazamiento",
       "idiomaCliente": "El del cliente",
       "crear": "Crear informe",
-      "faltanObligatorios": "Faltan campos obligatorios: {{lista}}."
+      "faltanObligatorios": "Faltan campos obligatorios: {{lista}}.",
+      "tipoInforme": "Tipo de informe a emitir",
+      "elegirTipo": "Elige el tipo de informe",
+      "elegirCliente": "Elige el cliente",
+      "falta": "Para crear el informe falta: {{lista}}."
     },
     "ficha": {
       "identificacion": "Identificación",
@@ -6292,7 +6296,10 @@
         "vista": "Vista previa",
         "versiones": "Versiones",
         "ajustes": "Cambios puntuales"
-      }
+      },
+      "borradorAviso": "En borrador: todavía no está emitido. Cuando esté listo, pulsa EMITIR.",
+      "camposEspecificos": "Campos específicos de este tipo de informe",
+      "sinCamposEspecificos": "Este tipo de informe no incluye campos específicos."
     },
     "contenido": {
       "nRevisiones_one": "{{count}} revisión",
@@ -6353,11 +6360,11 @@
       "casan_other": "{{count}} casan con los filtros",
       "nada": "Nada casa con estos filtros (lo ya incluido no se repite).",
       "cargarMas": "Cargar más",
-      "anadirTodo_one": "Añadir la que casa",
-      "anadirTodo_other": "Añadir las {{count}} que casan",
+      "anadirTodo_one": "Añadir la que cumple los filtros",
+      "anadirTodo_other": "Añadir las {{count}} que cumplen los filtros",
       "anadirMarcadas_one": "Añadir {{count}} marcada",
       "anadirMarcadas_other": "Añadir {{count}} marcadas",
-      "ambos": "Ambos",
+      "ambos": "En servicio y retirados",
       "sinFamilia": "Sin familia",
       "revisados": "Revisados entre",
       "desplegarTodo": "Desplegar todo",
@@ -6366,7 +6373,14 @@
       "todas": "Todas",
       "tiposElemento": "Tipos de elemento",
       "todos": "Todos",
-      "fechaEntre": "{{fecha}} entre"
+      "fechaEntre": "{{fecha}} entre",
+      "algunos": "Algunos",
+      "veredicto": "Resultado de la última revisión",
+      "veredictos": {
+        "apto": "Aptos",
+        "no_apto": "No aptos",
+        "sin_veredicto": "No revisados"
+      }
     },
     "vista": {
       "titulo": "Vista previa del informe",
