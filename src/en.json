@@ -436,7 +436,8 @@
     "exportPagina": "This page's",
     "exportTodas": "All",
     "exportFormato": "Format",
-    "exportPdf": "PDF (via print)"
+    "exportPdf": "PDF (via print)",
+    "exportSeleccionadas": "Selected"
   },
   "roles": {
     "title": "Roles",

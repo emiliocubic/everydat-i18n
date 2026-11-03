@@ -2163,7 +2163,8 @@
     "exportPagina": "Las de esta página",
     "exportTodas": "Todas",
     "exportFormato": "Formato",
-    "exportPdf": "PDF (desde imprimir)"
+    "exportPdf": "PDF (desde imprimir)",
+    "exportSeleccionadas": "Las seleccionadas"
   },
   "gruposClientes": {
     "title": "Grupos de clientes",
