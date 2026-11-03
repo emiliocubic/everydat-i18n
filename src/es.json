@@ -407,7 +407,7 @@
         "activa": "Activa",
         "sin": "Sin alerta",
         "mostrar": "Mostrar alerta",
-        "placeholder": "Aviso corto que se verá al abrir la ficha (p. ej. «moroso: no trabajar sin OK de oficina»).",
+        "placeholder": "Aviso corto que se verá al abrir la ficha (p. ej. «Factura pendiente del año pasado»).",
         "hint": "Se muestra como banda destacada en esta ficha y en la de todos sus emplazamientos.",
         "eliminar": "Eliminar alerta",
         "empty": "Alerta activada sin texto — añade el mensaje de aviso.",
@@ -475,7 +475,19 @@
         "proyectos": "Proyectos",
         "fechaPrevista": "Fecha prevista",
         "ultimaNota": "Última nota",
-        "sinEmplazamiento": "Sin emplazamiento"
+        "sinEmplazamiento": "Sin emplazamiento",
+        "bloques": {
+          "futuros": "Futuros · fechas sin propuesta",
+          "futurosVacio": "Ninguna fecha de revisión sin propuesta en la ventana",
+          "propuestas": "Futuros · propuestas activas",
+          "propuestasVacio": "Ninguna propuesta abierta",
+          "enCurso": "En curso",
+          "enCursoVacio": "Ningún proyecto en curso",
+          "finalizados": "Finalizados",
+          "finalizadosVacio": "Ningún proyecto finalizado",
+          "perdidos": "Perdidos",
+          "perdidosVacio": "Ninguna propuesta ni proyecto perdido"
+        }
       },
       "accesos": {
         "nivel": {
@@ -1707,7 +1719,8 @@
       "ninguna": "Sin revisión programada",
       "programada": "Fecha programada",
       "vencida": "Fecha programada · vencida",
-      "proxima": "Fecha programada · en menos de 30 días"
+      "proxima": "Fecha programada · en menos de 30 días",
+      "aDemanda": "Todo el emplazamiento se revisa a demanda: no tiene fecha de próxima revisión"
     },
     "nuevo": {
       "creado": "Emplazamiento creado.",
@@ -1821,7 +1834,8 @@
     },
     "fichaCliente": {
       "nuevo": "Nuevo emplazamiento"
-    }
+    },
+    "aDemanda": "A demanda"
   },
   "localizaciones": {
     "tree": "Árbol de localizaciones",

@@ -535,7 +535,7 @@
         "activa": "Active",
         "sin": "Sans alerte",
         "mostrar": "Afficher l'alerte",
-        "placeholder": "Texte d'avertissement (p. ex. Ne pas repondre par telephone avant regularisation du paiement).",
+        "placeholder": "Court avertissement affiché à l'ouverture de la fiche (p. ex. « Facture impayée de l'an dernier »).",
         "hint": "Affiche comme avertissement en evidence dans l'en-tete de ce client et de tous ses sites, projets et devis.",
         "eliminar": "Supprimer l'alerte",
         "empty": "Alerte activee sans texte — ajoutez le message d'avertissement.",
@@ -603,7 +603,19 @@
         "proyectos": "Projets",
         "fechaPrevista": "Date prévue",
         "ultimaNota": "Dernière note",
-        "sinEmplazamiento": "Sans site"
+        "sinEmplazamiento": "Sans site",
+        "bloques": {
+          "futuros": "À venir · dates sans proposition",
+          "futurosVacio": "Aucune date de contrôle sans proposition dans la fenêtre",
+          "propuestas": "À venir · propositions actives",
+          "propuestasVacio": "Aucune proposition ouverte",
+          "enCurso": "En cours",
+          "enCursoVacio": "Aucun projet en cours",
+          "finalizados": "Terminés",
+          "finalizadosVacio": "Aucun projet terminé",
+          "perdidos": "Perdus",
+          "perdidosVacio": "Aucune proposition ni aucun projet perdu"
+        }
       },
       "accesos": {
         "nivel": {
@@ -1704,7 +1716,8 @@
       "ninguna": "Aucune vérification programmée",
       "programada": "Date programmée",
       "vencida": "Date programmée · dépassée",
-      "proxima": "Date programmée · dans moins de 30 jours"
+      "proxima": "Date programmée · dans moins de 30 jours",
+      "aDemanda": "Tout le site est contrôlé à la demande : il n'a pas de date de prochain contrôle"
     },
     "nuevo": {
       "creado": "Site créé.",
@@ -1818,7 +1831,8 @@
     },
     "fichaCliente": {
       "nuevo": "Nouveau site"
-    }
+    },
+    "aDemanda": "À la demande"
   },
   "localizaciones": {
     "tree": "Arbre des localisations",
