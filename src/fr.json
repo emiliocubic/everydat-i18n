@@ -89,7 +89,105 @@
     "pendientesCatalogo_other": "{{count}} entrées du catalogue en attente de validation",
     "pendientesCatalogoIr": "Ouvrir la corbeille",
     "soporteSubtitle": "Support Cubic",
-    "soporteAccesos": "Accès du support"
+    "soporteAccesos": "Accès du support",
+    "saludo": {
+      "manana": "Bonjour, {{nombre}}",
+      "tarde": "Bon après-midi, {{nombre}}",
+      "noche": "Bonsoir, {{nombre}}"
+    },
+    "verTodo": "Tout voir",
+    "cargando": "Chargement…",
+    "error": "Impossible de charger ce bloc.",
+    "dias": "{{n}} j",
+    "tope": "{{n}} sur {{total}} affichés.",
+    "graficas": {
+      "grupo": "Indicateurs de l'année",
+      "revisados": "Équipements contrôlés",
+      "proyectos": "Projets réalisés",
+      "presupuestado": "Montant chiffré",
+      "confirmado": "Montant confirmé",
+      "comparado": "{{desde}}–{{hasta}} · {{anio}} : {{valor}}",
+      "deltaTitulo": "{{desde}}–{{hasta}} {{anio}} par rapport à la même période de {{anterior}}",
+      "aria": "{{titulo}} : {{anio}} par rapport à {{anterior}}"
+    },
+    "oportunidades": {
+      "titulo": "Opportunités",
+      "rango": "Période",
+      "cols": {
+        "cliente": "Client",
+        "emplazamiento": "Site",
+        "equipos": "Nb d'équipements",
+        "fecha": "Date",
+        "vence": "Échéance",
+        "presupuesto": "Devis",
+        "importe": "Montant",
+        "apunte": "Dernière note",
+        "proxima": "Prochaine",
+        "probabilidad": "Probabilité"
+      },
+      "proxima": "Prochain contact le {{fecha}}",
+      "vacio": "Rien n'arrive à échéance dans les {{rango}} prochains jours."
+    },
+    "operativa": {
+      "titulo": "Opérations",
+      "cols": {
+        "cliente": "Client",
+        "emplazamiento": "Site",
+        "inicio": "Début",
+        "fin": "Fin",
+        "estado": "État",
+        "actuaciones": "Interventions"
+      },
+      "fase": {
+        "ejecutado": "Réalisé",
+        "en_partes": "En bons",
+        "validado": "Validé",
+        "en_informes": "En rapports"
+      },
+      "columnas": "Colonnes visibles",
+      "columnasTitulo": "Colonnes d'avancement",
+      "ultimaColumna": "Au moins une colonne doit rester",
+      "nDeTotal": "{{n}} sur {{total}} interventions",
+      "ritmo": "Attendu {{esperado}} % · Réalisé {{ejecutado}} % ({{desv}} pts)",
+      "finSuperado": "Fin dépassée · ",
+      "debioEmpezar": "Aurait dû commencer",
+      "conRetraso": "Fin prévue dépassée",
+      "sinCenso": "Sans recensement : aucune intervention à compter",
+      "vacio": "Aucun projet ouvert."
+    },
+    "interaccion": {
+      "titulo": "Interaction avec les clients",
+      "tipos": "Types",
+      "ultimosDias": "Derniers jours",
+      "rangoDias": "−{{n}} j",
+      "tipo": {
+        "parte": "Bon",
+        "informe": "Rapport"
+      },
+      "tipoPlural": {
+        "parte": "Bons",
+        "informe": "Rapports"
+      },
+      "cols": {
+        "tipo": "Type",
+        "cliente": "Client",
+        "emplazamiento": "Site",
+        "fecha": "Date",
+        "firma": "Signature client"
+      },
+      "emitido": " · émis le {{fecha}}",
+      "emitidoTitulo": "Date figurant sur le rapport",
+      "firma": {
+        "firmado": "Signé",
+        "pendiente": "En attente de signature",
+        "no_aplica": "Sans objet"
+      },
+      "firmaTip": {
+        "pendiente": "En attente de la signature du client",
+        "no_aplica": "La réception au bureau ne demande pas de signature"
+      },
+      "vacio": "Rien ces {{rango}} derniers jours."
+    }
   },
   "agent": {
     "title": "Assistant IA",

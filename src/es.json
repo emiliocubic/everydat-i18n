@@ -89,7 +89,105 @@
     "pendientesCatalogo_other": "{{count}} altas del catálogo pendientes de validar",
     "pendientesCatalogoIr": "Ir a la bandeja",
     "soporteSubtitle": "Soporte de Cubic",
-    "soporteAccesos": "Accesos de soporte"
+    "soporteAccesos": "Accesos de soporte",
+    "saludo": {
+      "manana": "Buenos días, {{nombre}}",
+      "tarde": "Buenas tardes, {{nombre}}",
+      "noche": "Buenas noches, {{nombre}}"
+    },
+    "verTodo": "Ver todo",
+    "cargando": "Cargando…",
+    "error": "No se ha podido cargar este bloque.",
+    "dias": "{{n}} d",
+    "tope": "Se enseñan {{n}} de {{total}}.",
+    "graficas": {
+      "grupo": "Indicadores del año",
+      "revisados": "Elementos revisados",
+      "proyectos": "Proyectos realizados",
+      "presupuestado": "Importe presupuestado",
+      "confirmado": "Importe confirmado",
+      "comparado": "{{desde}}–{{hasta}} · {{anio}}: {{valor}}",
+      "deltaTitulo": "{{desde}}–{{hasta}} {{anio}} frente al mismo periodo de {{anterior}}",
+      "aria": "{{titulo}}: {{anio}} frente a {{anterior}}"
+    },
+    "oportunidades": {
+      "titulo": "Oportunidades",
+      "rango": "Rango",
+      "cols": {
+        "cliente": "Cliente",
+        "emplazamiento": "Emplazamiento",
+        "equipos": "Nº de elementos",
+        "fecha": "Fecha",
+        "vence": "Vence",
+        "presupuesto": "Presupuesto",
+        "importe": "Importe",
+        "apunte": "Último apunte",
+        "proxima": "Próxima",
+        "probabilidad": "Probabilidad"
+      },
+      "proxima": "Próximo contacto el {{fecha}}",
+      "vacio": "Nada vence en los próximos {{rango}} días."
+    },
+    "operativa": {
+      "titulo": "Operativa",
+      "cols": {
+        "cliente": "Cliente",
+        "emplazamiento": "Emplazamiento",
+        "inicio": "Inicio",
+        "fin": "Fin",
+        "estado": "Estado",
+        "actuaciones": "Actuaciones"
+      },
+      "fase": {
+        "ejecutado": "Ejecutado",
+        "en_partes": "En partes",
+        "validado": "Validado",
+        "en_informes": "En informes"
+      },
+      "columnas": "Columnas visibles",
+      "columnasTitulo": "Columnas de avance",
+      "ultimaColumna": "Debe quedar al menos una columna",
+      "nDeTotal": "{{n}} de {{total}} actuaciones",
+      "ritmo": "Esperado {{esperado}} % · Ejecutado {{ejecutado}} % ({{desv}} pts)",
+      "finSuperado": "Fin superado · ",
+      "debioEmpezar": "Debería haber empezado",
+      "conRetraso": "Fin previsto superado",
+      "sinCenso": "Sin censo: no hay actuaciones que contar",
+      "vacio": "No hay proyectos abiertos."
+    },
+    "interaccion": {
+      "titulo": "Interacción con clientes",
+      "tipos": "Tipos",
+      "ultimosDias": "Últimos días",
+      "rangoDias": "−{{n}} d",
+      "tipo": {
+        "parte": "Parte",
+        "informe": "Informe"
+      },
+      "tipoPlural": {
+        "parte": "Partes",
+        "informe": "Informes"
+      },
+      "cols": {
+        "tipo": "Tipo",
+        "cliente": "Cliente",
+        "emplazamiento": "Emplazamiento",
+        "fecha": "Fecha",
+        "firma": "Firma cliente"
+      },
+      "emitido": " · emitido {{fecha}}",
+      "emitidoTitulo": "Fecha que figura en el informe",
+      "firma": {
+        "firmado": "Firmado",
+        "pendiente": "Pendiente de firma",
+        "no_aplica": "No aplica"
+      },
+      "firmaTip": {
+        "pendiente": "Pendiente de firma del cliente",
+        "no_aplica": "La recepción en oficina no pide firma"
+      },
+      "vacio": "Nada en los últimos {{rango}} días."
+    }
   },
   "agent": {
     "title": "Asistente IA",

@@ -89,7 +89,105 @@
     "pendientesCatalogo_other": "{{count}} catalogue entries pending validation",
     "pendientesCatalogoIr": "Open the tray",
     "soporteSubtitle": "Cubic support",
-    "soporteAccesos": "Support shortcuts"
+    "soporteAccesos": "Support shortcuts",
+    "saludo": {
+      "manana": "Good morning, {{nombre}}",
+      "tarde": "Good afternoon, {{nombre}}",
+      "noche": "Good evening, {{nombre}}"
+    },
+    "verTodo": "View all",
+    "cargando": "Loading…",
+    "error": "This block could not be loaded.",
+    "dias": "{{n}} d",
+    "tope": "Showing {{n}} of {{total}}.",
+    "graficas": {
+      "grupo": "Year indicators",
+      "revisados": "Items inspected",
+      "proyectos": "Projects completed",
+      "presupuestado": "Amount quoted",
+      "confirmado": "Amount confirmed",
+      "comparado": "{{desde}}–{{hasta}} · {{anio}}: {{valor}}",
+      "deltaTitulo": "{{desde}}–{{hasta}} {{anio}} compared with the same period of {{anterior}}",
+      "aria": "{{titulo}}: {{anio}} compared with {{anterior}}"
+    },
+    "oportunidades": {
+      "titulo": "Opportunities",
+      "rango": "Range",
+      "cols": {
+        "cliente": "Client",
+        "emplazamiento": "Site",
+        "equipos": "No. of items",
+        "fecha": "Date",
+        "vence": "Due",
+        "presupuesto": "Quote",
+        "importe": "Amount",
+        "apunte": "Last note",
+        "proxima": "Next",
+        "probabilidad": "Probability"
+      },
+      "proxima": "Next contact on {{fecha}}",
+      "vacio": "Nothing due in the next {{rango}} days."
+    },
+    "operativa": {
+      "titulo": "Operations",
+      "cols": {
+        "cliente": "Client",
+        "emplazamiento": "Site",
+        "inicio": "Start",
+        "fin": "End",
+        "estado": "Status",
+        "actuaciones": "Tasks"
+      },
+      "fase": {
+        "ejecutado": "Done",
+        "en_partes": "In work orders",
+        "validado": "Validated",
+        "en_informes": "In reports"
+      },
+      "columnas": "Visible columns",
+      "columnasTitulo": "Progress columns",
+      "ultimaColumna": "At least one column must remain",
+      "nDeTotal": "{{n}} of {{total}} tasks",
+      "ritmo": "Expected {{esperado}} % · Done {{ejecutado}} % ({{desv}} pts)",
+      "finSuperado": "End date passed · ",
+      "debioEmpezar": "Should have started",
+      "conRetraso": "Planned end date passed",
+      "sinCenso": "No census: no tasks to count",
+      "vacio": "No open projects."
+    },
+    "interaccion": {
+      "titulo": "Client interaction",
+      "tipos": "Types",
+      "ultimosDias": "Last days",
+      "rangoDias": "−{{n}} d",
+      "tipo": {
+        "parte": "Work order",
+        "informe": "Report"
+      },
+      "tipoPlural": {
+        "parte": "Work orders",
+        "informe": "Reports"
+      },
+      "cols": {
+        "tipo": "Type",
+        "cliente": "Client",
+        "emplazamiento": "Site",
+        "fecha": "Date",
+        "firma": "Client signature"
+      },
+      "emitido": " · issued {{fecha}}",
+      "emitidoTitulo": "Date printed on the report",
+      "firma": {
+        "firmado": "Signed",
+        "pendiente": "Awaiting signature",
+        "no_aplica": "Not applicable"
+      },
+      "firmaTip": {
+        "pendiente": "Awaiting the client's signature",
+        "no_aplica": "Office reception does not ask for a signature"
+      },
+      "vacio": "Nothing in the last {{rango}} days."
+    }
   },
   "agent": {
     "title": "AI Assistant",
