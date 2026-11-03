@@ -401,7 +401,7 @@
       },
       "notif": {
         "revisiones": "Revisiones",
-        "finVida": "Finales de vida"
+        "finVida": "Fin de vida útil"
       },
       "alerta": {
         "activa": "Activa",
@@ -642,7 +642,7 @@
         "incluidoPorCliente": "Incluido: el contacto está asociado a todos los emplazamientos de {{name}}",
         "adscribirPrimero": "Asociar a un cliente",
         "adscribirCliente": "Asociar a otro cliente",
-        "quitarCliente": "Quitar este cliente",
+        "quitarCliente": "Desasociar al contacto de este cliente",
         "quitarClienteConfirm": "¿Quitar «{{name}}» de este contacto?",
         "buscarCliente": "Buscar cliente…",
         "sinCoincidencias": "Ningún cliente coincide.",
@@ -654,7 +654,15 @@
         "sinClientes": "Este contacto no está asociado a ningún cliente.",
         "soloContactoNota": "Las columnas de Acceso web requieren que el contacto sea «Usuario aplicación».",
         "cargoPlaceholder": "Cargo",
-        "cargoAria": "Cargo en {{name}}"
+        "cargoAria": "Cargo en {{name}}",
+        "tipEnvios": "Habilitar al usuario como destinatario de INFORMES y/o de PRESUPUESTOS asociados a los emplazamientos",
+        "tipAccesos": "Especificar el tipo de permiso del usuario en el portal de cliente: solo lectura, o también las prestaciones de edición que estén habilitadas",
+        "tipNotificaciones": "Habilitar al usuario como destinatario de avisos de PRÓXIMA REVISIÓN y/o de FINAL DE VIDA ÚTIL asociados a los emplazamientos",
+        "restoEmplazamiento": "Resto del emplazamiento",
+        "marcarZona": "Dar acceso a {{name}}",
+        "quitarZona": "Quitar el acceso a {{name}}",
+        "zonasSinAcceso": "Las zonas acotan el acceso web: dale antes permiso de lectura en el emplazamiento",
+        "zonasSinAsociar": "Asocia antes el emplazamiento"
       },
       "comentariosPlaceholder": "Anotaciones internas sobre el contacto",
       "telefonoPlaceholder": "+34 600 000 000",
@@ -1636,7 +1644,7 @@
       },
       "notif": {
         "revisiones": "Revisiones",
-        "caducidades": "Finales de vida"
+        "caducidades": "Fin de vida útil"
       },
       "motivo": {
         "global": "Acceso global",
@@ -1906,11 +1914,11 @@
     "zona": {
       "promoverTitulo": "Crear una sub-zona",
       "promoverTexto": "Esta carpeta está dentro de la zona {{zona}}.",
-      "promoverNota": "Una sub-zona solo sirve para dar un permiso más estrecho; nunca resta visibilidad a quien ya ve la zona padre.",
+      "promoverNota": "La sub-zona nace sin permisos propios: quien ya ve la zona de fuera la sigue viendo. En la ficha de cada contacto se le puede quitar.",
       "promoverAccion": "Crear sub-zona",
       "degradarTitulo": "Dejar de ser zona",
       "degradarTexto": "La estructura no se toca: solo desaparece la frontera administrativa. Quedarían sin destino:",
-      "degradarNota": "Los permisos pasan a depender del emplazamiento completo. Si vuelves a promocionar esta carpeta, los recupera.",
+      "degradarNota": "Los permisos dados sobre esta zona se pierden: la carpeta pasa a ser parte de lo que la rodea, y quien solo tenía esta zona deja de verla. Si vuelves a promocionarla, recupera su fecha, no los permisos.",
       "degradarAccion": "Dejar de ser zona",
       "depContactos": "{{count}} contacto con permiso sobre esta zona",
       "depContactos_other": "{{count}} contactos con permiso sobre esta zona",
@@ -1919,7 +1927,9 @@
       "depPlanificacion": "Una fecha de revisión planificada",
       "sinDependencias": "No cuelga nada de esta zona.",
       "promoverZonaTitulo": "Promocionar a zona",
-      "promoverZonaAccion": "Promocionar"
+      "promoverZonaAccion": "Promocionar",
+      "siguenViendo": "{{count}} contacto que ya veía esta carpeta la sigue viendo como zona. Si no debe, quítasela en su ficha.",
+      "siguenViendo_other": "{{count}} contactos que ya veían esta carpeta la siguen viendo como zona. Si alguno no debe, quítasela en su ficha."
     },
     "revision": {
       "titulo": "Poner en revisión",
@@ -2157,6 +2167,12 @@
       "descripcion": "Descripción",
       "clientes": "Clientes",
       "emplazamientos": "Emplazamientos"
+    },
+    "sheet": {
+      "nombre": "Nombre del grupo",
+      "nombrePlaceholder": "Ej.: Zona Norte / Sector Telecomunicaciones / …",
+      "color": "Color",
+      "colorAyuda": "para reconocerlo en etiquetas y listados"
     }
   },
   "equiposTrabajo": {

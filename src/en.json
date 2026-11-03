@@ -529,7 +529,7 @@
       },
       "notif": {
         "revisiones": "Reviews",
-        "finVida": "End of life"
+        "finVida": "End of useful life"
       },
       "alerta": {
         "activa": "Active",
@@ -762,7 +762,7 @@
         "capVer": "Read permission",
         "capEditar": "Edit permission",
         "capRevision": "Inspection alerts",
-        "capFinVida": "End-of-life alerts",
+        "capFinVida": "End-of-useful-life alerts",
         "adscribirEmp": "Link to {{name}}",
         "quitarEmp": "Remove link to {{name}}",
         "adscribirTodos": "Link to every site of {{name}}, present and future",
@@ -770,7 +770,7 @@
         "incluidoPorCliente": "Included: the contact is linked to every site of {{name}}",
         "adscribirPrimero": "Link to a client",
         "adscribirCliente": "Link to another client",
-        "quitarCliente": "Remove this client",
+        "quitarCliente": "Unlink the contact from this client",
         "quitarClienteConfirm": "Remove “{{name}}” from this contact?",
         "buscarCliente": "Search client…",
         "sinCoincidencias": "No client matches.",
@@ -782,7 +782,15 @@
         "sinClientes": "This contact is not linked to any client.",
         "soloContactoNota": "The Web access columns require the contact to be an “App user”.",
         "cargoPlaceholder": "Role",
-        "cargoAria": "Role at {{name}}"
+        "cargoAria": "Role at {{name}}",
+        "tipEnvios": "Make the user a recipient of REPORTS and/or QUOTES for the sites",
+        "tipAccesos": "Set the user’s permission in the client portal: read only, or also the editing features that are enabled",
+        "tipNotificaciones": "Make the user a recipient of NEXT INSPECTION and/or END OF USEFUL LIFE notices for the sites",
+        "restoEmplazamiento": "Rest of the site",
+        "marcarZona": "Give access to {{name}}",
+        "quitarZona": "Remove access to {{name}}",
+        "zonasSinAcceso": "Zones narrow web access: first give read permission on the site",
+        "zonasSinAsociar": "Link the site first"
       },
       "comentariosPlaceholder": "Internal notes about the contact",
       "telefonoPlaceholder": "+34 600 000 000",
@@ -1764,7 +1772,7 @@
       },
       "notif": {
         "revisiones": "Inspections",
-        "caducidades": "End of life"
+        "caducidades": "End of useful life"
       },
       "motivo": {
         "global": "Global access",
@@ -2034,11 +2042,11 @@
     "zona": {
       "promoverTitulo": "Create a sub-zone",
       "promoverTexto": "This folder is inside the zone {{zona}}.",
-      "promoverNota": "A sub-zone only serves to grant a narrower permission; it never removes visibility from whoever already sees the parent zone.",
+      "promoverNota": "The sub-zone starts with no permissions of its own: whoever already sees the outer zone keeps seeing it. It can be removed in each contact’s record.",
       "promoverAccion": "Create sub-zone",
       "degradarTitulo": "Stop being a zone",
       "degradarTexto": "The structure is untouched: only the administrative boundary disappears. These would be left without a target:",
-      "degradarNota": "Permissions fall back to the whole site. Promoting this folder again brings them back.",
+      "degradarNota": "Permissions granted on this zone are lost: the folder becomes part of what surrounds it, and whoever only had this zone stops seeing it. Promoting it again brings back its date, not the permissions.",
       "degradarAccion": "Stop being a zone",
       "depContactos": "{{count}} contact with permission on this zone",
       "depContactos_other": "{{count}} contacts with permission on this zone",
@@ -2047,7 +2055,9 @@
       "depPlanificacion": "One scheduled inspection date",
       "sinDependencias": "Nothing hangs from this zone.",
       "promoverZonaTitulo": "Promote to zone",
-      "promoverZonaAccion": "Promote"
+      "promoverZonaAccion": "Promote",
+      "siguenViendo": "{{count}} contact who could already see this folder still sees it as a zone. If they shouldn’t, remove it in their record.",
+      "siguenViendo_other": "{{count}} contacts who could already see this folder still see it as a zone. If any shouldn’t, remove it in their record."
     },
     "revision": {
       "titulo": "Start inspection",
@@ -2157,6 +2167,12 @@
       "descripcion": "Description",
       "clientes": "Customers",
       "emplazamientos": "Locations"
+    },
+    "sheet": {
+      "nombre": "Group name",
+      "nombrePlaceholder": "E.g.: North Area / Telecoms Sector / …",
+      "color": "Colour",
+      "colorAyuda": "to recognise it in tags and lists"
     }
   },
   "equiposTrabajo": {
