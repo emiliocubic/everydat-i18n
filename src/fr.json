@@ -60,7 +60,10 @@
       "baja": "D",
       "retirado": "R"
     },
-    "abrirEnMaps": "Ouvrir dans Google Maps"
+    "abrirEnMaps": "Ouvrir dans Google Maps",
+    "alertaCliente": "Alerte client",
+    "alertaEmplazamiento": "Alerte du site",
+    "clienteDeBaja": "Client inactif depuis le {{fecha}}"
   },
   "merge": {
     "disappears": "Disparaît",
