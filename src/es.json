@@ -4087,7 +4087,8 @@
       "informesDiseno": "diseñar las plantillas de informe",
       "acreditaciones": "gestionar las acreditaciones",
       "auditoria": "ver la auditoría",
-      "soporte": "usar las herramientas de soporte"
+      "soporte": "usar las herramientas de soporte",
+      "alcance": "Este recurso está fuera de tu alcance: solo puedes trabajar con los clientes que tienes asignados."
     }
   },
   "proyectos": {

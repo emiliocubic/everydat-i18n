@@ -3807,7 +3807,8 @@
       "informesDiseno": "concevoir les modèles de rapport",
       "acreditaciones": "gérer les habilitations",
       "auditoria": "consulter l’audit",
-      "soporte": "utiliser les outils de support"
+      "soporte": "utiliser les outils de support",
+      "alcance": "Cette ressource est hors de votre périmètre : vous ne pouvez travailler qu'avec les comptes qui vous sont attribués."
     }
   },
   "proyectos": {
