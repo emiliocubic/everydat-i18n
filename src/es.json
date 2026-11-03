@@ -4091,7 +4091,12 @@
       "acreditaciones": "gestionar las acreditaciones",
       "auditoria": "ver la auditoría",
       "soporte": "usar las herramientas de soporte",
-      "alcance": "Este recurso está fuera de tu alcance: solo puedes trabajar con los clientes que tienes asignados."
+      "alcance": "Este recurso está fuera de tu alcance: solo puedes trabajar con los clientes que tienes asignados.",
+      "normativa": "ver la normativa",
+      "campos": "ver los campos",
+      "checklists": "ver los checklists",
+      "tipos": "ver los tipos de equipo",
+      "catalogoVer": "ver el catálogo de fabricantes y modelos"
     }
   },
   "proyectos": {

@@ -3812,7 +3812,12 @@
       "acreditaciones": "gérer les habilitations",
       "auditoria": "consulter l’audit",
       "soporte": "utiliser les outils de support",
-      "alcance": "Cette ressource est hors de votre périmètre : vous ne pouvez travailler qu'avec les comptes qui vous sont attribués."
+      "alcance": "Cette ressource est hors de votre périmètre : vous ne pouvez travailler qu'avec les comptes qui vous sont attribués.",
+      "normativa": "voir la réglementation",
+      "campos": "voir les champs",
+      "checklists": "voir les checklists",
+      "tipos": "voir les types d'équipement",
+      "catalogoVer": "voir le catalogue des fabricants et des modèles"
     }
   },
   "proyectos": {

@@ -4091,7 +4091,12 @@
       "acreditaciones": "manage accreditations",
       "auditoria": "view the audit log",
       "soporte": "use the support tools",
-      "alcance": "This resource is outside your scope: you can only work with the accounts assigned to you."
+      "alcance": "This resource is outside your scope: you can only work with the accounts assigned to you.",
+      "normativa": "view the standards",
+      "campos": "view the fields",
+      "checklists": "view the checklists",
+      "tipos": "view the equipment types",
+      "catalogoVer": "view the manufacturers and models catalogue"
     }
   },
   "proyectos": {
