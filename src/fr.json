@@ -4038,7 +4038,8 @@
       "editarRevision": "Modifier le contrôle",
       "editarRevisionTitle": "Ouvrir le contrôle dans l'éditeur pour le corriger",
       "noRevisado": "Non vérifié",
-      "verComentarios": "Ouvrir le contrôle avec les commentaires dépliés"
+      "verComentarios": "Ouvrir le contrôle avec les commentaires dépliés",
+      "crearInforme": "Créer le rapport du projet"
     },
     "vistas": {
       "futuros": "À venir",
@@ -5961,7 +5962,8 @@
     },
     "alta": {
       "faltanObligatorios": "Champs obligatoires manquants : {{lista}}.",
-      "sinPlantillas": "Aucun type de rapport publié"
+      "sinPlantillas": "Aucun type de rapport publié",
+      "hint": "Créé en brouillon : vide, pour choisir ce qu'il contient, ou avec le contenu d'un projet. Prévisualisez-le et émettez-le quand il est prêt."
     },
     "avisos": {
       "sin_contenido": "Le rapport ne contient aucune inspection ni aucun équipement.",
@@ -5981,6 +5983,30 @@
     },
     "versiones": {
       "zip": "Télécharger les {{n}} en ZIP"
+    },
+    "emitir": {
+      "fecha": "Date d'émission",
+      "fechaHint": "Celle qui est imprimée. Elle ne peut être ni postérieure à aujourd'hui ni antérieure à la dernière vérification du rapport."
+    },
+    "proyecto": {
+      "fuente": "Source des données",
+      "revisiones": "Vérifications du projet",
+      "elementos": "Équipements du projet",
+      "libreRevisiones": "Sélection libre de vérifications",
+      "libreElementos": "Sélection libre d'équipements",
+      "inicio": "Début {{fecha}}",
+      "campo": "Projet",
+      "elegir": "Choisissez le projet",
+      "sin": "Ce site n'a aucun projet ouvert ou clôturé.",
+      "vacio": "Le projet n'apporte encore rien : le rapport est créé vide.",
+      "fuera_one": "{{count}} vérification du projet figure déjà dans {{informes}} et n'a pas été ajoutée.",
+      "fuera_other": "{{count}} vérifications du projet figurent déjà dans {{informes}} et n'ont pas été ajoutées.",
+      "actualizar": "Mettre à jour depuis le projet",
+      "actualizarHint": "Ajoute ce que le projet contient aujourd'hui et que le rapport n'a pas. Ne retire rien et ne remet pas ce que vous avez retiré à la main.",
+      "actualizado_one": "{{count}} ajoutée depuis le projet.",
+      "actualizado_other": "{{count}} ajoutées depuis le projet.",
+      "alDia": "Le rapport est déjà à jour avec le projet.",
+      "desfase": "Ce rapport a pour origine un projet, et l'état actuel du rapport et celui du projet ne coïncident pas. Il est recommandé d'utiliser l'option Mettre à jour depuis le projet dans l'onglet Contenu pour synchroniser le rapport avec l'état actuel du projet avant de l'émettre."
     }
   },
   "tiposRevision": {

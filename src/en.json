@@ -4284,7 +4284,8 @@
       "editarRevision": "Edit inspection",
       "editarRevisionTitle": "Open the inspection in the editor to amend it",
       "noRevisado": "Not inspected",
-      "verComentarios": "Open the inspection with its comments expanded"
+      "verComentarios": "Open the inspection with its comments expanded",
+      "crearInforme": "Create project report"
     },
     "vistas": {
       "futuros": "Upcoming",
@@ -6306,7 +6307,7 @@
     },
     "alta": {
       "titulo": "New report",
-      "hint": "It starts as an empty draft: you choose what it contains, preview it and, when it is ready, issue it.",
+      "hint": "Created as a draft: empty, to choose what it covers, or with what a project has. Preview it and issue it when ready.",
       "creado": "Report created",
       "sinPlantillas": "No type of report has been published",
       "elegirEmplazamiento": "Choose the site",
@@ -6473,12 +6474,13 @@
       "avisosHint": "They are warnings: it can be issued anyway.",
       "sinAvisos": "No warnings: all in order.",
       "numero": "Version no.",
-      "fecha": "Printed date",
+      "fecha": "Issue date",
       "observaciones": "Remarks on this version",
       "observacionesHint": "For example: provisional report with 20 inspections",
       "emitir": "Issue",
       "firmante": "Signatory",
-      "firmanteHint": "Their signature, name and position appear on the certificate."
+      "firmanteHint": "Their signature, name and position appear on the certificate.",
+      "fechaHint": "The one printed on the report. It cannot be later than today or earlier than the latest inspection in the report."
     },
     "avisos": {
       "sin_contenido": "The report has no inspection and no equipment.",
@@ -6537,6 +6539,26 @@
       "sinFotosEquipo": "This equipment has no photos in document management.",
       "notaHintEquipo": "Printed on this equipment’s sheet as a report note. The equipment does not change.",
       "sinApartados": "This report type has no sections, so there is nothing to change in them."
+    },
+    "proyecto": {
+      "fuente": "Data source",
+      "revisiones": "Project inspections",
+      "elementos": "Project items",
+      "libreRevisiones": "Free selection of inspections",
+      "libreElementos": "Free selection of items",
+      "inicio": "Start {{fecha}}",
+      "campo": "Project",
+      "elegir": "Choose the project",
+      "sin": "This site has no open or closed projects.",
+      "vacio": "The project has nothing to add yet: the report starts empty.",
+      "fuera_one": "{{count}} project inspection is already in {{informes}} and was not added.",
+      "fuera_other": "{{count}} project inspections are already in {{informes}} and were not added.",
+      "actualizar": "Update from the project",
+      "actualizarHint": "Adds what the project has today and the report does not. It removes nothing and does not bring back what you removed by hand.",
+      "actualizado_one": "{{count}} added from the project.",
+      "actualizado_other": "{{count}} added from the project.",
+      "alDia": "The report is already up to date with the project.",
+      "desfase": "This report originates from a project, and the current state of the report and the project do not match. Use Update from the project in the Content tab to bring the report in line with the project before issuing it."
     }
   },
   "tiposRevision": {

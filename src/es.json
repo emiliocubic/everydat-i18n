@@ -4284,7 +4284,8 @@
       "editarRevision": "Editar revisión",
       "editarRevisionTitle": "Abrir la revisión en el editor para enmendarla",
       "noRevisado": "No revisado",
-      "verComentarios": "Abrir la revisión con los comentarios desplegados"
+      "verComentarios": "Abrir la revisión con los comentarios desplegados",
+      "crearInforme": "Crear informe del proyecto"
     },
     "vistas": {
       "futuros": "Futuros",
@@ -6306,7 +6307,7 @@
     },
     "alta": {
       "titulo": "Nuevo informe",
-      "hint": "Nace en borrador y vacío: eliges lo que lleva, lo ves y, cuando esté listo, lo emites.",
+      "hint": "Nace en borrador: vacío, para elegir lo que lleva, o con lo de un proyecto. Lo ves y, cuando esté listo, lo emites.",
       "creado": "Informe creado",
       "sinPlantillas": "No hay ningún tipo de informe publicado",
       "elegirEmplazamiento": "Elige el emplazamiento",
@@ -6473,12 +6474,13 @@
       "avisosHint": "Son avisos: se puede emitir igual.",
       "sinAvisos": "Sin avisos: todo en orden.",
       "numero": "Nº de versión",
-      "fecha": "Fecha que sale impresa",
+      "fecha": "Fecha de emisión",
       "observaciones": "Observaciones de esta versión",
       "observacionesHint": "Por ejemplo: informe provisional con 20 revisiones",
       "emitir": "Emitir",
       "firmante": "Firmante",
-      "firmanteHint": "Su firma, su nombre y su cargo salen en el certificado."
+      "firmanteHint": "Su firma, su nombre y su cargo salen en el certificado.",
+      "fechaHint": "La que sale impresa. No puede ser posterior a hoy ni anterior a la última revisión que lleva el informe."
     },
     "avisos": {
       "sin_contenido": "El informe no lleva ninguna revisión ni ningún equipo.",
@@ -6537,6 +6539,26 @@
       "sinFotosEquipo": "Este equipo no tiene fotos en la gestión documental.",
       "notaHintEquipo": "Se imprime en la ficha de este equipo como nota del informe. El equipo no cambia.",
       "sinApartados": "Este tipo de informe no tiene apartados, por lo que no es posible actuar sobre ellos."
+    },
+    "proyecto": {
+      "fuente": "Fuente de datos",
+      "revisiones": "Revisiones del proyecto",
+      "elementos": "Elementos del proyecto",
+      "libreRevisiones": "Selección libre de revisiones",
+      "libreElementos": "Selección libre de elementos",
+      "inicio": "Inicio {{fecha}}",
+      "campo": "Proyecto",
+      "elegir": "Elige el proyecto",
+      "sin": "Este emplazamiento no tiene proyectos abiertos ni cerrados.",
+      "vacio": "El proyecto aún no aporta nada: el informe nace vacío.",
+      "fuera_one": "{{count}} revisión del proyecto ya está en {{informes}} y no se ha añadido.",
+      "fuera_other": "{{count}} revisiones del proyecto ya están en {{informes}} y no se han añadido.",
+      "actualizar": "Actualizar desde el proyecto",
+      "actualizarHint": "Añade lo que el proyecto tiene hoy y el informe no. No quita nada ni vuelve a meter lo que hayas quitado a mano.",
+      "actualizado_one": "{{count}} añadida desde el proyecto.",
+      "actualizado_other": "{{count}} añadidas desde el proyecto.",
+      "alDia": "El informe ya está al día con el proyecto.",
+      "desfase": "Este informe tiene su origen en un proyecto, y la situación actual del informe y del proyecto no coinciden. Se recomienda usar la opción Actualizar desde el proyecto en la pestaña Contenido para sincronizar el informe con el estado actual del proyecto antes de emitirlo."
     }
   },
   "tiposRevision": {
