@@ -3886,7 +3886,8 @@
       "ventana": "Window",
       "arranque": "Start",
       "dias": "Days",
-      "certificacion": "Certification"
+      "certificacion": "Certification",
+      "proxima": "Next"
     },
     "campos": {
       "cliente": "Client",
@@ -4428,7 +4429,23 @@
         "guardar": "Save changes",
         "editado": "edited",
         "editadoEl": "Edited on {{fecha}}",
-        "corregido": "Note corrected."
+        "corregido": "Note corrected.",
+        "proxima": {
+          "anadir": "Add follow-up date",
+          "titulo": "Next contact",
+          "fecha": "Date",
+          "texto": "Reason (optional)",
+          "ph": "We agreed to talk after the committee…",
+          "guardar": "Save follow-up date",
+          "editar": "Change the next contact",
+          "quitar": "Remove the next contact",
+          "hoy": "today",
+          "en": "in {{count}} day",
+          "en_other": "in {{count}} days",
+          "hace": "overdue by {{count}} day",
+          "hace_other": "overdue by {{count}} days",
+          "sin": "No next contact"
+        }
       },
       "msgs": {
         "guardado": "Proposal saved.",

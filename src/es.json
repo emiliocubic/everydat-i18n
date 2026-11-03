@@ -3886,7 +3886,8 @@
       "ventana": "Ventana",
       "arranque": "Arranque",
       "dias": "Días",
-      "certificacion": "Certificación"
+      "certificacion": "Certificación",
+      "proxima": "Próxima"
     },
     "campos": {
       "cliente": "Cliente",
@@ -4428,7 +4429,23 @@
         "guardar": "Guardar cambios",
         "editado": "editado",
         "editadoEl": "Editado el {{fecha}}",
-        "corregido": "Apunte corregido."
+        "corregido": "Apunte corregido.",
+        "proxima": {
+          "anadir": "Añadir vencimiento",
+          "titulo": "Próximo contacto",
+          "fecha": "Fecha",
+          "texto": "Motivo (opcional)",
+          "ph": "Quedamos en hablar tras el comité…",
+          "guardar": "Guardar vencimiento",
+          "editar": "Cambiar el próximo contacto",
+          "quitar": "Quitar el próximo contacto",
+          "hoy": "hoy",
+          "en": "en {{count}} día",
+          "en_other": "en {{count}} días",
+          "hace": "vencida hace {{count}} día",
+          "hace_other": "vencida hace {{count}} días",
+          "sin": "Sin próximo contacto"
+        }
       },
       "msgs": {
         "guardado": "Propuesta guardada.",

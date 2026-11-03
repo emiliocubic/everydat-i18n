@@ -3655,7 +3655,8 @@
       "ventana": "Fenêtre",
       "arranque": "Démarrage",
       "dias": "Jours",
-      "certificacion": "Certification"
+      "certificacion": "Certification",
+      "proxima": "Prochaine"
     },
     "campos": {
       "cliente": "Client",
@@ -4182,7 +4183,23 @@
         "guardar": "Enregistrer",
         "editado": "modifié",
         "editadoEl": "Modifié le {{fecha}}",
-        "corregido": "Note corrigée."
+        "corregido": "Note corrigée.",
+        "proxima": {
+          "anadir": "Ajouter une échéance",
+          "titulo": "Prochain contact",
+          "fecha": "Date",
+          "texto": "Motif (facultatif)",
+          "ph": "Nous avons convenu d'en parler après le comité…",
+          "guardar": "Enregistrer l'échéance",
+          "editar": "Modifier le prochain contact",
+          "quitar": "Retirer le prochain contact",
+          "hoy": "aujourd'hui",
+          "en": "dans {{count}} jour",
+          "en_other": "dans {{count}} jours",
+          "hace": "échue depuis {{count}} jour",
+          "hace_other": "échue depuis {{count}} jours",
+          "sin": "Pas de prochain contact"
+        }
       },
       "msgs": {
         "guardado": "Proposition enregistrée.",
