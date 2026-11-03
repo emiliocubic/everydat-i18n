@@ -1356,22 +1356,6 @@
       "colaborador_externo": "Nuevo colaborador",
       "invitado": "Nuevo usuario invitado"
     },
-    "soporteCreate": {
-      "title": "Nuevo usuario",
-      "subtitle": "Alta de usuario",
-      "perfilLabel": "Perfil",
-      "perfil": {
-        "superadmin": "Superadmin",
-        "superadminDesc": "Control total del tenant; incluye administrador.",
-        "administrador": "Administrador",
-        "administradorDesc": "Gestiona datos y usuarios del tenant.",
-        "operario": "Operario interno",
-        "operarioDesc": "App móvil de campo; sin acceso al panel.",
-        "colaborador": "Colaborador externo",
-        "colaboradorDesc": "Revisa en campo como el operario, solo en lo que se le comparta."
-      },
-      "cuentaLabel": "Tipo de cuenta"
-    },
     "generatePassword": "Generar",
     "empty": "No hay usuarios.",
     "searchPlaceholder": "Buscar por nombre, email o teléfono…",
@@ -1429,8 +1413,8 @@
       "superadmin_short": "Super",
       "admin": "Administrador",
       "admin_short": "Admin",
-      "operario": "Técnico de campo",
-      "operario_short": "Técnico"
+      "tecnico": "Técnico de campo",
+      "tecnico_short": "Técnico"
     },
     "estado": {
       "activo": "Activo",
@@ -1490,7 +1474,6 @@
       "alcanceLimitadoDataHint": "solo los datos de su scope asignado",
       "superadminDesc": "Control total del tenant: configuración, usuarios y todos los clientes.",
       "adminDesc": "Gestiona datos y usuarios del tenant.",
-      "operDesc": "Opera en campo.",
       "alcanceGlobal": "Alcance global",
       "alcanceGlobalHint": "gestiona todos los clientes",
       "alcanceLimitado": "Alcance limitado",
@@ -1696,7 +1679,7 @@
       "rol": {
         "super": "Superadmin",
         "admin": "Administrador",
-        "oper": "Operario"
+        "tecnico": "Técnico"
       },
       "buscarCliente": "Buscar cliente…",
       "sinContratista": "Sin contratista",
@@ -4102,7 +4085,9 @@
       "ia": "configurar la inteligencia artificial",
       "explotacion": "consultar estos datos",
       "informesDiseno": "diseñar las plantillas de informe",
-      "acreditaciones": "gestionar las acreditaciones"
+      "acreditaciones": "gestionar las acreditaciones",
+      "auditoria": "ver la auditoría",
+      "soporte": "usar las herramientas de soporte"
     }
   },
   "proyectos": {

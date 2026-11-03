@@ -1365,22 +1365,6 @@
       "colaborador_externo": "Nouveau collaborateur",
       "invitado": "Nouvel utilisateur invité"
     },
-    "soporteCreate": {
-      "title": "Nouvel utilisateur",
-      "subtitle": "Création d'utilisateur",
-      "perfilLabel": "Profil",
-      "perfil": {
-        "superadmin": "Superadmin",
-        "superadminDesc": "Contrôle total du tenant ; inclut administrateur.",
-        "administrador": "Administrateur",
-        "administradorDesc": "Gère les données et les utilisateurs du tenant.",
-        "operario": "Opérateur interne",
-        "operarioDesc": "Application mobile de terrain ; sans accès au panneau.",
-        "colaborador": "Collaborateur externe",
-        "colaboradorDesc": "Contrôle sur le terrain comme l'opérateur, uniquement sur ce qui lui est partagé."
-      },
-      "cuentaLabel": "Type de compte"
-    },
     "generatePassword": "Générer",
     "empty": "Aucun utilisateur trouvé.",
     "searchPlaceholder": "Rechercher par nom, e-mail ou téléphone…",
@@ -1438,8 +1422,8 @@
       "superadmin_short": "Super",
       "admin": "Administrateur",
       "admin_short": "Admin",
-      "operario": "Technicien de terrain",
-      "operario_short": "Tech."
+      "tecnico": "Technicien de terrain",
+      "tecnico_short": "Tech."
     },
     "estado": {
       "activo": "Actif",
@@ -1498,7 +1482,6 @@
       "alcanceLimitadoDataHint": "uniquement les données de sa portée assignée",
       "superadminDesc": "Contrôle total du tenant : configuration, utilisateurs et tous les clients.",
       "adminDesc": "Gère les données et utilisateurs du tenant.",
-      "operDesc": "Opère sur le terrain.",
       "alcanceGlobal": "Portée globale",
       "alcanceGlobalHint": "gère tous les clients",
       "alcanceLimitado": "Portée limitée",
@@ -1703,7 +1686,7 @@
       "rol": {
         "super": "Superadmin",
         "admin": "Administrateur",
-        "oper": "Opérateur"
+        "tecnico": "Technicien"
       },
       "buscarCliente": "Rechercher un client…",
       "sinContratista": "Sans contractant",
@@ -3822,7 +3805,9 @@
       "ia": "configurer l’intelligence artificielle",
       "explotacion": "consulter ces données",
       "informesDiseno": "concevoir les modèles de rapport",
-      "acreditaciones": "gérer les habilitations"
+      "acreditaciones": "gérer les habilitations",
+      "auditoria": "consulter l’audit",
+      "soporte": "utiliser les outils de support"
     }
   },
   "proyectos": {

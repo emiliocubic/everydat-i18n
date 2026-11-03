@@ -1485,22 +1485,6 @@
       "colaborador_externo": "New collaborator",
       "invitado": "New guest user"
     },
-    "soporteCreate": {
-      "title": "New user",
-      "subtitle": "Create user",
-      "perfilLabel": "Profile",
-      "perfil": {
-        "superadmin": "Superadmin",
-        "superadminDesc": "Full control of the tenant; includes administrator.",
-        "administrador": "Administrator",
-        "administradorDesc": "Manages tenant data and users.",
-        "operario": "Internal operator",
-        "operarioDesc": "Field mobile app; no panel access.",
-        "colaborador": "External collaborator",
-        "colaboradorDesc": "Inspects in the field like an operator, only on what is shared with them."
-      },
-      "cuentaLabel": "Account type"
-    },
     "generatePassword": "Generate",
     "empty": "No users found.",
     "searchPlaceholder": "Search by name, email or phone…",
@@ -1558,8 +1542,8 @@
       "superadmin_short": "Super",
       "admin": "Administrator",
       "admin_short": "Admin",
-      "operario": "Field technician",
-      "operario_short": "Tech."
+      "tecnico": "Field technician",
+      "tecnico_short": "Tech."
     },
     "estado": {
       "activo": "Active",
@@ -1619,7 +1603,6 @@
       "alcanceLimitadoDataHint": "only the data in their assigned scope",
       "superadminDesc": "Full control of the tenant: configuration, users and all customers.",
       "adminDesc": "Manages tenant data and users.",
-      "operDesc": "Operates in the field.",
       "alcanceGlobal": "Global scope",
       "alcanceGlobalHint": "manages all customers",
       "alcanceLimitado": "Limited scope",
@@ -1825,7 +1808,7 @@
       "rol": {
         "super": "Superadmin",
         "admin": "Administrator",
-        "oper": "Operator"
+        "tecnico": "Technician"
       },
       "buscarCliente": "Search customer…",
       "sinContratista": "No contractor",
@@ -4102,7 +4085,9 @@
       "ia": "configure artificial intelligence",
       "explotacion": "query this data",
       "informesDiseno": "design report templates",
-      "acreditaciones": "manage accreditations"
+      "acreditaciones": "manage accreditations",
+      "auditoria": "view the audit log",
+      "soporte": "use the support tools"
     }
   },
   "proyectos": {
