@@ -2734,7 +2734,8 @@
         "campos": "Fields",
         "camposTitle": "Number of suggested fields",
         "equivalente": "Equivalent",
-        "equivalenteTitle": "Designation of the standard in this instance's market (UNE, BS, DIN, NF). Informative only: the standard is the EN."
+        "equivalenteTitle": "Designation of the standard in this instance's market (UNE, BS, DIN, NF). Informative only: the standard is the EN.",
+        "sinEn": "No EN code"
       },
       "adopcion": {
         "sin_adoptar": "Not adopted",
@@ -2779,7 +2780,9 @@
       "canonDetail": "Detail (read-only)",
       "candadoTitle": "Preinstalled standard: it cannot be edited or deleted.",
       "canonNote": "This standard is part of the EVERYDAT base canon: it can be consulted but not edited. The standards you create yourself can be edited.",
-      "sinEnAviso": "Creating standards without an EN code will make it harder to relate the equipment that complies with them to the sector catalogues and to other documentary references based on European standards.\n\nConfirm only if there really is no equivalent EN standard."
+      "sinEnAviso": "Creating standards without an EN code will make it harder to relate the equipment that complies with them to the sector catalogues and to other documentary references based on European standards.\n\nConfirm only if there really is no equivalent EN standard.",
+      "sinEnTag": "No EN code",
+      "sinEnNota": "This standard has no EN code: it loses its link to the sector catalogues and to the documentation based on European standards."
     },
     "campos": {
       "create": "New field",

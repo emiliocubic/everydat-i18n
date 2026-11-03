@@ -2588,7 +2588,8 @@
         "campos": "Champs",
         "camposTitle": "Nombre de champs suggérés",
         "equivalente": "Équivalent",
-        "equivalenteTitle": "Désignation de la norme sur le marché de cette instance (UNE, BS, DIN, NF). Informatif : la norme est l’EN."
+        "equivalenteTitle": "Désignation de la norme sur le marché de cette instance (UNE, BS, DIN, NF). Informatif : la norme est l’EN.",
+        "sinEn": "Sans code EN"
       },
       "adopcion": {
         "sin_adoptar": "Non adoptée",
@@ -2633,7 +2634,9 @@
       "canonDetail": "Détail (lecture seule)",
       "candadoTitle": "Norme préinstallée : elle ne se modifie ni ne se supprime.",
       "canonNote": "Cette norme fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Les normes que vous créez vous-même sont modifiables.",
-      "sinEnAviso": "Créer des normes sans code EN rendra plus difficile le rapprochement des équipements qui les respectent avec les catalogues du secteur et d'autres références documentaires fondées sur les normes européennes.\n\nNe confirmez que s'il n'existe vraiment pas de norme EN équivalente."
+      "sinEnAviso": "Créer des normes sans code EN rendra plus difficile le rapprochement des équipements qui les respectent avec les catalogues du secteur et d'autres références documentaires fondées sur les normes européennes.\n\nNe confirmez que s'il n'existe vraiment pas de norme EN équivalente.",
+      "sinEnTag": "Sans code EN",
+      "sinEnNota": "Cette norme n'a pas de code EN : elle perd son lien avec les catalogues du secteur et avec la documentation fondée sur les normes européennes."
     },
     "campos": {
       "create": "Nouveau champ",

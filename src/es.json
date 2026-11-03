@@ -2734,7 +2734,8 @@
         "campos": "Campos",
         "camposTitle": "Nº de campos sugeridos",
         "equivalente": "Equivalente",
-        "equivalenteTitle": "Designación de la norma en el mercado de esta instancia (UNE, BS, DIN, NF). Solo informativa: la norma es la EN."
+        "equivalenteTitle": "Designación de la norma en el mercado de esta instancia (UNE, BS, DIN, NF). Solo informativa: la norma es la EN.",
+        "sinEn": "Sin código EN"
       },
       "adopcion": {
         "sin_adoptar": "Sin adoptar",
@@ -2779,7 +2780,9 @@
       "canonDetail": "Detalle (solo lectura)",
       "candadoTitle": "Norma preinstalada: ni se edita ni se borra.",
       "canonNote": "Esta norma forma parte del canon base de EVERYDAT: es consultable pero no editable. Las normas que crees tú sí que son editables.",
-      "sinEnAviso": "El alta de normas sin código EN dificultará la relación de los equipos dotados de ellas con los catálogos del sector y otras referencias documentales basadas en la normativa europea.\n\nConfirma solo si de verdad no existe una norma EN equivalente."
+      "sinEnAviso": "El alta de normas sin código EN dificultará la relación de los equipos dotados de ellas con los catálogos del sector y otras referencias documentales basadas en la normativa europea.\n\nConfirma solo si de verdad no existe una norma EN equivalente.",
+      "sinEnTag": "Sin código EN",
+      "sinEnNota": "Esta norma no tiene código EN: se pierde la relación con los catálogos del sector y con la documentación basada en la normativa europea."
     },
     "campos": {
       "create": "Nuevo campo",
