@@ -568,6 +568,16 @@
         "traspasa": "Pasan a «{{to}}» sus vínculos con clientes, los emplazamientos que alcanza y sus permisos. Si las dos tenían cuenta de portal, solo sobrevive la de «{{to}}».",
         "contador": "{{n}} clientes"
       }
+    },
+    "eliminarAviso": "La eliminación completa requiere eliminar o desasociar del cliente previamente cualquier emplazamiento. Si simplemente quieres desactivarlo porque ya no trabajas con este cliente, la opción recomendada es cambiarlo de estado Activo a estado BAJA.",
+    "baja": {
+      "titulo": "¿Dar de baja a {{nombre}}?",
+      "efectos": "Dejarán de verse las instalaciones en las que es el único cliente y no se le podrán crear informes nuevos. Su historia se conserva y se puede volver a activar cuando quieras.",
+      "cancelara": "Además, con el motivo «baja del cliente»:",
+      "proyecto": "se cancelará el proyecto aprobado {{nombre}}",
+      "propuesta": "se descartará la propuesta nº {{id}}",
+      "boton": "Dar de baja",
+      "bloquean": "No se puede dar de baja: tiene proyectos en ejecución o en certificación ({{lista}}). Ciérralos o cancélalos antes."
     }
   },
   "contactos": {
@@ -6817,7 +6827,8 @@
       "situ": "Situación en proyecto",
       "proyecto": "Proyecto",
       "pendiente": "Pendiente de revisar en proyecto en curso",
-      "exc": "Excepciones detectadas"
+      "exc": "Excepciones detectadas",
+      "cliBaja": "Clientes"
     },
     "qb": {
       "criterios": "Criterios de búsqueda",
@@ -7127,6 +7138,10 @@
         "obs": "Observaciones",
         "estado": "Estado actual"
       }
+    },
+    "cliBaja": {
+      "activos": "Solo activos",
+      "incluir": "También de baja"
     }
   },
   "informesDiseno": {

@@ -696,6 +696,16 @@
         "traspasa": "Client links, reachable sites and permissions move to \"{{to}}\". If both had a portal account, only the one on \"{{to}}\" survives.",
         "contador": "{{n}} clients"
       }
+    },
+    "eliminarAviso": "Deleting the customer completely requires deleting or unlinking every site from it first. If you simply want to deactivate it because you no longer work with this customer, the recommended option is to change its status from Active to INACTIVE.",
+    "baja": {
+      "titulo": "Deactivate {{nombre}}?",
+      "efectos": "The sites where it is the only customer will no longer be shown and no new reports can be created for it. Its history is kept and you can reactivate it at any time.",
+      "cancelara": "Also, with the reason “customer deactivated”:",
+      "proyecto": "the approved project {{nombre}} will be cancelled",
+      "propuesta": "proposal no. {{id}} will be discarded",
+      "boton": "Deactivate",
+      "bloquean": "It cannot be deactivated: it has projects in progress or in certification ({{lista}}). Close or cancel them first."
     }
   },
   "contactos": {
@@ -6817,7 +6827,8 @@
       "situ": "Project status",
       "proyecto": "Project",
       "pendiente": "Pending inspection in an ongoing project",
-      "exc": "Detected exceptions"
+      "exc": "Detected exceptions",
+      "cliBaja": "Clients"
     },
     "qb": {
       "criterios": "Search criteria",
@@ -7127,6 +7138,10 @@
         "obs": "Remarks",
         "estado": "Current status"
       }
+    },
+    "cliBaja": {
+      "activos": "Active only",
+      "incluir": "Also inactive"
     }
   },
   "informesDiseno": {
