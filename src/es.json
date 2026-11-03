@@ -107,23 +107,12 @@
       "success": "Contraseña actualizada correctamente."
     },
     "login": {
-      "subtitle": "Accede con tu cuenta",
-      "passwordLabel": "Contraseña",
-      "emailPlaceholder": "tu{'@'}empresa.com",
       "submit": "Entrar",
-      "loading": "Entrando...",
-      "forgotPassword": "¿Olvidaste tu contraseña?"
-    },
-    "forgotPassword": {
-      "subtitle": "Recupera el acceso a tu cuenta",
-      "submit": "Enviar enlace",
-      "sent": "Si ese correo está registrado, recibirás un enlace en breve.",
-      "backToLogin": "Volver al inicio de sesión"
-    },
-    "resetPassword": {
-      "subtitle": "Establece una nueva contraseña",
-      "submit": "Cambiar contraseña",
-      "success": "Contraseña actualizada. Ya puedes iniciar sesión."
+      "titulo": "Accede a tu cuenta",
+      "subtitulo": "Introduce tus credenciales para continuar.",
+      "entrando": "Verificando…",
+      "olvidada": "¿Olvidaste tu contraseña?",
+      "incorrectas": "Usuario o contraseña incorrectos. Revisa los datos e inténtalo de nuevo."
     },
     "segundoFactor": {
       "codigoLabel": "Código de verificación",
@@ -173,7 +162,55 @@
       "activada": "Verificación en dos pasos activada.",
       "desactivada": "Verificación en dos pasos desactivada.",
       "hecho": "Hecho"
-    }
+    },
+    "demasiados": "Demasiados intentos. Espera un minuto y vuelve a intentarlo.",
+    "campo": {
+      "usuario": "Usuario",
+      "email": "Email",
+      "emailPlaceholder": "nombre@empresa.com",
+      "password": "Contraseña",
+      "passwordNueva": "Nueva contraseña",
+      "passwordRepetir": "Repite la nueva contraseña",
+      "bloqMayus": "Bloq Mayús está activado",
+      "mostrar": "Mostrar la contraseña",
+      "ocultar": "Ocultar la contraseña",
+      "emailFalta": "Escribe tu email",
+      "emailMal": "Ese email no tiene un formato válido",
+      "passwordFalta": "Escribe tu contraseña",
+      "noCoinciden": "Las dos contraseñas no coinciden"
+    },
+    "recuperar": {
+      "titulo": "Recupera tu contraseña",
+      "subtitulo": "Escribe el email con el que estás registrado y te enviaremos un enlace para crear una nueva.",
+      "submit": "Enviar enlace",
+      "enviando": "Enviando…"
+    },
+    "enviado": {
+      "titulo": "Revisa tu correo",
+      "cuerpo": "Si <b>{{email}}</b> está registrado, recibirás en unos minutos un enlace para restablecer la contraseña. Revisa también la carpeta de spam.",
+      "noLlega": "¿No te ha llegado?",
+      "reenviado": "Enlace reenviado.",
+      "reenviarEn": "Reenviar en {{segundos}} s",
+      "reenviar": "Reenviar enlace"
+    },
+    "restablecer": {
+      "titulo": "Crea una contraseña nueva",
+      "subtitulo": "Escríbela dos veces. Al guardarla, la anterior deja de valer.",
+      "submit": "Guardar contraseña",
+      "guardando": "Guardando…",
+      "hechoTitulo": "Contraseña actualizada",
+      "hecho": "Ya puedes entrar con la nueva contraseña.",
+      "sinToken": "Este enlace no es válido o está incompleto. Pide uno nuevo.",
+      "pedirOtro": "Pedir otro enlace"
+    },
+    "dentro": {
+      "titulo": "Sesión iniciada",
+      "cuerpo": "Preparando tu panel de {{nombre}}…"
+    },
+    "volverAcceso": "Volver al acceso",
+    "irAlAcceso": "Ir al acceso",
+    "soporte": "Atención al cliente",
+    "idioma": "Idioma: {{idioma}}"
   },
   "roles": {
     "title": "Roles",

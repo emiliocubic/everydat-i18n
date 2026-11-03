@@ -107,23 +107,12 @@
       "success": "Mot de passe mis à jour avec succès."
     },
     "login": {
-      "subtitle": "Connectez-vous à votre compte",
-      "passwordLabel": "Mot de passe",
-      "emailPlaceholder": "vous@entreprise.com",
       "submit": "Se connecter",
-      "loading": "Connexion...",
-      "forgotPassword": "Mot de passe oublié ?"
-    },
-    "forgotPassword": {
-      "subtitle": "Récupérez l'accès à votre compte",
-      "submit": "Envoyer le lien",
-      "sent": "Si cet e-mail est enregistré, vous recevrez un lien sous peu.",
-      "backToLogin": "Retour à la connexion"
-    },
-    "resetPassword": {
-      "subtitle": "Définissez un nouveau mot de passe",
-      "submit": "Changer le mot de passe",
-      "success": "Mot de passe mis à jour. Vous pouvez maintenant vous connecter."
+      "titulo": "Accédez à votre compte",
+      "subtitulo": "Saisissez vos identifiants pour continuer.",
+      "entrando": "Vérification…",
+      "olvidada": "Mot de passe oublié ?",
+      "incorrectas": "Identifiant ou mot de passe incorrect. Vérifiez vos données et réessayez."
     },
     "segundoFactor": {
       "codigoLabel": "Code de vérification",
@@ -173,7 +162,55 @@
       "activada": "Validation en deux étapes activée.",
       "desactivada": "Validation en deux étapes désactivée.",
       "hecho": "Terminé"
-    }
+    },
+    "demasiados": "Trop de tentatives. Attendez une minute et réessayez.",
+    "campo": {
+      "usuario": "Identifiant",
+      "email": "E-mail",
+      "emailPlaceholder": "nom@entreprise.com",
+      "password": "Mot de passe",
+      "passwordNueva": "Nouveau mot de passe",
+      "passwordRepetir": "Répétez le nouveau mot de passe",
+      "bloqMayus": "Le verrouillage des majuscules est activé",
+      "mostrar": "Afficher le mot de passe",
+      "ocultar": "Masquer le mot de passe",
+      "emailFalta": "Saisissez votre e-mail",
+      "emailMal": "Le format de cet e-mail n'est pas valide",
+      "passwordFalta": "Saisissez votre mot de passe",
+      "noCoinciden": "Les deux mots de passe ne correspondent pas"
+    },
+    "recuperar": {
+      "titulo": "Récupérez votre mot de passe",
+      "subtitulo": "Saisissez l'e-mail avec lequel vous êtes inscrit et nous vous enverrons un lien pour en créer un nouveau.",
+      "submit": "Envoyer le lien",
+      "enviando": "Envoi…"
+    },
+    "enviado": {
+      "titulo": "Consultez votre messagerie",
+      "cuerpo": "Si <b>{{email}}</b> est inscrit, vous recevrez dans quelques minutes un lien pour réinitialiser le mot de passe. Vérifiez aussi le dossier des courriers indésirables.",
+      "noLlega": "Rien reçu ?",
+      "reenviado": "Lien renvoyé.",
+      "reenviarEn": "Renvoyer dans {{segundos}} s",
+      "reenviar": "Renvoyer le lien"
+    },
+    "restablecer": {
+      "titulo": "Créez un nouveau mot de passe",
+      "subtitulo": "Saisissez-le deux fois. Une fois enregistré, l'ancien ne fonctionne plus.",
+      "submit": "Enregistrer le mot de passe",
+      "guardando": "Enregistrement…",
+      "hechoTitulo": "Mot de passe mis à jour",
+      "hecho": "Vous pouvez maintenant vous connecter avec le nouveau mot de passe.",
+      "sinToken": "Ce lien n'est pas valide ou est incomplet. Demandez-en un nouveau.",
+      "pedirOtro": "Demander un autre lien"
+    },
+    "dentro": {
+      "titulo": "Session ouverte",
+      "cuerpo": "Préparation de votre panneau {{nombre}}…"
+    },
+    "volverAcceso": "Retour à la connexion",
+    "irAlAcceso": "Aller à la connexion",
+    "soporte": "Service client",
+    "idioma": "Langue : {{idioma}}"
   },
   "modelPicker": {
     "title": "Choisir des modèles",
