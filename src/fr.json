@@ -3802,6 +3802,7 @@
       "altaEmplazamientos": "créer des sites",
       "api": "Vous n'avez pas la permission pour cette action : {{accion}}.",
       "apiCapacidad": "Vous n'avez pas la permission pour cette action : {{accion}}. Elle vient avec la capacité {{capacidad}}.",
+      "informes": "consulter les rapports",
       "ia": "configurer l’intelligence artificielle",
       "explotacion": "consulter ces données",
       "informesDiseno": "concevoir les modèles de rapport",
