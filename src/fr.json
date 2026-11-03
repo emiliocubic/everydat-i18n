@@ -2147,7 +2147,8 @@
         "familiaPlaceholder": "Choisissez la famille…",
         "tipoLabel": "Type d’équipement",
         "tipoHint": "Le type apporte la checklist, les champs et les dates du modèle.",
-        "modeloNombreLabel": "Nom du modèle"
+        "modeloNombreLabel": "Nom du modèle",
+        "busquedaRequerida": "Ce fabricant n'a pas d'accord avec le référentiel, son catalogue ne se feuillette donc pas : cherchez par nom ou code (trois lettres ou plus) et jusqu'à dix résultats s'affichent."
       },
       "pick": {
         "existing": "Déjà dans votre catalogue",

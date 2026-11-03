@@ -2293,7 +2293,8 @@
         "familiaPlaceholder": "Elige la familia…",
         "tipoLabel": "Tipo de elemento",
         "tipoHint": "Con el tipo llegan el checklist, los campos y las fechas del modelo.",
-        "modeloNombreLabel": "Nombre del modelo"
+        "modeloNombreLabel": "Nombre del modelo",
+        "busquedaRequerida": "Este fabricante no tiene acuerdo con el repositorio, así que su catálogo no se hojea: busca por nombre o código (tres letras o más) y se enseñan hasta diez resultados."
       },
       "pick": {
         "existing": "Ya en tu catálogo",

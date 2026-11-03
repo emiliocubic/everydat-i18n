@@ -2293,7 +2293,8 @@
         "familiaPlaceholder": "Choose the family…",
         "tipoLabel": "Item type",
         "tipoHint": "The type brings the checklist, fields and dates of the model.",
-        "modeloNombreLabel": "Model name"
+        "modeloNombreLabel": "Model name",
+        "busquedaRequerida": "This manufacturer has no agreement with the repository, so its catalogue cannot be browsed: search by name or code (three characters or more) and up to ten results are shown."
       },
       "pick": {
         "existing": "Already in your catalogue",
