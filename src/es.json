@@ -1950,7 +1950,7 @@
       "promoverNota": "La sub-zona nace sin permisos propios: quien ya ve la zona de fuera la sigue viendo. En la ficha de cada contacto se le puede quitar.",
       "promoverAccion": "Crear sub-zona",
       "degradarTitulo": "Dejar de ser zona",
-      "degradarTexto": "La estructura no se toca: solo desaparece la frontera administrativa. Quedarían sin destino:",
+      "degradarTexto": "La estructura no se toca: solo desaparece la frontera administrativa. Al quitarla:",
       "degradarNota": "Los permisos dados sobre esta zona se pierden: la carpeta pasa a ser parte de lo que la rodea, y quien solo tenía esta zona deja de verla. Si vuelves a promocionarla, recupera su fecha, no los permisos.",
       "degradarAccion": "Dejar de ser zona",
       "depContactos": "{{count}} contacto con permiso sobre esta zona",
@@ -1962,7 +1962,11 @@
       "promoverZonaTitulo": "Promocionar a zona",
       "promoverZonaAccion": "Promocionar",
       "siguenViendo": "{{count}} contacto que ya veía esta carpeta la sigue viendo como zona. Si no debe, quítasela en su ficha.",
-      "siguenViendo_other": "{{count}} contactos que ya veían esta carpeta la siguen viendo como zona. Si alguno no debe, quítasela en su ficha."
+      "siguenViendo_other": "{{count}} contactos que ya veían esta carpeta la siguen viendo como zona. Si alguno no debe, quítasela en su ficha.",
+      "depPierden": "{{count}} contacto deja de verla: la tenía por esta zona",
+      "depPierden_other": "{{count}} contactos dejan de verla: la tenían por esta zona",
+      "depGanan": "{{count}} contacto pasa a verla: la tenía excluida y ahora es parte de lo que se le dio",
+      "depGanan_other": "{{count}} contactos pasan a verla: la tenían excluida y ahora es parte de lo que se les dio"
     },
     "revision": {
       "titulo": "Poner en revisión",

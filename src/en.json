@@ -2079,7 +2079,7 @@
       "promoverNota": "The sub-zone starts with no permissions of its own: whoever already sees the outer zone keeps seeing it. It can be removed in each contact’s record.",
       "promoverAccion": "Create sub-zone",
       "degradarTitulo": "Stop being a zone",
-      "degradarTexto": "The structure is untouched: only the administrative boundary disappears. These would be left without a target:",
+      "degradarTexto": "The structure is untouched: only the administrative boundary disappears. Removing it:",
       "degradarNota": "Permissions granted on this zone are lost: the folder becomes part of what surrounds it, and whoever only had this zone stops seeing it. Promoting it again brings back its date, not the permissions.",
       "degradarAccion": "Stop being a zone",
       "depContactos": "{{count}} contact with permission on this zone",
@@ -2091,7 +2091,11 @@
       "promoverZonaTitulo": "Promote to zone",
       "promoverZonaAccion": "Promote",
       "siguenViendo": "{{count}} contact who could already see this folder still sees it as a zone. If they shouldn’t, remove it in their record.",
-      "siguenViendo_other": "{{count}} contacts who could already see this folder still see it as a zone. If any shouldn’t, remove it in their record."
+      "siguenViendo_other": "{{count}} contacts who could already see this folder still see it as a zone. If any shouldn’t, remove it in their record.",
+      "depPierden": "{{count}} contact stops seeing it: they had it through this zone",
+      "depPierden_other": "{{count}} contacts stop seeing it: they had it through this zone",
+      "depGanan": "{{count}} contact starts seeing it: it was excluded and is now part of what they were given",
+      "depGanan_other": "{{count}} contacts start seeing it: it was excluded and is now part of what they were given"
     },
     "revision": {
       "titulo": "Start inspection",
