@@ -6407,7 +6407,8 @@
       "renombrar": "Rename",
       "renombrarPrompt": "New folder name",
       "borrarConfirm": "Delete the folder “{{nombre}}”. Only possible if it is empty.",
-      "borrarError": "The folder could not be deleted."
+      "borrarError": "The folder could not be deleted.",
+      "permisos": "Folder permissions"
     },
     "archivo": {
       "borrarConfirm": "Delete “{{nombre}}”. You can restore it from the bin."
@@ -6447,7 +6448,12 @@
       "restringir": "Restrict this file",
       "nivel": "Permission level",
       "buscarSujeto": "Give access to a person or role",
-      "primerPermiso": "The first permission breaks inheritance: from then on only those on the list get in."
+      "primerPermiso": "The first permission breaks inheritance: from then on only those on the list get in.",
+      "subidoPor": "Uploaded by {{nombre}} on {{fecha}}",
+      "subidoEl": "Uploaded on {{fecha}}",
+      "permisosCarpeta": "Who can see it",
+      "heredaCarpeta": "Inherits the permissions of the folder above; at the root, the default rule: all internal staff can see it.",
+      "restringirCarpeta": "Restrict this folder"
     },
     "rol": {
       "superadmin": "Superadmin",
@@ -6484,7 +6490,8 @@
       "nombre": "Title",
       "descripcion": "Description",
       "fichero": "File",
-      "tipoMime": "Type"
+      "tipoMime": "Type",
+      "subida": "Uploaded"
     }
   },
   "informes": {

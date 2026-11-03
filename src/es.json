@@ -6407,7 +6407,8 @@
       "renombrar": "Renombrar",
       "renombrarPrompt": "Nuevo nombre de la carpeta",
       "borrarConfirm": "Se elimina la carpeta «{{nombre}}». Solo se puede si está vacía.",
-      "borrarError": "No se ha podido eliminar la carpeta."
+      "borrarError": "No se ha podido eliminar la carpeta.",
+      "permisos": "Permisos de la carpeta"
     },
     "archivo": {
       "borrarConfirm": "Se elimina «{{nombre}}». Podrás recuperarlo desde la papelera."
@@ -6447,7 +6448,12 @@
       "restringir": "Restringir este archivo",
       "nivel": "Nivel del permiso",
       "buscarSujeto": "Dar permiso a una persona o rol",
-      "primerPermiso": "El primer permiso rompe la herencia: desde ese momento solo entra quien esté en la lista."
+      "primerPermiso": "El primer permiso rompe la herencia: desde ese momento solo entra quien esté en la lista.",
+      "subidoPor": "Subido por {{nombre}} el {{fecha}}",
+      "subidoEl": "Subido el {{fecha}}",
+      "permisosCarpeta": "Quién la ve",
+      "heredaCarpeta": "Hereda los permisos de la carpeta de arriba; en la raíz, la regla de serie: la ve todo el personal interno.",
+      "restringirCarpeta": "Restringir esta carpeta"
     },
     "rol": {
       "superadmin": "Superadmin",
@@ -6484,7 +6490,8 @@
       "nombre": "Título",
       "descripcion": "Descripción",
       "fichero": "Fichero",
-      "tipoMime": "Tipo"
+      "tipoMime": "Tipo",
+      "subida": "Subida"
     }
   },
   "informes": {

@@ -7674,5 +7674,20 @@
       "php_consola": "La commande php seule est la version {{version}}, avec laquelle Everydat ne démarre pas. Dans le crontab et pour lancer artisan, utilisez toujours le chemin complet du PHP 8.4 ou plus ({{binario}}), ou demandez à l'hébergeur de la changer pour le compte.",
       "php_consola_desconocido": "Impossible de savoir quelle version est la commande php seule. Dans le crontab et pour lancer artisan, utilisez le chemin complet du PHP 8.4 ou plus ({{binario}})."
     }
+  },
+  "documentos": {
+    "campos": {
+      "subida": "Ajouté"
+    },
+    "carpeta": {
+      "permisos": "Permissions du dossier"
+    },
+    "drawer": {
+      "subidoPor": "Ajouté par {{nombre}} le {{fecha}}",
+      "subidoEl": "Ajouté le {{fecha}}",
+      "permisosCarpeta": "Qui le voit",
+      "heredaCarpeta": "Hérite des permissions du dossier parent ; à la racine, la règle par défaut : tout le personnel interne le voit.",
+      "restringirCarpeta": "Restreindre ce dossier"
+    }
   }
 }
