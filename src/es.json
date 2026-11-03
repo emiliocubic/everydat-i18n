@@ -3668,6 +3668,18 @@
           "lista": "No distribuir los checkpoints por grupos",
           "listaSub": "Todos los checkpoints se mostrarán como una lista única en el checklist."
         }
+      },
+      "grupoClientes": "Clientes",
+      "codigoCliente": {
+        "titulo": "Código de cliente",
+        "desc": "Un patrón opcional para que el alta de un cliente salga con el siguiente código libre ya escrito.",
+        "usar": "Proponer el código al dar de alta un cliente",
+        "prefijo": "Prefijo",
+        "cifras": "Cifras",
+        "ejemplo": "El primero sería {{ejemplo}}; después, el número más alto ya usado con ese prefijo, más uno.",
+        "hintOn": "El código propuesto se puede cambiar en el alta, y después en la ficha. Cuenta también los clientes eliminados.",
+        "hintOff": "Sin patrón, el código del cliente lo escribe una persona.",
+        "cifrasInvalidas": "Las cifras tienen que ir de 1 a 10."
       }
     },
     "caracterizacion": {

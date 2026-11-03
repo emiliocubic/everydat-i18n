@@ -3511,6 +3511,18 @@
           "lista": "Ne pas répartir les points de contrôle en groupes",
           "listaSub": "Tous les points de contrôle s'affichent dans une liste unique."
         }
+      },
+      "grupoClientes": "Clients",
+      "codigoCliente": {
+        "titulo": "Code client",
+        "desc": "Un modèle facultatif pour que la création d'un client propose déjà le prochain code libre.",
+        "usar": "Proposer le code à la création d'un client",
+        "prefijo": "Préfixe",
+        "cifras": "Chiffres",
+        "ejemplo": "Le premier serait {{ejemplo}} ; ensuite, le numéro le plus élevé déjà utilisé avec ce préfixe, plus un.",
+        "hintOn": "Le code proposé peut être modifié à la création, puis dans la fiche. Les clients supprimés comptent aussi.",
+        "hintOff": "Sans modèle, le code client est saisi à la main.",
+        "cifrasInvalidas": "Le nombre de chiffres doit être compris entre 1 et 10."
       }
     },
     "caracterizacion": {

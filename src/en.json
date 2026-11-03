@@ -3668,6 +3668,18 @@
           "lista": "Do not split checkpoints into groups",
           "listaSub": "All checkpoints are shown as a single list in the checklist."
         }
+      },
+      "grupoClientes": "Clients",
+      "codigoCliente": {
+        "titulo": "Client code",
+        "desc": "An optional pattern so that a new client form opens with the next free code already filled in.",
+        "usar": "Suggest the code when creating a client",
+        "prefijo": "Prefix",
+        "cifras": "Digits",
+        "ejemplo": "The first one would be {{ejemplo}}; after that, the highest number already used with that prefix, plus one.",
+        "hintOn": "The suggested code can be changed when creating the client, and later on its record. Deleted clients count too.",
+        "hintOff": "Without a pattern, the client code is typed in by hand.",
+        "cifrasInvalidas": "Digits must be between 1 and 10."
       }
     },
     "caracterizacion": {
