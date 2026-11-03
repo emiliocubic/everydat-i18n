@@ -6529,7 +6529,9 @@
       "sin_sello": "Se pidió firmar, pero no hay sello configurado: saldrá sin firma.",
       "sin_imagen_sello": "El certificado lleva el sello de la empresa, pero no hay imagen del sello en Parámetros › Marca: saldrá el hueco vacío.",
       "firmante_sin_firma": "{{firmante}} no tiene imagen de firma: el certificado saldrá con el hueco vacío y su nombre.",
-      "plantilla_retirada": "El informe usa una plantilla retirada: saldrá con el formato anterior y sin los apartados que ya no existen."
+      "plantilla_retirada": "El informe usa una plantilla retirada: saldrá con el formato anterior y sin los apartados que ya no existen.",
+      "en_otro_informe_one": "{{count}} revisión de este informe ya está en otro informe emitido ({{informes}}).",
+      "en_otro_informe_other": "{{count}} revisiones de este informe ya están en otro informe emitido ({{informes}})."
     },
     "ajustes": {
       "titulo": "Cambios sobre la plantilla",
@@ -6595,7 +6597,9 @@
       "actualizado_one": "{{count}} añadida desde el proyecto.",
       "actualizado_other": "{{count}} añadidas desde el proyecto.",
       "alDia": "El informe ya está al día con el proyecto.",
-      "desfase": "Este informe tiene su origen en un proyecto, y la situación actual del informe y del proyecto no coinciden. Se recomienda usar la opción Actualizar desde el proyecto en la pestaña Contenido para sincronizar el informe con el estado actual del proyecto antes de emitirlo."
+      "desfase": "Este informe tiene su origen en un proyecto, y la situación actual del informe y del proyecto no coinciden. Se recomienda usar la opción Actualizar desde el proyecto en la pestaña Contenido para sincronizar el informe con el estado actual del proyecto antes de emitirlo.",
+      "yaEmitidas_one": "{{count}} revisión de este informe ya está en otro informe emitido.",
+      "yaEmitidas_other": "{{count}} revisiones de este informe ya están en otro informe emitido."
     }
   },
   "tiposRevision": {

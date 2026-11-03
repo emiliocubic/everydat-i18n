@@ -6529,7 +6529,9 @@
       "sin_sello": "Signing was requested but no seal is set up: it will be issued unsigned.",
       "sin_imagen_sello": "The certificate carries the company stamp, but there is no stamp image in Settings › Brand: the space will be left blank.",
       "firmante_sin_firma": "{{firmante}} has no signature image: the certificate will show a blank space with their name.",
-      "plantilla_retirada": "The report uses a retired template: it will be issued in the previous format, without the sections that no longer exist."
+      "plantilla_retirada": "The report uses a retired template: it will be issued in the previous format, without the sections that no longer exist.",
+      "en_otro_informe_one": "{{count}} inspection in this report is already in another issued report ({{informes}}).",
+      "en_otro_informe_other": "{{count}} inspections in this report are already in another issued report ({{informes}})."
     },
     "ajustes": {
       "titulo": "Changes from the template",
@@ -6595,7 +6597,9 @@
       "actualizado_one": "{{count}} added from the project.",
       "actualizado_other": "{{count}} added from the project.",
       "alDia": "The report is already up to date with the project.",
-      "desfase": "This report originates from a project, and the current state of the report and the project do not match. Use Update from the project in the Content tab to bring the report in line with the project before issuing it."
+      "desfase": "This report originates from a project, and the current state of the report and the project do not match. Use Update from the project in the Content tab to bring the report in line with the project before issuing it.",
+      "yaEmitidas_one": "{{count}} inspection in this report is already in another issued report.",
+      "yaEmitidas_other": "{{count}} inspections in this report are already in another issued report."
     }
   },
   "tiposRevision": {
