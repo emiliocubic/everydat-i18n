@@ -654,7 +654,12 @@
       "propuestas_short": "Prop.",
       "cargo": "Role",
       "direccion": "Address",
-      "email": "Email"
+      "email": "Email",
+      "paisProvincia": "Country and province",
+      "grupos": "Groups",
+      "fechaAltaCol": "Registration date",
+      "importePresupuestado": "Amount quoted",
+      "importeAceptado": "Amount accepted"
     },
     "grupos": {
       "identidad": "Identity",
@@ -706,6 +711,20 @@
       "propuesta": "proposal no. {{id}} will be discarded",
       "boton": "Deactivate",
       "bloquean": "It cannot be deactivated: it has projects in progress or in certification ({{lista}}). Close or cancel them first."
+    },
+    "sinPais": "No country",
+    "sinProvincia": "No province",
+    "cambiarEstado": {
+      "accion": "Change status",
+      "titulo": "Change the status of {{n}} customers",
+      "nuevo": "New status",
+      "sinCambio": "Those already in that status are left as they are.",
+      "cancelarPendientes": "Cancel their approved projects and discard their open proposals with the reason “customer deactivated”. If unticked, those that have them are not deactivated.",
+      "aplicar": "Change",
+      "hecho": "{{n}} customers changed; {{sin}} were already in that status.",
+      "resultado": "{{n}} changed and {{sin}} unchanged",
+      "rechazados": "{{count}} customer could not be changed:",
+      "rechazados_other": "{{count}} customers could not be changed:"
     }
   },
   "contactos": {

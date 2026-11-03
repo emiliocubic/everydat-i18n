@@ -526,7 +526,12 @@
       "propuestas_short": "Prop.",
       "cargo": "Cargo",
       "direccion": "Dirección",
-      "email": "Email"
+      "email": "Email",
+      "paisProvincia": "País y provincia",
+      "grupos": "Grupos",
+      "fechaAltaCol": "Fecha alta",
+      "importePresupuestado": "Importe presupuestado",
+      "importeAceptado": "Importe aceptado"
     },
     "grupos": {
       "identidad": "Identidad",
@@ -578,6 +583,20 @@
       "propuesta": "se descartará la propuesta nº {{id}}",
       "boton": "Dar de baja",
       "bloquean": "No se puede dar de baja: tiene proyectos en ejecución o en certificación ({{lista}}). Ciérralos o cancélalos antes."
+    },
+    "sinPais": "Sin país",
+    "sinProvincia": "Sin provincia",
+    "cambiarEstado": {
+      "accion": "Cambiar estado",
+      "titulo": "Cambiar el estado de {{n}} clientes",
+      "nuevo": "Nuevo estado",
+      "sinCambio": "Los que ya están en ese estado no se tocan.",
+      "cancelarPendientes": "Cancelar sus proyectos aprobados y descartar sus propuestas abiertas con el motivo «baja del cliente». Sin marcarlo, los que los tengan no se dan de baja.",
+      "aplicar": "Cambiar",
+      "hecho": "{{n}} clientes cambiados; {{sin}} ya estaban en ese estado.",
+      "resultado": "{{n}} cambiados y {{sin}} sin cambio",
+      "rechazados": "{{count}} cliente no se ha podido cambiar:",
+      "rechazados_other": "{{count}} clientes no se han podido cambiar:"
     }
   },
   "contactos": {
