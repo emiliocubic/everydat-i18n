@@ -63,7 +63,14 @@
     "abrirEnMaps": "Abrir en Google Maps",
     "alertaCliente": "Alerta del cliente",
     "alertaEmplazamiento": "Alerta del emplazamiento",
-    "clienteDeBaja": "Cliente de baja desde el {{fecha}}"
+    "clienteDeBaja": "Cliente de baja desde el {{fecha}}",
+    "notaFormato": {
+      "barra": "Formato de la nota",
+      "negrita": "Negrita",
+      "cursiva": "Cursiva",
+      "vinetas": "Lista con viñetas",
+      "numerada": "Lista numerada"
+    }
   },
   "merge": {
     "disappears": "Desaparece",

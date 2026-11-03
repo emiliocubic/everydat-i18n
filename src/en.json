@@ -63,7 +63,14 @@
     "abrirEnMaps": "Open in Google Maps",
     "alertaCliente": "Client alert",
     "alertaEmplazamiento": "Site alert",
-    "clienteDeBaja": "Client inactive since {{fecha}}"
+    "clienteDeBaja": "Client inactive since {{fecha}}",
+    "notaFormato": {
+      "barra": "Note formatting",
+      "negrita": "Bold",
+      "cursiva": "Italic",
+      "vinetas": "Bulleted list",
+      "numerada": "Numbered list"
+    }
   },
   "merge": {
     "disappears": "Disappears",
