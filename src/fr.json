@@ -3048,7 +3048,7 @@
       "grupoMarca": "Marque et langue",
       "marca": {
         "titulo": "Marque",
-        "desc": "Le nom commercial, la couleur principale, le logo et le cachet apparaissent dans le panneau, les rapports et les e-mails ; les données de l'émetteur, dans les rapports ; le logo pour fond sombre, dans l'en-tête de l'application de terrain.",
+        "desc": "Le nom commercial, la couleur principale, le logo et le cachet apparaissent dans le panneau, les rapports et les e-mails ; les données de l'émetteur, dans les rapports ; le logo pour fond sombre, dans l'en-tête de l'application de terrain. L'image de couverture, le panneau d'accès, le titre et l'illustration de récupération du mot de passe sont ceux de l'écran de connexion, qui affiche aussi le téléphone et l'e-mail de l'émetteur comme service client.",
         "nombre": "Nom commercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Couleur principale",
@@ -3079,6 +3079,33 @@
           "telefono": "Téléphone",
           "email": "E-mail",
           "web": "Site web"
+        },
+        "colorTexto": "Texte sur la couleur principale",
+        "colorTextoHint": "Celui des boutons et du menu actif. Vide = automatique : blanc ou presque noir, le plus lisible.",
+        "pocoContraste": "Contraste faible ({{ratio}}:1) : le texte des boutons sera difficile à lire.",
+        "colorOscuro": "Couleur principale en thème sombre",
+        "colorOscuroHint": "Pour qui utilise l'application en thème sombre. Vide = la couleur principale.",
+        "automatico": "Automatique",
+        "panel": "Panneau d'accès",
+        "panelClaro": "Clair",
+        "panelOscuro": "Sombre",
+        "panelHint": "Le panneau vitré de l'écran de connexion. Chaque utilisateur choisit le thème clair ou sombre de l'application.",
+        "titular": "Titre de la couverture",
+        "titularHint": "Phrase facultative sur la photo de l'écran de connexion, sur ordinateur. C'est votre texte : il n'est pas traduit.",
+        "portada": {
+          "titulo": "Image de couverture de la connexion",
+          "hint": "Photo de fond de l'écran de connexion, sans texte incrusté et d'au moins 1 600 px de large. JPG, PNG ou WEBP, jusqu'à 5 Mo. Enregistrée dès qu'elle est choisie. Sans elle, l'écran de connexion s'affiche sur un fond neutre.",
+          "sin": "Pas d'image de couverture",
+          "estrecha": "L'image mesure {{ancho}} px de large : en dessous de 1 600 px, elle sera floue sur les grands écrans.",
+          "quitar": "Retirer l'image de couverture",
+          "quitarConfirmar": "Retirer l'image de couverture ? L'écran de connexion s'affichera sur un fond neutre."
+        },
+        "recuperacion": {
+          "titulo": "Illustration de récupération du mot de passe",
+          "hint": "Facultative : remplace l'image de couverture sur « récupérer le mot de passe », sur ordinateur uniquement. JPG, PNG ou WEBP, jusqu'à 5 Mo.",
+          "sin": "Pas d'illustration : l'image de couverture s'affiche",
+          "quitar": "Retirer l'illustration",
+          "quitarConfirmar": "Retirer l'illustration ? « Récupérer le mot de passe » affichera l'image de couverture."
         }
       },
       "idioma": {

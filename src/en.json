@@ -3145,7 +3145,7 @@
       "grupoMarca": "Brand and language",
       "marca": {
         "titulo": "Brand",
-        "desc": "The trade name, primary colour, logo and seal appear in the panel, in reports and in emails; the issuer details, in reports; the logo for dark backgrounds, in the header of the field app.",
+        "desc": "The trade name, primary colour, logo and seal appear in the panel, in reports and in emails; the issuer details, in reports; the logo for dark backgrounds, in the header of the field app. The cover image, access panel, headline and password-recovery illustration belong to the sign-in screen, which also shows the issuer's phone and email as customer support.",
         "nombre": "Trade name",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Primary colour",
@@ -3176,6 +3176,33 @@
           "telefono": "Phone",
           "email": "Email",
           "web": "Website"
+        },
+        "colorTexto": "Text on the primary colour",
+        "colorTextoHint": "Used on buttons and the active menu item. Empty = automatic: white or near-black, whichever reads better.",
+        "pocoContraste": "Low contrast ({{ratio}}:1): button text will be hard to read.",
+        "colorOscuro": "Primary colour in dark theme",
+        "colorOscuroHint": "For users who use the application in dark theme. Empty = the primary colour.",
+        "automatico": "Automatic",
+        "panel": "Access panel",
+        "panelClaro": "Light",
+        "panelOscuro": "Dark",
+        "panelHint": "The glass panel on the sign-in screen. Each user chooses the light or dark theme of the application.",
+        "titular": "Cover headline",
+        "titularHint": "Optional sentence over the sign-in photo, on desktop. It is your own text: it is not translated.",
+        "portada": {
+          "titulo": "Sign-in cover image",
+          "hint": "Background photo of the sign-in screen, with no embedded text and at least 1,600 px wide. JPG, PNG or WEBP, up to 5 MB. Saved as soon as you choose it. Without it, the sign-in screen shows a neutral background.",
+          "sin": "No cover image",
+          "estrecha": "The image is {{ancho}} px wide: below 1,600 px it will look blurry on large screens.",
+          "quitar": "Remove the cover image",
+          "quitarConfirmar": "Remove the cover image? The sign-in screen will show a neutral background."
+        },
+        "recuperacion": {
+          "titulo": "Password recovery illustration",
+          "hint": "Optional: replaces the cover image on “recover password”, on desktop only. JPG, PNG or WEBP, up to 5 MB.",
+          "sin": "No illustration: the cover image is shown",
+          "quitar": "Remove the illustration",
+          "quitarConfirmar": "Remove the illustration? “Recover password” will show the cover image."
         }
       },
       "idioma": {

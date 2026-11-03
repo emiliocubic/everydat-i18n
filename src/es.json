@@ -3145,7 +3145,7 @@
       "grupoMarca": "Marca e idioma",
       "marca": {
         "titulo": "Marca",
-        "desc": "El nombre comercial, el color primario, el logo y el sello salen en el panel, en los informes y en los correos; los datos del emisor, en los informes; el logo para fondo oscuro, en la cabecera de la app de campo.",
+        "desc": "El nombre comercial, el color primario, el logo y el sello salen en el panel, en los informes y en los correos; los datos del emisor, en los informes; el logo para fondo oscuro, en la cabecera de la app de campo. La portada, el panel de acceso, el titular y la ilustración de recuperar contraseña son de la pantalla de entrada, donde también salen el teléfono y el email del emisor como atención al cliente.",
         "nombre": "Nombre comercial",
         "nombrePlaceholder": "GestLínea Pro",
         "color": "Color primario",
@@ -3176,6 +3176,33 @@
           "telefono": "Teléfono",
           "email": "Email",
           "web": "Web"
+        },
+        "colorTexto": "Texto sobre el color primario",
+        "colorTextoHint": "El de los botones y del menú activo. Vacío = automático: blanco o casi negro, el que se lea mejor.",
+        "pocoContraste": "Poco contraste ({{ratio}}:1): el texto de los botones se leerá mal.",
+        "colorOscuro": "Color primario en tema oscuro",
+        "colorOscuroHint": "Para quien usa la aplicación en tema oscuro. Vacío = el color primario.",
+        "automatico": "Automático",
+        "panel": "Panel de acceso",
+        "panelClaro": "Claro",
+        "panelOscuro": "Oscuro",
+        "panelHint": "El cristal del panel en la pantalla de entrada. El tema claro u oscuro de la aplicación lo elige cada usuario.",
+        "titular": "Titular de la portada",
+        "titularHint": "Frase opcional sobre la foto de la pantalla de entrada, en escritorio. Es vuestro texto: no se traduce.",
+        "portada": {
+          "titulo": "Portada de la pantalla de entrada",
+          "hint": "Foto de fondo del login, sin texto incrustado y de 1.600 px de ancho o más. JPG, PNG o WEBP, hasta 5 MB. Se guarda al elegirla. Sin ella, el login sale sobre un fondo neutro.",
+          "sin": "Sin portada",
+          "estrecha": "La imagen mide {{ancho}} px de ancho: por debajo de 1.600 px se verá borrosa en pantallas grandes.",
+          "quitar": "Quitar la portada",
+          "quitarConfirmar": "¿Quitar la portada? La pantalla de entrada saldrá sobre un fondo neutro."
+        },
+        "recuperacion": {
+          "titulo": "Ilustración de recuperar contraseña",
+          "hint": "Opcional: sustituye a la portada en «recuperar contraseña», solo en escritorio. JPG, PNG o WEBP, hasta 5 MB.",
+          "sin": "Sin ilustración: sale la portada",
+          "quitar": "Quitar la ilustración",
+          "quitarConfirmar": "¿Quitar la ilustración? «Recuperar contraseña» enseñará la portada."
         }
       },
       "idioma": {
