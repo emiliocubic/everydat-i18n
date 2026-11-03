@@ -3760,7 +3760,21 @@
           "crear_equipo": "Créer l'équipe de travail « {{nombre}} »",
           "asignar_usuarios_equipo_one": "Laisser l'équipe {{equipo}} avec {{count}} membre",
           "asignar_usuarios_equipo_other": "Laisser l'équipe {{equipo}} avec {{count}} membres",
+          "crear_contacto": "Ajouter la personne {{nombre}}",
+          "vincular_contacto_cliente": "Faire du contact {{contacto}} un contact du client {{cliente}}",
+          "vincular_contacto_cliente_cargo": "Faire du contact {{contacto}} un contact du client {{cliente}}, comme « {{cargo}} »",
+          "meter_clientes_grupo_one": "Ajouter {{count}} client au groupe {{grupo}}",
+          "meter_clientes_grupo_other": "Ajouter {{count}} clients au groupe {{grupo}}",
+          "sacar_clientes_grupo_one": "Retirer {{count}} client du groupe {{grupo}}",
+          "sacar_clientes_grupo_other": "Retirer {{count}} clients du groupe {{grupo}}",
           "otro": "Exécuter {{herramienta}}"
+        },
+        "acota": {
+          "ninguno": "« {{grupo}} » ne limite ce que voit aucun utilisateur.",
+          "meter_one": "« {{grupo}} » limite ce que voit {{count}} utilisateur, {{nombres}} : il verra aussi ces clients.",
+          "meter_other": "« {{grupo}} » limite ce que voient {{count}} utilisateurs, {{nombres}} : ils verront aussi ces clients.",
+          "sacar_one": "« {{grupo}} » limite ce que voit {{count}} utilisateur, {{nombres}} : il ne verra plus ces clients, sauf s’il y accède autrement.",
+          "sacar_other": "« {{grupo}} » limite ce que voient {{count}} utilisateurs, {{nombres}} : ils ne verront plus ces clients, sauf s’ils y accèdent autrement."
         }
       },
       "deleteChat": "Supprimer la conversation"

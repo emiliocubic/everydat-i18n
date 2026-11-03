@@ -3917,7 +3917,21 @@
           "crear_equipo": "Crear el equipo de trabajo «{{nombre}}»",
           "asignar_usuarios_equipo_one": "Dejar el equipo {{equipo}} con {{count}} miembro",
           "asignar_usuarios_equipo_other": "Dejar el equipo {{equipo}} con {{count}} miembros",
+          "crear_contacto": "Dar de alta a la persona {{nombre}}",
+          "vincular_contacto_cliente": "Hacer al contacto {{contacto}} contacto del cliente {{cliente}}",
+          "vincular_contacto_cliente_cargo": "Hacer al contacto {{contacto}} contacto del cliente {{cliente}}, como «{{cargo}}»",
+          "meter_clientes_grupo_one": "Meter {{count}} cliente en el grupo {{grupo}}",
+          "meter_clientes_grupo_other": "Meter {{count}} clientes en el grupo {{grupo}}",
+          "sacar_clientes_grupo_one": "Sacar {{count}} cliente del grupo {{grupo}}",
+          "sacar_clientes_grupo_other": "Sacar {{count}} clientes del grupo {{grupo}}",
           "otro": "Ejecutar {{herramienta}}"
+        },
+        "acota": {
+          "ninguno": "«{{grupo}}» no acota lo que ve ningún usuario.",
+          "meter_one": "«{{grupo}}» acota lo que ve {{count}} usuario, {{nombres}}: pasará a ver estos clientes.",
+          "meter_other": "«{{grupo}}» acota lo que ven {{count}} usuarios, {{nombres}}: pasarán a ver estos clientes.",
+          "sacar_one": "«{{grupo}}» acota lo que ve {{count}} usuario, {{nombres}}: dejará de ver estos clientes, salvo que le lleguen por otro lado.",
+          "sacar_other": "«{{grupo}}» acota lo que ven {{count}} usuarios, {{nombres}}: dejarán de ver estos clientes, salvo que les lleguen por otro lado."
         }
       },
       "deleteChat": "Borrar conversación"

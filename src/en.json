@@ -3917,7 +3917,21 @@
           "crear_equipo": "Create the work team “{{nombre}}”",
           "asignar_usuarios_equipo_one": "Leave team {{equipo}} with {{count}} member",
           "asignar_usuarios_equipo_other": "Leave team {{equipo}} with {{count}} members",
+          "crear_contacto": "Add the person {{nombre}}",
+          "vincular_contacto_cliente": "Make contact {{contacto}} a contact of client {{cliente}}",
+          "vincular_contacto_cliente_cargo": "Make contact {{contacto}} a contact of client {{cliente}}, as “{{cargo}}”",
+          "meter_clientes_grupo_one": "Add {{count}} client to group {{grupo}}",
+          "meter_clientes_grupo_other": "Add {{count}} clients to group {{grupo}}",
+          "sacar_clientes_grupo_one": "Remove {{count}} client from group {{grupo}}",
+          "sacar_clientes_grupo_other": "Remove {{count}} clients from group {{grupo}}",
           "otro": "Run {{herramienta}}"
+        },
+        "acota": {
+          "ninguno": "“{{grupo}}” does not limit what any user sees.",
+          "meter_one": "“{{grupo}}” limits what {{count}} user sees, {{nombres}}: they will see these clients too.",
+          "meter_other": "“{{grupo}}” limits what {{count}} users see, {{nombres}}: they will see these clients too.",
+          "sacar_one": "“{{grupo}}” limits what {{count}} user sees, {{nombres}}: they will stop seeing these clients, unless they reach them some other way.",
+          "sacar_other": "“{{grupo}}” limits what {{count}} users see, {{nombres}}: they will stop seeing these clients, unless they reach them some other way."
         }
       },
       "deleteChat": "Delete conversation"
