@@ -985,7 +985,12 @@
         }
       },
       "familia": "Famille",
-      "buscarOtroModelo": "Chercher un autre modèle"
+      "buscarOtroModelo": "Chercher un autre modèle",
+      "veredicto": "Verdict",
+      "veredictoPor": {
+        "revision": "selon l'inspection du {{fecha}}",
+        "incidencia": "selon l'incident du {{fecha}}"
+      }
     },
     "fecha": {
       "fabricacion": "Fabrication",
@@ -5218,7 +5223,11 @@
       "paralizadoConfirm_reparacion": "Ce projet est en pause. Enregistrer la réparation quand même ?",
       "paralizadoConfirm_instalacion": "Ce projet est en pause. Contrôler l'installation quand même ?",
       "equipoNoEnMovil": "Cet équipement n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet.",
-      "borrarEnParte": "Cette inspection figure dans un bon d'intervention : elle ne peut être ni supprimée ni corrigée depuis l'appareil."
+      "borrarEnParte": "Cette inspection figure dans un bon d'intervention : elle ne peut être ni supprimée ni corrigée depuis l'appareil.",
+      "veredictoPor": {
+        "revision": "Selon l'inspection du {{fecha}}",
+        "incidencia": "Selon l'incident du {{fecha}}"
+      }
     },
     "revision": {
       "titulo": "Contrôle",

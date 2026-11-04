@@ -931,7 +931,12 @@
       "quitarValor": "Quitar este valor",
       "observaciones": "Observaciones",
       "familia": "Familia",
-      "buscarOtroModelo": "Buscar otro modelo"
+      "buscarOtroModelo": "Buscar otro modelo",
+      "veredicto": "Veredicto",
+      "veredictoPor": {
+        "revision": "por la revisión del {{fecha}}",
+        "incidencia": "por la incidencia del {{fecha}}"
+      }
     },
     "fecha": {
       "fabricacion": "Fabricación",
@@ -5509,7 +5514,11 @@
       "paralizadoConfirm_reparacion": "Este proyecto está paralizado. ¿Registrar la reparación igualmente?",
       "paralizadoConfirm_instalacion": "Este proyecto está paralizado. ¿Revisar la instalación igualmente?",
       "equipoNoEnMovil": "Este equipo no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto.",
-      "borrarEnParte": "Esta revisión va en un parte de trabajo: no se puede borrar ni corregir desde el móvil."
+      "borrarEnParte": "Esta revisión va en un parte de trabajo: no se puede borrar ni corregir desde el móvil.",
+      "veredictoPor": {
+        "revision": "Por la revisión del {{fecha}}",
+        "incidencia": "Por la incidencia del {{fecha}}"
+      }
     },
     "revision": {
       "titulo": "Revisión",

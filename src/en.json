@@ -1060,7 +1060,12 @@
       "quitarValor": "Remove this value",
       "observaciones": "Notes",
       "familia": "Family",
-      "buscarOtroModelo": "Find another model"
+      "buscarOtroModelo": "Find another model",
+      "veredicto": "Verdict",
+      "veredictoPor": {
+        "revision": "from the inspection of {{fecha}}",
+        "incidencia": "from the incident of {{fecha}}"
+      }
     },
     "fecha": {
       "fabricacion": "Manufacture",
@@ -5509,7 +5514,11 @@
       "paralizadoConfirm_reparacion": "This project is paused. Record the repair anyway?",
       "paralizadoConfirm_instalacion": "This project is paused. Inspect the installation anyway?",
       "equipoNoEnMovil": "This equipment is not in what was downloaded to the device. If it should be, download its project again.",
-      "borrarEnParte": "This inspection is in a work report: it cannot be deleted or corrected from the device."
+      "borrarEnParte": "This inspection is in a work report: it cannot be deleted or corrected from the device.",
+      "veredictoPor": {
+        "revision": "From the inspection of {{fecha}}",
+        "incidencia": "From the incident of {{fecha}}"
+      }
     },
     "revision": {
       "titulo": "Inspection",
