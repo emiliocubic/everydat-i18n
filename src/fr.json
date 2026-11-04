@@ -99,6 +99,8 @@
     "pendientesCatalogo_other": "{{count}} entrées du catalogue en attente de validation",
     "pendientesCatalogoIr": "Ouvrir la corbeille",
     "soporteSubtitle": "Support Cubic",
+    "invitadoTitulo": "Portail client",
+    "invitadoTexto": "Le portail n'est pas encore disponible. Lorsqu'il le sera, vous verrez ici ce qui a été partagé avec cet invité.",
     "soporteAccesos": "Accès du support",
     "saludo": {
       "manana": "Bonjour, {{nombre}}",
@@ -1582,6 +1584,52 @@
         "sinCatalogo": "Sans capacité catalogue : ne voit pas le menu Catalogue et tout modèle créé depuis l'enregistrement d'un équipement reste en attente de validation.",
         "conUsuarios": "Gère les utilisateurs : voit le menu Utilisateurs.",
         "sinUsuarios": "Ne gère pas les utilisateurs : pas de menu Utilisateurs."
+      },
+      "tabsAria": "Type d'utilisateur",
+      "internos": {
+        "titulo": "Internes",
+        "nota": "Les personnes de l'entreprise. Le support crée et gère uniquement les superadmins ; le superadmin gère tous les autres. Vous pouvez vous connecter à la place de n'importe lequel d'entre eux.",
+        "nuevo": "Nouveau superadmin",
+        "crear": "Créer le superadmin",
+        "altaSub": "Nouveau superadmin",
+        "altaNota": "Il démarre avec toutes les capacités et une portée totale. Il crée lui-même les autres utilisateurs.",
+        "fichaNota": "Cet utilisateur est géré par le superadmin de l'entreprise. Pour voir ce qu'il voit ou modifier ses permissions, connectez-vous à sa place ou à celle du superadmin.",
+        "nombrar": "Nommer superadmin",
+        "nombrarConfirm": "Nommer {{nombre}} superadmin ? Il aura toutes les capacités et une portée totale.",
+        "quitar": "Retirer le superadmin",
+        "quitarConfirm": "Retirer le superadmin à {{nombre}} ? Il ne gardera que les capacités qu'il avait par ailleurs ; sans aucune, il devient technicien. S'il est le seul superadmin, nommez-en d'abord un autre.",
+        "bajaConfirm": "Désactiver {{nombre}} ? Il ne pourra plus se connecter jusqu'à sa restauration."
+      },
+      "colaboradores": {
+        "titulo": "Collaborateurs",
+        "nota": "Des personnes d'autres entreprises qui travaillent pour celle-ci. L'entreprise les gère ; ici, vous pouvez seulement vous connecter à leur place."
+      },
+      "invitados": {
+        "titulo": "Invités",
+        "nota": "Les contacts des clients ayant accès au portail. Ils se gèrent depuis Contacts ; ici, vous pouvez seulement vous connecter à leur place."
+      },
+      "integraciones": {
+        "titulo": "Intégrations",
+        "nota": "Des programmes connectés par l'API, comme un ERP. Seul le support les crée et les ajuste : création, clé, portée et permissions.",
+        "nueva": "Nouvelle intégration",
+        "crear": "Créer l'intégration",
+        "nombre": "Nom",
+        "clave": "Clé",
+        "vacio": "Aucune intégration",
+        "emailHint": "Il identifie seulement le compte : il ne sert pas à se connecter.",
+        "altaNota": "Elle se connecte uniquement par l'API, avec une clé générée à sa création. Elle démarre avec Opérations et Portefeuille, puis s'ajuste permission par permission.",
+        "bajaNota": "Elle est désactivée et ne peut pas se connecter. Restaurez-la pour l'ajuster : il lui faudra une nouvelle clé.",
+        "claveTitulo": "Clé d'accès",
+        "conClave": "Elle a une clé en service. Elle ne peut pas être réaffichée : en cas de perte, générez-en une autre.",
+        "sinClave": "Elle n'a pas de clé : elle ne peut pas se connecter tant que vous n'en générez pas une.",
+        "generar": "Générer une clé",
+        "regenerar": "Générer une nouvelle clé",
+        "regenerarConfirm": "La clé actuelle cessera immédiatement de fonctionner et le programme qui l'utilise perdra l'accès. En générer une nouvelle ?",
+        "unaVez": "Copiez-la maintenant : elle ne sera plus affichée.",
+        "copiar": "Copier la clé",
+        "copiada": "Clé copiée",
+        "bajaConfirm": "Désactiver {{nombre}} ? Sa clé cessera immédiatement de fonctionner.",
+        "permisosNota": "Toutes les permissions s'ajustent, y compris celles de lecture. Signer les révisions, gérer les personnes et ce qui est réservé à la gouvernance de l'instance ne sont pas proposés."
       }
     },
     "impersonate": "Emprunter l'identité",
@@ -6018,6 +6066,7 @@
       "impersonate_stop": "Usurpation terminée",
       "profile_updated": "Profil mis à jour",
       "permisos_updated": "Permissions mises à jour",
+      "clave_emitida": "Clé d'intégration émise",
       "permiso_added": "Permission accordée",
       "permiso_removed": "Permission révoquée",
       "cuentas_updated": "Comptes mis à jour",

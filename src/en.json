@@ -99,6 +99,8 @@
     "pendientesCatalogo_other": "{{count}} catalogue entries pending validation",
     "pendientesCatalogoIr": "Open the tray",
     "soporteSubtitle": "Cubic support",
+    "invitadoTitulo": "Client portal",
+    "invitadoTexto": "The portal is not available yet. When it is, this is where you will see what has been shared with this guest.",
     "soporteAccesos": "Support shortcuts",
     "saludo": {
       "manana": "Good morning, {{nombre}}",
@@ -1701,6 +1703,52 @@
         "sinCatalogo": "Lacks the catalogue capability: does not see the Catalogue menu and any model created from an equipment intake stays pending validation.",
         "conUsuarios": "Manages users: sees the Users menu.",
         "sinUsuarios": "Does not manage users: no Users menu."
+      },
+      "tabsAria": "User type",
+      "internos": {
+        "titulo": "Internal",
+        "nota": "The company's people. Support only creates and manages superadmins; the superadmin manages everyone else. You can log in as any of them.",
+        "nuevo": "New superadmin",
+        "crear": "Create superadmin",
+        "altaSub": "New superadmin",
+        "altaNota": "Starts with every capability and full scope. They create the other users.",
+        "fichaNota": "This user is managed by the company's superadmin. To see what they see or change their permissions, log in as them or as the superadmin.",
+        "nombrar": "Make superadmin",
+        "nombrarConfirm": "Make {{nombre}} a superadmin? They will have every capability and full scope.",
+        "quitar": "Remove superadmin",
+        "quitarConfirm": "Remove superadmin from {{nombre}}? They will keep only the capabilities they held on their own; with none, they become a technician. If they are the only superadmin, make someone else one first.",
+        "bajaConfirm": "Deactivate {{nombre}}? They will not be able to log in until restored."
+      },
+      "colaboradores": {
+        "titulo": "Collaborators",
+        "nota": "People from other companies working for this one. The company manages them; here you can only log in as them."
+      },
+      "invitados": {
+        "titulo": "Guests",
+        "nota": "Client contacts with portal access. They are managed from Contacts; here you can only log in as them."
+      },
+      "integraciones": {
+        "titulo": "Integrations",
+        "nota": "Programs connected through the API, such as an ERP. Only support creates and adjusts them: creation, key, scope and permissions.",
+        "nueva": "New integration",
+        "crear": "Create integration",
+        "nombre": "Name",
+        "clave": "Key",
+        "vacio": "No integrations",
+        "emailHint": "It only identifies the account: it is not used to log in.",
+        "altaNota": "It only connects through the API, with a key generated when it is created. It starts with Operations and Portfolio, and can then be adjusted permission by permission.",
+        "bajaNota": "It is deactivated and cannot connect. Restore it to adjust it: it will need a new key.",
+        "claveTitulo": "Access key",
+        "conClave": "It has a key in use. It cannot be shown again: if it is lost, generate another.",
+        "sinClave": "It has no key: it cannot connect until you generate one.",
+        "generar": "Generate key",
+        "regenerar": "Generate a new key",
+        "regenerarConfirm": "The current key will stop working immediately and the program using it will lose access. Generate a new one?",
+        "unaVez": "Copy it now: it will not be shown again.",
+        "copiar": "Copy key",
+        "copiada": "Key copied",
+        "bajaConfirm": "Deactivate {{nombre}}? Its key will stop working immediately.",
+        "permisosNota": "All permissions can be adjusted, including read ones. Signing reviews, managing people and what is reserved for governing the instance are not offered."
       }
     },
     "impersonate": "Impersonate",
@@ -6307,6 +6355,7 @@
       "impersonate_stop": "Impersonation ended",
       "profile_updated": "Profile updated",
       "permisos_updated": "Permissions updated",
+      "clave_emitida": "Integration key issued",
       "permiso_added": "Permission granted",
       "permiso_removed": "Permission revoked",
       "cuentas_updated": "Accounts updated",

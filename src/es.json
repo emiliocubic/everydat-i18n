@@ -99,6 +99,8 @@
     "pendientesCatalogo_other": "{{count}} altas del catálogo pendientes de validar",
     "pendientesCatalogoIr": "Ir a la bandeja",
     "soporteSubtitle": "Soporte de Cubic",
+    "invitadoTitulo": "Portal del cliente",
+    "invitadoTexto": "El portal todavía no está disponible. Cuando lo esté, aquí se verá lo que este invitado tiene compartido.",
     "soporteAccesos": "Accesos de soporte",
     "saludo": {
       "manana": "Buenos días, {{nombre}}",
@@ -1572,6 +1574,52 @@
         "sinCatalogo": "No tiene la capacidad de catálogo: no ve el menú Catálogo y, si da de alta un modelo desde el alta de un equipo, queda pendiente de validar.",
         "conUsuarios": "Gestiona usuarios: ve el menú Usuarios.",
         "sinUsuarios": "No gestiona usuarios: no ve el menú Usuarios."
+      },
+      "tabsAria": "Tipo de usuario",
+      "internos": {
+        "titulo": "Internos",
+        "nota": "Las personas de la empresa. Soporte solo crea y gestiona superadmins; al resto los gestiona el superadmin. Puedes entrar como cualquiera de ellos.",
+        "nuevo": "Nuevo superadmin",
+        "crear": "Crear superadmin",
+        "altaSub": "Alta de superadmin",
+        "altaNota": "Nace con todas las capacidades y alcance total. Los demás usuarios los da de alta él.",
+        "fichaNota": "A este usuario lo gestiona el superadmin de la empresa. Para ver lo que ve o cambiar sus permisos, entra como él o como el superadmin.",
+        "nombrar": "Nombrar superadmin",
+        "nombrarConfirm": "¿Nombrar superadmin a {{nombre}}? Tendrá todas las capacidades y alcance total.",
+        "quitar": "Quitar superadmin",
+        "quitarConfirm": "¿Quitar el superadmin a {{nombre}}? Se quedará solo con las capacidades que tuviera por su cuenta; sin ninguna, como técnico. Si es el único superadmin, nombra antes a otro.",
+        "bajaConfirm": "¿Dar de baja a {{nombre}}? No podrá entrar hasta que se recupere."
+      },
+      "colaboradores": {
+        "titulo": "Colaboradores",
+        "nota": "Personas de otras empresas que trabajan para esta. Los gestiona la empresa; aquí solo puedes entrar como ellos."
+      },
+      "invitados": {
+        "titulo": "Invitados",
+        "nota": "Contactos de los clientes con acceso al portal. Se gestionan desde Contactos; aquí solo puedes entrar como ellos."
+      },
+      "integraciones": {
+        "titulo": "Integraciones",
+        "nota": "Programas conectados por la API, como un ERP. Solo soporte los crea y los ajusta: alta, clave, alcance y permisos.",
+        "nueva": "Nueva integración",
+        "crear": "Crear integración",
+        "nombre": "Nombre",
+        "clave": "Clave",
+        "vacio": "No hay integraciones",
+        "emailHint": "Solo identifica la cuenta: no se usa para entrar.",
+        "altaNota": "Entra solo por la API, con una clave que se genera al crearla. Nace con Operativa y Cartera, y después se ajusta permiso a permiso.",
+        "bajaNota": "Está de baja y no puede entrar. Reactívala para ajustarla: necesitará una clave nueva.",
+        "claveTitulo": "Clave de acceso",
+        "conClave": "Tiene una clave en uso. No se puede volver a ver: si se pierde, genera otra.",
+        "sinClave": "No tiene clave: no puede entrar hasta que generes una.",
+        "generar": "Generar clave",
+        "regenerar": "Generar una clave nueva",
+        "regenerarConfirm": "La clave actual dejará de funcionar en el momento y el programa que la use perderá el acceso. ¿Generar una nueva?",
+        "unaVez": "Cópiala ahora: no se volverá a mostrar.",
+        "copiar": "Copiar la clave",
+        "copiada": "Clave copiada",
+        "bajaConfirm": "¿Dar de baja {{nombre}}? Su clave dejará de funcionar en el momento.",
+        "permisosNota": "Se ajustan todos los permisos, también los de lectura. No se ofrecen firmar revisiones, gestionar personas ni lo reservado al gobierno de la instancia."
       }
     },
     "impersonate": "Impersonar",
@@ -6307,6 +6355,7 @@
       "impersonate_stop": "Suplantación finalizada",
       "profile_updated": "Perfil actualizado",
       "permisos_updated": "Permisos actualizados",
+      "clave_emitida": "Clave de integración emitida",
       "permiso_added": "Permiso concedido",
       "permiso_removed": "Permiso revocado",
       "cuentas_updated": "Cuentas actualizadas",
