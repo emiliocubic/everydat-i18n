@@ -3922,7 +3922,11 @@
           "meter_clientes_grupo_other": "Meter {{count}} clientes en el grupo {{grupo}}",
           "sacar_clientes_grupo_one": "Sacar {{count}} cliente del grupo {{grupo}}",
           "sacar_clientes_grupo_other": "Sacar {{count}} clientes del grupo {{grupo}}",
-          "otro": "Ejecutar {{herramienta}}"
+          "otro": "Ejecutar {{herramienta}}",
+          "editar_emplazamiento": "Modificar el emplazamiento {{emplazamiento}}: {{cambios}}",
+          "fijar_parte_emplazamiento_propietario": "Poner al cliente {{cliente}} como propietaria del emplazamiento {{emplazamiento}}",
+          "fijar_parte_emplazamiento_contratista": "Poner al cliente {{cliente}} como contratista del emplazamiento {{emplazamiento}}",
+          "fijar_parte_emplazamiento_vacante": "Dejar vacante el papel de contratista del emplazamiento {{emplazamiento}}"
         },
         "acota": {
           "ninguno": "«{{grupo}}» no acota lo que ve ningún usuario.",

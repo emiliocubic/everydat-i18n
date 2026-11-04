@@ -3922,7 +3922,11 @@
           "meter_clientes_grupo_other": "Add {{count}} clients to group {{grupo}}",
           "sacar_clientes_grupo_one": "Remove {{count}} client from group {{grupo}}",
           "sacar_clientes_grupo_other": "Remove {{count}} clients from group {{grupo}}",
-          "otro": "Run {{herramienta}}"
+          "otro": "Run {{herramienta}}",
+          "editar_emplazamiento": "Change site {{emplazamiento}}: {{cambios}}",
+          "fijar_parte_emplazamiento_propietario": "Set client {{cliente}} as owner of site {{emplazamiento}}",
+          "fijar_parte_emplazamiento_contratista": "Set client {{cliente}} as contractor of site {{emplazamiento}}",
+          "fijar_parte_emplazamiento_vacante": "Leave the contractor role of site {{emplazamiento}} vacant"
         },
         "acota": {
           "ninguno": "“{{grupo}}” does not limit what any user sees.",

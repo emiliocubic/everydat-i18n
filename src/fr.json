@@ -3765,7 +3765,11 @@
           "meter_clientes_grupo_other": "Ajouter {{count}} clients au groupe {{grupo}}",
           "sacar_clientes_grupo_one": "Retirer {{count}} client du groupe {{grupo}}",
           "sacar_clientes_grupo_other": "Retirer {{count}} clients du groupe {{grupo}}",
-          "otro": "Exécuter {{herramienta}}"
+          "otro": "Exécuter {{herramienta}}",
+          "editar_emplazamiento": "Modifier le site {{emplazamiento}} : {{cambios}}",
+          "fijar_parte_emplazamiento_propietario": "Définir le client {{cliente}} comme propriétaire du site {{emplazamiento}}",
+          "fijar_parte_emplazamiento_contratista": "Définir le client {{cliente}} comme prestataire du site {{emplazamiento}}",
+          "fijar_parte_emplazamiento_vacante": "Laisser vacant le rôle de prestataire du site {{emplazamiento}}"
         },
         "acota": {
           "ninguno": "« {{grupo}} » ne limite ce que voit aucun utilisateur.",
