@@ -1006,7 +1006,8 @@
       "sinOrigen": "Aucune référence de catalogue : rien à résoudre.",
       "origen": {
         "referencia": "Définies sur sa référence de catalogue.",
-        "modelo": "Héritées de son modèle : la référence n'en a pas en propre."
+        "modelo": "Héritées de son modèle : la référence n'en a pas en propre.",
+        "tipo": "Héritée de son type : ni la référence ni le modèle n’ont de normes propres."
       },
       "delTipo": "Normes du type {{tipo}}",
       "delTipoNota": "C'est autre chose : quelles normes sont pertinentes pour cette famille d'équipement, et d'où viennent ses champs et ses check-lists."
@@ -2381,9 +2382,9 @@
           "deleted": "Référence supprimée.",
           "confirmDelete": "Supprimer la référence « {{nombre}} » ?",
           "descatalogadaHint": "Déréférencée par le fabricant : elle reste visible, car son parc est toujours en service et doit être vérifié.",
-          "normasHeredadas": "Hérite des normes du modèle :",
+          "normasHeredadas": "Hérite des normes du modèle ou, s’il n’en a pas, de son type :",
           "normasPropias": "Normes propres à cette référence : elles remplacent celles du modèle.",
-          "normaHeredadaTitle": "Héritée du modèle",
+          "normaHeredadaTitle": "Héritée du modèle ou de son type",
           "fijadoOn": "Valeur figée : la création d'équipement ne peut pas la modifier",
           "fijadoOff": "Valeur proposée : la création d'équipement peut la modifier",
           "metadatosPh": "Données complémentaires de la fiche fabricant (poids, tours, garantie…).",
@@ -2583,7 +2584,7 @@
       "create": "Nouvelle norme",
       "empty": "Aucune norme pour l’instant.",
       "emptyHint": "Créez la première norme du catalogue.",
-      "search": "Rechercher par code, classe ou description…",
+      "search": "Rechercher par norme, équivalent ou description…",
       "section": "Identification",
       "detail": "Détail",
       "newTitle": "Nouvelle norme",
@@ -2591,8 +2592,6 @@
       "close": "Fermer",
       "delete": "Supprimer la norme",
       "cols": {
-        "clase": "Classe d’équipement",
-        "claseTitle": "Nom de l’équipement couvert par la norme. C’est ce qui apparaît dans la liste des éléments et dans l’en-tête du rapport.",
         "codigo": "Norme",
         "descripcion": "Description",
         "checkpoints": "Points de contrôle",
@@ -2611,20 +2610,22 @@
         "general": "Général"
       },
       "field": {
-        "clase": "Classe d’équipement",
-        "codigo": "Code de la norme",
-        "codigoPlaceholder": "p. ex. EN 361:2002",
-        "equivalente": "Équivalent sur ce marché",
-        "categoria": "Norme de base / catégorie",
         "descripcion": "Description",
-        "descripcionPlaceholder": "Champ d’application et objet de la norme…",
-        "descripcionHint": "Décrivez brièvement l’équipement ou la situation que cette norme régit.",
-        "codigoHint": "L'édition EN complète, avec l'année et la partie ou classe : EN 361:2002, EN 795:2012 A.",
-        "equivalentePlaceholder": "p. ex. NF EN 361",
-        "categoriaPlaceholder": "p. ex. EN 795 A",
-        "clasePlaceholder": "p. ex. Point d'ancrage fixe",
-        "claseHint": "Le nom de l'équipement : il figure dans la liste des éléments, dans l'en-tête du rapport et dans le titre de la checklist.",
-        "sinEn": "Il n'existe pas de norme EN équivalente"
+        "sistema": "Système normatif",
+        "base": "Code de base",
+        "basePlaceholder": "p. ex. 795",
+        "cat": "Catégorie",
+        "catPlaceholder": "1, 2 · A, B…",
+        "anio": "Année",
+        "anioPlaceholder": "2014 · 2014+A1:2016",
+        "catHint": "Catégorie uniquement si nécessaire : un chiffre (partie, p. ex. 1263-1) ou une lettre (classe, p. ex. 795 A). Année : version de base et, le cas échéant, ses amendements (p. ex. 2014+A1:2016).",
+        "intl": "Expression internationale",
+        "intlVacia": "Construite à partir du code de base, de la catégorie et de l’année",
+        "intlPlaceholder": "p. ex. ANSI Z359.11-2021",
+        "nacional": "Expression sur le marché national",
+        "nacionalPlaceholder": "compléter l’expression",
+        "nacionalHint": "Version de la même norme adoptée sur le marché national. Vide = non adoptée.",
+        "descripcionPlaceholder": "Domaine et objet de la norme"
       },
       "codigoWarning": "ATTENTION : ne modifiez le code de la norme que pour des détails mineurs, comme inclure ou non le code pays ou l’année de version.\n\nNe changez jamais la norme elle-même, car elle est liée aux types d’éléments, aux checklists, aux champs personnalisés, etc.",
       "confirmDelete": "Supprimer la norme « {{codigo}} » ?",
@@ -2648,7 +2649,25 @@
       "canonNote": "Cette norme fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Les normes que vous créez vous-même sont modifiables.",
       "sinEnAviso": "Créer des normes sans code EN rendra plus difficile le rapprochement des équipements qui les respectent avec les catalogues du secteur et d'autres références documentaires fondées sur les normes européennes.\n\nNe confirmez que s'il n'existe vraiment pas de norme EN équivalente.",
       "sinEnTag": "Sans code EN",
-      "sinEnNota": "Cette norme n'a pas de code EN : elle perd son lien avec les catalogues du secteur et avec la documentation fondée sur les normes européennes."
+      "sinEnNota": "Cette norme n'a pas de code EN : elle perd son lien avec les catalogues du secteur et avec la documentation fondée sur les normes européennes.",
+      "ocultar": "Masquer la norme",
+      "mostrar": "Afficher la norme",
+      "ocultada": "Norme {{codigo}} masquée",
+      "mostrada": "Norme {{codigo}} de nouveau visible",
+      "ver": {
+        "label": "Voir",
+        "activas": "Normes actives uniquement",
+        "ocultas": "Normes masquées uniquement",
+        "todas": "Toutes (actives et masquées)"
+      },
+      "sistema": {
+        "en": "Norme européenne (EN) et ses équivalences nationales",
+        "otro": "Autre système normatif"
+      },
+      "sec": {
+        "caracterizacion": "Caractérisation",
+        "expresiones": "Expressions de la norme"
+      }
     },
     "campos": {
       "create": "Nouveau champ",
@@ -3153,7 +3172,8 @@
         "modelos": "Nb de modèles",
         "periodicidad": "Validité (mois)",
         "nCampos": "Nb de champs",
-        "nNormas": "Nb de normes"
+        "nNormas": "Nb de normes",
+        "esEpi": "Est un EPI"
       },
       "familias": {
         "title": "Familles",
@@ -3199,8 +3219,9 @@
       "revisionPeriodica": "Vérification périodique - {{n}} mois depuis la dernière vérification APTE",
       "revisionPeriodicaNo": "Vérification périodique - Ne s'applique pas",
       "revisionesNota": "Pour information. Les différentes vérifications et leur périodicité se gèrent dans la section <0>CARACTÉRISATION</0> du catalogue.",
-      "fechasNota": "Pour information. Ces paramètres de dates de référence se modifient dans l'écran <0>CARACTÉRISATION</0> du catalogue.",
-      "epiAviso": "Les EPI ne s'installent pas : à l'enregistrement, la date d'installation sera retirée de ce type. Les équipements qui l'ont déjà la conservent, mais elle n'est plus affichée ni utilisée."
+      "fechasNota": "Pour information. Ces paramètres de dates de référence se modifient dans la section <0>CARACTÉRISATION</0> du catalogue.",
+      "epiAviso": "Les EPI ne s'installent pas : à l'enregistrement, la date d'installation sera retirée de ce type. Les équipements qui l'ont déjà la conservent, mais elle n'est plus affichée ni utilisée.",
+      "soloGestionCatalogo": "(uniquement les utilisateurs autorisés à gérer le catalogue)"
     },
     "parametros": {
       "grupoMarca": "Marque et langue",

@@ -952,7 +952,8 @@
       "sinOrigen": "Sin referencia de catálogo: no hay normativa que resolver.",
       "origen": {
         "referencia": "Definida en su referencia de catálogo.",
-        "modelo": "Heredada de su modelo: la referencia no tiene normas propias."
+        "modelo": "Heredada de su modelo: la referencia no tiene normas propias.",
+        "tipo": "Heredada de su tipo: ni la referencia ni el modelo tienen normas propias."
       },
       "delTipo": "Normativa del tipo {{tipo}}",
       "delTipoNota": "Es otra cosa: qué normativa es pertinente para esa familia de equipo, y de donde salen sus campos y sus checklists."
@@ -2527,9 +2528,9 @@
           "deleted": "Referencia eliminada.",
           "confirmDelete": "¿Eliminar la referencia «{{nombre}}»?",
           "descatalogadaHint": "Descatalogada por el fabricante: sigue a la vista, porque su parque continúa en uso y hay que revisarlo.",
-          "normasHeredadas": "Hereda la normativa del modelo:",
+          "normasHeredadas": "Hereda la normativa del modelo o, si el modelo no tiene, la de su tipo:",
           "normasPropias": "Normativa propia de esta referencia: sustituye a la del modelo.",
-          "normaHeredadaTitle": "Heredada del modelo",
+          "normaHeredadaTitle": "Heredada del modelo o de su tipo",
           "fijadoOn": "Valor fijado: el alta de elemento no lo puede cambiar",
           "fijadoOff": "Valor propuesto: el alta de elemento lo puede cambiar",
           "metadatosPh": "Datos adicionales de la ficha del fabricante (peso, contornos, garantía…).",
@@ -2729,7 +2730,7 @@
       "create": "Nueva norma",
       "empty": "No hay normas todavía.",
       "emptyHint": "Crea la primera norma del catálogo.",
-      "search": "Buscar por código, clase o descripción…",
+      "search": "Buscar por norma, equivalente o descripción…",
       "section": "Identificación",
       "detail": "Detalle",
       "newTitle": "Nueva norma",
@@ -2737,8 +2738,6 @@
       "close": "Cerrar",
       "delete": "Eliminar norma",
       "cols": {
-        "clase": "Clase de equipo",
-        "claseTitle": "Nombre del equipo que ampara la norma. Es lo que sale en la lista de elementos y en la cabecera del informe.",
         "codigo": "Norma",
         "descripcion": "Descripción",
         "checkpoints": "Checkpoints",
@@ -2757,20 +2756,22 @@
         "general": "General"
       },
       "field": {
-        "clase": "Clase de equipo",
-        "codigo": "Código de norma",
-        "codigoPlaceholder": "p. ej. EN 361:2002",
-        "equivalente": "Equivalente en este mercado",
-        "categoria": "Norma base / categoría",
         "descripcion": "Descripción",
-        "descripcionPlaceholder": "Ámbito y objeto de la norma…",
-        "descripcionHint": "Describe brevemente el equipo o situación que regula esta norma.",
-        "codigoHint": "La edición EN completa, con el año y la parte o clase: EN 361:2002, EN 795:2012 A.",
-        "equivalentePlaceholder": "p. ej. UNE-EN 361:2002",
-        "categoriaPlaceholder": "p. ej. EN 795 A",
-        "clasePlaceholder": "p. ej. Punto de anclaje fijo",
-        "claseHint": "El nombre del equipo: sale en la lista de elementos, en la cabecera del informe y en el título del checklist.",
-        "sinEn": "No existe norma EN equivalente"
+        "sistema": "Sistema normativo",
+        "base": "Código base",
+        "basePlaceholder": "p. ej. 795",
+        "cat": "Categoría",
+        "catPlaceholder": "1, 2 · A, B…",
+        "anio": "Año",
+        "anioPlaceholder": "2014 · 2014+A1:2016",
+        "catHint": "Categoría solo si procede: numérica (parte, p. ej. 1263-1) o letra (clase, p. ej. 795 A). Año: versión base y, si las hay, sus modificaciones (p. ej. 2014+A1:2016).",
+        "intl": "Expresión internacional",
+        "intlVacia": "Se construye con código base, categoría y año",
+        "intlPlaceholder": "p. ej. ANSI Z359.11-2021",
+        "nacional": "Expresión en mercado nacional",
+        "nacionalPlaceholder": "completar la expresión",
+        "nacionalHint": "Versión de la misma norma adoptada en el mercado nacional. Vacío = sin adoptar.",
+        "descripcionPlaceholder": "Ámbito y objeto de la norma"
       },
       "codigoWarning": "ATENCIÓN: modifique el código de la norma únicamente para cambiar detalles menores, como incluir o no el código de país o el año de la versión.\n\nNunca cambie la norma en sí, porque está ligada a tipos de elementos, checklists, campos personalizados, etc.",
       "confirmDelete": "¿Eliminar la norma «{{codigo}}»?",
@@ -2794,7 +2795,25 @@
       "canonNote": "Esta norma forma parte del canon base de EVERYDAT: es consultable pero no editable. Las normas que crees tú sí que son editables.",
       "sinEnAviso": "El alta de normas sin código EN dificultará la relación de los equipos dotados de ellas con los catálogos del sector y otras referencias documentales basadas en la normativa europea.\n\nConfirma solo si de verdad no existe una norma EN equivalente.",
       "sinEnTag": "Sin código EN",
-      "sinEnNota": "Esta norma no tiene código EN: se pierde la relación con los catálogos del sector y con la documentación basada en la normativa europea."
+      "sinEnNota": "Esta norma no tiene código EN: se pierde la relación con los catálogos del sector y con la documentación basada en la normativa europea.",
+      "ocultar": "Ocultar norma",
+      "mostrar": "Mostrar norma",
+      "ocultada": "Norma {{codigo}} oculta",
+      "mostrada": "Norma {{codigo}} visible de nuevo",
+      "ver": {
+        "label": "Ver",
+        "activas": "Solo normas activas",
+        "ocultas": "Solo normas ocultas",
+        "todas": "Todas (activas y ocultas)"
+      },
+      "sistema": {
+        "en": "Norma Europea (EN) y sus equivalencias por países",
+        "otro": "Otro sistema normativo"
+      },
+      "sec": {
+        "caracterizacion": "Caracterización",
+        "expresiones": "Expresiones de la norma"
+      }
     },
     "campos": {
       "create": "Nuevo campo",
@@ -3299,7 +3318,8 @@
         "modelos": "Nº de modelos",
         "periodicidad": "Validez (meses)",
         "nCampos": "Nº de campos",
-        "nNormas": "Nº de normas"
+        "nNormas": "Nº de normas",
+        "esEpi": "Es EPI"
       },
       "familias": {
         "title": "Familias",
@@ -3345,8 +3365,9 @@
       "revisionPeriodica": "Revisión periódica - {{n}} meses desde última revisión APTA",
       "revisionPeriodicaNo": "Revisión periódica - No se le aplica",
       "revisionesNota": "Informativo. Las diferentes revisiones y su periodicidad se gestionan en la sección de <0>CARACTERIZACIÓN</0> del catálogo.",
-      "fechasNota": "Dato informativo. Estos parámetros de fechas de referencia se editan en la pantalla de <0>CARACTERIZACIÓN</0> del catálogo.",
-      "epiAviso": "Los EPI no se instalan: al guardarlo se le quitará la fecha de instalación. Los equipos que ya la tengan la conservan, pero deja de mostrarse y de usarse."
+      "fechasNota": "Dato informativo. Estos parámetros de fechas de referencia se editan en la sección de <0>CARACTERIZACIÓN</0> del catálogo.",
+      "epiAviso": "Los EPI no se instalan: al guardarlo se le quitará la fecha de instalación. Los equipos que ya la tengan la conservan, pero deja de mostrarse y de usarse.",
+      "soloGestionCatalogo": "(solo usuarios con permisos de gestión de catálogo)"
     },
     "parametros": {
       "grupoMarca": "Marca e idioma",
