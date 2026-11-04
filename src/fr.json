@@ -693,7 +693,8 @@
       "pie": "Les champs marqués * sont obligatoires. Le reste se complète ensuite dans la fiche."
     },
     "fusion": {
-      "asa": "Faites glisser cette fiche sur celle qui reste pour les fusionner"
+      "asa": "Faites glisser cette fiche sur celle qui reste pour les fusionner",
+      "encontradoPor": "Trouvé par la fiche fusionnée {{ref}}"
     }
   },
   "contactos": {

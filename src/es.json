@@ -594,7 +594,8 @@
         "desc": "«{{from}}» se absorbe dentro de «{{to}}», que es la ficha que se queda.",
         "traspasa": "Pasan a «{{to}}» sus vínculos con clientes, los emplazamientos que alcanza y sus permisos. Si las dos tenían cuenta de portal, solo sobrevive la de «{{to}}».",
         "contador": "{{n}} clientes"
-      }
+      },
+      "encontradoPor": "Encontrado por la ficha fusionada {{ref}}"
     },
     "eliminarAviso": "La eliminación completa requiere eliminar o desasociar del cliente previamente cualquier emplazamiento. Si simplemente quieres desactivarlo porque ya no trabajas con este cliente, la opción recomendada es cambiarlo de estado Activo a estado BAJA.",
     "baja": {

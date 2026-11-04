@@ -723,7 +723,8 @@
         "desc": "\"{{from}}\" is absorbed into \"{{to}}\", the record that stays.",
         "traspasa": "Client links, reachable sites and permissions move to \"{{to}}\". If both had a portal account, only the one on \"{{to}}\" survives.",
         "contador": "{{n}} clients"
-      }
+      },
+      "encontradoPor": "Found through the merged record {{ref}}"
     },
     "eliminarAviso": "Deleting the customer completely requires deleting or unlinking every site from it first. If you simply want to deactivate it because you no longer work with this customer, the recommended option is to change its status from Active to INACTIVE.",
     "baja": {
