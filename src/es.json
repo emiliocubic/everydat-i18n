@@ -782,8 +782,10 @@
       "exc": {
         "revision": "Su revisión caduca antes de la próxima visita",
         "vida": "Agota su vida útil antes de la próxima visita",
-        "sin_cobertura": "No le llega ninguna visita planificada"
-      }
+        "sin_cobertura": "No le llega ninguna visita planificada",
+        "referencia_baja": "Referencia dada de baja definitiva: no debería seguir en uso"
+      },
+      "refBaja": "Ref. en baja"
     },
     "orden": {
       "menu": "Ordenar por",
@@ -834,7 +836,8 @@
       "exc": {
         "revision": "Caducan antes de su próxima revisión",
         "vida": "Llegan a fin de vida útil antes de su próxima revisión",
-        "sin_cobertura": "Sin fecha de próxima revisión que los cubra"
+        "sin_cobertura": "Sin fecha de próxima revisión que los cubra",
+        "referencia_baja": "Referencia dada de baja definitiva: no debería seguir en uso"
       },
       "aptos": "Aptos",
       "nuncaRevisados": "Nunca revisados",
@@ -2235,7 +2238,7 @@
     "placeholderBody": "Esta vista del área de Configuración se conectará más adelante, vista por vista.",
     "catalogo": {
       "empty": "El catálogo está vacío.",
-      "searchPlaceholder": "Buscar por modelo, fabricante o tipo…",
+      "searchPlaceholder": "Modelo, código o fabricante…",
       "emptyHint": "Importa modelos del repositorio sectorial o ajusta el filtro.",
       "importCta": "Importar del repositorio",
       "nuevoCta": "Nuevo modelo",
@@ -2277,7 +2280,6 @@
         "modeloPlaceholder": "Escribe o elige un modelo…",
         "modeloDisabled": "Elige antes un fabricante",
         "tipoPlaceholder": "Elige el tipo de elemento…",
-        "addingRefsTo": "Añadiendo referencias a «{{name}}»",
         "referenciasTitle": "Referencias",
         "referenciasEmptyHint": "Si no añades referencias, se creará una con el código del modelo.",
         "referenciasExistingHint": "Añade las referencias que quieras a este modelo.",
@@ -2304,7 +2306,8 @@
         "tipoLabel": "Tipo de elemento",
         "tipoHint": "Con el tipo llegan el checklist, los campos y las fechas del modelo.",
         "modeloNombreLabel": "Nombre del modelo",
-        "busquedaRequerida": "Este fabricante no tiene acuerdo con el repositorio, así que su catálogo no se hojea: busca por nombre o código (tres letras o más) y se enseñan hasta diez resultados."
+        "busquedaRequerida": "Este fabricante no tiene acuerdo con el repositorio, así que su catálogo no se hojea: busca por nombre o código (tres letras o más) y se enseñan hasta diez resultados.",
+        "modeloYaExiste": "Has elegido un modelo que ya existe en el catálogo."
       },
       "pick": {
         "existing": "Ya en tu catálogo",
@@ -2391,7 +2394,12 @@
         "multi": "Multicomponente"
       },
       "tiposTodos": "Todos",
-      "tiposN": "{{n}} tipos"
+      "tiposN": "{{n}} tipos",
+      "familiasN": "{{n}} familias",
+      "origenFiltro": {
+        "sectorial": "Del repositorio",
+        "local": "Propios"
+      }
     },
     "modelos": {
       "fabricante": "Fabricante",
@@ -2448,7 +2456,8 @@
           "cambiar": "Cambiar imagen",
           "quitar": "Quitar imagen",
           "confirmQuitar": "¿Quitar la imagen del modelo?",
-          "errorSubir": "No se pudo subir la imagen (usa JPG, PNG o WEBP, máx. 4 MB)."
+          "errorSubir": "No se pudo subir la imagen (usa JPG, PNG o WEBP, máx. 4 MB).",
+          "ampliar": "Ver la imagen en grande"
         },
         "campos": {
           "title": "Campos personalizados",
@@ -2516,7 +2525,8 @@
           "estado": {
             "activa": "Activa",
             "descatalogada": "Descatalogada",
-            "actual": "Actual"
+            "actual": "Actual",
+            "baja_definitiva": "Baja definitiva"
           },
           "nueva": "Añadir referencias",
           "sinEspecificar": "sin especificar",
@@ -2555,7 +2565,8 @@
             "note": "Nunca se pisa un dato que la referencia conservada ya tenía.",
             "confirm": "Unificar",
             "done": "Referencias unificadas."
-          }
+          },
+          "bajaDefinitivaHint": "Referencia obsoleta, descatalogada hace mucho tiempo. No se ofrece para nuevas altas ni su parque puede seguir en uso"
         },
         "caract": {
           "title": "Caracterización",
@@ -2581,7 +2592,9 @@
           "desde": "desde",
           "noDefinida": "No definida",
           "fichaFabricante": "Ficha del fabricante",
-          "sinEnlace": "Sin enlace"
+          "sinEnlace": "Sin enlace",
+          "normas": "Normas",
+          "normasHint": "Sin ninguna seleccionada, el modelo hereda las de su tipo."
         },
         "docs": {
           "title": "Documentación",
@@ -2658,13 +2671,13 @@
         "noApagable_other": "Tiene {{count}} elementos: un multicomponente con parque no vuelve a equipo simple.",
         "noSectorial": "Un modelo del repositorio sectorial no se convierte: su estructura la traerá el repositorio.",
         "estructurales": "Componentes estructurales",
-        "estructuralesHint": "Piezas propias de este sistema, del mismo fabricante, en una sola lista (también los accesorios y lo de montaje). Al dar de alta el sistema solo se indica cuántas unidades lleva de cada una.",
+        "estructuralesHint": "Piezas propias de este sistema, del mismo fabricante y en una sola lista. Posteriormente, al dar de alta un equipamiento concreto, se indica cuántas unidades lleva de cada una de esas piezas",
         "estructuralesVacio": "Sin componentes estructurales.",
         "nPiezas_one": "{{count}} pieza",
         "nPiezas_other": "{{count}} piezas",
         "anadirComponente": "Añadir componente",
         "funcionales": "Componentes funcionales",
-        "funcionalesHint": "Equipos con nº de serie propio (carro, absorbedor): modelos concretos, normalmente de {{fab}}. Al dar de alta el sistema, cada hueco se rellena con elementos de la carpeta de esos modelos.",
+        "funcionalesHint": "Equipos con nº de serie propio (carro, absorbedor): modelos concretos, normalmente del mismo fabricante. Posteriormente, al dar de alta un equipamiento concreto, cada componente funcional se elige de entre los elementos que correspondan al modelo indicado y que se encuentren en la misma carpeta",
         "funcionalesVacio": "Sin componentes funcionales.",
         "nTipos_one": "{{count}} tipo",
         "nTipos_other": "{{count}} tipos",
@@ -2714,7 +2727,7 @@
           "nSeleccionados_other": "{{count}} tipos seleccionados",
           "anadir": "Añadir"
         },
-        "funcionalesHintSinFab": "Equipos con nº de serie propio (carro, absorbedor): modelos concretos, normalmente del mismo fabricante que el sistema. Al dar de alta el sistema, cada hueco se rellena con elementos de la carpeta de esos modelos.",
+        "funcionalesHintSinFab": "Equipos con nº de serie propio (carro, absorbedor): modelos concretos, normalmente del mismo fabricante. Posteriormente, al dar de alta un equipamiento concreto, cada componente funcional se elige de entre los elementos que correspondan al modelo indicado y que se encuentren en la misma carpeta",
         "nModelos_one": "{{count}} modelo",
         "nModelos_other": "{{count}} modelos",
         "anadirModelos": "Añadir modelos",
@@ -3207,8 +3220,8 @@
         "elementos": "Nº de elementos"
       },
       "origen": {
-        "local": "Fabricante propio",
-        "sectorial": "Del repositorio sectorial"
+        "local": "ALTA MANUAL",
+        "sectorial": "REPOSITORIO"
       },
       "repo": {
         "si": "Con ficha en el repositorio",
@@ -3225,17 +3238,20 @@
         "nModelos": "{{n}} modelos",
         "modelos": "Los modelos —y las referencias y los elementos que cuelgan de ellos— cambian de fabricante sin moverse de sitio.",
         "valores": "Las listas de valores por marca se conservan las de «{{to}}»; las del absorbido solo entran donde «{{to}}» no tenía lista.",
-        "note": "«{{from}}» dejará de existir: sus modelos —y los {{n}} elementos del parque que cuelgan de ellos— pasan a «{{to}}». Esta acción no se puede deshacer.",
+        "note": "«{{from}}» dejará de existir: sus modelos —y los {{n}} elementos del parque que cuelgan de ellos— pasan a «{{to}}».",
         "confirm": "Fusionar fabricantes",
-        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»"
+        "done": "«{{from}}» se ha fusionado dentro de «{{to}}»",
+        "aviso": "ESTA ACCIÓN NO SE PUEDE DESHACER"
       },
       "nivel": {
         "catalogo": "Catálogo disponible",
         "ia": "Asistido por IA",
         "manual": "Solo alta manual",
         "repo": "Con ficha en el repositorio",
-        "catalogoTitle": "Catálogo disponible. Datos completos obtenidos directamente del fabricante",
-        "iaTitle": "Asistido por IA: es posible consultar parcialmente datos públicos de este fabricante"
+        "catalogoTitle": "Datos, imágenes y archivos disponibles. Obtenidos y servidos con autorización del fabricante",
+        "iaTitle": "Asistido por IA, es posible consultar datos públicos de los productos. Archivos e imágenes solo desde web del fabricante",
+        "manualTitle": "Alimentación manual de datos. Sin información en el repositorio sectorial",
+        "repoTitle": "Repositorio sin conexión; se comprobará más tarde"
       },
       "escalas": {
         "title": "Escalas por fabricante",
@@ -6905,12 +6921,14 @@
     "exc": {
       "expiry": "Caduca antes de su revisión",
       "life": "Fin de vida antes de su revisión",
-      "nocover": "Sin revisión que lo cubra"
+      "nocover": "Sin revisión que lo cubra",
+      "refbaja": "Referencia dada de baja definitiva: no debería seguir en uso"
     },
     "excCorta": {
       "expiry": "Caduca",
       "life": "Fin vida",
-      "nocover": "Sin plan"
+      "nocover": "Sin plan",
+      "refbaja": "Ref. en baja"
     },
     "situ": {
       "none": "Sin proyecto",

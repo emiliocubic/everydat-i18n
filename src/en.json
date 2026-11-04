@@ -911,8 +911,10 @@
       "exc": {
         "revision": "Its inspection expires before the next visit",
         "vida": "It reaches end of service life before the next visit",
-        "sin_cobertura": "No planned visit covers it"
-      }
+        "sin_cobertura": "No planned visit covers it",
+        "referencia_baja": "Reference permanently withdrawn: it should not remain in use"
+      },
+      "refBaja": "Ref. withdrawn"
     },
     "orden": {
       "menu": "Sort by",
@@ -963,7 +965,8 @@
       "exc": {
         "revision": "Expire before their next inspection",
         "vida": "Reach end of service life before their next inspection",
-        "sin_cobertura": "No next-inspection date covers them"
+        "sin_cobertura": "No next-inspection date covers them",
+        "referencia_baja": "Reference permanently withdrawn: it should not remain in use"
       },
       "aptos": "Pass",
       "nuncaRevisados": "Never inspected",
@@ -2235,7 +2238,7 @@
     "placeholderBody": "This Settings screen will be wired up later, one view at a time.",
     "catalogo": {
       "empty": "The catalogue is empty.",
-      "searchPlaceholder": "Search by model, manufacturer or type…",
+      "searchPlaceholder": "Model, code or manufacturer…",
       "emptyHint": "Import models from the sector repository or adjust the filter.",
       "importCta": "Import from repository",
       "nuevoCta": "New model",
@@ -2277,7 +2280,6 @@
         "modeloPlaceholder": "Type or pick a model…",
         "modeloDisabled": "Pick a manufacturer first",
         "tipoPlaceholder": "Choose the item type…",
-        "addingRefsTo": "Adding references to “{{name}}”",
         "referenciasTitle": "References",
         "referenciasEmptyHint": "If you add no references, one will be created using the model code.",
         "referenciasExistingHint": "Add the references you want to this model.",
@@ -2304,7 +2306,8 @@
         "tipoLabel": "Item type",
         "tipoHint": "The type brings the checklist, fields and dates of the model.",
         "modeloNombreLabel": "Model name",
-        "busquedaRequerida": "This manufacturer has no agreement with the repository, so its catalogue cannot be browsed: search by name or code (three characters or more) and up to ten results are shown."
+        "busquedaRequerida": "This manufacturer has no agreement with the repository, so its catalogue cannot be browsed: search by name or code (three characters or more) and up to ten results are shown.",
+        "modeloYaExiste": "You have chosen a model that already exists in the catalogue."
       },
       "pick": {
         "existing": "Already in your catalogue",
@@ -2391,7 +2394,12 @@
         "multi": "Multi-component"
       },
       "tiposTodos": "All",
-      "tiposN": "{{n}} types"
+      "tiposN": "{{n}} types",
+      "familiasN": "{{n}} families",
+      "origenFiltro": {
+        "sectorial": "From the repository",
+        "local": "Own"
+      }
     },
     "modelos": {
       "fabricante": "Manufacturer",
@@ -2448,7 +2456,8 @@
           "cambiar": "Change image",
           "quitar": "Remove image",
           "confirmQuitar": "Remove the model's image?",
-          "errorSubir": "Could not upload the image (use JPG, PNG or WEBP, max 4 MB)."
+          "errorSubir": "Could not upload the image (use JPG, PNG or WEBP, max 4 MB).",
+          "ampliar": "View the image full size"
         },
         "campos": {
           "title": "Custom fields",
@@ -2516,7 +2525,8 @@
           "estado": {
             "activa": "Active",
             "descatalogada": "Discontinued",
-            "actual": "Current"
+            "actual": "Current",
+            "baja_definitiva": "Permanently withdrawn"
           },
           "nueva": "Add references",
           "sinEspecificar": "unspecified",
@@ -2555,7 +2565,8 @@
             "note": "Data the surviving reference already had is never overwritten.",
             "confirm": "Merge",
             "done": "References merged."
-          }
+          },
+          "bajaDefinitivaHint": "Obsolete reference, discontinued a long time ago. It is not offered for new registrations and its installed units should not remain in use"
         },
         "caract": {
           "title": "Characterization",
@@ -2581,7 +2592,9 @@
           "desde": "from",
           "noDefinida": "Not defined",
           "fichaFabricante": "Manufacturer datasheet",
-          "sinEnlace": "No link"
+          "sinEnlace": "No link",
+          "normas": "Standards",
+          "normasHint": "With none selected, the model inherits those of its type."
         },
         "docs": {
           "title": "Documentation",
@@ -2658,13 +2671,13 @@
         "noApagable_other": "It has {{count}} items: a multi-component model in use does not go back to simple equipment.",
         "noSectorial": "A model from the sector repository is not converted: the repository will bring its structure.",
         "estructurales": "Structural components",
-        "estructuralesHint": "Parts specific to this system, from the same manufacturer, in a single list (accessories and mounting parts included). When the system is registered, only the number of units of each is entered.",
+        "estructuralesHint": "Parts specific to this system, from the same manufacturer and in a single list. Later, when registering a specific piece of equipment, you state how many units of each part it has",
         "estructuralesVacio": "No structural components.",
         "nPiezas_one": "{{count}} part",
         "nPiezas_other": "{{count}} parts",
         "anadirComponente": "Add component",
         "funcionales": "Functional components",
-        "funcionalesHint": "Equipment with its own serial number (trolley, absorber): specific models, usually from {{fab}}. When the system is registered, each slot is filled with items from the folder of those models.",
+        "funcionalesHint": "Equipment with its own serial number (trolley, absorber): specific models, usually from the same manufacturer. Later, when registering a specific piece of equipment, each functional component is chosen from the items of the given model found in the same folder",
         "funcionalesVacio": "No functional components.",
         "nTipos_one": "{{count}} type",
         "nTipos_other": "{{count}} types",
@@ -2714,7 +2727,7 @@
           "nSeleccionados_other": "{{count}} types selected",
           "anadir": "Add"
         },
-        "funcionalesHintSinFab": "Equipment with its own serial number (trolley, absorber): specific models, usually from the same manufacturer as the system. When the system is registered, each slot is filled with items from the folder of those models.",
+        "funcionalesHintSinFab": "Equipment with its own serial number (trolley, absorber): specific models, usually from the same manufacturer. Later, when registering a specific piece of equipment, each functional component is chosen from the items of the given model found in the same folder",
         "nModelos_one": "{{count}} model",
         "nModelos_other": "{{count}} models",
         "anadirModelos": "Add models",
@@ -3207,8 +3220,8 @@
         "elementos": "No. of elements"
       },
       "origen": {
-        "local": "Own manufacturer",
-        "sectorial": "From the industry repository"
+        "local": "MANUAL ENTRY",
+        "sectorial": "REPOSITORY"
       },
       "repo": {
         "si": "Has a repository record",
@@ -3225,17 +3238,20 @@
         "nModelos": "{{n}} models",
         "modelos": "Models —and the references and items hanging from them— change manufacturer without moving.",
         "valores": "Per-brand value lists keep those of «{{to}}»; the absorbed one's only apply where «{{to}}» had none.",
-        "note": "«{{from}}» will cease to exist: its models —and the {{n}} fleet items hanging from them— move to «{{to}}». This cannot be undone.",
+        "note": "“{{from}}” will cease to exist: its models —and the {{n}} installed items that hang from them— move to “{{to}}”.",
         "confirm": "Merge manufacturers",
-        "done": "«{{from}}» has been merged into «{{to}}»"
+        "done": "«{{from}}» has been merged into «{{to}}»",
+        "aviso": "THIS ACTION CANNOT BE UNDONE"
       },
       "nivel": {
         "catalogo": "Catalogue available",
         "ia": "AI assisted",
         "manual": "Manual entry only",
         "repo": "Listed in the repository",
-        "catalogoTitle": "Catalogue available. Complete data obtained directly from the manufacturer",
-        "iaTitle": "AI assisted: public data from this manufacturer can be partially consulted"
+        "catalogoTitle": "Data, images and files available. Obtained and served with the manufacturer's authorisation",
+        "iaTitle": "AI-assisted: public product data can be consulted. Files and images only from the manufacturer's website",
+        "manualTitle": "Manual data entry. No information in the sector repository",
+        "repoTitle": "Repository offline; it will be checked later"
       },
       "escalas": {
         "title": "Manufacturer scales",
@@ -6905,12 +6921,14 @@
     "exc": {
       "expiry": "Expires before its inspection",
       "life": "End of life before its inspection",
-      "nocover": "No inspection covers it"
+      "nocover": "No inspection covers it",
+      "refbaja": "Reference permanently withdrawn: it should not remain in use"
     },
     "excCorta": {
       "expiry": "Expires",
       "life": "End of life",
-      "nocover": "Unplanned"
+      "nocover": "Unplanned",
+      "refbaja": "Ref. withdrawn"
     },
     "situ": {
       "none": "No project",

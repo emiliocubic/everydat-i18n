@@ -851,8 +851,10 @@
       "exc": {
         "revision": "Son inspection expire avant la prochaine visite",
         "vida": "Il atteint la fin de sa durée de vie avant la prochaine visite",
-        "sin_cobertura": "Aucune visite planifiée ne le couvre"
-      }
+        "sin_cobertura": "Aucune visite planifiée ne le couvre",
+        "referencia_baja": "Référence en retrait définitif : ne devrait plus être utilisée"
+      },
+      "refBaja": "Réf. retirée"
     },
     "orden": {
       "menu": "Trier par",
@@ -903,7 +905,8 @@
       "exc": {
         "revision": "Expirent avant leur prochaine inspection",
         "vida": "Atteignent la fin de vie utile avant leur prochaine inspection",
-        "sin_cobertura": "Sans date de prochaine inspection qui les couvre"
+        "sin_cobertura": "Sans date de prochaine inspection qui les couvre",
+        "referencia_baja": "Référence en retrait définitif : ne devrait plus être utilisée"
       },
       "aptos": "Conformes",
       "nuncaRevisados": "Jamais inspectés",
@@ -2091,7 +2094,7 @@
     "placeholderBody": "Cet écran de Configuration sera connecté plus tard, vue par vue.",
     "catalogo": {
       "empty": "Le catalogue est vide.",
-      "searchPlaceholder": "Rechercher par modèle, fabricant ou type…",
+      "searchPlaceholder": "Modèle, code ou fabricant…",
       "emptyHint": "Importez des modèles du référentiel sectoriel ou ajustez le filtre.",
       "importCta": "Importer du référentiel",
       "nuevoCta": "Nouveau modèle",
@@ -2133,7 +2136,6 @@
         "modeloPlaceholder": "Saisissez ou choisissez un modèle…",
         "modeloDisabled": "Choisissez d'abord un fabricant",
         "tipoPlaceholder": "Choisissez le type d’équipement…",
-        "addingRefsTo": "Ajout de références à « {{name}} »",
         "referenciasTitle": "Références",
         "referenciasEmptyHint": "Si vous n'ajoutez aucune référence, une sera créée avec le code du modèle.",
         "referenciasExistingHint": "Ajoutez les références que vous voulez à ce modèle.",
@@ -2160,7 +2162,8 @@
         "tipoLabel": "Type d’équipement",
         "tipoHint": "Le type apporte la checklist, les champs et les dates du modèle.",
         "modeloNombreLabel": "Nom du modèle",
-        "busquedaRequerida": "Ce fabricant n'a pas d'accord avec le référentiel, son catalogue ne se feuillette donc pas : cherchez par nom ou code (trois lettres ou plus) et jusqu'à dix résultats s'affichent."
+        "busquedaRequerida": "Ce fabricant n'a pas d'accord avec le référentiel, son catalogue ne se feuillette donc pas : cherchez par nom ou code (trois lettres ou plus) et jusqu'à dix résultats s'affichent.",
+        "modeloYaExiste": "Vous avez choisi un modèle qui existe déjà dans le catalogue."
       },
       "pick": {
         "existing": "Déjà dans votre catalogue",
@@ -2247,7 +2250,12 @@
         "multi": "Multicomposant"
       },
       "tiposTodos": "Tous",
-      "tiposN": "{{n}} types"
+      "tiposN": "{{n}} types",
+      "familiasN": "{{n}} familles",
+      "origenFiltro": {
+        "sectorial": "Du référentiel",
+        "local": "Propres"
+      }
     },
     "modelos": {
       "fabricante": "Fabricant",
@@ -2304,7 +2312,8 @@
           "cambiar": "Changer l'image",
           "quitar": "Retirer l'image",
           "confirmQuitar": "Retirer l'image du modèle ?",
-          "errorSubir": "Impossible de téléverser l'image (JPG, PNG ou WEBP, max 4 Mo)."
+          "errorSubir": "Impossible de téléverser l'image (JPG, PNG ou WEBP, max 4 Mo).",
+          "ampliar": "Voir l'image en grand"
         },
         "campos": {
           "title": "Champs personnalisés",
@@ -2372,7 +2381,8 @@
           "estado": {
             "activa": "Active",
             "descatalogada": "Déréférencée",
-            "actual": "Actuelle"
+            "actual": "Actuelle",
+            "baja_definitiva": "Retrait définitif"
           },
           "nueva": "Ajouter des références",
           "sinEspecificar": "non précisée",
@@ -2411,7 +2421,8 @@
             "note": "Une donnée déjà présente dans la référence conservée n'est jamais écrasée.",
             "confirm": "Unifier",
             "done": "Références unifiées."
-          }
+          },
+          "bajaDefinitivaHint": "Référence obsolète, arrêtée depuis longtemps. Elle n'est pas proposée pour les nouveaux enregistrements et son parc ne devrait plus être utilisé"
         },
         "caract": {
           "title": "Caractérisation",
@@ -2437,7 +2448,9 @@
           "desde": "depuis",
           "noDefinida": "Non définie",
           "fichaFabricante": "Fiche du fabricant",
-          "sinEnlace": "Aucun lien"
+          "sinEnlace": "Aucun lien",
+          "normas": "Normes",
+          "normasHint": "Si aucune n’est sélectionnée, le modèle hérite de celles de son type."
         },
         "docs": {
           "title": "Documentation",
@@ -2514,13 +2527,13 @@
         "noApagable_other": "Il a {{count}} éléments : un multicomposant en service ne redevient pas un équipement simple.",
         "noSectorial": "Un modèle du référentiel sectoriel n'est pas converti : le référentiel apportera sa structure.",
         "estructurales": "Composants structurels",
-        "estructuralesHint": "Pièces propres à ce système, du même fabricant, dans une seule liste (accessoires et pièces de montage compris). À l'enregistrement du système, on indique seulement le nombre d'unités de chacune.",
+        "estructuralesHint": "Pièces propres à ce système, du même fabricant et dans une seule liste. Ensuite, lors de l'enregistrement d'un équipement concret, on indique combien d'unités il comporte de chacune",
         "estructuralesVacio": "Aucun composant structurel.",
         "nPiezas_one": "{{count}} pièce",
         "nPiezas_other": "{{count}} pièces",
         "anadirComponente": "Ajouter un composant",
         "funcionales": "Composants fonctionnels",
-        "funcionalesHint": "Équipements avec leur propre numéro de série (chariot, absorbeur) : des modèles concrets, en général de {{fab}}. À l'enregistrement du système, chaque emplacement reçoit des éléments du dossier de ces modèles.",
+        "funcionalesHint": "Équipements avec leur propre numéro de série (chariot, absorbeur) : modèles concrets, généralement du même fabricant. Ensuite, lors de l'enregistrement d'un équipement concret, chaque composant fonctionnel se choisit parmi les éléments du modèle indiqué présents dans le même dossier",
         "funcionalesVacio": "Aucun composant fonctionnel.",
         "nTipos_one": "{{count}} type",
         "nTipos_other": "{{count}} types",
@@ -2570,7 +2583,7 @@
           "nSeleccionados_other": "{{count}} types sélectionnés",
           "anadir": "Ajouter"
         },
-        "funcionalesHintSinFab": "Équipements avec leur propre numéro de série (chariot, absorbeur) : des modèles concrets, en général du même fabricant que le système. À l'enregistrement du système, chaque emplacement reçoit des éléments du dossier de ces modèles.",
+        "funcionalesHintSinFab": "Équipements avec leur propre numéro de série (chariot, absorbeur) : modèles concrets, généralement du même fabricant. Ensuite, lors de l'enregistrement d'un équipement concret, chaque composant fonctionnel se choisit parmi les éléments du modèle indiqué présents dans le même dossier",
         "nModelos_one": "{{count}} modèle",
         "nModelos_other": "{{count}} modèles",
         "anadirModelos": "Ajouter des modèles",
@@ -3063,8 +3076,8 @@
         "elementos": "Nb d'éléments"
       },
       "origen": {
-        "local": "Fabricant propre",
-        "sectorial": "Du référentiel sectoriel"
+        "local": "SAISIE MANUELLE",
+        "sectorial": "RÉFÉRENTIEL"
       },
       "repo": {
         "si": "Fiche présente dans le référentiel",
@@ -3081,17 +3094,20 @@
         "nModelos": "{{n}} modèles",
         "modelos": "Les modèles —et les références et éléments qui en dépendent— changent de fabricant sans bouger.",
         "valores": "Les listes de valeurs par marque gardent celles de « {{to}} » ; celles de l’absorbé n’entrent que là où « {{to}} » n’en avait pas.",
-        "note": "« {{from}} » cessera d’exister : ses modèles —et les {{n}} éléments du parc qui en dépendent— passent à « {{to}} ». Irréversible.",
+        "note": "« {{from}} » cessera d'exister : ses modèles —et les {{n}} éléments du parc qui en dépendent— passent à « {{to}} ».",
         "confirm": "Fusionner les fabricants",
-        "done": "« {{from}} » a été fusionné dans « {{to}} »"
+        "done": "« {{from}} » a été fusionné dans « {{to}} »",
+        "aviso": "CETTE ACTION EST IRRÉVERSIBLE"
       },
       "nivel": {
         "catalogo": "Catalogue disponible",
         "ia": "Assisté par IA",
         "manual": "Saisie manuelle uniquement",
         "repo": "Fiche dans le référentiel",
-        "catalogoTitle": "Catalogue disponible. Données complètes obtenues directement auprès du fabricant",
-        "iaTitle": "Assisté par IA : il est possible de consulter partiellement les données publiques de ce fabricant"
+        "catalogoTitle": "Données, images et fichiers disponibles. Obtenus et servis avec l'autorisation du fabricant",
+        "iaTitle": "Assisté par IA : il est possible de consulter les données publiques des produits. Fichiers et images uniquement depuis le site du fabricant",
+        "manualTitle": "Saisie manuelle des données. Aucune information dans le référentiel sectoriel",
+        "repoTitle": "Référentiel hors connexion ; la vérification se fera plus tard"
       },
       "escalas": {
         "title": "Échelles par fabricant",
@@ -6300,12 +6316,14 @@
     "exc": {
       "expiry": "Expire avant sa vérification",
       "life": "Fin de vie avant sa vérification",
-      "nocover": "Aucune vérification ne le couvre"
+      "nocover": "Aucune vérification ne le couvre",
+      "refbaja": "Référence en retrait définitif : ne devrait plus être utilisée"
     },
     "excCorta": {
       "expiry": "Expire",
       "life": "Fin de vie",
-      "nocover": "Non planifié"
+      "nocover": "Non planifié",
+      "refbaja": "Réf. retirée"
     },
     "situ": {
       "none": "Sans projet",
