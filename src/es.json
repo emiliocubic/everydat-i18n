@@ -703,7 +703,8 @@
         "restoEmplazamiento": "Resto del emplazamiento",
         "marcarZona": "Dar acceso a {{name}}",
         "quitarZona": "Quitar el acceso a {{name}}",
-        "sinCasillaZona": "Los envíos y avisos se conceden para todo el emplazamiento, no por zona"
+        "sinCasillaZona": "Los envíos y avisos se conceden para todo el emplazamiento, no por zona",
+        "sinNivelZona": "Ver o editar se concede para todo el emplazamiento. Qué zonas ve lo decide la casilla de la izquierda"
       },
       "comentariosPlaceholder": "Anotaciones internas sobre el contacto",
       "telefonoPlaceholder": "+34 600 000 000",

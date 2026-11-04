@@ -832,7 +832,8 @@
         "restoEmplazamiento": "Rest of the site",
         "marcarZona": "Give access to {{name}}",
         "quitarZona": "Remove access to {{name}}",
-        "sinCasillaZona": "Sending and alerts are granted for the whole site, not per zone"
+        "sinCasillaZona": "Sending and alerts are granted for the whole site, not per zone",
+        "sinNivelZona": "View or edit is granted for the whole site. The checkbox on the left decides which zones are visible"
       },
       "comentariosPlaceholder": "Internal notes about the contact",
       "telefonoPlaceholder": "+34 600 000 000",
