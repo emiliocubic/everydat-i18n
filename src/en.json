@@ -909,7 +909,12 @@
       "soltando": "Moving {{count}} item…",
       "soltando_other": "Moving {{count}} items…",
       "alcanceNodo_other": "This node ({{count}} items)",
-      "alcanceRama_other": "Whole branch ({{count}} items)"
+      "alcanceRama_other": "Whole branch ({{count}} items)",
+      "exc": {
+        "revision": "Its inspection expires before the next visit",
+        "vida": "It reaches end of service life before the next visit",
+        "sin_cobertura": "No planned visit covers it"
+      }
     },
     "orden": {
       "menu": "Sort by",
@@ -1295,7 +1300,7 @@
         "zona": "Zone",
         "situacion": "Status",
         "estado": "State",
-        "validaHasta": "Inspection valid until",
+        "validaHasta": "Valid until",
         "conjunto": "Set",
         "descripcion": "Description",
         "serie": "Serial number",

@@ -780,7 +780,12 @@
       "soltando": "Moviendo {{count}} elemento…",
       "soltando_other": "Moviendo {{count}} elementos…",
       "alcanceNodo_other": "Ver nodo ({{count}} elementos)",
-      "alcanceRama_other": "Ver toda la rama ({{count}} elementos)"
+      "alcanceRama_other": "Ver toda la rama ({{count}} elementos)",
+      "exc": {
+        "revision": "Su revisión caduca antes de la próxima visita",
+        "vida": "Agota su vida útil antes de la próxima visita",
+        "sin_cobertura": "No le llega ninguna visita planificada"
+      }
     },
     "orden": {
       "menu": "Ordenar por",
@@ -1166,7 +1171,7 @@
         "zona": "Zona",
         "situacion": "Situación",
         "estado": "Estado",
-        "validaHasta": "Revisión válida hasta",
+        "validaHasta": "Válido hasta",
         "conjunto": "Conjunto",
         "descripcion": "Descripción",
         "serie": "Nº de serie",

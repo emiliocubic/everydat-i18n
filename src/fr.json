@@ -847,7 +847,12 @@
       "soltando": "Déplacement de {{count}} élément…",
       "soltando_other": "Déplacement de {{count}} éléments…",
       "alcanceNodo_other": "Ce nœud ({{count}} équipements)",
-      "alcanceRama_other": "Toute la branche ({{count}} équipements)"
+      "alcanceRama_other": "Toute la branche ({{count}} équipements)",
+      "exc": {
+        "revision": "Son inspection expire avant la prochaine visite",
+        "vida": "Il atteint la fin de sa durée de vie avant la prochaine visite",
+        "sin_cobertura": "Aucune visite planifiée ne le couvre"
+      }
     },
     "orden": {
       "menu": "Trier par",
@@ -1216,7 +1221,7 @@
         "zona": "Zone",
         "situacion": "État",
         "estado": "Statut",
-        "validaHasta": "Vérification valable jusqu'au",
+        "validaHasta": "Valable jusqu’au",
         "conjunto": "Ensemble",
         "descripcion": "Description",
         "serie": "Numéro de série",
