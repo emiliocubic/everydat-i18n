@@ -2862,10 +2862,11 @@
       "field": {
         "label": "Etiqueta del campo",
         "tipo": "Tipo de campo",
-        "descripcion": "Descripción"
+        "descripcion": "Descripción",
+        "variablePorMarca": "Variable por marca",
+        "variablePorMarcaHint": "Cada fabricante podrá tener su propia lista de valores para este campo, que se gestiona como una columna más en la pantalla de fabricantes."
       },
       "labelPlaceholder": "Nombre visible del campo",
-      "descPlaceholder": "Texto de ayuda para quien captura este campo…",
       "optional": "opcional",
       "range": "Rango admisible",
       "min": "Valor mínimo",
@@ -2878,7 +2879,6 @@
       "reorder": "Arrastrar para reordenar",
       "valores": {
         "sub": "Lista propia del tipo {{tipo}}",
-        "note": "Esta lista es la copia del tipo: solo afecta a este tipo. La norma sugiere, el tipo decide.",
         "listTitle": "Lista del tipo",
         "count_one": "{{count}} valor",
         "count_other": "{{count}} valores",
@@ -2893,7 +2893,7 @@
         "descartados": "Valores descartados",
         "descartadosHint": "A nivel general, el campo {{campo}} admitiría más valores. A continuación se muestran los que admitía y se han descartado. Puedes devolverlos a la lista pulsándolos.",
         "interseccionVacia": "Las normas de este tipo no coinciden en ningún valor. No hay propuesta posible: decide la lista a mano.",
-        "canonNote": "Esta lista forma parte del canon EVERYDAT, de solo lectura. Al asignar el campo a un tipo de elemento concreto, podrás modificar los valores propuestos en cualquier momento.",
+        "canonNote": "Lista predefinida, de solo lectura. Al asignar el campo a un tipo de elemento concreto, podrás modificar los valores propuestos en cualquier momento.",
         "saved": "Valores guardados",
         "maestraNote": "Lista maestra del campo: es la que se copia al asignarlo a un tipo. Cada tipo puede recortarla después sin tocar esta.",
         "localNote": "Lista maestra del campo. Lo que se usa de verdad es la copia de cada tipo, editable en «Campos por tipo».",
@@ -2903,9 +2903,10 @@
         "borrarAria": "Qué hacer con los elementos que llevan el valor",
         "borrarEnUso_one": "{{count}} elemento lleva «{{valor}}». ¿Qué hacer con él?",
         "borrarEnUso_other": "{{count}} elementos llevan «{{valor}}». ¿Qué hacer con ellos?",
-        "conservar": "Dejárselo (sale de la lista y deja de ofrecerse)",
-        "cambiarA": "Cambiarlo a: {{valor}}",
-        "aplicar": "Aplicar"
+        "conservar": "Dejárselo (sale de la lista y deja de ofrecerse, pero los elementos que lo tenían asignado conservan el valor)",
+        "cambiarA": "Cambiarlo a:",
+        "aplicar": "Aplicar",
+        "eliminar": "Eliminarlo (se vacía el valor indicado para este campo en los elementos que tenían la opción eliminada)"
       },
       "searchNorma": "Buscar norma…",
       "created": "Campo creado",
@@ -2917,8 +2918,12 @@
       "noFields": "Sin campos",
       "intro": {
         "q": "¿Para qué sirven los campos por norma?",
-        "sub": "Cada norma aporta los campos que se piden a los equipos que la cumplen: al componer los campos de un tipo de elemento a partir de sus normas, se le ofrecen. Las normas preinstaladas traen los suyos, curados por EVERYDAT, y se consultan; a las que crees tú puedes asignarles campos del catálogo.",
-        "cta": "Utiliza la columna de normas del lateral para ver los campos asociados a cada norma."
+        "sub": "Asociar campos a las normas permite sugerir automáticamente esos campos para cada tipo de elemento, en función de las normas que cumple dicho tipo.",
+        "prealimentadas": "Las NORMAS PREALIMENTADAS vienen ya con una colección de campos preestablecida que no se puede cambiar, por razones de compatibilidad de actualizaciones.",
+        "aMedida": "Las NORMAS DEFINIDAS A MEDIDA permiten asignarles campos libremente (eligiéndolos del catálogo general, sobre el cual también puedes definir los que necesites y no existan).",
+        "q2": "¿Qué pasa si alguno de los preestablecidos no me encaja?",
+        "sub2": "En la pestaña de Campos por Tipo podrás editar libremente los campos (y valores) que utiliza cada tipo de elemento, incluso los preestablecidos.",
+        "cta": "UTILIZA LA COLUMNA DE NORMAS DEL LATERAL PARA VER O EDITAR LOS CAMPOS ASOCIADOS A CADA NORMA"
       },
       "searchCatalog": "Buscar campo del catálogo…",
       "noFieldMatch": "Ningún campo del catálogo coincide.",
@@ -2927,7 +2932,7 @@
           "q": "¿Cómo se componen los campos por tipo de elemento?",
           "sub": "Los campos por tipo de elemento se pueden componer de tres formas:",
           "autoLbl": "Automáticamente",
-          "autoTxt": " a partir de los campos por norma. El tipo asumirá los campos correspondientes a su norma o normas aplicables.",
+          "autoTxt": " a partir de los campos por norma. El tipo asumirá los campos correspondientes a su norma o normas aplicables, pero deberás revisarlos para ajustarlos al contexto de uso del tipo de elemento. No asumas que son todos correctos sin revisión",
           "manualLbl": "Manualmente",
           "manualTxt": ", mediante la creación directa de campos en cada tipo.",
           "mixtoLbl": "Mixto",
@@ -2970,7 +2975,10 @@
           "especifico": "Específico",
           "especificoTitle": "Campo creado para este tipo de elemento."
         },
-        "normaColTitle": "Norma de la que procede el campo. Vacía si se asignó directamente al tipo."
+        "normaColTitle": "Norma de la que procede el campo. Vacía si se asignó directamente al tipo.",
+        "volcarConfirm": "El campo o campos que vas a asignar fueron retirados de este tipo de elemento en una acción anterior. ¿Estás seguro de que quieres volver a asignar estos campos?",
+        "volcarSi": "SÍ, ASIGNAR",
+        "volcarNo": "CANCELAR"
       },
       "origen": {
         "canon": "Preinstalado",
@@ -2979,7 +2987,7 @@
         "localTitle": "Definido en esta instalación: se puede editar y borrar."
       },
       "canonDetail": "Detalle (solo lectura)",
-      "canonNote": "Este campo forma parte del canon EVERYDAT: aquí es consultable pero no editable. Su lista de valores se ajusta tipo a tipo, en «Campos por tipo».",
+      "canonNote": "Campo predefinido: es consultable pero no editable. Si necesitas ajustar su valor, podrás hacerlo en cada tipo de elemento (Pestaña «Campos por tipo»).",
       "candadoCol": "Preinstalado",
       "candadoTitle": "Campo preinstalado: ni se edita ni se borra.",
       "avisoNormas_one": "Se está aplicando a {{count}} norma.",
@@ -3010,7 +3018,7 @@
         "chipTipos_other": "tipos",
         "chipTiposTitle": "Tipos de elemento que lo heredan"
       },
-      "canonNoteSinLista": "Este campo forma parte del canon EVERYDAT: es consultable pero no editable.",
+      "canonNoteSinLista": "Campo predefinido: es consultable pero no editable.",
       "tipoOpcion": {
         "select": "Lista de valores con selección única",
         "select_multiple": "Lista de valores con selección múltiple"
@@ -3021,7 +3029,9 @@
         "asignarPrimero": "Asignar campo de catálogo a la norma",
         "asignarOtro": "Asignar otro campo de catálogo a la norma",
         "todosAsignados": "Todos los campos del catálogo ya están asignados a esta norma.",
-        "quitar": "Quitar «{{label}}» de la norma"
+        "quitar": "Quitar «{{label}}» de la norma",
+        "grupoLocal": "NORMAS DEFINIDAS A MEDIDA",
+        "grupoCanon": "NORMAS PREALIMENTADAS"
       },
       "especificoNota": "Campo específico de «{{tipo}}»: solo existe para este tipo de elemento y no aparece en el catálogo general. Si quieres reutilizarlo en otros tipos, créalo en el catálogo."
     },
@@ -3044,8 +3054,8 @@
         "aria": "Punto de partida del checklist",
         "q": "¿Cómo quieres crear el checklist de",
         "sub": "Elige un punto de partida; después podrás editar el checklist libremente.",
-        "iaTitle": "Componer desde las normas del tipo",
-        "iaDesc": "Parte de los checkpoints del canon de las normas que aplican al tipo de elemento, deduplicados; después lo editas libremente.",
+        "iaTitle": "Componer automáticamente",
+        "iaDesc": "Inicialmente genera los checkpoints a partir de las normas que aplican al tipo de elemento, después lo editas libremente.",
         "iaNoNormas": "Este tipo no tiene normas asignadas, así que no hay nada que componer. Créalo manualmente.",
         "counting": "Calculando…",
         "nSug_one": "{{count}} checkpoint sugerido",
@@ -3162,7 +3172,8 @@
       "clDeleted": "Checklist eliminado",
       "namePlaceholder": "Nombre del checklist",
       "nameRequired": "El checklist necesita un nombre",
-      "fixedNote": "Los grupos (Visual, Funcional, Documental) son fijos; aquí solo colocas checkpoints dentro de ellos."
+      "fixedNote": "Los grupos (Visual, Funcional, Documental) son fijos; aquí solo colocas checkpoints dentro de ellos.",
+      "deleteCpConfirm": "El checkpoint eliminado dejará de ofrecerse en checklists a partir de este momento, pero sigue presente en todas las revisiones e informes que lo contuvieran hasta ahora"
     },
     "fabricantes": {
       "created": "Fabricante creado",

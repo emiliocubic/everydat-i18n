@@ -2862,10 +2862,11 @@
       "field": {
         "label": "Field label",
         "tipo": "Field type",
-        "descripcion": "Description"
+        "descripcion": "Description",
+        "variablePorMarca": "Varies by brand",
+        "variablePorMarcaHint": "Each manufacturer can have its own list of values for this field, managed as one more column on the manufacturers screen."
       },
       "labelPlaceholder": "Visible field name",
-      "descPlaceholder": "Help text for whoever fills in this field…",
       "optional": "optional",
       "range": "Allowed range",
       "min": "Minimum value",
@@ -2878,7 +2879,6 @@
       "reorder": "Drag to reorder",
       "valores": {
         "sub": "List owned by type {{tipo}}",
-        "note": "This list is the type's own copy: it affects this type only. The standard suggests, the type decides.",
         "listTitle": "Type's list",
         "count_one": "{{count}} value",
         "count_other": "{{count}} values",
@@ -2893,7 +2893,7 @@
         "descartados": "Discarded values",
         "descartadosHint": "In general, the field {{campo}} would accept more values. Below are the ones it accepted and have been discarded. Click them to put them back on the list.",
         "interseccionVacia": "The standards of this type share no common value. No proposal is possible: decide the list by hand.",
-        "canonNote": "This list is part of the EVERYDAT canon, read-only. Once the field is assigned to a specific element type, you can change the proposed values at any time.",
+        "canonNote": "Predefined list, read-only. When you assign the field to a specific item type, you can change the proposed values at any time.",
         "saved": "Values saved",
         "maestraNote": "Master list of the field: this is what gets copied when you assign it to a type. Each type can trim its own copy afterwards without touching this one.",
         "localNote": "Master list of the field. What is actually used is each type's copy, editable in «Fields by type».",
@@ -2903,9 +2903,10 @@
         "borrarAria": "What to do with the elements that have this value",
         "borrarEnUso_one": "{{count}} element has «{{valor}}». What should happen to it?",
         "borrarEnUso_other": "{{count}} elements have «{{valor}}». What should happen to them?",
-        "conservar": "Keep it (it leaves the list and is no longer offered)",
-        "cambiarA": "Change it to: {{valor}}",
-        "aplicar": "Apply"
+        "conservar": "Leave it (it leaves the list and is no longer offered, but the items that had it assigned keep the value)",
+        "cambiarA": "Change it to:",
+        "aplicar": "Apply",
+        "eliminar": "Remove it (the value of this field is emptied on the items that had the removed option)"
       },
       "searchNorma": "Search standard…",
       "created": "Field created",
@@ -2917,8 +2918,12 @@
       "noFields": "No fields",
       "intro": {
         "q": "What are fields by standard for?",
-        "sub": "Each standard contributes the fields asked of the equipment that complies with it: when an element type's fields are built from its standards, they are offered to it. Preinstalled standards bring their own, curated by EVERYDAT, and are consulted; you can assign catalogue fields to the standards you create.",
-        "cta": "Use the column of standards on the left to see the fields of each standard."
+        "sub": "Linking fields to standards lets these fields be suggested automatically for each item type, depending on the standards that type complies with.",
+        "prealimentadas": "PRELOADED STANDARDS already come with a preset collection of fields that cannot be changed, for update compatibility reasons.",
+        "aMedida": "CUSTOM STANDARDS let you assign fields freely (choosing them from the general catalogue, where you can also define any you need that do not exist).",
+        "q2": "What if one of the preset ones does not suit me?",
+        "sub2": "In the Fields by Type tab you can freely edit the fields (and values) used by each item type, even the preset ones.",
+        "cta": "USE THE STANDARDS COLUMN ON THE SIDE TO VIEW OR EDIT THE FIELDS LINKED TO EACH STANDARD"
       },
       "searchCatalog": "Search catalogue field…",
       "noFieldMatch": "No catalogue field matches.",
@@ -2927,7 +2932,7 @@
           "q": "How are the fields of an element type put together?",
           "sub": "The fields of an element type can be composed in three ways:",
           "autoLbl": "Automatically",
-          "autoTxt": " from the fields by standard. The type takes on the fields of the standard or standards that apply to it.",
+          "autoTxt": " from the fields by standard. The type takes on the fields of its applicable standard or standards, but you must review them to adjust them to how the item type is used. Do not assume they are all correct without reviewing them",
           "manualLbl": "Manually",
           "manualTxt": ", by creating fields directly on each type.",
           "mixtoLbl": "Mixed",
@@ -2970,7 +2975,10 @@
           "especifico": "Specific",
           "especificoTitle": "Field created for this element type."
         },
-        "normaColTitle": "Standard the field comes from. Empty if it was assigned to the type directly."
+        "normaColTitle": "Standard the field comes from. Empty if it was assigned to the type directly.",
+        "volcarConfirm": "The field or fields you are about to assign were removed from this item type in an earlier action. Are you sure you want to assign these fields again?",
+        "volcarSi": "YES, ASSIGN",
+        "volcarNo": "CANCEL"
       },
       "origen": {
         "canon": "Preinstalled",
@@ -2979,7 +2987,7 @@
         "localTitle": "Defined in this installation: editable and removable."
       },
       "canonDetail": "Detail (read-only)",
-      "canonNote": "This field is part of the EVERYDAT canon: here it can be consulted but not edited. Its list of values is adjusted type by type, in «Fields by type».",
+      "canonNote": "Predefined field: it can be consulted but not edited. If you need to adjust its value, you can do so in each item type («Fields by type» tab).",
       "candadoCol": "Preinstalled",
       "candadoTitle": "Preinstalled field: it can't be edited or deleted.",
       "avisoNormas_one": "It is applied to {{count}} standard.",
@@ -3010,7 +3018,7 @@
         "chipTipos_other": "types",
         "chipTiposTitle": "Item types inheriting it"
       },
-      "canonNoteSinLista": "This field is part of the EVERYDAT canon: it can be consulted but not edited.",
+      "canonNoteSinLista": "Predefined field: it can be consulted but not edited.",
       "tipoOpcion": {
         "select": "List of values, single choice",
         "select_multiple": "List of values, multiple choice"
@@ -3021,7 +3029,9 @@
         "asignarPrimero": "Assign a catalogue field to the standard",
         "asignarOtro": "Assign another catalogue field to the standard",
         "todosAsignados": "All the catalogue fields are already assigned to this standard.",
-        "quitar": "Remove «{{label}}» from the standard"
+        "quitar": "Remove «{{label}}» from the standard",
+        "grupoLocal": "CUSTOM STANDARDS",
+        "grupoCanon": "PRELOADED STANDARDS"
       },
       "especificoNota": "Field specific to «{{tipo}}»: it only exists for this element type and does not appear in the general catalogue. If you want to reuse it in other types, create it in the catalogue."
     },
@@ -3044,8 +3054,8 @@
         "aria": "Checklist starting point",
         "q": "How do you want to create the checklist for",
         "sub": "Choose a starting point; you can freely edit the checklist afterwards.",
-        "iaTitle": "Compose from the type's standards",
-        "iaDesc": "Start from the canonical checkpoints of the standards that apply to the item type, deduplicated; then edit freely.",
+        "iaTitle": "Compose automatically",
+        "iaDesc": "It first generates the checkpoints from the standards that apply to the item type, then you edit it freely.",
         "iaNoNormas": "This type has no standards assigned, so there is nothing to compose. Create it manually.",
         "counting": "Calculating…",
         "nSug_one": "{{count}} suggested checkpoint",
@@ -3162,7 +3172,8 @@
       "clDeleted": "Checklist deleted",
       "namePlaceholder": "Checklist name",
       "nameRequired": "The checklist needs a name",
-      "fixedNote": "Groups (Visual, Functional, Documentary) are fixed; here you only place checkpoints within them."
+      "fixedNote": "Groups (Visual, Functional, Documentary) are fixed; here you only place checkpoints within them.",
+      "deleteCpConfirm": "The deleted checkpoint will no longer be offered in checklists from now on, but it remains in all the inspections and reports that have included it until now"
     },
     "fabricantes": {
       "created": "Manufacturer created",

@@ -2716,10 +2716,11 @@
       "field": {
         "label": "Libellé du champ",
         "tipo": "Type de champ",
-        "descripcion": "Description"
+        "descripcion": "Description",
+        "variablePorMarca": "Variable selon la marque",
+        "variablePorMarcaHint": "Chaque fabricant pourra avoir sa propre liste de valeurs pour ce champ, gérée comme une colonne de plus sur l’écran des fabricants."
       },
       "labelPlaceholder": "Nom visible du champ",
-      "descPlaceholder": "Texte d'aide pour qui renseigne ce champ…",
       "optional": "facultatif",
       "range": "Plage admissible",
       "min": "Valeur minimale",
@@ -2732,7 +2733,6 @@
       "reorder": "Glisser pour réordonner",
       "valores": {
         "sub": "Liste propre au type {{tipo}}",
-        "note": "Cette liste est la copie du type : elle n'affecte que ce type. La norme suggère, le type décide.",
         "listTitle": "Liste du type",
         "count_one": "{{count}} valeur",
         "count_other": "{{count}} valeurs",
@@ -2747,7 +2747,7 @@
         "descartados": "Valeurs écartées",
         "descartadosHint": "De façon générale, le champ {{campo}} admettrait plus de valeurs. Voici celles qu'il admettait et qui ont été écartées. Cliquez dessus pour les remettre dans la liste.",
         "interseccionVacia": "Les normes de ce type n'ont aucune valeur commune. Aucune proposition possible : composez la liste à la main.",
-        "canonNote": "Cette liste fait partie du canon EVERYDAT, en lecture seule. Une fois le champ affecté à un type d'élément précis, vous pourrez modifier à tout moment les valeurs proposées.",
+        "canonNote": "Liste prédéfinie, en lecture seule. En affectant le champ à un type d’élément précis, vous pourrez modifier les valeurs proposées à tout moment.",
         "saved": "Valeurs enregistrées",
         "maestraNote": "Liste maîtresse du champ : c'est elle qui est copiée lors de l'affectation à un type. Chaque type pourra ensuite réduire sa copie sans toucher à celle-ci.",
         "localNote": "Liste maîtresse du champ. Ce qui sert vraiment, c'est la copie de chaque type, modifiable dans « Champs par type ».",
@@ -2757,9 +2757,10 @@
         "borrarAria": "Que faire des éléments qui portent cette valeur",
         "borrarEnUso_one": "{{count}} élément porte « {{valor}} ». Que faut-il en faire ?",
         "borrarEnUso_other": "{{count}} éléments portent « {{valor}} ». Que faut-il en faire ?",
-        "conservar": "La leur laisser (elle sort de la liste et n'est plus proposée)",
-        "cambiarA": "La remplacer par : {{valor}}",
-        "aplicar": "Appliquer"
+        "conservar": "Le laisser (il sort de la liste et n’est plus proposé, mais les éléments qui l’avaient conservent la valeur)",
+        "cambiarA": "Le changer en :",
+        "aplicar": "Appliquer",
+        "eliminar": "Le supprimer (la valeur de ce champ est vidée sur les éléments qui avaient l’option supprimée)"
       },
       "searchNorma": "Rechercher une norme…",
       "created": "Champ créé",
@@ -2771,8 +2772,12 @@
       "noFields": "Aucun champ",
       "intro": {
         "q": "À quoi servent les champs par norme ?",
-        "sub": "Chaque norme apporte les champs demandés aux équipements qui la respectent : lorsque les champs d'un type d'élément sont composés à partir de ses normes, ils lui sont proposés. Les normes préinstallées apportent les leurs, curés par EVERYDAT, et se consultent ; vous pouvez affecter des champs du catalogue aux normes que vous créez.",
-        "cta": "Utilisez la colonne des normes à gauche pour voir les champs de chaque norme."
+        "sub": "Associer des champs aux normes permet de suggérer automatiquement ces champs pour chaque type d’élément, selon les normes que ce type respecte.",
+        "prealimentadas": "Les NORMES PRÉCHARGÉES ont déjà une collection de champs prédéfinie qui ne peut pas être modifiée, pour des raisons de compatibilité des mises à jour.",
+        "aMedida": "Les NORMES SUR MESURE permettent d’affecter librement des champs (en les choisissant dans le catalogue général, où vous pouvez aussi définir ceux qui vous manquent).",
+        "q2": "Et si l’un des champs prédéfinis ne me convient pas ?",
+        "sub2": "Dans l’onglet Champs par type, vous pouvez modifier librement les champs (et les valeurs) de chaque type d’élément, même ceux prédéfinis.",
+        "cta": "UTILISEZ LA COLONNE DES NORMES SUR LE CÔTÉ POUR VOIR OU MODIFIER LES CHAMPS ASSOCIÉS À CHAQUE NORME"
       },
       "searchCatalog": "Rechercher un champ du catalogue…",
       "noFieldMatch": "Aucun champ du catalogue ne correspond.",
@@ -2781,7 +2786,7 @@
           "q": "Comment se composent les champs d'un type d'élément ?",
           "sub": "Les champs d'un type d'élément peuvent se composer de trois façons :",
           "autoLbl": "Automatiquement",
-          "autoTxt": " à partir des champs par norme. Le type reprend les champs de la ou des normes qui lui sont applicables.",
+          "autoTxt": " à partir des champs par norme. Le type reprend les champs de sa ou ses normes applicables, mais vous devrez les vérifier pour les ajuster à l’usage du type d’élément. Ne supposez pas qu’ils sont tous corrects sans vérification",
           "manualLbl": "Manuellement",
           "manualTxt": ", en créant directement des champs sur chaque type.",
           "mixtoLbl": "Mixte",
@@ -2824,7 +2829,10 @@
           "especifico": "Spécifique",
           "especificoTitle": "Champ créé pour ce type d'élément."
         },
-        "normaColTitle": "Norme d'où vient le champ. Vide s'il a été affecté directement au type."
+        "normaColTitle": "Norme d'où vient le champ. Vide s'il a été affecté directement au type.",
+        "volcarConfirm": "Le ou les champs que vous allez affecter ont été retirés de ce type d’élément lors d’une action précédente. Voulez-vous vraiment les affecter de nouveau ?",
+        "volcarSi": "OUI, AFFECTER",
+        "volcarNo": "ANNULER"
       },
       "origen": {
         "canon": "Préinstallé",
@@ -2833,7 +2841,7 @@
         "localTitle": "Défini dans cette installation : modifiable et supprimable."
       },
       "canonDetail": "Détail (lecture seule)",
-      "canonNote": "Ce champ fait partie du canon EVERYDAT : ici il est consultable mais non modifiable. Sa liste de valeurs s'ajuste type par type, dans « Champs par type ».",
+      "canonNote": "Champ prédéfini : consultable mais non modifiable. Si vous devez ajuster sa valeur, vous pourrez le faire dans chaque type d’élément (onglet « Champs par type »).",
       "candadoCol": "Préinstallé",
       "candadoTitle": "Champ préinstallé : ni modifiable ni supprimable.",
       "avisoNormas_one": "Il est appliqué à {{count}} norme.",
@@ -2864,7 +2872,7 @@
         "chipTipos_other": "types",
         "chipTiposTitle": "Types d’élément qui en héritent"
       },
-      "canonNoteSinLista": "Ce champ fait partie du canon EVERYDAT : consultable mais non modifiable.",
+      "canonNoteSinLista": "Champ prédéfini : consultable mais non modifiable.",
       "tipoOpcion": {
         "select": "Liste de valeurs à choix unique",
         "select_multiple": "Liste de valeurs à choix multiple"
@@ -2875,7 +2883,9 @@
         "asignarPrimero": "Affecter un champ du catalogue à la norme",
         "asignarOtro": "Affecter un autre champ du catalogue à la norme",
         "todosAsignados": "Tous les champs du catalogue sont déjà affectés à cette norme.",
-        "quitar": "Retirer « {{label}} » de la norme"
+        "quitar": "Retirer « {{label}} » de la norme",
+        "grupoLocal": "NORMES SUR MESURE",
+        "grupoCanon": "NORMES PRÉCHARGÉES"
       },
       "especificoNota": "Champ spécifique à « {{tipo}} » : il n'existe que pour ce type d'élément et n'apparaît pas dans le catalogue général. Pour le réutiliser dans d'autres types, créez-le dans le catalogue."
     },
@@ -2898,8 +2908,8 @@
         "aria": "Point de départ de la checklist",
         "q": "Comment voulez-vous créer la checklist de",
         "sub": "Choisissez un point de départ ; vous pourrez ensuite modifier librement la checklist.",
-        "iaTitle": "Composer depuis les normes du type",
-        "iaDesc": "Part des checkpoints du canon des normes applicables au type d’élément, dédupliqués ; ensuite modifiable librement.",
+        "iaTitle": "Composer automatiquement",
+        "iaDesc": "Génère d’abord les points de contrôle à partir des normes applicables au type d’élément, puis vous le modifiez librement.",
         "iaNoNormas": "Ce type n’a aucune norme associée : il n’y a rien à composer. Créez-la manuellement.",
         "counting": "Calcul en cours…",
         "nSug_one": "{{count}} point de contrôle suggéré",
@@ -3016,7 +3026,8 @@
       "clDeleted": "Checklist supprimée",
       "namePlaceholder": "Nom de la checklist",
       "nameRequired": "La checklist doit avoir un nom",
-      "fixedNote": "Les groupes (Visuel, Fonctionnel, Documentaire) sont fixes ; ici vous placez seulement des points de contrôle à l'intérieur."
+      "fixedNote": "Les groupes (Visuel, Fonctionnel, Documentaire) sont fixes ; ici vous placez seulement des points de contrôle à l'intérieur.",
+      "deleteCpConfirm": "Le point de contrôle supprimé ne sera plus proposé dans les checklists à partir de maintenant, mais il reste présent dans toutes les révisions et tous les rapports qui l’ont contenu jusqu’ici"
     },
     "fabricantes": {
       "created": "Fabricant créé",
