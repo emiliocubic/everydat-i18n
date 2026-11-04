@@ -7075,7 +7075,8 @@
       "pendientes": "Pendientes en proyecto en curso",
       "sinPlan": "Sin revisión planificada",
       "exc": "Caducan o llegan a fin de vida antes de su revisión",
-      "excSub": "{{expiry}} caducan · {{life}} fin de vida"
+      "excSub": "{{expiry}} caducan · {{life}} fin de vida",
+      "excSubBaja": "{{expiry}} caducan · {{life}} fin de vida · {{refbaja}} ref. en baja"
     },
     "actResumen": {
       "aria": "Resumen de actuaciones",

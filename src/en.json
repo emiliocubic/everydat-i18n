@@ -7075,7 +7075,8 @@
       "pendientes": "Pending in an ongoing project",
       "sinPlan": "No planned inspection",
       "exc": "Expire or reach end of life before their inspection",
-      "excSub": "{{expiry}} expire · {{life}} end of life"
+      "excSub": "{{expiry}} expire · {{life}} end of life",
+      "excSubBaja": "{{expiry}} expire · {{life}} end of life · {{refbaja}} withdrawn ref."
     },
     "actResumen": {
       "aria": "Actions summary",
