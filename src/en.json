@@ -831,9 +831,7 @@
         "tipNotificaciones": "Make the user a recipient of NEXT INSPECTION and/or END OF USEFUL LIFE notices for the sites",
         "restoEmplazamiento": "Rest of the site",
         "marcarZona": "Give access to {{name}}",
-        "quitarZona": "Remove access to {{name}}",
-        "sinCasillaZona": "Sending and alerts are granted for the whole site, not per zone",
-        "sinNivelZona": "View or edit is granted for the whole site. The checkbox on the left decides which zones are visible"
+        "quitarZona": "Remove access to {{name}}"
       },
       "comentariosPlaceholder": "Internal notes about the contact",
       "telefonoPlaceholder": "+34 600 000 000",
