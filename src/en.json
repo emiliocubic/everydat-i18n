@@ -62,7 +62,6 @@
     },
     "abrirEnMaps": "Open in Google Maps",
     "alertaCliente": "Client alert",
-    "alertaEmplazamiento": "Site alert",
     "clienteDeBaja": "Client inactive since {{fecha}}",
     "notaFormato": {
       "barra": "Note formatting",
@@ -1839,11 +1838,11 @@
         "identificacion": "Identification",
         "parametros": "Working parameters",
         "notas": "Notes",
-        "bitacora": "Customer log",
+        "bitacora": "Customer relationship history",
         "internos": "Access · Internal users",
         "colaboradores": "Access · Collaborators",
         "invitados": "Access · Guests",
-        "contactos": "Contacts reaching this site"
+        "contactos": "Contacts with access to this site"
       },
       "cols": {
         "nombre": "Name",
@@ -1861,7 +1860,14 @@
       },
       "notif": {
         "revisiones": "Inspections",
-        "caducidades": "End of useful life"
+        "caducidades": "End of useful life",
+        "heredado": "Inherited from the client",
+        "establecido": "Set here"
+      },
+      "app": {
+        "sinPortal": "No access (client without portal)",
+        "heredado": "On (inherited from the client)",
+        "desactivado": "Off"
       },
       "motivo": {
         "global": "Global access",
@@ -1880,7 +1886,7 @@
       "heredaDelCliente": "Inherits the customer's",
       "vigente": "Current",
       "sinAcceso": "Nobody has access.",
-      "borrarRegistroConfirm": "Delete this log entry? This cannot be undone.",
+      "borrarRegistroConfirm": "Delete this history entry? This cannot be undone.",
       "sinClienteParaArbol": "This site has no client assigned: the tree becomes available once it has one.",
       "herencia": {
         "comoCliente": "Same as client",
@@ -1888,9 +1894,8 @@
       },
       "alertaCliente": "Client alert",
       "contactos": {
-        "vacio": "No contact reaches this site.",
-        "soloLectura": "Granted on the contact record.",
-        "sinPermisos": "No permissions"
+        "vacio": "No contact linked to this site.",
+        "ninguno": "None"
       },
       "planos": {
         "planos": "Drawings",

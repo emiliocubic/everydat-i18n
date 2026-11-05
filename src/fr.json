@@ -62,7 +62,6 @@
     },
     "abrirEnMaps": "Ouvrir dans Google Maps",
     "alertaCliente": "Alerte client",
-    "alertaEmplazamiento": "Alerte du site",
     "clienteDeBaja": "Client inactif depuis le {{fecha}}",
     "notaFormato": {
       "barra": "Mise en forme de la note",
@@ -1720,10 +1719,11 @@
         "identificacion": "Identification",
         "parametros": "Paramètres de travail",
         "notas": "Notes",
-        "bitacora": "Journal des clients",
+        "bitacora": "Historique de la relation client",
         "internos": "Accès · Utilisateurs internes",
         "colaboradores": "Accès · Collaborateurs",
-        "invitados": "Accès · Invités"
+        "invitados": "Accès · Invités",
+        "contactos": "Contacts ayant accès à ce site"
       },
       "cols": {
         "nombre": "Nom",
@@ -1741,7 +1741,14 @@
       },
       "notif": {
         "revisiones": "Révisions",
-        "caducidades": "Fins de vie"
+        "caducidades": "Fins de vie",
+        "heredado": "Hérité du client",
+        "establecido": "Défini ici"
+      },
+      "app": {
+        "sinPortal": "Sans accès (client sans portail)",
+        "heredado": "Activé (hérité du client)",
+        "desactivado": "Désactivé"
       },
       "motivo": {
         "global": "Accès global",
@@ -1760,11 +1767,15 @@
       "heredaDelCliente": "Hérite de celui du client",
       "vigente": "Actuellement",
       "sinAcceso": "Personne n’a accès.",
-      "borrarRegistroConfirm": "Supprimer cette entrée du journal ? Action irréversible.",
+      "borrarRegistroConfirm": "Supprimer cette entrée de l’historique ? Action irréversible.",
       "sinClienteParaArbol": "Ce site n'a pas de client : l'arborescence s'active dès qu'il en a un.",
       "herencia": {
         "comoCliente": "Comme le client",
         "apagado": "Désactivé"
+      },
+      "contactos": {
+        "vacio": "Aucun contact lié à ce site.",
+        "ninguno": "Aucun"
       }
     },
     "grupos": {

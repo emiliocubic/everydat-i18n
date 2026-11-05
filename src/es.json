@@ -62,7 +62,6 @@
     },
     "abrirEnMaps": "Abrir en Google Maps",
     "alertaCliente": "Alerta del cliente",
-    "alertaEmplazamiento": "Alerta del emplazamiento",
     "clienteDeBaja": "Cliente de baja desde el {{fecha}}",
     "notaFormato": {
       "barra": "Formato de la nota",
@@ -1710,11 +1709,11 @@
         "identificacion": "Identificación",
         "parametros": "Parámetros de trabajo",
         "notas": "Notas",
-        "bitacora": "Bitácora de clientes",
+        "bitacora": "Histórico relación con clientes",
         "internos": "Acceso · Usuarios internos",
         "colaboradores": "Acceso · Usuarios colaboradores",
         "invitados": "Acceso · Usuarios invitados",
-        "contactos": "Contactos que alcanzan esta instalación"
+        "contactos": "Contactos con acceso a esta instalación"
       },
       "cols": {
         "nombre": "Nombre",
@@ -1732,7 +1731,14 @@
       },
       "notif": {
         "revisiones": "Revisiones",
-        "caducidades": "Fin de vida útil"
+        "caducidades": "Fin de vida útil",
+        "heredado": "Heredado del cliente",
+        "establecido": "Establecido aquí"
+      },
+      "app": {
+        "sinPortal": "Sin acceso (cliente sin portal)",
+        "heredado": "Activado (heredado del cliente)",
+        "desactivado": "Desactivado"
       },
       "motivo": {
         "global": "Acceso global",
@@ -1751,7 +1757,7 @@
       "heredaDelCliente": "Hereda el del cliente",
       "vigente": "Actualidad",
       "sinAcceso": "Nadie con acceso.",
-      "borrarRegistroConfirm": "¿Borrar este registro de la bitácora? No se puede deshacer.",
+      "borrarRegistroConfirm": "¿Borrar este registro del histórico? No se puede deshacer.",
       "sinClienteParaArbol": "Este emplazamiento no tiene cliente asignado: el árbol se activa al asignarle uno.",
       "herencia": {
         "comoCliente": "Como el cliente",
@@ -1759,9 +1765,8 @@
       },
       "alertaCliente": "Alerta del cliente",
       "contactos": {
-        "vacio": "Ningún contacto alcanza esta instalación.",
-        "soloLectura": "Se conceden en la ficha del contacto.",
-        "sinPermisos": "Sin permisos"
+        "vacio": "Ningún contacto vinculado a esta instalación.",
+        "ninguno": "Ninguno"
       },
       "planos": {
         "planos": "Planos",
