@@ -957,7 +957,7 @@
       "editando": "Édition de l'élément",
       "identificacion": "Identification",
       "sinIdentificadores": "Son type ne demande aucun identifiant.",
-      "imagen": "Image du modèle",
+      "imagen": "Image de l'équipement",
       "situacion": "Situation actuelle",
       "estado": "Situation",
       "cicloVida": "État",
@@ -979,7 +979,6 @@
       "coordenadas": "Coordonnées",
       "campoSinValores": "Son type n'a aucune valeur assignée pour ce champ.",
       "campoFijado": "Fixé par sa référence de catalogue : il ne se modifie pas depuis la fiche.",
-      "finVidaCalculado": "Calculée par son type",
       "finVidaSinCriterio": "Son type ne fixe pas de péremption",
       "anadirValor": "Ajouter un autre",
       "quitarValor": "Retirer cette valeur",
@@ -995,7 +994,12 @@
       "veredictoPor": {
         "revision": "selon l'inspection du {{fecha}}",
         "incidencia": "selon l'incident du {{fecha}}"
-      }
+      },
+      "imagenOrigen": {
+        "modelo": "Image de son modèle",
+        "tipo": "Image de son type"
+      },
+      "finVidaAdelantado": "Avancée à la main : son type la fixe au {{fecha}}."
     },
     "fecha": {
       "fabricacion": "Fabrication",
@@ -1004,7 +1008,6 @@
       "puesta_servicio": "Mise en service"
     },
     "normativa": {
-      "soloLectura": "Les normes viennent du catalogue, pas de cette fiche : elles se modifient sur la référence, le modèle ou le type.",
       "hereda": "Cet équipement hérite des normes de son type ou de son modèle",
       "propia": "Définir des normes propres à cet équipement",
       "sinNormas": "Aucune norme.",
@@ -1012,10 +1015,10 @@
       "origen": {
         "referencia": "Définies sur sa référence de catalogue.",
         "modelo": "Héritées de son modèle : la référence n'en a pas en propre.",
-        "tipo": "Héritée de son type : ni la référence ni le modèle n’ont de normes propres."
+        "tipo": "Héritée de son type : ni la référence ni le modèle n’ont de normes propres.",
+        "elemento": "Normes propres à cet équipement."
       },
-      "delTipo": "Normes du type {{tipo}}",
-      "delTipoNota": "C'est autre chose : quelles normes sont pertinentes pour cette famille d'équipement, et d'où viennent ses champs et ses check-lists."
+      "propiaNota": "Remplace la liste héritée pour tout ce qui indique les normes respectées : la fiche, les rapports et l'exploitation. Ne modifie ni ses champs ni ses checklists."
     },
     "accion": {
       "titulo": {

@@ -1019,7 +1019,7 @@
       "editando": "Editing the item",
       "identificacion": "Identification",
       "sinIdentificadores": "Its type asks for no identifier.",
-      "imagen": "Model picture",
+      "imagen": "Equipment image",
       "situacion": "Current status",
       "estado": "Status",
       "cicloVida": "State",
@@ -1057,7 +1057,6 @@
           "conjunto": "From the set"
         }
       },
-      "finVidaCalculado": "Computed from its type",
       "finVidaSinCriterio": "Its type sets no expiry",
       "anadirValor": "Add another",
       "quitarValor": "Remove this value",
@@ -1068,7 +1067,12 @@
       "veredictoPor": {
         "revision": "from the inspection of {{fecha}}",
         "incidencia": "from the incident of {{fecha}}"
-      }
+      },
+      "imagenOrigen": {
+        "modelo": "Image of its model",
+        "tipo": "Image of its type"
+      },
+      "finVidaAdelantado": "Brought forward by hand: its type sets it at {{fecha}}."
     },
     "fecha": {
       "fabricacion": "Manufacture",
@@ -1077,7 +1081,6 @@
       "puesta_servicio": "Commissioning"
     },
     "normativa": {
-      "soloLectura": "Standards come from the catalogue, not from this record: change them on the reference, the model or the type.",
       "hereda": "This item inherits the standards of its type or model",
       "propia": "Set standards of its own for this item",
       "sinNormas": "No standards.",
@@ -1085,10 +1088,10 @@
       "origen": {
         "referencia": "Set on its catalogue reference.",
         "modelo": "Inherited from its model: the reference has none of its own.",
-        "tipo": "Inherited from its type: neither the reference nor the model has its own standards."
+        "tipo": "Inherited from its type: neither the reference nor the model has its own standards.",
+        "elemento": "This item's own standards."
       },
-      "delTipo": "Standards of type {{tipo}}",
-      "delTipoNota": "A different thing: which standards are relevant to that family of equipment, and where its fields and checklists come from."
+      "propiaNota": "Replaces the inherited list in everything that says which standards it meets: the record, the reports and data analysis. It does not change its fields or checklists."
     },
     "accion": {
       "titulo": {

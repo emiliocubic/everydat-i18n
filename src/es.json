@@ -890,7 +890,7 @@
       "editando": "Editando el elemento",
       "identificacion": "Identificación",
       "sinIdentificadores": "Su tipo no pide ningún identificador.",
-      "imagen": "Imagen del modelo",
+      "imagen": "Imagen del equipo",
       "situacion": "Situación actual",
       "estado": "Situación",
       "cicloVida": "Estado",
@@ -928,7 +928,6 @@
           "conjunto": "Del conjunto"
         }
       },
-      "finVidaCalculado": "Lo calcula su tipo",
       "finVidaSinCriterio": "Su tipo no fija caducidad",
       "anadirValor": "Añadir otro",
       "quitarValor": "Quitar este valor",
@@ -939,7 +938,12 @@
       "veredictoPor": {
         "revision": "por la revisión del {{fecha}}",
         "incidencia": "por la incidencia del {{fecha}}"
-      }
+      },
+      "imagenOrigen": {
+        "modelo": "Imagen de su modelo",
+        "tipo": "Imagen de su tipo"
+      },
+      "finVidaAdelantado": "Adelantado a mano: su tipo lo fija el {{fecha}}."
     },
     "fecha": {
       "fabricacion": "Fabricación",
@@ -948,7 +952,6 @@
       "puesta_servicio": "Puesta en servicio"
     },
     "normativa": {
-      "soloLectura": "La normativa la fija el catálogo, no la ficha: se cambia en la referencia, el modelo o el tipo.",
       "hereda": "Este elemento hereda la normativa de su tipo o modelo",
       "propia": "Establecer normativa propia para este elemento",
       "sinNormas": "Sin normas.",
@@ -956,10 +959,10 @@
       "origen": {
         "referencia": "Definida en su referencia de catálogo.",
         "modelo": "Heredada de su modelo: la referencia no tiene normas propias.",
-        "tipo": "Heredada de su tipo: ni la referencia ni el modelo tienen normas propias."
+        "tipo": "Heredada de su tipo: ni la referencia ni el modelo tienen normas propias.",
+        "elemento": "Normativa propia de este elemento."
       },
-      "delTipo": "Normativa del tipo {{tipo}}",
-      "delTipoNota": "Es otra cosa: qué normativa es pertinente para esa familia de equipo, y de donde salen sus campos y sus checklists."
+      "propiaNota": "Sustituye a la heredada en lo que dice qué normas cumple: la ficha, los informes y explotación. No cambia sus campos ni sus checklists."
     },
     "accion": {
       "titulo": {
