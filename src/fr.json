@@ -2716,7 +2716,7 @@
       },
       "canonDetail": "Détail (lecture seule)",
       "candadoTitle": "Norme préinstallée : elle ne se modifie ni ne se supprime.",
-      "canonNote": "Cette norme fait partie du canon de base d'EVERYDAT : consultable mais non modifiable. Les normes que vous créez vous-même sont modifiables.",
+      "canonNote": "Cette norme fait partie de la liste préinstallée dans EVERYDAT : consultable mais non modifiable. Les normes que vous créez vous-même sont modifiables.",
       "sinEnAviso": "Créer des normes sans code EN rendra plus difficile le rapprochement des équipements qui les respectent avec les catalogues du secteur et d'autres références documentaires fondées sur les normes européennes.\n\nNe confirmez que s'il n'existe vraiment pas de norme EN équivalente.",
       "sinEnTag": "Sans code EN",
       "sinEnNota": "Cette norme n'a pas de code EN : elle perd son lien avec les catalogues du secteur et avec la documentation fondée sur les normes européennes.",
@@ -3942,7 +3942,7 @@
     }
   },
   "proyectos": {
-    "buscar": "Rechercher par code, nom, client ou site",
+    "buscar": "Rechercher par code, client ou site",
     "vacio": "Aucun projet",
     "vacioHint": "Les projets de vérification naissent en planifiant l'arbre d'un site.",
     "sinEmplazamiento": "non localisé",
@@ -4094,6 +4094,7 @@
       "soloLectura": "Cet état laisse la fiche en lecture seule.",
       "fijoTitle": "Le projet est né ici : le déplacer serait un autre projet.",
       "todoElEmplazamiento": "Tout le site",
+      "nZonas_one": "1 zone",
       "nZonas": "{{count}} zones",
       "propuesta": "Proposition",
       "sinPropuesta": "Sans proposition",
@@ -4106,10 +4107,15 @@
       "sinPresupuesto": "Sans budget",
       "volumen": "Volume de travail",
       "volumenUnidad": {
+        "revision_one": "inspection",
         "revision": "inspections",
+        "instalacion_one": "installation",
         "instalacion": "installations",
+        "suministro_one": "fourniture",
         "suministro": "fournitures",
+        "reparacion_one": "réparation",
         "reparacion": "réparations",
+        "otro_one": "autre travail",
         "otro": "autres travaux"
       },
       "fechas": "Dates du projet",
@@ -4606,7 +4612,7 @@
       "ayuda": "Le client a été prévenu qu'une vérification est due",
       "noAplica": "Sans objet : ce n’est pas une vérification"
     },
-    "buscarDescartados": "Rechercher par code, nom, client, site ou motif",
+    "buscarDescartados": "Rechercher par code, client, site ou motif",
     "abrirCliente": "Ouvrir la fiche du client",
     "abrirEmplazamiento": "Ouvrir le site",
     "sinEquipo": "Non assigné",

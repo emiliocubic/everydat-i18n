@@ -2860,7 +2860,7 @@
       },
       "canonDetail": "Detalle (solo lectura)",
       "candadoTitle": "Norma preinstalada: ni se edita ni se borra.",
-      "canonNote": "Esta norma forma parte del canon base de EVERYDAT: es consultable pero no editable. Las normas que crees tú sí que son editables.",
+      "canonNote": "Esta norma forma parte de la lista preinstalada en EVERYDAT: es consultable pero no editable. Las normas que crees tú sí que son editables.",
       "sinEnAviso": "El alta de normas sin código EN dificultará la relación de los equipos dotados de ellas con los catálogos del sector y otras referencias documentales basadas en la normativa europea.\n\nConfirma solo si de verdad no existe una norma EN equivalente.",
       "sinEnTag": "Sin código EN",
       "sinEnNota": "Esta norma no tiene código EN: se pierde la relación con los catálogos del sector y con la documentación basada en la normativa europea.",
@@ -4219,7 +4219,7 @@
     }
   },
   "proyectos": {
-    "buscar": "Buscar por código, nombre, cliente o emplazamiento",
+    "buscar": "Buscar por código, cliente o emplazamiento",
     "vacio": "Sin proyectos",
     "vacioHint": "Los proyectos de revisión nacen al planificar el árbol de un emplazamiento.",
     "sinEmplazamiento": "sin localizar",
@@ -4371,6 +4371,7 @@
       "soloLectura": "Este estado deja la ficha en solo lectura.",
       "fijoTitle": "El proyecto nació de aquí: moverlo de sitio sería otro proyecto.",
       "todoElEmplazamiento": "Todo el emplazamiento",
+      "nZonas_one": "1 zona",
       "nZonas": "{{count}} zonas",
       "propuesta": "Propuesta",
       "sinPropuesta": "Sin propuesta",
@@ -4383,10 +4384,15 @@
       "sinPresupuesto": "Sin presupuesto",
       "volumen": "Volumen de trabajo",
       "volumenUnidad": {
+        "revision_one": "revisión",
         "revision": "revisiones",
+        "instalacion_one": "instalación",
         "instalacion": "instalaciones",
+        "suministro_one": "suministro",
         "suministro": "suministros",
+        "reparacion_one": "reparación",
         "reparacion": "reparaciones",
+        "otro_one": "otro trabajo",
         "otro": "otros trabajos"
       },
       "fechas": "Fechas de proyecto",
@@ -4898,7 +4904,7 @@
       "ayuda": "Se le ha avisado de que le toca revisión",
       "noAplica": "No aplica: no es una revisión"
     },
-    "buscarDescartados": "Buscar por código, nombre, cliente, emplazamiento o motivo",
+    "buscarDescartados": "Buscar por código, cliente, emplazamiento o motivo",
     "abrirCliente": "Abrir la ficha del cliente",
     "abrirEmplazamiento": "Abrir el emplazamiento",
     "sinEquipo": "Sin asignar",
