@@ -2671,7 +2671,7 @@
           "validar": "Valider",
           "validado": "Modèle validé",
           "referenciaChip": "En attente",
-          "textoImportado": "Importé du référentiel par quelqu’un sans la capacité Catalogue. Il peut déjà être utilisé ; vérifiez que le type est correct et validez-le."
+          "textoImportado": "Importé du référentiel par quelqu’un sans la capacité Catalogue. Il peut déjà être utilisé ; la personne qui a la capacité vérifie que le type est correct et le valide."
         }
       },
       "estructura": {

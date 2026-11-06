@@ -2815,7 +2815,7 @@
           "validar": "Validar",
           "validado": "Modelo validado",
           "referenciaChip": "Pendiente",
-          "textoImportado": "Lo importó del repositorio alguien sin la capacidad Catálogo. Se puede usar ya; comprueba que el tipo es el correcto y valídalo."
+          "textoImportado": "Lo importó del repositorio alguien sin la capacidad Catálogo. Se puede usar ya; quien lleva la capacidad comprueba que el tipo es el correcto y lo valida."
         }
       },
       "estructura": {

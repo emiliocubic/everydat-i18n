@@ -2815,7 +2815,7 @@
           "validar": "Validate",
           "validado": "Model validated",
           "referenciaChip": "Pending",
-          "textoImportado": "Imported from the repository by someone without the Catalogue capability. It can be used already; check that the type is correct and validate it."
+          "textoImportado": "Imported from the repository by someone without the Catalogue capability. It can be used already; whoever holds the capability checks that the type is correct and validates it."
         }
       },
       "estructura": {
