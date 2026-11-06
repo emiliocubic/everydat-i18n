@@ -1624,7 +1624,7 @@
         "clave": "Clé",
         "vacio": "Aucune intégration",
         "emailHint": "Il identifie seulement le compte : il ne sert pas à se connecter.",
-        "altaNota": "Elle se connecte uniquement par l’API, avec une clé générée à sa création. Elle démarre avec le minimum : voir ce qu’elle atteint et créer et modifier clients, contacts, sites et équipements. Des permissions isolées s’activent ensuite.",
+        "altaNota": "Elle se connecte uniquement par l’API, avec une clé générée à sa création. Elle démarre avec le minimum : voir ce qu’elle atteint, créer et modifier clients, contacts, sites et équipements, et ajouter le modèle manquant. Des permissions isolées s’activent ensuite.",
         "bajaNota": "Elle est désactivée et ne peut pas se connecter. Restaurez-la pour l'ajuster : il lui faudra une nouvelle clé.",
         "claveTitulo": "Clé d'accès",
         "conClave": "Elle a une clé en service. Elle ne peut pas être réaffichée : en cas de perte, générez-en une autre.",

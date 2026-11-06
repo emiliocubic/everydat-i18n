@@ -1749,7 +1749,7 @@
         "clave": "Key",
         "vacio": "No integrations",
         "emailHint": "It only identifies the account: it is not used to log in.",
-        "altaNota": "It only connects through the API, with a key generated when it is created. It starts with the minimum: seeing what it reaches and creating and editing customers, contacts, locations and equipment. Single permissions are then switched on.",
+        "altaNota": "It only connects through the API, with a key generated when it is created. It starts with the minimum: seeing what it reaches, creating and editing customers, contacts, locations and equipment, and adding any missing model. Single permissions are then switched on.",
         "bajaNota": "It is deactivated and cannot connect. Restore it to adjust it: it will need a new key.",
         "claveTitulo": "Access key",
         "conClave": "It has a key in use. It cannot be shown again: if it is lost, generate another.",

@@ -1620,7 +1620,7 @@
         "clave": "Clave",
         "vacio": "No hay integraciones",
         "emailHint": "Solo identifica la cuenta: no se usa para entrar.",
-        "altaNota": "Entra solo por la API, con una clave que se genera al crearla. Nace con lo mínimo: ver lo que alcanza y crear y editar clientes, contactos, emplazamientos y equipos. Después se le encienden permisos sueltos.",
+        "altaNota": "Entra solo por la API, con una clave que se genera al crearla. Nace con lo mínimo: ver lo que alcanza, crear y editar clientes, contactos, emplazamientos y equipos, y dar de alta el modelo que falte. Después se le encienden permisos sueltos.",
         "bajaNota": "Está de baja y no puede entrar. Reactívala para ajustarla: necesitará una clave nueva.",
         "claveTitulo": "Clave de acceso",
         "conClave": "Tiene una clave en uso. No se puede volver a ver: si se pierde, genera otra.",
