@@ -4005,6 +4005,7 @@
           "dar_de_baja_usuario": "Désactiver l'utilisateur {{persona}} : il ne pourra plus se connecter, mais le compte peut être récupéré"
         },
         "persona": "C'est {{nombre}} ({{email}})",
+        "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
         "cambios": {
           "encender": "activer {{lista}}",
           "apagar": "désactiver {{lista}}",

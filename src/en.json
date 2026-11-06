@@ -4160,6 +4160,7 @@
           "dar_de_baja_usuario": "Deactivate user {{persona}}: they will not be able to sign in, but the account can be recovered"
         },
         "persona": "This is {{nombre}} ({{email}})",
+        "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
         "cambios": {
           "encender": "turn on {{lista}}",
           "apagar": "turn off {{lista}}",
