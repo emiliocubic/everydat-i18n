@@ -4152,7 +4152,30 @@
           "editar_emplazamiento": "Modificar el emplazamiento {{emplazamiento}}: {{cambios}}",
           "fijar_parte_emplazamiento_propietario": "Poner al cliente {{cliente}} como propietaria del emplazamiento {{emplazamiento}}",
           "fijar_parte_emplazamiento_contratista": "Poner al cliente {{cliente}} como contratista del emplazamiento {{emplazamiento}}",
-          "fijar_parte_emplazamiento_vacante": "Dejar vacante el papel de contratista del emplazamiento {{emplazamiento}}"
+          "fijar_parte_emplazamiento_vacante": "Dejar vacante el papel de contratista del emplazamiento {{emplazamiento}}",
+          "crear_usuario_capacidades": "Dar de alta al usuario interno {{nombre}} ({{email}}), con {{capacidades}}",
+          "asignar_capacidades": "Cambiar las capacidades del usuario {{persona}}: {{cambios}}",
+          "asignar_alcance": "Cambiar lo que ve el usuario {{persona}}: {{cambios}}",
+          "ajustar_permisos": "Ajustar los permisos del usuario {{persona}}: {{cambios}}",
+          "dar_de_baja_usuario": "Dar de baja al usuario {{persona}}: no podrá entrar, pero la cuenta se puede recuperar"
+        },
+        "persona": "Es {{nombre}} ({{email}})",
+        "cambios": {
+          "encender": "encender {{lista}}",
+          "apagar": "apagar {{lista}}",
+          "alcance_total": "pasa a ver todos los clientes",
+          "alcance_clientes": "pasa a ver solo lo que tiene asignado",
+          "alcance_ninguno": "pasa a no ver ningún cliente",
+          "anadir": "añadir {{lista}}",
+          "quitar": "quitar {{lista}}",
+          "dar": "dar {{lista}}",
+          "restablecer": "dejar según sus capacidades {{lista}}",
+          "cliente_one": "{{count}} cliente",
+          "cliente_other": "{{count}} clientes",
+          "grupo_one": "{{count}} grupo",
+          "grupo_other": "{{count}} grupos",
+          "emplazamiento_one": "{{count}} emplazamiento",
+          "emplazamiento_other": "{{count}} emplazamientos"
         },
         "acota": {
           "ninguno": "«{{grupo}}» no acota lo que ve ningún usuario.",

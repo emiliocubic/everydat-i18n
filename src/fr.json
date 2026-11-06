@@ -3997,7 +3997,30 @@
           "editar_emplazamiento": "Modifier le site {{emplazamiento}} : {{cambios}}",
           "fijar_parte_emplazamiento_propietario": "Définir le client {{cliente}} comme propriétaire du site {{emplazamiento}}",
           "fijar_parte_emplazamiento_contratista": "Définir le client {{cliente}} comme prestataire du site {{emplazamiento}}",
-          "fijar_parte_emplazamiento_vacante": "Laisser vacant le rôle de prestataire du site {{emplazamiento}}"
+          "fijar_parte_emplazamiento_vacante": "Laisser vacant le rôle de prestataire du site {{emplazamiento}}",
+          "crear_usuario_capacidades": "Ajouter l'utilisateur interne {{nombre}} ({{email}}), avec {{capacidades}}",
+          "asignar_capacidades": "Modifier les capacités de l'utilisateur {{persona}} : {{cambios}}",
+          "asignar_alcance": "Modifier ce que voit l'utilisateur {{persona}} : {{cambios}}",
+          "ajustar_permisos": "Ajuster les permissions de l'utilisateur {{persona}} : {{cambios}}",
+          "dar_de_baja_usuario": "Désactiver l'utilisateur {{persona}} : il ne pourra plus se connecter, mais le compte peut être récupéré"
+        },
+        "persona": "C'est {{nombre}} ({{email}})",
+        "cambios": {
+          "encender": "activer {{lista}}",
+          "apagar": "désactiver {{lista}}",
+          "alcance_total": "verra tous les clients",
+          "alcance_clientes": "verra seulement ce qui lui est attribué",
+          "alcance_ninguno": "ne verra aucun client",
+          "anadir": "ajouter {{lista}}",
+          "quitar": "retirer {{lista}}",
+          "dar": "accorder {{lista}}",
+          "restablecer": "laisser selon ses capacités {{lista}}",
+          "cliente_one": "{{count}} client",
+          "cliente_other": "{{count}} clients",
+          "grupo_one": "{{count}} groupe",
+          "grupo_other": "{{count}} groupes",
+          "emplazamiento_one": "{{count}} site",
+          "emplazamiento_other": "{{count}} sites"
         },
         "acota": {
           "ninguno": "« {{grupo}} » ne limite ce que voit aucun utilisateur.",

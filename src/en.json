@@ -4152,7 +4152,30 @@
           "editar_emplazamiento": "Change site {{emplazamiento}}: {{cambios}}",
           "fijar_parte_emplazamiento_propietario": "Set client {{cliente}} as owner of site {{emplazamiento}}",
           "fijar_parte_emplazamiento_contratista": "Set client {{cliente}} as contractor of site {{emplazamiento}}",
-          "fijar_parte_emplazamiento_vacante": "Leave the contractor role of site {{emplazamiento}} vacant"
+          "fijar_parte_emplazamiento_vacante": "Leave the contractor role of site {{emplazamiento}} vacant",
+          "crear_usuario_capacidades": "Add internal user {{nombre}} ({{email}}), with {{capacidades}}",
+          "asignar_capacidades": "Change the capabilities of user {{persona}}: {{cambios}}",
+          "asignar_alcance": "Change what user {{persona}} sees: {{cambios}}",
+          "ajustar_permisos": "Adjust the permissions of user {{persona}}: {{cambios}}",
+          "dar_de_baja_usuario": "Deactivate user {{persona}}: they will not be able to sign in, but the account can be recovered"
+        },
+        "persona": "This is {{nombre}} ({{email}})",
+        "cambios": {
+          "encender": "turn on {{lista}}",
+          "apagar": "turn off {{lista}}",
+          "alcance_total": "will see all clients",
+          "alcance_clientes": "will see only what is assigned",
+          "alcance_ninguno": "will see no clients",
+          "anadir": "add {{lista}}",
+          "quitar": "remove {{lista}}",
+          "dar": "grant {{lista}}",
+          "restablecer": "leave as their capabilities say {{lista}}",
+          "cliente_one": "{{count}} client",
+          "cliente_other": "{{count}} clients",
+          "grupo_one": "{{count}} group",
+          "grupo_other": "{{count}} groups",
+          "emplazamiento_one": "{{count}} site",
+          "emplazamiento_other": "{{count}} sites"
         },
         "acota": {
           "ninguno": "“{{grupo}}” does not limit what any user sees.",
