@@ -714,7 +714,7 @@
       "tipoContacto": "Tipo de contacto",
       "soloContacto": "Solo contacto",
       "soloContactoDesc": "Figura como contacto. Sin acceso a la aplicación.",
-      "sinPermisoPortal": "Dar o quitar el acceso a la aplicación es de quien gestiona la cartera.",
+      "sinPermisoPortal": "Dar o quitar el acceso a la aplicación es de quien lleva Oficina.",
       "usuarioApp": "Usuario aplicación",
       "usuarioAppDesc": "Acceso al portal de cliente.",
       "tipoContactoHint": "La cuenta de portal y sus permisos se gestionarán en la pestaña Permisos (próximamente).",
@@ -1407,7 +1407,8 @@
       "actions": "Acciones",
       "nombreCompleto": "Nombre y apellidos",
       "created_at": "Fecha de alta",
-      "last_login_at": "Último acceso"
+      "last_login_at": "Último acceso",
+      "capacidades": "Capacidades"
     },
     "detail": {
       "tabDatos": "Datos del usuario"
@@ -1433,11 +1434,7 @@
     },
     "roles": {
       "superadmin": "Superadmin",
-      "superadmin_short": "Super",
-      "admin": "Administrador",
-      "admin_short": "Admin",
-      "tecnico": "Técnico de campo",
-      "tecnico_short": "Técnico"
+      "superadmin_short": "Super"
     },
     "estado": {
       "activo": "Activo",
@@ -1533,32 +1530,35 @@
       "alcanceColaboradorHelp": "Sin cuentas asignadas no ve nada: el colaborador solo alcanza lo que se le comparte aquí y los proyectos en los que se le mete en el equipo.",
       "capacidades": {
         "titulo": "Capacidades",
-        "hint": "La base va con cualquier interno; encima se encienden las capacidades. Dentro de cada una, cada acción se puede apagar o encender a esta persona.",
-        "soloSuperadmin": "Solo el superadmin concede o quita capacidades.",
-        "gestion_usuarios": "Gestión de usuarios",
-        "gestion_usuariosHint": "ve el menú Usuarios, da de alta, edita y da de baja internos, colaboradores y equipos de trabajo, y reparte grupos de clientes",
-        "gestion_catalogo": "Gestión del catálogo",
-        "gestion_catalogoHint": "ve el menú Catálogo, escribe normas, tipos, campos, checklists, fabricantes y modelos, fija la caracterización de los elementos y valida lo que otros dan de alta",
-        "base": "Base del interno",
-        "baseHint": "lo de cualquier interno: ver lo que alcanza, dar de alta equipos, revisar, anotar actuaciones y subir documentos; borrar lo propio mientras nadie lo haya tocado",
-        "operativa": "Operativa",
-        "operativaHint": "el trabajo de oficina: editar clientes y contactos, mantener emplazamientos, corregir y borrar el trabajo de campo, crear proyectos y gestionar documentos",
-        "cartera": "Cartera",
-        "carteraHint": "alta y baja de clientes, fusionar duplicados, contratar portal, avisos y plazo, dar acceso al portal y grupos de clientes",
+        "hint": "Cada capacidad es un oficio: enciende las que coincidan con el trabajo de esta persona. Dentro de cada una, cada acción se puede apagar o encender a esta persona; la que está en dos capacidades es una sola.",
         "certificacion": "Certificación",
-        "certificacionHint": "firmar revisiones y ver la bandeja por certificar",
+        "certificacionHint": "certificar y descertificar revisiones, instalaciones y reparaciones",
         "planificacion": "Planificación",
-        "planificacionHint": "mover proyectos de estado, asignar equipos y técnicos, planificador y calendario laboral",
-        "presupuestos": "Presupuestos",
-        "presupuestosHint": "hacer propuestas y ver importes y probabilidad"
+        "planificacionHint": "quien reparte el trabajo: fechas, personal y ciclo de los proyectos, ausencias y planificador",
+        "soloQuienReparte": "Las capacidades las reparten el superadmin y quien lleva Personal.",
+        "personalBloqueada": "Personal solo la enciende el superadmin.",
+        "soloBase": "Solo la base",
+        "todas": "Todas",
+        "tambienEn": "también en {{lista}}",
+        "revisor": "Revisor",
+        "revisorHint": "el trabajo de campo: dar de alta y editar equipos, registrar revisiones y actuaciones, hacer partes y preparar informes",
+        "oficina": "Oficina",
+        "oficinaHint": "todo lo de Revisor y el día a día de los clientes, los emplazamientos, los proyectos, los informes y los documentos",
+        "comercial": "Comercial",
+        "comercialHint": "lo que tiene precio: oportunidades y propuestas, ver importes y tarifas, y dar de alta clientes y contactos",
+        "catalogo": "Catálogo",
+        "catalogoHint": "configurar cómo se describen y revisan los equipos, y mantener fabricantes, modelos y referencias",
+        "personal": "Personal",
+        "personalHint": "las personas de la casa: altas, firma, alcance, capacidades de los demás, equipos de trabajo, acreditaciones y ausencias"
       },
       "presets": {
-        "titulo": "Punto de partida",
-        "tecnico": "Técnico de campo",
-        "tecnicoHint": "ve lo que alcanza, da de alta equipos, revisa y sube documentos; no borra lo de otros ni certifica",
-        "administrador": "Administrador",
-        "administradorHint": "además, el trabajo de oficina: operativa, cartera, certificación, planificación y presupuestos",
-        "help": "Es un atajo: enciende capacidades que luego se ajustan en la pestaña Permisos."
+        "titulo": "Atajos",
+        "help": "Son solo atajos: encienden capacidades, que luego se ajustan en la pestaña Permisos, y no se guardan. Se pueden marcar varios. Personal se enciende a mano.",
+        "tecnico_campo": "Técnico de campo",
+        "oficina": "Oficina",
+        "comercial": "Comercial",
+        "responsable_tecnico": "Responsable técnico",
+        "enciende": "enciende {{lista}}"
       },
       "copiar": {
         "titulo": "Copiar permisos de otra persona",
@@ -1573,15 +1573,20 @@
         "quitar": "Quitar la firma",
         "quitarConfirmar": "¿Quitar la firma? Las fichas de revisión que la pidan saldrán con el hueco vacío; lo ya emitido no cambia.",
         "hint": "La imagen de su firma: sale en las fichas de revisión de los informes que llevan la firma del revisor. PNG o JPG, hasta 1 MB. Se guarda al elegirla."
+      },
+      "delegado": {
+        "titulo": "Delegado por el superadmin",
+        "hint": "Piezas del gobierno que el superadmin da a una persona concreta sin hacerla superadmin.",
+        "soloSuperadmin": "Solo las marcan el superadmin y soporte."
       }
     },
     "soporte": {
       "nota": {
-        "superadmin": "Superadmin: lleva todas las capacidades de serie. Ve el menú Catálogo, valida los modelos pendientes y gestiona usuarios.",
-        "conCatalogo": "Tiene la capacidad de gestión del catálogo: ve el menú Catálogo y, al entrar, los modelos pendientes de validar (tarjeta en Inicio y contador en el menú).",
-        "sinCatalogo": "No tiene la capacidad de catálogo: no ve el menú Catálogo y, si da de alta un modelo desde el alta de un equipo, queda pendiente de validar.",
-        "conUsuarios": "Gestiona usuarios: ve el menú Usuarios.",
-        "sinUsuarios": "No gestiona usuarios: no ve el menú Usuarios."
+        "superadmin": "Superadmin: lleva todas las capacidades de serie. Ve el grupo Catálogo técnico, valida los modelos pendientes y gestiona a las personas.",
+        "conCatalogo": "Lleva Catálogo: ve el grupo Catálogo técnico y, al entrar, los modelos pendientes de validar (tarjeta en Inicio y contador en el menú).",
+        "sinCatalogo": "No lleva Catálogo: no ve ese grupo del menú y, si da de alta un modelo desde el alta de un equipo, queda pendiente de validar.",
+        "conPersonal": "Lleva Personal: ve el grupo Mi empresa.",
+        "sinPersonal": "No lleva Personal: no ve el grupo Mi empresa."
       },
       "tabsAria": "Tipo de usuario",
       "internos": {
@@ -1615,7 +1620,7 @@
         "clave": "Clave",
         "vacio": "No hay integraciones",
         "emailHint": "Solo identifica la cuenta: no se usa para entrar.",
-        "altaNota": "Entra solo por la API, con una clave que se genera al crearla. Nace con Operativa y Cartera, y después se ajusta permiso a permiso.",
+        "altaNota": "Entra solo por la API, con una clave que se genera al crearla. Nace con lo mínimo: ver lo que alcanza y crear y editar clientes, contactos, emplazamientos y equipos. Después se le encienden permisos sueltos.",
         "bajaNota": "Está de baja y no puede entrar. Reactívala para ajustarla: necesitará una clave nueva.",
         "claveTitulo": "Clave de acceso",
         "conClave": "Tiene una clave en uso. No se puede volver a ver: si se pierde, genera otra.",
@@ -1627,11 +1632,114 @@
         "copiar": "Copiar la clave",
         "copiada": "Clave copiada",
         "bajaConfirm": "¿Dar de baja {{nombre}}? Su clave dejará de funcionar en el momento.",
-        "permisosNota": "Se ajustan todos los permisos, también los de lectura. No se ofrecen firmar revisiones, gestionar personas ni lo reservado al gobierno de la instancia."
+        "permisosNota": "Se ajustan todos los permisos, también los de lectura. No se ofrecen certificar, emitir informes, gestionar personas ni lo reservado al gobierno de la instancia."
       }
     },
     "impersonate": "Impersonar",
-    "impersonateConfirm": "¿Impersonar a {{nombre}}?"
+    "impersonateConfirm": "¿Impersonar a {{nombre}}?",
+    "atomos": {
+      "users": {
+        "view": "Ver las fichas de las personas",
+        "manage": "Dar de alta, editar y dar de baja internos y colaboradores, ponerles la firma y asignarles alcance",
+        "manage_superadmins": "Nombrar y quitar superadmins y gestionar sus fichas",
+        "manage_roles_elevated": "Repartir cualquier capacidad, también Personal",
+        "set_scope_bypass": "Cambiar a una persona el permiso de saltarse la lista de control de documentos"
+      },
+      "capacidades": {
+        "repartir": "Encender y apagar capacidades a los demás, salvo Personal"
+      },
+      "clientes": {
+        "view": "Ver clientes, sus contactos y sus grupos",
+        "manage": "Dar de alta, editar y dar de baja clientes",
+        "delete": "Eliminar, recuperar y fusionar clientes",
+        "contratar": "Contratar lo del cliente: portal, avisos y plazo de revisión"
+      },
+      "contactos": {
+        "manage": "Crear, editar y borrar contactos (borrar lleva restaurar)",
+        "portal": "Dar y quitar a un contacto el acceso al portal del cliente"
+      },
+      "grupos_clientes": {
+        "manage": "Crear, editar y borrar grupos de clientes y meter clientes en ellos"
+      },
+      "emplazamientos": {
+        "view": "Ver emplazamientos, su árbol y sus zonas",
+        "manage": "Crear y editar emplazamientos, su árbol y sus zonas",
+        "delete": "Eliminar emplazamientos (y restaurarlos)"
+      },
+      "elementos": {
+        "view": "Ver elementos",
+        "manage": "Dar de alta y editar elementos, cambiarles el estado y trasladarlos",
+        "delete": "Eliminar elementos dados de alta por error (y restaurarlos)"
+      },
+      "actuaciones": {
+        "create": "Registrar actuaciones: instalaciones, reparaciones, caidas retenidas",
+        "corregir": "Corregir y borrar actuaciones ya registradas"
+      },
+      "revisiones": {
+        "view": "Ver las revisiones y las actuaciones de un elemento",
+        "create": "Registrar revisiones y consignarlas al dar de alta un elemento",
+        "edit": "Puntuar los checkpoints y corregir una revisión registrada",
+        "delete": "Borrar una revisión registrada por error",
+        "certificar": "Certificar revisiones: validar el trabajo de campo y corregir el veredicto"
+      },
+      "proyectos": {
+        "view": "Ver proyectos y su cartera",
+        "manage": "Crear proyectos, rellenar su ficha y eliminar los creados por error",
+        "planificar": "Planificar un proyecto y moverlo por su ciclo de vida",
+        "partes": "Hacer, emitir y anular partes de trabajo de los proyectos que alcanza, y recoger la firma del cliente"
+      },
+      "propuestas": {
+        "manage": "Ver y hacer la propuesta de un proyecto, con sus importes y su probabilidad"
+      },
+      "importes": {
+        "view": "Ver importes, probabilidad, tarifas y descuento del cliente"
+      },
+      "ausencias": {
+        "manage": "Ver las ausencias de todo el personal y anotarlas"
+      },
+      "planificador": {
+        "manage": "Marcar festivos de la empresa y anotar ausencias de las personas"
+      },
+      "informes": {
+        "view": "Ver informes, sus versiones y las plantillas publicadas",
+        "preparar": "Crear, preparar y borrar informes en borrador",
+        "emitir": "Emitir un informe y reabrirlo para corregir y reemitir",
+        "disenar": "Diseñar informes: plantillas, textos variables, sello y anonimización"
+      },
+      "tarifas": {
+        "manage": "Cambiar las tarifas de revisión y los otros productos"
+      },
+      "documentos": {
+        "view": "Ver y descargar documentos y carpetas",
+        "create": "Subir documentos y crear carpetas",
+        "manage": "Editar, mover y eliminar documentos y carpetas, y dar permisos sobre ellos"
+      },
+      "equipos_trabajo": {
+        "manage": "Crear, editar y borrar equipos de trabajo y gestionar sus miembros"
+      },
+      "acreditaciones": {
+        "manage": "Ver y gestionar las acreditaciones de la empresa y del personal, y recibir sus avisos"
+      },
+      "catalogo": {
+        "view": "Ver el catálogo: fabricantes, modelos, referencias, normas, familias, tipos, campos y checklists",
+        "create": "Dar de alta fabricantes, modelos y referencias locales",
+        "configurar": "Configurar cómo se describen y revisan los equipos: normas locales, familias, tipos, campos, checklists y caracterización",
+        "mantener": "Editar, validar, fusionar y borrar fabricantes, modelos y referencias"
+      },
+      "parametros": {
+        "view": "Ver los parámetros generales de la aplicación",
+        "manage": "Editar los parámetros generales de la aplicación"
+      },
+      "exportar": {
+        "clientes": "Exportar los listados de clientes, contactos y emplazamientos"
+      },
+      "soporte": {
+        "impersonate": "Impersonarse como cualquier usuario del sistema"
+      },
+      "audit": {
+        "view": "Consultar el registro de auditoría"
+      }
+    }
   },
   "emplazamientos": {
     "title": "Emplazamientos",
@@ -2426,7 +2534,7 @@
       "sinEspecificar": "Sin especificar",
       "importBloqueCta": "Importar en bloque",
       "pendienteChip": "Pendiente de validar",
-      "pendienteChipTitle": "Lo dio de alta alguien sin la capacidad de gestión del catálogo; se usa, pero falta validarlo.",
+      "pendienteChipTitle": "Lo dio de alta alguien sin la capacidad Catálogo; se usa, pero falta validarlo.",
       "modal": {
         "title": "Catálogo de {{fab}}",
         "iaSub": "Los modelos de {{fab}} se localizan con ayuda de la IA.",
@@ -2702,8 +2810,8 @@
         },
         "pendiente": {
           "titulo": "Pendiente de validar",
-          "texto": "Lo dio de alta {{quien}} sin la capacidad de gestión del catálogo. Se puede usar ya; validarlo lo da por bueno junto con su fabricante y sus referencias nuevas.",
-          "textoSinQuien": "Lo dio de alta alguien sin la capacidad de gestión del catálogo. Se puede usar ya; validarlo lo da por bueno junto con su fabricante y sus referencias nuevas.",
+          "texto": "Lo dio de alta {{quien}} sin la capacidad Catálogo. Se puede usar ya; validarlo lo da por bueno junto con su fabricante y sus referencias nuevas.",
+          "textoSinQuien": "Lo dio de alta alguien sin la capacidad Catálogo. Se puede usar ya; validarlo lo da por bueno junto con su fabricante y sus referencias nuevas.",
           "validar": "Validar",
           "validado": "Modelo validado",
           "referenciaChip": "Pendiente"
@@ -3795,7 +3903,7 @@
     },
     "pendientes": {
       "banda": "Pendientes de validar",
-      "intro": "Lo que dio de alta alguien sin la capacidad de gestión del catálogo. Se usa desde el primer momento; aquí se acepta, se corrige, se fusiona con lo que ya existía o se borra.",
+      "intro": "Lo que dio de alta alguien sin la capacidad Catálogo. Se usa desde el primer momento; aquí se acepta, se corrige, se fusiona con lo que ya existía o se borra.",
       "vacio": "No hay nada pendiente de validar.",
       "modelos": "Modelos",
       "referencias": "Referencias sueltas",
@@ -4129,7 +4237,7 @@
           {
             "titulo": "Quién la ve",
             "puntos": [
-              "Hoy, solo el superadmin. Cuando exista la acción nacerá la capacidad «importación», ya prevista en usuarios."
+              "Hoy, solo el superadmin. Quién más la verá se decidirá cuando exista la acción."
             ]
           }
         ],
@@ -4195,7 +4303,6 @@
       "titulo": "Sin permiso",
       "texto": "No tienes permiso para {{que}}. Si lo necesitas, pídeselo al superadmin de tu empresa.",
       "usuarios": "gestionar usuarios",
-      "equipos": "ver los equipos de trabajo",
       "volver": "Volver al inicio",
       "catalogo": "gestionar el catálogo",
       "altaClientes": "dar de alta clientes",
@@ -4214,7 +4321,8 @@
       "campos": "ver los campos",
       "checklists": "ver los checklists",
       "tipos": "ver los tipos de equipo",
-      "catalogoVer": "ver el catálogo de fabricantes y modelos"
+      "catalogoVer": "ver el catálogo de fabricantes y modelos",
+      "apiCapacidades": "No tienes permiso para esta acción: {{accion}}. Lo dan las capacidades {{capacidades}}."
     }
   },
   "proyectos": {
@@ -5090,7 +5198,7 @@
       "proyectos": "Proyectos",
       "sinProyectosAbierta": "Se crean al aceptar la propuesta: uno por emplazamiento del alcance.",
       "sinProyectos": "La propuesta no creó ningún proyecto.",
-      "sinPermiso": "Las propuestas solo se ven con el permiso de gestión comercial.",
+      "sinPermiso": "Las propuestas solo se ven con el permiso de hacer propuestas, de la capacidad Comercial.",
       "sinDocumento": "La propuesta aún no tiene documento: es la carpeta de las notas y la probabilidad. Cuando toque presupuestar, compónlo aquí o carga el de fuera.",
       "sinGuardar": "El bloque de revisión viene precargado con el alcance de la propuesta. Hasta que guardes, la propuesta sigue sin documento.",
       "sinAlcance": "La propuesta no abarca ningún emplazamiento",
@@ -5128,8 +5236,7 @@
         "sinProyectos": "Aceptar sin crear proyectos (solo es entregar algo, un suministro)",
         "soloAceptar": "Aceptar sin proyectos",
         "crear": "Aceptar y crear el proyecto",
-        "crear_other": "Aceptar y crear {{count}} proyectos",
-        "sinPermiso": "Aceptar crea proyectos: hace falta el permiso de crear proyectos."
+        "crear_other": "Aceptar y crear {{count}} proyectos"
       }
     },
     "cierre": {
@@ -6602,13 +6709,13 @@
       "interno": "Personal interno",
       "colaborador_externo": "Colaboradores externos",
       "usuario_invitado": "Usuarios invitados",
-      "operativa": "Operativa",
-      "cartera": "Cartera",
       "certificacion": "Certificación",
       "planificacion": "Planificación",
-      "presupuestos": "Presupuestos",
-      "gestion_usuarios": "Gestión de usuarios",
-      "gestion_catalogo": "Gestión del catálogo"
+      "revisor": "Revisor",
+      "oficina": "Oficina",
+      "comercial": "Comercial",
+      "catalogo": "Catálogo",
+      "personal": "Personal"
     },
     "papelera": {
       "titulo": "Papelera",

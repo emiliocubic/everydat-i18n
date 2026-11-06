@@ -783,7 +783,7 @@
       "tipoContacto": "Type de contact",
       "soloContacto": "Contact uniquement",
       "soloContactoDesc": "Figure comme contact. Sans accès à l’application.",
-      "sinPermisoPortal": "Donner ou retirer l’accès à l’application revient à qui gère le portefeuille clients.",
+      "sinPermisoPortal": "Donner ou retirer l’accès à l’application revient à qui détient Bureau.",
       "usuarioApp": "Utilisateur application",
       "usuarioAppDesc": "Accès au portail client.",
       "tipoContactoHint": "Le compte portail et ses permissions se géreront dans l’onglet Permissions (prochainement).",
@@ -1412,7 +1412,8 @@
       "actions": "Actions",
       "nombreCompleto": "Nom et prénom",
       "created_at": "Date de création",
-      "last_login_at": "Dernière connexion"
+      "last_login_at": "Dernière connexion",
+      "capacidades": "Capacités"
     },
     "detail": {
       "tabDatos": "Données de l'utilisateur"
@@ -1438,11 +1439,7 @@
     },
     "roles": {
       "superadmin": "Superadmin",
-      "superadmin_short": "Super",
-      "admin": "Administrateur",
-      "admin_short": "Admin",
-      "tecnico": "Technicien de terrain",
-      "tecnico_short": "Tech."
+      "superadmin_short": "Super"
     },
     "estado": {
       "activo": "Actif",
@@ -1537,32 +1534,35 @@
       "alcanceColaboradorHelp": "Sans comptes assignés, il ne voit rien : le collaborateur n'atteint que ce qui lui est partagé ici et les projets où il est affecté.",
       "capacidades": {
         "titulo": "Capacités",
-        "hint": "Tout interne a la base ; les capacités s’activent par-dessus. Dans chacune, chaque action peut être désactivée ou activée pour cette personne.",
-        "soloSuperadmin": "Seul le superadmin accorde ou retire les capacités.",
-        "gestion_usuarios": "Gestion des utilisateurs",
-        "gestion_usuariosHint": "voit le menu Utilisateurs, crée, modifie et désactive internes, collaborateurs et équipes, et attribue les groupes de clients",
-        "gestion_catalogo": "Gestion du catalogue",
-        "gestion_catalogoHint": "voit le menu Catalogue, modifie normes, types, champs, checklists, fabricants et modèles, fixe la caractérisation des éléments et valide ce que les autres créent",
-        "base": "Base de l’interne",
-        "baseHint": "ce que fait tout interne : voir ce qu’il atteint, enregistrer des équipements, inspecter, noter des interventions et déposer des documents ; supprimer son propre travail tant que personne n’y a touché",
-        "operativa": "Opérations",
-        "operativaHint": "le travail de bureau : modifier clients et contacts, tenir les sites, corriger et supprimer le travail de terrain, créer des projets et gérer les documents",
-        "cartera": "Portefeuille",
-        "carteraHint": "créer et supprimer des clients, fusionner les doublons, contracter portail, avis et périodicité, donner accès au portail et groupes de clients",
+        "hint": "Chaque capacité est un métier : activez celles qui correspondent au travail de cette personne. Dans chacune, chaque action peut être désactivée ou activée pour cette personne ; celle qui figure dans deux capacités n’en est qu’une.",
         "certificacion": "Certification",
-        "certificacionHint": "signer les inspections et voir la file à certifier",
+        "certificacionHint": "certifier et décertifier révisions, installations et réparations",
         "planificacion": "Planification",
-        "planificacionHint": "faire avancer les projets, affecter équipes et techniciens, planificateur et calendrier de travail",
-        "presupuestos": "Devis",
-        "presupuestosHint": "faire des propositions et voir montants et probabilité"
+        "planificacionHint": "qui répartit le travail : dates, personnel et cycle des projets, absences et planificateur",
+        "soloQuienReparte": "Les capacités sont attribuées par le superadmin et par qui détient Personnel.",
+        "personalBloqueada": "Seul le superadmin active Personnel.",
+        "soloBase": "Base seule",
+        "todas": "Toutes",
+        "tambienEn": "aussi dans {{lista}}",
+        "revisor": "Réviseur",
+        "revisorHint": "le travail de terrain : enregistrer et modifier des équipements, enregistrer révisions et interventions, faire des bons de travail et préparer des rapports",
+        "oficina": "Bureau",
+        "oficinaHint": "tout ce que fait Réviseur et le quotidien des clients, des sites, des projets, des rapports et des documents",
+        "comercial": "Commercial",
+        "comercialHint": "ce qui a un prix : opportunités et propositions, voir les montants et les tarifs, et créer clients et contacts",
+        "catalogo": "Catalogue",
+        "catalogoHint": "configurer la façon de décrire et de réviser les équipements, et tenir à jour fabricants, modèles et références",
+        "personal": "Personnel",
+        "personalHint": "les personnes de la maison : créations, signature, portée, capacités des autres, équipes de travail, habilitations et absences"
       },
       "presets": {
-        "titulo": "Point de départ",
-        "tecnico": "Technicien de terrain",
-        "tecnicoHint": "voit ce qu’il atteint, enregistre des équipements, inspecte et dépose des documents ; ne supprime pas le travail d’autrui ni ne certifie",
-        "administrador": "Administrateur",
-        "administradorHint": "en plus, le travail de bureau : opérations, portefeuille, certification, planification et devis",
-        "help": "C’est un raccourci : il active des capacités à ajuster ensuite dans l’onglet Permissions."
+        "titulo": "Raccourcis",
+        "help": "Ce ne sont que des raccourcis : ils activent des capacités, ajustables ensuite dans l’onglet Permissions, et ne sont pas enregistrés. On peut en cocher plusieurs. Personnel s’active à la main.",
+        "tecnico_campo": "Technicien de terrain",
+        "oficina": "Bureau",
+        "comercial": "Commercial",
+        "responsable_tecnico": "Responsable technique",
+        "enciende": "active {{lista}}"
       },
       "copiar": {
         "titulo": "Copier les permissions d’une autre personne",
@@ -1577,15 +1577,20 @@
         "quitar": "Retirer la signature",
         "quitarConfirmar": "Retirer la signature ? Les fiches d'inspection qui la demandent afficheront un emplacement vide ; ce qui a déjà été émis ne change pas.",
         "hint": "L'image de sa signature : elle apparaît sur les fiches d'inspection des rapports qui portent la signature de l'inspecteur. PNG ou JPG, jusqu'à 1 Mo. Enregistrée dès qu'elle est choisie."
+      },
+      "delegado": {
+        "titulo": "Délégué par le superadmin",
+        "hint": "Pièces de la gouvernance que le superadmin donne à une personne précise sans la faire superadmin.",
+        "soloSuperadmin": "Seuls le superadmin et le support les cochent."
       }
     },
     "soporte": {
       "nota": {
-        "superadmin": "Superadmin : toutes les capacités par défaut. Voit le menu Catalogue, valide les modèles en attente et gère les utilisateurs.",
-        "conCatalogo": "A la capacité de gestion du catalogue : voit le menu Catalogue et, à l'entrée, les modèles en attente de validation (carte d'accueil et compteur du menu).",
-        "sinCatalogo": "Sans capacité catalogue : ne voit pas le menu Catalogue et tout modèle créé depuis l'enregistrement d'un équipement reste en attente de validation.",
-        "conUsuarios": "Gère les utilisateurs : voit le menu Utilisateurs.",
-        "sinUsuarios": "Ne gère pas les utilisateurs : pas de menu Utilisateurs."
+        "superadmin": "Superadmin : toutes les capacités par défaut. Voit le groupe Catalogue technique, valide les modèles en attente et gère les personnes.",
+        "conCatalogo": "A Catalogue : voit le groupe Catalogue technique et, à l’entrée, les modèles en attente de validation (carte d’accueil et compteur du menu).",
+        "sinCatalogo": "Sans Catalogue : ne voit pas ce groupe du menu et tout modèle créé depuis l’enregistrement d’un équipement reste en attente de validation.",
+        "conPersonal": "A Personnel : voit le groupe Mon entreprise.",
+        "sinPersonal": "Sans Personnel : ne voit pas le groupe Mon entreprise."
       },
       "tabsAria": "Type d'utilisateur",
       "internos": {
@@ -1619,7 +1624,7 @@
         "clave": "Clé",
         "vacio": "Aucune intégration",
         "emailHint": "Il identifie seulement le compte : il ne sert pas à se connecter.",
-        "altaNota": "Elle se connecte uniquement par l'API, avec une clé générée à sa création. Elle démarre avec Opérations et Portefeuille, puis s'ajuste permission par permission.",
+        "altaNota": "Elle se connecte uniquement par l’API, avec une clé générée à sa création. Elle démarre avec le minimum : voir ce qu’elle atteint et créer et modifier clients, contacts, sites et équipements. Des permissions isolées s’activent ensuite.",
         "bajaNota": "Elle est désactivée et ne peut pas se connecter. Restaurez-la pour l'ajuster : il lui faudra une nouvelle clé.",
         "claveTitulo": "Clé d'accès",
         "conClave": "Elle a une clé en service. Elle ne peut pas être réaffichée : en cas de perte, générez-en une autre.",
@@ -1631,11 +1636,114 @@
         "copiar": "Copier la clé",
         "copiada": "Clé copiée",
         "bajaConfirm": "Désactiver {{nombre}} ? Sa clé cessera immédiatement de fonctionner.",
-        "permisosNota": "Toutes les permissions s'ajustent, y compris celles de lecture. Signer les révisions, gérer les personnes et ce qui est réservé à la gouvernance de l'instance ne sont pas proposés."
+        "permisosNota": "Toutes les permissions s’ajustent, y compris celles de lecture. Certifier, émettre des rapports, gérer les personnes et ce qui est réservé à la gouvernance de l’instance ne sont pas proposés."
       }
     },
     "impersonate": "Emprunter l'identité",
-    "impersonateConfirm": "Emprunter l'identité de {{nombre}} ?"
+    "impersonateConfirm": "Emprunter l'identité de {{nombre}} ?",
+    "atomos": {
+      "users": {
+        "view": "Voir les fiches des personnes",
+        "manage": "Créer, modifier et désactiver les internes et les collaborateurs, leur mettre la signature et leur attribuer une portée",
+        "manage_superadmins": "Nommer et retirer les superadmins et gérer leurs fiches",
+        "manage_roles_elevated": "Attribuer n’importe quelle capacité, y compris Personnel",
+        "set_scope_bypass": "Changer pour une personne le droit de contourner la liste de contrôle des documents"
+      },
+      "capacidades": {
+        "repartir": "Activer et désactiver les capacités des autres, sauf Personnel"
+      },
+      "clientes": {
+        "view": "Voir les clients, leurs contacts et leurs groupes",
+        "manage": "Créer, modifier et désactiver des clients",
+        "delete": "Supprimer, restaurer et fusionner des clients",
+        "contratar": "Contracter pour le client : portail, avis et délai de révision"
+      },
+      "contactos": {
+        "manage": "Créer, modifier et supprimer des contacts (supprimer inclut restaurer)",
+        "portal": "Donner et retirer à un contact l’accès au portail client"
+      },
+      "grupos_clientes": {
+        "manage": "Créer, modifier et supprimer des groupes de clients et y ajouter des clients"
+      },
+      "emplazamientos": {
+        "view": "Voir les sites, leur arborescence et leurs zones",
+        "manage": "Créer et modifier des sites, leur arborescence et leurs zones",
+        "delete": "Supprimer des sites (et les restaurer)"
+      },
+      "elementos": {
+        "view": "Voir les équipements",
+        "manage": "Enregistrer et modifier des équipements, changer leur état et les déplacer",
+        "delete": "Supprimer des équipements enregistrés par erreur (et les restaurer)"
+      },
+      "actuaciones": {
+        "create": "Enregistrer des interventions : installations, réparations, chutes arrêtées",
+        "corregir": "Corriger et supprimer des interventions déjà enregistrées"
+      },
+      "revisiones": {
+        "view": "Voir les révisions et les interventions d’un équipement",
+        "create": "Enregistrer des révisions et les consigner à l’enregistrement d’un équipement",
+        "edit": "Noter les points de contrôle et corriger une révision enregistrée",
+        "delete": "Supprimer une révision enregistrée par erreur",
+        "certificar": "Certifier des révisions : valider le travail de terrain et corriger le verdict"
+      },
+      "proyectos": {
+        "view": "Voir les projets et leur portefeuille",
+        "manage": "Créer des projets, remplir leur fiche et supprimer ceux créés par erreur",
+        "planificar": "Planifier un projet et le faire avancer dans son cycle de vie",
+        "partes": "Faire, émettre et annuler des bons de travail des projets accessibles, et recueillir la signature du client"
+      },
+      "propuestas": {
+        "manage": "Voir et faire la proposition d’un projet, avec ses montants et sa probabilité"
+      },
+      "importes": {
+        "view": "Voir les montants, la probabilité, les tarifs et la remise du client"
+      },
+      "ausencias": {
+        "manage": "Voir les absences de tout le personnel et les noter"
+      },
+      "planificador": {
+        "manage": "Marquer les jours fériés de l’entreprise et noter les absences des personnes"
+      },
+      "informes": {
+        "view": "Voir les rapports, leurs versions et les modèles publiés",
+        "preparar": "Créer, préparer et supprimer des rapports en brouillon",
+        "emitir": "Émettre un rapport et le rouvrir pour le corriger et le réémettre",
+        "disenar": "Concevoir les rapports : modèles, textes variables, cachet et anonymisation"
+      },
+      "tarifas": {
+        "manage": "Changer les tarifs de révision et les autres produits"
+      },
+      "documentos": {
+        "view": "Voir et télécharger des documents et des dossiers",
+        "create": "Déposer des documents et créer des dossiers",
+        "manage": "Modifier, déplacer et supprimer des documents et des dossiers, et donner des droits dessus"
+      },
+      "equipos_trabajo": {
+        "manage": "Créer, modifier et supprimer des équipes de travail et gérer leurs membres"
+      },
+      "acreditaciones": {
+        "manage": "Voir et gérer les habilitations de l’entreprise et du personnel, et recevoir leurs avis"
+      },
+      "catalogo": {
+        "view": "Voir le catalogue : fabricants, modèles, références, normes, familles, types, champs et checklists",
+        "create": "Ajouter des fabricants, modèles et références locaux",
+        "configurar": "Configurer la façon de décrire et de réviser les équipements : normes locales, familles, types, champs, checklists et caractérisation",
+        "mantener": "Modifier, valider, fusionner et supprimer des fabricants, modèles et références"
+      },
+      "parametros": {
+        "view": "Voir les paramètres généraux de l’application",
+        "manage": "Modifier les paramètres généraux de l’application"
+      },
+      "exportar": {
+        "clientes": "Exporter les listes de clients, contacts et sites"
+      },
+      "soporte": {
+        "impersonate": "Se connecter en tant que n’importe quel utilisateur du système"
+      },
+      "audit": {
+        "view": "Consulter le journal d’audit"
+      }
+    }
   },
   "emplazamientos": {
     "title": "Sites",
@@ -2282,7 +2390,7 @@
       "sinEspecificar": "Non précisé",
       "importBloqueCta": "Import en bloc",
       "pendienteChip": "En attente de validation",
-      "pendienteChipTitle": "Créé par quelqu'un sans la capacité de gestion du catalogue ; utilisable, mais pas encore validé.",
+      "pendienteChipTitle": "Créé par quelqu’un sans la capacité Catalogue ; il est utilisé mais reste à valider.",
       "modal": {
         "title": "Catalogue de {{fab}}",
         "iaSub": "Les modèles {{fab}} sont localisés avec l’aide de l’IA.",
@@ -2558,8 +2666,8 @@
         },
         "pendiente": {
           "titulo": "En attente de validation",
-          "texto": "Créé par {{quien}} sans la capacité de gestion du catalogue. Il peut déjà être utilisé ; le valider l'accepte avec son nouveau fabricant et ses références.",
-          "textoSinQuien": "Créé par quelqu'un sans la capacité de gestion du catalogue. Il peut déjà être utilisé ; le valider l'accepte avec son nouveau fabricant et ses références.",
+          "texto": "Créé par {{quien}} sans la capacité Catalogue. Utilisable dès maintenant ; le valider l’approuve avec son fabricant et ses nouvelles références.",
+          "textoSinQuien": "Créé par quelqu’un sans la capacité Catalogue. Utilisable dès maintenant ; le valider l’approuve avec son fabricant et ses nouvelles références.",
           "validar": "Valider",
           "validado": "Modèle validé",
           "referenciaChip": "En attente"
@@ -3640,7 +3748,7 @@
     },
     "pendientes": {
       "banda": "En attente de validation",
-      "intro": "Ce qui a été créé par quelqu'un sans la capacité de gestion du catalogue. Utilisable dès le départ ; ici on l'accepte, on le corrige, on le fusionne avec l'existant ou on le supprime.",
+      "intro": "Ce qu’a créé quelqu’un sans la capacité Catalogue. C’est utilisé dès le début ; ici on l’accepte, le corrige, le fusionne avec l’existant ou le supprime.",
       "vacio": "Rien en attente de validation.",
       "modelos": "Modèles",
       "referencias": "Références isolées",
@@ -3918,7 +4026,6 @@
       "titulo": "Sans permission",
       "texto": "Vous n'avez pas la permission de {{que}}. Si vous en avez besoin, demandez-la au superadmin de votre entreprise.",
       "usuarios": "gérer les utilisateurs",
-      "equipos": "voir les équipes de travail",
       "volver": "Retour à l'accueil",
       "catalogo": "gérer le catalogue",
       "altaClientes": "créer des clients",
@@ -3937,7 +4044,8 @@
       "campos": "voir les champs",
       "checklists": "voir les checklists",
       "tipos": "voir les types d'équipement",
-      "catalogoVer": "voir le catalogue des fabricants et des modèles"
+      "catalogoVer": "voir le catalogue des fabricants et des modèles",
+      "apiCapacidades": "Vous n’avez pas la permission pour cette action : {{accion}}. Elle vient avec les capacités {{capacidades}}."
     }
   },
   "proyectos": {
@@ -4798,7 +4906,7 @@
       "proyectos": "Projets",
       "sinProyectosAbierta": "Ils sont créés à l’acceptation de la proposition : un par site du périmètre.",
       "sinProyectos": "La proposition n’a créé aucun projet.",
-      "sinPermiso": "Les propositions ne sont visibles qu’avec l’autorisation de gestion commerciale.",
+      "sinPermiso": "Les propositions ne se voient qu’avec le droit de faire des propositions, de la capacité Commercial.",
       "sinDocumento": "La proposition n’a pas encore de document : c’est le dossier des notes et de la probabilité. Le moment venu, composez le devis ici ou chargez celui fait à l’extérieur.",
       "sinGuardar": "Le bloc de vérification est prérempli avec le périmètre de la proposition. Tant que vous n’enregistrez pas, la proposition reste sans document.",
       "sinAlcance": "La proposition ne couvre aucun site",
@@ -4836,8 +4944,7 @@
         "sinProyectos": "Accepter sans créer de projet (il s’agit seulement de livrer quelque chose, une fourniture)",
         "soloAceptar": "Accepter sans projet",
         "crear": "Accepter et créer le projet",
-        "crear_other": "Accepter et créer {{count}} projets",
-        "sinPermiso": "Accepter crée des projets : l’autorisation de créer des projets est nécessaire."
+        "crear_other": "Accepter et créer {{count}} projets"
       }
     },
     "cierre": {
@@ -7833,6 +7940,15 @@
       "permisosCarpeta": "Qui le voit",
       "heredaCarpeta": "Hérite des permissions du dossier parent ; à la racine, la règle par défaut : tout le personnel interne le voit.",
       "restringirCarpeta": "Restreindre ce dossier"
+    },
+    "rol": {
+      "revisor": "Réviseur",
+      "oficina": "Bureau",
+      "comercial": "Commercial",
+      "planificacion": "Planification",
+      "certificacion": "Certification",
+      "catalogo": "Catalogue",
+      "personal": "Personnel"
     }
   }
 }
