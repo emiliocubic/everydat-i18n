@@ -3895,6 +3895,15 @@
         "hintOn": "El código propuesto se puede cambiar en el alta, y después en la ficha. Cuenta también los clientes eliminados.",
         "hintOff": "Sin patrón, el código del cliente lo escribe una persona.",
         "cifrasInvalidas": "Las cifras tienen que ir de 1 a 10."
+      },
+      "exportacion": {
+        "titulo": "Exportar clientes, contactos y emplazamientos",
+        "desc": "Quién puede exportar estos tres listados. Los demás listados los exporta cualquier interno.",
+        "cualquier_interno": "Cualquier interno",
+        "autorizados": "Solo personas autorizadas",
+        "hint_cualquier_interno": "Todo usuario interno exporta estas tres listas; un colaborador, nunca.",
+        "hint_autorizados": "Las exportan el superadmin y a quien él se lo delegue, con una casilla en la ficha de la persona; un colaborador, nunca.",
+        "registro": "Cada exportación de estas tres listas queda en la auditoría. No protege contra fugas: quien ve una lista puede copiarla."
       }
     },
     "caracterizacion": {
@@ -6505,7 +6514,8 @@
       "login_failed_segundo_factor": "Acceso fallido (código de verificación)",
       "segundo_factor_activado": "Verificación en dos pasos activada",
       "segundo_factor_desactivado": "Verificación en dos pasos desactivada",
-      "segundo_factor_codigos": "Códigos de recuperación nuevos"
+      "segundo_factor_codigos": "Códigos de recuperación nuevos",
+      "exportar": "Listado exportado"
     },
     "via": "vía {{nombre}}"
   },

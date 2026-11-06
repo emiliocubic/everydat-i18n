@@ -3895,6 +3895,15 @@
         "hintOn": "The suggested code can be changed when creating the client, and later on its record. Deleted clients count too.",
         "hintOff": "Without a pattern, the client code is typed in by hand.",
         "cifrasInvalidas": "Digits must be between 1 and 10."
+      },
+      "exportacion": {
+        "titulo": "Export clients, contacts and locations",
+        "desc": "Who can export these three lists. Any internal user can export the other lists.",
+        "cualquier_interno": "Any internal user",
+        "autorizados": "Authorised people only",
+        "hint_cualquier_interno": "Every internal user can export these three lists; a collaborator, never.",
+        "hint_autorizados": "The superadmin and whoever they delegate it to, with a checkbox on the person's record, can export them; a collaborator, never.",
+        "registro": "Every export of these three lists is recorded in the audit log. It does not prevent leaks: anyone who can see a list can copy it."
       }
     },
     "caracterizacion": {
@@ -6505,7 +6514,8 @@
       "login_failed_segundo_factor": "Failed sign-in (verification code)",
       "segundo_factor_activado": "Two-step verification turned on",
       "segundo_factor_desactivado": "Two-step verification turned off",
-      "segundo_factor_codigos": "New recovery codes"
+      "segundo_factor_codigos": "New recovery codes",
+      "exportar": "List exported"
     },
     "via": "via {{nombre}}"
   },

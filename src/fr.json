@@ -3740,6 +3740,15 @@
         "hintOn": "Le code proposé peut être modifié à la création, puis dans la fiche. Les clients supprimés comptent aussi.",
         "hintOff": "Sans modèle, le code client est saisi à la main.",
         "cifrasInvalidas": "Le nombre de chiffres doit être compris entre 1 et 10."
+      },
+      "exportacion": {
+        "titulo": "Exporter clients, contacts et sites",
+        "desc": "Qui peut exporter ces trois listes. Tout utilisateur interne peut exporter les autres listes.",
+        "cualquier_interno": "Tout utilisateur interne",
+        "autorizados": "Personnes autorisées uniquement",
+        "hint_cualquier_interno": "Tout utilisateur interne peut exporter ces trois listes ; un collaborateur, jamais.",
+        "hint_autorizados": "Le superadmin et les personnes à qui il le délègue, avec une case sur leur fiche, peuvent les exporter ; un collaborateur, jamais.",
+        "registro": "Chaque export de ces trois listes est consigné dans l'audit. Cela n'empêche pas les fuites : qui voit une liste peut la copier."
       }
     },
     "caracterizacion": {
@@ -6216,7 +6225,8 @@
       "login_failed_segundo_factor": "Échec de connexion (code de vérification)",
       "segundo_factor_activado": "Validation en deux étapes activée",
       "segundo_factor_desactivado": "Validation en deux étapes désactivée",
-      "segundo_factor_codigos": "Nouveaux codes de récupération"
+      "segundo_factor_codigos": "Nouveaux codes de récupération",
+      "exportar": "Liste exportée"
     },
     "via": "via {{nombre}}"
   },
