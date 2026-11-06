@@ -2814,7 +2814,8 @@
           "textoSinQuien": "Created by someone without the Catalogue capability. It can be used now; validating it approves it together with its manufacturer and its new references.",
           "validar": "Validate",
           "validado": "Model validated",
-          "referenciaChip": "Pending"
+          "referenciaChip": "Pending",
+          "textoImportado": "Imported from the repository by someone without the Catalogue capability. It can be used already; check that the type is correct and validate it."
         }
       },
       "estructura": {
@@ -3912,7 +3913,7 @@
     },
     "pendientes": {
       "banda": "Pending validation",
-      "intro": "What someone without the Catalogue capability has created. It is in use from the start; here it is accepted, corrected, merged with what already existed or deleted.",
+      "intro": "What someone without the Catalogue capability has created or imported. It is in use from the start; here it is accepted, corrected, merged with what already existed or deleted.",
       "vacio": "Nothing pending validation.",
       "modelos": "Models",
       "referencias": "Loose references",
@@ -3937,7 +3938,12 @@
       "fusionado": "Merged into “{{nombre}}”",
       "confirmBorrar": "Delete “{{nombre}}”? It has no elements behind.",
       "confirmFusionar": "“{{de}}” will disappear and its elements will move to “{{a}}”. Continue?",
-      "referenciaDe": "Reference of {{modelo}}"
+      "referenciaDe": "Reference of {{modelo}}",
+      "importado": "imported from the repository",
+      "importadoPor": "Imported by {{quien}} on {{fecha}}",
+      "compruebaTipo": "The data comes from the manufacturer; what the importer chose is the type:",
+      "cambiarYValidar": "Change the type and validate",
+      "tipoCambiado": "Type changed and validated"
     },
     "ia": {
       "banda": "Artificial intelligence",

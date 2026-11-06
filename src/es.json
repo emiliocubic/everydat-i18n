@@ -2814,7 +2814,8 @@
           "textoSinQuien": "Lo dio de alta alguien sin la capacidad Catálogo. Se puede usar ya; validarlo lo da por bueno junto con su fabricante y sus referencias nuevas.",
           "validar": "Validar",
           "validado": "Modelo validado",
-          "referenciaChip": "Pendiente"
+          "referenciaChip": "Pendiente",
+          "textoImportado": "Lo importó del repositorio alguien sin la capacidad Catálogo. Se puede usar ya; comprueba que el tipo es el correcto y valídalo."
         }
       },
       "estructura": {
@@ -3912,7 +3913,7 @@
     },
     "pendientes": {
       "banda": "Pendientes de validar",
-      "intro": "Lo que dio de alta alguien sin la capacidad Catálogo. Se usa desde el primer momento; aquí se acepta, se corrige, se fusiona con lo que ya existía o se borra.",
+      "intro": "Lo que dio de alta o importó alguien sin la capacidad Catálogo. Se usa desde el primer momento; aquí se acepta, se corrige, se fusiona con lo que ya existía o se borra.",
       "vacio": "No hay nada pendiente de validar.",
       "modelos": "Modelos",
       "referencias": "Referencias sueltas",
@@ -3937,7 +3938,12 @@
       "fusionado": "Fusionado en «{{nombre}}»",
       "confirmBorrar": "¿Borrar «{{nombre}}»? No tiene elementos detrás.",
       "confirmFusionar": "«{{de}}» desaparecerá y su parque pasará a «{{a}}». ¿Seguir?",
-      "referenciaDe": "Referencia de {{modelo}}"
+      "referenciaDe": "Referencia de {{modelo}}",
+      "importado": "importado del repositorio",
+      "importadoPor": "Lo importó {{quien}} el {{fecha}}",
+      "compruebaTipo": "Los datos son del fabricante; lo que eligió quien lo importó es el tipo:",
+      "cambiarYValidar": "Cambiar el tipo y validar",
+      "tipoCambiado": "Tipo cambiado y validado"
     },
     "ia": {
       "banda": "Inteligencia artificial",

@@ -2670,7 +2670,8 @@
           "textoSinQuien": "Créé par quelqu’un sans la capacité Catalogue. Utilisable dès maintenant ; le valider l’approuve avec son fabricant et ses nouvelles références.",
           "validar": "Valider",
           "validado": "Modèle validé",
-          "referenciaChip": "En attente"
+          "referenciaChip": "En attente",
+          "textoImportado": "Importé du référentiel par quelqu’un sans la capacité Catalogue. Il peut déjà être utilisé ; vérifiez que le type est correct et validez-le."
         }
       },
       "estructura": {
@@ -3757,7 +3758,7 @@
     },
     "pendientes": {
       "banda": "En attente de validation",
-      "intro": "Ce qu’a créé quelqu’un sans la capacité Catalogue. C’est utilisé dès le début ; ici on l’accepte, le corrige, le fusionne avec l’existant ou le supprime.",
+      "intro": "Ce qu’a créé ou importé quelqu’un sans la capacité Catalogue. C’est utilisé dès le début ; ici on l’accepte, le corrige, le fusionne avec l’existant ou le supprime.",
       "vacio": "Rien en attente de validation.",
       "modelos": "Modèles",
       "referencias": "Références isolées",
@@ -3782,7 +3783,12 @@
       "fusionado": "Fusionné dans « {{nombre}} »",
       "confirmBorrar": "Supprimer « {{nombre}} » ? Aucun élément n'en dépend.",
       "confirmFusionar": "« {{de}} » disparaîtra et ses éléments passeront à « {{a}} ». Continuer ?",
-      "referenciaDe": "Référence de {{modelo}}"
+      "referenciaDe": "Référence de {{modelo}}",
+      "importado": "importé du référentiel",
+      "importadoPor": "Importé par {{quien}} le {{fecha}}",
+      "compruebaTipo": "Les données viennent du fabricant ; ce qu’a choisi la personne qui l’a importé, c’est le type :",
+      "cambiarYValidar": "Changer le type et valider",
+      "tipoCambiado": "Type changé et validé"
     },
     "ia": {
       "banda": "Intelligence artificielle",
