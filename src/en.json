@@ -1587,6 +1587,7 @@
         "conceder": "granted",
         "revocar": "revoked",
         "reservado": "support only",
+        "sinImportes": "without viewing amounts no proposals can be made: a proposal is mostly prices",
         "modulos": {
           "usuarios": "Users and teams",
           "clientes": "Clients and contacts",
@@ -1818,7 +1819,7 @@
         "partes": "Make, issue and cancel work reports for the projects within reach, and collect the customer’s signature"
       },
       "propuestas": {
-        "manage": "View and make a project’s proposal, with its amounts and probability"
+        "manage": "Make proposals: create, change, accept or discard them"
       },
       "importes": {
         "view": "View amounts, probability, rates and the customer’s discount"
@@ -5215,7 +5216,7 @@
       "proyectos": "Projects",
       "sinProyectosAbierta": "They are created when the proposal is accepted: one per site in scope.",
       "sinProyectos": "The proposal did not create any project.",
-      "sinPermiso": "Proposals can only be seen with the permission to make proposals, from the Sales capability.",
+      "sinPermiso": "Proposals can only be opened with the permission to view amounts, from the Sales capability.",
       "sinDocumento": "The proposal has no document yet: it is the folder for notes and probability. When it is time to quote, compose it here or upload an external one.",
       "sinGuardar": "The inspection block comes preloaded with the proposal scope. Until you save, the proposal still has no document.",
       "sinAlcance": "The proposal does not cover any site",

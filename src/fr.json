@@ -1462,6 +1462,7 @@
         "conceder": "accordé",
         "revocar": "retiré",
         "reservado": "support uniquement",
+        "sinImportes": "sans voir les montants, pas de propositions : une proposition, c’est surtout des prix",
         "modulos": {
           "usuarios": "Utilisateurs et équipes",
           "clientes": "Clients et contacts",
@@ -1693,7 +1694,7 @@
         "partes": "Faire, émettre et annuler des bons de travail des projets accessibles, et recueillir la signature du client"
       },
       "propuestas": {
-        "manage": "Voir et faire la proposition d’un projet, avec ses montants et sa probabilité"
+        "manage": "Faire des propositions : les créer, les modifier, les accepter ou les écarter"
       },
       "importes": {
         "view": "Voir les montants, la probabilité, les tarifs et la remise du client"
@@ -4923,7 +4924,7 @@
       "proyectos": "Projets",
       "sinProyectosAbierta": "Ils sont créés à l’acceptation de la proposition : un par site du périmètre.",
       "sinProyectos": "La proposition n’a créé aucun projet.",
-      "sinPermiso": "Les propositions ne se voient qu’avec le droit de faire des propositions, de la capacité Commercial.",
+      "sinPermiso": "Les propositions ne s’ouvrent qu’avec le droit de voir les montants, de la capacité Commercial.",
       "sinDocumento": "La proposition n’a pas encore de document : c’est le dossier des notes et de la probabilité. Le moment venu, composez le devis ici ou chargez celui fait à l’extérieur.",
       "sinGuardar": "Le bloc de vérification est prérempli avec le périmètre de la proposition. Tant que vous n’enregistrez pas, la proposition reste sans document.",
       "sinAlcance": "La proposition ne couvre aucun site",

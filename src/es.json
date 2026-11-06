@@ -1458,6 +1458,7 @@
         "conceder": "concedido",
         "revocar": "revocado",
         "reservado": "solo soporte",
+        "sinImportes": "sin ver importes no se hacen propuestas: una propuesta es sobre todo precios",
         "modulos": {
           "usuarios": "Usuarios y equipos",
           "clientes": "Clientes y contactos",
@@ -1689,7 +1690,7 @@
         "partes": "Hacer, emitir y anular partes de trabajo de los proyectos que alcanza, y recoger la firma del cliente"
       },
       "propuestas": {
-        "manage": "Ver y hacer la propuesta de un proyecto, con sus importes y su probabilidad"
+        "manage": "Hacer propuestas: crearlas, cambiarlas, aceptarlas o descartarlas"
       },
       "importes": {
         "view": "Ver importes, probabilidad, tarifas y descuento del cliente"
@@ -5215,7 +5216,7 @@
       "proyectos": "Proyectos",
       "sinProyectosAbierta": "Se crean al aceptar la propuesta: uno por emplazamiento del alcance.",
       "sinProyectos": "La propuesta no creó ningún proyecto.",
-      "sinPermiso": "Las propuestas solo se ven con el permiso de hacer propuestas, de la capacidad Comercial.",
+      "sinPermiso": "Las propuestas solo se abren con el permiso de ver importes, de la capacidad Comercial.",
       "sinDocumento": "La propuesta aún no tiene documento: es la carpeta de las notas y la probabilidad. Cuando toque presupuestar, compónlo aquí o carga el de fuera.",
       "sinGuardar": "El bloque de revisión viene precargado con el alcance de la propuesta. Hasta que guardes, la propuesta sigue sin documento.",
       "sinAlcance": "La propuesta no abarca ningún emplazamiento",
