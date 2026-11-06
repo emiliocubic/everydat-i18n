@@ -4322,7 +4322,9 @@
       "checklists": "ver los checklists",
       "tipos": "ver los tipos de equipo",
       "catalogoVer": "ver el catálogo de fabricantes y modelos",
-      "apiCapacidades": "No tienes permiso para esta acción: {{accion}}. Lo dan las capacidades {{capacidades}}."
+      "apiCapacidades": "No tienes permiso para esta acción: {{accion}}. Lo dan las capacidades {{capacidades}}.",
+      "nexo": "o",
+      "nexoAnteO": "u"
     }
   },
   "proyectos": {

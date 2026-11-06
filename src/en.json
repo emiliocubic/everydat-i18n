@@ -4322,7 +4322,9 @@
       "checklists": "view the checklists",
       "tipos": "view the equipment types",
       "catalogoVer": "view the manufacturers and models catalogue",
-      "apiCapacidades": "You do not have permission for this action: {{accion}}. It comes with the {{capacidades}} capabilities."
+      "apiCapacidades": "You do not have permission for this action: {{accion}}. It comes with the {{capacidades}} capabilities.",
+      "nexo": "or",
+      "nexoAnteO": "or"
     }
   },
   "proyectos": {

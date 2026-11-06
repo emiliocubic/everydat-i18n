@@ -4045,7 +4045,9 @@
       "checklists": "voir les checklists",
       "tipos": "voir les types d'équipement",
       "catalogoVer": "voir le catalogue des fabricants et des modèles",
-      "apiCapacidades": "Vous n’avez pas la permission pour cette action : {{accion}}. Elle vient avec les capacités {{capacidades}}."
+      "apiCapacidades": "Vous n’avez pas la permission pour cette action : {{accion}}. Elle vient avec les capacités {{capacidades}}.",
+      "nexo": "ou",
+      "nexoAnteO": "ou"
     }
   },
   "proyectos": {
