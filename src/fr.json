@@ -3758,7 +3758,9 @@
         "ambos": "Internes et externes",
         "internos": "Internes uniquement : composés ici",
         "externos": "Externes uniquement : chargés tout faits",
-        "hint": "L'option désactivée n'est pas proposée dans la fiche de la proposition. Ce qui a déjà été commencé ainsi reste visible."
+        "hint": "L'option désactivée n'est pas proposée dans la fiche de la proposition. Ce qui a déjà été commencé ainsi reste visible.",
+        "ninguno": "Ne pas utiliser de devis",
+        "hintNinguno": "Sans devis il n'y a pas de propositions : À venir est une seule liste de dates et de projets à lancer. Impossible de le choisir tant qu'une proposition est ouverte."
       },
       "partes": {
         "titulo": "Bons de travail",
@@ -5259,6 +5261,19 @@
         "ninguno": "Aucun site (une fourniture, un bâtiment pas encore enregistré…)",
         "tipos": "Type d'opportunité"
       }
+    },
+    "futuros": {
+      "hint": "Dates de vérification prévues dans les {{ventana}} à venir, ou échues depuis moins de {{gracia}}, sans projet qui les couvre, et les projets à lancer. Cliquez sur une date pour en faire un projet.",
+      "vacio": "Rien à faire dans cette fenêtre",
+      "cols": {
+        "tipos": "Type de projet"
+      },
+      "cancelarPregunta": "Ce projet est annulé. Pourquoi ? Le motif se lit ensuite dans Perdus.",
+      "cancelarTitle": "Annuler le projet : il ne se fera pas",
+      "crear": "Créer le projet à venir",
+      "creados": "{{count}} projet à venir créé.",
+      "creados_other": "{{count}} projets à venir créés.",
+      "sub": "Travail qui se fera, sans proposition préalable"
     }
   },
   "avisoDiagnostico": {

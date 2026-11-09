@@ -3913,7 +3913,9 @@
         "ambos": "Internos y externos",
         "internos": "Solo internos: se componen aquí",
         "externos": "Solo externos: se cargan hechos de fuera",
-        "hint": "La vía apagada no se ofrece en la ficha de la propuesta. Lo ya empezado por esa vía se sigue viendo."
+        "hint": "La vía apagada no se ofrece en la ficha de la propuesta. Lo ya empezado por esa vía se sigue viendo.",
+        "ninguno": "No usar presupuestos",
+        "hintNinguno": "Sin presupuestos no hay propuestas: Futuros es una sola lista de fechas y proyectos por arrancar. No se puede elegir mientras quede alguna propuesta abierta."
       },
       "partes": {
         "titulo": "Partes de trabajo",
@@ -5551,6 +5553,19 @@
         "ninguno": "Ningún emplazamiento (un suministro, una nave aún sin dar de alta…)",
         "tipos": "Tipo de oportunidad"
       }
+    },
+    "futuros": {
+      "hint": "Fechas de revisión previstas para los próximos {{ventana}}, o que vencieron hace menos de {{gracia}}, sin proyecto que las cubra, y los proyectos por arrancar. Pulsa una fecha para convertirla en proyecto.",
+      "vacio": "Nada por hacer en esta ventana",
+      "cols": {
+        "tipos": "Tipo de proyecto"
+      },
+      "cancelarPregunta": "Se cancela este proyecto. ¿Por qué? El motivo se lee luego en Perdidos.",
+      "cancelarTitle": "Cancelar el proyecto: no se hará",
+      "crear": "Crear proyecto futuro",
+      "creados": "Se ha creado {{count}} proyecto futuro.",
+      "creados_other": "Se han creado {{count}} proyectos futuros.",
+      "sub": "Trabajo que se hará, sin propuesta previa"
     }
   },
   "avisoDiagnostico": {

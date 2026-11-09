@@ -3913,7 +3913,9 @@
         "ambos": "Internal and external",
         "internos": "Internal only: built here",
         "externos": "External only: uploaded ready-made",
-        "hint": "The disabled option is not offered on the proposal. Anything already started that way is still shown."
+        "hint": "The disabled option is not offered on the proposal. Anything already started that way is still shown.",
+        "ninguno": "Do not use quotes",
+        "hintNinguno": "Without quotes there are no proposals: Upcoming is a single list of dates and projects not yet started. It cannot be chosen while any proposal is open."
       },
       "partes": {
         "titulo": "Work reports",
@@ -5551,6 +5553,19 @@
         "ninguno": "No site (a supply, a building not yet registered…)",
         "tipos": "Type of opportunity"
       }
+    },
+    "futuros": {
+      "hint": "Inspection dates due in the next {{ventana}}, or overdue by less than {{gracia}}, with no project covering them, and the projects not yet started. Click a date to turn it into a project.",
+      "vacio": "Nothing to do in this window",
+      "cols": {
+        "tipos": "Project type"
+      },
+      "cancelarPregunta": "This project is cancelled. Why? The reason is shown later in Lost.",
+      "cancelarTitle": "Cancel the project: it will not be done",
+      "crear": "Create upcoming project",
+      "creados": "{{count}} upcoming project created.",
+      "creados_other": "{{count}} upcoming projects created.",
+      "sub": "Work that will be done, with no proposal first"
     }
   },
   "avisoDiagnostico": {
