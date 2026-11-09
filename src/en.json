@@ -3704,10 +3704,10 @@
       "grupoProyectos": "Projects",
       "certificacion": {
         "titulo": "Certification",
-        "desc": "Phase in which a senior technician validates field inspections before the project is closed. Native and free.",
-        "usar": "Use the certification phase",
-        "hintOn": "Active: no project is closed without going through it.",
-        "hintOff": "Off: execution goes straight to finished."
+        "desc": "A senior technician validates field work during the project's execution, item by item, before it is closed. It is built in and free of charge.",
+        "usar": "Use certification",
+        "hintOn": "On: validated work cannot be edited and no project is closed until all work done is validated.",
+        "hintOff": "Off: nothing is validated and the project is closed from execution without requiring anything."
       },
       "planificador": {
         "titulo": "Planner",
@@ -3914,6 +3914,13 @@
         "internos": "Internal only: built here",
         "externos": "External only: uploaded ready-made",
         "hint": "The disabled option is not offered on the proposal. Anything already started that way is still shown."
+      },
+      "partes": {
+        "titulo": "Work reports",
+        "desc": "The work done in a project, grouped into reports for the customer's approval.",
+        "usar": "Use work reports",
+        "hintOn": "On: the project's execution shows its work reports band.",
+        "hintOff": "Off: nothing about work reports is shown and none can be created. Existing ones stay as they were."
       }
     },
     "caracterizacion": {
@@ -4419,7 +4426,11 @@
       "arranque": "Start",
       "dias": "Days",
       "certificacion": "Certification",
-      "proxima": "Next"
+      "proxima": "Next",
+      "tipoProyecto": "Project type",
+      "actuaciones": "Actions",
+      "inicio": "Start",
+      "fin": "End"
     },
     "campos": {
       "cliente": "Client",
@@ -4495,7 +4506,7 @@
       "seguimiento": "Follow-up",
       "propuestas": "Quotes",
       "aria": "Project sections",
-      "datos": "Project data",
+      "datos": "Details and planning",
       "propuesta": "Proposal data",
       "planificacion": "Scheduling",
       "ejecucion": "Execution",
@@ -4567,7 +4578,12 @@
       "quitarDocConfirm": "Remove “{{nombre}}” from the project?",
       "nRecibidos_one": "{{count}} item received at the office",
       "nRecibidos_other": "{{count}} items received at the office",
-      "soloLecturaCancelado": "This status leaves the record read-only. A discarded project cannot be reactivated, so that the history is kept: not only of what clients accepted but also of what they turned down. If the work is recovered some time after it was discarded, create a new opportunity or project from the Opportunities or Projects in progress view"
+      "soloLecturaCancelado": "This status leaves the record read-only. A discarded project cannot be reactivated, so that the history is kept: not only of what clients accepted but also of what they turned down. If the work is recovered some time after it was discarded, create a new opportunity or project from the Opportunities or Projects in progress view",
+      "datosProyecto": "Project details",
+      "proyecto": "Project",
+      "verPropuesta": "View proposal",
+      "nActuaciones_one": "{{count}} action",
+      "nActuaciones_other": "{{count}} actions"
     },
     "planificacion": {
       "ventana": "Execution window",
@@ -4645,7 +4661,13 @@
         "cancelado": "Project cancelled:"
       },
       "finSinInicio": "Set the planned start date first",
-      "nadieLaTiene": "nobody holds it today"
+      "nadieLaTiene": "nobody holds it today",
+      "titulo": "Planning",
+      "pasoEjecucion": "Start of work",
+      "pasoManual": "Manual",
+      "pasoAuto": "Automatic on the start date",
+      "administradoresHint": "There can be several: the first one ticked is the lead, who answers for the project.",
+      "principal": "Lead"
     },
     "ejecucion": {
       "kpiRevisiones": "Inspections",
@@ -4705,7 +4727,21 @@
       "instalado": "Installed",
       "abrirInstalacion": "Open the installation",
       "registrarInstalacion": "Record the installation",
-      "bandaActuaciones": "Work done"
+      "bandaActuaciones": "Work done",
+      "colImagenes": "Images",
+      "verImagenes_one": "View {{count}} image",
+      "verImagenes_other": "View {{count}} images",
+      "sinImagenes": "No images",
+      "ampliar": "Enlarge",
+      "verValidada": "Validated: opens read-only",
+      "abrirReparacion": "Open the repair",
+      "kpiEvolucion": "Progress",
+      "actuaciones": "actions",
+      "previsto": "Expected by today: {{pct}} %",
+      "kpiValidacion": "Validation",
+      "deEjecutado": "of what is done",
+      "delTotal": "of the total",
+      "validadasDe": "{{n}} validated of {{total}} done"
     },
     "certificacion": {
       "progreso": "Certification",
@@ -4796,7 +4832,9 @@
       "editarRevisionTitle": "Open the inspection in the editor to amend it",
       "noRevisado": "Not inspected",
       "verComentarios": "Open the inspection with its comments expanded",
-      "crearInforme": "Create project report"
+      "crearInforme": "Create project report",
+      "colCertificacion": "Certification",
+      "validarEquipo": "Validates everything this item has had done for the project"
     },
     "vistas": {
       "futuros": "Upcoming",
@@ -5086,8 +5124,10 @@
       "perdidos": "Lost amount"
     },
     "arranque": {
-      "auto": "Automatic",
-      "manual": "Manual"
+      "auto": "Auto",
+      "manual": "Manual",
+      "vencido_one": "The planned start date passed {{count}} day ago",
+      "vencido_other": "The planned start date passed {{count}} days ago"
     },
     "sinVentana": "no window",
     "enMarcha": "Running",
@@ -5105,7 +5145,8 @@
         "inicio": "Start",
         "finCampo": "Fieldwork end",
         "motivo": "Reason",
-        "fechas": "Dates"
+        "fechas": "Dates",
+        "detalleMotivo": "Reason details"
       },
       "clase": {
         "fecha": "Date",
@@ -5118,13 +5159,13 @@
         "proyecto": "Current approved project"
       },
       "pestana": {
-        "aprobado": "Approved",
+        "aprobado": "Planning",
         "en_ejecucion": "In progress",
         "en_certificacion": "Certification"
       },
       "hint": {
-        "aprobado": "Committed work being planned: the bar shows whether it already has dates and an owner. The project will start on its own when the start date arrives, unless the start date is still approximate.",
-        "en_ejecucion": "On site: the dates, actual progress and the team. Halted projects stay here, with the red pause in their status.",
+        "aprobado": "Committed work being planned: the two squares show whether it already has dates and staff. With automatic start, the project goes into progress on its own when the start date arrives; with manual start, someone has to start it.",
+        "en_ejecucion": "Projects currently under way, showing their actual and expected progress. Includes temporarily halted projects.",
         "en_certificacion": "Fieldwork finished, pending validation of what was done."
       },
       "enCursoHint": "Nothing in this phase with these filters.",
@@ -5146,7 +5187,7 @@
       "orientativasTitle": "Approximate dates: it does not start on its own on the start date",
       "plan": {
         "vacia": "Not planned",
-        "faltaAdmin": "No owner yet",
+        "faltaAdmin": "Staff missing",
         "faltanFechas": "No dates yet",
         "completa": "Planned"
       },
@@ -5227,7 +5268,7 @@
     },
     "accion": {
       "arrancar": "Start now",
-      "parar": "Stop",
+      "parar": "Halt",
       "reanudar": "Resume",
       "pasar_certificacion": "Move to certification",
       "cerrar": "Close project",
@@ -5240,7 +5281,8 @@
       },
       "confirmar": {
         "pasar_certificacion": "Field work is considered finished and the project moves to certification, even if some equipment has not been inspected.",
-        "cerrar": "The project will be closed. If it is an inspection project, what was inspected gets its next inspection date in the tree."
+        "cerrar": "The project will be closed. If it is an inspection project, what was inspected gets its next inspection date in the tree.",
+        "devolver": "The project goes back to planning with manual start: it will not go into progress until someone starts it."
       },
       "hecho": {
         "arrancar": "The project starts today: it moves to “In progress”.",
@@ -5249,12 +5291,14 @@
         "pasar_certificacion": "The project moves to “In certification”.",
         "cerrar": "Project closed.",
         "cancelar": "Project cancelled.",
-        "reabrir": "The project is open again."
+        "reabrir": "The project is open again.",
+        "devolver": "The project is back in «Planning»."
       },
       "pista": {
         "pasar_certificacion": "Field work is finished",
         "cerrar": "The work is finished"
-      }
+      },
+      "devolver": "Back to planning"
     },
     "ficha": {
       "paralizado": "Stopped · {{count}} day",
@@ -5419,7 +5463,7 @@
       "observaciones": "Remarks",
       "observacionesPh": "Incidents, conditions of the job…",
       "sinObservaciones": "No remarks",
-      "firmaEnApp": "The customer's signature of approval is collected in the APP once the report is issued.",
+      "firmaEnApp": "The customer's signature of approval is collected from the customer once the report is issued.",
       "firmaEnAppCorta": "Signature captured in the APP",
       "pendienteFirma": "Pending. The report is already available in the APP to collect the customer's signature.",
       "guardarBorrador": "Save draft",

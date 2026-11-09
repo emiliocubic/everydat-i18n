@@ -3704,10 +3704,10 @@
       "grupoProyectos": "Proyectos",
       "certificacion": {
         "titulo": "Certificación",
-        "desc": "Fase en la que un técnico de rango superior valida las revisiones de campo antes de cerrar el proyecto. Es nativa y no tiene coste.",
-        "usar": "Usar la fase de certificación",
-        "hintOn": "Activa: ningún proyecto se cierra sin pasar por ella.",
-        "hintOff": "Desactivada: la ejecución pasa directa a finalizado."
+        "desc": "Un técnico de rango superior valida en la ejecución del proyecto, equipo a equipo, lo hecho en campo antes de cerrarlo. Es nativa y no tiene coste.",
+        "usar": "Usar la certificación",
+        "hintOn": "Activa: lo validado no se edita y ningún proyecto se cierra sin todo lo hecho validado.",
+        "hintOff": "Desactivada: no se valida nada y el proyecto se cierra desde la ejecución sin exigir nada."
       },
       "planificador": {
         "titulo": "Planificador",
@@ -3914,6 +3914,13 @@
         "internos": "Solo internos: se componen aquí",
         "externos": "Solo externos: se cargan hechos de fuera",
         "hint": "La vía apagada no se ofrece en la ficha de la propuesta. Lo ya empezado por esa vía se sigue viendo."
+      },
+      "partes": {
+        "titulo": "Partes de trabajo",
+        "desc": "Lo hecho en un proyecto, agrupado en partes para que el cliente dé su conformidad.",
+        "usar": "Usar partes de trabajo",
+        "hintOn": "Activados: la ejecución del proyecto lleva su banda de partes.",
+        "hintOff": "Desactivados: no se enseña nada de partes y no se pueden crear. Los que ya hubiera se quedan como estaban."
       }
     },
     "caracterizacion": {
@@ -4419,7 +4426,11 @@
       "arranque": "Arranque",
       "dias": "Días",
       "certificacion": "Certificación",
-      "proxima": "Próxima"
+      "proxima": "Próxima",
+      "tipoProyecto": "Tipo proyecto",
+      "actuaciones": "Actuaciones",
+      "inicio": "Inicio",
+      "fin": "Fin"
     },
     "campos": {
       "cliente": "Cliente",
@@ -4495,7 +4506,7 @@
       "seguimiento": "Seguimiento",
       "propuestas": "Propuestas",
       "aria": "Secciones del proyecto",
-      "datos": "Datos proyecto",
+      "datos": "Datos y planificación",
       "propuesta": "Datos propuesta",
       "planificacion": "Planificación",
       "ejecucion": "Ejecución",
@@ -4567,7 +4578,12 @@
       "quitarDocConfirm": "¿Quitar «{{nombre}}» del proyecto?",
       "nRecibidos_one": "{{count}} equipo recibido en oficina",
       "nRecibidos_other": "{{count}} equipos recibidos en oficina",
-      "soloLecturaCancelado": "Este estado deja la ficha en solo lectura, el proyecto descartado no puede reactivarse para no perder la traza histórica, no sólo de lo aceptado sino también de lo rechazado por los clientes. Si se ha rescatado el trabajo un tiempo después del descarte, es necesario crear una nueva oportunidad o proyecto desde la vista de Oportunidades o de Proyectos en Curso"
+      "soloLecturaCancelado": "Este estado deja la ficha en solo lectura, el proyecto descartado no puede reactivarse para no perder la traza histórica, no sólo de lo aceptado sino también de lo rechazado por los clientes. Si se ha rescatado el trabajo un tiempo después del descarte, es necesario crear una nueva oportunidad o proyecto desde la vista de Oportunidades o de Proyectos en Curso",
+      "datosProyecto": "Datos del proyecto",
+      "proyecto": "Proyecto",
+      "verPropuesta": "Ver propuesta",
+      "nActuaciones_one": "{{count}} actuación",
+      "nActuaciones_other": "{{count}} actuaciones"
     },
     "planificacion": {
       "ventana": "Ventana de ejecución",
@@ -4645,7 +4661,13 @@
         "cancelado": "Proyecto cancelado:"
       },
       "finSinInicio": "Pon antes la fecha de inicio prevista",
-      "nadieLaTiene": "nadie la tiene hoy"
+      "nadieLaTiene": "nadie la tiene hoy",
+      "titulo": "Planificación",
+      "pasoEjecucion": "Paso a ejecución",
+      "pasoManual": "Manual",
+      "pasoAuto": "Automático al llegar la fecha",
+      "administradoresHint": "Puede haber varios: el primero que se marca es el principal, el que responde del proyecto.",
+      "principal": "Principal"
     },
     "ejecucion": {
       "kpiRevisiones": "Revisiones",
@@ -4705,7 +4727,21 @@
       "instalado": "Instalado",
       "abrirInstalacion": "Abrir la instalación",
       "registrarInstalacion": "Registrar la instalación",
-      "bandaActuaciones": "Actuaciones"
+      "bandaActuaciones": "Actuaciones",
+      "colImagenes": "Imágenes",
+      "verImagenes_one": "Ver {{count}} imagen",
+      "verImagenes_other": "Ver {{count}} imágenes",
+      "sinImagenes": "Sin imágenes",
+      "ampliar": "Ampliar",
+      "verValidada": "Validada: se abre en lectura",
+      "abrirReparacion": "Abrir la reparación",
+      "kpiEvolucion": "Evolución",
+      "actuaciones": "actuaciones",
+      "previsto": "Previsto a hoy: {{pct}} %",
+      "kpiValidacion": "Validación",
+      "deEjecutado": "de lo ejecutado",
+      "delTotal": "del total",
+      "validadasDe": "{{n}} validadas de {{total}} hechas"
     },
     "certificacion": {
       "progreso": "Certificación",
@@ -4796,7 +4832,9 @@
       "editarRevisionTitle": "Abrir la revisión en el editor para enmendarla",
       "noRevisado": "No revisado",
       "verComentarios": "Abrir la revisión con los comentarios desplegados",
-      "crearInforme": "Crear informe del proyecto"
+      "crearInforme": "Crear informe del proyecto",
+      "colCertificacion": "Certificación",
+      "validarEquipo": "Valida todo lo que este equipo ha hecho para el proyecto"
     },
     "vistas": {
       "futuros": "Futuros",
@@ -5086,8 +5124,10 @@
       "perdidos": "Importe perdido"
     },
     "arranque": {
-      "auto": "Automático",
-      "manual": "A mano"
+      "auto": "Auto",
+      "manual": "Manual",
+      "vencido_one": "La fecha de inicio prevista pasó hace {{count}} día",
+      "vencido_other": "La fecha de inicio prevista pasó hace {{count}} días"
     },
     "sinVentana": "sin ventana",
     "enMarcha": "En marcha",
@@ -5105,7 +5145,8 @@
         "inicio": "Inicio",
         "finCampo": "Fin de campo",
         "motivo": "Motivo",
-        "fechas": "Fechas"
+        "fechas": "Fechas",
+        "detalleMotivo": "Detalle motivo"
       },
       "clase": {
         "fecha": "Fecha",
@@ -5118,13 +5159,13 @@
         "proyecto": "Proyecto aprobado actual"
       },
       "pestana": {
-        "aprobado": "Aprobados",
-        "en_ejecucion": "En ejecución",
+        "aprobado": "Planificando",
+        "en_ejecucion": "Ejecutando",
         "en_certificacion": "Certificación"
       },
       "hint": {
-        "aprobado": "Trabajo comprometido que se planifica: la barra dice si ya tiene fechas y administrador. El proyecto arrancará por sí solo al llegar la fecha de inicio, salvo que la fecha de inicio esté todavía como orientativa.",
-        "en_ejecucion": "En obra: las fechas, el avance real y el equipo. Los paralizados siguen aquí, con la pausa roja en su estado.",
+        "aprobado": "Trabajo comprometido que se planifica: los dos cuadros dicen si ya tiene fechas y personal. Con el arranque automático, el proyecto pasa a ejecución solo al llegar la fecha de inicio; con el manual, hay que arrancarlo.",
+        "en_ejecucion": "Proyectos en marcha actualmente, con indicación de su avance real y previsto. Incluye proyectos temporalmente paralizados.",
         "en_certificacion": "Trabajo de campo terminado, pendiente de validar lo que se hizo."
       },
       "enCursoHint": "Nada en esta fase con estos filtros.",
@@ -5146,7 +5187,7 @@
       "orientativasTitle": "Fechas orientativas: no arranca solo al llegar el inicio",
       "plan": {
         "vacia": "Sin planificar",
-        "faltaAdmin": "Falta administrador",
+        "faltaAdmin": "Falta personal",
         "faltanFechas": "Faltan fechas",
         "completa": "Planificado"
       },
@@ -5227,7 +5268,7 @@
     },
     "accion": {
       "arrancar": "Arrancar ahora",
-      "parar": "Parar",
+      "parar": "Paralizar",
       "reanudar": "Reanudar",
       "pasar_certificacion": "Pasar a certificación",
       "cerrar": "Cerrar proyecto",
@@ -5240,7 +5281,8 @@
       },
       "confirmar": {
         "pasar_certificacion": "Se da por terminado el trabajo de campo y el proyecto pasa a certificación, aunque queden equipos sin revisar.",
-        "cerrar": "Se cierra el proyecto. Si es de revisión, lo revisado recibe su próxima fecha de revisión en el árbol."
+        "cerrar": "Se cierra el proyecto. Si es de revisión, lo revisado recibe su próxima fecha de revisión en el árbol.",
+        "devolver": "El proyecto vuelve a planificación con el arranque manual: no pasará a ejecución hasta que alguien lo arranque."
       },
       "hecho": {
         "arrancar": "El proyecto arranca hoy: pasa a «En ejecución».",
@@ -5249,12 +5291,14 @@
         "pasar_certificacion": "El proyecto pasa a «En certificación».",
         "cerrar": "Proyecto cerrado.",
         "cancelar": "Proyecto cancelado.",
-        "reabrir": "El proyecto vuelve a estar abierto."
+        "reabrir": "El proyecto vuelve a estar abierto.",
+        "devolver": "El proyecto vuelve a «Planificando»."
       },
       "pista": {
         "pasar_certificacion": "El trabajo de campo ha terminado",
         "cerrar": "El trabajo ha terminado"
-      }
+      },
+      "devolver": "Devolver a planificación"
     },
     "ficha": {
       "paralizado": "Paralizado · {{count}} día",
@@ -5419,7 +5463,7 @@
       "observaciones": "Observaciones",
       "observacionesPh": "Incidencias, condiciones de la intervención…",
       "sinObservaciones": "Sin observaciones",
-      "firmaEnApp": "La firma de conformidad del cliente se recoge en la APP una vez emitido el parte.",
+      "firmaEnApp": "La firma de conformidad del cliente se recoge del cliente una vez emitido el parte.",
       "firmaEnAppCorta": "Firma capturada en la APP",
       "pendienteFirma": "Pendiente. El parte ya está disponible en la APP para recoger la firma del cliente.",
       "guardarBorrador": "Guardar borrador",

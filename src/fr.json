@@ -3560,10 +3560,10 @@
       "grupoProyectos": "Projets",
       "certificacion": {
         "titulo": "Certification",
-        "desc": "Phase où un technicien de rang supérieur valide les contrôles de terrain avant la clôture du projet. Native et sans coût.",
-        "usar": "Utiliser la phase de certification",
-        "hintOn": "Active : aucun projet ne se clôture sans y passer.",
-        "hintOff": "Désactivée : l'exécution passe directement à terminé."
+        "desc": "Un technicien de rang supérieur valide pendant l'exécution du projet, équipement par équipement, le travail de terrain avant sa clôture. Elle est native et gratuite.",
+        "usar": "Utiliser la certification",
+        "hintOn": "Activée : ce qui est validé ne se modifie pas et aucun projet ne se clôt sans tout le travail validé.",
+        "hintOff": "Désactivée : rien n'est validé et le projet se clôt depuis l'exécution sans rien exiger."
       },
       "planificador": {
         "titulo": "Planificateur",
@@ -3759,6 +3759,13 @@
         "internos": "Internes uniquement : composés ici",
         "externos": "Externes uniquement : chargés tout faits",
         "hint": "L'option désactivée n'est pas proposée dans la fiche de la proposition. Ce qui a déjà été commencé ainsi reste visible."
+      },
+      "partes": {
+        "titulo": "Bons de travail",
+        "desc": "Le travail fait dans un projet, regroupé en bons pour que le client donne sa conformité.",
+        "usar": "Utiliser les bons de travail",
+        "hintOn": "Activés : l'exécution du projet affiche sa bande de bons.",
+        "hintOff": "Désactivés : rien n'est affiché sur les bons et on ne peut pas en créer. Ceux qui existent restent tels quels."
       }
     },
     "caracterizacion": {
@@ -4142,7 +4149,11 @@
       "arranque": "Démarrage",
       "dias": "Jours",
       "certificacion": "Certification",
-      "proxima": "Prochaine"
+      "proxima": "Prochaine",
+      "tipoProyecto": "Type de projet",
+      "actuaciones": "Interventions",
+      "inicio": "Début",
+      "fin": "Fin"
     },
     "campos": {
       "cliente": "Client",
@@ -4218,7 +4229,7 @@
       "seguimiento": "Suivi",
       "propuestas": "Devis",
       "aria": "Sections du projet",
-      "datos": "Données du projet",
+      "datos": "Données et planification",
       "propuesta": "Données de la proposition",
       "planificacion": "Planification",
       "ejecucion": "Exécution",
@@ -4290,7 +4301,12 @@
       "quitarDocConfirm": "Retirer « {{nombre}} » du projet ?",
       "nRecibidos_one": "{{count}} équipement reçu au bureau",
       "nRecibidos_other": "{{count}} équipements reçus au bureau",
-      "soloLecturaCancelado": "Cet état laisse la fiche en lecture seule. Un projet écarté ne peut pas être réactivé, afin de garder l'historique : non seulement ce que les clients ont accepté, mais aussi ce qu'ils ont refusé. Si le travail est récupéré quelque temps après, il faut créer une nouvelle opportunité ou un nouveau projet depuis la vue Opportunités ou Projets en cours"
+      "soloLecturaCancelado": "Cet état laisse la fiche en lecture seule. Un projet écarté ne peut pas être réactivé, afin de garder l'historique : non seulement ce que les clients ont accepté, mais aussi ce qu'ils ont refusé. Si le travail est récupéré quelque temps après, il faut créer une nouvelle opportunité ou un nouveau projet depuis la vue Opportunités ou Projets en cours",
+      "datosProyecto": "Données du projet",
+      "proyecto": "Projet",
+      "verPropuesta": "Voir la proposition",
+      "nActuaciones_one": "{{count}} intervention",
+      "nActuaciones_other": "{{count}} interventions"
     },
     "planificacion": {
       "ventana": "Fenêtre d'exécution",
@@ -4368,7 +4384,13 @@
         "cancelado": "Projet annulé :"
       },
       "finSinInicio": "Indiquez d'abord la date de début prévue",
-      "nadieLaTiene": "personne ne l'a aujourd'hui"
+      "nadieLaTiene": "personne ne l'a aujourd'hui",
+      "titulo": "Planification",
+      "pasoEjecucion": "Passage en exécution",
+      "pasoManual": "Manuel",
+      "pasoAuto": "Automatique à la date",
+      "administradoresHint": "Il peut y en avoir plusieurs : le premier coché est le principal, qui répond du projet.",
+      "principal": "Principal"
     },
     "ejecucion": {
       "kpiRevisiones": "Contrôles",
@@ -4427,7 +4449,21 @@
       "instalado": "Installé",
       "abrirInstalacion": "Ouvrir l'installation",
       "registrarInstalacion": "Enregistrer l'installation",
-      "bandaActuaciones": "Interventions"
+      "bandaActuaciones": "Interventions",
+      "colImagenes": "Images",
+      "verImagenes_one": "Voir {{count}} image",
+      "verImagenes_other": "Voir {{count}} images",
+      "sinImagenes": "Aucune image",
+      "ampliar": "Agrandir",
+      "verValidada": "Validée : s'ouvre en lecture seule",
+      "abrirReparacion": "Ouvrir la réparation",
+      "kpiEvolucion": "Évolution",
+      "actuaciones": "interventions",
+      "previsto": "Prévu à ce jour : {{pct}} %",
+      "kpiValidacion": "Validation",
+      "deEjecutado": "de l'exécuté",
+      "delTotal": "du total",
+      "validadasDe": "{{n}} validées sur {{total}} faites"
     },
     "certificacion": {
       "progreso": "Certification",
@@ -4504,7 +4540,9 @@
       "editarRevisionTitle": "Ouvrir le contrôle dans l'éditeur pour le corriger",
       "noRevisado": "Non vérifié",
       "verComentarios": "Ouvrir le contrôle avec les commentaires dépliés",
-      "crearInforme": "Créer le rapport du projet"
+      "crearInforme": "Créer le rapport du projet",
+      "colCertificacion": "Certification",
+      "validarEquipo": "Valide tout ce que cet équipement a fait pour le projet"
     },
     "vistas": {
       "futuros": "À venir",
@@ -4794,8 +4832,10 @@
       "perdidos": "Montant perdu"
     },
     "arranque": {
-      "auto": "Automatique",
-      "manual": "Manuel"
+      "auto": "Auto",
+      "manual": "Manuel",
+      "vencido_one": "La date de début prévue est passée depuis {{count}} jour",
+      "vencido_other": "La date de début prévue est passée depuis {{count}} jours"
     },
     "sinVentana": "sans fenêtre",
     "enMarcha": "En marche",
@@ -4813,7 +4853,8 @@
         "inicio": "Début",
         "finCampo": "Fin du terrain",
         "motivo": "Motif",
-        "fechas": "Dates"
+        "fechas": "Dates",
+        "detalleMotivo": "Détail du motif"
       },
       "clase": {
         "fecha": "Date",
@@ -4826,13 +4867,13 @@
         "proyecto": "Projet approuvé en cours"
       },
       "pestana": {
-        "aprobado": "Approuvés",
+        "aprobado": "En planification",
         "en_ejecucion": "En cours",
         "en_certificacion": "Certification"
       },
       "hint": {
-        "aprobado": "Travail engagé en cours de planification : la barre indique s'il a déjà des dates et un responsable. Le projet démarrera tout seul à la date de début, sauf si celle-ci est encore indicative.",
-        "en_ejecucion": "Sur le terrain : les dates, l'avancement réel et l'équipe. Les projets suspendus restent ici, avec la pause rouge dans leur état.",
+        "aprobado": "Travail engagé en cours de planification : les deux carrés indiquent s'il a déjà des dates et du personnel. Avec le démarrage automatique, le projet passe en exécution seul à la date de début ; avec le manuel, il faut le démarrer.",
+        "en_ejecucion": "Projets actuellement en marche, avec leur avancement réel et prévu. Comprend les projets temporairement suspendus.",
         "en_certificacion": "Travail de terrain terminé, en attente de validation de ce qui a été fait."
       },
       "enCursoHint": "Rien dans cette phase avec ces filtres.",
@@ -4854,7 +4895,7 @@
       "orientativasTitle": "Dates indicatives : il ne démarre pas tout seul à la date de début",
       "plan": {
         "vacia": "Non planifié",
-        "faltaAdmin": "Sans responsable",
+        "faltaAdmin": "Personnel manquant",
         "faltanFechas": "Sans dates",
         "completa": "Planifié"
       },
@@ -4935,7 +4976,7 @@
     },
     "accion": {
       "arrancar": "Démarrer maintenant",
-      "parar": "Arrêter",
+      "parar": "Suspendre",
       "reanudar": "Reprendre",
       "pasar_certificacion": "Passer en certification",
       "cerrar": "Clôturer le projet",
@@ -4948,7 +4989,8 @@
       },
       "confirmar": {
         "pasar_certificacion": "Le travail sur le terrain est considéré comme terminé et le projet passe en certification, même s’il reste des équipements non vérifiés.",
-        "cerrar": "Le projet va être clôturé. S’il s’agit d’un projet de vérification, ce qui a été vérifié reçoit sa prochaine date de vérification dans l’arborescence."
+        "cerrar": "Le projet va être clôturé. S’il s’agit d’un projet de vérification, ce qui a été vérifié reçoit sa prochaine date de vérification dans l’arborescence.",
+        "devolver": "Le projet revient à la planification avec démarrage manuel : il ne passera en exécution que lorsque quelqu'un le démarrera."
       },
       "hecho": {
         "arrancar": "Le projet démarre aujourd’hui : il passe « En exécution ».",
@@ -4957,12 +4999,14 @@
         "pasar_certificacion": "Le projet passe « En certification ».",
         "cerrar": "Projet clôturé.",
         "cancelar": "Projet annulé.",
-        "reabrir": "Le projet est de nouveau ouvert."
+        "reabrir": "Le projet est de nouveau ouvert.",
+        "devolver": "Le projet revient en « En planification »."
       },
       "pista": {
         "pasar_certificacion": "Le travail sur le terrain est terminé",
         "cerrar": "Le travail est terminé"
-      }
+      },
+      "devolver": "Revenir à la planification"
     },
     "ficha": {
       "paralizado": "Arrêté · {{count}} jour",
@@ -5127,7 +5171,7 @@
       "observaciones": "Observations",
       "observacionesPh": "Incidents, conditions de l'intervention…",
       "sinObservaciones": "Sans observations",
-      "firmaEnApp": "La signature de conformité du client est recueillie dans l'APP une fois le bon émis.",
+      "firmaEnApp": "La signature de conformité du client est recueillie auprès du client une fois le bon émis.",
       "firmaEnAppCorta": "Signature recueillie dans l'APP",
       "pendienteFirma": "En attente. Le bon est déjà disponible dans l'APP pour recueillir la signature du client.",
       "guardarBorrador": "Enregistrer le brouillon",
