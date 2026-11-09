@@ -128,9 +128,9 @@
         "cliente": "Client",
         "emplazamiento": "Site",
         "equipos": "Nb d'équipements",
-        "fecha": "Date",
+        "fecha": "Prévue",
         "vence": "Échéance",
-        "presupuesto": "Devis",
+        "presupuesto": "Statut",
         "importe": "Montant",
         "apunte": "Dernière note",
         "proxima": "Prochaine",
@@ -3751,6 +3751,14 @@
         "hint_cualquier_interno": "Tout utilisateur interne peut exporter ces trois listes ; un collaborateur, jamais.",
         "hint_autorizados": "Le superadmin et les personnes à qui il le délègue, avec une case sur leur fiche, peuvent les exporter ; un collaborateur, jamais.",
         "registro": "Chaque export de ces trois listes est consigné dans l'audit. Cela n'empêche pas les fuites : qui voit une liste peut la copier."
+      },
+      "presupuestos": {
+        "titulo": "Devis",
+        "desc": "Quels devis utilisent les propositions : composés ici sur les prix paramétrés, chargés de l'extérieur avec leur document, ou les deux.",
+        "ambos": "Internes et externes",
+        "internos": "Internes uniquement : composés ici",
+        "externos": "Externes uniquement : chargés tout faits",
+        "hint": "L'option désactivée n'est pas proposée dans la fiche de la proposition. Ce qui a déjà été commencé ainsi reste visible."
       }
     },
     "caracterizacion": {
@@ -4527,11 +4535,12 @@
       "cero": {
         "crear": "Créer un devis",
         "externa": "Charger un devis externe",
-        "hint": "Une proposition se compose ici sur les prix paramétrés ou se charge depuis un document externe. L'origine est fixée au choix et ne se mélange pas."
+        "hint": "Une proposition se compose ici sur les prix paramétrés ou se charge depuis un document externe. L'origine est fixée au choix et ne se mélange pas.",
+        "hintUnaVia": "Cette entreprise utilise une seule voie de devis, fixée dans Paramètres › Projets."
       },
       "estado": {
         "componiendo": "En composition",
-        "bloqueada": "Générée et verrouillée",
+        "bloqueada": "Généré et verrouillé",
         "desbloqueada": "Déverrouillée"
       },
       "top": {
@@ -4544,7 +4553,7 @@
         "descargar": "Télécharger"
       },
       "detalle": "Détail des concepts",
-      "documento": "Document du devis",
+      "documento": "Devis",
       "externa": {
         "adjuntar": "Joindre un document",
         "adjuntarHint": "PDF, DOCX ou similaire",
@@ -4554,7 +4563,9 @@
         "importe": "Montant",
         "emision": "Date d'émission",
         "validez": "Date de validité",
-        "validoHasta": "Valide jusqu'au {{fecha}}"
+        "validoHasta": "Valide jusqu'au {{fecha}}",
+        "documento": "Document",
+        "sinDocumentoAviso": "Attention : le devis est généré sans document joint à envoyer au client. Confirmez, ou annulez pour l'ajouter avant de générer."
       },
       "bandas": {
         "revision": "Révision des équipements",
@@ -4606,7 +4617,7 @@
       "tot": {
         "suma": "Somme des concepts",
         "dtoCliente": "Remise client",
-        "total": "Total de la proposition"
+        "total": "Total du devis"
       },
       "gen": {
         "title": "Générer la proposition",
@@ -4642,7 +4653,8 @@
         "enviada": "Envoyée",
         "aceptada": "Acceptée",
         "rechazada": "Refusée",
-        "borrador": "Brouillon"
+        "borrador": "Brouillon",
+        "comunicada": "Communiqué"
       },
       "prob": {
         "title": "Probabilité d'approbation",
@@ -4670,12 +4682,12 @@
         "editadoEl": "Modifié le {{fecha}}",
         "corregido": "Note corrigée.",
         "proxima": {
-          "anadir": "Ajouter une échéance",
+          "anadir": "Ajouter une date",
           "titulo": "Prochain contact",
           "fecha": "Date",
           "texto": "Motif (facultatif)",
           "ph": "Nous avons convenu d'en parler après le comité…",
-          "guardar": "Enregistrer l'échéance",
+          "guardar": "Enregistrer la date",
           "editar": "Modifier le prochain contact",
           "quitar": "Retirer le prochain contact",
           "hoy": "aujourd'hui",
@@ -4746,6 +4758,10 @@
         "aceptada": "Acceptée",
         "descartada": "Écartée",
         "caducada": "Expirée"
+      },
+      "barra": {
+        "interna": "Modifiez les blocs et les postes du devis. ENREGISTRER le laisse en brouillon, et GÉNÉRER le verrouille comme version prête à envoyer au client.",
+        "externa": "Joignez le document et indiquez son montant et ses dates. ENREGISTRER le laisse en brouillon, et GÉNÉRER le verrouille comme version prête à envoyer au client."
       }
     },
     "sinNombre": "Sans nom",
@@ -4882,7 +4898,10 @@
         "creada": "Opportunité créée."
       },
       "cols": {
-        "fecha": "Prochaine vérification"
+        "fecha": "Prochaine vérification",
+        "notaPrevia": "Note",
+        "prevista": "Prévue",
+        "estado": "Statut"
       },
       "buscarFechas": "Rechercher par client, site ou zone…",
       "buscarPropuestas": "Rechercher par client ou site…",
@@ -4891,7 +4910,7 @@
       "propuestasVacio": "Aucune proposition ouverte",
       "propuestasVacioHint": "Une proposition naît d'une date, en notant un contact avec le client ou en la créant, ou de zéro avec « Nouvelle opportunité ».",
       "anotar": "Noter",
-      "anotarTitle": "Noter un contact avec le client : la proposition est créée avec la note dedans",
+      "anotarTitle": "Noter quelque chose sur cette date, sans créer de proposition",
       "anotarPregunta": "Qu'avez-vous convenu avec le client au sujet de {{emplazamiento}} ?",
       "anotada": "Note enregistrée : la date passe dans « Propositions ».",
       "proponer": "Proposition",
@@ -4899,7 +4918,20 @@
       "proponerVarias": "Créer une proposition avec les dates sélectionnées",
       "mezclaClientes": "Les dates sélectionnées appartiennent à plusieurs clients, et une proposition est pour un seul client.",
       "proyectar": "Projet",
-      "proyectarTitle": "Créer le projet directement, sans proposition (sous contrat)"
+      "proyectarTitle": "Créer le projet directement, sans proposition (sous contrat)",
+      "notaPrevia": {
+        "titulo": "Note sur {{emplazamiento}}",
+        "lead": "Elle reste sur la date, sans créer de proposition. Elle s'efface si la date change, et passe à la proposition ou au projet qui en naît. L'enregistrer vide la supprime.",
+        "editar": "Modifier la note",
+        "guardada": "Note enregistrée.",
+        "quitada": "Note supprimée."
+      },
+      "masPropuesta": "+ PROPOSITION",
+      "masProyecto": "+ PROJET",
+      "descartarTitle": "Écarter ce travail : il ne se fera pas",
+      "descartarPregunta": "Ce travail est écarté. Pourquoi ? Le motif se lit ensuite dans Perdus.",
+      "descartado": "Travail écarté : il passe dans Perdus.",
+      "ventanaCorta": "{{n}}M"
     },
     "accion": {
       "arrancar": "Démarrer maintenant",
@@ -4987,6 +5019,11 @@
         "soloAceptar": "Accepter sans projet",
         "crear": "Accepter et créer le projet",
         "crear_other": "Accepter et créer {{count}} projets"
+      },
+      "decision": {
+        "aceptar": "Accepter (créer le projet)",
+        "notaEliminar": "La proposition sera supprimée avec toutes ses données, et les échéances qu'elle couvrait reviendront dans la liste des dates sans proposition. C'est donc l'option adaptée aux propositions créées par erreur.",
+        "notaDescartar": "Si vous voulez confirmer que le projet NE SE FERA PAS, utilisez ÉCARTER plutôt que SUPPRIMER."
       }
     },
     "cierre": {
@@ -5141,6 +5178,43 @@
       "cedidas": "Une intervention de ce brouillon est passée au bon {{partes}}, établi depuis l'APP.",
       "cedidas_other": "{{count}} interventions de ce brouillon sont passées au bon {{partes}}, établi depuis l'APP.",
       "conflictoBanda": "Partage des interventions avec un autre bon : il faut annuler l'un des deux"
+    },
+    "altas": {
+      "datos": "Données principales",
+      "opcionales": "Données facultatives",
+      "sinContactos": "Le client n'a pas de contacts.",
+      "rol": {
+        "propietario": "Propriétaire",
+        "contratista": "Prestataire"
+      },
+      "propuesta": {
+        "titulo": "Nouvelle proposition",
+        "sub": "Depuis une échéance de prochaine vérification",
+        "lead": "Une proposition va être créée avec les données suivantes :",
+        "crear": "Créer la proposition",
+        "creada": "Proposition créée.",
+        "avisoRevision": "Cette proposition naît d'une échéance de prochaine vérification. Elle inclut nécessairement la vérification.",
+        "presupuesto": "Devis",
+        "presupuestoTexto": "Il se configure à l'étape suivante, dans la proposition créée."
+      },
+      "proyecto": {
+        "sub": "Travail engagé sur un site",
+        "subFecha": "Depuis une échéance de prochaine vérification",
+        "avisoRevision": "Ce projet naît d'une échéance de prochaine vérification. Un projet créé ainsi inclut nécessairement cette vérification.",
+        "opcionalesNota": "Vous pouvez donner ces données maintenant, ou les reporter à la planification avant le lancement du projet.",
+        "inicio": "Date de début",
+        "fin": "Date de fin",
+        "tecnico": "Contact technique",
+        "comercial": "Contact commercial",
+        "nombre": "Nom du projet (facultatif)"
+      },
+      "oportunidad": {
+        "sub": "Un client qui demande un devis sans date de vérification derrière",
+        "emplazamientos": "Sites",
+        "anadir": "Ajouter",
+        "ninguno": "Aucun site (une fourniture, un bâtiment pas encore enregistré…)",
+        "tipos": "Type d'opportunité"
+      }
     }
   },
   "avisoDiagnostico": {

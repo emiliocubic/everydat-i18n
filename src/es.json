@@ -128,9 +128,9 @@
         "cliente": "Cliente",
         "emplazamiento": "Emplazamiento",
         "equipos": "Nº de elementos",
-        "fecha": "Fecha",
+        "fecha": "Prevista",
         "vence": "Vence",
-        "presupuesto": "Presupuesto",
+        "presupuesto": "Estado",
         "importe": "Importe",
         "apunte": "Último apunte",
         "proxima": "Próxima",
@@ -3906,6 +3906,14 @@
         "hint_cualquier_interno": "Todo usuario interno exporta estas tres listas; un colaborador, nunca.",
         "hint_autorizados": "Las exportan el superadmin y a quien él se lo delegue, con una casilla en la ficha de la persona; un colaborador, nunca.",
         "registro": "Cada exportación de estas tres listas queda en la auditoría. No protege contra fugas: quien ve una lista puede copiarla."
+      },
+      "presupuestos": {
+        "titulo": "Presupuestos",
+        "desc": "Qué presupuestos se hacen en las propuestas: compuestos aquí sobre los precios parametrizados, cargados de fuera con su documento, o las dos cosas.",
+        "ambos": "Internos y externos",
+        "internos": "Solo internos: se componen aquí",
+        "externos": "Solo externos: se cargan hechos de fuera",
+        "hint": "La vía apagada no se ofrece en la ficha de la propuesta. Lo ya empezado por esa vía se sigue viendo."
       }
     },
     "caracterizacion": {
@@ -4819,11 +4827,12 @@
       "cero": {
         "crear": "Crear presupuesto",
         "externa": "Cargar presupuesto externo",
-        "hint": "Una propuesta se compone aquí sobre los precios parametrizados o se carga hecha de fuera con su documento. El origen se fija al elegir y no se mezcla."
+        "hint": "Una propuesta se compone aquí sobre los precios parametrizados o se carga hecha de fuera con su documento. El origen se fija al elegir y no se mezcla.",
+        "hintUnaVia": "Esta empresa usa una sola vía de presupuesto, fijada en Parámetros › Proyectos."
       },
       "estado": {
         "componiendo": "Componiendo",
-        "bloqueada": "Generada y bloqueada",
+        "bloqueada": "Generado y bloqueado",
         "desbloqueada": "Desbloqueada"
       },
       "top": {
@@ -4836,7 +4845,7 @@
         "descargar": "Descargar"
       },
       "detalle": "Detalle de conceptos",
-      "documento": "Documento del presupuesto",
+      "documento": "Presupuesto",
       "externa": {
         "adjuntar": "Adjuntar documento",
         "adjuntarHint": "PDF, DOCX o similar",
@@ -4846,7 +4855,9 @@
         "importe": "Importe",
         "emision": "Fecha de emisión",
         "validez": "Fecha de validez",
-        "validoHasta": "Válida hasta el {{fecha}}"
+        "validoHasta": "Válida hasta el {{fecha}}",
+        "documento": "Documento",
+        "sinDocumentoAviso": "Aviso: el presupuesto se está generando sin documento anexo que enviar al cliente. Confirma, o cancela para incluirlo antes de generar."
       },
       "bandas": {
         "revision": "Revisión de elementos",
@@ -4898,7 +4909,7 @@
       "tot": {
         "suma": "Suma de conceptos",
         "dtoCliente": "Descuento cliente",
-        "total": "Total propuesta"
+        "total": "Total presupuesto"
       },
       "gen": {
         "title": "Generar propuesta",
@@ -4934,7 +4945,8 @@
         "enviada": "Enviada",
         "aceptada": "Aceptada",
         "rechazada": "Rechazada",
-        "borrador": "Borrador"
+        "borrador": "Borrador",
+        "comunicada": "Comunicada"
       },
       "prob": {
         "title": "Probabilidad de aprobación",
@@ -4962,12 +4974,12 @@
         "editadoEl": "Editado el {{fecha}}",
         "corregido": "Apunte corregido.",
         "proxima": {
-          "anadir": "Añadir vencimiento",
+          "anadir": "Añadir fecha",
           "titulo": "Próximo contacto",
           "fecha": "Fecha",
           "texto": "Motivo (opcional)",
           "ph": "Quedamos en hablar tras el comité…",
-          "guardar": "Guardar vencimiento",
+          "guardar": "Guardar fecha",
           "editar": "Cambiar el próximo contacto",
           "quitar": "Quitar el próximo contacto",
           "hoy": "hoy",
@@ -5038,6 +5050,10 @@
         "aceptada": "Aceptada",
         "descartada": "Descartada",
         "caducada": "Caducada"
+      },
+      "barra": {
+        "interna": "Edita los bloques y conceptos del presupuesto. GUARDAR deja el presupuesto en borrador, y GENERAR lo bloquea como versión ya para envío al cliente.",
+        "externa": "Adjunta el documento e indica su importe y sus fechas. GUARDAR deja el presupuesto en borrador, y GENERAR lo bloquea como versión ya para envío al cliente."
       }
     },
     "sinNombre": "Sin nombre",
@@ -5174,7 +5190,10 @@
         "creada": "Oportunidad creada."
       },
       "cols": {
-        "fecha": "Próxima revisión"
+        "fecha": "Próxima revisión",
+        "notaPrevia": "Nota",
+        "prevista": "Prevista",
+        "estado": "Estado"
       },
       "buscarFechas": "Buscar por cliente, emplazamiento o zona…",
       "buscarPropuestas": "Buscar por cliente o emplazamiento…",
@@ -5183,7 +5202,7 @@
       "propuestasVacio": "Ninguna propuesta abierta",
       "propuestasVacioHint": "Una propuesta nace desde una fecha, al anotar un contacto con el cliente o al crearla, o desde cero con «Nueva oportunidad».",
       "anotar": "Anotar",
-      "anotarTitle": "Anotar un contacto con el cliente: nace la propuesta con la nota dentro",
+      "anotarTitle": "Apuntar algo sobre esta fecha, sin crear propuesta",
       "anotarPregunta": "¿Qué has hablado con el cliente sobre {{emplazamiento}}?",
       "anotada": "Nota guardada: la fecha pasa a «Propuestas».",
       "proponer": "Propuesta",
@@ -5191,7 +5210,20 @@
       "proponerVarias": "Crear una propuesta con las seleccionadas",
       "mezclaClientes": "Las fechas seleccionadas son de varios clientes, y una propuesta es de un solo cliente.",
       "proyectar": "Proyecto",
-      "proyectarTitle": "Crear el proyecto directamente, sin propuesta (va por contrato)"
+      "proyectarTitle": "Crear el proyecto directamente, sin propuesta (va por contrato)",
+      "notaPrevia": {
+        "titulo": "Nota sobre {{emplazamiento}}",
+        "lead": "Queda escrita en la fecha, sin crear propuesta. Se borra sola si cambia la fecha, y pasa a la propuesta o al proyecto que nazca de ella. Guardarla vacía la quita.",
+        "editar": "Editar nota",
+        "guardada": "Nota guardada.",
+        "quitada": "Nota quitada."
+      },
+      "masPropuesta": "+ PROPUESTA",
+      "masProyecto": "+ PROYECTO",
+      "descartarTitle": "Descartar este trabajo: no se hará",
+      "descartarPregunta": "Se descarta este trabajo. ¿Por qué? El motivo se lee luego en Perdidos.",
+      "descartado": "Trabajo descartado: pasa a Perdidos.",
+      "ventanaCorta": "{{n}}M"
     },
     "accion": {
       "arrancar": "Arrancar ahora",
@@ -5279,6 +5311,11 @@
         "soloAceptar": "Aceptar sin proyectos",
         "crear": "Aceptar y crear el proyecto",
         "crear_other": "Aceptar y crear {{count}} proyectos"
+      },
+      "decision": {
+        "aceptar": "Aceptar (crear proyecto)",
+        "notaEliminar": "Se eliminará la propuesta con todos sus datos, y los vencimientos de fechas que incluyese volverán al listado de fechas sin propuesta. Es por tanto la opción adecuada para propuestas creadas por error.",
+        "notaDescartar": "Si lo que quieres es confirmar que NO SE HARÁ el proyecto, utiliza la opción DESCARTAR en vez de ELIMINAR."
       }
     },
     "cierre": {
@@ -5433,6 +5470,43 @@
       "cedidas": "Una actuación de este borrador ha pasado a {{partes}}, hecho desde la APP.",
       "cedidas_other": "{{count}} actuaciones de este borrador han pasado a {{partes}}, hecho desde la APP.",
       "conflictoBanda": "Comparte actuaciones con otro parte: hay que anular uno de los dos"
+    },
+    "altas": {
+      "datos": "Datos principales",
+      "opcionales": "Datos opcionales",
+      "sinContactos": "El cliente no tiene contactos.",
+      "rol": {
+        "propietario": "Propietaria",
+        "contratista": "Contratista"
+      },
+      "propuesta": {
+        "titulo": "Nueva propuesta",
+        "sub": "Desde un vencimiento de próxima revisión",
+        "lead": "Se va a crear una propuesta con los siguientes datos:",
+        "crear": "Crear propuesta",
+        "creada": "Propuesta creada.",
+        "avisoRevision": "Esta propuesta nace de un vencimiento de una fecha de próxima revisión. Necesariamente genera una propuesta de revisión.",
+        "presupuesto": "Presupuesto",
+        "presupuestoTexto": "Se configurará en el siguiente paso, dentro ya de la propuesta creada."
+      },
+      "proyecto": {
+        "sub": "Trabajo comprometido en un emplazamiento",
+        "subFecha": "Desde un vencimiento de próxima revisión",
+        "avisoRevision": "Este proyecto nace de un vencimiento de una fecha de próxima revisión. El proyecto así generado necesariamente incluye dicha revisión.",
+        "opcionalesNota": "Puedes aportar estos datos ahora, o posponerlos a la fase de planificación previa a la puesta en marcha del proyecto.",
+        "inicio": "Fecha de inicio",
+        "fin": "Fecha final",
+        "tecnico": "Contacto técnico",
+        "comercial": "Contacto comercial",
+        "nombre": "Nombre del proyecto (opcional)"
+      },
+      "oportunidad": {
+        "sub": "Un cliente que pide presupuesto sin fecha de revisión detrás",
+        "emplazamientos": "Emplazamientos",
+        "anadir": "Añadir",
+        "ninguno": "Ningún emplazamiento (un suministro, una nave aún sin dar de alta…)",
+        "tipos": "Tipo de oportunidad"
+      }
     }
   },
   "avisoDiagnostico": {

@@ -128,9 +128,9 @@
         "cliente": "Client",
         "emplazamiento": "Site",
         "equipos": "No. of items",
-        "fecha": "Date",
+        "fecha": "Planned",
         "vence": "Due",
-        "presupuesto": "Quote",
+        "presupuesto": "Status",
         "importe": "Amount",
         "apunte": "Last note",
         "proxima": "Next",
@@ -3906,6 +3906,14 @@
         "hint_cualquier_interno": "Every internal user can export these three lists; a collaborator, never.",
         "hint_autorizados": "The superadmin and whoever they delegate it to, with a checkbox on the person's record, can export them; a collaborator, never.",
         "registro": "Every export of these three lists is recorded in the audit log. It does not prevent leaks: anyone who can see a list can copy it."
+      },
+      "presupuestos": {
+        "titulo": "Quotes",
+        "desc": "Which quotes proposals use: built here on the configured prices, uploaded from outside with their document, or both.",
+        "ambos": "Internal and external",
+        "internos": "Internal only: built here",
+        "externos": "External only: uploaded ready-made",
+        "hint": "The disabled option is not offered on the proposal. Anything already started that way is still shown."
       }
     },
     "caracterizacion": {
@@ -4819,7 +4827,8 @@
       "cero": {
         "crear": "Create quote",
         "externa": "Upload external quote",
-        "hint": "A proposal is either composed here on the configured prices or uploaded as an external document. The origin is fixed when chosen and never mixed."
+        "hint": "A proposal is either composed here on the configured prices or uploaded as an external document. The origin is fixed when chosen and never mixed.",
+        "hintUnaVia": "This company uses a single way of quoting, set in Settings › Projects."
       },
       "estado": {
         "componiendo": "Composing",
@@ -4836,7 +4845,7 @@
         "descargar": "Download"
       },
       "detalle": "Line items",
-      "documento": "Quote document",
+      "documento": "Quote",
       "externa": {
         "adjuntar": "Attach document",
         "adjuntarHint": "PDF, DOCX or similar",
@@ -4846,7 +4855,9 @@
         "importe": "Amount",
         "emision": "Issue date",
         "validez": "Valid until",
-        "validoHasta": "Valid until {{fecha}}"
+        "validoHasta": "Valid until {{fecha}}",
+        "documento": "Document",
+        "sinDocumentoAviso": "Warning: the quote is being generated without an attached document to send to the client. Confirm, or cancel to add it before generating."
       },
       "bandas": {
         "revision": "Equipment inspection",
@@ -4898,7 +4909,7 @@
       "tot": {
         "suma": "Sum of items",
         "dtoCliente": "Customer discount",
-        "total": "Proposal total"
+        "total": "Quote total"
       },
       "gen": {
         "title": "Generate proposal",
@@ -4934,7 +4945,8 @@
         "enviada": "Sent",
         "aceptada": "Accepted",
         "rechazada": "Rejected",
-        "borrador": "Draft"
+        "borrador": "Draft",
+        "comunicada": "Communicated"
       },
       "prob": {
         "title": "Approval probability",
@@ -4962,12 +4974,12 @@
         "editadoEl": "Edited on {{fecha}}",
         "corregido": "Note corrected.",
         "proxima": {
-          "anadir": "Add follow-up date",
+          "anadir": "Add date",
           "titulo": "Next contact",
           "fecha": "Date",
           "texto": "Reason (optional)",
           "ph": "We agreed to talk after the committee…",
-          "guardar": "Save follow-up date",
+          "guardar": "Save date",
           "editar": "Change the next contact",
           "quitar": "Remove the next contact",
           "hoy": "today",
@@ -5038,6 +5050,10 @@
         "aceptada": "Accepted",
         "descartada": "Discarded",
         "caducada": "Expired"
+      },
+      "barra": {
+        "interna": "Edit the blocks and items of the quote. SAVE keeps the quote as a draft, and GENERATE locks it as a version ready to send to the client.",
+        "externa": "Attach the document and enter its amount and dates. SAVE keeps the quote as a draft, and GENERATE locks it as a version ready to send to the client."
       }
     },
     "sinNombre": "Unnamed",
@@ -5174,7 +5190,10 @@
         "creada": "Opportunity created."
       },
       "cols": {
-        "fecha": "Next inspection"
+        "fecha": "Next inspection",
+        "notaPrevia": "Note",
+        "prevista": "Planned",
+        "estado": "Status"
       },
       "buscarFechas": "Search by client, site or zone…",
       "buscarPropuestas": "Search by client or site…",
@@ -5183,7 +5202,7 @@
       "propuestasVacio": "No open proposals",
       "propuestasVacioHint": "A proposal is born from a date, by logging a contact with the client or by creating it, or from scratch with «New opportunity».",
       "anotar": "Log",
-      "anotarTitle": "Log a contact with the client: the proposal is created with the note inside",
+      "anotarTitle": "Note something about this date, without creating a proposal",
       "anotarPregunta": "What did you discuss with the client about {{emplazamiento}}?",
       "anotada": "Note saved: the date moves to «Proposals».",
       "proponer": "Proposal",
@@ -5191,7 +5210,20 @@
       "proponerVarias": "Create one proposal with the selected dates",
       "mezclaClientes": "The selected dates belong to several clients, and a proposal is for a single client.",
       "proyectar": "Project",
-      "proyectarTitle": "Create the project directly, without a proposal (under contract)"
+      "proyectarTitle": "Create the project directly, without a proposal (under contract)",
+      "notaPrevia": {
+        "titulo": "Note on {{emplazamiento}}",
+        "lead": "It stays on the date, without creating a proposal. It is cleared if the date changes, and moves to the proposal or project created from it. Saving it empty removes it.",
+        "editar": "Edit note",
+        "guardada": "Note saved.",
+        "quitada": "Note removed."
+      },
+      "masPropuesta": "+ PROPOSAL",
+      "masProyecto": "+ PROJECT",
+      "descartarTitle": "Discard this work: it will not be done",
+      "descartarPregunta": "This work is discarded. Why? The reason is shown later in Lost.",
+      "descartado": "Work discarded: it moves to Lost.",
+      "ventanaCorta": "{{n}}M"
     },
     "accion": {
       "arrancar": "Start now",
@@ -5279,6 +5311,11 @@
         "soloAceptar": "Accept without projects",
         "crear": "Accept and create the project",
         "crear_other": "Accept and create {{count}} projects"
+      },
+      "decision": {
+        "aceptar": "Accept (create project)",
+        "notaEliminar": "The proposal will be deleted with all its data, and the due dates it covered will go back to the list of dates without a proposal. It is therefore the right option for proposals created by mistake.",
+        "notaDescartar": "If what you want is to confirm that the project WILL NOT BE DONE, use DISCARD instead of DELETE."
       }
     },
     "cierre": {
@@ -5433,6 +5470,43 @@
       "cedidas": "One job in this draft has moved to {{partes}}, made from the APP.",
       "cedidas_other": "{{count}} jobs in this draft have moved to {{partes}}, made from the APP.",
       "conflictoBanda": "Shares jobs with another report: one of the two must be voided"
+    },
+    "altas": {
+      "datos": "Main details",
+      "opcionales": "Optional details",
+      "sinContactos": "The client has no contacts.",
+      "rol": {
+        "propietario": "Owner",
+        "contratista": "Contractor"
+      },
+      "propuesta": {
+        "titulo": "New proposal",
+        "sub": "From a next inspection due date",
+        "lead": "A proposal will be created with the following details:",
+        "crear": "Create proposal",
+        "creada": "Proposal created.",
+        "avisoRevision": "This proposal comes from a next inspection due date. It necessarily includes the inspection.",
+        "presupuesto": "Quote",
+        "presupuestoTexto": "It is set up in the next step, inside the new proposal."
+      },
+      "proyecto": {
+        "sub": "Committed work at a site",
+        "subFecha": "From a next inspection due date",
+        "avisoRevision": "This project comes from a next inspection due date. A project created this way necessarily includes that inspection.",
+        "opcionalesNota": "You can give these details now, or leave them for the planning stage before the project starts.",
+        "inicio": "Start date",
+        "fin": "End date",
+        "tecnico": "Technical contact",
+        "comercial": "Sales contact",
+        "nombre": "Project name (optional)"
+      },
+      "oportunidad": {
+        "sub": "A client asking for a quote with no inspection date behind it",
+        "emplazamientos": "Sites",
+        "anadir": "Add",
+        "ninguno": "No site (a supply, a building not yet registered…)",
+        "tipos": "Type of opportunity"
+      }
     }
   },
   "avisoDiagnostico": {
