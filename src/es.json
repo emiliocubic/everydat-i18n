@@ -3884,6 +3884,42 @@
           "gruposSub": "Los checkpoints se distribuyen en 3 grupos: visual, funcional y documental.",
           "lista": "No distribuir los checkpoints por grupos",
           "listaSub": "Todos los checkpoints se mostrarán como una lista única en el checklist."
+        },
+        "adjuntos": {
+          "title": "Archivos adjuntos",
+          "desc": "Decide en qué actuaciones se pueden adjuntar imágenes y archivos desde los cajones del panel. Lo que ya traigan, como las fotos tomadas con la app, se ve igual.",
+          "permitir": "Permitir adjuntar archivos en",
+          "revision": "Revisiones",
+          "instalacion": "Instalaciones",
+          "reparacion": "Reparaciones"
+        },
+        "opcionesPunto": {
+          "title": "Opciones de cada punto del checklist",
+          "desc": "Qué puede marcar quien revisa en cada punto de los checklists.",
+          "opciones": "Opciones",
+          "con_vigilar": "OK / VIGILAR / NO OK / NO APLICA",
+          "con_vigilarSub": "VIGILAR deja el punto apto, pero anotado para mirarlo en la próxima revisión.",
+          "sin_vigilar": "OK / NO OK / NO APLICA",
+          "sin_vigilarSub": "No se puede marcar VIGILAR en revisiones nuevas. Las ya hechas con VIGILAR se quedan como están."
+        },
+        "aptos": {
+          "title": "Revisiones aptas",
+          "desc": "Lo que se añade o se puede elegir al marcar una revisión como APTA. El equipo sigue apto a todos los efectos.",
+          "avisoFinVida": "¿Incluir automáticamente aviso de final de vida antes de la siguiente revisión?",
+          "avisoTexto": "Texto del aviso",
+          "avisoHint": "Se añade al principio del comentario de una revisión apta cuando el fin de vida del equipo cae antes de su siguiente revisión periódica, y se quita solo si deja de cumplirse. «dd/mm/aaaa» se sustituye por la fecha.",
+          "avisoDeSerie": "Volver al texto de serie",
+          "matizaciones": "¿Aceptar matizaciones al apto?",
+          "matizacionesLista": "Opciones que se mostrarán para elegir al marcar APTO",
+          "matizacionesHint": "Una por línea. Al marcar APTO sale un selector opcional con ellas; la elegida acompaña al apto en el cajón, en el historial del equipo y en los informes.",
+          "matizacionesFaltan": "Escribe al menos una opción, una por línea."
+        },
+        "noAptos": {
+          "title": "Revisiones no aptas",
+          "desc": "Lo que se pregunta al marcar una revisión como NO APTA. Lo contestado se añade solo al principio del comentario.",
+          "reparable": "¿Preguntar si es reparable?",
+          "medida": "¿Preguntar qué se hizo con el equipo?",
+          "medidaHint": "Las respuestas son fijas: se señaliza como no utilizable, se retira del emplazamiento, se destruye o ninguna."
         }
       },
       "grupoClientes": "Clientes",
@@ -5727,7 +5763,10 @@
       "borrada_instalacion": "Instalación borrada.",
       "borrarConfirm_instalacion": "Borrar la instalación la quita del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. No se puede deshacer. ¿Continuar?",
       "alCrear_instalacion": "Se subirá al crear la instalación",
-      "sinAdjuntos_instalacion": "Esta instalación no tiene adjuntos."
+      "sinAdjuntos_instalacion": "Esta instalación no tiene adjuntos.",
+      "matizacion": "Matización",
+      "sinMatizacion": "Sin matización",
+      "comentarioAutoHint": "Lo escribe la aplicación según el resultado y se rehace al guardar."
     },
     "medida": {
       "senaliza": "Se señaliza como no utilizable",
@@ -7478,7 +7517,8 @@
         "loc": "Cliente y emplazamiento",
         "ficha": "Ficha del elemento",
         "estado": "Estado y revisiones",
-        "act": "Actuaciones proyectadas"
+        "act": "Actuaciones proyectadas",
+        "fechas": "Fechas significativas"
       },
       "col": {
         "estado": "Estado",

@@ -3729,6 +3729,42 @@
           "gruposSub": "Les points de contrôle sont répartis en 3 groupes : visuel, fonctionnel et documentaire.",
           "lista": "Ne pas répartir les points de contrôle en groupes",
           "listaSub": "Tous les points de contrôle s'affichent dans une liste unique."
+        },
+        "adjuntos": {
+          "title": "Pièces jointes",
+          "desc": "Choisissez dans quelles interventions on peut joindre des images et des fichiers depuis les tiroirs du panneau. Ce qu'elles contiennent déjà, comme les photos prises avec l'app, reste visible.",
+          "permitir": "Autoriser les pièces jointes dans",
+          "revision": "Vérifications",
+          "instalacion": "Installations",
+          "reparacion": "Réparations"
+        },
+        "opcionesPunto": {
+          "title": "Options de chaque point de la checklist",
+          "desc": "Ce que le vérificateur peut cocher sur chaque point des checklists.",
+          "opciones": "Options",
+          "con_vigilar": "OK / À SURVEILLER / NON OK / N/A",
+          "con_vigilarSub": "À SURVEILLER laisse le point conforme, mais noté pour la prochaine vérification.",
+          "sin_vigilar": "OK / NON OK / N/A",
+          "sin_vigilarSub": "On ne peut pas cocher À SURVEILLER dans les nouvelles vérifications. Celles déjà faites le gardent."
+        },
+        "aptos": {
+          "title": "Vérifications conformes",
+          "desc": "Ce qui s'ajoute ou peut être choisi quand une vérification est CONFORME. L'équipement reste conforme à tous égards.",
+          "avisoFinVida": "Ajouter automatiquement un avis de fin de vie avant la prochaine vérification ?",
+          "avisoTexto": "Texte de l'avis",
+          "avisoHint": "Il s'ajoute au début du commentaire d'une vérification conforme quand la fin de vie de l'équipement tombe avant sa prochaine vérification périodique, et disparaît si ce n'est plus le cas. « dd/mm/aaaa » est remplacé par la date.",
+          "avisoDeSerie": "Revenir au texte par défaut",
+          "matizaciones": "Accepter des nuances au conforme ?",
+          "matizacionesLista": "Options proposées en cochant CONFORME",
+          "matizacionesHint": "Une par ligne. En cochant CONFORME, un sélecteur facultatif les propose ; celle choisie accompagne le conforme dans le tiroir, l'historique de l'équipement et les rapports.",
+          "matizacionesFaltan": "Écrivez au moins une option, une par ligne."
+        },
+        "noAptos": {
+          "title": "Vérifications non conformes",
+          "desc": "Ce qui est demandé quand une vérification est NON CONFORME. Les réponses s'ajoutent seules au début du commentaire.",
+          "reparable": "Demander s'il est réparable ?",
+          "medida": "Demander ce qui a été fait de l'équipement ?",
+          "medidaHint": "Les réponses sont fixes : signalé comme inutilisable, retiré du site, détruit ou aucune."
         }
       },
       "grupoClientes": "Clients",
@@ -5438,7 +5474,10 @@
       "borrada_instalacion": "Installation supprimée.",
       "borrarConfirm_instalacion": "Supprimer l'installation la retire de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Action irréversible. Continuer ?",
       "alCrear_instalacion": "Sera envoyé à la création de l'installation",
-      "sinAdjuntos_instalacion": "Cette installation n'a pas de pièces jointes."
+      "sinAdjuntos_instalacion": "Cette installation n'a pas de pièces jointes.",
+      "matizacion": "Nuance",
+      "sinMatizacion": "Sans nuance",
+      "comentarioAutoHint": "Écrit par l'application selon le résultat et refait à l'enregistrement."
     },
     "medida": {
       "senaliza": "Signalé comme non utilisable",
@@ -6870,7 +6909,8 @@
         "loc": "Client et site",
         "ficha": "Fiche de l’élément",
         "estado": "État et vérifications",
-        "act": "Interventions prévues"
+        "act": "Interventions prévues",
+        "fechas": "Dates significatives"
       },
       "col": {
         "estado": "État",

@@ -3884,6 +3884,42 @@
           "gruposSub": "Checkpoints are split into 3 groups: visual, functional and documentary.",
           "lista": "Do not split checkpoints into groups",
           "listaSub": "All checkpoints are shown as a single list in the checklist."
+        },
+        "adjuntos": {
+          "title": "Attachments",
+          "desc": "Choose in which actions images and files can be attached from the panel drawers. Whatever they already carry, such as photos taken with the app, is still shown.",
+          "permitir": "Allow attaching files in",
+          "revision": "Inspections",
+          "instalacion": "Installations",
+          "reparacion": "Repairs"
+        },
+        "opcionesPunto": {
+          "title": "Options for each checklist point",
+          "desc": "What the inspector can mark on each checklist point.",
+          "opciones": "Options",
+          "con_vigilar": "OK / MONITOR / NOT OK / N/A",
+          "con_vigilarSub": "MONITOR leaves the point as passed, but noted to be checked at the next inspection.",
+          "sin_vigilar": "OK / NOT OK / N/A",
+          "sin_vigilarSub": "MONITOR cannot be marked on new inspections. Those already done with MONITOR stay as they are."
+        },
+        "aptos": {
+          "title": "Passed inspections",
+          "desc": "What is added or can be chosen when an inspection is marked as PASSED. The equipment remains passed in every respect.",
+          "avisoFinVida": "Automatically add an end-of-life warning before the next inspection?",
+          "avisoTexto": "Warning text",
+          "avisoHint": "It is added at the start of the remarks of a passed inspection when the equipment's end of life falls before its next periodic inspection, and removed if that stops being true. «dd/mm/aaaa» is replaced by the date.",
+          "avisoDeSerie": "Back to the default text",
+          "matizaciones": "Accept qualifications to a pass?",
+          "matizacionesLista": "Options offered when marking PASSED",
+          "matizacionesHint": "One per line. When PASSED is marked, an optional selector shows them; the chosen one goes with the pass in the drawer, in the equipment history and in the reports.",
+          "matizacionesFaltan": "Write at least one option, one per line."
+        },
+        "noAptos": {
+          "title": "Failed inspections",
+          "desc": "What is asked when an inspection is marked as FAILED. The answers are added automatically at the start of the remarks.",
+          "reparable": "Ask whether it can be repaired?",
+          "medida": "Ask what was done with the equipment?",
+          "medidaHint": "The answers are fixed: tagged as not to be used, removed from the site, destroyed or none."
         }
       },
       "grupoClientes": "Clients",
@@ -5727,7 +5763,10 @@
       "borrada_instalacion": "Installation deleted.",
       "borrarConfirm_instalacion": "Deleting the installation removes it from the history along with its points and photos, and the item falls back to the previous validity. This cannot be undone. Continue?",
       "alCrear_instalacion": "Will upload when the installation is created",
-      "sinAdjuntos_instalacion": "This installation has no attachments."
+      "sinAdjuntos_instalacion": "This installation has no attachments.",
+      "matizacion": "Qualification",
+      "sinMatizacion": "No qualification",
+      "comentarioAutoHint": "Written by the application from the result and rebuilt on saving."
     },
     "medida": {
       "senaliza": "Tagged as not usable",
@@ -7478,7 +7517,8 @@
         "loc": "Client and site",
         "ficha": "Item record",
         "estado": "Status and inspections",
-        "act": "Planned actions"
+        "act": "Planned actions",
+        "fechas": "Significant dates"
       },
       "col": {
         "estado": "Status",
