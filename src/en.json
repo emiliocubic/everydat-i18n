@@ -5171,7 +5171,7 @@
     "enMarcha": "Running",
     "paralizado": "Halted",
     "fase": {
-      "aprobado": "Approved",
+      "aprobado": "Planning",
       "en_ejecucion": "In progress",
       "en_certificacion": "In certification"
     },

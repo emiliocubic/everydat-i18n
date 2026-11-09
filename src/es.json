@@ -5171,7 +5171,7 @@
     "enMarcha": "En marcha",
     "paralizado": "Paralizado",
     "fase": {
-      "aprobado": "Aprobado",
+      "aprobado": "Planificando",
       "en_ejecucion": "En ejecución",
       "en_certificacion": "En certificación"
     },

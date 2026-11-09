@@ -4879,7 +4879,7 @@
     "enMarcha": "En marche",
     "paralizado": "Suspendu",
     "fase": {
-      "aprobado": "Approuvé",
+      "aprobado": "En planification",
       "en_ejecucion": "En exécution",
       "en_certificacion": "En certification"
     },
