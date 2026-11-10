@@ -5068,7 +5068,7 @@
       "sinAlcance": "La proposition ne couvre aucun site",
       "sinAlcanceHint": "Pour chiffrer la vérification à partir d’un site, ajoutez-le au périmètre. S’il n’est pas encore enregistré, composez le bloc à la main en saisissant des unités par type.",
       "fueraDeAlcance": "Sans site du périmètre",
-      "aviso100": "Une probabilité de 100 % marque la version en vigueur comme ACCEPTÉE. Les projets sont créés en acceptant la proposition, en haut à droite.",
+      "aviso100": "Une probabilité de 100 % marque la version en vigueur comme ACCEPTÉE. Les projets sont créés en acceptant la proposition.",
       "descartar": "Écarter",
       "descartarPregunta": "Pourquoi la proposition est-elle écartée ? Le motif s’affiche ensuite dans Perdus.",
       "descartada": "Proposition écartée.",

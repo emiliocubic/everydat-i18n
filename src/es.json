@@ -5360,7 +5360,7 @@
       "sinAlcance": "La propuesta no abarca ningún emplazamiento",
       "sinAlcanceHint": "Para presupuestar la revisión a partir de un emplazamiento, añádelo al alcance. Si aún no está dado de alta, compón el bloque a mano poniendo unidades por tipo.",
       "fueraDeAlcance": "Sin emplazamiento del alcance",
-      "aviso100": "Un 100 % de probabilidad marca la versión vigente como ACEPTADA. Los proyectos se crean al aceptar la propuesta, arriba a la derecha.",
+      "aviso100": "Un 100 % de probabilidad marca la versión vigente como ACEPTADA. Los proyectos se crean al aceptar la propuesta.",
       "descartar": "Descartar",
       "descartarPregunta": "¿Por qué se descarta la propuesta? El motivo se lee luego en Perdidos.",
       "descartada": "Propuesta descartada.",

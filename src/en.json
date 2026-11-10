@@ -5360,7 +5360,7 @@
       "sinAlcance": "The proposal does not cover any site",
       "sinAlcanceHint": "To quote the inspection from a site, add it to the scope. If it is not registered yet, compose the block manually by entering units per type.",
       "fueraDeAlcance": "No site in scope",
-      "aviso100": "A 100% probability marks the current version as ACCEPTED. Projects are created by accepting the proposal, top right.",
+      "aviso100": "A 100% probability marks the current version as ACCEPTED. Projects are created by accepting the proposal.",
       "descartar": "Discard",
       "descartarPregunta": "Why is the proposal being discarded? The reason is shown later under Lost.",
       "descartada": "Proposal discarded.",
