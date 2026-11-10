@@ -6979,7 +6979,10 @@
       "idioma": "Idioma",
       "firmar": "Firma electrónica",
       "tipo": "Tipo de informe",
-      "tipoPlantilla": "Tipo/plantilla"
+      "tipoPlantilla": "Tipo/plantilla",
+      "enviado": "Enviado",
+      "subtitulo": "Subtítulo",
+      "firmante": "Firmante"
     },
     "estados": {
       "borrador": "Borrador",
@@ -7029,15 +7032,23 @@
       "enColaOk": "Emisión en marcha: el PDF se está generando",
       "tabs": {
         "aria": "Secciones del informe",
-        "contenido": "Contenido",
-        "datos": "Datos y recursos",
-        "vista": "Vista previa",
+        "contenido": "Tabla de contenido",
+        "datos": "Datos y emisión",
+        "vista": "Vista previa y diseño",
         "versiones": "Versiones",
         "ajustes": "Cambios puntuales"
       },
-      "borradorAviso": "En borrador: todavía no está emitido. Cuando esté listo, pulsa EMITIR.",
+      "borradorAviso": "En borrador: todavía no está emitido. Cuando esté listo, emítelo desde Datos y emisión.",
       "camposEspecificos": "Campos específicos de este tipo de informe",
-      "sinCamposEspecificos": "Este tipo de informe no incluye campos específicos."
+      "sinCamposEspecificos": "Este tipo de informe no incluye campos específicos.",
+      "subtituloVacio": "Vacío: el de la plantilla",
+      "firmanteVacio": "Quien emita",
+      "firmanteHint": "Su firma y su nombre salen en el certificado. Solo se ofrece a quien puede emitir informes.",
+      "anexos": "Archivos anexos",
+      "anexosPendiente": "Aquí se buscarán los archivos que acompañan al informe. Llega cuando esté terminada la gestión documental.",
+      "emisionEnvio": "Emisión y envío",
+      "guardarAntes": "Guarda los parámetros antes de emitir.",
+      "emitidoReabrir": "Ya está emitido: para emitir otra versión, reábrelo."
     },
     "contenido": {
       "nRevisiones_one": "{{count}} revisión",
@@ -7131,7 +7142,14 @@
       "hintSueltos": "Cada equipo sale en su propio PDF: se ven de uno en uno. Con los datos de hoy y marcado como borrador.",
       "anterior": "Anterior",
       "siguiente": "Siguiente",
-      "pdfNDe": "PDF {{n}} de {{total}}"
+      "pdfNDe": "PDF {{n}} de {{total}}",
+      "cambiosPlantilla": "Hay cambios recientes en la plantilla",
+      "actualizar": "Actualizar informe",
+      "actualizarConfirmar": "Se trae a este informe la plantilla tal como está publicada hoy. Las notas, las fotos y los documentos de los anexos se conservan.",
+      "actualizarPierde_one": "Se trae a este informe la plantilla tal como está publicada hoy y se pierde su cambio puntual (lo ves en Cambios puntuales). Las notas, las fotos y los documentos de los anexos se conservan.",
+      "actualizarPierde_other": "Se trae a este informe la plantilla tal como está publicada hoy y se pierden sus {{count}} cambios puntuales (los ves en Cambios puntuales). Las notas, las fotos y los documentos de los anexos se conservan.",
+      "actualizarSinPermiso": "Este informe tiene cambios puntuales que se perderían: solo quien edita plantillas puede actualizarlo.",
+      "actualizado": "Informe actualizado con la plantilla publicada"
     },
     "versiones": {
       "estados": {
@@ -7155,7 +7173,16 @@
       },
       "verificacion": "Verificación",
       "verificacionHint": "Abrir la página pública de verificación, la que abre el QR del pie",
-      "zip": "Descargar los {{n}} en ZIP"
+      "zip": "Descargar los {{n}} en ZIP",
+      "fechas": "Fechas",
+      "fechasValor": "{{generacion}} (generación) - {{emision}} (emisión)",
+      "emitidaPor": "Emitida por",
+      "enviado": "Enviado",
+      "sinEnvios": "Sin envíos todavía",
+      "firmadaElectronica": "Con firma electrónica",
+      "descargarCorto": "Descargar",
+      "enviar": "Enviar",
+      "salidasN": "{{n}} PDF en un ZIP"
     },
     "emitir": {
       "titulo": "Emitir el informe",
@@ -7171,8 +7198,9 @@
       "observacionesHint": "Por ejemplo: informe provisional con 20 revisiones",
       "emitir": "Emitir",
       "firmante": "Firmante",
-      "firmanteHint": "Su firma, su nombre y su cargo salen en el certificado.",
-      "fechaHint": "La que sale impresa. No puede ser posterior a hoy ni anterior a la última revisión que lleva el informe."
+      "firmanteHint": "Su firma y su nombre salen en el certificado. Solo se ofrece a quien puede emitir informes.",
+      "fechaHint": "La que sale impresa. No puede ser posterior a hoy ni anterior a la última revisión que lleva el informe.",
+      "errorComprobacion": "No se ha podido hacer la comprobación previa: {{error}}"
     },
     "avisos": {
       "sin_contenido": "El informe no lleva ninguna revisión ni ningún equipo.",
@@ -7255,6 +7283,22 @@
       "desfase": "Este informe tiene su origen en un proyecto, y la situación actual del informe y del proyecto no coinciden. Se recomienda usar la opción Actualizar desde el proyecto en la pestaña Contenido para sincronizar el informe con el estado actual del proyecto antes de emitirlo.",
       "yaEmitidas_one": "{{count}} revisión de este informe ya está en otro informe emitido.",
       "yaEmitidas_other": "{{count}} revisiones de este informe ya están en otro informe emitido."
+    },
+    "listado": {
+      "todosClientes": "Todos los clientes",
+      "todosEmplazamientos": "Todos los emplazamientos",
+      "enviadoHint": "Los envíos llegan con el módulo de comunicaciones: hasta entonces, ningún informe consta como enviado."
+    },
+    "emision": {
+      "recomendadoTitulo": "Recomendado: confirmar vista previa antes de emitir",
+      "recomendadoTexto": "Confirmar la visualización en la ventana de vista previa y diseño, ya que ha habido cambios en la plantilla desde la última previsualización, que afectarán a la generación de este informe.",
+      "plantillaTitulo": "La plantilla tiene cambios que este informe no lleva",
+      "plantillaTexto": "Si lo emites así, sale con la plantilla tal como estaba al crearlo. Para traer los cambios, pulsa «Actualizar informe» en Vista previa y diseño."
+    },
+    "envio": {
+      "titulo": "Enviar el informe",
+      "pendiente": "El envío se hará desde aquí cuando esté el módulo de comunicaciones: a quién, con qué mensaje y el registro de cada envío. Mientras tanto, descarga el PDF y mándalo por fuera.",
+      "cerrar": "Cerrar"
     }
   },
   "tiposRevision": {

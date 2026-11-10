@@ -6979,7 +6979,10 @@
       "idioma": "Language",
       "firmar": "Electronic signature",
       "tipo": "Report type",
-      "tipoPlantilla": "Type/template"
+      "tipoPlantilla": "Type/template",
+      "enviado": "Sent",
+      "subtitulo": "Subtitle",
+      "firmante": "Signatory"
     },
     "estados": {
       "borrador": "Draft",
@@ -7029,15 +7032,23 @@
       "enColaOk": "Issuing: the PDF is being generated",
       "tabs": {
         "aria": "Report sections",
-        "contenido": "Content",
-        "datos": "Data and resources",
-        "vista": "Preview",
+        "contenido": "Table of contents",
+        "datos": "Data and issuing",
+        "vista": "Preview and design",
         "versiones": "Versions",
         "ajustes": "Adjustments"
       },
-      "borradorAviso": "Draft: not issued yet. When it is ready, press ISSUE.",
+      "borradorAviso": "Draft: not issued yet. When it is ready, issue it from Data and issuing.",
       "camposEspecificos": "Fields specific to this type of report",
-      "sinCamposEspecificos": "This type of report has no specific fields."
+      "sinCamposEspecificos": "This type of report has no specific fields.",
+      "subtituloVacio": "Empty: the template's",
+      "firmanteVacio": "Whoever issues it",
+      "firmanteHint": "Their signature and name appear on the certificate. Only people who can issue reports are offered.",
+      "anexos": "Attached files",
+      "anexosPendiente": "This is where the files that go with the report will be picked. It comes once document management is finished.",
+      "emisionEnvio": "Issuing and sending",
+      "guardarAntes": "Save the parameters before issuing.",
+      "emitidoReabrir": "Already issued: to issue another version, reopen it."
     },
     "contenido": {
       "nRevisiones_one": "{{count}} inspection",
@@ -7131,7 +7142,14 @@
       "hintSueltos": "Each item of equipment gets its own PDF: they are shown one at a time. With today’s data and marked as a draft.",
       "anterior": "Previous",
       "siguiente": "Next",
-      "pdfNDe": "PDF {{n}} of {{total}}"
+      "pdfNDe": "PDF {{n}} of {{total}}",
+      "cambiosPlantilla": "The template has recent changes",
+      "actualizar": "Update report",
+      "actualizarConfirmar": "The template as published today is brought into this report. Notes, photos and appendix documents are kept.",
+      "actualizarPierde_one": "The template as published today is brought into this report and its one specific change is lost (see Adjustments). Notes, photos and appendix documents are kept.",
+      "actualizarPierde_other": "The template as published today is brought into this report and its {{count}} specific changes are lost (see Adjustments). Notes, photos and appendix documents are kept.",
+      "actualizarSinPermiso": "This report has specific changes that would be lost: only people who edit templates can update it.",
+      "actualizado": "Report updated with the published template"
     },
     "versiones": {
       "estados": {
@@ -7155,7 +7173,16 @@
       },
       "verificacion": "Verification",
       "verificacionHint": "Open the public verification page, the one the footer QR opens",
-      "zip": "Download all {{n}} as ZIP"
+      "zip": "Download all {{n}} as ZIP",
+      "fechas": "Dates",
+      "fechasValor": "{{generacion}} (generated) - {{emision}} (issued)",
+      "emitidaPor": "Issued by",
+      "enviado": "Sent",
+      "sinEnvios": "Not sent yet",
+      "firmadaElectronica": "Electronically signed",
+      "descargarCorto": "Download",
+      "enviar": "Send",
+      "salidasN": "{{n}} PDF files in a ZIP"
     },
     "emitir": {
       "titulo": "Issue the report",
@@ -7171,8 +7198,9 @@
       "observacionesHint": "For example: provisional report with 20 inspections",
       "emitir": "Issue",
       "firmante": "Signatory",
-      "firmanteHint": "Their signature, name and position appear on the certificate.",
-      "fechaHint": "The one printed on the report. It cannot be later than today or earlier than the latest inspection in the report."
+      "firmanteHint": "Their signature and name appear on the certificate. Only people who can issue reports are offered.",
+      "fechaHint": "The one printed on the report. It cannot be later than today or earlier than the latest inspection in the report.",
+      "errorComprobacion": "The pre-issue check failed: {{error}}"
     },
     "avisos": {
       "sin_contenido": "The report has no inspection and no equipment.",
@@ -7255,6 +7283,22 @@
       "desfase": "This report originates from a project, and the current state of the report and the project do not match. Use Update from the project in the Content tab to bring the report in line with the project before issuing it.",
       "yaEmitidas_one": "{{count}} inspection in this report is already in another issued report.",
       "yaEmitidas_other": "{{count}} inspections in this report are already in another issued report."
+    },
+    "listado": {
+      "todosClientes": "All clients",
+      "todosEmplazamientos": "All sites",
+      "enviadoHint": "Sending arrives with the communications module: until then, no report is recorded as sent."
+    },
+    "emision": {
+      "recomendadoTitulo": "Recommended: check the preview before issuing",
+      "recomendadoTexto": "Check the result in the preview and design window: the template has changed since the last preview, and those changes will affect how this report is generated.",
+      "plantillaTitulo": "The template has changes this report does not have",
+      "plantillaTexto": "If you issue it now, it comes out with the template as it was when the report was created. To bring the changes in, click «Update report» in Preview and design."
+    },
+    "envio": {
+      "titulo": "Send the report",
+      "pendiente": "Sending will be done from here once the communications module is ready: recipients, message and a record of each sending. Meanwhile, download the PDF and send it yourself.",
+      "cerrar": "Close"
     }
   },
   "tiposRevision": {

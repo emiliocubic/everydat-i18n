@@ -6543,7 +6543,7 @@
       "campos": "Paramètres du rapport",
       "firmarHint": "Signe le PDF avec le certificat .p12 de Paramètres › Marque. Sans certificat, il est émis sans signature.",
       "tabs": {
-        "datos": "Données et ressources"
+        "datos": "Données et émission"
       }
     },
     "campos": {
