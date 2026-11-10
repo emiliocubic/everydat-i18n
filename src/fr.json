@@ -6575,7 +6575,13 @@
       "ordenarPor": "Trier par {{columna}}",
       "seleccionarTodo": "Tout sélectionner",
       "seleccionarCarpeta": "Sélectionner tout {{carpeta}}",
-      "nSerie": "N° série"
+      "nSerie": "N° série",
+      "verFotos": "Photos de cette ligne",
+      "fotosTocadas": "Photos de cette ligne (certaines retirées)",
+      "fotosHint": "Cliquez sur une photo pour la retirer du rapport. Tant que vous n’en retirez aucune, le modèle décide lesquelles apparaissent.",
+      "fotosElegidas": "{{n}} sur {{total}} apparaissent. Cliquez sur une photo pour la retirer ou la remettre.",
+      "sinFotos": "Cette inspection n’a pas de photos.",
+      "sinFotosEquipo": "Cet équipement n’a pas de photos dans la gestion documentaire."
     },
     "selector": {
       "descatalogados": "Retirés",
@@ -6591,11 +6597,6 @@
       "fechaEntre": "{{fecha}} entre"
     },
     "ajustes": {
-      "sinRevisiones": "Le rapport n'a pas encore d'inspections : ajoutez-les dans Contenu.",
-      "marcaNota": "Note",
-      "marcaFotos": "{{n}} photos",
-      "datos": "Modifications des données du rapport",
-      "datosHint": "Cliquez sur un élément du rapport pour ajouter une note ou choisir les images à utiliser.",
       "sinApartados": "Ce type de rapport n’a pas de sections : il n’y a rien à y modifier.",
       "generales": {
         "campos": "champs personnalisés"

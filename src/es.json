@@ -7099,7 +7099,13 @@
       "nReparaciones_one": "{{count}} reparación",
       "nReparaciones_other": "{{count}} reparaciones",
       "vacioHintReparaciones": "Pulsa «Añadir» para elegir las reparaciones con los filtros.",
-      "realizadaPor": "Realizada por"
+      "realizadaPor": "Realizada por",
+      "verFotos": "Fotos de esta fila",
+      "fotosTocadas": "Fotos de esta fila (hay alguna quitada)",
+      "fotosHint": "Pulsa una foto para quitarla del informe. Mientras no quites ninguna, salen las que diga la plantilla.",
+      "fotosElegidas": "Salen {{n}} de {{total}}. Pulsa una foto para quitarla o volver a ponerla.",
+      "sinFotos": "Esta revisión no tiene fotos.",
+      "sinFotosEquipo": "Este equipo no tiene fotos en la gestión documental."
     },
     "selector": {
       "titulo": "Añadir al informe",
@@ -7230,18 +7236,10 @@
       "ninguno": "Este informe sale tal cual la plantilla.",
       "deshacer": "Deshacer",
       "actualizar": "Actualizar desde la plantilla",
-      "actualizarConfirmar": "Se vuelve a copiar la plantilla publicada y se pierden estos cambios: {{lista}}. Las notas y fotos elegidas se conservan.",
+      "actualizarConfirmar": "Se vuelve a copiar la plantilla publicada y se pierden estos cambios: {{lista}}. Las fotos elegidas se conservan.",
       "actualizado": "Informe actualizado desde la plantilla ({{n}} cambios quitados)",
       "sinPerdidas": "El informe ya coincide con la plantilla",
       "texto": "texto",
-      "revision": "Revisión en este informe",
-      "fotos": "Fotos",
-      "sinFotos": "Esta revisión no tiene fotos.",
-      "fotosBloque": "Las que diga el bloque",
-      "fotosElegir": "Elegir cuáles",
-      "fotosHint": "Salen las marcadas, en el orden en que las marques.",
-      "nota": "Nota del informe",
-      "notaHint": "Se imprime en la ficha de esta revisión como nota del informe. La revisión no cambia.",
       "desv": {
         "oculto": "Oculto: {{bloque}}",
         "mostrado": "Mostrado: {{bloque}}",
@@ -7259,17 +7257,7 @@
         "seleccion": "selección por defecto",
         "partir": "cómo se parte"
       },
-      "sinRevisiones": "El informe aún no tiene revisiones: se añaden en Contenido.",
-      "marcaNota": "Nota",
-      "marcaFotos": "{{n}} fotos",
-      "datos": "Cambios sobre los datos del informe",
-      "datosHint": "Pulsa sobre un item del informe para añadir alguna nota o seleccionar las imágenes a utilizar.",
-      "sinEquipos": "El informe aún no tiene equipos: se añaden en Contenido.",
-      "equipo": "Equipo en este informe",
-      "sinFotosEquipo": "Este equipo no tiene fotos en la gestión documental.",
-      "notaHintEquipo": "Se imprime en la ficha de este equipo como nota del informe. El equipo no cambia.",
-      "sinApartados": "Este tipo de informe no tiene apartados, por lo que no es posible actuar sobre ellos.",
-      "sinReparaciones": "Las reparaciones no llevan nota ni fotos elegidas en el informe: salen como se registraron."
+      "sinApartados": "Este tipo de informe no tiene apartados, por lo que no es posible actuar sobre ellos."
     },
     "proyecto": {
       "fuente": "Fuente de datos",

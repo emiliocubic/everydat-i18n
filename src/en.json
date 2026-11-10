@@ -7099,7 +7099,13 @@
       "nReparaciones_one": "{{count}} repair",
       "nReparaciones_other": "{{count}} repairs",
       "vacioHintReparaciones": "Click \"Add\" to choose the repairs with the filters.",
-      "realizadaPor": "Done by"
+      "realizadaPor": "Done by",
+      "verFotos": "Photos of this row",
+      "fotosTocadas": "Photos of this row (some removed)",
+      "fotosHint": "Click a photo to leave it out of the report. Until you remove any, the template decides which ones appear.",
+      "fotosElegidas": "{{n}} of {{total}} appear. Click a photo to remove it or put it back.",
+      "sinFotos": "This inspection has no photos.",
+      "sinFotosEquipo": "This item has no photos in document management."
     },
     "selector": {
       "titulo": "Add to the report",
@@ -7230,18 +7236,10 @@
       "ninguno": "This report follows the template as is.",
       "deshacer": "Undo",
       "actualizar": "Update from template",
-      "actualizarConfirmar": "The published template is copied again and these changes are lost: {{lista}}. The chosen notes and photos are kept.",
+      "actualizarConfirmar": "The published template is copied again and these changes are lost: {{lista}}. Chosen photos are kept.",
       "actualizado": "Report updated from the template ({{n}} changes removed)",
       "sinPerdidas": "The report already matches the template",
       "texto": "text",
-      "revision": "Inspection in this report",
-      "fotos": "Photos",
-      "sinFotos": "This inspection has no photos.",
-      "fotosBloque": "As the block says",
-      "fotosElegir": "Choose which",
-      "fotosHint": "The ticked ones are printed, in the order you tick them.",
-      "nota": "Report note",
-      "notaHint": "Printed on this inspection's sheet as a note of the report. The inspection does not change.",
       "desv": {
         "oculto": "Hidden: {{bloque}}",
         "mostrado": "Shown: {{bloque}}",
@@ -7259,17 +7257,7 @@
         "seleccion": "default selection",
         "partir": "how it is split"
       },
-      "sinRevisiones": "The report has no inspections yet: add them in Content.",
-      "marcaNota": "Note",
-      "marcaFotos": "{{n}} photos",
-      "datos": "Changes to the report data",
-      "datosHint": "Click an item of the report to add a note or choose the images to use.",
-      "sinEquipos": "The report has no equipment yet: add it in Content.",
-      "equipo": "Equipment in this report",
-      "sinFotosEquipo": "This equipment has no photos in document management.",
-      "notaHintEquipo": "Printed on this equipment’s sheet as a report note. The equipment does not change.",
-      "sinApartados": "This report type has no sections, so there is nothing to change in them.",
-      "sinReparaciones": "Repairs carry no note or chosen photos in the report: they come out as recorded."
+      "sinApartados": "This report type has no sections, so there is nothing to change in them."
     },
     "proyecto": {
       "fuente": "Data source",
