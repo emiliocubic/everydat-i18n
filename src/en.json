@@ -7255,7 +7255,7 @@
         "pagina": "page",
         "cabecera": "header",
         "pie": "footer",
-        "campos": "report fields",
+        "campos": "custom fields",
         "seleccion": "default selection",
         "partir": "how it is split"
       },
@@ -7830,8 +7830,8 @@
       "cabeceraFila": "Inner page header",
       "pieFila": "Footer",
       "vacio": "Empty",
-      "campos": "Report fields",
-      "camposHint": "You can create your own fields in the template, linked to every report built with it. Delete the sample ones if you are not going to use them.",
+      "campos": "Custom fields in the template",
+      "camposHint": "You can create your own custom fields in the template. They are filled in on each report made from it, under «Data and issuing», and you can insert them in the texts.",
       "anadirCampo": "Add field",
       "sinCampos": "No fields yet.",
       "tipoCorto": "Type",
@@ -7858,12 +7858,15 @@
     "sheet": {
       "general": "General template settings",
       "interiores": "Inner pages",
-      "campo": "Report field",
+      "campo": "Custom field in the template",
       "cerrar": "Close panel",
       "revisaAvisos": "Check the warnings before saving",
       "enEsteInforme": "In this report",
       "ocultar": "Hide this section",
-      "ocultarHint": "It does not appear in this report. The template does not change."
+      "ocultarHint": "It does not appear in this report. The template does not change.",
+      "descartarTitulo": "Unsaved changes",
+      "descartarTexto": "You have changed this section and not saved it. If you close it now, the changes will be lost.",
+      "descartar": "Discard the changes"
     },
     "secciones": {
       "titulo": "Title",
@@ -7909,7 +7912,7 @@
         "marca": "Your company",
         "firmante": "Signatory",
         "contador": "Results",
-        "campo": "Report fields",
+        "campo": "Custom fields",
         "elemento": "Item",
         "tipo": "Item type",
         "texto": "Variable texts"
@@ -8046,7 +8049,8 @@
       "fotosHint": "Not inspected items carry no photos.",
       "porFilaHint": "With more photos per row, they are smaller and take fewer pages.",
       "carpetas": "Folders",
-      "carpetasDesc": "Sheets are sorted by folder, with its full path as header."
+      "carpetasDesc": "Sheets are sorted by folder, with its full path as header.",
+      "saltoPagina": "Page break"
     },
     "resumen": {
       "columnas": "Columns",
@@ -8117,30 +8121,33 @@
       "textoLibreDesc": "You can include report data."
     },
     "campo": {
-      "nuevo": "New field",
+      "nuevo": "New custom field",
       "campo": "Field",
-      "campoDesc": "You will be asked for it when creating each report. You can insert it in the texts.",
+      "campoDesc": "Filled in on each report, under «Data and issuing». You can insert it in the texts.",
       "nombre": "Field name",
       "nombrePh": "e.g. Order",
       "tipo": "Type",
       "tipos": {
         "texto": "Text",
         "textarea": "Long text",
-        "opcion": "Option",
+        "opcion": "Selection",
         "sino": "Yes / No",
         "fecha": "Date",
-        "usuario": "User"
+        "usuario": "User",
+        "opciones": "Multiple selection",
+        "entero": "Whole number",
+        "decimal": "Decimal number"
       },
-      "opciones": "Options",
+      "opciones": "List of values",
       "opcionesPh": "One per line",
       "obligatorio": "Required",
       "obligatorioCorto": "required",
-      "obligatorioHint": "You will not be able to create the report without filling it in.",
+      "obligatorioHint": "If it is left empty, the pre-issue check warns about it.",
       "defecto": "Default value",
-      "defectoDesc": "Optional. It is suggested when creating the report and you can change it.",
+      "defectoDesc": "Optional. The value each report starts with; it can be changed.",
       "sinValor": "No value",
       "ayuda": "Help",
-      "ayudaDesc": "Text you will see under the field when creating the report."
+      "ayudaDesc": "Text shown below the field on each report."
     },
     "preview": {
       "hint": "With today’s data of the site you choose. It refreshes itself when the design changes, including what is not saved yet.",
@@ -8339,8 +8346,8 @@
     },
     "tabs": {
       "aria": "Report design",
-      "plantillas": "Templates",
-      "variables": "Reusable variables"
+      "plantillas": "TEMPLATES",
+      "variables": "REUSABLE VARIABLES"
     },
     "variables": {
       "listado": {
@@ -8463,7 +8470,8 @@
           "no_apto": "Fail",
           "no_revisada": "Not inspected"
         }
-      }
+      },
+      "intro": "Reusable variables are a powerful tool for adding VARIABLE TEXTS at different points of your reports. These texts can change depending on the types of items they refer to, or on whether certain conditions are met. On top of that, the conditional texts themselves can use dynamic data of different kinds. It is a fairly advanced feature: see the user tutorial for more information"
     }
   },
   "acreditaciones": {

@@ -6596,7 +6596,10 @@
       "marcaFotos": "{{n}} photos",
       "datos": "Modifications des données du rapport",
       "datosHint": "Cliquez sur un élément du rapport pour ajouter une note ou choisir les images à utiliser.",
-      "sinApartados": "Ce type de rapport n’a pas de sections : il n’y a rien à y modifier."
+      "sinApartados": "Ce type de rapport n’a pas de sections : il n’y a rien à y modifier.",
+      "generales": {
+        "campos": "champs personnalisés"
+      }
     },
     "alta": {
       "faltanObligatorios": "Champs obligatoires manquants : {{lista}}.",
@@ -7163,8 +7166,8 @@
       "cabeceraFila": "En-tête des pages intérieures",
       "pieFila": "Pied de page",
       "vacio": "Vide",
-      "campos": "Champs du rapport",
-      "camposHint": "Vous pouvez créer vos propres champs dans le modèle, associés à tous les rapports construits avec lui. Supprimez ceux d'exemple si vous ne comptez pas les utiliser.",
+      "campos": "Champs personnalisés du modèle",
+      "camposHint": "Vous pouvez créer vos propres champs dans le modèle. Ils se remplissent dans chaque rapport créé avec lui, dans « Données et émission », et vous pouvez les insérer dans les textes.",
       "anadirCampo": "Ajouter un champ",
       "sinCampos": "Aucun champ pour l'instant.",
       "tipoCorto": "Type",
@@ -7189,12 +7192,15 @@
     "sheet": {
       "general": "Configuration générale du modèle",
       "interiores": "Pages intérieures",
-      "campo": "Champ du rapport",
+      "campo": "Champ personnalisé du modèle",
       "cerrar": "Fermer le panneau",
       "revisaAvisos": "Vérifiez les avertissements avant d'enregistrer",
       "enEsteInforme": "Dans ce rapport",
       "ocultar": "Masquer cette section",
-      "ocultarHint": "Elle n'apparaît pas dans ce rapport. Le modèle ne change pas."
+      "ocultarHint": "Elle n'apparaît pas dans ce rapport. Le modèle ne change pas.",
+      "descartarTitulo": "Modifications non enregistrées",
+      "descartarTexto": "Vous avez modifié cette section sans l'enregistrer. Si vous la fermez maintenant, les modifications seront perdues.",
+      "descartar": "Annuler les modifications"
     },
     "secciones": {
       "titulo": "Titre",
@@ -7240,7 +7246,7 @@
         "marca": "Votre entreprise",
         "firmante": "Signataire",
         "contador": "Résultats",
-        "campo": "Champs du rapport",
+        "campo": "Champs personnalisés",
         "elemento": "Élément",
         "tipo": "Type d'élément",
         "texto": "Textes variables"
@@ -7377,7 +7383,8 @@
       "fotosHint": "Les éléments non vérifiés n'ont pas de photos.",
       "porFilaHint": "Avec plus de photos par ligne, elles sont plus petites et occupent moins de pages.",
       "carpetas": "Dossiers",
-      "carpetasDesc": "Les fiches sont triées par dossier, avec son chemin complet en en-tête."
+      "carpetasDesc": "Les fiches sont triées par dossier, avec son chemin complet en en-tête.",
+      "saltoPagina": "Saut de page"
     },
     "resumen": {
       "columnas": "Colonnes",
@@ -7448,30 +7455,33 @@
       "textoLibreDesc": "Vous pouvez inclure des données du rapport."
     },
     "campo": {
-      "nuevo": "Nouveau champ",
+      "nuevo": "Nouveau champ personnalisé",
       "campo": "Champ",
-      "campoDesc": "Il vous sera demandé à la création de chaque rapport. Vous pourrez l'insérer dans les textes.",
+      "campoDesc": "Se remplit dans chaque rapport, dans « Données et émission ». Vous pourrez l’insérer dans les textes.",
       "nombre": "Nom du champ",
       "nombrePh": "p. ex. Commande",
       "tipo": "Type",
       "tipos": {
         "texto": "Texte",
         "textarea": "Texte long",
-        "opcion": "Option",
+        "opcion": "Sélection",
         "sino": "Oui / Non",
         "fecha": "Date",
-        "usuario": "Utilisateur"
+        "usuario": "Utilisateur",
+        "opciones": "Sélection multiple",
+        "entero": "Nombre entier",
+        "decimal": "Nombre décimal"
       },
-      "opciones": "Options",
+      "opciones": "Liste de valeurs",
       "opcionesPh": "Une par ligne",
       "obligatorio": "Obligatoire",
       "obligatorioCorto": "obligatoire",
-      "obligatorioHint": "Vous ne pourrez pas créer le rapport sans le remplir.",
+      "obligatorioHint": "S’il reste vide, la vérification préalable le signale avant l’émission.",
       "defecto": "Valeur par défaut",
-      "defectoDesc": "Facultatif. Elle est proposée à la création du rapport et vous pouvez la changer.",
+      "defectoDesc": "Facultatif. La valeur de départ de chaque rapport ; elle peut être modifiée.",
       "sinValor": "Sans valeur",
       "ayuda": "Aide",
-      "ayudaDesc": "Texte affiché sous le champ à la création du rapport."
+      "ayudaDesc": "Texte affiché sous le champ dans chaque rapport."
     },
     "preview": {
       "hint": "Avec les données du jour du site choisi. Elle se met à jour toute seule quand la conception change, y compris ce qui n’est pas encore enregistré.",
@@ -7670,8 +7680,8 @@
     },
     "tabs": {
       "aria": "Conception des rapports",
-      "plantillas": "Modèles",
-      "variables": "Variables réutilisables"
+      "plantillas": "MODÈLES",
+      "variables": "VARIABLES RÉUTILISABLES"
     },
     "variables": {
       "listado": {
@@ -7794,7 +7804,8 @@
           "no_apto": "Non apte",
           "no_revisada": "Non inspecté"
         }
-      }
+      },
+      "intro": "Les variables réutilisables sont un outil puissant qui permet d'insérer des TEXTES VARIABLES à différents endroits des rapports. Ces textes peuvent varier selon les types d'éléments auxquels ils se rapportent, ou selon que certaines conditions sont remplies ou non. De plus, les textes conditionnels eux-mêmes peuvent utiliser des données dynamiques de différents types. C'est une fonction assez avancée : consultez le tutoriel d'utilisation pour plus d'informations"
     }
   },
   "acreditaciones": {

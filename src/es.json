@@ -7255,7 +7255,7 @@
         "pagina": "página",
         "cabecera": "cabecera",
         "pie": "pie",
-        "campos": "campos del informe",
+        "campos": "campos a medida",
         "seleccion": "selección por defecto",
         "partir": "cómo se parte"
       },
@@ -7830,8 +7830,8 @@
       "cabeceraFila": "Cabecera de páginas interiores",
       "pieFila": "Pie de página",
       "vacio": "Vacío",
-      "campos": "Campos del informe",
-      "camposHint": "Puedes crear campos a tu medida en la plantilla que se asocien a todos los informes construidos con ella. Elimina los de ejemplo si no vas a utilizarlos.",
+      "campos": "Campos a medida en la plantilla",
+      "camposHint": "Puedes crear campos a tu medida en la plantilla. Se rellenan en cada informe hecho con ella, en «Datos y emisión», y puedes insertarlos en los textos.",
       "anadirCampo": "Añadir campo",
       "sinCampos": "Aún no hay campos.",
       "tipoCorto": "Tipo",
@@ -7858,12 +7858,15 @@
     "sheet": {
       "general": "Configuración general de la plantilla",
       "interiores": "Páginas interiores",
-      "campo": "Campo del informe",
+      "campo": "Campo a medida en la plantilla",
       "cerrar": "Cerrar panel",
       "revisaAvisos": "Revisa los avisos antes de guardar",
       "enEsteInforme": "En este informe",
       "ocultar": "Ocultar este apartado",
-      "ocultarHint": "No sale en este informe. La plantilla no cambia."
+      "ocultarHint": "No sale en este informe. La plantilla no cambia.",
+      "descartarTitulo": "Cambios sin guardar",
+      "descartarTexto": "Has cambiado este apartado y no lo has guardado. Si lo cierras ahora, los cambios se pierden.",
+      "descartar": "Descartar los cambios"
     },
     "secciones": {
       "titulo": "Título",
@@ -7909,7 +7912,7 @@
         "marca": "Tu empresa",
         "firmante": "Firmante",
         "contador": "Resultados",
-        "campo": "Campos del informe",
+        "campo": "Campos a medida",
         "elemento": "Elemento",
         "tipo": "Tipo de elemento",
         "texto": "Textos variables"
@@ -8046,7 +8049,8 @@
       "fotosHint": "Las revisiones no revisadas no llevan fotos.",
       "porFilaHint": "Con más fotos por fila, salen más pequeñas y ocupan menos hojas.",
       "carpetas": "Carpetas",
-      "carpetasDesc": "Las fichas se ordenan por carpeta, con su ruta entera como cabecera."
+      "carpetasDesc": "Las fichas se ordenan por carpeta, con su ruta entera como cabecera.",
+      "saltoPagina": "Salto de página"
     },
     "resumen": {
       "columnas": "Columnas",
@@ -8117,30 +8121,33 @@
       "textoLibreDesc": "Puedes incluir datos del informe."
     },
     "campo": {
-      "nuevo": "Nuevo campo",
+      "nuevo": "Nuevo campo a medida",
       "campo": "Campo",
-      "campoDesc": "Se te pedirá al crear cada informe. Podrás insertarlo en los textos.",
+      "campoDesc": "Se rellena en cada informe, en «Datos y emisión». Podrás insertarlo en los textos.",
       "nombre": "Nombre del campo",
       "nombrePh": "p. ej. Pedido",
       "tipo": "Tipo",
       "tipos": {
         "texto": "Texto",
         "textarea": "Texto largo",
-        "opcion": "Opción",
+        "opcion": "Selección",
         "sino": "Sí / No",
         "fecha": "Fecha",
-        "usuario": "Usuario"
+        "usuario": "Usuario",
+        "opciones": "Selección múltiple",
+        "entero": "Número entero",
+        "decimal": "Número decimal"
       },
-      "opciones": "Opciones",
-      "opcionesPh": "Una por línea",
+      "opciones": "Lista de valores",
+      "opcionesPh": "Uno por línea",
       "obligatorio": "Obligatorio",
       "obligatorioCorto": "obligatorio",
-      "obligatorioHint": "No podrás crear el informe sin rellenarlo.",
+      "obligatorioHint": "Si se queda vacío, la comprobación previa lo avisa antes de emitir.",
       "defecto": "Valor por defecto",
-      "defectoDesc": "Opcional. Se propone al crear el informe y puedes cambiarlo.",
+      "defectoDesc": "Opcional. Es el valor con que empieza cada informe; se puede cambiar.",
       "sinValor": "Sin valor",
       "ayuda": "Ayuda",
-      "ayudaDesc": "Texto que verás bajo el campo al crear el informe."
+      "ayudaDesc": "Texto que verás bajo el campo en cada informe."
     },
     "preview": {
       "hint": "Con los datos de hoy del emplazamiento que elijas. Se rehace sola al cambiar el diseño, también con lo que aún no está guardado.",
@@ -8339,8 +8346,8 @@
     },
     "tabs": {
       "aria": "Diseño de informes",
-      "plantillas": "Plantillas",
-      "variables": "Variables reutilizables"
+      "plantillas": "PLANTILLAS",
+      "variables": "VARIABLES REUTILIZABLES"
     },
     "variables": {
       "listado": {
@@ -8463,7 +8470,8 @@
           "no_apto": "No apto",
           "no_revisada": "No revisada"
         }
-      }
+      },
+      "intro": "Las variables reutilizables son una potente herramienta que permite introducir TEXTOS VARIABLES en diferentes puntos de los informes. Dichos textos pueden variar en función de los tipos de elementos a los que se refiera, o en función de que se cumplan o no determinadas condiciones. Adicionalmente, en los propios textos condicionados podemos utilizar datos dinámicos de diferentes tipos. Se trata de un recurso de cierta complejidad: referirse al tutorial de uso para más información"
     }
   },
   "acreditaciones": {
