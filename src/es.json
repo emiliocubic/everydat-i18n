@@ -6998,7 +6998,10 @@
       "apto": "Apto",
       "no_apto": "No apto",
       "no_revisada": "No revisado",
-      "retirado": "Retirado"
+      "retirado": "Retirado",
+      "reparado": "Reparado",
+      "no_reparado": "No reparado",
+      "no_reparable": "No reparable"
     },
     "alta": {
       "titulo": "Nuevo informe",
@@ -7092,7 +7095,11 @@
       "seleccionarTodo": "Seleccionar todo",
       "seleccionarCarpeta": "Seleccionar lo de {{carpeta}}",
       "vacioHintEquipos": "Pulsa «Añadir» para elegir los equipos con los filtros.",
-      "nSerie": "Nº serie"
+      "nSerie": "Nº serie",
+      "nReparaciones_one": "{{count}} reparación",
+      "nReparaciones_other": "{{count}} reparaciones",
+      "vacioHintReparaciones": "Pulsa «Añadir» para elegir las reparaciones con los filtros.",
+      "realizadaPor": "Realizada por"
     },
     "selector": {
       "titulo": "Añadir al informe",
@@ -7129,7 +7136,8 @@
         "apto": "Aptos",
         "no_apto": "No aptos",
         "sin_veredicto": "No revisados"
-      }
+      },
+      "reparados": "Reparadas entre"
     },
     "vista": {
       "titulo": "Vista previa del informe",
@@ -7260,7 +7268,8 @@
       "equipo": "Equipo en este informe",
       "sinFotosEquipo": "Este equipo no tiene fotos en la gestión documental.",
       "notaHintEquipo": "Se imprime en la ficha de este equipo como nota del informe. El equipo no cambia.",
-      "sinApartados": "Este tipo de informe no tiene apartados, por lo que no es posible actuar sobre ellos."
+      "sinApartados": "Este tipo de informe no tiene apartados, por lo que no es posible actuar sobre ellos.",
+      "sinReparaciones": "Las reparaciones no llevan nota ni fotos elegidas en el informe: salen como se registraron."
     },
     "proyecto": {
       "fuente": "Fuente de datos",
@@ -7282,7 +7291,9 @@
       "alDia": "El informe ya está al día con el proyecto.",
       "desfase": "Este informe tiene su origen en un proyecto, y la situación actual del informe y del proyecto no coinciden. Se recomienda usar la opción Actualizar desde el proyecto en la pestaña Contenido para sincronizar el informe con el estado actual del proyecto antes de emitirlo.",
       "yaEmitidas_one": "{{count}} revisión de este informe ya está en otro informe emitido.",
-      "yaEmitidas_other": "{{count}} revisiones de este informe ya están en otro informe emitido."
+      "yaEmitidas_other": "{{count}} revisiones de este informe ya están en otro informe emitido.",
+      "reparaciones": "Reparaciones del proyecto",
+      "libreReparaciones": "Selección libre de reparaciones"
     },
     "listado": {
       "todosClientes": "Todos los clientes",
@@ -7840,7 +7851,9 @@
       "hint": "Los nuevos apartados se añaden al final. Arrástralos para cambiar el orden. Cada apartado empieza en página nueva.",
       "hintInforme": "Estos son los bloques de la plantilla. Puedes editarlos para modificar algo de su contenido o incluso ocultarlos en este informe. Los cambios no afectan a la plantilla en sí, únicamente a ESTE informe concreto.",
       "oculto": "Oculto",
-      "hintUnico": "Este tipo de informe lleva un solo apartado, una ficha por revisión. Púlsalo para configurarlo."
+      "hintUnico": "Este tipo de informe lleva un solo apartado, una ficha por revisión, ya que cada ficha será un archivo PDF independiente y no hay lugar para otros componentes. Púlsalo para configurarlo.",
+      "hintUnicoReparacion": "Este tipo de informe lleva un solo apartado, una ficha por reparación, ya que cada equipo será un archivo PDF independiente y no hay lugar para otros componentes. Púlsalo para configurarlo.",
+      "hintUnicoHistorial": "Este tipo de informe lleva un solo apartado, una ficha de historial por elemento, ya que cada ficha será un archivo PDF independiente y no hay lugar para otros componentes. Púlsalo para configurarlo."
     },
     "sheet": {
       "general": "Configuración general de la plantilla",

@@ -6998,7 +6998,10 @@
       "apto": "Pass",
       "no_apto": "Fail",
       "no_revisada": "Not inspected",
-      "retirado": "Withdrawn"
+      "retirado": "Withdrawn",
+      "reparado": "Repaired",
+      "no_reparado": "Not repaired",
+      "no_reparable": "Not repairable"
     },
     "alta": {
       "titulo": "New report",
@@ -7092,7 +7095,11 @@
       "seleccionarTodo": "Select all",
       "seleccionarCarpeta": "Select everything in {{carpeta}}",
       "vacioHintEquipos": "Click “Add” to choose the equipment with the filters.",
-      "nSerie": "Serial no."
+      "nSerie": "Serial no.",
+      "nReparaciones_one": "{{count}} repair",
+      "nReparaciones_other": "{{count}} repairs",
+      "vacioHintReparaciones": "Click \"Add\" to choose the repairs with the filters.",
+      "realizadaPor": "Done by"
     },
     "selector": {
       "titulo": "Add to the report",
@@ -7129,7 +7136,8 @@
         "apto": "Pass",
         "no_apto": "Fail",
         "sin_veredicto": "Not inspected"
-      }
+      },
+      "reparados": "Repaired between"
     },
     "vista": {
       "titulo": "Report preview",
@@ -7260,7 +7268,8 @@
       "equipo": "Equipment in this report",
       "sinFotosEquipo": "This equipment has no photos in document management.",
       "notaHintEquipo": "Printed on this equipment’s sheet as a report note. The equipment does not change.",
-      "sinApartados": "This report type has no sections, so there is nothing to change in them."
+      "sinApartados": "This report type has no sections, so there is nothing to change in them.",
+      "sinReparaciones": "Repairs carry no note or chosen photos in the report: they come out as recorded."
     },
     "proyecto": {
       "fuente": "Data source",
@@ -7282,7 +7291,9 @@
       "alDia": "The report is already up to date with the project.",
       "desfase": "This report originates from a project, and the current state of the report and the project do not match. Use Update from the project in the Content tab to bring the report in line with the project before issuing it.",
       "yaEmitidas_one": "{{count}} inspection in this report is already in another issued report.",
-      "yaEmitidas_other": "{{count}} inspections in this report are already in another issued report."
+      "yaEmitidas_other": "{{count}} inspections in this report are already in another issued report.",
+      "reparaciones": "Project repairs",
+      "libreReparaciones": "Free selection of repairs"
     },
     "listado": {
       "todosClientes": "All clients",
@@ -7840,7 +7851,9 @@
       "hint": "New sections are added at the end. Drag them to change the order. Each section starts on a new page.",
       "hintInforme": "These are the template’s blocks. You can edit them to change some of their content or even hide them in this report. The changes do not affect the template itself, only THIS report.",
       "oculto": "Hidden",
-      "hintUnico": "This report type has a single section, one sheet per inspection. Click it to set it up."
+      "hintUnico": "This report type has a single section, one sheet per inspection, because each sheet will be a separate PDF file and there is no room for other components. Click it to set it up.",
+      "hintUnicoReparacion": "This report type has a single section, one sheet per repair, because each item will be a separate PDF file and there is no room for other components. Click it to set it up.",
+      "hintUnicoHistorial": "This report type has a single section, one history sheet per item, because each sheet will be a separate PDF file and there is no room for other components. Click it to set it up."
     },
     "sheet": {
       "general": "General template settings",
