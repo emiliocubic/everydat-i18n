@@ -4620,7 +4620,12 @@
           "registrar_actuacion_conjunto_one": "Record {{actuacion}} on set {{conjunto}}, on {{count}} of its items, on {{fecha}}{{detalle}}",
           "registrar_actuacion_conjunto_other": "Record {{actuacion}} on set {{conjunto}}, on {{count}} of its items, on {{fecha}}{{detalle}}",
           "registrar_actuacion_lote_one": "Record {{actuacion}} on {{count}} item, on {{fecha}}{{detalle}}",
-          "registrar_actuacion_lote_other": "Record {{actuacion}} on {{count}} items, one on each, on {{fecha}}{{detalle}}"
+          "registrar_actuacion_lote_other": "Record {{actuacion}} on {{count}} items, one on each, on {{fecha}}{{detalle}}",
+          "guardar_precios_revision_one": "Change the periodic inspection rate for {{count}} equipment type",
+          "guardar_precios_revision_other": "Change the periodic inspection rate for {{count}} equipment types",
+          "guardar_precios_revision_adicional_one": "Change the rate of the additional inspection “{{revision}}” for {{count}} equipment type",
+          "guardar_precios_revision_adicional_other": "Change the rate of the additional inspection “{{revision}}” for {{count}} equipment types",
+          "guardar_otros_productos": "Change the other products ({{cambios}}), without deleting anything"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4639,7 +4644,11 @@
           "grupo_one": "{{count}} group",
           "grupo_other": "{{count}} groups",
           "emplazamiento_one": "{{count}} site",
-          "emplazamiento_other": "{{count}} sites"
+          "emplazamiento_other": "{{count}} sites",
+          "producto_one": "{{count}} product",
+          "producto_other": "{{count}} products",
+          "bloque_one": "{{count}} block",
+          "bloque_other": "{{count}} blocks"
         },
         "acota": {
           "ninguno": "“{{grupo}}” does not limit what any user sees.",
@@ -4675,6 +4684,34 @@
           },
           "noApto_one": "it becomes unfit",
           "noApto_other": "they become unfit"
+        },
+        "tarifa": {
+          "revision": "Inspection “{{nombre}}”:",
+          "linea": "{{tipo}}: {{antes}} → {{despues}}",
+          "igual": "{{tipo}}: stays at {{precio}}",
+          "tipoNoExiste": "Type no. {{id}} is not in the rates: the step will fail",
+          "sinTarifa": "no rate",
+          "fijo": "{{importe}} per unit",
+          "porCampo": "{{importe}} per {{campo}}",
+          "baseMasCampo": "{{base}} plus {{importe}} per {{campo}}",
+          "unCampo": "a field"
+        },
+        "productos": {
+          "nuevo": "New in “{{bloque}}”: {{nombre}}, {{precio}}",
+          "cambia": "{{nombre}}: {{cambios}}",
+          "igual": "{{nombre}}: no changes",
+          "precio": "{{antes}} → {{despues}}",
+          "nombre": "renamed “{{nombre}}”",
+          "descripcion": "description “{{descripcion}}”",
+          "mueve": "moves to the block “{{bloque}}”",
+          "noExiste": "Product no. {{id}} does not exist: the step will fail",
+          "bloqueNuevo": "New block “{{nombre}}”",
+          "bloqueNuevoApagado": "New block “{{nombre}}”, switched off",
+          "bloqueRenombra": "The block “{{antes}}” is renamed “{{despues}}”",
+          "bloqueDescripcion": "The block “{{nombre}}” gets the description “{{descripcion}}”",
+          "bloqueApaga": "Switch off the block “{{nombre}}”: its products are no longer offered in proposals",
+          "bloqueEnciende": "Switch on the block “{{nombre}}”: its products are offered in proposals again",
+          "bloqueNoExiste": "Block no. {{id}} does not exist: the step will fail"
         }
       },
       "deleteChat": "Delete conversation"

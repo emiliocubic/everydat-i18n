@@ -4157,7 +4157,12 @@
           "registrar_actuacion_conjunto_one": "Enregistrer {{actuacion}} sur l'ensemble {{conjunto}}, sur {{count}} de ses équipements, le {{fecha}}{{detalle}}",
           "registrar_actuacion_conjunto_other": "Enregistrer {{actuacion}} sur l'ensemble {{conjunto}}, sur {{count}} de ses équipements, le {{fecha}}{{detalle}}",
           "registrar_actuacion_lote_one": "Enregistrer {{actuacion}} sur {{count}} équipement, le {{fecha}}{{detalle}}",
-          "registrar_actuacion_lote_other": "Enregistrer {{actuacion}} sur {{count}} équipements, une sur chacun, le {{fecha}}{{detalle}}"
+          "registrar_actuacion_lote_other": "Enregistrer {{actuacion}} sur {{count}} équipements, une sur chacun, le {{fecha}}{{detalle}}",
+          "guardar_precios_revision_one": "Modifier le tarif de la vérification périodique de {{count}} type d’équipement",
+          "guardar_precios_revision_other": "Modifier le tarif de la vérification périodique de {{count}} types d’équipement",
+          "guardar_precios_revision_adicional_one": "Modifier le tarif de la vérification supplémentaire « {{revision}} » de {{count}} type d’équipement",
+          "guardar_precios_revision_adicional_other": "Modifier le tarif de la vérification supplémentaire « {{revision}} » de {{count}} types d’équipement",
+          "guardar_otros_productos": "Modifier les autres produits ({{cambios}}), sans rien supprimer"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4176,7 +4181,11 @@
           "grupo_one": "{{count}} groupe",
           "grupo_other": "{{count}} groupes",
           "emplazamiento_one": "{{count}} site",
-          "emplazamiento_other": "{{count}} sites"
+          "emplazamiento_other": "{{count}} sites",
+          "producto_one": "{{count}} produit",
+          "producto_other": "{{count}} produits",
+          "bloque_one": "{{count}} bloc",
+          "bloque_other": "{{count}} blocs"
         },
         "acota": {
           "ninguno": "« {{grupo}} » ne limite ce que voit aucun utilisateur.",
@@ -4212,6 +4221,34 @@
           },
           "noApto_one": "il devient non conforme",
           "noApto_other": "ils deviennent non conformes"
+        },
+        "tarifa": {
+          "revision": "Vérification « {{nombre}} » :",
+          "linea": "{{tipo}} : {{antes}} → {{despues}}",
+          "igual": "{{tipo}} : reste à {{precio}}",
+          "tipoNoExiste": "Le type n° {{id}} n’est pas dans le tarif : l’étape échouera",
+          "sinTarifa": "sans tarif",
+          "fijo": "{{importe}} par unité",
+          "porCampo": "{{importe}} par {{campo}}",
+          "baseMasCampo": "{{base}} plus {{importe}} par {{campo}}",
+          "unCampo": "un champ"
+        },
+        "productos": {
+          "nuevo": "Nouveau dans « {{bloque}} » : {{nombre}}, {{precio}}",
+          "cambia": "{{nombre}} : {{cambios}}",
+          "igual": "{{nombre}} : sans changement",
+          "precio": "{{antes}} → {{despues}}",
+          "nombre": "renommé « {{nombre}} »",
+          "descripcion": "description « {{descripcion}} »",
+          "mueve": "passe au bloc « {{bloque}} »",
+          "noExiste": "Le produit n° {{id}} n’existe pas : l’étape échouera",
+          "bloqueNuevo": "Nouveau bloc « {{nombre}} »",
+          "bloqueNuevoApagado": "Nouveau bloc « {{nombre}} », désactivé",
+          "bloqueRenombra": "Le bloc « {{antes}} » est renommé « {{despues}} »",
+          "bloqueDescripcion": "Le bloc « {{nombre}} » reçoit la description « {{descripcion}} »",
+          "bloqueApaga": "Désactiver le bloc « {{nombre}} » : ses produits ne sont plus proposés dans les propositions",
+          "bloqueEnciende": "Activer le bloc « {{nombre}} » : ses produits sont de nouveau proposés dans les propositions",
+          "bloqueNoExiste": "Le bloc n° {{id}} n’existe pas : l’étape échouera"
         }
       },
       "deleteChat": "Supprimer la conversation"

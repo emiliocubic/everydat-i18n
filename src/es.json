@@ -4620,7 +4620,12 @@
           "registrar_actuacion_conjunto_one": "Anotar {{actuacion}} en el conjunto {{conjunto}}, en {{count}} de sus equipos, el {{fecha}}{{detalle}}",
           "registrar_actuacion_conjunto_other": "Anotar {{actuacion}} en el conjunto {{conjunto}}, en {{count}} de sus equipos, el {{fecha}}{{detalle}}",
           "registrar_actuacion_lote_one": "Anotar {{actuacion}} en {{count}} equipo, el {{fecha}}{{detalle}}",
-          "registrar_actuacion_lote_other": "Anotar {{actuacion}} en {{count}} equipos, una en cada uno, el {{fecha}}{{detalle}}"
+          "registrar_actuacion_lote_other": "Anotar {{actuacion}} en {{count}} equipos, una en cada uno, el {{fecha}}{{detalle}}",
+          "guardar_precios_revision_one": "Cambiar la tarifa de la revisión periódica de {{count}} tipo de equipo",
+          "guardar_precios_revision_other": "Cambiar la tarifa de la revisión periódica de {{count}} tipos de equipo",
+          "guardar_precios_revision_adicional_one": "Cambiar la tarifa de la revisión adicional «{{revision}}» de {{count}} tipo de equipo",
+          "guardar_precios_revision_adicional_other": "Cambiar la tarifa de la revisión adicional «{{revision}}» de {{count}} tipos de equipo",
+          "guardar_otros_productos": "Cambiar los otros productos ({{cambios}}), sin borrar nada"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4639,7 +4644,11 @@
           "grupo_one": "{{count}} grupo",
           "grupo_other": "{{count}} grupos",
           "emplazamiento_one": "{{count}} emplazamiento",
-          "emplazamiento_other": "{{count}} emplazamientos"
+          "emplazamiento_other": "{{count}} emplazamientos",
+          "producto_one": "{{count}} producto",
+          "producto_other": "{{count}} productos",
+          "bloque_one": "{{count}} bloque",
+          "bloque_other": "{{count}} bloques"
         },
         "acota": {
           "ninguno": "«{{grupo}}» no acota lo que ve ningún usuario.",
@@ -4675,6 +4684,34 @@
           },
           "noApto_one": "queda no apto",
           "noApto_other": "quedan no aptos"
+        },
+        "tarifa": {
+          "revision": "Revisión «{{nombre}}»:",
+          "linea": "{{tipo}}: {{antes}} → {{despues}}",
+          "igual": "{{tipo}}: se queda en {{precio}}",
+          "tipoNoExiste": "El tipo n.º {{id}} no está en la tarifa: el paso fallará",
+          "sinTarifa": "sin tarifa",
+          "fijo": "{{importe}} por unidad",
+          "porCampo": "{{importe}} por {{campo}}",
+          "baseMasCampo": "{{base}} más {{importe}} por {{campo}}",
+          "unCampo": "un campo"
+        },
+        "productos": {
+          "nuevo": "Nuevo en «{{bloque}}»: {{nombre}}, {{precio}}",
+          "cambia": "{{nombre}}: {{cambios}}",
+          "igual": "{{nombre}}: sin cambios",
+          "precio": "{{antes}} → {{despues}}",
+          "nombre": "pasa a llamarse «{{nombre}}»",
+          "descripcion": "descripción «{{descripcion}}»",
+          "mueve": "pasa al bloque «{{bloque}}»",
+          "noExiste": "El producto n.º {{id}} no existe: el paso fallará",
+          "bloqueNuevo": "Bloque nuevo «{{nombre}}»",
+          "bloqueNuevoApagado": "Bloque nuevo «{{nombre}}», apagado",
+          "bloqueRenombra": "El bloque «{{antes}}» pasa a llamarse «{{despues}}»",
+          "bloqueDescripcion": "El bloque «{{nombre}}» pasa a tener la descripción «{{descripcion}}»",
+          "bloqueApaga": "Apagar el bloque «{{nombre}}»: sus productos dejan de ofrecerse en las propuestas",
+          "bloqueEnciende": "Encender el bloque «{{nombre}}»: sus productos vuelven a ofrecerse en las propuestas",
+          "bloqueNoExiste": "El bloque n.º {{id}} no existe: el paso fallará"
         }
       },
       "deleteChat": "Borrar conversación"
