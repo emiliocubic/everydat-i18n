@@ -1472,8 +1472,6 @@
     "limite": "Internal user limit",
     "limiteHint": "Empty = no limit. Lowering it expels nobody: it only closes new sign-ups.",
     "usuariosInternos": "{{count}} internal users active now",
-    "idiomas": "Active languages",
-    "idiomasHint": "The ones the tenant can pick for the interface, reports and emails.",
     "guardar": "Save",
     "guardado": "Instance saved",
     "errorCarga": "The instance could not be loaded.",

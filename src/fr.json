@@ -1341,8 +1341,6 @@
     "limite": "Limite d'utilisateurs internes",
     "limiteHint": "Vide = sans limite. La baisser n'expulse personne : elle ferme seulement les créations.",
     "usuariosInternos": "{{count}} internes actifs actuellement",
-    "idiomas": "Langues actives",
-    "idiomasHint": "Celles que le tenant peut choisir pour l'interface, les rapports et les courriels.",
     "guardar": "Enregistrer",
     "guardado": "Instance enregistrée",
     "errorCarga": "Impossible de charger l'instance.",
