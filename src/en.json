@@ -69,6 +69,13 @@
       "cursiva": "Italic",
       "vinetas": "Bulleted list",
       "numerada": "Numbered list"
+    },
+    "formatoFecha": "dd|mm|yyyy",
+    "fecha": {
+      "hoy": "Today",
+      "borrar": "Clear",
+      "mesAnterior": "Previous month",
+      "mesSiguiente": "Next month"
     }
   },
   "merge": {

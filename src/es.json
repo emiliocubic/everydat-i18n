@@ -69,6 +69,13 @@
       "cursiva": "Cursiva",
       "vinetas": "Lista con viñetas",
       "numerada": "Lista numerada"
+    },
+    "formatoFecha": "dd|mm|aaaa",
+    "fecha": {
+      "hoy": "Hoy",
+      "borrar": "Borrar",
+      "mesAnterior": "Mes anterior",
+      "mesSiguiente": "Mes siguiente"
     }
   },
   "merge": {
