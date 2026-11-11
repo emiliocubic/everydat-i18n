@@ -3411,8 +3411,8 @@
       "revisionesTitle": "Vérifications",
       "revisionPeriodica": "Vérification périodique - {{n}} mois depuis la dernière vérification APTE",
       "revisionPeriodicaNo": "Vérification périodique - Ne s'applique pas",
-      "revisionesNota": "Pour information. Les différentes vérifications et leur périodicité se gèrent dans la section <0>CARACTÉRISATION</0> du catalogue.",
-      "fechasNota": "Pour information. Ces paramètres de dates de référence se modifient dans la section <0>CARACTÉRISATION</0> du catalogue.",
+      "revisionesNota": "Pour information. Les différentes vérifications et leur périodicité se gèrent dans Configuration › <0>Paramètres techniques › Vérifications</0>.",
+      "fechasNota": "Pour information. Ces paramètres de dates de référence se modifient dans Configuration › <0>Paramètres techniques › Équipements et systèmes</0>.",
       "epiAviso": "Les EPI ne s'installent pas : à l'enregistrement, la date d'installation sera retirée de ce type. Les équipements qui l'ont déjà la conservent, mais elle n'est plus affichée ni utilisée.",
       "soloGestionCatalogo": "(uniquement les utilisateurs autorisés à gérer le catalogue)"
     },
@@ -3972,7 +3972,10 @@
       "calidad": "Qualité des données",
       "miEmpresa": "Mon entreprise",
       "datosCuenta": "Données du compte",
-      "configMarca": "Paramètres de marque"
+      "configMarca": "Paramètres de marque",
+      "configEmpresa": "Entreprise et marque",
+      "configTarifas": "Tarifs",
+      "configIaConectores": "IA et connecteurs"
     },
     "prefs": {
       "themeLight": "Thème clair",

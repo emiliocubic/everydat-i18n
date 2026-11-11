@@ -3555,8 +3555,8 @@
       "revisionesTitle": "Inspections",
       "revisionPeriodica": "Periodic inspection - {{n}} months from the last PASSED inspection",
       "revisionPeriodicaNo": "Periodic inspection - Does not apply",
-      "revisionesNota": "For information. The different inspections and their intervals are managed in the <0>CHARACTERISATION</0> section of the catalogue.",
-      "fechasNota": "For information. These reference date settings are edited in the <0>CHARACTERISATION</0> section of the catalogue.",
+      "revisionesNota": "For information. The different inspections and their intervals are managed in Settings › <0>Technical parameters › Inspections</0>.",
+      "fechasNota": "For information. These reference date settings are edited in Settings › <0>Technical parameters › Equipment and systems</0>.",
       "epiAviso": "PPE is not installed: saving will remove the installation date from this type. Equipment that already has one keeps it, but it is no longer shown or used.",
       "soloGestionCatalogo": "(only users with catalogue management permissions)"
     },
@@ -4127,7 +4127,10 @@
       "calidad": "Data quality",
       "miEmpresa": "My company",
       "datosCuenta": "Account details",
-      "configMarca": "Brand parameters"
+      "configMarca": "Brand parameters",
+      "configEmpresa": "Company and brand",
+      "configTarifas": "Rates",
+      "configIaConectores": "AI and connectors"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -4389,8 +4392,17 @@
               "What the menu proposal asks for and does not exist yet: typefaces and more colours."
             ]
           }
+        ],
+        "configTarifas": [
+          {
+            "titulo": "Today",
+            "puntos": [
+              "While this screen is being built, prices remain on the previous parameters screen, in the \"Budget parameters\" group."
+            ]
+          }
         ]
-      }
+      },
+      "configTarifas": "Prices of inspections by type and of the other products offered in proposals."
     },
     "sinPermiso": {
       "titulo": "No permission",
@@ -4417,7 +4429,8 @@
       "catalogoVer": "view the manufacturers and models catalogue",
       "apiCapacidades": "You do not have permission for this action: {{accion}}. It comes with the {{capacidades}} capabilities.",
       "nexo": "or",
-      "nexoAnteO": "or"
+      "nexoAnteO": "or",
+      "tecnicos": "configure the technical parameters"
     }
   },
   "proyectos": {

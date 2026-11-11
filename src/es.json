@@ -3555,8 +3555,8 @@
       "revisionesTitle": "Revisiones",
       "revisionPeriodica": "Revisión periódica - {{n}} meses desde última revisión APTA",
       "revisionPeriodicaNo": "Revisión periódica - No se le aplica",
-      "revisionesNota": "Informativo. Las diferentes revisiones y su periodicidad se gestionan en la sección de <0>CARACTERIZACIÓN</0> del catálogo.",
-      "fechasNota": "Dato informativo. Estos parámetros de fechas de referencia se editan en la sección de <0>CARACTERIZACIÓN</0> del catálogo.",
+      "revisionesNota": "Informativo. Las diferentes revisiones y su periodicidad se gestionan en Configuración › <0>Parámetros técnicos › Revisiones</0>.",
+      "fechasNota": "Dato informativo. Estos parámetros de fechas de referencia se editan en Configuración › <0>Parámetros técnicos › Equipos y sistemas</0>.",
       "epiAviso": "Los EPI no se instalan: al guardarlo se le quitará la fecha de instalación. Los equipos que ya la tengan la conservan, pero deja de mostrarse y de usarse.",
       "soloGestionCatalogo": "(solo usuarios con permisos de gestión de catálogo)"
     },
@@ -4127,7 +4127,10 @@
       "calidad": "Calidad de datos",
       "miEmpresa": "Mi empresa",
       "datosCuenta": "Datos de la cuenta",
-      "configMarca": "Parámetros de marca"
+      "configMarca": "Parámetros de marca",
+      "configEmpresa": "Empresa y marca",
+      "configTarifas": "Tarifas",
+      "configIaConectores": "IA y conectores"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -4389,8 +4392,17 @@
               "Lo que pide la propuesta de menú y aún no existe: tipografías y más colores."
             ]
           }
+        ],
+        "configTarifas": [
+          {
+            "titulo": "Hoy",
+            "puntos": [
+              "Mientras se construye esta pantalla, los precios siguen en la pantalla anterior de parámetros, grupo «Parámetros presupuestarios»."
+            ]
+          }
         ]
-      }
+      },
+      "configTarifas": "Precios de las revisiones por tipo y de los otros productos que se ofrecen en las propuestas."
     },
     "sinPermiso": {
       "titulo": "Sin permiso",
@@ -4417,7 +4429,8 @@
       "catalogoVer": "ver el catálogo de fabricantes y modelos",
       "apiCapacidades": "No tienes permiso para esta acción: {{accion}}. Lo dan las capacidades {{capacidades}}.",
       "nexo": "o",
-      "nexoAnteO": "u"
+      "nexoAnteO": "u",
+      "tecnicos": "configurar los parámetros técnicos"
     }
   },
   "proyectos": {
