@@ -8412,5 +8412,17 @@
     "guardando": "Enregistrement…",
     "guardado": "Question enregistrée.",
     "descartar": "Abandonner"
+  },
+  "ordenVida": {
+    "que": {
+      "revision": "révision",
+      "instalacion": "installation",
+      "reparacion": "réparation"
+    },
+    "antesFabricacion": "La {{que}} ne peut pas être antérieure à la fabrication de l'équipement ({{fecha}}).",
+    "antesInstalacion": "La {{que}} ne peut pas être antérieure à l'installation de l'équipement ({{fecha}}).",
+    "instalacionPosterior": "L'installation ne peut pas être postérieure à la {{que}} du {{fecha}} : elle précède toute révision ou réparation de l'équipement.",
+    "fechaPosterior": "La date de {{nombre}} ne peut pas être postérieure à la {{que}} du {{fecha}}, déjà enregistrée.",
+    "fechaAntesDe": "La date « {{nombre}} » ne peut pas être antérieure à « {{anterior}} »."
   }
 }

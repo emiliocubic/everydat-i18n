@@ -9365,5 +9365,17 @@
     "guardando": "Saving…",
     "guardado": "Question saved.",
     "descartar": "Discard"
+  },
+  "ordenVida": {
+    "que": {
+      "revision": "inspection",
+      "instalacion": "installation",
+      "reparacion": "repair"
+    },
+    "antesFabricacion": "The {{que}} cannot be earlier than the equipment's manufacture ({{fecha}}).",
+    "antesInstalacion": "The {{que}} cannot be earlier than the equipment's installation ({{fecha}}).",
+    "instalacionPosterior": "The installation cannot be later than the {{que}} of {{fecha}}: it comes before any inspection or repair of the equipment.",
+    "fechaPosterior": "The {{nombre}} date cannot be later than the {{que}} of {{fecha}}, which is already recorded.",
+    "fechaAntesDe": "The date «{{nombre}}» cannot be earlier than «{{anterior}}»."
   }
 }

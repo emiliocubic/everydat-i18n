@@ -9365,5 +9365,17 @@
     "guardando": "Guardando…",
     "guardado": "Pregunta guardada.",
     "descartar": "Descartar"
+  },
+  "ordenVida": {
+    "que": {
+      "revision": "revisión",
+      "instalacion": "instalación",
+      "reparacion": "reparación"
+    },
+    "antesFabricacion": "La {{que}} no puede ser anterior a la fabricación del equipo ({{fecha}}).",
+    "antesInstalacion": "La {{que}} no puede ser anterior a la instalación del equipo ({{fecha}}).",
+    "instalacionPosterior": "La instalación no puede ser posterior a la {{que}} del {{fecha}}: va antes que cualquier revisión o reparación del equipo.",
+    "fechaPosterior": "La {{nombre}} no puede ser posterior a la {{que}} del {{fecha}}, que ya está registrada.",
+    "fechaAntesDe": "La fecha «{{nombre}}» no puede ser anterior a «{{anterior}}»."
   }
 }
