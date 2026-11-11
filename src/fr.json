@@ -1002,7 +1002,11 @@
         "modelo": "Image de son modèle",
         "tipo": "Image de son type"
       },
-      "finVidaAdelantado": "Avancée à la main : son type la fixe au {{fecha}}."
+      "finVidaAdelantado": "Avancée à la main : son type la fixe au {{fecha}}.",
+      "periodicidad": "Vérification périodique",
+      "periodicidadCada_one": "Tous les {{count}} mois",
+      "periodicidadCada_other": "Tous les {{count}} mois",
+      "periodicidadSinPlazo": "Sans périodicité : la validité est fixée par le vérificateur"
     },
     "fecha": {
       "fabricacion": "Fabrication",

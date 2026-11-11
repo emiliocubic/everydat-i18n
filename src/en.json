@@ -1088,7 +1088,11 @@
         "modelo": "Image of its model",
         "tipo": "Image of its type"
       },
-      "finVidaAdelantado": "Brought forward by hand: its type sets it at {{fecha}}."
+      "finVidaAdelantado": "Brought forward by hand: its type sets it at {{fecha}}.",
+      "periodicidad": "Periodic inspection",
+      "periodicidadCada_one": "Every {{count}} month",
+      "periodicidadCada_other": "Every {{count}} months",
+      "periodicidadSinPlazo": "No interval: the inspector sets the validity"
     },
     "fecha": {
       "fabricacion": "Manufacture",

@@ -959,7 +959,11 @@
         "modelo": "Imagen de su modelo",
         "tipo": "Imagen de su tipo"
       },
-      "finVidaAdelantado": "Adelantado a mano: su tipo lo fija el {{fecha}}."
+      "finVidaAdelantado": "Adelantado a mano: su tipo lo fija el {{fecha}}.",
+      "periodicidad": "Revisión periódica",
+      "periodicidadCada_one": "Cada {{count}} mes",
+      "periodicidadCada_other": "Cada {{count}} meses",
+      "periodicidadSinPlazo": "Sin plazo: la validez la pone quien revisa"
     },
     "fecha": {
       "fabricacion": "Fabricación",
