@@ -4059,13 +4059,45 @@
         "vision": {
           "titulo": "Visión",
           "ayuda": "Leer una foto, como la etiqueta de un equipo. Exige un modelo apto en visión."
-        }
+        },
+        "entornoModelo": "El del servidor"
       },
       "empresa": {
         "titulo": "Sobre nuestra empresa",
         "desc": "Lo que el asistente debe saber de cómo trabajáis, en llano: vocabulario, costumbres, plazos. Se suma a la guía que el asistente lee siempre.",
         "placeholder": "Por ejemplo: aquí llamamos centros a los emplazamientos; las cubiertas se revisan cada seis meses.",
         "ayuda": "Quedan {{n}} caracteres."
+      },
+      "titulo": "IA y conectores",
+      "tabsAria": "Secciones de IA y conectores",
+      "tab": {
+        "ia": "Inteligencia artificial",
+        "conectores": "Conectores"
+      },
+      "conectoresVacia": "Aquí irán las conexiones con otros sistemas (ERP, correo, almacenamiento…). Todavía no hay ninguna disponible.",
+      "ranurasCol": {
+        "tarea": "Tarea",
+        "proveedor": "Proveedor",
+        "modelo": "Modelo"
+      },
+      "prov": {
+        "desc": "La conexión con cada servicio de IA: dirección, clave y si ha pasado la prueba. Todos usan el formato común de OpenAI. Qué tarea hace cada uno se decide en Ranuras de modelo.",
+        "estado": "Estado",
+        "estados": {
+          "apto": "Apto",
+          "noApto": "No apto",
+          "sinProbar": "Sin probar"
+        },
+        "verExamen": "Ver el resultado de la prueba",
+        "volverAProbar": "Volver a probar",
+        "ocupaRanura": "Lo usa una ranura: cámbiala antes de borrarlo.",
+        "nuevo": "Nuevo proveedor",
+        "editando": "Editar {{nombre}}",
+        "modeloPrueba": "Modelo con el que probar",
+        "modeloPruebaAyuda": "Al guardar un proveedor nuevo, o al cambiar su dirección o su clave, se prueba solo con este modelo. Gasta unos pocos tokens del proveedor.",
+        "guardarProbar": "Guardar y probar",
+        "probadoApto": "{{nombre}}: probado y apto.",
+        "probadoNoApto": "{{nombre}}: no ha pasado la prueba. Abajo, el motivo."
       }
     },
     "tarifas": {

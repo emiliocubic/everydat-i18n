@@ -4059,13 +4059,45 @@
         "vision": {
           "titulo": "Vision",
           "ayuda": "Reading a photo, such as an equipment label. Requires a model that passed the vision test."
-        }
+        },
+        "entornoModelo": "The server's"
       },
       "empresa": {
         "titulo": "About our company",
         "desc": "What the assistant should know about how you work, in plain words: vocabulary, habits, deadlines. It is added to the guide the assistant always reads.",
         "placeholder": "For example: we call sites “centres”; roofs are inspected every six months.",
         "ayuda": "{{n}} characters left."
+      },
+      "titulo": "AI and connectors",
+      "tabsAria": "AI and connector sections",
+      "tab": {
+        "ia": "Artificial intelligence",
+        "conectores": "Connectors"
+      },
+      "conectoresVacia": "Connections with other systems (ERP, email, storage…) will go here. None are available yet.",
+      "ranurasCol": {
+        "tarea": "Task",
+        "proveedor": "Provider",
+        "modelo": "Model"
+      },
+      "prov": {
+        "desc": "The connection to each AI service: address, key and whether it has passed the test. All use the common OpenAI format. Which task each one does is set in Model slots.",
+        "estado": "Status",
+        "estados": {
+          "apto": "Passed",
+          "noApto": "Failed",
+          "sinProbar": "Not tested"
+        },
+        "verExamen": "See the test result",
+        "volverAProbar": "Test again",
+        "ocupaRanura": "A slot uses it: change the slot before deleting it.",
+        "nuevo": "New provider",
+        "editando": "Edit {{nombre}}",
+        "modeloPrueba": "Model to test with",
+        "modeloPruebaAyuda": "When a new provider is saved, or its address or key changes, it is tested automatically with this model. It uses a few of the provider's tokens.",
+        "guardarProbar": "Save and test",
+        "probadoApto": "{{nombre}}: tested and passed.",
+        "probadoNoApto": "{{nombre}}: did not pass the test. The reason is shown below."
       }
     },
     "tarifas": {
