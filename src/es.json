@@ -4264,6 +4264,152 @@
         },
         "nota": "El portal cliente aún no existe: lo que se elija para él se aplicará cuando llegue."
       }
+    },
+    "marca": {
+      "tabsLabel": "Secciones de la empresa",
+      "tab": {
+        "empresa": "Datos de empresa",
+        "visual": "Imagen y marca",
+        "acreditaciones": "Acreditaciones"
+      },
+      "imagen": {
+        "subir": "Subir",
+        "cambiar": "Cambiar",
+        "quitar": "Quitar"
+      },
+      "corporativa": {
+        "titulo": "Información corporativa",
+        "desc": "Datos de la empresa. Salen en la entrada al portal, en los informes y en los correos automáticos.",
+        "obligatorios": "Nombre comercial, razón social y CIF son obligatorios.",
+        "campos": {
+          "nombre": "Nombre comercial",
+          "razon_social": "Razón social",
+          "cif": "CIF",
+          "direccion": "Dirección",
+          "telefono": "Teléfono",
+          "email": "Correo",
+          "web": "Web"
+        }
+      },
+      "idioma": {
+        "titulo": "Idioma por defecto",
+        "desc": "El de los documentos que no indican otro. La pantalla de cada persona sale en el suyo."
+      },
+      "firma": {
+        "titulo": "Firma electrónica",
+        "desc": "Certificado .p12 de la empresa para firmar los informes que se emitan con «Firma electrónica». Sin certificado, los informes salen igual, sin firma. La contraseña se guarda cifrada y no se vuelve a enseñar. Quien diseña informes ve si hay certificado y hasta cuándo vale, pero no lo cambia.",
+        "configurado": "Certificado configurado:",
+        "caduca": "vale hasta el {{fecha}}",
+        "caducado": "El certificado ha caducado: los informes salen sin firmar hasta que se suba otro.",
+        "sinCertificado": "No hay certificado configurado.",
+        "certificado": "Certificado (.p12 o .pfx)",
+        "seleccionar": "Seleccionar archivo",
+        "ningunArchivo": "Ningún archivo seleccionado",
+        "clave": "Contraseña del certificado",
+        "quitar": "Quitar el certificado",
+        "quitarConfirmar": "¿Quitar el certificado? Los informes dejarán de firmarse; lo ya firmado no cambia."
+      },
+      "sello": {
+        "titulo": "Sello empresa",
+        "desc": "Hasta 3 sellos, para usarlos en distintos formatos de informe: cada plantilla que firma con sello elige cuál (de serie, el 1). Se estampan en los informes con firma «Sello de la empresa» y, si se anonimiza a los técnicos, en lugar de su firma. No es la firma electrónica. Solo pueden descargar su imagen quien emite informes y quien lleva esta pantalla.",
+        "n": "Sello {{n}}",
+        "vacio": "Sin sello"
+      },
+      "colores": {
+        "titulo": "Colores",
+        "desc": "Los colores de tu imagen de marca. Para que todo se lea bien, la aplicación escoge sola el color de los textos e iconos que van sobre ellos. El tema oscuro usa el mismo color primario.",
+        "primario": "Color primario",
+        "acento": "Color de acento",
+        "botonPrimario": "Botón primario",
+        "muestra": "Muestra",
+        "hexInvalido": "Escribe los colores como #rrggbb.",
+        "acentoHint": "El color de acento se guarda, pero el panel aún no tiene dónde aplicarlo."
+      },
+      "logos": {
+        "titulo": "Logotipos",
+        "desc": "Los logotipos de tu marca para cada uso: portada de la aplicación, menú lateral (desplegado y plegado), correos y documentos impresos o PDF. Puedes tener hasta 3 logos de documento; cada plantilla de informe elige el suyo. Solo PNG o SVG.",
+        "grupoApp": "Aplicación y correos",
+        "grupoDocumentos": "Documentos impresos / PDF",
+        "recomendado": "Recomendado: {{w}} × {{h}} px",
+        "vacio": "Sin logo",
+        "menuHint": "También es la cabecera de la app de campo, que no pinta SVG: con un SVG enseña el nombre de la empresa.",
+        "portada": "Logo portada aplicación",
+        "menu": "Logo menú desplegado",
+        "simbolo": "Logosímbolo menú (plegado)",
+        "email": "Logo para emails",
+        "documento_1": "Logo documento 1",
+        "documento_2": "Logo documento 2",
+        "documento_3": "Logo documento 3"
+      },
+      "portada": {
+        "titulo": "Portada aplicación",
+        "desc": "Imagen de fondo, titular (en español y en inglés) y modo del panel de acceso (claro u oscuro) de la pantalla de entrada. Todo esto se ve antes de entrar.",
+        "fondo": "Imagen de fondo",
+        "formatos": "JPG, PNG o WEBP, hasta 5 MB. SVG no: se sirve sin sesión.",
+        "vista": "Vista previa de la portada",
+        "panel": "Modo panel de acceso",
+        "panelClaro": "Claro",
+        "panelOscuro": "Oscuro",
+        "titular": "Titular sobre la imagen",
+        "titularEn": "Titular en inglés",
+        "titularEnHint": "Quien entra en inglés ve este; sin él, el español."
+      },
+      "acred": {
+        "titulo": "Acreditaciones a utilizar",
+        "desc": "Las acreditaciones que se usan en la aplicación. Las de serie vienen con ella: se activan o desactivan. Las personalizadas las creas y eliminas tú; una que ya está en uso no se elimina, se desactiva. Cada cambio se guarda al momento.",
+        "col": {
+          "origen": "Origen",
+          "acreditacion": "Acreditación",
+          "descripcion": "Descripción",
+          "acreditaA": "Acredita a",
+          "fabricante": "Fabricante",
+          "activa": "Activa"
+        },
+        "origen": {
+          "serie": "De serie",
+          "propia": "Personalizada"
+        },
+        "acreditaA": {
+          "personas": "Persona/s",
+          "empresa": "Empresa",
+          "ambas": "Ambas"
+        },
+        "activaDe": "Activa: {{nombre}}",
+        "eliminar": "Eliminar {{nombre}}",
+        "eliminarConfirmar": "¿Eliminar la acreditación «{{nombre}}»?",
+        "enUso": "«{{nombre}}» está en uso y no se puede eliminar. ¿La desactivas? Deja de ofrecerse para lo nuevo y se conserva donde ya está.",
+        "enUsoInactiva": "Está en uso: no se elimina, y ya está desactivada.",
+        "nueva": {
+          "grupo": "Nueva acreditación personalizada",
+          "nombre": "Nueva acreditación"
+        },
+        "sinFabricante": "Sin fabricante",
+        "anadir": "Añadir",
+        "repetida": "Ya existe una acreditación con ese nombre."
+      },
+      "entidades": {
+        "titulo": "Entidades acreditadoras",
+        "desc": "Los emisores de los documentos acreditativos que no son marcas del catálogo (centros de formación, mutuas…). Una que ya ha emitido documentos no se elimina, se desactiva. Pulsa el nombre para cambiarlo.",
+        "col": {
+          "entidad": "Entidad",
+          "documentos": "Documentos"
+        },
+        "nueva": "Nueva entidad",
+        "enUso": "«{{nombre}}» ha emitido documentos y no se puede eliminar. ¿La desactivas?",
+        "enUsoInactiva": "Ha emitido documentos: no se elimina, y ya está desactivada.",
+        "repetida": "Ya existe una entidad con ese nombre."
+      },
+      "avisos": {
+        "titulo": "Avisos de caducidad",
+        "desc": "Cuándo y a quién avisar de que una acreditación va a caducar. El plazo ya cuenta: marca cuándo una acreditación pasa a «próxima a caducar». A quién avisar se guarda y se aplicará cuando la aplicación envíe avisos.",
+        "plazo": "Plazo de antelación",
+        "diasAntes": "días antes de caducar",
+        "quien": "A quién avisar",
+        "titulares": "Titular/es de la acreditación",
+        "responsables": "Responsables en la empresa",
+        "admins": "Personas a las que avisar",
+        "anadirAdmin": "Buscar persona…"
+      }
     }
   },
   "shell": {
@@ -4628,7 +4774,8 @@
       "nexo": "o",
       "nexoAnteO": "u",
       "tecnicos": "configurar los parámetros técnicos",
-      "tarifas": "ver las tarifas"
+      "tarifas": "ver las tarifas",
+      "marca": "configurar los datos de tu empresa"
     }
   },
   "proyectos": {
@@ -8039,7 +8186,10 @@
         "certificado": "Firma electrónica con marca visible en el certificado",
         "ultima": "Firma electrónica con marca visible en la última página",
         "ninguna": "Firma electrónica sin marca visible"
-      }
+      },
+      "sello": "Sello de la empresa",
+      "selloHint": "Qué sello estampa esta plantilla donde firma con sello. Los sellos se suben en Datos de empresa.",
+      "selloN": "Sello {{n}}"
     },
     "pila": {
       "titulo": "Apartados del informe",
@@ -8166,7 +8316,8 @@
       "emisor": "Información del emisor",
       "emisorDesc": "Se toma de Parámetros generales. El resto de datos de tu empresa (CIF, dirección, teléfono, email) van en la contraportada.",
       "titulosDesc": "Puedes usar texto libre o datos dinámicos del informe para ofrecer un título y/o subtítulo predeterminados, o dejar vacíos los campos y que se rellenen de forma individual en cada informe.",
-      "distancias": "Distancias"
+      "distancias": "Distancias",
+      "logoHint": "Los logos de documento se suben en Imagen y marca. Sin el elegido, el logo documento 1 y luego el de la portada de la aplicación."
     },
     "indice": {
       "queAparece": "Qué aparece",
@@ -8201,7 +8352,8 @@
       "selloHint": "La imagen del sello es la de Parámetros › Marca.",
       "sello": "Sello de tu empresa",
       "sinSello": "Sin sello",
-      "conforme": "Conforme del cliente"
+      "conforme": "Conforme del cliente",
+      "selloElegido": "Estampa el sello {{n}} de Datos de empresa; se cambia en la configuración general de la plantilla."
     },
     "planos": {
       "disposicion": "Disposición"

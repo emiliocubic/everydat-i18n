@@ -4264,6 +4264,152 @@
         },
         "nota": "The client portal does not exist yet: whatever is chosen for it will apply when it arrives."
       }
+    },
+    "marca": {
+      "tabsLabel": "Company sections",
+      "tab": {
+        "empresa": "Company details",
+        "visual": "Brand image",
+        "acreditaciones": "Accreditations"
+      },
+      "imagen": {
+        "subir": "Upload",
+        "cambiar": "Change",
+        "quitar": "Remove"
+      },
+      "corporativa": {
+        "titulo": "Corporate information",
+        "desc": "Your company's details. They appear on the portal sign-in, on reports and in automatic emails.",
+        "obligatorios": "Trade name, company name and tax ID are required.",
+        "campos": {
+          "nombre": "Trade name",
+          "razon_social": "Company name",
+          "cif": "Tax ID",
+          "direccion": "Address",
+          "telefono": "Phone",
+          "email": "Email",
+          "web": "Website"
+        }
+      },
+      "idioma": {
+        "titulo": "Default language",
+        "desc": "The language of documents that don't specify another. Each person's screen uses their own."
+      },
+      "firma": {
+        "titulo": "Electronic signature",
+        "desc": "The company's .p12 certificate to sign reports issued with «Electronic signature». Without a certificate, reports are issued unsigned. The password is stored encrypted and never shown again. Report designers can see whether there is a certificate and until when it is valid, but cannot change it.",
+        "configurado": "Certificate set up:",
+        "caduca": "valid until {{fecha}}",
+        "caducado": "The certificate has expired: reports are issued unsigned until another one is uploaded.",
+        "sinCertificado": "No certificate set up.",
+        "certificado": "Certificate (.p12 or .pfx)",
+        "seleccionar": "Choose file",
+        "ningunArchivo": "No file chosen",
+        "clave": "Certificate password",
+        "quitar": "Remove the certificate",
+        "quitarConfirmar": "Remove the certificate? Reports will no longer be signed; what is already signed doesn't change."
+      },
+      "sello": {
+        "titulo": "Company stamp",
+        "desc": "Up to 3 stamps, for different report formats: each template that signs with a stamp chooses which one (stamp 1 by default). They are applied on reports signed with «Company stamp» and, when technicians are anonymised, instead of their signature. This is not the electronic signature. Only people who issue reports and who manage this screen can download the image.",
+        "n": "Stamp {{n}}",
+        "vacio": "No stamp"
+      },
+      "colores": {
+        "titulo": "Colours",
+        "desc": "Your brand colours. To keep everything readable, the application picks the colour of text and icons placed on them. The dark theme uses the same primary colour.",
+        "primario": "Primary colour",
+        "acento": "Accent colour",
+        "botonPrimario": "Primary button",
+        "muestra": "Sample",
+        "hexInvalido": "Write colours as #rrggbb.",
+        "acentoHint": "The accent colour is saved, but the panel has nowhere to apply it yet."
+      },
+      "logos": {
+        "titulo": "Logos",
+        "desc": "Your brand logos for each use: application cover, side menu (expanded and collapsed), emails and printed or PDF documents. You can have up to 3 document logos; each report template picks its own. PNG or SVG only.",
+        "grupoApp": "Application and emails",
+        "grupoDocumentos": "Printed / PDF documents",
+        "recomendado": "Recommended: {{w}} × {{h}} px",
+        "vacio": "No logo",
+        "menuHint": "It is also the field app header, which doesn't render SVG: with an SVG it shows the company name.",
+        "portada": "Application cover logo",
+        "menu": "Expanded menu logo",
+        "simbolo": "Menu symbol (collapsed)",
+        "email": "Email logo",
+        "documento_1": "Document logo 1",
+        "documento_2": "Document logo 2",
+        "documento_3": "Document logo 3"
+      },
+      "portada": {
+        "titulo": "Application cover",
+        "desc": "Background image, headline (in Spanish and English) and mode of the sign-in panel (light or dark). All of this is visible before signing in.",
+        "fondo": "Background image",
+        "formatos": "JPG, PNG or WEBP, up to 5 MB. No SVG: it is served without a session.",
+        "vista": "Cover preview",
+        "panel": "Sign-in panel mode",
+        "panelClaro": "Light",
+        "panelOscuro": "Dark",
+        "titular": "Headline over the image",
+        "titularEn": "Headline in English",
+        "titularEnHint": "People signing in in English see this one; without it, the Spanish one."
+      },
+      "acred": {
+        "titulo": "Accreditations in use",
+        "desc": "The accreditations used in the application. Built-in ones come with it: they can be switched on or off. Custom ones are created and deleted by you; one already in use is not deleted, it is switched off. Each change is saved at once.",
+        "col": {
+          "origen": "Origin",
+          "acreditacion": "Accreditation",
+          "descripcion": "Description",
+          "acreditaA": "Accredits",
+          "fabricante": "Manufacturer",
+          "activa": "Active"
+        },
+        "origen": {
+          "serie": "Built-in",
+          "propia": "Custom"
+        },
+        "acreditaA": {
+          "personas": "Person/s",
+          "empresa": "Company",
+          "ambas": "Both"
+        },
+        "activaDe": "Active: {{nombre}}",
+        "eliminar": "Delete {{nombre}}",
+        "eliminarConfirmar": "Delete the accreditation «{{nombre}}»?",
+        "enUso": "«{{nombre}}» is in use and can't be deleted. Switch it off? It stops being offered for new items and is kept where it already is.",
+        "enUsoInactiva": "It is in use: it isn't deleted, and it is already switched off.",
+        "nueva": {
+          "grupo": "New custom accreditation",
+          "nombre": "New accreditation"
+        },
+        "sinFabricante": "No manufacturer",
+        "anadir": "Add",
+        "repetida": "An accreditation with that name already exists."
+      },
+      "entidades": {
+        "titulo": "Accrediting bodies",
+        "desc": "Issuers of accreditation documents that aren't catalogue brands (training centres, insurers…). One that has already issued documents is not deleted, it is switched off. Click the name to change it.",
+        "col": {
+          "entidad": "Body",
+          "documentos": "Documents"
+        },
+        "nueva": "New body",
+        "enUso": "«{{nombre}}» has issued documents and can't be deleted. Switch it off?",
+        "enUsoInactiva": "It has issued documents: it isn't deleted, and it is already switched off.",
+        "repetida": "A body with that name already exists."
+      },
+      "avisos": {
+        "titulo": "Expiry alerts",
+        "desc": "When and whom to warn that an accreditation is about to expire. The period already applies: it sets when an accreditation becomes «about to expire». Whom to warn is saved and will apply once the application sends alerts.",
+        "plazo": "Notice period",
+        "diasAntes": "days before expiry",
+        "quien": "Whom to warn",
+        "titulares": "Accreditation holder/s",
+        "responsables": "People in charge at the company",
+        "admins": "People to warn",
+        "anadirAdmin": "Search person…"
+      }
     }
   },
   "shell": {
@@ -4628,7 +4774,8 @@
       "nexo": "or",
       "nexoAnteO": "or",
       "tecnicos": "configure the technical parameters",
-      "tarifas": "view the rates"
+      "tarifas": "view the rates",
+      "marca": "configure your company details"
     }
   },
   "proyectos": {
@@ -8039,7 +8186,10 @@
         "certificado": "Electronic signature with a visible mark on the certificate",
         "ultima": "Electronic signature with a visible mark on the last page",
         "ninguna": "Electronic signature without a visible mark"
-      }
+      },
+      "sello": "Company stamp",
+      "selloHint": "Which stamp this template applies where it signs with a stamp. Stamps are uploaded in Company details.",
+      "selloN": "Stamp {{n}}"
     },
     "pila": {
       "titulo": "Report sections",
@@ -8166,7 +8316,8 @@
       "emisor": "Issuer information",
       "emisorDesc": "Taken from General settings. The rest of your company details (tax ID, address, phone, email) go on the back cover.",
       "titulosDesc": "Use free text or report data to set a default title and/or subtitle, or leave them empty and fill them in for each report.",
-      "distancias": "Spacing"
+      "distancias": "Spacing",
+      "logoHint": "Document logos are uploaded in Brand image. Without the chosen one, document logo 1 and then the application cover logo."
     },
     "indice": {
       "queAparece": "What appears",
@@ -8201,7 +8352,8 @@
       "selloHint": "The stamp image is the one in Settings › Brand.",
       "sello": "Your company stamp",
       "sinSello": "No stamp",
-      "conforme": "Client approval"
+      "conforme": "Client approval",
+      "selloElegido": "Applies stamp {{n}} from Company details; change it in the template's general settings."
     },
     "planos": {
       "disposicion": "Layout"
