@@ -963,7 +963,10 @@
       "periodicidad": "Revisión periódica",
       "periodicidadCada_one": "Cada {{count}} mes",
       "periodicidadCada_other": "Cada {{count}} meses",
-      "periodicidadSinPlazo": "Sin plazo: la validez la pone quien revisa"
+      "periodicidadSinPlazo": "Sin plazo: la validez la pone quien revisa",
+      "checklists": "Checklists",
+      "checklistsDeSerie": "de serie",
+      "checklistsNinguno": "Ninguno: se revisa sin checklist"
     },
     "fecha": {
       "fabricacion": "Fabricación",

@@ -1006,7 +1006,10 @@
       "periodicidad": "Vérification périodique",
       "periodicidadCada_one": "Tous les {{count}} mois",
       "periodicidadCada_other": "Tous les {{count}} mois",
-      "periodicidadSinPlazo": "Sans périodicité : la validité est fixée par le vérificateur"
+      "periodicidadSinPlazo": "Sans périodicité : la validité est fixée par le vérificateur",
+      "checklists": "Checklists",
+      "checklistsDeSerie": "par défaut",
+      "checklistsNinguno": "Aucune : vérifié sans checklist"
     },
     "fecha": {
       "fabricacion": "Fabrication",

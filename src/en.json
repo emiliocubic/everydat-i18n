@@ -1092,7 +1092,10 @@
       "periodicidad": "Periodic inspection",
       "periodicidadCada_one": "Every {{count}} month",
       "periodicidadCada_other": "Every {{count}} months",
-      "periodicidadSinPlazo": "No interval: the inspector sets the validity"
+      "periodicidadSinPlazo": "No interval: the inspector sets the validity",
+      "checklists": "Checklists",
+      "checklistsDeSerie": "default",
+      "checklistsNinguno": "None: inspected without a checklist"
     },
     "fecha": {
       "fabricacion": "Manufacture",
