@@ -4038,7 +4038,8 @@
       "configMarca": "Paramètres de marque",
       "configEmpresa": "Entreprise et marque",
       "configTarifas": "Tarifs",
-      "configIaConectores": "IA et connecteurs"
+      "configIaConectores": "IA et connecteurs",
+      "preguntasIa": "Questions à Sherpa"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -8248,5 +8249,68 @@
       "catalogo": "Catalogue",
       "personal": "Personnel"
     }
+  },
+  "preguntasIa": {
+    "intro": "Ce qu'un utilisateur demanderait à Sherpa dans chaque domaine, s'il sait y répondre aujourd'hui et ce qui manque au serveur pour y répondre. Les principales sont les suggestions que Sherpa propose à l'ouverture sur les écrans de leur domaine ; dans un domaine sans questions principales, il propose les habituelles.",
+    "soloSoporte": "Seul le support voit la batterie de questions.",
+    "errorCarga": "Impossible de charger la batterie de questions.",
+    "error": "Impossible d'enregistrer la question.",
+    "vacio": "Ce domaine n'a encore aucune question.",
+    "areas": "Domaines",
+    "area": {
+      "parametros": "Paramètres",
+      "usuarios": "Utilisateurs",
+      "catalogo": "Catalogue",
+      "clientes": "Customers",
+      "emplazamientos": "Sites",
+      "proyectos": "Projets",
+      "revisiones": "Vérifications",
+      "informes": "Rapports",
+      "avisos": "Avis",
+      "documentos": "Documents",
+      "explotacion": "Exploitation des données",
+      "acreditaciones": "Accréditations"
+    },
+    "col": {
+      "pregunta": "Question",
+      "tipo": "Type",
+      "hoy": "Aujourd'hui ?",
+      "falta": "Ce qui lui manque",
+      "principal": "Principale"
+    },
+    "tipo": {
+      "consultar": "Consulter",
+      "ejecutar": "Exécuter",
+      "proponer": "Proposer"
+    },
+    "responde": {
+      "si": "Oui",
+      "a_medias": "En partie",
+      "no": "Non"
+    },
+    "principales_one": "{{count}} principale",
+    "principales_other": "{{count}} principales",
+    "marcarPrincipal": "Marquer comme principale",
+    "quitarPrincipal": "Retirer des principales",
+    "anadir": "Ajouter une question",
+    "nueva": "Nouvelle question",
+    "editando": "Modification de la question {{num}}",
+    "editar": "Modifier",
+    "borrar": "Retirer",
+    "borrarConfirmar": "Retirer la question « {{texto}} » ?",
+    "campo": {
+      "area": "Domaine",
+      "texto": "Question",
+      "textoAyuda": "Comme l'écrirait un utilisateur : si elle est principale, c'est ce qui est envoyé à Sherpa au clic.",
+      "tipo": "Type",
+      "responde": "Y répond-il aujourd'hui ?",
+      "nota": "Pourquoi",
+      "notaAyuda": "Ce qu'il sait ou ne sait pas faire aujourd'hui, si cela mérite d'être précisé.",
+      "falta": "Ce qui lui manque"
+    },
+    "guardar": "Enregistrer",
+    "guardando": "Enregistrement…",
+    "guardado": "Question enregistrée.",
+    "descartar": "Abandonner"
   }
 }

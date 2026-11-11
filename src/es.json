@@ -4501,7 +4501,8 @@
       "configMarca": "Parámetros de marca",
       "configEmpresa": "Empresa y marca",
       "configTarifas": "Tarifas",
-      "configIaConectores": "IA y conectores"
+      "configIaConectores": "IA y conectores",
+      "preguntasIa": "Preguntas a Sherpa"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -9201,5 +9202,68 @@
       "php_consola": "El comando php a secas es la versión {{version}}, con la que Everydat no arranca. En el crontab y al lanzar artisan usa siempre la ruta completa del PHP 8.4 o superior ({{binario}}), o pide al hosting que lo cambie para la cuenta.",
       "php_consola_desconocido": "No se ha podido saber qué versión es el comando php a secas. En el crontab y al lanzar artisan usa la ruta completa del PHP 8.4 o superior ({{binario}})."
     }
+  },
+  "preguntasIa": {
+    "intro": "Lo que un usuario le preguntaría a Sherpa en cada área, si hoy lo responde y qué le falta al servidor para responderlo. Las principales son las sugerencias que ofrece Sherpa al abrirse en las pantallas de su área; en un área sin principales, ofrece las de siempre.",
+    "soloSoporte": "Solo soporte ve la batería de preguntas.",
+    "errorCarga": "No se ha podido cargar la batería de preguntas.",
+    "error": "No se ha podido guardar la pregunta.",
+    "vacio": "Esta área aún no tiene preguntas.",
+    "areas": "Áreas",
+    "area": {
+      "parametros": "Parámetros",
+      "usuarios": "Usuarios",
+      "catalogo": "Catálogo",
+      "clientes": "Clientes",
+      "emplazamientos": "Emplazamientos",
+      "proyectos": "Proyectos",
+      "revisiones": "Revisiones",
+      "informes": "Informes",
+      "avisos": "Avisos",
+      "documentos": "Documentos",
+      "explotacion": "Explotación",
+      "acreditaciones": "Acreditaciones"
+    },
+    "col": {
+      "pregunta": "Pregunta",
+      "tipo": "Tipo",
+      "hoy": "¿Hoy?",
+      "falta": "Qué le falta",
+      "principal": "Principal"
+    },
+    "tipo": {
+      "consultar": "Consultar",
+      "ejecutar": "Ejecutar",
+      "proponer": "Proponer"
+    },
+    "responde": {
+      "si": "Sí",
+      "a_medias": "A medias",
+      "no": "No"
+    },
+    "principales_one": "{{count}} principal",
+    "principales_other": "{{count}} principales",
+    "marcarPrincipal": "Marcar como principal",
+    "quitarPrincipal": "Quitar de las principales",
+    "anadir": "Añadir pregunta",
+    "nueva": "Nueva pregunta",
+    "editando": "Editando la pregunta {{num}}",
+    "editar": "Editar",
+    "borrar": "Quitar",
+    "borrarConfirmar": "¿Quitar la pregunta «{{texto}}»?",
+    "campo": {
+      "area": "Área",
+      "texto": "Pregunta",
+      "textoAyuda": "Como la escribiría un usuario: si es principal, es lo que se le manda a Sherpa al pulsarla.",
+      "tipo": "Tipo",
+      "responde": "¿La responde hoy?",
+      "nota": "Por qué",
+      "notaAyuda": "Lo que sabe o no sabe hacer hoy, si hace falta aclararlo.",
+      "falta": "Qué le falta"
+    },
+    "guardar": "Guardar",
+    "guardando": "Guardando…",
+    "guardado": "Pregunta guardada.",
+    "descartar": "Descartar"
   }
 }

@@ -4501,7 +4501,8 @@
       "configMarca": "Brand parameters",
       "configEmpresa": "Company and brand",
       "configTarifas": "Rates",
-      "configIaConectores": "AI and connectors"
+      "configIaConectores": "AI and connectors",
+      "preguntasIa": "Sherpa questions"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -9201,5 +9202,68 @@
       "php_consola": "The plain php command is version {{version}}, which Everydat cannot run on. In the crontab and when running artisan always use the full path of PHP 8.4 or later ({{binario}}), or ask the hosting to change it for the account.",
       "php_consola_desconocido": "Could not tell which version the plain php command is. In the crontab and when running artisan use the full path of PHP 8.4 or later ({{binario}})."
     }
+  },
+  "preguntasIa": {
+    "intro": "What a user would ask Sherpa in each area, whether it can answer today and what the server still lacks to answer it. The main ones are the suggestions Sherpa offers when opened on the screens of their area; in an area with no main questions, it offers the usual ones.",
+    "soloSoporte": "Only support can see the question set.",
+    "errorCarga": "The question set could not be loaded.",
+    "error": "The question could not be saved.",
+    "vacio": "This area has no questions yet.",
+    "areas": "Areas",
+    "area": {
+      "parametros": "Settings",
+      "usuarios": "Users",
+      "catalogo": "Catalogue",
+      "clientes": "Customers",
+      "emplazamientos": "Locations",
+      "proyectos": "Projects",
+      "revisiones": "Inspections",
+      "informes": "Reports",
+      "avisos": "Notices",
+      "documentos": "Documents",
+      "explotacion": "Data queries",
+      "acreditaciones": "Accreditations"
+    },
+    "col": {
+      "pregunta": "Question",
+      "tipo": "Type",
+      "hoy": "Today?",
+      "falta": "What it lacks",
+      "principal": "Main"
+    },
+    "tipo": {
+      "consultar": "Query",
+      "ejecutar": "Execute",
+      "proponer": "Propose"
+    },
+    "responde": {
+      "si": "Yes",
+      "a_medias": "Partly",
+      "no": "No"
+    },
+    "principales_one": "{{count}} main",
+    "principales_other": "{{count}} main",
+    "marcarPrincipal": "Mark as main",
+    "quitarPrincipal": "Remove from main",
+    "anadir": "Add question",
+    "nueva": "New question",
+    "editando": "Editing question {{num}}",
+    "editar": "Edit",
+    "borrar": "Remove",
+    "borrarConfirmar": "Remove the question “{{texto}}”?",
+    "campo": {
+      "area": "Area",
+      "texto": "Question",
+      "textoAyuda": "As a user would write it: if it is a main one, this is what is sent to Sherpa when clicked.",
+      "tipo": "Type",
+      "responde": "Does it answer today?",
+      "nota": "Why",
+      "notaAyuda": "What it can or cannot do today, if it needs explaining.",
+      "falta": "What it lacks"
+    },
+    "guardar": "Save",
+    "guardando": "Saving…",
+    "guardado": "Question saved.",
+    "descartar": "Discard"
   }
 }
