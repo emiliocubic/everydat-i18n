@@ -6149,7 +6149,8 @@
       "aviso": "Se aplicarán los mismos datos de revisión a todos los equipos seleccionados. IMPORTANTE: asegúrese antes de hacerlo. Esta acción no se puede revertir.",
       "noPosible": "La revisión múltiple solo es posible en elementos sujetos al mismo checklist o criterio de revisión",
       "crear": "Registrar {{count}} revisiones",
-      "hecho": "{{count}} revisiones registradas"
+      "hecho": "{{count}} revisiones registradas",
+      "horaHint": "La hora es opcional: hace falta si alguno de los equipos ya tiene otra revisión o una incidencia ese mismo día."
     }
   },
   "app": {

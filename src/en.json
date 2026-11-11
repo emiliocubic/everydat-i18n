@@ -6149,7 +6149,8 @@
       "aviso": "The same inspection data will be applied to every selected item. IMPORTANT: make sure before you proceed. This action cannot be undone.",
       "noPosible": "A multiple inspection is only possible for items subject to the same checklist or inspection criterion",
       "crear": "Record {{count}} inspections",
-      "hecho": "{{count}} inspections recorded"
+      "hecho": "{{count}} inspections recorded",
+      "horaHint": "The time is optional: it is needed if any of the equipment already has another inspection or an incident that same day."
     }
   },
   "app": {

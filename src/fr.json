@@ -5574,7 +5574,8 @@
       "aviso": "Les mêmes données de contrôle seront appliquées à tous les équipements sélectionnés. IMPORTANT : assurez-vous avant de continuer. Cette action est irréversible.",
       "noPosible": "Le contrôle multiple n'est possible que pour des équipements soumis à la même checklist ou au même critère de contrôle",
       "crear": "Enregistrer {{count}} contrôles",
-      "hecho": "{{count}} contrôles enregistrés"
+      "hecho": "{{count}} contrôles enregistrés",
+      "horaHint": "L'heure est facultative : elle est nécessaire si l'un des équipements a déjà une autre vérification ou un incident le même jour."
     }
   },
   "app": {
