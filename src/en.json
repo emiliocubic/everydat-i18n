@@ -4409,6 +4409,32 @@
         "responsables": "People in charge at the company",
         "admins": "People to warn",
         "anadirAdmin": "Search person…"
+      },
+      "formato": {
+        "titulo": "Format",
+        "desc": "How dates, numbers, amounts and units are written, and which day the week starts on. Reports and quotes use it, and so does everyone's screen until each person can choose their own.",
+        "fecha": "Date",
+        "primerDia": "Week starts on",
+        "decimal": "Decimal separator",
+        "miles": "Thousands separator",
+        "moneda": "Currency",
+        "monedaPosicion": "Currency symbol",
+        "unidades": "Units",
+        "separadores": {
+          "coma": "Comma (,)",
+          "punto": "Point (.)",
+          "espacio": "Space",
+          "ninguno": "None"
+        },
+        "posiciones": {
+          "antes": "Before: {{simbolo}} 1,234",
+          "despues": "After: 1,234 {{simbolo}}"
+        },
+        "sistemas": {
+          "metrico": "Metric system (m, kg)",
+          "imperial": "Imperial system (ft, lb)"
+        },
+        "choca": "The thousands separator cannot be the same as the decimal separator."
       }
     }
   },
@@ -4775,7 +4801,9 @@
       "nexoAnteO": "or",
       "tecnicos": "configure the technical parameters",
       "tarifas": "view the rates",
-      "marca": "configure your company details"
+      "marca": "configure your company details",
+      "proyectos": "view projects",
+      "propuestas": "view proposals"
     }
   },
   "proyectos": {

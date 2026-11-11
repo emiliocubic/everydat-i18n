@@ -4409,6 +4409,32 @@
         "responsables": "Responsables en la empresa",
         "admins": "Personas a las que avisar",
         "anadirAdmin": "Buscar persona…"
+      },
+      "formato": {
+        "titulo": "Formato",
+        "desc": "Cómo se escriben las fechas, los números, los importes y las unidades, y qué día empieza la semana. Con él salen los informes y los presupuestos, y la pantalla de todos mientras nadie pueda elegir el suyo.",
+        "fecha": "Fecha",
+        "primerDia": "La semana empieza el",
+        "decimal": "Separador decimal",
+        "miles": "Separador de miles",
+        "moneda": "Moneda",
+        "monedaPosicion": "Símbolo de la moneda",
+        "unidades": "Unidades",
+        "separadores": {
+          "coma": "Coma (,)",
+          "punto": "Punto (.)",
+          "espacio": "Espacio",
+          "ninguno": "Ninguno"
+        },
+        "posiciones": {
+          "antes": "Delante: {{simbolo}} 1.234",
+          "despues": "Detrás: 1.234 {{simbolo}}"
+        },
+        "sistemas": {
+          "metrico": "Sistema métrico (m, kg)",
+          "imperial": "Sistema imperial (ft, lb)"
+        },
+        "choca": "El separador de miles no puede ser el mismo que el decimal."
       }
     }
   },
@@ -4775,7 +4801,9 @@
       "nexoAnteO": "u",
       "tecnicos": "configurar los parámetros técnicos",
       "tarifas": "ver las tarifas",
-      "marca": "configurar los datos de tu empresa"
+      "marca": "configurar los datos de tu empresa",
+      "proyectos": "ver los proyectos",
+      "propuestas": "ver las propuestas"
     }
   },
   "proyectos": {
