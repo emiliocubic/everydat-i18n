@@ -6002,7 +6002,8 @@
         "en_uso": "Un autre équipement porte déjà ce code. Vous pouvez le lui retirer et le donner à celui-ci (« Réattribuer le code »), ou le corriger.",
         "datos": "Le serveur n'accepte pas certaines données (voir lesquelles ci-dessous). Corrigez-les et renvoyez.",
         "central": "Le serveur a eu une erreur en la recevant. Elle reste à envoyer et le reste part quand même ; si cela se répète, partagez le journal avec le support.",
-        "otro": "Le serveur ne l'a pas acceptée. Si vous ne savez pas pourquoi, partagez le journal avec le support."
+        "otro": "Le serveur ne l'a pas acceptée. Si vous ne savez pas pourquoi, partagez le journal avec le support.",
+        "bloqueada": "Cette inspection ne peut plus être corrigée : elle a été validée au bureau, ou elle figure dans un rapport émis ou un bon d'intervention remis. Abandonnez cette correction ; s'il faut la modifier, c'est au bureau de s'en charger."
       },
       "que": {
         "equipoSinDatos": "non identifié",

@@ -6610,7 +6610,8 @@
         "en_uso": "Ese código ya lo lleva otro equipo. Puedes quitárselo y ponérselo a este («Reasignar el código»), o corregirlo.",
         "datos": "A la central no le valen algunos datos (abajo, cuáles). Corrígelos y reenvía.",
         "central": "La central tuvo un fallo al recibirla. Se queda por enviar y lo demás sale igual; si se repite, comparte el registro con soporte.",
-        "otro": "La central no la aceptó. Si no sabes por qué, comparte el registro con soporte."
+        "otro": "La central no la aceptó. Si no sabes por qué, comparte el registro con soporte.",
+        "bloqueada": "La revisión ya no se puede corregir: está validada en la oficina, o va en un informe emitido o en un parte entregado. Descarta esta corrección; si hay que cambiarla, que lo resuelva la oficina."
       },
       "que": {
         "equipoSinDatos": "sin identificar",
