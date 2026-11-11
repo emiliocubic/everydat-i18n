@@ -1681,7 +1681,7 @@
         "create": "Registrar revisiones y consignarlas al dar de alta un elemento",
         "edit": "Puntuar los checkpoints y corregir una revisión registrada",
         "delete": "Borrar una revisión registrada por error",
-        "certificar": "Certificar revisiones: validar el trabajo de campo y corregir el veredicto"
+        "certificar": "Certificar revisiones: dar por bueno el trabajo de campo"
       },
       "proyectos": {
         "view": "Ver proyectos y su cartera",

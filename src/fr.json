@@ -1685,7 +1685,7 @@
         "create": "Enregistrer des révisions et les consigner à l’enregistrement d’un équipement",
         "edit": "Noter les points de contrôle et corriger une révision enregistrée",
         "delete": "Supprimer une révision enregistrée par erreur",
-        "certificar": "Certifier des révisions : valider le travail de terrain et corriger le verdict"
+        "certificar": "Certifier des révisions : valider le travail de terrain"
       },
       "proyectos": {
         "view": "Voir les projets et leur portefeuille",

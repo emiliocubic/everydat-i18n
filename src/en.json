@@ -1810,7 +1810,7 @@
         "create": "Record reviews and enter them when registering equipment",
         "edit": "Score checkpoints and correct a recorded review",
         "delete": "Delete a review recorded by mistake",
-        "certificar": "Certify reviews: validate the field work and correct the verdict"
+        "certificar": "Certify reviews: sign off the field work"
       },
       "proyectos": {
         "view": "View projects and their portfolio",
