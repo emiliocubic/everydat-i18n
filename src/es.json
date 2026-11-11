@@ -4135,6 +4135,101 @@
         "anadirBloque": "Añadir bloque de productos",
         "sinProductos": "Este bloque no tiene productos."
       }
+    },
+    "tecnicos": {
+      "title": "Parámetros técnicos",
+      "tabsAria": "Secciones de parámetros técnicos",
+      "tab": {
+        "equipos": "Equipos y sistemas",
+        "revisiones": "Revisiones",
+        "clientes": "Clientes",
+        "proyectos": "Proyectos"
+      },
+      "aptas": {
+        "titulo": "Revisiones aptas y no aptas",
+        "desc": "Opciones manuales y automáticas sobre el diagnóstico general de la revisión.",
+        "aptas": "Revisiones aptas",
+        "avisoVida": "Incluir automáticamente el aviso de final de vida útil cuando caiga antes de la siguiente revisión",
+        "modificadores": "Aceptar modificadores",
+        "noAptas": "Revisiones no aptas",
+        "reparable": "Preguntar si es reparable",
+        "queSeHizo": "Preguntar qué se hizo con el equipo"
+      },
+      "avisos": {
+        "titulo": "Avisos a clientes",
+        "desc": "Antelación de aviso a los clientes de los eventos de caducidad (de revisiones periódicas o finales de vida útil). Hoy la aplicación aún no envía avisos a clientes: estos plazos se aplicarán cuando existan.",
+        "vida": "Final de vida útil",
+        "vidaAria": "Aviso de final de vida útil",
+        "revision": "Próxima revisión",
+        "revisionAria": "Aviso {{n}} de próxima revisión",
+        "dias": "días",
+        "diasAntes": "días antes",
+        "anadir": "Añadir otro aviso",
+        "quitar": "Quitar el aviso {{n}}",
+        "ayuda": "Días de antelación del aviso. Indica 0 para aviso el mismo día y número negativo para aviso posterior a caducidad.",
+        "repetidos": "Hay dos avisos de revisión con el mismo plazo.",
+        "fueraDeRango": "Cada plazo es un número entero de días: de 0 a 365 en el final de vida útil, y de -365 a 365 en la revisión."
+      },
+      "comercial": {
+        "titulo": "Gestión comercial del proyecto",
+        "desc": "Si los proyectos llevan gestión comercial (propuestas y presupuestos) y, en ese caso, qué presupuestos se hacen: compuestos aquí sobre los precios parametrizados, cargados de fuera con su documento, o las dos cosas.",
+        "activada": "Activada",
+        "activadaTxt": "se gestionan propuestas comerciales y presupuestarias así como su aceptación o rechazo.",
+        "desactivada": "Desactivada",
+        "desactivadaTxt": "solo uso operativo de los proyectos. Sin gestión comercial o presupuestaria.",
+        "desactivadaNota": "Sin gestión comercial no hay propuestas: Futuros es una sola lista de fechas y proyectos por arrancar. No se puede desactivar mientras quede alguna propuesta abierta.",
+        "presupuestos": "Presupuestos",
+        "presupuestosAria": "Qué presupuestos se hacen",
+        "via": {
+          "ambos": "Internos y externos",
+          "internos": "Solo internos: se componen aquí",
+          "externos": "Solo externos: se cargan hechos de fuera"
+        }
+      },
+      "planificador": {
+        "titulo": "Planificador",
+        "desc": "Calendario de personas por días, pool de proyectos y propuesta de asignación. Es un módulo con coste aparte.",
+        "usar": "Usar el módulo planificador",
+        "jornada": "Una jornada rinde",
+        "horas": "horas",
+        "horasInvalidas": "La jornada es un número entero de horas, de 1 a 24.",
+        "dias": "Días laborables",
+        "ayuda": "El planificador reparte el trabajo sobre estos días y descuenta festivos y ausencias. El último día marcado no se puede quitar.",
+        "off": "Al desactivarlo se sigue planificando de forma sencilla desde la ficha del proyecto. La jornada y los días laborables guardados se conservan y siguen contando en cualquier plazo en días hábiles."
+      },
+      "partes": {
+        "titulo": "Partes de trabajo",
+        "desc": "Lo hecho en un proyecto, agrupado en partes para que el cliente dé su conformidad.",
+        "usar": "Usar partes de trabajo",
+        "on": "Activados: la ejecución del proyecto lleva su banda de partes.",
+        "off": "Desactivados: no se hacen partes nuevos ni se tocan los que hay. Los ya hechos se siguen consultando y descargando en la ficha del proyecto, solo para leer. Al volver a activarlos, todo queda como estaba."
+      },
+      "certificacion": {
+        "titulo": "Certificación",
+        "desc": "Un técnico de rango superior valida en la ejecución del proyecto, equipo a equipo, lo hecho en campo antes de cerrarlo.",
+        "usar": "Usar la certificación",
+        "on": "Activa: lo validado no se edita y ningún proyecto se cierra sin todo lo hecho validado.",
+        "off": "Desactivada: no se valida nada y el proyecto se cierra desde la ejecución sin exigir nada."
+      },
+      "datosPersonales": {
+        "titulo": "Datos personales",
+        "desc": "Elige si se muestran o no datos de identificación personal de las personas que realizan los trabajos.",
+        "modo": {
+          "todo": "Anonimizar todo",
+          "no": "No anonimizar",
+          "parcial": "Anonimizar parcialmente"
+        },
+        "modoTxt": {
+          "todo": "en el portal cliente y en los informes el técnico no sale con su nombre, sino con su alias, y en lugar de su firma va el sello de la empresa. En la aplicación, para uso interno, sí se ve quién realiza cada trabajo.",
+          "no": "el técnico queda siempre identificado por su nombre y apellidos."
+        },
+        "dondeAria": "Dónde se anonimiza",
+        "donde": {
+          "portal": "En portal cliente",
+          "informes": "En informes PDF"
+        },
+        "nota": "El portal cliente aún no existe: lo que se elija para él se aplicará cuando llegue."
+      }
     }
   },
   "shell": {

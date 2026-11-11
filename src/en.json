@@ -4135,6 +4135,101 @@
         "anadirBloque": "Add product block",
         "sinProductos": "This block has no products."
       }
+    },
+    "tecnicos": {
+      "title": "Technical parameters",
+      "tabsAria": "Technical parameter sections",
+      "tab": {
+        "equipos": "Equipment and systems",
+        "revisiones": "Inspections",
+        "clientes": "Clients",
+        "proyectos": "Projects"
+      },
+      "aptas": {
+        "titulo": "Passed and failed inspections",
+        "desc": "Manual and automatic options on the overall verdict of the inspection.",
+        "aptas": "Passed inspections",
+        "avisoVida": "Automatically include the end-of-service-life notice when it falls before the next inspection",
+        "modificadores": "Accept qualifiers",
+        "noAptas": "Failed inspections",
+        "reparable": "Ask whether it can be repaired",
+        "queSeHizo": "Ask what was done with the equipment"
+      },
+      "avisos": {
+        "titulo": "Client notices",
+        "desc": "How far in advance clients are notified of expiry events (periodic inspections or end of service life). The application does not send client notices yet: these lead times will apply once they exist.",
+        "vida": "End of service life",
+        "vidaAria": "End-of-service-life notice",
+        "revision": "Next inspection",
+        "revisionAria": "Next inspection notice {{n}}",
+        "dias": "days",
+        "diasAntes": "days before",
+        "anadir": "Add another notice",
+        "quitar": "Remove notice {{n}}",
+        "ayuda": "Days of advance notice. Enter 0 for a same-day notice and a negative number for a notice after expiry.",
+        "repetidos": "Two inspection notices have the same lead time.",
+        "fueraDeRango": "Each lead time is a whole number of days: 0 to 365 for end of service life, and -365 to 365 for the inspection."
+      },
+      "comercial": {
+        "titulo": "Project sales management",
+        "desc": "Whether projects carry sales management (proposals and quotes) and, if so, which quotes are made: built here from the configured prices, uploaded from outside with their document, or both.",
+        "activada": "On",
+        "activadaTxt": "sales and budget proposals are managed, together with their acceptance or rejection.",
+        "desactivada": "Off",
+        "desactivadaTxt": "operational use of projects only. No sales or budget management.",
+        "desactivadaNota": "Without sales management there are no proposals: Upcoming is a single list of dates and projects to start. It cannot be turned off while any proposal is still open.",
+        "presupuestos": "Quotes",
+        "presupuestosAria": "Which quotes are made",
+        "via": {
+          "ambos": "Internal and external",
+          "internos": "Internal only: built here",
+          "externos": "External only: uploaded ready-made"
+        }
+      },
+      "planificador": {
+        "titulo": "Planner",
+        "desc": "Calendar of people by day, project pool and assignment proposal. It is a separately charged module.",
+        "usar": "Use the planner module",
+        "jornada": "A working day is",
+        "horas": "hours",
+        "horasInvalidas": "The working day is a whole number of hours, from 1 to 24.",
+        "dias": "Working days",
+        "ayuda": "The planner spreads the work over these days and discounts holidays and absences. The last selected day cannot be removed.",
+        "off": "When it is off, simple planning is still done from the project record. The saved working day and working days are kept and still count in any period measured in working days."
+      },
+      "partes": {
+        "titulo": "Work reports",
+        "desc": "What was done in a project, grouped into reports for the client to sign off.",
+        "usar": "Use work reports",
+        "on": "On: project execution carries its work reports band.",
+        "off": "Off: no new reports are made and existing ones are not changed. Reports already made can still be viewed and downloaded from the project record, read-only. Turning them back on leaves everything as it was."
+      },
+      "certificacion": {
+        "titulo": "Certification",
+        "desc": "A senior technician validates in project execution, item by item, what was done on site before closing it.",
+        "usar": "Use certification",
+        "on": "On: what is validated cannot be edited and no project is closed until everything done has been validated.",
+        "off": "Off: nothing is validated and the project is closed from execution without any requirement."
+      },
+      "datosPersonales": {
+        "titulo": "Personal data",
+        "desc": "Choose whether personal identification data of the people who carry out the work is shown.",
+        "modo": {
+          "todo": "Anonymise everything",
+          "no": "Do not anonymise",
+          "parcial": "Anonymise partially"
+        },
+        "modoTxt": {
+          "todo": "in the client portal and in reports the technician does not appear by name but by their alias, and the company stamp replaces their signature. Inside the application, for internal use, you can still see who did each job.",
+          "no": "the technician is always identified by their full name."
+        },
+        "dondeAria": "Where to anonymise",
+        "donde": {
+          "portal": "In the client portal",
+          "informes": "In PDF reports"
+        },
+        "nota": "The client portal does not exist yet: whatever is chosen for it will apply when it arrives."
+      }
     }
   },
   "shell": {
