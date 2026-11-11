@@ -7144,6 +7144,15 @@
       "sinNota": "Aún no hay ninguna nota.",
       "escribir": "Escribir nota",
       "editar": "Cambiar la nota"
+    },
+    "repetidos": {
+      "titulo": "Identificador repetido",
+      "linea": "{{nombre}} «{{valor}}»: ya lo lleva otro equipo descargado ({{donde}}).",
+      "otroEquipo": "otro equipo",
+      "esteAlta": "otra unidad de este alta",
+      "avisa": "Es un aviso: se puede guardar igualmente.",
+      "bloquea": "Un código así no puede estar en dos equipos: si el otro lo sigue llevando, el servidor no aceptará este al enviarlo.",
+      "guardarIgual": "Guardar igualmente"
     }
   },
   "auditoria": {
@@ -9377,6 +9386,8 @@
     "antesInstalacion": "La {{que}} no puede ser anterior a la instalación del equipo ({{fecha}}).",
     "instalacionPosterior": "La instalación no puede ser posterior a la {{que}} del {{fecha}}: va antes que cualquier revisión o reparación del equipo.",
     "fechaPosterior": "La {{nombre}} no puede ser posterior a la {{que}} del {{fecha}}, que ya está registrada.",
-    "fechaAntesDe": "La fecha «{{nombre}}» no puede ser anterior a «{{anterior}}»."
+    "fechaAntesDe": "La fecha «{{nombre}}» no puede ser anterior a «{{anterior}}».",
+    "fechaFutura": "La fecha «{{nombre}}» no puede ser posterior a hoy.",
+    "fechaMargen": "La fecha «{{nombre}}» no puede ir más allá de {{dias}} días desde hoy."
   }
 }

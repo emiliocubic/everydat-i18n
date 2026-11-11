@@ -6536,6 +6536,15 @@
       "sinNota": "Il n'y a pas encore de note.",
       "escribir": "Écrire une note",
       "editar": "Modifier la note"
+    },
+    "repetidos": {
+      "titulo": "Identifiant en double",
+      "linea": "{{nombre}} « {{valor}} » : un autre équipement téléchargé le porte déjà ({{donde}}).",
+      "otroEquipo": "un autre équipement",
+      "esteAlta": "une autre unité de cette création",
+      "avisa": "C’est un avertissement : vous pouvez enregistrer quand même.",
+      "bloquea": "Un tel code ne peut pas figurer sur deux équipements : si l’autre le porte toujours, le serveur n’acceptera pas celui-ci à l’envoi.",
+      "guardarIgual": "Enregistrer quand même"
     }
   },
   "auditoria": {
@@ -8424,6 +8433,8 @@
     "antesInstalacion": "La {{que}} ne peut pas être antérieure à l'installation de l'équipement ({{fecha}}).",
     "instalacionPosterior": "L'installation ne peut pas être postérieure à la {{que}} du {{fecha}} : elle précède toute révision ou réparation de l'équipement.",
     "fechaPosterior": "La date de {{nombre}} ne peut pas être postérieure à la {{que}} du {{fecha}}, déjà enregistrée.",
-    "fechaAntesDe": "La date « {{nombre}} » ne peut pas être antérieure à « {{anterior}} »."
+    "fechaAntesDe": "La date « {{nombre}} » ne peut pas être antérieure à « {{anterior}} ».",
+    "fechaFutura": "La date « {{nombre}} » ne peut pas être postérieure à aujourd’hui.",
+    "fechaMargen": "La date « {{nombre}} » ne peut pas dépasser {{dias}} jours à partir d’aujourd’hui."
   }
 }

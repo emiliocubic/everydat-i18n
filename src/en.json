@@ -7144,6 +7144,15 @@
       "sinNota": "There is no note yet.",
       "escribir": "Write a note",
       "editar": "Change the note"
+    },
+    "repetidos": {
+      "titulo": "Duplicate identifier",
+      "linea": "{{nombre}} “{{valor}}”: another downloaded item already has it ({{donde}}).",
+      "otroEquipo": "another item",
+      "esteAlta": "another unit in this registration",
+      "avisa": "This is a warning: you can save anyway.",
+      "bloquea": "A code like this cannot be on two items: if the other one still has it, the server will not accept this one when it is sent.",
+      "guardarIgual": "Save anyway"
     }
   },
   "auditoria": {
@@ -9377,6 +9386,8 @@
     "antesInstalacion": "The {{que}} cannot be earlier than the equipment's installation ({{fecha}}).",
     "instalacionPosterior": "The installation cannot be later than the {{que}} of {{fecha}}: it comes before any inspection or repair of the equipment.",
     "fechaPosterior": "The {{nombre}} date cannot be later than the {{que}} of {{fecha}}, which is already recorded.",
-    "fechaAntesDe": "The date «{{nombre}}» cannot be earlier than «{{anterior}}»."
+    "fechaAntesDe": "The date «{{nombre}}» cannot be earlier than «{{anterior}}».",
+    "fechaFutura": "The date “{{nombre}}” cannot be later than today.",
+    "fechaMargen": "The date “{{nombre}}” cannot be more than {{dias}} days from today."
   }
 }
