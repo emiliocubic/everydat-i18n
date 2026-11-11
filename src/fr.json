@@ -4130,7 +4130,30 @@
           "asignar_capacidades": "Modifier les capacités de l'utilisateur {{persona}} : {{cambios}}",
           "asignar_alcance": "Modifier ce que voit l'utilisateur {{persona}} : {{cambios}}",
           "ajustar_permisos": "Ajuster les permissions de l'utilisateur {{persona}} : {{cambios}}",
-          "dar_de_baja_usuario": "Désactiver l'utilisateur {{persona}} : il ne pourra plus se connecter, mais le compte peut être récupéré"
+          "dar_de_baja_usuario": "Désactiver l'utilisateur {{persona}} : il ne pourra plus se connecter, mais le compte peut être récupéré",
+          "poner_fecha_revision": "Fixer la prochaine vérification du site {{emplazamiento}} au {{fecha}}, pour {{alcance}}",
+          "poner_fecha_revision_periodicidad_one": "Fixer la prochaine vérification du site {{emplazamiento}} au {{fecha}}, pour {{alcance}}, et revenir tous les {{count}} mois",
+          "poner_fecha_revision_periodicidad_other": "Fixer la prochaine vérification du site {{emplazamiento}} au {{fecha}}, pour {{alcance}}, et revenir tous les {{count}} mois",
+          "poner_fecha_revision_quitar": "Retirer la date de la prochaine vérification du site {{emplazamiento}}, pour {{alcance}}",
+          "crear_zona": "Transformer le dossier {{carpeta}} du site {{emplazamiento}} en zone : avec sa branche, il aura sa propre date de vérification",
+          "quitar_zona": "Faire que la zone {{zona}} du site {{emplazamiento}} ne le soit plus : le dossier reste à sa place, sans date propre",
+          "trasladar_rama": "Déplacer le dossier {{carpeta}}, avec toute sa branche et ses équipements, vers le site {{emplazamiento}}",
+          "trasladar_rama_bajo": "Déplacer le dossier {{carpeta}}, avec toute sa branche et ses équipements, vers le site {{emplazamiento}}, sous le dossier {{padre}}",
+          "dar_de_alta_elementos_one": "Ajouter {{count}} équipement de la référence {{referencia}} dans le dossier {{carpeta}}",
+          "dar_de_alta_elementos_other": "Ajouter {{count}} équipements de la référence {{referencia}} dans le dossier {{carpeta}}",
+          "dar_de_alta_elementos_modelo_one": "Ajouter {{count}} équipement du modèle {{modelo}}, avec une référence non précisée, dans le dossier {{carpeta}}",
+          "dar_de_alta_elementos_modelo_other": "Ajouter {{count}} équipements du modèle {{modelo}}, avec une référence non précisée, dans le dossier {{carpeta}}",
+          "clonar_elemento_one": "Cloner l'équipement {{equipo}} : {{count}} copie dans le même dossier, sans historique et non vérifiée",
+          "clonar_elemento_other": "Cloner l'équipement {{equipo}} : {{count}} copies dans le même dossier, sans historique et non vérifiées",
+          "clonar_elemento_carpeta_one": "Cloner l'équipement {{equipo}} : {{count}} copie dans le dossier {{carpeta}}, sans historique et non vérifiée",
+          "clonar_elemento_carpeta_other": "Cloner l'équipement {{equipo}} : {{count}} copies dans le dossier {{carpeta}}, sans historique et non vérifiées",
+          "clonar_carpeta_one": "Faire {{count}} copie du dossier {{carpeta}} avec toute sa branche ({{nombres}}) : ses équipements naissent non vérifiés",
+          "clonar_carpeta_other": "Faire {{count}} copies du dossier {{carpeta}} avec toute sa branche ({{nombres}}) : ses équipements naissent non vérifiés",
+          "registrar_actuacion": "Enregistrer {{actuacion}} sur l'équipement {{equipo}}, le {{fecha}}{{detalle}}",
+          "registrar_actuacion_conjunto_one": "Enregistrer {{actuacion}} sur l'ensemble {{conjunto}}, sur {{count}} de ses équipements, le {{fecha}}{{detalle}}",
+          "registrar_actuacion_conjunto_other": "Enregistrer {{actuacion}} sur l'ensemble {{conjunto}}, sur {{count}} de ses équipements, le {{fecha}}{{detalle}}",
+          "registrar_actuacion_lote_one": "Enregistrer {{actuacion}} sur {{count}} équipement, le {{fecha}}{{detalle}}",
+          "registrar_actuacion_lote_other": "Enregistrer {{actuacion}} sur {{count}} équipements, une sur chacun, le {{fecha}}{{detalle}}"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4157,6 +4180,34 @@
           "meter_other": "« {{grupo}} » limite ce que voient {{count}} utilisateurs, {{nombres}} : ils verront aussi ces clients.",
           "sacar_one": "« {{grupo}} » limite ce que voit {{count}} utilisateur, {{nombres}} : il ne verra plus ces clients, sauf s’il y accède autrement.",
           "sacar_other": "« {{grupo}} » limite ce que voient {{count}} utilisateurs, {{nombres}} : ils ne verront plus ces clients, sauf s’ils y accèdent autrement."
+        },
+        "fecha": {
+          "zona_one": "{{count}} zone",
+          "zona_other": "{{count}} zones",
+          "resto": "ce qui n'appartient à aucune zone"
+        },
+        "y": "{{a}} et {{b}}",
+        "revisionInicial": "avec sa vérification initiale du {{fecha}} : {{resultado}}",
+        "resultado": {
+          "apto": "conforme",
+          "no_apto": "non conforme",
+          "no_revisada": "non vérifiée"
+        },
+        "actuacion": {
+          "reparacion": "une réparation",
+          "incidencia": "un incident",
+          "diagnostico": {
+            "reparado": "réparé",
+            "no_reparado": "non réparé",
+            "no_reparable": "irréparable"
+          },
+          "subtipo": {
+            "caida_retenida": "chute arrêtée",
+            "dano_observado": "dommage constaté",
+            "aviso_fabricante": "avis du fabricant"
+          },
+          "noApto_one": "il devient non conforme",
+          "noApto_other": "ils deviennent non conformes"
         }
       },
       "deleteChat": "Supprimer la conversation"

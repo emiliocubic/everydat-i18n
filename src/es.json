@@ -4593,7 +4593,30 @@
           "asignar_capacidades": "Cambiar las capacidades del usuario {{persona}}: {{cambios}}",
           "asignar_alcance": "Cambiar lo que ve el usuario {{persona}}: {{cambios}}",
           "ajustar_permisos": "Ajustar los permisos del usuario {{persona}}: {{cambios}}",
-          "dar_de_baja_usuario": "Dar de baja al usuario {{persona}}: no podrá entrar, pero la cuenta se puede recuperar"
+          "dar_de_baja_usuario": "Dar de baja al usuario {{persona}}: no podrá entrar, pero la cuenta se puede recuperar",
+          "poner_fecha_revision": "Poner la próxima revisión del emplazamiento {{emplazamiento}} el {{fecha}}, para {{alcance}}",
+          "poner_fecha_revision_periodicidad_one": "Poner la próxima revisión del emplazamiento {{emplazamiento}} el {{fecha}}, para {{alcance}}, y volver cada {{count}} mes",
+          "poner_fecha_revision_periodicidad_other": "Poner la próxima revisión del emplazamiento {{emplazamiento}} el {{fecha}}, para {{alcance}}, y volver cada {{count}} meses",
+          "poner_fecha_revision_quitar": "Quitar la fecha de la próxima revisión del emplazamiento {{emplazamiento}}, para {{alcance}}",
+          "crear_zona": "Convertir en zona la carpeta {{carpeta}} del emplazamiento {{emplazamiento}}: con su rama, tendrá fecha de revisión propia",
+          "quitar_zona": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} deje de serlo: la carpeta se queda donde está, sin fecha propia",
+          "trasladar_rama": "Pasar la carpeta {{carpeta}}, con toda su rama y sus equipos, al emplazamiento {{emplazamiento}}",
+          "trasladar_rama_bajo": "Pasar la carpeta {{carpeta}}, con toda su rama y sus equipos, al emplazamiento {{emplazamiento}}, bajo la carpeta {{padre}}",
+          "dar_de_alta_elementos_one": "Dar de alta {{count}} equipo de la referencia {{referencia}} en la carpeta {{carpeta}}",
+          "dar_de_alta_elementos_other": "Dar de alta {{count}} equipos de la referencia {{referencia}} en la carpeta {{carpeta}}",
+          "dar_de_alta_elementos_modelo_one": "Dar de alta {{count}} equipo del modelo {{modelo}}, con la referencia sin especificar, en la carpeta {{carpeta}}",
+          "dar_de_alta_elementos_modelo_other": "Dar de alta {{count}} equipos del modelo {{modelo}}, con la referencia sin especificar, en la carpeta {{carpeta}}",
+          "clonar_elemento_one": "Clonar el equipo {{equipo}}: {{count}} copia en su misma carpeta, sin historial y sin revisar",
+          "clonar_elemento_other": "Clonar el equipo {{equipo}}: {{count}} copias en su misma carpeta, sin historial y sin revisar",
+          "clonar_elemento_carpeta_one": "Clonar el equipo {{equipo}}: {{count}} copia en la carpeta {{carpeta}}, sin historial y sin revisar",
+          "clonar_elemento_carpeta_other": "Clonar el equipo {{equipo}}: {{count}} copias en la carpeta {{carpeta}}, sin historial y sin revisar",
+          "clonar_carpeta_one": "Hacer {{count}} copia de la carpeta {{carpeta}} con toda su rama ({{nombres}}): sus equipos nacen sin revisar",
+          "clonar_carpeta_other": "Hacer {{count}} copias de la carpeta {{carpeta}} con toda su rama ({{nombres}}): sus equipos nacen sin revisar",
+          "registrar_actuacion": "Anotar {{actuacion}} en el equipo {{equipo}}, el {{fecha}}{{detalle}}",
+          "registrar_actuacion_conjunto_one": "Anotar {{actuacion}} en el conjunto {{conjunto}}, en {{count}} de sus equipos, el {{fecha}}{{detalle}}",
+          "registrar_actuacion_conjunto_other": "Anotar {{actuacion}} en el conjunto {{conjunto}}, en {{count}} de sus equipos, el {{fecha}}{{detalle}}",
+          "registrar_actuacion_lote_one": "Anotar {{actuacion}} en {{count}} equipo, el {{fecha}}{{detalle}}",
+          "registrar_actuacion_lote_other": "Anotar {{actuacion}} en {{count}} equipos, una en cada uno, el {{fecha}}{{detalle}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4620,6 +4643,34 @@
           "meter_other": "«{{grupo}}» acota lo que ven {{count}} usuarios, {{nombres}}: pasarán a ver estos clientes.",
           "sacar_one": "«{{grupo}}» acota lo que ve {{count}} usuario, {{nombres}}: dejará de ver estos clientes, salvo que le lleguen por otro lado.",
           "sacar_other": "«{{grupo}}» acota lo que ven {{count}} usuarios, {{nombres}}: dejarán de ver estos clientes, salvo que les lleguen por otro lado."
+        },
+        "fecha": {
+          "zona_one": "{{count}} zona",
+          "zona_other": "{{count}} zonas",
+          "resto": "lo que no cuelga de ninguna zona"
+        },
+        "y": "{{a}} y {{b}}",
+        "revisionInicial": "con su revisión inicial del {{fecha}}: {{resultado}}",
+        "resultado": {
+          "apto": "apta",
+          "no_apto": "no apta",
+          "no_revisada": "no revisada"
+        },
+        "actuacion": {
+          "reparacion": "una reparación",
+          "incidencia": "una incidencia",
+          "diagnostico": {
+            "reparado": "reparado",
+            "no_reparado": "sin reparar",
+            "no_reparable": "no reparable"
+          },
+          "subtipo": {
+            "caida_retenida": "caída retenida",
+            "dano_observado": "daño observado",
+            "aviso_fabricante": "aviso del fabricante"
+          },
+          "noApto_one": "queda no apto",
+          "noApto_other": "quedan no aptos"
         }
       },
       "deleteChat": "Borrar conversación"

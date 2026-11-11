@@ -4593,7 +4593,30 @@
           "asignar_capacidades": "Change the capabilities of user {{persona}}: {{cambios}}",
           "asignar_alcance": "Change what user {{persona}} sees: {{cambios}}",
           "ajustar_permisos": "Adjust the permissions of user {{persona}}: {{cambios}}",
-          "dar_de_baja_usuario": "Deactivate user {{persona}}: they will not be able to sign in, but the account can be recovered"
+          "dar_de_baja_usuario": "Deactivate user {{persona}}: they will not be able to sign in, but the account can be recovered",
+          "poner_fecha_revision": "Set the next inspection of site {{emplazamiento}} for {{fecha}}, for {{alcance}}",
+          "poner_fecha_revision_periodicidad_one": "Set the next inspection of site {{emplazamiento}} for {{fecha}}, for {{alcance}}, and come back every {{count}} month",
+          "poner_fecha_revision_periodicidad_other": "Set the next inspection of site {{emplazamiento}} for {{fecha}}, for {{alcance}}, and come back every {{count}} months",
+          "poner_fecha_revision_quitar": "Remove the next inspection date of site {{emplazamiento}}, for {{alcance}}",
+          "crear_zona": "Turn folder {{carpeta}} of site {{emplazamiento}} into a zone: with its branch, it will have its own inspection date",
+          "quitar_zona": "Make zone {{zona}} of site {{emplazamiento}} stop being a zone: the folder stays where it is, with no date of its own",
+          "trasladar_rama": "Move folder {{carpeta}}, with its whole branch and its equipment, to site {{emplazamiento}}",
+          "trasladar_rama_bajo": "Move folder {{carpeta}}, with its whole branch and its equipment, to site {{emplazamiento}}, under folder {{padre}}",
+          "dar_de_alta_elementos_one": "Add {{count}} item of reference {{referencia}} to folder {{carpeta}}",
+          "dar_de_alta_elementos_other": "Add {{count}} items of reference {{referencia}} to folder {{carpeta}}",
+          "dar_de_alta_elementos_modelo_one": "Add {{count}} item of model {{modelo}}, with an unspecified reference, to folder {{carpeta}}",
+          "dar_de_alta_elementos_modelo_other": "Add {{count}} items of model {{modelo}}, with an unspecified reference, to folder {{carpeta}}",
+          "clonar_elemento_one": "Clone item {{equipo}}: {{count}} copy in the same folder, with no history and not inspected",
+          "clonar_elemento_other": "Clone item {{equipo}}: {{count}} copies in the same folder, with no history and not inspected",
+          "clonar_elemento_carpeta_one": "Clone item {{equipo}}: {{count}} copy in folder {{carpeta}}, with no history and not inspected",
+          "clonar_elemento_carpeta_other": "Clone item {{equipo}}: {{count}} copies in folder {{carpeta}}, with no history and not inspected",
+          "clonar_carpeta_one": "Make {{count}} copy of folder {{carpeta}} with its whole branch ({{nombres}}): its items start not inspected",
+          "clonar_carpeta_other": "Make {{count}} copies of folder {{carpeta}} with its whole branch ({{nombres}}): its items start not inspected",
+          "registrar_actuacion": "Record {{actuacion}} on item {{equipo}}, on {{fecha}}{{detalle}}",
+          "registrar_actuacion_conjunto_one": "Record {{actuacion}} on set {{conjunto}}, on {{count}} of its items, on {{fecha}}{{detalle}}",
+          "registrar_actuacion_conjunto_other": "Record {{actuacion}} on set {{conjunto}}, on {{count}} of its items, on {{fecha}}{{detalle}}",
+          "registrar_actuacion_lote_one": "Record {{actuacion}} on {{count}} item, on {{fecha}}{{detalle}}",
+          "registrar_actuacion_lote_other": "Record {{actuacion}} on {{count}} items, one on each, on {{fecha}}{{detalle}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4620,6 +4643,34 @@
           "meter_other": "“{{grupo}}” limits what {{count}} users see, {{nombres}}: they will see these clients too.",
           "sacar_one": "“{{grupo}}” limits what {{count}} user sees, {{nombres}}: they will stop seeing these clients, unless they reach them some other way.",
           "sacar_other": "“{{grupo}}” limits what {{count}} users see, {{nombres}}: they will stop seeing these clients, unless they reach them some other way."
+        },
+        "fecha": {
+          "zona_one": "{{count}} zone",
+          "zona_other": "{{count}} zones",
+          "resto": "everything outside any zone"
+        },
+        "y": "{{a}} and {{b}}",
+        "revisionInicial": "with its initial inspection on {{fecha}}: {{resultado}}",
+        "resultado": {
+          "apto": "pass",
+          "no_apto": "fail",
+          "no_revisada": "not inspected"
+        },
+        "actuacion": {
+          "reparacion": "a repair",
+          "incidencia": "an incident",
+          "diagnostico": {
+            "reparado": "repaired",
+            "no_reparado": "not repaired",
+            "no_reparable": "beyond repair"
+          },
+          "subtipo": {
+            "caida_retenida": "arrested fall",
+            "dano_observado": "observed damage",
+            "aviso_fabricante": "manufacturer notice"
+          },
+          "noApto_one": "it becomes unfit",
+          "noApto_other": "they become unfit"
         }
       },
       "deleteChat": "Delete conversation"
