@@ -5854,6 +5854,7 @@
       "validaHastaSinPeriodicidad": "Cet équipement n'a pas de périodicité : indiquez jusqu'à quand elle vaut.",
       "faltaResultado": "Choisissez le résultat.",
       "faltaValidez": "Une révision apte doit dire jusqu'à quand elle vaut.",
+      "faltaValidezAnterior": "La date de validité ne peut pas être antérieure à la date de la révision.",
       "faltaCascadaNoApto": "Indiquez si c'est réparable et ce qui a été fait de l'équipement.",
       "faltaMotivo": "Indiquez pourquoi elle n'a pas été révisée.",
       "faltaDetalle": "Avec « autre », précisez.",

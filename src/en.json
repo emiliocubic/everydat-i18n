@@ -6462,6 +6462,7 @@
       "validaHastaSinPeriodicidad": "This equipment has no periodicity: enter until when it is valid.",
       "faltaResultado": "Choose the result.",
       "faltaValidez": "A passed inspection must say until when it is valid.",
+      "faltaValidezAnterior": "The valid-until date cannot be earlier than the inspection date.",
       "faltaCascadaNoApto": "Say whether it can be repaired and what was done with the equipment.",
       "faltaMotivo": "Say why it was not inspected.",
       "faltaDetalle": "With “other”, say which.",

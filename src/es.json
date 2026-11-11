@@ -6462,6 +6462,7 @@
       "validaHastaSinPeriodicidad": "Este equipo no tiene periodicidad: escribe hasta cuándo vale.",
       "faltaResultado": "Elige el resultado.",
       "faltaValidez": "Una revisión apta tiene que decir hasta cuándo vale.",
+      "faltaValidezAnterior": "Hasta cuándo vale no puede ser anterior a la fecha de la revisión.",
       "faltaCascadaNoApto": "Di si tiene arreglo y qué se hizo con el equipo.",
       "faltaMotivo": "Di por qué no se revisó.",
       "faltaDetalle": "Con «otro», di cuál.",
