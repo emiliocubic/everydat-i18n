@@ -4212,7 +4212,9 @@
       "apiCapacidades": "Vous n’avez pas la permission pour cette action : {{accion}}. Elle vient avec les capacités {{capacidades}}.",
       "nexo": "ou",
       "nexoAnteO": "ou",
-      "tarifas": "voir les tarifs"
+      "tarifas": "voir les tarifs",
+      "proyectos": "voir les projets",
+      "propuestas": "voir les propositions"
     }
   },
   "proyectos": {
