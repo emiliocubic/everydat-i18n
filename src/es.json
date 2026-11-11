@@ -1872,7 +1872,8 @@
         "global": "Acceso global",
         "cuentas": "Por sus cuentas",
         "emplazamiento": "Emplazamiento compartido",
-        "proyecto": "Por un proyecto en marcha"
+        "proyecto": "Por un proyecto en marcha",
+        "zonas": "Solo en algunas zonas"
       },
       "rol": {
         "super": "Superadmin",
