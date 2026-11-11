@@ -277,7 +277,11 @@
       "continuar": "Continue",
       "activada": "Two-step verification turned on.",
       "desactivada": "Two-step verification turned off.",
-      "hecho": "Done"
+      "hecho": "Done",
+      "email": "Email",
+      "emailHint": "The one you sign in with on the panel and the app.",
+      "emailPassword": "Enter your current password to change your email.",
+      "emailCambiado": "Email changed. From now on, sign in with the new one."
     },
     "demasiados": "Too many attempts. Wait a minute and try again.",
     "campo": {

@@ -277,7 +277,11 @@
       "continuar": "Continuar",
       "activada": "Verificación en dos pasos activada.",
       "desactivada": "Verificación en dos pasos desactivada.",
-      "hecho": "Hecho"
+      "hecho": "Hecho",
+      "email": "Email",
+      "emailHint": "Con el que entras en el panel y en la app.",
+      "emailPassword": "Escribe tu contraseña actual para cambiar el email.",
+      "emailCambiado": "Email cambiado. Desde ahora entras con el nuevo."
     },
     "demasiados": "Demasiados intentos. Espera un minuto y vuelve a intentarlo.",
     "campo": {

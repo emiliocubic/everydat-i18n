@@ -270,7 +270,11 @@
       "continuar": "Continuer",
       "activada": "Validation en deux étapes activée.",
       "desactivada": "Validation en deux étapes désactivée.",
-      "hecho": "Terminé"
+      "hecho": "Terminé",
+      "email": "E-mail",
+      "emailHint": "Celui avec lequel vous vous connectez au panneau et à l'application.",
+      "emailPassword": "Saisissez votre mot de passe actuel pour changer d'e-mail.",
+      "emailCambiado": "E-mail modifié. Désormais, connectez-vous avec le nouveau."
     },
     "demasiados": "Trop de tentatives. Attendez une minute et réessayez.",
     "campo": {
