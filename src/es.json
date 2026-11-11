@@ -4067,6 +4067,74 @@
         "placeholder": "Por ejemplo: aquí llamamos centros a los emplazamientos; las cubiertas se revisan cada seis meses.",
         "ayuda": "Quedan {{n}} caracteres."
       }
+    },
+    "tarifas": {
+      "title": "Tarifas",
+      "tabsLabel": "Secciones de tarifas",
+      "tab": {
+        "revisiones": "Revisiones",
+        "otros": "Otros productos"
+      },
+      "precioInvalido": "Importe no válido: usa la coma para los decimales, sin separador de miles ni negativos.",
+      "revisiones": {
+        "periodica": {
+          "titulo": "Revisión periódica",
+          "desc": "Los importes unitarios de revisión con los que se compone un presupuesto. El importe puede ser fijo por unidad de equipo, o depender de un valor del propio equipo: el precio por metro de una línea de vida, o por cada punto de anclaje que la compone."
+        },
+        "adicional": {
+          "desc": "Tarifa específica para este tipo de revisión adicional, solo para los tipos de equipo que la llevan. Por ahora queda guardada como referencia: el presupuesto todavía no distingue el tipo de revisión.",
+          "vacio": "Ningún tipo de equipo lleva todavía esta revisión. Se asigna en Parámetros técnicos › Revisiones."
+        },
+        "vacio": "Todavía no hay tipos de equipo en el catálogo.",
+        "conImporte": "{{n}}/{{total}} con importe",
+        "col": {
+          "tipo": "Tipo",
+          "criterio": "Criterio de cálculo",
+          "campo": "Variable de cálculo",
+          "importe": "Importe"
+        },
+        "criterio": {
+          "fijo": "Fijo. Por unidad",
+          "por_campo": "Variable. Por un campo",
+          "base_mas_campo": "Fijo + Variable por un campo",
+          "por_componentes": "Por componente (retirado)",
+          "base_mas_componentes": "Fijo + por componente (retirado)"
+        },
+        "retiradoNota": "Criterio retirado: sigue calculando hasta que se cambie.",
+        "fijo": "€ Fijo",
+        "variable": "€ p.ud.var.",
+        "porComponente": "€ / componente",
+        "sinCampos": "Sin campos numéricos"
+      },
+      "otros": {
+        "jornadas": {
+          "titulo": "Jornadas y horas de trabajo",
+          "desc": "Detalle de costes por unidad de tiempo invertido en el trabajo."
+        },
+        "bloque": {
+          "nuevo": "Bloque nuevo",
+          "nombre": "Nombre del bloque",
+          "descripcion": "Descripción del bloque",
+          "editar": "Editar nombre y descripción del bloque",
+          "eliminar": "Eliminar el bloque",
+          "eliminarTitulo": "¿Eliminar el bloque «{{nombre}}»?",
+          "eliminarTexto": "Se eliminan el bloque y todos sus productos con sus precios. Las propuestas que ya los llevan los conservan.",
+          "eliminado": "Bloque eliminado",
+          "activo": "Activo",
+          "inactivo": "Inactivo",
+          "activar": "Activar el bloque {{nombre}}"
+        },
+        "col": {
+          "producto": "Producto",
+          "precio": "Precio"
+        },
+        "quitar": "Quitar",
+        "quitarProducto": "Quitar {{nombre}}",
+        "precioDe": "Precio de {{nombre}}",
+        "anadirProducto": "Añadir producto",
+        "anadirBloque": "Añadir bloque de productos",
+        "sinProductos": "Este bloque no tiene productos."
+      }
     }
   },
   "shell": {
@@ -4430,7 +4498,8 @@
       "apiCapacidades": "No tienes permiso para esta acción: {{accion}}. Lo dan las capacidades {{capacidades}}.",
       "nexo": "o",
       "nexoAnteO": "u",
-      "tecnicos": "configurar los parámetros técnicos"
+      "tecnicos": "configurar los parámetros técnicos",
+      "tarifas": "ver las tarifas"
     }
   },
   "proyectos": {

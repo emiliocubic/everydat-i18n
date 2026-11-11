@@ -3912,6 +3912,74 @@
         "placeholder": "Par exemple : ici, nous appelons « centres » les sites ; les toitures sont inspectées tous les six mois.",
         "ayuda": "Il reste {{n}} caractères."
       }
+    },
+    "tarifas": {
+      "title": "Tarifs",
+      "tabsLabel": "Sections des tarifs",
+      "tab": {
+        "revisiones": "Vérifications",
+        "otros": "Autres produits"
+      },
+      "precioInvalido": "Montant non valide : utilisez la virgule décimale, sans séparateur de milliers ni valeurs négatives.",
+      "revisiones": {
+        "periodica": {
+          "titulo": "Vérification périodique",
+          "desc": "Les montants unitaires de vérification utilisés pour composer un devis. Le montant peut être fixe par unité d'équipement, ou dépendre d'une valeur de l'équipement : le prix au mètre d'une ligne de vie, ou par point d'ancrage qui la compose."
+        },
+        "adicional": {
+          "desc": "Tarif spécifique à ce type de vérification supplémentaire, uniquement pour les types d'équipement concernés. Pour l'instant il est gardé à titre de référence : le devis ne distingue pas encore le type de vérification.",
+          "vacio": "Aucun type d'équipement n'a encore cette vérification. Elle s'attribue dans Paramètres techniques › Vérifications."
+        },
+        "vacio": "Le catalogue n'a encore aucun type d'équipement.",
+        "conImporte": "{{n}}/{{total}} avec montant",
+        "col": {
+          "tipo": "Type",
+          "criterio": "Critère de calcul",
+          "campo": "Variable de calcul",
+          "importe": "Montant"
+        },
+        "criterio": {
+          "fijo": "Fixe. Par unité",
+          "por_campo": "Variable. Par un champ",
+          "base_mas_campo": "Fixe + Variable par un champ",
+          "por_componentes": "Par composant (retiré)",
+          "base_mas_componentes": "Fixe + par composant (retiré)"
+        },
+        "retiradoNota": "Critère retiré : il continue de calculer jusqu'à ce qu'on le change.",
+        "fijo": "€ Fixe",
+        "variable": "€ p. u. var.",
+        "porComponente": "€ / composant",
+        "sinCampos": "Aucun champ numérique"
+      },
+      "otros": {
+        "jornadas": {
+          "titulo": "Journées et heures de travail",
+          "desc": "Détail des coûts par unité de temps consacrée au travail."
+        },
+        "bloque": {
+          "nuevo": "Nouveau bloc",
+          "nombre": "Nom du bloc",
+          "descripcion": "Description du bloc",
+          "editar": "Modifier le nom et la description du bloc",
+          "eliminar": "Supprimer le bloc",
+          "eliminarTitulo": "Supprimer le bloc « {{nombre}} » ?",
+          "eliminarTexto": "Le bloc et tous ses produits et prix sont supprimés. Les devis qui les contiennent déjà les conservent.",
+          "eliminado": "Bloc supprimé",
+          "activo": "Actif",
+          "inactivo": "Inactif",
+          "activar": "Activer le bloc {{nombre}}"
+        },
+        "col": {
+          "producto": "Produit",
+          "precio": "Prix"
+        },
+        "quitar": "Retirer",
+        "quitarProducto": "Retirer {{nombre}}",
+        "precioDe": "Prix de {{nombre}}",
+        "anadirProducto": "Ajouter un produit",
+        "anadirBloque": "Ajouter un bloc de produits",
+        "sinProductos": "Ce bloc n'a aucun produit."
+      }
     }
   },
   "shell": {
@@ -4143,7 +4211,8 @@
       "catalogoVer": "voir le catalogue des fabricants et des modèles",
       "apiCapacidades": "Vous n’avez pas la permission pour cette action : {{accion}}. Elle vient avec les capacités {{capacidades}}.",
       "nexo": "ou",
-      "nexoAnteO": "ou"
+      "nexoAnteO": "ou",
+      "tarifas": "voir les tarifs"
     }
   },
   "proyectos": {

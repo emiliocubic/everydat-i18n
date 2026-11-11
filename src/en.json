@@ -4067,6 +4067,74 @@
         "placeholder": "For example: we call sites “centres”; roofs are inspected every six months.",
         "ayuda": "{{n}} characters left."
       }
+    },
+    "tarifas": {
+      "title": "Rates",
+      "tabsLabel": "Rate sections",
+      "tab": {
+        "revisiones": "Inspections",
+        "otros": "Other products"
+      },
+      "precioInvalido": "Invalid amount: use a decimal comma, with no thousands separator and no negatives.",
+      "revisiones": {
+        "periodica": {
+          "titulo": "Periodic inspection",
+          "desc": "The unit inspection amounts used to build a quote. The amount can be fixed per unit of equipment, or depend on a value of the equipment itself: the price per metre of a lifeline, or per anchor point it is made of."
+        },
+        "adicional": {
+          "desc": "Specific rate for this additional inspection type, only for the equipment types that carry it. For now it is stored for reference: quotes do not yet tell inspection types apart.",
+          "vacio": "No equipment type carries this inspection yet. It is assigned in Technical parameters › Inspections."
+        },
+        "vacio": "There are no equipment types in the catalogue yet.",
+        "conImporte": "{{n}}/{{total}} with amount",
+        "col": {
+          "tipo": "Type",
+          "criterio": "Calculation basis",
+          "campo": "Calculation variable",
+          "importe": "Amount"
+        },
+        "criterio": {
+          "fijo": "Fixed. Per unit",
+          "por_campo": "Variable. Per field",
+          "base_mas_campo": "Fixed + Variable per field",
+          "por_componentes": "Per component (withdrawn)",
+          "base_mas_componentes": "Fixed + per component (withdrawn)"
+        },
+        "retiradoNota": "Withdrawn basis: it keeps calculating until it is changed.",
+        "fijo": "€ Fixed",
+        "variable": "€ per var. unit",
+        "porComponente": "€ / component",
+        "sinCampos": "No numeric fields"
+      },
+      "otros": {
+        "jornadas": {
+          "titulo": "Working days and hours",
+          "desc": "Cost breakdown per unit of time spent on the job."
+        },
+        "bloque": {
+          "nuevo": "New block",
+          "nombre": "Block name",
+          "descripcion": "Block description",
+          "editar": "Edit block name and description",
+          "eliminar": "Delete block",
+          "eliminarTitulo": "Delete the block «{{nombre}}»?",
+          "eliminarTexto": "The block and all its products and prices are deleted. Quotes that already include them keep them.",
+          "eliminado": "Block deleted",
+          "activo": "Active",
+          "inactivo": "Inactive",
+          "activar": "Activate the block {{nombre}}"
+        },
+        "col": {
+          "producto": "Product",
+          "precio": "Price"
+        },
+        "quitar": "Remove",
+        "quitarProducto": "Remove {{nombre}}",
+        "precioDe": "Price of {{nombre}}",
+        "anadirProducto": "Add product",
+        "anadirBloque": "Add product block",
+        "sinProductos": "This block has no products."
+      }
     }
   },
   "shell": {
@@ -4430,7 +4498,8 @@
       "apiCapacidades": "You do not have permission for this action: {{accion}}. It comes with the {{capacidades}} capabilities.",
       "nexo": "or",
       "nexoAnteO": "or",
-      "tecnicos": "configure the technical parameters"
+      "tecnicos": "configure the technical parameters",
+      "tarifas": "view the rates"
     }
   },
   "proyectos": {
