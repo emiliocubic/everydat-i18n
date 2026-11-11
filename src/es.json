@@ -4090,14 +4090,16 @@
         },
         "verExamen": "Ver el resultado de la prueba",
         "volverAProbar": "Volver a probar",
-        "ocupaRanura": "Lo usa una ranura: cámbiala antes de borrarlo.",
         "nuevo": "Nuevo proveedor",
         "editando": "Editar {{nombre}}",
         "modeloPrueba": "Modelo con el que probar",
-        "modeloPruebaAyuda": "Al guardar un proveedor nuevo, o al cambiar su dirección o su clave, se prueba solo con este modelo. Gasta unos pocos tokens del proveedor.",
+        "modeloPruebaAyuda": "Al guardar un proveedor nuevo, o al cambiar su dirección, su clave o este modelo, se prueba solo y se leen los modelos que ofrece. Gasta unos pocos tokens del proveedor.",
         "guardarProbar": "Guardar y probar",
         "probadoApto": "{{nombre}}: probado y apto.",
-        "probadoNoApto": "{{nombre}}: no ha pasado la prueba. Abajo, el motivo."
+        "probadoNoApto": "{{nombre}}: no ha pasado la prueba. Abajo, el motivo.",
+        "borrarEnUso_one": "Lo usa la ranura de {{ranuras}}: al borrarlo, volverá al proveedor del servidor ({{modelo}}).",
+        "borrarEnUso_other": "Lo usan las ranuras de {{ranuras}}: al borrarlo, volverán al proveedor del servidor ({{modelo}}).",
+        "elegirModelo": "Elige un modelo"
       }
     },
     "tarifas": {

@@ -4090,14 +4090,16 @@
         },
         "verExamen": "See the test result",
         "volverAProbar": "Test again",
-        "ocupaRanura": "A slot uses it: change the slot before deleting it.",
         "nuevo": "New provider",
         "editando": "Edit {{nombre}}",
         "modeloPrueba": "Model to test with",
-        "modeloPruebaAyuda": "When a new provider is saved, or its address or key changes, it is tested automatically with this model. It uses a few of the provider's tokens.",
+        "modeloPruebaAyuda": "When you save a new provider, or change its address, its key or this model, it is tested automatically and the models it offers are read. It uses a few of the provider’s tokens.",
         "guardarProbar": "Save and test",
         "probadoApto": "{{nombre}}: tested and passed.",
-        "probadoNoApto": "{{nombre}}: did not pass the test. The reason is shown below."
+        "probadoNoApto": "{{nombre}}: did not pass the test. The reason is shown below.",
+        "borrarEnUso_one": "The {{ranuras}} slot uses it: once deleted, that slot goes back to the server’s provider ({{modelo}}).",
+        "borrarEnUso_other": "The {{ranuras}} slots use it: once deleted, they go back to the server’s provider ({{modelo}}).",
+        "elegirModelo": "Choose a model"
       }
     },
     "tarifas": {
