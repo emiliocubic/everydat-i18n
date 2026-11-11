@@ -691,7 +691,8 @@
     "estado": {
       "activo": "Actif",
       "potencial": "Prospect",
-      "baja": "Inactif"
+      "baja": "Inactif",
+      "sinBajas": "Actifs et prospects"
     },
     "nuevo": {
       "creado": "Client créé.",

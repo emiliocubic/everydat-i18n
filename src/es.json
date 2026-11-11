@@ -576,7 +576,8 @@
     "estado": {
       "activo": "Activo",
       "potencial": "Potencial",
-      "baja": "Baja"
+      "baja": "Baja",
+      "sinBajas": "Activos y potenciales"
     },
     "nuevo": {
       "creado": "Cliente creado.",
