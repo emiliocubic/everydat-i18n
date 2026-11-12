@@ -3800,7 +3800,7 @@
         "titulo": "How reports are printed",
         "desc": "Applies to every report issued from now on; reports already issued do not change.",
         "anonimizar": "Anonymise inspectors",
-        "anonimizarHint": "Inspectors with an account appear by their alias. The signatory always appears by name."
+        "anonimizarHint": "Inspectors with an account appear as «Technician» followed by the company's trade name. The signatory always appears by name."
       },
       "grupoAcreditaciones": "Accreditations",
       "acreditaciones": {
@@ -4223,10 +4223,10 @@
         "titulo": "Project sales management",
         "desc": "Whether projects carry sales management (proposals and quotes) and, if so, which quotes are made: built here from the configured prices, uploaded from outside with their document, or both.",
         "activada": "On",
-        "activadaTxt": "sales and budget proposals are managed, together with their acceptance or rejection.",
+        "activadaTxt": "sales proposals and quotes are managed, together with their acceptance or rejection.",
         "desactivada": "Off",
-        "desactivadaTxt": "operational use of projects only. No sales or budget management.",
-        "desactivadaNota": "Without sales management there are no proposals: Upcoming is a single list of dates and projects to start. It cannot be turned off while any proposal is still open.",
+        "desactivadaTxt": "operational use of projects only. There are no proposals or quotes anywhere in the application.",
+        "desactivadaNota": "Without sales management there are no proposals: Upcoming is a single list of dates and projects to start, and In progress is execution only. Earlier proposals are no longer shown and come back if it is turned on again. It cannot be turned off while any proposal is still open.",
         "presupuestos": "Quotes",
         "presupuestosAria": "Which quotes are made",
         "via": {
@@ -4269,7 +4269,7 @@
           "parcial": "Anonymise partially"
         },
         "modoTxt": {
-          "todo": "in the client portal and in reports the technician does not appear by name but by their alias, and the company stamp replaces their signature. Inside the application, for internal use, you can still see who did each job.",
+          "todo": "in the client portal and in reports the technician does not appear by name but as «Technician» followed by the company's trade name, and the company stamp replaces their signature. Whoever signs the report always appears by name. Inside the application, for internal use, you can still see who did each job.",
           "no": "the technician is always identified by their full name."
         },
         "dondeAria": "Where to anonymise",
@@ -8563,7 +8563,7 @@
       "fuente_titulos": "Titles",
       "fuente_textos": "Texts",
       "colores": "Main colours",
-      "coloresDesc": "Result colours (Passed, Failed…) are fixed and do not change.",
+      "coloresDesc": "A new template starts with the company's main and accent colours (Image and brand), and «Reset» goes back to them. Result colours (Passed, Failed…) are fixed and do not change.",
       "color": {
         "marca": "Brand colour",
         "marcaHint": "Titles, bands and rules.",

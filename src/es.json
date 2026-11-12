@@ -3800,7 +3800,7 @@
         "titulo": "Cómo se imprimen los informes",
         "desc": "Afecta a todos los informes que se emitan desde ahora; los ya emitidos no cambian.",
         "anonimizar": "Anonimizar a los revisores",
-        "anonimizarHint": "Los revisores con cuenta salen por su alias. El firmante sale siempre con su nombre."
+        "anonimizarHint": "Los revisores con cuenta salen como «Técnico» y el nombre comercial de la empresa. El firmante sale siempre con su nombre."
       },
       "grupoAcreditaciones": "Acreditaciones",
       "acreditaciones": {
@@ -4223,10 +4223,10 @@
         "titulo": "Gestión comercial del proyecto",
         "desc": "Si los proyectos llevan gestión comercial (propuestas y presupuestos) y, en ese caso, qué presupuestos se hacen: compuestos aquí sobre los precios parametrizados, cargados de fuera con su documento, o las dos cosas.",
         "activada": "Activada",
-        "activadaTxt": "se gestionan propuestas comerciales y presupuestarias así como su aceptación o rechazo.",
+        "activadaTxt": "se gestionan propuestas comerciales y presupuestos, con su aceptación o rechazo.",
         "desactivada": "Desactivada",
-        "desactivadaTxt": "solo uso operativo de los proyectos. Sin gestión comercial o presupuestaria.",
-        "desactivadaNota": "Sin gestión comercial no hay propuestas: Futuros es una sola lista de fechas y proyectos por arrancar. No se puede desactivar mientras quede alguna propuesta abierta.",
+        "desactivadaTxt": "solo uso operativo de los proyectos. No hay propuestas ni presupuestos en ninguna parte de la aplicación.",
+        "desactivadaNota": "Sin gestión comercial no existen las propuestas: Futuros es una sola lista de fechas y proyectos por arrancar, y En curso es solo la ejecución. Las propuestas de antes dejan de verse y vuelven si se activa otra vez. No se puede desactivar mientras quede alguna propuesta abierta.",
         "presupuestos": "Presupuestos",
         "presupuestosAria": "Qué presupuestos se hacen",
         "via": {
@@ -4269,7 +4269,7 @@
           "parcial": "Anonimizar parcialmente"
         },
         "modoTxt": {
-          "todo": "en el portal cliente y en los informes el técnico no sale con su nombre, sino con su alias, y en lugar de su firma va el sello de la empresa. En la aplicación, para uso interno, sí se ve quién realiza cada trabajo.",
+          "todo": "en el portal cliente y en los informes el técnico no sale con su nombre, sino como «Técnico» y el nombre comercial de la empresa, y en lugar de su firma va el sello de la empresa. Quien firma el informe sale siempre con su nombre. En la aplicación, para uso interno, sí se ve quién realiza cada trabajo.",
           "no": "el técnico queda siempre identificado por su nombre y apellidos."
         },
         "dondeAria": "Dónde se anonimiza",
@@ -8563,7 +8563,7 @@
       "fuente_titulos": "Títulos",
       "fuente_textos": "Textos",
       "colores": "Colores principales",
-      "coloresDesc": "Los colores de resultado (Apto, No apto…) son fijos y no cambian.",
+      "coloresDesc": "Una plantilla nueva nace con el color principal y el de acento de la empresa (Imagen y marca), y «Restablecer» vuelve a ellos. Los colores de resultado (Apto, No apto…) son fijos y no cambian.",
       "color": {
         "marca": "Color de marca",
         "marcaHint": "Títulos, bandas y filetes.",
