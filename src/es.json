@@ -4342,12 +4342,12 @@
       },
       "logos": {
         "titulo": "Logotipos",
-        "desc": "Los logotipos de tu marca para cada uso: portada de la aplicación, menú lateral (desplegado y plegado), correos y documentos impresos o PDF. Puedes tener hasta 3 logos de documento; cada plantilla de informe elige el suyo. Solo PNG o SVG.",
+        "desc": "Los logotipos de tu marca para cada uso: portada de la aplicación, menú lateral (desplegado y plegado), correos y documentos impresos o PDF. Puedes tener hasta 3 logos de documento; cada plantilla de informe elige el suyo. Solo PNG, hasta 1 MB.",
         "grupoApp": "Aplicación y correos",
         "grupoDocumentos": "Documentos impresos / PDF",
         "recomendado": "Recomendado: {{w}} × {{h}} px",
         "vacio": "Sin logo",
-        "menuHint": "También es la cabecera de la app de campo, que no pinta SVG: con un SVG enseña el nombre de la empresa.",
+        "menuHint": "También es la cabecera de la app de campo.",
         "portada": "Logo portada aplicación",
         "menu": "Logo menú desplegado",
         "simbolo": "Logosímbolo menú (plegado)",
@@ -4416,12 +4416,11 @@
       },
       "avisos": {
         "titulo": "Avisos de caducidad",
-        "desc": "Cuándo y a quién avisar de que una acreditación va a caducar. El plazo ya cuenta: marca cuándo una acreditación pasa a «próxima a caducar». A quién avisar se guarda y se aplicará cuando la aplicación envíe avisos.",
+        "desc": "Cuándo y a quién avisar de que una acreditación va a caducar. El plazo ya cuenta: marca cuándo una acreditación pasa a «próxima a caducar». A quién avisar (los titulares y las personas que elijas aquí, entre las de la empresa) se guarda y se aplicará cuando la aplicación envíe avisos.",
         "plazo": "Plazo de antelación",
         "diasAntes": "días antes de caducar",
         "quien": "A quién avisar",
         "titulares": "Titular/es de la acreditación",
-        "responsables": "Responsables en la empresa",
         "admins": "Personas a las que avisar",
         "anadirAdmin": "Buscar persona…"
       },

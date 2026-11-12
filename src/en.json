@@ -4342,12 +4342,12 @@
       },
       "logos": {
         "titulo": "Logos",
-        "desc": "Your brand logos for each use: application cover, side menu (expanded and collapsed), emails and printed or PDF documents. You can have up to 3 document logos; each report template picks its own. PNG or SVG only.",
+        "desc": "Your brand logos for each use: application cover, side menu (expanded and collapsed), emails and printed or PDF documents. You can have up to 3 document logos; each report template picks its own. PNG only, up to 1 MB.",
         "grupoApp": "Application and emails",
         "grupoDocumentos": "Printed / PDF documents",
         "recomendado": "Recommended: {{w}} × {{h}} px",
         "vacio": "No logo",
-        "menuHint": "It is also the field app header, which doesn't render SVG: with an SVG it shows the company name.",
+        "menuHint": "It is also the field app header.",
         "portada": "Application cover logo",
         "menu": "Expanded menu logo",
         "simbolo": "Menu symbol (collapsed)",
@@ -4416,12 +4416,11 @@
       },
       "avisos": {
         "titulo": "Expiry alerts",
-        "desc": "When and whom to warn that an accreditation is about to expire. The period already applies: it sets when an accreditation becomes «about to expire». Whom to warn is saved and will apply once the application sends alerts.",
+        "desc": "When and whom to warn that an accreditation is about to expire. The period already applies: it sets when an accreditation becomes «about to expire». Whom to warn (the holders and the people you pick here, from your company) is saved and will apply once the application sends alerts.",
         "plazo": "Notice period",
         "diasAntes": "days before expiry",
         "quien": "Whom to warn",
         "titulares": "Accreditation holder/s",
-        "responsables": "People in charge at the company",
         "admins": "People to warn",
         "anadirAdmin": "Search person…"
       },
