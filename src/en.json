@@ -642,8 +642,7 @@
       },
       "accesos": {
         "nivel": {
-          "lectura": "Read",
-          "edicion": "Edit"
+          "lectura": "Read"
         }
       }
     },
@@ -815,8 +814,7 @@
         "bandNotificaciones": "E-mail notifications",
         "capInformes": "Access to reports",
         "capPresupuestos": "Access to quotes",
-        "capVer": "Read permission",
-        "capEditar": "Edit permission",
+        "capVer": "View access",
         "capRevision": "Inspection alerts",
         "capFinVida": "End-of-useful-life alerts",
         "adscribirEmp": "Link to {{name}}",
@@ -840,7 +838,7 @@
         "cargoPlaceholder": "Role",
         "cargoAria": "Role at {{name}}",
         "tipEnvios": "Make the user a recipient of REPORTS and/or QUOTES for the sites",
-        "tipAccesos": "Set the user’s permission in the client portal: read only, or also the editing features that are enabled",
+        "tipAccesos": "Whether the person can enter the client portal, and where. It is always view-only: proposing changes is a separate permission",
         "tipNotificaciones": "Make the user a recipient of NEXT INSPECTION and/or END OF USEFUL LIFE notices for the sites",
         "restoEmplazamiento": "Rest of the site",
         "marcarZona": "Give access to {{name}}",

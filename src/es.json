@@ -513,8 +513,7 @@
       },
       "accesos": {
         "nivel": {
-          "lectura": "Lectura",
-          "edicion": "Edición"
+          "lectura": "Lectura"
         }
       }
     },
@@ -686,8 +685,7 @@
         "bandNotificaciones": "Notificaciones por e-mail",
         "capInformes": "Acceso a informes",
         "capPresupuestos": "Acceso a presupuestos",
-        "capVer": "Permiso de lectura",
-        "capEditar": "Permiso de edición",
+        "capVer": "Acceso de consulta",
         "capRevision": "Avisos de revisión",
         "capFinVida": "Avisos de fin de vida útil",
         "adscribirEmp": "Asociar a {{name}}",
@@ -711,7 +709,7 @@
         "cargoPlaceholder": "Cargo",
         "cargoAria": "Cargo en {{name}}",
         "tipEnvios": "Habilitar al usuario como destinatario de INFORMES y/o de PRESUPUESTOS asociados a los emplazamientos",
-        "tipAccesos": "Especificar el tipo de permiso del usuario en el portal de cliente: solo lectura, o también las prestaciones de edición que estén habilitadas",
+        "tipAccesos": "Si la persona entra en el portal del cliente y dónde. Siempre es para consultar: proponer cambios es otro permiso",
         "tipNotificaciones": "Habilitar al usuario como destinatario de avisos de PRÓXIMA REVISIÓN y/o de FINAL DE VIDA ÚTIL asociados a los emplazamientos",
         "restoEmplazamiento": "Resto del emplazamiento",
         "marcarZona": "Dar acceso a {{name}}",

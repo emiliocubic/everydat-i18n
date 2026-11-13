@@ -634,8 +634,7 @@
       },
       "accesos": {
         "nivel": {
-          "lectura": "Lecture",
-          "edicion": "Édition"
+          "lectura": "Lecture"
         }
       }
     },
@@ -754,8 +753,7 @@
         "bandNotificaciones": "Notifications par e-mail",
         "capInformes": "Accès aux rapports",
         "capPresupuestos": "Accès aux devis",
-        "capVer": "Permission de lecture",
-        "capEditar": "Permission d’édition",
+        "capVer": "Accès en consultation",
         "capRevision": "Alertes d’inspection",
         "capFinVida": "Alertes de fin de vie",
         "adscribirEmp": "Associer à {{name}}",
