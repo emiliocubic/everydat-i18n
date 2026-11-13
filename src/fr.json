@@ -8580,7 +8580,7 @@
       },
       "caducada": {
         "titulo": "Accréditation expirée",
-        "desc": "{{documento}} de {{titular}} a expiré le {{fecha}}"
+        "desc": "{{documento}} de {{titular}} n'est plus valable : elle l'était jusqu'au {{fecha}}"
       }
     },
     "bandeja": {

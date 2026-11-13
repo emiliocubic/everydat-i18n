@@ -9528,7 +9528,7 @@
       },
       "caducada": {
         "titulo": "Acreditación caducada",
-        "desc": "{{documento}} de {{titular}} caducó el {{fecha}}"
+        "desc": "{{documento}} de {{titular}} ya no vale: era válida hasta el {{fecha}}"
       }
     },
     "bandeja": {

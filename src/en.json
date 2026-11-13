@@ -9528,7 +9528,7 @@
       },
       "caducada": {
         "titulo": "Accreditation expired",
-        "desc": "{{documento}} of {{titular}} expired on {{fecha}}"
+        "desc": "{{documento}} of {{titular}} is no longer valid: it was valid until {{fecha}}"
       }
     },
     "bandeja": {
