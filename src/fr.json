@@ -6934,7 +6934,8 @@
     "none": {
       "fInst": "Sans date d’installation",
       "ultRev": "Jamais vérifié",
-      "revPlan": "Sans vérification planifiée"
+      "revPlan": "Sans vérification planifiée",
+      "ultRevCliente": "Client jamais vérifié"
     },
     "ph": {
       "ruta": "Le dossier contient… (ex. Toiture)",
@@ -6972,7 +6973,9 @@
       "situ": "Situation dans un projet",
       "proyecto": "Projet",
       "pendiente": "À vérifier dans un projet en cours",
-      "exc": "Exceptions détectées"
+      "exc": "Exceptions détectées",
+      "aviso": "Avertissement de diagnostic",
+      "ultRevCliente": "Dernière vérification du client"
     },
     "qb": {
       "criterios": "Critères de recherche",
@@ -7283,6 +7286,10 @@
         "obs": "Observations",
         "estado": "État actuel"
       }
+    },
+    "aviso": {
+      "no_reparable": "Non réparable",
+      "destruir": "À détruire"
     }
   },
   "informesDiseno": {

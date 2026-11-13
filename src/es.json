@@ -7903,7 +7903,8 @@
     "none": {
       "fInst": "Sin fecha de instalación",
       "ultRev": "Nunca revisado",
-      "revPlan": "Sin revisión planificada"
+      "revPlan": "Sin revisión planificada",
+      "ultRevCliente": "Cliente nunca revisado"
     },
     "ph": {
       "ruta": "Carpeta contiene… (p. ej. Cubierta)",
@@ -7942,7 +7943,9 @@
       "proyecto": "Proyecto",
       "pendiente": "Pendiente de revisar en proyecto en curso",
       "exc": "Excepciones detectadas",
-      "cliBaja": "Clientes"
+      "cliBaja": "Clientes",
+      "aviso": "Aviso de diagnóstico",
+      "ultRevCliente": "Última revisión del cliente"
     },
     "qb": {
       "criterios": "Criterios de búsqueda",
@@ -8258,6 +8261,10 @@
     "cliBaja": {
       "activos": "Solo activos",
       "incluir": "También de baja"
+    },
+    "aviso": {
+      "no_reparable": "No reparable",
+      "destruir": "A destruir"
     }
   },
   "informesDiseno": {

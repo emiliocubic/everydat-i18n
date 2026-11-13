@@ -7903,7 +7903,8 @@
     "none": {
       "fInst": "No installation date",
       "ultRev": "Never inspected",
-      "revPlan": "No planned inspection"
+      "revPlan": "No planned inspection",
+      "ultRevCliente": "Customer never inspected"
     },
     "ph": {
       "ruta": "Folder contains… (e.g. Roof)",
@@ -7942,7 +7943,9 @@
       "proyecto": "Project",
       "pendiente": "Pending inspection in an ongoing project",
       "exc": "Detected exceptions",
-      "cliBaja": "Clients"
+      "cliBaja": "Clients",
+      "aviso": "Diagnosis warning",
+      "ultRevCliente": "Customer's last inspection"
     },
     "qb": {
       "criterios": "Search criteria",
@@ -8258,6 +8261,10 @@
     "cliBaja": {
       "activos": "Active only",
       "incluir": "Also inactive"
+    },
+    "aviso": {
+      "no_reparable": "Not repairable",
+      "destruir": "To be destroyed"
     }
   },
   "informesDiseno": {
