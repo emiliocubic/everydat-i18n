@@ -274,7 +274,10 @@
       "email": "E-mail",
       "emailHint": "Celui avec lequel vous vous connectez au panneau et à l'application.",
       "emailPassword": "Saisissez votre mot de passe actuel pour changer d'e-mail.",
-      "emailCambiado": "E-mail modifié. Désormais, connectez-vous avec le nouveau."
+      "emailCambiado": "E-mail modifié. Désormais, connectez-vous avec le nouveau.",
+      "resumenAlertas": "Résumé quotidien des alertes",
+      "resumenAlertasHint": "Chaque matin, un e-mail avec les nouvelles alertes de la cloche que vous n'avez pas encore lues. S'il n'y en a aucune, rien n'est envoyé.",
+      "resumenAlertasCasilla": "Recevoir le résumé quotidien par e-mail"
     },
     "demasiados": "Trop de tentatives. Attendez une minute et réessayez.",
     "campo": {

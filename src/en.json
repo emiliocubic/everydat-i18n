@@ -281,7 +281,10 @@
       "email": "Email",
       "emailHint": "The one you sign in with on the panel and the app.",
       "emailPassword": "Enter your current password to change your email.",
-      "emailCambiado": "Email changed. From now on, sign in with the new one."
+      "emailCambiado": "Email changed. From now on, sign in with the new one.",
+      "resumenAlertas": "Daily alert summary",
+      "resumenAlertasHint": "Every morning, an email with the new bell alerts you have not read yet. If there are none, nothing is sent.",
+      "resumenAlertasCasilla": "Get the daily summary by email"
     },
     "demasiados": "Too many attempts. Wait a minute and try again.",
     "campo": {

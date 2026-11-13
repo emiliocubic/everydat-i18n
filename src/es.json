@@ -281,7 +281,10 @@
       "email": "Email",
       "emailHint": "Con el que entras en el panel y en la app.",
       "emailPassword": "Escribe tu contraseña actual para cambiar el email.",
-      "emailCambiado": "Email cambiado. Desde ahora entras con el nuevo."
+      "emailCambiado": "Email cambiado. Desde ahora entras con el nuevo.",
+      "resumenAlertas": "Resumen diario de alertas",
+      "resumenAlertasHint": "Cada mañana, un correo con las alertas nuevas de la campana que aún no has leído. Sin ninguna, no llega nada.",
+      "resumenAlertasCasilla": "Recibir el resumen diario por correo"
     },
     "demasiados": "Demasiados intentos. Espera un minuto y vuelve a intentarlo.",
     "campo": {
