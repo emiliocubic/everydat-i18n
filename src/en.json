@@ -4273,7 +4273,11 @@
         "mesesAntes": "months of advance notice",
         "finVidaAyuda": "One email a month with the equipment whose service life ends in the month that many months ahead. For example, day 25 with 2 months: on 25 March, clients are told about the equipment ending in May.",
         "diaAria": "Day of the month of the end-of-service-life notice",
-        "mesesAria": "Months of advance notice of the end-of-service-life notice"
+        "mesesAria": "Months of advance notice of the end-of-service-life notice",
+        "copia": "Copy mailbox",
+        "copiaEjemplo": "notices@company.com",
+        "copiaAyuda": "Gets a blind copy of every notice sent to a client, and the ones with no contact allowed to receive them, marked «no recipient». Empty, no copy is sent.",
+        "copiaMal": "The copy mailbox does not look like an email address."
       },
       "comercial": {
         "titulo": "Project sales management",

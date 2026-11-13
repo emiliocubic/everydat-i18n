@@ -4049,7 +4049,11 @@
         "finVidaAyuda": "Un e-mail par mois avec les équipements dont la vie utile se termine dans le mois situé autant de mois plus tard. Par exemple, le 25 avec 2 mois : le 25 mars, on avertit de ceux qui se terminent en mai.",
         "diaAria": "Jour du mois de l'avis de fin de vie",
         "mesesAria": "Mois de préavis de l'avis de fin de vie",
-        "fueraDeRango": "Les jours de vérification vont de 0 à 365 ; le jour du mois de 1 à 28, et les mois de 1 à 12."
+        "fueraDeRango": "Les jours de vérification vont de 0 à 365 ; le jour du mois de 1 à 28, et les mois de 1 à 12.",
+        "copia": "Boîte de copie",
+        "copiaEjemplo": "avis@entreprise.com",
+        "copiaAyuda": "Reçoit une copie cachée de chaque avis envoyé à un client, et ceux qui n'ont aucun contact autorisé à les recevoir, marqués « sans destinataire ». Vide, aucune copie.",
+        "copiaMal": "La boîte de copie ne ressemble pas à une adresse e-mail."
       }
     }
   },

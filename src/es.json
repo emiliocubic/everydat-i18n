@@ -4273,7 +4273,11 @@
         "mesesAntes": "meses de antelación",
         "finVidaAyuda": "Un correo al mes con los equipos que agotan su vida útil en el mes que cae a tantos meses vista. Por ejemplo, el día 25 con 2 meses: el 25 de marzo se avisa de los que acaban en mayo.",
         "diaAria": "Día del mes del aviso de fin de vida útil",
-        "mesesAria": "Meses de antelación del aviso de fin de vida útil"
+        "mesesAria": "Meses de antelación del aviso de fin de vida útil",
+        "copia": "Buzón de copia",
+        "copiaEjemplo": "avisos@empresa.com",
+        "copiaAyuda": "Recibe copia oculta de cada aviso que sale a un cliente, y los que no tienen a ningún contacto con permiso para recibirlos, marcados «sin destinatario». Vacío, no hay copia.",
+        "copiaMal": "El buzón de copia no parece un correo."
       },
       "comercial": {
         "titulo": "Gestión comercial del proyecto",
