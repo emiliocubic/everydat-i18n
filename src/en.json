@@ -1277,7 +1277,8 @@
         "recuperada": "Restored: it counts on the item again.",
         "definitivo": "Delete permanently",
         "definitivoConfirm": "It will be deleted forever, along with its points and photos. This cannot be undone. Continue?",
-        "borradaDefinitivamente": "Deleted permanently."
+        "borradaDefinitivamente": "Deleted permanently.",
+        "definitivoConfirmActuacion": "It will be deleted forever, along with the documents that only hung from it. This cannot be undone. Continue?"
       }
     },
     "traslado": {
@@ -7282,7 +7283,7 @@
       "incidencia": "What happened to the item between inspections."
     },
     "borrar": "Delete intervention",
-    "borrarConfirma": "It is removed from the history. Any attached documents stay in document management.",
+    "borrarConfirma": "It is moved to the history bin and the item stops counting it. It can be restored from the bin.{{docs}} Continue?",
     "guardar": "Save intervention",
     "crear": "Record intervention",
     "tipo": {

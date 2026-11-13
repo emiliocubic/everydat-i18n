@@ -1187,7 +1187,8 @@
         "recuperada": "Restauré : il compte de nouveau pour l'équipement.",
         "definitivo": "Supprimer définitivement",
         "definitivoConfirm": "Il sera supprimé pour toujours, avec ses points et ses photos. Action irréversible. Continuer ?",
-        "borradaDefinitivamente": "Supprimé définitivement."
+        "borradaDefinitivamente": "Supprimé définitivement.",
+        "definitivoConfirmActuacion": "Elle sera supprimée pour toujours, avec les documents qui ne dépendaient que d'elle. Action irréversible. Continuer ?"
       }
     },
     "traslado": {
@@ -6675,7 +6676,7 @@
       "incidencia": "Ce qui est arrivé à l'équipement entre deux vérifications."
     },
     "borrar": "Supprimer l'intervention",
-    "borrarConfirma": "Elle est retirée de l'historique. Les documents joints restent dans la gestion documentaire.",
+    "borrarConfirma": "Elle est envoyée dans la corbeille de l'historique et l'équipement cesse d'en tenir compte. Elle peut être restaurée depuis la corbeille.{{docs}} Continuer ?",
     "guardar": "Enregistrer l'intervention",
     "crear": "Enregistrer l'intervention",
     "tipo": {

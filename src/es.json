@@ -1148,7 +1148,8 @@
         "recuperada": "Recuperada: vuelve a contar en el equipo.",
         "definitivo": "Borrar definitivamente",
         "definitivoConfirm": "Se borrará para siempre, con sus puntos y sus fotos. No se puede deshacer. ¿Continuar?",
-        "borradaDefinitivamente": "Borrada definitivamente."
+        "borradaDefinitivamente": "Borrada definitivamente.",
+        "definitivoConfirmActuacion": "Se borrará para siempre, con los documentos que solo colgaban de ella. No se puede deshacer. ¿Continuar?"
       }
     },
     "traslado": {
@@ -7282,7 +7283,7 @@
       "incidencia": "Qué le ha pasado al equipo entre revisiones."
     },
     "borrar": "Eliminar actuación",
-    "borrarConfirma": "Se quita del historial. Los documentos que lleve colgados se quedan en la gestión documental.",
+    "borrarConfirma": "Se manda a la papelera del historial y el equipo deja de contar con ella. Desde la papelera se puede recuperar.{{docs}} ¿Continuar?",
     "guardar": "Guardar actuación",
     "crear": "Registrar actuación",
     "tipo": {
