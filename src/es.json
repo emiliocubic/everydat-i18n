@@ -4625,7 +4625,8 @@
     "notif": {
       "title": "Notificaciones",
       "markAll": "Marcar todas como leídas",
-      "seeAll": "Ver todas"
+      "seeAll": "Ver todas",
+      "vacio": "Sin notificaciones"
     },
     "user": {
       "role": "Rol",
@@ -9514,5 +9515,41 @@
     "anadir": "Añadir plazo",
     "quitar": "Quitar el plazo {{n}}",
     "fueraDeRango": "Los días van de 0 a 365 (sin repetir); el día del mes, de 1 a 28, y los meses, de 1 a 12."
+  },
+  "alertas": {
+    "laEmpresa": "la empresa",
+    "acreditacion": {
+      "caduca": {
+        "titulo": "Acreditación a punto de caducar",
+        "desc": "{{documento}} de {{titular}} caduca el {{fecha}}"
+      },
+      "caducada": {
+        "titulo": "Acreditación caducada",
+        "desc": "{{documento}} de {{titular}} caducó el {{fecha}}"
+      }
+    },
+    "bandeja": {
+      "propuesta": {
+        "titulo": "Propuesta pendiente de aceptar",
+        "desc_one": "Una propuesta de un paso espera en Sherpa a que la revises",
+        "desc_other": "Una propuesta de {{count}} pasos espera en Sherpa a que la revises"
+      }
+    },
+    "aviso": {
+      "rebotado": {
+        "titulo": "Aviso a un cliente rechazado",
+        "desc": "El correo a {{destinatario}} ({{cliente}}) no se ha podido entregar"
+      },
+      "sin_destinatario": {
+        "titulo": "Aviso sin destinatario",
+        "desc": "Ningún contacto de {{cliente}} tiene permiso para recibir sus avisos: solo le ha llegado a la oficina"
+      }
+    },
+    "webhook": {
+      "pausado": {
+        "titulo": "Webhook pausado",
+        "desc": "El webhook de {{cuenta}} lleva {{dias}} días sin entregar y se ha pausado"
+      }
+    }
   }
 }

@@ -4165,7 +4165,8 @@
     "notif": {
       "title": "Notifications",
       "markAll": "Tout marquer comme lu",
-      "seeAll": "Voir tout"
+      "seeAll": "Voir tout",
+      "vacio": "Aucune notification"
     },
     "user": {
       "role": "Rôle",
@@ -8566,5 +8567,41 @@
     "anadir": "Ajouter un délai",
     "quitar": "Retirer le délai {{n}}",
     "fueraDeRango": "Les jours vont de 0 à 365 (sans répétition) ; le jour du mois de 1 à 28, et les mois de 1 à 12."
+  },
+  "alertas": {
+    "laEmpresa": "l'entreprise",
+    "acreditacion": {
+      "caduca": {
+        "titulo": "Accréditation sur le point d'expirer",
+        "desc": "{{documento}} de {{titular}} expire le {{fecha}}"
+      },
+      "caducada": {
+        "titulo": "Accréditation expirée",
+        "desc": "{{documento}} de {{titular}} a expiré le {{fecha}}"
+      }
+    },
+    "bandeja": {
+      "propuesta": {
+        "titulo": "Proposition en attente",
+        "desc_one": "Une proposition d'une étape attend dans Sherpa que vous la vérifiiez",
+        "desc_other": "Une proposition de {{count}} étapes attend dans Sherpa que vous la vérifiiez"
+      }
+    },
+    "aviso": {
+      "rebotado": {
+        "titulo": "Avis à un client rejeté",
+        "desc": "L'e-mail à {{destinatario}} ({{cliente}}) n'a pas pu être remis"
+      },
+      "sin_destinatario": {
+        "titulo": "Avis sans destinataire",
+        "desc": "Aucun contact de {{cliente}} n'est autorisé à recevoir ses avis : il n'est parvenu qu'au bureau"
+      }
+    },
+    "webhook": {
+      "pausado": {
+        "titulo": "Webhook en pause",
+        "desc": "Le webhook de {{cuenta}} n'a rien livré depuis {{dias}} jours et a été mis en pause"
+      }
+    }
   }
 }
