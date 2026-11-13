@@ -1789,7 +1789,59 @@
         "copiar": "Copy key",
         "copiada": "Key copied",
         "bajaConfirm": "Deactivate {{nombre}}? Its key will stop working immediately.",
-        "permisosNota": "All permissions can be adjusted, including read ones. Certifying, issuing reports, managing people and what is reserved for governing the instance are not offered."
+        "permisosNota": "All permissions can be adjusted, including read ones. Certifying, issuing reports, managing people and what is reserved for governing the instance are not offered.",
+        "webhook": {
+          "titulo": "Webhook",
+          "nota": "Everydat notifies this address of each selected event, only for what the account can see with its permissions and scope. Each notification says what happened, with codes, names and an API link, never the content, and is signed with the secret.",
+          "url": "Address to call",
+          "urlHint": "Provided by the receiving program: its ERP, or Make, Zapier or n8n.",
+          "eventos": "Events it receives",
+          "eventosHint": "Only the ones the account can see with its permissions are offered.",
+          "sinEventos": "Select at least one event.",
+          "areas": {
+            "equipos": "Equipment",
+            "emplazamientos": "Sites",
+            "revisiones": "Inspections",
+            "comercial": "Sales",
+            "proyectos": "Projects",
+            "informes": "Reports",
+            "clientes": "Clients",
+            "acreditaciones": "Accreditations",
+            "avisos": "Notices",
+            "bandeja": "Inbox"
+          },
+          "crear": "Create the webhook",
+          "guardar": "Save the webhook",
+          "guardado": "Webhook saved",
+          "quitar": "Remove the webhook",
+          "quitarConfirm": "Remove the webhook? The program will stop receiving notifications.",
+          "secreto": "Secret",
+          "secretoUnaVez": "Copy it now and give it to the receiver: it will not be shown again.",
+          "copiarSecreto": "Copy the secret",
+          "secretoCopiado": "Secret copied",
+          "conSecreto": "It has a secret in use. It cannot be shown again: if it is lost, generate another.",
+          "rotar": "Generate a new secret",
+          "rotarConfirm": "The current secret will stop working immediately: the next notifications will be signed with the new one and the receiver will have to change it. Generate a new one?",
+          "estados": {
+            "activo": "Active",
+            "pausado": "Paused"
+          },
+          "pausadoNota": "Paused on {{fecha}}: it had gone days without a single successful delivery. Once the other side is fixed, reactivate it; it can recover what it missed by requesting the events since that date.",
+          "fallandoNota": "Nothing has been delivered since {{fecha}}. If it stays like this, it will pause itself.",
+          "reactivar": "Reactivate",
+          "entregas": "Latest deliveries",
+          "sinEntregas": "Nothing has been sent yet.",
+          "entrega": {
+            "entregada": "Delivered",
+            "pendiente": "Retrying",
+            "fallida": "Not delivered"
+          },
+          "intentos": "{{n}} attempts",
+          "proximo": "Next attempt: {{fecha}}",
+          "reenviar": "Resend",
+          "reenviada": "Resent: delivered this time",
+          "reenvioFallido": "Not delivered again: {{error}}"
+        }
       }
     },
     "impersonate": "Impersonate",

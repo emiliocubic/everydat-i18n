@@ -1657,7 +1657,59 @@
         "copiar": "Copier la clé",
         "copiada": "Clé copiée",
         "bajaConfirm": "Désactiver {{nombre}} ? Sa clé cessera immédiatement de fonctionner.",
-        "permisosNota": "Toutes les permissions s’ajustent, y compris celles de lecture. Certifier, émettre des rapports, gérer les personnes et ce qui est réservé à la gouvernance de l’instance ne sont pas proposés."
+        "permisosNota": "Toutes les permissions s’ajustent, y compris celles de lecture. Certifier, émettre des rapports, gérer les personnes et ce qui est réservé à la gouvernance de l’instance ne sont pas proposés.",
+        "webhook": {
+          "titulo": "Webhook",
+          "nota": "Everydat avertit cette adresse de chaque événement coché, uniquement pour ce que le compte peut voir selon ses permissions et sa portée. Chaque avis dit ce qui s'est passé, avec codes, noms et un lien vers l'API, jamais le contenu, et il est signé avec le secret.",
+          "url": "Adresse à appeler",
+          "urlHint": "Fournie par le programme qui reçoit : son ERP, ou Make, Zapier ou n8n.",
+          "eventos": "Événements reçus",
+          "eventosHint": "Seuls ceux que le compte peut voir avec ses permissions sont proposés.",
+          "sinEventos": "Cochez au moins un événement.",
+          "areas": {
+            "equipos": "Équipements",
+            "emplazamientos": "Sites",
+            "revisiones": "Vérifications",
+            "comercial": "Commercial",
+            "proyectos": "Projets",
+            "informes": "Rapports",
+            "clientes": "Clients",
+            "acreditaciones": "Habilitations",
+            "avisos": "Avis",
+            "bandeja": "Corbeille"
+          },
+          "crear": "Créer le webhook",
+          "guardar": "Enregistrer le webhook",
+          "guardado": "Webhook enregistré",
+          "quitar": "Retirer le webhook",
+          "quitarConfirm": "Retirer le webhook ? Le programme ne recevra plus d'avis.",
+          "secreto": "Secret",
+          "secretoUnaVez": "Copiez-le maintenant et donnez-le au destinataire : il ne sera plus affiché.",
+          "copiarSecreto": "Copier le secret",
+          "secretoCopiado": "Secret copié",
+          "conSecreto": "Il a un secret en service. Il ne peut plus être affiché : en cas de perte, générez-en un autre.",
+          "rotar": "Générer un nouveau secret",
+          "rotarConfirm": "Le secret actuel cessera de fonctionner immédiatement : les avis suivants seront signés avec le nouveau et le destinataire devra le changer. En générer un nouveau ?",
+          "estados": {
+            "activo": "Actif",
+            "pausado": "En pause"
+          },
+          "pausadoNota": "Mis en pause le {{fecha}} : aucune livraison réussie depuis plusieurs jours. Une fois l'autre côté réparé, réactivez-le ; il récupère ce qu'il a manqué en demandant les événements depuis cette date.",
+          "fallandoNota": "Rien n'a été livré depuis le {{fecha}}. Si cela continue, il se mettra en pause tout seul.",
+          "reactivar": "Réactiver",
+          "entregas": "Dernières livraisons",
+          "sinEntregas": "Rien n'a encore été envoyé.",
+          "entrega": {
+            "entregada": "Livré",
+            "pendiente": "Nouvel essai",
+            "fallida": "Non livré"
+          },
+          "intentos": "{{n}} essais",
+          "proximo": "Prochain essai : {{fecha}}",
+          "reenviar": "Renvoyer",
+          "reenviada": "Renvoyé : livré cette fois",
+          "reenvioFallido": "Toujours pas livré : {{error}}"
+        }
       }
     },
     "impersonate": "Emprunter l'identité",

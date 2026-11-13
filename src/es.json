@@ -1660,7 +1660,59 @@
         "copiar": "Copiar la clave",
         "copiada": "Clave copiada",
         "bajaConfirm": "¿Dar de baja {{nombre}}? Su clave dejará de funcionar en el momento.",
-        "permisosNota": "Se ajustan todos los permisos, también los de lectura. No se ofrecen certificar, emitir informes, gestionar personas ni lo reservado al gobierno de la instancia."
+        "permisosNota": "Se ajustan todos los permisos, también los de lectura. No se ofrecen certificar, emitir informes, gestionar personas ni lo reservado al gobierno de la instancia.",
+        "webhook": {
+          "titulo": "Webhook",
+          "nota": "Everydat avisa a esta dirección de cada evento marcado, solo de lo que la cuenta puede ver por sus permisos y su alcance. Cada aviso lleva qué ha pasado, con códigos, nombres y un enlace a la API, nunca el contenido, y va sellado con la palabra secreta.",
+          "url": "Dirección a la que llamar",
+          "urlHint": "La da el programa que recibe: su ERP, o Make, Zapier o n8n.",
+          "eventos": "Eventos que recibe",
+          "eventosHint": "Solo se ofrecen los que la cuenta puede ver con sus permisos.",
+          "sinEventos": "Marca al menos un evento.",
+          "areas": {
+            "equipos": "Equipos",
+            "emplazamientos": "Emplazamientos",
+            "revisiones": "Revisiones",
+            "comercial": "Comercial",
+            "proyectos": "Proyectos",
+            "informes": "Informes",
+            "clientes": "Clientes",
+            "acreditaciones": "Acreditaciones",
+            "avisos": "Avisos",
+            "bandeja": "Bandeja"
+          },
+          "crear": "Dar de alta el webhook",
+          "guardar": "Guardar el webhook",
+          "guardado": "Webhook guardado",
+          "quitar": "Quitar el webhook",
+          "quitarConfirm": "¿Quitar el webhook? El programa dejará de recibir avisos.",
+          "secreto": "Palabra secreta",
+          "secretoUnaVez": "Cópiala ahora y dásela a quien recibe: no se volverá a mostrar.",
+          "copiarSecreto": "Copiar la palabra secreta",
+          "secretoCopiado": "Palabra secreta copiada",
+          "conSecreto": "Tiene una palabra secreta en uso. No se puede volver a ver: si se pierde, genera otra.",
+          "rotar": "Generar una palabra secreta nueva",
+          "rotarConfirm": "La palabra actual dejará de valer en el momento: los avisos siguientes irán sellados con la nueva y quien recibe tendrá que cambiarla. ¿Generar una nueva?",
+          "estados": {
+            "activo": "Activo",
+            "pausado": "Pausado"
+          },
+          "pausadoNota": "Pausado el {{fecha}}: llevaba días sin conseguir ninguna entrega. Cuando el otro lado esté arreglado, reactívalo; lo que no le llegó lo recupera pidiendo los eventos desde esa fecha.",
+          "fallandoNota": "No consigue entregar nada desde el {{fecha}}. Si sigue así, se pausará solo.",
+          "reactivar": "Reactivar",
+          "entregas": "Últimas entregas",
+          "sinEntregas": "Aún no se le ha mandado nada.",
+          "entrega": {
+            "entregada": "Le llegó",
+            "pendiente": "Reintentando",
+            "fallida": "No le llegó"
+          },
+          "intentos": "{{n}} intentos",
+          "proximo": "Próximo intento: {{fecha}}",
+          "reenviar": "Reenviar",
+          "reenviada": "Reenviado: esta vez le llegó",
+          "reenvioFallido": "Tampoco ha llegado: {{error}}"
+        }
       }
     },
     "impersonate": "Impersonar",
