@@ -3815,21 +3815,6 @@
         "anonimizar": "Anonymise inspectors",
         "anonimizarHint": "Inspectors with an account appear as «Technician» followed by the company's trade name. The signatory always appears by name."
       },
-      "grupoAcreditaciones": "Accreditations",
-      "acreditaciones": {
-        "titulo": "Expiry and matrix",
-        "desc": "When an accreditation warns that it is about to expire, and which types appear as columns in the staff matrix.",
-        "umbral": "Warn of «expiring soon»",
-        "dias": "days before the expiry date",
-        "umbralHint": "Between 1 and 365 days. Applies to documents and to each person's standing.",
-        "umbralInvalido": "The warning must be between 1 and 365 days.",
-        "matriz": "Types shown in the matrix",
-        "todos": "All active types",
-        "algunos": "Only the ones I choose",
-        "desactivado": "deactivated",
-        "matrizVacia": "Choose at least one type, or go back to «All active types».",
-        "matrizHint": "With «All active types», a new type appears in the matrix on its own."
-      },
       "sello": {
         "titulo": "Electronic signature",
         "desc": "The company .p12 certificate used to sign reports issued with «Electronic signature». Without a certificate, reports are issued unsigned. The password is stored encrypted and never shown again.",
@@ -4429,13 +4414,18 @@
       },
       "avisos": {
         "titulo": "Expiry alerts",
-        "desc": "When and whom to warn that an accreditation is about to expire. The period already applies: it sets when an accreditation becomes «about to expire». Whom to warn (the holders and the people you pick here, from your company) is saved and will apply once the application sends alerts.",
-        "plazo": "Notice period",
+        "desc": "How far in advance and whom to warn that an accreditation is about to expire. The longest period already applies: whatever expires within it is flagged as «expiring soon» in the date overview, the lists and Renewals, while still valid. The people you pick here will be warned once the application sends alerts.",
+        "plazo": "Notice periods",
         "diasAntes": "days before expiry",
         "quien": "Whom to warn",
         "titulares": "Accreditation holder/s",
         "admins": "People to warn",
-        "anadirAdmin": "Search person…"
+        "anadirAdmin": "Search person…",
+        "plazoAria": "Alert period {{n}}",
+        "anadir": "Add another period",
+        "quitar": "Remove period {{n}}",
+        "repetidos": "Two periods are the same.",
+        "fueraDeRango": "Each period is a whole number of days, from 1 to 365."
       },
       "formato": {
         "titulo": "Format",
@@ -8558,10 +8548,10 @@
       "caducadaHint": "Expired: it can be attached, but it is no longer in force.",
       "estado": {
         "vigente": "Valid",
-        "proximo": "Expiring soon",
         "caducado": "Expired",
         "sin_caducidad": "No expiry"
-      }
+      },
+      "caducaPronto": "Expiring soon"
     },
     "fichas": {
       "coleccionDesc": "Choose how much information to show for each inspection.",
@@ -9006,7 +8996,6 @@
     },
     "estado": {
       "vigente": "Valid",
-      "proximo": "Expiring soon",
       "caducado": "Expired",
       "sin_caducidad": "No expiry"
     },
@@ -9185,7 +9174,6 @@
     "noSeRenuevaPersonaHint": "For the accreditation behind this status: it stops warning and goes to the end of Renewals. It keeps its real status and can be removed whenever you want.",
     "noCaduca": "No expiry",
     "hasta": "until {{fecha}}",
-    "umbral": "Expiring soon: fewer than {{n}} days.",
     "baja": "inactive",
     "desactivado": "deactivated",
     "sinDocumentos": "There are no documents.",
@@ -9214,7 +9202,6 @@
       "situacion": "Status",
       "grupo": {
         "caducado": "Expired",
-        "proximo": "Expiring soon",
         "vigente": "Valid",
         "sin_caducidad": "No expiry",
         "no_renueva": "Not renewed"
@@ -9226,7 +9213,10 @@
       "avisar": "Warn again",
       "avisarHint": "Removes \"not renewed\": it warns again when it expires.",
       "avisaDeNuevo": "It warns again."
-    }
+    },
+    "caducaPronto": "Expiring soon",
+    "caducaProntoHint": "Valid, but expires within the alert period.",
+    "caducaProntoLeyenda": "Expiring soon: in {{n}} days or fewer."
   },
   "tecnologias": {
     "intro": "What Everydat needs from the server and what it has. Also useful to check whether a hosting offered by a customer will do: install Everydat and open this page.",

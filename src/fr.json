@@ -3657,21 +3657,6 @@
         "hint": "Passés les mois de grâce, une date échue n’apparaît plus dans Opportunités, mais elle reste sur le site : rien n’est écarté tout seul. La fenêtre n’est que la valeur de départ : chacun la modifie à l’écran.",
         "gracia": "Une date échue reste affichée pendant"
       },
-      "grupoAcreditaciones": "Habilitations",
-      "acreditaciones": {
-        "titulo": "Expiration et matrice",
-        "desc": "Quand une habilitation signale qu'elle va expirer, et quels types apparaissent en colonnes dans la matrice du personnel.",
-        "umbral": "Signaler « bientôt expirée »",
-        "dias": "jours avant la date de validité",
-        "umbralHint": "Entre 1 et 365 jours. S'applique aux documents et à la situation de chaque personne.",
-        "umbralInvalido": "L'alerte doit être comprise entre 1 et 365 jours.",
-        "matriz": "Types visibles dans la matrice",
-        "todos": "Tous les types actifs",
-        "algunos": "Seulement ceux que je choisis",
-        "desactivado": "désactivé",
-        "matrizVacia": "Choisissez au moins un type, ou revenez à « Tous les types actifs ».",
-        "matrizHint": "Avec « Tous les types actifs », un nouveau type apparaît tout seul dans la matrice."
-      },
       "sello": {
         "titulo": "Signature électronique",
         "desc": "Certificat .p12 de l'entreprise pour signer les rapports émis avec « Signature électronique ». Sans certificat, les rapports sont émis sans signature. Le mot de passe est stocké chiffré et n'est plus jamais affiché.",
@@ -7576,10 +7561,10 @@
       "caducadaHint": "Expirée : elle peut être annexée, mais n'est plus en vigueur.",
       "estado": {
         "vigente": "En vigueur",
-        "proximo": "Bientôt expirée",
         "caducado": "Expirée",
         "sin_caducidad": "Sans expiration"
-      }
+      },
+      "caducaPronto": "Expire bientôt"
     },
     "fichas": {
       "coleccionDesc": "Choisissez la quantité d'informations à afficher pour chaque vérification.",
@@ -8024,7 +8009,6 @@
     },
     "estado": {
       "vigente": "En vigueur",
-      "proximo": "Expire bientôt",
       "caducado": "Expiré",
       "sin_caducidad": "Sans expiration"
     },
@@ -8203,7 +8187,6 @@
     "noSeRenuevaPersonaHint": "Pour l'habilitation qui donne cette situation : elle n'alerte plus et passe à la fin des Renouvellements. Elle garde son état réel et peut être retirée quand vous voulez.",
     "noCaduca": "N'expire pas",
     "hasta": "jusqu'au {{fecha}}",
-    "umbral": "Expire bientôt : moins de {{n}} jours.",
     "baja": "inactif",
     "desactivado": "désactivé",
     "sinDocumentos": "Aucun document.",
@@ -8232,7 +8215,6 @@
       "situacion": "Situation",
       "grupo": {
         "caducado": "Expirée",
-        "proximo": "Expire bientôt",
         "vigente": "En vigueur",
         "sin_caducidad": "Sans expiration",
         "no_renueva": "Non renouvelée"
@@ -8244,7 +8226,10 @@
       "avisar": "Alerter à nouveau",
       "avisarHint": "Retire « non renouvelée » : elle alerte à nouveau quand elle expire.",
       "avisaDeNuevo": "Elle alerte à nouveau."
-    }
+    },
+    "caducaPronto": "Expire bientôt",
+    "caducaProntoHint": "Valide, mais expire dans le délai d'alerte.",
+    "caducaProntoLeyenda": "Expire bientôt : dans {{n}} jours ou moins."
   },
   "tecnologias": {
     "intro": "Ce dont Everydat a besoin sur le serveur et ce qu'il a. Sert aussi à vérifier si l'hébergement proposé par un client convient : il suffit d'installer Everydat et d'ouvrir cette page.",
