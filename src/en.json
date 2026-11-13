@@ -1266,7 +1266,19 @@
       "descargarParte": "Download the record as PDF",
       "errorParte": "The record could not be generated",
       "informe": "Report {{codigo}}",
-      "verInforme": "Open the issued report that includes this inspection"
+      "verInforme": "Open the issued report that includes this inspection",
+      "papelera": {
+        "boton": "Bin",
+        "volver": "Back to history",
+        "vacia": "The bin is empty.",
+        "borradaPor": "Deleted on {{fecha}} by {{quien}}",
+        "borradaEl": "Deleted on {{fecha}}",
+        "recuperar": "Restore",
+        "recuperada": "Restored: it counts on the item again.",
+        "definitivo": "Delete permanently",
+        "definitivoConfirm": "It will be deleted forever, along with its points and photos. This cannot be undone. Continue?",
+        "borradaDefinitivamente": "Deleted permanently."
+      }
     },
     "traslado": {
       "accion": "Move to another folder",
@@ -6212,8 +6224,8 @@
       "firma": "Inspected by {{revisor}}",
       "corrigeHint": "You are correcting a recorded inspection: every change recalculates the item's verdict and validity. No visible trace is left.",
       "borrar": "Delete inspection",
-      "borrada": "Inspection deleted.",
-      "borrarConfirm": "Deleting the inspection removes it from the history along with its points and photos, and the item falls back to the previous validity. This cannot be undone. Continue?",
+      "borrada": "Inspection moved to the bin.",
+      "borrarConfirm": "Deleting the inspection moves it to the history bin along with its points and photos, and the item falls back to the previous validity. It can be restored from the bin.{{docs}} Continue?",
       "revisorNombre": "Name",
       "revisorNombrePh": "Person or company who inspected",
       "medida": "What was done with the equipment?",
@@ -6249,13 +6261,15 @@
       "firma_instalacion": "Installation certified by {{revisor}}",
       "corrigeHint_instalacion": "You are correcting a recorded installation: every change recalculates the item's validity. No visible trace is left.",
       "borrar_instalacion": "Delete installation",
-      "borrada_instalacion": "Installation deleted.",
-      "borrarConfirm_instalacion": "Deleting the installation removes it from the history along with its points and photos, and the item falls back to the previous validity. This cannot be undone. Continue?",
+      "borrada_instalacion": "Installation moved to the bin.",
+      "borrarConfirm_instalacion": "Deleting the installation moves it to the history bin along with its points and photos, and the item falls back to the previous validity. It can be restored from the bin.{{docs}} Continue?",
       "alCrear_instalacion": "Will upload when the installation is created",
       "sinAdjuntos_instalacion": "This installation has no attachments.",
       "matizacion": "Qualification",
       "sinMatizacion": "No qualification",
-      "comentarioAutoHint": "Written by the application from the result and rebuilt on saving."
+      "comentarioAutoHint": "Written by the application from the result and rebuilt on saving.",
+      "borrarDocs": "{{count}} document goes with it and comes back if it is restored.",
+      "borrarDocs_other": "{{count}} documents go with it and come back if it is restored."
     },
     "medida": {
       "senaliza": "Tagged as not usable",
@@ -6407,7 +6421,7 @@
       "recienteConfirm": "This equipment was inspected on {{fecha}} ({{resultado}}). Inspect it again?",
       "borrar": "Delete",
       "borrarTitulo": "Delete inspection",
-      "borrarConfirm": "The inspection of {{fecha}} will be deleted with its checkpoints and photos, also from the server if it was already sent. This cannot be undone.",
+      "borrarConfirm": "The inspection of {{fecha}} will be deleted with its checkpoints and photos. If it was already sent, it goes to the office bin, where it can be restored.",
       "multi": "MULTI",
       "multiAria": "Multiple selection",
       "marcarTodos": "Select all",

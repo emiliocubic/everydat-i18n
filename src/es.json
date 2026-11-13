@@ -1137,7 +1137,19 @@
       "descargarParte": "Descargar el parte en PDF",
       "errorParte": "No se pudo generar el parte",
       "informe": "Informe {{codigo}}",
-      "verInforme": "Abrir el informe emitido que lleva esta revisión"
+      "verInforme": "Abrir el informe emitido que lleva esta revisión",
+      "papelera": {
+        "boton": "Papelera",
+        "volver": "Volver al historial",
+        "vacia": "No hay nada en la papelera.",
+        "borradaPor": "Borrada el {{fecha}} por {{quien}}",
+        "borradaEl": "Borrada el {{fecha}}",
+        "recuperar": "Recuperar",
+        "recuperada": "Recuperada: vuelve a contar en el equipo.",
+        "definitivo": "Borrar definitivamente",
+        "definitivoConfirm": "Se borrará para siempre, con sus puntos y sus fotos. No se puede deshacer. ¿Continuar?",
+        "borradaDefinitivamente": "Borrada definitivamente."
+      }
     },
     "traslado": {
       "accion": "Trasladar a otra carpeta",
@@ -6212,8 +6224,8 @@
       "firma": "Revisó {{revisor}}",
       "corrigeHint": "Estás corrigiendo una revisión ya registrada: cada cambio recalcula el veredicto y la validez del equipo. No queda traza visible.",
       "borrar": "Borrar revisión",
-      "borrada": "Revisión borrada.",
-      "borrarConfirm": "Borrar la revisión la quita del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. No se puede deshacer. ¿Continuar?",
+      "borrada": "Revisión enviada a la papelera.",
+      "borrarConfirm": "Borrar la revisión la manda a la papelera del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. Desde la papelera se puede recuperar.{{docs}} ¿Continuar?",
       "revisorNombre": "Nombre",
       "revisorNombrePh": "Persona o empresa que revisó",
       "medida": "¿Qué se hizo con el equipo?",
@@ -6249,13 +6261,15 @@
       "firma_instalacion": "Certificó la instalación {{revisor}}",
       "corrigeHint_instalacion": "Estás corrigiendo una instalación ya registrada: cada cambio recalcula la validez del equipo. No queda traza visible.",
       "borrar_instalacion": "Borrar instalación",
-      "borrada_instalacion": "Instalación borrada.",
-      "borrarConfirm_instalacion": "Borrar la instalación la quita del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. No se puede deshacer. ¿Continuar?",
+      "borrada_instalacion": "Instalación enviada a la papelera.",
+      "borrarConfirm_instalacion": "Borrar la instalación la manda a la papelera del historial con sus puntos y sus fotos, y la validez del equipo vuelve a la anterior. Desde la papelera se puede recuperar.{{docs}} ¿Continuar?",
       "alCrear_instalacion": "Se subirá al crear la instalación",
       "sinAdjuntos_instalacion": "Esta instalación no tiene adjuntos.",
       "matizacion": "Matización",
       "sinMatizacion": "Sin matización",
-      "comentarioAutoHint": "Lo escribe la aplicación según el resultado y se rehace al guardar."
+      "comentarioAutoHint": "Lo escribe la aplicación según el resultado y se rehace al guardar.",
+      "borrarDocs": "Con ella va {{count}} documento, que vuelve si se recupera.",
+      "borrarDocs_other": "Con ella van {{count}} documentos, que vuelven si se recupera."
     },
     "medida": {
       "senaliza": "Se señaliza como no utilizable",
@@ -6407,7 +6421,7 @@
       "recienteConfirm": "Este equipo se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?",
       "borrar": "Borrar",
       "borrarTitulo": "Borrar revisión",
-      "borrarConfirm": "Se borrará la revisión del {{fecha}} con sus puntos y sus fotos, también del servidor si ya se envió. No se puede deshacer.",
+      "borrarConfirm": "Se borrará la revisión del {{fecha}} con sus puntos y sus fotos. Si ya se envió, va a la papelera de la oficina, desde donde se puede recuperar.",
       "multi": "MULTI",
       "multiAria": "Selección múltiple",
       "marcarTodos": "Marcar todos",

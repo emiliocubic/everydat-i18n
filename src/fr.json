@@ -1176,6 +1176,18 @@
         "apto": "Conforme",
         "no_apto": "Non conforme",
         "no_revisada": "Non vérifié"
+      },
+      "papelera": {
+        "boton": "Corbeille",
+        "volver": "Retour à l'historique",
+        "vacia": "La corbeille est vide.",
+        "borradaPor": "Supprimé le {{fecha}} par {{quien}}",
+        "borradaEl": "Supprimé le {{fecha}}",
+        "recuperar": "Restaurer",
+        "recuperada": "Restauré : il compte de nouveau pour l'équipement.",
+        "definitivo": "Supprimer définitivement",
+        "definitivoConfirm": "Il sera supprimé pour toujours, avec ses points et ses photos. Action irréversible. Continuer ?",
+        "borradaDefinitivamente": "Supprimé définitivement."
       }
     },
     "traslado": {
@@ -5604,8 +5616,8 @@
       "corregirA": "Corriger en {{resultado}}",
       "firma": "Contrôlé par {{revisor}}",
       "borrar": "Supprimer le contrôle",
-      "borrada": "Contrôle supprimé.",
-      "borrarConfirm": "Supprimer le contrôle le retire de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Action irréversible. Continuer ?",
+      "borrada": "Contrôle envoyé à la corbeille.",
+      "borrarConfirm": "Supprimer le contrôle l'envoie dans la corbeille de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Il peut être restauré depuis la corbeille.{{docs}} Continuer ?",
       "corrigeHint": "Vous corrigez un contrôle déjà enregistré : chaque modification recalcule le verdict et la validité de l'équipement. Aucune trace visible.",
       "revisorNombre": "Nom",
       "revisorNombrePh": "Personne ou entreprise ayant contrôlé",
@@ -5642,13 +5654,15 @@
       "firma_instalacion": "Installation certifiée par {{revisor}}",
       "corrigeHint_instalacion": "Vous corrigez une installation déjà enregistrée : chaque modification recalcule la validité de l'équipement. Aucune trace visible.",
       "borrar_instalacion": "Supprimer l'installation",
-      "borrada_instalacion": "Installation supprimée.",
-      "borrarConfirm_instalacion": "Supprimer l'installation la retire de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Action irréversible. Continuer ?",
+      "borrada_instalacion": "Installation envoyée à la corbeille.",
+      "borrarConfirm_instalacion": "Supprimer l'installation l'envoie dans la corbeille de l'historique avec ses points et ses photos, et la validité de l'équipement revient à la précédente. Elle peut être restaurée depuis la corbeille.{{docs}} Continuer ?",
       "alCrear_instalacion": "Sera envoyé à la création de l'installation",
       "sinAdjuntos_instalacion": "Cette installation n'a pas de pièces jointes.",
       "matizacion": "Nuance",
       "sinMatizacion": "Sans nuance",
-      "comentarioAutoHint": "Écrit par l'application selon le résultat et refait à l'enregistrement."
+      "comentarioAutoHint": "Écrit par l'application selon le résultat et refait à l'enregistrement.",
+      "borrarDocs": "{{count}} document part avec lui et revient s'il est restauré.",
+      "borrarDocs_other": "{{count}} documents partent avec lui et reviennent s'il est restauré."
     },
     "medida": {
       "senaliza": "Signalé comme non utilisable",
@@ -5800,7 +5814,7 @@
       "recienteConfirm": "Cet équipement a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?",
       "borrar": "Supprimer",
       "borrarTitulo": "Supprimer l'inspection",
-      "borrarConfirm": "L'inspection du {{fecha}} sera supprimée avec ses points et ses photos, y compris sur le serveur si elle a déjà été envoyée. Action irréversible.",
+      "borrarConfirm": "L'inspection du {{fecha}} sera supprimée avec ses points et ses photos. Si elle a déjà été envoyée, elle va dans la corbeille du bureau, d'où elle peut être restaurée.",
       "multi": "MULTI",
       "multiAria": "Sélection multiple",
       "marcarTodos": "Tout cocher",
