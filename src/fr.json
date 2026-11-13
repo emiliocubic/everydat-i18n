@@ -8374,6 +8374,14 @@
       "certificacion": "Certification",
       "catalogo": "Catalogue",
       "personal": "Personnel"
+    },
+    "papelera": {
+      "conQueSeFue": "parti avec {{que}} : il revient en le restaurant depuis la corbeille de son historique",
+      "tipo": {
+        "revision": "un contrôle",
+        "actuacion": "une intervention",
+        "otro": "ce qui a été supprimé"
+      }
     }
   },
   "preguntasIa": {

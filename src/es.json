@@ -7451,7 +7451,13 @@
       "titulo": "Papelera",
       "vacia": "La papelera está vacía.",
       "carpeta": "Carpeta",
-      "restaurar": "Restaurar"
+      "restaurar": "Restaurar",
+      "conQueSeFue": "se fue con {{que}}: vuelve al recuperarla desde la papelera de su historial",
+      "tipo": {
+        "revision": "una revisión",
+        "actuacion": "una actuación",
+        "otro": "lo que se borró"
+      }
     },
     "repositorio": {
       "generales": "Documentos generales",

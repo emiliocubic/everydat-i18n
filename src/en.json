@@ -7451,7 +7451,13 @@
       "titulo": "Bin",
       "vacia": "The bin is empty.",
       "carpeta": "Folder",
-      "restaurar": "Restore"
+      "restaurar": "Restore",
+      "conQueSeFue": "went with {{que}}: it comes back when that is restored from its history bin",
+      "tipo": {
+        "revision": "an inspection",
+        "actuacion": "an action",
+        "otro": "what was deleted"
+      }
     },
     "repositorio": {
       "generales": "General documents",
