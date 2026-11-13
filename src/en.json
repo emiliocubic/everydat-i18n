@@ -552,7 +552,7 @@
       },
       "notif": {
         "revisiones": "Reviews",
-        "finVida": "End of useful life"
+        "finVida": "End-of-life notices"
       },
       "alerta": {
         "activa": "Active",
@@ -4254,7 +4254,7 @@
       },
       "avisos": {
         "titulo": "Client notices",
-        "desc": "How far in advance clients are notified of expiry events (periodic inspections or end of service life). The application does not send client notices yet: these lead times will apply once they exist.",
+        "desc": "Whether clients are notified and how far in advance: of the next inspection of their sites and of the end of service life of their equipment. These are the company's lead times; each client and each site can have its own on its record.",
         "vida": "End of service life",
         "vidaAria": "End-of-service-life notice",
         "revision": "Next inspection",
@@ -4263,9 +4263,17 @@
         "diasAntes": "days before",
         "anadir": "Add another notice",
         "quitar": "Remove notice {{n}}",
-        "ayuda": "Days of advance notice. Enter 0 for a same-day notice and a negative number for a notice after expiry.",
+        "ayuda": "Days of advance notice before the next inspection date of the site or zone. 0 notifies on the same day; nothing is sent after the date.",
         "repetidos": "Two inspection notices have the same lead time.",
-        "fueraDeRango": "Each lead time is a whole number of days: 0 to 365 for end of service life, and -365 to 365 for the inspection."
+        "fueraDeRango": "Inspection lead times go from 0 to 365 days; the day of the month from 1 to 28, and the months from 1 to 12.",
+        "general": "Send notices to clients",
+        "generalNota": "When off, no notice is sent, whatever the clients and sites have set.",
+        "finVidaDia": "On day",
+        "finVidaMeses": "of each month, with",
+        "mesesAntes": "months of advance notice",
+        "finVidaAyuda": "One email a month with the equipment whose service life ends in the month that many months ahead. For example, day 25 with 2 months: on 25 March, clients are told about the equipment ending in May.",
+        "diaAria": "Day of the month of the end-of-service-life notice",
+        "mesesAria": "Months of advance notice of the end-of-service-life notice"
       },
       "comercial": {
         "titulo": "Project sales management",
@@ -9458,5 +9466,24 @@
     "fechaAntesDe": "The date «{{nombre}}» cannot be earlier than «{{anterior}}».",
     "fechaFutura": "The date “{{nombre}}” cannot be later than today.",
     "fechaMargen": "The date “{{nombre}}” cannot be more than {{dias}} days from today."
+  },
+  "avisosPlazos": {
+    "campo": "Notice lead times",
+    "propios": "Own lead times",
+    "revision": "Next inspection",
+    "finVida": "End of service life",
+    "diasAntes": "{{dias}} days before",
+    "mismoDia": "on the same day",
+    "finVidaResumen_one": "on day {{dia}} of each month, one month ahead",
+    "finVidaResumen_other": "on day {{dia}} of each month, {{count}} months ahead",
+    "deLaEmpresa": "the company's",
+    "delCliente": "the client's",
+    "sigue": "Follows {{origen}}: {{valor}}",
+    "dias": "days",
+    "dia": "Day",
+    "meses": "months",
+    "anadir": "Add lead time",
+    "quitar": "Remove lead time {{n}}",
+    "fueraDeRango": "Days go from 0 to 365 (no repeats); the day of the month from 1 to 28, and the months from 1 to 12."
   }
 }

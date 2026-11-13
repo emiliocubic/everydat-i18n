@@ -423,7 +423,7 @@
       },
       "notif": {
         "revisiones": "Revisiones",
-        "finVida": "Fin de vida útil"
+        "finVida": "Avisos de fin de vida"
       },
       "alerta": {
         "activa": "Activa",
@@ -4254,7 +4254,7 @@
       },
       "avisos": {
         "titulo": "Avisos a clientes",
-        "desc": "Antelación de aviso a los clientes de los eventos de caducidad (de revisiones periódicas o finales de vida útil). Hoy la aplicación aún no envía avisos a clientes: estos plazos se aplicarán cuando existan.",
+        "desc": "Si se avisa a los clientes y con qué antelación: de la próxima revisión de sus instalaciones y del fin de la vida útil de sus equipos. Son los plazos de la empresa; cada cliente y cada instalación puede tener los suyos en su ficha.",
         "vida": "Final de vida útil",
         "vidaAria": "Aviso de final de vida útil",
         "revision": "Próxima revisión",
@@ -4263,9 +4263,17 @@
         "diasAntes": "días antes",
         "anadir": "Añadir otro aviso",
         "quitar": "Quitar el aviso {{n}}",
-        "ayuda": "Días de antelación del aviso. Indica 0 para aviso el mismo día y número negativo para aviso posterior a caducidad.",
+        "ayuda": "Días de antelación sobre la fecha de próxima revisión de la instalación o de la zona. 0 avisa el mismo día; después de la fecha no se avisa.",
         "repetidos": "Hay dos avisos de revisión con el mismo plazo.",
-        "fueraDeRango": "Cada plazo es un número entero de días: de 0 a 365 en el final de vida útil, y de -365 a 365 en la revisión."
+        "fueraDeRango": "Los días de la revisión van de 0 a 365; el día del mes, de 1 a 28, y los meses, de 1 a 12.",
+        "general": "Enviar avisos a los clientes",
+        "generalNota": "Apagado, no sale ningún aviso, tengan lo que tengan los clientes y las instalaciones.",
+        "finVidaDia": "El día",
+        "finVidaMeses": "de cada mes, con",
+        "mesesAntes": "meses de antelación",
+        "finVidaAyuda": "Un correo al mes con los equipos que agotan su vida útil en el mes que cae a tantos meses vista. Por ejemplo, el día 25 con 2 meses: el 25 de marzo se avisa de los que acaban en mayo.",
+        "diaAria": "Día del mes del aviso de fin de vida útil",
+        "mesesAria": "Meses de antelación del aviso de fin de vida útil"
       },
       "comercial": {
         "titulo": "Gestión comercial del proyecto",
@@ -9458,5 +9466,24 @@
     "fechaAntesDe": "La fecha «{{nombre}}» no puede ser anterior a «{{anterior}}».",
     "fechaFutura": "La fecha «{{nombre}}» no puede ser posterior a hoy.",
     "fechaMargen": "La fecha «{{nombre}}» no puede ir más allá de {{dias}} días desde hoy."
+  },
+  "avisosPlazos": {
+    "campo": "Plazos de los avisos",
+    "propios": "Plazos propios",
+    "revision": "Próxima revisión",
+    "finVida": "Fin de vida útil",
+    "diasAntes": "{{dias}} días antes",
+    "mismoDia": "el mismo día",
+    "finVidaResumen_one": "el día {{dia}} de cada mes, a un mes vista",
+    "finVidaResumen_other": "el día {{dia}} de cada mes, a {{count}} meses vista",
+    "deLaEmpresa": "los de la empresa",
+    "delCliente": "los del cliente",
+    "sigue": "Sigue {{origen}}: {{valor}}",
+    "dias": "días",
+    "dia": "Día",
+    "meses": "meses",
+    "anadir": "Añadir plazo",
+    "quitar": "Quitar el plazo {{n}}",
+    "fueraDeRango": "Los días van de 0 a 365 (sin repetir); el día del mes, de 1 a 28, y los meses, de 1 a 12."
   }
 }

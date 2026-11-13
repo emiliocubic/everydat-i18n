@@ -544,7 +544,7 @@
       },
       "notif": {
         "revisiones": "Revisions",
-        "finVida": "Fins de vie"
+        "finVida": "Avis de fin de vie"
       },
       "alerta": {
         "activa": "Active",
@@ -4035,6 +4035,21 @@
         "anadirProducto": "Ajouter un produit",
         "anadirBloque": "Ajouter un bloc de produits",
         "sinProductos": "Ce bloc n'a aucun produit."
+      }
+    },
+    "tecnicos": {
+      "avisos": {
+        "desc": "Si les clients sont avertis et avec quel préavis : de la prochaine vérification de leurs sites et de la fin de vie de leurs équipements. Ce sont les délais de l'entreprise ; chaque client et chaque site peut avoir les siens sur sa fiche.",
+        "general": "Envoyer des avis aux clients",
+        "generalNota": "Désactivé, aucun avis n'est envoyé, quels que soient les réglages des clients et des sites.",
+        "ayuda": "Jours de préavis avant la date de prochaine vérification du site ou de la zone. 0 avertit le jour même ; rien n'est envoyé après la date.",
+        "finVidaDia": "Le",
+        "finVidaMeses": "de chaque mois, avec",
+        "mesesAntes": "mois de préavis",
+        "finVidaAyuda": "Un e-mail par mois avec les équipements dont la vie utile se termine dans le mois situé autant de mois plus tard. Par exemple, le 25 avec 2 mois : le 25 mars, on avertit de ceux qui se terminent en mai.",
+        "diaAria": "Jour du mois de l'avis de fin de vie",
+        "mesesAria": "Mois de préavis de l'avis de fin de vie",
+        "fueraDeRango": "Les jours de vérification vont de 0 à 365 ; le jour du mois de 1 à 28, et les mois de 1 à 12."
       }
     }
   },
@@ -8503,5 +8518,24 @@
     "fechaAntesDe": "La date « {{nombre}} » ne peut pas être antérieure à « {{anterior}} ».",
     "fechaFutura": "La date « {{nombre}} » ne peut pas être postérieure à aujourd’hui.",
     "fechaMargen": "La date « {{nombre}} » ne peut pas dépasser {{dias}} jours à partir d’aujourd’hui."
+  },
+  "avisosPlazos": {
+    "campo": "Délais des avis",
+    "propios": "Délais propres",
+    "revision": "Prochaine vérification",
+    "finVida": "Fin de vie",
+    "diasAntes": "{{dias}} jours avant",
+    "mismoDia": "le jour même",
+    "finVidaResumen_one": "le {{dia}} de chaque mois, un mois à l'avance",
+    "finVidaResumen_other": "le {{dia}} de chaque mois, {{count}} mois à l'avance",
+    "deLaEmpresa": "ceux de l'entreprise",
+    "delCliente": "ceux du client",
+    "sigue": "Suit {{origen}} : {{valor}}",
+    "dias": "jours",
+    "dia": "Jour",
+    "meses": "mois",
+    "anadir": "Ajouter un délai",
+    "quitar": "Retirer le délai {{n}}",
+    "fueraDeRango": "Les jours vont de 0 à 365 (sans répétition) ; le jour du mois de 1 à 28, et les mois de 1 à 12."
   }
 }
