@@ -4338,6 +4338,31 @@
           "informes": "In PDF reports"
         },
         "nota": "The client portal does not exist yet: whatever is chosen for it will apply when it arrives."
+      },
+      "plantillas": {
+        "titulo": "Email templates",
+        "desc": "The text of the notice emails to clients, one per notice and language. Whatever is not changed is the default text.",
+        "aviso": "Notice",
+        "idioma": "Language",
+        "tipo": {
+          "revision": "Next inspection",
+          "fin_vida": "End of service life"
+        },
+        "propia": "Company's own text",
+        "deSerie": "Default text",
+        "restablecer": "Back to the default text",
+        "restablecerConfirm": "Go back to the default text? The company's own text for this notice in this language will be lost.",
+        "guardaAntes": "Save or discard the changes to switch to another notice or language.",
+        "asunto": "Subject",
+        "cuerpo": "Text",
+        "variables": "Insert",
+        "var": {
+          "cliente": "The client's name",
+          "contacto": "The name of the recipient",
+          "empresa": "The company's name",
+          "lista": "The list of sites with their date, or of equipment (text only)"
+        },
+        "ayuda": "Variables go in braces and are filled in when the email is sent. {lista} only goes in the text: it is the list of sites or equipment; without it, the list goes at the end. The greeting, contact details and signature are added by the application."
       }
     },
     "marca": {

@@ -4054,6 +4054,31 @@
         "copiaEjemplo": "avis@entreprise.com",
         "copiaAyuda": "Reçoit une copie cachée de chaque avis envoyé à un client, et ceux qui n'ont aucun contact autorisé à les recevoir, marqués « sans destinataire ». Vide, aucune copie.",
         "copiaMal": "La boîte de copie ne ressemble pas à une adresse e-mail."
+      },
+      "plantillas": {
+        "titulo": "Modèles d'e-mail",
+        "desc": "Le texte des e-mails d'avis aux clients, un par avis et par langue. Ce qui n'est pas modifié reste le texte par défaut.",
+        "aviso": "Avis",
+        "idioma": "Langue",
+        "tipo": {
+          "revision": "Prochaine vérification",
+          "fin_vida": "Fin de vie"
+        },
+        "propia": "Texte propre à l'entreprise",
+        "deSerie": "Texte par défaut",
+        "restablecer": "Revenir au texte par défaut",
+        "restablecerConfirm": "Revenir au texte par défaut ? Le texte propre de cet avis dans cette langue sera perdu.",
+        "guardaAntes": "Enregistrez ou annulez les modifications pour passer à un autre avis ou une autre langue.",
+        "asunto": "Objet",
+        "cuerpo": "Texte",
+        "variables": "Insérer",
+        "var": {
+          "cliente": "Le nom du client",
+          "contacto": "Le nom du destinataire",
+          "empresa": "Le nom de l'entreprise",
+          "lista": "La liste des sites avec leur date, ou des équipements (texte uniquement)"
+        },
+        "ayuda": "Les variables vont entre accolades et sont remplies à l'envoi. {lista} ne va que dans le texte : c'est la liste des sites ou des équipements ; sans elle, la liste apparaît à la fin. La salutation, les coordonnées et la signature sont ajoutées par l'application."
       }
     }
   },

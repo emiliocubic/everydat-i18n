@@ -4338,6 +4338,31 @@
           "informes": "En informes PDF"
         },
         "nota": "El portal cliente aún no existe: lo que se elija para él se aplicará cuando llegue."
+      },
+      "plantillas": {
+        "titulo": "Plantillas de correo",
+        "desc": "El texto de los correos de avisos a los clientes, uno por aviso y por idioma. Lo que no se toca es el texto de serie.",
+        "aviso": "Aviso",
+        "idioma": "Idioma",
+        "tipo": {
+          "revision": "Próxima revisión",
+          "fin_vida": "Fin de vida útil"
+        },
+        "propia": "Texto propio de la empresa",
+        "deSerie": "Texto de serie",
+        "restablecer": "Volver al texto de serie",
+        "restablecerConfirm": "¿Volver al texto de serie? Se pierde el texto propio de este aviso en este idioma.",
+        "guardaAntes": "Guarda o descarta los cambios para pasar a otro aviso o idioma.",
+        "asunto": "Asunto",
+        "cuerpo": "Texto",
+        "variables": "Insertar",
+        "var": {
+          "cliente": "El nombre del cliente",
+          "contacto": "El nombre de quien lo recibe",
+          "empresa": "El nombre de la empresa",
+          "lista": "La lista de instalaciones con su fecha, o de equipos (solo en el texto)"
+        },
+        "ayuda": "Las variables van entre llaves y se rellenan al mandar el correo. {lista} va solo en el texto: es la lista de instalaciones o de equipos; sin ella, la lista sale al final. El saludo, los datos de contacto y la firma los pone la aplicación."
       }
     },
     "marca": {
