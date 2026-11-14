@@ -9827,6 +9827,97 @@
       "opFecha": "Fecha del {{de}} al {{a}}",
       "opBorrar": "Eliminar la composición del {{fecha}}",
       "horasSinPrevistas": "{{h}} h (sin horas previstas)"
+    },
+    "calendario": {
+      "vista": "Vista",
+      "vistaOficiales": "Vista festivos oficiales",
+      "marcar": "Marcar",
+      "pincel": {
+        "nacional": "Marcar festivos nacionales",
+        "local": "Marcar festivos locales"
+      },
+      "ano": "Año",
+      "nombreNuevo": {
+        "nacional": "Festivo nacional",
+        "local": "Festivo local"
+      },
+      "ambito": {
+        "nacional": "nacional",
+        "local": "local"
+      },
+      "tituloFestivo": "{{fecha}} · {{nombre}} (festivo {{ambito}})",
+      "tituloNoLaborable": "{{fecha}} · no laborable",
+      "ayuda": "Elige un pincel y pulsa un día laborable para marcarlo como festivo; con el mismo pincel otra vez se quita. Esc suelta el pincel.",
+      "ayudaLectura": "Los festivos los cambia el superadmin: aquí se ven sin tocarlos.",
+      "marcado": "{{fecha}}: festivo {{ambito}}",
+      "cambiado": "{{fecha}}: ahora es festivo {{ambito}}",
+      "quitado": "{{fecha}}: ya no es festivo"
+    },
+    "ausencias": {
+      "marcar": "Marcar",
+      "pincel": {
+        "baja": "Marcar bajas",
+        "vacaciones": "Marcar vacaciones",
+        "permiso": "Marcar permisos"
+      },
+      "ini": {
+        "baja": "B",
+        "vacaciones": "V",
+        "permiso": "P"
+      },
+      "escala": "Escala",
+      "escalas": {
+        "semana": "Semanal",
+        "mes": "Mensual",
+        "trimestre": "Trimestral"
+      },
+      "periodo": "Periodo",
+      "anterior": "Periodo anterior",
+      "siguiente": "Periodo siguiente",
+      "semanaDel": "Semana del {{de}} al {{a}} - S{{s}} {{ano}}",
+      "festivosDel": {
+        "semana": "Festivos de la semana",
+        "mes": "Festivos de {{mes}}",
+        "trimestre": "Festivos del trimestre"
+      },
+      "ausenciasDel": {
+        "semana": "Ausencias de la semana",
+        "mes": "Ausencias de {{mes}}",
+        "trimestre": "Ausencias del trimestre"
+      },
+      "sinFestivos": {
+        "semana": "Sin festivos esta semana",
+        "mes": "Sin festivos este mes",
+        "trimestre": "Sin festivos este trimestre"
+      },
+      "sinAusencias": {
+        "semana": "Sin ausencias esta semana",
+        "mes": "Sin ausencias este mes",
+        "trimestre": "Sin ausencias este trimestre"
+      },
+      "pista": "Úsala para borrar con un clic tramos completos.",
+      "quitar": "Quitar ausencia",
+      "quitarTramo": "Quitar la ausencia de {{nombre}} ({{desde}} → {{hasta}})",
+      "dias": "{{n}} d",
+      "vacAno": "vac. {{ano}}",
+      "vacTitulo": "Días de vacaciones en {{ano}}",
+      "sinEquipo": "Sin equipo",
+      "sinPersonas": "Nadie sale en el planificador en este periodo",
+      "celda": {
+        "festivo": "{{nombre}} — festivo",
+        "noLaborable": "No laborable",
+        "marcar": "Marcar ausencia de {{nombre}}"
+      },
+      "ayuda": "Clic o arrastre para marcar; repetir el mismo valor lo quita. Las ausencias no mueven el plan: las jornadas afectadas quedan en alerta.",
+      "ayudaLectura": "Las ausencias las anota quien lleva Planificación o Personal: aquí se ven sin tocarlas.",
+      "borrado": "Quitada la ausencia de {{nombre}}: {{desde}} → {{hasta}}",
+      "leyenda": {
+        "nacional": "nacional",
+        "local": "local",
+        "vacaciones": "vacaciones",
+        "baja": "baja",
+        "permiso": "permiso"
+      }
     }
   }
 }

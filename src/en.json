@@ -9827,6 +9827,97 @@
       "opFecha": "Date from {{de}} to {{a}}",
       "opBorrar": "Delete the composition of {{fecha}}",
       "horasSinPrevistas": "{{h}} h (no planned hours)"
+    },
+    "calendario": {
+      "vista": "View",
+      "vistaOficiales": "Official holidays view",
+      "marcar": "Mark",
+      "pincel": {
+        "nacional": "Mark national holidays",
+        "local": "Mark local holidays"
+      },
+      "ano": "Year",
+      "nombreNuevo": {
+        "nacional": "National holiday",
+        "local": "Local holiday"
+      },
+      "ambito": {
+        "nacional": "national",
+        "local": "local"
+      },
+      "tituloFestivo": "{{fecha}} · {{nombre}} ({{ambito}} holiday)",
+      "tituloNoLaborable": "{{fecha}} · non-working day",
+      "ayuda": "Pick a brush and click a working day to mark it as a holiday; clicking again with the same brush removes it. Esc drops the brush.",
+      "ayudaLectura": "Holidays are changed by the superadmin: here you can see them but not change them.",
+      "marcado": "{{fecha}}: {{ambito}} holiday",
+      "cambiado": "{{fecha}}: now a {{ambito}} holiday",
+      "quitado": "{{fecha}}: no longer a holiday"
+    },
+    "ausencias": {
+      "marcar": "Mark",
+      "pincel": {
+        "baja": "Mark sick leave",
+        "vacaciones": "Mark holidays",
+        "permiso": "Mark leave"
+      },
+      "ini": {
+        "baja": "S",
+        "vacaciones": "H",
+        "permiso": "L"
+      },
+      "escala": "Scale",
+      "escalas": {
+        "semana": "Weekly",
+        "mes": "Monthly",
+        "trimestre": "Quarterly"
+      },
+      "periodo": "Period",
+      "anterior": "Previous period",
+      "siguiente": "Next period",
+      "semanaDel": "Week from {{de}} to {{a}} - W{{s}} {{ano}}",
+      "festivosDel": {
+        "semana": "Public holidays this week",
+        "mes": "Public holidays in {{mes}}",
+        "trimestre": "Public holidays this quarter"
+      },
+      "ausenciasDel": {
+        "semana": "Absences this week",
+        "mes": "Absences in {{mes}}",
+        "trimestre": "Absences this quarter"
+      },
+      "sinFestivos": {
+        "semana": "No public holidays this week",
+        "mes": "No public holidays this month",
+        "trimestre": "No public holidays this quarter"
+      },
+      "sinAusencias": {
+        "semana": "No absences this week",
+        "mes": "No absences this month",
+        "trimestre": "No absences this quarter"
+      },
+      "pista": "Use it to delete whole stretches with one click.",
+      "quitar": "Remove absence",
+      "quitarTramo": "Remove {{nombre}}'s absence ({{desde}} → {{hasta}})",
+      "dias": "{{n}} d",
+      "vacAno": "hol. {{ano}}",
+      "vacTitulo": "Holiday days in {{ano}}",
+      "sinEquipo": "No team",
+      "sinPersonas": "Nobody is in the planner in this period",
+      "celda": {
+        "festivo": "{{nombre}} — public holiday",
+        "noLaborable": "Non-working day",
+        "marcar": "Mark an absence for {{nombre}}"
+      },
+      "ayuda": "Click or drag to mark; repeating the same value removes it. Absences do not move the plan: the affected work days are flagged.",
+      "ayudaLectura": "Absences are recorded by whoever runs Planning or Staff: here you can see them but not change them.",
+      "borrado": "Removed {{nombre}}'s absence: {{desde}} → {{hasta}}",
+      "leyenda": {
+        "nacional": "national",
+        "local": "local",
+        "vacaciones": "holidays",
+        "baja": "sick leave",
+        "permiso": "leave"
+      }
     }
   }
 }

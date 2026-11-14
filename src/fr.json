@@ -8619,5 +8619,98 @@
         "desc": "Le webhook de {{cuenta}} n'a rien livré depuis {{dias}} jours et a été mis en pause"
       }
     }
+  },
+  "planificador": {
+    "calendario": {
+      "vista": "Vue",
+      "vistaOficiales": "Vue jours fériés officiels",
+      "marcar": "Marquer",
+      "pincel": {
+        "nacional": "Marquer les fériés nationaux",
+        "local": "Marquer les fériés locaux"
+      },
+      "ano": "Année",
+      "nombreNuevo": {
+        "nacional": "Férié national",
+        "local": "Férié local"
+      },
+      "ambito": {
+        "nacional": "national",
+        "local": "local"
+      },
+      "tituloFestivo": "{{fecha}} · {{nombre}} (férié {{ambito}})",
+      "tituloNoLaborable": "{{fecha}} · jour non ouvré",
+      "ayuda": "Choisissez un pinceau et cliquez sur un jour ouvré pour le marquer comme férié ; avec le même pinceau, il est retiré. Échap relâche le pinceau.",
+      "ayudaLectura": "Les jours fériés sont modifiés par le superadmin : ici, vous les voyez sans pouvoir les changer.",
+      "marcado": "{{fecha}} : férié {{ambito}}",
+      "cambiado": "{{fecha}} : désormais férié {{ambito}}",
+      "quitado": "{{fecha}} : n'est plus férié"
+    },
+    "ausencias": {
+      "marcar": "Marquer",
+      "pincel": {
+        "baja": "Marquer les arrêts",
+        "vacaciones": "Marquer les congés",
+        "permiso": "Marquer les autorisations"
+      },
+      "ini": {
+        "baja": "A",
+        "vacaciones": "C",
+        "permiso": "P"
+      },
+      "escala": "Échelle",
+      "escalas": {
+        "semana": "Semaine",
+        "mes": "Mois",
+        "trimestre": "Trimestre"
+      },
+      "periodo": "Période",
+      "anterior": "Période précédente",
+      "siguiente": "Période suivante",
+      "semanaDel": "Semaine du {{de}} au {{a}} - S{{s}} {{ano}}",
+      "festivosDel": {
+        "semana": "Jours fériés de la semaine",
+        "mes": "Jours fériés de {{mes}}",
+        "trimestre": "Jours fériés du trimestre"
+      },
+      "ausenciasDel": {
+        "semana": "Absences de la semaine",
+        "mes": "Absences de {{mes}}",
+        "trimestre": "Absences du trimestre"
+      },
+      "sinFestivos": {
+        "semana": "Aucun jour férié cette semaine",
+        "mes": "Aucun jour férié ce mois-ci",
+        "trimestre": "Aucun jour férié ce trimestre"
+      },
+      "sinAusencias": {
+        "semana": "Aucune absence cette semaine",
+        "mes": "Aucune absence ce mois-ci",
+        "trimestre": "Aucune absence ce trimestre"
+      },
+      "pista": "Servez-vous-en pour supprimer des périodes entières en un clic.",
+      "quitar": "Retirer l'absence",
+      "quitarTramo": "Retirer l'absence de {{nombre}} ({{desde}} → {{hasta}})",
+      "dias": "{{n}} j",
+      "vacAno": "congés {{ano}}",
+      "vacTitulo": "Jours de congés en {{ano}}",
+      "sinEquipo": "Sans équipe",
+      "sinPersonas": "Personne n'apparaît dans le planificateur sur cette période",
+      "celda": {
+        "festivo": "{{nombre}} — férié",
+        "noLaborable": "Jour non ouvré",
+        "marcar": "Marquer une absence de {{nombre}}"
+      },
+      "ayuda": "Cliquez ou faites glisser pour marquer ; répéter la même valeur la retire. Les absences ne déplacent pas le plan : les journées concernées passent en alerte.",
+      "ayudaLectura": "Les absences sont saisies par les responsables Planification ou Personnel : ici, vous les voyez sans pouvoir les changer.",
+      "borrado": "Absence de {{nombre}} retirée : {{desde}} → {{hasta}}",
+      "leyenda": {
+        "nacional": "national",
+        "local": "local",
+        "vacaciones": "congés",
+        "baja": "arrêt",
+        "permiso": "autorisation"
+      }
+    }
   }
 }
