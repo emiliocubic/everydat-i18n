@@ -8711,6 +8711,51 @@
         "baja": "arrêt",
         "permiso": "autorisation"
       }
+    },
+    "consulta": {
+      "ayuda": "Consultation en lecture seule : cliquez sur le nom d'une personne pour voir son calendrier.",
+      "modoAria": "Mode de consultation",
+      "modo": {
+        "semana": "Semaine · tout le personnel",
+        "persona": "Personne"
+      },
+      "persona": "Personne",
+      "semana": "Semaine",
+      "semanasAria": "Semaines affichées",
+      "semanas": "{{n}} semaines",
+      "anterior": "Semaine précédente",
+      "siguiente": "Semaine suivante",
+      "hoy": "Aujourd'hui",
+      "hoyTitulo": "Revenir à la semaine en cours (ou au début du plan)",
+      "rangoSemana": "Semaine du {{de}} au {{a}} · S{{s}} {{ano}}",
+      "rangoPersona": "{{de}}/{{anoDe}} → {{a}}/{{anoA}}",
+      "libres": "Libres",
+      "libresTitulo": "Jours ouvrés sans journée ni absence",
+      "verPersona": "Voir le calendrier de {{nombre}}",
+      "sinEquipo": "Sans équipe",
+      "refuerzo": "renfort",
+      "refuerzoEn": "renfort dans {{equipo}}",
+      "fuera": "Ne fait plus partie de l'entreprise",
+      "sinPersonas": "Aucune personne",
+      "sinPersonasSemana": "Personne n'est dans le planificateur cette semaine.",
+      "resumenAria": "Résumé de la période",
+      "resumenTitulo": "{{persona}} · {{de}} → {{a}} · {{equipo}}",
+      "col": {
+        "proyecto": "Projet",
+        "emplazamiento": "Site",
+        "cliente": "Client",
+        "equipo": "Équipe",
+        "jornadas": "Journées",
+        "fechas": "Dates"
+      },
+      "sinJornadas": "Aucune journée assignée sur la période.",
+      "totalJornadas_one": "{{count}} journée assignée",
+      "totalJornadas_other": "{{count}} journées assignées",
+      "totalLibres_one": "{{count}} jour libre sur {{laborables}} jours ouvrés",
+      "totalLibres_other": "{{count}} jours libres sur {{laborables}} jours ouvrés",
+      "totalMotivo": "{{motivo}} : {{dias}}",
+      "dias_one": "{{count}} jour",
+      "dias_other": "{{count}} jours"
     }
   }
 }

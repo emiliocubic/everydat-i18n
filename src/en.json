@@ -9965,6 +9965,51 @@
         "baja": "sick leave",
         "permiso": "leave"
       }
+    },
+    "consulta": {
+      "ayuda": "Read-only view: click a person's name to see their calendar.",
+      "modoAria": "View mode",
+      "modo": {
+        "semana": "Week · all staff",
+        "persona": "Person"
+      },
+      "persona": "Person",
+      "semana": "Week",
+      "semanasAria": "Weeks shown",
+      "semanas": "{{n}} weeks",
+      "anterior": "Previous week",
+      "siguiente": "Next week",
+      "hoy": "Today",
+      "hoyTitulo": "Back to the current week (or to the start of the plan)",
+      "rangoSemana": "Week of {{de}} to {{a}} · W{{s}} {{ano}}",
+      "rangoPersona": "{{de}}/{{anoDe}} → {{a}}/{{anoA}}",
+      "libres": "Free",
+      "libresTitulo": "Working days with no shift or absence",
+      "verPersona": "See {{nombre}}'s calendar",
+      "sinEquipo": "No team",
+      "refuerzo": "support",
+      "refuerzoEn": "supporting {{equipo}}",
+      "fuera": "No longer with the company",
+      "sinPersonas": "No people",
+      "sinPersonasSemana": "Nobody is in the planner this week.",
+      "resumenAria": "Period summary",
+      "resumenTitulo": "{{persona}} · {{de}} → {{a}} · {{equipo}}",
+      "col": {
+        "proyecto": "Project",
+        "emplazamiento": "Site",
+        "cliente": "Customer",
+        "equipo": "Team",
+        "jornadas": "Shifts",
+        "fechas": "Dates"
+      },
+      "sinJornadas": "No shifts assigned in this period.",
+      "totalJornadas_one": "{{count}} shift assigned",
+      "totalJornadas_other": "{{count}} shifts assigned",
+      "totalLibres_one": "{{count}} free day out of {{laborables}} working days",
+      "totalLibres_other": "{{count}} free days out of {{laborables}} working days",
+      "totalMotivo": "{{motivo}}: {{dias}}",
+      "dias_one": "{{count}} day",
+      "dias_other": "{{count}} days"
     }
   }
 }

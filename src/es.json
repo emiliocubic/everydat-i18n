@@ -9965,6 +9965,51 @@
         "baja": "baja",
         "permiso": "permiso"
       }
+    },
+    "consulta": {
+      "ayuda": "Consulta en solo lectura: pulsa el nombre de una persona para ver su calendario.",
+      "modoAria": "Modo de consulta",
+      "modo": {
+        "semana": "Semana · todo el personal",
+        "persona": "Persona"
+      },
+      "persona": "Persona",
+      "semana": "Semana",
+      "semanasAria": "Semanas a la vista",
+      "semanas": "{{n}} semanas",
+      "anterior": "Semana anterior",
+      "siguiente": "Semana siguiente",
+      "hoy": "Hoy",
+      "hoyTitulo": "Volver a la semana actual (o al inicio del plan)",
+      "rangoSemana": "Semana del {{de}} al {{a}} · S{{s}} {{ano}}",
+      "rangoPersona": "{{de}}/{{anoDe}} → {{a}}/{{anoA}}",
+      "libres": "Libres",
+      "libresTitulo": "Días laborables sin jornada ni ausencia",
+      "verPersona": "Ver el calendario de {{nombre}}",
+      "sinEquipo": "Sin equipo",
+      "refuerzo": "refuerzo",
+      "refuerzoEn": "refuerzo en {{equipo}}",
+      "fuera": "Ya no está en la empresa",
+      "sinPersonas": "No hay personas",
+      "sinPersonasSemana": "Nadie sale en el planificador esta semana.",
+      "resumenAria": "Resumen del periodo",
+      "resumenTitulo": "{{persona}} · {{de}} → {{a}} · {{equipo}}",
+      "col": {
+        "proyecto": "Proyecto",
+        "emplazamiento": "Emplazamiento",
+        "cliente": "Cliente",
+        "equipo": "Equipo",
+        "jornadas": "Jornadas",
+        "fechas": "Fechas"
+      },
+      "sinJornadas": "Sin jornadas asignadas en el periodo.",
+      "totalJornadas_one": "{{count}} jornada asignada",
+      "totalJornadas_other": "{{count}} jornadas asignadas",
+      "totalLibres_one": "{{count}} día libre de {{laborables}} laborables",
+      "totalLibres_other": "{{count}} días libres de {{laborables}} laborables",
+      "totalMotivo": "{{motivo}}: {{dias}}",
+      "dias_one": "{{count}} día",
+      "dias_other": "{{count}} días"
     }
   }
 }
