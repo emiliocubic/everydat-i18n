@@ -1604,6 +1604,10 @@
         "titulo": "Délégué par le superadmin",
         "hint": "Pièces de la gouvernance que le superadmin donne à une personne précise sans la faire superadmin.",
         "soloSuperadmin": "Seuls le superadmin et le support les cochent."
+      },
+      "planificador": {
+        "sale": "Apparaît dans le planificateur",
+        "saleAyuda": "Décochez-la pour les personnes qui ne vont pas sur le terrain."
       }
     },
     "soporte": {
@@ -2326,7 +2330,9 @@
     },
     "grupos": {
       "contadores": "Compteurs"
-    }
+    },
+    "loLlevaPlanificador": "Les équipes sont gérées dans le planificateur",
+    "abrirPlanificador": "Ouvrir le planificateur"
   },
   "cfg": {
     "placeholderTitle": "Écran en construction",
@@ -3645,7 +3651,10 @@
         "usar": "Utiliser le module planificateur",
         "hint": "Désactivé, la planification simple continue depuis la fiche du projet.",
         "noContratado": "La licence de cette instance n'inclut pas le planificateur.",
-        "avisoCoste": "Activer le planificateur a un coût indépendant et ouvre le module en essai de 30 jours. Continuer ?"
+        "avisoCoste": "Activer le planificateur a un coût indépendant et ouvre le module en essai de 30 jours. Continuer ?",
+        "avisoActivarTitulo": "Activer le planificateur",
+        "avisoActivar": "Une fois activé, les projets en cours à ce moment-là n'entreront pas dans le planificateur : ils se terminent comme avant. Les équipes de travail seront gérées dans le planificateur ; dans Mon entreprise, seule leur description pourra être modifiée.",
+        "avisoActivarBoton": "Activer"
       },
       "calendario": {
         "titulo": "Calendrier de travail",
@@ -4695,7 +4704,11 @@
       "pasoManual": "Manuel",
       "pasoAuto": "Automatique à la date",
       "administradoresHint": "Il peut y en avoir plusieurs : le premier coché est le principal, qui répond du projet.",
-      "principal": "Principal"
+      "principal": "Principal",
+      "loFijaElPlanificador": "Fixées par le planificateur",
+      "abrirPlanificador": "Ouvrir dans le planificateur",
+      "delPlan": "du planning",
+      "tecnicosDelPlan": "Ce projet est dans le planificateur : les techniciens sont ajoutés et retirés par le planning."
     },
     "ejecucion": {
       "kpiRevisiones": "Contrôles",

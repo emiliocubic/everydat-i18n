@@ -1607,6 +1607,10 @@
         "titulo": "Delegado por el superadmin",
         "hint": "Piezas del gobierno que el superadmin da a una persona concreta sin hacerla superadmin.",
         "soloSuperadmin": "Solo las marcan el superadmin y soporte."
+      },
+      "planificador": {
+        "sale": "Sale en el planificador",
+        "saleAyuda": "Desmárcala para quien no va a campo."
       }
     },
     "soporte": {
@@ -2477,7 +2481,9 @@
     },
     "grupos": {
       "contadores": "Contadores"
-    }
+    },
+    "loLlevaPlanificador": "Los equipos los lleva el planificador",
+    "abrirPlanificador": "Abrir el planificador"
   },
   "cfg": {
     "placeholderTitle": "Pantalla en construcción",
@@ -3796,7 +3802,10 @@
         "usar": "Usar el módulo planificador",
         "hint": "Al desactivarlo se sigue planificando de forma sencilla desde la ficha del proyecto.",
         "noContratado": "La licencia de esta instancia no incluye el planificador.",
-        "avisoCoste": "Activar el planificador tiene un coste independiente y da de alta el módulo en modo de prueba de 30 días. ¿Continuar?"
+        "avisoCoste": "Activar el planificador tiene un coste independiente y da de alta el módulo en modo de prueba de 30 días. ¿Continuar?",
+        "avisoActivarTitulo": "Encender el planificador",
+        "avisoActivar": "Al encenderlo, los proyectos que estén en ejecución en ese momento no entrarán en el planificador: se terminan como hasta ahora. Y los equipos de trabajo pasan a gestionarse en el planificador; en Mi empresa solo se podrá cambiar su descripción.",
+        "avisoActivarBoton": "Encender"
       },
       "calendario": {
         "titulo": "Calendario laboral",
@@ -5288,7 +5297,11 @@
       "pasoManual": "Manual",
       "pasoAuto": "Automático al llegar la fecha",
       "administradoresHint": "Puede haber varios: el primero que se marca es el principal, el que responde del proyecto.",
-      "principal": "Principal"
+      "principal": "Principal",
+      "loFijaElPlanificador": "Las fija el planificador",
+      "abrirPlanificador": "Abrir en el planificador",
+      "delPlan": "del plan",
+      "tecnicosDelPlan": "Este proyecto está en el planificador: los técnicos los pone y los quita el plan."
     },
     "ejecucion": {
       "kpiRevisiones": "Revisiones",

@@ -1736,6 +1736,10 @@
         "titulo": "Delegated by the superadmin",
         "hint": "Pieces of governance the superadmin gives to a specific person without making them a superadmin.",
         "soloSuperadmin": "Only the superadmin and support can tick them."
+      },
+      "planificador": {
+        "sale": "Shown in the planner",
+        "saleAyuda": "Untick it for people who don't do field work."
       }
     },
     "soporte": {
@@ -2477,7 +2481,9 @@
     },
     "grupos": {
       "contadores": "Counters"
-    }
+    },
+    "loLlevaPlanificador": "Teams are managed in the planner",
+    "abrirPlanificador": "Open the planner"
   },
   "cfg": {
     "placeholderTitle": "Screen under construction",
@@ -3796,7 +3802,10 @@
         "usar": "Use the planner module",
         "hint": "When off, simple planning continues from the project record.",
         "noContratado": "This instance's licence does not include the planner.",
-        "avisoCoste": "Enabling the planner has a separate cost and starts the module in a 30-day trial. Continue?"
+        "avisoCoste": "Enabling the planner has a separate cost and starts the module in a 30-day trial. Continue?",
+        "avisoActivarTitulo": "Turn on the planner",
+        "avisoActivar": "Once it is on, projects already in progress at that moment will not enter the planner: they are finished as before. Work teams will be managed in the planner; in My company only their description can be changed.",
+        "avisoActivarBoton": "Turn on"
       },
       "calendario": {
         "titulo": "Working calendar",
@@ -5288,7 +5297,11 @@
       "pasoManual": "Manual",
       "pasoAuto": "Automatic on the start date",
       "administradoresHint": "There can be several: the first one ticked is the lead, who answers for the project.",
-      "principal": "Lead"
+      "principal": "Lead",
+      "loFijaElPlanificador": "Set by the planner",
+      "abrirPlanificador": "Open in the planner",
+      "delPlan": "from the plan",
+      "tecnicosDelPlan": "This project is in the planner: technicians are added and removed by the plan."
     },
     "ejecucion": {
       "kpiRevisiones": "Inspections",
