@@ -8770,5 +8770,17 @@
       "antes": "(avant {{ini}} → {{fin}})",
       "nueva": "nouveau tronçon"
     }
+  },
+  "conflictoEdicion": {
+    "titulo": "Quelqu'un d'autre l'a modifié",
+    "porNombre": "{{nombre}} l'a modifié à {{hora}}.",
+    "sinNombre": "Quelqu'un d'autre l'a modifié à {{hora}}.",
+    "sinHora": "Quelqu'un d'autre l'a modifié pendant votre édition.",
+    "explicacion": "Vos modifications n'ont pas été enregistrées. Vous pouvez recharger, en perdant les vôtres, ou écraser en connaissance de cause ce qui a été enregistré.",
+    "ahora": "Maintenant",
+    "tuyo": "Les vôtres",
+    "vacio": "(vide)",
+    "recargar": "Recharger",
+    "sobrescribir": "Écraser"
   }
 }

@@ -10024,5 +10024,17 @@
       "antes": "(antes {{ini}} → {{fin}})",
       "nueva": "tramo nuevo"
     }
+  },
+  "conflictoEdicion": {
+    "titulo": "Otra persona lo ha cambiado",
+    "porNombre": "Lo cambió {{nombre}} a las {{hora}}.",
+    "sinNombre": "Lo cambió otra persona a las {{hora}}.",
+    "sinHora": "Lo cambió otra persona mientras lo editabas.",
+    "explicacion": "Lo tuyo no se ha guardado. Puedes volver a cargarlo, perdiendo lo tuyo, o sobrescribir a sabiendas lo que ha puesto.",
+    "ahora": "Ahora",
+    "tuyo": "Lo tuyo",
+    "vacio": "(vacío)",
+    "recargar": "Volver a cargar",
+    "sobrescribir": "Sobrescribir"
   }
 }

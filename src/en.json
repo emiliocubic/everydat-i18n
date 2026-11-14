@@ -10024,5 +10024,17 @@
       "antes": "(was {{ini}} → {{fin}})",
       "nueva": "new section"
     }
+  },
+  "conflictoEdicion": {
+    "titulo": "Someone else has changed it",
+    "porNombre": "{{nombre}} changed it at {{hora}}.",
+    "sinNombre": "Someone else changed it at {{hora}}.",
+    "sinHora": "Someone else changed it while you were editing.",
+    "explicacion": "Your changes have not been saved. You can reload it, losing your changes, or knowingly overwrite what they saved.",
+    "ahora": "Now",
+    "tuyo": "Yours",
+    "vacio": "(empty)",
+    "recargar": "Reload",
+    "sobrescribir": "Overwrite"
   }
 }
