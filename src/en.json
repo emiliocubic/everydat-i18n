@@ -10010,6 +10010,19 @@
       "totalMotivo": "{{motivo}}: {{dias}}",
       "dias_one": "{{count}} day",
       "dias_other": "{{count}} days"
+    },
+    "cadena": {
+      "inicial": "Drag the middle of a bar to move it and its ends to stretch it: the change is simulated and only applied with ✓.",
+      "esquina": "Teams",
+      "simulacion": "Simulation: {{mensaje}} — check the simulation rows and apply (✓) or discard (✗)",
+      "sinCambios": "The simulation changes nothing in view: {{mensaje}}",
+      "descartada": "Simulation discarded: the plan has not changed",
+      "conflicto": "Someone else changed the plan while you were simulating: the simulation is discarded; make the change again",
+      "aplicar": "Apply simulation",
+      "descartar": "Discard simulation",
+      "barraTitulo": "{{ref}} · {{ini}} → {{fin}}",
+      "antes": "(was {{ini}} → {{fin}})",
+      "nueva": "new section"
     }
   }
 }

@@ -8756,6 +8756,19 @@
       "totalMotivo": "{{motivo}} : {{dias}}",
       "dias_one": "{{count}} jour",
       "dias_other": "{{count}} jours"
+    },
+    "cadena": {
+      "inicial": "Faites glisser le milieu d'une barre pour la déplacer et ses extrémités pour l'étirer : le changement est simulé et ne s'applique qu'avec ✓.",
+      "esquina": "Équipes",
+      "simulacion": "Simulation : {{mensaje}} — vérifiez les lignes de simulation et appliquez (✓) ou annulez (✗)",
+      "sinCambios": "La simulation ne change rien à l'écran : {{mensaje}}",
+      "descartada": "Simulation annulée : le plan n'a pas changé",
+      "conflicto": "Quelqu'un d'autre a modifié le plan pendant la simulation : elle est annulée ; refaites le changement",
+      "aplicar": "Appliquer la simulation",
+      "descartar": "Annuler la simulation",
+      "barraTitulo": "{{ref}} · {{ini}} → {{fin}}",
+      "antes": "(avant {{ini}} → {{fin}})",
+      "nueva": "nouveau tronçon"
     }
   }
 }

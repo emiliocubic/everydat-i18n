@@ -10010,6 +10010,19 @@
       "totalMotivo": "{{motivo}}: {{dias}}",
       "dias_one": "{{count}} día",
       "dias_other": "{{count}} días"
+    },
+    "cadena": {
+      "inicial": "Arrastra el centro de una barra para moverla y sus extremos para estirarla: el cambio se simula y solo se aplica con ✓.",
+      "esquina": "Equipos",
+      "simulacion": "Simulación: {{mensaje}} — revisa las filas de simulación y aplica (✓) o descarta (✗)",
+      "sinCambios": "La simulación no cambia nada a la vista: {{mensaje}}",
+      "descartada": "Simulación descartada: el plan no ha cambiado",
+      "conflicto": "Otra persona ha cambiado el plan mientras simulabas: la simulación se descarta; vuelve a hacer el cambio",
+      "aplicar": "Aplicar simulación",
+      "descartar": "Descartar simulación",
+      "barraTitulo": "{{ref}} · {{ini}} → {{fin}}",
+      "antes": "(antes {{ini}} → {{fin}})",
+      "nueva": "tramo nuevo"
     }
   }
 }
