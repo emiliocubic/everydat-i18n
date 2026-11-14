@@ -9625,6 +9625,128 @@
       "persona_ocupada": "{{persona}} is already on {{ref}} that day",
       "persona_de_baja": "{{persona}} is no longer with the company on {{dia}}",
       "otro": "Not allowed"
+    },
+    "plan": {
+      "seleccionado": "{{ref}} selected",
+      "horas": "{{h}}/{{p}} h",
+      "horasSin": "{{h}} h",
+      "diasSemana": "M T W T F S S",
+      "ambitoIni": {
+        "nacional": "N",
+        "local": "L"
+      },
+      "sec": {
+        "equipos": "Teams",
+        "personas": "People"
+      },
+      "pool": {
+        "titulo": "Projects to plan",
+        "nuevo": "New",
+        "buscar": "Search code, project, client…",
+        "buscarAria": "Search the projects",
+        "limpiar": "Clear search",
+        "estado": "Status",
+        "tipo": "Type",
+        "todos": "All",
+        "pendientes": "Pending",
+        "internos": "Internal",
+        "externos": "External",
+        "cargando": "Loading projects…",
+        "vacio": "No projects in the dates on view",
+        "vacioBusqueda": "No project matches “{{q}}”"
+      },
+      "tarjeta": {
+        "asa": "Drag onto another card to reorder",
+        "fuera": "out of range",
+        "fueraTitulo": "Search result: its dates fall outside the range on view",
+        "externo": "External",
+        "cerrado": "Closed",
+        "cerradoTitulo": "Closed project: it stays on view as history and cannot be changed",
+        "editar": "Edit project",
+        "sinNombre": "Unnamed project",
+        "prev": "est. {{ini}} → {{fin}}",
+        "sinFechas": "no dates",
+        "equipos": "{{n}} teams",
+        "sinHoras": "no hours",
+        "sinHorasTitulo": "The project has no estimated hours: it is planned by hand",
+        "cubiertas": "Hours covered",
+        "asignar": "Assign",
+        "asignarTitulo": "Assign: paint days on a team row (bar) or a person row (pile)",
+        "volcar": "Fill",
+        "volcarTitulo": "Fill: the team and its members from a day until the hours are covered",
+        "verSolo": "Show only",
+        "verSoloTitulo": "Show only this project",
+        "quitarFiltro": "Remove filter",
+        "plegar": "Collapse"
+      },
+      "nav": {
+        "atras4": "4 weeks back",
+        "atras": "Previous week",
+        "adelante": "Next week",
+        "adelante4": "4 weeks forward"
+      },
+      "acc": {
+        "cortar": "Cut",
+        "cortarTitulo": "Cut project: paint on its bar the days it cannot be worked; the work carries on afterwards",
+        "deshacer": "Undo",
+        "deshacerTitulo": "Undo (Ctrl+Z)"
+      },
+      "hab": {
+        "titulo": "Enable",
+        "aria": "Enable non-working days",
+        "sabado": "Saturdays",
+        "domingo": "Sundays",
+        "local": "Local hol.",
+        "nacional": "National hol.",
+        "ponerTitulo": "Enable {{que}}: they can be planned like any other day, for this session only",
+        "quitarTitulo": "Disable {{que}}: they go back to being non-working days"
+      },
+      "foco": {
+        "quitar": "{{ref}} · remove filter"
+      },
+      "zoom": {
+        "titulo": "Zoom",
+        "alejar": "Zoom out",
+        "acercar": "Zoom in",
+        "ancho": "Day width"
+      },
+      "equipo": {
+        "sinMiembros": "no members",
+        "borrado": "deleted team",
+        "ninguno": "No teams in the dates on view"
+      },
+      "barra": {
+        "faltan": "({{n}} h short)",
+        "sobran": "({{n}} h over)",
+        "fijadaCorta": "📌 date pinned",
+        "fijada": "Date pinned: pushing does not move it",
+        "fijar": "Pin the date: pushing will not move it and whatever reaches it will be cut",
+        "intocable": "closed: cannot be changed",
+        "cortado": "{{ref}} · cut on {{dia}} (cannot be worked)"
+      },
+      "cuadrilla": {
+        "hueco": "Gap: crew place not covered",
+        "sinEquipo": "(no team)",
+        "refuerzo": "with {{equipo}} (backup)"
+      },
+      "alerta": {
+        "ausencia": "absent that day: remove or move it",
+        "parado": "the project is on hold",
+        "baja": "no longer with the company: remove or move it"
+      },
+      "pila": {
+        "deslizador": "Slide to move through the calendar",
+        "libresTitulo": "Free days in the loaded dates",
+        "sinEquipo": "No team",
+        "libre": "{{persona}} free on {{dia}}",
+        "imputada": "{{persona}} · {{dia}} → {{ref}}",
+        "soloLibres": "Only with free days in {{ref}}"
+      },
+      "leyenda": {
+        "libre": "Free",
+        "imputada": "Assigned",
+        "alerta": "Alert"
+      }
     }
   }
 }

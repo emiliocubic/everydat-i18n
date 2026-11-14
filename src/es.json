@@ -9625,6 +9625,128 @@
       "persona_ocupada": "{{persona}} ya está en {{ref}} ese día",
       "persona_de_baja": "{{persona}} ya no está en la empresa el {{dia}}",
       "otro": "No se puede"
+    },
+    "plan": {
+      "seleccionado": "{{ref}} seleccionado",
+      "horas": "{{h}}/{{p}} h",
+      "horasSin": "{{h}} h",
+      "diasSemana": "L M X J V S D",
+      "ambitoIni": {
+        "nacional": "N",
+        "local": "L"
+      },
+      "sec": {
+        "equipos": "Equipos",
+        "personas": "Personas"
+      },
+      "pool": {
+        "titulo": "Proyectos a planificar",
+        "nuevo": "Nuevo",
+        "buscar": "Buscar código, proyecto, cliente…",
+        "buscarAria": "Buscar en los proyectos",
+        "limpiar": "Limpiar búsqueda",
+        "estado": "Estado",
+        "tipo": "Tipo",
+        "todos": "Todos",
+        "pendientes": "Pendientes",
+        "internos": "Internos",
+        "externos": "Externos",
+        "cargando": "Cargando proyectos…",
+        "vacio": "Ningún proyecto en las fechas a la vista",
+        "vacioBusqueda": "Ningún proyecto coincide con «{{q}}»"
+      },
+      "tarjeta": {
+        "asa": "Arrastra sobre otra tarjeta para reordenar",
+        "fuera": "fuera de fechas",
+        "fueraTitulo": "Resultado de búsqueda: sus fechas no pisan el intervalo a la vista",
+        "externo": "Externo",
+        "cerrado": "Cerrado",
+        "cerradoTitulo": "Proyecto cerrado: se queda a la vista como histórico y no se puede tocar",
+        "editar": "Editar proyecto",
+        "sinNombre": "Proyecto sin nombre",
+        "prev": "prev. {{ini}} → {{fin}}",
+        "sinFechas": "sin fechas",
+        "equipos": "{{n}} equipos",
+        "sinHoras": "sin horas",
+        "sinHorasTitulo": "El proyecto no tiene horas previstas: se pinta a mano",
+        "cubiertas": "Horas cubiertas",
+        "asignar": "Asignar",
+        "asignarTitulo": "Asignar: pinta días en la fila de un equipo (barra) o de una persona (pila)",
+        "volcar": "Volcar",
+        "volcarTitulo": "Volcar: el equipo con sus miembros desde un día hasta completar horas",
+        "verSolo": "Ver solo",
+        "verSoloTitulo": "Ver solo este proyecto",
+        "quitarFiltro": "Quitar filtro",
+        "plegar": "Plegar"
+      },
+      "nav": {
+        "atras4": "4 semanas atrás",
+        "atras": "Semana anterior",
+        "adelante": "Semana siguiente",
+        "adelante4": "4 semanas adelante"
+      },
+      "acc": {
+        "cortar": "Cortar",
+        "cortarTitulo": "Cortar proyecto: pinta sobre su barra los días que no se puede ir; el trabajo sigue después",
+        "deshacer": "Deshacer",
+        "deshacerTitulo": "Deshacer (Ctrl+Z)"
+      },
+      "hab": {
+        "titulo": "Habilitar",
+        "aria": "Habilitar días no laborables",
+        "sabado": "Sábados",
+        "domingo": "Domingos",
+        "local": "Fest. locales",
+        "nacional": "Fest. nacionales",
+        "ponerTitulo": "Habilitar {{que}}: se pueden planificar como un día más, solo en esta sesión",
+        "quitarTitulo": "Deshabilitar {{que}}: vuelven a ser no laborables"
+      },
+      "foco": {
+        "quitar": "{{ref}} · quitar filtro"
+      },
+      "zoom": {
+        "titulo": "Zoom",
+        "alejar": "Alejar",
+        "acercar": "Acercar",
+        "ancho": "Ancho de día"
+      },
+      "equipo": {
+        "sinMiembros": "sin miembros",
+        "borrado": "equipo borrado",
+        "ninguno": "No hay equipos en las fechas a la vista"
+      },
+      "barra": {
+        "faltan": "(faltan {{n}} h)",
+        "sobran": "(sobran {{n}} h)",
+        "fijadaCorta": "📌 fecha fijada",
+        "fijada": "Fecha fijada: el empuje no la mueve",
+        "fijar": "Fijar la fecha: el empuje no la moverá y lo que la alcance se cortará",
+        "intocable": "cerrado: no se puede tocar",
+        "cortado": "{{ref}} · cortado el {{dia}} (no se puede ir)"
+      },
+      "cuadrilla": {
+        "hueco": "Hueco: plaza de la cuadrilla sin cubrir",
+        "sinEquipo": "(sin equipo)",
+        "refuerzo": "con {{equipo}} (refuerzo)"
+      },
+      "alerta": {
+        "ausencia": "ausente ese día: quítala o muévela",
+        "parado": "el proyecto está parado",
+        "baja": "ya no está en la empresa: quítala o muévela"
+      },
+      "pila": {
+        "deslizador": "Desliza para recorrer el calendario",
+        "libresTitulo": "Días libres en las fechas cargadas",
+        "sinEquipo": "Sin equipo",
+        "libre": "{{persona}} libre el {{dia}}",
+        "imputada": "{{persona}} · {{dia}} → {{ref}}",
+        "soloLibres": "Solo con días libres en {{ref}}"
+      },
+      "leyenda": {
+        "libre": "Libre",
+        "imputada": "Imputada",
+        "alerta": "Alerta"
+      }
     }
   }
 }
