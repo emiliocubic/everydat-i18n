@@ -9554,5 +9554,64 @@
         "desc": "El webhook de {{cuenta}} lleva {{dias}} días sin entregar y se ha pausado"
       }
     }
+  },
+  "planificador": {
+    "titulo": "Planificador",
+    "volver": "Volver a Everydat",
+    "pestanasAria": "Vistas del planificador",
+    "pestana": {
+      "equipos": "Equipos",
+      "calendario": "Calendario laboral",
+      "ausencias": "Ausencias",
+      "planificacion": "Planificación",
+      "cadena": "Cadena",
+      "consulta": "Consulta"
+    },
+    "cargando": "Cargando el planificador…",
+    "cargandoVentana": "Cargando el plan…",
+    "errorCarga": "No se ha podido abrir el planificador",
+    "sinPermiso": {
+      "titulo": "Sin acceso al planificador",
+      "texto": "Abrir el planificador pide la capacidad Planificación. Pídesela a quien administra los usuarios."
+    },
+    "estado": {
+      "inicial": "Arrastra los extremos de una barra para alargar o acortar el proyecto. Arrastra una ficha libre de la pila a la cuadrilla de un proyecto.",
+      "versionCambiada": "El plan ha cambiado; vuelve a intentarlo",
+      "error": "No se ha podido hacer el cambio"
+    },
+    "obras": {
+      "titulo": "{{pestana}} · en construcción",
+      "texto": "Esta pestaña se está portando del prototipo. De momento, lo que ya llega del servidor:",
+      "soloProyecto": "Abierto con «Ver solo» para {{proyecto}}."
+    },
+    "datos": {
+      "equipos": "Equipos",
+      "composiciones": "Composiciones",
+      "personas": "Personas",
+      "diasLaborables": "Días laborables",
+      "festivos": "Festivos en la ventana",
+      "ausencias": "Ausencias en la ventana",
+      "ventana": "Ventana",
+      "barras": "Barras",
+      "proyectos": "Proyectos",
+      "jornadas": "Jornadas",
+      "huecos": "Plazas sin cubrir",
+      "version": "Versión del plan",
+      "pool": "Proyectos en el pool"
+    },
+    "motivo": {
+      "baja": "Baja",
+      "vacaciones": "Vacaciones",
+      "permiso": "Permiso"
+    },
+    "rechazo": {
+      "persona_desconocida": "Esa persona no está en el planificador",
+      "dia_no_laborable": "Día no laborable",
+      "fuera_de": "Fuera de {{ref}}",
+      "persona_ausente": "{{persona}} no está el {{dia}} ({{motivo}})",
+      "persona_ocupada": "{{persona}} ya está en {{ref}} ese día",
+      "persona_de_baja": "{{persona}} ya no está en la empresa el {{dia}}",
+      "otro": "No se puede"
+    }
   }
 }

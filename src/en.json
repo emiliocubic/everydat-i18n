@@ -9554,5 +9554,64 @@
         "desc": "The webhook of {{cuenta}} has not delivered for {{dias}} days and has been paused"
       }
     }
+  },
+  "planificador": {
+    "titulo": "Planner",
+    "volver": "Back to Everydat",
+    "pestanasAria": "Planner views",
+    "pestana": {
+      "equipos": "Teams",
+      "calendario": "Working calendar",
+      "ausencias": "Absences",
+      "planificacion": "Planning",
+      "cadena": "Chain",
+      "consulta": "Lookup"
+    },
+    "cargando": "Loading the planner…",
+    "cargandoVentana": "Loading the plan…",
+    "errorCarga": "The planner could not be opened",
+    "sinPermiso": {
+      "titulo": "No access to the planner",
+      "texto": "Opening the planner requires the Planning capability. Ask whoever manages users for it."
+    },
+    "estado": {
+      "inicial": "Drag the ends of a bar to lengthen or shorten the project. Drag a free tile from the stack onto a project's crew.",
+      "versionCambiada": "The plan has changed; try again",
+      "error": "The change could not be made"
+    },
+    "obras": {
+      "titulo": "{{pestana}} · under construction",
+      "texto": "This tab is being ported from the prototype. For now, this is what already comes from the server:",
+      "soloProyecto": "Opened with “Show only” for {{proyecto}}."
+    },
+    "datos": {
+      "equipos": "Teams",
+      "composiciones": "Compositions",
+      "personas": "People",
+      "diasLaborables": "Working days",
+      "festivos": "Holidays in the window",
+      "ausencias": "Absences in the window",
+      "ventana": "Window",
+      "barras": "Bars",
+      "proyectos": "Projects",
+      "jornadas": "Work days",
+      "huecos": "Unfilled places",
+      "version": "Plan version",
+      "pool": "Projects in the pool"
+    },
+    "motivo": {
+      "baja": "Sick leave",
+      "vacaciones": "Holidays",
+      "permiso": "Leave"
+    },
+    "rechazo": {
+      "persona_desconocida": "That person is not in the planner",
+      "dia_no_laborable": "Non-working day",
+      "fuera_de": "Outside {{ref}}",
+      "persona_ausente": "{{persona}} is away on {{dia}} ({{motivo}})",
+      "persona_ocupada": "{{persona}} is already on {{ref}} that day",
+      "persona_de_baja": "{{persona}} is no longer with the company on {{dia}}",
+      "otro": "Not allowed"
+    }
   }
 }
