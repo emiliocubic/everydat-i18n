@@ -4837,6 +4837,18 @@
           "bloqueApaga": "Apagar el bloque «{{nombre}}»: sus productos dejan de ofrecerse en las propuestas",
           "bloqueEnciende": "Encender el bloque «{{nombre}}»: sus productos vuelven a ofrecerse en las propuestas",
           "bloqueNoExiste": "El bloque n.º {{id}} no existe: el paso fallará"
+        },
+        "contacto": {
+          "linea": "{{campo}}: {{antes}} → {{despues}}",
+          "vacio": "(vacío)",
+          "campos": {
+            "nombre": "Nombre",
+            "apellidos": "Apellidos",
+            "email": "Email",
+            "telefonos_one": "Teléfono",
+            "telefonos_other": "Teléfonos",
+            "notas": "Notas"
+          }
         }
       },
       "deleteChat": "Borrar conversación"

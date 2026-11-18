@@ -4379,6 +4379,18 @@
           "bloqueApaga": "Désactiver le bloc « {{nombre}} » : ses produits ne sont plus proposés dans les propositions",
           "bloqueEnciende": "Activer le bloc « {{nombre}} » : ses produits sont de nouveau proposés dans les propositions",
           "bloqueNoExiste": "Le bloc n° {{id}} n’existe pas : l’étape échouera"
+        },
+        "contacto": {
+          "linea": "{{campo}} : {{antes}} → {{despues}}",
+          "vacio": "(vide)",
+          "campos": {
+            "nombre": "Prénom",
+            "apellidos": "Nom",
+            "email": "E-mail",
+            "telefonos_one": "Téléphone",
+            "telefonos_other": "Téléphones",
+            "notas": "Notes"
+          }
         }
       },
       "deleteChat": "Supprimer la conversation"

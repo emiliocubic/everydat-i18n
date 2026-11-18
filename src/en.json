@@ -4837,6 +4837,18 @@
           "bloqueApaga": "Switch off the block “{{nombre}}”: its products are no longer offered in proposals",
           "bloqueEnciende": "Switch on the block “{{nombre}}”: its products are offered in proposals again",
           "bloqueNoExiste": "Block no. {{id}} does not exist: the step will fail"
+        },
+        "contacto": {
+          "linea": "{{campo}}: {{antes}} → {{despues}}",
+          "vacio": "(empty)",
+          "campos": {
+            "nombre": "First name",
+            "apellidos": "Last name",
+            "email": "Email",
+            "telefonos_one": "Phone",
+            "telefonos_other": "Phones",
+            "notas": "Notes"
+          }
         }
       },
       "deleteChat": "Delete conversation"
