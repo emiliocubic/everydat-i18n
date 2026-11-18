@@ -4147,7 +4147,8 @@
       "tabsAria": "Secciones de IA y conectores",
       "tab": {
         "ia": "Inteligencia artificial",
-        "conectores": "Conectores"
+        "conectores": "Conectores",
+        "valoraciones": "Valoraciones"
       },
       "conectoresVacia": "Aquí irán las conexiones con otros sistemas (ERP, correo, almacenamiento…). Todavía no hay ninguna disponible.",
       "ranurasCol": {
@@ -4175,6 +4176,42 @@
         "borrarEnUso_one": "Lo usa la ranura de {{ranuras}}: al borrarlo, volverá al proveedor del servidor ({{modelo}}).",
         "borrarEnUso_other": "Lo usan las ranuras de {{ranuras}}: al borrarlo, volverán al proveedor del servidor ({{modelo}}).",
         "elegirModelo": "Elige un modelo"
+      },
+      "valoraciones": {
+        "intro": "Las respuestas de Sherpa que alguien ha valorado y lo que Sherpa apuntó que no sabía hacer, de los últimos 90 días. No se guarda quién preguntó: solo sus capacidades.",
+        "vacio": "No hay valoraciones con estos filtros.",
+        "errorCarga": "No se han podido cargar las valoraciones.",
+        "error": "No se ha podido completar. Inténtalo de nuevo.",
+        "filtros": "Filtros de las valoraciones",
+        "todas": "Todas",
+        "estrellas": "Estrellas",
+        "area": "Área",
+        "clasificacion": "Clasificación",
+        "sinArea": "Sin área",
+        "origen": {
+          "persona": "Valorada por quien preguntó",
+          "sherpa": "Apuntada por Sherpa: no sabía hacerlo"
+        },
+        "estado": {
+          "pendiente": "Pendiente",
+          "obligatoria": "Obligatoria",
+          "opcional": "Opcional"
+        },
+        "pregunta": "Pregunta",
+        "respuesta": "Lo que contestó Sherpa",
+        "sinRespuesta": "(sin respuesta)",
+        "acciones": "Acciones que intentó",
+        "sinAcciones": "Ninguna",
+        "accionFallo": "falló",
+        "capacidades": "Capacidades de quien preguntó",
+        "comentario": "Comentario",
+        "pantalla": "Pantalla",
+        "borrar": "Borrar",
+        "borrarConfirmar": "¿Borrar esta valoración?",
+        "borrada": "Valoración borrada.",
+        "anteriores": "Más recientes",
+        "siguientes": "Más antiguas",
+        "pagina": "Página {{page}} de {{total}}"
       }
     },
     "tarifas": {
@@ -4856,7 +4893,16 @@
         "motivo": " (motivo: {{motivo}})",
         "quitar": "(quitar)"
       },
-      "deleteChat": "Borrar conversación"
+      "deleteChat": "Borrar conversación",
+      "valorar": {
+        "titulo": "Valora esta respuesta",
+        "estrellas_one": "{{count}} estrella",
+        "estrellas_other": "{{count}} estrellas",
+        "comentario": "¿Qué no funcionó como esperabas? (opcional)",
+        "enviar": "Enviar",
+        "gracias": "Gracias por valorarla.",
+        "error": "No se ha podido guardar la valoración."
+      }
     },
     "scan": {
       "title": "Escanear código",

@@ -4147,7 +4147,8 @@
       "tabsAria": "AI and connector sections",
       "tab": {
         "ia": "Artificial intelligence",
-        "conectores": "Connectors"
+        "conectores": "Connectors",
+        "valoraciones": "Ratings"
       },
       "conectoresVacia": "Connections with other systems (ERP, email, storage…) will go here. None are available yet.",
       "ranurasCol": {
@@ -4175,6 +4176,42 @@
         "borrarEnUso_one": "The {{ranuras}} slot uses it: once deleted, that slot goes back to the server’s provider ({{modelo}}).",
         "borrarEnUso_other": "The {{ranuras}} slots use it: once deleted, they go back to the server’s provider ({{modelo}}).",
         "elegirModelo": "Choose a model"
+      },
+      "valoraciones": {
+        "intro": "Sherpa answers that someone has rated, and what Sherpa noted it could not do, from the last 90 days. Who asked is not stored: only their capabilities.",
+        "vacio": "No ratings match these filters.",
+        "errorCarga": "The ratings could not be loaded.",
+        "error": "This could not be completed. Please try again.",
+        "filtros": "Rating filters",
+        "todas": "All",
+        "estrellas": "Stars",
+        "area": "Area",
+        "clasificacion": "Classification",
+        "sinArea": "No area",
+        "origen": {
+          "persona": "Rated by the person who asked",
+          "sherpa": "Noted by Sherpa: it could not do it"
+        },
+        "estado": {
+          "pendiente": "Pending",
+          "obligatoria": "Must have",
+          "opcional": "Nice to have"
+        },
+        "pregunta": "Question",
+        "respuesta": "What Sherpa answered",
+        "sinRespuesta": "(no answer)",
+        "acciones": "Actions it tried",
+        "sinAcciones": "None",
+        "accionFallo": "failed",
+        "capacidades": "Capabilities of the person who asked",
+        "comentario": "Comment",
+        "pantalla": "Screen",
+        "borrar": "Delete",
+        "borrarConfirmar": "Delete this rating?",
+        "borrada": "Rating deleted.",
+        "anteriores": "Newer",
+        "siguientes": "Older",
+        "pagina": "Page {{page}} of {{total}}"
       }
     },
     "tarifas": {
@@ -4856,7 +4893,16 @@
         "motivo": " (reason: {{motivo}})",
         "quitar": "(remove)"
       },
-      "deleteChat": "Delete conversation"
+      "deleteChat": "Delete conversation",
+      "valorar": {
+        "titulo": "Rate this answer",
+        "estrellas_one": "{{count}} star",
+        "estrellas_other": "{{count}} stars",
+        "comentario": "What didn't work as you expected? (optional)",
+        "enviar": "Send",
+        "gracias": "Thanks for your rating.",
+        "error": "Your rating could not be saved."
+      }
     },
     "scan": {
       "title": "Scan code",

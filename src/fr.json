@@ -3979,6 +3979,45 @@
         "desc": "Ce que l’assistant doit savoir de votre façon de travailler, en langage simple : vocabulaire, habitudes, délais. S’ajoute au guide que l’assistant lit toujours.",
         "placeholder": "Par exemple : ici, nous appelons « centres » les sites ; les toitures sont inspectées tous les six mois.",
         "ayuda": "Il reste {{n}} caractères."
+      },
+      "tab": {
+        "valoraciones": "Évaluations"
+      },
+      "valoraciones": {
+        "intro": "Les réponses de Sherpa évaluées par quelqu'un et ce que Sherpa a noté ne pas savoir faire, sur les 90 derniers jours. L'auteur de la question n'est pas enregistré : seulement ses capacités.",
+        "vacio": "Aucune évaluation ne correspond à ces filtres.",
+        "errorCarga": "Les évaluations n'ont pas pu être chargées.",
+        "error": "L'opération n'a pas pu aboutir. Réessayez.",
+        "filtros": "Filtres des évaluations",
+        "todas": "Toutes",
+        "estrellas": "Étoiles",
+        "area": "Domaine",
+        "clasificacion": "Classement",
+        "sinArea": "Sans domaine",
+        "origen": {
+          "persona": "Évaluée par l'auteur de la question",
+          "sherpa": "Notée par Sherpa : il ne savait pas le faire"
+        },
+        "estado": {
+          "pendiente": "En attente",
+          "obligatoria": "Indispensable",
+          "opcional": "Facultative"
+        },
+        "pregunta": "Question",
+        "respuesta": "Réponse de Sherpa",
+        "sinRespuesta": "(pas de réponse)",
+        "acciones": "Actions tentées",
+        "sinAcciones": "Aucune",
+        "accionFallo": "échec",
+        "capacidades": "Capacités de l'auteur de la question",
+        "comentario": "Commentaire",
+        "pantalla": "Écran",
+        "borrar": "Supprimer",
+        "borrarConfirmar": "Supprimer cette évaluation ?",
+        "borrada": "Évaluation supprimée.",
+        "anteriores": "Plus récentes",
+        "siguientes": "Plus anciennes",
+        "pagina": "Page {{page}} sur {{total}}"
       }
     },
     "tarifas": {
@@ -4398,7 +4437,16 @@
         "motivo": " (motif : {{motivo}})",
         "quitar": "(supprimer)"
       },
-      "deleteChat": "Supprimer la conversation"
+      "deleteChat": "Supprimer la conversation",
+      "valorar": {
+        "titulo": "Évaluez cette réponse",
+        "estrellas_one": "{{count}} étoile",
+        "estrellas_other": "{{count}} étoiles",
+        "comentario": "Qu'est-ce qui n'a pas fonctionné comme prévu ? (facultatif)",
+        "enviar": "Envoyer",
+        "gracias": "Merci pour votre évaluation.",
+        "error": "L'évaluation n'a pas pu être enregistrée."
+      }
     },
     "scan": {
       "title": "Scanner un code",
