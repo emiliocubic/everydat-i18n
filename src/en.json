@@ -10148,6 +10148,29 @@
         "sinCubrir": "Uncovered",
         "alerta": "Alert",
         "falta": "Short of staff"
+      },
+      "gesto": {
+        "soltar": "Drop: {{persona}} → {{ref}} on {{dia}}",
+        "soltarMover": "Drop: {{persona}} moves from {{origen}} to {{ref}} on {{dia}}",
+        "tirador": "{{ref}} · {{ini}} → {{fin}} · release to apply",
+        "asignar": "Assign {{ref}}: paint days on its row to extend the bar, or on a person's row to assign them · Esc to release",
+        "asignarSinBarra": "{{ref}} is not planned yet: click a day on its row or use Fill",
+        "asignarTitulo": "· Assign",
+        "asignarHint": "paint days on the project row (extends the bar) or on a person's row (assigns them) · Esc to release"
+      },
+      "hab": {
+        "nombre": {
+          "sabado": "Saturdays",
+          "domingo": "Sundays",
+          "local": "Local holidays",
+          "nacional": "National holidays"
+        },
+        "puesto": "{{que}} enabled, for this session only",
+        "plazas_one": " · {{count}} new uncovered slot in already planned projects: Fill covers it",
+        "plazas_other": " · {{count}} new uncovered slots in already planned projects: Fill covers them",
+        "quitado": "{{que}} are non-working days again",
+        "siguen_one": " · the day that already has work keeps counting: assigned work only moves by hand",
+        "siguen_other": " · the {{count}} days that already have work keep counting: assigned work only moves by hand"
       }
     }
   },

@@ -10148,6 +10148,29 @@
         "sinCubrir": "Sin cubrir",
         "alerta": "Alerta",
         "falta": "Falta personal"
+      },
+      "gesto": {
+        "soltar": "Soltar: {{persona}} → {{ref}} el {{dia}}",
+        "soltarMover": "Soltar: {{persona}} pasa de {{origen}} a {{ref}} el {{dia}}",
+        "tirador": "{{ref}} · {{ini}} → {{fin}} · suelta para aplicar",
+        "asignar": "Asignar {{ref}}: pinta días en su fila para alargar la barra, o en la fila de una persona para imputarla · Esc para soltar",
+        "asignarSinBarra": "{{ref}} aún no está planificado: haz clic en un día de su fila o usa Volcar",
+        "asignarTitulo": "· Asignar",
+        "asignarHint": "pinta días en la fila del proyecto (alarga la barra) o en la de una persona (la imputa) · Esc para soltar"
+      },
+      "hab": {
+        "nombre": {
+          "sabado": "Sábados",
+          "domingo": "Domingos",
+          "local": "Festivos locales",
+          "nacional": "Festivos nacionales"
+        },
+        "puesto": "{{que}} habilitados, solo en esta sesión",
+        "plazas_one": " · {{count}} plaza nueva sin cubrir en proyectos ya planificados: Volcar la cubre",
+        "plazas_other": " · {{count}} plazas nuevas sin cubrir en proyectos ya planificados: Volcar las cubre",
+        "quitado": "{{que}} vuelven a ser no laborables",
+        "siguen_one": " · el día que ya tiene jornadas sigue contando: lo asignado solo se mueve a mano",
+        "siguen_other": " · los {{count}} días que ya tienen jornadas siguen contando: lo asignado solo se mueve a mano"
       }
     }
   },
