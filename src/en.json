@@ -10047,6 +10047,108 @@
       "barraTitulo": "{{ref}} · {{ini}} → {{fin}}",
       "antes": "(was {{ini}} → {{fin}})",
       "nueva": "new section"
+    },
+    "porproyecto": {
+      "estado": {
+        "inicial": "Without teams · drag a free chip from People onto a project to assign it"
+      },
+      "nav": {
+        "hoy": "Today",
+        "hoyTitulo": "Go to today (with four days before it in view)"
+      },
+      "foco": {
+        "quitar": "Remove “show only {{ref}}”"
+      },
+      "pool": {
+        "vacio": "No project matches these filters."
+      },
+      "tarjeta": {
+        "editar": "Edit {{ref}}",
+        "personasDia": "People per day",
+        "menos": "One person less per day",
+        "mas": "One person more per day",
+        "sinPlan": "Not planned: click a day on its row, or Fill, to place it",
+        "sinCubrir_one": "{{count}} place uncovered in its dates",
+        "sinCubrir_other": "{{count}} places uncovered in its dates",
+        "cubierta": "Staffing covered on all its dates",
+        "asignarTitulo": "Assign: paint days on the project's row or on a person's",
+        "volcarTitulo": "Fill: covers the staffing with free people and extends it if hours are missing"
+      },
+      "sec": {
+        "ocupacion": "Occupancy",
+        "ocupacionSub": "free people each day · in red, places that cannot be covered",
+        "proyectos": "Projects ({{n}})",
+        "ninguno": "No project in the dates on view."
+      },
+      "ocupacion": {
+        "libres": "Free",
+        "de": "of {{n}} people, without absences",
+        "tooltip": "{{dia}} · available {{d}} · busy {{o}} · staffing requested {{p}}",
+        "sinCubrir_one": " · {{count}} place uncovered",
+        "sinCubrir_other": " · {{count}} places uncovered"
+      },
+      "alerta": {
+        "item": "{{ref}}: {{persona}} ({{motivo}})",
+        "ausencia": "Absence",
+        "baja": "No longer with the company",
+        "parado": "Project on hold"
+      },
+      "motivoIni": {
+        "baja": "S",
+        "vacaciones": "H",
+        "permiso": "L"
+      },
+      "fila": {
+        "desplegar": "Show the people on {{ref}}",
+        "plegar": "Hide the people on {{ref}}",
+        "dotacion_one": "Staffing: {{count}} person per day",
+        "dotacion_other": "Staffing: {{count}} people per day",
+        "horasOk": "Hours complete",
+        "faltan": "{{h}} h short",
+        "sobran": "{{h}} h over",
+        "sinPlan": "no plan",
+        "previsto": "{{ref}} · estimated",
+        "volcarDesde": "Fill {{ref}} from {{dia}}",
+        "alertaBarra": "{{dia}} · {{lista}} · expand the project to see it",
+        "tiradorIni": "Start of {{ref}}: drag or use the arrow keys to move {{dia}}",
+        "tiradorFin": "End of {{ref}}: drag or use the arrow keys to move {{dia}}",
+        "cobertura": "{{ref}} {{dia}} · {{n}}/{{dot}} people",
+        "coberturaHu_one": " · {{count}} uncovered",
+        "coberturaHu_other": " · {{count}} uncovered",
+        "coberturaAl_one": " · {{count}} on alert",
+        "coberturaAl_other": " · {{count}} on alert"
+      },
+      "cuadrilla": {
+        "ficha": "{{persona}} · {{ref}} {{dia}} · drag it to another project to move it · click: back to the pool",
+        "fichaAlerta": " · {{motivo}} (alert, does not add hours)",
+        "quitar": "Remove {{persona}} from {{ref}} on {{dia}}",
+        "sinCubrir": "Uncovered",
+        "sinCubrirTitulo_one": "{{count}} place uncovered on {{dia}}",
+        "sinCubrirTitulo_other": "{{count}} places uncovered on {{dia}}"
+      },
+      "pila": {
+        "libres": "{{n}} free",
+        "libresTitulo": "Free days in the loaded dates",
+        "libre": "{{persona}} free on {{dia}} · drag it onto a project",
+        "asignada": "{{persona}} · {{dia}} · assigned to {{ref}}",
+        "alerta": " · {{motivo}} (alert)",
+        "ausente": "{{persona}} · {{dia}} · {{motivo}}"
+      },
+      "split": {
+        "titulo": "Height of the people panel",
+        "aria": "Height of the people panel: drag or use the up and down arrow keys"
+      },
+      "desl": {
+        "aria": "Scroll dates: drag, or left and right arrows (one week), Page Up and Page Down (four)",
+        "hoy": "Today"
+      },
+      "leyenda": {
+        "libre": "Free",
+        "imputada": "Assigned (on the project)",
+        "sinCubrir": "Uncovered",
+        "alerta": "Alert",
+        "falta": "Short of staff"
+      }
     }
   },
   "conflictoEdicion": {

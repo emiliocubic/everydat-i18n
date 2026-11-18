@@ -10047,6 +10047,108 @@
       "barraTitulo": "{{ref}} · {{ini}} → {{fin}}",
       "antes": "(antes {{ini}} → {{fin}})",
       "nueva": "tramo nuevo"
+    },
+    "porproyecto": {
+      "estado": {
+        "inicial": "Sin equipos · arrastra una ficha libre de Personas a un proyecto para imputarla"
+      },
+      "nav": {
+        "hoy": "Hoy",
+        "hoyTitulo": "Ir a hoy (con cuatro días antes a la vista)"
+      },
+      "foco": {
+        "quitar": "Quitar «ver solo {{ref}}»"
+      },
+      "pool": {
+        "vacio": "Ningún proyecto con estos filtros."
+      },
+      "tarjeta": {
+        "editar": "Editar {{ref}}",
+        "personasDia": "Personas por día",
+        "menos": "Una persona menos por día",
+        "mas": "Una persona más por día",
+        "sinPlan": "Sin planificar: clic en un día de su fila, o Volcar, para colocarlo",
+        "sinCubrir_one": "{{count}} plaza sin cubrir en sus fechas",
+        "sinCubrir_other": "{{count}} plazas sin cubrir en sus fechas",
+        "cubierta": "Dotación cubierta en todas sus fechas",
+        "asignarTitulo": "Asignar: pinta días en la fila del proyecto o de una persona",
+        "volcarTitulo": "Volcar: cubre la dotación con personas libres y alarga si faltan horas"
+      },
+      "sec": {
+        "ocupacion": "Ocupación",
+        "ocupacionSub": "personas libres cada día · en rojo, plazas que no se pueden cubrir",
+        "proyectos": "Proyectos ({{n}})",
+        "ninguno": "Ningún proyecto en las fechas a la vista."
+      },
+      "ocupacion": {
+        "libres": "Libres",
+        "de": "de {{n}} personas, sin ausencias",
+        "tooltip": "{{dia}} · disponibles {{d}} · ocupadas {{o}} · dotación pedida {{p}}",
+        "sinCubrir_one": " · {{count}} plaza sin cubrir",
+        "sinCubrir_other": " · {{count}} plazas sin cubrir"
+      },
+      "alerta": {
+        "item": "{{ref}}: {{persona}} ({{motivo}})",
+        "ausencia": "Ausencia",
+        "baja": "Ya no está en la empresa",
+        "parado": "Proyecto parado"
+      },
+      "motivoIni": {
+        "baja": "B",
+        "vacaciones": "V",
+        "permiso": "P"
+      },
+      "fila": {
+        "desplegar": "Desplegar personas de {{ref}}",
+        "plegar": "Plegar personas de {{ref}}",
+        "dotacion_one": "Dotación: {{count}} persona por día",
+        "dotacion_other": "Dotación: {{count}} personas por día",
+        "horasOk": "Horas completas",
+        "faltan": "faltan {{h}} h",
+        "sobran": "sobran {{h}} h",
+        "sinPlan": "sin plan",
+        "previsto": "{{ref}} · previsto",
+        "volcarDesde": "Volcar {{ref}} desde el {{dia}}",
+        "alertaBarra": "{{dia}} · {{lista}} · despliega el proyecto para verlo",
+        "tiradorIni": "Inicio de {{ref}}: arrastra o usa las flechas para mover el {{dia}}",
+        "tiradorFin": "Fin de {{ref}}: arrastra o usa las flechas para mover el {{dia}}",
+        "cobertura": "{{ref}} {{dia}} · {{n}}/{{dot}} personas",
+        "coberturaHu_one": " · {{count}} sin cubrir",
+        "coberturaHu_other": " · {{count}} sin cubrir",
+        "coberturaAl_one": " · {{count}} en alerta",
+        "coberturaAl_other": " · {{count}} en alerta"
+      },
+      "cuadrilla": {
+        "ficha": "{{persona}} · {{ref}} {{dia}} · arrástrala a otro proyecto para cambiarla · clic: vuelve a la pila",
+        "fichaAlerta": " · {{motivo}} (alerta, no suma horas)",
+        "quitar": "Quitar a {{persona}} de {{ref}} el {{dia}}",
+        "sinCubrir": "Sin cubrir",
+        "sinCubrirTitulo_one": "{{count}} plaza sin cubrir el {{dia}}",
+        "sinCubrirTitulo_other": "{{count}} plazas sin cubrir el {{dia}}"
+      },
+      "pila": {
+        "libres": "{{n}} lib.",
+        "libresTitulo": "Días libres en las fechas cargadas",
+        "libre": "{{persona}} libre el {{dia}} · arrástrala a un proyecto",
+        "asignada": "{{persona}} · {{dia}} · asignada a {{ref}}",
+        "alerta": " · {{motivo}} (alerta)",
+        "ausente": "{{persona}} · {{dia}} · {{motivo}}"
+      },
+      "split": {
+        "titulo": "Altura del panel de personas",
+        "aria": "Altura del panel de personas: arrastra o usa las flechas arriba y abajo"
+      },
+      "desl": {
+        "aria": "Desplazar fechas: arrastra, o flechas izquierda y derecha (una semana), Re Pág y Av Pág (cuatro)",
+        "hoy": "Hoy"
+      },
+      "leyenda": {
+        "libre": "Libre",
+        "imputada": "Imputada (en el proyecto)",
+        "sinCubrir": "Sin cubrir",
+        "alerta": "Alerta",
+        "falta": "Falta personal"
+      }
     }
   },
   "conflictoEdicion": {
