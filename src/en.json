@@ -4686,6 +4686,7 @@
         "error": "I couldn't complete the action. Please try again.",
         "open": "Open",
         "ref": "the one created in step {{n}}",
+        "refCarpeta": "created in step {{n}}",
         "num": "no. {{id}}",
         "steps": {
           "crear_cliente": "Create the client “{{nombre}}”",
@@ -4740,7 +4741,16 @@
           "guardar_precios_revision_other": "Change the periodic inspection rate for {{count}} equipment types",
           "guardar_precios_revision_adicional_one": "Change the rate of the additional inspection “{{revision}}” for {{count}} equipment type",
           "guardar_precios_revision_adicional_other": "Change the rate of the additional inspection “{{revision}}” for {{count}} equipment types",
-          "guardar_otros_productos": "Change the other products ({{cambios}}), without deleting anything"
+          "guardar_otros_productos": "Change the other products ({{cambios}}), without deleting anything",
+          "crear_carpeta": "Create folder “{{nombre}}” at the root of site {{emplazamiento}}",
+          "crear_carpeta_dentro": "Create folder “{{nombre}}” inside folder {{padre}}",
+          "mover_carpeta": "Move folder {{carpeta}}, with its whole branch and its equipment, into folder {{padre}}",
+          "mover_carpeta_raiz": "Move folder {{carpeta}}, with its whole branch and its equipment, to the root of its site",
+          "trasladar_elementos_one": "Move {{count}} piece of equipment to folder {{carpeta}}",
+          "trasladar_elementos_other": "Move {{count}} pieces of equipment to folder {{carpeta}}",
+          "actualizar_contacto": "Change contact {{contacto}}: {{cambios}}",
+          "cambiar_cargo_contacto": "Set the position of contact {{contacto}} at client {{cliente}} to “{{cargo}}”",
+          "cambiar_cargo_contacto_quitar": "Remove the position of contact {{contacto}} at client {{cliente}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",

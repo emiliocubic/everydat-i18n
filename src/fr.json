@@ -4228,6 +4228,7 @@
         "error": "Je n'ai pas pu terminer l'action. Réessayez.",
         "open": "Ouvrir",
         "ref": "celui créé à l'étape {{n}}",
+        "refCarpeta": "créé à l'étape {{n}}",
         "num": "n° {{id}}",
         "steps": {
           "crear_cliente": "Créer le client « {{nombre}} »",
@@ -4282,7 +4283,16 @@
           "guardar_precios_revision_other": "Modifier le tarif de la vérification périodique de {{count}} types d’équipement",
           "guardar_precios_revision_adicional_one": "Modifier le tarif de la vérification supplémentaire « {{revision}} » de {{count}} type d’équipement",
           "guardar_precios_revision_adicional_other": "Modifier le tarif de la vérification supplémentaire « {{revision}} » de {{count}} types d’équipement",
-          "guardar_otros_productos": "Modifier les autres produits ({{cambios}}), sans rien supprimer"
+          "guardar_otros_productos": "Modifier les autres produits ({{cambios}}), sans rien supprimer",
+          "crear_carpeta": "Créer le dossier « {{nombre}} » à la racine du site {{emplazamiento}}",
+          "crear_carpeta_dentro": "Créer le dossier « {{nombre}} » dans le dossier {{padre}}",
+          "mover_carpeta": "Déplacer le dossier {{carpeta}}, avec toute sa branche et ses équipements, dans le dossier {{padre}}",
+          "mover_carpeta_raiz": "Déplacer le dossier {{carpeta}}, avec toute sa branche et ses équipements, à la racine de son site",
+          "trasladar_elementos_one": "Déplacer {{count}} équipement vers le dossier {{carpeta}}",
+          "trasladar_elementos_other": "Déplacer {{count}} équipements vers le dossier {{carpeta}}",
+          "actualizar_contacto": "Modifier le contact {{contacto}} : {{cambios}}",
+          "cambiar_cargo_contacto": "Attribuer au contact {{contacto}} le poste « {{cargo}} » chez le client {{cliente}}",
+          "cambiar_cargo_contacto_quitar": "Retirer le poste du contact {{contacto}} chez le client {{cliente}}"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",

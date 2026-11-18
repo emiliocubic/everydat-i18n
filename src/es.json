@@ -4686,6 +4686,7 @@
         "error": "No he podido completar la acción. Inténtalo de nuevo.",
         "open": "Abrir",
         "ref": "el creado en el paso {{n}}",
+        "refCarpeta": "que crea el paso {{n}}",
         "num": "n.º {{id}}",
         "steps": {
           "crear_cliente": "Crear el cliente «{{nombre}}»",
@@ -4740,7 +4741,16 @@
           "guardar_precios_revision_other": "Cambiar la tarifa de la revisión periódica de {{count}} tipos de equipo",
           "guardar_precios_revision_adicional_one": "Cambiar la tarifa de la revisión adicional «{{revision}}» de {{count}} tipo de equipo",
           "guardar_precios_revision_adicional_other": "Cambiar la tarifa de la revisión adicional «{{revision}}» de {{count}} tipos de equipo",
-          "guardar_otros_productos": "Cambiar los otros productos ({{cambios}}), sin borrar nada"
+          "guardar_otros_productos": "Cambiar los otros productos ({{cambios}}), sin borrar nada",
+          "crear_carpeta": "Crear la carpeta «{{nombre}}» en la raíz del emplazamiento {{emplazamiento}}",
+          "crear_carpeta_dentro": "Crear la carpeta «{{nombre}}» dentro de la carpeta {{padre}}",
+          "mover_carpeta": "Mover la carpeta {{carpeta}}, con toda su rama y sus equipos, dentro de la carpeta {{padre}}",
+          "mover_carpeta_raiz": "Mover la carpeta {{carpeta}}, con toda su rama y sus equipos, a la raíz de su emplazamiento",
+          "trasladar_elementos_one": "Pasar {{count}} equipo a la carpeta {{carpeta}}",
+          "trasladar_elementos_other": "Pasar {{count}} equipos a la carpeta {{carpeta}}",
+          "actualizar_contacto": "Modificar el contacto {{contacto}}: {{cambios}}",
+          "cambiar_cargo_contacto": "Poner al contacto {{contacto}} el cargo «{{cargo}}» en el cliente {{cliente}}",
+          "cambiar_cargo_contacto_quitar": "Quitar el cargo del contacto {{contacto}} en el cliente {{cliente}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
