@@ -4367,8 +4367,7 @@
           "cambiar_normativa_elemento_heredar": "Faire que l'équipement {{equipo}} respecte de nouveau les normes héritées, sans liste propre",
           "crear_grupo": "Créer le groupe de clients « {{nombre}} », de couleur {{color}}",
           "editar_grupo": "Modifier le groupe de clients {{grupo}} : {{cambios}}",
-          "instalaciones_contacto_one": "Rattacher le contact {{contacto}} à {{count}} seul site du client {{cliente}}",
-          "instalaciones_contacto_other": "Rattacher le contact {{contacto}} à seulement {{count}} sites du client {{cliente}}",
+          "instalaciones_contacto": "Modifier les sites du client {{cliente}} auxquels est rattaché le contact {{contacto}} ({{cambios}}) : les autres restent",
           "instalaciones_contacto_todas": "Rattacher le contact {{contacto}} à tous les sites du client {{cliente}}, y compris les futurs"
         },
         "persona": "C'est {{nombre}} ({{email}})",

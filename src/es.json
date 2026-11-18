@@ -4837,8 +4837,7 @@
           "cambiar_normativa_elemento_heredar": "Hacer que el equipo {{equipo}} vuelva a cumplir las normas que hereda, sin lista propia",
           "crear_grupo": "Crear el grupo de clientes «{{nombre}}», de color {{color}}",
           "editar_grupo": "Cambiar en el grupo de clientes {{grupo}}: {{cambios}}",
-          "instalaciones_contacto_one": "Hacer al contacto {{contacto}} solo de {{count}} instalación del cliente {{cliente}}",
-          "instalaciones_contacto_other": "Hacer al contacto {{contacto}} solo de {{count}} instalaciones del cliente {{cliente}}",
+          "instalaciones_contacto": "Cambiar de qué instalaciones del cliente {{cliente}} es el contacto {{contacto}} ({{cambios}}): las demás que tiene se quedan",
           "instalaciones_contacto_todas": "Hacer al contacto {{contacto}} de todas las instalaciones del cliente {{cliente}}, también de las que lleguen"
         },
         "persona": "Es {{nombre}} ({{email}})",

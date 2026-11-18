@@ -4837,8 +4837,7 @@
           "cambiar_normativa_elemento_heredar": "Make item {{equipo}} meet the standards it inherits again, without its own list",
           "crear_grupo": "Create the client group “{{nombre}}”, coloured {{color}}",
           "editar_grupo": "Change client group {{grupo}}: {{cambios}}",
-          "instalaciones_contacto_one": "Assign contact {{contacto}} to only {{count}} site of client {{cliente}}",
-          "instalaciones_contacto_other": "Assign contact {{contacto}} to only {{count}} sites of client {{cliente}}",
+          "instalaciones_contacto": "Change which sites of client {{cliente}} contact {{contacto}} belongs to ({{cambios}}): the others stay as they are",
           "instalaciones_contacto_todas": "Assign contact {{contacto}} to all sites of client {{cliente}}, including future ones"
         },
         "persona": "This is {{nombre}} ({{email}})",
