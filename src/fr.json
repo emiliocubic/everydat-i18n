@@ -4334,7 +4334,12 @@
           "cambiar_cargo_contacto_quitar": "Retirer le poste du contact {{contacto}} chez le client {{cliente}}",
           "editar_elemento": "Modifier l'équipement {{equipo}} : {{cambios}}",
           "cambiar_estado_elemento_retirar": "Réformer l'équipement {{equipo}}{{motivo}} : il reste visible avec son historique et peut être réactivé",
-          "cambiar_estado_elemento_reactivar": "Réactiver l'équipement {{equipo}} : il revient en service"
+          "cambiar_estado_elemento_reactivar": "Réactiver l'équipement {{equipo}} : il revient en service",
+          "crear_zona_demanda": "Transformer le dossier {{carpeta}} du site {{emplazamiento}} en zone vérifiée à la demande : sans date de visite, chaque équipement expire de son côté",
+          "crear_zona_fechas": "Transformer le dossier {{carpeta}} du site {{emplazamiento}} en zone vérifiée par dates : avec sa branche, elle aura sa propre date de vérification",
+          "cambiar_modo_zona_demanda": "Faire vérifier la zone {{zona}} du site {{emplazamiento}} à la demande : elle perd sa date de vérification",
+          "cambiar_modo_zona_fechas": "Faire vérifier la zone {{zona}} du site {{emplazamiento}} par dates",
+          "cambiar_modo_zona_heredar": "Faire que la zone {{zona}} du site {{emplazamiento}} hérite de nouveau le mode de vérification de sa zone supérieure ou du site"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",

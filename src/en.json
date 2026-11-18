@@ -4790,7 +4790,12 @@
           "cambiar_cargo_contacto_quitar": "Remove the position of contact {{contacto}} at client {{cliente}}",
           "editar_elemento": "Change item {{equipo}}: {{cambios}}",
           "cambiar_estado_elemento_retirar": "Retire item {{equipo}} from service{{motivo}}: it stays visible with its history and can be reactivated",
-          "cambiar_estado_elemento_reactivar": "Reactivate item {{equipo}}: it returns to service"
+          "cambiar_estado_elemento_reactivar": "Reactivate item {{equipo}}: it returns to service",
+          "crear_zona_demanda": "Turn folder {{carpeta}} of site {{emplazamiento}} into a zone inspected on demand: no visit date, each item expires on its own",
+          "crear_zona_fechas": "Turn folder {{carpeta}} of site {{emplazamiento}} into a zone inspected by dates: with its branch, it will have its own inspection date",
+          "cambiar_modo_zona_demanda": "Make zone {{zona}} of site {{emplazamiento}} be inspected on demand: it loses its inspection date",
+          "cambiar_modo_zona_fechas": "Make zone {{zona}} of site {{emplazamiento}} be inspected by dates",
+          "cambiar_modo_zona_heredar": "Make zone {{zona}} of site {{emplazamiento}} inherit the inspection mode of its parent zone or of the site again"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",

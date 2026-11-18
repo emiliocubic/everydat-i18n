@@ -4790,7 +4790,12 @@
           "cambiar_cargo_contacto_quitar": "Quitar el cargo del contacto {{contacto}} en el cliente {{cliente}}",
           "editar_elemento": "Modificar el equipo {{equipo}}: {{cambios}}",
           "cambiar_estado_elemento_retirar": "Retirar del servicio el equipo {{equipo}}{{motivo}}: sigue a la vista con su historial y se puede reactivar",
-          "cambiar_estado_elemento_reactivar": "Reactivar el equipo {{equipo}}: vuelve al servicio"
+          "cambiar_estado_elemento_reactivar": "Reactivar el equipo {{equipo}}: vuelve al servicio",
+          "crear_zona_demanda": "Convertir en zona la carpeta {{carpeta}} del emplazamiento {{emplazamiento}}, que se revisará a demanda: sin fecha de visita, cada equipo vence por su cuenta",
+          "crear_zona_fechas": "Convertir en zona la carpeta {{carpeta}} del emplazamiento {{emplazamiento}}, que se revisará por fechas: con su rama, tendrá fecha de revisión propia",
+          "cambiar_modo_zona_demanda": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} se revise a demanda: pierde su fecha de revisión",
+          "cambiar_modo_zona_fechas": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} se revise por fechas",
+          "cambiar_modo_zona_heredar": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} vuelva a heredar el modo de revisión de su zona superior o del emplazamiento"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
