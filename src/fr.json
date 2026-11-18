@@ -4345,7 +4345,8 @@
           "crear_conjunto_sinNombre_one": "Regrouper {{count}} équipement dans un ensemble sans nom : il reste dans son dossier, sans changement",
           "crear_conjunto_sinNombre_other": "Regrouper {{count}} équipements dans un ensemble sans nom : ils restent dans leur dossier, sans changement",
           "editar_conjunto": "Modifier l'ensemble {{conjunto}} : {{cambios}}",
-          "desvincular_de_conjunto": "Retirer l'équipement {{equipo}} de l'ensemble {{conjunto}} : il reste seul dans son dossier, rien n'est supprimé"
+          "desvincular_de_conjunto": "Retirer l'équipement {{equipo}} de l'ensemble {{conjunto}} : il reste seul dans son dossier, rien n'est supprimé",
+          "guardar_componentes": "Modifier les composants du système {{equipo}} ({{cambios}}) ; le reste ne change pas"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4446,7 +4447,15 @@
           }
         },
         "motivo": " (motif : {{motivo}})",
-        "quitar": "(supprimer)"
+        "quitar": "(supprimer)",
+        "componentes": {
+          "pieza_one": "pièce {{pieza}} : {{count}} unité",
+          "pieza_other": "pièce {{pieza}} : {{count}} unités",
+          "pieza_quitar": "pièce {{pieza}} : la retirer",
+          "hueco": "emplacement {{hueco}} : {{cambios}}",
+          "poner": "placer {{lista}}",
+          "quitar": "retirer {{lista}}"
+        }
       },
       "deleteChat": "Supprimer la conversation",
       "valorar": {

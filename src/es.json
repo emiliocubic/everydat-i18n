@@ -4801,7 +4801,8 @@
           "crear_conjunto_sinNombre_one": "Agrupar {{count}} equipo en un conjunto sin nombre: sigue en su carpeta, sin cambiar",
           "crear_conjunto_sinNombre_other": "Agrupar {{count}} equipos en un conjunto sin nombre: siguen en su carpeta, sin cambiar",
           "editar_conjunto": "Modificar el conjunto {{conjunto}}: {{cambios}}",
-          "desvincular_de_conjunto": "Sacar el equipo {{equipo}} del conjunto {{conjunto}}: queda suelto en su carpeta, sin borrar nada"
+          "desvincular_de_conjunto": "Sacar el equipo {{equipo}} del conjunto {{conjunto}}: queda suelto en su carpeta, sin borrar nada",
+          "guardar_componentes": "Cambiar los componentes del sistema {{equipo}} ({{cambios}}); lo demás se queda como está"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4902,7 +4903,15 @@
           }
         },
         "motivo": " (motivo: {{motivo}})",
-        "quitar": "(quitar)"
+        "quitar": "(quitar)",
+        "componentes": {
+          "pieza_one": "pieza {{pieza}}: {{count}} unidad",
+          "pieza_other": "pieza {{pieza}}: {{count}} unidades",
+          "pieza_quitar": "pieza {{pieza}}: quitarla",
+          "hueco": "hueco {{hueco}}: {{cambios}}",
+          "poner": "poner {{lista}}",
+          "quitar": "quitar {{lista}}"
+        }
       },
       "deleteChat": "Borrar conversación",
       "valorar": {

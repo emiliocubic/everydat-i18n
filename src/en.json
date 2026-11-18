@@ -4801,7 +4801,8 @@
           "crear_conjunto_sinNombre_one": "Group {{count}} item into an unnamed set: it stays in its folder, unchanged",
           "crear_conjunto_sinNombre_other": "Group {{count}} items into an unnamed set: they stay in their folder, unchanged",
           "editar_conjunto": "Change set {{conjunto}}: {{cambios}}",
-          "desvincular_de_conjunto": "Take item {{equipo}} out of set {{conjunto}}: it stays loose in its folder, nothing is deleted"
+          "desvincular_de_conjunto": "Take item {{equipo}} out of set {{conjunto}}: it stays loose in its folder, nothing is deleted",
+          "guardar_componentes": "Change the components of system {{equipo}} ({{cambios}}); everything else stays as it is"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4902,7 +4903,15 @@
           }
         },
         "motivo": " (reason: {{motivo}})",
-        "quitar": "(remove)"
+        "quitar": "(remove)",
+        "componentes": {
+          "pieza_one": "part {{pieza}}: {{count}} unit",
+          "pieza_other": "part {{pieza}}: {{count}} units",
+          "pieza_quitar": "part {{pieza}}: remove it",
+          "hueco": "slot {{hueco}}: {{cambios}}",
+          "poner": "put {{lista}}",
+          "quitar": "remove {{lista}}"
+        }
       },
       "deleteChat": "Delete conversation",
       "valorar": {
