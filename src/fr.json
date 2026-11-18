@@ -4353,7 +4353,12 @@
           "ordenar_carpetas_one": "Placer le dossier {{lista}} {{donde}} parmi ses voisins",
           "ordenar_carpetas_other": "Placer les dossiers {{lista}}, dans cet ordre, {{donde}} parmi leurs voisins",
           "ordenar_equipos_one": "Placer {{count}} équipement du dossier {{carpeta}} {{donde}} : les autres gardent leur ordre et aucun ne quitte le dossier",
-          "ordenar_equipos_other": "Ordonner {{count}} équipements du dossier {{carpeta}}, dans l'ordre indiqué, {{donde}} : les autres gardent leur ordre et aucun ne quitte le dossier"
+          "ordenar_equipos_other": "Ordonner {{count}} équipements du dossier {{carpeta}}, dans l'ordre indiqué, {{donde}} : les autres gardent leur ordre et aucun ne quitte le dossier",
+          "editar_actuacion": "Corriger l'intervention {{actuacion}} : {{cambios}}",
+          "recuperar_actuacion": "Restaurer l'intervention {{actuacion}} depuis la corbeille : elle revient avec ses documents et son effet sur l'équipement",
+          "recuperar_revision": "Restaurer la vérification {{revision}} depuis la corbeille : l'équipement en tient compte de nouveau",
+          "cambiar_normativa_elemento": "Modifier les normes que respecte l'équipement {{equipo}} ({{cambios}}) : il a désormais sa propre liste, et les autres normes qu'il respecte restent",
+          "cambiar_normativa_elemento_heredar": "Faire que l'équipement {{equipo}} respecte de nouveau les normes héritées, sans liste propre"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4411,7 +4416,9 @@
             "aviso_fabricante": "avis du fabricant"
           },
           "noApto_one": "il devient non conforme",
-          "noApto_other": "ils deviennent non conformes"
+          "noApto_other": "ils deviennent non conformes",
+          "hechaPor": "faite par la personne {{persona}}",
+          "hechaPorTexto": "faite par « {{nombre}} »"
         },
         "tarifa": {
           "revision": "Vérification « {{nombre}} » :",
@@ -4467,6 +4474,10 @@
           "principio": "au début",
           "final": "à la fin",
           "posicion": "à partir de la position {{n}}"
+        },
+        "normativa": {
+          "anadir": "ajouter {{lista}}",
+          "quitar": "retirer {{lista}}"
         }
       },
       "deleteChat": "Supprimer la conversation",

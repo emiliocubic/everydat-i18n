@@ -4809,7 +4809,12 @@
           "ordenar_carpetas_one": "Poner la carpeta {{lista}} {{donde}} entre sus hermanas",
           "ordenar_carpetas_other": "Poner las carpetas {{lista}}, en ese orden, {{donde}} entre sus hermanas",
           "ordenar_equipos_one": "Poner {{count}} equipo de la carpeta {{carpeta}} {{donde}}: los demás conservan su orden y ninguno sale de la carpeta",
-          "ordenar_equipos_other": "Ordenar {{count}} equipos de la carpeta {{carpeta}}, en el orden dicho, {{donde}}: los demás conservan su orden y ninguno sale de la carpeta"
+          "ordenar_equipos_other": "Ordenar {{count}} equipos de la carpeta {{carpeta}}, en el orden dicho, {{donde}}: los demás conservan su orden y ninguno sale de la carpeta",
+          "editar_actuacion": "Corregir la actuación {{actuacion}}: {{cambios}}",
+          "recuperar_actuacion": "Sacar de la papelera la actuación {{actuacion}}: vuelve con sus documentos y con su efecto en el equipo",
+          "recuperar_revision": "Sacar de la papelera la revisión {{revision}}: el equipo vuelve a contar con ella",
+          "cambiar_normativa_elemento": "Cambiar las normas que cumple el equipo {{equipo}} ({{cambios}}): desde ahora lleva lista propia, y las demás que cumple se quedan",
+          "cambiar_normativa_elemento_heredar": "Hacer que el equipo {{equipo}} vuelva a cumplir las normas que hereda, sin lista propia"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4867,7 +4872,9 @@
             "aviso_fabricante": "aviso del fabricante"
           },
           "noApto_one": "queda no apto",
-          "noApto_other": "quedan no aptos"
+          "noApto_other": "quedan no aptos",
+          "hechaPor": "la hizo la persona {{persona}}",
+          "hechaPorTexto": "la hizo «{{nombre}}»"
         },
         "tarifa": {
           "revision": "Revisión «{{nombre}}»:",
@@ -4923,6 +4930,10 @@
           "principio": "al principio",
           "final": "al final",
           "posicion": "desde la posición {{n}}"
+        },
+        "normativa": {
+          "anadir": "añadir {{lista}}",
+          "quitar": "quitar {{lista}}"
         }
       },
       "deleteChat": "Borrar conversación",

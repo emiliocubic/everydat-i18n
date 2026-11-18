@@ -4809,7 +4809,12 @@
           "ordenar_carpetas_one": "Put folder {{lista}} {{donde}} among its siblings",
           "ordenar_carpetas_other": "Put folders {{lista}}, in that order, {{donde}} among their siblings",
           "ordenar_equipos_one": "Put {{count}} item of folder {{carpeta}} {{donde}}: the rest keep their order and none leaves the folder",
-          "ordenar_equipos_other": "Sort {{count}} items of folder {{carpeta}}, in the order given, {{donde}}: the rest keep their order and none leaves the folder"
+          "ordenar_equipos_other": "Sort {{count}} items of folder {{carpeta}}, in the order given, {{donde}}: the rest keep their order and none leaves the folder",
+          "editar_actuacion": "Correct action {{actuacion}}: {{cambios}}",
+          "recuperar_actuacion": "Restore action {{actuacion}} from the bin: it comes back with its documents and its effect on the item",
+          "recuperar_revision": "Restore inspection {{revision}} from the bin: the item counts it again",
+          "cambiar_normativa_elemento": "Change the standards item {{equipo}} meets ({{cambios}}): from now on it has its own list, and the other standards it meets stay",
+          "cambiar_normativa_elemento_heredar": "Make item {{equipo}} meet the standards it inherits again, without its own list"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4867,7 +4872,9 @@
             "aviso_fabricante": "manufacturer notice"
           },
           "noApto_one": "it becomes unfit",
-          "noApto_other": "they become unfit"
+          "noApto_other": "they become unfit",
+          "hechaPor": "done by person {{persona}}",
+          "hechaPorTexto": "done by «{{nombre}}»"
         },
         "tarifa": {
           "revision": "Inspection “{{nombre}}”:",
@@ -4923,6 +4930,10 @@
           "principio": "at the beginning",
           "final": "at the end",
           "posicion": "from position {{n}}"
+        },
+        "normativa": {
+          "anadir": "add {{lista}}",
+          "quitar": "remove {{lista}}"
         }
       },
       "deleteChat": "Delete conversation",
