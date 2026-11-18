@@ -4834,7 +4834,12 @@
           "recuperar_actuacion": "Restore action {{actuacion}} from the bin: it comes back with its documents and its effect on the item",
           "recuperar_revision": "Restore inspection {{revision}} from the bin: the item counts it again",
           "cambiar_normativa_elemento": "Change the standards item {{equipo}} meets ({{cambios}}): from now on it has its own list, and the other standards it meets stay",
-          "cambiar_normativa_elemento_heredar": "Make item {{equipo}} meet the standards it inherits again, without its own list"
+          "cambiar_normativa_elemento_heredar": "Make item {{equipo}} meet the standards it inherits again, without its own list",
+          "crear_grupo": "Create the client group “{{nombre}}”, coloured {{color}}",
+          "editar_grupo": "Change client group {{grupo}}: {{cambios}}",
+          "instalaciones_contacto_one": "Assign contact {{contacto}} to only {{count}} site of client {{cliente}}",
+          "instalaciones_contacto_other": "Assign contact {{contacto}} to only {{count}} sites of client {{cliente}}",
+          "instalaciones_contacto_todas": "Assign contact {{contacto}} to all sites of client {{cliente}}, including future ones"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4954,6 +4959,30 @@
         "normativa": {
           "anadir": "add {{lista}}",
           "quitar": "remove {{lista}}"
+        },
+        "grupo": {
+          "nombre": "name {{valor}}",
+          "color": "colour {{color}}",
+          "descripcion": "description {{valor}}",
+          "colores": {
+            "azul": "blue",
+            "turquesa": "turquoise",
+            "verde": "green",
+            "esmeralda": "emerald",
+            "amarillo": "yellow",
+            "naranja": "orange",
+            "rojo": "red",
+            "carmesi": "crimson",
+            "rosa": "pink",
+            "violeta": "violet",
+            "indigo": "indigo",
+            "gris": "grey"
+          }
+        },
+        "instalaciones": {
+          "linea": "Sites: {{antes}} → {{despues}}",
+          "todas": "all",
+          "ninguna": "none"
         }
       },
       "deleteChat": "Delete conversation",

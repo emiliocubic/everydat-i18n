@@ -4834,7 +4834,12 @@
           "recuperar_actuacion": "Sacar de la papelera la actuación {{actuacion}}: vuelve con sus documentos y con su efecto en el equipo",
           "recuperar_revision": "Sacar de la papelera la revisión {{revision}}: el equipo vuelve a contar con ella",
           "cambiar_normativa_elemento": "Cambiar las normas que cumple el equipo {{equipo}} ({{cambios}}): desde ahora lleva lista propia, y las demás que cumple se quedan",
-          "cambiar_normativa_elemento_heredar": "Hacer que el equipo {{equipo}} vuelva a cumplir las normas que hereda, sin lista propia"
+          "cambiar_normativa_elemento_heredar": "Hacer que el equipo {{equipo}} vuelva a cumplir las normas que hereda, sin lista propia",
+          "crear_grupo": "Crear el grupo de clientes «{{nombre}}», de color {{color}}",
+          "editar_grupo": "Cambiar en el grupo de clientes {{grupo}}: {{cambios}}",
+          "instalaciones_contacto_one": "Hacer al contacto {{contacto}} solo de {{count}} instalación del cliente {{cliente}}",
+          "instalaciones_contacto_other": "Hacer al contacto {{contacto}} solo de {{count}} instalaciones del cliente {{cliente}}",
+          "instalaciones_contacto_todas": "Hacer al contacto {{contacto}} de todas las instalaciones del cliente {{cliente}}, también de las que lleguen"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4954,6 +4959,30 @@
         "normativa": {
           "anadir": "añadir {{lista}}",
           "quitar": "quitar {{lista}}"
+        },
+        "grupo": {
+          "nombre": "nombre {{valor}}",
+          "color": "color {{color}}",
+          "descripcion": "descripción {{valor}}",
+          "colores": {
+            "azul": "azul",
+            "turquesa": "turquesa",
+            "verde": "verde",
+            "esmeralda": "esmeralda",
+            "amarillo": "amarillo",
+            "naranja": "naranja",
+            "rojo": "rojo",
+            "carmesi": "carmesí",
+            "rosa": "rosa",
+            "violeta": "violeta",
+            "indigo": "índigo",
+            "gris": "gris"
+          }
+        },
+        "instalaciones": {
+          "linea": "Instalaciones: {{antes}} → {{despues}}",
+          "todas": "todas",
+          "ninguna": "ninguna"
         }
       },
       "deleteChat": "Borrar conversación",

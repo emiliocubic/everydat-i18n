@@ -4364,7 +4364,12 @@
           "recuperar_actuacion": "Restaurer l'intervention {{actuacion}} depuis la corbeille : elle revient avec ses documents et son effet sur l'équipement",
           "recuperar_revision": "Restaurer la vérification {{revision}} depuis la corbeille : l'équipement en tient compte de nouveau",
           "cambiar_normativa_elemento": "Modifier les normes que respecte l'équipement {{equipo}} ({{cambios}}) : il a désormais sa propre liste, et les autres normes qu'il respecte restent",
-          "cambiar_normativa_elemento_heredar": "Faire que l'équipement {{equipo}} respecte de nouveau les normes héritées, sans liste propre"
+          "cambiar_normativa_elemento_heredar": "Faire que l'équipement {{equipo}} respecte de nouveau les normes héritées, sans liste propre",
+          "crear_grupo": "Créer le groupe de clients « {{nombre}} », de couleur {{color}}",
+          "editar_grupo": "Modifier le groupe de clients {{grupo}} : {{cambios}}",
+          "instalaciones_contacto_one": "Rattacher le contact {{contacto}} à {{count}} seul site du client {{cliente}}",
+          "instalaciones_contacto_other": "Rattacher le contact {{contacto}} à seulement {{count}} sites du client {{cliente}}",
+          "instalaciones_contacto_todas": "Rattacher le contact {{contacto}} à tous les sites du client {{cliente}}, y compris les futurs"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4484,6 +4489,30 @@
         "normativa": {
           "anadir": "ajouter {{lista}}",
           "quitar": "retirer {{lista}}"
+        },
+        "grupo": {
+          "nombre": "nom {{valor}}",
+          "color": "couleur {{color}}",
+          "descripcion": "description {{valor}}",
+          "colores": {
+            "azul": "bleu",
+            "turquesa": "turquoise",
+            "verde": "vert",
+            "esmeralda": "émeraude",
+            "amarillo": "jaune",
+            "naranja": "orange",
+            "rojo": "rouge",
+            "carmesi": "cramoisi",
+            "rosa": "rose",
+            "violeta": "violet",
+            "indigo": "indigo",
+            "gris": "gris"
+          }
+        },
+        "instalaciones": {
+          "linea": "Sites : {{antes}} → {{despues}}",
+          "todas": "tous",
+          "ninguna": "aucun"
         }
       },
       "deleteChat": "Supprimer la conversation",
