@@ -4752,8 +4752,6 @@
           "crear_usuario": "Dar de alta al usuario interno {{nombre}} ({{email}})",
           "crear_colaborador": "Dar de alta al colaborador externo {{nombre}} ({{email}})",
           "crear_equipo": "Crear el equipo de trabajo «{{nombre}}»",
-          "asignar_usuarios_equipo_one": "Dejar el equipo {{equipo}} con {{count}} miembro",
-          "asignar_usuarios_equipo_other": "Dejar el equipo {{equipo}} con {{count}} miembros",
           "crear_contacto": "Dar de alta a la persona {{nombre}}",
           "vincular_contacto_cliente": "Hacer al contacto {{contacto}} contacto del cliente {{cliente}}",
           "vincular_contacto_cliente_cargo": "Hacer al contacto {{contacto}} contacto del cliente {{cliente}}, como «{{cargo}}»",
@@ -4838,7 +4836,11 @@
           "crear_grupo": "Crear el grupo de clientes «{{nombre}}», de color {{color}}",
           "editar_grupo": "Cambiar en el grupo de clientes {{grupo}}: {{cambios}}",
           "instalaciones_contacto": "Cambiar de qué instalaciones del cliente {{cliente}} es el contacto {{contacto}} ({{cambios}}): las demás que tiene se quedan",
-          "instalaciones_contacto_todas": "Hacer al contacto {{contacto}} de todas las instalaciones del cliente {{cliente}}, también de las que lleguen"
+          "instalaciones_contacto_todas": "Hacer al contacto {{contacto}} de todas las instalaciones del cliente {{cliente}}, también de las que lleguen",
+          "asignar_usuarios_equipo": "Cambiar los miembros del equipo {{equipo}} ({{cambios}}): los demás se quedan",
+          "editar_usuario": "Cambiar los datos del usuario {{persona}}: {{cambios}}",
+          "editar_equipo": "Cambiar el equipo de trabajo {{equipo}}: {{cambios}}",
+          "cambiar_mi_perfil": "Cambiar tu perfil: {{cambios}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4982,6 +4984,48 @@
           "linea": "Instalaciones: {{antes}} → {{despues}}",
           "todas": "todas",
           "ninguna": "ninguna"
+        },
+        "usuario": {
+          "dato": "{{campo}} {{valor}}",
+          "dato_first_name": "nombre",
+          "dato_last_name": "apellidos",
+          "dato_telefono": "teléfono",
+          "dato_sale_en_planificador": "sale en el planificador:",
+          "campos": {
+            "first_name": "Nombre",
+            "last_name": "Apellidos",
+            "telefono": "Teléfono",
+            "sale_en_planificador": "Sale en el planificador"
+          }
+        },
+        "equipo": {
+          "entran_one": "entra {{count}} persona",
+          "entran_other": "entran {{count}} personas",
+          "salen_one": "sale {{count}} persona",
+          "salen_other": "salen {{count}} personas",
+          "nadie": "nadie",
+          "campos": {
+            "nombre": "Nombre",
+            "color": "Color",
+            "descripcion": "Descripción",
+            "miembros": "Miembros"
+          }
+        },
+        "perfil": {
+          "idioma": "idioma {{idioma}}",
+          "sinIdioma": "sin idioma propio",
+          "resumenSi": "recibir cada día por correo el resumen de tus alertas",
+          "resumenNo": "dejar de recibir el resumen diario de tus alertas",
+          "idiomas": {
+            "es": "español",
+            "en": "inglés",
+            "fr": "francés"
+          },
+          "campos": {
+            "locale": "Idioma",
+            "resumen_alertas": "Resumen diario de alertas"
+          },
+          "quitarIdioma": "quitar tu idioma propio"
         }
       },
       "deleteChat": "Borrar conversación",

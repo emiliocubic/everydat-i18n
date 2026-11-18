@@ -4752,8 +4752,6 @@
           "crear_usuario": "Add internal user {{nombre}} ({{email}})",
           "crear_colaborador": "Add external collaborator {{nombre}} ({{email}})",
           "crear_equipo": "Create the work team “{{nombre}}”",
-          "asignar_usuarios_equipo_one": "Leave team {{equipo}} with {{count}} member",
-          "asignar_usuarios_equipo_other": "Leave team {{equipo}} with {{count}} members",
           "crear_contacto": "Add the person {{nombre}}",
           "vincular_contacto_cliente": "Make contact {{contacto}} a contact of client {{cliente}}",
           "vincular_contacto_cliente_cargo": "Make contact {{contacto}} a contact of client {{cliente}}, as “{{cargo}}”",
@@ -4838,7 +4836,11 @@
           "crear_grupo": "Create the client group “{{nombre}}”, coloured {{color}}",
           "editar_grupo": "Change client group {{grupo}}: {{cambios}}",
           "instalaciones_contacto": "Change which sites of client {{cliente}} contact {{contacto}} belongs to ({{cambios}}): the others stay as they are",
-          "instalaciones_contacto_todas": "Assign contact {{contacto}} to all sites of client {{cliente}}, including future ones"
+          "instalaciones_contacto_todas": "Assign contact {{contacto}} to all sites of client {{cliente}}, including future ones",
+          "asignar_usuarios_equipo": "Change the members of team {{equipo}} ({{cambios}}): everyone else stays",
+          "editar_usuario": "Change the details of user {{persona}}: {{cambios}}",
+          "editar_equipo": "Change work team {{equipo}}: {{cambios}}",
+          "cambiar_mi_perfil": "Change your profile: {{cambios}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4982,6 +4984,48 @@
           "linea": "Sites: {{antes}} → {{despues}}",
           "todas": "all",
           "ninguna": "none"
+        },
+        "usuario": {
+          "dato": "{{campo}} {{valor}}",
+          "dato_first_name": "first name",
+          "dato_last_name": "last name",
+          "dato_telefono": "phone",
+          "dato_sale_en_planificador": "shown in the planner:",
+          "campos": {
+            "first_name": "First name",
+            "last_name": "Last name",
+            "telefono": "Phone",
+            "sale_en_planificador": "Shown in the planner"
+          }
+        },
+        "equipo": {
+          "entran_one": "{{count}} person joins",
+          "entran_other": "{{count}} people join",
+          "salen_one": "{{count}} person leaves",
+          "salen_other": "{{count}} people leave",
+          "nadie": "nobody",
+          "campos": {
+            "nombre": "Name",
+            "color": "Colour",
+            "descripcion": "Description",
+            "miembros": "Members"
+          }
+        },
+        "perfil": {
+          "idioma": "language {{idioma}}",
+          "sinIdioma": "no language of your own",
+          "resumenSi": "receive a daily email summary of your alerts",
+          "resumenNo": "stop receiving the daily summary of your alerts",
+          "idiomas": {
+            "es": "Spanish",
+            "en": "English",
+            "fr": "French"
+          },
+          "campos": {
+            "locale": "Language",
+            "resumen_alertas": "Daily alert summary"
+          },
+          "quitarIdioma": "remove your own language"
         }
       },
       "deleteChat": "Delete conversation",

@@ -4282,8 +4282,6 @@
           "crear_usuario": "Ajouter l'utilisateur interne {{nombre}} ({{email}})",
           "crear_colaborador": "Ajouter le collaborateur externe {{nombre}} ({{email}})",
           "crear_equipo": "Créer l'équipe de travail « {{nombre}} »",
-          "asignar_usuarios_equipo_one": "Laisser l'équipe {{equipo}} avec {{count}} membre",
-          "asignar_usuarios_equipo_other": "Laisser l'équipe {{equipo}} avec {{count}} membres",
           "crear_contacto": "Ajouter la personne {{nombre}}",
           "vincular_contacto_cliente": "Faire du contact {{contacto}} un contact du client {{cliente}}",
           "vincular_contacto_cliente_cargo": "Faire du contact {{contacto}} un contact du client {{cliente}}, comme « {{cargo}} »",
@@ -4368,7 +4366,11 @@
           "crear_grupo": "Créer le groupe de clients « {{nombre}} », de couleur {{color}}",
           "editar_grupo": "Modifier le groupe de clients {{grupo}} : {{cambios}}",
           "instalaciones_contacto": "Modifier les sites du client {{cliente}} auxquels est rattaché le contact {{contacto}} ({{cambios}}) : les autres restent",
-          "instalaciones_contacto_todas": "Rattacher le contact {{contacto}} à tous les sites du client {{cliente}}, y compris les futurs"
+          "instalaciones_contacto_todas": "Rattacher le contact {{contacto}} à tous les sites du client {{cliente}}, y compris les futurs",
+          "asignar_usuarios_equipo": "Modifier les membres de l'équipe {{equipo}} ({{cambios}}) : les autres restent",
+          "editar_usuario": "Modifier les données de l'utilisateur {{persona}} : {{cambios}}",
+          "editar_equipo": "Modifier l'équipe de travail {{equipo}} : {{cambios}}",
+          "cambiar_mi_perfil": "Modifier votre profil : {{cambios}}"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4512,6 +4514,48 @@
           "linea": "Sites : {{antes}} → {{despues}}",
           "todas": "tous",
           "ninguna": "aucun"
+        },
+        "usuario": {
+          "dato": "{{campo}} {{valor}}",
+          "dato_first_name": "prénom",
+          "dato_last_name": "nom",
+          "dato_telefono": "téléphone",
+          "dato_sale_en_planificador": "apparaît dans le planificateur :",
+          "campos": {
+            "first_name": "Prénom",
+            "last_name": "Nom",
+            "telefono": "Téléphone",
+            "sale_en_planificador": "Apparaît dans le planificateur"
+          }
+        },
+        "equipo": {
+          "entran_one": "{{count}} personne entre",
+          "entran_other": "{{count}} personnes entrent",
+          "salen_one": "{{count}} personne sort",
+          "salen_other": "{{count}} personnes sortent",
+          "nadie": "personne",
+          "campos": {
+            "nombre": "Nom",
+            "color": "Couleur",
+            "descripcion": "Description",
+            "miembros": "Membres"
+          }
+        },
+        "perfil": {
+          "idioma": "langue {{idioma}}",
+          "sinIdioma": "sans langue propre",
+          "resumenSi": "recevoir chaque jour par e-mail le résumé de vos alertes",
+          "resumenNo": "ne plus recevoir le résumé quotidien de vos alertes",
+          "idiomas": {
+            "es": "espagnol",
+            "en": "anglais",
+            "fr": "français"
+          },
+          "campos": {
+            "locale": "Langue",
+            "resumen_alertas": "Résumé quotidien des alertes"
+          },
+          "quitarIdioma": "retirer votre langue propre"
         }
       },
       "deleteChat": "Supprimer la conversation",
