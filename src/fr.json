@@ -4292,7 +4292,10 @@
           "trasladar_elementos_other": "Déplacer {{count}} équipements vers le dossier {{carpeta}}",
           "actualizar_contacto": "Modifier le contact {{contacto}} : {{cambios}}",
           "cambiar_cargo_contacto": "Attribuer au contact {{contacto}} le poste « {{cargo}} » chez le client {{cliente}}",
-          "cambiar_cargo_contacto_quitar": "Retirer le poste du contact {{contacto}} chez le client {{cliente}}"
+          "cambiar_cargo_contacto_quitar": "Retirer le poste du contact {{contacto}} chez le client {{cliente}}",
+          "editar_elemento": "Modifier l'équipement {{equipo}} : {{cambios}}",
+          "cambiar_estado_elemento_retirar": "Réformer l'équipement {{equipo}}{{motivo}} : il reste visible avec son historique et peut être réactivé",
+          "cambiar_estado_elemento_reactivar": "Réactiver l'équipement {{equipo}} : il revient en service"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4391,7 +4394,9 @@
             "telefonos_other": "Téléphones",
             "notas": "Notes"
           }
-        }
+        },
+        "motivo": " (motif : {{motivo}})",
+        "quitar": "(supprimer)"
       },
       "deleteChat": "Supprimer la conversation"
     },

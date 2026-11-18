@@ -4750,7 +4750,10 @@
           "trasladar_elementos_other": "Pasar {{count}} equipos a la carpeta {{carpeta}}",
           "actualizar_contacto": "Modificar el contacto {{contacto}}: {{cambios}}",
           "cambiar_cargo_contacto": "Poner al contacto {{contacto}} el cargo «{{cargo}}» en el cliente {{cliente}}",
-          "cambiar_cargo_contacto_quitar": "Quitar el cargo del contacto {{contacto}} en el cliente {{cliente}}"
+          "cambiar_cargo_contacto_quitar": "Quitar el cargo del contacto {{contacto}} en el cliente {{cliente}}",
+          "editar_elemento": "Modificar el equipo {{equipo}}: {{cambios}}",
+          "cambiar_estado_elemento_retirar": "Retirar del servicio el equipo {{equipo}}{{motivo}}: sigue a la vista con su historial y se puede reactivar",
+          "cambiar_estado_elemento_reactivar": "Reactivar el equipo {{equipo}}: vuelve al servicio"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4849,7 +4852,9 @@
             "telefonos_other": "Teléfonos",
             "notas": "Notas"
           }
-        }
+        },
+        "motivo": " (motivo: {{motivo}})",
+        "quitar": "(quitar)"
       },
       "deleteChat": "Borrar conversación"
     },

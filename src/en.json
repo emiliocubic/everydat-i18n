@@ -4750,7 +4750,10 @@
           "trasladar_elementos_other": "Move {{count}} pieces of equipment to folder {{carpeta}}",
           "actualizar_contacto": "Change contact {{contacto}}: {{cambios}}",
           "cambiar_cargo_contacto": "Set the position of contact {{contacto}} at client {{cliente}} to “{{cargo}}”",
-          "cambiar_cargo_contacto_quitar": "Remove the position of contact {{contacto}} at client {{cliente}}"
+          "cambiar_cargo_contacto_quitar": "Remove the position of contact {{contacto}} at client {{cliente}}",
+          "editar_elemento": "Change item {{equipo}}: {{cambios}}",
+          "cambiar_estado_elemento_retirar": "Retire item {{equipo}} from service{{motivo}}: it stays visible with its history and can be reactivated",
+          "cambiar_estado_elemento_reactivar": "Reactivate item {{equipo}}: it returns to service"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4849,7 +4852,9 @@
             "telefonos_other": "Phones",
             "notas": "Notes"
           }
-        }
+        },
+        "motivo": " (reason: {{motivo}})",
+        "quitar": "(remove)"
       },
       "deleteChat": "Delete conversation"
     },
