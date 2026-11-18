@@ -4802,7 +4802,14 @@
           "crear_conjunto_sinNombre_other": "Agrupar {{count}} equipos en un conjunto sin nombre: siguen en su carpeta, sin cambiar",
           "editar_conjunto": "Modificar el conjunto {{conjunto}}: {{cambios}}",
           "desvincular_de_conjunto": "Sacar el equipo {{equipo}} del conjunto {{conjunto}}: queda suelto en su carpeta, sin borrar nada",
-          "guardar_componentes": "Cambiar los componentes del sistema {{equipo}} ({{cambios}}); lo demás se queda como está"
+          "guardar_componentes": "Cambiar los componentes del sistema {{equipo}} ({{cambios}}); lo demás se queda como está",
+          "editar_carpeta": "Modificar la carpeta {{carpeta}}: {{cambios}}",
+          "mover_carpeta_posicion": "Mover la carpeta {{carpeta}}, con toda su rama y sus equipos, dentro de la carpeta {{padre}}, en la posición {{n}}",
+          "mover_carpeta_raiz_posicion": "Mover la carpeta {{carpeta}}, con toda su rama y sus equipos, a la raíz de su emplazamiento, en la posición {{n}}",
+          "ordenar_carpetas_one": "Poner la carpeta {{lista}} {{donde}} entre sus hermanas",
+          "ordenar_carpetas_other": "Poner las carpetas {{lista}}, en ese orden, {{donde}} entre sus hermanas",
+          "ordenar_equipos_one": "Poner {{count}} equipo de la carpeta {{carpeta}} {{donde}}: los demás conservan su orden y ninguno sale de la carpeta",
+          "ordenar_equipos_other": "Ordenar {{count}} equipos de la carpeta {{carpeta}}, en el orden dicho, {{donde}}: los demás conservan su orden y ninguno sale de la carpeta"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4911,6 +4918,11 @@
           "hueco": "hueco {{hueco}}: {{cambios}}",
           "poner": "poner {{lista}}",
           "quitar": "quitar {{lista}}"
+        },
+        "orden": {
+          "principio": "al principio",
+          "final": "al final",
+          "posicion": "desde la posición {{n}}"
         }
       },
       "deleteChat": "Borrar conversación",
@@ -9612,12 +9624,22 @@
       "responde": "¿La responde hoy?",
       "nota": "Por qué",
       "notaAyuda": "Lo que sabe o no sabe hacer hoy, si hace falta aclararlo.",
-      "falta": "Qué le falta"
+      "falta": "Qué le falta",
+      "textoEn": "En inglés",
+      "textoEnAyuda": "Lo que sale con la interfaz en inglés; sin él, sale en castellano. Claude lo propone y tú lo corriges.",
+      "permisos": "Permisos que pide",
+      "permisosAyuda": "Quien no los tenga todos no verá esta pregunta entre las sugerencias. Sin ninguno, la ven todos."
     },
     "guardar": "Guardar",
     "guardando": "Guardando…",
     "guardado": "Pregunta guardada.",
-    "descartar": "Descartar"
+    "descartar": "Descartar",
+    "pide": "Pide: {{permisos}}",
+    "proponer": "Proponer traducción",
+    "proponiendo": "Traduciendo…",
+    "errorTraduccion": "No se ha podido proponer la traducción.",
+    "anadirPermiso": "Añadir un permiso…",
+    "quitarPermiso": "Quitar el permiso {{permiso}}"
   },
   "ordenVida": {
     "que": {

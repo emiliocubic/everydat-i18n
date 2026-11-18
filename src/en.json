@@ -4802,7 +4802,14 @@
           "crear_conjunto_sinNombre_other": "Group {{count}} items into an unnamed set: they stay in their folder, unchanged",
           "editar_conjunto": "Change set {{conjunto}}: {{cambios}}",
           "desvincular_de_conjunto": "Take item {{equipo}} out of set {{conjunto}}: it stays loose in its folder, nothing is deleted",
-          "guardar_componentes": "Change the components of system {{equipo}} ({{cambios}}); everything else stays as it is"
+          "guardar_componentes": "Change the components of system {{equipo}} ({{cambios}}); everything else stays as it is",
+          "editar_carpeta": "Change folder {{carpeta}}: {{cambios}}",
+          "mover_carpeta_posicion": "Move folder {{carpeta}}, with its whole branch and its items, into folder {{padre}}, at position {{n}}",
+          "mover_carpeta_raiz_posicion": "Move folder {{carpeta}}, with its whole branch and its items, to the root of its site, at position {{n}}",
+          "ordenar_carpetas_one": "Put folder {{lista}} {{donde}} among its siblings",
+          "ordenar_carpetas_other": "Put folders {{lista}}, in that order, {{donde}} among their siblings",
+          "ordenar_equipos_one": "Put {{count}} item of folder {{carpeta}} {{donde}}: the rest keep their order and none leaves the folder",
+          "ordenar_equipos_other": "Sort {{count}} items of folder {{carpeta}}, in the order given, {{donde}}: the rest keep their order and none leaves the folder"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4911,6 +4918,11 @@
           "hueco": "slot {{hueco}}: {{cambios}}",
           "poner": "put {{lista}}",
           "quitar": "remove {{lista}}"
+        },
+        "orden": {
+          "principio": "at the beginning",
+          "final": "at the end",
+          "posicion": "from position {{n}}"
         }
       },
       "deleteChat": "Delete conversation",
@@ -9612,12 +9624,22 @@
       "responde": "Does it answer today?",
       "nota": "Why",
       "notaAyuda": "What it can or cannot do today, if it needs explaining.",
-      "falta": "What it lacks"
+      "falta": "What it lacks",
+      "textoEn": "In English",
+      "textoEnAyuda": "What shows with the interface in English; without it, the Spanish text shows. Claude suggests it and you correct it.",
+      "permisos": "Permissions it requires",
+      "permisosAyuda": "Anyone without all of them won't see this question among the suggestions. With none, everyone sees it."
     },
     "guardar": "Save",
     "guardando": "Saving…",
     "guardado": "Question saved.",
-    "descartar": "Discard"
+    "descartar": "Discard",
+    "pide": "Requires: {{permisos}}",
+    "proponer": "Suggest translation",
+    "proponiendo": "Translating…",
+    "errorTraduccion": "The translation could not be suggested.",
+    "anadirPermiso": "Add a permission…",
+    "quitarPermiso": "Remove the permission {{permiso}}"
   },
   "ordenVida": {
     "que": {

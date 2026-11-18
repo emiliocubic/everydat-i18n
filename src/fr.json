@@ -4346,7 +4346,14 @@
           "crear_conjunto_sinNombre_other": "Regrouper {{count}} équipements dans un ensemble sans nom : ils restent dans leur dossier, sans changement",
           "editar_conjunto": "Modifier l'ensemble {{conjunto}} : {{cambios}}",
           "desvincular_de_conjunto": "Retirer l'équipement {{equipo}} de l'ensemble {{conjunto}} : il reste seul dans son dossier, rien n'est supprimé",
-          "guardar_componentes": "Modifier les composants du système {{equipo}} ({{cambios}}) ; le reste ne change pas"
+          "guardar_componentes": "Modifier les composants du système {{equipo}} ({{cambios}}) ; le reste ne change pas",
+          "editar_carpeta": "Modifier le dossier {{carpeta}} : {{cambios}}",
+          "mover_carpeta_posicion": "Déplacer le dossier {{carpeta}}, avec toute sa branche et ses équipements, dans le dossier {{padre}}, en position {{n}}",
+          "mover_carpeta_raiz_posicion": "Déplacer le dossier {{carpeta}}, avec toute sa branche et ses équipements, à la racine de son site, en position {{n}}",
+          "ordenar_carpetas_one": "Placer le dossier {{lista}} {{donde}} parmi ses voisins",
+          "ordenar_carpetas_other": "Placer les dossiers {{lista}}, dans cet ordre, {{donde}} parmi leurs voisins",
+          "ordenar_equipos_one": "Placer {{count}} équipement du dossier {{carpeta}} {{donde}} : les autres gardent leur ordre et aucun ne quitte le dossier",
+          "ordenar_equipos_other": "Ordonner {{count}} équipements du dossier {{carpeta}}, dans l'ordre indiqué, {{donde}} : les autres gardent leur ordre et aucun ne quitte le dossier"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4455,6 +4462,11 @@
           "hueco": "emplacement {{hueco}} : {{cambios}}",
           "poner": "placer {{lista}}",
           "quitar": "retirer {{lista}}"
+        },
+        "orden": {
+          "principio": "au début",
+          "final": "à la fin",
+          "posicion": "à partir de la position {{n}}"
         }
       },
       "deleteChat": "Supprimer la conversation",
@@ -8668,12 +8680,22 @@
       "responde": "Y répond-il aujourd'hui ?",
       "nota": "Pourquoi",
       "notaAyuda": "Ce qu'il sait ou ne sait pas faire aujourd'hui, si cela mérite d'être précisé.",
-      "falta": "Ce qui lui manque"
+      "falta": "Ce qui lui manque",
+      "textoEn": "En anglais",
+      "textoEnAyuda": "Ce qui s'affiche avec l'interface en anglais ; sinon, le texte espagnol s'affiche. Claude la propose et vous la corrigez.",
+      "permisos": "Permissions requises",
+      "permisosAyuda": "Qui ne les a pas toutes ne verra pas cette question parmi les suggestions. Sans aucune, tout le monde la voit."
     },
     "guardar": "Enregistrer",
     "guardando": "Enregistrement…",
     "guardado": "Question enregistrée.",
-    "descartar": "Abandonner"
+    "descartar": "Abandonner",
+    "pide": "Nécessite : {{permisos}}",
+    "proponer": "Proposer une traduction",
+    "proponiendo": "Traduction…",
+    "errorTraduccion": "La traduction n'a pas pu être proposée.",
+    "anadirPermiso": "Ajouter une permission…",
+    "quitarPermiso": "Retirer la permission {{permiso}}"
   },
   "ordenVida": {
     "que": {
