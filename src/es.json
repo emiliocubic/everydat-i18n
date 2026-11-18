@@ -4738,6 +4738,12 @@
         "open": "Abrir",
         "ref": "el creado en el paso {{n}}",
         "refCarpeta": "que crea el paso {{n}}",
+        "ensayo": {
+          "falla": "Fallaría al confirmar: {{motivo}}",
+          "noEnsayable": "No se puede ensayar sin efectos fuera de Everydat: se comprobará al confirmar.",
+          "sinEnsayar": "Sin ensayar: usa lo que crea el paso {{n}}, que no ha pasado el ensayo.",
+          "aviso": "Avisa al guardar: revísalo antes de confirmar."
+        },
         "num": "n.º {{id}}",
         "steps": {
           "crear_cliente": "Crear el cliente «{{nombre}}»",

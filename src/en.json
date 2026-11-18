@@ -4738,6 +4738,12 @@
         "open": "Open",
         "ref": "the one created in step {{n}}",
         "refCarpeta": "created in step {{n}}",
+        "ensayo": {
+          "falla": "Would fail on confirming: {{motivo}}",
+          "noEnsayable": "Can't be rehearsed without effects outside Everydat: it will be checked on confirming.",
+          "sinEnsayar": "Not rehearsed: it uses what step {{n}} creates, which didn't pass the rehearsal.",
+          "aviso": "Warns on saving: check it before confirming."
+        },
         "num": "no. {{id}}",
         "steps": {
           "crear_cliente": "Create the client “{{nombre}}”",
