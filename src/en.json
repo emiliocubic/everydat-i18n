@@ -1506,7 +1506,12 @@
     "qrdatHint": "Where to notify when a sticker is attached to an item or released. Empty = nobody is notified.",
     "qrdatUrlHint": "URL of the Cubic hub.",
     "qrdatSinToken": "No token",
-    "qrdatQuitarToken": "Remove token"
+    "qrdatQuitarToken": "Remove token",
+    "iaTope": "Monthly AI cap",
+    "iaTopeHint": "In euros of what the AI paid by Cubic costs Cubic; calls with the client's own key do not count. Empty = no cap. At 80 % the superadmin is warned; at 100 %, AI pauses until next month or until the cap is raised.",
+    "iaGasto": "This month: {{gasto}} € ({{porcentaje}} %)",
+    "iaGastoSinTope": "This month: {{gasto}} €, no cap",
+    "iaEnPausa": "Paused"
   },
   "admins": {
     "title": "Users",
@@ -4212,6 +4217,15 @@
         "anteriores": "Newer",
         "siguientes": "Older",
         "pagina": "Page {{page}} of {{total}}"
+      },
+      "consumo": {
+        "titulo": "AI usage this month",
+        "desc": "How much of the AI included with Everydat has been used this month, out of what is contracted. At 100 %, Sherpa pauses until the 1st of next month or until it is increased; everything else keeps working. If you use your own AI key, it does not count.",
+        "porcentaje": "{{porcentaje}} % used",
+        "enPausa": "Paused: this month's usage has been reached",
+        "sinTope": "No monthly cap: AI never pauses for usage.",
+        "euros": "{{gasto}} € of {{tope}} €",
+        "eurosSinTope": "{{gasto}} € this month"
       }
     },
     "tarifas": {
@@ -9718,6 +9732,12 @@
       "pausado": {
         "titulo": "Webhook paused",
         "desc": "The webhook of {{cuenta}} has not delivered for {{dias}} days and has been paused"
+      }
+    },
+    "ia": {
+      "tope": {
+        "titulo": "AI is nearing its monthly cap",
+        "desc": "{{porcentaje}} % of this month's AI has been used; at 100 %, Sherpa pauses until next month"
       }
     }
   },

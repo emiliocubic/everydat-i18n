@@ -1377,7 +1377,12 @@
     "qrdatHint": "A dónde se avisa cuando una pegatina se asocia a un equipo o se suelta. Vacío = no se avisa a nadie.",
     "qrdatUrlHint": "URL de la central de Cubic.",
     "qrdatSinToken": "Sin token",
-    "qrdatQuitarToken": "Quitar token"
+    "qrdatQuitarToken": "Quitar token",
+    "iaTope": "Tope mensual de la IA",
+    "iaTopeHint": "En euros de lo que le cuesta a Cubic la IA que paga Cubic; las llamadas con la clave del cliente no cuentan. Vacío = sin tope. Al 80 % se avisa al superadmin; al 100 %, la IA se pausa hasta el mes siguiente o hasta que se suba.",
+    "iaGasto": "Este mes: {{gasto}} € ({{porcentaje}} %)",
+    "iaGastoSinTope": "Este mes: {{gasto}} €, sin tope",
+    "iaEnPausa": "En pausa"
   },
   "admins": {
     "title": "Usuarios",
@@ -4212,6 +4217,15 @@
         "anteriores": "Más recientes",
         "siguientes": "Más antiguas",
         "pagina": "Página {{page}} de {{total}}"
+      },
+      "consumo": {
+        "titulo": "Consumo de la IA este mes",
+        "desc": "Lo que lleva gastado este mes la IA que viene con Everydat, sobre lo contratado. Al llegar al 100 %, Sherpa se pausa hasta el día 1 del mes siguiente o hasta que se amplíe; todo lo demás sigue funcionando. Si usáis vuestra propia clave de IA, no cuenta.",
+        "porcentaje": "{{porcentaje}} % consumido",
+        "enPausa": "En pausa: se ha alcanzado el consumo de este mes",
+        "sinTope": "Sin tope mensual: no hay pausa por consumo.",
+        "euros": "{{gasto}} € de {{tope}} €",
+        "eurosSinTope": "{{gasto}} € este mes"
       }
     },
     "tarifas": {
@@ -9718,6 +9732,12 @@
       "pausado": {
         "titulo": "Webhook pausado",
         "desc": "El webhook de {{cuenta}} lleva {{dias}} días sin entregar y se ha pausado"
+      }
+    },
+    "ia": {
+      "tope": {
+        "titulo": "La IA se acerca a su tope del mes",
+        "desc": "Se ha consumido el {{porcentaje}} % de la IA de este mes; al llegar al 100 %, Sherpa se pausa hasta el mes que viene"
       }
     }
   },
