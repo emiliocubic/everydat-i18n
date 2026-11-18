@@ -4091,6 +4091,20 @@
           "lista": "La liste des sites avec leur date, ou des équipements (texte uniquement)"
         },
         "ayuda": "Les variables vont entre accolades et sont remplies à l'envoi. {lista} ne va que dans le texte : c'est la liste des sites ou des équipements ; sans elle, la liste apparaît à la fin. La salutation, les coordonnées et la signature sont ajoutées par l'application."
+      },
+      "planificador": {
+        "porEquipos": "Planifier par équipes",
+        "porEquiposOn": "Chaque projet est planifié sur la ligne d'une équipe de travail, et les équipes et leurs membres sont gérés dans le planificateur.",
+        "porEquiposOff": "La planification se fait par projet, sans équipes : chaque projet demande un nombre de personnes par jour et les journées vont à qui est libre. Les équipes de travail restent gérées dans Mon entreprise.",
+        "avisoSinEquiposTitulo": "Planifier sans équipes",
+        "avisoSinEquipos": "Désormais, la planification se fera par projet, sans équipes. Les barres existantes perdent leur équipe et celles d'un même projet sont fusionnées en une seule, sans perdre aucune journée. Les épingles et les jours coupés sont perdus. Chaque projet planifié demandera autant de personnes par jour que son équipe en comptait. Les compositions des équipes sont conservées, au cas où l'on reviendrait à la planification par équipes. Continuer ?",
+        "avisoSinEquiposBoton": "Planifier sans équipes",
+        "avisoPorEquiposTitulo": "Revenir à la planification par équipes",
+        "avisoPorEquipos": "La planification repasse par équipes, avec les onglets Équipes et Chaîne. Ce n'est possible que si aucun projet n'est planifié à partir d'aujourd'hui ; l'antérieur reste comme historique, sans équipe. Continuer ?",
+        "avisoPorEquiposBoton": "Planifier par équipes",
+        "barrasFuturas_one": "Impossible de revenir à la planification par équipes : il reste {{count}} projet planifié à partir d'aujourd'hui, jusqu'au {{hasta}}. Retirez-le du plan ou attendez qu'il se termine.",
+        "barrasFuturas_other": "Impossible de revenir à la planification par équipes : il reste {{count}} projets planifiés à partir d'aujourd'hui, le dernier jusqu'au {{hasta}}. Retirez-les du plan ou attendez qu'ils se terminent.",
+        "avisoActivarSinEquipos": "Une fois activé, les projets déjà en cours à ce moment n'entreront pas dans le planificateur : ils se terminent comme avant. Les équipes de travail restent gérées dans Mon entreprise."
       }
     }
   },
@@ -4708,7 +4722,18 @@
       "loFijaElPlanificador": "Fixées par le planificateur",
       "abrirPlanificador": "Ouvrir dans le planificateur",
       "delPlan": "du planning",
-      "tecnicosDelPlan": "Ce projet est dans le planificateur : les techniciens sont ajoutés et retirés par le planning."
+      "tecnicosDelPlan": "Ce projet est dans le planificateur : les techniciens sont ajoutés et retirés par le planning.",
+      "dotacion": "Personnes par jour",
+      "dotacionAyuda": "Combien de personnes le projet demande chaque jour dans le planificateur. Par défaut, autant que de techniciens sur la fiche, ou une. La modifier n'ajoute ni ne retire de journées.",
+      "dotacionMenos": "Une personne de moins par jour",
+      "dotacionMas": "Une personne de plus par jour",
+      "deSerie": "par défaut",
+      "volverDeSerie": "Revenir à la valeur par défaut",
+      "volverDeSerieTitulo": "Revenir à la valeur par défaut : autant de personnes que de techniciens sur la fiche, ou une",
+      "colorPlan": "Couleur du projet dans le planificateur",
+      "sinJornadasPlan": "sans journées dans le plan",
+      "quitarSinJornadas": "Retirer",
+      "quitarSinJornadasTitulo": "N'a aucune journée dans le plan pour ce projet : peut être retiré"
     },
     "ejecucion": {
       "kpiRevisiones": "Contrôles",
@@ -8755,7 +8780,8 @@
       "totalLibres_other": "{{count}} jours libres sur {{laborables}} jours ouvrés",
       "totalMotivo": "{{motivo}} : {{dias}}",
       "dias_one": "{{count}} jour",
-      "dias_other": "{{count}} jours"
+      "dias_other": "{{count}} jours",
+      "resumenTituloSinEquipos": "{{persona}} · {{de}} → {{a}}"
     },
     "cadena": {
       "inicial": "Faites glisser le milieu d'une barre pour la déplacer et ses extrémités pour l'étirer : le changement est simulé et ne s'applique qu'avec ✓.",

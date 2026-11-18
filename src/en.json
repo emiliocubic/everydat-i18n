@@ -4316,7 +4316,19 @@
         "horasInvalidas": "The working day is a whole number of hours, from 1 to 24.",
         "dias": "Working days",
         "ayuda": "The planner spreads the work over these days and discounts holidays and absences. The last selected day cannot be removed.",
-        "off": "When it is off, simple planning is still done from the project record. The saved working day and working days are kept and still count in any period measured in working days."
+        "off": "When it is off, simple planning is still done from the project record. The saved working day and working days are kept and still count in any period measured in working days.",
+        "porEquipos": "Plan by teams",
+        "porEquiposOn": "Each project is planned on the line of a work team, and the teams and their people are managed in the planner.",
+        "porEquiposOff": "Planning is by project, without teams: each project asks for a number of people per day and workdays go to whoever is free. Work teams are still managed in My company.",
+        "avisoSinEquiposTitulo": "Plan without teams",
+        "avisoSinEquipos": "From now on planning will be by project, without teams. Existing bars lose their team and the bars of the same project are merged into one, without losing any workday. Pins and cut days are lost. Each planned project will ask for as many people per day as its team had. Team compositions are kept, in case you go back to planning by teams. Continue?",
+        "avisoSinEquiposBoton": "Plan without teams",
+        "avisoPorEquiposTitulo": "Go back to planning by teams",
+        "avisoPorEquipos": "Planning goes back to teams, with the Teams and Chain tabs. This is only possible if no project is planned from today onwards; earlier planning stays as history, without a team. Continue?",
+        "avisoPorEquiposBoton": "Plan by teams",
+        "barrasFuturas_one": "You can't go back to planning by teams: {{count}} project is still planned from today onwards, until {{hasta}}. Remove it from the plan or wait for it to finish.",
+        "barrasFuturas_other": "You can't go back to planning by teams: {{count}} projects are still planned from today onwards, the last one until {{hasta}}. Remove them from the plan or wait for them to finish.",
+        "avisoActivarSinEquipos": "Once it is on, projects already in progress at that moment will not enter the planner: they finish as before. Work teams are still managed in My company."
       },
       "partes": {
         "titulo": "Work reports",
@@ -5301,7 +5313,18 @@
       "loFijaElPlanificador": "Set by the planner",
       "abrirPlanificador": "Open in the planner",
       "delPlan": "from the plan",
-      "tecnicosDelPlan": "This project is in the planner: technicians are added and removed by the plan."
+      "tecnicosDelPlan": "This project is in the planner: technicians are added and removed by the plan.",
+      "dotacion": "People per day",
+      "dotacionAyuda": "How many people the project asks for each day in the planner. By default, as many as technicians on the record, or one. Changing it does not add or remove workdays.",
+      "dotacionMenos": "One person less per day",
+      "dotacionMas": "One person more per day",
+      "deSerie": "default",
+      "volverDeSerie": "Back to default",
+      "volverDeSerieTitulo": "Make it the default again: as many people as technicians on the record, or one",
+      "colorPlan": "Project colour in the planner",
+      "sinJornadasPlan": "no workdays in the plan",
+      "quitarSinJornadas": "Remove",
+      "quitarSinJornadasTitulo": "Has no workdays in the plan for this project: can be removed"
     },
     "ejecucion": {
       "kpiRevisiones": "Inspections",
@@ -10009,7 +10032,8 @@
       "totalLibres_other": "{{count}} free days out of {{laborables}} working days",
       "totalMotivo": "{{motivo}}: {{dias}}",
       "dias_one": "{{count}} day",
-      "dias_other": "{{count}} days"
+      "dias_other": "{{count}} days",
+      "resumenTituloSinEquipos": "{{persona}} · {{de}} → {{a}}"
     },
     "cadena": {
       "inicial": "Drag the middle of a bar to move it and its ends to stretch it: the change is simulated and only applied with ✓.",

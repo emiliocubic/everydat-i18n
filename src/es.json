@@ -4316,7 +4316,19 @@
         "horasInvalidas": "La jornada es un número entero de horas, de 1 a 24.",
         "dias": "Días laborables",
         "ayuda": "El planificador reparte el trabajo sobre estos días y descuenta festivos y ausencias. El último día marcado no se puede quitar.",
-        "off": "Al desactivarlo se sigue planificando de forma sencilla desde la ficha del proyecto. La jornada y los días laborables guardados se conservan y siguen contando en cualquier plazo en días hábiles."
+        "off": "Al desactivarlo se sigue planificando de forma sencilla desde la ficha del proyecto. La jornada y los días laborables guardados se conservan y siguen contando en cualquier plazo en días hábiles.",
+        "porEquipos": "Planificar por equipos",
+        "porEquiposOn": "Cada proyecto se planifica en la línea de un equipo de trabajo, y los equipos y su gente se llevan en el planificador.",
+        "porEquiposOff": "Se planifica por proyecto, sin equipos: cada proyecto pide unas personas por día y se le dan jornadas a quien esté libre. Los equipos de trabajo se siguen llevando en Mi empresa.",
+        "avisoSinEquiposTitulo": "Planificar sin equipos",
+        "avisoSinEquipos": "A partir de ahora se planificará por proyecto, sin equipos. Las barras que ya hay pierden su equipo y las de un mismo proyecto se juntan en una sola, sin perder ninguna jornada. Se pierden las chinchetas y los días cortados. Cada proyecto planificado pasa a pedir tantas personas por día como tenía su equipo. Las composiciones de los equipos se guardan, por si se vuelve a planificar por equipos. ¿Continuar?",
+        "avisoSinEquiposBoton": "Planificar sin equipos",
+        "avisoPorEquiposTitulo": "Volver a planificar por equipos",
+        "avisoPorEquipos": "Se vuelve a planificar por equipos, con las pestañas Equipos y Cadena. Solo se puede si no queda ningún proyecto planificado de hoy en adelante; lo anterior se queda como histórico, sin equipo. ¿Continuar?",
+        "avisoPorEquiposBoton": "Planificar por equipos",
+        "barrasFuturas_one": "No se puede volver a planificar por equipos: queda {{count}} proyecto planificado de hoy en adelante, hasta el {{hasta}}. Quítalo del plan o espera a que termine.",
+        "barrasFuturas_other": "No se puede volver a planificar por equipos: quedan {{count}} proyectos planificados de hoy en adelante, el último hasta el {{hasta}}. Quítalos del plan o espera a que terminen.",
+        "avisoActivarSinEquipos": "Al encenderlo, los proyectos que estén en ejecución en ese momento no entrarán en el planificador: se terminan como hasta ahora. Los equipos de trabajo se siguen llevando en Mi empresa."
       },
       "partes": {
         "titulo": "Partes de trabajo",
@@ -5301,7 +5313,18 @@
       "loFijaElPlanificador": "Las fija el planificador",
       "abrirPlanificador": "Abrir en el planificador",
       "delPlan": "del plan",
-      "tecnicosDelPlan": "Este proyecto está en el planificador: los técnicos los pone y los quita el plan."
+      "tecnicosDelPlan": "Este proyecto está en el planificador: los técnicos los pone y los quita el plan.",
+      "dotacion": "Personas por día",
+      "dotacionAyuda": "Cuántas personas pide el proyecto cada día en el planificador. De serie, tantas como técnicos tiene la ficha, o una. Cambiarla no quita ni pone jornadas.",
+      "dotacionMenos": "Una persona menos por día",
+      "dotacionMas": "Una persona más por día",
+      "deSerie": "de serie",
+      "volverDeSerie": "Volver a la de serie",
+      "volverDeSerieTitulo": "Que vuelva a ser la de serie: tantas personas como técnicos tiene la ficha, o una",
+      "colorPlan": "Color del proyecto en el planificador",
+      "sinJornadasPlan": "sin jornadas en el plan",
+      "quitarSinJornadas": "Quitar",
+      "quitarSinJornadasTitulo": "No tiene ninguna jornada en el plan para este proyecto: se puede quitar"
     },
     "ejecucion": {
       "kpiRevisiones": "Revisiones",
@@ -10009,7 +10032,8 @@
       "totalLibres_other": "{{count}} días libres de {{laborables}} laborables",
       "totalMotivo": "{{motivo}}: {{dias}}",
       "dias_one": "{{count}} día",
-      "dias_other": "{{count}} días"
+      "dias_other": "{{count}} días",
+      "resumenTituloSinEquipos": "{{persona}} · {{de}} → {{a}}"
     },
     "cadena": {
       "inicial": "Arrastra el centro de una barra para moverla y sus extremos para estirarla: el cambio se simula y solo se aplica con ✓.",
