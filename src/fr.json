@@ -4339,7 +4339,13 @@
           "crear_zona_fechas": "Transformer le dossier {{carpeta}} du site {{emplazamiento}} en zone vérifiée par dates : avec sa branche, elle aura sa propre date de vérification",
           "cambiar_modo_zona_demanda": "Faire vérifier la zone {{zona}} du site {{emplazamiento}} à la demande : elle perd sa date de vérification",
           "cambiar_modo_zona_fechas": "Faire vérifier la zone {{zona}} du site {{emplazamiento}} par dates",
-          "cambiar_modo_zona_heredar": "Faire que la zone {{zona}} du site {{emplazamiento}} hérite de nouveau le mode de vérification de sa zone supérieure ou du site"
+          "cambiar_modo_zona_heredar": "Faire que la zone {{zona}} du site {{emplazamiento}} hérite de nouveau le mode de vérification de sa zone supérieure ou du site",
+          "crear_conjunto_one": "Regrouper {{count}} équipement dans l'ensemble « {{nombre}} » : il reste dans son dossier, sans changement",
+          "crear_conjunto_other": "Regrouper {{count}} équipements dans l'ensemble « {{nombre}} » : ils restent dans leur dossier, sans changement",
+          "crear_conjunto_sinNombre_one": "Regrouper {{count}} équipement dans un ensemble sans nom : il reste dans son dossier, sans changement",
+          "crear_conjunto_sinNombre_other": "Regrouper {{count}} équipements dans un ensemble sans nom : ils restent dans leur dossier, sans changement",
+          "editar_conjunto": "Modifier l'ensemble {{conjunto}} : {{cambios}}",
+          "desvincular_de_conjunto": "Retirer l'équipement {{equipo}} de l'ensemble {{conjunto}} : il reste seul dans son dossier, rien n'est supprimé"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4451,6 +4457,10 @@
         "enviar": "Envoyer",
         "gracias": "Merci pour votre évaluation.",
         "error": "L'évaluation n'a pas pu être enregistrée."
+      },
+      "opciones": {
+        "respuesta": "Choisissez une option",
+        "siguientes": "Étapes suivantes"
       }
     },
     "scan": {

@@ -4795,7 +4795,13 @@
           "crear_zona_fechas": "Convertir en zona la carpeta {{carpeta}} del emplazamiento {{emplazamiento}}, que se revisará por fechas: con su rama, tendrá fecha de revisión propia",
           "cambiar_modo_zona_demanda": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} se revise a demanda: pierde su fecha de revisión",
           "cambiar_modo_zona_fechas": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} se revise por fechas",
-          "cambiar_modo_zona_heredar": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} vuelva a heredar el modo de revisión de su zona superior o del emplazamiento"
+          "cambiar_modo_zona_heredar": "Hacer que la zona {{zona}} del emplazamiento {{emplazamiento}} vuelva a heredar el modo de revisión de su zona superior o del emplazamiento",
+          "crear_conjunto_one": "Agrupar {{count}} equipo en el conjunto «{{nombre}}»: sigue en su carpeta, sin cambiar",
+          "crear_conjunto_other": "Agrupar {{count}} equipos en el conjunto «{{nombre}}»: siguen en su carpeta, sin cambiar",
+          "crear_conjunto_sinNombre_one": "Agrupar {{count}} equipo en un conjunto sin nombre: sigue en su carpeta, sin cambiar",
+          "crear_conjunto_sinNombre_other": "Agrupar {{count}} equipos en un conjunto sin nombre: siguen en su carpeta, sin cambiar",
+          "editar_conjunto": "Modificar el conjunto {{conjunto}}: {{cambios}}",
+          "desvincular_de_conjunto": "Sacar el equipo {{equipo}} del conjunto {{conjunto}}: queda suelto en su carpeta, sin borrar nada"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -4907,6 +4913,10 @@
         "enviar": "Enviar",
         "gracias": "Gracias por valorarla.",
         "error": "No se ha podido guardar la valoración."
+      },
+      "opciones": {
+        "respuesta": "Elige una opción",
+        "siguientes": "Siguientes pasos"
       }
     },
     "scan": {

@@ -4795,7 +4795,13 @@
           "crear_zona_fechas": "Turn folder {{carpeta}} of site {{emplazamiento}} into a zone inspected by dates: with its branch, it will have its own inspection date",
           "cambiar_modo_zona_demanda": "Make zone {{zona}} of site {{emplazamiento}} be inspected on demand: it loses its inspection date",
           "cambiar_modo_zona_fechas": "Make zone {{zona}} of site {{emplazamiento}} be inspected by dates",
-          "cambiar_modo_zona_heredar": "Make zone {{zona}} of site {{emplazamiento}} inherit the inspection mode of its parent zone or of the site again"
+          "cambiar_modo_zona_heredar": "Make zone {{zona}} of site {{emplazamiento}} inherit the inspection mode of its parent zone or of the site again",
+          "crear_conjunto_one": "Group {{count}} item into the set «{{nombre}}»: it stays in its folder, unchanged",
+          "crear_conjunto_other": "Group {{count}} items into the set «{{nombre}}»: they stay in their folder, unchanged",
+          "crear_conjunto_sinNombre_one": "Group {{count}} item into an unnamed set: it stays in its folder, unchanged",
+          "crear_conjunto_sinNombre_other": "Group {{count}} items into an unnamed set: they stay in their folder, unchanged",
+          "editar_conjunto": "Change set {{conjunto}}: {{cambios}}",
+          "desvincular_de_conjunto": "Take item {{equipo}} out of set {{conjunto}}: it stays loose in its folder, nothing is deleted"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -4907,6 +4913,10 @@
         "enviar": "Send",
         "gracias": "Thanks for your rating.",
         "error": "Your rating could not be saved."
+      },
+      "opciones": {
+        "respuesta": "Choose an option",
+        "siguientes": "Next steps"
       }
     },
     "scan": {
