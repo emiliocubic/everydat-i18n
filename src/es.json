@@ -464,7 +464,14 @@
         "colTelefono": "Teléfono",
         "colEmail": "Email",
         "usuarioInvitado": "Usuario invitado de la app",
-        "deleteConfirm": "¿Eliminar el contacto {{nombre}}?"
+        "deleteConfirm": "¿Eliminar el contacto {{nombre}}?",
+        "quitar": {
+          "titulo": "Quitar a {{nombre}} de este cliente",
+          "sinNada": "Dejará de ser contacto de este cliente. Sigue en sus otros clientes.",
+          "pierde": "Dejará de ser contacto de este cliente y perderá lo que tiene de él:",
+          "otros": "Sigue en sus otros clientes.",
+          "boton": "Quitar"
+        }
       },
       "meses": "meses",
       "guardarCambios": "Guardar cambios",
@@ -755,6 +762,13 @@
       "accion": "Eliminar contacto",
       "confirmar": "¿Eliminar definitivamente a {{nombre}}? No se puede deshacer.",
       "hecho": "Contacto eliminado."
+    },
+    "pierde": {
+      "recv_informes": "Recibir los informes de {{ambito}}",
+      "recv_presupuestos": "Recibir los presupuestos de {{ambito}}",
+      "notify_revision": "Los avisos de próxima revisión de {{ambito}}",
+      "notify_caducidad": "Los avisos de fin de vida útil de {{ambito}}",
+      "acceso": "El acceso al portal en {{ambito}}"
     }
   },
   "invitados": {
@@ -4762,7 +4776,11 @@
           "textoEnUsoPlantillas_one": "{{count}} plantilla",
           "textoEnUsoPlantillas_other": "{{count}} plantillas",
           "textoEnUsoInformes_one": "{{count}} informe sin emitir",
-          "textoEnUsoInformes_other": "{{count}} informes sin emitir"
+          "textoEnUsoInformes_other": "{{count}} informes sin emitir",
+          "pierdeAlQuitar": "Pierde: {{lista}}.",
+          "deja_el_portal": "Tiene cuenta en el portal: dejará de entrar hasta que se le reactive.",
+          "vuelve_al_portal": "Volverá a entrar en el portal con su cuenta de antes.",
+          "sigue_sin_portal": "Tiene cuenta en el portal, pero seguirá sin entrar: no tenía el acceso puesto."
         },
         "sobre": {
           "equipo_one": "Equipo: {{lista}}",
@@ -4887,7 +4905,11 @@
           "crear_texto_variable": "Crear el texto variable «{{nombre}}» ({{marcador}}), {{modo}}",
           "editar_texto_variable": "Cambiar el texto variable {{texto}}",
           "borrar_texto_variable": "Borrar para siempre el texto variable {{texto}}",
-          "reenviar_enlace_acceso": "Reenviar a {{persona}} el correo para poner su contraseña"
+          "reenviar_enlace_acceso": "Reenviar a {{persona}} el correo para poner su contraseña",
+          "quitar_contacto_cliente": "Quitar al contacto {{contacto}} del cliente {{cliente}}: pierde lo que tenía de ese cliente",
+          "dar_de_baja_contacto": "Dar de baja al contacto {{contacto}}: se puede reactivar",
+          "reactivar_contacto": "Reactivar al contacto {{contacto}}, con sus clientes",
+          "eliminar_contacto": "Eliminar del todo al contacto {{contacto}}: se pierde para siempre"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",

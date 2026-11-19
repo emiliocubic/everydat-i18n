@@ -593,7 +593,14 @@
         "colTelefono": "Phone",
         "colEmail": "Email",
         "usuarioInvitado": "App invited user",
-        "deleteConfirm": "Delete contact {{nombre}}?"
+        "deleteConfirm": "Delete contact {{nombre}}?",
+        "quitar": {
+          "titulo": "Remove {{nombre}} from this client",
+          "sinNada": "They will no longer be a contact of this client. They stay in their other clients.",
+          "pierde": "They will no longer be a contact of this client and will lose what they have from it:",
+          "otros": "They stay in their other clients.",
+          "boton": "Remove"
+        }
       },
       "meses": "months",
       "guardarCambios": "Save changes",
@@ -884,6 +891,13 @@
       "accion": "Delete contact",
       "confirmar": "Permanently delete {{nombre}}? This cannot be undone.",
       "hecho": "Contact deleted."
+    },
+    "pierde": {
+      "recv_informes": "Receiving the reports for {{ambito}}",
+      "recv_presupuestos": "Receiving the quotes for {{ambito}}",
+      "notify_revision": "Next-inspection notices for {{ambito}}",
+      "notify_caducidad": "End-of-life notices for {{ambito}}",
+      "acceso": "Portal access to {{ambito}}"
     }
   },
   "invitados": {
@@ -4762,7 +4776,11 @@
           "textoEnUsoPlantillas_one": "{{count}} template",
           "textoEnUsoPlantillas_other": "{{count}} templates",
           "textoEnUsoInformes_one": "{{count}} unissued report",
-          "textoEnUsoInformes_other": "{{count}} unissued reports"
+          "textoEnUsoInformes_other": "{{count}} unissued reports",
+          "pierdeAlQuitar": "Loses: {{lista}}.",
+          "deja_el_portal": "They have a portal account: they will not be able to log in until reactivated.",
+          "vuelve_al_portal": "They will log in to the portal again with their previous account.",
+          "sigue_sin_portal": "They have a portal account but still will not log in: access was not enabled."
         },
         "sobre": {
           "equipo_one": "Equipment: {{lista}}",
@@ -4887,7 +4905,11 @@
           "crear_texto_variable": "Create the variable text “{{nombre}}” ({{marcador}}), {{modo}}",
           "editar_texto_variable": "Change the variable text {{texto}}",
           "borrar_texto_variable": "Permanently delete the variable text {{texto}}",
-          "reenviar_enlace_acceso": "Resend {{persona}} the email to set their password"
+          "reenviar_enlace_acceso": "Resend {{persona}} the email to set their password",
+          "quitar_contacto_cliente": "Remove contact {{contacto}} from client {{cliente}}: they lose what they had from that client",
+          "dar_de_baja_contacto": "Deactivate contact {{contacto}}: can be reactivated",
+          "reactivar_contacto": "Reactivate contact {{contacto}}, with their clients",
+          "eliminar_contacto": "Delete contact {{contacto}} completely: it is lost forever"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",

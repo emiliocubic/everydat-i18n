@@ -585,7 +585,14 @@
         "colTelefono": "Telephone",
         "colEmail": "E-mail",
         "usuarioInvitado": "Utilisateur invite de l'app",
-        "deleteConfirm": "Supprimer le contact {{nombre}} ?"
+        "deleteConfirm": "Supprimer le contact {{nombre}} ?",
+        "quitar": {
+          "titulo": "Retirer {{nombre}} de ce client",
+          "sinNada": "Ne sera plus contact de ce client. Reste dans ses autres clients.",
+          "pierde": "Ne sera plus contact de ce client et perdra ce qu'il en a :",
+          "otros": "Reste dans ses autres clients.",
+          "boton": "Retirer"
+        }
       },
       "meses": "mois",
       "guardarCambios": "Enregistrer",
@@ -817,6 +824,13 @@
       "accion": "Supprimer le contact",
       "confirmar": "Supprimer définitivement {{nombre}} ? Cette action est irréversible.",
       "hecho": "Contact supprimé."
+    },
+    "pierde": {
+      "recv_informes": "Recevoir les rapports de {{ambito}}",
+      "recv_presupuestos": "Recevoir les devis de {{ambito}}",
+      "notify_revision": "Les avis de prochaine vérification de {{ambito}}",
+      "notify_caducidad": "Les avis de fin de vie de {{ambito}}",
+      "acceso": "L'accès au portail sur {{ambito}}"
     }
   },
   "invitados": {
@@ -4287,7 +4301,11 @@
             "webhook": "À la confirmation, il préviendra le webhook de {{destino}}.",
             "otro": "À la confirmation, il préviendra hors d'Everydat.",
             "correo": "À la confirmation, un e-mail sera envoyé à {{destino}}."
-          }
+          },
+          "pierdeAlQuitar": "Perd : {{lista}}.",
+          "deja_el_portal": "A un compte sur le portail : ne pourra plus s'y connecter jusqu'à sa réactivation.",
+          "vuelve_al_portal": "Pourra de nouveau se connecter au portail avec son compte précédent.",
+          "sigue_sin_portal": "A un compte sur le portail mais ne pourra toujours pas s'y connecter : l'accès n'était pas activé."
         },
         "sobre": {
           "equipo_one": "Équipement : {{lista}}",
@@ -4409,7 +4427,11 @@
           "crear_entidad_acreditacion_inactiva": "Créer l'organisme accréditeur « {{nombre}} », désactivé",
           "editar_entidad_acreditacion": "Modifier l'organisme accréditeur {{entidad}} : {{cambios}}",
           "avisos_caducidad": "Modifier les alertes d'expiration des accréditations : {{cambios}}",
-          "reenviar_enlace_acceso": "Renvoyer à {{persona}} l’e-mail pour définir son mot de passe"
+          "reenviar_enlace_acceso": "Renvoyer à {{persona}} l’e-mail pour définir son mot de passe",
+          "quitar_contacto_cliente": "Retirer le contact {{contacto}} du client {{cliente}} : il perd ce qu'il avait de ce client",
+          "dar_de_baja_contacto": "Désactiver le contact {{contacto}} : peut être réactivé",
+          "reactivar_contacto": "Réactiver le contact {{contacto}}, avec ses clients",
+          "eliminar_contacto": "Supprimer définitivement le contact {{contacto}} : il est perdu pour toujours"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
