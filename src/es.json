@@ -4985,9 +4985,7 @@
           "importar_festivos": "Traer las fiestas nacionales de {{anio}}, sin pisar las que ya haya",
           "crear_ausencia": "Anotar {{tipo}} de {{persona}} del {{desde}} al {{hasta}}{{motivo}}",
           "editar_ausencia": "Cambiar la ausencia {{ausencia}}: {{cambios}}",
-          "borrar_ausencia": "Borrar la ausencia {{ausencia}}: esos días vuelve a estar disponible",
-          "pintar_ausencias_one": "Marcar {{count}} día suelto de {{persona}} como {{tipo}} (si ya lo era, se desmarca)",
-          "pintar_ausencias_other": "Marcar {{count}} días sueltos de {{persona}} como {{tipo}} (si ya lo eran, se desmarcan)"
+          "borrar_ausencia": "Borrar la ausencia {{ausencia}}: esos días vuelve a estar disponible"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5446,9 +5444,7 @@
             "permiso": "permiso"
           },
           "ensayo": {
-            "jornada": "Se queda sin gente la jornada del {{dia}} en {{proyecto}}",
-            "enAlerta_one": "{{count}} jornada queda en alerta",
-            "enAlerta_other": "{{count}} jornadas quedan en alerta"
+            "jornada": "Se queda sin gente la jornada del {{dia}} en {{proyecto}}"
           }
         }
       },

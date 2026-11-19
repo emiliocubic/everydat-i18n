@@ -4985,9 +4985,7 @@
           "importar_festivos": "Bring in the national holidays of {{anio}}, without overwriting existing ones",
           "crear_ausencia": "Record {{tipo}} for {{persona}} from {{desde}} to {{hasta}}{{motivo}}",
           "editar_ausencia": "Change absence {{ausencia}}: {{cambios}}",
-          "borrar_ausencia": "Delete absence {{ausencia}}: those days they are available again",
-          "pintar_ausencias_one": "Mark {{count}} single day of {{persona}} as {{tipo}} (if it already was, it is unmarked)",
-          "pintar_ausencias_other": "Mark {{count}} single days of {{persona}} as {{tipo}} (if they already were, they are unmarked)"
+          "borrar_ausencia": "Delete absence {{ausencia}}: those days they are available again"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5446,9 +5444,7 @@
             "permiso": "leave"
           },
           "ensayo": {
-            "jornada": "The {{dia}} workday at {{proyecto}} is left without staff",
-            "enAlerta_one": "{{count}} workday goes into alert",
-            "enAlerta_other": "{{count}} workdays go into alert"
+            "jornada": "The {{dia}} workday at {{proyecto}} is left without staff"
           }
         }
       },

@@ -4507,9 +4507,7 @@
           "importar_festivos": "Importer les fêtes nationales de {{anio}}, sans écraser celles qui existent",
           "crear_ausencia": "Noter {{tipo}} de {{persona}} du {{desde}} au {{hasta}}{{motivo}}",
           "editar_ausencia": "Modifier l’absence {{ausencia}} : {{cambios}}",
-          "borrar_ausencia": "Supprimer l’absence {{ausencia}} : ces jours-là, la personne redevient disponible",
-          "pintar_ausencias_one": "Marquer {{count}} jour isolé de {{persona}} comme {{tipo}} (s’il l’était déjà, il est démarqué)",
-          "pintar_ausencias_other": "Marquer {{count}} jours isolés de {{persona}} comme {{tipo}} (s’ils l’étaient déjà, ils sont démarqués)"
+          "borrar_ausencia": "Supprimer l’absence {{ausencia}} : ces jours-là, la personne redevient disponible"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4917,9 +4915,7 @@
             "permiso": "permission"
           },
           "ensayo": {
-            "jornada": "La journée du {{dia}} sur {{proyecto}} reste sans personne",
-            "enAlerta_one": "{{count}} journée passe en alerte",
-            "enAlerta_other": "{{count}} journées passent en alerte"
+            "jornada": "La journée du {{dia}} sur {{proyecto}} reste sans personne"
           }
         }
       },
