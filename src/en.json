@@ -4965,7 +4965,15 @@
           "descartar_trabajo_fecha": "Discard the work of the {{fecha}} date of {{sitio}}{{motivo}}: it shows in Lost and no longer in Opportunities",
           "borrar_propuesta": "Delete proposal {{propuesta}}, with its lines and notes",
           "crear_proyecto": "Create a project for client {{cliente}} at {{emplazamiento}}{{detalle}}",
-          "editar_proyecto": "Change in project {{proyecto}}: {{cambios}}"
+          "editar_proyecto": "Change in project {{proyecto}}: {{cambios}}",
+          "arrancar_proyecto": "Start project {{proyecto}} now: the start date becomes today and it goes into execution",
+          "parar_proyecto": "Stop project {{proyecto}} from today{{motivo}}",
+          "reanudar_proyecto": "Resume project {{proyecto}}: the stop and its reason are removed",
+          "devolver_proyecto": "Return project {{proyecto}} to Planning, with manual start",
+          "reabrir_proyecto": "Reopen project {{proyecto}}: it is open again",
+          "cerrar_proyecto": "Close project {{proyecto}}{{fechas}}",
+          "cancelar_proyecto": "Cancel project {{proyecto}}{{motivo}}: it cannot be reactivated",
+          "borrar_proyecto": "Delete project {{proyecto}}: it is lost for good"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5376,6 +5384,17 @@
             "salen_one": "No longer a technician: {{lista}}",
             "salen_other": "No longer technicians: {{lista}}",
             "administradores": "Managers: {{lista}} (the first one is the main one)"
+          },
+          "cierre": {
+            "inicioDictado": "actual start {{fecha}}",
+            "finDictado": "actual end {{fecha}}",
+            "proximaDictada": "next inspection {{fecha}}",
+            "reales": "Actual start {{inicio}} and actual end {{fin}}",
+            "proxima": "Next inspection of {{sitio}}: {{fecha}}",
+            "anulados_one": "Work report {{lista}} is voided",
+            "anulados_other": "Work reports {{lista}} are voided",
+            "eliminados_one": "Draft {{lista}} disappears",
+            "eliminados_other": "Drafts {{lista}} disappear"
           }
         }
       },

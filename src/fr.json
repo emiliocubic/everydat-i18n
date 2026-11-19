@@ -4487,7 +4487,15 @@
           "descartar_trabajo_fecha": "Écarter le travail de l’échéance du {{fecha}} de {{sitio}}{{motivo}} : il apparaît dans Perdus et plus dans Opportunités",
           "borrar_propuesta": "Supprimer la proposition {{propuesta}}, avec ses lignes et ses notes",
           "crear_proyecto": "Créer un projet pour le client {{cliente}} sur {{emplazamiento}}{{detalle}}",
-          "editar_proyecto": "Modifier dans le projet {{proyecto}} : {{cambios}}"
+          "editar_proyecto": "Modifier dans le projet {{proyecto}} : {{cambios}}",
+          "arrancar_proyecto": "Démarrer maintenant le projet {{proyecto}} : le début passe à aujourd’hui et il entre en exécution",
+          "parar_proyecto": "Arrêter le projet {{proyecto}} à partir d’aujourd’hui{{motivo}}",
+          "reanudar_proyecto": "Reprendre le projet {{proyecto}} : l’arrêt et son motif sont retirés",
+          "devolver_proyecto": "Renvoyer le projet {{proyecto}} en planification, avec démarrage manuel",
+          "reabrir_proyecto": "Rouvrir le projet {{proyecto}} : il redevient ouvert",
+          "cerrar_proyecto": "Clôturer le projet {{proyecto}}{{fechas}}",
+          "cancelar_proyecto": "Annuler le projet {{proyecto}}{{motivo}} : il ne pourra pas être réactivé",
+          "borrar_proyecto": "Supprimer le projet {{proyecto}} : il est perdu définitivement"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4847,6 +4855,17 @@
             "salen_one": "N’est plus technicien : {{lista}}",
             "salen_other": "Ne sont plus techniciens : {{lista}}",
             "administradores": "Responsables : {{lista}} (le premier est le principal)"
+          },
+          "cierre": {
+            "inicioDictado": "début réel {{fecha}}",
+            "finDictado": "fin réelle {{fecha}}",
+            "proximaDictada": "prochaine inspection {{fecha}}",
+            "reales": "Début réel le {{inicio}} et fin réelle le {{fin}}",
+            "proxima": "Prochaine inspection de {{sitio}} : {{fecha}}",
+            "anulados_one": "Le bon {{lista}} est annulé",
+            "anulados_other": "Les bons {{lista}} sont annulés",
+            "eliminados_one": "Le brouillon {{lista}} disparaît",
+            "eliminados_other": "Les brouillons {{lista}} disparaissent"
           }
         }
       },
