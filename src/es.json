@@ -5018,7 +5018,13 @@
           "recibir_en_oficina_instalar_one": "{{count}} a instalar",
           "recibir_en_oficina_instalar_other": "{{count}} a instalar",
           "recibir_en_oficina_noRevisar_one": "{{count}} solo a reparar",
-          "recibir_en_oficina_noRevisar_other": "{{count}} solo a reparar"
+          "recibir_en_oficina_noRevisar_other": "{{count}} solo a reparar",
+          "borrar_emplazamiento": "Borrar el emplazamiento {{emplazamiento}}: va a la papelera",
+          "recuperar_emplazamiento": "Sacar de la papelera el emplazamiento {{emplazamiento}}",
+          "borrar_carpeta": "Borrar la carpeta {{carpeta}}, que está vacía",
+          "borrar_actuacion": "Mandar a la papelera la actuación {{actuacion}}",
+          "borrar_actuacion_definitivo": "Vaciar de la papelera la actuación {{actuacion}}: se pierde para siempre",
+          "deshacer_conjunto": "Deshacer el conjunto {{conjunto}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5613,6 +5619,16 @@
             "reparacion": "reparación",
             "instalacion": "instalación"
           }
+        },
+        "papelera": {
+          "papelera": "Va a la papelera: se puede recuperar",
+          "paraSiempre": "Se pierde para siempre: no se puede deshacer",
+          "documentos_one": "Se va con ella {{count}} documento que solo cuelga de ella",
+          "documentos_other": "Se van con ella {{count}} documentos que solo cuelgan de ella",
+          "sueltos_one": "Su equipo queda suelto en la carpeta {{carpeta}}, con su historial: no se borra nada",
+          "sueltos_other": "Sus {{count}} equipos quedan sueltos en la carpeta {{carpeta}}, cada uno con su historial: no se borra nada",
+          "piezas_one": "{{count}} pieza asignada a un sistema queda sin asignar",
+          "piezas_other": "{{count}} piezas asignadas a sus sistemas quedan sin asignar"
         }
       },
       "deleteChat": "Borrar conversación",

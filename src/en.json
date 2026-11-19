@@ -5018,7 +5018,13 @@
           "recibir_en_oficina_instalar_one": "{{count}} to install",
           "recibir_en_oficina_instalar_other": "{{count}} to install",
           "recibir_en_oficina_noRevisar_one": "{{count}} only to repair",
-          "recibir_en_oficina_noRevisar_other": "{{count}} only to repair"
+          "recibir_en_oficina_noRevisar_other": "{{count}} only to repair",
+          "borrar_emplazamiento": "Delete site {{emplazamiento}}: it goes to the bin",
+          "recuperar_emplazamiento": "Restore site {{emplazamiento}} from the bin",
+          "borrar_carpeta": "Delete folder {{carpeta}}, which is empty",
+          "borrar_actuacion": "Send action {{actuacion}} to the bin",
+          "borrar_actuacion_definitivo": "Empty action {{actuacion}} from the bin: it is lost for good",
+          "deshacer_conjunto": "Break up set {{conjunto}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5613,6 +5619,16 @@
             "reparacion": "repair",
             "instalacion": "installation"
           }
+        },
+        "papelera": {
+          "papelera": "It goes to the bin: it can be restored",
+          "paraSiempre": "It is lost for good: this cannot be undone",
+          "documentos_one": "{{count}} document that only hangs from it goes with it",
+          "documentos_other": "{{count}} documents that only hang from it go with it",
+          "sueltos_one": "Its item stays loose in folder {{carpeta}}, with its history: nothing is deleted",
+          "sueltos_other": "Its {{count}} items stay loose in folder {{carpeta}}, each with its history: nothing is deleted",
+          "piezas_one": "{{count}} part assigned to a system is left unassigned",
+          "piezas_other": "{{count}} parts assigned to its systems are left unassigned"
         }
       },
       "deleteChat": "Delete conversation",
