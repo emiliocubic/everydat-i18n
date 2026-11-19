@@ -7019,7 +7019,15 @@
       "sinMatizacion": "Sin matización",
       "comentarioAutoHint": "Lo escribe la aplicación según el resultado y se rehace al guardar.",
       "borrarDocs": "Con ella va {{count}} documento, que vuelve si se recupera.",
-      "borrarDocs_other": "Con ella van {{count}} documentos, que vuelven si se recupera."
+      "borrarDocs_other": "Con ella van {{count}} documentos, que vuelven si se recupera.",
+      "bloqueo": {
+        "informe": "Está en el informe {{codigo}}, ya emitido: para corregirla, reabre el informe.",
+        "parte": "Está en el parte {{codigo}}, emitido o firmado: para corregirla, anula el parte.",
+        "validada": "Está validada: para corregirla, quítale la validación en la pestaña Ejecución del proyecto.",
+        "irInforme": "Abrir el informe",
+        "irParte": "Abrir los partes del proyecto",
+        "irEjecucion": "Abrir la ejecución del proyecto"
+      }
     },
     "medida": {
       "senaliza": "Se señaliza como no utilizable",

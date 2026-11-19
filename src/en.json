@@ -7019,7 +7019,15 @@
       "sinMatizacion": "No qualification",
       "comentarioAutoHint": "Written by the application from the result and rebuilt on saving.",
       "borrarDocs": "{{count}} document goes with it and comes back if it is restored.",
-      "borrarDocs_other": "{{count}} documents go with it and come back if it is restored."
+      "borrarDocs_other": "{{count}} documents go with it and come back if it is restored.",
+      "bloqueo": {
+        "informe": "It is in report {{codigo}}, already issued: to correct it, reopen the report.",
+        "parte": "It is in work report {{codigo}}, issued or signed: to correct it, void the work report.",
+        "validada": "It is validated: to correct it, remove the validation in the project's Execution tab.",
+        "irInforme": "Open the report",
+        "irParte": "Open the project's work reports",
+        "irEjecucion": "Open the project's execution"
+      }
     },
     "medida": {
       "senaliza": "Tagged as not usable",

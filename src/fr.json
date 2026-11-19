@@ -6345,7 +6345,15 @@
       "sinMatizacion": "Sans nuance",
       "comentarioAutoHint": "Écrit par l'application selon le résultat et refait à l'enregistrement.",
       "borrarDocs": "{{count}} document part avec lui et revient s'il est restauré.",
-      "borrarDocs_other": "{{count}} documents partent avec lui et reviennent s'il est restauré."
+      "borrarDocs_other": "{{count}} documents partent avec lui et reviennent s'il est restauré.",
+      "bloqueo": {
+        "informe": "Elle figure dans le rapport {{codigo}}, déjà émis : pour la corriger, rouvrez le rapport.",
+        "parte": "Elle figure dans le bon d'intervention {{codigo}}, émis ou signé : pour la corriger, annulez-le.",
+        "validada": "Elle est validée : pour la corriger, retirez la validation dans l'onglet Exécution du projet.",
+        "irInforme": "Ouvrir le rapport",
+        "irParte": "Ouvrir les bons du projet",
+        "irEjecucion": "Ouvrir l'exécution du projet"
+      }
     },
     "medida": {
       "senaliza": "Signalé comme non utilisable",
