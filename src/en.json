@@ -4953,7 +4953,17 @@
           "cargar_censo_propuesta_emplazamiento": "Load the census of {{emplazamiento}} into the inspection block of proposal {{propuesta}}, with the rate prices: it replaces that site’s lines",
           "generar_version_propuesta": "Generate a version of proposal {{propuesta}} dated {{fecha}}{{validez}}: it is frozen and the quote is locked",
           "desbloquear_propuesta": "Unlock the quote of proposal {{propuesta}} to change it; the generated versions stay as they are",
-          "quitar_documento_propuesta": "Remove the quote started in proposal {{propuesta}}: its lines are deleted"
+          "quitar_documento_propuesta": "Remove the quote started in proposal {{propuesta}}: its lines are deleted",
+          "estado_version_propuesta_enviada": "Mark a version of proposal {{propuesta}} as sent: it is only a mark, nothing is sent to the client, and it cannot be undone (it does not go back to «generated»)",
+          "estado_version_propuesta_aceptada": "Mark a version of proposal {{propuesta}} as accepted: the probability goes to 100 %; the proposal stays open and no project is created",
+          "estado_version_propuesta_rechazada": "Mark a version of proposal {{propuesta}} as rejected: the probability goes to 0 %; the proposal stays open to be redone",
+          "estado_version_propuesta_generada": "Return a version of proposal {{propuesta}} to «generated»",
+          "aceptar_propuesta": "Accept proposal {{propuesta}}{{detalle}}: a project is created for each site in its scope",
+          "aceptar_propuesta_emplazamiento": "Accept proposal {{propuesta}}{{detalle}}: its project is created at {{emplazamiento}}",
+          "aceptar_propuesta_sinProyectos": "Accept proposal {{propuesta}} without creating any project",
+          "descartar_propuesta": "Discard proposal {{propuesta}}{{motivo}}: it goes to Lost",
+          "descartar_trabajo_fecha": "Discard the work of the {{fecha}} date of {{sitio}}{{motivo}}: it shows in Lost and no longer in Opportunities",
+          "borrar_propuesta": "Delete proposal {{propuesta}}, with its lines and notes"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5313,6 +5323,21 @@
             "sinPrecio_other": "{{count}} lines have no price in the rates: they will be zero until someone sets it",
             "total": "The quote will total {{total}}, as Everydat calculates it",
             "version": "It will be version v{{n}} and will be frozen: to change it, it will have to be unlocked"
+          },
+          "comercial": {
+            "estados": {
+              "generada": "generated",
+              "enviada": "sent",
+              "aceptada": "accepted",
+              "rechazada": "rejected"
+            },
+            "version": "Version v{{n}} will be {{estado}} and the probability {{probabilidad}} %",
+            "versionSinProbabilidad": "Version v{{n}} will be {{estado}}",
+            "proyecto": "Project {{nombre}} will be created at {{emplazamiento}}{{detalle}}",
+            "zonas": "zones {{zonas}}",
+            "inicio": "tentative start {{fecha}}",
+            "ninguno": "No project will be created",
+            "cancelado": "Without quotes, it will be a cancelled project, in Lost with its reason"
           }
         }
       },

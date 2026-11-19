@@ -4953,7 +4953,17 @@
           "cargar_censo_propuesta_emplazamiento": "Cargar el censo de {{emplazamiento}} en el bloque de revisión de la propuesta {{propuesta}}, con los precios de la tarifa: sustituye las líneas de ese emplazamiento",
           "generar_version_propuesta": "Generar una versión de la propuesta {{propuesta}} con fecha {{fecha}}{{validez}}: queda congelada y el presupuesto se bloquea",
           "desbloquear_propuesta": "Desbloquear el presupuesto de la propuesta {{propuesta}} para cambiarlo; las versiones generadas se quedan como están",
-          "quitar_documento_propuesta": "Quitar el presupuesto empezado de la propuesta {{propuesta}}: se borran sus líneas"
+          "quitar_documento_propuesta": "Quitar el presupuesto empezado de la propuesta {{propuesta}}: se borran sus líneas",
+          "estado_version_propuesta_enviada": "Marcar como enviada una versión de la propuesta {{propuesta}}: es solo una marca, no se envía nada al cliente, y no tiene vuelta atrás (no vuelve a «generada»)",
+          "estado_version_propuesta_aceptada": "Marcar como aceptada una versión de la propuesta {{propuesta}}: la probabilidad pasa al 100 %; la propuesta sigue abierta y no nace ningún proyecto",
+          "estado_version_propuesta_rechazada": "Marcar como rechazada una versión de la propuesta {{propuesta}}: la probabilidad pasa al 0 %; la propuesta sigue abierta para rehacerla",
+          "estado_version_propuesta_generada": "Devolver a «generada» una versión de la propuesta {{propuesta}}",
+          "aceptar_propuesta": "Aceptar la propuesta {{propuesta}}{{detalle}}: nace un proyecto por cada emplazamiento de su alcance",
+          "aceptar_propuesta_emplazamiento": "Aceptar la propuesta {{propuesta}}{{detalle}}: su proyecto nace en {{emplazamiento}}",
+          "aceptar_propuesta_sinProyectos": "Aceptar la propuesta {{propuesta}} sin crear ningún proyecto",
+          "descartar_propuesta": "Descartar la propuesta {{propuesta}}{{motivo}}: pasa a Perdidos",
+          "descartar_trabajo_fecha": "Descartar el trabajo de la fecha {{fecha}} de {{sitio}}{{motivo}}: sale en Perdidos y deja de salir en Oportunidades",
+          "borrar_propuesta": "Eliminar la propuesta {{propuesta}}, con sus líneas y sus notas"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5313,6 +5323,21 @@
             "sinPrecio_other": "{{count}} líneas no tienen precio en la tarifa: irán a cero hasta que alguien lo ponga",
             "total": "El presupuesto quedará en {{total}}, como lo calcula Everydat",
             "version": "Será la versión v{{n}} y quedará congelada: para cambiarla habrá que desbloquearla"
+          },
+          "comercial": {
+            "estados": {
+              "generada": "generada",
+              "enviada": "enviada",
+              "aceptada": "aceptada",
+              "rechazada": "rechazada"
+            },
+            "version": "La versión v{{n}} quedará {{estado}} y la probabilidad, en el {{probabilidad}} %",
+            "versionSinProbabilidad": "La versión v{{n}} quedará {{estado}}",
+            "proyecto": "Nacerá el proyecto {{nombre}} en {{emplazamiento}}{{detalle}}",
+            "zonas": "zonas {{zonas}}",
+            "inicio": "inicio orientativo el {{fecha}}",
+            "ninguno": "No nacerá ningún proyecto",
+            "cancelado": "Sin presupuestos, quedará como un proyecto cancelado, en Perdidos con su motivo"
           }
         }
       },

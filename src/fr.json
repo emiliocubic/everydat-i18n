@@ -4475,7 +4475,17 @@
           "cargar_censo_propuesta_emplazamiento": "Charger le recensement de {{emplazamiento}} dans le bloc de vérification de la proposition {{propuesta}}, aux prix du tarif : remplace les lignes de ce site",
           "generar_version_propuesta": "Générer une version de la proposition {{propuesta}} datée du {{fecha}}{{validez}} : elle est figée et le devis est verrouillé",
           "desbloquear_propuesta": "Déverrouiller le devis de la proposition {{propuesta}} pour le modifier ; les versions générées restent telles quelles",
-          "quitar_documento_propuesta": "Retirer le devis commencé de la proposition {{propuesta}} : ses lignes sont supprimées"
+          "quitar_documento_propuesta": "Retirer le devis commencé de la proposition {{propuesta}} : ses lignes sont supprimées",
+          "estado_version_propuesta_enviada": "Marquer comme envoyée une version de la proposition {{propuesta}} : ce n’est qu’une marque, rien n’est envoyé au client, et c’est irréversible (elle ne revient pas à « générée »)",
+          "estado_version_propuesta_aceptada": "Marquer comme acceptée une version de la proposition {{propuesta}} : la probabilité passe à 100 % ; la proposition reste ouverte et aucun projet n’est créé",
+          "estado_version_propuesta_rechazada": "Marquer comme refusée une version de la proposition {{propuesta}} : la probabilité passe à 0 % ; la proposition reste ouverte pour la refaire",
+          "estado_version_propuesta_generada": "Remettre à « générée » une version de la proposition {{propuesta}}",
+          "aceptar_propuesta": "Accepter la proposition {{propuesta}}{{detalle}} : un projet est créé pour chaque site de son périmètre",
+          "aceptar_propuesta_emplazamiento": "Accepter la proposition {{propuesta}}{{detalle}} : son projet est créé sur {{emplazamiento}}",
+          "aceptar_propuesta_sinProyectos": "Accepter la proposition {{propuesta}} sans créer de projet",
+          "descartar_propuesta": "Écarter la proposition {{propuesta}}{{motivo}} : elle passe dans Perdus",
+          "descartar_trabajo_fecha": "Écarter le travail de l’échéance du {{fecha}} de {{sitio}}{{motivo}} : il apparaît dans Perdus et plus dans Opportunités",
+          "borrar_propuesta": "Supprimer la proposition {{propuesta}}, avec ses lignes et ses notes"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4784,6 +4794,21 @@
             "sinPrecio_other": "{{count}} lignes n’ont pas de prix au tarif : elles resteront à zéro jusqu’à ce que quelqu’un le saisisse",
             "total": "Le devis s’élèvera à {{total}}, comme le calcule Everydat",
             "version": "Ce sera la version v{{n}} et elle sera figée : pour la modifier, il faudra la déverrouiller"
+          },
+          "comercial": {
+            "estados": {
+              "generada": "générée",
+              "enviada": "envoyée",
+              "aceptada": "acceptée",
+              "rechazada": "refusée"
+            },
+            "version": "La version v{{n}} sera {{estado}} et la probabilité à {{probabilidad}} %",
+            "versionSinProbabilidad": "La version v{{n}} sera {{estado}}",
+            "proyecto": "Le projet {{nombre}} sera créé sur {{emplazamiento}}{{detalle}}",
+            "zonas": "zones {{zonas}}",
+            "inicio": "début indicatif le {{fecha}}",
+            "ninguno": "Aucun projet ne sera créé",
+            "cancelado": "Sans devis, ce sera un projet annulé, dans Perdus avec son motif"
           }
         }
       },
