@@ -1384,7 +1384,7 @@
       "integraciones": "Integraciones (WS y webhooks)"
     },
     "limite": "Límite de usuarios internos",
-    "limiteHint": "Vacío = sin límite. Bajarlo no expulsa a nadie: solo cierra las altas.",
+    "limiteHint": "Vacío = 999, el de serie: no es un tope real y la empresa no ve ningún contador. Bajarlo no expulsa a nadie: solo cierra las altas.",
     "usuariosInternos": "{{count}} internos activos ahora",
     "guardar": "Guardar",
     "guardado": "Instancia guardada",
@@ -1854,6 +1854,12 @@
       "audit": {
         "view": "Consultar el registro de auditoría"
       }
+    },
+    "plazas": {
+      "de": "{{en_uso}} de {{limite}} plazas",
+      "quedan_one": "Queda {{count}} plaza para dar de alta o reactivar internos",
+      "quedan_other": "Quedan {{count}} plazas para dar de alta o reactivar internos",
+      "quedan_zero": "No queda ninguna plaza: no se puede dar de alta ni reactivar a ningún interno"
     }
   },
   "emplazamientos": {
@@ -5104,7 +5110,10 @@
           "borrar_documento_acreditacion": "Borrar el documento de acreditación {{documento}} con todos sus titulares",
           "anular_acreditacion": "Anular el documento de acreditación {{documento}}: deja de contar para todo y no se deshace",
           "borrar_tipo_acreditacion": "Borrar el tipo de acreditación {{tipo}}",
-          "borrar_entidad_acreditacion": "Borrar la entidad acreditadora {{entidad}}"
+          "borrar_entidad_acreditacion": "Borrar la entidad acreditadora {{entidad}}",
+          "reactivar_usuario": "Reactivar al usuario {{persona}}: vuelve a entrar con su email y su contraseña de antes",
+          "cambiar_email_usuario": "Cambiar el email del usuario {{persona}} a {{email}}",
+          "borrar_equipo_trabajo": "Borrar el equipo de trabajo {{equipo}}: no borra a ninguna persona, solo deshace la agrupación"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5259,8 +5268,10 @@
             "first_name": "Nombre",
             "last_name": "Apellidos",
             "telefono": "Teléfono",
-            "sale_en_planificador": "Sale en el planificador"
-          }
+            "sale_en_planificador": "Sale en el planificador",
+            "email": "Email"
+          },
+          "emailEntra": "Desde que confirmes entrará con {{email}}, y {{antes}} deja de valer: la cuenta es de quien controle el buzón nuevo"
         },
         "equipo": {
           "entran_one": "entra {{count}} persona",
@@ -5273,7 +5284,10 @@
             "color": "Color",
             "descripcion": "Descripción",
             "miembros": "Miembros"
-          }
+          },
+          "borrado_one": "Estaba {{lista}}, que sigue en la empresa",
+          "borrado_other": "Estaban {{lista}}, que siguen en la empresa",
+          "borradoVacio": "No tenía a nadie"
         },
         "perfil": {
           "idioma": "idioma {{idioma}}",
@@ -5813,6 +5827,16 @@
           "quitarPasan_zero": "«{{valor}}» sale de la lista: ningún equipo lo lleva y las referencias del catálogo que lo llevan pasan a «{{a}}»",
           "quitarVacian_zero": "«{{valor}}» sale de la lista: ningún equipo lo lleva y las referencias del catálogo que lo llevan se quedan sin el dato",
           "quitarRetira_zero": "«{{valor}}» se retira: deja de ofrecerse, y las referencias del catálogo que lo llevan lo conservan"
+        },
+        "reactivar": {
+          "capacidades": "Vuelve con {{lista}}",
+          "soloBase": "Vuelve solo con la base, sin capacidades",
+          "superadmin": "Vuelve como superadmin",
+          "alcance_total": "Verá todos los clientes",
+          "alcance_ninguno": "No verá ningún cliente",
+          "alcance_clientes": "Verá lo que tenía asignado: {{lista}}",
+          "plaza": "Gasta una plaza: quedarán {{quedan}} de {{limite}}",
+          "sinPlaza": "No queda ninguna plaza libre de las {{limite}} contratadas: no se podrá reactivar"
         }
       },
       "deleteChat": "Borrar conversación",

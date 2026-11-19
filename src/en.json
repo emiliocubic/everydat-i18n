@@ -1513,7 +1513,7 @@
       "integraciones": "Integrations (WS and webhooks)"
     },
     "limite": "Internal user limit",
-    "limiteHint": "Empty = no limit. Lowering it expels nobody: it only closes new sign-ups.",
+    "limiteHint": "Empty = 999, the default: not a real cap, and the company sees no counter. Lowering it expels nobody: it only closes new sign-ups.",
     "usuariosInternos": "{{count}} internal users active now",
     "guardar": "Save",
     "guardado": "Instance saved",
@@ -1983,6 +1983,12 @@
       "audit": {
         "view": "Consult the audit log"
       }
+    },
+    "plazas": {
+      "de": "{{en_uso}} of {{limite}} seats",
+      "quedan_one": "{{count}} seat left to add or reactivate internal users",
+      "quedan_other": "{{count}} seats left to add or reactivate internal users",
+      "quedan_zero": "No seats left: no internal user can be added or reactivated"
     }
   },
   "emplazamientos": {
@@ -5104,7 +5110,10 @@
           "borrar_documento_acreditacion": "Delete accreditation document {{documento}} with all its holders",
           "anular_acreditacion": "Void accreditation document {{documento}}: it stops counting for everything and cannot be undone",
           "borrar_tipo_acreditacion": "Delete accreditation type {{tipo}}",
-          "borrar_entidad_acreditacion": "Delete accrediting body {{entidad}}"
+          "borrar_entidad_acreditacion": "Delete accrediting body {{entidad}}",
+          "reactivar_usuario": "Reactivate user {{persona}}: they sign in again with their previous email and password",
+          "cambiar_email_usuario": "Change the email of user {{persona}} to {{email}}",
+          "borrar_equipo_trabajo": "Delete work team {{equipo}}: no person is deleted, only the grouping is undone"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5259,8 +5268,10 @@
             "first_name": "First name",
             "last_name": "Last name",
             "telefono": "Phone",
-            "sale_en_planificador": "Shown in the planner"
-          }
+            "sale_en_planificador": "Shown in the planner",
+            "email": "Email"
+          },
+          "emailEntra": "Once you confirm they will sign in with {{email}}, and {{antes}} stops working: the account belongs to whoever controls the new mailbox"
         },
         "equipo": {
           "entran_one": "{{count}} person joins",
@@ -5273,7 +5284,10 @@
             "color": "Colour",
             "descripcion": "Description",
             "miembros": "Members"
-          }
+          },
+          "borrado_one": "{{lista}} was in it and stays in the company",
+          "borrado_other": "{{lista}} were in it and stay in the company",
+          "borradoVacio": "It had nobody"
         },
         "perfil": {
           "idioma": "language {{idioma}}",
@@ -5813,6 +5827,16 @@
           "quitarPasan_zero": "«{{valor}}» leaves the list: no item uses it, and the catalogue references that have it move to «{{a}}»",
           "quitarVacian_zero": "«{{valor}}» leaves the list: no item uses it, and the catalogue references that have it are left without the value",
           "quitarRetira_zero": "«{{valor}}» is retired: no longer offered, and the catalogue references that have it keep it"
+        },
+        "reactivar": {
+          "capacidades": "Comes back with {{lista}}",
+          "soloBase": "Comes back with the base only, no capabilities",
+          "superadmin": "Comes back as superadmin",
+          "alcance_total": "Will see all clients",
+          "alcance_ninguno": "Will see no clients",
+          "alcance_clientes": "Will see what they had assigned: {{lista}}",
+          "plaza": "Uses a seat: {{quedan}} of {{limite}} will be left",
+          "sinPlaza": "No free seat left of the {{limite}} contracted: it cannot be reactivated"
         }
       },
       "deleteChat": "Delete conversation",
