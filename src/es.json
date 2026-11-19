@@ -4909,7 +4909,14 @@
           "quitar_contacto_cliente": "Quitar al contacto {{contacto}} del cliente {{cliente}}: pierde lo que tenía de ese cliente",
           "dar_de_baja_contacto": "Dar de baja al contacto {{contacto}}: se puede reactivar",
           "reactivar_contacto": "Reactivar al contacto {{contacto}}, con sus clientes",
-          "eliminar_contacto": "Eliminar del todo al contacto {{contacto}}: se pierde para siempre"
+          "eliminar_contacto": "Eliminar del todo al contacto {{contacto}}: se pierde para siempre",
+          "crear_revision": "Apuntar la revisión del {{fecha}} del equipo {{equipo}}: {{resultado}}{{detalle}}",
+          "crear_revision_instalacion": "Apuntar la instalación del {{fecha}} del equipo {{equipo}}{{detalle}}",
+          "crear_revision_conjunto": "Apuntar la revisión del {{fecha}} del conjunto {{conjunto}}, una en cada equipo: {{resultado}}{{detalle}}",
+          "editar_revision": "Corregir la revisión {{revision}}: {{cambios}}",
+          "actualizar_checkpoint": "Marcar el punto {{punto}} como {{marca}}{{detalle}}",
+          "actualizar_checkpoint_observacion": "Cambiar la observación del punto {{punto}}:{{detalle}}",
+          "puntuar_todos_los_checkpoints": "Marcar todos los puntos de la revisión {{revision}} como {{marca}}; el resultado de la revisión no cambia"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5188,6 +5195,34 @@
             "caracteristica_vacio": "{{campo}} está vacía",
             "desconocida": "una condición que no se reconoce"
           }
+        },
+        "revision": {
+          "hechaPor": "hecha por {{nombre}}",
+          "hora": "a las {{hora}}",
+          "hasta": "vale hasta el {{fecha}}",
+          "conArreglo": "tiene arreglo",
+          "sinArreglo": "no tiene arreglo",
+          "sinChecklist": "sin checklist",
+          "puntos_one": "{{count}} punto marcado",
+          "puntos_other": "{{count}} puntos marcados",
+          "fecha": "fecha {{fecha}}",
+          "resultado": "resultado {{resultado}}",
+          "sinObservacion": " sin observación"
+        },
+        "situacion": {
+          "sin_revisar": "sin revisar",
+          "apto": "apto",
+          "no_apto": "no apto",
+          "rev_caducada": "con la revisión caducada",
+          "fin_vida": "al final de su vida útil",
+          "hasta": "{{situacion}} hasta el {{fecha}}",
+          "sinCaducidad": "{{situacion}} sin caducidad",
+          "cambia_equipo": "El equipo {{nombre}} pasará de {{antes}} a {{despues}}",
+          "cambia_conjunto": "El conjunto {{nombre}} pasará de {{antes}} a {{despues}}",
+          "sigue_equipo": "El equipo {{nombre}} seguirá {{despues}}",
+          "sigue_conjunto": "El conjunto {{nombre}} seguirá {{despues}}",
+          "validez": "La revisión valdrá hasta el {{fecha}}, como la calcula Everydat",
+          "firma": "La firma {{nombre}}"
         }
       },
       "deleteChat": "Borrar conversación",

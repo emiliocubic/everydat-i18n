@@ -4431,7 +4431,14 @@
           "quitar_contacto_cliente": "Retirer le contact {{contacto}} du client {{cliente}} : il perd ce qu'il avait de ce client",
           "dar_de_baja_contacto": "Désactiver le contact {{contacto}} : peut être réactivé",
           "reactivar_contacto": "Réactiver le contact {{contacto}}, avec ses clients",
-          "eliminar_contacto": "Supprimer définitivement le contact {{contacto}} : il est perdu pour toujours"
+          "eliminar_contacto": "Supprimer définitivement le contact {{contacto}} : il est perdu pour toujours",
+          "crear_revision": "Enregistrer la vérification du {{fecha}} de l'équipement {{equipo}} : {{resultado}}{{detalle}}",
+          "crear_revision_instalacion": "Enregistrer l'installation du {{fecha}} de l'équipement {{equipo}}{{detalle}}",
+          "crear_revision_conjunto": "Enregistrer la vérification du {{fecha}} de l'ensemble {{conjunto}}, une sur chaque équipement : {{resultado}}{{detalle}}",
+          "editar_revision": "Corriger la vérification {{revision}} : {{cambios}}",
+          "actualizar_checkpoint": "Marquer le point {{punto}} comme {{marca}}{{detalle}}",
+          "actualizar_checkpoint_observacion": "Modifier l'observation du point {{punto}} :{{detalle}}",
+          "puntuar_todos_los_checkpoints": "Marquer tous les points de la vérification {{revision}} comme {{marca}} ; le résultat de la vérification ne change pas"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4659,6 +4666,34 @@
             "titulares": "Aux titulaires",
             "admins": "Alertés"
           }
+        },
+        "revision": {
+          "hechaPor": "faite par {{nombre}}",
+          "hora": "à {{hora}}",
+          "hasta": "valable jusqu'au {{fecha}}",
+          "conArreglo": "réparable",
+          "sinArreglo": "non réparable",
+          "sinChecklist": "sans checklist",
+          "puntos_one": "{{count}} point marqué",
+          "puntos_other": "{{count}} points marqués",
+          "fecha": "date {{fecha}}",
+          "resultado": "résultat {{resultado}}",
+          "sinObservacion": " sans observation"
+        },
+        "situacion": {
+          "sin_revisar": "non vérifié",
+          "apto": "conforme",
+          "no_apto": "non conforme",
+          "rev_caducada": "avec la vérification échue",
+          "fin_vida": "en fin de vie",
+          "hasta": "{{situacion}} jusqu'au {{fecha}}",
+          "sinCaducidad": "{{situacion}} sans échéance",
+          "cambia_equipo": "L'équipement {{nombre}} passera de {{antes}} à {{despues}}",
+          "cambia_conjunto": "L'ensemble {{nombre}} passera de {{antes}} à {{despues}}",
+          "sigue_equipo": "L'équipement {{nombre}} restera {{despues}}",
+          "sigue_conjunto": "L'ensemble {{nombre}} restera {{despues}}",
+          "validez": "La vérification sera valable jusqu'au {{fecha}}, comme la calcule Everydat",
+          "firma": "Signée par {{nombre}}"
         }
       },
       "deleteChat": "Supprimer la conversation",

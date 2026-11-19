@@ -4909,7 +4909,14 @@
           "quitar_contacto_cliente": "Remove contact {{contacto}} from client {{cliente}}: they lose what they had from that client",
           "dar_de_baja_contacto": "Deactivate contact {{contacto}}: can be reactivated",
           "reactivar_contacto": "Reactivate contact {{contacto}}, with their clients",
-          "eliminar_contacto": "Delete contact {{contacto}} completely: it is lost forever"
+          "eliminar_contacto": "Delete contact {{contacto}} completely: it is lost forever",
+          "crear_revision": "Record the inspection of {{fecha}} on item {{equipo}}: {{resultado}}{{detalle}}",
+          "crear_revision_instalacion": "Record the installation of {{fecha}} on item {{equipo}}{{detalle}}",
+          "crear_revision_conjunto": "Record the inspection of {{fecha}} on set {{conjunto}}, one on each item: {{resultado}}{{detalle}}",
+          "editar_revision": "Correct inspection {{revision}}: {{cambios}}",
+          "actualizar_checkpoint": "Mark checkpoint {{punto}} as {{marca}}{{detalle}}",
+          "actualizar_checkpoint_observacion": "Change the note on checkpoint {{punto}}:{{detalle}}",
+          "puntuar_todos_los_checkpoints": "Mark every checkpoint of inspection {{revision}} as {{marca}}; the inspection result does not change"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5188,6 +5195,34 @@
             "caracteristica_vacio": "{{campo}} is empty",
             "desconocida": "an unrecognised condition"
           }
+        },
+        "revision": {
+          "hechaPor": "done by {{nombre}}",
+          "hora": "at {{hora}}",
+          "hasta": "valid until {{fecha}}",
+          "conArreglo": "can be repaired",
+          "sinArreglo": "cannot be repaired",
+          "sinChecklist": "no checklist",
+          "puntos_one": "{{count}} checkpoint marked",
+          "puntos_other": "{{count}} checkpoints marked",
+          "fecha": "date {{fecha}}",
+          "resultado": "result {{resultado}}",
+          "sinObservacion": " with no note"
+        },
+        "situacion": {
+          "sin_revisar": "not inspected",
+          "apto": "pass",
+          "no_apto": "fail",
+          "rev_caducada": "with its inspection overdue",
+          "fin_vida": "at the end of its service life",
+          "hasta": "{{situacion}} until {{fecha}}",
+          "sinCaducidad": "{{situacion}} with no expiry",
+          "cambia_equipo": "Item {{nombre}} will go from {{antes}} to {{despues}}",
+          "cambia_conjunto": "Set {{nombre}} will go from {{antes}} to {{despues}}",
+          "sigue_equipo": "Item {{nombre}} will stay {{despues}}",
+          "sigue_conjunto": "Set {{nombre}} will stay {{despues}}",
+          "validez": "The inspection will be valid until {{fecha}}, as Everydat calculates it",
+          "firma": "Signed by {{nombre}}"
         }
       },
       "deleteChat": "Delete conversation",
