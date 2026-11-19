@@ -4279,6 +4279,22 @@
             "otro": "À la confirmation, il préviendra hors d'Everydat."
           }
         },
+        "sobre": {
+          "equipo_one": "Équipement : {{lista}}",
+          "equipo_other": "Les {{count}} équipements : {{lista}}",
+          "carpeta_one": "Dossier : {{lista}}",
+          "carpeta_other": "Dossiers : {{lista}}",
+          "persona_one": "Personne : {{lista}}",
+          "persona_other": "Personnes : {{lista}}",
+          "cliente_one": "Client : {{lista}}",
+          "cliente_other": "Clients : {{lista}}",
+          "emplazamiento_one": "Site : {{lista}}",
+          "emplazamiento_other": "Sites : {{lista}}",
+          "contacto_one": "Contact : {{lista}}",
+          "contacto_other": "Contacts : {{lista}}",
+          "otro": "Sur : {{lista}}",
+          "falta": "n° {{id}}, qui n'existe pas ou que vous ne voyez pas"
+        },
         "num": "n° {{id}}",
         "steps": {
           "crear_cliente": "Créer le client « {{nombre}} »",

@@ -4749,6 +4749,22 @@
             "otro": "On confirming, it will notify outside Everydat."
           }
         },
+        "sobre": {
+          "equipo_one": "Equipment: {{lista}}",
+          "equipo_other": "The {{count}} pieces of equipment: {{lista}}",
+          "carpeta_one": "Folder: {{lista}}",
+          "carpeta_other": "Folders: {{lista}}",
+          "persona_one": "Person: {{lista}}",
+          "persona_other": "People: {{lista}}",
+          "cliente_one": "Client: {{lista}}",
+          "cliente_other": "Clients: {{lista}}",
+          "emplazamiento_one": "Site: {{lista}}",
+          "emplazamiento_other": "Sites: {{lista}}",
+          "contacto_one": "Contact: {{lista}}",
+          "contacto_other": "Contacts: {{lista}}",
+          "otro": "On: {{lista}}",
+          "falta": "no. {{id}}, which doesn't exist or you can't see"
+        },
         "num": "no. {{id}}",
         "steps": {
           "crear_cliente": "Create the client “{{nombre}}”",
