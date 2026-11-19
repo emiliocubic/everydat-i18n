@@ -4978,7 +4978,16 @@
           "editar_parte_trabajo": "Change draft {{parte}}{{detalle}}",
           "emitir_parte_trabajo": "Issue work report {{parte}}: it carries the company stamp and the name of whoever confirms, and goes to the app for the client signature",
           "anular_parte_trabajo": "Void work report {{parte}}{{motivo}}: it stays voided for good",
-          "eliminar_parte_trabajo": "Delete draft {{parte}}: it is lost for good"
+          "eliminar_parte_trabajo": "Delete draft {{parte}}: it is lost for good",
+          "crear_festivo": "Mark {{fecha}} as a company holiday: «{{nombre}}»",
+          "editar_festivo": "Change holiday {{festivo}}: {{cambios}}",
+          "borrar_festivo": "Remove holiday {{festivo}}: that day is a working day again",
+          "importar_festivos": "Bring in the national holidays of {{anio}}, without overwriting existing ones",
+          "crear_ausencia": "Record {{tipo}} for {{persona}} from {{desde}} to {{hasta}}{{motivo}}",
+          "editar_ausencia": "Change absence {{ausencia}}: {{cambios}}",
+          "borrar_ausencia": "Delete absence {{ausencia}}: those days they are available again",
+          "pintar_ausencias_one": "Mark {{count}} single day of {{persona}} as {{tipo}} (if it already was, it is unmarked)",
+          "pintar_ausencias_other": "Mark {{count}} single days of {{persona}} as {{tipo}} (if they already were, they are unmarked)"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5422,6 +5431,24 @@
             "emisor": "Issued by {{nombre}}, with the company stamp",
             "liberadas_one": "Its job is free again for another report",
             "liberadas_other": "Its {{count}} jobs are free again for another report"
+          }
+        },
+        "calendario": {
+          "fecha": "date {{fecha}}",
+          "nombre": "name «{{nombre}}»",
+          "desde": "from {{fecha}}",
+          "hasta": "until {{fecha}}",
+          "motivo": "reason «{{motivo}}»",
+          "sinMotivo": "no reason",
+          "tipos": {
+            "vacaciones": "holidays",
+            "baja": "sick leave",
+            "permiso": "leave"
+          },
+          "ensayo": {
+            "jornada": "The {{dia}} workday at {{proyecto}} is left without staff",
+            "enAlerta_one": "{{count}} workday goes into alert",
+            "enAlerta_other": "{{count}} workdays go into alert"
           }
         }
       },

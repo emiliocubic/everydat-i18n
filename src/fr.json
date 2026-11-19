@@ -4500,7 +4500,16 @@
           "editar_parte_trabajo": "Modifier le brouillon {{parte}}{{detalle}}",
           "emitir_parte_trabajo": "Émettre le bon {{parte}} : il porte le cachet de l’entreprise et le nom de qui confirme, et passe à l’app pour la signature du client",
           "anular_parte_trabajo": "Annuler le bon {{parte}}{{motivo}} : il reste annulé définitivement",
-          "eliminar_parte_trabajo": "Supprimer le brouillon {{parte}} : il est perdu définitivement"
+          "eliminar_parte_trabajo": "Supprimer le brouillon {{parte}} : il est perdu définitivement",
+          "crear_festivo": "Marquer le {{fecha}} comme jour férié de l’entreprise : « {{nombre}} »",
+          "editar_festivo": "Modifier le jour férié {{festivo}} : {{cambios}}",
+          "borrar_festivo": "Retirer le jour férié {{festivo}} : ce jour redevient ouvré",
+          "importar_festivos": "Importer les fêtes nationales de {{anio}}, sans écraser celles qui existent",
+          "crear_ausencia": "Noter {{tipo}} de {{persona}} du {{desde}} au {{hasta}}{{motivo}}",
+          "editar_ausencia": "Modifier l’absence {{ausencia}} : {{cambios}}",
+          "borrar_ausencia": "Supprimer l’absence {{ausencia}} : ces jours-là, la personne redevient disponible",
+          "pintar_ausencias_one": "Marquer {{count}} jour isolé de {{persona}} comme {{tipo}} (s’il l’était déjà, il est démarqué)",
+          "pintar_ausencias_other": "Marquer {{count}} jours isolés de {{persona}} comme {{tipo}} (s’ils l’étaient déjà, ils sont démarqués)"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4893,6 +4902,24 @@
             "emisor": "Émis par {{nombre}}, avec le cachet de l’entreprise",
             "liberadas_one": "Son intervention redevient libre pour un autre bon",
             "liberadas_other": "Ses {{count}} interventions redeviennent libres pour un autre bon"
+          }
+        },
+        "calendario": {
+          "fecha": "date {{fecha}}",
+          "nombre": "nom « {{nombre}} »",
+          "desde": "à partir du {{fecha}}",
+          "hasta": "jusqu’au {{fecha}}",
+          "motivo": "motif « {{motivo}} »",
+          "sinMotivo": "sans motif",
+          "tipos": {
+            "vacaciones": "congés",
+            "baja": "arrêt maladie",
+            "permiso": "permission"
+          },
+          "ensayo": {
+            "jornada": "La journée du {{dia}} sur {{proyecto}} reste sans personne",
+            "enAlerta_one": "{{count}} journée passe en alerte",
+            "enAlerta_other": "{{count}} journées passent en alerte"
           }
         }
       },
