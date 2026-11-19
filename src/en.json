@@ -4710,7 +4710,8 @@
       "configEmpresa": "Company and brand",
       "configTarifas": "Rates",
       "configIaConectores": "AI and connectors",
-      "preguntasIa": "Sherpa questions"
+      "preguntasIa": "Sherpa questions",
+      "contador": "Usage meter"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -11232,5 +11233,108 @@
     "vacio": "(empty)",
     "recargar": "Reload",
     "sobrescribir": "Overwrite"
+  },
+  "contador": {
+    "intro": "What this installation counts every month so that Cubic can invoice it: a snapshot of the last day (equipment, storage, people…) and what was done during the month (new items, inspections, AI, emails…). Each month is closed on the 1st in the early hours and never changes afterwards; Cubic's central system collects the same figures. The current month is provisional.",
+    "soloSoporte": "Only support can see this page.",
+    "errorCarga": "The usage meter could not be read.",
+    "sinMeses": "No month has been closed yet: the meter starts in the month it is installed and the first one is closed on the 1st of the following month.",
+    "provisional": "in progress",
+    "provisionalTitulo": "Current month: figures change until it is closed",
+    "cerrado": "closed",
+    "cerradoEl": "Closed on {{cuando}}",
+    "encendido": "Yes",
+    "apagado": "No",
+    "tipoRevision": "“{{tipo}}” inspections",
+    "col": {
+      "cifra": "Figure"
+    },
+    "seccion": {
+      "equipos": "Equipment",
+      "revisiones": "Inspections",
+      "espacio": "Storage",
+      "personas": "People",
+      "ia": "Artificial intelligence",
+      "salidas": "Outputs",
+      "estructura": "Structure",
+      "papelera": "Recycle bin",
+      "modulos": "Modules"
+    },
+    "cifra": {
+      "equipos": {
+        "activos": "Active equipment",
+        "sueltos": "Standalone",
+        "multicomponentes": "Multi-component systems",
+        "multicomponentes_piezas": "Parts of multi-component systems",
+        "conjuntos": "Sets",
+        "conjuntos_piezas": "Equipment in sets",
+        "altas": "Added this month",
+        "altas_sectorial": "Added from the sector repository",
+        "retirados": "Retired this month"
+      },
+      "revisiones": {
+        "registradas": "Inspections recorded this month",
+        "origen": {
+          "admin": "From the admin panel",
+          "app": "From the app",
+          "importada": "Imported"
+        },
+        "conjunto_equipos": "Equipment inspected in set inspections",
+        "multicomponente": "Multi-component inspections",
+        "multicomponente_piezas": "Parts inspected in multi-component systems",
+        "con_ia": "Inspections that used AI"
+      },
+      "espacio": {
+        "archivos_gb": "Files (GB)",
+        "base_gb": "Database (GB)"
+      },
+      "personas": {
+        "internos": "Internal users",
+        "colaboradores": "External collaborators",
+        "invitados": "Guests with portal access",
+        "tecnicos_app": "Technicians who used the app",
+        "invitados_portal": "Guests who signed in to the portal"
+      },
+      "integraciones": {
+        "cuentas_activas": "Active integration accounts",
+        "llamadas": "Integration calls to the API"
+      },
+      "ia": {
+        "cubic": {
+          "llamadas": "Calls paid by Cubic",
+          "tokens": "Tokens paid by Cubic",
+          "coste_eur": "Cost to Cubic"
+        },
+        "cliente": {
+          "llamadas": "Calls with the customer's key",
+          "tokens": "Tokens with the customer's key",
+          "coste_eur": "Cost with the customer's key"
+        }
+      },
+      "informes": {
+        "emitidos": "Reports issued"
+      },
+      "correos": {
+        "enviados": "Emails sent"
+      },
+      "webhooks": {
+        "enviados": "Webhooks sent"
+      },
+      "estructura": {
+        "clientes": "Customers",
+        "emplazamientos": "Sites",
+        "proyectos": "Projects"
+      },
+      "papelera": {
+        "registros": "Records in the recycle bin",
+        "archivos_gb": "Files in the recycle bin (GB)"
+      },
+      "modulos": {
+        "planificador": "Planner",
+        "ia": "AI",
+        "portal": "Portal",
+        "integraciones": "Integrations"
+      }
+    }
   }
 }

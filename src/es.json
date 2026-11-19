@@ -4710,7 +4710,8 @@
       "configEmpresa": "Empresa y marca",
       "configTarifas": "Tarifas",
       "configIaConectores": "IA y conectores",
-      "preguntasIa": "Preguntas a Sherpa"
+      "preguntasIa": "Preguntas a Sherpa",
+      "contador": "Contador"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -11232,5 +11233,108 @@
     "vacio": "(vacío)",
     "recargar": "Volver a cargar",
     "sobrescribir": "Sobrescribir"
+  },
+  "contador": {
+    "intro": "Lo que esta instalación cuenta cada mes para que Cubic le facture: la foto del último día (equipos, espacio, personas…) y lo hecho en el mes (altas, revisiones, IA, correos…). Cada mes se cierra el día 1 de madrugada y ya no cambia; la central de Cubic recoge los mismos números. El mes en curso es provisional.",
+    "soloSoporte": "Solo soporte ve esta página.",
+    "errorCarga": "No se ha podido leer el contador.",
+    "sinMeses": "Aún no hay ningún mes cerrado: el contador empieza el mes en que se instala y el primero se cierra el día 1 del mes siguiente.",
+    "provisional": "en curso",
+    "provisionalTitulo": "Mes en curso: las cifras cambian hasta que se cierre",
+    "cerrado": "cerrado",
+    "cerradoEl": "Cerrado el {{cuando}}",
+    "encendido": "Sí",
+    "apagado": "No",
+    "tipoRevision": "Revisiones de tipo «{{tipo}}»",
+    "col": {
+      "cifra": "Cifra"
+    },
+    "seccion": {
+      "equipos": "Equipos",
+      "revisiones": "Revisiones",
+      "espacio": "Espacio",
+      "personas": "Personas",
+      "ia": "Inteligencia artificial",
+      "salidas": "Salidas",
+      "estructura": "Estructura",
+      "papelera": "Papelera",
+      "modulos": "Módulos"
+    },
+    "cifra": {
+      "equipos": {
+        "activos": "Equipos activos",
+        "sueltos": "Sueltos",
+        "multicomponentes": "Sistemas multicomponente",
+        "multicomponentes_piezas": "Piezas de los multicomponentes",
+        "conjuntos": "Conjuntos",
+        "conjuntos_piezas": "Equipos en conjuntos",
+        "altas": "Altas en el mes",
+        "altas_sectorial": "Altas desde el repositorio sectorial",
+        "retirados": "Retirados en el mes"
+      },
+      "revisiones": {
+        "registradas": "Revisiones registradas en el mes",
+        "origen": {
+          "admin": "Desde el panel",
+          "app": "Desde la app",
+          "importada": "Importadas"
+        },
+        "conjunto_equipos": "Equipos revisados en revisiones de conjunto",
+        "multicomponente": "Revisiones de multicomponentes",
+        "multicomponente_piezas": "Piezas revisadas en multicomponentes",
+        "con_ia": "Revisiones en que se usó la IA"
+      },
+      "espacio": {
+        "archivos_gb": "Archivos (GB)",
+        "base_gb": "Base de datos (GB)"
+      },
+      "personas": {
+        "internos": "Usuarios internos",
+        "colaboradores": "Colaboradores externos",
+        "invitados": "Invitados con acceso al portal",
+        "tecnicos_app": "Técnicos que usaron la app",
+        "invitados_portal": "Invitados que entraron al portal"
+      },
+      "integraciones": {
+        "cuentas_activas": "Cuentas de integración activas",
+        "llamadas": "Llamadas de las integraciones a la API"
+      },
+      "ia": {
+        "cubic": {
+          "llamadas": "Llamadas que paga Cubic",
+          "tokens": "Tokens que paga Cubic",
+          "coste_eur": "Coste para Cubic"
+        },
+        "cliente": {
+          "llamadas": "Llamadas con la clave del cliente",
+          "tokens": "Tokens con la clave del cliente",
+          "coste_eur": "Coste con la clave del cliente"
+        }
+      },
+      "informes": {
+        "emitidos": "Informes emitidos"
+      },
+      "correos": {
+        "enviados": "Correos enviados"
+      },
+      "webhooks": {
+        "enviados": "Webhooks enviados"
+      },
+      "estructura": {
+        "clientes": "Clientes",
+        "emplazamientos": "Emplazamientos",
+        "proyectos": "Proyectos"
+      },
+      "papelera": {
+        "registros": "Registros en la papelera",
+        "archivos_gb": "Archivos en la papelera (GB)"
+      },
+      "modulos": {
+        "planificador": "Planificador",
+        "ia": "IA",
+        "portal": "Portal",
+        "integraciones": "Integraciones"
+      }
+    }
   }
 }

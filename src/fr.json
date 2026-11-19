@@ -4240,7 +4240,8 @@
       "configEmpresa": "Entreprise et marque",
       "configTarifas": "Tarifs",
       "configIaConectores": "IA et connecteurs",
-      "preguntasIa": "Questions à Sherpa"
+      "preguntasIa": "Questions à Sherpa",
+      "contador": "Compteur"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -9538,5 +9539,108 @@
     "vacio": "(vide)",
     "recargar": "Recharger",
     "sobrescribir": "Écraser"
+  },
+  "contador": {
+    "intro": "Ce que cette installation compte chaque mois pour que Cubic puisse la facturer : la photo du dernier jour (équipements, espace, personnes…) et ce qui a été fait dans le mois (ajouts, vérifications, IA, e-mails…). Chaque mois est clôturé le 1er au petit matin et ne change plus ; la centrale de Cubic récupère les mêmes chiffres. Le mois en cours est provisoire.",
+    "soloSoporte": "Seul le support voit cette page.",
+    "errorCarga": "Impossible de lire le compteur.",
+    "sinMeses": "Aucun mois n'est encore clôturé : le compteur démarre le mois de l'installation et le premier est clôturé le 1er du mois suivant.",
+    "provisional": "en cours",
+    "provisionalTitulo": "Mois en cours : les chiffres changent jusqu'à la clôture",
+    "cerrado": "clôturé",
+    "cerradoEl": "Clôturé le {{cuando}}",
+    "encendido": "Oui",
+    "apagado": "Non",
+    "tipoRevision": "Vérifications de type « {{tipo}} »",
+    "col": {
+      "cifra": "Chiffre"
+    },
+    "seccion": {
+      "equipos": "Équipements",
+      "revisiones": "Vérifications",
+      "espacio": "Espace",
+      "personas": "Personnes",
+      "ia": "Intelligence artificielle",
+      "salidas": "Sorties",
+      "estructura": "Structure",
+      "papelera": "Corbeille",
+      "modulos": "Modules"
+    },
+    "cifra": {
+      "equipos": {
+        "activos": "Équipements actifs",
+        "sueltos": "Isolés",
+        "multicomponentes": "Systèmes multicomposants",
+        "multicomponentes_piezas": "Pièces des systèmes multicomposants",
+        "conjuntos": "Ensembles",
+        "conjuntos_piezas": "Équipements en ensembles",
+        "altas": "Ajouts du mois",
+        "altas_sectorial": "Ajouts depuis le référentiel sectoriel",
+        "retirados": "Retraits du mois"
+      },
+      "revisiones": {
+        "registradas": "Vérifications enregistrées dans le mois",
+        "origen": {
+          "admin": "Depuis le panneau",
+          "app": "Depuis l'application",
+          "importada": "Importées"
+        },
+        "conjunto_equipos": "Équipements vérifiés dans des vérifications d'ensemble",
+        "multicomponente": "Vérifications de systèmes multicomposants",
+        "multicomponente_piezas": "Pièces vérifiées dans des systèmes multicomposants",
+        "con_ia": "Vérifications ayant utilisé l'IA"
+      },
+      "espacio": {
+        "archivos_gb": "Fichiers (Go)",
+        "base_gb": "Base de données (Go)"
+      },
+      "personas": {
+        "internos": "Utilisateurs internes",
+        "colaboradores": "Collaborateurs externes",
+        "invitados": "Invités avec accès au portail",
+        "tecnicos_app": "Techniciens ayant utilisé l'application",
+        "invitados_portal": "Invités connectés au portail"
+      },
+      "integraciones": {
+        "cuentas_activas": "Comptes d'intégration actifs",
+        "llamadas": "Appels des intégrations à l'API"
+      },
+      "ia": {
+        "cubic": {
+          "llamadas": "Appels payés par Cubic",
+          "tokens": "Jetons payés par Cubic",
+          "coste_eur": "Coût pour Cubic"
+        },
+        "cliente": {
+          "llamadas": "Appels avec la clé du client",
+          "tokens": "Jetons avec la clé du client",
+          "coste_eur": "Coût avec la clé du client"
+        }
+      },
+      "informes": {
+        "emitidos": "Rapports émis"
+      },
+      "correos": {
+        "enviados": "E-mails envoyés"
+      },
+      "webhooks": {
+        "enviados": "Webhooks envoyés"
+      },
+      "estructura": {
+        "clientes": "Clients",
+        "emplazamientos": "Sites",
+        "proyectos": "Projets"
+      },
+      "papelera": {
+        "registros": "Enregistrements dans la corbeille",
+        "archivos_gb": "Fichiers dans la corbeille (Go)"
+      },
+      "modulos": {
+        "planificador": "Planificateur",
+        "ia": "IA",
+        "portal": "Portail",
+        "integraciones": "Intégrations"
+      }
+    }
   }
 }
