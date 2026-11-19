@@ -5778,7 +5778,10 @@
           "importarTipo": "It comes in as «{{tipo}}»",
           "importarPropone": "Its standards suggest «{{tipo}}»",
           "gradoParcial": "Its standards only partly match that type",
-          "gradoNinguna": "Its standards do not match that type"
+          "gradoNinguna": "Its standards do not match that type",
+          "quitarPasan_zero": "«{{valor}}» leaves the list: no item uses it, and the catalogue references that have it move to «{{a}}»",
+          "quitarVacian_zero": "«{{valor}}» leaves the list: no item uses it, and the catalogue references that have it are left without the value",
+          "quitarRetira_zero": "«{{valor}}» is retired: no longer offered, and the catalogue references that have it keep it"
         }
       },
       "deleteChat": "Delete conversation",

@@ -5778,7 +5778,10 @@
           "importarTipo": "Entra como «{{tipo}}»",
           "importarPropone": "Su normativa propone «{{tipo}}»",
           "gradoParcial": "Su normativa casa solo en parte con ese tipo",
-          "gradoNinguna": "Su normativa no casa con ese tipo"
+          "gradoNinguna": "Su normativa no casa con ese tipo",
+          "quitarPasan_zero": "«{{valor}}» sale de la lista: ningún equipo lo lleva y las referencias del catálogo que lo llevan pasan a «{{a}}»",
+          "quitarVacian_zero": "«{{valor}}» sale de la lista: ningún equipo lo lleva y las referencias del catálogo que lo llevan se quedan sin el dato",
+          "quitarRetira_zero": "«{{valor}}» se retira: deja de ofrecerse, y las referencias del catálogo que lo llevan lo conservan"
         }
       },
       "deleteChat": "Borrar conversación",
