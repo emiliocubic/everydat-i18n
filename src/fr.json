@@ -3800,7 +3800,7 @@
         },
         "adjuntos": {
           "title": "Pièces jointes",
-          "desc": "Choisissez dans quelles interventions on peut joindre des images et des fichiers depuis les tiroirs du panneau. Ce qu'elles contiennent déjà, comme les photos prises avec l'app, reste visible.",
+          "desc": "Choisissez dans quelles interventions on peut joindre des fichiers autres que des images (PDF, tableurs…) depuis les tiroirs du panneau. Les images peuvent toujours être ajoutées, dans toutes. Ce qu'elles contiennent déjà reste visible.",
           "permitir": "Autoriser les pièces jointes dans",
           "revision": "Vérifications",
           "instalacion": "Installations",

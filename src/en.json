@@ -3967,7 +3967,7 @@
         },
         "adjuntos": {
           "title": "Attachments",
-          "desc": "Choose in which actions images and files can be attached from the panel drawers. Whatever they already carry, such as photos taken with the app, is still shown.",
+          "desc": "Choose in which actions files other than images (PDFs, spreadsheets…) can be attached from the panel drawers. Images can always be added, in all of them. Whatever they already carry is still shown.",
           "permitir": "Allow attaching files in",
           "revision": "Inspections",
           "instalacion": "Installations",

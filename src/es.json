@@ -3967,7 +3967,7 @@
         },
         "adjuntos": {
           "title": "Archivos adjuntos",
-          "desc": "Decide en qué actuaciones se pueden adjuntar imágenes y archivos desde los cajones del panel. Lo que ya traigan, como las fotos tomadas con la app, se ve igual.",
+          "desc": "Decide en qué actuaciones se pueden adjuntar archivos que no son imágenes (PDF, hojas de cálculo…) desde los cajones del panel. Las imágenes se pueden poner siempre, en todas. Lo que ya traigan se ve igual.",
           "permitir": "Permitir adjuntar archivos en",
           "revision": "Revisiones",
           "instalacion": "Instalaciones",
