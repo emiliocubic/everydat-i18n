@@ -4973,7 +4973,12 @@
           "reabrir_proyecto": "Reopen project {{proyecto}}: it is open again",
           "cerrar_proyecto": "Close project {{proyecto}}{{fechas}}",
           "cancelar_proyecto": "Cancel project {{proyecto}}{{motivo}}: it cannot be reactivated",
-          "borrar_proyecto": "Delete project {{proyecto}}: it is lost for good"
+          "borrar_proyecto": "Delete project {{proyecto}}: it is lost for good",
+          "crear_parte_trabajo": "Create a draft work report for project {{proyecto}}{{detalle}}",
+          "editar_parte_trabajo": "Change draft {{parte}}{{detalle}}",
+          "emitir_parte_trabajo": "Issue work report {{parte}}: it carries the company stamp and the name of whoever confirms, and goes to the app for the client signature",
+          "anular_parte_trabajo": "Void work report {{parte}}{{motivo}}: it stays voided for good",
+          "eliminar_parte_trabajo": "Delete draft {{parte}}: it is lost for good"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5395,6 +5400,28 @@
             "anulados_other": "Work reports {{lista}} are voided",
             "eliminados_one": "Draft {{lista}} disappears",
             "eliminados_other": "Drafts {{lista}} disappear"
+          }
+        },
+        "parte": {
+          "rango": "from {{desde}} to {{hasta}}",
+          "desde": "from {{fecha}}",
+          "hasta": "until {{fecha}}",
+          "pendiente": "everything not in any report",
+          "personas_one": "{{count}} person",
+          "personas_other": "{{count}} people",
+          "sinObservaciones": "no remarks",
+          "tipos": {
+            "revision": "inspections",
+            "instalacion": "installations",
+            "reparacion": "repairs"
+          },
+          "ensayo": {
+            "lleva_one": "It will be report {{codigo}}, with {{count}} job{{rango}}",
+            "lleva_other": "It will be report {{codigo}}, with {{count}} jobs{{rango}}",
+            "rango": " from {{desde}} to {{hasta}}",
+            "emisor": "Issued by {{nombre}}, with the company stamp",
+            "liberadas_one": "Its job is free again for another report",
+            "liberadas_other": "Its {{count}} jobs are free again for another report"
           }
         }
       },

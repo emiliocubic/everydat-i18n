@@ -4495,7 +4495,12 @@
           "reabrir_proyecto": "Rouvrir le projet {{proyecto}} : il redevient ouvert",
           "cerrar_proyecto": "Clôturer le projet {{proyecto}}{{fechas}}",
           "cancelar_proyecto": "Annuler le projet {{proyecto}}{{motivo}} : il ne pourra pas être réactivé",
-          "borrar_proyecto": "Supprimer le projet {{proyecto}} : il est perdu définitivement"
+          "borrar_proyecto": "Supprimer le projet {{proyecto}} : il est perdu définitivement",
+          "crear_parte_trabajo": "Créer un bon d’intervention en brouillon du projet {{proyecto}}{{detalle}}",
+          "editar_parte_trabajo": "Modifier le brouillon {{parte}}{{detalle}}",
+          "emitir_parte_trabajo": "Émettre le bon {{parte}} : il porte le cachet de l’entreprise et le nom de qui confirme, et passe à l’app pour la signature du client",
+          "anular_parte_trabajo": "Annuler le bon {{parte}}{{motivo}} : il reste annulé définitivement",
+          "eliminar_parte_trabajo": "Supprimer le brouillon {{parte}} : il est perdu définitivement"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4866,6 +4871,28 @@
             "anulados_other": "Les bons {{lista}} sont annulés",
             "eliminados_one": "Le brouillon {{lista}} disparaît",
             "eliminados_other": "Les brouillons {{lista}} disparaissent"
+          }
+        },
+        "parte": {
+          "rango": "du {{desde}} au {{hasta}}",
+          "desde": "à partir du {{fecha}}",
+          "hasta": "jusqu’au {{fecha}}",
+          "pendiente": "tout ce qui n’est dans aucun bon",
+          "personas_one": "{{count}} personne",
+          "personas_other": "{{count}} personnes",
+          "sinObservaciones": "sans observations",
+          "tipos": {
+            "revision": "inspections",
+            "instalacion": "installations",
+            "reparacion": "réparations"
+          },
+          "ensayo": {
+            "lleva_one": "Ce sera le bon {{codigo}}, avec {{count}} intervention{{rango}}",
+            "lleva_other": "Ce sera le bon {{codigo}}, avec {{count}} interventions{{rango}}",
+            "rango": " du {{desde}} au {{hasta}}",
+            "emisor": "Émis par {{nombre}}, avec le cachet de l’entreprise",
+            "liberadas_one": "Son intervention redevient libre pour un autre bon",
+            "liberadas_other": "Ses {{count}} interventions redeviennent libres pour un autre bon"
           }
         }
       },

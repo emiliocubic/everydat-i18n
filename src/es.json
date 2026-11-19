@@ -4973,7 +4973,12 @@
           "reabrir_proyecto": "Reabrir el proyecto {{proyecto}}: vuelve a abierto",
           "cerrar_proyecto": "Cerrar el proyecto {{proyecto}}{{fechas}}",
           "cancelar_proyecto": "Cancelar el proyecto {{proyecto}}{{motivo}}: no se podrá reactivar",
-          "borrar_proyecto": "Eliminar el proyecto {{proyecto}}: se pierde para siempre"
+          "borrar_proyecto": "Eliminar el proyecto {{proyecto}}: se pierde para siempre",
+          "crear_parte_trabajo": "Crear un parte de trabajo en borrador del proyecto {{proyecto}}{{detalle}}",
+          "editar_parte_trabajo": "Cambiar el borrador {{parte}}{{detalle}}",
+          "emitir_parte_trabajo": "Emitir el parte {{parte}}: sale con el sello de la empresa y el nombre de quien confirma, y pasa a la app para la firma del cliente",
+          "anular_parte_trabajo": "Anular el parte {{parte}}{{motivo}}: queda anulado para siempre",
+          "eliminar_parte_trabajo": "Eliminar el borrador {{parte}}: se pierde para siempre"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5395,6 +5400,28 @@
             "anulados_other": "Se anulan los partes {{lista}}",
             "eliminados_one": "Desaparece el borrador {{lista}}",
             "eliminados_other": "Desaparecen los borradores {{lista}}"
+          }
+        },
+        "parte": {
+          "rango": "del {{desde}} al {{hasta}}",
+          "desde": "desde el {{fecha}}",
+          "hasta": "hasta el {{fecha}}",
+          "pendiente": "todo lo que no está en ningún parte",
+          "personas_one": "{{count}} persona",
+          "personas_other": "{{count}} personas",
+          "sinObservaciones": "sin observaciones",
+          "tipos": {
+            "revision": "revisiones",
+            "instalacion": "instalaciones",
+            "reparacion": "reparaciones"
+          },
+          "ensayo": {
+            "lleva_one": "Será el parte {{codigo}}, con {{count}} actuación{{rango}}",
+            "lleva_other": "Será el parte {{codigo}}, con {{count}} actuaciones{{rango}}",
+            "rango": " del {{desde}} al {{hasta}}",
+            "emisor": "Lo emite {{nombre}}, con el sello de la empresa",
+            "liberadas_one": "Su actuación vuelve a estar libre para otro parte",
+            "liberadas_other": "Sus {{count}} actuaciones vuelven a estar libres para otro parte"
           }
         }
       },
