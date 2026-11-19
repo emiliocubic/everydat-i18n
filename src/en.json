@@ -4742,7 +4742,12 @@
           "falla": "Would fail on confirming: {{motivo}}",
           "noEnsayable": "Can't be rehearsed without effects outside Everydat: it will be checked on confirming.",
           "sinEnsayar": "Not rehearsed: it uses what step {{n}} creates, which didn't pass the rehearsal.",
-          "aviso": "Warns on saving: check it before confirming."
+          "aviso": "Warns on saving: check it before confirming.",
+          "fuera": {
+            "campana": "On confirming, an alert will show in the bell.",
+            "webhook": "On confirming, it will notify the webhook at {{destino}}.",
+            "otro": "On confirming, it will notify outside Everydat."
+          }
         },
         "num": "no. {{id}}",
         "steps": {

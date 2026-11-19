@@ -4272,7 +4272,12 @@
           "falla": "Échouerait à la confirmation : {{motivo}}",
           "noEnsayable": "Impossible à tester sans effets hors d'Everydat : ce sera vérifié à la confirmation.",
           "sinEnsayar": "Non testé : utilise ce que crée l'étape {{n}}, qui n'a pas passé le test.",
-          "aviso": "Avertit à l'enregistrement : vérifiez-le avant de confirmer."
+          "aviso": "Avertit à l'enregistrement : vérifiez-le avant de confirmer.",
+          "fuera": {
+            "campana": "À la confirmation, une alerte apparaîtra dans la cloche.",
+            "webhook": "À la confirmation, il préviendra le webhook de {{destino}}.",
+            "otro": "À la confirmation, il préviendra hors d'Everydat."
+          }
         },
         "num": "n° {{id}}",
         "steps": {

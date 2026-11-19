@@ -4742,7 +4742,12 @@
           "falla": "Fallaría al confirmar: {{motivo}}",
           "noEnsayable": "No se puede ensayar sin efectos fuera de Everydat: se comprobará al confirmar.",
           "sinEnsayar": "Sin ensayar: usa lo que crea el paso {{n}}, que no ha pasado el ensayo.",
-          "aviso": "Avisa al guardar: revísalo antes de confirmar."
+          "aviso": "Avisa al guardar: revísalo antes de confirmar.",
+          "fuera": {
+            "campana": "Al confirmarlo, saldrá un aviso en la campana.",
+            "webhook": "Al confirmarlo, avisará al webhook de {{destino}}.",
+            "otro": "Al confirmarlo, avisará fuera de Everydat."
+          }
         },
         "num": "n.º {{id}}",
         "steps": {
