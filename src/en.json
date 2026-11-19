@@ -4800,6 +4800,8 @@
           "emplazamiento_other": "Sites: {{lista}}",
           "contacto_one": "Contact: {{lista}}",
           "contacto_other": "Contacts: {{lista}}",
+          "grupo_one": "Group: {{lista}}",
+          "grupo_other": "Groups: {{lista}}",
           "otro": "On: {{lista}}",
           "falta": "no. {{id}}, which doesn't exist or you can't see",
           "propuesta_one": "Proposal: {{lista}}",
@@ -5024,7 +5026,17 @@
           "borrar_carpeta": "Delete folder {{carpeta}}, which is empty",
           "borrar_actuacion": "Send action {{actuacion}} to the bin",
           "borrar_actuacion_definitivo": "Empty action {{actuacion}} from the bin: it is lost for good",
-          "deshacer_conjunto": "Break up set {{conjunto}}"
+          "deshacer_conjunto": "Break up set {{conjunto}}",
+          "cambiar_contratado_cliente": "Change what is contracted for client {{cliente}}: {{cambios}}",
+          "borrar_cliente": "Delete client {{cliente}}: it goes to the bin",
+          "recuperar_cliente": "Restore client {{cliente}} from the bin",
+          "borrar_grupo": "Delete client group {{grupo}}",
+          "cambiar_estado_clientes_activo_one": "Set {{count}} client to active",
+          "cambiar_estado_clientes_activo_other": "Set {{count}} clients to active",
+          "cambiar_estado_clientes_potencial_one": "Set {{count}} client to prospect",
+          "cambiar_estado_clientes_potencial_other": "Set {{count}} clients to prospect",
+          "cambiar_estado_clientes_baja_one": "Deactivate {{count}} client, if it has nothing to cancel",
+          "cambiar_estado_clientes_baja_other": "Deactivate {{count}} clients: those with nothing to cancel"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5583,7 +5595,10 @@
             "meses_other": "{{count}} months",
             "dias": "{{lista}} days before",
             "finVida_one": "on day {{dia}}, {{count}} month before",
-            "finVida_other": "on day {{dia}}, {{count}} months before"
+            "finVida_other": "on day {{dia}}, {{count}} months before",
+            "sinPlazo": "no contract term (the equipment type's applies)",
+            "general": "the company's general one",
+            "generalEs": "the company's general one ({{valor}})"
           },
           "ensayo": {
             "cambia": "Changes {{campo}}: today, {{antes}}; afterwards, {{despues}}",
@@ -5604,7 +5619,15 @@
             "pierdenPortal_one": "Stops entering the portal: {{lista}}",
             "pierdenPortal_other": "Stop entering the portal: {{lista}}",
             "gananPortal_one": "Starts entering the portal: {{lista}}",
-            "gananPortal_other": "Start entering the portal: {{lista}}"
+            "gananPortal_other": "Start entering the portal: {{lista}}",
+            "clienteDejaDeRecibir_revision": "This client will stop receiving inspection notices",
+            "clienteDejaDeRecibir_fin_vida": "This client will stop receiving expiry notices",
+            "clienteVuelveARecibir_revision": "This client will receive inspection notices again",
+            "clienteVuelveARecibir_fin_vida": "This client will receive expiry notices again",
+            "plazo": "The shorter of this term and the equipment type's applies, for inspections recorded from now on: those already done keep their «valid until» and the next visit date does not move by itself",
+            "guardanAccesos": "Their access settings are kept and work again if the portal is switched on",
+            "vuelvenPortal_one": "Enters the portal again, with the access they had: {{lista}}",
+            "vuelvenPortal_other": "Enter the portal again, with the access they had: {{lista}}"
           }
         },
         "censo": {
@@ -5628,7 +5651,19 @@
           "sueltos_one": "Its item stays loose in folder {{carpeta}}, with its history: nothing is deleted",
           "sueltos_other": "Its {{count}} items stay loose in folder {{carpeta}}, each with its history: nothing is deleted",
           "piezas_one": "{{count}} part assigned to a system is left unassigned",
-          "piezas_other": "{{count}} parts assigned to its systems are left unassigned"
+          "piezas_other": "{{count}} parts assigned to its systems are left unassigned",
+          "grupos_one": "Stops appearing in group {{lista}} until it is restored",
+          "grupos_other": "Stops appearing in groups {{lista}} until it is restored",
+          "clientesQuedan_one": "Its client is not touched: it just stops being in this group",
+          "clientesQuedan_other": "Its {{count}} clients are not touched: they just stop being in this group",
+          "grupoVacio": "It is empty: it has no clients"
+        },
+        "lote": {
+          "cambian_one": "Changes: {{lista}}",
+          "cambian_other": "Change ({{count}}): {{lista}}",
+          "sinCambio_one": "Already like that: {{lista}}",
+          "sinCambio_other": "Already like that ({{count}}): {{lista}}",
+          "rechazado": "{{nombre}} stays as it was: {{motivo}}"
         }
       },
       "deleteChat": "Delete conversation",

@@ -4800,6 +4800,8 @@
           "emplazamiento_other": "Emplazamientos: {{lista}}",
           "contacto_one": "Contacto: {{lista}}",
           "contacto_other": "Contactos: {{lista}}",
+          "grupo_one": "Grupo: {{lista}}",
+          "grupo_other": "Grupos: {{lista}}",
           "otro": "Sobre: {{lista}}",
           "falta": "n.º {{id}}, que no existe o no ves",
           "propuesta_one": "Propuesta: {{lista}}",
@@ -5024,7 +5026,17 @@
           "borrar_carpeta": "Borrar la carpeta {{carpeta}}, que está vacía",
           "borrar_actuacion": "Mandar a la papelera la actuación {{actuacion}}",
           "borrar_actuacion_definitivo": "Vaciar de la papelera la actuación {{actuacion}}: se pierde para siempre",
-          "deshacer_conjunto": "Deshacer el conjunto {{conjunto}}"
+          "deshacer_conjunto": "Deshacer el conjunto {{conjunto}}",
+          "cambiar_contratado_cliente": "Cambiar lo contratado del cliente {{cliente}}: {{cambios}}",
+          "borrar_cliente": "Borrar el cliente {{cliente}}: va a la papelera",
+          "recuperar_cliente": "Sacar de la papelera el cliente {{cliente}}",
+          "borrar_grupo": "Borrar el grupo de clientes {{grupo}}",
+          "cambiar_estado_clientes_activo_one": "Pasar {{count}} cliente a activo",
+          "cambiar_estado_clientes_activo_other": "Pasar {{count}} clientes a activo",
+          "cambiar_estado_clientes_potencial_one": "Pasar {{count}} cliente a potencial",
+          "cambiar_estado_clientes_potencial_other": "Pasar {{count}} clientes a potencial",
+          "cambiar_estado_clientes_baja_one": "Dar de baja {{count}} cliente, si no tiene nada que cancelar",
+          "cambiar_estado_clientes_baja_other": "Dar de baja {{count}} clientes: los que no tengan nada que cancelar"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5583,7 +5595,10 @@
             "meses_other": "{{count}} meses",
             "dias": "{{lista}} días antes",
             "finVida_one": "el día {{dia}}, {{count}} mes antes",
-            "finVida_other": "el día {{dia}}, {{count}} meses antes"
+            "finVida_other": "el día {{dia}}, {{count}} meses antes",
+            "sinPlazo": "sin plazo por contrato (vale el del tipo de equipo)",
+            "general": "la general de la empresa",
+            "generalEs": "la general de la empresa ({{valor}})"
           },
           "ensayo": {
             "cambia": "Cambia {{campo}}: hoy, {{antes}}; después, {{despues}}",
@@ -5604,7 +5619,15 @@
             "pierdenPortal_one": "Deja de entrar al portal: {{lista}}",
             "pierdenPortal_other": "Dejan de entrar al portal: {{lista}}",
             "gananPortal_one": "Empieza a entrar al portal: {{lista}}",
-            "gananPortal_other": "Empiezan a entrar al portal: {{lista}}"
+            "gananPortal_other": "Empiezan a entrar al portal: {{lista}}",
+            "clienteDejaDeRecibir_revision": "Este cliente dejará de recibir avisos de revisión",
+            "clienteDejaDeRecibir_fin_vida": "Este cliente dejará de recibir avisos de caducidad",
+            "clienteVuelveARecibir_revision": "Este cliente volverá a recibir avisos de revisión",
+            "clienteVuelveARecibir_fin_vida": "Este cliente volverá a recibir avisos de caducidad",
+            "plazo": "Vale el más corto entre este plazo y el del tipo de equipo, para las revisiones que se registren desde ahora: las ya hechas conservan su «válida hasta» y la fecha de la próxima visita no se mueve sola",
+            "guardanAccesos": "Sus accesos se guardan y vuelven a valer si se enciende el portal",
+            "vuelvenPortal_one": "Vuelve a entrar al portal, con los accesos que tenía: {{lista}}",
+            "vuelvenPortal_other": "Vuelven a entrar al portal, con los accesos que tenían: {{lista}}"
           }
         },
         "censo": {
@@ -5628,7 +5651,19 @@
           "sueltos_one": "Su equipo queda suelto en la carpeta {{carpeta}}, con su historial: no se borra nada",
           "sueltos_other": "Sus {{count}} equipos quedan sueltos en la carpeta {{carpeta}}, cada uno con su historial: no se borra nada",
           "piezas_one": "{{count}} pieza asignada a un sistema queda sin asignar",
-          "piezas_other": "{{count}} piezas asignadas a sus sistemas quedan sin asignar"
+          "piezas_other": "{{count}} piezas asignadas a sus sistemas quedan sin asignar",
+          "grupos_one": "Deja de salir en el grupo {{lista}} hasta que se recupere",
+          "grupos_other": "Deja de salir en los grupos {{lista}} hasta que se recupere",
+          "clientesQuedan_one": "Su cliente no se toca: solo deja de estar en este grupo",
+          "clientesQuedan_other": "Sus {{count}} clientes no se tocan: solo dejan de estar en este grupo",
+          "grupoVacio": "Está vacío: no tiene clientes"
+        },
+        "lote": {
+          "cambian_one": "Cambia: {{lista}}",
+          "cambian_other": "Cambian ({{count}}): {{lista}}",
+          "sinCambio_one": "Ya estaba así: {{lista}}",
+          "sinCambio_other": "Ya estaban así ({{count}}): {{lista}}",
+          "rechazado": "{{nombre}} se queda como estaba: {{motivo}}"
         }
       },
       "deleteChat": "Borrar conversación",
