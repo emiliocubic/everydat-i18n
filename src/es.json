@@ -5096,7 +5096,15 @@
           "borrar_modelo": "Borrar el modelo {{modelo}}: va a la papelera",
           "borrar_referencia": "Borrar la referencia {{referencia}}: va a la papelera",
           "borrar_documento_modelo": "Quitar el documento {{documento}} de la ficha del modelo",
-          "importar_modelo_sectorial": "Traer del repositorio sectorial el modelo n.º {{sectorial}}"
+          "importar_modelo_sectorial": "Traer del repositorio sectorial el modelo n.º {{sectorial}}",
+          "no_se_renueva_acreditacion": "Marcar «no se renueva» la acreditación {{acreditacion}}: deja de avisar de su caducidad, sin cambiar su estado",
+          "quitar_no_se_renueva_acreditacion": "Quitar la marca «no se renueva» a la acreditación {{acreditacion}}: vuelve a avisar de su caducidad",
+          "quitar_titular_acreditacion": "Quitar a la persona {{titular}} del documento de acreditación {{documento}}",
+          "quitar_titular_acreditacion_empresa": "Quitar a la empresa del documento de acreditación {{documento}}",
+          "borrar_documento_acreditacion": "Borrar el documento de acreditación {{documento}} con todos sus titulares",
+          "anular_acreditacion": "Anular el documento de acreditación {{documento}}: deja de contar para todo y no se deshace",
+          "borrar_tipo_acreditacion": "Borrar el tipo de acreditación {{tipo}}",
+          "borrar_entidad_acreditacion": "Borrar la entidad acreditadora {{entidad}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5323,6 +5331,29 @@
             "dias": "Plazos",
             "titulares": "A los titulares",
             "admins": "Avisados"
+          },
+          "ensayo": {
+            "empresa": "La empresa",
+            "fila": "{{quien}}: «{{documento}}»{{tipo}}, {{hasta}}",
+            "hasta": "vale hasta el {{fecha}}",
+            "caduco": "caducó el {{fecha}}",
+            "sinCaducidad": "sin caducidad",
+            "titulares_one": "Titular: {{lista}}",
+            "titulares_other": "Titulares: {{lista}}",
+            "borraDocumento": "Era su último titular: el documento se borra entero",
+            "noSeRecupera": "Va a la papelera, pero hoy no se recupera desde ninguna pantalla",
+            "filaFuera_suelta": "No va a la papelera: se le puede volver a añadir corrigiendo el documento",
+            "filaFuera_renovacion": "No va a la papelera: se le puede volver a añadir corrigiendo el documento, pero ya no como renovación de la anterior",
+            "vuelve": "Vuelve a ser la vigente la anterior · {{fila}}",
+            "noSeDeshace": "No se deshace: queda anulado para siempre",
+            "informes_one": "Va en el informe emitido {{lista}}: allí saldrá marcado «Anulado»",
+            "informes_other": "Va en {{count}} informes emitidos: {{lista}}; en ellos saldrá marcado «Anulado»",
+            "ocultos_one": "Va en {{count}} informe emitido que no puedes ver: allí saldrá marcado «Anulado»",
+            "ocultos_other": "Va en {{count}} informes emitidos que no puedes ver: en ellos saldrá marcado «Anulado»",
+            "ocultosMas_one": "Y en {{count}} informe emitido más que no puedes ver",
+            "ocultosMas_other": "Y en {{count}} informes emitidos más que no puedes ver",
+            "sinInformes": "No ha ido en ningún informe emitido",
+            "borra": "Se borra «{{nombre}}»"
           }
         },
         "textoVariable": {

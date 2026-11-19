@@ -4525,7 +4525,15 @@
           "reabrir_informe": "Rouvrir le rapport {{informe}}{{motivo}} : il repasse en brouillon, sans version en vigueur",
           "duplicar_plantilla_informe": "Dupliquer le modèle {{plantilla}} sous le nom « {{nombre}} » : la copie reste en brouillon jusqu’à sa publication",
           "duplicar_plantilla_informe_sinNombre": "Dupliquer le modèle {{plantilla}} : la copie reste en brouillon, avec son nom et « (copie) », jusqu’à sa publication",
-          "archivar_plantilla_informe": "Archiver le modèle {{plantilla}} : il n’est plus proposé à la création d’un rapport, et les rapports déjà créés avec lui ne changent pas"
+          "archivar_plantilla_informe": "Archiver le modèle {{plantilla}} : il n’est plus proposé à la création d’un rapport, et les rapports déjà créés avec lui ne changent pas",
+          "no_se_renueva_acreditacion": "Marquer l’habilitation {{acreditacion}} « non renouvelée » : son échéance n’est plus signalée, son état ne change pas",
+          "quitar_no_se_renueva_acreditacion": "Retirer la marque « non renouvelée » de l’habilitation {{acreditacion}} : son échéance est de nouveau signalée",
+          "quitar_titular_acreditacion": "Retirer la personne {{titular}} du document d’habilitation {{documento}}",
+          "quitar_titular_acreditacion_empresa": "Retirer l’entreprise du document d’habilitation {{documento}}",
+          "borrar_documento_acreditacion": "Supprimer le document d’habilitation {{documento}} avec tous ses titulaires",
+          "anular_acreditacion": "Annuler le document d’habilitation {{documento}} : il ne compte plus pour rien et c’est irréversible",
+          "borrar_tipo_acreditacion": "Supprimer le type d’habilitation {{tipo}}",
+          "borrar_entidad_acreditacion": "Supprimer l’organisme {{entidad}}"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4752,6 +4760,29 @@
             "dias": "Délais",
             "titulares": "Aux titulaires",
             "admins": "Alertés"
+          },
+          "ensayo": {
+            "empresa": "L’entreprise",
+            "fila": "{{quien}} : « {{documento}} »{{tipo}}, {{hasta}}",
+            "hasta": "valable jusqu’au {{fecha}}",
+            "caduco": "expirée le {{fecha}}",
+            "sinCaducidad": "sans échéance",
+            "titulares_one": "Titulaire : {{lista}}",
+            "titulares_other": "Titulaires : {{lista}}",
+            "borraDocumento": "C’était son dernier titulaire : le document entier est supprimé",
+            "noSeRecupera": "Il va à la corbeille, mais aujourd’hui aucun écran ne permet de le récupérer",
+            "filaFuera_suelta": "Il ne va pas à la corbeille : on peut le rajouter en corrigeant le document",
+            "filaFuera_renovacion": "Il ne va pas à la corbeille : on peut le rajouter en corrigeant le document, mais plus comme renouvellement de la précédente",
+            "vuelve": "La précédente redevient la valable · {{fila}}",
+            "noSeDeshace": "C’est irréversible : il reste annulé pour toujours",
+            "informes_one": "Il figure dans le rapport émis {{lista}} : il y apparaîtra « Annulé »",
+            "informes_other": "Il figure dans {{count}} rapports émis : {{lista}} ; il y apparaîtra « Annulé »",
+            "ocultos_one": "Il figure dans {{count}} rapport émis que vous ne voyez pas : il y apparaîtra « Annulé »",
+            "ocultos_other": "Il figure dans {{count}} rapports émis que vous ne voyez pas : il y apparaîtra « Annulé »",
+            "ocultosMas_one": "Et dans {{count}} autre rapport émis que vous ne voyez pas",
+            "ocultosMas_other": "Et dans {{count}} autres rapports émis que vous ne voyez pas",
+            "sinInformes": "Il n’a figuré dans aucun rapport émis",
+            "borra": "« {{nombre}} » est supprimé"
           }
         },
         "revision": {

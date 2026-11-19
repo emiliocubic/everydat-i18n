@@ -5096,7 +5096,15 @@
           "borrar_modelo": "Delete the model {{modelo}}: it goes to the bin",
           "borrar_referencia": "Delete the reference {{referencia}}: it goes to the bin",
           "borrar_documento_modelo": "Remove the document {{documento}} from the model card",
-          "importar_modelo_sectorial": "Bring model no. {{sectorial}} from the sector repository"
+          "importar_modelo_sectorial": "Bring model no. {{sectorial}} from the sector repository",
+          "no_se_renueva_acreditacion": "Mark accreditation {{acreditacion}} as “not renewed”: its expiry is no longer warned about, its status does not change",
+          "quitar_no_se_renueva_acreditacion": "Remove the “not renewed” mark from accreditation {{acreditacion}}: its expiry is warned about again",
+          "quitar_titular_acreditacion": "Remove person {{titular}} from accreditation document {{documento}}",
+          "quitar_titular_acreditacion_empresa": "Remove the company from accreditation document {{documento}}",
+          "borrar_documento_acreditacion": "Delete accreditation document {{documento}} with all its holders",
+          "anular_acreditacion": "Void accreditation document {{documento}}: it stops counting for everything and cannot be undone",
+          "borrar_tipo_acreditacion": "Delete accreditation type {{tipo}}",
+          "borrar_entidad_acreditacion": "Delete accrediting body {{entidad}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5323,6 +5331,29 @@
             "dias": "Notice periods",
             "titulares": "To the holders",
             "admins": "Alerted"
+          },
+          "ensayo": {
+            "empresa": "The company",
+            "fila": "{{quien}}: “{{documento}}”{{tipo}}, {{hasta}}",
+            "hasta": "valid until {{fecha}}",
+            "caduco": "expired on {{fecha}}",
+            "sinCaducidad": "no expiry",
+            "titulares_one": "Holder: {{lista}}",
+            "titulares_other": "Holders: {{lista}}",
+            "borraDocumento": "It was its last holder: the whole document is deleted",
+            "noSeRecupera": "It goes to the recycle bin, but today it cannot be recovered from any screen",
+            "filaFuera_suelta": "It does not go to the recycle bin: they can be added again by correcting the document",
+            "filaFuera_renovacion": "It does not go to the recycle bin: they can be added again by correcting the document, but no longer as a renewal of the previous one",
+            "vuelve": "The previous one is current again · {{fila}}",
+            "noSeDeshace": "It cannot be undone: it stays void for good",
+            "informes_one": "It is in issued report {{lista}}: it will be shown there as “Void”",
+            "informes_other": "It is in {{count}} issued reports: {{lista}}; it will be shown there as “Void”",
+            "ocultos_one": "It is in {{count}} issued report you cannot see: it will be shown there as “Void”",
+            "ocultos_other": "It is in {{count}} issued reports you cannot see: it will be shown there as “Void”",
+            "ocultosMas_one": "And in {{count}} more issued report you cannot see",
+            "ocultosMas_other": "And in {{count}} more issued reports you cannot see",
+            "sinInformes": "It has not been in any issued report",
+            "borra": "“{{nombre}}” is deleted"
           }
         },
         "textoVariable": {
