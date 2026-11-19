@@ -317,7 +317,8 @@
       "hechoTitulo": "Mot de passe mis à jour",
       "hecho": "Vous pouvez maintenant vous connecter avec le nouveau mot de passe.",
       "sinToken": "Ce lien n'est pas valide ou est incomplet. Demandez-en un nouveau.",
-      "pedirOtro": "Demander un autre lien"
+      "pedirOtro": "Demander un autre lien",
+      "caducado": "Ce lien a expiré ou a déjà été utilisé. Demandez-en un autre ici ou demandez à la personne qui a créé votre compte de vous le renvoyer."
     },
     "dentro": {
       "titulo": "Session ouverte",
