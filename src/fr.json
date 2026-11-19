@@ -4303,6 +4303,8 @@
             "correo": "À la confirmation, un e-mail sera envoyé à {{destino}}."
           },
           "pierdeAlQuitar": "Perd : {{lista}}.",
+          "documentosConLaRevision_one": "{{count}} document qui ne dépend que d'elle part à la corbeille avec elle.",
+          "documentosConLaRevision_other": "{{count}} documents qui ne dépendent que d'elle partent à la corbeille avec elle.",
           "deja_el_portal": "A un compte sur le portail : ne pourra plus s'y connecter jusqu'à sa réactivation.",
           "vuelve_al_portal": "Pourra de nouveau se connecter au portail avec son compte précédent.",
           "sigue_sin_portal": "A un compte sur le portail mais ne pourra toujours pas s'y connecter : l'accès n'était pas activé."
@@ -4412,6 +4414,8 @@
           "editar_actuacion": "Corriger l'intervention {{actuacion}} : {{cambios}}",
           "recuperar_actuacion": "Restaurer l'intervention {{actuacion}} depuis la corbeille : elle revient avec ses documents et son effet sur l'équipement",
           "recuperar_revision": "Restaurer la vérification {{revision}} depuis la corbeille : l'équipement en tient compte de nouveau",
+          "borrar_revision": "Supprimer la vérification {{revision}} : elle part à la corbeille avec ses points et ses photos, et l'équipement revient à la vérification précédente",
+          "borrar_revision_definitivo": "Vider de la corbeille la vérification {{revision}} : elle est perdue pour toujours, avec ses points, ses photos et les documents partis avec elle",
           "cambiar_normativa_elemento": "Modifier les normes que respecte l'équipement {{equipo}} ({{cambios}}) : il a désormais sa propre liste, et les autres normes qu'il respecte restent",
           "cambiar_normativa_elemento_heredar": "Faire que l'équipement {{equipo}} respecte de nouveau les normes héritées, sans liste propre",
           "crear_grupo": "Créer le groupe de clients « {{nombre}} », de couleur {{color}}",
