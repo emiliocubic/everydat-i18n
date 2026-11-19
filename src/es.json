@@ -4747,7 +4747,12 @@
             "campana": "Al confirmarlo, saldrá un aviso en la campana.",
             "webhook": "Al confirmarlo, avisará al webhook de {{destino}}.",
             "otro": "Al confirmarlo, avisará fuera de Everydat."
-          }
+          },
+          "textoEnUso": "Cambia lo que dicen {{uso}}. Lo ya emitido no cambia.",
+          "textoEnUsoPlantillas_one": "{{count}} plantilla",
+          "textoEnUsoPlantillas_other": "{{count}} plantillas",
+          "textoEnUsoInformes_one": "{{count}} informe sin emitir",
+          "textoEnUsoInformes_other": "{{count}} informes sin emitir"
         },
         "sobre": {
           "equipo_one": "Equipo: {{lista}}",
@@ -4868,7 +4873,10 @@
           "crear_entidad_acreditacion": "Crear la entidad acreditadora «{{nombre}}»",
           "crear_entidad_acreditacion_inactiva": "Crear la entidad acreditadora «{{nombre}}», desactivada",
           "editar_entidad_acreditacion": "Cambiar la entidad acreditadora {{entidad}}: {{cambios}}",
-          "avisos_caducidad": "Cambiar los avisos de caducidad de las acreditaciones: {{cambios}}"
+          "avisos_caducidad": "Cambiar los avisos de caducidad de las acreditaciones: {{cambios}}",
+          "crear_texto_variable": "Crear el texto variable «{{nombre}}» ({{marcador}}), {{modo}}",
+          "editar_texto_variable": "Cambiar el texto variable {{texto}}",
+          "borrar_texto_variable": "Borrar para siempre el texto variable {{texto}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5095,6 +5103,57 @@
             "dias": "Plazos",
             "titulares": "A los titulares",
             "admins": "Avisados"
+          }
+        },
+        "textoVariable": {
+          "modo": {
+            "por_tipo": "según el tipo de elemento",
+            "condicion": "según condiciones"
+          },
+          "cual": "«{{nombre}}» ({{marcador}})",
+          "utilidad": "Para qué sirve: {{texto}}",
+          "campos": {
+            "caso_uso": "Nombre",
+            "utilidad": "Para qué sirve",
+            "modo": "Cómo se elige el texto"
+          },
+          "defecto": "Por defecto: «{{texto}}»",
+          "defecto_idioma": "Por defecto, en {{idioma}}: «{{texto}}»",
+          "defecto_vacio": "Por defecto: nada (si no hay variante o caso que sirva, no sale texto)",
+          "variante": "Para {{para}}: «{{texto}}»",
+          "variante_idioma": "Para {{para}}, en {{idioma}}: «{{texto}}»",
+          "variante_vacio": "Para {{para}}: sin texto",
+          "caso": "Caso {{n}}, si {{condicion}}: «{{texto}}»",
+          "caso_idioma": "Caso {{n}}, si {{condicion}}, en {{idioma}}: «{{texto}}»",
+          "caso_vacio": "Caso {{n}}, si {{condicion}}: sin texto",
+          "variantesQuedan": "Las variantes quedan así:",
+          "casosQuedan": "Los casos quedan así:",
+          "sinVariantes": "Sin variantes: sale siempre el texto por defecto.",
+          "sinCasos": "Sin casos: sale siempre el texto por defecto.",
+          "idioma": {
+            "es": "español",
+            "en": "inglés"
+          },
+          "y": " y ",
+          "o": " o ",
+          "reglas": {
+            "equipos_incluye": "el informe lleva equipos de {{alcance}}",
+            "equipos_no_incluye": "el informe no lleva equipos de {{alcance}}",
+            "resultado_hay": "alguna revisión es {{resultados}}",
+            "resultado_no_hay": "ninguna revisión es {{resultados}}",
+            "idioma_es": "el informe está en {{idioma}}",
+            "idioma_no_es": "el informe no está en {{idioma}}",
+            "tipo_es": "el equipo es de {{alcance}}",
+            "tipo_no_es": "el equipo no es de {{alcance}}",
+            "caduca_si": "su tipo caduca",
+            "caduca_no": "su tipo no caduca",
+            "resultado_equipo_es": "su revisión es {{resultados}}",
+            "resultado_equipo_no_es": "su revisión no es {{resultados}}",
+            "caracteristica_es": "{{campo}} es «{{valor}}»",
+            "caracteristica_no_es": "{{campo}} no es «{{valor}}»",
+            "caracteristica_relleno": "{{campo}} está rellena",
+            "caracteristica_vacio": "{{campo}} está vacía",
+            "desconocida": "una condición que no se reconoce"
           }
         }
       },

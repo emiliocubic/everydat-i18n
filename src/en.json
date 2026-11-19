@@ -4747,7 +4747,12 @@
             "campana": "On confirming, an alert will show in the bell.",
             "webhook": "On confirming, it will notify the webhook at {{destino}}.",
             "otro": "On confirming, it will notify outside Everydat."
-          }
+          },
+          "textoEnUso": "Changes what {{uso}} say. What has already been issued does not change.",
+          "textoEnUsoPlantillas_one": "{{count}} template",
+          "textoEnUsoPlantillas_other": "{{count}} templates",
+          "textoEnUsoInformes_one": "{{count}} unissued report",
+          "textoEnUsoInformes_other": "{{count}} unissued reports"
         },
         "sobre": {
           "equipo_one": "Equipment: {{lista}}",
@@ -4868,7 +4873,10 @@
           "crear_entidad_acreditacion": "Create accrediting body «{{nombre}}»",
           "crear_entidad_acreditacion_inactiva": "Create accrediting body «{{nombre}}», deactivated",
           "editar_entidad_acreditacion": "Change accrediting body {{entidad}}: {{cambios}}",
-          "avisos_caducidad": "Change the accreditation expiry alerts: {{cambios}}"
+          "avisos_caducidad": "Change the accreditation expiry alerts: {{cambios}}",
+          "crear_texto_variable": "Create the variable text “{{nombre}}” ({{marcador}}), {{modo}}",
+          "editar_texto_variable": "Change the variable text {{texto}}",
+          "borrar_texto_variable": "Permanently delete the variable text {{texto}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5095,6 +5103,57 @@
             "dias": "Notice periods",
             "titulares": "To the holders",
             "admins": "Alerted"
+          }
+        },
+        "textoVariable": {
+          "modo": {
+            "por_tipo": "by equipment type",
+            "condicion": "by conditions"
+          },
+          "cual": "“{{nombre}}” ({{marcador}})",
+          "utilidad": "What it is for: {{texto}}",
+          "campos": {
+            "caso_uso": "Name",
+            "utilidad": "What it is for",
+            "modo": "How the text is chosen"
+          },
+          "defecto": "Default: “{{texto}}”",
+          "defecto_idioma": "Default, in {{idioma}}: “{{texto}}”",
+          "defecto_vacio": "Default: nothing (if no variant or case applies, no text is shown)",
+          "variante": "For {{para}}: “{{texto}}”",
+          "variante_idioma": "For {{para}}, in {{idioma}}: “{{texto}}”",
+          "variante_vacio": "For {{para}}: no text",
+          "caso": "Case {{n}}, if {{condicion}}: “{{texto}}”",
+          "caso_idioma": "Case {{n}}, if {{condicion}}, in {{idioma}}: “{{texto}}”",
+          "caso_vacio": "Case {{n}}, if {{condicion}}: no text",
+          "variantesQuedan": "The variants end up like this:",
+          "casosQuedan": "The cases end up like this:",
+          "sinVariantes": "No variants: the default text is always shown.",
+          "sinCasos": "No cases: the default text is always shown.",
+          "idioma": {
+            "es": "Spanish",
+            "en": "English"
+          },
+          "y": " and ",
+          "o": " or ",
+          "reglas": {
+            "equipos_incluye": "the report includes {{alcance}} equipment",
+            "equipos_no_incluye": "the report does not include {{alcance}} equipment",
+            "resultado_hay": "some inspection is {{resultados}}",
+            "resultado_no_hay": "no inspection is {{resultados}}",
+            "idioma_es": "the report is in {{idioma}}",
+            "idioma_no_es": "the report is not in {{idioma}}",
+            "tipo_es": "the equipment is {{alcance}}",
+            "tipo_no_es": "the equipment is not {{alcance}}",
+            "caduca_si": "its type expires",
+            "caduca_no": "its type does not expire",
+            "resultado_equipo_es": "its inspection is {{resultados}}",
+            "resultado_equipo_no_es": "its inspection is not {{resultados}}",
+            "caracteristica_es": "{{campo}} is “{{valor}}”",
+            "caracteristica_no_es": "{{campo}} is not “{{valor}}”",
+            "caracteristica_relleno": "{{campo}} is filled in",
+            "caracteristica_vacio": "{{campo}} is empty",
+            "desconocida": "an unrecognised condition"
           }
         }
       },
