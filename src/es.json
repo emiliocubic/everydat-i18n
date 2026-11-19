@@ -5003,7 +5003,10 @@
           "reabrir_informe": "Reabrir el informe {{informe}}{{motivo}}: vuelve a borrador, sin versión vigente",
           "duplicar_plantilla_informe": "Duplicar la plantilla {{plantilla}} como «{{nombre}}»: la copia queda en borrador hasta que se publique",
           "duplicar_plantilla_informe_sinNombre": "Duplicar la plantilla {{plantilla}}: la copia queda en borrador, con su nombre y «(copia)», hasta que se publique",
-          "archivar_plantilla_informe": "Archivar la plantilla {{plantilla}}: deja de ofrecerse al crear un informe, y los informes ya creados con ella no cambian"
+          "archivar_plantilla_informe": "Archivar la plantilla {{plantilla}}: deja de ofrecerse al crear un informe, y los informes ya creados con ella no cambian",
+          "cambiar_modo_emplazamiento_demanda": "Pasar el emplazamiento {{emplazamiento}} a revisión a demanda",
+          "cambiar_modo_emplazamiento_fechas": "Pasar el emplazamiento {{emplazamiento}} a revisión por fechas",
+          "cambiar_contratado_emplazamiento": "Cambiar lo contratado del emplazamiento {{emplazamiento}}: {{cambios}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5541,6 +5544,49 @@
             "retirada": "La versión {{codigo}} queda retirada: su código de verificación dirá «retirada» hasta que se emita la siguiente",
             "descongela_one": "Su revisión vuelve a poder corregirse",
             "descongela_other": "Sus {{count}} revisiones vuelven a poder corregirse"
+          }
+        },
+        "contratado": {
+          "campos": {
+            "app_acceso": "el portal",
+            "notif_revisiones": "los avisos de revisión",
+            "notif_caducidades": "los avisos de caducidad",
+            "plazo_revisiones": "el plazo de revisión",
+            "avisos_revision_dias": "la antelación de los avisos de revisión",
+            "avisos_fin_vida": "el aviso de fin de vida"
+          },
+          "valor": {
+            "apagado": "apagado",
+            "encendido": "encendido",
+            "comoElCliente": "como el cliente",
+            "comoElClienteEs": "como el cliente ({{valor}})",
+            "sinPropio": "sin plazo propio",
+            "meses_one": "{{count}} mes",
+            "meses_other": "{{count}} meses",
+            "dias": "{{lista}} días antes",
+            "finVida_one": "el día {{dia}}, {{count}} mes antes",
+            "finVida_other": "el día {{dia}}, {{count}} meses antes"
+          },
+          "ensayo": {
+            "cambia": "Cambia {{campo}}: hoy, {{antes}}; después, {{despues}}",
+            "dejaDeRecibir_revision": "Esta instalación dejará de recibir avisos de revisión",
+            "dejaDeRecibir_fin_vida": "Esta instalación dejará de recibir avisos de caducidad",
+            "vuelveARecibir_revision": "Esta instalación volverá a recibir avisos de revisión",
+            "vuelveARecibir_fin_vida": "Esta instalación volverá a recibir avisos de caducidad",
+            "modo_demanda": "Deja de haber «cuándo volvemos»: el cliente trae los equipos cuando quiere y cada uno vence por su cuenta",
+            "modo_fechas": "Pasa a revisarse por fechas: queda sin fecha hasta que alguien la ponga",
+            "fechasPerdidas_one": "Pierde la fecha de la próxima revisión: {{lista}}",
+            "fechasPerdidas_other": "Pierden la fecha de la próxima revisión: {{lista}}",
+            "sitio": "{{sitio}} ({{fecha}})",
+            "resto": "lo que no cuelga de ninguna zona",
+            "trato": "Se tratará con {{despues}} (hoy, con {{antes}})",
+            "nadie": "nadie",
+            "historial_one": "{{lista}} verá el historial de la instalación: las revisiones y los informes hechos para el cliente anterior",
+            "historial_other": "{{lista}} verán el historial de la instalación: las revisiones y los informes hechos para el cliente anterior",
+            "pierdenPortal_one": "Deja de entrar al portal: {{lista}}",
+            "pierdenPortal_other": "Dejan de entrar al portal: {{lista}}",
+            "gananPortal_one": "Empieza a entrar al portal: {{lista}}",
+            "gananPortal_other": "Empiezan a entrar al portal: {{lista}}"
           }
         }
       },

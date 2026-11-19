@@ -5003,7 +5003,10 @@
           "reabrir_informe": "Reopen report {{informe}}{{motivo}}: it goes back to draft, with no current version",
           "duplicar_plantilla_informe": "Duplicate template {{plantilla}} as “{{nombre}}”: the copy stays in draft until it is published",
           "duplicar_plantilla_informe_sinNombre": "Duplicate template {{plantilla}}: the copy stays in draft, with its name and “(copy)”, until it is published",
-          "archivar_plantilla_informe": "Archive template {{plantilla}}: it is no longer offered when creating a report, and reports already created with it do not change"
+          "archivar_plantilla_informe": "Archive template {{plantilla}}: it is no longer offered when creating a report, and reports already created with it do not change",
+          "cambiar_modo_emplazamiento_demanda": "Make site {{emplazamiento}} be inspected on demand",
+          "cambiar_modo_emplazamiento_fechas": "Make site {{emplazamiento}} be inspected by dates",
+          "cambiar_contratado_emplazamiento": "Change what is contracted for site {{emplazamiento}}: {{cambios}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5541,6 +5544,49 @@
             "retirada": "Version {{codigo}} is withdrawn: its verification code will say “withdrawn” until the next one is issued",
             "descongela_one": "Its inspection can be corrected again",
             "descongela_other": "Its {{count}} inspections can be corrected again"
+          }
+        },
+        "contratado": {
+          "campos": {
+            "app_acceso": "the portal",
+            "notif_revisiones": "inspection notices",
+            "notif_caducidades": "expiry notices",
+            "plazo_revisiones": "the inspection term",
+            "avisos_revision_dias": "how early inspection notices go out",
+            "avisos_fin_vida": "the end-of-life notice"
+          },
+          "valor": {
+            "apagado": "off",
+            "encendido": "on",
+            "comoElCliente": "as the client",
+            "comoElClienteEs": "as the client ({{valor}})",
+            "sinPropio": "no term of its own",
+            "meses_one": "{{count}} month",
+            "meses_other": "{{count}} months",
+            "dias": "{{lista}} days before",
+            "finVida_one": "on day {{dia}}, {{count}} month before",
+            "finVida_other": "on day {{dia}}, {{count}} months before"
+          },
+          "ensayo": {
+            "cambia": "Changes {{campo}}: today, {{antes}}; afterwards, {{despues}}",
+            "dejaDeRecibir_revision": "This site will stop receiving inspection notices",
+            "dejaDeRecibir_fin_vida": "This site will stop receiving expiry notices",
+            "vuelveARecibir_revision": "This site will receive inspection notices again",
+            "vuelveARecibir_fin_vida": "This site will receive expiry notices again",
+            "modo_demanda": "There is no longer a «when we come back»: the client brings the equipment whenever they want and each item expires on its own",
+            "modo_fechas": "It will be inspected by dates: it has no date until someone sets one",
+            "fechasPerdidas_one": "Loses its next inspection date: {{lista}}",
+            "fechasPerdidas_other": "Lose their next inspection date: {{lista}}",
+            "sitio": "{{sitio}} ({{fecha}})",
+            "resto": "what hangs from no zone",
+            "trato": "You will deal with {{despues}} (today, with {{antes}})",
+            "nadie": "nobody",
+            "historial_one": "{{lista}} will see the site history: the inspections and reports made for the previous client",
+            "historial_other": "{{lista}} will see the site history: the inspections and reports made for the previous client",
+            "pierdenPortal_one": "Stops entering the portal: {{lista}}",
+            "pierdenPortal_other": "Stop entering the portal: {{lista}}",
+            "gananPortal_one": "Starts entering the portal: {{lista}}",
+            "gananPortal_other": "Start entering the portal: {{lista}}"
           }
         }
       },
