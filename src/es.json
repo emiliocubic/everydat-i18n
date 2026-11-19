@@ -5006,7 +5006,19 @@
           "archivar_plantilla_informe": "Archivar la plantilla {{plantilla}}: deja de ofrecerse al crear un informe, y los informes ya creados con ella no cambian",
           "cambiar_modo_emplazamiento_demanda": "Pasar el emplazamiento {{emplazamiento}} a revisión a demanda",
           "cambiar_modo_emplazamiento_fechas": "Pasar el emplazamiento {{emplazamiento}} a revisión por fechas",
-          "cambiar_contratado_emplazamiento": "Cambiar lo contratado del emplazamiento {{emplazamiento}}: {{cambios}}"
+          "cambiar_contratado_emplazamiento": "Cambiar lo contratado del emplazamiento {{emplazamiento}}: {{cambios}}",
+          "poner_en_revision": "Poner en revisión la carpeta {{carpeta}} del emplazamiento {{emplazamiento}}, con toda su rama, {{cuando}}",
+          "poner_en_revision_todo": "Poner en revisión el emplazamiento {{emplazamiento}} entero {{cuando}}",
+          "poner_en_revision_hoy": "desde hoy",
+          "poner_en_revision_el": "a partir del {{fecha}}",
+          "recibir_en_oficina_one": "Recibir en oficina {{count}} equipo del emplazamiento {{emplazamiento}}{{detalle}}",
+          "recibir_en_oficina_other": "Recibir en oficina {{count}} equipos del emplazamiento {{emplazamiento}}{{detalle}}",
+          "recibir_en_oficina_reparar_one": "{{count}} a reparar",
+          "recibir_en_oficina_reparar_other": "{{count}} a reparar",
+          "recibir_en_oficina_instalar_one": "{{count}} a instalar",
+          "recibir_en_oficina_instalar_other": "{{count}} a instalar",
+          "recibir_en_oficina_noRevisar_one": "{{count}} solo a reparar",
+          "recibir_en_oficina_noRevisar_other": "{{count}} solo a reparar"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5587,6 +5599,19 @@
             "pierdenPortal_other": "Dejan de entrar al portal: {{lista}}",
             "gananPortal_one": "Empieza a entrar al portal: {{lista}}",
             "gananPortal_other": "Empiezan a entrar al portal: {{lista}}"
+          }
+        },
+        "censo": {
+          "enEjecucion": "El proyecto nace ya en ejecución: empieza hoy",
+          "aprobado": "El proyecto queda aprobado hasta el {{fecha}}, cuando pasará a ejecución",
+          "entran_one": "Entra {{count}} equipo:",
+          "entran_other": "Entran {{count}} equipos:",
+          "yMas_one": "y {{count}} más",
+          "yMas_other": "y {{count}} más",
+          "que": {
+            "revision": "revisión",
+            "reparacion": "reparación",
+            "instalacion": "instalación"
           }
         }
       },

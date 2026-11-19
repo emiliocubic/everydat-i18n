@@ -5006,7 +5006,19 @@
           "archivar_plantilla_informe": "Archive template {{plantilla}}: it is no longer offered when creating a report, and reports already created with it do not change",
           "cambiar_modo_emplazamiento_demanda": "Make site {{emplazamiento}} be inspected on demand",
           "cambiar_modo_emplazamiento_fechas": "Make site {{emplazamiento}} be inspected by dates",
-          "cambiar_contratado_emplazamiento": "Change what is contracted for site {{emplazamiento}}: {{cambios}}"
+          "cambiar_contratado_emplazamiento": "Change what is contracted for site {{emplazamiento}}: {{cambios}}",
+          "poner_en_revision": "Put folder {{carpeta}} of site {{emplazamiento}} under inspection, with its whole branch, {{cuando}}",
+          "poner_en_revision_todo": "Put the whole site {{emplazamiento}} under inspection {{cuando}}",
+          "poner_en_revision_hoy": "from today",
+          "poner_en_revision_el": "from {{fecha}}",
+          "recibir_en_oficina_one": "Receive {{count}} item of site {{emplazamiento}} at the office{{detalle}}",
+          "recibir_en_oficina_other": "Receive {{count}} items of site {{emplazamiento}} at the office{{detalle}}",
+          "recibir_en_oficina_reparar_one": "{{count}} to repair",
+          "recibir_en_oficina_reparar_other": "{{count}} to repair",
+          "recibir_en_oficina_instalar_one": "{{count}} to install",
+          "recibir_en_oficina_instalar_other": "{{count}} to install",
+          "recibir_en_oficina_noRevisar_one": "{{count}} only to repair",
+          "recibir_en_oficina_noRevisar_other": "{{count}} only to repair"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5587,6 +5599,19 @@
             "pierdenPortal_other": "Stop entering the portal: {{lista}}",
             "gananPortal_one": "Starts entering the portal: {{lista}}",
             "gananPortal_other": "Start entering the portal: {{lista}}"
+          }
+        },
+        "censo": {
+          "enEjecucion": "The project starts right away in progress: it begins today",
+          "aprobado": "The project stays approved until {{fecha}}, when it moves to in progress",
+          "entran_one": "{{count}} item goes in:",
+          "entran_other": "{{count}} items go in:",
+          "yMas_one": "and {{count}} more",
+          "yMas_other": "and {{count}} more",
+          "que": {
+            "revision": "inspection",
+            "reparacion": "repair",
+            "instalacion": "installation"
           }
         }
       },
