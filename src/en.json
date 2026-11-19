@@ -4963,7 +4963,9 @@
           "aceptar_propuesta_sinProyectos": "Accept proposal {{propuesta}} without creating any project",
           "descartar_propuesta": "Discard proposal {{propuesta}}{{motivo}}: it goes to Lost",
           "descartar_trabajo_fecha": "Discard the work of the {{fecha}} date of {{sitio}}{{motivo}}: it shows in Lost and no longer in Opportunities",
-          "borrar_propuesta": "Delete proposal {{propuesta}}, with its lines and notes"
+          "borrar_propuesta": "Delete proposal {{propuesta}}, with its lines and notes",
+          "crear_proyecto": "Create a project for client {{cliente}} at {{emplazamiento}}{{detalle}}",
+          "editar_proyecto": "Change in project {{proyecto}}: {{cambios}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5338,6 +5340,42 @@
             "inicio": "tentative start {{fecha}}",
             "ninguno": "No project will be created",
             "cancelado": "Without quotes, it will be a cancelled project, in Lost with its reason"
+          }
+        },
+        "proyecto": {
+          "inicioManual": "planned start {{fecha}}, started manually",
+          "inicio": "planned start {{fecha}}",
+          "fin": "planned end {{fecha}}",
+          "sinFecha": "no date",
+          "zonas_one": "{{count}} zone",
+          "zonas_other": "{{count}} zones",
+          "nombre": "name «{{nombre}}»",
+          "nadie": "none",
+          "contactoTecnico": "technical contact {{contacto}}",
+          "contactoComercial": "sales contact {{contacto}}",
+          "arranque_manual": "manual start (it does not go into execution until someone starts it)",
+          "arranque_automatico": "automatic start when the start date arrives",
+          "horas_one": "{{count}} planned hour",
+          "horas_other": "{{count}} planned hours",
+          "sinHoras": "no planned hours",
+          "principal": "main manager {{persona}}",
+          "anadir_administradores": "add {{lista}} as managers",
+          "quitar_administradores": "remove {{lista}} as managers",
+          "anadir_tecnicos": "add {{lista}} as technicians",
+          "quitar_tecnicos": "remove {{lista}} as technicians",
+          "anadir_requisitos": "require the credentials {{lista}}",
+          "quitar_requisitos": "stop requiring the credentials {{lista}}",
+          "anadir_zonasLista": "add the zones {{lista}}",
+          "quitar_zonasLista": "remove the zones {{lista}}",
+          "notas": "notes «{{texto}}»",
+          "sinNotas": "remove the notes",
+          "ensayo": {
+            "pasaAEjecucion": "Saving it puts it into execution at once: the start date has arrived, the start is automatic and it has a manager",
+            "entran_one": "Joins as technician: {{lista}}",
+            "entran_other": "Join as technicians: {{lista}}",
+            "salen_one": "No longer a technician: {{lista}}",
+            "salen_other": "No longer technicians: {{lista}}",
+            "administradores": "Managers: {{lista}} (the first one is the main one)"
           }
         }
       },

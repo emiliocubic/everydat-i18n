@@ -4963,7 +4963,9 @@
           "aceptar_propuesta_sinProyectos": "Aceptar la propuesta {{propuesta}} sin crear ningún proyecto",
           "descartar_propuesta": "Descartar la propuesta {{propuesta}}{{motivo}}: pasa a Perdidos",
           "descartar_trabajo_fecha": "Descartar el trabajo de la fecha {{fecha}} de {{sitio}}{{motivo}}: sale en Perdidos y deja de salir en Oportunidades",
-          "borrar_propuesta": "Eliminar la propuesta {{propuesta}}, con sus líneas y sus notas"
+          "borrar_propuesta": "Eliminar la propuesta {{propuesta}}, con sus líneas y sus notas",
+          "crear_proyecto": "Crear un proyecto para el cliente {{cliente}} en {{emplazamiento}}{{detalle}}",
+          "editar_proyecto": "Cambiar en el proyecto {{proyecto}}: {{cambios}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5338,6 +5340,42 @@
             "inicio": "inicio orientativo el {{fecha}}",
             "ninguno": "No nacerá ningún proyecto",
             "cancelado": "Sin presupuestos, quedará como un proyecto cancelado, en Perdidos con su motivo"
+          }
+        },
+        "proyecto": {
+          "inicioManual": "inicio previsto {{fecha}}, con arranque manual",
+          "inicio": "inicio previsto {{fecha}}",
+          "fin": "fin previsto {{fecha}}",
+          "sinFecha": "sin fecha",
+          "zonas_one": "{{count}} zona",
+          "zonas_other": "{{count}} zonas",
+          "nombre": "nombre «{{nombre}}»",
+          "nadie": "ninguno",
+          "contactoTecnico": "contacto técnico {{contacto}}",
+          "contactoComercial": "contacto comercial {{contacto}}",
+          "arranque_manual": "arranque manual (no pasa a ejecución hasta que alguien lo arranque)",
+          "arranque_automatico": "arranque automático al llegar el inicio",
+          "horas_one": "{{count}} hora prevista",
+          "horas_other": "{{count}} horas previstas",
+          "sinHoras": "sin horas previstas",
+          "principal": "administrador principal {{persona}}",
+          "anadir_administradores": "añadir de administradores a {{lista}}",
+          "quitar_administradores": "quitar de administradores a {{lista}}",
+          "anadir_tecnicos": "añadir de técnicos a {{lista}}",
+          "quitar_tecnicos": "quitar de técnicos a {{lista}}",
+          "anadir_requisitos": "pedir las acreditaciones {{lista}}",
+          "quitar_requisitos": "dejar de pedir las acreditaciones {{lista}}",
+          "anadir_zonasLista": "añadir las zonas {{lista}}",
+          "quitar_zonasLista": "quitar las zonas {{lista}}",
+          "notas": "notas «{{texto}}»",
+          "sinNotas": "quitar las notas",
+          "ensayo": {
+            "pasaAEjecucion": "Al guardarlo pasa a ejecución en el acto: el inicio ya ha llegado, el arranque es automático y tiene administrador",
+            "entran_one": "Entra de técnico: {{lista}}",
+            "entran_other": "Entran de técnicos: {{lista}}",
+            "salen_one": "Deja de ser técnico: {{lista}}",
+            "salen_other": "Dejan de ser técnicos: {{lista}}",
+            "administradores": "Administradores: {{lista}} (el primero, el principal)"
           }
         }
       },

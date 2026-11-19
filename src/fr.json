@@ -4485,7 +4485,9 @@
           "aceptar_propuesta_sinProyectos": "Accepter la proposition {{propuesta}} sans créer de projet",
           "descartar_propuesta": "Écarter la proposition {{propuesta}}{{motivo}} : elle passe dans Perdus",
           "descartar_trabajo_fecha": "Écarter le travail de l’échéance du {{fecha}} de {{sitio}}{{motivo}} : il apparaît dans Perdus et plus dans Opportunités",
-          "borrar_propuesta": "Supprimer la proposition {{propuesta}}, avec ses lignes et ses notes"
+          "borrar_propuesta": "Supprimer la proposition {{propuesta}}, avec ses lignes et ses notes",
+          "crear_proyecto": "Créer un projet pour le client {{cliente}} sur {{emplazamiento}}{{detalle}}",
+          "editar_proyecto": "Modifier dans le projet {{proyecto}} : {{cambios}}"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4809,6 +4811,42 @@
             "inicio": "début indicatif le {{fecha}}",
             "ninguno": "Aucun projet ne sera créé",
             "cancelado": "Sans devis, ce sera un projet annulé, dans Perdus avec son motif"
+          }
+        },
+        "proyecto": {
+          "inicioManual": "début prévu le {{fecha}}, démarrage manuel",
+          "inicio": "début prévu le {{fecha}}",
+          "fin": "fin prévue le {{fecha}}",
+          "sinFecha": "sans date",
+          "zonas_one": "{{count}} zone",
+          "zonas_other": "{{count}} zones",
+          "nombre": "nom « {{nombre}} »",
+          "nadie": "aucun",
+          "contactoTecnico": "contact technique {{contacto}}",
+          "contactoComercial": "contact commercial {{contacto}}",
+          "arranque_manual": "démarrage manuel (il ne passe en exécution que si quelqu’un le démarre)",
+          "arranque_automatico": "démarrage automatique à la date de début",
+          "horas_one": "{{count}} heure prévue",
+          "horas_other": "{{count}} heures prévues",
+          "sinHoras": "sans heures prévues",
+          "principal": "responsable principal {{persona}}",
+          "anadir_administradores": "ajouter {{lista}} comme responsables",
+          "quitar_administradores": "retirer {{lista}} des responsables",
+          "anadir_tecnicos": "ajouter {{lista}} comme techniciens",
+          "quitar_tecnicos": "retirer {{lista}} des techniciens",
+          "anadir_requisitos": "exiger les habilitations {{lista}}",
+          "quitar_requisitos": "ne plus exiger les habilitations {{lista}}",
+          "anadir_zonasLista": "ajouter les zones {{lista}}",
+          "quitar_zonasLista": "retirer les zones {{lista}}",
+          "notas": "notes « {{texto}} »",
+          "sinNotas": "supprimer les notes",
+          "ensayo": {
+            "pasaAEjecucion": "L’enregistrer le passe immédiatement en exécution : la date de début est arrivée, le démarrage est automatique et il a un responsable",
+            "entran_one": "Rejoint comme technicien : {{lista}}",
+            "entran_other": "Rejoignent comme techniciens : {{lista}}",
+            "salen_one": "N’est plus technicien : {{lista}}",
+            "salen_other": "Ne sont plus techniciens : {{lista}}",
+            "administradores": "Responsables : {{lista}} (le premier est le principal)"
           }
         }
       },
