@@ -1608,6 +1608,14 @@
       "planificador": {
         "sale": "Apparaît dans le planificateur",
         "saleAyuda": "Décochez-la pour les personnes qui ne vont pas sur le terrain."
+      },
+      "enlace": {
+        "mandar": "Lui envoyer un e-mail pour définir son mot de passe",
+        "mandarAyuda": "À la création de l'utilisateur, il reçoit un e-mail avec un lien pour définir son mot de passe. Si vous décochez, saisissez vous-même le mot de passe.",
+        "reenviar": "Renvoyer l'e-mail d'accès",
+        "reenviarAyuda": "Pour qui ne l'a pas reçu ou l'a laissé expirer : il reçoit un nouveau lien pour définir son mot de passe et l'ancien ne vaut plus.",
+        "enviado": "E-mail envoyé à {{email}}",
+        "error": "Impossible de l'envoyer : {{motivo}}"
       }
     },
     "soporte": {
@@ -4251,6 +4259,7 @@
       "placeholder": "Tapez votre question…",
       "send": "Envoyer",
       "disclaimer": "Les réponses peuvent contenir des erreurs.",
+      "descargaFallida": "Je n'ai pas pu télécharger le fichier : {{motivo}}",
       "chips": {
         "weekly": "Résumé hebdomadaire",
         "reviews": "Prochaines inspections",
@@ -4276,7 +4285,8 @@
           "fuera": {
             "campana": "À la confirmation, une alerte apparaîtra dans la cloche.",
             "webhook": "À la confirmation, il préviendra le webhook de {{destino}}.",
-            "otro": "À la confirmation, il préviendra hors d'Everydat."
+            "otro": "À la confirmation, il préviendra hors d'Everydat.",
+            "correo": "À la confirmation, un e-mail sera envoyé à {{destino}}."
           }
         },
         "sobre": {
@@ -4398,7 +4408,8 @@
           "crear_entidad_acreditacion": "Créer l'organisme accréditeur « {{nombre}} »",
           "crear_entidad_acreditacion_inactiva": "Créer l'organisme accréditeur « {{nombre}} », désactivé",
           "editar_entidad_acreditacion": "Modifier l'organisme accréditeur {{entidad}} : {{cambios}}",
-          "avisos_caducidad": "Modifier les alertes d'expiration des accréditations : {{cambios}}"
+          "avisos_caducidad": "Modifier les alertes d'expiration des accréditations : {{cambios}}",
+          "reenviar_enlace_acceso": "Renvoyer à {{persona}} l’e-mail pour définir son mot de passe"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",

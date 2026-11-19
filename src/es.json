@@ -1616,6 +1616,14 @@
       "planificador": {
         "sale": "Sale en el planificador",
         "saleAyuda": "Desmárcala para quien no va a campo."
+      },
+      "enlace": {
+        "mandar": "Mandarle un correo para que ponga su contraseña",
+        "mandarAyuda": "Al crear el usuario le llega un correo con un enlace para poner su contraseña. Si lo desmarcas, escribe tú la contraseña.",
+        "reenviar": "Reenviar el correo de acceso",
+        "reenviarAyuda": "Para quien no lo ha recibido o lo dejó caducar: le llega otro enlace para poner su contraseña y el anterior deja de valer.",
+        "enviado": "Correo enviado a {{email}}",
+        "error": "No se ha podido mandar: {{motivo}}"
       }
     },
     "soporte": {
@@ -4721,6 +4729,7 @@
       "placeholder": "Escribe tu pregunta…",
       "send": "Enviar",
       "disclaimer": "Las respuestas pueden contener errores.",
+      "descargaFallida": "No he podido bajar el fichero: {{motivo}}",
       "chips": {
         "weekly": "Resumen semanal",
         "reviews": "Próximas revisiones",
@@ -4746,7 +4755,8 @@
           "fuera": {
             "campana": "Al confirmarlo, saldrá un aviso en la campana.",
             "webhook": "Al confirmarlo, avisará al webhook de {{destino}}.",
-            "otro": "Al confirmarlo, avisará fuera de Everydat."
+            "otro": "Al confirmarlo, avisará fuera de Everydat.",
+            "correo": "Al confirmarlo, le llegará un correo a {{destino}}."
           },
           "textoEnUso": "Cambia lo que dicen {{uso}}. Lo ya emitido no cambia.",
           "textoEnUsoPlantillas_one": "{{count}} plantilla",
@@ -4876,7 +4886,8 @@
           "avisos_caducidad": "Cambiar los avisos de caducidad de las acreditaciones: {{cambios}}",
           "crear_texto_variable": "Crear el texto variable «{{nombre}}» ({{marcador}}), {{modo}}",
           "editar_texto_variable": "Cambiar el texto variable {{texto}}",
-          "borrar_texto_variable": "Borrar para siempre el texto variable {{texto}}"
+          "borrar_texto_variable": "Borrar para siempre el texto variable {{texto}}",
+          "reenviar_enlace_acceso": "Reenviar a {{persona}} el correo para poner su contraseña"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",

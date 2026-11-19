@@ -1745,6 +1745,14 @@
       "planificador": {
         "sale": "Shown in the planner",
         "saleAyuda": "Untick it for people who don't do field work."
+      },
+      "enlace": {
+        "mandar": "Send them an email to set their password",
+        "mandarAyuda": "When the user is created they get an email with a link to set their password. If you untick this, type the password yourself.",
+        "reenviar": "Resend the access email",
+        "reenviarAyuda": "For someone who did not get it or let it expire: they get a new link to set their password and the previous one stops working.",
+        "enviado": "Email sent to {{email}}",
+        "error": "Could not send it: {{motivo}}"
       }
     },
     "soporte": {
@@ -4721,6 +4729,7 @@
       "placeholder": "Type your question…",
       "send": "Send",
       "disclaimer": "Answers may contain errors.",
+      "descargaFallida": "I couldn't download the file: {{motivo}}",
       "chips": {
         "weekly": "Weekly summary",
         "reviews": "Upcoming inspections",
@@ -4746,7 +4755,8 @@
           "fuera": {
             "campana": "On confirming, an alert will show in the bell.",
             "webhook": "On confirming, it will notify the webhook at {{destino}}.",
-            "otro": "On confirming, it will notify outside Everydat."
+            "otro": "On confirming, it will notify outside Everydat.",
+            "correo": "On confirming, an email will be sent to {{destino}}."
           },
           "textoEnUso": "Changes what {{uso}} say. What has already been issued does not change.",
           "textoEnUsoPlantillas_one": "{{count}} template",
@@ -4876,7 +4886,8 @@
           "avisos_caducidad": "Change the accreditation expiry alerts: {{cambios}}",
           "crear_texto_variable": "Create the variable text “{{nombre}}” ({{marcador}}), {{modo}}",
           "editar_texto_variable": "Change the variable text {{texto}}",
-          "borrar_texto_variable": "Permanently delete the variable text {{texto}}"
+          "borrar_texto_variable": "Permanently delete the variable text {{texto}}",
+          "reenviar_enlace_acceso": "Resend {{persona}} the email to set their password"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
