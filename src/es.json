@@ -1399,7 +1399,10 @@
     "iaTopeHint": "En euros de lo que le cuesta a Cubic la IA que paga Cubic; las llamadas con la clave del cliente no cuentan. Vacío = sin tope. Al 80 % se avisa al superadmin; al 100 %, la IA se pausa hasta el mes siguiente o hasta que se suba.",
     "iaGasto": "Este mes: {{gasto}} € ({{porcentaje}} %)",
     "iaGastoSinTope": "Este mes: {{gasto}} €, sin tope",
-    "iaEnPausa": "En pausa"
+    "iaEnPausa": "En pausa",
+    "papelera": "Plazo de la papelera",
+    "papeleraHint": "Días que se guarda lo eliminado antes de borrarlo de verdad, con sus archivos; la auditoría conserva que existió. Vacío = 365, el de serie. Bajarlo borra lo ya vencido esa misma noche.",
+    "papeleraDias": "días"
   },
   "admins": {
     "title": "Usuarios",
@@ -4711,7 +4714,8 @@
       "configTarifas": "Tarifas",
       "configIaConectores": "IA y conectores",
       "preguntasIa": "Preguntas a Sherpa",
-      "contador": "Contador"
+      "contador": "Contador",
+      "papelera": "Papelera"
     },
     "prefs": {
       "themeLight": "Tema claro",
@@ -6045,7 +6049,8 @@
       "tarifas": "ver las tarifas",
       "marca": "configurar los datos de tu empresa",
       "proyectos": "ver los proyectos",
-      "propuestas": "ver las propuestas"
+      "propuestas": "ver las propuestas",
+      "papelera": "recuperar lo eliminado"
     }
   },
   "proyectos": {
@@ -8383,7 +8388,8 @@
       "segundo_factor_activado": "Verificación en dos pasos activada",
       "segundo_factor_desactivado": "Verificación en dos pasos desactivada",
       "segundo_factor_codigos": "Códigos de recuperación nuevos",
-      "exportar": "Listado exportado"
+      "exportar": "Listado exportado",
+      "purged": "Borrado definitivo"
     },
     "via": "vía {{nombre}}"
   },
@@ -11335,6 +11341,50 @@
         "portal": "Portal",
         "integraciones": "Integraciones"
       }
+    }
+  },
+  "papelera": {
+    "buscar": "Buscar por nombre",
+    "recuperar": "Recuperar",
+    "recuperado_one": "Recuperado de la papelera",
+    "recuperado_other": "Recuperados {{count}} de la papelera",
+    "documentos_one": "con 1 documento",
+    "documentos_other": "con {{count}} documentos",
+    "campos": {
+      "tipo": "Tipo",
+      "nombre": "Nombre",
+      "cliente": "Cliente",
+      "emplazamiento": "Emplazamiento",
+      "eliminadoPor": "Eliminado por",
+      "eliminadoAt": "Eliminado",
+      "seVacia": "Se borra",
+      "seVaciaTitle": "A partir de ese día se borra de verdad, con sus archivos, y ya no se puede recuperar"
+    },
+    "tipos": {
+      "cliente": "Cliente",
+      "contacto": "Contacto",
+      "emplazamiento": "Emplazamiento",
+      "localizacion": "Carpeta del árbol",
+      "elemento": "Equipo",
+      "revision": "Revisión",
+      "actuacion": "Actuación",
+      "archivo": "Documento",
+      "carpeta": "Carpeta de documentos",
+      "acreditacion_documento": "Documento acreditativo",
+      "tipo": "Tipo de equipo",
+      "familia": "Familia",
+      "norma": "Norma",
+      "campo": "Campo",
+      "checklist": "Checklist"
+    },
+    "conPadre": {
+      "titulo": "Recuperar los dos",
+      "texto": "«{{nombre}}» estaba en {{tipoPadre}} «{{padre}}», que también está en la papelera. Se recuperan los dos.",
+      "boton": "Recuperar los dos"
+    },
+    "vacia": {
+      "titulo": "La papelera está vacía",
+      "hint": "Lo que se elimina viene aquí y se puede recuperar hasta que se borra de verdad, pasado el plazo."
     }
   }
 }

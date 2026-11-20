@@ -1528,7 +1528,10 @@
     "iaTopeHint": "In euros of what the AI paid by Cubic costs Cubic; calls with the client's own key do not count. Empty = no cap. At 80 % the superadmin is warned; at 100 %, AI pauses until next month or until the cap is raised.",
     "iaGasto": "This month: {{gasto}} € ({{porcentaje}} %)",
     "iaGastoSinTope": "This month: {{gasto}} €, no cap",
-    "iaEnPausa": "Paused"
+    "iaEnPausa": "Paused",
+    "papelera": "Recycle bin retention",
+    "papeleraHint": "Days deleted items are kept before being permanently deleted, files included; the audit log keeps a record that they existed. Empty = 365, the default. Lowering it deletes whatever is already past due that same night.",
+    "papeleraDias": "days"
   },
   "admins": {
     "title": "Users",
@@ -4711,7 +4714,8 @@
       "configTarifas": "Rates",
       "configIaConectores": "AI and connectors",
       "preguntasIa": "Sherpa questions",
-      "contador": "Usage meter"
+      "contador": "Usage meter",
+      "papelera": "Recycle bin"
     },
     "prefs": {
       "themeLight": "Light theme",
@@ -6045,7 +6049,8 @@
       "tarifas": "view the rates",
       "marca": "configure your company details",
       "proyectos": "view projects",
-      "propuestas": "view proposals"
+      "propuestas": "view proposals",
+      "papelera": "restore deleted items"
     }
   },
   "proyectos": {
@@ -8383,7 +8388,8 @@
       "segundo_factor_activado": "Two-step verification turned on",
       "segundo_factor_desactivado": "Two-step verification turned off",
       "segundo_factor_codigos": "New recovery codes",
-      "exportar": "List exported"
+      "exportar": "List exported",
+      "purged": "Permanently deleted"
     },
     "via": "via {{nombre}}"
   },
@@ -11335,6 +11341,50 @@
         "portal": "Portal",
         "integraciones": "Integrations"
       }
+    }
+  },
+  "papelera": {
+    "buscar": "Search by name",
+    "recuperar": "Restore",
+    "recuperado_one": "Restored from the recycle bin",
+    "recuperado_other": "{{count}} restored from the recycle bin",
+    "documentos_one": "with 1 document",
+    "documentos_other": "with {{count}} documents",
+    "campos": {
+      "tipo": "Type",
+      "nombre": "Name",
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "eliminadoPor": "Deleted by",
+      "eliminadoAt": "Deleted",
+      "seVacia": "Purged on",
+      "seVaciaTitle": "From that day on it is permanently deleted, files included, and can no longer be restored"
+    },
+    "tipos": {
+      "cliente": "Client",
+      "contacto": "Contact",
+      "emplazamiento": "Site",
+      "localizacion": "Tree folder",
+      "elemento": "Equipment",
+      "revision": "Inspection",
+      "actuacion": "Action",
+      "archivo": "Document",
+      "carpeta": "Document folder",
+      "acreditacion_documento": "Accreditation document",
+      "tipo": "Equipment type",
+      "familia": "Family",
+      "norma": "Standard",
+      "campo": "Field",
+      "checklist": "Checklist"
+    },
+    "conPadre": {
+      "titulo": "Restore both",
+      "texto": "“{{nombre}}” was in {{tipoPadre}} “{{padre}}”, which is also in the recycle bin. Both will be restored.",
+      "boton": "Restore both"
+    },
+    "vacia": {
+      "titulo": "The recycle bin is empty",
+      "hint": "Deleted items come here and can be restored until they are permanently deleted, once the retention period is over."
     }
   }
 }

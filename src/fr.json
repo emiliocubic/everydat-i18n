@@ -1392,7 +1392,10 @@
     "qrdatHint": "Où prévenir quand une étiquette est associée à un équipement ou libérée. Vide = personne n’est prévenu.",
     "qrdatUrlHint": "URL de la centrale Cubic.",
     "qrdatSinToken": "Sans jeton",
-    "qrdatQuitarToken": "Retirer le jeton"
+    "qrdatQuitarToken": "Retirer le jeton",
+    "papelera": "Durée de conservation de la corbeille",
+    "papeleraHint": "Jours pendant lesquels les éléments supprimés sont conservés avant d’être supprimés définitivement, fichiers compris ; le journal d’audit garde la trace de leur existence. Vide = 365, la valeur par défaut. La réduire supprime dès la nuit même ce qui a déjà expiré.",
+    "papeleraDias": "jours"
   },
   "admins": {
     "title": "Utilisateurs",
@@ -4241,7 +4244,8 @@
       "configTarifas": "Tarifs",
       "configIaConectores": "IA et connecteurs",
       "preguntasIa": "Questions à Sherpa",
-      "contador": "Compteur"
+      "contador": "Compteur",
+      "papelera": "Corbeille"
     },
     "prefs": {
       "themeLight": "Thème clair",
@@ -5143,7 +5147,8 @@
       "nexoAnteO": "ou",
       "tarifas": "voir les tarifs",
       "proyectos": "voir les projets",
-      "propuestas": "voir les propositions"
+      "propuestas": "voir les propositions",
+      "papelera": "restaurer les éléments supprimés"
     }
   },
   "proyectos": {
@@ -7469,7 +7474,8 @@
       "segundo_factor_activado": "Validation en deux étapes activée",
       "segundo_factor_desactivado": "Validation en deux étapes désactivée",
       "segundo_factor_codigos": "Nouveaux codes de récupération",
-      "exportar": "Liste exportée"
+      "exportar": "Liste exportée",
+      "purged": "Suppression définitive"
     },
     "via": "via {{nombre}}"
   },
@@ -9641,6 +9647,50 @@
         "portal": "Portail",
         "integraciones": "Intégrations"
       }
+    }
+  },
+  "papelera": {
+    "buscar": "Rechercher par nom",
+    "recuperar": "Restaurer",
+    "recuperado_one": "Restauré depuis la corbeille",
+    "recuperado_other": "{{count}} restaurés depuis la corbeille",
+    "documentos_one": "avec 1 document",
+    "documentos_other": "avec {{count}} documents",
+    "campos": {
+      "tipo": "Type",
+      "nombre": "Nom",
+      "cliente": "Client",
+      "emplazamiento": "Site",
+      "eliminadoPor": "Supprimé par",
+      "eliminadoAt": "Supprimé",
+      "seVacia": "Purgé le",
+      "seVaciaTitle": "À partir de ce jour, il est supprimé définitivement, fichiers compris, et ne peut plus être restauré"
+    },
+    "tipos": {
+      "cliente": "Client",
+      "contacto": "Contact",
+      "emplazamiento": "Site",
+      "localizacion": "Dossier de l’arborescence",
+      "elemento": "Équipement",
+      "revision": "Inspection",
+      "actuacion": "Intervention",
+      "archivo": "Document",
+      "carpeta": "Dossier de documents",
+      "acreditacion_documento": "Document d’habilitation",
+      "tipo": "Type d’équipement",
+      "familia": "Famille",
+      "norma": "Norme",
+      "campo": "Champ",
+      "checklist": "Checklist"
+    },
+    "conPadre": {
+      "titulo": "Restaurer les deux",
+      "texto": "« {{nombre}} » se trouvait dans {{tipoPadre}} « {{padre}} », qui est aussi dans la corbeille. Les deux seront restaurés.",
+      "boton": "Restaurer les deux"
+    },
+    "vacia": {
+      "titulo": "La corbeille est vide",
+      "hint": "Les éléments supprimés arrivent ici et peuvent être restaurés jusqu’à leur suppression définitive, une fois le délai écoulé."
     }
   }
 }
