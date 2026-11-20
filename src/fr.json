@@ -1379,7 +1379,12 @@
       "planificador": "Planificateur",
       "ia": "Assistant et IA",
       "portal": "Portail client avec gestion",
-      "integraciones": "Intégrations (WS et webhooks)"
+      "integraciones": "Intégrations (WS et webhooks)",
+      "explotacion": "Exploitation des données",
+      "acreditaciones": "Habilitations",
+      "plantillas": "Éditeur de modèles de rapport",
+      "comercial": "Gestion commerciale (propositions et devis)",
+      "partes": "Bons d'intervention"
     },
     "limite": "Limite d'utilisateurs internes",
     "limiteHint": "Vide = 999, la valeur par défaut : ce n'est pas une vraie limite et l'entreprise ne voit aucun compteur. La baisser n'expulse personne : elle ferme seulement les créations.",
@@ -5346,6 +5351,10 @@
       "proyectos": "voir les projets",
       "propuestas": "voir les propositions",
       "papelera": "restaurer les éléments supprimés"
+    },
+    "sinModulo": {
+      "titulo": "Module non souscrit",
+      "texto": "Cette partie de l'application n'est pas souscrite dans cette installation. Si vous en avez besoin, adressez-vous à la personne qui gère le compte de votre entreprise."
     }
   },
   "proyectos": {

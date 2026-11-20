@@ -1510,7 +1510,12 @@
       "planificador": "Planner",
       "ia": "Assistant and AI",
       "portal": "Client portal with management",
-      "integraciones": "Integrations (WS and webhooks)"
+      "integraciones": "Integrations (WS and webhooks)",
+      "explotacion": "Data exploitation",
+      "acreditaciones": "Accreditations",
+      "plantillas": "Report template designer",
+      "comercial": "Sales management (proposals and quotes)",
+      "partes": "Work reports"
     },
     "limite": "Internal user limit",
     "limiteHint": "Empty = 999, the default: not a real cap, and the company sees no counter. Lowering it expels nobody: it only closes new sign-ups.",
@@ -6248,6 +6253,10 @@
       "proyectos": "view projects",
       "propuestas": "view proposals",
       "papelera": "restore deleted items"
+    },
+    "sinModulo": {
+      "titulo": "Module not included",
+      "texto": "This part of the application is not included in this installation. If you need it, talk to whoever manages your company's account."
     }
   },
   "proyectos": {

@@ -1381,7 +1381,12 @@
       "planificador": "Planificador",
       "ia": "Asistente e IA",
       "portal": "Portal del cliente con gestión",
-      "integraciones": "Integraciones (WS y webhooks)"
+      "integraciones": "Integraciones (WS y webhooks)",
+      "explotacion": "Explotación de datos",
+      "acreditaciones": "Acreditaciones",
+      "plantillas": "Diseñador de plantillas de informe",
+      "comercial": "Gestión comercial (propuestas y presupuestos)",
+      "partes": "Partes de trabajo"
     },
     "limite": "Límite de usuarios internos",
     "limiteHint": "Vacío = 999, el de serie: no es un tope real y la empresa no ve ningún contador. Bajarlo no expulsa a nadie: solo cierra las altas.",
@@ -6248,6 +6253,10 @@
       "proyectos": "ver los proyectos",
       "propuestas": "ver las propuestas",
       "papelera": "recuperar lo eliminado"
+    },
+    "sinModulo": {
+      "titulo": "Módulo no contratado",
+      "texto": "Esta parte de la aplicación no está contratada en esta instalación. Si la necesitas, habla con quien lleva la cuenta de tu empresa."
     }
   },
   "proyectos": {
