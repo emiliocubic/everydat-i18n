@@ -1395,7 +1395,19 @@
     "qrdatQuitarToken": "Retirer le jeton",
     "papelera": "Durée de conservation de la corbeille",
     "papeleraHint": "Jours pendant lesquels les éléments supprimés sont conservés avant d’être supprimés définitivement, fichiers compris ; le journal d’audit garde la trace de leur existence. Vide = 365, la valeur par défaut. La réduire supprime dès la nuit même ce qui a déjà expiré.",
-    "papeleraDias": "jours"
+    "papeleraDias": "jours",
+    "limitesPersonas": "Limites de collaborateurs externes et d'invités",
+    "limitesPersonasHint": "Vide = sans limite. Une fois une limite atteinte, on ne peut plus créer ni restaurer personne de cette catégorie, ni donner accès à un autre invité (au total, ou pour ce client). La baisser n'exclut personne. Un invité contact de deux clients compte pour chacun.",
+    "limiteColaboradores": "Collaborateurs externes",
+    "limiteInvitados": "Invités avec accès au portail, au total",
+    "limiteInvitadosPorCliente": "Invités avec accès au portail, par client",
+    "sinLimite": "Sans limite",
+    "colaboradoresHoy_one": "{{count}} collaborateur externe actuellement",
+    "colaboradoresHoy_other": "{{count}} collaborateurs externes actuellement",
+    "invitadosHoy_one": "{{count}} invité avec accès actuellement",
+    "invitadosHoy_other": "{{count}} invités avec accès actuellement",
+    "invitadosPorClienteHoy_one": "Le client qui en a le plus : {{count}} invité",
+    "invitadosPorClienteHoy_other": "Le client qui en a le plus : {{count}} invités"
   },
   "admins": {
     "title": "Utilisateurs",

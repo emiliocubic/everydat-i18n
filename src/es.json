@@ -1402,7 +1402,19 @@
     "iaEnPausa": "En pausa",
     "papelera": "Plazo de la papelera",
     "papeleraHint": "Días que se guarda lo eliminado antes de borrarlo de verdad, con sus archivos; la auditoría conserva que existió. Vacío = 365, el de serie. Bajarlo borra lo ya vencido esa misma noche.",
-    "papeleraDias": "días"
+    "papeleraDias": "días",
+    "limitesPersonas": "Límites de colaboradores e invitados",
+    "limitesPersonasHint": "Vacíos = sin límite. Al llegar a uno no se puede dar de alta ni recuperar a nadie de esa clase, ni dar acceso a otro invitado (en total, o a otro de ese cliente). Bajarlo no echa a nadie. Un invitado que es contacto de dos clientes cuenta en cada uno.",
+    "limiteColaboradores": "Colaboradores externos",
+    "limiteInvitados": "Invitados con acceso al portal, en total",
+    "limiteInvitadosPorCliente": "Invitados con acceso al portal, por cliente",
+    "sinLimite": "Sin límite",
+    "colaboradoresHoy_one": "{{count}} colaborador externo ahora",
+    "colaboradoresHoy_other": "{{count}} colaboradores externos ahora",
+    "invitadosHoy_one": "{{count}} invitado con acceso ahora",
+    "invitadosHoy_other": "{{count}} invitados con acceso ahora",
+    "invitadosPorClienteHoy_one": "El cliente que más tiene: {{count}} invitado",
+    "invitadosPorClienteHoy_other": "El cliente que más tiene: {{count}} invitados"
   },
   "admins": {
     "title": "Usuarios",

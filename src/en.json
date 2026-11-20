@@ -1531,7 +1531,19 @@
     "iaEnPausa": "Paused",
     "papelera": "Recycle bin retention",
     "papeleraHint": "Days deleted items are kept before being permanently deleted, files included; the audit log keeps a record that they existed. Empty = 365, the default. Lowering it deletes whatever is already past due that same night.",
-    "papeleraDias": "days"
+    "papeleraDias": "days",
+    "limitesPersonas": "External collaborator and guest limits",
+    "limitesPersonasHint": "Empty = no limit. Once a limit is reached, nobody of that kind can be added or restored, and no further guest can be given access (in total, or for that customer). Lowering it removes nobody. A guest who is a contact of two customers counts for each.",
+    "limiteColaboradores": "External collaborators",
+    "limiteInvitados": "Guests with portal access, in total",
+    "limiteInvitadosPorCliente": "Guests with portal access, per customer",
+    "sinLimite": "No limit",
+    "colaboradoresHoy_one": "{{count}} external collaborator now",
+    "colaboradoresHoy_other": "{{count}} external collaborators now",
+    "invitadosHoy_one": "{{count}} guest with access now",
+    "invitadosHoy_other": "{{count}} guests with access now",
+    "invitadosPorClienteHoy_one": "The customer with the most: {{count}} guest",
+    "invitadosPorClienteHoy_other": "The customer with the most: {{count}} guests"
   },
   "admins": {
     "title": "Users",
