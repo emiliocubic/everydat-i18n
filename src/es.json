@@ -5157,7 +5157,8 @@
           "quitar_otro_producto": "Quitar un producto de los otros productos",
           "quitar_otro_producto_bloque": "Quitar un bloque de los otros productos, con sus productos",
           "cambiar_plantilla_correo": "Cambiar el texto del aviso {{aviso}} en {{idioma}}",
-          "restablecer_plantilla_correo": "Volver al texto de serie del aviso {{aviso}} en {{idioma}}"
+          "restablecer_plantilla_correo": "Volver al texto de serie del aviso {{aviso}} en {{idioma}}",
+          "cambiar_sobre_empresa": "Cambiar el texto «Sobre nuestra empresa»"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -6026,7 +6027,8 @@
             "partes_encendidos": "Se vuelven a hacer partes de trabajo.",
             "propuestas_conservan": "Las propuestas que ya lo llevan lo conservan, con su nombre y su precio.",
             "plantilla_proximos": "Los próximos avisos de este tipo saldrán con este texto. No se manda ningún correo al guardar.",
-            "plantilla_de_serie": "Vuelve al texto de serie: los próximos avisos de este tipo saldrán con él. No se manda ningún correo al guardar."
+            "plantilla_de_serie": "Vuelve al texto de serie: los próximos avisos de este tipo saldrán con él. No se manda ningún correo al guardar.",
+            "sobre_empresa_guia": "Sherpa lo tendrá en cuenta en cada pregunta desde que lo confirmes."
           },
           "aviso": {
             "revision": "de próxima revisión",
@@ -6043,6 +6045,11 @@
               "nuevo": "Cuerpo nuevo: «{{texto}}»",
               "igual": "Cuerpo, sin cambios: «{{texto}}»"
             }
+          },
+          "sobreEmpresa": {
+            "hoy": "Texto de hoy: {{texto}}",
+            "nuevo": "Texto nuevo: {{texto}}",
+            "vacio": "vacío"
           }
         }
       },

@@ -4586,7 +4586,8 @@
           "quitar_otro_producto": "Retirer un produit des autres produits",
           "quitar_otro_producto_bloque": "Retirer un bloc des autres produits, avec ses produits",
           "cambiar_plantilla_correo": "Modifier le texte de l’avis {{aviso}} en {{idioma}}",
-          "restablecer_plantilla_correo": "Rétablir le texte par défaut de l’avis {{aviso}} en {{idioma}}"
+          "restablecer_plantilla_correo": "Rétablir le texte par défaut de l’avis {{aviso}} en {{idioma}}",
+          "cambiar_sobre_empresa": "Modifier le texte « À propos de notre entreprise »"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -5257,7 +5258,8 @@
             "partes_encendidos": "On peut de nouveau créer des bons de travail.",
             "propuestas_conservan": "Les propositions qui le contiennent déjà le conservent, avec son nom et son prix.",
             "plantilla_proximos": "Les prochains avis de ce type partiront avec ce texte. Aucun e-mail n’est envoyé à l’enregistrement.",
-            "plantilla_de_serie": "Retour au texte par défaut : les prochains avis de ce type partiront avec lui. Aucun e-mail n’est envoyé à l’enregistrement."
+            "plantilla_de_serie": "Retour au texte par défaut : les prochains avis de ce type partiront avec lui. Aucun e-mail n’est envoyé à l’enregistrement.",
+            "sobre_empresa_guia": "Sherpa en tiendra compte dans chaque question dès que vous l’aurez confirmé."
           },
           "aviso": {
             "revision": "de prochaine vérification",
@@ -5274,6 +5276,11 @@
               "nuevo": "Nouveau corps : « {{texto}} »",
               "igual": "Corps, inchangé : « {{texto}} »"
             }
+          },
+          "sobreEmpresa": {
+            "hoy": "Texte actuel : {{texto}}",
+            "nuevo": "Nouveau texte : {{texto}}",
+            "vacio": "vide"
           }
         }
       },

@@ -5157,7 +5157,8 @@
           "quitar_otro_producto": "Remove a product from other products",
           "quitar_otro_producto_bloque": "Remove a block from other products, with its products",
           "cambiar_plantilla_correo": "Change the text of the {{aviso}} notice in {{idioma}}",
-          "restablecer_plantilla_correo": "Restore the default text of the {{aviso}} notice in {{idioma}}"
+          "restablecer_plantilla_correo": "Restore the default text of the {{aviso}} notice in {{idioma}}",
+          "cambiar_sobre_empresa": "Change the «About our company» text"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -6026,7 +6027,8 @@
             "partes_encendidos": "Work reports can be made again.",
             "propuestas_conservan": "Proposals that already include it keep it, with its name and price.",
             "plantilla_proximos": "The next notices of this kind will go out with this text. No email is sent when saving.",
-            "plantilla_de_serie": "Back to the default text: the next notices of this kind will go out with it. No email is sent when saving."
+            "plantilla_de_serie": "Back to the default text: the next notices of this kind will go out with it. No email is sent when saving.",
+            "sobre_empresa_guia": "Sherpa will take it into account in every question once you confirm it."
           },
           "aviso": {
             "revision": "next inspection",
@@ -6043,6 +6045,11 @@
               "nuevo": "New body: “{{texto}}”",
               "igual": "Body, unchanged: “{{texto}}”"
             }
+          },
+          "sobreEmpresa": {
+            "hoy": "Current text: {{texto}}",
+            "nuevo": "New text: {{texto}}",
+            "vacio": "empty"
           }
         }
       },
