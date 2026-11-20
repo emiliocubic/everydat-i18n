@@ -5150,7 +5150,9 @@
           "quitar_logo_marca": "Remove the {{logo}}",
           "quitar_foto_entrada": "Remove the sign-in screen photo",
           "quitar_otro_producto": "Remove a product from other products",
-          "quitar_otro_producto_bloque": "Remove a block from other products, with its products"
+          "quitar_otro_producto_bloque": "Remove a block from other products, with its products",
+          "cambiar_plantilla_correo": "Change the text of the {{aviso}} notice in {{idioma}}",
+          "restablecer_plantilla_correo": "Restore the default text of the {{aviso}} notice in {{idioma}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -6017,7 +6019,25 @@
             "comercial_vuelve": "The existing proposals and quotes show again.",
             "partes_apagados": "With work reports off, the existing ones can be seen and downloaded, but no new ones are made and the existing ones cannot be changed.",
             "partes_encendidos": "Work reports can be made again.",
-            "propuestas_conservan": "Proposals that already include it keep it, with its name and price."
+            "propuestas_conservan": "Proposals that already include it keep it, with its name and price.",
+            "plantilla_proximos": "The next notices of this kind will go out with this text. No email is sent when saving.",
+            "plantilla_de_serie": "Back to the default text: the next notices of this kind will go out with it. No email is sent when saving."
+          },
+          "aviso": {
+            "revision": "next inspection",
+            "fin_vida": "end of service life"
+          },
+          "plantilla": {
+            "asunto": {
+              "hoy": "Current subject: “{{texto}}”",
+              "nuevo": "New subject: “{{texto}}”",
+              "igual": "Subject, unchanged: “{{texto}}”"
+            },
+            "cuerpo": {
+              "hoy": "Current body: “{{texto}}”",
+              "nuevo": "New body: “{{texto}}”",
+              "igual": "Body, unchanged: “{{texto}}”"
+            }
           }
         }
       },

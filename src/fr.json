@@ -4579,7 +4579,9 @@
           "quitar_logo_marca": "Retirer le {{logo}}",
           "quitar_foto_entrada": "Retirer la photo de l'écran de connexion",
           "quitar_otro_producto": "Retirer un produit des autres produits",
-          "quitar_otro_producto_bloque": "Retirer un bloc des autres produits, avec ses produits"
+          "quitar_otro_producto_bloque": "Retirer un bloc des autres produits, avec ses produits",
+          "cambiar_plantilla_correo": "Modifier le texte de l’avis {{aviso}} en {{idioma}}",
+          "restablecer_plantilla_correo": "Rétablir le texte par défaut de l’avis {{aviso}} en {{idioma}}"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -5248,7 +5250,25 @@
             "comercial_vuelve": "Les propositions et les devis existants réapparaissent.",
             "partes_apagados": "Bons de travail désactivés : ceux qui existent se voient et se téléchargent, mais on n'en crée pas de nouveaux et on ne modifie pas les existants.",
             "partes_encendidos": "On peut de nouveau créer des bons de travail.",
-            "propuestas_conservan": "Les propositions qui le contiennent déjà le conservent, avec son nom et son prix."
+            "propuestas_conservan": "Les propositions qui le contiennent déjà le conservent, avec son nom et son prix.",
+            "plantilla_proximos": "Les prochains avis de ce type partiront avec ce texte. Aucun e-mail n’est envoyé à l’enregistrement.",
+            "plantilla_de_serie": "Retour au texte par défaut : les prochains avis de ce type partiront avec lui. Aucun e-mail n’est envoyé à l’enregistrement."
+          },
+          "aviso": {
+            "revision": "de prochaine vérification",
+            "fin_vida": "de fin de vie"
+          },
+          "plantilla": {
+            "asunto": {
+              "hoy": "Objet actuel : « {{texto}} »",
+              "nuevo": "Nouvel objet : « {{texto}} »",
+              "igual": "Objet, inchangé : « {{texto}} »"
+            },
+            "cuerpo": {
+              "hoy": "Corps actuel : « {{texto}} »",
+              "nuevo": "Nouveau corps : « {{texto}} »",
+              "igual": "Corps, inchangé : « {{texto}} »"
+            }
           }
         }
       },

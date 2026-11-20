@@ -5150,7 +5150,9 @@
           "quitar_logo_marca": "Quitar el {{logo}}",
           "quitar_foto_entrada": "Quitar la foto de la pantalla de entrada",
           "quitar_otro_producto": "Quitar un producto de los otros productos",
-          "quitar_otro_producto_bloque": "Quitar un bloque de los otros productos, con sus productos"
+          "quitar_otro_producto_bloque": "Quitar un bloque de los otros productos, con sus productos",
+          "cambiar_plantilla_correo": "Cambiar el texto del aviso {{aviso}} en {{idioma}}",
+          "restablecer_plantilla_correo": "Volver al texto de serie del aviso {{aviso}} en {{idioma}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -6017,7 +6019,25 @@
             "comercial_vuelve": "Vuelven a verse las propuestas y los presupuestos que había.",
             "partes_apagados": "Con los partes apagados, los que hay se ven y se descargan, pero no se hacen partes nuevos ni se tocan los que hay.",
             "partes_encendidos": "Se vuelven a hacer partes de trabajo.",
-            "propuestas_conservan": "Las propuestas que ya lo llevan lo conservan, con su nombre y su precio."
+            "propuestas_conservan": "Las propuestas que ya lo llevan lo conservan, con su nombre y su precio.",
+            "plantilla_proximos": "Los próximos avisos de este tipo saldrán con este texto. No se manda ningún correo al guardar.",
+            "plantilla_de_serie": "Vuelve al texto de serie: los próximos avisos de este tipo saldrán con él. No se manda ningún correo al guardar."
+          },
+          "aviso": {
+            "revision": "de próxima revisión",
+            "fin_vida": "de fin de vida útil"
+          },
+          "plantilla": {
+            "asunto": {
+              "hoy": "Asunto de hoy: «{{texto}}»",
+              "nuevo": "Asunto nuevo: «{{texto}}»",
+              "igual": "Asunto, sin cambios: «{{texto}}»"
+            },
+            "cuerpo": {
+              "hoy": "Cuerpo de hoy: «{{texto}}»",
+              "nuevo": "Cuerpo nuevo: «{{texto}}»",
+              "igual": "Cuerpo, sin cambios: «{{texto}}»"
+            }
           }
         }
       },
