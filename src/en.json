@@ -7928,7 +7928,8 @@
         "enviando": "Sending",
         "aceptada": "Sent",
         "rechazada": "Rejected",
-        "esperando": "Waiting"
+        "esperando": "Waiting",
+        "conflicto": "In conflict"
       },
       "esperando": "{{count}} operation is waiting for another one it depends on and will go in the next send.",
       "esperando_other": "{{count}} operations are waiting for others they depend on and will go in the next send.",
@@ -7973,7 +7974,8 @@
         "esperando": "Waiting: it will go once the server accepts what it depends on (below, “Waiting for”).",
         "enviando": "Being sent.",
         "aceptada": "Sent: the server has accepted it.",
-        "rechazada": "Rejected: the server has not accepted it. What it answered is below. Correct it and resend it, or discard it."
+        "rechazada": "Rejected: the server has not accepted it. What it answered is below. Correct it and resend it, or discard it.",
+        "conflicto": "In conflict: someone changed the same thing on the server in the meantime, and the server has not saved yours. Both versions are below."
       },
       "queHacer": {
         "sin_conexion": "There was no connection. Send again when you have coverage.",
@@ -7981,7 +7983,7 @@
         "sesion": "The server no longer recognises your session. Sign in again with your password: pending work is kept.",
         "permiso": "You do not have permission for this on the server, or it is no longer within your scope. Ask the office to check it and resend.",
         "no_existe": "The server cannot find something this needs (the office may have deleted it). Update the project; if nothing changes, discard it or share the log with support.",
-        "conflicto": "Someone changed it on the server in the meantime. Update the project, check it and resend.",
+        "conflicto": "Look at both versions and choose: keep what is on the server (yours is discarded) or overwrite it with yours, knowingly.",
         "en_uso": "Another piece of equipment already has that code. You can take it from that one and give it to this one (“Reassign the code”), or correct it.",
         "datos": "The server does not accept some of the data (see below which). Correct it and resend.",
         "central": "The server failed while receiving it. It stays pending and the rest still goes; if it keeps happening, share the log with support.",
@@ -8081,6 +8083,35 @@
       "modelo": {
         "bloqueado_one": "{{count}} equipment on this phone uses this model, and it exists: the model is not discarded. Correct and resend it, or change that equipment's model.",
         "bloqueado_other": "{{count}} equipment on this phone use this model, and they exist: the model is not discarded. Correct and resend it, or change the model of that equipment."
+      },
+      "conflicto": {
+        "hint_one": "One of your changes clashes with what someone else changed in the meantime. Open it and choose which version to keep.",
+        "hint_other": "{{count}} of your changes clash with what others changed in the meantime. Open each one and choose which version to keep.",
+        "lista": "In conflict",
+        "titulo": "Both versions",
+        "quien": "Changed by {{nombre}} on {{cuando}}.",
+        "quienSinNombre": "Changed on the server on {{cuando}}.",
+        "sinDetalle": "The server does not say what changed. If in doubt, keep the server's version and make your change again.",
+        "enLaCentral": "On the server",
+        "loTuyo": "Yours",
+        "sobrescribir": "Overwrite with mine",
+        "sobrescribirConfirm": "Yours will be sent and will replace what is now on the server.",
+        "descartar": "Keep the server's version",
+        "descartarConfirm": "Yours is not sent and the phone keeps what is on the server.",
+        "campo": {
+          "nota": "Note",
+          "descripcion": "Description",
+          "notas_internas": "Remarks",
+          "fechas": "Dates",
+          "identificadores": "Identifiers",
+          "codigo_asignar": "Code you wanted to add",
+          "codigo_quitar": "Code you wanted to remove",
+          "fecha": "Date",
+          "resultado": "Result",
+          "valida_hasta": "Valid until",
+          "matizacion": "Qualification",
+          "observaciones": "Comments"
+        }
       }
     },
     "ajustes": {

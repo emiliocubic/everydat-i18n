@@ -7014,7 +7014,8 @@
         "enviando": "Envoi",
         "aceptada": "Envoyée",
         "rechazada": "Refusée",
-        "esperando": "Attend une autre"
+        "esperando": "Attend une autre",
+        "conflicto": "En conflit"
       },
       "esperando": "{{count}} opération attend une autre dont elle dépend et partira au prochain envoi.",
       "esperando_other": "{{count}} opérations attendent d'autres dont elles dépendent et partiront au prochain envoi.",
@@ -7059,7 +7060,8 @@
         "esperando": "En attente : partira quand le serveur aura accepté ce dont elle dépend (ci-dessous, « Attend »).",
         "enviando": "En cours d'envoi.",
         "aceptada": "Envoyée : le serveur l'a acceptée.",
-        "rechazada": "Refusée : le serveur ne l'a pas acceptée. Sa réponse est ci-dessous. Corrigez-la et renvoyez-la, ou abandonnez-la."
+        "rechazada": "Refusée : le serveur ne l'a pas acceptée. Sa réponse est ci-dessous. Corrigez-la et renvoyez-la, ou abandonnez-la.",
+        "conflicto": "En conflit : quelqu'un a modifié la même chose sur le serveur entre-temps, et le serveur n'a pas enregistré la vôtre. Les deux versions sont ci-dessous."
       },
       "queHacer": {
         "sin_conexion": "Il n'y avait pas de connexion. Renvoyez quand vous aurez du réseau.",
@@ -7067,7 +7069,7 @@
         "sesion": "Le serveur ne reconnaît plus votre session. Reconnectez-vous avec votre mot de passe : le travail en attente est conservé.",
         "permiso": "Vous n'avez pas la permission sur le serveur, ou ce n'est plus dans votre périmètre. Demandez au bureau de vérifier et renvoyez.",
         "no_existe": "Le serveur ne trouve pas quelque chose dont ceci a besoin (le bureau l'a peut-être supprimé). Mettez à jour le projet ; si rien ne change, abandonnez-le ou partagez le journal avec le support.",
-        "conflicto": "Quelqu'un l'a modifié sur le serveur entre-temps. Mettez à jour le projet, vérifiez et renvoyez.",
+        "conflicto": "Regardez les deux versions et choisissez : garder ce qu'il y a sur le serveur (la vôtre est abandonnée) ou l'écraser avec la vôtre, en connaissance de cause.",
         "en_uso": "Un autre équipement porte déjà ce code. Vous pouvez le lui retirer et le donner à celui-ci (« Réattribuer le code »), ou le corriger.",
         "datos": "Le serveur n'accepte pas certaines données (voir lesquelles ci-dessous). Corrigez-les et renvoyez.",
         "central": "Le serveur a eu une erreur en la recevant. Elle reste à envoyer et le reste part quand même ; si cela se répète, partagez le journal avec le support.",
@@ -7167,6 +7169,35 @@
       "modelo": {
         "bloqueado_one": "{{count}} équipement de ce mobile porte ce modèle, et il existe : il n'est pas supprimé. Corrigez-le et renvoyez-le, ou changez le modèle de cet équipement.",
         "bloqueado_other": "{{count}} équipements de ce mobile portent ce modèle, et ils existent : il n'est pas supprimé. Corrigez-le et renvoyez-le, ou changez le modèle de ces équipements."
+      },
+      "conflicto": {
+        "hint_one": "Une de vos modifications entre en conflit avec ce qu'une autre personne a modifié entre-temps. Ouvrez-la et choisissez la version à garder.",
+        "hint_other": "{{count}} de vos modifications entrent en conflit avec ce que d'autres ont modifié entre-temps. Ouvrez chacune et choisissez la version à garder.",
+        "lista": "En conflit",
+        "titulo": "Les deux versions",
+        "quien": "Modifié par {{nombre}} le {{cuando}}.",
+        "quienSinNombre": "Modifié sur le serveur le {{cuando}}.",
+        "sinDetalle": "Le serveur ne dit pas ce qui a changé. En cas de doute, gardez la version du serveur et refaites votre modification.",
+        "enLaCentral": "Sur le serveur",
+        "loTuyo": "La vôtre",
+        "sobrescribir": "Écraser avec la mienne",
+        "sobrescribirConfirm": "La vôtre sera envoyée et remplacera ce qu'il y a maintenant sur le serveur.",
+        "descartar": "Garder la version du serveur",
+        "descartarConfirm": "La vôtre n'est pas envoyée et le téléphone garde ce qu'il y a sur le serveur.",
+        "campo": {
+          "nota": "Note",
+          "descripcion": "Description",
+          "notas_internas": "Observations",
+          "fechas": "Dates",
+          "identificadores": "Identifiants",
+          "codigo_asignar": "Code que vous vouliez ajouter",
+          "codigo_quitar": "Code que vous vouliez retirer",
+          "fecha": "Date",
+          "resultado": "Résultat",
+          "valida_hasta": "Valable jusqu'au",
+          "matizacion": "Précision",
+          "observaciones": "Commentaires"
+        }
       }
     },
     "ajustes": {

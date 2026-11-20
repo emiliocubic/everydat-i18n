@@ -7928,7 +7928,8 @@
         "enviando": "Enviando",
         "aceptada": "Enviada",
         "rechazada": "Rechazada",
-        "esperando": "Esperando"
+        "esperando": "Esperando",
+        "conflicto": "En conflicto"
       },
       "esperando": "{{count}} operación espera a otra de la que depende y saldrá en el próximo envío.",
       "esperando_other": "{{count}} operaciones esperan a otras de las que dependen y saldrán en el próximo envío.",
@@ -7973,7 +7974,8 @@
         "esperando": "Esperando: saldrá cuando la central acepte aquello de lo que depende (abajo, «Espera a»).",
         "enviando": "Se está enviando.",
         "aceptada": "Enviada: la central la ha aceptado.",
-        "rechazada": "Rechazada: la central no la ha aceptado. Abajo está lo que respondió. Corrígela y reenvíala, o descártala."
+        "rechazada": "Rechazada: la central no la ha aceptado. Abajo está lo que respondió. Corrígela y reenvíala, o descártala.",
+        "conflicto": "En conflicto: alguien cambió lo mismo en la central mientras tanto, y la central no ha guardado lo tuyo. Abajo están las dos versiones."
       },
       "queHacer": {
         "sin_conexion": "No había conexión. Vuelve a enviar cuando tengas cobertura.",
@@ -7981,7 +7983,7 @@
         "sesion": "La central ya no reconoce tu sesión. Entra de nuevo con tu contraseña: lo pendiente se conserva.",
         "permiso": "No tienes permiso para esto en la central, o lo que toca ya no está a tu alcance. Pide a la oficina que lo revise y reenvía.",
         "no_existe": "La central no encuentra algo que esto necesita (puede que lo hayan borrado desde la oficina). Actualiza el proyecto; si sigue igual, descártalo o comparte el registro con soporte.",
-        "conflicto": "Alguien lo cambió en la central entretanto. Actualiza el proyecto, revísalo y reenvía.",
+        "conflicto": "Mira las dos versiones y elige: quedarte con lo que hay en la central (lo tuyo se descarta) o sobrescribirlo con lo tuyo, a sabiendas.",
         "en_uso": "Ese código ya lo lleva otro equipo. Puedes quitárselo y ponérselo a este («Reasignar el código»), o corregirlo.",
         "datos": "A la central no le valen algunos datos (abajo, cuáles). Corrígelos y reenvía.",
         "central": "La central tuvo un fallo al recibirla. Se queda por enviar y lo demás sale igual; si se repite, comparte el registro con soporte.",
@@ -8081,6 +8083,35 @@
       "modelo": {
         "bloqueado_one": "Este modelo lo lleva {{count}} equipo de este móvil, que existe: no se descarta. Corrígelo y reenvíalo, o cambia el modelo de ese equipo.",
         "bloqueado_other": "Este modelo lo llevan {{count}} equipos de este móvil, que existen: no se descarta. Corrígelo y reenvíalo, o cambia el modelo de esos equipos."
+      },
+      "conflicto": {
+        "hint_one": "Un cambio tuyo choca con lo que otra persona cambió entretanto. Ábrelo y elige con qué versión te quedas.",
+        "hint_other": "{{count}} cambios tuyos chocan con lo que otras personas cambiaron entretanto. Abre cada uno y elige con qué versión te quedas.",
+        "lista": "En conflicto",
+        "titulo": "Las dos versiones",
+        "quien": "Lo cambió {{nombre}} el {{cuando}}.",
+        "quienSinNombre": "Lo cambiaron en la central el {{cuando}}.",
+        "sinDetalle": "La central no dice qué cambió. Si dudas, quédate con lo de la central y vuelve a hacer tu cambio.",
+        "enLaCentral": "En la central",
+        "loTuyo": "Lo tuyo",
+        "sobrescribir": "Sobrescribir con lo mío",
+        "sobrescribirConfirm": "Se enviará lo tuyo y sustituirá a lo que hay ahora en la central.",
+        "descartar": "Quedarme con lo de la central",
+        "descartarConfirm": "Lo tuyo no se envía y en el móvil se queda lo que hay en la central.",
+        "campo": {
+          "nota": "Nota",
+          "descripcion": "Descripción",
+          "notas_internas": "Observaciones",
+          "fechas": "Fechas",
+          "identificadores": "Identificadores",
+          "codigo_asignar": "Código que querías poner",
+          "codigo_quitar": "Código que querías quitar",
+          "fecha": "Fecha",
+          "resultado": "Resultado",
+          "valida_hasta": "Válida hasta",
+          "matizacion": "Matización",
+          "observaciones": "Comentarios"
+        }
       }
     },
     "ajustes": {
