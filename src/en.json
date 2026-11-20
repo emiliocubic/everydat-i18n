@@ -8117,7 +8117,8 @@
           "resultado": "Result",
           "valida_hasta": "Valid until",
           "matizacion": "Qualification",
-          "observaciones": "Comments"
+          "observaciones": "Comments",
+          "campos": "Fields"
         }
       }
     },

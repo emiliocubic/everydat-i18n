@@ -7203,7 +7203,8 @@
           "resultado": "Résultat",
           "valida_hasta": "Valable jusqu'au",
           "matizacion": "Précision",
-          "observaciones": "Commentaires"
+          "observaciones": "Commentaires",
+          "campos": "Champs"
         }
       }
     },
