@@ -1467,8 +1467,6 @@
       "no_roles_for_block": "No hay roles disponibles para este bloque.",
       "user_type": "Tipo de usuario",
       "user_type_placeholder": "Selecciona un tipo",
-      "scope_bypass": "Bypass de scope",
-      "scope_bypass_hint": "Este usuario ve todos los datos del tenant, ignorando el filtro de scope de cliente.",
       "account_type": "Tipo de cuenta",
       "account_type_service_hint": "Cuenta técnica M2M: solo API, sin acceso al panel ni a la app.",
       "telefono": "Teléfono",
@@ -1777,8 +1775,7 @@
         "view": "Ver las fichas de las personas",
         "manage": "Dar de alta, editar y dar de baja internos y colaboradores, ponerles la firma y asignarles alcance",
         "manage_superadmins": "Nombrar y quitar superadmins y gestionar sus fichas",
-        "manage_roles_elevated": "Repartir cualquier capacidad, también Personal",
-        "set_scope_bypass": "Cambiar a una persona el permiso de saltarse la lista de control de documentos"
+        "manage_roles_elevated": "Repartir cualquier capacidad, también Personal"
       },
       "capacidades": {
         "repartir": "Encender y apagar capacidades a los demás, salvo Personal"
@@ -1847,7 +1844,8 @@
       "documentos": {
         "view": "Ver y descargar documentos y carpetas",
         "create": "Subir documentos y crear carpetas",
-        "manage": "Editar, mover y eliminar documentos y carpetas, y dar permisos sobre ellos"
+        "manage": "Editar, mover y eliminar documentos y carpetas, y dar permisos sobre ellos",
+        "saltar_lista": "Ver y gestionar cualquier documento o carpeta aunque su lista de control no lo incluya, también la Confidencial (no salta el alcance)"
       },
       "equipos_trabajo": {
         "manage": "Crear, editar y borrar equipos de trabajo y gestionar sus miembros"

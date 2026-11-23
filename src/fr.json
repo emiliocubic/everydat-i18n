@@ -1460,8 +1460,6 @@
       "no_roles_for_block": "Aucun rôle disponible pour ce bloc.",
       "user_type": "Type d'utilisateur",
       "user_type_placeholder": "Sélectionner un type",
-      "scope_bypass": "Contournement de scope",
-      "scope_bypass_hint": "Cet utilisateur voit toutes les données du tenant, en ignorant le filtre de scope client.",
       "account_type": "Type de compte",
       "account_type_service_hint": "Compte technique M2M : API uniquement, sans accès au panneau ni à l'app.",
       "telefono": "Téléphone",
@@ -1769,8 +1767,7 @@
         "view": "Voir les fiches des personnes",
         "manage": "Créer, modifier et désactiver les internes et les collaborateurs, leur mettre la signature et leur attribuer une portée",
         "manage_superadmins": "Nommer et retirer les superadmins et gérer leurs fiches",
-        "manage_roles_elevated": "Attribuer n’importe quelle capacité, y compris Personnel",
-        "set_scope_bypass": "Changer pour une personne le droit de contourner la liste de contrôle des documents"
+        "manage_roles_elevated": "Attribuer n’importe quelle capacité, y compris Personnel"
       },
       "capacidades": {
         "repartir": "Activer et désactiver les capacités des autres, sauf Personnel"
@@ -1839,7 +1836,8 @@
       "documentos": {
         "view": "Voir et télécharger des documents et des dossiers",
         "create": "Déposer des documents et créer des dossiers",
-        "manage": "Modifier, déplacer et supprimer des documents et des dossiers, et donner des droits dessus"
+        "manage": "Modifier, déplacer et supprimer des documents et des dossiers, et donner des droits dessus",
+        "saltar_lista": "Voir et gérer tout document ou dossier même si sa liste de contrôle ne vous inclut pas, y compris Confidentiel (ne contourne pas le périmètre)"
       },
       "equipos_trabajo": {
         "manage": "Créer, modifier et supprimer des équipes de travail et gérer leurs membres"

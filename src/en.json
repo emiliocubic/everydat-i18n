@@ -1596,8 +1596,6 @@
       "no_roles_for_block": "No roles available for this block.",
       "user_type": "User type",
       "user_type_placeholder": "Select a type",
-      "scope_bypass": "Scope bypass",
-      "scope_bypass_hint": "This user sees all data within the tenant, ignoring the customer scope filter.",
       "account_type": "Account type",
       "account_type_service_hint": "Technical M2M account: API only, no panel or app access.",
       "telefono": "Phone",
@@ -1906,8 +1904,7 @@
         "view": "View people’s records",
         "manage": "Create, edit and deactivate internal users and collaborators, set their signature and assign their scope",
         "manage_superadmins": "Appoint and remove superadmins and manage their records",
-        "manage_roles_elevated": "Assign any capability, including Staff",
-        "set_scope_bypass": "Change a person’s permission to bypass the document access list"
+        "manage_roles_elevated": "Assign any capability, including Staff"
       },
       "capacidades": {
         "repartir": "Switch other people’s capabilities on and off, except Staff"
@@ -1976,7 +1973,8 @@
       "documentos": {
         "view": "View and download documents and folders",
         "create": "Upload documents and create folders",
-        "manage": "Edit, move and delete documents and folders, and give permissions on them"
+        "manage": "Edit, move and delete documents and folders, and give permissions on them",
+        "saltar_lista": "View and manage any document or folder even if its access list leaves you out, including Confidential (does not bypass scope)"
       },
       "equipos_trabajo": {
         "manage": "Create, edit and delete work teams and manage their members"
