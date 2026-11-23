@@ -334,7 +334,15 @@
     "volverAcceso": "Back to sign in",
     "irAlAcceso": "Go to sign in",
     "soporte": "Customer support",
-    "idioma": "Language: {{idioma}}"
+    "idioma": "Language: {{idioma}}",
+    "pase": {
+      "titulo": "Sign in as support",
+      "entrando": "Checking the pass from the central…",
+      "sinPase": "The pass is missing. Sign in from the instance record in the central, with “Sign in as support”.",
+      "vencido": "The pass has expired: it lasts one minute. Go back to the central and click “Sign in as support” again.",
+      "usado": "This pass has already been used: it works only once. Go back to the central and click “Sign in as support” again.",
+      "rechazado": "The pass is not valid for this instance. Go back to the central and click “Sign in as support” again."
+    }
   },
   "modelPicker": {
     "title": "Choose models",
@@ -8585,7 +8593,8 @@
       "registro": "Record",
       "usuario": "User",
       "ip": "IP",
-      "suplantador": "Impersonated by"
+      "suplantador": "Impersonated by",
+      "personaSoporte": "Cubic person"
     },
     "detalle": {
       "titulo": "Entry detail",
@@ -8639,7 +8648,10 @@
       "segundo_factor_desactivado": "Two-step verification turned off",
       "segundo_factor_codigos": "New recovery codes",
       "exportar": "List exported",
-      "purged": "Permanently deleted"
+      "purged": "Permanently deleted",
+      "login_soporte_central": "Support sign-in from the central",
+      "login_soporte_directo": "Direct support sign-in, without the central",
+      "login_failed_pase": "Support pass rejected"
     },
     "via": "via {{nombre}}"
   },

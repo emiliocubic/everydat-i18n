@@ -327,7 +327,15 @@
     "volverAcceso": "Retour à la connexion",
     "irAlAcceso": "Aller à la connexion",
     "soporte": "Service client",
-    "idioma": "Langue : {{idioma}}"
+    "idioma": "Langue : {{idioma}}",
+    "pase": {
+      "titulo": "Se connecter en tant que support",
+      "entrando": "Vérification du laissez-passer de la centrale…",
+      "sinPase": "Le laissez-passer manque. Connectez-vous depuis la fiche de l’instance dans la centrale, avec « Se connecter en tant que support ».",
+      "vencido": "Le laissez-passer a expiré : il vaut une minute. Retournez à la centrale et cliquez de nouveau sur « Se connecter en tant que support ».",
+      "usado": "Ce laissez-passer a déjà été utilisé : il ne vaut qu’une fois. Retournez à la centrale et cliquez de nouveau sur « Se connecter en tant que support ».",
+      "rechazado": "Le laissez-passer n’est pas valable pour cette instance. Retournez à la centrale et cliquez de nouveau sur « Se connecter en tant que support »."
+    }
   },
   "modelPicker": {
     "title": "Choisir des modèles",
@@ -7671,7 +7679,8 @@
       "registro": "Enregistrement",
       "usuario": "Utilisateur",
       "ip": "IP",
-      "suplantador": "Incarné par"
+      "suplantador": "Incarné par",
+      "personaSoporte": "Personne de Cubic"
     },
     "detalle": {
       "titulo": "Détail de l'entrée",
@@ -7725,7 +7734,10 @@
       "segundo_factor_desactivado": "Validation en deux étapes désactivée",
       "segundo_factor_codigos": "Nouveaux codes de récupération",
       "exportar": "Liste exportée",
-      "purged": "Suppression définitive"
+      "purged": "Suppression définitive",
+      "login_soporte_central": "Connexion du support depuis la centrale",
+      "login_soporte_directo": "Connexion directe du support, sans la centrale",
+      "login_failed_pase": "Laissez-passer du support refusé"
     },
     "via": "via {{nombre}}"
   },

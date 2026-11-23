@@ -334,7 +334,15 @@
     "volverAcceso": "Volver al acceso",
     "irAlAcceso": "Ir al acceso",
     "soporte": "Atención al cliente",
-    "idioma": "Idioma: {{idioma}}"
+    "idioma": "Idioma: {{idioma}}",
+    "pase": {
+      "titulo": "Entrar como soporte",
+      "entrando": "Comprobando el pase de la central…",
+      "sinPase": "Falta el pase. Entra desde la ficha de la instancia en la central, con «Entrar como soporte».",
+      "vencido": "El pase ha caducado: vale un minuto. Vuelve a la central y pulsa otra vez «Entrar como soporte».",
+      "usado": "Este pase ya se ha usado: vale una sola vez. Vuelve a la central y pulsa otra vez «Entrar como soporte».",
+      "rechazado": "El pase no vale para esta instancia. Vuelve a la central y pulsa otra vez «Entrar como soporte»."
+    }
   },
   "roles": {
     "title": "Roles",
@@ -8585,7 +8593,8 @@
       "registro": "Registro",
       "usuario": "Usuario",
       "ip": "IP",
-      "suplantador": "Suplantado por"
+      "suplantador": "Suplantado por",
+      "personaSoporte": "Persona de Cubic"
     },
     "detalle": {
       "titulo": "Detalle del registro",
@@ -8639,7 +8648,10 @@
       "segundo_factor_desactivado": "Verificación en dos pasos desactivada",
       "segundo_factor_codigos": "Códigos de recuperación nuevos",
       "exportar": "Listado exportado",
-      "purged": "Borrado definitivo"
+      "purged": "Borrado definitivo",
+      "login_soporte_central": "Entrada de soporte desde la central",
+      "login_soporte_directo": "Entrada directa de soporte, sin central",
+      "login_failed_pase": "Pase de soporte rechazado"
     },
     "via": "vía {{nombre}}"
   },
