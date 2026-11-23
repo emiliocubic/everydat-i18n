@@ -180,18 +180,22 @@
       "rangoDias": "−{{n}} d",
       "tipo": {
         "parte": "Parte",
-        "informe": "Informe"
+        "informe": "Informe",
+        "aviso": "Aviso"
       },
       "tipoPlural": {
         "parte": "Partes",
-        "informe": "Informes"
+        "informe": "Informes",
+        "aviso": "Avisos"
       },
       "cols": {
         "tipo": "Tipo",
         "cliente": "Cliente",
         "emplazamiento": "Emplazamiento",
         "fecha": "Fecha",
-        "firma": "Firma cliente"
+        "firma": "Firma cliente",
+        "destinatarios": "Destinatarios",
+        "estado": "Estado"
       },
       "emitido": " · emitido {{fecha}}",
       "emitidoTitulo": "Fecha que figura en el informe",
@@ -204,7 +208,32 @@
         "pendiente": "Pendiente de firma del cliente",
         "no_aplica": "La recepción en oficina no pide firma"
       },
-      "vacio": "Nada en los últimos {{rango}} días."
+      "vacio": "Nada en los últimos {{rango}} días.",
+      "filtro": {
+        "pendientes": "Pendientes",
+        "todos": "Todos"
+      },
+      "filtroAria": "Qué enseñar",
+      "estado": {
+        "en_cola": "En cola",
+        "enviado": "Enviado",
+        "descargado": "Descargado",
+        "rechazado": "Rechazado",
+        "devuelto": "Devuelto",
+        "sin_destinatario": "Sin destinatario",
+        "entregado": "Entregado",
+        "sin_entregar": "Sin entregar"
+      },
+      "estadoTip": {
+        "rechazado": "El servidor de correo no lo aceptó al mandarlo",
+        "devuelto": "Salió, pero el buzón del cliente lo devolvió",
+        "sin_entregar": "Ningún correo con esta versión ha llegado al cliente ni está marcada como entregada por otra vía"
+      },
+      "reenviado": "reenviado",
+      "reenviadoTip": "Ya se reenvió: si algo espera, es el reenvío",
+      "verMas": "Ver {{n}} más",
+      "verMenos": "Ver menos",
+      "vacioPendientes": "Nada pendiente en los últimos {{rango}} días."
     }
   },
   "agent": {
@@ -9336,6 +9365,45 @@
       "titulo": "Enviar el informe",
       "pendiente": "El envío se hará desde aquí cuando esté el módulo de comunicaciones: a quién, con qué mensaje y el registro de cada envío. Mientras tanto, descarga el PDF y mándalo por fuera.",
       "cerrar": "Cerrar"
+    },
+    "entrega": {
+      "titulo": "Entrega",
+      "estados": {
+        "correo": "Entregada",
+        "mano": "Entregada por otra vía",
+        "pendiente": "Sin entregar"
+      },
+      "marcar": "Marcar entregada por otra vía",
+      "marcarHint": "Para lo que se entregó sin el Mail Center: en mano, por otro correo… Deja de salir en «Informes sin entregar».",
+      "preguntaNota": "¿Cómo se entregó? Por ejemplo: «En mano al jefe de obra».",
+      "marcadaOk": "Versión marcada como entregada",
+      "quitar": "Quitar la marca de entregada",
+      "quitarBoton": "Quitar la marca",
+      "quitarConfirmar": "Si ningún correo con esta versión ha llegado al cliente, volverá a salir en «Informes sin entregar». Los correos enviados no se tocan.",
+      "quitadaOk": "Marca quitada"
+    },
+    "vistas": {
+      "titulo": "Qué se ve",
+      "todos": "Todos",
+      "sin_entregar": "Informes sin entregar",
+      "sin_informe": "Revisiones sin informe",
+      "sinEntregarVacio": "Todo entregado",
+      "sinEntregarVacioHint": "Ningún informe tiene su versión vigente sin entregar."
+    },
+    "sinInforme": {
+      "fecha": "Fecha",
+      "equipo": "Equipo",
+      "tipo": "Tipo",
+      "carpeta": "Carpeta",
+      "resultado": "Resultado",
+      "revisor": "Revisor",
+      "revisadas": "Revisadas entre",
+      "desde": "Desde",
+      "hasta": "Hasta",
+      "buscar": "Buscar por equipo, tipo, carpeta, emplazamiento o revisor",
+      "vacio": "Ninguna revisión sin informe",
+      "vacioHint": "Todas las revisiones de estas fechas están en algún informe emitido.",
+      "tope": "Se ven las {{n}} más recientes de {{total}}: acota las fechas para ver las demás."
     }
   },
   "tiposRevision": {

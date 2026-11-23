@@ -180,18 +180,22 @@
       "rangoDias": "−{{n}} d",
       "tipo": {
         "parte": "Work order",
-        "informe": "Report"
+        "informe": "Report",
+        "aviso": "Notice"
       },
       "tipoPlural": {
         "parte": "Work orders",
-        "informe": "Reports"
+        "informe": "Reports",
+        "aviso": "Notices"
       },
       "cols": {
         "tipo": "Type",
         "cliente": "Client",
         "emplazamiento": "Site",
         "fecha": "Date",
-        "firma": "Client signature"
+        "firma": "Client signature",
+        "destinatarios": "Recipients",
+        "estado": "Status"
       },
       "emitido": " · issued {{fecha}}",
       "emitidoTitulo": "Date printed on the report",
@@ -204,7 +208,32 @@
         "pendiente": "Awaiting the client's signature",
         "no_aplica": "Office reception does not ask for a signature"
       },
-      "vacio": "Nothing in the last {{rango}} days."
+      "vacio": "Nothing in the last {{rango}} days.",
+      "filtro": {
+        "pendientes": "Pending",
+        "todos": "All"
+      },
+      "filtroAria": "What to show",
+      "estado": {
+        "en_cola": "Queued",
+        "enviado": "Sent",
+        "descargado": "Downloaded",
+        "rechazado": "Rejected",
+        "devuelto": "Bounced",
+        "sin_destinatario": "No recipient",
+        "entregado": "Delivered",
+        "sin_entregar": "Not delivered"
+      },
+      "estadoTip": {
+        "rechazado": "The mail server did not accept it when sending",
+        "devuelto": "It went out, but the client’s mailbox returned it",
+        "sin_entregar": "No email with this version has reached the client and it is not marked as delivered by other means"
+      },
+      "reenviado": "resent",
+      "reenviadoTip": "Already resent: if anything is pending, it is the resend",
+      "verMas": "Show {{n}} more",
+      "verMenos": "Show less",
+      "vacioPendientes": "Nothing pending in the last {{rango}} days."
     }
   },
   "agent": {
@@ -9336,6 +9365,45 @@
       "titulo": "Send the report",
       "pendiente": "Sending will be done from here once the communications module is ready: recipients, message and a record of each sending. Meanwhile, download the PDF and send it yourself.",
       "cerrar": "Close"
+    },
+    "entrega": {
+      "titulo": "Delivery",
+      "estados": {
+        "correo": "Delivered",
+        "mano": "Delivered by other means",
+        "pendiente": "Not delivered"
+      },
+      "marcar": "Mark as delivered by other means",
+      "marcarHint": "For what was delivered outside the Mail Center: by hand, by another email… It no longer shows in «Undelivered reports».",
+      "preguntaNota": "How was it delivered? For example: «By hand to the site manager».",
+      "marcadaOk": "Version marked as delivered",
+      "quitar": "Remove the delivered mark",
+      "quitarBoton": "Remove the mark",
+      "quitarConfirmar": "If no email with this version has reached the client, it will show again in «Undelivered reports». Emails already sent are not affected.",
+      "quitadaOk": "Mark removed"
+    },
+    "vistas": {
+      "titulo": "What to show",
+      "todos": "All",
+      "sin_entregar": "Undelivered reports",
+      "sin_informe": "Inspections without a report",
+      "sinEntregarVacio": "Everything delivered",
+      "sinEntregarVacioHint": "No report has its current version undelivered."
+    },
+    "sinInforme": {
+      "fecha": "Date",
+      "equipo": "Equipment",
+      "tipo": "Type",
+      "carpeta": "Folder",
+      "resultado": "Result",
+      "revisor": "Inspector",
+      "revisadas": "Inspected between",
+      "desde": "From",
+      "hasta": "To",
+      "buscar": "Search by equipment, type, folder, site or inspector",
+      "vacio": "No inspections without a report",
+      "vacioHint": "Every inspection in these dates is in an issued report.",
+      "tope": "Showing the {{n}} most recent of {{total}}: narrow the dates to see the rest."
     }
   },
   "tiposRevision": {

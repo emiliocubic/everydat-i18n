@@ -173,18 +173,22 @@
       "rangoDias": "−{{n}} j",
       "tipo": {
         "parte": "Bon",
-        "informe": "Rapport"
+        "informe": "Rapport",
+        "aviso": "Avis"
       },
       "tipoPlural": {
         "parte": "Bons",
-        "informe": "Rapports"
+        "informe": "Rapports",
+        "aviso": "Avis"
       },
       "cols": {
         "tipo": "Type",
         "cliente": "Client",
         "emplazamiento": "Site",
         "fecha": "Date",
-        "firma": "Signature client"
+        "firma": "Signature client",
+        "destinatarios": "Destinataires",
+        "estado": "État"
       },
       "emitido": " · émis le {{fecha}}",
       "emitidoTitulo": "Date figurant sur le rapport",
@@ -197,7 +201,32 @@
         "pendiente": "En attente de la signature du client",
         "no_aplica": "La réception au bureau ne demande pas de signature"
       },
-      "vacio": "Rien ces {{rango}} derniers jours."
+      "vacio": "Rien ces {{rango}} derniers jours.",
+      "filtro": {
+        "pendientes": "En attente",
+        "todos": "Tous"
+      },
+      "filtroAria": "Quoi afficher",
+      "estado": {
+        "en_cola": "En file",
+        "enviado": "Envoyé",
+        "descargado": "Téléchargé",
+        "rechazado": "Rejeté",
+        "devuelto": "Retourné",
+        "sin_destinatario": "Sans destinataire",
+        "entregado": "Remis",
+        "sin_entregar": "Non remis"
+      },
+      "estadoTip": {
+        "rechazado": "Le serveur de messagerie ne l’a pas accepté à l’envoi",
+        "devuelto": "Il est parti, mais la boîte du client l’a renvoyé",
+        "sin_entregar": "Aucun courriel avec cette version n’est arrivé au client et elle n’est pas marquée comme remise par une autre voie"
+      },
+      "reenviado": "renvoyé",
+      "reenviadoTip": "Déjà renvoyé : si quelque chose attend, c’est le renvoi",
+      "verMas": "Voir {{n}} de plus",
+      "verMenos": "Voir moins",
+      "vacioPendientes": "Rien en attente ces {{rango}} derniers jours."
     }
   },
   "agent": {
@@ -8002,6 +8031,45 @@
     },
     "listado": {
       "enviadoHint": "Quand est parti le dernier e-mail accepté avec l'une de ses versions, par le Mail Center."
+    },
+    "entrega": {
+      "titulo": "Remise",
+      "estados": {
+        "correo": "Remis",
+        "mano": "Remis par une autre voie",
+        "pendiente": "Non remis"
+      },
+      "marcar": "Marquer comme remis par une autre voie",
+      "marcarHint": "Pour ce qui a été remis hors du Mail Center : en main propre, par un autre e-mail… Il ne figure plus dans « Rapports non remis ».",
+      "preguntaNota": "Comment a-t-il été remis ? Par exemple : « En main propre au chef de chantier ».",
+      "marcadaOk": "Version marquée comme remise",
+      "quitar": "Retirer la marque de remise",
+      "quitarBoton": "Retirer la marque",
+      "quitarConfirmar": "Si aucun e-mail avec cette version n'est parvenu au client, il figurera de nouveau dans « Rapports non remis ». Les e-mails envoyés ne changent pas.",
+      "quitadaOk": "Marque retirée"
+    },
+    "vistas": {
+      "titulo": "Affichage",
+      "todos": "Tous",
+      "sin_entregar": "Rapports non remis",
+      "sin_informe": "Inspections sans rapport",
+      "sinEntregarVacio": "Tout est remis",
+      "sinEntregarVacioHint": "Aucun rapport n'a sa version en vigueur non remise."
+    },
+    "sinInforme": {
+      "fecha": "Date",
+      "equipo": "Équipement",
+      "tipo": "Type",
+      "carpeta": "Dossier",
+      "resultado": "Résultat",
+      "revisor": "Inspecteur",
+      "revisadas": "Inspectées entre",
+      "desde": "Du",
+      "hasta": "Au",
+      "buscar": "Rechercher par équipement, type, dossier, site ou inspecteur",
+      "vacio": "Aucune inspection sans rapport",
+      "vacioHint": "Toutes les inspections de ces dates figurent dans un rapport émis.",
+      "tope": "Les {{n}} plus récentes sur {{total}} : resserrez les dates pour voir les autres."
     }
   },
   "tiposRevision": {
