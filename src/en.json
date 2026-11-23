@@ -8066,7 +8066,8 @@
         "datos": "The server does not accept some of the data (see below which). Correct it and resend.",
         "central": "The server failed while receiving it. It stays pending and the rest still goes; if it keeps happening, share the log with support.",
         "otro": "The server did not accept it. If you do not know why, share the log with support.",
-        "bloqueada": "This inspection can no longer be corrected: it has been validated at the office, or it is in an issued report or a delivered work report. Discard this correction; if it must change, the office has to sort it out."
+        "bloqueada": "This inspection can no longer be corrected: it has been validated at the office, or it is in an issued report or a delivered work report. Discard this correction; if it must change, the office has to sort it out.",
+        "licencia": "The instance is read-only because your company's licence has expired. Don't discard it: it stays in the queue and you can resend it as soon as the company renews the licence. If you did it before it expired and it still won't go through, tell the office."
       },
       "que": {
         "equipoSinDatos": "unidentified",
@@ -8386,7 +8387,8 @@
     "cabecera": {
       "enviar": "Send ({{count}})",
       "rechazadas_one": "{{count}} rejected",
-      "rechazadas_other": "{{count}} rejected"
+      "rechazadas_other": "{{count}} rejected",
+      "soloLectura": "Read-only: your company's licence has expired. You can browse and send what you did before; adding equipment, inspections and work reports are disabled."
     },
     "barra": {
       "inicio": "Home",

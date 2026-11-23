@@ -7102,7 +7102,8 @@
         "datos": "Le serveur n'accepte pas certaines données (voir lesquelles ci-dessous). Corrigez-les et renvoyez.",
         "central": "Le serveur a eu une erreur en la recevant. Elle reste à envoyer et le reste part quand même ; si cela se répète, partagez le journal avec le support.",
         "otro": "Le serveur ne l'a pas acceptée. Si vous ne savez pas pourquoi, partagez le journal avec le support.",
-        "bloqueada": "Cette inspection ne peut plus être corrigée : elle a été validée au bureau, ou elle figure dans un rapport émis ou un bon d'intervention remis. Abandonnez cette correction ; s'il faut la modifier, c'est au bureau de s'en charger."
+        "bloqueada": "Cette inspection ne peut plus être corrigée : elle a été validée au bureau, ou elle figure dans un rapport émis ou un bon d'intervention remis. Abandonnez cette correction ; s'il faut la modifier, c'est au bureau de s'en charger.",
+        "licencia": "L'instance est en lecture seule car la licence de l'entreprise a expiré. Ne la supprimez pas : elle reste dans la file et vous pourrez la renvoyer dès que l'entreprise aura renouvelé la licence. Si vous l'avez faite avant l'expiration et qu'elle ne passe pas, prévenez le bureau."
       },
       "que": {
         "equipoSinDatos": "non identifié",
@@ -7422,7 +7423,8 @@
     "cabecera": {
       "enviar": "Envoyer ({{count}})",
       "rechazadas_one": "{{count}} refusé",
-      "rechazadas_other": "{{count}} refusés"
+      "rechazadas_other": "{{count}} refusés",
+      "soloLectura": "Lecture seule : la licence de l'entreprise a expiré. Vous pouvez consulter et envoyer ce que vous avez fait avant ; impossible d'ajouter des équipements, d'inspecter ou de faire des bons d'intervention."
     },
     "barra": {
       "inicio": "Accueil",
