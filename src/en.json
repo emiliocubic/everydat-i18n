@@ -10946,58 +10946,6 @@
     "quitar": "Remove lead time {{n}}",
     "fueraDeRango": "Days go from 0 to 365 (no repeats); the day of the month from 1 to 28, and the months from 1 to 12."
   },
-  "alertas": {
-    "laEmpresa": "the company",
-    "acreditacion": {
-      "caduca": {
-        "titulo": "Accreditation about to expire",
-        "desc": "{{documento}} of {{titular}} expires on {{fecha}}"
-      },
-      "caducada": {
-        "titulo": "Accreditation expired",
-        "desc": "{{documento}} of {{titular}} is no longer valid: it was valid until {{fecha}}"
-      }
-    },
-    "bandeja": {
-      "propuesta": {
-        "titulo": "Proposal waiting for approval",
-        "desc_one": "A one-step proposal is waiting in Sherpa for you to review",
-        "desc_other": "A {{count}}-step proposal is waiting in Sherpa for you to review"
-      }
-    },
-    "aviso": {
-      "rebotado": {
-        "titulo": "Client notice rejected",
-        "desc": "The email to {{destinatario}} ({{cliente}}) could not be delivered"
-      },
-      "sin_destinatario": {
-        "titulo": "Notice with no recipient",
-        "desc": "No contact of {{cliente}} is allowed to receive their notices: it only reached the office"
-      }
-    },
-    "webhook": {
-      "pausado": {
-        "titulo": "Webhook paused",
-        "desc": "The webhook of {{cuenta}} has not delivered for {{dias}} days and has been paused"
-      }
-    },
-    "ia": {
-      "tope": {
-        "titulo": "AI is nearing its monthly cap",
-        "desc": "{{porcentaje}} % of this month's AI has been used; at 100 %, Sherpa pauses until next month"
-      }
-    },
-    "pegatina": {
-      "otra_empresa": {
-        "titulo": "Sticker belongs to another company",
-        "desc": "Sticker {{codigo}} on {{equipo}} ({{emplazamiento}}) belongs to another company and has been removed from the item: peel it off and put on one of yours"
-      },
-      "sin_comprobar": {
-        "titulo": "Sticker not checked",
-        "desc": "Sticker {{codigo}} on {{equipo}} ({{emplazamiento}}) could not be checked with Cubic: it stays on, but it may belong to another company"
-      }
-    }
-  },
   "planificador": {
     "titulo": "Planner",
     "volver": "Back to Everydat",
