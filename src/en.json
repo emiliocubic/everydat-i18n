@@ -1305,6 +1305,10 @@
         "definitivoConfirm": "It will be deleted forever, along with its points and photos. This cannot be undone. Continue?",
         "borradaDefinitivamente": "Deleted permanently.",
         "definitivoConfirmActuacion": "It will be deleted forever, along with the documents that only hung from it. This cannot be undone. Continue?"
+      },
+      "pegatinaOtraEmpresa": {
+        "titulo": "Sticker belongs to another company",
+        "detalle": "Sticker {{codigo}} belongs to another company and has been removed from the item."
       }
     },
     "traslado": {
@@ -10980,6 +10984,12 @@
       "tope": {
         "titulo": "AI is nearing its monthly cap",
         "desc": "{{porcentaje}} % of this month's AI has been used; at 100 %, Sherpa pauses until next month"
+      }
+    },
+    "pegatina": {
+      "otra_empresa": {
+        "titulo": "Sticker belongs to another company",
+        "desc": "Sticker {{codigo}} on {{equipo}} ({{emplazamiento}}) belongs to another company and has been removed from the item: peel it off and put on one of yours"
       }
     }
   },

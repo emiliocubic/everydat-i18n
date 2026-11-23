@@ -1215,6 +1215,10 @@
         "definitivoConfirm": "Il sera supprimé pour toujours, avec ses points et ses photos. Action irréversible. Continuer ?",
         "borradaDefinitivamente": "Supprimé définitivement.",
         "definitivoConfirmActuacion": "Elle sera supprimée pour toujours, avec les documents qui ne dépendaient que d'elle. Action irréversible. Continuer ?"
+      },
+      "pegatinaOtraEmpresa": {
+        "titulo": "Étiquette d’une autre entreprise",
+        "detalle": "L’étiquette {{codigo}} appartient à une autre entreprise et a été retirée de l’équipement."
       }
     },
     "traslado": {
@@ -9667,6 +9671,12 @@
       "pausado": {
         "titulo": "Webhook en pause",
         "desc": "Le webhook de {{cuenta}} n'a rien livré depuis {{dias}} jours et a été mis en pause"
+      }
+    },
+    "pegatina": {
+      "otra_empresa": {
+        "titulo": "Étiquette d’une autre entreprise",
+        "desc": "L’étiquette {{codigo}} de {{equipo}} ({{emplazamiento}}) appartient à une autre entreprise et a été retirée de l’équipement : décollez-la et posez-en une des vôtres"
       }
     }
   },

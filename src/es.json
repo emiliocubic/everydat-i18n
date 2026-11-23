@@ -1176,6 +1176,10 @@
         "definitivoConfirm": "Se borrará para siempre, con sus puntos y sus fotos. No se puede deshacer. ¿Continuar?",
         "borradaDefinitivamente": "Borrada definitivamente.",
         "definitivoConfirmActuacion": "Se borrará para siempre, con los documentos que solo colgaban de ella. No se puede deshacer. ¿Continuar?"
+      },
+      "pegatinaOtraEmpresa": {
+        "titulo": "Pegatina de otra empresa",
+        "detalle": "La pegatina {{codigo}} es de otra empresa y se ha quitado del equipo."
       }
     },
     "traslado": {
@@ -10980,6 +10984,12 @@
       "tope": {
         "titulo": "La IA se acerca a su tope del mes",
         "desc": "Se ha consumido el {{porcentaje}} % de la IA de este mes; al llegar al 100 %, Sherpa se pausa hasta el mes que viene"
+      }
+    },
+    "pegatina": {
+      "otra_empresa": {
+        "titulo": "Pegatina de otra empresa",
+        "desc": "La pegatina {{codigo}} de {{equipo}} ({{emplazamiento}}) es de otra empresa y se ha quitado del equipo: despégala y pon una tuya"
       }
     }
   },
