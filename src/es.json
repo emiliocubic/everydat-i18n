@@ -8903,6 +8903,17 @@
       "fichero": "Fichero",
       "tipoMime": "Tipo",
       "subida": "Subida"
+    },
+    "mover": {
+      "accion": "Mover a…",
+      "titulo": "Mover «{{nombre}}»",
+      "ayudaArchivo": "Elige la carpeta de destino. Se mueve dentro de este mismo sitio; para que salga en otra ficha, vincúlalo a ella.",
+      "ayudaCarpeta": "Elige la carpeta de destino. La carpeta se lleva todo lo que tiene dentro.",
+      "aqui": "Está aquí",
+      "destino": "Destino: {{nombre}}",
+      "sinDestino": "Elige una carpeta.",
+      "mover": "Mover",
+      "movido": "Movido a «{{nombre}}»."
     }
   },
   "informes": {

@@ -9508,6 +9508,17 @@
         "actuacion": "une intervention",
         "otro": "ce qui a été supprimé"
       }
+    },
+    "mover": {
+      "accion": "Déplacer vers…",
+      "titulo": "Déplacer « {{nombre}} »",
+      "ayudaArchivo": "Choisissez le dossier de destination. Il se déplace dans ce même emplacement ; pour qu’il apparaisse dans une autre fiche, liez-le à celle-ci.",
+      "ayudaCarpeta": "Choisissez le dossier de destination. Le dossier emporte tout son contenu.",
+      "aqui": "Il est ici",
+      "destino": "Destination : {{nombre}}",
+      "sinDestino": "Choisissez un dossier.",
+      "mover": "Déplacer",
+      "movido": "Déplacé vers « {{nombre}} »."
     }
   },
   "preguntasIa": {

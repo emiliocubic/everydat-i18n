@@ -8903,6 +8903,17 @@
       "fichero": "File",
       "tipoMime": "Type",
       "subida": "Uploaded"
+    },
+    "mover": {
+      "accion": "Move to…",
+      "titulo": "Move “{{nombre}}”",
+      "ayudaArchivo": "Choose the destination folder. It moves within this same place; to show it in another record, link it to that record.",
+      "ayudaCarpeta": "Choose the destination folder. The folder takes everything inside it.",
+      "aqui": "It is here",
+      "destino": "Destination: {{nombre}}",
+      "sinDestino": "Choose a folder.",
+      "mover": "Move",
+      "movido": "Moved to “{{nombre}}”."
     }
   },
   "informes": {
