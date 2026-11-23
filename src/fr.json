@@ -4189,7 +4189,8 @@
         "idioma": "Langue",
         "tipo": {
           "revision": "Prochaine vérification",
-          "fin_vida": "Fin de vie"
+          "fin_vida": "Fin de vie",
+          "informe": "Rapport"
         },
         "propia": "Texte propre à l'entreprise",
         "deSerie": "Texte par défaut",
@@ -4203,9 +4204,13 @@
           "cliente": "Le nom du client",
           "contacto": "Le nom du destinataire",
           "empresa": "Le nom de l'entreprise",
-          "lista": "La liste des sites avec leur date, ou des équipements (texte uniquement)"
+          "lista": "La liste des sites avec leur date, ou des équipements (texte uniquement)",
+          "codigo": "Le code du rapport et sa version",
+          "emplazamiento": "Le site du rapport",
+          "enlace": "Le lien de téléchargement de chaque destinataire"
         },
-        "ayuda": "Les variables vont entre accolades et sont remplies à l'envoi. {lista} ne va que dans le texte : c'est la liste des sites ou des équipements ; sans elle, la liste apparaît à la fin. La salutation, les coordonnées et la signature sont ajoutées par l'application."
+        "ayuda": "Les variables vont entre accolades et sont remplies à l'envoi. {lista} ne va que dans le texte : c'est la liste des sites ou des équipements ; sans elle, la liste apparaît à la fin. La salutation, les coordonnées et la signature sont ajoutées par l'application.",
+        "ayudaInforme": "C'est le texte que propose le bouton Envoyer de chaque version, modifiable avant l'envoi. {enlace} est l'endroit du lien de téléchargement (sans lui, il va à la fin). La salutation et la formule finale sont ajoutées par l'application."
       },
       "planificador": {
         "porEquipos": "Planifier par équipes",
@@ -4612,7 +4617,10 @@
           "quitar_otro_producto_bloque": "Retirer un bloc des autres produits, avec ses produits",
           "cambiar_plantilla_correo": "Modifier le texte de l’avis {{aviso}} en {{idioma}}",
           "restablecer_plantilla_correo": "Rétablir le texte par défaut de l’avis {{aviso}} en {{idioma}}",
-          "cambiar_sobre_empresa": "Modifier le texte « À propos de notre entreprise »"
+          "cambiar_sobre_empresa": "Modifier le texte « À propos de notre entreprise »",
+          "enviar_informe_one": "Envoyer la version {{numero}} du rapport {{informe}} à {{count}} contact",
+          "enviar_informe_other": "Envoyer la version {{numero}} du rapport {{informe}} à {{count}} contacts",
+          "reenviar_envio_documento": "Renvoyer l'envoi {{envio}} du Mail Center"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -5126,7 +5134,17 @@
             "yMas": " et {{count}} de plus",
             "retirada": "La version {{codigo}} est retirée : son code de vérification indiquera « retirée » jusqu’à l’émission de la suivante",
             "descongela_one": "Sa vérification peut de nouveau être corrigée",
-            "descongela_other": "Ses {{count}} vérifications peuvent de nouveau être corrigées"
+            "descongela_other": "Ses {{count}} vérifications peuvent de nouveau être corrigées",
+            "envio": {
+              "version": "Part : {{version}}",
+              "noVigente": "Cette version n'est plus en vigueur",
+              "adjunto_true": "Avec le PDF joint et le lien de téléchargement",
+              "adjunto_false": "Avec le seul lien de téléchargement",
+              "a": "À {{nombre}} ({{email}}) : {{porque}}",
+              "recibe": "reçoit les rapports pour {{donde}}",
+              "pedido": "contact de la fiche nommé par l'utilisateur",
+              "fuera": "Le contact n° {{id}} n'est pas dans la fiche du client : l'envoi échouera"
+            }
           }
         },
         "reactivar": {
@@ -7981,6 +7999,9 @@
       "desfase": "Ce rapport a pour origine un projet, et l'état actuel du rapport et celui du projet ne coïncident pas. Il est recommandé d'utiliser l'option Mettre à jour depuis le projet dans l'onglet Contenu pour synchroniser le rapport avec l'état actuel du projet avant de l'émettre.",
       "yaEmitidas_one": "{{count}} vérification de ce rapport figure déjà dans un autre rapport émis.",
       "yaEmitidas_other": "{{count}} vérifications de ce rapport figurent déjà dans un autre rapport émis."
+    },
+    "listado": {
+      "enviadoHint": "Quand est parti le dernier e-mail accepté avec l'une de ses versions, par le Mail Center."
     }
   },
   "tiposRevision": {
@@ -10018,7 +10039,42 @@
       "sinCuerpo": "Cet envoi est parti avant que le texte de chaque e-mail ne soit enregistré : il ne peut pas être montré tel qu'il est parti.",
       "cuerpoEnCurso": "Le texte est enregistré à la composition de l'e-mail, dès que la file l'envoie.",
       "sinDestinatarioAviso": "Aucun contact n'avait l'autorisation de recevoir ceci : il n'est parti qu'à la boîte de copie du bureau. Donnez l'autorisation à quelqu'un dans la fiche du client.",
-      "noSeReenvia": "Impossible de le renvoyer :"
+      "noSeReenvia": "Impossible de le renvoyer :",
+      "documento": "Document",
+      "documentoBorrado": "N'existe plus",
+      "adjunto": "Comment il est parti",
+      "conAdjunto": "PDF joint et lien de téléchargement",
+      "soloEnlace": "Lien de téléchargement seul",
+      "descarga": "Téléchargement"
+    },
+    "sinEnvios": "Pas encore envoyé",
+    "descargado_one": "téléchargé le {{fecha}}",
+    "descargado_other": "téléchargé le {{fecha}} ({{count}} fois)",
+    "descargadoNoConsta": "téléchargé : non constaté",
+    "enviar": {
+      "para": "À",
+      "nadie": "Personne dans la fiche de {{cliente}} n'est autorisé à recevoir ceci : ajoutez un contact ou une adresse.",
+      "recibe": "Le reçoit pour {{donde}}",
+      "deLaFicha": "Contact de la fiche du client, sans l'autorisation de le recevoir",
+      "aMano": "Adresse saisie à la main",
+      "quitar": "Retirer",
+      "otroContacto": "Ajouter un autre contact de la fiche…",
+      "otraDireccion": "Ajouter une autre adresse e-mail…",
+      "anadir": "Ajouter",
+      "direccionMal": "Cette adresse ne ressemble pas à un e-mail.",
+      "copia": "Chaque destinataire reçoit son propre e-mail, avec copie cachée à {{copia}}. Les réponses vous parviennent.",
+      "sinCopia": "Chaque destinataire reçoit son propre e-mail. Les réponses vous parviennent.",
+      "texto": "Texte",
+      "variables": "{contacto} est le nom du destinataire et {enlace} son lien de téléchargement (sans lui, il va à la fin). La salutation et la formule finale sont ajoutées par l'application.",
+      "adjuntar": "Joindre le PDF ({{peso}})",
+      "enlaceSiempre": "Avec ou sans pièce jointe, chaque e-mail porte son propre lien de téléchargement, qui note quand il est téléchargé.",
+      "noCabe": "Il dépasse {{max}} : il partira avec le seul lien de téléchargement, et l'e-mail le dira.",
+      "noVigente": "Cette version n'est plus la version en vigueur : la personne qui ouvre le lien verra l'avertissement.",
+      "boton_one": "Envoyer à {{count}}",
+      "boton_other": "Envoyer à {{count}}",
+      "enviando": "Envoi…",
+      "enviado_one": "Envoyé : il part dans un instant",
+      "enviado_other": "{{count}} e-mails envoyés : ils partent dans un instant"
     }
   }
 }

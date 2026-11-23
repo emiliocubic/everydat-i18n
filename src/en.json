@@ -4497,7 +4497,8 @@
         "idioma": "Language",
         "tipo": {
           "revision": "Next inspection",
-          "fin_vida": "End of service life"
+          "fin_vida": "End of service life",
+          "informe": "Report"
         },
         "propia": "Company's own text",
         "deSerie": "Default text",
@@ -4511,9 +4512,13 @@
           "cliente": "The client's name",
           "contacto": "The name of the recipient",
           "empresa": "The company's name",
-          "lista": "The list of sites with their date, or of equipment (text only)"
+          "lista": "The list of sites with their date, or of equipment (text only)",
+          "codigo": "The report code and its version",
+          "emplazamiento": "The site of the report",
+          "enlace": "Each recipient's download link"
         },
-        "ayuda": "Variables go in braces and are filled in when the email is sent. {lista} only goes in the text: it is the list of sites or equipment; without it, the list goes at the end. The greeting, contact details and signature are added by the application."
+        "ayuda": "Variables go in braces and are filled in when the email is sent. {lista} only goes in the text: it is the list of sites or equipment; without it, the list goes at the end. The greeting, contact details and signature are added by the application.",
+        "ayudaInforme": "This is the text the Send button of each version proposes, and it can be edited before sending. {enlace} is where the download link goes (without it, it goes at the end). The greeting and sign-off are added by the application."
       }
     },
     "marca": {
@@ -5207,7 +5212,10 @@
           "dar_permiso_archivo": "Give {{a}} permission to {{nivel}} file {{archivo}}",
           "dar_permiso_carpeta_documentos": "Give {{a}} permission to {{nivel}} folder {{carpeta}} and what inside follows it",
           "quitar_permiso_archivo": "Remove permission {{permiso}} from file {{archivo}}",
-          "quitar_permiso_carpeta_documentos": "Remove permission {{permiso}} from folder {{carpeta}}"
+          "quitar_permiso_carpeta_documentos": "Remove permission {{permiso}} from folder {{carpeta}}",
+          "enviar_informe_one": "Send version {{numero}} of report {{informe}} to {{count}} contact",
+          "enviar_informe_other": "Send version {{numero}} of report {{informe}} to {{count}} contacts",
+          "reenviar_envio_documento": "Resend email {{envio}} from the Mail Center"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5772,7 +5780,17 @@
             "yMas": " and {{count}} more",
             "retirada": "Version {{codigo}} is withdrawn: its verification code will say “withdrawn” until the next one is issued",
             "descongela_one": "Its inspection can be corrected again",
-            "descongela_other": "Its {{count}} inspections can be corrected again"
+            "descongela_other": "Its {{count}} inspections can be corrected again",
+            "envio": {
+              "version": "It sends {{version}}",
+              "noVigente": "That version is no longer the current one",
+              "adjunto_true": "With the PDF attached and the download link",
+              "adjunto_false": "With the download link only",
+              "a": "To {{nombre}} ({{email}}): {{porque}}",
+              "recibe": "receives reports for {{donde}}",
+              "pedido": "contact in the file named by the user",
+              "fuera": "Contact no. {{id}} is not in the client's file: the sending will fail"
+            }
           }
         },
         "contratado": {
@@ -9306,7 +9324,7 @@
     "listado": {
       "todosClientes": "All clients",
       "todosEmplazamientos": "All sites",
-      "enviadoHint": "Sending arrives with the communications module: until then, no report is recorded as sent."
+      "enviadoHint": "When the last accepted email with any of its versions went out, through the Mail Center."
     },
     "emision": {
       "recomendadoTitulo": "Recommended: check the preview before issuing",
@@ -11756,7 +11774,42 @@
       "sinCuerpo": "This send went out before the text of each email was stored: it cannot be shown as it was sent.",
       "cuerpoEnCurso": "The text is stored when the email is composed, as soon as the queue sends it.",
       "sinDestinatarioAviso": "No contact was allowed to receive this: it only went to the office copy mailbox. Give someone the permission in the client record.",
-      "noSeReenvia": "It cannot be resent:"
+      "noSeReenvia": "It cannot be resent:",
+      "documento": "Document",
+      "documentoBorrado": "No longer exists",
+      "adjunto": "How it went",
+      "conAdjunto": "PDF attached and download link",
+      "soloEnlace": "Download link only",
+      "descarga": "Download"
+    },
+    "sinEnvios": "Not sent yet",
+    "descargado_one": "downloaded on {{fecha}}",
+    "descargado_other": "downloaded on {{fecha}} ({{count}} times)",
+    "descargadoNoConsta": "downloaded: not recorded",
+    "enviar": {
+      "para": "To",
+      "nadie": "No one in the file of {{cliente}} is allowed to receive this: add a contact or an address.",
+      "recibe": "Receives it for {{donde}}",
+      "deLaFicha": "Contact in the client's file, without permission to receive it",
+      "aMano": "Address typed by hand",
+      "quitar": "Remove",
+      "otroContacto": "Add another contact from the file…",
+      "otraDireccion": "Add another email address…",
+      "anadir": "Add",
+      "direccionMal": "That does not look like an email address.",
+      "copia": "Each recipient gets their own email, with a blind copy to {{copia}}. Replies come to you.",
+      "sinCopia": "Each recipient gets their own email. Replies come to you.",
+      "texto": "Text",
+      "variables": "{contacto} is the recipient's name and {enlace} their download link (without it, it goes at the end). The greeting and sign-off are added by the application.",
+      "adjuntar": "Attach the PDF ({{peso}})",
+      "enlaceSiempre": "With or without the attachment, every email carries its own download link, which records when it is downloaded.",
+      "noCabe": "It is over {{max}}: it will go with the download link only, and the email will say so.",
+      "noVigente": "This version is no longer the current one: whoever opens the link will see a warning.",
+      "boton_one": "Send to {{count}}",
+      "boton_other": "Send to {{count}}",
+      "enviando": "Sending…",
+      "enviado_one": "Sent: it goes out in a moment",
+      "enviado_other": "{{count}} emails sent: they go out in a moment"
     }
   }
 }

@@ -4497,7 +4497,8 @@
         "idioma": "Idioma",
         "tipo": {
           "revision": "Próxima revisión",
-          "fin_vida": "Fin de vida útil"
+          "fin_vida": "Fin de vida útil",
+          "informe": "Informe"
         },
         "propia": "Texto propio de la empresa",
         "deSerie": "Texto de serie",
@@ -4511,9 +4512,13 @@
           "cliente": "El nombre del cliente",
           "contacto": "El nombre de quien lo recibe",
           "empresa": "El nombre de la empresa",
-          "lista": "La lista de instalaciones con su fecha, o de equipos (solo en el texto)"
+          "lista": "La lista de instalaciones con su fecha, o de equipos (solo en el texto)",
+          "codigo": "El código del informe y su versión",
+          "emplazamiento": "La instalación del informe",
+          "enlace": "El enlace de descarga de cada destinatario"
         },
-        "ayuda": "Las variables van entre llaves y se rellenan al mandar el correo. {lista} va solo en el texto: es la lista de instalaciones o de equipos; sin ella, la lista sale al final. El saludo, los datos de contacto y la firma los pone la aplicación."
+        "ayuda": "Las variables van entre llaves y se rellenan al mandar el correo. {lista} va solo en el texto: es la lista de instalaciones o de equipos; sin ella, la lista sale al final. El saludo, los datos de contacto y la firma los pone la aplicación.",
+        "ayudaInforme": "Es el texto que propone el botón Enviar de cada versión, y se puede retocar antes de mandar. {enlace} es donde va el enlace de descarga (sin él, va al final). El saludo y la despedida los pone la aplicación."
       }
     },
     "marca": {
@@ -5207,7 +5212,10 @@
           "dar_permiso_archivo": "Dar a {{a}} permiso para {{nivel}} el archivo {{archivo}}",
           "dar_permiso_carpeta_documentos": "Dar a {{a}} permiso para {{nivel}} la carpeta {{carpeta}} y lo de dentro que la sigue",
           "quitar_permiso_archivo": "Quitar el permiso {{permiso}} del archivo {{archivo}}",
-          "quitar_permiso_carpeta_documentos": "Quitar el permiso {{permiso}} de la carpeta {{carpeta}}"
+          "quitar_permiso_carpeta_documentos": "Quitar el permiso {{permiso}} de la carpeta {{carpeta}}",
+          "enviar_informe_one": "Enviar la versión {{numero}} del informe {{informe}} a {{count}} contacto",
+          "enviar_informe_other": "Enviar la versión {{numero}} del informe {{informe}} a {{count}} contactos",
+          "reenviar_envio_documento": "Reenviar el envío {{envio}} del Mail Center"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5772,7 +5780,17 @@
             "yMas": " y {{count}} más",
             "retirada": "La versión {{codigo}} queda retirada: su código de verificación dirá «retirada» hasta que se emita la siguiente",
             "descongela_one": "Su revisión vuelve a poder corregirse",
-            "descongela_other": "Sus {{count}} revisiones vuelven a poder corregirse"
+            "descongela_other": "Sus {{count}} revisiones vuelven a poder corregirse",
+            "envio": {
+              "version": "Va el {{version}}",
+              "noVigente": "Esa versión ya no es la vigente",
+              "adjunto_true": "Con el PDF adjunto y el enlace de descarga",
+              "adjunto_false": "Solo con el enlace de descarga",
+              "a": "A {{nombre}} ({{email}}): {{porque}}",
+              "recibe": "recibe informes de {{donde}}",
+              "pedido": "contacto de la ficha que ha nombrado el usuario",
+              "fuera": "El contacto n.º {{id}} no está en la ficha del cliente: el envío fallará"
+            }
           }
         },
         "contratado": {
@@ -9306,7 +9324,7 @@
     "listado": {
       "todosClientes": "Todos los clientes",
       "todosEmplazamientos": "Todos los emplazamientos",
-      "enviadoHint": "Los envíos llegan con el módulo de comunicaciones: hasta entonces, ningún informe consta como enviado."
+      "enviadoHint": "Cuándo salió el último correo aceptado con alguna de sus versiones, por el Mail Center."
     },
     "emision": {
       "recomendadoTitulo": "Recomendado: confirmar vista previa antes de emitir",
@@ -11756,7 +11774,42 @@
       "sinCuerpo": "Este envío salió antes de que se guardara el texto de cada correo: no se puede enseñar tal como salió.",
       "cuerpoEnCurso": "El texto se guarda al componer el correo, en cuanto la cola lo mande.",
       "sinDestinatarioAviso": "Ningún contacto tenía permiso para recibir esto: salió solo al buzón de copia de la oficina. Dale el permiso a alguien en la ficha del cliente.",
-      "noSeReenvia": "No se puede reenviar:"
+      "noSeReenvia": "No se puede reenviar:",
+      "documento": "Documento",
+      "documentoBorrado": "Ya no existe",
+      "adjunto": "Cómo fue",
+      "conAdjunto": "PDF adjunto y enlace de descarga",
+      "soloEnlace": "Solo el enlace de descarga",
+      "descarga": "Descarga"
+    },
+    "sinEnvios": "Sin envíos todavía",
+    "descargado_one": "descargado el {{fecha}}",
+    "descargado_other": "descargado el {{fecha}} ({{count}} veces)",
+    "descargadoNoConsta": "descargado: no consta",
+    "enviar": {
+      "para": "Para",
+      "nadie": "Nadie de la ficha de {{cliente}} tiene el permiso de recibir esto: añade un contacto o una dirección.",
+      "recibe": "Lo recibe para {{donde}}",
+      "deLaFicha": "Contacto de la ficha del cliente, sin el permiso de recibirlo",
+      "aMano": "Dirección escrita a mano",
+      "quitar": "Quitar",
+      "otroContacto": "Añadir otro contacto de la ficha…",
+      "otraDireccion": "Añadir otra dirección de correo…",
+      "anadir": "Añadir",
+      "direccionMal": "Esa dirección no parece un correo.",
+      "copia": "Cada destinatario recibe su propio correo, con copia oculta a {{copia}}. Las respuestas te llegan a ti.",
+      "sinCopia": "Cada destinatario recibe su propio correo. Las respuestas te llegan a ti.",
+      "texto": "Texto",
+      "variables": "{contacto} es el nombre de quien lo recibe y {enlace}, su enlace de descarga (sin él, va al final). El saludo y la despedida los pone la aplicación.",
+      "adjuntar": "Adjuntar el PDF ({{peso}})",
+      "enlaceSiempre": "Lleve o no el adjunto, cada correo lleva su enlace propio de descarga, que apunta cuándo lo bajan.",
+      "noCabe": "Pasa de {{max}}: irá solo con el enlace de descarga, y el correo lo dirá.",
+      "noVigente": "Esta versión ya no es la vigente: quien abra el enlace verá el aviso.",
+      "boton_one": "Enviar a {{count}}",
+      "boton_other": "Enviar a {{count}}",
+      "enviando": "Enviando…",
+      "enviado_one": "Enviado: sale en unos momentos",
+      "enviado_other": "{{count}} correos enviados: salen en unos momentos"
     }
   }
 }
