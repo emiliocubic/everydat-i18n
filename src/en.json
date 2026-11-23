@@ -1548,7 +1548,12 @@
     "invitadosHoy_one": "{{count}} guest with access now",
     "invitadosHoy_other": "{{count}} guests with access now",
     "invitadosPorClienteHoy_one": "The customer with the most: {{count}} guest",
-    "invitadosPorClienteHoy_other": "The customer with the most: {{count}} guests"
+    "invitadosPorClienteHoy_other": "The customer with the most: {{count}} guests",
+    "licencia": "Licence",
+    "licenciaHint": "Signed by the Cubic hub and renewed every day. With it, what is contracted (modules, people limits and AI cap) is changed in the hub and only shown here; the recycle bin retention and the sticker hub stay here.",
+    "licenciaEmitida": "Issued on {{fecha}}",
+    "licenciaVence": "Valid until {{fecha}}",
+    "sinLicencia": "No signed licence has arrived from the hub yet: what is saved on this screen applies."
   },
   "admins": {
     "title": "Users",

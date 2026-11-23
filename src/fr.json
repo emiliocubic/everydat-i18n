@@ -1412,7 +1412,12 @@
     "invitadosHoy_one": "{{count}} invité avec accès actuellement",
     "invitadosHoy_other": "{{count}} invités avec accès actuellement",
     "invitadosPorClienteHoy_one": "Le client qui en a le plus : {{count}} invité",
-    "invitadosPorClienteHoy_other": "Le client qui en a le plus : {{count}} invités"
+    "invitadosPorClienteHoy_other": "Le client qui en a le plus : {{count}} invités",
+    "licencia": "Licence",
+    "licenciaHint": "Signée par la centrale de Cubic et renouvelée chaque jour. Avec elle, ce qui est contracté (modules, limites de personnes et plafond de l'IA) se modifie dans la centrale et n'est qu'affiché ici ; la durée de la corbeille et la centrale des étiquettes restent ici.",
+    "licenciaEmitida": "Émise le {{fecha}}",
+    "licenciaVence": "Valable jusqu'au {{fecha}}",
+    "sinLicencia": "Aucune licence signée n'est encore arrivée de la centrale : ce qui est enregistré sur cet écran s'applique."
   },
   "admins": {
     "title": "Utilisateurs",

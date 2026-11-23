@@ -1419,7 +1419,12 @@
     "invitadosHoy_one": "{{count}} invitado con acceso ahora",
     "invitadosHoy_other": "{{count}} invitados con acceso ahora",
     "invitadosPorClienteHoy_one": "El cliente que más tiene: {{count}} invitado",
-    "invitadosPorClienteHoy_other": "El cliente que más tiene: {{count}} invitados"
+    "invitadosPorClienteHoy_other": "El cliente que más tiene: {{count}} invitados",
+    "licencia": "Licencia",
+    "licenciaHint": "La firma la central de Cubic y la renueva cada día. Con ella, lo contratado (módulos, límites de personas y tope de la IA) se cambia en la central y aquí solo se ve; el plazo de la papelera y la central de pegatinas siguen aquí.",
+    "licenciaEmitida": "Emitida el {{fecha}}",
+    "licenciaVence": "Vale hasta el {{fecha}}",
+    "sinLicencia": "Todavía no ha llegado ninguna licencia firmada de la central: vale lo que se guarda en esta pantalla."
   },
   "admins": {
     "title": "Usuarios",
