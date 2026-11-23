@@ -1434,7 +1434,15 @@
     "licenciaVence": "Vale hasta el {{fecha}}",
     "sinLicencia": "Todavía no ha llegado ninguna licencia firmada de la central: vale lo que se guarda en esta pantalla.",
     "licenciaDegradada": "La instancia ya recibió una licencia firmada, pero ahora no le queda ninguna válida",
-    "licenciaDegradadaHint": "La licencia guardada ha desaparecido o no cuadra, y la copia de la última válida tampoco: mientras la central no entregue otra, vale lo que se guarda en esta pantalla. A Cubic ya le ha llegado la señal. Para salir de aquí, entregar la licencia desde la central."
+    "licenciaDegradadaHint": "La licencia guardada ha desaparecido o no cuadra, y la copia de la última válida tampoco: mientras la central no entregue otra, vale lo que se guarda en esta pantalla. A Cubic ya le ha llegado la señal. Para salir de aquí, entregar la licencia desde la central.",
+    "licenciaPorVencer_one": "Le queda menos de {{count}} día para vencer",
+    "licenciaPorVencer_other": "Le quedan menos de {{count}} días para vencer",
+    "licenciaVenceHoy": "Vence hoy",
+    "licenciaPorVencerHint": "La central no ha podido renovarla: mira en la central si la instancia contesta. El tenant no ve nada hasta que vence.",
+    "licenciaEnGracia": "La licencia ha vencido: el superadmin ya ve el aviso",
+    "licenciaEnGraciaHint": "Todo sigue funcionando hasta el {{fecha}}; después, la instancia quedará en solo lectura. Una licencia nueva de la central la deja como estaba.",
+    "licenciaSoloLectura": "La licencia ha vencido y la instancia está en solo lectura",
+    "licenciaSoloLecturaHint": "Desde el {{fecha}} se puede consultar, descargar y exportar, pero no dar de alta ni cambiar nada. No se ha borrado nada. Una licencia nueva de la central la deja como estaba."
   },
   "admins": {
     "title": "Usuarios",
@@ -11648,5 +11656,12 @@
       "titulo": "La papelera está vacía",
       "hint": "Lo que se elimina viene aquí y se puede recuperar hasta que se borra de verdad, pasado el plazo."
     }
+  },
+  "licencia": {
+    "vencida": "La licencia ha vencido; contacta con Cubic.",
+    "vencidaHint": "Todo sigue funcionando hasta el {{fecha}}; después, la instancia quedará en solo lectura.",
+    "soloLectura": "La licencia ha vencido y la instancia está en solo lectura; contacta con Cubic.",
+    "soloLecturaHint": "Se puede consultar, descargar y exportar, pero no dar de alta ni cambiar nada. No se ha borrado nada.",
+    "no": "La licencia de esta instancia ha vencido y está en solo lectura: se puede consultar, descargar y exportar, pero no dar de alta ni cambiar nada. Contacta con Cubic."
   }
 }

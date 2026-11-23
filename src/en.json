@@ -1563,7 +1563,15 @@
     "licenciaVence": "Valid until {{fecha}}",
     "sinLicencia": "No signed licence has arrived from the hub yet: what is saved on this screen applies.",
     "licenciaDegradada": "This instance has received a signed licence before, but none is valid now",
-    "licenciaDegradadaHint": "The stored licence is missing or does not check out, and neither does the copy of the last valid one: until the hub delivers a new one, what is saved on this screen applies. Cubic has already received the alert. To fix it, deliver the licence from the hub."
+    "licenciaDegradadaHint": "The stored licence is missing or does not check out, and neither does the copy of the last valid one: until the hub delivers a new one, what is saved on this screen applies. Cubic has already received the alert. To fix it, deliver the licence from the hub.",
+    "licenciaPorVencer_one": "Less than {{count}} day left before it expires",
+    "licenciaPorVencer_other": "Less than {{count}} days left before it expires",
+    "licenciaVenceHoy": "It expires today",
+    "licenciaPorVencerHint": "The hub has not been able to renew it: check in the hub whether the instance answers. The tenant sees nothing until it expires.",
+    "licenciaEnGracia": "The licence has expired: the superadmin already sees the notice",
+    "licenciaEnGraciaHint": "Everything keeps working until {{fecha}}; after that, the instance will become read-only. A new licence from the hub puts it back as it was.",
+    "licenciaSoloLectura": "The licence has expired and the instance is read-only",
+    "licenciaSoloLecturaHint": "Since {{fecha}} you can view, download and export, but not add or change anything. Nothing has been deleted. A new licence from the hub puts it back as it was."
   },
   "admins": {
     "title": "Users",
@@ -11648,5 +11656,12 @@
       "titulo": "The recycle bin is empty",
       "hint": "Deleted items come here and can be restored until they are permanently deleted, once the retention period is over."
     }
+  },
+  "licencia": {
+    "vencida": "The licence has expired; please contact Cubic.",
+    "vencidaHint": "Everything keeps working until {{fecha}}; after that, the instance will become read-only.",
+    "soloLectura": "The licence has expired and the instance is read-only; please contact Cubic.",
+    "soloLecturaHint": "You can view, download and export, but not add or change anything. Nothing has been deleted.",
+    "no": "The licence for this instance has expired and it is now read-only: you can view, download and export, but not add or change anything. Please contact Cubic."
   }
 }

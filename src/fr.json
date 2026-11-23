@@ -1427,7 +1427,15 @@
     "licenciaVence": "Valable jusqu'au {{fecha}}",
     "sinLicencia": "Aucune licence signée n'est encore arrivée de la centrale : ce qui est enregistré sur cet écran s'applique.",
     "licenciaDegradada": "L'instance a déjà reçu une licence signée, mais aucune n'est valable maintenant",
-    "licenciaDegradadaHint": "La licence enregistrée a disparu ou ne correspond pas, et la copie de la dernière valable non plus : tant que la centrale n'en livre pas une nouvelle, ce qui est enregistré sur cet écran s'applique. Cubic a déjà reçu l'alerte. Pour en sortir, livrer la licence depuis la centrale."
+    "licenciaDegradadaHint": "La licence enregistrée a disparu ou ne correspond pas, et la copie de la dernière valable non plus : tant que la centrale n'en livre pas une nouvelle, ce qui est enregistré sur cet écran s'applique. Cubic a déjà reçu l'alerte. Pour en sortir, livrer la licence depuis la centrale.",
+    "licenciaPorVencer_one": "Il reste moins de {{count}} jour avant l'échéance",
+    "licenciaPorVencer_other": "Il reste moins de {{count}} jours avant l'échéance",
+    "licenciaVenceHoy": "Elle expire aujourd'hui",
+    "licenciaPorVencerHint": "La centrale n'a pas pu la renouveler : vérifiez dans la centrale si l'instance répond. Le client ne voit rien avant l'échéance.",
+    "licenciaEnGracia": "La licence a expiré : le superadmin voit déjà l'avis",
+    "licenciaEnGraciaHint": "Tout continue de fonctionner jusqu'au {{fecha}} ; ensuite, l'instance passera en lecture seule. Une nouvelle licence de la centrale la remet comme avant.",
+    "licenciaSoloLectura": "La licence a expiré et l'instance est en lecture seule",
+    "licenciaSoloLecturaHint": "Depuis le {{fecha}}, on peut consulter, télécharger et exporter, mais pas créer ni modifier quoi que ce soit. Rien n'a été supprimé. Une nouvelle licence de la centrale la remet comme avant."
   },
   "admins": {
     "title": "Utilisateurs",
@@ -9954,5 +9962,12 @@
       "titulo": "La corbeille est vide",
       "hint": "Les éléments supprimés arrivent ici et peuvent être restaurés jusqu’à leur suppression définitive, une fois le délai écoulé."
     }
+  },
+  "licencia": {
+    "vencida": "La licence a expiré ; contactez Cubic.",
+    "vencidaHint": "Tout continue de fonctionner jusqu'au {{fecha}} ; ensuite, l'instance passera en lecture seule.",
+    "soloLectura": "La licence a expiré et l'instance est en lecture seule ; contactez Cubic.",
+    "soloLecturaHint": "On peut consulter, télécharger et exporter, mais pas créer ni modifier quoi que ce soit. Rien n'a été supprimé.",
+    "no": "La licence de cette instance a expiré et elle est en lecture seule : on peut consulter, télécharger et exporter, mais pas créer ni modifier quoi que ce soit. Contactez Cubic."
   }
 }
