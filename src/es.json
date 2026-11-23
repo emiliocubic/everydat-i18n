@@ -8067,7 +8067,7 @@
         "central": "La central tuvo un fallo al recibirla. Se queda por enviar y lo demás sale igual; si se repite, comparte el registro con soporte.",
         "otro": "La central no la aceptó. Si no sabes por qué, comparte el registro con soporte.",
         "bloqueada": "La revisión ya no se puede corregir: está validada en la oficina, o va en un informe emitido o en un parte entregado. Descarta esta corrección; si hay que cambiarla, que lo resuelva la oficina.",
-        "licencia": "La instancia está en solo lectura porque la licencia de la empresa ha vencido. No la descartes: se queda en la cola y podrás reenviarla en cuanto la empresa la renueve. Si la hiciste antes de que venciera y no pasa, avisa a la oficina."
+        "licencia": "La instancia está en solo lectura porque la licencia de la empresa ha vencido. No la descartes: se queda en la cola y, en cuanto la empresa la renueve, vuelve a estar por enviar sola. Si la hiciste antes de que venciera y no pasa, avisa a la oficina."
       },
       "que": {
         "equipoSinDatos": "sin identificar",
@@ -8192,7 +8192,8 @@
           "observaciones": "Comentarios",
           "campos": "Campos"
         }
-      }
+      },
+      "descartarLicencia": "La central no la rechazó por un error tuyo, sino porque la licencia de la empresa ha vencido: si la empresa la renueva, se enviará sola. Si la descartas, se pierde."
     },
     "ajustes": {
       "titulo": "Ajustes",
@@ -8388,7 +8389,7 @@
       "enviar": "Enviar ({{count}})",
       "rechazadas_one": "{{count}} rechazada",
       "rechazadas_other": "{{count}} rechazadas",
-      "soloLectura": "Solo lectura: la licencia de la empresa ha vencido. Puedes consultar y enviar lo que hiciste antes; no se puede dar de alta, revisar ni hacer partes."
+      "soloLectura": "Solo lectura: la licencia de la empresa ha vencido. Puedes consultar y enviar lo que hiciste antes, pero no cambiar nada."
     },
     "barra": {
       "inicio": "Inicio",
@@ -8641,6 +8642,10 @@
       "avisa": "Es un aviso: se puede guardar igualmente.",
       "bloquea": "Un código así no puede estar en dos equipos: si el otro lo sigue llevando, el servidor no aceptará este al enviarlo.",
       "guardarIgual": "Guardar igualmente"
+    },
+    "soloLectura": {
+      "titulo": "Solo lectura",
+      "texto": "La licencia de la empresa ha vencido y no se puede dar de alta, revisar, hacer partes ni cambiar nada. Lo que hiciste antes se sigue enviando. Cuando la empresa la renueve, vuelve a funcionar."
     }
   },
   "auditoria": {

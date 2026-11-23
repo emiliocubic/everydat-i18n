@@ -8067,7 +8067,7 @@
         "central": "The server failed while receiving it. It stays pending and the rest still goes; if it keeps happening, share the log with support.",
         "otro": "The server did not accept it. If you do not know why, share the log with support.",
         "bloqueada": "This inspection can no longer be corrected: it has been validated at the office, or it is in an issued report or a delivered work report. Discard this correction; if it must change, the office has to sort it out.",
-        "licencia": "The instance is read-only because your company's licence has expired. Don't discard it: it stays in the queue and you can resend it as soon as the company renews the licence. If you did it before it expired and it still won't go through, tell the office."
+        "licencia": "The instance is read-only because your company's licence has expired. Don't discard it: it stays in the queue and goes back to pending on its own as soon as the company renews the licence. If you did it before it expired and it still won't go through, tell the office."
       },
       "que": {
         "equipoSinDatos": "unidentified",
@@ -8192,7 +8192,8 @@
           "observaciones": "Comments",
           "campos": "Fields"
         }
-      }
+      },
+      "descartarLicencia": "The server didn't reject it because of a mistake of yours, but because your company's licence has expired: if the company renews it, it will be sent automatically. If you discard it, it is lost."
     },
     "ajustes": {
       "titulo": "Settings",
@@ -8388,7 +8389,7 @@
       "enviar": "Send ({{count}})",
       "rechazadas_one": "{{count}} rejected",
       "rechazadas_other": "{{count}} rejected",
-      "soloLectura": "Read-only: your company's licence has expired. You can browse and send what you did before; adding equipment, inspections and work reports are disabled."
+      "soloLectura": "Read-only: your company's licence has expired. You can browse and send what you did before, but not change anything."
     },
     "barra": {
       "inicio": "Home",
@@ -8641,6 +8642,10 @@
       "avisa": "This is a warning: you can save anyway.",
       "bloquea": "A code like this cannot be on two items: if the other one still has it, the server will not accept this one when it is sent.",
       "guardarIgual": "Save anyway"
+    },
+    "soloLectura": {
+      "titulo": "Read-only",
+      "texto": "Your company's licence has expired: you can't add equipment, inspect, make work reports or change anything. What you did before is still being sent. It will work again once the company renews the licence."
     }
   },
   "auditoria": {
