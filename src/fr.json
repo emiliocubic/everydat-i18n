@@ -4219,7 +4219,8 @@
         "tipo": {
           "revision": "Prochaine vérification",
           "fin_vida": "Fin de vie",
-          "informe": "Rapport"
+          "informe": "Rapport",
+          "propuesta": "Proposition"
         },
         "propia": "Texte propre à l'entreprise",
         "deSerie": "Texte par défaut",
@@ -4236,7 +4237,10 @@
           "lista": "La liste des sites avec leur date, ou des équipements (texte uniquement)",
           "codigo": "Le code du rapport et sa version",
           "emplazamiento": "Le site du rapport",
-          "enlace": "Le lien de téléchargement de chaque destinataire"
+          "enlace": "Le lien de téléchargement de chaque destinataire",
+          "propuesta": "Le numéro de la proposition",
+          "version": "Le numéro de la version",
+          "instalaciones": "Les sites de la proposition"
         },
         "ayuda": "Les variables vont entre accolades et sont remplies à l'envoi. {lista} ne va que dans le texte : c'est la liste des sites ou des équipements ; sans elle, la liste apparaît à la fin. La salutation, les coordonnées et la signature sont ajoutées par l'application.",
         "ayudaInforme": "C'est le texte que propose le bouton Envoyer de chaque version, modifiable avant l'envoi. {enlace} est l'endroit du lien de téléchargement (sans lui, il va à la fin). La salutation et la formule finale sont ajoutées par l'application."
@@ -4649,7 +4653,9 @@
           "cambiar_sobre_empresa": "Modifier le texte « À propos de notre entreprise »",
           "enviar_informe_one": "Envoyer la version {{numero}} du rapport {{informe}} à {{count}} contact",
           "enviar_informe_other": "Envoyer la version {{numero}} du rapport {{informe}} à {{count}} contacts",
-          "reenviar_envio_documento": "Renvoyer l'envoi {{envio}} du Mail Center"
+          "reenviar_envio_documento": "Renvoyer l'envoi {{envio}} du Mail Center",
+          "enviar_propuesta_one": "Envoyer la version {{numero}} de la proposition {{propuesta}} à {{count}} contact",
+          "enviar_propuesta_other": "Envoyer la version {{numero}} de la proposition {{propuesta}} à {{count}} contacts"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -4947,8 +4953,6 @@
           "proximaTexto": "prochain appel « {{texto}} »",
           "sinProxima": "retirer le prochain appel",
           "validez": "valable jusqu’au {{fecha}}",
-          "avisado": "client prévenu",
-          "noAvisado": "client non prévenu",
           "tipos": "travail : {{tipos}}",
           "alcance_one": "périmètre : {{count}} site",
           "alcance_other": "périmètre : {{count}} sites",
@@ -5172,7 +5176,13 @@
               "a": "À {{nombre}} ({{email}}) : {{porque}}",
               "recibe": "reçoit les rapports pour {{donde}}",
               "pedido": "contact de la fiche nommé par l'utilisateur",
-              "fuera": "Le contact n° {{id}} n'est pas dans la fiche du client : l'envoi échouera"
+              "fuera": "Le contact n° {{id}} n'est pas dans la fiche du client : l'envoi échouera",
+              "versionPropuesta": "Envoi de la {{version}}",
+              "recibePresupuestos": "reçoit les devis de {{donde}}",
+              "papel": {
+                "contacto_propuesta": "est le contact de la proposition"
+              },
+              "sinDocumento": "Cette version n’a pas de document : elle n’est pas envoyée"
             }
           }
         },
@@ -5453,7 +5463,6 @@
       "origen": "Origine",
       "administrador": "Responsable",
       "codigo": "Code",
-      "avisado": "Prévenu",
       "propuestaEstado": "Proposition",
       "importe": "Montant",
       "probabilidad": "Probabilité",
@@ -5500,7 +5509,6 @@
       "zonas": "Périmètre",
       "motivoDescarte": "Motif de l'abandon",
       "contacto": "Contact",
-      "avisado": "Client prévenu",
       "codigo": "Code",
       "contactoTecnico": "Contact technique",
       "contactoComercial": "Contact commercial"
@@ -6027,7 +6035,8 @@
         "dias": "{{count}} jour",
         "dias_other": "{{count}} jours",
         "cambiarEstado": "Changer le statut",
-        "descargar": "Télécharger le document"
+        "descargar": "Télécharger le document",
+        "enviar": "Envoyer au client"
       },
       "origenVersion": {
         "interna": "Créée ici",
@@ -6147,6 +6156,14 @@
       "barra": {
         "interna": "Modifiez les blocs et les postes du devis. ENREGISTRER le laisse en brouillon, et GÉNÉRER le verrouille comme version prête à envoyer au client.",
         "externa": "Joignez le document et indiquez son montant et ses dates. ENREGISTRER le laisse en brouillon, et GÉNÉRER le verrouille comme version prête à envoyer au client."
+      },
+      "envio": {
+        "titulo": "Envoyer la version {{numero}}",
+        "enviadas": "Envoyé au client",
+        "ninguna": "Aucune version envoyée par le Mail Center.",
+        "avisos": "Avis de prochaine inspection",
+        "sinAvisos": "Aucun avis de prochaine inspection n’a été envoyé pour ses sites.",
+        "revision": "{{donde}} : {{fecha}}"
       }
     },
     "sinNombre": "Sans nom",
@@ -6157,10 +6174,6 @@
       "label": "Fenêtre",
       "meses": "{{count}} mois",
       "meses_other": "{{count}} mois"
-    },
-    "avisado": {
-      "ayuda": "Le client a été prévenu qu'une vérification est due",
-      "noAplica": "Sans objet : ce n’est pas une vérification"
     },
     "buscarDescartados": "Rechercher par code, client, site ou motif",
     "abrirCliente": "Ouvrir la fiche du client",
@@ -10142,7 +10155,10 @@
       "boton_other": "Envoyer à {{count}}",
       "enviando": "Envoi…",
       "enviado_one": "Envoyé : il part dans un instant",
-      "enviado_other": "{{count}} e-mails envoyés : ils partent dans un instant"
+      "enviado_other": "{{count}} e-mails envoyés : ils partent dans un instant",
+      "papel": {
+        "contacto_propuesta": "Contact de la proposition"
+      }
     }
   }
 }

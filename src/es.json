@@ -4527,7 +4527,8 @@
         "tipo": {
           "revision": "Próxima revisión",
           "fin_vida": "Fin de vida útil",
-          "informe": "Informe"
+          "informe": "Informe",
+          "propuesta": "Propuesta"
         },
         "propia": "Texto propio de la empresa",
         "deSerie": "Texto de serie",
@@ -4544,7 +4545,10 @@
           "lista": "La lista de instalaciones con su fecha, o de equipos (solo en el texto)",
           "codigo": "El código del informe y su versión",
           "emplazamiento": "La instalación del informe",
-          "enlace": "El enlace de descarga de cada destinatario"
+          "enlace": "El enlace de descarga de cada destinatario",
+          "propuesta": "El número de la propuesta",
+          "version": "El número de la versión",
+          "instalaciones": "Las instalaciones de la propuesta"
         },
         "ayuda": "Las variables van entre llaves y se rellenan al mandar el correo. {lista} va solo en el texto: es la lista de instalaciones o de equipos; sin ella, la lista sale al final. El saludo, los datos de contacto y la firma los pone la aplicación.",
         "ayudaInforme": "Es el texto que propone el botón Enviar de cada versión, y se puede retocar antes de mandar. {enlace} es donde va el enlace de descarga (sin él, va al final). El saludo y la despedida los pone la aplicación."
@@ -5244,7 +5248,9 @@
           "quitar_permiso_carpeta_documentos": "Quitar el permiso {{permiso}} de la carpeta {{carpeta}}",
           "enviar_informe_one": "Enviar la versión {{numero}} del informe {{informe}} a {{count}} contacto",
           "enviar_informe_other": "Enviar la versión {{numero}} del informe {{informe}} a {{count}} contactos",
-          "reenviar_envio_documento": "Reenviar el envío {{envio}} del Mail Center"
+          "reenviar_envio_documento": "Reenviar el envío {{envio}} del Mail Center",
+          "enviar_propuesta_one": "Enviar la versión {{numero}} de la propuesta {{propuesta}} a {{count}} contacto",
+          "enviar_propuesta_other": "Enviar la versión {{numero}} de la propuesta {{propuesta}} a {{count}} contactos"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5593,8 +5599,6 @@
           "proximaTexto": "próxima llamada «{{texto}}»",
           "sinProxima": "quitar la próxima llamada",
           "validez": "válida hasta el {{fecha}}",
-          "avisado": "cliente avisado",
-          "noAvisado": "cliente sin avisar",
           "tipos": "trabajo: {{tipos}}",
           "alcance_one": "alcance: {{count}} emplazamiento",
           "alcance_other": "alcance: {{count}} emplazamientos",
@@ -5818,7 +5822,13 @@
               "a": "A {{nombre}} ({{email}}): {{porque}}",
               "recibe": "recibe informes de {{donde}}",
               "pedido": "contacto de la ficha que ha nombrado el usuario",
-              "fuera": "El contacto n.º {{id}} no está en la ficha del cliente: el envío fallará"
+              "fuera": "El contacto n.º {{id}} no está en la ficha del cliente: el envío fallará",
+              "versionPropuesta": "Va la {{version}}",
+              "recibePresupuestos": "recibe presupuestos de {{donde}}",
+              "papel": {
+                "contacto_propuesta": "es el contacto de la propuesta"
+              },
+              "sinDocumento": "Esta versión no tiene documento: no se envía"
             }
           }
         },
@@ -6405,7 +6415,6 @@
       "origen": "Origen",
       "administrador": "Responsable",
       "codigo": "Código",
-      "avisado": "Avisado",
       "propuestaEstado": "Propuesta",
       "importe": "Importe",
       "probabilidad": "Probabilidad",
@@ -6452,7 +6461,6 @@
       "zonas": "Alcance",
       "motivoDescarte": "Motivo del descarte",
       "contacto": "Contacto",
-      "avisado": "Avisado al cliente",
       "codigo": "Código",
       "contactoTecnico": "Contacto técnico",
       "contactoComercial": "Contacto comercial"
@@ -6994,7 +7002,8 @@
         "dias": "{{count}} día",
         "dias_other": "{{count}} días",
         "cambiarEstado": "Cambiar estado",
-        "descargar": "Descargar documento"
+        "descargar": "Descargar documento",
+        "enviar": "Enviar al cliente"
       },
       "origenVersion": {
         "interna": "Creada aquí",
@@ -7114,6 +7123,14 @@
       "barra": {
         "interna": "Edita los bloques y conceptos del presupuesto. GUARDAR deja el presupuesto en borrador, y GENERAR lo bloquea como versión ya para envío al cliente.",
         "externa": "Adjunta el documento e indica su importe y sus fechas. GUARDAR deja el presupuesto en borrador, y GENERAR lo bloquea como versión ya para envío al cliente."
+      },
+      "envio": {
+        "titulo": "Enviar la versión {{numero}}",
+        "enviadas": "Enviado al cliente",
+        "ninguna": "Ninguna versión enviada por el Mail Center.",
+        "avisos": "Avisos de próxima revisión",
+        "sinAvisos": "No ha salido ningún aviso de próxima revisión a sus instalaciones.",
+        "revision": "{{donde}}: {{fecha}}"
       }
     },
     "sinNombre": "Sin nombre",
@@ -7124,10 +7141,6 @@
       "label": "Ventana",
       "meses": "{{count}} mes",
       "meses_other": "{{count}} meses"
-    },
-    "avisado": {
-      "ayuda": "Se le ha avisado de que le toca revisión",
-      "noAplica": "No aplica: no es una revisión"
     },
     "buscarDescartados": "Buscar por código, cliente, emplazamiento o motivo",
     "abrirCliente": "Abrir la ficha del cliente",
@@ -11877,7 +11890,10 @@
       "boton_other": "Enviar a {{count}}",
       "enviando": "Enviando…",
       "enviado_one": "Enviado: sale en unos momentos",
-      "enviado_other": "{{count}} correos enviados: salen en unos momentos"
+      "enviado_other": "{{count}} correos enviados: salen en unos momentos",
+      "papel": {
+        "contacto_propuesta": "Contacto de la propuesta"
+      }
     }
   }
 }

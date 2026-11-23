@@ -4527,7 +4527,8 @@
         "tipo": {
           "revision": "Next inspection",
           "fin_vida": "End of service life",
-          "informe": "Report"
+          "informe": "Report",
+          "propuesta": "Proposal"
         },
         "propia": "Company's own text",
         "deSerie": "Default text",
@@ -4544,7 +4545,10 @@
           "lista": "The list of sites with their date, or of equipment (text only)",
           "codigo": "The report code and its version",
           "emplazamiento": "The site of the report",
-          "enlace": "Each recipient's download link"
+          "enlace": "Each recipient's download link",
+          "propuesta": "The number of the proposal",
+          "version": "The number of the version",
+          "instalaciones": "The sites of the proposal"
         },
         "ayuda": "Variables go in braces and are filled in when the email is sent. {lista} only goes in the text: it is the list of sites or equipment; without it, the list goes at the end. The greeting, contact details and signature are added by the application.",
         "ayudaInforme": "This is the text the Send button of each version proposes, and it can be edited before sending. {enlace} is where the download link goes (without it, it goes at the end). The greeting and sign-off are added by the application."
@@ -5244,7 +5248,9 @@
           "quitar_permiso_carpeta_documentos": "Remove permission {{permiso}} from folder {{carpeta}}",
           "enviar_informe_one": "Send version {{numero}} of report {{informe}} to {{count}} contact",
           "enviar_informe_other": "Send version {{numero}} of report {{informe}} to {{count}} contacts",
-          "reenviar_envio_documento": "Resend email {{envio}} from the Mail Center"
+          "reenviar_envio_documento": "Resend email {{envio}} from the Mail Center",
+          "enviar_propuesta_one": "Send version {{numero}} of proposal {{propuesta}} to {{count}} contact",
+          "enviar_propuesta_other": "Send version {{numero}} of proposal {{propuesta}} to {{count}} contacts"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -5593,8 +5599,6 @@
           "proximaTexto": "next call “{{texto}}”",
           "sinProxima": "remove the next call",
           "validez": "valid until {{fecha}}",
-          "avisado": "client notified",
-          "noAvisado": "client not notified",
           "tipos": "work: {{tipos}}",
           "alcance_one": "scope: {{count}} site",
           "alcance_other": "scope: {{count}} sites",
@@ -5818,7 +5822,13 @@
               "a": "To {{nombre}} ({{email}}): {{porque}}",
               "recibe": "receives reports for {{donde}}",
               "pedido": "contact in the file named by the user",
-              "fuera": "Contact no. {{id}} is not in the client's file: the sending will fail"
+              "fuera": "Contact no. {{id}} is not in the client's file: the sending will fail",
+              "versionPropuesta": "Sending {{version}}",
+              "recibePresupuestos": "receives quotes for {{donde}}",
+              "papel": {
+                "contacto_propuesta": "is the contact of the proposal"
+              },
+              "sinDocumento": "This version has no document: it is not sent"
             }
           }
         },
@@ -6405,7 +6415,6 @@
       "origen": "Source",
       "administrador": "Owner",
       "codigo": "Code",
-      "avisado": "Notified",
       "propuestaEstado": "Proposal",
       "importe": "Amount",
       "probabilidad": "Probability",
@@ -6452,7 +6461,6 @@
       "zonas": "Scope",
       "motivoDescarte": "Reason for dropping",
       "contacto": "Contact",
-      "avisado": "Client notified",
       "codigo": "Code",
       "contactoTecnico": "Technical contact",
       "contactoComercial": "Commercial contact"
@@ -6994,7 +7002,8 @@
         "dias": "{{count}} day",
         "dias_other": "{{count}} days",
         "cambiarEstado": "Change status",
-        "descargar": "Download document"
+        "descargar": "Download document",
+        "enviar": "Send to the client"
       },
       "origenVersion": {
         "interna": "Created here",
@@ -7114,6 +7123,14 @@
       "barra": {
         "interna": "Edit the blocks and items of the quote. SAVE keeps the quote as a draft, and GENERATE locks it as a version ready to send to the client.",
         "externa": "Attach the document and enter its amount and dates. SAVE keeps the quote as a draft, and GENERATE locks it as a version ready to send to the client."
+      },
+      "envio": {
+        "titulo": "Send version {{numero}}",
+        "enviadas": "Sent to the client",
+        "ninguna": "No version sent through the Mail Center.",
+        "avisos": "Next inspection notices",
+        "sinAvisos": "No next inspection notice has been sent for its sites.",
+        "revision": "{{donde}}: {{fecha}}"
       }
     },
     "sinNombre": "Unnamed",
@@ -7124,10 +7141,6 @@
       "label": "Window",
       "meses": "{{count}} month",
       "meses_other": "{{count}} months"
-    },
-    "avisado": {
-      "ayuda": "The client has been told an inspection is due",
-      "noAplica": "Not applicable: not an inspection"
     },
     "buscarDescartados": "Search by code, client, site or reason",
     "abrirCliente": "Open the client record",
@@ -11877,7 +11890,10 @@
       "boton_other": "Send to {{count}}",
       "enviando": "Sending…",
       "enviado_one": "Sent: it goes out in a moment",
-      "enviado_other": "{{count}} emails sent: they go out in a moment"
+      "enviado_other": "{{count}} emails sent: they go out in a moment",
+      "papel": {
+        "contacto_propuesta": "Contact of the proposal"
+      }
     }
   }
 }
