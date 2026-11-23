@@ -8853,7 +8853,7 @@
       "restringir": "Restringir este archivo",
       "nivel": "Nivel del permiso",
       "buscarSujeto": "Dar permiso a una persona o rol",
-      "primerPermiso": "El primer permiso rompe la herencia: desde ese momento solo entra quien esté en la lista.",
+      "primerPermiso": "El primer permiso rompe la herencia: desde ese momento solo entra quien esté en la lista. Tú te quedas en ella con «Descargar», salvo que lo que des ya te lo deje.",
       "subidoPor": "Subido por {{nombre}} el {{fecha}}",
       "subidoEl": "Subido el {{fecha}}",
       "permisosCarpeta": "Quién la ve",

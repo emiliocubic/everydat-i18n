@@ -8853,7 +8853,7 @@
       "restringir": "Restrict this file",
       "nivel": "Permission level",
       "buscarSujeto": "Give access to a person or role",
-      "primerPermiso": "The first permission breaks inheritance: from then on only those on the list get in.",
+      "primerPermiso": "The first permission breaks inheritance: from then on only those on the list get in. You stay on it with “Download”, unless what you grant already lets you.",
       "subidoPor": "Uploaded by {{nombre}} on {{fecha}}",
       "subidoEl": "Uploaded on {{fecha}}",
       "permisosCarpeta": "Who can see it",
