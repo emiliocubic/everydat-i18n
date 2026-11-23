@@ -10990,6 +10990,10 @@
       "otra_empresa": {
         "titulo": "Pegatina de otra empresa",
         "desc": "La pegatina {{codigo}} de {{equipo}} ({{emplazamiento}}) es de otra empresa y se ha quitado del equipo: despégala y pon una tuya"
+      },
+      "sin_comprobar": {
+        "titulo": "Pegatina sin comprobar",
+        "desc": "No se ha podido comprobar con Cubic la pegatina {{codigo}} de {{equipo}} ({{emplazamiento}}): sigue puesta, pero puede que sea de otra empresa"
       }
     }
   },

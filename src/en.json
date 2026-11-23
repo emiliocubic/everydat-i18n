@@ -10990,6 +10990,10 @@
       "otra_empresa": {
         "titulo": "Sticker belongs to another company",
         "desc": "Sticker {{codigo}} on {{equipo}} ({{emplazamiento}}) belongs to another company and has been removed from the item: peel it off and put on one of yours"
+      },
+      "sin_comprobar": {
+        "titulo": "Sticker not checked",
+        "desc": "Sticker {{codigo}} on {{equipo}} ({{emplazamiento}}) could not be checked with Cubic: it stays on, but it may belong to another company"
       }
     }
   },

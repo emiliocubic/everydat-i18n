@@ -9677,6 +9677,10 @@
       "otra_empresa": {
         "titulo": "Étiquette d’une autre entreprise",
         "desc": "L’étiquette {{codigo}} de {{equipo}} ({{emplazamiento}}) appartient à une autre entreprise et a été retirée de l’équipement : décollez-la et posez-en une des vôtres"
+      },
+      "sin_comprobar": {
+        "titulo": "Étiquette non vérifiée",
+        "desc": "L’étiquette {{codigo}} de {{equipo}} ({{emplazamiento}}) n’a pas pu être vérifiée auprès de Cubic : elle reste posée, mais elle peut appartenir à une autre entreprise"
       }
     }
   },
