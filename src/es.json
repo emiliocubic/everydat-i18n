@@ -6334,7 +6334,8 @@
       "marca": "configurar los datos de tu empresa",
       "proyectos": "ver los proyectos",
       "propuestas": "ver las propuestas",
-      "papelera": "recuperar lo eliminado"
+      "papelera": "recuperar lo eliminado",
+      "mailCenter": "ver el Mail Center"
     },
     "sinModulo": {
       "titulo": "Módulo no contratado",
@@ -11745,5 +11746,68 @@
     "soloLectura": "La licencia ha vencido y la instancia está en solo lectura; contacta con Cubic.",
     "soloLecturaHint": "Se puede consultar, descargar y exportar, pero no dar de alta ni cambiar nada. No se ha borrado nada.",
     "no": "La licencia de esta instancia ha vencido y está en solo lectura: se puede consultar, descargar y exportar, pero no dar de alta ni cambiar nada. Contacta con Cubic."
+  },
+  "mailCenter": {
+    "titulo": "Mail Center",
+    "buscar": "Buscar por destinatario o asunto…",
+    "vacio": "No ha salido ningún correo",
+    "vacioHint": "Aquí aparece todo lo que la aplicación manda a los clientes: hoy, los avisos automáticos.",
+    "todosClientes": "Todos los clientes",
+    "sinDestinatario": "Sin destinatario",
+    "sinDestinatarioHint": "Ningún contacto tenía permiso para recibirlo: salió solo al buzón de copia de la oficina.",
+    "soloCopia": "Solo copia ({{copia}})",
+    "campos": {
+      "fecha": "Fecha",
+      "tipo": "Tipo",
+      "cliente": "Cliente",
+      "destinatario": "Destinatario",
+      "asunto": "Asunto",
+      "lleva": "Lleva",
+      "estado": "Estado"
+    },
+    "tipos": {
+      "aviso": "Aviso",
+      "informe": "Informe",
+      "propuesta": "Propuesta",
+      "parte": "Parte"
+    },
+    "estados": {
+      "pendiente": "Pendiente",
+      "enviando": "Enviando",
+      "enviado": "Enviado",
+      "rechazado": "Rechazado",
+      "devuelto": "Devuelto"
+    },
+    "avisos": {
+      "revision": "Próxima revisión",
+      "fin_vida": "Fin de vida"
+    },
+    "ficha": {
+      "volver": "Volver al Mail Center",
+      "reenviar": "Reenviar",
+      "reenviarConfirmar": "Se mandará otra vez el mismo correo a {{a}}, como un envío nuevo. Este se queda como está.",
+      "reenviarEnCurso": "Aún se está mandando: espera a ver cómo termina.",
+      "reenviado": "Reenviado: sale en unos momentos",
+      "envio": "Envío",
+      "copia": "Copia oculta",
+      "responderA": "Respuestas a",
+      "idioma": "Idioma",
+      "enviadoPor": "Enviado por",
+      "automatico": "Automático",
+      "enviadoAt": "Salió",
+      "reenvioDe": "Reenvío de",
+      "envioDel": "Envío del {{fecha}}",
+      "nadie": "Nadie: solo la copia",
+      "intentos": "Intentos",
+      "intentoOk": "Salió",
+      "intentosVacio": "No consta cada intento: el envío es anterior a que se apuntaran.",
+      "intentosEnCurso": "Aún no se ha intentado mandar.",
+      "lleva": "Lo que lleva",
+      "reenvios": "Reenvíos",
+      "correo": "El correo",
+      "sinCuerpo": "Este envío salió antes de que se guardara el texto de cada correo: no se puede enseñar tal como salió.",
+      "cuerpoEnCurso": "El texto se guarda al componer el correo, en cuanto la cola lo mande.",
+      "sinDestinatarioAviso": "Ningún contacto tenía permiso para recibir esto: salió solo al buzón de copia de la oficina. Dale el permiso a alguien en la ficha del cliente."
+    }
   }
 }

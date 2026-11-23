@@ -5382,7 +5382,8 @@
       "tarifas": "voir les tarifs",
       "proyectos": "voir les projets",
       "propuestas": "voir les propositions",
-      "papelera": "restaurer les éléments supprimés"
+      "papelera": "restaurer les éléments supprimés",
+      "mailCenter": "consulter le Mail Center"
     },
     "sinModulo": {
       "titulo": "Module non souscrit",
@@ -10001,5 +10002,68 @@
     "soloLectura": "La licence a expiré et l'instance est en lecture seule ; contactez Cubic.",
     "soloLecturaHint": "On peut consulter, télécharger et exporter, mais pas créer ni modifier quoi que ce soit. Rien n'a été supprimé.",
     "no": "La licence de cette instance a expiré et elle est en lecture seule : on peut consulter, télécharger et exporter, mais pas créer ni modifier quoi que ce soit. Contactez Cubic."
+  },
+  "mailCenter": {
+    "titulo": "Mail Center",
+    "buscar": "Rechercher par destinataire ou objet…",
+    "vacio": "Aucun e-mail n'a été envoyé",
+    "vacioHint": "Tout ce que l'application envoie aux clients apparaît ici : pour l'instant, les avis automatiques.",
+    "todosClientes": "Tous les clients",
+    "sinDestinatario": "Sans destinataire",
+    "sinDestinatarioHint": "Aucun contact n'avait l'autorisation de le recevoir : il n'est parti qu'à la boîte de copie du bureau.",
+    "soloCopia": "Copie seulement ({{copia}})",
+    "campos": {
+      "fecha": "Date",
+      "tipo": "Type",
+      "cliente": "Client",
+      "destinatario": "Destinataire",
+      "asunto": "Objet",
+      "lleva": "Contenu",
+      "estado": "État"
+    },
+    "tipos": {
+      "aviso": "Avis",
+      "informe": "Rapport",
+      "propuesta": "Proposition",
+      "parte": "Bon d'intervention"
+    },
+    "estados": {
+      "pendiente": "En attente",
+      "enviando": "En cours d'envoi",
+      "enviado": "Envoyé",
+      "rechazado": "Refusé",
+      "devuelto": "Retourné"
+    },
+    "avisos": {
+      "revision": "Prochaine vérification",
+      "fin_vida": "Fin de vie"
+    },
+    "ficha": {
+      "volver": "Retour au Mail Center",
+      "reenviar": "Renvoyer",
+      "reenviarConfirmar": "Le même e-mail sera renvoyé à {{a}}, comme un nouvel envoi. Celui-ci reste tel quel.",
+      "reenviarEnCurso": "L'envoi est encore en cours : attendez de voir comment il se termine.",
+      "reenviado": "Renvoyé : il partira dans un instant",
+      "envio": "Envoi",
+      "copia": "Copie cachée",
+      "responderA": "Réponses à",
+      "idioma": "Langue",
+      "enviadoPor": "Envoyé par",
+      "automatico": "Automatique",
+      "enviadoAt": "Parti le",
+      "reenvioDe": "Renvoi de",
+      "envioDel": "Envoi du {{fecha}}",
+      "nadie": "Personne : copie seulement",
+      "intentos": "Tentatives",
+      "intentoOk": "Parti",
+      "intentosVacio": "Les tentatives ne sont pas enregistrées : cet envoi est antérieur.",
+      "intentosEnCurso": "Aucune tentative pour l'instant.",
+      "lleva": "Contenu",
+      "reenvios": "Renvois",
+      "correo": "L'e-mail",
+      "sinCuerpo": "Cet envoi est parti avant que le texte de chaque e-mail ne soit enregistré : il ne peut pas être montré tel qu'il est parti.",
+      "cuerpoEnCurso": "Le texte est enregistré à la composition de l'e-mail, dès que la file l'envoie.",
+      "sinDestinatarioAviso": "Aucun contact n'avait l'autorisation de recevoir ceci : il n'est parti qu'à la boîte de copie du bureau. Donnez l'autorisation à quelqu'un dans la fiche du client."
+    }
   }
 }

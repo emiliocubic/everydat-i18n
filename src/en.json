@@ -6334,7 +6334,8 @@
       "marca": "configure your company details",
       "proyectos": "view projects",
       "propuestas": "view proposals",
-      "papelera": "restore deleted items"
+      "papelera": "restore deleted items",
+      "mailCenter": "view the Mail Center"
     },
     "sinModulo": {
       "titulo": "Module not included",
@@ -11745,5 +11746,68 @@
     "soloLectura": "The licence has expired and the instance is read-only; please contact Cubic.",
     "soloLecturaHint": "You can view, download and export, but not add or change anything. Nothing has been deleted.",
     "no": "The licence for this instance has expired and it is now read-only: you can view, download and export, but not add or change anything. Please contact Cubic."
+  },
+  "mailCenter": {
+    "titulo": "Mail Center",
+    "buscar": "Search by recipient or subject…",
+    "vacio": "No emails have been sent",
+    "vacioHint": "Everything the application sends to clients shows up here: for now, the automatic notices.",
+    "todosClientes": "All clients",
+    "sinDestinatario": "No recipient",
+    "sinDestinatarioHint": "No contact was allowed to receive it: it only went to the office copy mailbox.",
+    "soloCopia": "Copy only ({{copia}})",
+    "campos": {
+      "fecha": "Date",
+      "tipo": "Type",
+      "cliente": "Client",
+      "destinatario": "Recipient",
+      "asunto": "Subject",
+      "lleva": "Contains",
+      "estado": "Status"
+    },
+    "tipos": {
+      "aviso": "Notice",
+      "informe": "Report",
+      "propuesta": "Proposal",
+      "parte": "Work order"
+    },
+    "estados": {
+      "pendiente": "Pending",
+      "enviando": "Sending",
+      "enviado": "Sent",
+      "rechazado": "Rejected",
+      "devuelto": "Bounced"
+    },
+    "avisos": {
+      "revision": "Next inspection",
+      "fin_vida": "End of life"
+    },
+    "ficha": {
+      "volver": "Back to the Mail Center",
+      "reenviar": "Resend",
+      "reenviarConfirmar": "The same email will be sent again to {{a}}, as a new send. This one stays as it is.",
+      "reenviarEnCurso": "It is still being sent: wait to see how it ends.",
+      "reenviado": "Resent: it will go out in a moment",
+      "envio": "Send",
+      "copia": "Blind copy",
+      "responderA": "Replies to",
+      "idioma": "Language",
+      "enviadoPor": "Sent by",
+      "automatico": "Automatic",
+      "enviadoAt": "Went out",
+      "reenvioDe": "Resend of",
+      "envioDel": "Send of {{fecha}}",
+      "nadie": "Nobody: copy only",
+      "intentos": "Attempts",
+      "intentoOk": "Went out",
+      "intentosVacio": "Attempts are not recorded: this send predates them.",
+      "intentosEnCurso": "No attempt has been made yet.",
+      "lleva": "What it contains",
+      "reenvios": "Resends",
+      "correo": "The email",
+      "sinCuerpo": "This send went out before the text of each email was stored: it cannot be shown as it was sent.",
+      "cuerpoEnCurso": "The text is stored when the email is composed, as soon as the queue sends it.",
+      "sinDestinatarioAviso": "No contact was allowed to receive this: it only went to the office copy mailbox. Give someone the permission in the client record."
+    }
   }
 }
