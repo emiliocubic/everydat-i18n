@@ -1424,7 +1424,9 @@
     "licenciaHint": "La firma la central de Cubic y la renueva cada día. Con ella, lo contratado (módulos, límites de personas y tope de la IA) se cambia en la central y aquí solo se ve; el plazo de la papelera y la central de pegatinas siguen aquí.",
     "licenciaEmitida": "Emitida el {{fecha}}",
     "licenciaVence": "Vale hasta el {{fecha}}",
-    "sinLicencia": "Todavía no ha llegado ninguna licencia firmada de la central: vale lo que se guarda en esta pantalla."
+    "sinLicencia": "Todavía no ha llegado ninguna licencia firmada de la central: vale lo que se guarda en esta pantalla.",
+    "licenciaDegradada": "La instancia ya recibió una licencia firmada, pero ahora no le queda ninguna válida",
+    "licenciaDegradadaHint": "La licencia guardada ha desaparecido o no cuadra, y la copia de la última válida tampoco: mientras la central no entregue otra, vale lo que se guarda en esta pantalla. A Cubic ya le ha llegado la señal. Para salir de aquí, entregar la licencia desde la central."
   },
   "admins": {
     "title": "Usuarios",

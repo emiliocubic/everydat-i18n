@@ -1417,7 +1417,9 @@
     "licenciaHint": "Signée par la centrale de Cubic et renouvelée chaque jour. Avec elle, ce qui est contracté (modules, limites de personnes et plafond de l'IA) se modifie dans la centrale et n'est qu'affiché ici ; la durée de la corbeille et la centrale des étiquettes restent ici.",
     "licenciaEmitida": "Émise le {{fecha}}",
     "licenciaVence": "Valable jusqu'au {{fecha}}",
-    "sinLicencia": "Aucune licence signée n'est encore arrivée de la centrale : ce qui est enregistré sur cet écran s'applique."
+    "sinLicencia": "Aucune licence signée n'est encore arrivée de la centrale : ce qui est enregistré sur cet écran s'applique.",
+    "licenciaDegradada": "L'instance a déjà reçu une licence signée, mais aucune n'est valable maintenant",
+    "licenciaDegradadaHint": "La licence enregistrée a disparu ou ne correspond pas, et la copie de la dernière valable non plus : tant que la centrale n'en livre pas une nouvelle, ce qui est enregistré sur cet écran s'applique. Cubic a déjà reçu l'alerte. Pour en sortir, livrer la licence depuis la centrale."
   },
   "admins": {
     "title": "Utilisateurs",

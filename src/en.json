@@ -1553,7 +1553,9 @@
     "licenciaHint": "Signed by the Cubic hub and renewed every day. With it, what is contracted (modules, people limits and AI cap) is changed in the hub and only shown here; the recycle bin retention and the sticker hub stay here.",
     "licenciaEmitida": "Issued on {{fecha}}",
     "licenciaVence": "Valid until {{fecha}}",
-    "sinLicencia": "No signed licence has arrived from the hub yet: what is saved on this screen applies."
+    "sinLicencia": "No signed licence has arrived from the hub yet: what is saved on this screen applies.",
+    "licenciaDegradada": "This instance has received a signed licence before, but none is valid now",
+    "licenciaDegradadaHint": "The stored licence is missing or does not check out, and neither does the copy of the last valid one: until the hub delivers a new one, what is saved on this screen applies. Cubic has already received the alert. To fix it, deliver the licence from the hub."
   },
   "admins": {
     "title": "Users",
