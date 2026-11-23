@@ -4528,7 +4528,8 @@
           "revision": "Próxima revisión",
           "fin_vida": "Fin de vida útil",
           "informe": "Informe",
-          "propuesta": "Propuesta"
+          "propuesta": "Propuesta",
+          "parte": "Parte de trabajo"
         },
         "propia": "Texto propio de la empresa",
         "deSerie": "Texto de serie",
@@ -4548,7 +4549,10 @@
           "enlace": "El enlace de descarga de cada destinatario",
           "propuesta": "El número de la propuesta",
           "version": "El número de la versión",
-          "instalaciones": "Las instalaciones de la propuesta"
+          "instalaciones": "Las instalaciones de la propuesta",
+          "parte": "El número del parte",
+          "proyecto": "El proyecto del parte",
+          "instalacion": "La instalación del proyecto"
         },
         "ayuda": "Las variables van entre llaves y se rellenan al mandar el correo. {lista} va solo en el texto: es la lista de instalaciones o de equipos; sin ella, la lista sale al final. El saludo, los datos de contacto y la firma los pone la aplicación.",
         "ayudaInforme": "Es el texto que propone el botón Enviar de cada versión, y se puede retocar antes de mandar. {enlace} es donde va el enlace de descarga (sin él, va al final). El saludo y la despedida los pone la aplicación."
@@ -7548,7 +7552,15 @@
       "conflicto_other": "{{count}} actuaciones también están en {{partes}}: un parte de la APP llegó con algo que ya estaba en otro parte. Anula uno de los dos.",
       "cedidas": "Una actuación de este borrador ha pasado a {{partes}}, hecho desde la APP.",
       "cedidas_other": "{{count}} actuaciones de este borrador han pasado a {{partes}}, hecho desde la APP.",
-      "conflictoBanda": "Comparte actuaciones con otro parte: hay que anular uno de los dos"
+      "conflictoBanda": "Comparte actuaciones con otro parte: hay que anular uno de los dos",
+      "enviar": "Enviar",
+      "envio": {
+        "titulo": "Enviar el parte al cliente",
+        "seccion": "Enviado al cliente",
+        "iba_emitido": "iba emitido",
+        "iba_firmado": "iba firmado",
+        "anulado": "Anular no le avisa: cada destinatario conserva lo que se le envió."
+      }
     },
     "altas": {
       "datos": "Datos principales",
@@ -11892,7 +11904,8 @@
       "enviado_one": "Enviado: sale en unos momentos",
       "enviado_other": "{{count}} correos enviados: salen en unos momentos",
       "papel": {
-        "contacto_propuesta": "Contacto de la propuesta"
+        "contacto_propuesta": "Contacto de la propuesta",
+        "contacto_tecnico": "Contacto técnico del proyecto"
       }
     }
   }

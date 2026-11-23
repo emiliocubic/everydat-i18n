@@ -4528,7 +4528,8 @@
           "revision": "Next inspection",
           "fin_vida": "End of service life",
           "informe": "Report",
-          "propuesta": "Proposal"
+          "propuesta": "Proposal",
+          "parte": "Work report"
         },
         "propia": "Company's own text",
         "deSerie": "Default text",
@@ -4548,7 +4549,10 @@
           "enlace": "Each recipient's download link",
           "propuesta": "The number of the proposal",
           "version": "The number of the version",
-          "instalaciones": "The sites of the proposal"
+          "instalaciones": "The sites of the proposal",
+          "parte": "The work report number",
+          "proyecto": "The project of the work report",
+          "instalacion": "The site of the project"
         },
         "ayuda": "Variables go in braces and are filled in when the email is sent. {lista} only goes in the text: it is the list of sites or equipment; without it, the list goes at the end. The greeting, contact details and signature are added by the application.",
         "ayudaInforme": "This is the text the Send button of each version proposes, and it can be edited before sending. {enlace} is where the download link goes (without it, it goes at the end). The greeting and sign-off are added by the application."
@@ -7548,7 +7552,15 @@
       "conflicto_other": "{{count}} jobs are also in {{partes}}: a report from the APP arrived with something already in another report. Void one of the two.",
       "cedidas": "One job in this draft has moved to {{partes}}, made from the APP.",
       "cedidas_other": "{{count}} jobs in this draft have moved to {{partes}}, made from the APP.",
-      "conflictoBanda": "Shares jobs with another report: one of the two must be voided"
+      "conflictoBanda": "Shares jobs with another report: one of the two must be voided",
+      "enviar": "Send",
+      "envio": {
+        "titulo": "Send the work report to the client",
+        "seccion": "Sent to the client",
+        "iba_emitido": "sent as issued",
+        "iba_firmado": "sent as signed",
+        "anulado": "Voiding does not notify the client: each recipient keeps what was sent to them."
+      }
     },
     "altas": {
       "datos": "Main details",
@@ -11892,7 +11904,8 @@
       "enviado_one": "Sent: it goes out in a moment",
       "enviado_other": "{{count}} emails sent: they go out in a moment",
       "papel": {
-        "contacto_propuesta": "Contact of the proposal"
+        "contacto_propuesta": "Contact of the proposal",
+        "contacto_tecnico": "Technical contact of the project"
       }
     }
   }

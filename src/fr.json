@@ -4220,7 +4220,8 @@
           "revision": "Prochaine vérification",
           "fin_vida": "Fin de vie",
           "informe": "Rapport",
-          "propuesta": "Proposition"
+          "propuesta": "Proposition",
+          "parte": "Bon d'intervention"
         },
         "propia": "Texte propre à l'entreprise",
         "deSerie": "Texte par défaut",
@@ -4240,7 +4241,10 @@
           "enlace": "Le lien de téléchargement de chaque destinataire",
           "propuesta": "Le numéro de la proposition",
           "version": "Le numéro de la version",
-          "instalaciones": "Les sites de la proposition"
+          "instalaciones": "Les sites de la proposition",
+          "parte": "Le numéro du bon",
+          "proyecto": "Le projet du bon",
+          "instalacion": "Le site du projet"
         },
         "ayuda": "Les variables vont entre accolades et sont remplies à l'envoi. {lista} ne va que dans le texte : c'est la liste des sites ou des équipements ; sans elle, la liste apparaît à la fin. La salutation, les coordonnées et la signature sont ajoutées par l'application.",
         "ayudaInforme": "C'est le texte que propose le bouton Envoyer de chaque version, modifiable avant l'envoi. {enlace} est l'endroit du lien de téléchargement (sans lui, il va à la fin). La salutation et la formule finale sont ajoutées par l'application."
@@ -6581,7 +6585,15 @@
       "conflicto_other": "{{count}} interventions figurent aussi dans {{partes}} : un bon de l'APP est arrivé avec des interventions déjà présentes dans un autre bon. Annulez l'un des deux.",
       "cedidas": "Une intervention de ce brouillon est passée au bon {{partes}}, établi depuis l'APP.",
       "cedidas_other": "{{count}} interventions de ce brouillon sont passées au bon {{partes}}, établi depuis l'APP.",
-      "conflictoBanda": "Partage des interventions avec un autre bon : il faut annuler l'un des deux"
+      "conflictoBanda": "Partage des interventions avec un autre bon : il faut annuler l'un des deux",
+      "enviar": "Envoyer",
+      "envio": {
+        "titulo": "Envoyer le bon d'intervention au client",
+        "seccion": "Envoyé au client",
+        "iba_emitido": "envoyé émis",
+        "iba_firmado": "envoyé signé",
+        "anulado": "Annuler ne prévient pas le client : chaque destinataire garde ce qui lui a été envoyé."
+      }
     },
     "altas": {
       "datos": "Données principales",
@@ -10157,7 +10169,8 @@
       "enviado_one": "Envoyé : il part dans un instant",
       "enviado_other": "{{count}} e-mails envoyés : ils partent dans un instant",
       "papel": {
-        "contacto_propuesta": "Contact de la proposition"
+        "contacto_propuesta": "Contact de la proposition",
+        "contacto_tecnico": "Contact technique du projet"
       }
     }
   }
