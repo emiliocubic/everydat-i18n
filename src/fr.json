@@ -4659,7 +4659,9 @@
           "enviar_informe_other": "Envoyer la version {{numero}} du rapport {{informe}} à {{count}} contacts",
           "reenviar_envio_documento": "Renvoyer l'envoi {{envio}} du Mail Center",
           "enviar_propuesta_one": "Envoyer la version {{numero}} de la proposition {{propuesta}} à {{count}} contact",
-          "enviar_propuesta_other": "Envoyer la version {{numero}} de la proposition {{propuesta}} à {{count}} contacts"
+          "enviar_propuesta_other": "Envoyer la version {{numero}} de la proposition {{propuesta}} à {{count}} contacts",
+          "enviar_parte_one": "Envoyer le bon {{parte}} à {{count}} contact",
+          "enviar_parte_other": "Envoyer le bon {{parte}} à {{count}} contacts"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -5184,7 +5186,8 @@
               "versionPropuesta": "Envoi de la {{version}}",
               "recibePresupuestos": "reçoit les devis de {{donde}}",
               "papel": {
-                "contacto_propuesta": "est le contact de la proposition"
+                "contacto_propuesta": "est le contact de la proposition",
+                "contacto_tecnico": "est le contact technique du projet"
               },
               "sinDocumento": "Cette version n’a pas de document : elle n’est pas envoyée"
             }

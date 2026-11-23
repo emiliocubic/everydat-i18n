@@ -5254,7 +5254,9 @@
           "enviar_informe_other": "Enviar la versión {{numero}} del informe {{informe}} a {{count}} contactos",
           "reenviar_envio_documento": "Reenviar el envío {{envio}} del Mail Center",
           "enviar_propuesta_one": "Enviar la versión {{numero}} de la propuesta {{propuesta}} a {{count}} contacto",
-          "enviar_propuesta_other": "Enviar la versión {{numero}} de la propuesta {{propuesta}} a {{count}} contactos"
+          "enviar_propuesta_other": "Enviar la versión {{numero}} de la propuesta {{propuesta}} a {{count}} contactos",
+          "enviar_parte_one": "Enviar el parte {{parte}} a {{count}} contacto",
+          "enviar_parte_other": "Enviar el parte {{parte}} a {{count}} contactos"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -5830,7 +5832,8 @@
               "versionPropuesta": "Va la {{version}}",
               "recibePresupuestos": "recibe presupuestos de {{donde}}",
               "papel": {
-                "contacto_propuesta": "es el contacto de la propuesta"
+                "contacto_propuesta": "es el contacto de la propuesta",
+                "contacto_tecnico": "es el contacto técnico del proyecto"
               },
               "sinDocumento": "Esta versión no tiene documento: no se envía"
             }
