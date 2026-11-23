@@ -4874,7 +4874,11 @@
           "modelo_one": "Model: {{lista}}",
           "modelo_other": "Models: {{lista}}",
           "referencia_one": "Reference: {{lista}}",
-          "referencia_other": "References: {{lista}}"
+          "referencia_other": "References: {{lista}}",
+          "archivo_one": "File: {{lista}}",
+          "archivo_other": "Files: {{lista}}",
+          "carpeta_documentos_one": "Folder: {{lista}}",
+          "carpeta_documentos_other": "Folders: {{lista}}"
         },
         "num": "no. {{id}}",
         "steps": {
@@ -5179,7 +5183,27 @@
           "quitar_otro_producto_bloque": "Remove a block from other products, with its products",
           "cambiar_plantilla_correo": "Change the text of the {{aviso}} notice in {{idioma}}",
           "restablecer_plantilla_correo": "Restore the default text of the {{aviso}} notice in {{idioma}}",
-          "cambiar_sobre_empresa": "Change the «About our company» text"
+          "cambiar_sobre_empresa": "Change the «About our company» text",
+          "borrar_archivo": "Delete file {{archivo}}: it goes to the recycle bin",
+          "recuperar_documento": "Restore file {{archivo}} from the recycle bin",
+          "crear_carpeta_documentos": "Create document folder “{{nombre}}” in General documents",
+          "crear_carpeta_documentos_ficha": "Create document folder “{{nombre}}” in the Documentation of {{ficha}}",
+          "crear_carpeta_documentos_dentro": "Create document folder “{{nombre}}” inside folder {{padre}}",
+          "renombrar_carpeta_documentos": "Rename folder {{carpeta}} to “{{nombre}}”",
+          "mover_carpeta_documentos": "Move folder {{carpeta}}, with everything in it, inside folder {{padre}}",
+          "mover_carpeta_documentos_raiz": "Move folder {{carpeta}}, with everything in it, to the root of its place",
+          "borrar_carpeta_documentos": "Delete folder {{carpeta}}: it goes to the recycle bin",
+          "recuperar_carpeta_documentos": "Restore folder {{carpeta}} from the recycle bin",
+          "editar_documento": "Change file {{archivo}}: {{cambios}}",
+          "mover_documento": "Move file {{archivo}} to folder {{carpeta}}",
+          "mover_documento_raiz": "Move file {{archivo}} to the root of its place",
+          "vincular_documento": "Make file {{archivo}} also appear in {{ficha}}",
+          "desvincular_documento": "Remove file {{archivo}} from {{ficha}} (the file is not deleted)",
+          "desvincular_documento_vinculo": "link {{id}}",
+          "dar_permiso_archivo": "Give {{a}} permission to {{nivel}} file {{archivo}}",
+          "dar_permiso_carpeta_documentos": "Give {{a}} permission to {{nivel}} folder {{carpeta}} and what inside follows it",
+          "quitar_permiso_archivo": "Remove permission {{permiso}} from file {{archivo}}",
+          "quitar_permiso_carpeta_documentos": "Remove permission {{permiso}} from folder {{carpeta}}"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -6072,6 +6096,32 @@
             "nuevo": "New text: {{texto}}",
             "vacio": "empty"
           }
+        },
+        "documentos": {
+          "todos": "all internal staff",
+          "rol": "role {{id}}",
+          "persona": "person {{id}}",
+          "rolSinNombre": "a role",
+          "personaSinNombre": "a person",
+          "nivel": {
+            "lectura": "view",
+            "descarga": "download"
+          },
+          "ficha": {
+            "cliente": "client {{id}}",
+            "emplazamiento": "site {{id}}",
+            "proyecto": "project {{id}}",
+            "elemento": "item {{id}}"
+          },
+          "da": "{{quien}} will be able to {{nivel}} it.",
+          "daTodos": "All internal staff will be able to {{nivel}} it.",
+          "primeroCarpeta": "It is its first permission: it stops following those of “{{carpeta}}”, and whoever is not on its list stops seeing it.",
+          "primeroSerie": "It is its first permission: until now all internal staff could view and download it; from now on, only those on its list.",
+          "quienDaQueda": "You stay on the list with “download”, so you are not locked out; it can be removed later.",
+          "quita": "{{quien}} no longer has permission to {{nivel}} it through this list.",
+          "quitaTodos": "All internal staff no longer have permission to {{nivel}} it through this list.",
+          "ultimoCarpeta": "It is its last permission: it goes back to following the permissions of “{{carpeta}}”.",
+          "ultimoSerie": "It is its last permission: it goes back to the default rule, under which all internal staff can view and download it."
         }
       },
       "deleteChat": "Delete conversation",

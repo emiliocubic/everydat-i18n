@@ -4874,7 +4874,11 @@
           "modelo_one": "Modelo: {{lista}}",
           "modelo_other": "Modelos: {{lista}}",
           "referencia_one": "Referencia: {{lista}}",
-          "referencia_other": "Referencias: {{lista}}"
+          "referencia_other": "Referencias: {{lista}}",
+          "archivo_one": "Archivo: {{lista}}",
+          "archivo_other": "Archivos: {{lista}}",
+          "carpeta_documentos_one": "Carpeta: {{lista}}",
+          "carpeta_documentos_other": "Carpetas: {{lista}}"
         },
         "num": "n.º {{id}}",
         "steps": {
@@ -5179,7 +5183,27 @@
           "quitar_otro_producto_bloque": "Quitar un bloque de los otros productos, con sus productos",
           "cambiar_plantilla_correo": "Cambiar el texto del aviso {{aviso}} en {{idioma}}",
           "restablecer_plantilla_correo": "Volver al texto de serie del aviso {{aviso}} en {{idioma}}",
-          "cambiar_sobre_empresa": "Cambiar el texto «Sobre nuestra empresa»"
+          "cambiar_sobre_empresa": "Cambiar el texto «Sobre nuestra empresa»",
+          "borrar_archivo": "Borrar el archivo {{archivo}}: va a la papelera",
+          "recuperar_documento": "Sacar de la papelera el archivo {{archivo}}",
+          "crear_carpeta_documentos": "Crear la carpeta de documentos «{{nombre}}» en Documentos generales",
+          "crear_carpeta_documentos_ficha": "Crear la carpeta de documentos «{{nombre}}» en la Documentación del {{ficha}}",
+          "crear_carpeta_documentos_dentro": "Crear la carpeta de documentos «{{nombre}}» dentro de la carpeta {{padre}}",
+          "renombrar_carpeta_documentos": "Cambiar el nombre de la carpeta {{carpeta}} a «{{nombre}}»",
+          "mover_carpeta_documentos": "Mover la carpeta {{carpeta}}, con lo que tiene dentro, dentro de la carpeta {{padre}}",
+          "mover_carpeta_documentos_raiz": "Mover la carpeta {{carpeta}}, con lo que tiene dentro, a la raíz de su sitio",
+          "borrar_carpeta_documentos": "Borrar la carpeta {{carpeta}}: va a la papelera",
+          "recuperar_carpeta_documentos": "Sacar de la papelera la carpeta {{carpeta}}",
+          "editar_documento": "Cambiar el archivo {{archivo}}: {{cambios}}",
+          "mover_documento": "Mover el archivo {{archivo}} a la carpeta {{carpeta}}",
+          "mover_documento_raiz": "Mover el archivo {{archivo}} a la raíz de su sitio",
+          "vincular_documento": "Hacer que el archivo {{archivo}} salga también en el {{ficha}}",
+          "desvincular_documento": "Quitar el archivo {{archivo}} del {{ficha}} (el archivo no se borra)",
+          "desvincular_documento_vinculo": "vínculo {{id}}",
+          "dar_permiso_archivo": "Dar a {{a}} permiso para {{nivel}} el archivo {{archivo}}",
+          "dar_permiso_carpeta_documentos": "Dar a {{a}} permiso para {{nivel}} la carpeta {{carpeta}} y lo de dentro que la sigue",
+          "quitar_permiso_archivo": "Quitar el permiso {{permiso}} del archivo {{archivo}}",
+          "quitar_permiso_carpeta_documentos": "Quitar el permiso {{permiso}} de la carpeta {{carpeta}}"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -6072,6 +6096,32 @@
             "nuevo": "Texto nuevo: {{texto}}",
             "vacio": "vacío"
           }
+        },
+        "documentos": {
+          "todos": "todos los internos",
+          "rol": "el rol {{id}}",
+          "persona": "la persona {{id}}",
+          "rolSinNombre": "un rol",
+          "personaSinNombre": "una persona",
+          "nivel": {
+            "lectura": "ver",
+            "descarga": "descargar"
+          },
+          "ficha": {
+            "cliente": "cliente {{id}}",
+            "emplazamiento": "emplazamiento {{id}}",
+            "proyecto": "proyecto {{id}}",
+            "elemento": "equipo {{id}}"
+          },
+          "da": "{{quien}} podrá {{nivel}}.",
+          "daTodos": "Todos los internos podrán {{nivel}}.",
+          "primeroCarpeta": "Es su primer permiso: deja de seguir los de «{{carpeta}}» y deja de verlo quien no esté en su lista.",
+          "primeroSerie": "Es su primer permiso: hasta ahora lo veían y lo descargaban todos los internos; desde ahora, solo quien esté en su lista.",
+          "quienDaQueda": "Tú quedas en la lista con «descargar», para no quedarte fuera; luego se puede quitar.",
+          "quita": "{{quien}} deja de tener por esta lista el permiso para {{nivel}}.",
+          "quitaTodos": "Todos los internos dejan de tener por esta lista el permiso para {{nivel}}.",
+          "ultimoCarpeta": "Es su último permiso: vuelve a seguir los permisos de «{{carpeta}}».",
+          "ultimoSerie": "Es su último permiso: vuelve a la regla de serie, que lo ven y lo descargan todos los internos."
         }
       },
       "deleteChat": "Borrar conversación",
