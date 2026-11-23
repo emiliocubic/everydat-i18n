@@ -10017,7 +10017,8 @@
       "correo": "L'e-mail",
       "sinCuerpo": "Cet envoi est parti avant que le texte de chaque e-mail ne soit enregistré : il ne peut pas être montré tel qu'il est parti.",
       "cuerpoEnCurso": "Le texte est enregistré à la composition de l'e-mail, dès que la file l'envoie.",
-      "sinDestinatarioAviso": "Aucun contact n'avait l'autorisation de recevoir ceci : il n'est parti qu'à la boîte de copie du bureau. Donnez l'autorisation à quelqu'un dans la fiche du client."
+      "sinDestinatarioAviso": "Aucun contact n'avait l'autorisation de recevoir ceci : il n'est parti qu'à la boîte de copie du bureau. Donnez l'autorisation à quelqu'un dans la fiche du client.",
+      "noSeReenvia": "Impossible de le renvoyer :"
     }
   }
 }

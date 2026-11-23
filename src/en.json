@@ -11755,7 +11755,8 @@
       "correo": "The email",
       "sinCuerpo": "This send went out before the text of each email was stored: it cannot be shown as it was sent.",
       "cuerpoEnCurso": "The text is stored when the email is composed, as soon as the queue sends it.",
-      "sinDestinatarioAviso": "No contact was allowed to receive this: it only went to the office copy mailbox. Give someone the permission in the client record."
+      "sinDestinatarioAviso": "No contact was allowed to receive this: it only went to the office copy mailbox. Give someone the permission in the client record.",
+      "noSeReenvia": "It cannot be resent:"
     }
   }
 }

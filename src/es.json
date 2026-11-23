@@ -11755,7 +11755,8 @@
       "correo": "El correo",
       "sinCuerpo": "Este envío salió antes de que se guardara el texto de cada correo: no se puede enseñar tal como salió.",
       "cuerpoEnCurso": "El texto se guarda al componer el correo, en cuanto la cola lo mande.",
-      "sinDestinatarioAviso": "Ningún contacto tenía permiso para recibir esto: salió solo al buzón de copia de la oficina. Dale el permiso a alguien en la ficha del cliente."
+      "sinDestinatarioAviso": "Ningún contacto tenía permiso para recibir esto: salió solo al buzón de copia de la oficina. Dale el permiso a alguien en la ficha del cliente.",
+      "noSeReenvia": "No se puede reenviar:"
     }
   }
 }
