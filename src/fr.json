@@ -1720,6 +1720,14 @@
         "reenviarAyuda": "Pour qui ne l'a pas reçu ou l'a laissé expirer : il reçoit un nouveau lien pour définir son mot de passe et l'ancien ne vaut plus.",
         "enviado": "E-mail envoyé à {{email}}",
         "error": "Impossible de l'envoyer : {{motivo}}"
+      },
+      "segundoFactor": {
+        "quitar": "Retirer la validation en deux étapes",
+        "quitarAyuda": "Pour qui a perdu son téléphone et ses codes de récupération. Vérifiez d’abord que la personne qui le demande est bien celle qu’elle prétend être.",
+        "confirmar": "La validation en deux étapes de {{nombre}} sera retirée, toutes ses sessions seront fermées (l’application sur ses téléphones et le panneau dans ses navigateurs) et un e-mail l’en avertira. Ensuite, la personne se connectera avec son seul mot de passe et pourra la réactiver dans Mon profil.",
+        "tuPassword": "Votre mot de passe, pour confirmer",
+        "quitarBoton": "Retirer",
+        "quitado": "Validation en deux étapes retirée à {{nombre}}"
       }
     },
     "soporte": {
@@ -7855,7 +7863,8 @@
       "purged": "Suppression définitive",
       "login_soporte_central": "Connexion du support depuis la centrale",
       "login_soporte_directo": "Connexion directe du support, sans la centrale",
-      "login_failed_pase": "Laissez-passer du support refusé"
+      "login_failed_pase": "Laissez-passer du support refusé",
+      "segundo_factor_quitado": "Validation en deux étapes retirée par une autre personne"
     },
     "via": "via {{nombre}}"
   },

@@ -1857,6 +1857,14 @@
         "reenviarAyuda": "For someone who did not get it or let it expire: they get a new link to set their password and the previous one stops working.",
         "enviado": "Email sent to {{email}}",
         "error": "Could not send it: {{motivo}}"
+      },
+      "segundoFactor": {
+        "quitar": "Remove two-step verification",
+        "quitarAyuda": "For someone who has lost their phone and their recovery codes. Check first that whoever asks is who they say they are.",
+        "confirmar": "Two-step verification will be removed from {{nombre}}, all their sessions will be closed (the app on their phones and the panel in their browsers) and they will get an email telling them. From then on they will sign in with just their password and can turn it back on in My profile.",
+        "tuPassword": "Your password, to confirm",
+        "quitarBoton": "Remove",
+        "quitado": "Two-step verification removed from {{nombre}}"
       }
     },
     "soporte": {
@@ -8819,7 +8827,8 @@
       "purged": "Permanently deleted",
       "login_soporte_central": "Support sign-in from the central",
       "login_soporte_directo": "Direct support sign-in, without the central",
-      "login_failed_pase": "Support pass rejected"
+      "login_failed_pase": "Support pass rejected",
+      "segundo_factor_quitado": "Two-step verification removed by someone else"
     },
     "via": "via {{nombre}}"
   },

@@ -1728,6 +1728,14 @@
         "reenviarAyuda": "Para quien no lo ha recibido o lo dejó caducar: le llega otro enlace para poner su contraseña y el anterior deja de valer.",
         "enviado": "Correo enviado a {{email}}",
         "error": "No se ha podido mandar: {{motivo}}"
+      },
+      "segundoFactor": {
+        "quitar": "Quitar el segundo factor",
+        "quitarAyuda": "Para quien ha perdido el móvil y sus códigos de recuperación. Comprueba antes que quien lo pide es quien dice.",
+        "confirmar": "Se quitará la verificación en dos pasos a {{nombre}}, se cerrarán todas sus sesiones (la app en sus móviles y el panel en sus navegadores) y le llegará un correo avisándole. Desde entonces entrará solo con su contraseña y podrá volver a activarla en Mi perfil.",
+        "tuPassword": "Tu contraseña, para confirmar",
+        "quitarBoton": "Quitar",
+        "quitado": "Verificación en dos pasos quitada a {{nombre}}"
       }
     },
     "soporte": {
@@ -8819,7 +8827,8 @@
       "purged": "Borrado definitivo",
       "login_soporte_central": "Entrada de soporte desde la central",
       "login_soporte_directo": "Entrada directa de soporte, sin central",
-      "login_failed_pase": "Pase de soporte rechazado"
+      "login_failed_pase": "Pase de soporte rechazado",
+      "segundo_factor_quitado": "Verificación en dos pasos quitada por otra persona"
     },
     "via": "vía {{nombre}}"
   },
