@@ -317,7 +317,14 @@
       "emailCambiado": "Email changed. From now on, sign in with the new one.",
       "resumenAlertas": "Daily alert summary",
       "resumenAlertasHint": "Every morning, an email with the new bell alerts you have not read yet. If there are none, nothing is sent.",
-      "resumenAlertasCasilla": "Get the daily summary by email"
+      "resumenAlertasCasilla": "Get the daily summary by email",
+      "sesiones": "Open sessions",
+      "sesionesHint": "The app on your phones and the panel in other browsers. The app session expires by itself after 60 days without use.",
+      "cerrarSesiones": "Sign out of all my devices",
+      "cerrarSesionesTitulo": "Sign out of all your devices",
+      "cerrarSesionesMensaje": "The app will be signed out on all your phones and the panel in your other browsers. You stay signed in here. Anything the app still has to send is kept and sent when you sign in again.",
+      "cerrarSesionesBoton": "Sign out the others",
+      "sesionesCerradas": "Signed out of all your other devices."
     },
     "demasiados": "Too many attempts. Wait a minute and try again.",
     "campo": {
@@ -8826,7 +8833,8 @@
       "login_soporte_central": "Support sign-in from the central",
       "login_soporte_directo": "Direct support sign-in, without the central",
       "login_failed_pase": "Support pass rejected",
-      "segundo_factor_quitado": "Two-step verification removed by someone else"
+      "segundo_factor_quitado": "Two-step verification removed by someone else",
+      "sesiones_cerradas": "Signed out of all devices"
     },
     "via": "via {{nombre}}"
   },

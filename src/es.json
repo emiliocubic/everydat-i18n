@@ -317,7 +317,14 @@
       "emailCambiado": "Email cambiado. Desde ahora entras con el nuevo.",
       "resumenAlertas": "Resumen diario de alertas",
       "resumenAlertasHint": "Cada mañana, un correo con las alertas nuevas de la campana que aún no has leído. Sin ninguna, no llega nada.",
-      "resumenAlertasCasilla": "Recibir el resumen diario por correo"
+      "resumenAlertasCasilla": "Recibir el resumen diario por correo",
+      "sesiones": "Sesiones abiertas",
+      "sesionesHint": "La app en tus móviles y el panel en otros navegadores. La app caduca sola tras 60 días sin usarse.",
+      "cerrarSesiones": "Cerrar sesión en todos mis dispositivos",
+      "cerrarSesionesTitulo": "Cerrar sesión en todos tus dispositivos",
+      "cerrarSesionesMensaje": "La app se cerrará en todos tus móviles y el panel en los demás navegadores. Aquí sigues dentro. Lo que la app tenga pendiente de enviar se guarda y se manda cuando vuelvas a entrar.",
+      "cerrarSesionesBoton": "Cerrar las demás",
+      "sesionesCerradas": "Sesiones cerradas en todos tus demás dispositivos."
     },
     "demasiados": "Demasiados intentos. Espera un minuto y vuelve a intentarlo.",
     "campo": {
@@ -8826,7 +8833,8 @@
       "login_soporte_central": "Entrada de soporte desde la central",
       "login_soporte_directo": "Entrada directa de soporte, sin central",
       "login_failed_pase": "Pase de soporte rechazado",
-      "segundo_factor_quitado": "Verificación en dos pasos quitada por otra persona"
+      "segundo_factor_quitado": "Verificación en dos pasos quitada por otra persona",
+      "sesiones_cerradas": "Sesiones cerradas en todos los dispositivos"
     },
     "via": "vía {{nombre}}"
   },

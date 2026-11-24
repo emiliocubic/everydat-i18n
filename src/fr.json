@@ -310,7 +310,14 @@
       "emailCambiado": "E-mail modifié. Désormais, connectez-vous avec le nouveau.",
       "resumenAlertas": "Résumé quotidien des alertes",
       "resumenAlertasHint": "Chaque matin, un e-mail avec les nouvelles alertes de la cloche que vous n'avez pas encore lues. S'il n'y en a aucune, rien n'est envoyé.",
-      "resumenAlertasCasilla": "Recevoir le résumé quotidien par e-mail"
+      "resumenAlertasCasilla": "Recevoir le résumé quotidien par e-mail",
+      "sesiones": "Sessions ouvertes",
+      "sesionesHint": "L'application sur vos mobiles et le panneau dans d'autres navigateurs. La session de l'application expire seule après 60 jours sans utilisation.",
+      "cerrarSesiones": "Me déconnecter de tous mes appareils",
+      "cerrarSesionesTitulo": "Vous déconnecter de tous vos appareils",
+      "cerrarSesionesMensaje": "L'application sera déconnectée sur tous vos mobiles et le panneau dans vos autres navigateurs. Ici, vous restez connecté. Ce que l'application doit encore envoyer est conservé et envoyé à votre prochaine connexion.",
+      "cerrarSesionesBoton": "Déconnecter les autres",
+      "sesionesCerradas": "Déconnecté de tous vos autres appareils."
     },
     "demasiados": "Trop de tentatives. Attendez une minute et réessayez.",
     "campo": {
@@ -7862,7 +7869,8 @@
       "login_soporte_central": "Connexion du support depuis la centrale",
       "login_soporte_directo": "Connexion directe du support, sans la centrale",
       "login_failed_pase": "Laissez-passer du support refusé",
-      "segundo_factor_quitado": "Validation en deux étapes retirée par une autre personne"
+      "segundo_factor_quitado": "Validation en deux étapes retirée par une autre personne",
+      "sesiones_cerradas": "Déconnexion de tous les appareils"
     },
     "via": "via {{nombre}}"
   },
