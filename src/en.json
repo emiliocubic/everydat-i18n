@@ -8125,7 +8125,8 @@
       "fallos_other": "{{count}} failed attempts",
       "clase": {
         "sin_conexion": "No connection",
-        "sin_respuesta": "No answer from the server"
+        "sin_respuesta": "No answer from the server",
+        "base_rehecha": "The server's database has been rebuilt"
       },
       "explica": {
         "pendiente": "To send: it will go the next time you tap “Send” with a connection.",
@@ -8133,7 +8134,8 @@
         "enviando": "Being sent.",
         "aceptada": "Sent: the server has accepted it.",
         "rechazada": "Rejected: the server has not accepted it. What it answered is below. Correct it and resend it, or discard it.",
-        "conflicto": "In conflict: someone changed the same thing on the server in the meantime, and the server has not saved yours. Both versions are below."
+        "conflicto": "In conflict: someone changed the same thing on the server in the meantime, and the server has not saved yours. Both versions are below.",
+        "base_rehecha": "In conflict: the server's database has been rebuilt (for example, when restoring a backup) after you did this, and it has not been sent so as not to write over equipment that may no longer be the same."
       },
       "queHacer": {
         "sin_conexion": "There was no connection. Send again when you have coverage.",
@@ -8147,7 +8149,8 @@
         "central": "The server failed while receiving it. It stays pending and the rest still goes; if it keeps happening, share the log with support.",
         "otro": "The server did not accept it. If you do not know why, share the log with support.",
         "bloqueada": "This inspection can no longer be corrected: it has been validated at the office, or it is in an issued report or a delivered work report. Discard this correction; if it must change, the office has to sort it out.",
-        "licencia": "The instance is read-only because your company's licence has expired. Don't discard it: it stays in the queue and goes back to pending on its own as soon as the company renews the licence. If you did it before it expired and it still won't go through, tell the office."
+        "licencia": "The instance is read-only because your company's licence has expired. Don't discard it: it stays in the queue and goes back to pending on its own as soon as the company renews the licence. If you did it before it expired and it still won't go through, tell the office.",
+        "base_rehecha": "Check in the project, now updated, that the equipment and the rest are still the same. If they are, resend it; if not, discard it. If in doubt, share the log with support before deciding."
       },
       "que": {
         "equipoSinDatos": "unidentified",

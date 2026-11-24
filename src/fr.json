@@ -7161,7 +7161,8 @@
       "fallos_other": "{{count}} tentatives échouées",
       "clase": {
         "sin_conexion": "Pas de connexion",
-        "sin_respuesta": "Pas de réponse du serveur"
+        "sin_respuesta": "Pas de réponse du serveur",
+        "base_rehecha": "La base du serveur a été reconstruite"
       },
       "explica": {
         "pendiente": "À envoyer : partira la prochaine fois que vous touchez « Envoyer » avec une connexion.",
@@ -7169,7 +7170,8 @@
         "enviando": "En cours d'envoi.",
         "aceptada": "Envoyée : le serveur l'a acceptée.",
         "rechazada": "Refusée : le serveur ne l'a pas acceptée. Sa réponse est ci-dessous. Corrigez-la et renvoyez-la, ou abandonnez-la.",
-        "conflicto": "En conflit : quelqu'un a modifié la même chose sur le serveur entre-temps, et le serveur n'a pas enregistré la vôtre. Les deux versions sont ci-dessous."
+        "conflicto": "En conflit : quelqu'un a modifié la même chose sur le serveur entre-temps, et le serveur n'a pas enregistré la vôtre. Les deux versions sont ci-dessous.",
+        "base_rehecha": "En conflit : la base du serveur a été reconstruite (par exemple en restaurant une sauvegarde) après que vous avez fait ceci, et rien n'a été envoyé pour ne pas écrire sur un équipement qui n'est peut-être plus le même."
       },
       "queHacer": {
         "sin_conexion": "Il n'y avait pas de connexion. Renvoyez quand vous aurez du réseau.",
@@ -7183,7 +7185,8 @@
         "central": "Le serveur a eu une erreur en la recevant. Elle reste à envoyer et le reste part quand même ; si cela se répète, partagez le journal avec le support.",
         "otro": "Le serveur ne l'a pas acceptée. Si vous ne savez pas pourquoi, partagez le journal avec le support.",
         "bloqueada": "Cette inspection ne peut plus être corrigée : elle a été validée au bureau, ou elle figure dans un rapport émis ou un bon d'intervention remis. Abandonnez cette correction ; s'il faut la modifier, c'est au bureau de s'en charger.",
-        "licencia": "L'instance est en lecture seule car la licence de l'entreprise a expiré. Ne la supprimez pas : elle reste dans la file et sera de nouveau prête à envoyer dès que l'entreprise aura renouvelé la licence. Si vous l'avez faite avant l'expiration et qu'elle ne passe pas, prévenez le bureau."
+        "licencia": "L'instance est en lecture seule car la licence de l'entreprise a expiré. Ne la supprimez pas : elle reste dans la file et sera de nouveau prête à envoyer dès que l'entreprise aura renouvelé la licence. Si vous l'avez faite avant l'expiration et qu'elle ne passe pas, prévenez le bureau.",
+        "base_rehecha": "Vérifiez dans le projet, désormais à jour, que l'équipement et le reste sont toujours les mêmes. Si c'est le cas, renvoyez-le ; sinon, supprimez-le. En cas de doute, partagez le journal avec le support avant de décider."
       },
       "que": {
         "equipoSinDatos": "non identifié",

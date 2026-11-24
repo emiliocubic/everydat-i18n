@@ -8125,7 +8125,8 @@
       "fallos_other": "{{count}} intentos fallidos",
       "clase": {
         "sin_conexion": "Sin conexión",
-        "sin_respuesta": "Sin respuesta de la central"
+        "sin_respuesta": "Sin respuesta de la central",
+        "base_rehecha": "La base de la central se ha rehecho"
       },
       "explica": {
         "pendiente": "Por enviar: saldrá la próxima vez que pulses «Enviar» con conexión.",
@@ -8133,7 +8134,8 @@
         "enviando": "Se está enviando.",
         "aceptada": "Enviada: la central la ha aceptado.",
         "rechazada": "Rechazada: la central no la ha aceptado. Abajo está lo que respondió. Corrígela y reenvíala, o descártala.",
-        "conflicto": "En conflicto: alguien cambió lo mismo en la central mientras tanto, y la central no ha guardado lo tuyo. Abajo están las dos versiones."
+        "conflicto": "En conflicto: alguien cambió lo mismo en la central mientras tanto, y la central no ha guardado lo tuyo. Abajo están las dos versiones.",
+        "base_rehecha": "En conflicto: la base de la central se ha rehecho (por ejemplo, al restaurar una copia) después de que hicieras esto, y no se ha enviado para no escribir sobre un equipo que quizá ya no es el mismo."
       },
       "queHacer": {
         "sin_conexion": "No había conexión. Vuelve a enviar cuando tengas cobertura.",
@@ -8147,7 +8149,8 @@
         "central": "La central tuvo un fallo al recibirla. Se queda por enviar y lo demás sale igual; si se repite, comparte el registro con soporte.",
         "otro": "La central no la aceptó. Si no sabes por qué, comparte el registro con soporte.",
         "bloqueada": "La revisión ya no se puede corregir: está validada en la oficina, o va en un informe emitido o en un parte entregado. Descarta esta corrección; si hay que cambiarla, que lo resuelva la oficina.",
-        "licencia": "La instancia está en solo lectura porque la licencia de la empresa ha vencido. No la descartes: se queda en la cola y, en cuanto la empresa la renueve, vuelve a estar por enviar sola. Si la hiciste antes de que venciera y no pasa, avisa a la oficina."
+        "licencia": "La instancia está en solo lectura porque la licencia de la empresa ha vencido. No la descartes: se queda en la cola y, en cuanto la empresa la renueve, vuelve a estar por enviar sola. Si la hiciste antes de que venciera y no pasa, avisa a la oficina.",
+        "base_rehecha": "Comprueba en el proyecto, ya actualizado, que el equipo y lo demás siguen siendo los mismos. Si lo son, reenvíalo; si no, descártalo. Si dudas, comparte el registro con soporte antes de decidir."
       },
       "que": {
         "equipoSinDatos": "sin identificar",
