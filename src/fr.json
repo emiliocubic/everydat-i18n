@@ -7330,7 +7330,8 @@
         "sin_bajar": "Impossible de le renvoyer pour l'instant : il faut mettre à jour le projet avec une connexion pour vérifier qu'il est toujours le même. En attendant, on peut seulement le supprimer.",
         "distinto": "Impossible de le renvoyer : sur le serveur reconstruit, ce que cela touche n'est plus le même (un autre équipement avec ce numéro, un autre dossier ou un autre projet). On peut seulement le supprimer.",
         "no_verificable": "Impossible de le renvoyer : il passe par un numéro que seule l'ancienne base avait (une inspection, un bon d'intervention ou une réparation déjà envoyés) et rien ne permet de vérifier qu'il s'agit du même. On peut seulement le supprimer."
-      }
+      },
+      "actualizando": "Rien n'est encore envoyé : ce qui a été téléchargé est en cours de mise à jour après un changement sur le serveur. Renvoyez dans un instant, avec une connexion."
     },
     "ajustes": {
       "titulo": "Réglages",

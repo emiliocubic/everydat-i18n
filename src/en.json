@@ -8294,7 +8294,8 @@
         "sin_bajar": "It can't be resent yet: the project has to be updated with a connection to check that it is still the same. Meanwhile it can only be discarded.",
         "distinto": "It can't be resent: on the rebuilt server, what this touches is no longer the same (other equipment with that number, another folder or another project). It can only be discarded.",
         "no_verificable": "It can't be resent: it goes by a number only the old database had (an inspection, work report or repair already sent) and there is no way to check it is the same. It can only be discarded."
-      }
+      },
+      "actualizando": "Nothing is sent yet: what was downloaded is being brought up to date after a change on the server. Send again in a moment, with a connection."
     },
     "ajustes": {
       "titulo": "Settings",

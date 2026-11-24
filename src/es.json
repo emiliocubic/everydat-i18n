@@ -8294,7 +8294,8 @@
         "sin_bajar": "Aún no se puede reenviar: falta actualizar el proyecto con conexión para comprobar que sigue siendo lo mismo. Mientras, solo se puede descartar.",
         "distinto": "No se puede reenviar: en la central rehecha, lo que esto toca ya no es lo mismo (otro equipo con ese número, otra carpeta u otro proyecto). Solo se puede descartar.",
         "no_verificable": "No se puede reenviar: va por un número que solo tenía la base anterior (una revisión, un parte o una reparación ya enviados) y no hay forma de comprobar que sea lo mismo. Solo se puede descartar."
-      }
+      },
+      "actualizando": "Aún no se envía nada: se está poniendo al día lo bajado tras un cambio en la central. Vuelve a enviar en un momento, con conexión."
     },
     "ajustes": {
       "titulo": "Ajustes",
