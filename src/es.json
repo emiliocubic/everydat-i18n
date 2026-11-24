@@ -7879,7 +7879,8 @@
       },
       "caducada": "La sesión ha caducado en el servidor. Vuelve a escribir la contraseña: no se pierde nada de lo que hay en este móvil, tampoco lo pendiente de enviar.",
       "sinRed": "Sin conexión: hace falta red para comprobar la contraseña.",
-      "seguirSinRed": "Seguir sin conexión con el PIN"
+      "seguirSinRed": "Seguir sin conexión con el PIN",
+      "cuentaDeBaja": "Tu cuenta se ha dado de baja y se han borrado de este móvil los datos de la empresa."
     },
     "bloqueo": {
       "titulo": "Desbloquear",

@@ -6915,7 +6915,8 @@
       },
       "caducada": "La session a expiré sur le serveur. Saisissez à nouveau le mot de passe : rien de ce qui se trouve sur cet appareil n'est perdu, y compris ce qui reste à envoyer.",
       "sinRed": "Pas de connexion : il faut du réseau pour vérifier le mot de passe.",
-      "seguirSinRed": "Continuer hors connexion avec le code PIN"
+      "seguirSinRed": "Continuer hors connexion avec le code PIN",
+      "cuentaDeBaja": "Votre compte a été désactivé et les données de l'entreprise ont été supprimées de ce téléphone."
     },
     "bloqueo": {
       "titulo": "Déverrouiller",

@@ -7879,7 +7879,8 @@
       },
       "caducada": "Your session has expired on the server. Enter your password again: nothing on this device is lost, including what is waiting to be sent.",
       "sinRed": "No connection: a network is needed to check the password.",
-      "seguirSinRed": "Continue offline with the PIN"
+      "seguirSinRed": "Continue offline with the PIN",
+      "cuentaDeBaja": "Your account has been deactivated and the company's data has been deleted from this phone."
     },
     "bloqueo": {
       "titulo": "Unlock",
