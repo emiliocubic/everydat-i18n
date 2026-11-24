@@ -7199,7 +7199,7 @@
         "otro": "Le serveur ne l'a pas acceptée. Si vous ne savez pas pourquoi, partagez le journal avec le support.",
         "bloqueada": "Cette inspection ne peut plus être corrigée : elle a été validée au bureau, ou elle figure dans un rapport émis ou un bon d'intervention remis. Abandonnez cette correction ; s'il faut la modifier, c'est au bureau de s'en charger.",
         "licencia": "L'instance est en lecture seule car la licence de l'entreprise a expiré. Ne la supprimez pas : elle reste dans la file et sera de nouveau prête à envoyer dès que l'entreprise aura renouvelé la licence. Si vous l'avez faite avant l'expiration et qu'elle ne passe pas, prévenez le bureau.",
-        "base_rehecha": "Vérifiez dans le projet, désormais à jour, que l'équipement et le reste sont toujours les mêmes. Si c'est le cas, renvoyez-le ; sinon, supprimez-le. En cas de doute, partagez le journal avec le support avant de décider."
+        "base_rehecha": "L'application vérifie, avec le projet désormais à jour, que ce que cela touche est toujours le même : le même équipement par son numéro de série ou ses codes, le même dossier, le même projet. Si c'est le cas, vous pouvez le renvoyer ; sinon, seulement le supprimer. En cas de doute, partagez le journal avec le support avant de décider."
       },
       "que": {
         "equipoSinDatos": "non identifié",
@@ -7325,7 +7325,12 @@
           "campos": "Champs"
         }
       },
-      "descartarLicencia": "Le serveur ne l'a pas refusée à cause d'une erreur de votre part, mais parce que la licence de l'entreprise a expiré : si l'entreprise la renouvelle, elle sera envoyée automatiquement. Si vous la supprimez, elle est perdue."
+      "descartarLicencia": "Le serveur ne l'a pas refusée à cause d'une erreur de votre part, mais parce que la licence de l'entreprise a expiré : si l'entreprise la renouvelle, elle sera envoyée automatiquement. Si vous la supprimez, elle est perdue.",
+      "baseRehecha": {
+        "sin_bajar": "Impossible de le renvoyer pour l'instant : il faut mettre à jour le projet avec une connexion pour vérifier qu'il est toujours le même. En attendant, on peut seulement le supprimer.",
+        "distinto": "Impossible de le renvoyer : sur le serveur reconstruit, ce que cela touche n'est plus le même (un autre équipement avec ce numéro, un autre dossier ou un autre projet). On peut seulement le supprimer.",
+        "no_verificable": "Impossible de le renvoyer : il passe par un numéro que seule l'ancienne base avait (une inspection, un bon d'intervention ou une réparation déjà envoyés) et rien ne permet de vérifier qu'il s'agit du même. On peut seulement le supprimer."
+      }
     },
     "ajustes": {
       "titulo": "Réglages",
