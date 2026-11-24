@@ -8610,7 +8610,8 @@
       "quitarTitulo": "Quitar código",
       "quitarConfirm": "¿Quitar el código {{codigo}} de este equipo?",
       "quitar": "Quitar",
-      "quitarAria": "Quitar el código {{codigo}}"
+      "quitarAria": "Quitar el código {{codigo}}",
+      "noEsPegatina": "No es una pegatina qrdat. Compruébala y léela otra vez."
     },
     "tipos": {
       "titulo": "¿Qué revisión?",

@@ -8610,7 +8610,8 @@
       "quitarTitulo": "Remove code",
       "quitarConfirm": "Remove code {{codigo}} from this equipment?",
       "quitar": "Remove",
-      "quitarAria": "Remove code {{codigo}}"
+      "quitarAria": "Remove code {{codigo}}",
+      "noEsPegatina": "This is not a qrdat sticker. Check it and read it again."
     },
     "tipos": {
       "titulo": "Which inspection?",

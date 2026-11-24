@@ -7646,7 +7646,8 @@
       "quitarTitulo": "Retirer le code",
       "quitarConfirm": "Retirer le code {{codigo}} de cet équipement ?",
       "quitar": "Retirer",
-      "quitarAria": "Retirer le code {{codigo}}"
+      "quitarAria": "Retirer le code {{codigo}}",
+      "noEsPegatina": "Ce n'est pas une étiquette qrdat. Vérifiez-la et relisez-la."
     },
     "tipos": {
       "titulo": "Quelle inspection ?",
