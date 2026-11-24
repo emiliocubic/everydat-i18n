@@ -8762,6 +8762,11 @@
     "soloLectura": {
       "titulo": "Read-only",
       "texto": "Your company's licence has expired: you can't add equipment, inspect, make work reports or change anything. What you did before is still being sent. It will work again once the company renews the licence."
+    },
+    "sinBloqueo": {
+      "titulo": "Screen lock needed",
+      "texto": "Set a screen lock (PIN, pattern or fingerprint) on the phone to use Everydat. Nothing in the app is lost.",
+      "reintentar": "Try again"
     }
   },
   "auditoria": {

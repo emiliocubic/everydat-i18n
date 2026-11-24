@@ -8762,6 +8762,11 @@
     "soloLectura": {
       "titulo": "Solo lectura",
       "texto": "La licencia de la empresa ha vencido y no se puede dar de alta, revisar, hacer partes ni cambiar nada. Lo que hiciste antes se sigue enviando. Cuando la empresa la renueve, vuelve a funcionar."
+    },
+    "sinBloqueo": {
+      "titulo": "Falta el bloqueo de pantalla",
+      "texto": "Pon un bloqueo de pantalla (PIN, patrón o huella) en el teléfono para usar Everydat. Lo que hay en la app no se pierde.",
+      "reintentar": "Volver a probar"
     }
   },
   "auditoria": {

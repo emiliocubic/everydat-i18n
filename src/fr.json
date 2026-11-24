@@ -7798,6 +7798,11 @@
     "soloLectura": {
       "titulo": "Lecture seule",
       "texto": "La licence de l'entreprise a expiré : impossible d'ajouter des équipements, d'inspecter, de faire des bons d'intervention ou de modifier quoi que ce soit. Ce que vous avez fait avant continue d'être envoyé. Tout refonctionnera dès que l'entreprise aura renouvelé la licence."
+    },
+    "sinBloqueo": {
+      "titulo": "Verrouillage de l'écran requis",
+      "texto": "Activez un verrouillage de l'écran (code, schéma ou empreinte) sur le téléphone pour utiliser Everydat. Rien n'est perdu dans l'application.",
+      "reintentar": "Réessayer"
     }
   },
   "auditoria": {
