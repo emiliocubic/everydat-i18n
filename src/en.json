@@ -8163,7 +8163,7 @@
         "otro": "The server did not accept it. If you do not know why, share the log with support.",
         "bloqueada": "This inspection can no longer be corrected: it has been validated at the office, or it is in an issued report or a delivered work report. Discard this correction; if it must change, the office has to sort it out.",
         "licencia": "The instance is read-only because your company's licence has expired. Don't discard it: it stays in the queue and goes back to pending on its own as soon as the company renews the licence. If you did it before it expired and it still won't go through, tell the office.",
-        "base_rehecha": "The app checks, with the project now updated, that what this touches is still the same: the same equipment by its serial number or its codes, the same folder, the same project. If it is, you can resend it; if not, you can only discard it. If in doubt, share the log with support before deciding."
+        "base_rehecha": "The app checks, with the project downloaded again, that what this touches is still the same: the same equipment (same model and its serial number or a code), the same folder in the same path, the same project. If it is, you can resend it; if not, you can only discard it. If in doubt, share the log with support before deciding."
       },
       "que": {
         "equipoSinDatos": "unidentified",

@@ -7199,7 +7199,7 @@
         "otro": "Le serveur ne l'a pas acceptée. Si vous ne savez pas pourquoi, partagez le journal avec le support.",
         "bloqueada": "Cette inspection ne peut plus être corrigée : elle a été validée au bureau, ou elle figure dans un rapport émis ou un bon d'intervention remis. Abandonnez cette correction ; s'il faut la modifier, c'est au bureau de s'en charger.",
         "licencia": "L'instance est en lecture seule car la licence de l'entreprise a expiré. Ne la supprimez pas : elle reste dans la file et sera de nouveau prête à envoyer dès que l'entreprise aura renouvelé la licence. Si vous l'avez faite avant l'expiration et qu'elle ne passe pas, prévenez le bureau.",
-        "base_rehecha": "L'application vérifie, avec le projet désormais à jour, que ce que cela touche est toujours le même : le même équipement par son numéro de série ou ses codes, le même dossier, le même projet. Si c'est le cas, vous pouvez le renvoyer ; sinon, seulement le supprimer. En cas de doute, partagez le journal avec le support avant de décider."
+        "base_rehecha": "L'application vérifie, avec le projet téléchargé à nouveau, que ce que cela touche est toujours le même : le même équipement (même modèle et son numéro de série ou un code), le même dossier au même emplacement, le même projet. Si c'est le cas, vous pouvez le renvoyer ; sinon, seulement le supprimer. En cas de doute, partagez le journal avec le support avant de décider."
       },
       "que": {
         "equipoSinDatos": "non identifié",
