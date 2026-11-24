@@ -76,6 +76,10 @@
       "borrar": "Borrar",
       "mesAnterior": "Mes anterior",
       "mesSiguiente": "Mes siguiente"
+    },
+    "contrasena": {
+      "ayuda": "Al menos 12 caracteres, sin más reglas. No vale una que aparezca en filtraciones conocidas.",
+      "corta": "La contraseña tiene que tener al menos 12 caracteres."
     }
   },
   "merge": {

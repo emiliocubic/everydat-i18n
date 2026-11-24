@@ -76,6 +76,10 @@
       "borrar": "Clear",
       "mesAnterior": "Previous month",
       "mesSiguiente": "Next month"
+    },
+    "contrasena": {
+      "ayuda": "At least 12 characters, no other rules. One that appears in known data leaks is not accepted.",
+      "corta": "The password must be at least 12 characters long."
     }
   },
   "merge": {

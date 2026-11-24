@@ -69,6 +69,10 @@
       "cursiva": "Italique",
       "vinetas": "Liste à puces",
       "numerada": "Liste numérotée"
+    },
+    "contrasena": {
+      "ayuda": "Au moins 12 caractères, sans autre règle. Un mot de passe qui apparaît dans des fuites connues n’est pas accepté.",
+      "corta": "Le mot de passe doit contenir au moins 12 caractères."
     }
   },
   "merge": {
