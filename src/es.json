@@ -8156,7 +8156,7 @@
         "aceptada": "Enviada: la central la ha aceptado.",
         "rechazada": "Rechazada: la central no la ha aceptado. Abajo está lo que respondió. Corrígela y reenvíala, o descártala.",
         "conflicto": "En conflicto: alguien cambió lo mismo en la central mientras tanto, y la central no ha guardado lo tuyo. Abajo están las dos versiones.",
-        "base_rehecha": "En conflicto: la base de la central se ha rehecho (por ejemplo, al restaurar una copia) después de que hicieras esto, y no se ha enviado para no escribir sobre un equipo que quizá ya no es el mismo."
+        "base_rehecha": "En conflicto: la base de la central se ha rehecho (por ejemplo, al restaurar una copia) antes de que esto saliera, y ya no se puede enviar: sus equipos y carpetas eran los de la base anterior."
       },
       "queHacer": {
         "sin_conexion": "No había conexión. Vuelve a enviar cuando tengas cobertura.",
@@ -8171,7 +8171,7 @@
         "otro": "La central no la aceptó. Si no sabes por qué, comparte el registro con soporte.",
         "bloqueada": "La revisión ya no se puede corregir: está validada en la oficina, o va en un informe emitido o en un parte entregado. Descarta esta corrección; si hay que cambiarla, que lo resuelva la oficina.",
         "licencia": "La instancia está en solo lectura porque la licencia de la empresa ha vencido. No la descartes: se queda en la cola y, en cuanto la empresa la renueve, vuelve a estar por enviar sola. Si la hiciste antes de que venciera y no pasa, avisa a la oficina.",
-        "base_rehecha": "La app comprueba, con el proyecto ya bajado de nuevo, que lo que esto toca sigue siendo lo mismo: el mismo equipo (mismo modelo y su número de serie o un código), la misma carpeta en la misma ruta, el mismo proyecto. Si lo es, puedes reenviarlo; si no, solo descartarlo. Si dudas, comparte el registro con soporte antes de decidir."
+        "base_rehecha": "Solo se puede descartar. Arriba está qué era: si hace falta, rehazlo a mano sobre el proyecto, ya bajado de nuevo."
       },
       "que": {
         "equipoSinDatos": "sin identificar",
@@ -8297,13 +8297,7 @@
           "campos": "Campos"
         }
       },
-      "descartarLicencia": "La central no la rechazó por un error tuyo, sino porque la licencia de la empresa ha vencido: si la empresa la renueva, se enviará sola. Si la descartas, se pierde.",
-      "baseRehecha": {
-        "sin_bajar": "Aún no se puede reenviar: falta actualizar el proyecto con conexión para comprobar que sigue siendo lo mismo. Mientras, solo se puede descartar.",
-        "distinto": "No se puede reenviar: en la central rehecha, lo que esto toca ya no es lo mismo (otro equipo con ese número, otra carpeta u otro proyecto). Solo se puede descartar.",
-        "no_verificable": "No se puede reenviar: va por un número que solo tenía la base anterior (una revisión, un parte o una reparación ya enviados) y no hay forma de comprobar que sea lo mismo. Solo se puede descartar."
-      },
-      "actualizando": "Aún no se envía nada: se está poniendo al día lo bajado tras un cambio en la central. Vuelve a enviar en un momento, con conexión."
+      "descartarLicencia": "La central no la rechazó por un error tuyo, sino porque la licencia de la empresa ha vencido: si la empresa la renueva, se enviará sola. Si la descartas, se pierde."
     },
     "ajustes": {
       "titulo": "Ajustes",
