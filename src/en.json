@@ -1310,7 +1310,20 @@
       "nuevo": "New event",
       "evento": {
         "revision": "Inspection",
-        "instalacion": "Installation"
+        "instalacion": "Installation",
+        "alta": "Added to Everydat",
+        "altaConjunto": "Set created",
+        "fin_vida": "End of service life",
+        "caducidad_revision": "Inspection expiry",
+        "traslado": "Move",
+        "estado_descatalogado": "Withdrawal",
+        "estado_activo": "Reactivation",
+        "fecha": {
+          "fabricacion": "Manufacture date",
+          "instalacion": "Installation date",
+          "suministro": "Supply date",
+          "puesta_servicio": "Commissioning date"
+        }
       },
       "descargarPorDefinir": "Download the event PDF (to be defined)",
       "resultado": {

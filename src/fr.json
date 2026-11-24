@@ -1224,7 +1224,20 @@
       "nuevo": "Nouvel événement",
       "evento": {
         "revision": "Contrôle",
-        "instalacion": "Installation"
+        "instalacion": "Installation",
+        "alta": "Ajout à Everydat",
+        "altaConjunto": "Ensemble créé",
+        "fin_vida": "Fin de vie utile",
+        "caducidad_revision": "Échéance du contrôle",
+        "traslado": "Déplacement",
+        "estado_descatalogado": "Retrait",
+        "estado_activo": "Réactivation",
+        "fecha": {
+          "fabricacion": "Date de fabrication",
+          "instalacion": "Date d'installation",
+          "suministro": "Date de fourniture",
+          "puesta_servicio": "Date de mise en service"
+        }
       },
       "descargarPorDefinir": "Télécharger le PDF de l'événement (à définir)",
       "resultado": {

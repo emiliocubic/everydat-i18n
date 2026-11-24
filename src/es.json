@@ -1181,7 +1181,20 @@
       "nuevo": "Nuevo evento",
       "evento": {
         "revision": "Revisión",
-        "instalacion": "Instalación"
+        "instalacion": "Instalación",
+        "alta": "Alta en Everydat",
+        "altaConjunto": "Conjunto creado",
+        "fin_vida": "Fin de vida útil",
+        "caducidad_revision": "Caducidad de la revisión",
+        "traslado": "Traslado",
+        "estado_descatalogado": "Descatalogación",
+        "estado_activo": "Reactivación",
+        "fecha": {
+          "fabricacion": "Fecha de fabricación",
+          "instalacion": "Fecha de instalación",
+          "suministro": "Fecha de suministro",
+          "puesta_servicio": "Fecha de puesta en servicio"
+        }
       },
       "descargarPorDefinir": "Descargar el PDF del evento (por definir)",
       "resultado": {
