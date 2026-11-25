@@ -2258,7 +2258,11 @@
     "fichaCliente": {
       "nuevo": "Nuevo emplazamiento"
     },
-    "aDemanda": "A demanda"
+    "aDemanda": "A demanda",
+    "alta": {
+      "intro": "Datos básicos para creación rápida del emplazamiento. Posteriormente podrás completarlos con mayor detalle.",
+      "obligatorio": "Obligatorio"
+    }
   },
   "localizaciones": {
     "tree": "Árbol de localizaciones",
@@ -11156,7 +11160,7 @@
       "texto": "Abrir el planificador pide la capacidad Planificación. Pídesela a quien administra los usuarios."
     },
     "estado": {
-      "inicial": "Arrastra los extremos de una barra para alargar o acortar el proyecto. Arrastra una ficha libre de la pila a la cuadrilla de un proyecto.",
+      "inicial": "Arrastra los extremos de una barra para alargar o acortar el proyecto, o la barra entera a la fila de otro equipo para cambiarlo de equipo. Arrastra una ficha libre de la pila a la cuadrilla de un proyecto.",
       "versionCambiada": "El plan ha cambiado; vuelve a intentarlo",
       "error": "No se ha podido hacer el cambio"
     },
@@ -11192,7 +11196,8 @@
       "persona_ausente": "{{persona}} no está el {{dia}} ({{motivo}})",
       "persona_ocupada": "{{persona}} ya está en {{ref}} ese día",
       "persona_de_baja": "{{persona}} ya no está en la empresa el {{dia}}",
-      "otro": "No se puede"
+      "otro": "No se puede",
+      "equipo_ocupado": "{{equipo}} ya tiene {{ref}} el {{dia}}"
     },
     "plan": {
       "seleccionado": "{{ref}} seleccionado",
@@ -11326,7 +11331,8 @@
         "soltar": "Soltar proyecto",
         "cortarTitulo": "Cortar proyecto",
         "cortarHint": "pinta sobre la barra los días que no se puede ir · el trabajo se reanuda después y empuja lo que venga detrás · repintar un corte lo libera · Esc",
-        "soltarTijera": "Soltar tijera"
+        "soltarTijera": "Soltar tijera",
+        "aOtroEquipo": "Suelta para pasar {{ref}} a {{equipo}}: sus jornadas pasan a su gente"
       },
       "ficha": {
         "altaTitulo": "Nuevo proyecto externo",
@@ -11581,7 +11587,7 @@
       "resumenTituloSinEquipos": "{{persona}} · {{de}} → {{a}}"
     },
     "cadena": {
-      "inicial": "Arrastra el centro de una barra para moverla y sus extremos para estirarla: el cambio se simula y solo se aplica con ✓.",
+      "inicial": "Arrastra el centro de una barra para moverla (a la fila de otro equipo, para cambiarla de equipo) y sus extremos para estirarla: el cambio se simula y solo se aplica con ✓.",
       "esquina": "Equipos",
       "simulacion": "Simulación: {{mensaje}} — revisa las filas de simulación y aplica (✓) o descarta (✗)",
       "sinCambios": "La simulación no cambia nada a la vista: {{mensaje}}",

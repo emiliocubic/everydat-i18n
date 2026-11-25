@@ -2240,7 +2240,11 @@
     "fichaCliente": {
       "nuevo": "Nouveau site"
     },
-    "aDemanda": "À la demande"
+    "aDemanda": "À la demande",
+    "alta": {
+      "intro": "Données de base pour créer rapidement le site. Vous pourrez les compléter plus en détail ensuite.",
+      "obligatorio": "Obligatoire"
+    }
   },
   "localizaciones": {
     "tree": "Arbre des localisations",
@@ -9966,7 +9970,7 @@
       "resumenTituloSinEquipos": "{{persona}} · {{de}} → {{a}}"
     },
     "cadena": {
-      "inicial": "Faites glisser le milieu d'une barre pour la déplacer et ses extrémités pour l'étirer : le changement est simulé et ne s'applique qu'avec ✓.",
+      "inicial": "Faites glisser le centre d'une barre pour la déplacer (sur la ligne d'une autre équipe, pour en changer d'équipe) et ses extrémités pour l'étirer : le changement est simulé et ne s'applique qu'avec ✓.",
       "esquina": "Équipes",
       "simulacion": "Simulation : {{mensaje}} — vérifiez les lignes de simulation et appliquez (✓) ou annulez (✗)",
       "sinCambios": "La simulation ne change rien à l'écran : {{mensaje}}",

@@ -2387,7 +2387,11 @@
     "fichaCliente": {
       "nuevo": "New site"
     },
-    "aDemanda": "On demand"
+    "aDemanda": "On demand",
+    "alta": {
+      "intro": "Basic details to create the site quickly. You can complete them in more detail later.",
+      "obligatorio": "Required"
+    }
   },
   "localizaciones": {
     "tree": "Location tree",
@@ -11156,7 +11160,7 @@
       "texto": "Opening the planner requires the Planning capability. Ask whoever manages users for it."
     },
     "estado": {
-      "inicial": "Drag the ends of a bar to lengthen or shorten the project. Drag a free tile from the stack onto a project's crew.",
+      "inicial": "Drag the ends of a bar to lengthen or shorten the project, or the whole bar onto another team's row to change its team. Drag a free tile from the stack onto a project's crew.",
       "versionCambiada": "The plan has changed; try again",
       "error": "The change could not be made"
     },
@@ -11192,7 +11196,8 @@
       "persona_ausente": "{{persona}} is away on {{dia}} ({{motivo}})",
       "persona_ocupada": "{{persona}} is already on {{ref}} that day",
       "persona_de_baja": "{{persona}} is no longer with the company on {{dia}}",
-      "otro": "Not allowed"
+      "otro": "Not allowed",
+      "equipo_ocupado": "{{equipo}} already has {{ref}} on {{dia}}"
     },
     "plan": {
       "seleccionado": "{{ref}} selected",
@@ -11326,7 +11331,8 @@
         "soltar": "Release project",
         "cortarTitulo": "Cut project",
         "cortarHint": "paint over the bar the days that cannot be worked · work resumes afterwards and pushes what comes next · painting a cut again frees it · Esc",
-        "soltarTijera": "Release scissors"
+        "soltarTijera": "Release scissors",
+        "aOtroEquipo": "Drop to move {{ref}} to {{equipo}}: its workdays go to that team's people"
       },
       "ficha": {
         "altaTitulo": "New external project",
@@ -11581,7 +11587,7 @@
       "resumenTituloSinEquipos": "{{persona}} · {{de}} → {{a}}"
     },
     "cadena": {
-      "inicial": "Drag the middle of a bar to move it and its ends to stretch it: the change is simulated and only applied with ✓.",
+      "inicial": "Drag the middle of a bar to move it (onto another team's row, to change its team) and its ends to stretch it: the change is simulated and only applied with ✓.",
       "esquina": "Teams",
       "simulacion": "Simulation: {{mensaje}} — check the simulation rows and apply (✓) or discard (✗)",
       "sinCambios": "The simulation changes nothing in view: {{mensaje}}",
