@@ -1251,6 +1251,13 @@
       "pegatinaOtraEmpresa": {
         "titulo": "Pegatina de otra empresa",
         "detalle": "La pegatina {{codigo}} es de otra empresa y se ha quitado del equipo."
+      },
+      "revisionCorregida": {
+        "titulo": "Corrección de la revisión del {{fecha}}",
+        "nota": "Corregida el {{fecha}} por {{quien}}: antes {{antes}}, ahora {{ahora}}",
+        "tag": "Auditoría",
+        "tagHint": "Nota de auditoría: solo se ve aquí, no sale en el informe de historial",
+        "sinResultado": "sin resultado"
       }
     },
     "traslado": {
@@ -7855,8 +7862,10 @@
         "validada": "Está validada: para corregirla, quítale la validación en la pestaña Ejecución del proyecto.",
         "irInforme": "Abrir el informe",
         "irParte": "Abrir los partes del proyecto",
-        "irEjecucion": "Abrir la ejecución del proyecto"
-      }
+        "irEjecucion": "Abrir la ejecución del proyecto",
+        "solo_quien_valida": "Estuvo validada o entregada: solo la corrige quien puede validar."
+      },
+      "avisoRastro": "Esta revisión estuvo validada o entregada. Si cambias el resultado, el historial del equipo enseñará una nota con la fecha, tu nombre y los dos resultados."
     },
     "medida": {
       "senaliza": "Se señaliza como no utilizable",

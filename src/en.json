@@ -1380,6 +1380,13 @@
       "pegatinaOtraEmpresa": {
         "titulo": "Sticker belongs to another company",
         "detalle": "Sticker {{codigo}} belongs to another company and has been removed from the item."
+      },
+      "revisionCorregida": {
+        "titulo": "Correction of the inspection of {{fecha}}",
+        "nota": "Corrected on {{fecha}} by {{quien}}: was {{antes}}, now {{ahora}}",
+        "tag": "Audit",
+        "tagHint": "Audit note: only shown here, not in the history report",
+        "sinResultado": "no result"
       }
     },
     "traslado": {
@@ -7855,8 +7862,10 @@
         "validada": "It is validated: to correct it, remove the validation in the project's Execution tab.",
         "irInforme": "Open the report",
         "irParte": "Open the project's work reports",
-        "irEjecucion": "Open the project's execution"
-      }
+        "irEjecucion": "Open the project's execution",
+        "solo_quien_valida": "It was validated or delivered: only someone who can validate may correct it."
+      },
+      "avisoRastro": "This inspection was validated or delivered. If you change the result, the equipment history will show a note with the date, your name and both results."
     },
     "medida": {
       "senaliza": "Tagged as not usable",

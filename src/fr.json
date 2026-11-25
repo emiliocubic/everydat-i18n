@@ -1285,6 +1285,13 @@
       "pegatinaOtraEmpresa": {
         "titulo": "Étiquette d’une autre entreprise",
         "detalle": "L’étiquette {{codigo}} appartient à une autre entreprise et a été retirée de l’équipement."
+      },
+      "revisionCorregida": {
+        "titulo": "Correction de la vérification du {{fecha}}",
+        "nota": "Corrigée le {{fecha}} par {{quien}} : avant {{antes}}, maintenant {{ahora}}",
+        "tag": "Audit",
+        "tagHint": "Note d'audit : visible uniquement ici, elle ne figure pas dans le rapport d'historique",
+        "sinResultado": "sans résultat"
       }
     },
     "traslado": {
@@ -6884,8 +6891,10 @@
         "validada": "Elle est validée : pour la corriger, retirez la validation dans l'onglet Exécution du projet.",
         "irInforme": "Ouvrir le rapport",
         "irParte": "Ouvrir les bons du projet",
-        "irEjecucion": "Ouvrir l'exécution du projet"
-      }
+        "irEjecucion": "Ouvrir l'exécution du projet",
+        "solo_quien_valida": "Elle a été validée ou livrée : seule une personne habilitée à valider peut la corriger."
+      },
+      "avisoRastro": "Cette vérification a été validée ou livrée. Si vous modifiez le résultat, l'historique de l'équipement affichera une note avec la date, votre nom et les deux résultats."
     },
     "medida": {
       "senaliza": "Signalé comme non utilisable",
