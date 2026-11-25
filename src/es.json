@@ -1346,7 +1346,8 @@
         "notaRev": "Nota de la revisión",
         "cobertura": "Visita planificada",
         "familia": "Familia",
-        "gps": "Coordenadas GPS"
+        "gps": "Coordenadas GPS",
+        "nivel": "Localización nivel {{n}}"
       },
       "grupos": {
         "familia": "Familia",
@@ -1363,6 +1364,15 @@
         "ayuda": "Acota las filas a esos tipos y enseña sus campos propios",
         "quitar": "Quitar el ámbito",
         "sinTipos": "Todavía no hay equipos en este emplazamiento"
+      },
+      "carpetas": {
+        "rotulo": "Localización",
+        "todas": "Todas",
+        "varias": "{{count}} carpetas",
+        "ayuda": "Se ven los equipos de las carpetas marcadas; marcar una marca toda su rama",
+        "sinCarpetas": "Este emplazamiento aún no tiene carpetas",
+        "plegarTodo": "Plegar todo",
+        "desplegarTodo": "Desplegar todo"
       }
     },
     "descatalogacion": {

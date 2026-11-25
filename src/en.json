@@ -1475,7 +1475,8 @@
         "notaRev": "Inspection note",
         "cobertura": "Planned visit",
         "familia": "Family",
-        "gps": "GPS coordinates"
+        "gps": "GPS coordinates",
+        "nivel": "Location level {{n}}"
       },
       "grupos": {
         "familia": "Family",
@@ -1492,6 +1493,15 @@
         "ayuda": "Narrows rows to those types and reveals their own fields",
         "quitar": "Clear the scope",
         "sinTipos": "No equipment in this site yet"
+      },
+      "carpetas": {
+        "rotulo": "Location",
+        "todas": "All",
+        "varias": "{{count}} folders",
+        "ayuda": "Shows the equipment in the ticked folders; ticking one ticks its whole branch",
+        "sinCarpetas": "This site has no folders yet",
+        "plegarTodo": "Collapse all",
+        "desplegarTodo": "Expand all"
       }
     },
     "descatalogacion": {

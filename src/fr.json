@@ -1380,7 +1380,8 @@
         "notaRev": "Note d'inspection",
         "cobertura": "Visite planifiée",
         "familia": "Famille",
-        "gps": "Coordonnées GPS"
+        "gps": "Coordonnées GPS",
+        "nivel": "Localisation niveau {{n}}"
       },
       "grupos": {
         "familia": "Famille",
@@ -1397,6 +1398,15 @@
         "ayuda": "Limite les lignes à ces types et révèle leurs champs propres",
         "quitar": "Retirer le périmètre",
         "sinTipos": "Aucun équipement sur ce site pour l'instant"
+      },
+      "carpetas": {
+        "rotulo": "Localisation",
+        "todas": "Toutes",
+        "varias": "{{count}} dossiers",
+        "ayuda": "Affiche les équipements des dossiers cochés ; cocher un dossier coche toute sa branche",
+        "sinCarpetas": "Ce site n’a pas encore de dossiers",
+        "plegarTodo": "Tout replier",
+        "desplegarTodo": "Tout déplier"
       }
     },
     "descatalogacion": {
