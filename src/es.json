@@ -4278,6 +4278,12 @@
           "reparable": "¿Preguntar si es reparable?",
           "medida": "¿Preguntar qué se hizo con el equipo?",
           "medidaHint": "Las respuestas son fijas: se señaliza como no utilizable, se retira del emplazamiento, se destruye o ninguna."
+        },
+        "usoChecklists": {
+          "title": "Uso de checklists",
+          "desc": "Configuración por defecto: usar o no usar checklists en las revisiones. Es posible después cambiarla en cada cliente o emplazamiento.",
+          "usar": "Usar checklists por defecto",
+          "noUsar": "No usar checklists por defecto, los activaré si es necesario en clientes o emplazamientos concretos"
         }
       },
       "grupoClientes": "Clientes",
@@ -5431,7 +5437,8 @@
           "enviar_propuesta_one": "Enviar la versión {{numero}} de la propuesta {{propuesta}} a {{count}} contacto",
           "enviar_propuesta_other": "Enviar la versión {{numero}} de la propuesta {{propuesta}} a {{count}} contactos",
           "enviar_parte_one": "Enviar el parte {{parte}} a {{count}} contacto",
-          "enviar_parte_other": "Enviar el parte {{parte}} a {{count}} contactos"
+          "enviar_parte_other": "Enviar el parte {{parte}} a {{count}} contactos",
+          "cambiar_uso_checklists": "Cambiar si se trabaja con checklists de serie"
         },
         "persona": "Es {{nombre}} ({{email}})",
         "pasaAClientes": "Hoy no ve ningún cliente: pasará a ver los que se le asignen.",
@@ -6237,7 +6244,8 @@
             "producto_quitado": "Se quita el producto «{{sujeto}}» del bloque «{{bloque}}»",
             "bloque_quitado_one": "Se quita el bloque «{{sujeto}}» con su producto",
             "bloque_quitado_other": "Se quita el bloque «{{sujeto}}» con sus {{count}} productos",
-            "apto_naranja": "El apto con aviso o matización, en naranja en el informe"
+            "apto_naranja": "El apto con aviso o matización, en naranja en el informe",
+            "usa_checklists": "Con checklists de serie"
           },
           "valor": {
             "si": "sí",
@@ -12191,5 +12199,17 @@
     "aviso_zero": "Ya existe una actuación de este tipo fechada hoy mismo, compruebe que no se trata de una duplicación del mismo evento.",
     "aviso_one": "Ya existe una actuación de este tipo fechada hace solo {{count}} día, compruebe que no se trata de una duplicación del mismo evento.",
     "aviso_other": "Ya existe una actuación de este tipo fechada hace solo {{count}} días, compruebe que no se trata de una duplicación del mismo evento."
+  },
+  "usoChecklists": {
+    "campo": "Checklists",
+    "con": "Con checklists",
+    "sin": "Sin checklists",
+    "hereda": "Como {{origen}} ({{valor}})",
+    "heredado": "(heredado de {{origen}})",
+    "propio": "(establecido aquí)",
+    "origen": {
+      "empresa": "la empresa",
+      "cliente": "el cliente"
+    }
   }
 }

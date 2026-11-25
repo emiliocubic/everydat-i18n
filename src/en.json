@@ -4278,6 +4278,12 @@
           "reparable": "Ask whether it can be repaired?",
           "medida": "Ask what was done with the equipment?",
           "medidaHint": "The answers are fixed: tagged as not to be used, removed from the site, destroyed or none."
+        },
+        "usoChecklists": {
+          "title": "Use of checklists",
+          "desc": "Default setting: use checklists in inspections or not. You can change it later for each customer or site.",
+          "usar": "Use checklists by default",
+          "noUsar": "Don't use checklists by default; I'll turn them on for specific customers or sites if needed"
         }
       },
       "grupoClientes": "Clients",
@@ -5431,7 +5437,8 @@
           "enviar_propuesta_one": "Send version {{numero}} of proposal {{propuesta}} to {{count}} contact",
           "enviar_propuesta_other": "Send version {{numero}} of proposal {{propuesta}} to {{count}} contacts",
           "enviar_parte_one": "Send work report {{parte}} to {{count}} contact",
-          "enviar_parte_other": "Send work report {{parte}} to {{count}} contacts"
+          "enviar_parte_other": "Send work report {{parte}} to {{count}} contacts",
+          "cambiar_uso_checklists": "Change whether checklists are used by default"
         },
         "persona": "This is {{nombre}} ({{email}})",
         "pasaAClientes": "They see no clients today: they will start seeing the ones assigned to them.",
@@ -6237,7 +6244,8 @@
             "producto_quitado": "The product «{{sujeto}}» is removed from the block «{{bloque}}»",
             "bloque_quitado_one": "The block «{{sujeto}}» is removed with its product",
             "bloque_quitado_other": "The block «{{sujeto}}» is removed with its {{count}} products",
-            "apto_naranja": "A pass with a notice or qualifier, in orange in the report"
+            "apto_naranja": "A pass with a notice or qualifier, in orange in the report",
+            "usa_checklists": "Checklists by default"
           },
           "valor": {
             "si": "yes",
@@ -12191,5 +12199,17 @@
     "aviso_zero": "An intervention of this type dated today already exists. Check that it is not a duplicate of the same event.",
     "aviso_one": "An intervention of this type dated only {{count}} day ago already exists. Check that it is not a duplicate of the same event.",
     "aviso_other": "An intervention of this type dated only {{count}} days ago already exists. Check that it is not a duplicate of the same event."
+  },
+  "usoChecklists": {
+    "campo": "Checklists",
+    "con": "With checklists",
+    "sin": "Without checklists",
+    "hereda": "Same as {{origen}} ({{valor}})",
+    "heredado": "(inherited from {{origen}})",
+    "propio": "(set here)",
+    "origen": {
+      "empresa": "the company",
+      "cliente": "the customer"
+    }
   }
 }

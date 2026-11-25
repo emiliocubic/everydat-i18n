@@ -4106,6 +4106,12 @@
           "reparable": "Demander s'il est réparable ?",
           "medida": "Demander ce qui a été fait de l'équipement ?",
           "medidaHint": "Les réponses sont fixes : signalé comme inutilisable, retiré du site, détruit ou aucune."
+        },
+        "usoChecklists": {
+          "title": "Utilisation des check-lists",
+          "desc": "Configuration par défaut : utiliser ou non des check-lists dans les inspections. Vous pourrez ensuite la modifier pour chaque client ou site.",
+          "usar": "Utiliser les check-lists par défaut",
+          "noUsar": "Ne pas utiliser les check-lists par défaut ; je les activerai si nécessaire pour certains clients ou sites"
         }
       },
       "grupoClientes": "Clients",
@@ -4829,7 +4835,8 @@
           "enviar_propuesta_one": "Envoyer la version {{numero}} de la proposition {{propuesta}} à {{count}} contact",
           "enviar_propuesta_other": "Envoyer la version {{numero}} de la proposition {{propuesta}} à {{count}} contacts",
           "enviar_parte_one": "Envoyer le bon {{parte}} à {{count}} contact",
-          "enviar_parte_other": "Envoyer le bon {{parte}} à {{count}} contacts"
+          "enviar_parte_other": "Envoyer le bon {{parte}} à {{count}} contacts",
+          "cambiar_uso_checklists": "Modifier l'utilisation des check-lists par défaut"
         },
         "persona": "C'est {{nombre}} ({{email}})",
         "pasaAClientes": "Cette personne ne voit aucun client aujourd'hui : elle verra ceux qui lui sont attribués.",
@@ -5437,7 +5444,8 @@
             "producto_quitado": "Le produit « {{sujeto}} » est retiré du bloc « {{bloque}} »",
             "bloque_quitado_one": "Le bloc « {{sujeto}} » est retiré avec son produit",
             "bloque_quitado_other": "Le bloc « {{sujeto}} » est retiré avec ses {{count}} produits",
-            "apto_naranja": "Le conforme avec avis ou réserve, en orange dans le rapport"
+            "apto_naranja": "Le conforme avec avis ou réserve, en orange dans le rapport",
+            "usa_checklists": "Check-lists par défaut"
           },
           "valor": {
             "si": "oui",
@@ -10449,5 +10457,17 @@
     "aviso_zero": "Une intervention de ce type datée d’aujourd’hui existe déjà. Vérifiez qu’il ne s’agit pas d’un doublon du même événement.",
     "aviso_one": "Une intervention de ce type datée d’il y a seulement {{count}} jour existe déjà. Vérifiez qu’il ne s’agit pas d’un doublon du même événement.",
     "aviso_other": "Une intervention de ce type datée d’il y a seulement {{count}} jours existe déjà. Vérifiez qu’il ne s’agit pas d’un doublon du même événement."
+  },
+  "usoChecklists": {
+    "campo": "Check-lists",
+    "con": "Avec check-lists",
+    "sin": "Sans check-lists",
+    "hereda": "Comme {{origen}} ({{valor}})",
+    "heredado": "(hérité de {{origen}})",
+    "propio": "(défini ici)",
+    "origen": {
+      "empresa": "l'entreprise",
+      "cliente": "le client"
+    }
   }
 }
