@@ -6051,7 +6051,8 @@
         "precio": "Prix unitaire",
         "dto": "Remise (%)",
         "subtotal": "Sous-total",
-        "quitar": "Retirer"
+        "quitar": "Retirer",
+        "precioUd": "{{moneda}}/u."
       },
       "tot": {
         "suma": "Somme des concepts",
@@ -8109,7 +8110,9 @@
       "yaEmitidas_other": "{{count}} vérifications de ce rapport figurent déjà dans un autre rapport émis."
     },
     "listado": {
-      "enviadoHint": "Quand est parti le dernier e-mail accepté avec l'une de ses versions, par le Mail Center."
+      "enviadoHint": "Quand est parti le dernier e-mail accepté avec l'une de ses versions, par le Mail Center.",
+      "verPdf": "Voir le PDF",
+      "abriendo": "Ouverture du PDF…"
     },
     "entrega": {
       "titulo": "Remise",
@@ -9699,6 +9702,9 @@
       "sinDestino": "Choisissez un dossier.",
       "mover": "Déplacer",
       "movido": "Déplacé vers « {{nombre}} »."
+    },
+    "repositorio": {
+      "entidadTitulo": "Rechercher des documents par fiche"
     }
   },
   "preguntasIa": {

@@ -7018,7 +7018,8 @@
         "precio": "Importe unitario",
         "dto": "Dto (%)",
         "subtotal": "Subtotal",
-        "quitar": "Quitar"
+        "quitar": "Quitar",
+        "precioUd": "{{moneda}}/ud."
       },
       "tot": {
         "suma": "Suma de conceptos",
@@ -9083,7 +9084,8 @@
         "generales": "Documentos generales",
         "entidad": "Por entidad",
         "papelera": "Papelera"
-      }
+      },
+      "entidadTitulo": "Buscar documentos por entidad"
     },
     "campos": {
       "nombre": "Título",
@@ -9432,7 +9434,9 @@
     "listado": {
       "todosClientes": "Todos los clientes",
       "todosEmplazamientos": "Todos los emplazamientos",
-      "enviadoHint": "Cuándo salió el último correo aceptado con alguna de sus versiones, por el Mail Center."
+      "enviadoHint": "Cuándo salió el último correo aceptado con alguna de sus versiones, por el Mail Center.",
+      "verPdf": "Ver el PDF",
+      "abriendo": "Abriendo el PDF…"
     },
     "emision": {
       "recomendadoTitulo": "Recomendado: confirmar vista previa antes de emitir",

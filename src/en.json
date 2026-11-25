@@ -7018,7 +7018,8 @@
         "precio": "Unit price",
         "dto": "Disc. (%)",
         "subtotal": "Subtotal",
-        "quitar": "Remove"
+        "quitar": "Remove",
+        "precioUd": "{{moneda}}/unit"
       },
       "tot": {
         "suma": "Sum of items",
@@ -9083,7 +9084,8 @@
         "generales": "General documents",
         "entidad": "By record",
         "papelera": "Bin"
-      }
+      },
+      "entidadTitulo": "Find documents by record"
     },
     "campos": {
       "nombre": "Title",
@@ -9432,7 +9434,9 @@
     "listado": {
       "todosClientes": "All clients",
       "todosEmplazamientos": "All sites",
-      "enviadoHint": "When the last accepted email with any of its versions went out, through the Mail Center."
+      "enviadoHint": "When the last accepted email with any of its versions went out, through the Mail Center.",
+      "verPdf": "View the PDF",
+      "abriendo": "Opening the PDF…"
     },
     "emision": {
       "recomendadoTitulo": "Recommended: check the preview before issuing",
