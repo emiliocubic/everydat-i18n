@@ -9138,6 +9138,10 @@
       "sinDestino": "Elige una carpeta.",
       "mover": "Mover",
       "movido": "Movido a «{{nombre}}»."
+    },
+    "elegir": {
+      "anadir": "Añadir",
+      "anadido": "Añadido"
     }
   },
   "informes": {
@@ -11967,7 +11971,8 @@
       "adjunto": "Cómo fue",
       "conAdjunto": "PDF adjunto y enlace de descarga",
       "soloEnlace": "Solo el enlace de descarga",
-      "descarga": "Descarga"
+      "descarga": "Descarga",
+      "anexos": "Anexos"
     },
     "sinEnvios": "Sin envíos todavía",
     "descargado_one": "descargado el {{fecha}}",
@@ -12000,6 +12005,34 @@
       "papel": {
         "contacto_propuesta": "Contacto de la propuesta",
         "contacto_tecnico": "Contacto técnico del proyecto"
+      },
+      "saludoAutomatico": "El saludo y la despedida los pone la aplicación automáticamente.",
+      "forma": {
+        "titulo": "Cómo va el informe",
+        "enlace": "Informe disponible desde el mensaje, sólo a través de enlace para descarga",
+        "adjunto": "Informe disponible desde el mensaje, como enlace para descarga y también como archivo pdf adjunto al mensaje (tamaño del pdf: {{peso}})",
+        "noCabe": "El PDF pesa {{peso}}, más de {{max}}: solo puede ir por el enlace."
+      },
+      "anexos": {
+        "titulo": "Anexos al envío",
+        "adjunto": "adjunto",
+        "porEnlace": "por el enlace, no cabe como adjunto",
+        "subido": "subido ahora",
+        "subir": "Subir archivo",
+        "elegir": "Elegir del repositorio",
+        "hint": "Los anexos van adjuntos mientras quepan, junto al PDF, en {{max}}; los demás se descargan desde el enlace de cada destinatario. Lo que subes aquí queda guardado en la carpeta Informes de la instalación.",
+        "elegirTitulo": "Elegir anexos del repositorio",
+        "elegirSub": "Solo puedes añadir los documentos que puedes descargar.",
+        "donde": {
+          "obra": "Instalación del informe",
+          "cliente": "Cliente",
+          "generales": "Documentos generales",
+          "otra": "Otra ficha"
+        },
+        "otraFicha": "Buscar otra ficha",
+        "elegidos_one": "{{count}} anexo elegido",
+        "elegidos_other": "{{count}} anexos elegidos",
+        "listo": "Hecho"
       }
     }
   },

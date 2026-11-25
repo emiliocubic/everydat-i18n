@@ -9732,6 +9732,10 @@
     },
     "repositorio": {
       "entidadTitulo": "Rechercher des documents par fiche"
+    },
+    "elegir": {
+      "anadir": "Ajouter",
+      "anadido": "Ajouté"
     }
   },
   "preguntasIa": {
@@ -10225,7 +10229,8 @@
       "adjunto": "Comment il est parti",
       "conAdjunto": "PDF joint et lien de téléchargement",
       "soloEnlace": "Lien de téléchargement seul",
-      "descarga": "Téléchargement"
+      "descarga": "Téléchargement",
+      "anexos": "Annexes"
     },
     "sinEnvios": "Pas encore envoyé",
     "descargado_one": "téléchargé le {{fecha}}",
@@ -10258,6 +10263,34 @@
       "papel": {
         "contacto_propuesta": "Contact de la proposition",
         "contacto_tecnico": "Contact technique du projet"
+      },
+      "saludoAutomatico": "La salutation et la formule de politesse sont ajoutées automatiquement par l'application.",
+      "forma": {
+        "titulo": "Comment le rapport est envoyé",
+        "enlace": "Rapport disponible depuis le message, uniquement par un lien de téléchargement",
+        "adjunto": "Rapport disponible depuis le message, par un lien de téléchargement et aussi en fichier PDF joint au message (taille du PDF : {{peso}})",
+        "noCabe": "Le PDF pèse {{peso}}, plus de {{max}} : il ne peut passer que par le lien."
+      },
+      "anexos": {
+        "titulo": "Annexes du message",
+        "adjunto": "joint",
+        "porEnlace": "par le lien, trop lourd pour être joint",
+        "subido": "téléversé maintenant",
+        "subir": "Téléverser un fichier",
+        "elegir": "Choisir dans le référentiel",
+        "hint": "Les annexes sont jointes tant qu'elles tiennent, avec le PDF, dans {{max}} ; les autres se téléchargent depuis le lien de chaque destinataire. Ce que vous téléversez ici est conservé dans le dossier Rapports du site.",
+        "elegirTitulo": "Choisir des annexes dans le référentiel",
+        "elegirSub": "Vous ne pouvez ajouter que les documents que vous pouvez télécharger.",
+        "donde": {
+          "obra": "Site du rapport",
+          "cliente": "Client",
+          "generales": "Documents généraux",
+          "otra": "Autre fiche"
+        },
+        "otraFicha": "Chercher une autre fiche",
+        "elegidos_one": "{{count}} annexe choisie",
+        "elegidos_other": "{{count}} annexes choisies",
+        "listo": "Terminé"
       }
     }
   },

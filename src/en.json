@@ -9138,6 +9138,10 @@
       "sinDestino": "Choose a folder.",
       "mover": "Move",
       "movido": "Moved to “{{nombre}}”."
+    },
+    "elegir": {
+      "anadir": "Add",
+      "anadido": "Added"
     }
   },
   "informes": {
@@ -11967,7 +11971,8 @@
       "adjunto": "How it went",
       "conAdjunto": "PDF attached and download link",
       "soloEnlace": "Download link only",
-      "descarga": "Download"
+      "descarga": "Download",
+      "anexos": "Annexes"
     },
     "sinEnvios": "Not sent yet",
     "descargado_one": "downloaded on {{fecha}}",
@@ -12000,6 +12005,34 @@
       "papel": {
         "contacto_propuesta": "Contact of the proposal",
         "contacto_tecnico": "Technical contact of the project"
+      },
+      "saludoAutomatico": "The greeting and the sign-off are added automatically by the application.",
+      "forma": {
+        "titulo": "How the report is sent",
+        "enlace": "Report available from the message, only through a download link",
+        "adjunto": "Report available from the message, as a download link and also as a PDF file attached to the message (PDF size: {{peso}})",
+        "noCabe": "The PDF is {{peso}}, more than {{max}}: it can only go through the link."
+      },
+      "anexos": {
+        "titulo": "Annexes to the message",
+        "adjunto": "attached",
+        "porEnlace": "through the link, too large to attach",
+        "subido": "uploaded now",
+        "subir": "Upload file",
+        "elegir": "Choose from the repository",
+        "hint": "Annexes are attached while they fit, together with the PDF, in {{max}}; the rest can be downloaded from each recipient's link. What you upload here is kept in the site's Reports folder.",
+        "elegirTitulo": "Choose annexes from the repository",
+        "elegirSub": "You can only add documents you are allowed to download.",
+        "donde": {
+          "obra": "Report's site",
+          "cliente": "Client",
+          "generales": "General documents",
+          "otra": "Another record"
+        },
+        "otraFicha": "Search another record",
+        "elegidos_one": "{{count}} annex chosen",
+        "elegidos_other": "{{count}} annexes chosen",
+        "listo": "Done"
       }
     }
   },
