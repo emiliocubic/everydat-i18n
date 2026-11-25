@@ -5307,7 +5307,8 @@
             "foto_quitada": "La photo de l'écran de connexion est retirée : il s'affiche sur un fond neutre",
             "producto_quitado": "Le produit « {{sujeto}} » est retiré du bloc « {{bloque}} »",
             "bloque_quitado_one": "Le bloc « {{sujeto}} » est retiré avec son produit",
-            "bloque_quitado_other": "Le bloc « {{sujeto}} » est retiré avec ses {{count}} produits"
+            "bloque_quitado_other": "Le bloc « {{sujeto}} » est retiré avec ses {{count}} produits",
+            "apto_naranja": "Le conforme avec avis ou réserve, en orange dans le rapport"
           },
           "valor": {
             "si": "oui",

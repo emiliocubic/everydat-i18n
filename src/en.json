@@ -4462,7 +4462,9 @@
         "modificadores": "Accept qualifiers",
         "noAptas": "Failed inspections",
         "reparable": "Ask whether it can be repaired",
-        "queSeHizo": "Ask what was done with the equipment"
+        "queSeHizo": "Ask what was done with the equipment",
+        "naranja": "Show passed inspections with notices or qualifiers in orange instead of green",
+        "naranjaHint": "Only in the report PDF; the screens and the app stay green."
       },
       "avisos": {
         "titulo": "Client notices",
@@ -6105,7 +6107,8 @@
             "foto_quitada": "The sign-in screen photo is removed: it shows a neutral background",
             "producto_quitado": "The product «{{sujeto}}» is removed from the block «{{bloque}}»",
             "bloque_quitado_one": "The block «{{sujeto}}» is removed with its product",
-            "bloque_quitado_other": "The block «{{sujeto}}» is removed with its {{count}} products"
+            "bloque_quitado_other": "The block «{{sujeto}}» is removed with its {{count}} products",
+            "apto_naranja": "A pass with a notice or qualifier, in orange in the report"
           },
           "valor": {
             "si": "yes",

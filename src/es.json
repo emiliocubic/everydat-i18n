@@ -4462,7 +4462,9 @@
         "modificadores": "Aceptar modificadores",
         "noAptas": "Revisiones no aptas",
         "reparable": "Preguntar si es reparable",
-        "queSeHizo": "Preguntar qué se hizo con el equipo"
+        "queSeHizo": "Preguntar qué se hizo con el equipo",
+        "naranja": "Mostrar las revisiones aptas con avisos o modificadores en color naranja en vez de verde",
+        "naranjaHint": "Solo en el PDF de los informes; las pantallas y la app siguen en verde."
       },
       "avisos": {
         "titulo": "Avisos a clientes",
@@ -6105,7 +6107,8 @@
             "foto_quitada": "Se quita la foto de la pantalla de entrada: sale sobre un fondo neutro",
             "producto_quitado": "Se quita el producto «{{sujeto}}» del bloque «{{bloque}}»",
             "bloque_quitado_one": "Se quita el bloque «{{sujeto}}» con su producto",
-            "bloque_quitado_other": "Se quita el bloque «{{sujeto}}» con sus {{count}} productos"
+            "bloque_quitado_other": "Se quita el bloque «{{sujeto}}» con sus {{count}} productos",
+            "apto_naranja": "El apto con aviso o matización, en naranja en el informe"
           },
           "valor": {
             "si": "sí",
