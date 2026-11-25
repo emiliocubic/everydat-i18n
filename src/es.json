@@ -11974,5 +11974,53 @@
         "contacto_tecnico": "Contacto técnico del proyecto"
       }
     }
+  },
+  "logsFicha": {
+    "cols": {
+      "fecha": "Fecha",
+      "quien": "Quién",
+      "que": "Qué cambió"
+    },
+    "vacio": "Aún no hay cambios registrados.",
+    "error": "No se ha podido cargar el registro.",
+    "cargarMas": "Cargar más",
+    "sistema": "Sistema",
+    "sherpa": "con Sherpa",
+    "campos": {
+      "codigo": "Código",
+      "nombre": "Nombre",
+      "razon_social": "Razón social",
+      "potencial": "Potencial",
+      "estado": "Estado",
+      "fecha_baja": "Fecha de baja",
+      "nif": "NIF",
+      "direccion": "Dirección",
+      "cp": "Código postal",
+      "localidad": "Localidad",
+      "provincia": "Provincia",
+      "pais": "País",
+      "telefono1": "Teléfono 1",
+      "telefono2": "Teléfono 2",
+      "telefono3": "Teléfono 3",
+      "email1": "Correo 1",
+      "email2": "Correo 2",
+      "email3": "Correo 3",
+      "plazo_revisiones": "Plazo de revisiones",
+      "app_acceso": "Portal",
+      "notif_revisiones": "Avisos de revisión",
+      "notif_caducidades": "Avisos de caducidad",
+      "avisos_revision_dias": "Días de aviso de revisión",
+      "avisos_fin_vida": "Avisos de fin de vida",
+      "alerta": "Alerta",
+      "notas": "Notas",
+      "descuento": "Descuento",
+      "idioma": "Idioma",
+      "apellidos": "Apellidos",
+      "email": "Correo",
+      "telefonos": "Teléfonos",
+      "acceso_app": "Acceso al portal",
+      "permisos": "Envíos",
+      "nivel": "Nivel de acceso"
+    }
   }
 }

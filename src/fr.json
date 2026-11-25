@@ -10234,5 +10234,53 @@
         "contacto_tecnico": "Contact technique du projet"
       }
     }
+  },
+  "logsFicha": {
+    "cols": {
+      "fecha": "Date",
+      "quien": "Qui",
+      "que": "Ce qui a changé"
+    },
+    "vacio": "Aucune modification enregistrée pour l'instant.",
+    "error": "Le journal n'a pas pu être chargé.",
+    "cargarMas": "Charger plus",
+    "sistema": "Système",
+    "sherpa": "avec Sherpa",
+    "campos": {
+      "codigo": "Code",
+      "nombre": "Nom",
+      "razon_social": "Raison sociale",
+      "potencial": "Prospect",
+      "estado": "Statut",
+      "fecha_baja": "Date de désactivation",
+      "nif": "N° fiscal",
+      "direccion": "Adresse",
+      "cp": "Code postal",
+      "localidad": "Localité",
+      "provincia": "Province",
+      "pais": "Pays",
+      "telefono1": "Téléphone 1",
+      "telefono2": "Téléphone 2",
+      "telefono3": "Téléphone 3",
+      "email1": "E-mail 1",
+      "email2": "E-mail 2",
+      "email3": "E-mail 3",
+      "plazo_revisiones": "Délai des inspections",
+      "app_acceso": "Portail",
+      "notif_revisiones": "Avis d'inspection",
+      "notif_caducidades": "Avis d'expiration",
+      "avisos_revision_dias": "Jours d'avis d'inspection",
+      "avisos_fin_vida": "Avis de fin de vie",
+      "alerta": "Alerte",
+      "notas": "Notes",
+      "descuento": "Remise",
+      "idioma": "Langue",
+      "apellidos": "Nom de famille",
+      "email": "E-mail",
+      "telefonos": "Téléphones",
+      "acceso_app": "Accès au portail",
+      "permisos": "Envois",
+      "nivel": "Niveau d'accès"
+    }
   }
 }

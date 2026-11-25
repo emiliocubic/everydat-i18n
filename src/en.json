@@ -11974,5 +11974,53 @@
         "contacto_tecnico": "Technical contact of the project"
       }
     }
+  },
+  "logsFicha": {
+    "cols": {
+      "fecha": "Date",
+      "quien": "Who",
+      "que": "What changed"
+    },
+    "vacio": "No changes recorded yet.",
+    "error": "The log could not be loaded.",
+    "cargarMas": "Load more",
+    "sistema": "System",
+    "sherpa": "with Sherpa",
+    "campos": {
+      "codigo": "Code",
+      "nombre": "Name",
+      "razon_social": "Legal name",
+      "potencial": "Prospect",
+      "estado": "Status",
+      "fecha_baja": "Deactivation date",
+      "nif": "Tax ID",
+      "direccion": "Address",
+      "cp": "Postcode",
+      "localidad": "Town",
+      "provincia": "Province",
+      "pais": "Country",
+      "telefono1": "Phone 1",
+      "telefono2": "Phone 2",
+      "telefono3": "Phone 3",
+      "email1": "Email 1",
+      "email2": "Email 2",
+      "email3": "Email 3",
+      "plazo_revisiones": "Inspection deadline",
+      "app_acceso": "Portal",
+      "notif_revisiones": "Inspection notices",
+      "notif_caducidades": "Expiry notices",
+      "avisos_revision_dias": "Inspection notice days",
+      "avisos_fin_vida": "End-of-life notices",
+      "alerta": "Alert",
+      "notas": "Notes",
+      "descuento": "Discount",
+      "idioma": "Language",
+      "apellidos": "Surname",
+      "email": "Email",
+      "telefonos": "Phones",
+      "acceso_app": "Portal access",
+      "permisos": "Mailings",
+      "nivel": "Access level"
+    }
   }
 }
