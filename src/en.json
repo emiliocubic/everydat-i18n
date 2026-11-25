@@ -459,7 +459,7 @@
     "allColumnsVisible": "All columns are visible.",
     "noColumnsSelected": "No columns selected.",
     "hideColumn": "Hide column",
-    "searchPlaceholder": "Search…",
+    "searchPlaceholder": "Search text…",
     "searchField": "Search field…",
     "noResults": "No results",
     "rowsPerPage": "Rows per page",

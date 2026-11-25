@@ -2535,7 +2535,7 @@
     "allColumnsVisible": "Todas las columnas están visibles.",
     "noColumnsSelected": "Ninguna columna seleccionada.",
     "hideColumn": "Ocultar columna",
-    "searchPlaceholder": "Buscar…",
+    "searchPlaceholder": "Buscar texto…",
     "searchField": "Buscar campo…",
     "noResults": "Sin resultados",
     "rowsPerPage": "Filas por página",

@@ -452,7 +452,7 @@
     "allColumnsVisible": "Toutes les colonnes sont visibles.",
     "noColumnsSelected": "Aucune colonne sélectionnée.",
     "hideColumn": "Masquer la colonne",
-    "searchPlaceholder": "Rechercher…",
+    "searchPlaceholder": "Rechercher du texte…",
     "searchField": "Rechercher un champ…",
     "noResults": "Aucun résultat",
     "rowsPerPage": "Lignes par page",
