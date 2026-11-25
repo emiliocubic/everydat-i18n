@@ -696,6 +696,19 @@
       "resultado": "{{n}} cambiados y {{sin}} sin cambio",
       "rechazados": "{{count}} cliente no se ha podido cambiar:",
       "rechazados_other": "{{count}} clientes no se han podido cambiar:"
+    },
+    "alta": {
+      "intro": "Datos básicos para creación rápida del cliente. Posteriormente podrás completarlos con mayor detalle.",
+      "dups": {
+        "titulo_one": "Ya hay un cliente que se parece:",
+        "titulo_other": "Ya hay {{count}} clientes que se parecen:",
+        "pista": "Puedes darlo de alta igualmente."
+      },
+      "por": {
+        "nif": "mismo NIF",
+        "nombre": "nombre parecido",
+        "razon_social": "razón social parecida"
+      }
     }
   },
   "contactos": {

@@ -825,6 +825,19 @@
       "resultado": "{{n}} changed and {{sin}} unchanged",
       "rechazados": "{{count}} customer could not be changed:",
       "rechazados_other": "{{count}} customers could not be changed:"
+    },
+    "alta": {
+      "intro": "Basic details to create the customer quickly. You can complete them in more detail later.",
+      "dups": {
+        "titulo_one": "There is already a customer that looks similar:",
+        "titulo_other": "There are already {{count}} customers that look similar:",
+        "pista": "You can still create it."
+      },
+      "por": {
+        "nif": "same tax ID",
+        "nombre": "similar name",
+        "razon_social": "similar company name"
+      }
     }
   },
   "contactos": {

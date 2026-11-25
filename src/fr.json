@@ -759,6 +759,19 @@
     "fusion": {
       "asa": "Faites glisser cette fiche sur celle qui reste pour les fusionner",
       "encontradoPor": "Trouvé par la fiche fusionnée {{ref}}"
+    },
+    "alta": {
+      "intro": "Données de base pour créer rapidement le client. Vous pourrez les compléter plus en détail ensuite.",
+      "dups": {
+        "titulo_one": "Un client semblable existe déjà :",
+        "titulo_other": "{{count}} clients semblables existent déjà :",
+        "pista": "Vous pouvez quand même le créer."
+      },
+      "por": {
+        "nif": "même numéro fiscal",
+        "nombre": "nom semblable",
+        "razon_social": "raison sociale semblable"
+      }
     }
   },
   "contactos": {
