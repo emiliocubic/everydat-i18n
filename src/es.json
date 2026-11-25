@@ -75,7 +75,12 @@
       "hoy": "Hoy",
       "borrar": "Borrar",
       "mesAnterior": "Mes anterior",
-      "mesSiguiente": "Mes siguiente"
+      "mesSiguiente": "Mes siguiente",
+      "elegirAnio": "Elegir año y mes",
+      "decadaAnterior": "Década anterior",
+      "decadaSiguiente": "Década siguiente",
+      "anioAnterior": "Año anterior",
+      "anioSiguiente": "Año siguiente"
     },
     "contrasena": {
       "ayuda": "Al menos 12 caracteres, sin más reglas. No vale una que aparezca en filtraciones conocidas.",

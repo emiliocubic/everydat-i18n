@@ -75,7 +75,12 @@
       "hoy": "Today",
       "borrar": "Clear",
       "mesAnterior": "Previous month",
-      "mesSiguiente": "Next month"
+      "mesSiguiente": "Next month",
+      "elegirAnio": "Choose year and month",
+      "decadaAnterior": "Previous decade",
+      "decadaSiguiente": "Next decade",
+      "anioAnterior": "Previous year",
+      "anioSiguiente": "Next year"
     },
     "contrasena": {
       "ayuda": "At least 12 characters, no other rules. One that appears in known data leaks is not accepted.",
