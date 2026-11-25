@@ -8002,8 +8002,6 @@
       "paralizadoConfirm": "This project is paused. Inspect anyway?",
       "revisionReciente": "Recent inspection",
       "recienteSinEnviar": "(not sent)",
-      "recienteTitulo": "Recent inspection",
-      "recienteConfirm": "This equipment was inspected on {{fecha}} ({{resultado}}). Inspect it again?",
       "borrar": "Delete",
       "borrarTitulo": "Delete inspection",
       "borrarConfirm": "The inspection of {{fecha}} will be deleted with its checkpoints and photos. If it was already sent, it goes to the office bin, where it can be restored.",
@@ -8711,7 +8709,6 @@
       "nElementos_one": "({{count}} item)",
       "nElementos_other": "({{count}} items)",
       "noEnMovil": "This set is not in what was downloaded to the device. If it should be, download its project again.",
-      "recienteConfirm": "This set was inspected on {{fecha}} ({{resultado}}). Inspect it again?",
       "formaParte": "Part of the set",
       "abrirAria": "Open the sheet of the set {{nombre}}",
       "seCorrigeDesdeConjunto": "This inspection was made to the whole set: it is corrected from the set's sheet, not from each item's."
@@ -12041,5 +12038,11 @@
       "permisos": "Mailings",
       "nivel": "Access level"
     }
+  },
+  "actuacionRepetida": {
+    "titulo": "Warning",
+    "aviso_zero": "An intervention of this type dated today already exists. Check that it is not a duplicate of the same event.",
+    "aviso_one": "An intervention of this type dated only {{count}} day ago already exists. Check that it is not a duplicate of the same event.",
+    "aviso_other": "An intervention of this type dated only {{count}} days ago already exists. Check that it is not a duplicate of the same event."
   }
 }

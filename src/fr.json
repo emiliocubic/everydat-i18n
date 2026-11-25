@@ -7031,8 +7031,6 @@
       "paralizadoConfirm": "Ce projet est en pause. Contrôler quand même ?",
       "revisionReciente": "Vérification récente",
       "recienteSinEnviar": "(non envoyée)",
-      "recienteTitulo": "Vérification récente",
-      "recienteConfirm": "Cet équipement a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?",
       "borrar": "Supprimer",
       "borrarTitulo": "Supprimer l'inspection",
       "borrarConfirm": "L'inspection du {{fecha}} sera supprimée avec ses points et ses photos. Si elle a déjà été envoyée, elle va dans la corbeille du bureau, d'où elle peut être restaurée.",
@@ -7740,7 +7738,6 @@
       "nElementos_one": "({{count}} équipement)",
       "nElementos_other": "({{count}} équipements)",
       "noEnMovil": "Cet ensemble n'est pas dans ce qui a été téléchargé sur l'appareil. S'il devrait y être, téléchargez à nouveau son projet.",
-      "recienteConfirm": "Cet ensemble a été vérifié le {{fecha}} ({{resultado}}). Le vérifier à nouveau ?",
       "formaParte": "Fait partie de l'ensemble",
       "abrirAria": "Ouvrir la fiche de l'ensemble {{nombre}}",
       "seCorrigeDesdeConjunto": "Ce contrôle a été fait sur l'ensemble entier : il se corrige depuis la fiche de l'ensemble, pas depuis celle de chaque équipement."
@@ -10299,5 +10296,11 @@
       "permisos": "Envois",
       "nivel": "Niveau d'accès"
     }
+  },
+  "actuacionRepetida": {
+    "titulo": "Attention",
+    "aviso_zero": "Une intervention de ce type datée d’aujourd’hui existe déjà. Vérifiez qu’il ne s’agit pas d’un doublon du même événement.",
+    "aviso_one": "Une intervention de ce type datée d’il y a seulement {{count}} jour existe déjà. Vérifiez qu’il ne s’agit pas d’un doublon du même événement.",
+    "aviso_other": "Une intervention de ce type datée d’il y a seulement {{count}} jours existe déjà. Vérifiez qu’il ne s’agit pas d’un doublon du même événement."
   }
 }

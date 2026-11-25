@@ -8002,8 +8002,6 @@
       "paralizadoConfirm": "Este proyecto está paralizado. ¿Revisar igualmente?",
       "revisionReciente": "Revisión reciente",
       "recienteSinEnviar": "(sin enviar)",
-      "recienteTitulo": "Revisión reciente",
-      "recienteConfirm": "Este equipo se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?",
       "borrar": "Borrar",
       "borrarTitulo": "Borrar revisión",
       "borrarConfirm": "Se borrará la revisión del {{fecha}} con sus puntos y sus fotos. Si ya se envió, va a la papelera de la oficina, desde donde se puede recuperar.",
@@ -8711,7 +8709,6 @@
       "nElementos_one": "({{count}} elemento)",
       "nElementos_other": "({{count}} elementos)",
       "noEnMovil": "Este conjunto no está en lo bajado al móvil. Si debería estar, vuelve a bajar su proyecto.",
-      "recienteConfirm": "Este conjunto se revisó el {{fecha}} ({{resultado}}). ¿Hacer otra revisión?",
       "formaParte": "Forma parte del conjunto",
       "abrirAria": "Abrir la ficha del conjunto {{nombre}}",
       "seCorrigeDesdeConjunto": "Esta revisión se hizo al conjunto entero: se corrige desde la ficha del conjunto, no desde la de cada equipo."
@@ -12041,5 +12038,11 @@
       "permisos": "Envíos",
       "nivel": "Nivel de acceso"
     }
+  },
+  "actuacionRepetida": {
+    "titulo": "Atención",
+    "aviso_zero": "Ya existe una actuación de este tipo fechada hoy mismo, compruebe que no se trata de una duplicación del mismo evento.",
+    "aviso_one": "Ya existe una actuación de este tipo fechada hace solo {{count}} día, compruebe que no se trata de una duplicación del mismo evento.",
+    "aviso_other": "Ya existe una actuación de este tipo fechada hace solo {{count}} días, compruebe que no se trata de una duplicación del mismo evento."
   }
 }
