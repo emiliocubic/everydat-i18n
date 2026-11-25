@@ -2113,6 +2113,13 @@
     "transferTitle": "Transfer site",
     "transferHint": "Select the customer to transfer this site to.",
     "transferConfirm": "Transfer this site to customer {{nombre}}?",
+    "traspaso": {
+      "titulo": "Who loses this site",
+      "dejanDeRecibir": "Stop receiving its notices, reports and quotes: {{nombres}}.",
+      "dejanDeEntrar": "Stop having access to it: {{nombres}}.",
+      "nadie": "Nobody from the outgoing customer loses anything at this site.",
+      "confirmar": "Change"
+    },
     "fields": {
       "estado": "Status",
       "nombre": "Name",

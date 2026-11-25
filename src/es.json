@@ -1984,6 +1984,13 @@
     "transferTitle": "Transferir emplazamiento",
     "transferHint": "Selecciona el cliente al que quieres transferir este emplazamiento.",
     "transferConfirm": "¿Transferir este emplazamiento al cliente {{nombre}}?",
+    "traspaso": {
+      "titulo": "Quién pierde esta instalación",
+      "dejanDeRecibir": "Dejan de recibir sus avisos, informes y presupuestos: {{nombres}}.",
+      "dejanDeEntrar": "Dejan de entrar en ella: {{nombres}}.",
+      "nadie": "Nadie de la gente del cliente que sale pierde nada en esta instalación.",
+      "confirmar": "Cambiar"
+    },
     "fields": {
       "estado": "Estado",
       "nombre": "Nombre",

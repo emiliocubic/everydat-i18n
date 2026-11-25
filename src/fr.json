@@ -1976,6 +1976,13 @@
     "transferTitle": "Transférer le site",
     "transferHint": "Sélectionnez le client vers lequel transférer ce site.",
     "transferConfirm": "Transférer ce site au client {{nombre}} ?",
+    "traspaso": {
+      "titulo": "Qui perd ce site",
+      "dejanDeRecibir": "Ne reçoivent plus ses avis, rapports et devis : {{nombres}}.",
+      "dejanDeEntrar": "N'y ont plus accès : {{nombres}}.",
+      "nadie": "Personne du client sortant ne perd quoi que ce soit sur ce site.",
+      "confirmar": "Modifier"
+    },
     "fields": {
       "estado": "État",
       "nombre": "Nom",
