@@ -2016,7 +2016,7 @@
       "descripcion": "Descripción",
       "latitud": "Latitud",
       "longitud": "Longitud",
-      "notas": "Notas",
+      "notas": "Notas internas",
       "coordenadas": "Coordenadas GPS",
       "propietario": "Propietario",
       "clienteActual": "Cliente activo",
@@ -2042,7 +2042,8 @@
       "proxRev": "Fecha próxima revisión",
       "proxRevCol": "Próx. rev.",
       "proxRevTitle": "Fecha de próxima revisión más cercana del emplazamiento",
-      "coordenadasCol": "GPS"
+      "coordenadasCol": "GPS",
+      "notasPublicas": "Notas públicas"
     },
     "errors": {
       "clienteRequired": "Debes seleccionar un cliente."
@@ -2074,11 +2075,12 @@
       "secciones": {
         "identificacion": "Identificación",
         "parametros": "Parámetros de trabajo",
-        "notas": "Notas",
+        "notas": "Notas internas",
         "bitacora": "Histórico relación con clientes",
         "internos": "Acceso · Usuarios internos",
         "colaboradores": "Acceso · Usuarios colaboradores",
-        "contactos": "Contactos con acceso a esta instalación"
+        "contactos": "Contactos con acceso a esta instalación",
+        "notasPublicas": "Notas públicas"
       },
       "cols": {
         "nombre": "Nombre",
@@ -2137,7 +2139,8 @@
       "planos": {
         "planos": "Planos",
         "fotos": "Fotos"
-      }
+      },
+      "notasPublicasAyuda": "Las verá el cliente en el portal y salen en los informes que las insertan."
     },
     "grupos": {
       "contadores": "Contadores",

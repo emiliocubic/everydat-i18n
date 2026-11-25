@@ -2003,7 +2003,7 @@
       "descripcion": "Description",
       "latitud": "Latitude",
       "longitud": "Longitude",
-      "notas": "Notes",
+      "notas": "Notes internes",
       "coordenadas": "Coordonnées GPS",
       "propietario": "Propriétaire",
       "clienteActual": "Client actif",
@@ -2029,7 +2029,8 @@
       "proxRev": "Date de prochaine vérification",
       "proxRevCol": "Proch. vér.",
       "proxRevTitle": "Date de vérification programmée la plus proche du site",
-      "coordenadasCol": "GPS"
+      "coordenadasCol": "GPS",
+      "notasPublicas": "Notes publiques"
     },
     "errors": {
       "clienteRequired": "Veuillez sélectionner un client."
@@ -2061,11 +2062,12 @@
       "secciones": {
         "identificacion": "Identification",
         "parametros": "Paramètres de travail",
-        "notas": "Notes",
+        "notas": "Notes internes",
         "bitacora": "Historique de la relation client",
         "internos": "Accès · Utilisateurs internes",
         "colaboradores": "Accès · Collaborateurs",
-        "contactos": "Contacts ayant accès à ce site"
+        "contactos": "Contacts ayant accès à ce site",
+        "notasPublicas": "Notes publiques"
       },
       "cols": {
         "nombre": "Nom",
@@ -2119,7 +2121,8 @@
       "contactos": {
         "vacio": "Aucun contact lié à ce site.",
         "ninguno": "Aucun"
-      }
+      },
+      "notasPublicasAyuda": "Le client les verra sur le portail, et elles figurent dans les rapports qui les insèrent."
     },
     "grupos": {
       "contadores": "Compteurs",

@@ -2145,7 +2145,7 @@
       "descripcion": "Description",
       "latitud": "Latitude",
       "longitud": "Longitude",
-      "notas": "Notes",
+      "notas": "Internal notes",
       "coordenadas": "GPS coordinates",
       "propietario": "Owner",
       "clienteActual": "Active customer",
@@ -2171,7 +2171,8 @@
       "proxRev": "Next inspection date",
       "proxRevCol": "Next insp.",
       "proxRevTitle": "Site's earliest scheduled inspection date",
-      "coordenadasCol": "GPS"
+      "coordenadasCol": "GPS",
+      "notasPublicas": "Public notes"
     },
     "errors": {
       "clienteRequired": "Please select a customer."
@@ -2203,11 +2204,12 @@
       "secciones": {
         "identificacion": "Identification",
         "parametros": "Working parameters",
-        "notas": "Notes",
+        "notas": "Internal notes",
         "bitacora": "Customer relationship history",
         "internos": "Access · Internal users",
         "colaboradores": "Access · Collaborators",
-        "contactos": "Contacts with access to this site"
+        "contactos": "Contacts with access to this site",
+        "notasPublicas": "Public notes"
       },
       "cols": {
         "nombre": "Name",
@@ -2266,7 +2268,8 @@
       "planos": {
         "planos": "Drawings",
         "fotos": "Photos"
-      }
+      },
+      "notasPublicasAyuda": "The client will see them in the portal, and they appear in the reports that insert them."
     },
     "grupos": {
       "contadores": "Counters",
