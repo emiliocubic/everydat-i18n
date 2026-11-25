@@ -12205,11 +12205,15 @@
     "con": "Con checklists",
     "sin": "Sin checklists",
     "hereda": "Como {{origen}} ({{valor}})",
-    "heredado": "(heredado de {{origen}})",
+    "heredado": "(heredado {{origen}})",
     "propio": "(establecido aquí)",
     "origen": {
       "empresa": "la empresa",
       "cliente": "el cliente"
+    },
+    "de": {
+      "empresa": "de la empresa",
+      "cliente": "del cliente"
     }
   }
 }

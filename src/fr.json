@@ -10463,11 +10463,15 @@
     "con": "Avec check-lists",
     "sin": "Sans check-lists",
     "hereda": "Comme {{origen}} ({{valor}})",
-    "heredado": "(hérité de {{origen}})",
+    "heredado": "(hérité {{origen}})",
     "propio": "(défini ici)",
     "origen": {
       "empresa": "l'entreprise",
       "cliente": "le client"
+    },
+    "de": {
+      "empresa": "de l'entreprise",
+      "cliente": "du client"
     }
   }
 }
