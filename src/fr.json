@@ -8369,6 +8369,19 @@
         "boton": "Marquer",
         "hecho_one": "{{count}} intervention marquée comme rapportée par une autre voie",
         "hecho_other": "{{count}} interventions marquées comme rapportées par une autre voie"
+      },
+      "verInformadas": "Voir celles rapportées par une autre voie",
+      "informadaEl": "Rapportée le",
+      "vacioInformadas": "Aucune intervention rapportée par une autre voie",
+      "vacioInformadasHint": "Celles marquées comme rapportées par une autre voie apparaissent ici, pour leur retirer la marque si besoin.",
+      "quitar": {
+        "accion": "Retirer la marque « rapportées par une autre voie »",
+        "titulo": "Retirer la marque",
+        "confirmar_one": "Retirer la marque de {{count}} intervention ? Elle figurera de nouveau dans « Interventions sans rapport ».",
+        "confirmar_other": "Retirer la marque de {{count}} interventions ? Elles figureront de nouveau dans « Interventions sans rapport ».",
+        "boton": "Retirer la marque",
+        "hecho_one": "{{count}} intervention est de nouveau sans rapport",
+        "hecho_other": "{{count}} interventions sont de nouveau sans rapport"
       }
     }
   },
@@ -10306,7 +10319,8 @@
         "portal": "Portail",
         "integraciones": "Intégrations"
       }
-    }
+    },
+    "historicoTipoRevision": "Vérifications historiques de type « {{tipo}} »"
   },
   "papelera": {
     "buscar": "Rechercher par nom",

@@ -9715,6 +9715,19 @@
         "boton": "Mark",
         "hecho_one": "{{count}} item marked as reported another way",
         "hecho_other": "{{count}} items marked as reported another way"
+      },
+      "verInformadas": "Show those reported another way",
+      "informadaEl": "Reported on",
+      "vacioInformadas": "No work reported another way",
+      "vacioInformadasHint": "Items marked as reported another way appear here, so the mark can be removed if needed.",
+      "quitar": {
+        "accion": "Remove the reported-another-way mark",
+        "titulo": "Remove the mark",
+        "confirmar_one": "Remove the mark from {{count}} item? It will appear again in «Work without a report».",
+        "confirmar_other": "Remove the mark from {{count}} items? They will appear again in «Work without a report».",
+        "boton": "Remove the mark",
+        "hecho_one": "{{count}} item is without a report again",
+        "hecho_other": "{{count}} items are without a report again"
       }
     }
   },
@@ -12048,7 +12061,8 @@
         "portal": "Portal",
         "integraciones": "Integrations"
       }
-    }
+    },
+    "historicoTipoRevision": "History «{{tipo}}» inspections"
   },
   "papelera": {
     "buscar": "Search by name",

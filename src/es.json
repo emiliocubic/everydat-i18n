@@ -9715,6 +9715,19 @@
         "boton": "Marcar",
         "hecho_one": "{{count}} actuación marcada como informada por otra vía",
         "hecho_other": "{{count}} actuaciones marcadas como informadas por otra vía"
+      },
+      "verInformadas": "Ver las informadas por otra vía",
+      "informadaEl": "Informada el",
+      "vacioInformadas": "Ninguna actuación informada por otra vía",
+      "vacioInformadasHint": "Las que se marquen como informadas por otra vía salen aquí, para quitarles la marca si hace falta.",
+      "quitar": {
+        "accion": "Quitar la marca de informadas por otra vía",
+        "titulo": "Quitar la marca",
+        "confirmar_one": "¿Quitar la marca a {{count}} actuación? Volverá a salir en «Actuaciones sin informe».",
+        "confirmar_other": "¿Quitar la marca a {{count}} actuaciones? Volverán a salir en «Actuaciones sin informe».",
+        "boton": "Quitar la marca",
+        "hecho_one": "{{count}} actuación vuelve a estar sin informe",
+        "hecho_other": "{{count}} actuaciones vuelven a estar sin informe"
       }
     }
   },
@@ -12048,7 +12061,8 @@
         "portal": "Portal",
         "integraciones": "Integraciones"
       }
-    }
+    },
+    "historicoTipoRevision": "Históricas de tipo «{{tipo}}»"
   },
   "papelera": {
     "buscar": "Buscar por nombre",
