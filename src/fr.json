@@ -8189,7 +8189,17 @@
       "firmarHint": "Signe le PDF avec le certificat .p12 de Paramètres › Marque. Sans certificat, il est émis sans signature.",
       "tabs": {
         "datos": "Données et émission"
-      }
+      },
+      "anexosGuardados": "Annexes enregistrées.",
+      "anexoSinNombre": "Annexe",
+      "anexosNinguno": "Le modèle de ce rapport n’a pas de section d’annexe.",
+      "anexosComo": "Comment les documents sont livrés",
+      "anexosLista": "En lien",
+      "anexosIncrustados": "Intégrés",
+      "anexosResumen": "Documents : {{n}} · {{como}}",
+      "anexosListaHint": "Une liste avec un lien par document, qui le télécharge sans se connecter.",
+      "anexosIncrustadosHint": "Chaque PDF entre dans le rapport page par page et chaque image sur sa page. Le reste (un DWG, un tableur) est fourni en lien.",
+      "anexosIraComoEnlace": "Sera fourni en lien"
     },
     "campos": {
       "firmar": "Signature électronique",

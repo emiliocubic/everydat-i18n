@@ -9400,7 +9400,17 @@
       "anexosPendiente": "This is where the files that go with the report will be picked. It comes once document management is finished.",
       "emisionEnvio": "Issuing and sending",
       "guardarAntes": "Save the parameters before issuing.",
-      "emitidoReabrir": "Already issued: to issue another version, reopen it."
+      "emitidoReabrir": "Already issued: to issue another version, reopen it.",
+      "anexosGuardados": "Appendices saved.",
+      "anexoSinNombre": "Appendix",
+      "anexosNinguno": "This report’s template has no appendix sections.",
+      "anexosComo": "How the documents are delivered",
+      "anexosLista": "As a link",
+      "anexosIncrustados": "Embedded",
+      "anexosResumen": "Documents: {{n}} · {{como}}",
+      "anexosListaHint": "A list with one link per document, which downloads it without signing in.",
+      "anexosIncrustadosHint": "Each PDF goes into the report page by page and each image on its own page. Anything else (a DWG, a spreadsheet) goes as a link.",
+      "anexosIraComoEnlace": "Will go as a link"
     },
     "contenido": {
       "nRevisiones_one": "{{count}} inspection",

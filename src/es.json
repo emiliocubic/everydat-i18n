@@ -9400,7 +9400,17 @@
       "anexosPendiente": "Aquí se buscarán los archivos que acompañan al informe. Llega cuando esté terminada la gestión documental.",
       "emisionEnvio": "Emisión y envío",
       "guardarAntes": "Guarda los parámetros antes de emitir.",
-      "emitidoReabrir": "Ya está emitido: para emitir otra versión, reábrelo."
+      "emitidoReabrir": "Ya está emitido: para emitir otra versión, reábrelo.",
+      "anexosGuardados": "Anexos guardados.",
+      "anexoSinNombre": "Anexo",
+      "anexosNinguno": "La plantilla de este informe no tiene apartados de anexo.",
+      "anexosComo": "Cómo salen los documentos",
+      "anexosLista": "Como enlace",
+      "anexosIncrustados": "Incrustados",
+      "anexosResumen": "Documentos: {{n}} · {{como}}",
+      "anexosListaHint": "Una lista con un enlace por documento, que lo baja sin entrar en la aplicación.",
+      "anexosIncrustadosHint": "Cada PDF entra en el informe página a página y cada imagen en su hoja. Lo demás (un DWG, una hoja de cálculo) va como enlace.",
+      "anexosIraComoEnlace": "Irá como enlace"
     },
     "contenido": {
       "nRevisiones_one": "{{count}} revisión",
