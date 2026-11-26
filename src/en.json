@@ -9680,7 +9680,7 @@
       "titulo": "What to show",
       "todos": "All",
       "sin_entregar": "Undelivered reports",
-      "sin_informe": "Inspections without a report",
+      "sin_informe": "Work without a report",
       "sinEntregarVacio": "Everything delivered",
       "sinEntregarVacioHint": "No report has its current version undelivered."
     },
@@ -9695,9 +9695,27 @@
       "desde": "From",
       "hasta": "To",
       "buscar": "Search by equipment, type, folder, site or inspector",
-      "vacio": "No inspections without a report",
-      "vacioHint": "Every inspection in these dates is in an issued report.",
-      "tope": "Showing the {{n}} most recent of {{total}}: narrow the dates to see the rest."
+      "vacio": "No work without a report",
+      "vacioHint": "All the inspections, installations and repairs in these dates are in an issued report or marked as reported another way.",
+      "tope": "Showing the {{n}} most recent of {{total}}: narrow the dates to see the rest.",
+      "cliente": "Customer",
+      "localizacion": "Location",
+      "hechas": "Done between",
+      "quien": "Done by",
+      "tipos": {
+        "periodica": "Periodic inspection",
+        "instalacion": "Installation",
+        "reparacion": "Repair"
+      },
+      "marcar": {
+        "accion": "Mark as reported another way",
+        "titulo": "Reported another way",
+        "confirmar_one": "Mark {{count}} item as reported another way? It will no longer appear in this list.",
+        "confirmar_other": "Mark {{count}} items as reported another way? They will no longer appear in this list.",
+        "boton": "Mark",
+        "hecho_one": "{{count}} item marked as reported another way",
+        "hecho_other": "{{count}} items marked as reported another way"
+      }
     }
   },
   "tiposRevision": {
@@ -11972,7 +11990,12 @@
         "conjunto_equipos": "Equipment inspected in set inspections",
         "multicomponente": "Multi-component inspections",
         "multicomponente_piezas": "Parts inspected in multi-component systems",
-        "con_ia": "Inspections that used AI"
+        "con_ia": "Inspections that used AI",
+        "historico": "History (already reported outside, not charged)",
+        "importada_informar": "Imported to report with Everydat",
+        "historico_conjunto_equipos": "Items inspected in history assembly inspections",
+        "historico_multicomponente": "History inspections of multi-component systems",
+        "historico_multicomponente_piezas": "Parts inspected in multi-component systems, history"
       },
       "espacio": {
         "archivos_gb": "Files (GB)",

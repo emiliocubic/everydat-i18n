@@ -8334,7 +8334,7 @@
       "titulo": "Affichage",
       "todos": "Tous",
       "sin_entregar": "Rapports non remis",
-      "sin_informe": "Inspections sans rapport",
+      "sin_informe": "Interventions sans rapport",
       "sinEntregarVacio": "Tout est remis",
       "sinEntregarVacioHint": "Aucun rapport n'a sa version en vigueur non remise."
     },
@@ -8349,9 +8349,27 @@
       "desde": "Du",
       "hasta": "Au",
       "buscar": "Rechercher par équipement, type, dossier, site ou inspecteur",
-      "vacio": "Aucune inspection sans rapport",
-      "vacioHint": "Toutes les inspections de ces dates figurent dans un rapport émis.",
-      "tope": "Les {{n}} plus récentes sur {{total}} : resserrez les dates pour voir les autres."
+      "vacio": "Aucune intervention sans rapport",
+      "vacioHint": "Toutes les vérifications, installations et réparations de ces dates figurent dans un rapport émis ou sont marquées comme rapportées par une autre voie.",
+      "tope": "Les {{n}} plus récentes sur {{total}} : resserrez les dates pour voir les autres.",
+      "cliente": "Client",
+      "localizacion": "Emplacement",
+      "hechas": "Faites entre",
+      "quien": "Faite par",
+      "tipos": {
+        "periodica": "Vérification périodique",
+        "instalacion": "Installation",
+        "reparacion": "Réparation"
+      },
+      "marcar": {
+        "accion": "Marquer comme rapportées par une autre voie",
+        "titulo": "Rapportées par une autre voie",
+        "confirmar_one": "Marquer {{count}} intervention comme rapportée par une autre voie ? Elle ne figurera plus dans cette liste.",
+        "confirmar_other": "Marquer {{count}} interventions comme rapportées par une autre voie ? Elles ne figureront plus dans cette liste.",
+        "boton": "Marquer",
+        "hecho_one": "{{count}} intervention marquée comme rapportée par une autre voie",
+        "hecho_other": "{{count}} interventions marquées comme rapportées par une autre voie"
+      }
     }
   },
   "tiposRevision": {
@@ -10230,7 +10248,12 @@
         "conjunto_equipos": "Équipements vérifiés dans des vérifications d'ensemble",
         "multicomponente": "Vérifications de systèmes multicomposants",
         "multicomponente_piezas": "Pièces vérifiées dans des systèmes multicomposants",
-        "con_ia": "Vérifications ayant utilisé l'IA"
+        "con_ia": "Vérifications ayant utilisé l'IA",
+        "historico": "Historiques (déjà rapportées ailleurs, non facturées)",
+        "importada_informar": "Importées pour rapporter avec Everydat",
+        "historico_conjunto_equipos": "Équipements vérifiés dans des vérifications d’ensemble historiques",
+        "historico_multicomponente": "Vérifications historiques de systèmes multicomposants",
+        "historico_multicomponente_piezas": "Pièces vérifiées dans des systèmes multicomposants, historiques"
       },
       "espacio": {
         "archivos_gb": "Fichiers (Go)",

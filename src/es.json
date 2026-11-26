@@ -9680,7 +9680,7 @@
       "titulo": "Qué se ve",
       "todos": "Todos",
       "sin_entregar": "Informes sin entregar",
-      "sin_informe": "Revisiones sin informe",
+      "sin_informe": "Actuaciones sin informe",
       "sinEntregarVacio": "Todo entregado",
       "sinEntregarVacioHint": "Ningún informe tiene su versión vigente sin entregar."
     },
@@ -9695,9 +9695,27 @@
       "desde": "Desde",
       "hasta": "Hasta",
       "buscar": "Buscar por equipo, tipo, carpeta, emplazamiento o revisor",
-      "vacio": "Ninguna revisión sin informe",
-      "vacioHint": "Todas las revisiones de estas fechas están en algún informe emitido.",
-      "tope": "Se ven las {{n}} más recientes de {{total}}: acota las fechas para ver las demás."
+      "vacio": "Ninguna actuación sin informe",
+      "vacioHint": "Todas las revisiones, instalaciones y reparaciones de estas fechas están en algún informe emitido o marcadas como informadas por otra vía.",
+      "tope": "Se ven las {{n}} más recientes de {{total}}: acota las fechas para ver las demás.",
+      "cliente": "Cliente",
+      "localizacion": "Localización",
+      "hechas": "Hechas entre",
+      "quien": "Hecha por",
+      "tipos": {
+        "periodica": "Revisión periódica",
+        "instalacion": "Instalación",
+        "reparacion": "Reparación"
+      },
+      "marcar": {
+        "accion": "Marcar como informadas por otra vía",
+        "titulo": "Informadas por otra vía",
+        "confirmar_one": "¿Marcar {{count}} actuación como informada por otra vía? Dejará de salir en esta lista.",
+        "confirmar_other": "¿Marcar {{count}} actuaciones como informadas por otra vía? Dejarán de salir en esta lista.",
+        "boton": "Marcar",
+        "hecho_one": "{{count}} actuación marcada como informada por otra vía",
+        "hecho_other": "{{count}} actuaciones marcadas como informadas por otra vía"
+      }
     }
   },
   "tiposRevision": {
@@ -11972,7 +11990,12 @@
         "conjunto_equipos": "Equipos revisados en revisiones de conjunto",
         "multicomponente": "Revisiones de multicomponentes",
         "multicomponente_piezas": "Piezas revisadas en multicomponentes",
-        "con_ia": "Revisiones en que se usó la IA"
+        "con_ia": "Revisiones en que se usó la IA",
+        "historico": "Históricas (ya informadas fuera, no se cobran)",
+        "importada_informar": "Importadas para informar con Everydat",
+        "historico_conjunto_equipos": "Equipos revisados en revisiones de conjunto históricas",
+        "historico_multicomponente": "Revisiones históricas de multicomponentes",
+        "historico_multicomponente_piezas": "Piezas revisadas en multicomponentes, históricas"
       },
       "espacio": {
         "archivos_gb": "Archivos (GB)",
