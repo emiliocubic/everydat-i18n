@@ -4517,7 +4517,8 @@
       "tabsLabel": "Rate sections",
       "tab": {
         "revisiones": "Inspections",
-        "otros": "Other products"
+        "otros": "Other products",
+        "suministros": "Supplies"
       },
       "precioInvalido": "Invalid amount: use a decimal comma, with no thousands separator and no negatives.",
       "revisiones": {
@@ -4578,6 +4579,33 @@
         "anadirProducto": "Add product",
         "anadirBloque": "Add product block",
         "sinProductos": "This block has no products."
+      },
+      "suministros": {
+        "catalogo": {
+          "titulo": "Catalogue of equipment you supply",
+          "desc": "Filter by types and manufacturers to narrow down the equipment you will price and offer to your customers.",
+          "tipos": "Families and types",
+          "fabricantes": "Manufacturers",
+          "buscarFabricante": "Search manufacturer…",
+          "tiposEncendidos": "{{n}}/{{total}} types",
+          "fabricantesEncendidos": "{{n}}/{{total}} manufacturers",
+          "vende": "{{nombre}} is sold",
+          "vacio": "There are no equipment types in the catalogue yet.",
+          "sinFabricantes": "There are no manufacturers in the catalogue yet.",
+          "sinCoincidencias": "No manufacturer with that name."
+        },
+        "tarifa": {
+          "titulo": "Supply price list",
+          "desc": "The selling price of each reference you supply, by equipment type. Fixed per unit, or variable by a field of the equipment: ropes and cable are sold by the metre. Without an amount, the reference can still be quoted and the price is entered by hand.",
+          "vacio": "You do not sell any equipment type yet: switch them on above, in the catalogue of equipment you supply.",
+          "conPrecio": "{{n}}/{{total}} with amount",
+          "sinReferencias": "None of the manufacturers you sell has references of this type.",
+          "col": {
+            "fabricante": "Manufacturer",
+            "modelo": "Model",
+            "referencia": "Reference"
+          }
+        }
       }
     },
     "tecnicos": {
@@ -7130,7 +7158,9 @@
         "lineas_other": "{{count}} lines · {{importe}}",
         "elementos": "{{count}} item · {{importe}}",
         "elementos_other": "{{count}} items · {{importe}}",
-        "enConstruccion": "This block arrives in a later task."
+        "enConstruccion": "This block arrives in a later task.",
+        "suministro": "Equipment supply",
+        "suministroSrc": "from the supply price list"
       },
       "revision": {
         "vacio": "No equipment loaded yet.",
@@ -7164,7 +7194,10 @@
         "dto": "Disc. (%)",
         "subtotal": "Subtotal",
         "quitar": "Remove",
-        "precioUd": "{{moneda}}/unit"
+        "precioUd": "{{moneda}}/unit",
+        "marca": "Brand",
+        "modelo": "Model",
+        "referencia": "Reference"
       },
       "tot": {
         "suma": "Sum of items",
@@ -7323,6 +7356,26 @@
         "avisos": "Next inspection notices",
         "sinAvisos": "No next inspection notice has been sent for its sites.",
         "revision": "{{donde}}: {{fecha}}"
+      },
+      "suministro": {
+        "vacio": "You have not added any equipment yet.",
+        "vacioHint": "The equipment sold to the customer, one line per reference, at the supply price list price. Without a price in the list, the amount is entered by hand.",
+        "vacioRo": "This version includes no equipment supply.",
+        "anadir": "Add equipment",
+        "sinPrecio": "No price in the list: enter the amount by hand.",
+        "picker": {
+          "sub": "Only the models you sell, as set in Settings › Price lists › Supplies.",
+          "refsSub": "Enter the units of each reference supplied.",
+          "cambiar": "Change",
+          "precio": "Price",
+          "aMano": "By hand",
+          "porCampo": "{{precio}} / unit of {{campo}}",
+          "sinRefs": "This model has no references for sale.",
+          "ninguna": "Enter units for some reference",
+          "elegidas": "{{count}} reference chosen",
+          "elegidas_other": "{{count}} references chosen",
+          "aceptar": "Accept"
+        }
       }
     },
     "sinNombre": "Unnamed",
@@ -10387,7 +10440,8 @@
       "porFilaHint": "With more photos per row, they are smaller and take fewer pages.",
       "carpetas": "Folders",
       "carpetasDesc": "Sheets are sorted by folder, with its full path as header.",
-      "saltoPagina": "Page break"
+      "saltoPagina": "Page break",
+      "planosLocalizacion": "Site plans and images"
     },
     "resumen": {
       "columnas": "Columns",

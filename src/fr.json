@@ -4304,7 +4304,8 @@
       "tabsLabel": "Sections des tarifs",
       "tab": {
         "revisiones": "Vérifications",
-        "otros": "Autres produits"
+        "otros": "Autres produits",
+        "suministros": "Fournitures"
       },
       "precioInvalido": "Montant non valide : utilisez la virgule décimale, sans séparateur de milliers ni valeurs négatives.",
       "revisiones": {
@@ -4365,6 +4366,33 @@
         "anadirProducto": "Ajouter un produit",
         "anadirBloque": "Ajouter un bloc de produits",
         "sinProductos": "Ce bloc n'a aucun produit."
+      },
+      "suministros": {
+        "catalogo": {
+          "titulo": "Catalogue des équipements fournis",
+          "desc": "Filtrez par types et par fabricants pour délimiter les équipements que vous allez tarifer et proposer à vos clients.",
+          "tipos": "Familles et types",
+          "fabricantes": "Fabricants",
+          "buscarFabricante": "Rechercher un fabricant…",
+          "tiposEncendidos": "{{n}}/{{total}} types",
+          "fabricantesEncendidos": "{{n}}/{{total}} fabricants",
+          "vende": "{{nombre}} est vendu",
+          "vacio": "Il n’y a pas encore de types d’équipement dans le catalogue.",
+          "sinFabricantes": "Il n’y a pas encore de fabricants dans le catalogue.",
+          "sinCoincidencias": "Aucun fabricant avec ce nom."
+        },
+        "tarifa": {
+          "titulo": "Tarif des fournitures",
+          "desc": "Le prix de vente de chaque référence fournie, par type d’équipement. Fixe par unité, ou variable selon un champ de l’équipement : les cordes et le câble se vendent au mètre. Sans montant, la référence peut être chiffrée et le prix se saisit à la main.",
+          "vacio": "Vous ne vendez encore aucun type d’équipement : activez-les plus haut, dans le catalogue des équipements fournis.",
+          "conPrecio": "{{n}}/{{total}} avec montant",
+          "sinReferencias": "Aucun des fabricants que vous vendez n’a de références de ce type.",
+          "col": {
+            "fabricante": "Fabricant",
+            "modelo": "Modèle",
+            "referencia": "Référence"
+          }
+        }
       }
     },
     "tecnicos": {
@@ -6156,7 +6184,9 @@
         "lineas_other": "{{count}} lignes · {{importe}}",
         "elementos": "{{count}} équipement · {{importe}}",
         "elementos_other": "{{count}} équipements · {{importe}}",
-        "enConstruccion": "Ce bloc arrive dans une tâche ultérieure."
+        "enConstruccion": "Ce bloc arrive dans une tâche ultérieure.",
+        "suministro": "Fourniture d’équipements",
+        "suministroSrc": "selon le tarif des fournitures"
       },
       "revision": {
         "vacio": "Aucun équipement chargé pour l'instant.",
@@ -6190,7 +6220,10 @@
         "dto": "Remise (%)",
         "subtotal": "Sous-total",
         "quitar": "Retirer",
-        "precioUd": "{{moneda}}/u."
+        "precioUd": "{{moneda}}/u.",
+        "marca": "Marque",
+        "modelo": "Modèle",
+        "referencia": "Référence"
       },
       "tot": {
         "suma": "Somme des concepts",
@@ -6349,6 +6382,26 @@
         "avisos": "Avis de prochaine inspection",
         "sinAvisos": "Aucun avis de prochaine inspection n’a été envoyé pour ses sites.",
         "revision": "{{donde}} : {{fecha}}"
+      },
+      "suministro": {
+        "vacio": "Vous n’avez encore ajouté aucun équipement.",
+        "vacioHint": "Les équipements vendus au client, une ligne par référence, au prix du tarif des fournitures. Sans prix dans le tarif, le montant se saisit à la main.",
+        "vacioRo": "Cette version ne comprend pas de fourniture d’équipements.",
+        "anadir": "Ajouter des équipements",
+        "sinPrecio": "Pas de prix dans le tarif : saisissez le montant à la main.",
+        "picker": {
+          "sub": "Seulement les modèles que vous vendez, selon Configuration › Tarifs › Fournitures.",
+          "refsSub": "Indiquez les unités de chaque référence fournie.",
+          "cambiar": "Changer",
+          "precio": "Prix",
+          "aMano": "À la main",
+          "porCampo": "{{precio}} / unité de {{campo}}",
+          "sinRefs": "Ce modèle n’a pas de références à vendre.",
+          "ninguna": "Indiquez des unités pour une référence",
+          "elegidas": "{{count}} référence choisie",
+          "elegidas_other": "{{count}} références choisies",
+          "aceptar": "Accepter"
+        }
       }
     },
     "sinNombre": "Sans nom",
@@ -9028,7 +9081,8 @@
       "porFilaHint": "Avec plus de photos par ligne, elles sont plus petites et occupent moins de pages.",
       "carpetas": "Dossiers",
       "carpetasDesc": "Les fiches sont triées par dossier, avec son chemin complet en en-tête.",
-      "saltoPagina": "Saut de page"
+      "saltoPagina": "Saut de page",
+      "planosLocalizacion": "Plans et images du site"
     },
     "resumen": {
       "columnas": "Colonnes",

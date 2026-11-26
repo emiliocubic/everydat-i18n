@@ -4517,7 +4517,8 @@
       "tabsLabel": "Secciones de tarifas",
       "tab": {
         "revisiones": "Revisiones",
-        "otros": "Otros productos"
+        "otros": "Otros productos",
+        "suministros": "Suministros"
       },
       "precioInvalido": "Importe no válido: usa la coma para los decimales, sin separador de miles ni negativos.",
       "revisiones": {
@@ -4578,6 +4579,33 @@
         "anadirProducto": "Añadir producto",
         "anadirBloque": "Añadir bloque de productos",
         "sinProductos": "Este bloque no tiene productos."
+      },
+      "suministros": {
+        "catalogo": {
+          "titulo": "Catálogo de equipos suministrables",
+          "desc": "Filtra por tipos y por fabricantes para acotar los equipos que vas a tarifar y ofertar a tus clientes.",
+          "tipos": "Familias y tipos",
+          "fabricantes": "Fabricantes",
+          "buscarFabricante": "Buscar fabricante…",
+          "tiposEncendidos": "{{n}}/{{total}} tipos",
+          "fabricantesEncendidos": "{{n}}/{{total}} fabricantes",
+          "vende": "Se vende {{nombre}}",
+          "vacio": "Todavía no hay tipos de equipo en el catálogo.",
+          "sinFabricantes": "Todavía no hay fabricantes en el catálogo.",
+          "sinCoincidencias": "Ningún fabricante con ese nombre."
+        },
+        "tarifa": {
+          "titulo": "Tarifa de suministros",
+          "desc": "El precio de venta de cada referencia que suministras, por tipo de equipo. Fijo por unidad, o variable por un campo del equipo: las cuerdas y el cable se venden por metros. Sin importe, la referencia se presupuesta igual y el precio se pone a mano.",
+          "vacio": "Aún no vendes ningún tipo de equipo: enciéndelos arriba, en el catálogo de equipos suministrables.",
+          "conPrecio": "{{n}}/{{total}} con importe",
+          "sinReferencias": "Ningún fabricante de los que vendes tiene referencias de este tipo.",
+          "col": {
+            "fabricante": "Fabricante",
+            "modelo": "Modelo",
+            "referencia": "Referencia"
+          }
+        }
       }
     },
     "tecnicos": {
@@ -7130,7 +7158,9 @@
         "lineas_other": "{{count}} líneas · {{importe}}",
         "elementos": "{{count}} elemento · {{importe}}",
         "elementos_other": "{{count}} elementos · {{importe}}",
-        "enConstruccion": "Este bloque llega en una tarea posterior."
+        "enConstruccion": "Este bloque llega en una tarea posterior.",
+        "suministro": "Suministro de equipos",
+        "suministroSrc": "según la tarifa de suministros"
       },
       "revision": {
         "vacio": "Aún no has cargado elementos.",
@@ -7164,7 +7194,10 @@
         "dto": "Dto (%)",
         "subtotal": "Subtotal",
         "quitar": "Quitar",
-        "precioUd": "{{moneda}}/ud."
+        "precioUd": "{{moneda}}/ud.",
+        "marca": "Marca",
+        "modelo": "Modelo",
+        "referencia": "Referencia"
       },
       "tot": {
         "suma": "Suma de conceptos",
@@ -7323,6 +7356,26 @@
         "avisos": "Avisos de próxima revisión",
         "sinAvisos": "No ha salido ningún aviso de próxima revisión a sus instalaciones.",
         "revision": "{{donde}}: {{fecha}}"
+      },
+      "suministro": {
+        "vacio": "Aún no has añadido equipos.",
+        "vacioHint": "Los equipos que se venden al cliente, una línea por referencia, con el precio de la tarifa de suministros. Sin precio en la tarifa, el importe se pone a mano.",
+        "vacioRo": "Esta versión no incluye suministro de equipos.",
+        "anadir": "Añadir equipos",
+        "sinPrecio": "Sin precio en la tarifa: pon el importe a mano.",
+        "picker": {
+          "sub": "Solo los modelos que vendes, según Configuración › Tarifas › Suministros.",
+          "refsSub": "Pon las unidades de cada referencia que se suministra.",
+          "cambiar": "Cambiar",
+          "precio": "Precio",
+          "aMano": "A mano",
+          "porCampo": "{{precio}} / ud. de {{campo}}",
+          "sinRefs": "Este modelo no tiene referencias que se vendan.",
+          "ninguna": "Pon unidades a alguna referencia",
+          "elegidas": "{{count}} referencia elegida",
+          "elegidas_other": "{{count}} referencias elegidas",
+          "aceptar": "Aceptar"
+        }
       }
     },
     "sinNombre": "Sin nombre",
@@ -10387,7 +10440,8 @@
       "porFilaHint": "Con más fotos por fila, salen más pequeñas y ocupan menos hojas.",
       "carpetas": "Carpetas",
       "carpetasDesc": "Las fichas se ordenan por carpeta, con su ruta entera como cabecera.",
-      "saltoPagina": "Salto de página"
+      "saltoPagina": "Salto de página",
+      "planosLocalizacion": "Planos e imágenes del emplazamiento"
     },
     "resumen": {
       "columnas": "Columnas",
